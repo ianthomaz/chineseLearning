@@ -1,0 +1,11 @@
+# System files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Node modules (se houver)
+node_modules/
+
+# Git do system.css (já está versionado dentro)
+system.css/.git/
