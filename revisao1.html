@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revisão de Chinês</title>
     <link rel="stylesheet" href="system.css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #f5f5dc;
+            --secondary: #2c2c2c;
+            --tertiary: #666666;
+            --box-shadow: 2px 2px 0 #2c2c2c;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
+            background: var(--primary);
             padding-top: 50px;
             font-family: "Inconsolata", Menlo, Chicago, Geneva;
         }
-        
+
         /* Header Fixo */
         .header-fixed {
             position: fixed;
@@ -33,110 +43,109 @@
             z-index: 1000;
             box-shadow: var(--box-shadow);
         }
-        
+
         /* Menu Tabs */
         .menu-tabs {
             display: flex;
             gap: 0.5rem;
             align-items: center;
         }
-        
+
         .tab {
             padding: 0.5rem 1rem;
             background: var(--primary);
             border: 2px solid var(--secondary);
             border-bottom: none;
             cursor: pointer;
-            font-family: Chicago_12;
+            font-family: "Noto Sans SC", sans-serif;
             font-size: 14px;
             box-shadow: var(--box-shadow);
         }
-        
+
         .tab.active {
             background: var(--secondary);
             color: var(--primary);
         }
-        
+
         .tab:hover:not(.active) {
             background: var(--tertiary);
         }
-        
+
         /* Botões Direita */
         .header-buttons {
             display: flex;
             gap: 0.5rem;
             align-items: center;
         }
-        
+
         .toggle-btn {
             padding: 0.4rem 0.8rem;
             background: var(--primary);
             border: 2px solid var(--secondary);
             cursor: pointer;
-            font-family: Chicago_12;
+            font-family: "Noto Sans SC", sans-serif;
             font-size: 12px;
             box-shadow: var(--box-shadow);
             display: flex;
             align-items: center;
             gap: 0.3rem;
         }
-        
+
         .toggle-btn.active {
             background: var(--secondary);
             color: var(--primary);
         }
-        
+
         .toggle-btn:hover {
             background: var(--tertiary);
         }
-        
+
         /* Conteúdo Principal */
         .content-area {
             padding: 2rem;
             max-width: 1400px;
             margin: 0 auto;
         }
-        
+
         .tab-content {
             display: none;
         }
-        
+
         .tab-content.active {
             display: block;
         }
-        
+
         /* Acordeon */
         .accordion {
             margin: 1.5rem 0;
         }
-        
+
         .accordion-header {
             background: var(--primary);
             border: 2px solid var(--secondary);
             padding: 1rem;
             cursor: pointer;
-            font-family: Chicago;
             font-size: 1.2em;
             display: flex;
             justify-content: space-between;
             align-items: center;
             box-shadow: var(--box-shadow);
         }
-        
+
         .accordion-header:hover {
             background: var(--tertiary);
         }
-        
+
         .accordion-header::after {
             content: "▼";
             font-size: 0.8em;
             transition: transform 0.3s;
         }
-        
+
         .accordion-header.collapsed::after {
             transform: rotate(-90deg);
         }
-        
+
         .accordion-content {
             border: 2px solid var(--secondary);
             border-top: none;
@@ -144,11 +153,11 @@
             background: var(--primary);
             display: none;
         }
-        
+
         .accordion-content.open {
             display: block;
         }
-        
+
         /* Cards Grid */
         .cards-grid {
             display: grid;
@@ -156,14 +165,26 @@
             gap: 1rem;
             margin: 1.5rem 0;
         }
-        
+
         .cards-grid-3 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 1rem;
             margin: 1.5rem 0;
         }
-        
+
+        @media (max-width: 768px) {
+            .cards-grid-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cards-grid-3 {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .card {
             background: var(--primary);
             border: 2px solid var(--secondary);
@@ -173,50 +194,55 @@
             box-shadow: var(--box-shadow);
             transition: all 0.2s;
         }
-        
+
         .card:hover {
             background: var(--secondary);
             color: var(--primary);
             transform: translateY(-2px);
             box-shadow: 4px 4px;
         }
-        
+
+        .card:hover .pinyin {
+            color: var(--primary);
+        }
+
         .card .hanzi {
             font-size: 2.5em;
             font-weight: bold;
             margin-bottom: 0.5rem;
             font-family: "Noto Sans SC", sans-serif;
         }
-        
+
         .card .pinyin {
             font-style: italic;
             margin-bottom: 0.5rem;
             color: var(--tertiary);
         }
-        
+
         .card .meaning {
             font-size: 0.9em;
         }
-        
+
         .card .phrase-text {
             font-family: "Noto Sans SC", sans-serif;
             font-size: 1.1em;
             margin-bottom: 0.5rem;
         }
-        
+
         .card .flag {
             font-size: 1.5em;
             margin-bottom: 0.5rem;
         }
-        
+
         /* Exemplos em linha */
         .examples-inline {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
             margin: 1rem 0;
+            justify-content: center;
         }
-        
+
         .example-item {
             background: var(--primary);
             border: 1px solid var(--secondary);
@@ -225,7 +251,7 @@
             font-size: 1.2em;
             box-shadow: var(--box-shadow);
         }
-        
+
         /* Modal */
         .modal-overlay {
             display: none;
@@ -239,29 +265,30 @@
             align-items: center;
             justify-content: center;
         }
-        
+
         .modal-overlay.active {
             display: flex;
             animation: fadeIn 0.3s;
         }
-        
+
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        
+
         .modal-content {
             background: var(--primary);
             border: 3px solid var(--secondary);
             padding: 2rem;
             max-width: 600px;
+            min-width: 300px;
             max-height: 80vh;
             overflow-y: auto;
             box-shadow: 8px 8px;
             position: relative;
             animation: slideIn 0.3s;
         }
-        
+
         @keyframes slideIn {
             from {
                 transform: translateY(-50px);
@@ -272,7 +299,7 @@
                 opacity: 1;
             }
         }
-        
+
         .modal-close {
             position: absolute;
             top: 1rem;
@@ -288,42 +315,42 @@
             justify-content: center;
             box-shadow: var(--box-shadow);
         }
-        
+
         .modal-close:hover {
             background: var(--secondary);
             color: var(--primary);
         }
-        
+
         .modal-card-info {
             text-align: center;
             margin-bottom: 2rem;
         }
-        
+
         .modal-card-info .hanzi {
             font-size: 4em;
             font-weight: bold;
             margin-bottom: 0.5rem;
             font-family: "Noto Sans SC", sans-serif;
         }
-        
+
         .modal-card-info .pinyin {
             font-size: 1.5em;
             font-style: italic;
             margin-bottom: 0.5rem;
             color: var(--tertiary);
         }
-        
+
         .modal-card-info .meaning {
             font-size: 1.2em;
         }
-        
+
         /* Espaço para conteúdo futuro */
         .future-content {
             margin-top: 2rem;
             padding-top: 2rem;
             border-top: 2px dashed var(--secondary);
         }
-        
+
         .future-item {
             background: var(--primary);
             border: 1px dashed var(--secondary);
@@ -331,18 +358,18 @@
             margin: 0.5rem 0;
             min-height: 60px;
         }
-        
+
         /* Window container */
         .window {
             max-width: 1400px;
             margin: 0 auto;
         }
-        
+
         /* Ocultar pinyin */
         .hide-pinyin .pinyin {
             display: none;
         }
-    
+
         .title-hanzi, .accordion-hanzi {
             font-family: "Noto Sans SC", sans-serif;
             font-weight: bold;
@@ -360,30 +387,60 @@
             display: inline-block;
         }
 
-
-
         /* Title-bar - garantir layout macOS com texto centralizado */
         .window .title-bar {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            background: var(--secondary);
+            padding: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
         }
-        
+
         .window .title-bar .title {
             flex: 1;
             text-align: center;
             background: var(--primary) !important;
-            padding: 0 0.5em;
-            margin: 0 auto;
+            padding: 0.3em 0.5em;
+            margin: 0 0.5rem;
             white-space: nowrap;
             border: none;
+            font-size: 14px;
         }
-        
+
         .window .title-bar button {
+            width: 12px;
+            height: 12px;
+            border: 1px solid var(--primary);
+            background: var(--secondary);
+            cursor: pointer;
+            padding: 0;
             flex-shrink: 0;
-            position: relative;
         }
-</style>
+
+        .window .title-bar button:hover {
+            background: var(--tertiary);
+        }
+
+        .window .separator {
+            height: 2px;
+            background: var(--secondary);
+        }
+
+        .window .window-pane {
+            padding: 1rem;
+            border: 2px solid var(--secondary);
+            border-top: none;
+        }
+
+        /* Loading state */
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            font-style: italic;
+            color: var(--tertiary);
+        }
+    </style>
 </head>
 <body>
     <!-- Header Fixo -->
@@ -399,12 +456,12 @@
             <button class="toggle-btn active" id="togglePinyin">
                 <span>拼音</span>
             </button>
-            <button class="toggle-btn" id="toggleBrasil">
+            <button class="toggle-btn" id="toggleLang">
                 <span>🇧🇷</span>
             </button>
         </div>
     </div>
-    
+
     <!-- Conteúdo Principal -->
     <div class="content-area">
         <!-- Tab: Expressões -->
@@ -413,722 +470,96 @@
                 <div class="title-bar">
                     <button aria-label="Close" class="close"></button>
                     <h1 class="title">
-                        <span class="title-hanzi">表达</span> <span class="title-pinyin">biǎodá</span> <span class="title-pt">Expressões</span>
+                        <span class="title-hanzi">表达</span>
+                        <span class="title-pinyin">biǎodá</span>
+                        <span class="title-pt">Expressões</span>
                     </h1>
                     <button aria-label="Resize" class="resize"></button>
                 </div>
                 <div class="separator"></div>
                 <div class="window-pane">
-                    <div class="accordion">
-                        <div class="accordion-header" data-accordion="numeros">
-                            <span class="accordion-hanzi">数字</span> <span class="accordion-pinyin">shùzì</span> <span class="accordion-pt">Números</span>
-                        </div>
-                        <div class="accordion-content" id="numeros">
-                            <div class="cards-grid">
-                                <div class="card" data-hanzi="零" data-pinyin="líng" data-meaning="0">
-                                    <div class="hanzi">零</div>
-                                    <div class="pinyin">líng</div>
-                                    <div class="meaning">0</div>
-                                </div>
-                                <div class="card" data-hanzi="一" data-pinyin="yī" data-meaning="1">
-                                    <div class="hanzi">一</div>
-                                    <div class="pinyin">yī</div>
-                                    <div class="meaning">1</div>
-                                </div>
-                                <div class="card" data-hanzi="二" data-pinyin="èr" data-meaning="2">
-                                    <div class="hanzi">二</div>
-                                    <div class="pinyin">èr</div>
-                                    <div class="meaning">2</div>
-                                </div>
-                                <div class="card" data-hanzi="三" data-pinyin="sān" data-meaning="3">
-                                    <div class="hanzi">三</div>
-                                    <div class="pinyin">sān</div>
-                                    <div class="meaning">3</div>
-                                </div>
-                                <div class="card" data-hanzi="四" data-pinyin="sì" data-meaning="4">
-                                    <div class="hanzi">四</div>
-                                    <div class="pinyin">sì</div>
-                                    <div class="meaning">4</div>
-                                </div>
-                                <div class="card" data-hanzi="五" data-pinyin="wǔ" data-meaning="5">
-                                    <div class="hanzi">五</div>
-                                    <div class="pinyin">wǔ</div>
-                                    <div class="meaning">5</div>
-                                </div>
-                                <div class="card" data-hanzi="六" data-pinyin="liù" data-meaning="6">
-                                    <div class="hanzi">六</div>
-                                    <div class="pinyin">liù</div>
-                                    <div class="meaning">6</div>
-                                </div>
-                                <div class="card" data-hanzi="七" data-pinyin="qī" data-meaning="7">
-                                    <div class="hanzi">七</div>
-                                    <div class="pinyin">qī</div>
-                                    <div class="meaning">7</div>
-                                </div>
-                                <div class="card" data-hanzi="八" data-pinyin="bā" data-meaning="8">
-                                    <div class="hanzi">八</div>
-                                    <div class="pinyin">bā</div>
-                                    <div class="meaning">8</div>
-                                </div>
-                                <div class="card" data-hanzi="九" data-pinyin="jiǔ" data-meaning="9">
-                                    <div class="hanzi">九</div>
-                                    <div class="pinyin">jiǔ</div>
-                                    <div class="meaning">9</div>
-                                </div>
-                                <div class="card" data-hanzi="十" data-pinyin="shí" data-meaning="10">
-                                    <div class="hanzi">十</div>
-                                    <div class="pinyin">shí</div>
-                                    <div class="meaning">10</div>
-                                </div>
-                            </div>
-                            <div style="margin-top: 2rem; padding: 1.5rem; background: var(--primary); border: 2px solid var(--secondary); box-shadow: var(--box-shadow);">
-                                <h3 style="font-family: Chicago; font-size: 1.2em; margin-bottom: 1rem;">Formação dos Números</h3>
-                                <ul style="list-style: none; padding: 0;">
-                                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--secondary);"><div style="font-family: 'Noto Sans SC', sans-serif;">11–20: 十一 (shíyī), 十二 (shí'èr), 十三 (shísān)... 二十 (èrshí)<br><em>Padrão: 十 + número (shí + número)</em></div></li>
-                                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--secondary);"><div style="font-family: 'Noto Sans SC', sans-serif;">Dezenas: 二十 (èrshí), 三十 (sānshí), 四十 (sìshí)... 九十 (jiǔshí)<br><em>Padrão: número + 十 (número + shí)</em></div></li>
-                                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--secondary);"><div style="font-family: 'Noto Sans SC', sans-serif;">Centenas: 一百 (yībǎi), 二百 (èrbǎi), 三百 (sānbǎi)... 九百 (jiǔbǎi)<br><em>Padrão: número + 百 (número + bǎi)</em></div></li>
-                                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--secondary);"><div style="font-family: 'Noto Sans SC', sans-serif;">Exemplos: 123 = 一百二十三 (yībǎi èrshísān), 456 = 四百五十六 (sìbǎi wǔshíliù)</div></li>
-                                    <li style="padding: 0.5rem 0;"><div style="font-family: 'Noto Sans SC', sans-serif;">Curiosidade: 520 = 五百二十 (wǔ bǎi èr shí) mas soa como 我爱你 (wǒ ài nǐ) - "Eu te amo" 😊</div></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="accordion-header" data-accordion="frases-fixas">
-                            <span class="accordion-hanzi">固定短语</span> <span class="accordion-pinyin">gùdìng duǎnyǔ</span> <span class="accordion-pt">Frases Fixas</span>
-                        </div>
-                        
-                            <div class="cards-grid-3">
-                                <div class="card" data-hanzi="你好" data-pinyin="nǐ hǎo" data-meaning="olá">
-                                    <div class="phrase-text">你好</div>
-                                    <div class="pinyin">nǐ hǎo</div>
-                                    <div class="meaning">olá</div>
-                                </div>
-                                <div class="card" data-hanzi="早上好" data-pinyin="zǎoshang hǎo" data-meaning="bom dia">
-                                    <div class="phrase-text">早上好</div>
-                                    <div class="pinyin">zǎoshang hǎo</div>
-                                    <div class="meaning">bom dia</div>
-                                </div>
-                                <div class="card" data-hanzi="晚上好" data-pinyin="wǎnshang hǎo" data-meaning="boa noite">
-                                    <div class="phrase-text">晚上好</div>
-                                    <div class="pinyin">wǎnshang hǎo</div>
-                                    <div class="meaning">boa noite</div>
-                                </div>
-                                <div class="card" data-hanzi="晚安" data-pinyin="wǎn'ān" data-meaning="boa noite (despedida)">
-                                    <div class="phrase-text">晚安</div>
-                                    <div class="pinyin">wǎn'ān</div>
-                                    <div class="meaning">boa noite (despedida)</div>
-                                </div>
-                                <div class="card" data-hanzi="我很好" data-pinyin="wǒ hěn hǎo" data-meaning="estou bem">
-                                    <div class="phrase-text">我很好</div>
-                                    <div class="pinyin">wǒ hěn hǎo</div>
-                                    <div class="meaning">estou bem</div>
-                                </div>
-                                <div class="card" data-hanzi="马马虎虎" data-pinyin="mǎmǎhūhū" data-meaning="mais ou menos">
-                                    <div class="phrase-text">马马虎虎</div>
-                                    <div class="pinyin">mǎmǎhūhū</div>
-                                    <div class="meaning">mais ou menos</div>
-                                </div>
-                                <div class="card" data-hanzi="不太好" data-pinyin="bú tài hǎo" data-meaning="não muito bem">
-                                    <div class="phrase-text">不太好</div>
-                                    <div class="pinyin">bú tài hǎo</div>
-                                    <div class="meaning">não muito bem</div>
-                                </div>
-                                <div class="card" data-hanzi="对不起" data-pinyin="duìbuqǐ" data-meaning="desculpe">
-                                    <div class="phrase-text">对不起</div>
-                                    <div class="pinyin">duìbuqǐ</div>
-                                    <div class="meaning">desculpe</div>
-                                </div>
-                                <div class="card" data-hanzi="没关系" data-pinyin="méi guānxi" data-meaning="tudo bem">
-                                    <div class="phrase-text">没关系</div>
-                                    <div class="pinyin">méi guānxi</div>
-                                    <div class="meaning">tudo bem</div>
-                                </div>
-                                <div class="card" data-hanzi="不客气" data-pinyin="bú kèqi" data-meaning="de nada">
-                                    <div class="phrase-text">不客气</div>
-                                    <div class="pinyin">bú kèqi</div>
-                                    <div class="meaning">de nada</div>
-                                </div>
-                                <div class="card" data-hanzi="谢谢" data-pinyin="xièxie" data-meaning="obrigado(a)">
-                                    <div class="phrase-text">谢谢</div>
-                                    <div class="pinyin">xièxie</div>
-                                    <div class="meaning">obrigado(a)</div>
-                                </div>
-                                <div class="card" data-hanzi="对 / 不对" data-pinyin="duì / bú duì" data-meaning="certo / errado">
-                                    <div class="phrase-text">对 / 不对</div>
-                                    <div class="pinyin">duì / bú duì</div>
-                                    <div class="meaning">certo / errado</div>
-                                </div>
-                                <div class="card" data-hanzi="怎么说" data-pinyin="zhěnme shuō" data-meaning="como se fala">
-                                    <div class="phrase-text">怎么说</div>
-                                    <div class="pinyin">zhěnme shuō</div>
-                                    <div class="meaning">como se fala</div>
-                                </div>
-                                <div class="card" data-hanzi="怎么写" data-pinyin="zhěnme xiě" data-meaning="como se escreve">
-                                    <div class="phrase-text">怎么写</div>
-                                    <div class="pinyin">zhěnme xiě</div>
-                                    <div class="meaning">como se escreve</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="accordion-header" data-accordion="periodos-dia">
-                            <span class="accordion-hanzi">一天的时间</span> <span class="accordion-pinyin">yītiān de shíjiān</span> <span class="accordion-pt">Períodos do Dia</span>
-                        </div>
-                        
-                            <div class="cards-grid-3">
-                                <div class="card" data-hanzi="早上" data-pinyin="zǎoshang" data-meaning="manhã cedo">
-                                    <div class="hanzi">早上</div>
-                                    <div class="pinyin">zǎoshang</div>
-                                    <div class="meaning">manhã cedo</div>
-                                </div>
-                                <div class="card" data-hanzi="上午" data-pinyin="shàngwǔ" data-meaning="manhã">
-                                    <div class="hanzi">上午</div>
-                                    <div class="pinyin">shàngwǔ</div>
-                                    <div class="meaning">manhã</div>
-                                </div>
-                                <div class="card" data-hanzi="早餐" data-pinyin="zǎocān" data-meaning="café da manhã">
-                                    <div class="hanzi">早餐</div>
-                                    <div class="pinyin">zǎocān</div>
-                                    <div class="meaning">café da manhã</div>
-                                </div>
-                                <div class="card" data-hanzi="中午" data-pinyin="zhōngwǔ" data-meaning="meio-dia">
-                                    <div class="hanzi">中午</div>
-                                    <div class="pinyin">zhōngwǔ</div>
-                                    <div class="meaning">meio-dia</div>
-                                </div>
-                                <div class="card" data-hanzi="午餐" data-pinyin="wǔcān" data-meaning="almoço">
-                                    <div class="hanzi">午餐</div>
-                                    <div class="pinyin">wǔcān</div>
-                                    <div class="meaning">almoço</div>
-                                </div>
-                                <div class="card" data-hanzi="下午" data-pinyin="xiàwǔ" data-meaning="tarde">
-                                    <div class="hanzi">下午</div>
-                                    <div class="pinyin">xiàwǔ</div>
-                                    <div class="meaning">tarde</div>
-                                </div>
-                                <div class="card" data-hanzi="晚上" data-pinyin="wǎnshang" data-meaning="noite">
-                                    <div class="hanzi">晚上</div>
-                                    <div class="pinyin">wǎnshang</div>
-                                    <div class="meaning">noite</div>
-                                </div>
-                                <div class="card" data-hanzi="晚餐" data-pinyin="wǎncān" data-meaning="jantar">
-                                    <div class="hanzi">晚餐</div>
-                                    <div class="pinyin">wǎncān</div>
-                                    <div class="meaning">jantar</div>
-                                </div>
-                                <div class="card" data-hanzi="晚安" data-pinyin="wǎn'ān" data-meaning="boa noite (despedida)">
-                                    <div class="hanzi">晚安</div>
-                                    <div class="pinyin">wǎn'ān</div>
-                                    <div class="meaning">boa noite (despedida)</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="accordion-header" data-accordion="frases-padrao">
-                            <span class="accordion-hanzi">标准句子</span> <span class="accordion-pinyin">biāozhǔn jùzi</span> <span class="accordion-pt">Frases-Padrão</span>
-                        </div>
-                        
-                            <div class="cards-grid-3">
-                                <div class="card" data-hanzi="你好吗？" data-pinyin="Nǐ hǎo ma?" data-meaning="Tudo bem?">
-                                    <div class="phrase-text">你好吗？</div>
-                                    <div class="pinyin">Nǐ hǎo ma?</div>
-                                    <div class="meaning">Tudo bem?</div>
-                                </div>
-                                <div class="card" data-hanzi="我很好。你呢？" data-pinyin="Wǒ hěn hǎo. Nǐ ne?" data-meaning="Estou bem, e você?">
-                                    <div class="phrase-text">我很好。你呢？</div>
-                                    <div class="pinyin">Wǒ hěn hǎo. Nǐ ne?</div>
-                                    <div class="meaning">Estou bem, e você?</div>
-                                </div>
-                                <div class="card" data-hanzi="你要咖啡还是茶？" data-pinyin="Nǐ yào kāfēi háishì chá?" data-meaning="Você quer café ou chá?">
-                                    <div class="phrase-text">你要咖啡还是茶？</div>
-                                    <div class="pinyin">Nǐ yào kāfēi háishì chá?</div>
-                                    <div class="meaning">Você quer café ou chá?</div>
-                                </div>
-                                <div class="card" data-hanzi="我在家。" data-pinyin="Wǒ zài jiā." data-meaning="Estou em casa.">
-                                    <div class="phrase-text">我在家。</div>
-                                    <div class="pinyin">Wǒ zài jiā.</div>
-                                    <div class="meaning">Estou em casa.</div>
-                                </div>
-                                <div class="card" data-hanzi="我会写汉字。" data-pinyin="Wǒ huì xiě hànzì." data-meaning="Eu sei escrever caracteres chineses.">
-                                    <div class="phrase-text">我会写汉字。</div>
-                                    <div class="pinyin">Wǒ huì xiě hànzì.</div>
-                                    <div class="meaning">Eu sei escrever caracteres chineses.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="accordion-header" data-accordion="nomes-sobrenomes">
-                            <span class="accordion-hanzi">姓名</span> <span class="accordion-pinyin">xìngmíng</span> <span class="accordion-pt">Nomes e Sobrenomes</span>
-                        </div>
-                        
-                            <div class="cards-grid">
-                                <div class="card" data-hanzi="名字" data-pinyin="míngzi" data-meaning="nome completo">
-                                    <div class="hanzi">名字</div>
-                                    <div class="pinyin">míngzi</div>
-                                    <div class="meaning">nome completo</div>
-                                </div>
-                                <div class="card" data-hanzi="姓" data-pinyin="xìng" data-meaning="sobrenome">
-                                    <div class="hanzi">姓</div>
-                                    <div class="pinyin">xìng</div>
-                                    <div class="meaning">sobrenome</div>
-                                </div>
-                                <div class="card" data-hanzi="贵姓" data-pinyin="guìxìng" data-meaning="sobrenome (forma polida)">
-                                    <div class="hanzi">贵姓</div>
-                                    <div class="pinyin">guìxìng</div>
-                                    <div class="meaning">sobrenome (forma polida)</div>
-                                </div>
-                            </div>
-                            <div class="cards-grid-3" style="margin-top: 2rem;">
-                                <div class="card" data-hanzi="你姓什么？" data-pinyin="Nǐ xìng shénme?" data-meaning="Qual é o seu sobrenome?">
-                                    <div class="phrase-text">你姓什么？</div>
-                                    <div class="pinyin">Nǐ xìng shénme?</div>
-                                    <div class="meaning">Qual é o seu sobrenome?</div>
-                                </div>
-                                <div class="card" data-hanzi="我姓……" data-pinyin="Wǒ xìng ……" data-meaning="Meu sobrenome é …">
-                                    <div class="phrase-text">我姓……</div>
-                                    <div class="pinyin">Wǒ xìng ……</div>
-                                    <div class="meaning">Meu sobrenome é …</div>
-                                </div>
-                                <div class="card" data-hanzi="您贵姓？" data-pinyin="Nín guìxìng?" data-meaning="Qual é o seu sobrenome? (respeitosamente)">
-                                    <div class="phrase-text">您贵姓？</div>
-                                    <div class="pinyin">Nín guìxìng?</div>
-                                    <div class="meaning">Qual é o seu sobrenome? (respeitosamente)</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="accordion-header" data-accordion="paises-idiomas">
-                            <span class="accordion-hanzi">国家和语言</span> <span class="accordion-pinyin">guójiā hé yǔyán</span> <span class="accordion-pt">Países e Idiomas</span>
-                        </div>
-                        
-                            <div class="cards-grid">
-                                <div class="card" data-hanzi="巴西" data-pinyin="Bāxī" data-meaning="Brasil">
-                                    <div class="flag">🇧🇷</div>
-                                    <div class="hanzi">巴西</div>
-                                    <div class="pinyin">Bāxī</div>
-                                    <div class="meaning">Brasil</div>
-                                </div>
-                                <div class="card" data-hanzi="中国" data-pinyin="Zhōngguó" data-meaning="China">
-                                    <div class="flag">🇨🇳</div>
-                                    <div class="hanzi">中国</div>
-                                    <div class="pinyin">Zhōngguó</div>
-                                    <div class="meaning">China</div>
-                                </div>
-                                <div class="card" data-hanzi="韩国" data-pinyin="Hánguó" data-meaning="Coreia do Sul">
-                                    <div class="flag">🇰🇷</div>
-                                    <div class="hanzi">韩国</div>
-                                    <div class="pinyin">Hánguó</div>
-                                    <div class="meaning">Coreia do Sul</div>
-                                </div>
-                                <div class="card" data-hanzi="日本" data-pinyin="Rìběn" data-meaning="Japão">
-                                    <div class="flag">🇯🇵</div>
-                                    <div class="hanzi">日本</div>
-                                    <div class="pinyin">Rìběn</div>
-                                    <div class="meaning">Japão</div>
-                                </div>
-                                <div class="card" data-hanzi="美国" data-pinyin="Měiguó" data-meaning="Estados Unidos">
-                                    <div class="flag">🇺🇸</div>
-                                    <div class="hanzi">美国</div>
-                                    <div class="pinyin">Měiguó</div>
-                                    <div class="meaning">Estados Unidos</div>
-                                </div>
-                                <div class="card" data-hanzi="英国" data-pinyin="Yīngguó" data-meaning="Reino Unido">
-                                    <div class="flag">🇬🇧</div>
-                                    <div class="hanzi">英国</div>
-                                    <div class="pinyin">Yīngguó</div>
-                                    <div class="meaning">Reino Unido</div>
-                                </div>
-                                <div class="card" data-hanzi="法国" data-pinyin="Fǎguó" data-meaning="França">
-                                    <div class="flag">🇫🇷</div>
-                                    <div class="hanzi">法国</div>
-                                    <div class="pinyin">Fǎguó</div>
-                                    <div class="meaning">França</div>
-                                </div>
-                                <div class="card" data-hanzi="德国" data-pinyin="Déguó" data-meaning="Alemanha">
-                                    <div class="flag">🇩🇪</div>
-                                    <div class="hanzi">德国</div>
-                                    <div class="pinyin">Déguó</div>
-                                    <div class="meaning">Alemanha</div>
-                                </div>
-                                <div class="card" data-hanzi="加拿大" data-pinyin="Jiānádà" data-meaning="Canadá">
-                                    <div class="flag">🇨🇦</div>
-                                    <div class="hanzi">加拿大</div>
-                                    <div class="pinyin">Jiānádà</div>
-                                    <div class="meaning">Canadá</div>
-                                </div>
-                                <div class="card" data-hanzi="阿根廷" data-pinyin="Āgēntíng" data-meaning="Argentina">
-                                    <div class="flag">🇦🇷</div>
-                                    <div class="hanzi">阿根廷</div>
-                                    <div class="pinyin">Āgēntíng</div>
-                                    <div class="meaning">Argentina</div>
-                                </div>
-                                <div class="card" data-hanzi="西班牙" data-pinyin="Xībānyá" data-meaning="Espanha">
-                                    <div class="flag">🇪🇸</div>
-                                    <div class="hanzi">西班牙</div>
-                                    <div class="pinyin">Xībānyá</div>
-                                    <div class="meaning">Espanha</div>
-                                </div>
-                                <div class="card" data-hanzi="葡萄牙" data-pinyin="Pútáoyá" data-meaning="Portugal">
-                                    <div class="flag">🇵🇹</div>
-                                    <div class="hanzi">葡萄牙</div>
-                                    <div class="pinyin">Pútáoyá</div>
-                                    <div class="meaning">Portugal</div>
-                                </div>
-                                <div class="card" data-hanzi="墨西哥" data-pinyin="Mòxīgē" data-meaning="México">
-                                    <div class="flag">🇲🇽</div>
-                                    <div class="hanzi">墨西哥</div>
-                                    <div class="pinyin">Mòxīgē</div>
-                                    <div class="meaning">México</div>
-                                </div>
-                                <div class="card" data-hanzi="意大利" data-pinyin="Yìdàlì" data-meaning="Itália">
-                                    <div class="flag">🇮🇹</div>
-                                    <div class="hanzi">意大利</div>
-                                    <div class="pinyin">Yìdàlì</div>
-                                    <div class="meaning">Itália</div>
-                                </div>
-                                <div class="card" data-hanzi="澳大利亚" data-pinyin="Àodàlìyà" data-meaning="Austrália">
-                                    <div class="flag">🇦🇺</div>
-                                    <div class="hanzi">澳大利亚</div>
-                                    <div class="pinyin">Àodàlìyà</div>
-                                    <div class="meaning">Austrália</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="loading">Carregando...</div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Tab: Pronomes -->
         <div class="tab-content" id="pronomes">
             <div class="window">
                 <div class="title-bar">
                     <button aria-label="Close" class="close"></button>
                     <h1 class="title">
-                        <span class="title-hanzi">代词</span> <span class="title-pinyin">dàicí</span> <span class="title-pt">Pronomes</span>
+                        <span class="title-hanzi">代词</span>
+                        <span class="title-pinyin">dàicí</span>
+                        <span class="title-pt">Pronomes</span>
                     </h1>
                     <button aria-label="Resize" class="resize"></button>
                 </div>
                 <div class="separator"></div>
                 <div class="window-pane">
-                    <div class="cards-grid">
-                        <div class="card" data-hanzi="我" data-pinyin="wǒ" data-meaning="eu">
-                            <div class="hanzi">我</div>
-                            <div class="pinyin">wǒ</div>
-                            <div class="meaning">eu</div>
-                        </div>
-                        <div class="card" data-hanzi="你" data-pinyin="nǐ" data-meaning="você">
-                            <div class="hanzi">你</div>
-                            <div class="pinyin">nǐ</div>
-                            <div class="meaning">você</div>
-                        </div>
-                        <div class="card" data-hanzi="他" data-pinyin="tā" data-meaning="ele">
-                            <div class="hanzi">他</div>
-                            <div class="pinyin">tā</div>
-                            <div class="meaning">ele</div>
-                        </div>
-                        <div class="card" data-hanzi="她" data-pinyin="tā" data-meaning="ela">
-                            <div class="hanzi">她</div>
-                            <div class="pinyin">tā</div>
-                            <div class="meaning">ela</div>
-                        </div>
-                        <div class="card" data-hanzi="我们" data-pinyin="wǒmen" data-meaning="nós">
-                            <div class="hanzi">我们</div>
-                            <div class="pinyin">wǒmen</div>
-                            <div class="meaning">nós</div>
-                        </div>
-                        <div class="card" data-hanzi="你们" data-pinyin="nǐmen" data-meaning="vocês">
-                            <div class="hanzi">你们</div>
-                            <div class="pinyin">nǐmen</div>
-                            <div class="meaning">vocês</div>
-                        </div>
-                        <div class="card" data-hanzi="他们" data-pinyin="tāmen" data-meaning="eles">
-                            <div class="hanzi">他们</div>
-                            <div class="pinyin">tāmen</div>
-                            <div class="meaning">eles</div>
-                        </div>
-                        <div class="card" data-hanzi="她们" data-pinyin="tāmen" data-meaning="elas">
-                            <div class="hanzi">她们</div>
-                            <div class="pinyin">tāmen</div>
-                            <div class="meaning">elas</div>
-                        </div>
-                        <div class="card" data-hanzi="这" data-pinyin="zhè" data-meaning="este">
-                            <div class="hanzi">这</div>
-                            <div class="pinyin">zhè</div>
-                            <div class="meaning">este</div>
-                        </div>
-                        <div class="card" data-hanzi="那" data-pinyin="nà" data-meaning="aquele">
-                            <div class="hanzi">那</div>
-                            <div class="pinyin">nà</div>
-                            <div class="meaning">aquele</div>
-                        </div>
-                    </div>
+                    <div class="loading">Carregando...</div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Tab: Verbos -->
         <div class="tab-content" id="verbos">
             <div class="window">
                 <div class="title-bar">
                     <button aria-label="Close" class="close"></button>
                     <h1 class="title">
-                        <span class="title-hanzi">动词</span> <span class="title-pinyin">dòngcí</span> <span class="title-pt">Verbos</span>
+                        <span class="title-hanzi">动词</span>
+                        <span class="title-pinyin">dòngcí</span>
+                        <span class="title-pt">Verbos</span>
                     </h1>
                     <button aria-label="Resize" class="resize"></button>
                 </div>
                 <div class="separator"></div>
                 <div class="window-pane">
-                    <div class="cards-grid">
-                        <div class="card" data-hanzi="是" data-pinyin="shì" data-meaning="ser">
-                            <div class="hanzi">是</div>
-                            <div class="pinyin">shì</div>
-                            <div class="meaning">ser</div>
-                        </div>
-                        <div class="card" data-hanzi="有" data-pinyin="yǒu" data-meaning="ter">
-                            <div class="hanzi">有</div>
-                            <div class="pinyin">yǒu</div>
-                            <div class="meaning">ter</div>
-                        </div>
-                        <div class="card" data-hanzi="在" data-pinyin="zài" data-meaning="estar / ficar">
-                            <div class="hanzi">在</div>
-                            <div class="pinyin">zài</div>
-                            <div class="meaning">estar / ficar</div>
-                        </div>
-                        <div class="card" data-hanzi="叫" data-pinyin="jiào" data-meaning="chamar-se">
-                            <div class="hanzi">叫</div>
-                            <div class="pinyin">jiào</div>
-                            <div class="meaning">chamar-se</div>
-                        </div>
-                        <div class="card" data-hanzi="说" data-pinyin="shuō" data-meaning="falar / dizer">
-                            <div class="hanzi">说</div>
-                            <div class="pinyin">shuō</div>
-                            <div class="meaning">falar / dizer</div>
-                        </div>
-                        <div class="card" data-hanzi="吃" data-pinyin="chī" data-meaning="comer">
-                            <div class="hanzi">吃</div>
-                            <div class="pinyin">chī</div>
-                            <div class="meaning">comer</div>
-                        </div>
-                        <div class="card" data-hanzi="喝" data-pinyin="hē" data-meaning="beber">
-                            <div class="hanzi">喝</div>
-                            <div class="pinyin">hē</div>
-                            <div class="meaning">beber</div>
-                        </div>
-                        <div class="card" data-hanzi="做" data-pinyin="zuò" data-meaning="fazer">
-                            <div class="hanzi">做</div>
-                            <div class="pinyin">zuò</div>
-                            <div class="meaning">fazer</div>
-                        </div>
-                        <div class="card" data-hanzi="睡" data-pinyin="shuì" data-meaning="dormir">
-                            <div class="hanzi">睡</div>
-                            <div class="pinyin">shuì</div>
-                            <div class="meaning">dormir</div>
-                        </div>
-                        <div class="card" data-hanzi="爱" data-pinyin="ài" data-meaning="amar">
-                            <div class="hanzi">爱</div>
-                            <div class="pinyin">ài</div>
-                            <div class="meaning">amar</div>
-                        </div>
-                        <div class="card" data-hanzi="想" data-pinyin="xiǎng" data-meaning="querer / pensar">
-                            <div class="hanzi">想</div>
-                            <div class="pinyin">xiǎng</div>
-                            <div class="meaning">querer / pensar</div>
-                        </div>
-                        <div class="card" data-hanzi="看" data-pinyin="kàn" data-meaning="ver / assistir">
-                            <div class="hanzi">看</div>
-                            <div class="pinyin">kàn</div>
-                            <div class="meaning">ver / assistir</div>
-                        </div>
-                        <div class="card" data-hanzi="写" data-pinyin="xiě" data-meaning="escrever">
-                            <div class="hanzi">写</div>
-                            <div class="pinyin">xiě</div>
-                            <div class="meaning">escrever</div>
-                        </div>
-                        <div class="card" data-hanzi="坐" data-pinyin="zuò" data-meaning="sentar">
-                            <div class="hanzi">坐</div>
-                            <div class="pinyin">zuò</div>
-                            <div class="meaning">sentar</div>
-                        </div>
-                        <div class="card" data-hanzi="买" data-pinyin="mǎi" data-meaning="comprar">
-                            <div class="hanzi">买</div>
-                            <div class="pinyin">mǎi</div>
-                            <div class="meaning">comprar</div>
-                        </div>
-                    </div>
+                    <div class="loading">Carregando...</div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Tab: Substantivos -->
         <div class="tab-content" id="substantivos">
             <div class="window">
                 <div class="title-bar">
                     <button aria-label="Close" class="close"></button>
                     <h1 class="title">
-                        <span class="title-hanzi">名词</span> <span class="title-pinyin">míngcí</span> <span class="title-pt">Substantivos</span>
+                        <span class="title-hanzi">名词</span>
+                        <span class="title-pinyin">míngcí</span>
+                        <span class="title-pt">Substantivos</span>
                     </h1>
                     <button aria-label="Resize" class="resize"></button>
                 </div>
                 <div class="separator"></div>
                 <div class="window-pane">
-                    <div class="cards-grid">
-                        <div class="card" data-hanzi="月" data-pinyin="yuè" data-meaning="lua">
-                            <div class="hanzi">月</div>
-                            <div class="pinyin">yuè</div>
-                            <div class="meaning">lua</div>
-                        </div>
-                        <div class="card" data-hanzi="日" data-pinyin="rì" data-meaning="sol">
-                            <div class="hanzi">日</div>
-                            <div class="pinyin">rì</div>
-                            <div class="meaning">sol</div>
-                        </div>
-                        <div class="card" data-hanzi="木" data-pinyin="mù" data-meaning="árvore / madeira">
-                            <div class="hanzi">木</div>
-                            <div class="pinyin">mù</div>
-                            <div class="meaning">árvore / madeira</div>
-                        </div>
-                        <div class="card" data-hanzi="水" data-pinyin="shuǐ" data-meaning="água">
-                            <div class="hanzi">水</div>
-                            <div class="pinyin">shuǐ</div>
-                            <div class="meaning">água</div>
-                        </div>
-                        <div class="card" data-hanzi="田" data-pinyin="tián" data-meaning="campo / plantação">
-                            <div class="hanzi">田</div>
-                            <div class="pinyin">tián</div>
-                            <div class="meaning">campo / plantação</div>
-                        </div>
-                        <div class="card" data-hanzi="马" data-pinyin="mǎ" data-meaning="cavalo">
-                            <div class="hanzi">马</div>
-                            <div class="pinyin">mǎ</div>
-                            <div class="meaning">cavalo</div>
-                        </div>
-                        <div class="card" data-hanzi="门" data-pinyin="mén" data-meaning="porta">
-                            <div class="hanzi">门</div>
-                            <div class="pinyin">mén</div>
-                            <div class="meaning">porta</div>
-                        </div>
-                        <div class="card" data-hanzi="子" data-pinyin="zǐ" data-meaning="filho / criança">
-                            <div class="hanzi">子</div>
-                            <div class="pinyin">zǐ</div>
-                            <div class="meaning">filho / criança</div>
-                        </div>
-                        <div class="card" data-hanzi="女" data-pinyin="nǚ" data-meaning="feminino / mulher">
-                            <div class="hanzi">女</div>
-                            <div class="pinyin">nǚ</div>
-                            <div class="meaning">feminino / mulher</div>
-                        </div>
-                        <div class="card" data-hanzi="中" data-pinyin="zhōng" data-meaning="meio / central">
-                            <div class="hanzi">中</div>
-                            <div class="pinyin">zhōng</div>
-                            <div class="meaning">meio / central</div>
-                        </div>
-                        <div class="card" data-hanzi="天" data-pinyin="tiān" data-meaning="céu / dia">
-                            <div class="hanzi">天</div>
-                            <div class="pinyin">tiān</div>
-                            <div class="meaning">céu / dia</div>
-                        </div>
-                        <div class="card" data-hanzi="上" data-pinyin="shàng" data-meaning="cima / sobre">
-                            <div class="hanzi">上</div>
-                            <div class="pinyin">shàng</div>
-                            <div class="meaning">cima / sobre</div>
-                        </div>
-                        <div class="card" data-hanzi="下" data-pinyin="xià" data-meaning="baixo / sob">
-                            <div class="hanzi">下</div>
-                            <div class="pinyin">xià</div>
-                            <div class="meaning">baixo / sob</div>
-                        </div>
-                        <div class="card" data-hanzi="猫" data-pinyin="māo" data-meaning="gato">
-                            <div class="hanzi">猫</div>
-                            <div class="pinyin">māo</div>
-                            <div class="meaning">gato</div>
-                        </div>
-                        <div class="card" data-hanzi="狗" data-pinyin="gǒu" data-meaning="cachorro">
-                            <div class="hanzi">狗</div>
-                            <div class="pinyin">gǒu</div>
-                            <div class="meaning">cachorro</div>
-                        </div>
-                    </div>
+                    <div class="loading">Carregando...</div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Tab: Gramática -->
         <div class="tab-content" id="gramatica">
             <div class="window">
                 <div class="title-bar">
                     <button aria-label="Close" class="close"></button>
                     <h1 class="title">
-                        <span class="title-hanzi">语法</span> <span class="title-pinyin">yǔfǎ</span> <span class="title-pt">Gramática</span>
+                        <span class="title-hanzi">语法</span>
+                        <span class="title-pinyin">yǔfǎ</span>
+                        <span class="title-pt">Gramática</span>
                     </h1>
                     <button aria-label="Resize" class="resize"></button>
                 </div>
                 <div class="separator"></div>
                 <div class="window-pane">
-                    <div class="accordion-header" data-accordion="tipos-caracteres">
-                            <span class="accordion-hanzi">字符类型</span> <span class="accordion-pinyin">zìfú lèixíng</span> <span class="accordion-pt">Tipos de Caracteres</span>
-                        </div>
-                        
-                            <div class="cards-grid">
-                                <div class="card" data-hanzi="象形字" data-pinyin="xiàngxíngzì" data-meaning="Pictogramas - representam objetos visuais">
-                                    <div class="hanzi">象形字</div>
-                                    <div class="pinyin">xiàngxíngzì</div>
-                                    <div class="meaning">Pictogramas</div>
-                                    <div class="examples-inline" style="margin-top: 1rem;">
-                                        <div class="example-item">日</div>
-                                        <div class="example-item">月</div>
-                                        <div class="example-item">木</div>
-                                        <div class="example-item">水</div>
-                                        <div class="example-item">马</div>
-                                        <div class="example-item">子</div>
-                                    </div>
-                                </div>
-                                <div class="card" data-hanzi="指事字" data-pinyin="zhǐshìzì" data-meaning="Indicativos - representam conceitos abstratos">
-                                    <div class="hanzi">指事字</div>
-                                    <div class="pinyin">zhǐshìzì</div>
-                                    <div class="meaning">Indicativos</div>
-                                    <div class="examples-inline" style="margin-top: 1rem;">
-                                        <div class="example-item">上</div>
-                                        <div class="example-item">下</div>
-                                        <div class="example-item">中</div>
-                                        <div class="example-item">天</div>
-                                    </div>
-                                </div>
-                                <div class="card" data-hanzi="会意字" data-pinyin="huìyìzì" data-meaning="Associativos - combinação de ideias">
-                                    <div class="hanzi">会意字</div>
-                                    <div class="pinyin">huìyìzì</div>
-                                    <div class="meaning">Associativos</div>
-                                    <div class="examples-inline" style="margin-top: 1rem;">
-                                        <div class="example-item">明</div>
-                                        <div class="example-item">田</div>
-                                        <div class="example-item">门</div>
-                                        <div class="example-item">女</div>
-                                    </div>
-                                </div>
-                                <div class="card" data-hanzi="形声字" data-pinyin="xíngshēngzì" data-meaning="Pictosfonéticos - radical + som">
-                                    <div class="hanzi">形声字</div>
-                                    <div class="pinyin">xíngshēngzì</div>
-                                    <div class="meaning">Pictosfonéticos</div>
-                                    <div class="examples-inline" style="margin-top: 1rem;">
-                                        <div class="example-item">河</div>
-                                        <div class="example-item">狗</div>
-                                        <div class="example-item">说</div>
-                                        <div class="example-item">看</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="loading">Carregando...</div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <!-- Modal -->
     <div class="modal-overlay" id="modalOverlay">
         <div class="modal-content">
@@ -1138,117 +569,14 @@
             </div>
             <div class="future-content">
                 <!-- Espaço para 3 coisas futuras -->
-                <div class="future-item"><!-- Conteúdo futuro 1 --></div>
-                <div class="future-item"><!-- Conteúdo futuro 2 --></div>
-                <div class="future-item"><!-- Conteúdo futuro 3 --></div>
+                <div class="future-item"><!-- Exemplos de uso --></div>
+                <div class="future-item"><!-- Áudio --></div>
+                <div class="future-item"><!-- Notas --></div>
             </div>
         </div>
     </div>
-    
-    <script>
-        const tabTitles = {
-            'expressoes': {hanzi: '表达', pinyin: 'biǎodá', pt: 'Expressões'},
-            'pronomes': {hanzi: '代词', pinyin: 'dàicí', pt: 'Pronomes'},
-            'verbos': {hanzi: '动词', pinyin: 'dòngcí', pt: 'Verbos'},
-            'substantivos': {hanzi: '名词', pinyin: 'míngcí', pt: 'Substantivos'},
-            'gramatica': {hanzi: '语法', pinyin: 'yǔfǎ', pt: 'Gramática'}
-        };
-        
-        // Tabs
-        document.querySelectorAll('.tab').forEach(tab => {
-            tab.addEventListener('click', () => {
-                const tabId = tab.getAttribute('data-tab');
-                
-                // Remove active de todas as tabs
-                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
-                
-                // Adiciona active na tab clicada
-                tab.classList.add('active');
-                document.getElementById(tabId).classList.add('active');
-                
-                // Atualizar title-bar
-                const title = tabTitles[tabId];
-                if (title) {
-                    const activeWindow = document.querySelector('.tab-content.active .title');
-                    if (activeWindow) {
-                        activeWindow.innerHTML = `<span class="title-hanzi">${title.hanzi}</span> <span class="title-pinyin">${title.pinyin}</span> <span class="title-pt">${title.pt}</span>`;
-                    }
-                }
-            });
-        });
-        
-        // Acordeons
-        document.querySelectorAll('.accordion-header').forEach(header => {
-            header.addEventListener('click', () => {
-                const accordionId = header.getAttribute('data-accordion');
-                const content = document.getElementById(accordionId);
-                
-                if (content.classList.contains('open')) {
-                    content.classList.remove('open');
-                    header.classList.add('collapsed');
-                } else {
-                    content.classList.add('open');
-                    header.classList.remove('collapsed');
-                }
-            });
-        });
-        
-        // Toggle Pinyin
-        // TODO: Implementar função de ocultar/mostrar pinyin quando botão for clicado
-        // Por enquanto apenas visual, função será implementada depois
-        document.getElementById('togglePinyin').addEventListener('click', () => {
-            const btn = document.getElementById('togglePinyin');
-            btn.classList.toggle('active');
-            // Função de toggle será implementada depois
-        });
-        
-        // Toggle Brasil
-        // TODO: Implementar função de tradução (pt/en/es) quando botão for clicado
-        // Por enquanto apenas visual, função será implementada depois
-        document.getElementById('toggleBrasil').addEventListener('click', () => {
-            const btn = document.getElementById('toggleBrasil');
-            btn.classList.toggle('active');
-            // Função de tradução será implementada depois
-        });
-        
-        // Modal - Abrir
-        document.querySelectorAll('.card').forEach(card => {
-            card.addEventListener('click', () => {
-                const hanzi = card.getAttribute('data-hanzi');
-                const pinyin = card.getAttribute('data-pinyin');
-                const meaning = card.getAttribute('data-meaning');
-                
-                // Verifica se tem flag
-                const flagElement = card.querySelector('.flag');
-                const flag = flagElement ? flagElement.textContent : '';
-                
-                const modalInfo = document.getElementById('modalCardInfo');
-                let html = '';
-                if (flag) {
-                    html += `<div class="flag" style="font-size: 3em; margin-bottom: 1rem;">${flag}</div>`;
-                }
-                html += `
-                    <div class="hanzi">${hanzi}</div>
-                    <div class="pinyin">${pinyin}</div>
-                    <div class="meaning">${meaning}</div>
-                `;
-                modalInfo.innerHTML = html;
-                
-                document.getElementById('modalOverlay').classList.add('active');
-            });
-        });
-        
-        // Modal - Fechar
-        document.getElementById('modalClose').addEventListener('click', () => {
-            document.getElementById('modalOverlay').classList.remove('active');
-        });
-        
-        document.getElementById('modalOverlay').addEventListener('click', (e) => {
-            if (e.target.id === 'modalOverlay') {
-                document.getElementById('modalOverlay').classList.remove('active');
-            }
-        });
-    </script>
+
+    <!-- App Script -->
+    <script src="js/app.js"></script>
 </body>
 </html>
