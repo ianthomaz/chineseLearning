@@ -6,13 +6,21 @@
     <title>Revisão de Chinês</title>
     <link rel="stylesheet" href="system.css/style.css">
     <style>
+        :root {
+            --primary: #f5f5dc;
+            --secondary: #2c2c2c;
+            --tertiary: #666666;
+            --box-shadow: 2px 2px 0 #2c2c2c;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
+            background: var(--primary);
             padding-top: 50px;
             font-family: "Inconsolata", Menlo, Chicago, Geneva;
         }
@@ -413,7 +421,7 @@
                 <div class="title-bar">
                     <button aria-label="Close" class="close"></button>
                     <h1 class="title">
-                        <span class="title-hanzi">表达</span> <span class="title-pinyin">biǎodá</span> <span class="title-pt">Expressões</span>
+                        <span class="title-hanzi">表达</span> <span class="title-pinyin">biǎodá</span> <span class="title-pt">Expressões</span>
                     </h1>
                     <button aria-label="Resize" class="resize"></button>
                 </div>
@@ -494,10 +502,11 @@
                         </div>
                     </div>
                     
-                    <div class="accordion-header" data-accordion="frases-fixas">
+                    <div class="accordion">
+                        <div class="accordion-header collapsed" data-accordion="frases-fixas">
                             <span class="accordion-hanzi">固定短语</span> <span class="accordion-pinyin">gùdìng duǎnyǔ</span> <span class="accordion-pt">Frases Fixas</span>
                         </div>
-                        
+                        <div class="accordion-content" id="frases-fixas">
                             <div class="cards-grid-3">
                                 <div class="card" data-hanzi="你好" data-pinyin="nǐ hǎo" data-meaning="olá">
                                     <div class="phrase-text">你好</div>
@@ -573,10 +582,11 @@
                         </div>
                     </div>
                     
-                    <div class="accordion-header" data-accordion="periodos-dia">
+                    <div class="accordion">
+                        <div class="accordion-header collapsed" data-accordion="periodos-dia">
                             <span class="accordion-hanzi">一天的时间</span> <span class="accordion-pinyin">yītiān de shíjiān</span> <span class="accordion-pt">Períodos do Dia</span>
                         </div>
-                        
+                        <div class="accordion-content" id="periodos-dia">
                             <div class="cards-grid-3">
                                 <div class="card" data-hanzi="早上" data-pinyin="zǎoshang" data-meaning="manhã cedo">
                                     <div class="hanzi">早上</div>
@@ -627,10 +637,11 @@
                         </div>
                     </div>
                     
-                    <div class="accordion-header" data-accordion="frases-padrao">
+                    <div class="accordion">
+                        <div class="accordion-header collapsed" data-accordion="frases-padrao">
                             <span class="accordion-hanzi">标准句子</span> <span class="accordion-pinyin">biāozhǔn jùzi</span> <span class="accordion-pt">Frases-Padrão</span>
                         </div>
-                        
+                        <div class="accordion-content" id="frases-padrao">
                             <div class="cards-grid-3">
                                 <div class="card" data-hanzi="你好吗？" data-pinyin="Nǐ hǎo ma?" data-meaning="Tudo bem?">
                                     <div class="phrase-text">你好吗？</div>
@@ -661,10 +672,11 @@
                         </div>
                     </div>
                     
-                    <div class="accordion-header" data-accordion="nomes-sobrenomes">
+                    <div class="accordion">
+                        <div class="accordion-header collapsed" data-accordion="nomes-sobrenomes">
                             <span class="accordion-hanzi">姓名</span> <span class="accordion-pinyin">xìngmíng</span> <span class="accordion-pt">Nomes e Sobrenomes</span>
                         </div>
-                        
+                        <div class="accordion-content" id="nomes-sobrenomes">
                             <div class="cards-grid">
                                 <div class="card" data-hanzi="名字" data-pinyin="míngzi" data-meaning="nome completo">
                                     <div class="hanzi">名字</div>
@@ -702,10 +714,11 @@
                         </div>
                     </div>
                     
-                    <div class="accordion-header" data-accordion="paises-idiomas">
+                    <div class="accordion">
+                        <div class="accordion-header collapsed" data-accordion="paises-idiomas">
                             <span class="accordion-hanzi">国家和语言</span> <span class="accordion-pinyin">guójiā hé yǔyán</span> <span class="accordion-pt">Países e Idiomas</span>
                         </div>
-                        
+                        <div class="accordion-content" id="paises-idiomas">
                             <div class="cards-grid">
                                 <div class="card" data-hanzi="巴西" data-pinyin="Bāxī" data-meaning="Brasil">
                                     <div class="flag">🇧🇷</div>
@@ -810,7 +823,7 @@
                 <div class="title-bar">
                     <button aria-label="Close" class="close"></button>
                     <h1 class="title">
-                        <span class="title-hanzi">代词</span> <span class="title-pinyin">dàicí</span> <span class="title-pt">Pronomes</span>
+                        <span class="title-hanzi">代词</span> <span class="title-pinyin">dàicí</span> <span class="title-pt">Pronomes</span>
                     </h1>
                     <button aria-label="Resize" class="resize"></button>
                 </div>
@@ -878,7 +891,7 @@
                 <div class="title-bar">
                     <button aria-label="Close" class="close"></button>
                     <h1 class="title">
-                        <span class="title-hanzi">动词</span> <span class="title-pinyin">dòngcí</span> <span class="title-pt">Verbos</span>
+                        <span class="title-hanzi">动词</span> <span class="title-pinyin">dòngcí</span> <span class="title-pt">Verbos</span>
                     </h1>
                     <button aria-label="Resize" class="resize"></button>
                 </div>
@@ -971,7 +984,7 @@
                 <div class="title-bar">
                     <button aria-label="Close" class="close"></button>
                     <h1 class="title">
-                        <span class="title-hanzi">名词</span> <span class="title-pinyin">míngcí</span> <span class="title-pt">Substantivos</span>
+                        <span class="title-hanzi">名词</span> <span class="title-pinyin">míngcí</span> <span class="title-pt">Substantivos</span>
                     </h1>
                     <button aria-label="Resize" class="resize"></button>
                 </div>
@@ -1064,16 +1077,17 @@
                 <div class="title-bar">
                     <button aria-label="Close" class="close"></button>
                     <h1 class="title">
-                        <span class="title-hanzi">语法</span> <span class="title-pinyin">yǔfǎ</span> <span class="title-pt">Gramática</span>
+                        <span class="title-hanzi">语法</span> <span class="title-pinyin">yǔfǎ</span> <span class="title-pt">Gramática</span>
                     </h1>
                     <button aria-label="Resize" class="resize"></button>
                 </div>
                 <div class="separator"></div>
                 <div class="window-pane">
-                    <div class="accordion-header" data-accordion="tipos-caracteres">
+                    <div class="accordion">
+                        <div class="accordion-header collapsed" data-accordion="tipos-caracteres">
                             <span class="accordion-hanzi">字符类型</span> <span class="accordion-pinyin">zìfú lèixíng</span> <span class="accordion-pt">Tipos de Caracteres</span>
                         </div>
-                        
+                        <div class="accordion-content" id="tipos-caracteres">
                             <div class="cards-grid">
                                 <div class="card" data-hanzi="象形字" data-pinyin="xiàngxíngzì" data-meaning="Pictogramas - representam objetos visuais">
                                     <div class="hanzi">象形字</div>
