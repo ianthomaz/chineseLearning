@@ -8,11 +8,17 @@ export const metadata: Metadata = {
 
 export default function ReviewIndexPage() {
   return (
-    <main className="mx-auto max-w-6xl px-5 pb-24 pt-10">
-      <h1 className="font-display text-3xl text-ink md:text-4xl">Revisão</h1>
-      <p className="mt-4 max-w-2xl text-ink/65">
-        Padrões em chinês com pinyin pela fonte Hanzi Pinyin quando disponível. Traduções
-        e lemas no modo Vocabulário; regras no modo Gramática.
+    <main className="mx-auto max-w-5xl px-6 pb-24 pt-10">
+      <p
+        className="mb-2 text-xs font-medium uppercase tracking-widest text-ink/35"
+        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+      >
+        复习
+      </p>
+      <h1 className="font-display text-3xl font-medium text-ink md:text-4xl">Revisão</h1>
+      <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink/55">
+        Frases e padrões com pinyin integrado pela fonte. Leia em voz alta, reconheça os
+        caracteres, depois consulte Vocabulário e Gramática para detalhes.
       </p>
       <BlockIndex blocks={blocks} mode="review" />
     </main>

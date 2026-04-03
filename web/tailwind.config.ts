@@ -12,6 +12,7 @@ export default {
         paper: "var(--paper)",
         ink: "var(--ink)",
         accent: "var(--accent)",
+        "accent-warm": "var(--accent-warm)",
         muted: "var(--muted)",
       },
       fontFamily: {

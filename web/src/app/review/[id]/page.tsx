@@ -26,27 +26,41 @@ export default async function ReviewBlockPage({ params }: Props) {
   if (!block) notFound();
 
   return (
-    <main className="mx-auto max-w-3xl px-5 pb-24 pt-10">
-      <p className="text-xs font-medium uppercase tracking-widest text-ink/45">
-        Bloco {block.id}
-      </p>
-      <h1 className="mt-2 font-display text-3xl text-ink md:text-4xl">{block.title}</h1>
-
-      <div className="mt-12">
-        <ReviewStructures blockId={block.id} lines={block.structures} />
-        <PriorityList items={block.priorities} />
-        {block.id === 15 && block.vocabulary.length > 0 ? (
-          <section className="mt-14">
-            <h2 className="font-display text-xl text-ink">Vocabulário meta</h2>
-            <p className="mt-2 text-sm text-ink/55">
-              Termos de estudo; tabela completa também em Vocabulário.
-            </p>
-            <div className="mt-6">
-              <VocabTable rows={block.vocabulary} />
-            </div>
-          </section>
-        ) : null}
+    <main className="mx-auto max-w-3xl px-6 pb-24 pt-10">
+      {/* Header */}
+      <div className="mb-12">
+        <p
+          className="mb-2 text-xs font-medium uppercase tracking-widest text-ink/35"
+          style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        >
+          Bloco {String(block.id).padStart(2, "0")} · Revisão
+        </p>
+        <h1 className="font-display text-3xl font-medium text-ink md:text-4xl">
+          {block.title}
+        </h1>
       </div>
+
+      {/* Structures */}
+      <ReviewStructures blockId={block.id} lines={block.structures} />
+
+      {/* Priorities (block 15) */}
+      <PriorityList items={block.priorities} />
+
+      {/* Vocabulary meta (block 15 only) */}
+      {block.id === 15 && block.vocabulary.length > 0 ? (
+        <section className="mt-14">
+          <h2
+            className="mb-1 text-xs font-semibold uppercase tracking-widest text-ink/40"
+            style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+          >
+            Vocabulário de estudo
+          </h2>
+          <p className="mb-5 text-sm text-ink/50">
+            Tabela completa também em Vocabulário.
+          </p>
+          <VocabTable rows={block.vocabulary} />
+        </section>
+      ) : null}
 
       <CrossLinks blockId={block.id} current="review" />
       <BlockPager blockId={block.id} mode="review" />

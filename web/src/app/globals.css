@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Noto+Sans+SC:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Noto+Sans+SC:wght@400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -13,10 +13,12 @@
 }
 
 :root {
-  --paper: #f6f3ed;
-  --ink: #1a1814;
-  --accent: #8c2d2d;
-  --muted: rgba(26, 24, 20, 0.55);
+  --paper: #f7f4ef;
+  --ink: #1c1917;
+  --accent: #2d5a8c;
+  --accent-warm: #8c4a2d;
+  --muted: rgba(28, 25, 23, 0.5);
+  --border: rgba(28, 25, 23, 0.12);
 }
 
 html {

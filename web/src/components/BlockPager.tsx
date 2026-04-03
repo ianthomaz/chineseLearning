@@ -20,33 +20,51 @@ export function BlockPager({ blockId, mode }: Props) {
 
   return (
     <nav
-      className="mt-12 flex flex-col gap-4 border-t border-ink/15 pt-8 sm:flex-row sm:justify-between"
+      className="mt-14 flex gap-3 border-t pt-8"
+      style={{ borderColor: "var(--border)" }}
       aria-label="Bloco anterior ou seguinte"
     >
       {prev ? (
         <Link
           href={`${base}/${prev.id}`}
-          className="text-sm text-ink/70 hover:text-ink"
+          className="flex flex-1 items-center gap-3 rounded-xl border p-4 text-left transition-colors hover:bg-ink/5"
+          style={{ borderColor: "var(--border)" }}
         >
-          <span className="block text-xs uppercase tracking-widest text-ink/40">
-            Anterior
+          <span className="text-lg text-ink/30">←</span>
+          <span>
+            <span
+              className="block text-xs uppercase tracking-widest text-ink/35"
+              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            >
+              Anterior
+            </span>
+            <span className="mt-0.5 block text-sm text-ink/75">{prev.title}</span>
           </span>
-          {prev.title}
         </Link>
       ) : (
-        <span />
+        <div className="flex-1" />
       )}
+
       {next ? (
         <Link
           href={`${base}/${next.id}`}
-          className="text-right text-sm text-ink/70 hover:text-ink sm:ml-auto"
+          className="flex flex-1 items-center justify-end gap-3 rounded-xl border p-4 text-right transition-colors hover:bg-ink/5"
+          style={{ borderColor: "var(--border)" }}
         >
-          <span className="block text-xs uppercase tracking-widest text-ink/40">
-            Seguinte
+          <span>
+            <span
+              className="block text-xs uppercase tracking-widest text-ink/35"
+              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            >
+              Seguinte
+            </span>
+            <span className="mt-0.5 block text-sm text-ink/75">{next.title}</span>
           </span>
-          {next.title}
+          <span className="text-lg text-ink/30">→</span>
         </Link>
-      ) : null}
+      ) : (
+        <div className="flex-1" />
+      )}
     </nav>
   );
 }
