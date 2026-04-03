@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BlockPager } from "@/components/BlockPager";
 import { CrossLinks } from "@/components/CrossLinks";
@@ -25,29 +24,34 @@ export default async function VocabularyBlockPage({ params }: Props) {
   if (!block) notFound();
 
   return (
-    <main className="mx-auto max-w-4xl px-5 pb-24 pt-10">
-      <p className="text-xs font-medium uppercase tracking-widest text-ink/45">
-        Bloco {block.id}
-      </p>
-      <h1 className="mt-2 font-display text-3xl text-ink md:text-4xl">{block.title}</h1>
-      <p className="mt-4 text-sm text-ink/55">
-        Gramática deste bloco:{" "}
-        <Link
-          href={`/grammar/${block.id}`}
-          className="text-accent underline decoration-accent/30"
+    <main className="mx-auto max-w-3xl px-6 pb-24 pt-10">
+      {/* Header */}
+      <div className="mb-10">
+        <p
+          className="mb-2 text-xs font-medium uppercase tracking-widest text-ink/35"
+          style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
         >
-          abrir
-        </Link>
-        .
-      </p>
-
-      <div className="mt-10">
-        {block.vocabulary.length > 0 ? (
-          <VocabTable rows={block.vocabulary} />
-        ) : (
-          <p className="text-ink/55">Sem tabela de vocabulário neste bloco.</p>
+          Bloco {String(block.id).padStart(2, "0")} · Vocabulário
+        </p>
+        <h1 className="font-display text-3xl font-medium text-ink md:text-4xl">
+          {block.title}
+        </h1>
+        {block.vocabulary.length > 0 && (
+          <p
+            className="mt-2 text-sm text-ink/40"
+            style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+          >
+            {block.vocabulary.length} {block.vocabulary.length === 1 ? "palavra" : "palavras"}
+          </p>
         )}
       </div>
+
+      {/* Table */}
+      {block.vocabulary.length > 0 ? (
+        <VocabTable rows={block.vocabulary} />
+      ) : (
+        <p className="text-sm text-ink/50">Sem tabela de vocabulário neste bloco.</p>
+      )}
 
       <CrossLinks blockId={block.id} current="vocabulary" />
       <BlockPager blockId={block.id} mode="vocabulary" />

@@ -37,27 +37,41 @@ export function ReviewStructures({ blockId, lines }: Props) {
 
   return (
     <div>
-      <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
-        <h2 className="font-display text-xl text-ink">Frases e padrões</h2>
+      <div className="mb-8 flex flex-wrap items-center justify-between gap-3">
+        <h2
+          className="text-xs font-semibold uppercase tracking-widest text-ink/40"
+          style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        >
+          Frases e padrões
+        </h2>
         <button
           type="button"
           onClick={toggle}
-          className="text-xs uppercase tracking-widest text-ink/50 underline decoration-ink/20 underline-offset-4 hover:text-ink"
+          className="flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs transition-colors hover:bg-ink/5"
+          style={{
+            borderColor: "var(--border)",
+            fontFamily: "ui-sans-serif, system-ui, sans-serif",
+            color: showExtra ? "var(--accent)" : "rgba(28,25,23,0.5)",
+          }}
         >
-          {showExtra ? "Só chinês" : "Mostrar camada extra"}
+          <span
+            className="h-1.5 w-1.5 rounded-full"
+            style={{ backgroundColor: showExtra ? "var(--accent)" : "rgba(28,25,23,0.25)" }}
+          />
+          {showExtra ? "Com pinyin" : "Só caracteres"}
         </button>
       </div>
-      {showExtra ? (
-        <p className="mb-8 max-w-2xl text-sm leading-relaxed text-ink/55">
-          As traduções palavra a palavra estão no modo Vocabulário; as regras e observações,
-          no modo Gramática. Aqui o foco é leitura com pinyin integrado à fonte quando o glifo
-          existir na fonte. Bloco {blockId}.
-        </p>
-      ) : null}
-      <ul className="space-y-10">
+
+      <ul className="space-y-8">
         {lines.map((line, i) => (
-          <li key={`${blockId}-${i}`}>
-            <p className="font-ruby text-2xl leading-relaxed text-ink md:text-[1.65rem]">
+          <li key={`${blockId}-${i}`} className="border-l-2 pl-5" style={{ borderColor: "var(--border)" }}>
+            <p
+              className={
+                showExtra
+                  ? "font-ruby text-2xl leading-loose text-ink md:text-[1.7rem]"
+                  : "font-hanzi text-2xl leading-loose text-ink md:text-[1.7rem]"
+              }
+            >
               {line}
             </p>
           </li>

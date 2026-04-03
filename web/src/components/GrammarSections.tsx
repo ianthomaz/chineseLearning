@@ -5,27 +5,40 @@ type Props = {
   priorities: string[];
 };
 
-function ListSection({
+function Section({
   title,
   items,
   useRuby,
+  accent,
 }: {
   title: string;
   items: string[];
   useRuby?: boolean;
+  accent?: string;
 }) {
   if (items.length === 0) return null;
   return (
-    <section className="mt-10">
-      <h2 className="font-display text-xl text-ink">{title}</h2>
-      <ul className="mt-4 space-y-4">
+    <section
+      className="rounded-xl border p-5 sm:p-6"
+      style={{ borderColor: "var(--border)" }}
+    >
+      <h2
+        className="mb-4 text-xs font-semibold uppercase tracking-widest"
+        style={{
+          fontFamily: "ui-sans-serif, system-ui, sans-serif",
+          color: accent ?? "rgba(28,25,23,0.4)",
+        }}
+      >
+        {title}
+      </h2>
+      <ul className="space-y-3">
         {items.map((item, i) => (
           <li
             key={`${title}-${i}`}
             className={
               useRuby
-                ? "font-ruby text-xl leading-relaxed text-ink md:text-2xl"
-                : "text-ink/85"
+                ? "font-ruby text-xl leading-loose text-ink md:text-2xl"
+                : "text-sm leading-relaxed text-ink/80"
             }
           >
             {item}
@@ -43,24 +56,31 @@ export function GrammarSections({
   priorities,
 }: Props) {
   const hasAnything =
-    structures.length +
-      notes.length +
-      differences.length +
-      priorities.length >
-    0;
+    structures.length + notes.length + differences.length + priorities.length > 0;
+
   if (!hasAnything) {
     return (
-      <p className="text-ink/55">
+      <p className="text-sm text-ink/50">
         Não há notas de gramática neste bloco no consolidado.
       </p>
     );
   }
+
   return (
-    <>
-      <ListSection title="Estruturas e exemplos" items={structures} useRuby />
-      <ListSection title="Observações" items={notes} />
-      <ListSection title="Diferenças e contrastes" items={differences} />
-      <ListSection title="Prioridades" items={priorities} />
-    </>
+    <div className="space-y-4">
+      <Section
+        title="Estruturas e exemplos"
+        items={structures}
+        useRuby
+        accent="var(--accent)"
+      />
+      <Section title="Observações" items={notes} />
+      <Section
+        title="Diferenças e contrastes"
+        items={differences}
+        accent="var(--accent-warm)"
+      />
+      <Section title="Prioridades" items={priorities} />
+    </div>
   );
 }

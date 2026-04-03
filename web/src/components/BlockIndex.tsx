@@ -1,31 +1,75 @@
 import Link from "next/link";
 import type { ContentBlock } from "@/lib/blocks";
 
+type Mode = "review" | "vocabulary" | "grammar";
+
 type Props = {
   blocks: ContentBlock[];
-  mode: "review" | "vocabulary" | "grammar";
+  mode: Mode;
 };
 
-const path = {
+const path: Record<Mode, string> = {
   review: "/review",
   vocabulary: "/vocabulary",
   grammar: "/grammar",
-} as const;
+};
+
+const modeLabel: Record<Mode, string> = {
+  review: "Frases",
+  vocabulary: "Palavras",
+  grammar: "Regras",
+};
+
+const modeCountFn: Record<Mode, (b: ContentBlock) => number | null> = {
+  review: (b) => (b.structures.length > 0 ? b.structures.length : null),
+  vocabulary: (b) => (b.vocabulary.length > 0 ? b.vocabulary.length : null),
+  grammar: (b) => {
+    const n = b.structures.length + b.notes.length + b.differences.length;
+    return n > 0 ? n : null;
+  },
+};
 
 export function BlockIndex({ blocks, mode }: Props) {
   const base = path[mode];
+  const label = modeLabel[mode];
+  const countFn = modeCountFn[mode];
+
   return (
-    <ol className="mx-auto max-w-2xl list-decimal space-y-3 px-5 py-10 pl-10 marker:text-ink/40">
-      {blocks.map((b) => (
-        <li key={b.id} className="pl-2">
+    <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      {blocks.map((b) => {
+        const count = countFn(b);
+        return (
           <Link
+            key={b.id}
             href={`${base}/${b.id}`}
-            className="text-lg text-ink underline decoration-ink/20 decoration-1 underline-offset-4 hover:decoration-accent hover:decoration-2"
+            className="group flex items-start gap-4 rounded-xl border p-4 transition-colors hover:bg-ink/[0.03]"
+            style={{ borderColor: "var(--border)" }}
           >
-            {b.title}
+            <span
+              className="mt-0.5 w-7 shrink-0 text-right text-xs tabular-nums text-ink/25"
+              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            >
+              {String(b.id).padStart(2, "0")}
+            </span>
+            <span className="flex-1">
+              <span className="block text-sm font-medium text-ink/85 group-hover:text-ink transition-colors">
+                {b.title}
+              </span>
+              {count !== null && (
+                <span
+                  className="mt-0.5 block text-xs text-ink/35"
+                  style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                >
+                  {count} {label.toLowerCase()}
+                </span>
+              )}
+            </span>
+            <span className="mt-0.5 text-xs text-ink/20 group-hover:text-ink/40 transition-colors">
+              →
+            </span>
           </Link>
-        </li>
-      ))}
-    </ol>
+        );
+      })}
+    </div>
   );
 }

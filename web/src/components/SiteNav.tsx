@@ -13,15 +13,16 @@ export function SiteNav() {
   const pathname = usePathname();
 
   return (
-    <header className="border-b border-ink/15 bg-paper">
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-6 sm:flex-row sm:items-end sm:justify-between">
+    <header className="border-b bg-paper" style={{ borderColor: "var(--border)" }}>
+      <div className="mx-auto flex max-w-5xl flex-col gap-5 px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
         <Link
           href="/"
-          className="font-display text-2xl tracking-tight text-ink hover:text-accent sm:text-3xl"
+          className="font-display text-xl font-medium tracking-tight text-ink hover:text-accent transition-colors"
         >
-          Chinês básico
+          漢語 <span className="text-ink/40 font-light">· Chinês básico</span>
         </Link>
-        <nav className="flex flex-wrap gap-1 sm:gap-2" aria-label="Áreas do curso">
+
+        <nav className="flex gap-1" aria-label="Áreas do curso">
           {tabs.map((t) => {
             const isActive =
               pathname === t.prefix || pathname.startsWith(`${t.prefix}/`);
@@ -31,9 +32,10 @@ export function SiteNav() {
                 href={t.href}
                 className={
                   isActive
-                    ? "border-b-2 border-accent px-3 py-2 text-sm font-medium text-ink"
-                    : "border-b-2 border-transparent px-3 py-2 text-sm text-ink/60 hover:text-ink"
+                    ? "rounded-full px-4 py-1.5 text-sm font-medium text-white transition-colors"
+                    : "rounded-full px-4 py-1.5 text-sm text-ink/55 hover:text-ink hover:bg-ink/5 transition-colors"
                 }
+                style={isActive ? { backgroundColor: "var(--accent)" } : {}}
               >
                 {t.label}
               </Link>

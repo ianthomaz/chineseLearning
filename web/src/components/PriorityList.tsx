@@ -6,12 +6,23 @@ type Props = {
 export function PriorityList({ items, title = "Prioridades" }: Props) {
   if (items.length === 0) return null;
   return (
-    <section className="mt-12">
-      <h2 className="font-display text-xl text-ink">{title}</h2>
-      <ol className="mt-4 list-decimal space-y-2 pl-5 marker:text-ink/40">
+    <section className="mt-10">
+      <h2
+        className="mb-4 text-xs font-semibold uppercase tracking-widest text-ink/40"
+        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+      >
+        {title}
+      </h2>
+      <ol className="space-y-2">
         {items.map((item, i) => (
-          <li key={`${i}-${item}`} className="pl-1 text-ink/85">
-            {item}
+          <li key={`${i}-${item}`} className="flex items-baseline gap-3">
+            <span
+              className="w-5 shrink-0 text-right text-xs tabular-nums text-ink/30"
+              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            >
+              {i + 1}
+            </span>
+            <span className="text-sm text-ink/80">{item}</span>
           </li>
         ))}
       </ol>

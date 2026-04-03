@@ -2,8 +2,6 @@
 
 ## 1. Números
 
-Começar pelos números ajuda porque eles aparecem cedo em idade, telefone, data, hora, preço e quantidade. Eles servem como base prática para vários outros blocos.
-
 ### Estruturas centrais
 - 一，二，三，四，五，六，七，八，九，十
 - 二十
@@ -41,8 +39,6 @@ Começar pelos números ajuda porque eles aparecem cedo em idade, telefone, data
 
 ## 2. Tempo, data, horas e dinheiro
 
-Depois dos números, faz sentido entrar em usos cotidianos deles: dizer a hora, a data, a idade e preços. Isso transforma o número em linguagem útil imediatamente.
-
 ### Estruturas centrais
 - 现在两点了。
 - 今天是三月九号。
@@ -74,8 +70,6 @@ Depois dos números, faz sentido entrar em usos cotidianos deles: dizer a hora, 
 
 ## 3. Frutas e bebidas
 
-Com números já trabalhados, entra um vocabulário concreto e fácil de visualizar. Frutas e bebidas ajudam bastante porque combinam com gostar, comprar, beber, comer e perguntar preferências.
-
 ### Estruturas centrais
 - 我喜欢吃水果。
 - 我喜欢喝茶。
@@ -106,8 +100,6 @@ Com números já trabalhados, entra um vocabulário concreto e fácil de visuali
 
 ## 4. Lugares
 
-Agora o vocabulário começa a preparar deslocamento, rotina e localização. Lugares servem como ponte para 在, 去, 来 e perguntas com 哪儿.
-
 ### Estruturas centrais
 - 我在学校。
 - 我在家工作。
@@ -136,8 +128,6 @@ Agora o vocabulário começa a preparar deslocamento, rotina e localização. Lu
 
 ## 5. Países, idiomas e nacionalidades
 
-Depois dos lugares, entra a identidade: país, idioma e origem. Isso ajuda a montar respostas básicas muito cedo, de forma mais orgânica.
-
 ### Estruturas centrais
 - 我是巴西人。
 - 他是中国人。
@@ -165,8 +155,6 @@ Depois dos lugares, entra a identidade: país, idioma e origem. Isso ajuda a mon
 | 语言 | yǔyán | idioma |
 
 ## 6. Cores e qualidades
-
-Aqui o vocabulário começa a ganhar descrição. Cores e adjetivos ajudam a falar de objetos, roupas, frutas, clima e aparência sem exigir gramática mais pesada.
 
 ### Estruturas centrais
 - 这个苹果是红色的。
@@ -197,8 +185,6 @@ Aqui o vocabulário começa a ganhar descrição. Cores e adjetivos ajudam a fal
 | 真 | zhēn | realmente |
 
 ## 7. Família e pessoas do cotidiano
-
-Aqui entra um bloco muito útil do PDF novo: falar da própria família. Ele conversa bem com lugares, pessoas, números e perguntas, porque permite dizer quem mora na casa, quantas pessoas há e quem é quem dentro da família.
 
 ### Estruturas centrais
 - 我家有四口人。
@@ -246,8 +232,6 @@ Aqui entra um bloco muito útil do PDF novo: falar da própria família. Ele con
 
 ## 8. Perguntas básicas
 
-Agora sim as perguntas entram com mais força, porque já existe vocabulário suficiente para responder sem a sensação de vazio. A narrativa melhora quando a pergunta vem depois de algum repertório.
-
 ### Estruturas centrais
 - 你叫什么名字？
 - 你是哪国人？
@@ -278,8 +262,6 @@ Agora sim as perguntas entram com mais força, porque já existe vocabulário su
 
 ## 9. Pronomes e frases com 是
 
-Depois das perguntas, entram as respostas mais básicas. Esse bloco já permite apresentar pessoas, dizer origem e fazer negação simples.
-
 ### Estruturas centrais
 - 我是学生。
 - 你是老师吗？
@@ -305,8 +287,6 @@ Depois das perguntas, entram as respostas mais básicas. Esse bloco já permite 
 
 ## 10. Advérbios e partículas muito usados
 
-Esse bloco entra cedo porque essas palavrinhas aparecem o tempo todo e ajudam a reconhecer padrões antes mesmo de dominar toda a gramática.
-
 ### Estruturas centrais
 - 我很好。
 - 我也喜欢茶。
@@ -329,8 +309,6 @@ Esse bloco entra cedo porque essas palavrinhas aparecem o tempo todo e ajudam a 
 | 困 | kùn | com sono / cansado |
 
 ## 11. Verbos do cotidiano
-
-Com vocabulário, perguntas e respostas mínimas já estabelecidos, entram os verbos mais frequentes. Isso faz a apostila avançar naturalmente para ação.
 
 ### Estruturas centrais
 - 我学习汉语。
@@ -367,8 +345,6 @@ Com vocabulário, perguntas e respostas mínimas já estabelecidos, entram os ve
 
 ## 12. Gostos, preferência e escolha
 
-Depois dos verbos, entram querer, gostar e escolher entre opções. Isso aproveita bem as frutas, bebidas e objetos já apresentados no começo.
-
 ### Estruturas centrais
 - 我喜欢吃水果。
 - 我最喜欢茶。
@@ -389,8 +365,6 @@ Depois dos verbos, entram querer, gostar e escolher entre opções. Isso aprovei
 | 要不要 | yào bú yào | quer ou não quer |
 
 ## 13. Verbos modais
-
-Aqui entra a diferença mais útil do curso recente: 会, 能 e 想. Esse bloco já vem depois de bastante exemplo, então fica mais fácil entender uso e não só decorar definição.
 
 ### Estruturas centrais
 - 我会写汉字。
@@ -421,8 +395,6 @@ Aqui entra a diferença mais útil do curso recente: 会, 能 e 想. Esse bloco 
 
 ## 14. Lugar, existência e movimento
 
-Só agora entram juntas as estruturas de localização e deslocamento. Nesse ponto elas já conversam com o vocabulário de lugares apresentado lá no começo, o que deixa o percurso mais coerente.
-
 ### Estruturas centrais
 - 我在学校。
 - 我在家工作。
@@ -447,8 +419,6 @@ Só agora entram juntas as estruturas de localização e deslocamento. Nesse pon
 | 前 | qián | antes / diante |
 
 ## 15. Revisão final do que mais vale fixar
-
-A ordem final deste consolidado tenta seguir uma lógica mais natural: primeiro repertório visível e prático, depois perguntas, depois respostas básicas, depois verbos e estruturas. Assim o conteúdo vai parecendo menos fragmentado e mais utilizável.
 
 ### Prioridades
 1. números
