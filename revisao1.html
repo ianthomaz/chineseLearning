@@ -100,6 +100,50 @@
             background: var(--tertiary);
         }
 
+        /* Dropdown Idioma */
+        .lang-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background: var(--primary);
+            min-width: 120px;
+            border: 2px solid var(--secondary);
+            box-shadow: var(--box-shadow);
+            z-index: 1001;
+        }
+
+        .dropdown-content button {
+            width: 100%;
+            padding: 0.5rem;
+            background: none;
+            border: none;
+            border-bottom: 1px solid var(--secondary);
+            cursor: pointer;
+            font-family: "Noto Sans SC", sans-serif;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .dropdown-content button:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-content button:hover {
+            background: var(--secondary);
+            color: var(--primary);
+        }
+
+        .lang-dropdown:hover .dropdown-content {
+            display: block;
+        }
+
         /* Conteúdo Principal */
         .content-area {
             padding: 2rem;
@@ -387,6 +431,55 @@
             display: inline-block;
         }
 
+        /* Dialogue Styles */
+        .dialogue-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .dialogue-line {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            border: 2px solid var(--secondary);
+            background: var(--primary);
+            box-shadow: var(--box-shadow);
+            position: relative;
+            min-width: 300px;
+        }
+
+        .dialogue-line.char-1 { align-self: flex-start; border-left: 5px solid #ff4d4d; }
+        .dialogue-line.char-2 { align-self: flex-end; border-left: 5px solid #4d94ff; text-align: right; }
+        .dialogue-line.char-3 { align-self: center; border-left: 5px solid #4dff88; }
+
+        .dialogue-line .character-name {
+            font-weight: bold;
+            font-size: 0.8em;
+            margin-bottom: 0.3rem;
+            color: var(--tertiary);
+            text-transform: uppercase;
+        }
+
+        .dialogue-line .hanzi {
+            font-size: 1.4em;
+            font-family: "Noto Sans SC", sans-serif;
+            margin-bottom: 0.2rem;
+        }
+
+        .dialogue-line .pinyin {
+            font-style: italic;
+            color: var(--tertiary);
+            font-size: 0.9em;
+            margin-bottom: 0.2rem;
+        }
+
+        .dialogue-line .meaning {
+            font-size: 0.9em;
+        }
+
         /* Title-bar - garantir layout macOS com texto centralizado */
         .window .title-bar {
             display: flex;
@@ -451,14 +544,41 @@
             <div class="tab" data-tab="verbos">动词</div>
             <div class="tab" data-tab="substantivos">名词</div>
             <div class="tab" data-tab="gramatica">语法</div>
+            <div class="tab" data-tab="dialogos">对话</div>
         </div>
         <div class="header-buttons">
             <button class="toggle-btn active" id="togglePinyin">
                 <span>拼音</span>
             </button>
-            <button class="toggle-btn" id="toggleLang">
-                <span>🇧🇷</span>
-            </button>
+            <div class="lang-dropdown">
+                <button class="toggle-btn" id="currentLangBtn">
+                    <span>🇧🇷</span>
+                </button>
+                <div class="dropdown-content">
+                    <button onclick="app.setLang('pt')"><span>🇧🇷</span> Português</button>
+                    <button onclick="app.setLang('en')"><span>🇬🇧</span> English</button>
+                    <button onclick="app.setLang('es')"><span>🇪🇸</span> Español</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Diálogos -->
+        <div class="tab-content" id="dialogos">
+            <div class="window">
+                <div class="title-bar">
+                    <button aria-label="Close" class="close"></button>
+                    <h1 class="title">
+                        <span class="title-hanzi">对话</span>
+                        <span class="title-pinyin">duìhuà</span>
+                        <span class="title-pt">Diálogos</span>
+                    </h1>
+                    <button aria-label="Resize" class="resize"></button>
+                </div>
+                <div class="separator"></div>
+                <div class="window-pane">
+                    <div class="loading">Carregando...</div>
+                </div>
+            </div>
         </div>
     </div>
 

@@ -19,6 +19,10 @@
     "gramatica": {
       "hanzi": "语法",
       "pinyin": "yǔfǎ"
+    },
+    "dialogos": {
+      "hanzi": "对话",
+      "pinyin": "duìhuà"
     }
   },
   "sections": {
@@ -46,9 +50,33 @@
       "hanzi": "国家和语言",
       "pinyin": "guójiā hé yǔyán"
     },
+    "dialogos-curtos": {
+      "hanzi": "短对话",
+      "pinyin": "duǎn duìhuà"
+    },
     "tipos-caracteres": {
       "hanzi": "字符类型",
       "pinyin": "zìfú lèixíng"
+    },
+    "apresentando-familia": {
+      "hanzi": "介绍家人",
+      "pinyin": "jièshào jiārén"
+    },
+    "planos-dia": {
+      "hanzi": "一天的计划",
+      "pinyin": "yītiān de jìhuà"
+    },
+    "supermercado": {
+      "hanzi": "去超市",
+      "pinyin": "qù chāoshì"
+    },
+    "escola": {
+      "hanzi": "在学校",
+      "pinyin": "zài xuéxiào"
+    },
+    "parque": {
+      "hanzi": "在公园",
+      "pinyin": "zài gōngyuán"
     }
   },
   "vocabulary": {
@@ -145,6 +173,18 @@
           {"id": "pi-14", "hanzi": "意大利", "pinyin": "Yìdàlì", "flag": "🇮🇹"},
           {"id": "pi-15", "hanzi": "澳大利亚", "pinyin": "Àodàlìyà", "flag": "🇦🇺"}
         ]
+      },
+      "dialogos-curtos": {
+        "items": [
+          {"id": "dc-1", "hanzi": "你好！", "pinyin": "Nǐ hǎo!"},
+          {"id": "dc-2", "hanzi": "你好吗？", "pinyin": "Nǐ hǎo ma?"},
+          {"id": "dc-3", "hanzi": "我很好，谢谢。你呢？", "pinyin": "Wǒ hěn hǎo, xièxie. Nǐ ne?"},
+          {"id": "dc-4", "hanzi": "我也很好。", "pinyin": "Wǒ yě hěn hǎo."},
+          {"id": "dc-5", "hanzi": "你叫什么名字？", "pinyin": "Nǐ jiào shénme míngzi?"},
+          {"id": "dc-6", "hanzi": "我叫林林。", "pinyin": "Wǒ jiào Línlin."},
+          {"id": "dc-7", "hanzi": "认识你很高兴。", "pinyin": "Rènshi nǐ hěn gāoxìng."},
+          {"id": "dc-8", "hanzi": "认识你我也很高兴。", "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng."}
+        ]
       }
     },
     "pronomes": {
@@ -226,6 +266,48 @@
             "pinyin": "xíngshēngzì",
             "examples": ["河", "狗", "说", "看"]
           }
+        ]
+      }
+    },
+    "dialogos": {
+      "apresentando-familia": {
+        "lines": [
+          {"id": "af-1", "char": 1, "nameId": "char-mario", "hanzi": "王先生，你好！这是我弟弟。", "pinyin": "Wáng xiānsheng, nǐ hǎo! Zhè shì wǒ dìdi."},
+          {"id": "af-2", "char": 2, "nameId": "char-wang", "hanzi": "你好！你弟弟叫什么名字？", "pinyin": "Nǐ hǎo! Nǐ dìdi jiào shénme míngzi?"},
+          {"id": "af-3", "char": 3, "nameId": "char-pedro", "hanzi": "您好！我叫大卫。认识您很高兴。", "pinyin": "Nín hǎo! Wǒ jiào Dàwèi. Rènshi nín hěn gāoxìng."},
+          {"id": "af-4", "char": 2, "nameId": "char-wang", "hanzi": "认识你我也很高兴。", "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng."}
+        ]
+      },
+      "planos-dia": {
+        "lines": [
+          {"id": "pd-l1", "char": 1, "nameId": "char-anna", "hanzi": "你今天几点起床？", "pinyin": "Nǐ jīntiān jǐ diǎn qǐchuáng?"},
+          {"id": "pd-l2", "char": 2, "nameId": "char-li", "hanzi": "我早上七点起床。你呢？", "pinyin": "Wǒ zǎoshang qī diǎn qǐchuáng. Nǐ ne?"},
+          {"id": "pd-l3", "char": 1, "nameId": "char-anna", "hanzi": "我八点起床。你今天做什么？", "pinyin": "Wǒ bā diǎn qǐchuáng. Nǐ jīntiān zuò shénme?"},
+          {"id": "pd-l4", "char": 2, "nameId": "char-li", "hanzi": "我下午去书店买书。", "pinyin": "Wǒ xiàwǔ qù shūdiàn mǎi shū."}
+        ]
+      },
+      "supermercado": {
+        "lines": [
+          {"id": "sm-1", "char": 1, "nameId": "char-cliente", "hanzi": "请问，苹果多少钱一斤？", "pinyin": "Qǐngwèn, píngguǒ duōshǎo qián yī jīn?"},
+          {"id": "sm-2", "char": 2, "nameId": "char-vendedor", "hanzi": "五块钱一斤。", "pinyin": "Wǔ kuài qián yī jīn."},
+          {"id": "sm-3", "char": 1, "nameId": "char-cliente", "hanzi": "太贵了！便宜一点儿吧。", "pinyin": "Tài guì le! Piányi yīdiǎnr ba."},
+          {"id": "sm-4", "char": 2, "nameId": "char-vendedor", "hanzi": "四块五，怎么样？", "pinyin": "Sì kuài wǔ, zěnmeyàng?"}
+        ]
+      },
+      "escola": {
+        "lines": [
+          {"id": "es-1", "char": 1, "nameId": "char-prof", "hanzi": "同学们好！今天我们学习第三课。", "pinyin": "Tóngxuémen hǎo! Jīntiān wǒmen xuéxí dì sān kè."},
+          {"id": "es-2", "char": 2, "nameId": "char-aluno1", "hanzi": "老师，我不懂这个汉字。", "pinyin": "Lǎoshī, wǒ bù dǒng zhège hànzì."},
+          {"id": "es-3", "char": 3, "nameId": "char-aluno2", "hanzi": "我也觉得很难。", "pinyin": "Wǒ yě juéde hěn nán."},
+          {"id": "es-4", "char": 1, "nameId": "char-prof", "hanzi": "没关系，多写多看。跟我读：'学习'。", "pinyin": "Méi guānxi, duō xiě duō kàn. Gēn wǒ dú: 'xuéxí'."}
+        ]
+      },
+      "parque": {
+        "lines": [
+          {"id": "pq-1", "char": 1, "nameId": "char-zhang", "hanzi": "这里的风景真漂亮！", "pinyin": "Zhèlǐ de fēngjǐng zhēn piàoliang!"},
+          {"id": "pq-2", "char": 2, "nameId": "char-wang2", "hanzi": "是的。你喜欢什么运动？", "pinyin": "Shì de. Nǐ xǐhuān shénme yùndòng?"},
+          {"id": "pq-3", "char": 1, "nameId": "char-zhang", "hanzi": "我喜欢跑步和游泳。你呢？", "pinyin": "Wǒ xǐhuān pǎobù hé yóuyǒng. Nǐ ne?"},
+          {"id": "pq-4", "char": 2, "nameId": "char-wang2", "hanzi": "我喜欢打太极拳。", "pinyin": "Wǒ xǐhuān dǎ tàijíquán."}
         ]
       }
     }

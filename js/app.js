@@ -74,6 +74,7 @@ class ChineseLearningApp {
         this.renderVerbos();
         this.renderSubstantivos();
         this.renderGramatica();
+        this.renderDialogos();
         this.updateLangButton();
     }
 
@@ -81,7 +82,7 @@ class ChineseLearningApp {
      * Renderiza as tabs do header
      */
     renderTabs() {
-        const tabIds = ['expressoes', 'pronomes', 'verbos', 'substantivos', 'gramatica'];
+        const tabIds = ['expressoes', 'pronomes', 'verbos', 'substantivos', 'gramatica', 'dialogos'];
         tabIds.forEach(tabId => {
             const tab = document.querySelector(`.tab[data-tab="${tabId}"]`);
             if (tab) {
@@ -114,7 +115,8 @@ class ChineseLearningApp {
             { id: 'periodos-dia', gridClass: 'cards-grid-3' },
             { id: 'frases-padrao', gridClass: 'cards-grid-3' },
             { id: 'nomes-sobrenomes', gridClass: 'cards-grid', hasPhrases: true },
-            { id: 'paises-idiomas', gridClass: 'cards-grid', hasFlags: true }
+            { id: 'paises-idiomas', gridClass: 'cards-grid', hasFlags: true },
+            { id: 'dialogos-curtos', gridClass: 'cards-grid-3' }
         ];
 
         let html = '';
@@ -323,6 +325,65 @@ class ChineseLearningApp {
     }
 
     /**
+     * Renderiza a tab de Diálogos
+     */
+    renderDialogos() {
+        const container = document.querySelector('#dialogos .window-pane');
+        if (!container) return;
+
+        const sections = [
+            { id: 'apresentando-familia' },
+            { id: 'planos-dia' },
+            { id: 'supermercado' },
+            { id: 'escola' },
+            { id: 'parque' }
+        ];
+
+        let html = '';
+        sections.forEach(section => {
+            const sectionData = this.vocabulary.sections[section.id];
+            const dialogueData = this.vocabulary.vocabulary.dialogos[section.id];
+
+            html += `
+                <div class="accordion">
+                    <div class="accordion-header collapsed" data-accordion="${section.id}">
+                        <span class="accordion-hanzi">${sectionData.hanzi}</span>
+                        <span class="accordion-pinyin">${sectionData.pinyin}</span>
+                        <span class="accordion-pt">${this.t('sections.' + section.id)}</span>
+                    </div>
+                    <div class="accordion-content" id="${section.id}">
+                        <div class="dialogue-container">
+                            ${this.renderDialogueLines(dialogueData.lines)}
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+
+        container.innerHTML = html;
+        this.setupAccordionListeners(container);
+    }
+
+    /**
+     * Renderiza as linhas de um diálogo
+     */
+    renderDialogueLines(lines) {
+        return lines.map(line => {
+            const characterName = this.t('vocabulary.' + line.nameId);
+            const meaning = this.t('vocabulary.' + line.id);
+
+            return `
+                <div class="dialogue-line char-${line.char}">
+                    <div class="character-name">${characterName}</div>
+                    <div class="hanzi">${line.hanzi}</div>
+                    <div class="pinyin">${line.pinyin}</div>
+                    <div class="meaning">${meaning}</div>
+                </div>
+            `;
+        }).join('');
+    }
+
+    /**
      * Configura event listeners globais
      */
     setupEventListeners() {
@@ -343,6 +404,8 @@ class ChineseLearningApp {
         document.getElementById('toggleLang')?.addEventListener('click', () => {
             this.cycleLang();
         });
+
+        // Dropdown clicks are handled via onclick in HTML for simplicity in this case
 
         // Modal close
         document.getElementById('modalClose')?.addEventListener('click', () => {
@@ -415,7 +478,14 @@ class ChineseLearningApp {
         const nextIndex = (currentIndex + 1) % this.availableLangs.length;
         const nextLang = this.availableLangs[nextIndex];
 
-        await this.loadTranslation(nextLang);
+        await this.setLang(nextLang);
+    }
+
+    /**
+     * Define um idioma específico
+     */
+    async setLang(lang) {
+        await this.loadTranslation(lang);
         this.renderAll();
     }
 
@@ -423,7 +493,7 @@ class ChineseLearningApp {
      * Atualiza botão de idioma
      */
     updateLangButton() {
-        const btn = document.getElementById('toggleLang');
+        const btn = document.getElementById('currentLangBtn');
         if (btn) {
             const langData = this.translations[this.currentLang];
             btn.innerHTML = `<span>${langData.flag}</span>`;
