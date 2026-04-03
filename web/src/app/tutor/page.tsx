@@ -23,6 +23,7 @@ export default function TutorPage() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [notice, setNotice] = useState<string | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -40,6 +41,7 @@ export default function TutorPage() {
     setInput("");
     setLoading(true);
     setError(null);
+    setNotice(null);
 
     try {
       const response = await fetch(withPublicBasePath("/api/chat"), {
@@ -62,6 +64,9 @@ export default function TutorPage() {
         text: data.reply,
         structured: data.structured,
       };
+      if (!data.structured) {
+        setNotice("Resposta sem estrutura completa. Tente uma pergunta mais curta.");
+      }
       setMessages((prev) => [...prev, assistantMessage]);
     } catch (err) {
       console.error(err);
@@ -150,6 +155,11 @@ export default function TutorPage() {
               {error}
             </div>
           )}
+          {notice && !error && (
+            <div className="text-center text-xs text-amber-700 bg-amber-50 py-2 rounded-lg border border-amber-100">
+              {notice}
+            </div>
+          )}
         </div>
       </div>
 
@@ -158,7 +168,7 @@ export default function TutorPage() {
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Escreva algo em português ou chinês..."
+          placeholder={t("tutor.placeholder")}
           disabled={loading}
           className="flex-1 rounded-xl border bg-paper px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30"
           style={{ borderColor: "var(--border)" }}
