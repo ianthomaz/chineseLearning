@@ -1,0 +1,1338 @@
+{
+  "blocks": [
+    {
+      "id": 1,
+      "title": "Números",
+      "structures": [
+        "一，二，三，四，五，六，七，八，九，十",
+        "二十",
+        "三百五十六",
+        "一百零二",
+        "五万零九百零七"
+      ],
+      "notes": [
+        "十 = 10",
+        "百 = 100",
+        "千 = 1.000",
+        "万 = 10.000",
+        "零 é usado quando há “buraco” no número",
+        "两 costuma ser usado antes de classificadores, 千 e 万",
+        "二 costuma ser usado em dezenas, números soltos e telefone"
+      ],
+      "differences": [],
+      "priorities": [],
+      "vocabulary": [
+        {
+          "hanzi": "零",
+          "pinyin": "líng",
+          "translation": "zero"
+        },
+        {
+          "hanzi": "一",
+          "pinyin": "yī",
+          "translation": "um"
+        },
+        {
+          "hanzi": "二",
+          "pinyin": "èr",
+          "translation": "dois"
+        },
+        {
+          "hanzi": "两",
+          "pinyin": "liǎng",
+          "translation": "dois"
+        },
+        {
+          "hanzi": "三",
+          "pinyin": "sān",
+          "translation": "três"
+        },
+        {
+          "hanzi": "四",
+          "pinyin": "sì",
+          "translation": "quatro"
+        },
+        {
+          "hanzi": "五",
+          "pinyin": "wǔ",
+          "translation": "cinco"
+        },
+        {
+          "hanzi": "六",
+          "pinyin": "liù",
+          "translation": "seis"
+        },
+        {
+          "hanzi": "七",
+          "pinyin": "qī",
+          "translation": "sete"
+        },
+        {
+          "hanzi": "八",
+          "pinyin": "bā",
+          "translation": "oito"
+        },
+        {
+          "hanzi": "九",
+          "pinyin": "jiǔ",
+          "translation": "nove"
+        },
+        {
+          "hanzi": "十",
+          "pinyin": "shí",
+          "translation": "dez"
+        },
+        {
+          "hanzi": "百",
+          "pinyin": "bǎi",
+          "translation": "cem"
+        },
+        {
+          "hanzi": "千",
+          "pinyin": "qiān",
+          "translation": "mil"
+        },
+        {
+          "hanzi": "万",
+          "pinyin": "wàn",
+          "translation": "dez mil"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Tempo, data, horas e dinheiro",
+      "structures": [
+        "现在两点了。",
+        "今天是三月九号。",
+        "今天星期三。",
+        "我今年四十一岁。",
+        "这个多少钱？",
+        "三十五块五毛。"
+      ],
+      "notes": [],
+      "differences": [],
+      "priorities": [],
+      "vocabulary": [
+        {
+          "hanzi": "今天",
+          "pinyin": "jīntiān",
+          "translation": "hoje"
+        },
+        {
+          "hanzi": "明天",
+          "pinyin": "míngtiān",
+          "translation": "amanhã"
+        },
+        {
+          "hanzi": "现在",
+          "pinyin": "xiànzài",
+          "translation": "agora"
+        },
+        {
+          "hanzi": "时间",
+          "pinyin": "shíjiān",
+          "translation": "tempo"
+        },
+        {
+          "hanzi": "小时",
+          "pinyin": "xiǎoshí",
+          "translation": "hora"
+        },
+        {
+          "hanzi": "年",
+          "pinyin": "nián",
+          "translation": "ano"
+        },
+        {
+          "hanzi": "月",
+          "pinyin": "yuè",
+          "translation": "mês"
+        },
+        {
+          "hanzi": "号 / 日",
+          "pinyin": "hào / rì",
+          "translation": "dia"
+        },
+        {
+          "hanzi": "星期",
+          "pinyin": "xīngqī",
+          "translation": "semana"
+        },
+        {
+          "hanzi": "点",
+          "pinyin": "diǎn",
+          "translation": "horas"
+        },
+        {
+          "hanzi": "分",
+          "pinyin": "fēn",
+          "translation": "minutos"
+        },
+        {
+          "hanzi": "岁",
+          "pinyin": "suì",
+          "translation": "anos de idade"
+        },
+        {
+          "hanzi": "钱",
+          "pinyin": "qián",
+          "translation": "dinheiro"
+        },
+        {
+          "hanzi": "块",
+          "pinyin": "kuài",
+          "translation": "yuan informal"
+        },
+        {
+          "hanzi": "毛",
+          "pinyin": "máo",
+          "translation": "décimo de yuan"
+        },
+        {
+          "hanzi": "多少",
+          "pinyin": "duōshao",
+          "translation": "quanto / quantos"
+        },
+        {
+          "hanzi": "多少钱",
+          "pinyin": "duōshao qián",
+          "translation": "quanto custa"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Frutas e bebidas",
+      "structures": [
+        "我喜欢吃水果。",
+        "我喜欢喝茶。",
+        "我最喜欢苹果汁。",
+        "你想喝茶还是咖啡？",
+        "我要吃一个苹果。"
+      ],
+      "notes": [],
+      "differences": [],
+      "priorities": [],
+      "vocabulary": [
+        {
+          "hanzi": "水果",
+          "pinyin": "shuǐguǒ",
+          "translation": "frutas"
+        },
+        {
+          "hanzi": "苹果",
+          "pinyin": "píngguǒ",
+          "translation": "maçã"
+        },
+        {
+          "hanzi": "西瓜",
+          "pinyin": "xīguā",
+          "translation": "melancia"
+        },
+        {
+          "hanzi": "草莓",
+          "pinyin": "cǎoméi",
+          "translation": "morango"
+        },
+        {
+          "hanzi": "香蕉",
+          "pinyin": "xiāngjiāo",
+          "translation": "banana"
+        },
+        {
+          "hanzi": "橙子",
+          "pinyin": "chéngzi",
+          "translation": "laranja"
+        },
+        {
+          "hanzi": "葡萄",
+          "pinyin": "pútao",
+          "translation": "uva"
+        },
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "translation": "chá"
+        },
+        {
+          "hanzi": "白茶",
+          "pinyin": "bái chá",
+          "translation": "chá branco"
+        },
+        {
+          "hanzi": "咖啡",
+          "pinyin": "kāfēi",
+          "translation": "café"
+        },
+        {
+          "hanzi": "水",
+          "pinyin": "shuǐ",
+          "translation": "água"
+        },
+        {
+          "hanzi": "果汁",
+          "pinyin": "guǒzhī",
+          "translation": "suco"
+        },
+        {
+          "hanzi": "苹果汁",
+          "pinyin": "píngguǒzhī",
+          "translation": "suco de maçã"
+        },
+        {
+          "hanzi": "饮料",
+          "pinyin": "yǐnliào",
+          "translation": "bebida"
+        },
+        {
+          "hanzi": "可乐",
+          "pinyin": "kělè",
+          "translation": "coca-cola"
+        },
+        {
+          "hanzi": "喝",
+          "pinyin": "hē",
+          "translation": "beber"
+        },
+        {
+          "hanzi": "吃",
+          "pinyin": "chī",
+          "translation": "comer"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Lugares",
+      "structures": [
+        "我在学校。",
+        "我在家工作。",
+        "明天谁送你去医院？",
+        "我去咖啡馆喝咖啡。",
+        "学校里有商店。"
+      ],
+      "notes": [],
+      "differences": [],
+      "priorities": [],
+      "vocabulary": [
+        {
+          "hanzi": "学校",
+          "pinyin": "xuéxiào",
+          "translation": "escola"
+        },
+        {
+          "hanzi": "家",
+          "pinyin": "jiā",
+          "translation": "casa"
+        },
+        {
+          "hanzi": "医院",
+          "pinyin": "yīyuàn",
+          "translation": "hospital"
+        },
+        {
+          "hanzi": "商店",
+          "pinyin": "shāngdiàn",
+          "translation": "loja"
+        },
+        {
+          "hanzi": "咖啡馆",
+          "pinyin": "kāfēiguǎn",
+          "translation": "cafeteria"
+        },
+        {
+          "hanzi": "孔子学院",
+          "pinyin": "Kǒngzǐ Xuéyuàn",
+          "translation": "Instituto Confúcio"
+        },
+        {
+          "hanzi": "北京",
+          "pinyin": "Běijīng",
+          "translation": "Pequim"
+        },
+        {
+          "hanzi": "房子",
+          "pinyin": "fángzi",
+          "translation": "casa / prédio"
+        },
+        {
+          "hanzi": "门",
+          "pinyin": "mén",
+          "translation": "porta"
+        },
+        {
+          "hanzi": "门口",
+          "pinyin": "ménkǒu",
+          "translation": "entrada / porta"
+        },
+        {
+          "hanzi": "桌子",
+          "pinyin": "zhuōzi",
+          "translation": "mesa"
+        },
+        {
+          "hanzi": "中间",
+          "pinyin": "zhōngjiān",
+          "translation": "meio"
+        },
+        {
+          "hanzi": "里面",
+          "pinyin": "lǐmiàn",
+          "translation": "dentro"
+        },
+        {
+          "hanzi": "这里",
+          "pinyin": "zhèlǐ",
+          "translation": "aqui"
+        },
+        {
+          "hanzi": "那里",
+          "pinyin": "nàlǐ",
+          "translation": "ali / lá"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Países, idiomas e nacionalidades",
+      "structures": [
+        "我是巴西人。",
+        "他是中国人。",
+        "我会说葡萄牙语。",
+        "你说什么语言？",
+        "你是哪国人？"
+      ],
+      "notes": [],
+      "differences": [],
+      "priorities": [],
+      "vocabulary": [
+        {
+          "hanzi": "中国",
+          "pinyin": "Zhōngguó",
+          "translation": "China"
+        },
+        {
+          "hanzi": "巴西",
+          "pinyin": "Bāxī",
+          "translation": "Brasil"
+        },
+        {
+          "hanzi": "日本",
+          "pinyin": "Rìběn",
+          "translation": "Japão"
+        },
+        {
+          "hanzi": "葡萄牙",
+          "pinyin": "Pútáoyá",
+          "translation": "Portugal"
+        },
+        {
+          "hanzi": "法国",
+          "pinyin": "Fǎguó",
+          "translation": "França"
+        },
+        {
+          "hanzi": "中国人",
+          "pinyin": "Zhōngguó rén",
+          "translation": "chinês"
+        },
+        {
+          "hanzi": "巴西人",
+          "pinyin": "Bāxī rén",
+          "translation": "brasileiro"
+        },
+        {
+          "hanzi": "日本人",
+          "pinyin": "Rìběn rén",
+          "translation": "japonês"
+        },
+        {
+          "hanzi": "汉语",
+          "pinyin": "Hànyǔ",
+          "translation": "chinês"
+        },
+        {
+          "hanzi": "中文",
+          "pinyin": "Zhōngwén",
+          "translation": "chinês"
+        },
+        {
+          "hanzi": "葡萄牙语",
+          "pinyin": "Pútáoyáyǔ",
+          "translation": "português"
+        },
+        {
+          "hanzi": "英语",
+          "pinyin": "Yīngyǔ",
+          "translation": "inglês"
+        },
+        {
+          "hanzi": "法语",
+          "pinyin": "Fǎyǔ",
+          "translation": "francês"
+        },
+        {
+          "hanzi": "西班牙语",
+          "pinyin": "Xībānyáyǔ",
+          "translation": "espanhol"
+        },
+        {
+          "hanzi": "语言",
+          "pinyin": "yǔyán",
+          "translation": "idioma"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Cores e qualidades",
+      "structures": [
+        "这个苹果是红色的。",
+        "我的衣服很漂亮。",
+        "今天天气真好。",
+        "孩子在学校很安全。",
+        "她的眼睛很大。"
+      ],
+      "notes": [],
+      "differences": [],
+      "priorities": [],
+      "vocabulary": [
+        {
+          "hanzi": "红色",
+          "pinyin": "hóngsè",
+          "translation": "vermelho"
+        },
+        {
+          "hanzi": "蓝色",
+          "pinyin": "lánsè",
+          "translation": "azul"
+        },
+        {
+          "hanzi": "绿色",
+          "pinyin": "lǜsè",
+          "translation": "verde"
+        },
+        {
+          "hanzi": "白色",
+          "pinyin": "báisè",
+          "translation": "branco"
+        },
+        {
+          "hanzi": "黑色",
+          "pinyin": "hēisè",
+          "translation": "preto"
+        },
+        {
+          "hanzi": "黄色",
+          "pinyin": "huángsè",
+          "translation": "amarelo"
+        },
+        {
+          "hanzi": "好",
+          "pinyin": "hǎo",
+          "translation": "bom"
+        },
+        {
+          "hanzi": "大",
+          "pinyin": "dà",
+          "translation": "grande"
+        },
+        {
+          "hanzi": "小",
+          "pinyin": "xiǎo",
+          "translation": "pequeno"
+        },
+        {
+          "hanzi": "漂亮",
+          "pinyin": "piàoliang",
+          "translation": "bonito / bonita"
+        },
+        {
+          "hanzi": "帅",
+          "pinyin": "shuài",
+          "translation": "bonito / bonito (homem)"
+        },
+        {
+          "hanzi": "安全",
+          "pinyin": "ānquán",
+          "translation": "seguro"
+        },
+        {
+          "hanzi": "高",
+          "pinyin": "gāo",
+          "translation": "alto"
+        },
+        {
+          "hanzi": "快",
+          "pinyin": "kuài",
+          "translation": "rápido"
+        },
+        {
+          "hanzi": "热",
+          "pinyin": "rè",
+          "translation": "quente"
+        },
+        {
+          "hanzi": "冷",
+          "pinyin": "lěng",
+          "translation": "frio"
+        },
+        {
+          "hanzi": "真",
+          "pinyin": "zhēn",
+          "translation": "realmente"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Família e pessoas do cotidiano",
+      "structures": [
+        "我家有四口人。",
+        "你家有几口人？",
+        "这是我的家。",
+        "这是谁的家？",
+        "我爸爸、妈妈在家。",
+        "我姐姐在医院。",
+        "我妹妹在学校。"
+      ],
+      "notes": [],
+      "differences": [],
+      "priorities": [],
+      "vocabulary": [
+        {
+          "hanzi": "家",
+          "pinyin": "jiā",
+          "translation": "família / casa"
+        },
+        {
+          "hanzi": "我家",
+          "pinyin": "wǒ jiā",
+          "translation": "minha casa / minha família"
+        },
+        {
+          "hanzi": "我们家",
+          "pinyin": "wǒmen jiā",
+          "translation": "nossa casa / nossa família"
+        },
+        {
+          "hanzi": "谁的",
+          "pinyin": "shéi de",
+          "translation": "de quem"
+        },
+        {
+          "hanzi": "口",
+          "pinyin": "kǒu",
+          "translation": "classificador de pessoas da família"
+        },
+        {
+          "hanzi": "人",
+          "pinyin": "rén",
+          "translation": "pessoa"
+        },
+        {
+          "hanzi": "爸爸",
+          "pinyin": "bàba",
+          "translation": "pai"
+        },
+        {
+          "hanzi": "妈妈",
+          "pinyin": "māma",
+          "translation": "mãe"
+        },
+        {
+          "hanzi": "爷爷",
+          "pinyin": "yéye",
+          "translation": "avô paterno"
+        },
+        {
+          "hanzi": "奶奶",
+          "pinyin": "nǎinai",
+          "translation": "avó paterna"
+        },
+        {
+          "hanzi": "外公",
+          "pinyin": "wàigōng",
+          "translation": "avô materno"
+        },
+        {
+          "hanzi": "外婆",
+          "pinyin": "wàipó",
+          "translation": "avó materna"
+        },
+        {
+          "hanzi": "哥哥",
+          "pinyin": "gēge",
+          "translation": "irmão mais velho"
+        },
+        {
+          "hanzi": "姐姐",
+          "pinyin": "jiějie",
+          "translation": "irmã mais velha"
+        },
+        {
+          "hanzi": "弟弟",
+          "pinyin": "dìdi",
+          "translation": "irmão mais novo"
+        },
+        {
+          "hanzi": "妹妹",
+          "pinyin": "mèimei",
+          "translation": "irmã mais nova"
+        },
+        {
+          "hanzi": "儿子",
+          "pinyin": "érzi",
+          "translation": "filho"
+        },
+        {
+          "hanzi": "女儿",
+          "pinyin": "nǚ'ér",
+          "translation": "filha"
+        },
+        {
+          "hanzi": "老师",
+          "pinyin": "lǎoshī",
+          "translation": "professor"
+        },
+        {
+          "hanzi": "学生",
+          "pinyin": "xuéshēng",
+          "translation": "estudante"
+        },
+        {
+          "hanzi": "丈夫",
+          "pinyin": "zhàngfu",
+          "translation": "marido"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "translation": "livro"
+        },
+        {
+          "hanzi": "衣服",
+          "pinyin": "yīfu",
+          "translation": "roupa"
+        },
+        {
+          "hanzi": "眼睛",
+          "pinyin": "yǎnjing",
+          "translation": "olhos"
+        },
+        {
+          "hanzi": "椅子",
+          "pinyin": "yǐzi",
+          "translation": "cadeira"
+        },
+        {
+          "hanzi": "电脑",
+          "pinyin": "diànnǎo",
+          "translation": "computador"
+        },
+        {
+          "hanzi": "电话",
+          "pinyin": "diànhuà",
+          "translation": "telefone"
+        },
+        {
+          "hanzi": "名字",
+          "pinyin": "míngzi",
+          "translation": "nome"
+        },
+        {
+          "hanzi": "问题",
+          "pinyin": "wèntí",
+          "translation": "pergunta / problema"
+        },
+        {
+          "hanzi": "东西",
+          "pinyin": "dōngxi",
+          "translation": "coisa"
+        },
+        {
+          "hanzi": "钟",
+          "pinyin": "zhōng",
+          "translation": "relógio"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Perguntas básicas",
+      "structures": [
+        "你叫什么名字？",
+        "你是哪国人？",
+        "你说什么语言？",
+        "你在哪儿？",
+        "中间的人是谁？",
+        "这是谁的家？",
+        "你家有几口人？",
+        "今天几号？",
+        "现在几点了？",
+        "这个多少钱？"
+      ],
+      "notes": [],
+      "differences": [],
+      "priorities": [],
+      "vocabulary": [
+        {
+          "hanzi": "什么",
+          "pinyin": "shénme",
+          "translation": "o que"
+        },
+        {
+          "hanzi": "谁",
+          "pinyin": "shéi",
+          "translation": "quem"
+        },
+        {
+          "hanzi": "哪",
+          "pinyin": "nǎ",
+          "translation": "qual"
+        },
+        {
+          "hanzi": "哪儿 / 哪里",
+          "pinyin": "nǎr / nǎlǐ",
+          "translation": "onde"
+        },
+        {
+          "hanzi": "几",
+          "pinyin": "jǐ",
+          "translation": "quantos / qual"
+        },
+        {
+          "hanzi": "多少",
+          "pinyin": "duōshao",
+          "translation": "quanto / quantos"
+        },
+        {
+          "hanzi": "怎么",
+          "pinyin": "zěnme",
+          "translation": "como"
+        },
+        {
+          "hanzi": "怎么样",
+          "pinyin": "zěnmeyàng",
+          "translation": "como é / como está"
+        },
+        {
+          "hanzi": "几号",
+          "pinyin": "jǐ hào",
+          "translation": "que dia"
+        },
+        {
+          "hanzi": "几点",
+          "pinyin": "jǐ diǎn",
+          "translation": "que horas"
+        },
+        {
+          "hanzi": "谁的",
+          "pinyin": "shéi de",
+          "translation": "de quem"
+        },
+        {
+          "hanzi": "几口人",
+          "pinyin": "jǐ kǒu rén",
+          "translation": "quantas pessoas na família"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Pronomes e frases com 是",
+      "structures": [
+        "我是学生。",
+        "你是老师吗？",
+        "她是中国人。",
+        "我不是老师。",
+        "她是不是老师？"
+      ],
+      "notes": [],
+      "differences": [],
+      "priorities": [],
+      "vocabulary": [
+        {
+          "hanzi": "我",
+          "pinyin": "wǒ",
+          "translation": "eu"
+        },
+        {
+          "hanzi": "你",
+          "pinyin": "nǐ",
+          "translation": "você"
+        },
+        {
+          "hanzi": "您",
+          "pinyin": "nín",
+          "translation": "você formal"
+        },
+        {
+          "hanzi": "他",
+          "pinyin": "tā",
+          "translation": "ele"
+        },
+        {
+          "hanzi": "她",
+          "pinyin": "tā",
+          "translation": "ela"
+        },
+        {
+          "hanzi": "我们",
+          "pinyin": "wǒmen",
+          "translation": "nós"
+        },
+        {
+          "hanzi": "你们",
+          "pinyin": "nǐmen",
+          "translation": "vocês"
+        },
+        {
+          "hanzi": "他们",
+          "pinyin": "tāmen",
+          "translation": "eles"
+        },
+        {
+          "hanzi": "是",
+          "pinyin": "shì",
+          "translation": "ser"
+        },
+        {
+          "hanzi": "不是",
+          "pinyin": "bú shì",
+          "translation": "não ser"
+        },
+        {
+          "hanzi": "吗",
+          "pinyin": "ma",
+          "translation": "partícula de pergunta"
+        },
+        {
+          "hanzi": "是不是",
+          "pinyin": "shì bú shì",
+          "translation": "é ou não é"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Advérbios e partículas muito usados",
+      "structures": [
+        "我很好。",
+        "我也喜欢茶。",
+        "他们都在学校。",
+        "这个最贵。",
+        "你呢？",
+        "我困了。"
+      ],
+      "notes": [],
+      "differences": [],
+      "priorities": [],
+      "vocabulary": [
+        {
+          "hanzi": "很",
+          "pinyin": "hěn",
+          "translation": "muito"
+        },
+        {
+          "hanzi": "不",
+          "pinyin": "bù",
+          "translation": "não"
+        },
+        {
+          "hanzi": "也",
+          "pinyin": "yě",
+          "translation": "também"
+        },
+        {
+          "hanzi": "都",
+          "pinyin": "dōu",
+          "translation": "todos / ambos"
+        },
+        {
+          "hanzi": "最",
+          "pinyin": "zuì",
+          "translation": "mais / o mais"
+        },
+        {
+          "hanzi": "真",
+          "pinyin": "zhēn",
+          "translation": "realmente"
+        },
+        {
+          "hanzi": "了",
+          "pinyin": "le",
+          "translation": "partícula"
+        },
+        {
+          "hanzi": "呢",
+          "pinyin": "ne",
+          "translation": "e...?"
+        },
+        {
+          "hanzi": "困",
+          "pinyin": "kùn",
+          "translation": "com sono / cansado"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Verbos do cotidiano",
+      "structures": [
+        "我学习汉语。",
+        "我看电视。",
+        "我买东西。",
+        "我休息一下。",
+        "我问一下老师。",
+        "他跑得很快。"
+      ],
+      "notes": [],
+      "differences": [],
+      "priorities": [],
+      "vocabulary": [
+        {
+          "hanzi": "学习",
+          "pinyin": "xuéxí",
+          "translation": "estudar"
+        },
+        {
+          "hanzi": "工作",
+          "pinyin": "gōngzuò",
+          "translation": "trabalhar"
+        },
+        {
+          "hanzi": "看",
+          "pinyin": "kàn",
+          "translation": "ver / olhar"
+        },
+        {
+          "hanzi": "看书",
+          "pinyin": "kàn shū",
+          "translation": "ler"
+        },
+        {
+          "hanzi": "看电视",
+          "pinyin": "kàn diànshì",
+          "translation": "ver televisão"
+        },
+        {
+          "hanzi": "喝",
+          "pinyin": "hē",
+          "translation": "beber"
+        },
+        {
+          "hanzi": "吃",
+          "pinyin": "chī",
+          "translation": "comer"
+        },
+        {
+          "hanzi": "买",
+          "pinyin": "mǎi",
+          "translation": "comprar"
+        },
+        {
+          "hanzi": "送",
+          "pinyin": "sòng",
+          "translation": "levar / entregar"
+        },
+        {
+          "hanzi": "问",
+          "pinyin": "wèn",
+          "translation": "perguntar"
+        },
+        {
+          "hanzi": "找",
+          "pinyin": "zhǎo",
+          "translation": "procurar"
+        },
+        {
+          "hanzi": "休息",
+          "pinyin": "xiūxi",
+          "translation": "descansar"
+        },
+        {
+          "hanzi": "跑",
+          "pinyin": "pǎo",
+          "translation": "correr"
+        },
+        {
+          "hanzi": "跑步",
+          "pinyin": "pǎobù",
+          "translation": "correr"
+        },
+        {
+          "hanzi": "踢",
+          "pinyin": "tī",
+          "translation": "chutar"
+        },
+        {
+          "hanzi": "踢足球",
+          "pinyin": "tī zúqiú",
+          "translation": "jogar futebol"
+        },
+        {
+          "hanzi": "打篮球",
+          "pinyin": "dǎ lánqiú",
+          "translation": "jogar basquete"
+        },
+        {
+          "hanzi": "做饭",
+          "pinyin": "zuòfàn",
+          "translation": "cozinhar"
+        },
+        {
+          "hanzi": "睡",
+          "pinyin": "shuì",
+          "translation": "dormir"
+        },
+        {
+          "hanzi": "看见",
+          "pinyin": "kànjiàn",
+          "translation": "ver / enxergar"
+        },
+        {
+          "hanzi": "一下",
+          "pinyin": "yíxià",
+          "translation": "rapidinho / um pouco"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Gostos, preferência e escolha",
+      "structures": [
+        "我喜欢吃水果。",
+        "我最喜欢茶。",
+        "我想喝咖啡。",
+        "我要吃米饭。",
+        "你想喝茶还是咖啡？",
+        "我们要不要买几个椅子？"
+      ],
+      "notes": [],
+      "differences": [],
+      "priorities": [],
+      "vocabulary": [
+        {
+          "hanzi": "喜欢",
+          "pinyin": "xǐhuan",
+          "translation": "gostar"
+        },
+        {
+          "hanzi": "最",
+          "pinyin": "zuì",
+          "translation": "mais / o mais"
+        },
+        {
+          "hanzi": "想",
+          "pinyin": "xiǎng",
+          "translation": "querer"
+        },
+        {
+          "hanzi": "要",
+          "pinyin": "yào",
+          "translation": "querer / precisar"
+        },
+        {
+          "hanzi": "想要",
+          "pinyin": "xiǎngyào",
+          "translation": "querer"
+        },
+        {
+          "hanzi": "还是",
+          "pinyin": "háishi",
+          "translation": "ou"
+        },
+        {
+          "hanzi": "要不要",
+          "pinyin": "yào bú yào",
+          "translation": "quer ou não quer"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Verbos modais",
+      "structures": [
+        "我会写汉字。",
+        "明天会下雨吗？",
+        "我能去学校。",
+        "我能坐那里吗？",
+        "我想学汉语。",
+        "我不会开车。",
+        "我不能开车。",
+        "我不想开车。"
+      ],
+      "notes": [],
+      "differences": [
+        "会: habilidade aprendida ou possibilidade",
+        "能: capacidade por condição objetiva, possibilidade ou permissão",
+        "想: vontade"
+      ],
+      "priorities": [],
+      "vocabulary": [
+        {
+          "hanzi": "会",
+          "pinyin": "huì",
+          "translation": "saber / conseguir"
+        },
+        {
+          "hanzi": "能",
+          "pinyin": "néng",
+          "translation": "poder"
+        },
+        {
+          "hanzi": "想",
+          "pinyin": "xiǎng",
+          "translation": "querer"
+        },
+        {
+          "hanzi": "写",
+          "pinyin": "xiě",
+          "translation": "escrever"
+        },
+        {
+          "hanzi": "汉字",
+          "pinyin": "Hànzì",
+          "translation": "caracteres chineses"
+        },
+        {
+          "hanzi": "下雨",
+          "pinyin": "xiàyǔ",
+          "translation": "chover"
+        },
+        {
+          "hanzi": "开车",
+          "pinyin": "kāichē",
+          "translation": "dirigir"
+        },
+        {
+          "hanzi": "坐",
+          "pinyin": "zuò",
+          "translation": "sentar"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Lugar, existência e movimento",
+      "structures": [
+        "我在学校。",
+        "我在家工作。",
+        "学校里有商店。",
+        "桌子下有一个猫。",
+        "我去学校看书。",
+        "我去咖啡馆喝咖啡。",
+        "明天谁送你去医院？"
+      ],
+      "notes": [],
+      "differences": [],
+      "priorities": [],
+      "vocabulary": [
+        {
+          "hanzi": "在",
+          "pinyin": "zài",
+          "translation": "estar em"
+        },
+        {
+          "hanzi": "有",
+          "pinyin": "yǒu",
+          "translation": "ter / haver"
+        },
+        {
+          "hanzi": "没有",
+          "pinyin": "méiyǒu",
+          "translation": "não ter / não haver"
+        },
+        {
+          "hanzi": "去",
+          "pinyin": "qù",
+          "translation": "ir"
+        },
+        {
+          "hanzi": "来",
+          "pinyin": "lái",
+          "translation": "vir"
+        },
+        {
+          "hanzi": "回",
+          "pinyin": "huí",
+          "translation": "voltar"
+        },
+        {
+          "hanzi": "下",
+          "pinyin": "xià",
+          "translation": "embaixo"
+        },
+        {
+          "hanzi": "上",
+          "pinyin": "shàng",
+          "translation": "em cima"
+        },
+        {
+          "hanzi": "里",
+          "pinyin": "lǐ",
+          "translation": "dentro"
+        },
+        {
+          "hanzi": "前",
+          "pinyin": "qián",
+          "translation": "antes / diante"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Revisão final do que mais vale fixar",
+      "structures": [],
+      "notes": [],
+      "differences": [],
+      "priorities": [
+        "números",
+        "data, hora, idade e dinheiro",
+        "frutas e bebidas",
+        "lugares, países e cores",
+        "perguntas básicas",
+        "pronomes e frases com 是",
+        "advérbios frequentes",
+        "verbos do cotidiano",
+        "gostar, querer e escolher",
+        "会 / 能 / 想",
+        "在 / 有 / 去"
+      ],
+      "vocabulary": [
+        {
+          "hanzi": "语法",
+          "pinyin": "yǔfǎ",
+          "translation": "gramática"
+        },
+        {
+          "hanzi": "词汇",
+          "pinyin": "cíhuì",
+          "translation": "vocabulário"
+        },
+        {
+          "hanzi": "句子",
+          "pinyin": "jùzi",
+          "translation": "frase"
+        },
+        {
+          "hanzi": "练习",
+          "pinyin": "liànxí",
+          "translation": "exercício"
+        },
+        {
+          "hanzi": "复习",
+          "pinyin": "fùxí",
+          "translation": "revisão"
+        },
+        {
+          "hanzi": "会话",
+          "pinyin": "huìhuà",
+          "translation": "conversação"
+        }
+      ]
+    }
+  ]
+}

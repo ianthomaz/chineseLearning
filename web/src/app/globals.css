@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Noto+Sans+SC:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Hanzi Pinyin";
+  src: url("/fonts/Hanzi-Pinyin-Font.top.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --paper: #f6f3ed;
+  --ink: #1a1814;
+  --accent: #8c2d2d;
+  --muted: rgba(26, 24, 20, 0.55);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink antialiased;
+  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+}

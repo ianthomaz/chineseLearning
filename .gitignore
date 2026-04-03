@@ -7,5 +7,9 @@
 # Node modules (se houver)
 node_modules/
 
+# Next.js
+web/.next/
+web/out/
+
 # Git do system.css (já está versionado dentro)
 system.css/.git/
