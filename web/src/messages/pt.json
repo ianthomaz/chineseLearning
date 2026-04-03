@@ -95,14 +95,24 @@
   "dialogues": {
     "kicker": "对话",
     "pageTitle": "Diálogos",
-    "pageIntro": "Cinco conversas mais longas para ouvir o chinês em contexto. Na revisão, aparecem primeiro as frases-modelo (com tradução em português se o toggle estiver ligado) e, a seguir, mini-diálogos do bloco.",
+    "pageIntro": "Conversas para ouvir o chinês em contexto. Na revisão, aparecem primeiro as frases-modelo (com tradução em português se o toggle estiver ligado) e, a seguir, mini-diálogos do bloco.",
     "convLabel": "Diálogo {num}",
+    "filterLabel": "Filtrar por categoria:",
+    "allCategories": "Todas as categorias",
     "global": {
       "familyIntro": "Apresentar a família",
       "dayPlan": "Plano do dia",
       "supermarket": "No supermercado",
       "school": "Na escola",
-      "park": "No parque"
+      "park": "No parque",
+      "restaurant": "No restaurante",
+      "hospital": "No hospital",
+      "transport": "Transporte público",
+      "hotel": "No hotel",
+      "bank": "No banco",
+      "postoffice": "Nos correios",
+      "pharmacy": "Na farmácia",
+      "market": "No mercado"
     }
   },
   "tutor": {

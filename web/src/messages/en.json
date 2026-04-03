@@ -95,14 +95,24 @@
   "dialogues": {
     "kicker": "对话",
     "pageTitle": "Dialogues",
-    "pageIntro": "Five longer conversations for hearing Chinese in context. On review, model phrases come first (with translation when the toggle is on), then block mini-dialogues.",
+    "pageIntro": "Conversations for hearing Chinese in context. On review, model phrases come first (with translation when the toggle is on), then block mini-dialogues.",
     "convLabel": "Dialogue {num}",
+    "filterLabel": "Filter by category:",
+    "allCategories": "All categories",
     "global": {
       "familyIntro": "Introducing family",
       "dayPlan": "Daily plan",
       "supermarket": "At the supermarket",
       "school": "At school",
-      "park": "In the park"
+      "park": "In the park",
+      "restaurant": "At the restaurant",
+      "hospital": "At the hospital",
+      "transport": "Public transport",
+      "hotel": "At the hotel",
+      "bank": "At the bank",
+      "postoffice": "At the post office",
+      "pharmacy": "At the pharmacy",
+      "market": "At the market"
     }
   },
   "tutor": {

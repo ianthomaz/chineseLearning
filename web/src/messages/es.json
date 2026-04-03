@@ -95,14 +95,24 @@
   "dialogues": {
     "kicker": "对话",
     "pageTitle": "Diálogos",
-    "pageIntro": "Cinco conversaciones largas para oír chino en contexto. En repaso, primero van las frases modelo (traducción si el interruptor está activo) y después los mini-diálogos del bloque.",
+    "pageIntro": "Conversaciones para oír chino en contexto. En repaso, primero van las frases modelo (traducción si el interruptor está activo) y después los mini-diálogos del bloque.",
     "convLabel": "Diálogo {num}",
+    "filterLabel": "Filtrar por categoría:",
+    "allCategories": "Todas las categorías",
     "global": {
       "familyIntro": "Presentar a la familia",
       "dayPlan": "Plan del día",
       "supermarket": "En el supermercado",
       "school": "En la escuela",
-      "park": "En el parque"
+      "park": "En el parque",
+      "restaurant": "En el restaurante",
+      "hospital": "En el hospital",
+      "transport": "Transporte público",
+      "hotel": "En el hotel",
+      "bank": "En el banco",
+      "postoffice": "En correos",
+      "pharmacy": "En la farmacia",
+      "market": "En el mercado"
     }
   },
   "tutor": {
