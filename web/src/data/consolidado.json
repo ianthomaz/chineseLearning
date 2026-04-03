@@ -3,6 +3,7 @@
     {
       "id": 1,
       "title": "Números",
+      "narrative": "",
       "structures": [
         "一，二，三，四，五，六，七，八，九，十",
         "二十",
@@ -102,6 +103,7 @@
     {
       "id": 2,
       "title": "Tempo, data, horas e dinheiro",
+      "narrative": "",
       "structures": [
         "现在两点了。",
         "今天是三月九号。",
@@ -204,6 +206,7 @@
     {
       "id": 3,
       "title": "Frutas e bebidas",
+      "narrative": "",
       "structures": [
         "我喜欢吃水果。",
         "我喜欢喝茶。",
@@ -305,6 +308,7 @@
     {
       "id": 4,
       "title": "Lugares",
+      "narrative": "",
       "structures": [
         "我在学校。",
         "我在家工作。",
@@ -396,6 +400,7 @@
     {
       "id": 5,
       "title": "Países, idiomas e nacionalidades",
+      "narrative": "",
       "structures": [
         "我是巴西人。",
         "他是中国人。",
@@ -487,6 +492,7 @@
     {
       "id": 6,
       "title": "Cores e qualidades",
+      "narrative": "",
       "structures": [
         "这个苹果是红色的。",
         "我的衣服很漂亮。",
@@ -588,6 +594,7 @@
     {
       "id": 7,
       "title": "Família e pessoas do cotidiano",
+      "narrative": "",
       "structures": [
         "我家有四口人。",
         "你家有几口人？",
@@ -761,6 +768,7 @@
     {
       "id": 8,
       "title": "Perguntas básicas",
+      "narrative": "",
       "structures": [
         "你叫什么名字？",
         "你是哪国人？",
@@ -842,6 +850,7 @@
     {
       "id": 9,
       "title": "Pronomes e frases com 是",
+      "narrative": "",
       "structures": [
         "我是学生。",
         "你是老师吗？",
@@ -918,6 +927,7 @@
     {
       "id": 10,
       "title": "Advérbios e partículas muito usados",
+      "narrative": "",
       "structures": [
         "我很好。",
         "我也喜欢茶。",
@@ -980,6 +990,7 @@
     {
       "id": 11,
       "title": "Verbos do cotidiano",
+      "narrative": "",
       "structures": [
         "我学习汉语。",
         "我看电视。",
@@ -1102,6 +1113,7 @@
     {
       "id": 12,
       "title": "Gostos, preferência e escolha",
+      "narrative": "",
       "structures": [
         "我喜欢吃水果。",
         "我最喜欢茶。",
@@ -1154,6 +1166,7 @@
     {
       "id": 13,
       "title": "Verbos modais",
+      "narrative": "",
       "structures": [
         "我会写汉字。",
         "明天会下雨吗？",
@@ -1217,6 +1230,7 @@
     {
       "id": 14,
       "title": "Lugar, existência e movimento",
+      "narrative": "",
       "structures": [
         "我在学校。",
         "我在家工作。",
@@ -1285,6 +1299,7 @@
     {
       "id": 15,
       "title": "Revisão final do que mais vale fixar",
+      "narrative": "",
       "structures": [],
       "notes": [],
       "differences": [],

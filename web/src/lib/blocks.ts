@@ -9,6 +9,7 @@ export type VocabRow = {
 export type ContentBlock = {
   id: number;
   title: string;
+  narrative: string;
   structures: string[];
   notes: string[];
   differences: string[];

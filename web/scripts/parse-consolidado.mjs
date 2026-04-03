@@ -1,6 +1,6 @@
 /**
  * Reads Content/consolidado_final.md and writes src/data/consolidado.json
- * Strips narrative intros (paragraphs before the first ### in each block).
+ * Preserves narrative intros (paragraphs before the first ### in each block).
  */
 import fs from "fs";
 import path from "path";
@@ -60,6 +60,9 @@ function parseBlock(headerLine, body) {
   const title = hm[2].trim();
 
   const firstSection = body.indexOf("\n### ");
+  const narrativeRaw =
+    firstSection === -1 ? body : body.slice(0, firstSection);
+  const narrative = narrativeRaw.trim();
   const rest =
     firstSection === -1 ? "" : body.slice(firstSection + 1).trimStart();
 
@@ -68,6 +71,7 @@ function parseBlock(headerLine, body) {
   const block = {
     id,
     title,
+    narrative,
     structures: [],
     notes: [],
     differences: [],
