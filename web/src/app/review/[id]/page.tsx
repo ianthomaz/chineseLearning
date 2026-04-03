@@ -44,7 +44,11 @@ export default async function ReviewBlockPage({ params }: Props) {
       <ReviewStructures blockId={block.id} lines={block.structures} />
 
       {/* Priorities (block 15) */}
-      <PriorityList items={block.priorities} />
+      <PriorityList
+        items={block.priorities}
+        blockId={block.id}
+        studyMode="review"
+      />
 
       {/* Vocabulary meta (block 15 only) */}
       {block.id === 15 && block.vocabulary.length > 0 ? (

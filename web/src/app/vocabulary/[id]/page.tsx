@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BlockPager } from "@/components/BlockPager";
 import { CrossLinks } from "@/components/CrossLinks";
+import { PriorityList } from "@/components/PriorityList";
 import { VocabTable } from "@/components/VocabTable";
 import { getBlock, getBlockIds } from "@/lib/blocks";
 
@@ -52,6 +53,16 @@ export default async function VocabularyBlockPage({ params }: Props) {
       ) : (
         <p className="text-sm text-ink/50">Sem tabela de vocabulário neste bloco.</p>
       )}
+
+      {block.id === 15 && block.priorities.length > 0 ? (
+        <div className="mt-14">
+          <PriorityList
+            items={block.priorities}
+            blockId={15}
+            studyMode="vocabulary"
+          />
+        </div>
+      ) : null}
 
       <CrossLinks blockId={block.id} current="vocabulary" />
       <BlockPager blockId={block.id} mode="vocabulary" />

@@ -39,6 +39,7 @@ export default async function GrammarBlockPage({ params }: Props) {
       </div>
 
       <GrammarSections
+        blockId={block.id}
         structures={block.structures}
         notes={block.notes}
         differences={block.differences}

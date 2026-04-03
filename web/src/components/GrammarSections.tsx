@@ -1,4 +1,10 @@
+"use client";
+
+import { usePinyin } from "@/context/PinyinContext";
+import { PriorityList } from "@/components/PriorityList";
+
 type Props = {
+  blockId: number;
   structures: string[];
   notes: string[];
   differences: string[];
@@ -8,12 +14,14 @@ type Props = {
 function Section({
   title,
   items,
-  useRuby,
+  useChineseLine,
+  showPinyin,
   accent,
 }: {
   title: string;
   items: string[];
-  useRuby?: boolean;
+  useChineseLine?: boolean;
+  showPinyin: boolean;
   accent?: string;
 }) {
   if (items.length === 0) return null;
@@ -36,8 +44,10 @@ function Section({
           <li
             key={`${title}-${i}`}
             className={
-              useRuby
-                ? "font-ruby text-xl leading-loose text-ink md:text-2xl"
+              useChineseLine
+                ? showPinyin
+                  ? "font-ruby text-xl leading-loose text-ink md:text-2xl"
+                  : "font-hanzi text-xl leading-loose text-ink md:text-2xl"
                 : "text-sm leading-relaxed text-ink/80"
             }
           >
@@ -50,11 +60,14 @@ function Section({
 }
 
 export function GrammarSections({
+  blockId,
   structures,
   notes,
   differences,
   priorities,
 }: Props) {
+  const { showPinyin } = usePinyin();
+
   const hasAnything =
     structures.length + notes.length + differences.length + priorities.length > 0;
 
@@ -71,16 +84,32 @@ export function GrammarSections({
       <Section
         title="Estruturas e exemplos"
         items={structures}
-        useRuby
+        useChineseLine
+        showPinyin={showPinyin}
         accent="var(--accent)"
       />
-      <Section title="Observações" items={notes} />
+      <Section title="Observações" items={notes} showPinyin={showPinyin} />
       <Section
         title="Diferenças e contrastes"
         items={differences}
+        showPinyin={showPinyin}
         accent="var(--accent-warm)"
       />
-      <Section title="Prioridades" items={priorities} />
+      {blockId === 15 && priorities.length > 0 ? (
+        <PriorityList
+          items={priorities}
+          title="Prioridades"
+          blockId={15}
+          studyMode="grammar"
+          variant="card"
+        />
+      ) : (
+        <Section
+          title="Prioridades"
+          items={priorities}
+          showPinyin={showPinyin}
+        />
+      )}
     </div>
   );
 }
