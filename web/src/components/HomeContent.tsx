@@ -34,6 +34,13 @@ const modeDefs = [
     color: "#6b4f8c",
     descKey: "home.modeDialoguesDesc",
   },
+  {
+    href: "/tutor",
+    modeKey: "tutor" as const,
+    hanzi: "练习",
+    color: "#d97706",
+    descKey: "home.modeTutorDesc",
+  },
 ] as const;
 
 type Props = {

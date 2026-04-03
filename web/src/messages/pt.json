@@ -9,13 +9,14 @@
     "vocabulary": "Vocabulário",
     "grammar": "Gramática",
     "dialogues": "Diálogos",
+    "tutor": "Prática",
     "courseNav": "Áreas do curso",
     "language": "Idioma da interface"
   },
   "pinyin": {
     "on": "Com pinyin",
     "off": "Sem pinyin",
-    "toggleTitle": "Use a lingueta «Ler» à direita da página."
+    "toggleTitle": "Use a aba «Ler» à direita da página."
   },
   "settings": {
     "tab": "Ler",
@@ -23,11 +24,11 @@
     "collapseTab": "Fechar opções de leitura",
     "closeBackdrop": "Fechar painel",
     "panelTitle": "Opções de leitura",
-    "panelHint": "As escolhas ficam guardadas neste dispositivo.",
+    "panelHint": "Suas preferências ficam salvas neste dispositivo.",
     "pinyinLabel": "Pinyin",
-    "pinyinDesc": "Rubi nas frases de revisão/gramática e coluna nas tabelas de vocabulário.",
+    "pinyinDesc": "Pinyin sobreposto nas frases de revisão/gramática e em coluna nas tabelas.",
     "translationLabel": "Tradução",
-    "translationDesc": "Coluna de sentido nas tabelas e texto por baixo nas réplicas dos diálogos."
+    "translationDesc": "Sentido nas tabelas e texto abaixo das falas nos diálogos."
   },
   "home": {
     "kicker": "Chinês básico",
@@ -39,6 +40,7 @@
     "modeVocabDesc": "Tabelas completas por bloco — Hanzi, pinyin e tradução lado a lado.",
     "modeGrammarDesc": "Estruturas, observações e contrastes organizados por tema.",
     "modeDialoguesDesc": "Conversas completas por tema. Em cada revisão há mini-diálogos ligados a cada frase.",
+    "modeTutorDesc": "Converse com a nossa IA para praticar o seu chinês em tempo real.",
     "blocksTitle": "Blocos",
     "blocksCount": "{count} blocos",
     "wordCount": "{count} palavras",
@@ -47,7 +49,7 @@
   "index": {
     "reviewKicker": "复习",
     "reviewTitle": "Revisão",
-    "reviewIntro": "Frases com pinyin na fonte Hanzi Pinyin (ficheiro local no site). Passe o rato para ver o pinyin gerado como dica. Leia em voz alta; depois use Vocabulário e Gramática para detalhes.",
+    "reviewIntro": "Frases com pinyin integrado (arquivo local). Passe o mouse para ver o pinyin como dica. Leia em voz alta e use as seções de Vocabulário e Gramática para detalhes.",
     "vocabKicker": "词汇",
     "vocabTitle": "Vocabulário",
     "vocabIntro": "Tabelas hanzi · pinyin · português organizadas por bloco. Consulte Gramática para estruturas e regras de uso.",
@@ -100,6 +102,15 @@
       "park": "No parque"
     }
   },
+  "tutor": {
+    "kicker": "Pratique seu mandarim",
+    "pageTitle": "Pratique com IA",
+    "pageIntro": "Pratique o seu chinês com a nossa inteligência artificial. Ela responderá sempre em chinês para ajudar no seu aprendizado.",
+    "roleUser": "VOCÊ",
+    "roleAssistant": "IA",
+    "send": "Enviar",
+    "placeholder": "Escreva algo em português ou chinês..."
+  },
   "vocab": {
     "noTable": "Sem tabela de vocabulário neste bloco.",
     "grammarLink": "Gramática deste bloco:",
@@ -134,9 +145,9 @@
     "blockLink": "Bloco {num}"
   },
   "footer": {
-    "phraseFont": "Pinyin rubi nas frases:",
+    "phraseFont": "Fonte Pinyin Rubi:",
     "phraseFontLink": "Hanzi Pinyin Font (parlr)",
-    "rest": "Hanzi: Noto Sans SC. Coluna de pinyin nas tabelas: texto do consolidado.",
+    "rest": "Hanzi: Noto Sans SC. Pinyin nas tabelas: texto do consolidado.",
     "license": "(CC-BY-SA-4.0)."
   },
   "metadata": {
