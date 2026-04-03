@@ -9,6 +9,7 @@
     "vocabulary": "Vocabulary",
     "grammar": "Grammar",
     "dialogues": "Dialogues",
+    "tutor": "Practice",
     "courseNav": "Course areas",
     "language": "Interface language"
   },
@@ -39,6 +40,7 @@
     "modeVocabDesc": "Full tables per block — Hanzi, pinyin, and gloss side by side.",
     "modeGrammarDesc": "Structures, notes, and contrasts organized by topic.",
     "modeDialoguesDesc": "Full conversations by theme. Each review line also has two mini-dialogues below it.",
+    "modeTutorDesc": "Chat with our AI to practice your Chinese in real time.",
     "blocksTitle": "Blocks",
     "blocksCount": "{count} blocks",
     "wordCount": "{count} words",
@@ -99,6 +101,15 @@
       "school": "At school",
       "park": "In the park"
     }
+  },
+  "tutor": {
+    "kicker": "Practice your Mandarin",
+    "pageTitle": "Practice with AI",
+    "pageIntro": "Practice your Chinese with our artificial intelligence. It will always answer in Chinese to help you learn.",
+    "roleUser": "YOU",
+    "roleAssistant": "AI",
+    "send": "Send",
+    "placeholder": "Write something in Portuguese or Chinese..."
   },
   "vocab": {
     "noTable": "No vocabulary table in this block.",

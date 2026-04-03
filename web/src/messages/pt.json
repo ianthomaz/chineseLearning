@@ -9,6 +9,7 @@
     "vocabulary": "Vocabulário",
     "grammar": "Gramática",
     "dialogues": "Diálogos",
+    "tutor": "Prática",
     "courseNav": "Áreas do curso",
     "language": "Idioma da interface"
   },
@@ -39,6 +40,7 @@
     "modeVocabDesc": "Tabelas completas por bloco — Hanzi, pinyin e tradução lado a lado.",
     "modeGrammarDesc": "Estruturas, observações e contrastes organizados por tema.",
     "modeDialoguesDesc": "Conversas completas por tema. Em cada revisão há mini-diálogos ligados a cada frase.",
+    "modeTutorDesc": "Converse com a nossa IA para praticar o seu chinês em tempo real.",
     "blocksTitle": "Blocos",
     "blocksCount": "{count} blocos",
     "wordCount": "{count} palavras",
@@ -99,6 +101,15 @@
       "school": "Na escola",
       "park": "No parque"
     }
+  },
+  "tutor": {
+    "kicker": "Pratique seu mandarim",
+    "pageTitle": "Pratique com IA",
+    "pageIntro": "Pratique o seu chinês com a nossa inteligência artificial. Ela responderá sempre em chinês para ajudar no seu aprendizado.",
+    "roleUser": "VOCÊ",
+    "roleAssistant": "IA",
+    "send": "Enviar",
+    "placeholder": "Escreva algo em português ou chinês..."
   },
   "vocab": {
     "noTable": "Sem tabela de vocabulário neste bloco.",
