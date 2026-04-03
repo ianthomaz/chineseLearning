@@ -2,6 +2,7 @@
   "sections": [
     {
       "id": "familyIntro",
+      "categoryId": 7,
       "lines": [
         {
           "speaker": "A",
@@ -47,6 +48,7 @@
     },
     {
       "id": "dayPlan",
+      "categoryId": 2,
       "lines": [
         {
           "speaker": "A",
@@ -92,6 +94,7 @@
     },
     {
       "id": "supermarket",
+      "categoryId": 3,
       "lines": [
         {
           "speaker": "A",
@@ -137,6 +140,7 @@
     },
     {
       "id": "school",
+      "categoryId": 8,
       "lines": [
         {
           "speaker": "A",
@@ -182,6 +186,7 @@
     },
     {
       "id": "park",
+      "categoryId": 3,
       "lines": [
         {
           "speaker": "A",
@@ -221,6 +226,404 @@
             "pt": "Gosto de praticar taichi.",
             "en": "I like practicing tai chi.",
             "es": "Me gusta practicar taichí."
+          }
+        }
+      ]
+    },
+    {
+      "id": "restaurant",
+      "categoryId": 3,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "欢迎光临！请问几位？",
+          "pinyin": "Huānyíng guānglín! Qǐngwèn jǐ wèi?",
+          "translation": {
+            "pt": "Bem-vindo! Para quantas pessoas?",
+            "en": "Welcome! How many people?",
+            "es": "¡Bienvenido! ¿Para cuántas personas?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "三位。请问今天有什么特色菜？",
+          "pinyin": "Sān wèi. Qǐngwèn jīntiān yǒu shénme tèsè cài?",
+          "translation": {
+            "pt": "Três pessoas. Qual é o prato especial de hoje?",
+            "en": "Three people. What's today's specialty?",
+            "es": "Tres personas. ¿Cuál es el plato especial de hoy?"
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "我们的宫保鸡丁很好吃。还要点什么？",
+          "pinyin": "Wǒmen de gōngbǎo jītīng hěn hǎochī. Háiyào diǎn shénme?",
+          "translation": {
+            "pt": "O nosso frango Kung Pao é delicioso. O que mais deseja?",
+            "en": "Our Kung Pao chicken is delicious. What else would you like?",
+            "es": "Nuestro pollo al kung pao es delicioso. ¿Qué más desea?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "来一份宫保鸡丁、一份炒饭和一个汤。",
+          "pinyin": "Lái yī fèn gōngbǎo jītīng, yī fèn chǎofàn hé yī ge tāng.",
+          "translation": {
+            "pt": "Um frango Kung Pao, um arroz frito e uma sopa.",
+            "en": "One Kung Pao chicken, one fried rice, and one soup.",
+            "es": "Un pollo kung pao, un arroz frito y una sopa."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "好的。请稍等，大约三十分钟。",
+          "pinyin": "Hǎo de. Qǐng shāoděng, dàyuē sānshí fēnzhōng.",
+          "translation": {
+            "pt": "Está bem. Por favor, aguarde cerca de trinta minutos.",
+            "en": "Okay. Please wait, about thirty minutes.",
+            "es": "Está bien. Por favor espere, aproximadamente treinta minutos."
+          }
+        }
+      ]
+    },
+    {
+      "id": "hospital",
+      "categoryId": 8,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "医生，我不舒服。",
+          "pinyin": "Yīshēng, wǒ búshūfu.",
+          "translation": {
+            "pt": "Doutor, não me sinto bem.",
+            "en": "Doctor, I don't feel well.",
+            "es": "Doctor, no me siento bien."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "你哪里不舒服？",
+          "pinyin": "Nǐ nǎlǐ búshūfu?",
+          "translation": {
+            "pt": "Onde é que dói?",
+            "en": "Where do you feel uncomfortable?",
+            "es": "¿Dónde te duele?"
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "我头疼，还有点儿发烧。",
+          "pinyin": "Wǒ tóuténg, háiyǒudiǎnr fāshāo.",
+          "translation": {
+            "pt": "Tenho dor de cabeça e um pouco de febre.",
+            "en": "I have a headache and a slight fever.",
+            "es": "Tengo dolor de cabeza y un poco de fiebre."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我给你检查一下。你吃过药吗？",
+          "pinyin": "Wǒ gěi nǐ jiǎnchá yīxià. Nǐ chīguo yào ma?",
+          "translation": {
+            "pt": "Deixa-me examinar-te. Já tomaste medicamentos?",
+            "en": "Let me check you. Have you taken any medicine?",
+            "es": "Déjame examinarte. ¿Has tomado medicinas?"
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "没有。",
+          "pinyin": "Méiyǒu.",
+          "translation": {
+            "pt": "Não.",
+            "en": "No.",
+            "es": "No."
+          }
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "categoryId": 4,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "对不起，请问去火车站怎么走？",
+          "pinyin": "Duìbúqǐ, qǐngwèn qù huǒchēzhàn zěnme zǒu?",
+          "translation": {
+            "pt": "Desculpa, como chego à estação de comboios?",
+            "en": "Excuse me, how do I get to the train station?",
+            "es": "Perdone, ¿cómo llego a la estación de tren?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "往前走，然后右转。",
+          "pinyin": "Wǎng qián zǒu, ránhòu yòu zhuǎn.",
+          "translation": {
+            "pt": "Segue em frente e depois vira à direita.",
+            "en": "Go straight, then turn right.",
+            "es": "Sigue adelante, luego gira a la derecha."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "距离远不远？",
+          "pinyin": "Jùlí yuǎn búyuǎn?",
+          "translation": {
+            "pt": "É longe daqui?",
+            "en": "Is it far?",
+            "es": "¿Está lejos?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "不远，大约十分钟。或者你可以坐地铁。",
+          "pinyin": "Búyuǎn, dàyuē shí fēnzhōng. Huòzhě nǐ kěyǐ zuò dìtiě.",
+          "translation": {
+            "pt": "Não é longe, cerca de dez minutos. Ou podes ir de metro.",
+            "en": "Not far, about ten minutes. Or you can take the subway.",
+            "es": "No muy lejos, unos diez minutos. O puedes tomar el metro."
+          }
+        }
+      ]
+    },
+    {
+      "id": "hotel",
+      "categoryId": 4,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你好，我预定了一间房间。",
+          "pinyin": "Nǐ hǎo, wǒ yùdìngle yī jiān fángjiān.",
+          "translation": {
+            "pt": "Olá, tenho uma reserva de quarto.",
+            "en": "Hello, I have a room reservation.",
+            "es": "Hola, tengo una reserva de habitación."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "请告诉我你的名字。",
+          "pinyin": "Qǐng gàosu wǒ nǐ de míngzi.",
+          "translation": {
+            "pt": "Por favor, diga-me o seu nome.",
+            "en": "Please tell me your name.",
+            "es": "Por favor, dígame su nombre."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "我叫李明。",
+          "pinyin": "Wǒ jiào Lǐ Míng.",
+          "translation": {
+            "pt": "Chamo-me Li Ming.",
+            "en": "My name is Li Ming.",
+            "es": "Me llamo Li Ming."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "好的，李先生。这是你的房间钥匙。房间在三楼。",
+          "pinyin": "Hǎo de, Lǐ xiānsheng. Zhè shì nǐ de fángjiān yàoshi. Fángjiān zài sān lóu.",
+          "translation": {
+            "pt": "Está bem, Sr. Li. Aqui está a chave do quarto. O quarto está no terceiro andar.",
+            "en": "Okay, Mr. Li. Here's your room key. Your room is on the third floor.",
+            "es": "Está bien, Sr. Li. Aquí está la llave de su habitación. La habitación está en el tercer piso."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bank",
+      "categoryId": 2,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "请问，我可以在这里换美元吗？",
+          "pinyin": "Qǐngwèn, wǒ kěyǐ zài zhèlǐ huàn měiyuán ma?",
+          "translation": {
+            "pt": "Por favor, posso trocar dólares americanos aqui?",
+            "en": "Excuse me, can I exchange US dollars here?",
+            "es": "Por favor, ¿puedo cambiar dólares estadounidenses aquí?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "可以的。你要换多少？",
+          "pinyin": "Kěyǐ de. Nǐ yào huàn duōshǎo?",
+          "translation": {
+            "pt": "Pode, sim. Quanto quer trocar?",
+            "en": "Yes, you can. How much would you like to exchange?",
+            "es": "Sí, puede. ¿Cuánto quiere cambiar?"
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "五百美元。今天的汇率是多少？",
+          "pinyin": "Wǔbǎi měiyuán. Jīntiān de huìlǜ shì duōshǎo?",
+          "translation": {
+            "pt": "Quinhentos dólares. Qual é a taxa de câmbio hoje?",
+            "en": "Five hundred dollars. What's the exchange rate today?",
+            "es": "Quinientos dólares. ¿Cuál es el tipo de cambio hoy?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "一美元等于六块五人民币。请填一下这个表格。",
+          "pinyin": "Yī měiyuán děngyú liù kuài wǔ rénmínbì. Qǐng tiányī xià zhège biǎogé.",
+          "translation": {
+            "pt": "Um dólar equivale a seis yuan e cinquenta centavos. Por favor, preencha este formulário.",
+            "en": "One dollar is equal to 6.5 RMB. Please fill out this form.",
+            "es": "Un dólar equivale a 6,5 yuanes. Por favor, complete este formulario."
+          }
+        }
+      ]
+    },
+    {
+      "id": "postOffice",
+      "categoryId": 4,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你好，我要寄一个包裹到美国。",
+          "pinyin": "Nǐ hǎo, wǒ yào jì yī ge baōguǒ dào Měiguó.",
+          "translation": {
+            "pt": "Olá, quero enviar um pacote para os EUA.",
+            "en": "Hello, I want to send a package to the US.",
+            "es": "Hola, quiero enviar un paquete a Estados Unidos."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "好的。包裹多重？",
+          "pinyin": "Hǎo de. Baōguǒ duō zhòng?",
+          "translation": {
+            "pt": "Está bem. Quanto pesa o pacote?",
+            "en": "Sure. How much does the package weigh?",
+            "es": "Claro. ¿Cuánto pesa el paquete?"
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "两公斤。",
+          "pinyin": "Liǎng gōngjīn.",
+          "translation": {
+            "pt": "Dois quilogramas.",
+            "en": "Two kilograms.",
+            "es": "Dos kilogramos."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "平邮要两周，快递要五天。你选哪一个？",
+          "pinyin": "Píng yóu yào liǎng zhōu, kuàidì yào wǔ tiān. Nǐ xuǎn nǎ yī ge?",
+          "translation": {
+            "pt": "O correio normal leva duas semanas, o expresso leva cinco dias. Qual escolhe?",
+            "en": "Standard mail takes two weeks, express takes five days. Which one do you choose?",
+            "es": "El correo estándar tarda dos semanas, el expreso tarda cinco días. ¿Cuál elige?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pharmacy",
+      "categoryId": 8,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "您好，我需要买感冒药。",
+          "pinyin": "Nín hǎo, wǒ xūyào mǎi gǎnmào yào.",
+          "translation": {
+            "pt": "Olá, preciso de medicamentos para a constipação.",
+            "en": "Hello, I need cold medicine.",
+            "es": "Hola, necesito medicina para el resfriado."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "你的症状是什么？",
+          "pinyin": "Nǐ de zhèngzhuàng shì shénme?",
+          "translation": {
+            "pt": "Quais são os seus sintomas?",
+            "en": "What are your symptoms?",
+            "es": "¿Cuáles son tus síntomas?"
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "我打喷嚏，喉咙疼。",
+          "pinyin": "Wǒ dǎ pēnti, hóulong téng.",
+          "translation": {
+            "pt": "Estou a espirrar e a garganta dói.",
+            "en": "I'm sneezing and my throat hurts.",
+            "es": "Estoy estornudando y me duele la garganta."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我建议你吃这个药。一天三次，每次两片。",
+          "pinyin": "Wǒ jiànyì nǐ chī zhège yào. Yī tiān sān cì, měi cì liǎng piàn.",
+          "translation": {
+            "pt": "Recomendo que tome este medicamento. Três vezes ao dia, duas comprimidos de cada vez.",
+            "en": "I recommend this medicine. Three times a day, two tablets each time.",
+            "es": "Recomiendo esta medicina. Tres veces al día, dos pastillas cada vez."
+          }
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "categoryId": 3,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "这个香蕉怎么卖？",
+          "pinyin": "Zhège xiāngjiāo zěnme mài?",
+          "translation": {
+            "pt": "Qual é o preço das bananas?",
+            "en": "How much are these bananas?",
+            "es": "¿Cuánto cuestan estos plátanos?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "三块钱一斤。",
+          "pinyin": "Sān kuài qián yī jīn.",
+          "translation": {
+            "pt": "Três yuan o quilo.",
+            "en": "Three yuan per jin.",
+            "es": "Tres yuan el jin."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "能便宜吗？我要买两斤。",
+          "pinyin": "Néng piányi ma? Wǒ yào mǎi liǎng jīn.",
+          "translation": {
+            "pt": "Podes fazer desconto? Quero dois quilos.",
+            "en": "Can you make it cheaper? I want two jin.",
+            "es": "¿Puedes rebajar? Quiero dos jin."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "好吧，五块钱两斤。",
+          "pinyin": "Hǎo ba, wǔ kuài qián liǎng jīn.",
+          "translation": {
+            "pt": "Está bem, cinco yuan os dois quilos.",
+            "en": "Okay, five yuan for two jin.",
+            "es": "Está bien, cinco yuan por dos jin."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "谢谢！还要来点儿蔬菜。",
+          "pinyin": "Xièxie! Háiyào lái diǎnr shūcài.",
+          "translation": {
+            "pt": "Obrigado! Queria também alguns vegetais.",
+            "en": "Thank you! I also need some vegetables.",
+            "es": "¡Gracias! También quiero algunas verduras."
           }
         }
       ]

@@ -144,9 +144,18 @@
         ]
       },
       "reviewStandalonePhrases": {
-        "pt": [],
-        "en": [],
-        "es": []
+        "pt": [
+          "Quantos irmãos você tem?",
+          "Ele tem três filhos."
+        ],
+        "en": [
+          "How many siblings do you have?",
+          "He has three children."
+        ],
+        "es": [
+          "¿Cuántos hermanos tienes?",
+          "Él tiene tres hijos."
+        ]
       },
       "reviewMiniDialogues": [
         [
@@ -220,6 +229,38 @@
               "pt": "Um, dois, três — muito bem!",
               "en": "One, two, three — very good!",
               "es": "Uno, dos, tres — ¡muy bien!"
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你的电话号码是多少？",
+            "pinyin": "nǐ de diànhuà hàomǎ shì duōshao?",
+            "translation": {
+              "pt": "Qual é o teu número de telefone?",
+              "en": "What's your phone number?",
+              "es": "¿Cuál es tu número de teléfono?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "是一三五九八八二二一。",
+            "pinyin": "shì yī sān wǔ jiǔ bā bā èr èr yī.",
+            "translation": {
+              "pt": "É um, três, cinco, nove, oito, oito, dois, dois, um.",
+              "en": "It's one, three, five, nine, eight, eight, two, two, one.",
+              "es": "Es uno, tres, cinco, nueve, ocho, ocho, dos, dos, uno."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "谢谢！",
+            "pinyin": "xièxie!",
+            "translation": {
+              "pt": "Obrigado!",
+              "en": "Thanks!",
+              "es": "¡Gracias!"
             }
           }
         ]
@@ -372,9 +413,18 @@
         ]
       },
       "reviewStandalonePhrases": {
-        "pt": [],
-        "en": [],
-        "es": []
+        "pt": [
+          "Você fala chinês bem.",
+          "Ele não entende inglês."
+        ],
+        "en": [
+          "You speak Chinese well.",
+          "He does not understand English."
+        ],
+        "es": [
+          "Hablas bien chino.",
+          "Él no entiende inglés."
+        ]
       },
       "reviewMiniDialogues": [
         [
@@ -508,6 +558,48 @@
               "pt": "Trinta e cinco yuan e cinquenta máo.",
               "en": "Thirty-five yuan and fifty mao.",
               "es": "Treinta y cinco yuanes y cincuenta máo."
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你什么时候起床？",
+            "pinyin": "nǐ shénme shíhou qǐchuáng?",
+            "translation": {
+              "pt": "A que horas acordas?",
+              "en": "What time do you wake up?",
+              "es": "¿A qué hora te despiertas?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我早上七点起床。",
+            "pinyin": "wǒ zǎoshang qī diǎn qǐchuáng.",
+            "translation": {
+              "pt": "Acordo às sete da manhã.",
+              "en": "I wake up at seven in the morning.",
+              "es": "Me despierto a las siete de la mañana."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你工作到几点？",
+            "pinyin": "nǐ gōngzuò dào jǐ diǎn?",
+            "translation": {
+              "pt": "Até que horas trabalhas?",
+              "en": "Until what time do you work?",
+              "es": "¿Hasta qué hora trabajas?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我到下午六点。",
+            "pinyin": "wǒ dào xiàwǔ liù diǎn.",
+            "translation": {
+              "pt": "Até as seis da tarde.",
+              "en": "Until six in the afternoon.",
+              "es": "Hasta las seis de la tarde."
             }
           }
         ]
@@ -653,9 +745,18 @@
         ]
       },
       "reviewStandalonePhrases": {
-        "pt": [],
-        "en": [],
-        "es": []
+        "pt": [
+          "A cor vermelha é bonita.",
+          "Que cor é esse livro?"
+        ],
+        "en": [
+          "The red color is beautiful.",
+          "What color is that book?"
+        ],
+        "es": [
+          "El color rojo es hermoso.",
+          "¿De qué color es ese libro?"
+        ]
       },
       "reviewMiniDialogues": [
         [
@@ -729,6 +830,48 @@
               "pt": "Ótimo, vamos comer maçãs.",
               "en": "Great, let's eat apples.",
               "es": "Genial, comamos manzanas."
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你喜欢吃什么水果？",
+            "pinyin": "nǐ xǐhuan chī shénme shuǐguǒ?",
+            "translation": {
+              "pt": "Que frutas gostas de comer?",
+              "en": "What fruit do you like to eat?",
+              "es": "¿Qué frutas te gusta comer?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我喜欢吃苹果和香蕉。",
+            "pinyin": "wǒ xǐhuan chī píngguǒ hé xiāngjiāo.",
+            "translation": {
+              "pt": "Gosto de comer maçãs e bananas.",
+              "en": "I like to eat apples and bananas.",
+              "es": "Me gustan las manzanas y los plátanos."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你想喝咖啡还是茶？",
+            "pinyin": "nǐ xiǎng hē kāfēi háishi chá?",
+            "translation": {
+              "pt": "Queres beber café ou chá?",
+              "en": "Do you want coffee or tea?",
+              "es": "¿Quieres café o té?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我想要白茶，谢谢。",
+            "pinyin": "wǒ xiǎngyào báichá, xièxie.",
+            "translation": {
+              "pt": "Quero chá branco, obrigado.",
+              "en": "I want white tea, thanks.",
+              "es": "Quiero té blanco, gracias."
             }
           }
         ]
@@ -864,9 +1007,18 @@
         ]
       },
       "reviewStandalonePhrases": {
-        "pt": [],
-        "en": [],
-        "es": []
+        "pt": [
+          "Quanto custa esse computador?",
+          "O livro é muito caro."
+        ],
+        "en": [
+          "How much does this computer cost?",
+          "The book is very expensive."
+        ],
+        "es": [
+          "¿Cuánto cuesta este ordenador?",
+          "El libro es muy caro."
+        ]
       },
       "reviewMiniDialogues": [
         [
@@ -930,6 +1082,38 @@
               "pt": "Sim, e também há uma loja.",
               "en": "Yes, there's a shop at the school too.",
               "es": "Sí, también hay una tienda en el colegio."
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "请问，最近的咖啡馆在哪里？",
+            "pinyin": "qǐngwèn, zuìjìn de kāfēiguǎn zài nǎlǐ?",
+            "translation": {
+              "pt": "Por favor, onde fica a cafeteria mais próxima?",
+              "en": "Excuse me, where is the nearest café?",
+              "es": "Por favor, ¿dónde está la cafetería más cercana?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "就在这里的右边，那个房子里面。",
+            "pinyin": "jiùzài zhèlǐ de yòubian, nàge fángzi lǐmiàn.",
+            "translation": {
+              "pt": "Fica à direita daqui, dentro daquele edifício.",
+              "en": "It's right there on the right, inside that building.",
+              "es": "Está a la derecha aquí, dentro de ese edificio."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "谢谢你！",
+            "pinyin": "xièxie nǐ!",
+            "translation": {
+              "pt": "Obrigado!",
+              "en": "Thank you!",
+              "es": "¡Gracias!"
             }
           }
         ]
@@ -1065,9 +1249,18 @@
         ]
       },
       "reviewStandalonePhrases": {
-        "pt": [],
-        "en": [],
-        "es": []
+        "pt": [
+          "Que horas são agora?",
+          "Vou chegar às três da tarde."
+        ],
+        "en": [
+          "What time is it now?",
+          "I will arrive at three in the afternoon."
+        ],
+        "es": [
+          "¿Qué hora es ahora?",
+          "Llegaré a las tres de la tarde."
+        ]
       },
       "reviewMiniDialogues": [
         [
@@ -1131,6 +1324,48 @@
               "pt": "Os dois falamos um pouco de chinês.",
               "en": "We both speak a little Chinese.",
               "es": "Los dos hablamos un poco de chino."
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你从哪个国家来？",
+            "pinyin": "nǐ cóng nǎge guójiā lái?",
+            "translation": {
+              "pt": "De que país vens?",
+              "en": "Which country are you from?",
+              "es": "¿De qué país vienes?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我来自中国，我是中国人。",
+            "pinyin": "wǒ láizì Zhōngguó, wǒ shì Zhōngguó rén.",
+            "translation": {
+              "pt": "Venho da China, sou chinês.",
+              "en": "I'm from China, I'm Chinese.",
+              "es": "Vengo de China, soy chino."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你会说汉语吗？",
+            "pinyin": "nǐ huì shuō Hànyǔ ma?",
+            "translation": {
+              "pt": "Sabes falar chinês?",
+              "en": "Can you speak Chinese?",
+              "es": "¿Sabes hablar chino?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "会一点儿。",
+            "pinyin": "huì yīdiǎnr.",
+            "translation": {
+              "pt": "Um pouquinho.",
+              "en": "A little.",
+              "es": "Un poquito."
             }
           }
         ]
@@ -1276,9 +1511,18 @@
         ]
       },
       "reviewStandalonePhrases": {
-        "pt": [],
-        "en": [],
-        "es": []
+        "pt": [
+          "Eu como arroz todos os dias.",
+          "Você gosta de chá?"
+        ],
+        "en": [
+          "I eat rice every day.",
+          "Do you like tea?"
+        ],
+        "es": [
+          "Como arroz todos los días.",
+          "¿Te gusta el té?"
+        ]
       },
       "reviewMiniDialogues": [
         [
@@ -1332,6 +1576,38 @@
               "pt": "Sim, nem frio nem calor.",
               "en": "Right—not cold or hot.",
               "es": "Sí, ni frío ni calor."
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你觉得哪个颜色比较好？",
+            "pinyin": "nǐ juéde nǎge yánsè bǐjiào hǎo?",
+            "translation": {
+              "pt": "Que cor te parece melhor?",
+              "en": "Which color do you think looks better?",
+              "es": "¿Qué color te parece mejor?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我最喜欢红色，很好看。",
+            "pinyin": "wǒ zuì xǐhuan hóngsè, hěn hǎokàn.",
+            "translation": {
+              "pt": "Prefiro vermelho, é muito bonito.",
+              "en": "I like red best, it looks very nice.",
+              "es": "Me encanta el rojo, se ve muy bonito."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "黑色也不错。",
+            "pinyin": "hēisè yě búcuò.",
+            "translation": {
+              "pt": "O preto também é bom.",
+              "en": "Black is also good.",
+              "es": "El negro también está bien."
             }
           }
         ]
@@ -1561,9 +1837,18 @@
         ]
       },
       "reviewStandalonePhrases": {
-        "pt": [],
-        "en": [],
-        "es": []
+        "pt": [
+          "Minha casa é perto da estação.",
+          "O banco fica longe daqui?"
+        ],
+        "en": [
+          "My house is near the station.",
+          "Is the bank far from here?"
+        ],
+        "es": [
+          "Mi casa está cerca de la estación.",
+          "¿Está lejos el banco?"
+        ]
       },
       "reviewMiniDialogues": [
         [
@@ -1627,6 +1912,48 @@
               "pt": "Quantos anos ele tem este ano?",
               "en": "How old is he this year?",
               "es": "¿Cuántos años tiene este año?"
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你家有几口人？",
+            "pinyin": "nǐ jiā yǒu jǐ kǒu rén?",
+            "translation": {
+              "pt": "Quantas pessoas há na tua família?",
+              "en": "How many people are in your family?",
+              "es": "¿Cuántas personas hay en tu familia?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我家有五口人，爸爸、妈妈、我和两个姐姐。",
+            "pinyin": "wǒ jiā yǒu wǔ kǒu rén, bàba, māma, wǒ hé liǎng ge jiějie.",
+            "translation": {
+              "pt": "Na minha família somos cinco: pai, mãe, eu e duas irmãs.",
+              "en": "There are five people in my family: dad, mom, me and two sisters.",
+              "es": "Hay cinco personas en mi familia: papá, mamá, yo y dos hermanas."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你爷爷和奶奶呢？",
+            "pinyin": "nǐ yéye hé nǎinai ne?",
+            "translation": {
+              "pt": "E o teu avô e avó?",
+              "en": "What about your grandparents?",
+              "es": "¿Y tus abuelos?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "他们在北京。",
+            "pinyin": "tāmen zài Běijīng.",
+            "translation": {
+              "pt": "Eles estão em Pequim.",
+              "en": "They are in Beijing.",
+              "es": "Están en Pekín."
             }
           }
         ]
@@ -1782,9 +2109,18 @@
         ]
       },
       "reviewStandalonePhrases": {
-        "pt": [],
-        "en": [],
-        "es": []
+        "pt": [
+          "Você estuda matemática?",
+          "A história é difícil."
+        ],
+        "en": [
+          "Do you study mathematics?",
+          "History is difficult."
+        ],
+        "es": [
+          "¿Estudias matemáticas?",
+          "La historia es difícil."
+        ]
       },
       "reviewMiniDialogues": [
         [
@@ -1868,6 +2204,48 @@
               "pt": "Cinquenta yuan.",
               "en": "Fifty yuan.",
               "es": "Cincuenta yuanes."
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你去哪儿了？",
+            "pinyin": "nǐ qù nǎr le?",
+            "translation": {
+              "pt": "Aonde foste?",
+              "en": "Where did you go?",
+              "es": "¿Adónde fuiste?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我去医院了。",
+            "pinyin": "wǒ qù yīyuàn le.",
+            "translation": {
+              "pt": "Fui ao hospital.",
+              "en": "I went to the hospital.",
+              "es": "Fui al hospital."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你怎么了？没有事吧？",
+            "pinyin": "nǐ zěnme le? méiyǒu shì ba?",
+            "translation": {
+              "pt": "O que te aconteceu? Não é nada sério?",
+              "en": "What happened? Nothing serious?",
+              "es": "¿Qué pasó? ¿Nada grave?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "没有事，只是检查。",
+            "pinyin": "méiyǒu shì, zhǐshì jiǎnchá.",
+            "translation": {
+              "pt": "Não é nada, apenas um exame.",
+              "en": "Nothing, just a checkup.",
+              "es": "Nada, solo un examen."
             }
           }
         ]
@@ -1988,9 +2366,18 @@
         ]
       },
       "reviewStandalonePhrases": {
-        "pt": [],
-        "en": [],
-        "es": []
+        "pt": [
+          "Ela trabalha em um escritório.",
+          "O que você faz?"
+        ],
+        "en": [
+          "She works in an office.",
+          "What do you do?"
+        ],
+        "es": [
+          "Ella trabaja en una oficina.",
+          "¿Qué trabajo haces?"
+        ]
       },
       "reviewMiniDialogues": [
         [
@@ -2054,6 +2441,48 @@
               "pt": "Claro que sim!",
               "en": "Of course!",
               "es": "¡Claro!"
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你是做什么工作的？",
+            "pinyin": "nǐ shì zuò shénme gōngzuò de?",
+            "translation": {
+              "pt": "O que trabalhas?",
+              "en": "What do you do for work?",
+              "es": "¿Cuál es tu trabajo?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我是老师。",
+            "pinyin": "wǒ shì lǎoshī.",
+            "translation": {
+              "pt": "Sou professor.",
+              "en": "I'm a teacher.",
+              "es": "Soy profesor."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你是不是在学校工作？",
+            "pinyin": "nǐ shì búshi zài xuéxiào gōngzuò?",
+            "translation": {
+              "pt": "Trabalhas na escola?",
+              "en": "Do you work at a school?",
+              "es": "¿Trabajas en una escuela?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "是的，我在北京的一所大学工作。",
+            "pinyin": "shì de, wǒ zài Běijīng de yī suǒ dàxué gōngzuò.",
+            "translation": {
+              "pt": "Sim, trabalho numa universidade de Pequim.",
+              "en": "Yes, I work at a university in Beijing.",
+              "es": "Sí, trabajo en una universidad de Pekín."
             }
           }
         ]
@@ -2166,9 +2595,18 @@
         ]
       },
       "reviewStandalonePhrases": {
-        "pt": [],
-        "en": [],
-        "es": []
+        "pt": [
+          "Você usa computador todos os dias?",
+          "Ele tem um telefone novo."
+        ],
+        "en": [
+          "Do you use a computer every day?",
+          "He has a new phone."
+        ],
+        "es": [
+          "¿Usas la computadora todos los días?",
+          "Él tiene un teléfono nuevo."
+        ]
       },
       "reviewMiniDialogues": [
         [
@@ -2232,6 +2670,38 @@
               "pt": "Sim, todos.",
               "en": "Yes, all of them.",
               "es": "Sí, todos."
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你觉得这个电影怎么样？",
+            "pinyin": "nǐ juéde zhège diànyǐng zěnmeyàng?",
+            "translation": {
+              "pt": "O que achas deste filme?",
+              "en": "What do you think of this movie?",
+              "es": "¿Qué te parece esta película?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "很好，真的很有意思。",
+            "pinyin": "hěn hǎo, zhēn de hěn yǒu yìsi.",
+            "translation": {
+              "pt": "Muito bom, realmente muito interessante.",
+              "en": "Very good, really very interesting.",
+              "es": "Muy bueno, realmente muy interesante."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "我也觉得不错。",
+            "pinyin": "wǒ yě juéde búcuò.",
+            "translation": {
+              "pt": "Eu também acho bom.",
+              "en": "I think it's good too.",
+              "es": "Yo también creo que está bien."
             }
           }
         ]
@@ -2404,9 +2874,18 @@
         ]
       },
       "reviewStandalonePhrases": {
-        "pt": [],
-        "en": [],
-        "es": []
+        "pt": [
+          "Hoje o tempo está muito quente.",
+          "Vai chover amanhã?"
+        ],
+        "en": [
+          "The weather is very hot today.",
+          "Will it rain tomorrow?"
+        ],
+        "es": [
+          "Hoy el clima es muy caluroso.",
+          "¿Lloverá mañana?"
+        ]
       },
       "reviewMiniDialogues": [
         [
@@ -2460,6 +2939,48 @@
               "pt": "Sim, diga.",
               "en": "Sure, go ahead.",
               "es": "Sí, diga."
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你今天做什么了？",
+            "pinyin": "nǐ jīntiān zuò shénme le?",
+            "translation": {
+              "pt": "O que fizeste hoje?",
+              "en": "What did you do today?",
+              "es": "¿Qué hiciste hoy?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我工作了八小时，然后我喝咖啡，看了电视。",
+            "pinyin": "wǒ gōngzuò le bā xiǎoshí, ránhòu wǒ hē kāfēi, kàn le diànshì.",
+            "translation": {
+              "pt": "Trabalhei oito horas, depois bebi café e assisti televisão.",
+              "en": "I worked for eight hours, then I drank coffee and watched TV.",
+              "es": "Trabajé ocho horas, luego bebí café y vi televisión."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你喜欢看书吗？",
+            "pinyin": "nǐ xǐhuan kàn shū ma?",
+            "translation": {
+              "pt": "Gostas de ler?",
+              "en": "Do you like reading?",
+              "es": "¿Te gusta leer?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "是的，我每天都看一点儿书。",
+            "pinyin": "shì de, wǒ měi tiān dōu kàn yīdiǎnr shū.",
+            "translation": {
+              "pt": "Sim, leio um bocado todos os dias.",
+              "en": "Yes, I read a little bit every day.",
+              "es": "Sí, leo un poco cada día."
             }
           }
         ]
@@ -2562,9 +3083,18 @@
         ]
       },
       "reviewStandalonePhrases": {
-        "pt": [],
-        "en": [],
-        "es": []
+        "pt": [
+          "Você mora em um apartamento?",
+          "A sala é grande e clara."
+        ],
+        "en": [
+          "Do you live in an apartment?",
+          "The living room is big and bright."
+        ],
+        "es": [
+          "¿Vives en un apartamento?",
+          "La sala es grande y luminosa."
+        ]
       },
       "reviewMiniDialogues": [
         [
@@ -2618,6 +3148,48 @@
               "pt": "Sim, precisamos de três.",
               "en": "Yes, we need three.",
               "es": "Sí, necesitamos tres."
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你想吃什么？",
+            "pinyin": "nǐ xiǎng chī shénme?",
+            "translation": {
+              "pt": "O que queres comer?",
+              "en": "What do you want to eat?",
+              "es": "¿Qué quieres comer?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我想吃中餐。",
+            "pinyin": "wǒ xiǎng chī Zhōngcān.",
+            "translation": {
+              "pt": "Quero comer comida chinesa.",
+              "en": "I want to eat Chinese food.",
+              "es": "Quiero comer comida china."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你最喜欢吃什么？",
+            "pinyin": "nǐ zuì xǐhuan chī shénme?",
+            "translation": {
+              "pt": "O que mais gostas de comer?",
+              "en": "What's your favorite food?",
+              "es": "¿Cuál es tu comida favorita?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我最喜欢吃鸡肉。",
+            "pinyin": "wǒ zuì xǐhuan chī jīròu.",
+            "translation": {
+              "pt": "Gosto mais de comer frango.",
+              "en": "I like chicken best.",
+              "es": "Me encanta la carne de pollo."
             }
           }
         ]
@@ -2743,9 +3315,18 @@
         ]
       },
       "reviewStandalonePhrases": {
-        "pt": [],
-        "en": [],
-        "es": []
+        "pt": [
+          "Você gosta de jogar futebol?",
+          "Eu corro no parque todos os dias."
+        ],
+        "en": [
+          "Do you like to play football?",
+          "I run in the park every day."
+        ],
+        "es": [
+          "¿Te gusta jugar fútbol?",
+          "Corro en el parque todos los días."
+        ]
       },
       "reviewMiniDialogues": [
         [
@@ -2809,6 +3390,48 @@
               "pt": "Quero aprender chinês.",
               "en": "I want to learn Chinese.",
               "es": "Quiero aprender chino."
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你会开车吗？",
+            "pinyin": "nǐ huì kāichē ma?",
+            "translation": {
+              "pt": "Sabes dirigir?",
+              "en": "Can you drive?",
+              "es": "¿Sabes conducir?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我能开车，但是我不太喜欢。",
+            "pinyin": "wǒ néng kāichē, búguò wǒ búzhào xǐhuan.",
+            "translation": {
+              "pt": "Posso dirigir, mas não gosto muito.",
+              "en": "I can drive, but I don't really like to.",
+              "es": "Puedo conducir, pero no me gusta mucho."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "为什么？",
+            "pinyin": "wèishéme?",
+            "translation": {
+              "pt": "Porque?",
+              "en": "Why?",
+              "es": "¿Por qué?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "因为很累，我想坐公共汽车。",
+            "pinyin": "yīnwèi hěn lèi, wǒ xiǎng zuò gōnggòng qìchē.",
+            "translation": {
+              "pt": "Porque é cansativo, prefiro apanhar autocarro.",
+              "en": "Because it's tiring, I prefer to take the bus.",
+              "es": "Porque es agotador, prefiero tomar el autobús."
             }
           }
         ]
@@ -2933,9 +3556,18 @@
         ]
       },
       "reviewStandalonePhrases": {
-        "pt": [],
-        "en": [],
-        "es": []
+        "pt": [
+          "Você viaja de férias todo ano?",
+          "Gosto de viajar para o exterior."
+        ],
+        "en": [
+          "Do you travel on vacation every year?",
+          "I like to travel abroad."
+        ],
+        "es": [
+          "¿Viajas de vacaciones cada año?",
+          "Me gusta viajar al extranjero."
+        ]
       },
       "reviewMiniDialogues": [
         [
@@ -2999,6 +3631,48 @@
               "pt": "A minha mãe leva-me.",
               "en": "My mom is taking me.",
               "es": "Mi madre me lleva."
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你有钱吗？",
+            "pinyin": "nǐ yǒu qián ma?",
+            "translation": {
+              "pt": "Tens dinheiro?",
+              "en": "Do you have money?",
+              "es": "¿Tienes dinero?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我有一点儿。",
+            "pinyin": "wǒ yǒu yīdiǎnr.",
+            "translation": {
+              "pt": "Tenho um pouco.",
+              "en": "I have a little.",
+              "es": "Tengo un poco."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "我们去那个商店买东西好吗？",
+            "pinyin": "wǒmen qù nàge shāngdiàn mǎi dōngxi hǎo ma?",
+            "translation": {
+              "pt": "Vamos àquela loja comprar algo?",
+              "en": "Shall we go to that store and buy something?",
+              "es": "¿Vamos a esa tienda a comprar algo?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "好的，我们去。",
+            "pinyin": "hǎo de, wǒmen qù.",
+            "translation": {
+              "pt": "Sim, vamos.",
+              "en": "Okay, let's go.",
+              "es": "Vale, vamos."
             }
           }
         ]
@@ -3073,7 +3747,9 @@
           "Perguntas básicas: como te chamas?; que horas são?; que dia é hoje?",
           "Pronomes e 是: sou estudante; ela não é professora; ele é chinês.",
           "Advérbios: estou bem; eu também; eles estão todos na escola.",
-          "会 / 能 / 想 e 在 / 有 / 去: estudo chinês; não posso conduzir; quero aprender chinês; há uma loja na escola."
+          "会 / 能 / 想 e 在 / 有 / 去: estudo chinês; não posso conduzir; quero aprender chinês; há uma loja na escola.",
+          "Você assiste filmes nos fins de semana?",
+          "Ele gosta de ler livros."
         ],
         "en": [
           "Numbers: one, two, three…; twenty; three hundred fifty-six; how much is this?",
@@ -3086,7 +3762,9 @@
           "Basic questions: what's your name?; what time is it?; what's today's date?",
           "Pronouns and 是: I'm a student; she's not a teacher; he's Chinese.",
           "Adverbs: I'm very well; me too; they're all at school.",
-          "会 / 能 / 想 and 在 / 有 / 去: I study Chinese; I can't drive; I want to learn Chinese; there's a shop at the school."
+          "会 / 能 / 想 and 在 / 有 / 去: I study Chinese; I can't drive; I want to learn Chinese; there's a shop at the school.",
+          "Do you watch movies on weekends?",
+          "He likes to read books."
         ],
         "es": [
           "Números: uno, dos, tres…; veinte; trescientos cincuenta y seis; ¿cuánto cuesta esto?",
@@ -3099,7 +3777,9 @@
           "Preguntas básicas: ¿cómo te llamas?; ¿qué hora es?; ¿qué día es hoy?",
           "Pronombres y 是: soy estudiante; ella no es profesora; él es chino.",
           "Adverbios: estoy muy bien; yo también; están todos en el colegio.",
-          "会 / 能 / 想 y 在 / 有 / 去: estudio chino; no puedo conducir; quiero aprender chino; hay una tienda en el colegio."
+          "会 / 能 / 想 y 在 / 有 / 去: estudio chino; no puedo conducir; quiero aprender chino; hay una tienda en el colegio.",
+          "¿Ves películas los fines de semana?",
+          "A él le gusta leer libros."
         ]
       },
       "reviewMiniDialogues": [
@@ -3132,6 +3812,38 @@
               "pt": "Certo, rever é muito importante.",
               "en": "Right—review is very important.",
               "es": "Cierto, repasar es muy importante."
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你有什么问题吗？",
+            "pinyin": "nǐ yǒu shénme wèntí ma?",
+            "translation": {
+              "pt": "Tens alguma dúvida?",
+              "en": "Do you have any questions?",
+              "es": "¿Tienes alguna pregunta?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我想练习更多的句子。",
+            "pinyin": "wǒ xiǎng liànxí gèngduō de jùzi.",
+            "translation": {
+              "pt": "Quero praticar mais frases.",
+              "en": "I want to practice more sentences.",
+              "es": "Quiero practicar más frases."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "好的，我们一起练习。",
+            "pinyin": "hǎo de, wǒmen yīqǐ liànxí.",
+            "translation": {
+              "pt": "Claro, vamos praticar juntos.",
+              "en": "Of course, let's practice together.",
+              "es": "Claro, vamos a practicar juntos."
             }
           }
         ]
