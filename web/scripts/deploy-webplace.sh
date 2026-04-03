@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
-# Static export (basePath /aulaChines) → itcsVM (or local dir). Tutor/API não incluídos — usar deploy-node.sh + next start.
-# O nginx em webplace.cc usa: location /aulaChines/ { alias /home/opc/projetos/chineseLearning/; }
-# NÃO usar webplaceMain/site/aulaChines — esse path não é o que o servidor expõe.
+# Static export (basePath /aulaChines) → SSH ou diretório local. Tutor/API não incluídos — usar deploy-node.sh + next start.
+# Produção em webplace.cc: /aulaChines/ → proxy para Node (PM2), não alias estático. Este rsync é legado / backup offline.
 #
 # Overrides:
 #   DEPLOY_WEBPLACE_HOST, DEPLOY_WEBPLACE_DIR  — SSH rsync target (default: itcsVM + /home/opc/projetos/chineseLearning)

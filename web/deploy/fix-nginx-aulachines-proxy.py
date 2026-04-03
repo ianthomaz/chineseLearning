@@ -1,8 +1,21 @@
 #!/usr/bin/env python3
 """One-off: replace static aulaChines alias with proxy to host PM2 (Docker bridge)."""
+from datetime import datetime, timezone
 from pathlib import Path
+import shutil
 
 path = Path("/home/opc/projetos/webplaceMain/nginx/conf.d/default.conf")
+backup_name = f"default.conf.bak.aulachines_proxy.{datetime.now(tz=timezone.utc).strftime('%Y%m%d%H%M%S')}"
+backup_same_dir = path.parent / backup_name
+backup_tmp = Path("/tmp") / backup_name
+try:
+    shutil.copy2(path, backup_same_dir)
+except OSError:
+    shutil.copy2(path, backup_tmp)
+    print(f"backup → {backup_tmp} (conf.d dir not writable for new files)")
+else:
+    print(f"backup → {backup_same_dir}")
+
 s = path.read_text()
 # HTTP block includes comment; HTTPS block often has only the location (same alias body).
 old_loc = """    location /aulaChines/ {

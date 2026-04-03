@@ -1,9 +1,12 @@
 import raw from "@/data/global-dialogues.json";
+import extra from "@/data/global-dialogues-extra.json";
 import type { DialogueTurn } from "@/lib/blocks";
 import type { LocalizedLine } from "@/lib/localized-line";
 
 export type GlobalDialogueSection = {
   id: string;
+  /** Matches `ContentBlock.id` (1–15) for category filter on /dialogues */
+  categoryId?: number;
   lines: DialogueTurn[];
 };
 
@@ -14,7 +17,8 @@ type RawLine = {
   translation: string | LocalizedLine;
 };
 
-type RawFile = { sections: Array<{ id: string; lines: RawLine[] }> };
+type RawSection = { id: string; categoryId?: number; lines: RawLine[] };
+type RawFile = { sections: RawSection[] };
 
 function normalizeTurn(line: RawLine): DialogueTurn {
   const tr = line.translation;
@@ -40,9 +44,18 @@ function normalizeTurn(line: RawLine): DialogueTurn {
   };
 }
 
-export const globalDialogueSections: GlobalDialogueSection[] = (
-  raw as RawFile
-).sections.map((sec) => ({
-  id: sec.id,
-  lines: sec.lines.map(normalizeTurn),
-}));
+function mapSection(sec: RawSection): GlobalDialogueSection {
+  return {
+    id: sec.id,
+    ...(typeof sec.categoryId === "number" ? { categoryId: sec.categoryId } : {}),
+    lines: sec.lines.map(normalizeTurn),
+  };
+}
+
+const mergedSections = [
+  ...(raw as RawFile).sections,
+  ...(extra as RawFile).sections,
+];
+
+export const globalDialogueSections: GlobalDialogueSection[] =
+  mergedSections.map(mapSection);

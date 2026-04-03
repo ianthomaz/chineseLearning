@@ -1,5 +1,14 @@
 # Operação local
 
+## Estático vs tutor (LLM)
+
+| Objetivo | Comando | Porta típica | LLM no tutor |
+|----------|---------|----------------|--------------|
+| Só HTML (como webplace) | `./start.sh --webplace` ou `npm run deploy:local` + servidor de ficheiros | 34901 | Não |
+| Site + `POST /api/chat` + tutor | `./start.sh --local` ou `npm run deploy:local:with-api` | 34902 | Sim |
+
+Em **`web/.env.local`** define **`LLM_API_TOKEN`** e, se quiseres, **`LLM_API_URL`** (`http://127.0.0.1:28471` ou `https://llm.webplace.cc`).
+
 ## Comando principal na raiz
 
 ```bash

@@ -7,7 +7,9 @@ set -euo pipefail
 # Carrega web/.env.local se existir (LLM_API_TOKEN, LLM_API_URL).
 #
 #   npm run deploy:local:live
+#   npm run deploy:local:with-api   (alias)
 #   PORT=34903 npm run deploy:local:live
+# LLM_API_URL: web/.env (default localhost) ou .env.local — https://llm.webplace.cc ou Docker :28471
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WEB_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"

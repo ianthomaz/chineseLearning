@@ -5,7 +5,7 @@ set -euo pipefail
 #
 # Uso:
 #   ./start.sh --local              # next start + /api/chat + tutor (porta 34902)
-#   ./start.sh --webplace           # export estático + HTTP em /aulaChines (porta 34901)
+#   ./start.sh --webplace           # export estático + HTTP (34901); NÃO fala com LLM (só HTML)
 #   ./start.sh --prepare            # valida web/deploy/server.env + health LLM + build:server (NÃO inicia servidor)
 #   ./start.sh --local --ingest     # idem + fila de ingest RAG antes de subir o site
 #   ./start.sh --local --port=34903
@@ -44,7 +44,7 @@ usage() {
   echo "  --webplace       Só HTML estático (como nginx webplace). Default porta $STATIC_PORT."
   echo "  --prepare        Produção: valida deploy/server.env, health LLM, npm run build:server."
   echo "                   Não inicia Node nem mata portas (deixa pronto para systemd/pm2 no servidor)."
-  echo "  --ingest         Depois dos checks, corre npm run ingest:rag (precisa token + jq)."
+  echo "  --ingest         Só com --local ou --prepare: corre npm run ingest:rag (precisa token + jq)."
   echo "  --no-kill-port   Não mata processo na porta; erro se ocupada (recomendado em host partilhado)."
   echo "  --port=N         Porta para --local (default $LIVE_PORT)."
   echo "  --static-port=N  Porta para --webplace (default $STATIC_PORT)."
@@ -248,51 +248,13 @@ if [[ "$MODE" == "prepare" ]]; then
   exit 0
 fi
 
-# --- checks comuns (--local / --webplace)
-load_env
-export LLM_API_URL="${LLM_API_URL:-http://127.0.0.1:28471}"
-export LLM_API_URL="${LLM_API_URL%/}"
-
-if [[ "$MODE" == "local" ]]; then
-  if [[ ! -f "$WEB_DIR/.env.local" ]]; then
-    echo "Falta web/.env.local (mínimo: LLM_API_TOKEN)." >&2
-    exit 1
-  fi
-  if [[ -z "${LLM_API_TOKEN:-}" ]]; then
-    echo "LLM_API_TOKEN vazio em web/.env.local." >&2
-    exit 1
-  fi
-fi
-
-check_llm_health || exit 1
-check_chinese_learning_project
-
-if [[ "$DO_INGEST" == "1" ]]; then
-  if [[ -z "${LLM_API_TOKEN:-}" ]]; then
-    echo "--ingest exige LLM_API_TOKEN em web/.env.local." >&2
-    exit 1
-  fi
-  run_ingest
-fi
-
-echo "→ Testes finais (LLM)…"
-run_llm_edu_chat_smoke || exit 1
-
-if [[ "$MODE" == "local" ]]; then
-  if [[ "$KILL_PORT" == "1" ]]; then
-    free_port "$LIVE_PORT" || true
-  fi
-  if lsof -i ":$LIVE_PORT" -sTCP:LISTEN >/dev/null 2>&1; then
-    echo "Porta $LIVE_PORT ainda ocupada. Encerra o processo ou usa --port=outra ou --no-kill-port (ou START_NO_KILL_PORT=1 e resolve manualmente)." >&2
-    exit 1
-  fi
-  export SKIP_PORT_CHECK=1
-  export PORT="$LIVE_PORT"
-  export SKIP_BUILD
-  exec bash "$WEB_DIR/scripts/deploy-local-live.sh"
-fi
-
+# --- modo --webplace: só HTML estático (python http.server). Não há Route Handlers — tutor/LLM não funcionam aqui.
+# Não carregamos nem testamos LLM (evita “Docker vs https://llm.webplace.cc” a bloquear o preview).
 if [[ "$MODE" == "webplace" ]]; then
+  if [[ "$DO_INGEST" == "1" ]]; then
+    echo "--ingest não combina com --webplace (export sem API). Usa: ./start.sh --local --ingest  ou  ./start.sh --prepare --ingest" >&2
+    exit 1
+  fi
   if [[ "$KILL_PORT" == "1" ]]; then
     free_port "$STATIC_PORT" || true
   fi
@@ -307,9 +269,46 @@ if [[ "$MODE" == "webplace" ]]; then
   rsync -a "$DEPLOY_LOCAL_DIR/" "$STATIC_VIEW_DIR/aulaChines/"
   echo ""
   echo "  Estático: http://127.0.0.1:${STATIC_PORT}/aulaChines/"
-  echo "  (sem POST /api/chat)"
+  echo "  Tutor com LLM: ./start.sh --local  ou  cd web && npm run deploy:local:live"
+  echo "  LLM_API_URL em web/.env.local: http://127.0.0.1:28471 (Docker) ou https://llm.webplace.cc (mesmo token)."
   echo "  Ctrl+C para parar."
   echo ""
   cd "$STATIC_VIEW_DIR"
   exec python3 -m http.server "$STATIC_PORT" -b 127.0.0.1
 fi
+
+# --- modo --local: Next com /api/chat; LLM_API_URL pode ser local ou HTTPS (MANUAL_INTEGRACAO § 1.1)
+load_env
+export LLM_API_URL="${LLM_API_URL:-http://127.0.0.1:28471}"
+export LLM_API_URL="${LLM_API_URL%/}"
+
+if [[ ! -f "$WEB_DIR/.env.local" ]]; then
+  echo "Falta web/.env.local (mínimo: LLM_API_TOKEN)." >&2
+  exit 1
+fi
+if [[ -z "${LLM_API_TOKEN:-}" ]]; then
+  echo "LLM_API_TOKEN vazio em web/.env.local." >&2
+  exit 1
+fi
+
+check_llm_health || exit 1
+check_chinese_learning_project
+
+if [[ "$DO_INGEST" == "1" ]]; then
+  run_ingest
+fi
+
+echo "→ Testes finais (LLM)…"
+run_llm_edu_chat_smoke || exit 1
+
+if [[ "$KILL_PORT" == "1" ]]; then
+  free_port "$LIVE_PORT" || true
+fi
+if lsof -i ":$LIVE_PORT" -sTCP:LISTEN >/dev/null 2>&1; then
+  echo "Porta $LIVE_PORT ainda ocupada. Encerra o processo ou usa --port=outra ou --no-kill-port (ou START_NO_KILL_PORT=1 e resolve manualmente)." >&2
+  exit 1
+fi
+export SKIP_PORT_CHECK=1
+export PORT="$LIVE_PORT"
+export SKIP_BUILD
+exec bash "$WEB_DIR/scripts/deploy-local-live.sh"

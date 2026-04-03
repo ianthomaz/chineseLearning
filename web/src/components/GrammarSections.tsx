@@ -3,11 +3,13 @@
 import { PhraseRevealLine } from "@/components/PhraseRevealLine";
 import { PriorityList } from "@/components/PriorityList";
 import { useLocale } from "@/context/LocaleContext";
-import type { StructureLine } from "@/lib/blocks";
+import type { StructureGlossesByLocale, StructureLine } from "@/lib/blocks";
+import { pickLocalized } from "@/lib/localized-line";
 
 type Props = {
   blockId: number;
   structures: StructureLine[];
+  structureGlosses: StructureGlossesByLocale;
   notes: string[];
   differences: string[];
   priorities: string[];
@@ -54,12 +56,17 @@ function Section({
 function StructuresSection({
   title,
   lines,
+  structureGlosses,
+  blockId,
   accent,
 }: {
   title: string;
   lines: StructureLine[];
+  structureGlosses: StructureGlossesByLocale;
+  blockId: number;
   accent?: string;
 }) {
+  const { locale } = useLocale();
   if (lines.length === 0) return null;
   return (
     <section
@@ -76,16 +83,24 @@ function StructuresSection({
         {title}
       </h2>
       <ul className="space-y-4">
-        {lines.map((line, i) => (
-          <li key={`${title}-struct-${i}`}>
-            <PhraseRevealLine
-              hanzi={line.hanzi}
-              pinyin={line.pinyin}
-              translation=""
-              hanziClassName="font-hanzi text-xl leading-loose text-ink md:text-2xl"
-            />
-          </li>
-        ))}
+        {lines.map((line, i) => {
+          const L = {
+            pt: structureGlosses.pt[i] ?? "",
+            en: structureGlosses.en[i] ?? "",
+            es: structureGlosses.es[i] ?? "",
+          };
+          const gloss = pickLocalized(L, locale);
+          return (
+            <li key={`${title}-struct-${blockId}-${i}`}>
+              <PhraseRevealLine
+                hanzi={line.hanzi}
+                pinyin={line.pinyin}
+                translation={gloss.trim()}
+                hanziClassName="font-hanzi text-xl leading-loose text-ink md:text-2xl"
+              />
+            </li>
+          );
+        })}
       </ul>
     </section>
   );
@@ -94,6 +109,7 @@ function StructuresSection({
 export function GrammarSections({
   blockId,
   structures,
+  structureGlosses,
   notes,
   differences,
   priorities,
@@ -112,6 +128,8 @@ export function GrammarSections({
       <StructuresSection
         title={t("grammar.structures")}
         lines={structures}
+        structureGlosses={structureGlosses}
+        blockId={blockId}
         accent="var(--accent)"
       />
       <Section title={t("grammar.notes")} items={notes} />

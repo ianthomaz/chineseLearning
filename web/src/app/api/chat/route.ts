@@ -94,7 +94,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         error: 'LLM_API_TOKEN not configured',
-        hint: 'Set LLM_API_TOKEN in web/.env.local (repo includes web/.env with LLM_API_URL).',
+        hint: 'Set LLM_API_TOKEN in web/.env.local. Optional LLM_API_URL there: http://127.0.0.1:28471 (Docker) or https://llm.webplace.cc.',
       },
       { status: 500 }
     );

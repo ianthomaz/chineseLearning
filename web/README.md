@@ -6,14 +6,15 @@ This is a [Next.js](https://nextjs.org) project for the Chinese Learning site.
 
 Orquestra **health da API**, verificação do projeto **`chinese_learning`** em `/projects`, **`--ingest`** opcional, e deploy:
 
-- **`./start.sh --local`** — `build:server` + `npm run start:server` (script Node que corrige `basePath` + `next start`) na **34902** (liberta a porta se estiver ocupada). Site: `http://127.0.0.1:34902/aulaChines` · Tutor: `http://127.0.0.1:34902/aulaChines/tutor`
-- **`./start.sh --webplace`** — export estático + HTTP com prefixo `/aulaChines` em **34901**
+- **`./start.sh --local`** — `build:server` + `npm run start:server` na **34902**; **tutor chama a LLM** via `LLM_API_URL` em **`web/.env.local`** (Docker **`http://127.0.0.1:28471`** ou **`https://llm.webplace.cc`** — mesmo token). Site: `http://127.0.0.1:34902/aulaChines/tutor`
+- **`./start.sh --webplace`** — só export estático + Python em **34901**; **não** há `/api/chat` (não testa LLM ao arrancar). Equivalente: **`npm run deploy:local`**
+- **`npm run deploy:local:with-api`** — igual a **`deploy:local:live`**: build servidor + Next na **34902** com tutor (precisa **`web/.env.local`**)
 - **`./start.sh --prepare`** — valida **`web/deploy/server.env`** (env de produção no disco; template **`deploy/server.env.example`**) + health LLM + **`npm run build:server`** + teste final **`POST /edu/chat`** (omitir com **`START_SKIP_EDU_SMOKE=1`**); **não** inicia servidor nem mexe em portas
 - **`npm run remote:handshake`** (em `web/`) — SSH para o host de deploy: **`/health`** + **`POST /edu/chat`** usando `server.env` na VM (ver `scripts/remote-prod-handshake.sh`)
 - **`./start.sh --local --ingest`** — checks + fila de ingest + sobe o site com API
 - **`./start.sh --local --skip-build`** — só reinicia o Node (usa `.next` existente)
 
-`./start.sh --help` para todas as opções. Exige **`web/.env.local`** com **`LLM_API_TOKEN`** no modo `--local`. Em host partilhado: **`--no-kill-port`** ou **`START_NO_KILL_PORT=1`** com `--local` / `--webplace`.
+`./start.sh --help` para todas as opções. **`--local`** e **`deploy:local:with-api`** exigem **`web/.env.local`** (token; URL opcional). **`--webplace`** não precisa de token. Em host partilhado: **`--no-kill-port`** ou **`START_NO_KILL_PORT=1`**.
 
 ## Local dev (site + tutor LLM)
 

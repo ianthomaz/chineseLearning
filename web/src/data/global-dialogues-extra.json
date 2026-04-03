@@ -1,0 +1,1252 @@
+{
+  "sections": [
+    {
+      "id": "numbersPhone",
+      "categoryId": 1,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你的电话是多少？",
+          "pinyin": "Nǐ de diànhuà shì duōshǎo?",
+          "translation": {
+            "pt": "Qual é o teu número de telefone?",
+            "en": "What is your phone number?",
+            "es": "¿Cuál es tu teléfono?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我的电话是一三八零零一二三四五。",
+          "pinyin": "Wǒ de diànhuà shì yī sān bā líng líng yī èr sān sì wǔ.",
+          "translation": {
+            "pt": "O meu número é 1380012345.",
+            "en": "My number is 1380012345.",
+            "es": "Mi número es 1380012345."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "谢谢，我记一下。",
+          "pinyin": "Xièxie, wǒ jì yīxià.",
+          "translation": {
+            "pt": "Obrigado, vou anotar.",
+            "en": "Thanks, I'll write it down.",
+            "es": "Gracias, lo apunto."
+          }
+        }
+      ]
+    },
+    {
+      "id": "numbersPrice",
+      "categoryId": 1,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "这个多少钱？",
+          "pinyin": "Zhège duōshao qián?",
+          "translation": {
+            "pt": "Quanto custa isto?",
+            "en": "How much is this?",
+            "es": "¿Cuánto cuesta esto?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "二十五块。",
+          "pinyin": "Èrshíwǔ kuài.",
+          "translation": {
+            "pt": "Vinte e cinco yuan.",
+            "en": "Twenty-five yuan.",
+            "es": "Veinticinco yuan."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "太贵了，二十块可以吗？",
+          "pinyin": "Tài guì le, èrshí kuài kěyǐ ma?",
+          "translation": {
+            "pt": "Muito caro, vinte yuan serve?",
+            "en": "Too expensive, is twenty okay?",
+            "es": "Muy caro, ¿veinte vale?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "好吧。",
+          "pinyin": "Hǎo ba.",
+          "translation": {
+            "pt": "Está bem.",
+            "en": "Okay.",
+            "es": "Vale."
+          }
+        }
+      ]
+    },
+    {
+      "id": "numbersAge",
+      "categoryId": 1,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你今年多大？",
+          "pinyin": "Nǐ jīnnián duō dà?",
+          "translation": {
+            "pt": "Quantos anos tens este ano?",
+            "en": "How old are you this year?",
+            "es": "¿Cuántos años tienes este año?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我今年二十二岁。你呢？",
+          "pinyin": "Wǒ jīnnián èrshí'èr suì. Nǐ ne?",
+          "translation": {
+            "pt": "Tenho vinte e dois. E tu?",
+            "en": "I'm twenty-two. And you?",
+            "es": "Tengo veintidós. ¿Y tú?"
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "我二十一岁。",
+          "pinyin": "Wǒ èrshíyī suì.",
+          "translation": {
+            "pt": "Tenho vinte e um.",
+            "en": "I'm twenty-one.",
+            "es": "Tengo veintiuno."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cafeBill",
+      "categoryId": 2,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "服务员，买单！",
+          "pinyin": "Fúwùyuán, mǎidān!",
+          "translation": {
+            "pt": "Empregado, a conta por favor!",
+            "en": "Waiter, the check please!",
+            "es": "¡Camarero, la cuenta!"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "一共三十五块。",
+          "pinyin": "Yīgòng sānshíwǔ kuài.",
+          "translation": {
+            "pt": "São trinta e cinco yuan no total.",
+            "en": "Thirty-five yuan in total.",
+            "es": "Treinta y cinco yuan en total."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "给你四十块，不用找了。",
+          "pinyin": "Gěi nǐ sìshí kuài, bùyòng zhǎo le.",
+          "translation": {
+            "pt": "Aqui tens quarenta, fica o troco.",
+            "en": "Here's forty, keep the change.",
+            "es": "Te doy cuarenta, quédate con el cambio."
+          }
+        }
+      ]
+    },
+    {
+      "id": "nationalityIntro",
+      "categoryId": 5,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你是哪国人？",
+          "pinyin": "Nǐ shì nǎ guó rén?",
+          "translation": {
+            "pt": "De que país és?",
+            "en": "What nationality are you?",
+            "es": "¿De qué país eres?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我是巴西人。",
+          "pinyin": "Wǒ shì Bāxī rén.",
+          "translation": {
+            "pt": "Sou brasileiro.",
+            "en": "I'm Brazilian.",
+            "es": "Soy brasileño."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "欢迎来中国！",
+          "pinyin": "Huānyíng lái Zhōngguó!",
+          "translation": {
+            "pt": "Bem-vindo à China!",
+            "en": "Welcome to China!",
+            "es": "¡Bienvenido a China!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "languageSpeak",
+      "categoryId": 5,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你会说英语吗？",
+          "pinyin": "Nǐ huì shuō Yīngyǔ ma?",
+          "translation": {
+            "pt": "Sabes falar inglês?",
+            "en": "Do you speak English?",
+            "es": "¿Hablas inglés?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "会一点儿。",
+          "pinyin": "Huì yīdiǎnr.",
+          "translation": {
+            "pt": "Um bocadinho.",
+            "en": "A little.",
+            "es": "Un poquito."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "那我们可以用英语聊。",
+          "pinyin": "Nà wǒmen kěyǐ yòng Yīngyǔ liáo.",
+          "translation": {
+            "pt": "Então podemos falar em inglês.",
+            "en": "Then we can chat in English.",
+            "es": "Entonces podemos hablar en inglés."
+          }
+        }
+      ]
+    },
+    {
+      "id": "whereFrom",
+      "categoryId": 5,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你从哪儿来？",
+          "pinyin": "Nǐ cóng nǎr lái?",
+          "translation": {
+            "pt": "De onde vens?",
+            "en": "Where are you from?",
+            "es": "¿De dónde vienes?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我从葡萄牙来。",
+          "pinyin": "Wǒ cóng Pútáoyá lái.",
+          "translation": {
+            "pt": "Venho de Portugal.",
+            "en": "I'm from Portugal.",
+            "es": "Vengo de Portugal."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "里斯本很漂亮吧？",
+          "pinyin": "Lísīběn hěn piàoliang ba?",
+          "translation": {
+            "pt": "Lisboa é bonita, não é?",
+            "en": "Lisbon is beautiful, right?",
+            "es": "Lisboa es bonita, ¿no?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "对，很美。",
+          "pinyin": "Duì, hěn měi.",
+          "translation": {
+            "pt": "Sim, muito bonita.",
+            "en": "Yes, very beautiful.",
+            "es": "Sí, muy bonita."
+          }
+        }
+      ]
+    },
+    {
+      "id": "colorsClothes",
+      "categoryId": 6,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你喜欢什么颜色？",
+          "pinyin": "Nǐ xǐhuān shénme yánsè?",
+          "translation": {
+            "pt": "Que cor gostas?",
+            "en": "What color do you like?",
+            "es": "¿Qué color te gusta?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我喜欢蓝色。",
+          "pinyin": "Wǒ xǐhuān lánsè.",
+          "translation": {
+            "pt": "Gosto de azul.",
+            "en": "I like blue.",
+            "es": "Me gusta el azul."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "这件红衬衫怎么样？",
+          "pinyin": "Zhè jiàn hóng chènshān zěnmeyàng?",
+          "translation": {
+            "pt": "Que achas desta camisa vermelha?",
+            "en": "How about this red shirt?",
+            "es": "¿Qué tal esta camisa roja?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "很好看！",
+          "pinyin": "Hěn hǎokàn!",
+          "translation": {
+            "pt": "Muito gira!",
+            "en": "Looks great!",
+            "es": "¡Queda genial!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "colorsLike",
+      "categoryId": 6,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你的包是黑色的吗？",
+          "pinyin": "Nǐ de bāo shì hēisè de ma?",
+          "translation": {
+            "pt": "A tua mala é preta?",
+            "en": "Is your bag black?",
+            "es": "¿Tu bolso es negro?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "不是，是绿色的。",
+          "pinyin": "Bù shì, shì lǜsè de.",
+          "translation": {
+            "pt": "Não, é verde.",
+            "en": "No, it's green.",
+            "es": "No, es verde."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "绿色很漂亮。",
+          "pinyin": "Lǜsè hěn piàoliang.",
+          "translation": {
+            "pt": "O verde é bonito.",
+            "en": "Green is pretty.",
+            "es": "El verde es bonito."
+          }
+        }
+      ]
+    },
+    {
+      "id": "colorsWhich",
+      "categoryId": 6,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你要白色的还是黄色的？",
+          "pinyin": "Nǐ yào báisè de háishì huángsè de?",
+          "translation": {
+            "pt": "Queres branco ou amarelo?",
+            "en": "Do you want white or yellow?",
+            "es": "¿Quieres blanco o amarillo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我要白色的。",
+          "pinyin": "Wǒ yào báisè de.",
+          "translation": {
+            "pt": "Quero branco.",
+            "en": "I'll take white.",
+            "es": "Quiero blanco."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "好的，给你。",
+          "pinyin": "Hǎo de, gěi nǐ.",
+          "translation": {
+            "pt": "Ok, aqui tens.",
+            "en": "Okay, here you go.",
+            "es": "Vale, toma."
+          }
+        }
+      ]
+    },
+    {
+      "id": "meetingColleague",
+      "categoryId": 7,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "这是我妈妈。",
+          "pinyin": "Zhè shì wǒ māma.",
+          "translation": {
+            "pt": "Esta é a minha mãe.",
+            "en": "This is my mom.",
+            "es": "Esta es mi madre."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "阿姨，您好！",
+          "pinyin": "Āyí, nín hǎo!",
+          "translation": {
+            "pt": "Tia, olá! (respeitoso)",
+            "en": "Auntie, hello! (polite)",
+            "es": "¡Tía, buenos días! (respetuoso)"
+          }
+        },
+        {
+          "speaker": "C",
+          "hanzi": "你好，请坐。",
+          "pinyin": "Nǐ hǎo, qǐng zuò.",
+          "translation": {
+            "pt": "Olá, senta-te.",
+            "en": "Hello, please sit.",
+            "es": "Hola, siéntate."
+          }
+        }
+      ]
+    },
+    {
+      "id": "familyPhoto",
+      "categoryId": 7,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "照片上的人是你爸爸吗？",
+          "pinyin": "Zhàopiàn shàng de rén shì nǐ bàba ma?",
+          "translation": {
+            "pt": "Na foto é o teu pai?",
+            "en": "Is the person in the photo your dad?",
+            "es": "¿En la foto está tu padre?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "对，那是我爸爸和我妹妹。",
+          "pinyin": "Duì, nà shì wǒ bàba hé wǒ mèimei.",
+          "translation": {
+            "pt": "Sim, é o meu pai e a minha irmã mais nova.",
+            "en": "Yes, that's my dad and my younger sister.",
+            "es": "Sí, es mi padre y mi hermana menor."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "你妹妹很可爱。",
+          "pinyin": "Nǐ mèimei hěn kě'ài.",
+          "translation": {
+            "pt": "A tua irmã é querida.",
+            "en": "Your sister is cute.",
+            "es": "Tu hermana es mona."
+          }
+        }
+      ]
+    },
+    {
+      "id": "shIdentity",
+      "categoryId": 9,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "他是谁？",
+          "pinyin": "Tā shì shéi?",
+          "translation": {
+            "pt": "Quem é ele?",
+            "en": "Who is he?",
+            "es": "¿Quién es él?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "他是我的老师。",
+          "pinyin": "Tā shì wǒ de lǎoshī.",
+          "translation": {
+            "pt": "É o meu professor.",
+            "en": "He's my teacher.",
+            "es": "Es mi profesor."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "中文老师吗？",
+          "pinyin": "Zhōngwén lǎoshī ma?",
+          "translation": {
+            "pt": "Professor de chinês?",
+            "en": "Chinese teacher?",
+            "es": "¿Profesor de chino?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "对，他是中文老师。",
+          "pinyin": "Duì, tā shì Zhōngwén lǎoshī.",
+          "translation": {
+            "pt": "Sim, é professor de chinês.",
+            "en": "Yes, he's a Chinese teacher.",
+            "es": "Sí, es profesor de chino."
+          }
+        }
+      ]
+    },
+    {
+      "id": "shProfession",
+      "categoryId": 9,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你是学生吗？",
+          "pinyin": "Nǐ shì xuéshēng ma?",
+          "translation": {
+            "pt": "És estudante?",
+            "en": "Are you a student?",
+            "es": "¿Eres estudiante?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "是，我是大学生。",
+          "pinyin": "Shì, wǒ shì dàxuéshēng.",
+          "translation": {
+            "pt": "Sim, sou universitário.",
+            "en": "Yes, I'm a university student.",
+            "es": "Sí, soy universitario."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "学什么专业？",
+          "pinyin": "Xué shénme zhuānyè?",
+          "translation": {
+            "pt": "Que curso?",
+            "en": "What's your major?",
+            "es": "¿Qué carrera?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我学经济。",
+          "pinyin": "Wǒ xué jīngjì.",
+          "translation": {
+            "pt": "Estudo economia.",
+            "en": "I study economics.",
+            "es": "Estudio economía."
+          }
+        }
+      ]
+    },
+    {
+      "id": "shNotDoctor",
+      "categoryId": 9,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你是医生吗？",
+          "pinyin": "Nǐ shì yīshēng ma?",
+          "translation": {
+            "pt": "És médico?",
+            "en": "Are you a doctor?",
+            "es": "¿Eres médico?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "不是，我是护士。",
+          "pinyin": "Bù shì, wǒ shì hùshi.",
+          "translation": {
+            "pt": "Não, sou enfermeiro.",
+            "en": "No, I'm a nurse.",
+            "es": "No, soy enfermero."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "哦，明白了。",
+          "pinyin": "Ò, míngbai le.",
+          "translation": {
+            "pt": "Ah, entendi.",
+            "en": "Oh, I see.",
+            "es": "Ah, entiendo."
+          }
+        }
+      ]
+    },
+    {
+      "id": "alsoWant",
+      "categoryId": 10,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "我要一碗米饭。",
+          "pinyin": "Wǒ yào yī wǎn mǐfàn.",
+          "translation": {
+            "pt": "Quero uma tigela de arroz.",
+            "en": "I want a bowl of rice.",
+            "es": "Quiero un bol de arroz."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我也要米饭。",
+          "pinyin": "Wǒ yě yào mǐfàn.",
+          "translation": {
+            "pt": "Eu também quero arroz.",
+            "en": "I want rice too.",
+            "es": "Yo también quiero arroz."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "好的，两碗米饭。",
+          "pinyin": "Hǎo de, liǎng wǎn mǐfàn.",
+          "translation": {
+            "pt": "Ok, duas tigelas.",
+            "en": "Okay, two bowls.",
+            "es": "Vale, dos boles."
+          }
+        }
+      ]
+    },
+    {
+      "id": "veryTired",
+      "categoryId": 10,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你今天很忙吗？",
+          "pinyin": "Nǐ jīntiān hěn máng ma?",
+          "translation": {
+            "pt": "Estás muito ocupado hoje?",
+            "en": "Are you very busy today?",
+            "es": "¿Estás muy ocupado hoy?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "很忙，我很累。",
+          "pinyin": "Hěn máng, wǒ hěn lèi.",
+          "translation": {
+            "pt": "Muito, estou cansado.",
+            "en": "Very, I'm tired.",
+            "es": "Mucho, estoy cansado."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "那你早点休息。",
+          "pinyin": "Nà nǐ zǎo diǎn xiūxi.",
+          "translation": {
+            "pt": "Então descansa cedo.",
+            "en": "Then rest early.",
+            "es": "Entonces descansa pronto."
+          }
+        }
+      ]
+    },
+    {
+      "id": "stillHere",
+      "categoryId": 10,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "他还在公司吗？",
+          "pinyin": "Tā hái zài gōngsī ma?",
+          "translation": {
+            "pt": "Ele ainda está na empresa?",
+            "en": "Is he still at the office?",
+            "es": "¿Todavía está en la oficina?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "对，他还在工作。",
+          "pinyin": "Duì, tā hái zài gōngzuò.",
+          "translation": {
+            "pt": "Sim, ainda está a trabalhar.",
+            "en": "Yes, he's still working.",
+            "es": "Sí, todavía está trabajando."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "太辛苦了。",
+          "pinyin": "Tài xīnkǔ le.",
+          "translation": {
+            "pt": "Trabalha muito.",
+            "en": "That's tough.",
+            "es": "Qué duro."
+          }
+        }
+      ]
+    },
+    {
+      "id": "wantRest",
+      "categoryId": 11,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你想喝茶还是喝咖啡？",
+          "pinyin": "Nǐ xiǎng hē chá háishì hē kāfēi?",
+          "translation": {
+            "pt": "Queres chá ou café?",
+            "en": "Want tea or coffee?",
+            "es": "¿Té o café?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我想喝水，谢谢。",
+          "pinyin": "Wǒ xiǎng hē shuǐ, xièxie.",
+          "translation": {
+            "pt": "Quero água, obrigado.",
+            "en": "I want water, thanks.",
+            "es": "Quiero agua, gracias."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "等一下，我去拿。",
+          "pinyin": "Děng yīxià, wǒ qù ná.",
+          "translation": {
+            "pt": "Espera, vou buscar.",
+            "en": "Wait, I'll get it.",
+            "es": "Espera, voy a traerla."
+          }
+        }
+      ]
+    },
+    {
+      "id": "canSwim",
+      "categoryId": 11,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你会游泳吗？",
+          "pinyin": "Nǐ huì yóuyǒng ma?",
+          "translation": {
+            "pt": "Sabes nadar?",
+            "en": "Can you swim?",
+            "es": "¿Sabes nadar?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "会，我从小就学。",
+          "pinyin": "Huì, wǒ cóngxiǎo jiù xué.",
+          "translation": {
+            "pt": "Sim, aprendi desde pequeno.",
+            "en": "Yes, I learned as a kid.",
+            "es": "Sí, desde pequeño."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "那周末我们去游泳池吧。",
+          "pinyin": "Nà zhōumò wǒmen qù yóuyǒngchí ba.",
+          "translation": {
+            "pt": "Então no fim de semana vamos à piscina.",
+            "en": "Let's go to the pool this weekend.",
+            "es": "Vamos a la piscina el fin de semana."
+          }
+        }
+      ]
+    },
+    {
+      "id": "learnPiano",
+      "categoryId": 11,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你在学什么？",
+          "pinyin": "Nǐ zài xué shénme?",
+          "translation": {
+            "pt": "Estás a aprender o quê?",
+            "en": "What are you learning?",
+            "es": "¿Qué estás aprendiendo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我在学弹钢琴。",
+          "pinyin": "Wǒ zài xué tán gāngqín.",
+          "translation": {
+            "pt": "Estou a aprender piano.",
+            "en": "I'm learning to play piano.",
+            "es": "Estoy aprendiendo piano."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "真厉害！",
+          "pinyin": "Zhēn lìhai!",
+          "translation": {
+            "pt": "Impressionante!",
+            "en": "That's impressive!",
+            "es": "¡Qué guay!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "preferCoffee",
+      "categoryId": 12,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你更喜欢茶还是咖啡？",
+          "pinyin": "Nǐ gèng xǐhuān chá háishì kāfēi?",
+          "translation": {
+            "pt": "Preferes chá ou café?",
+            "en": "Do you prefer tea or coffee?",
+            "es": "¿Prefieres té o café?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我更喜欢茶。",
+          "pinyin": "Wǒ gèng xǐhuān chá.",
+          "translation": {
+            "pt": "Prefiro chá.",
+            "en": "I prefer tea.",
+            "es": "Prefiero el té."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "我也是。",
+          "pinyin": "Wǒ yě shì.",
+          "translation": {
+            "pt": "Eu também.",
+            "en": "Me too.",
+            "es": "Yo también."
+          }
+        }
+      ]
+    },
+    {
+      "id": "likeDance",
+      "categoryId": 12,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你喜欢运动吗？",
+          "pinyin": "Nǐ xǐhuān yùndòng ma?",
+          "translation": {
+            "pt": "Gostas de desporto?",
+            "en": "Do you like sports?",
+            "es": "¿Te gusta el deporte?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "喜欢，我喜欢跑步和跳舞。",
+          "pinyin": "Xǐhuān, wǒ xǐhuān pǎobù hé tiàowǔ.",
+          "translation": {
+            "pt": "Gosto, gosto de correr e dançar.",
+            "en": "Yes, I like running and dancing.",
+            "es": "Sí, me gusta correr y bailar."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "跳舞很有意思。",
+          "pinyin": "Tiàowǔ hěn yǒu yìsi.",
+          "translation": {
+            "pt": "Dançar é divertido.",
+            "en": "Dancing is fun.",
+            "es": "Bailar es divertido."
+          }
+        }
+      ]
+    },
+    {
+      "id": "chooseMovie",
+      "categoryId": 12,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "今晚看电影还是听音乐？",
+          "pinyin": "Jīnwǎn kàn diànyǐng háishì tīng yīnyuè?",
+          "translation": {
+            "pt": "Esta noite cinema ou música?",
+            "en": "Tonight, movie or music?",
+            "es": "¿Esta noche película o música?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我想看电影。",
+          "pinyin": "Wǒ xiǎng kàn diànyǐng.",
+          "translation": {
+            "pt": "Quero ver um filme.",
+            "en": "I want to watch a movie.",
+            "es": "Quiero ver una película."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "好，我们七点半出发。",
+          "pinyin": "Hǎo, wǒmen qī diǎn bàn chūfā.",
+          "translation": {
+            "pt": "Ok, saímos às sete e meia.",
+            "en": "Okay, we leave at seven thirty.",
+            "es": "Vale, salimos a las siete y media."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mustGo",
+      "categoryId": 13,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "对不起，我得走了。",
+          "pinyin": "Duìbuqǐ, wǒ děi zǒu le.",
+          "translation": {
+            "pt": "Desculpa, tenho de ir.",
+            "en": "Sorry, I have to go.",
+            "es": "Perdona, me tengo que ir."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "这么急吗？",
+          "pinyin": "Zhème jí ma?",
+          "translation": {
+            "pt": "Com tanta pressa?",
+            "en": "In such a hurry?",
+            "es": "¿Con tanta prisa?"
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "对，我必须赶火车。",
+          "pinyin": "Duì, wǒ bìxū gǎn huǒchē.",
+          "translation": {
+            "pt": "Sim, tenho de apanhar o comboio.",
+            "en": "Yes, I must catch the train.",
+            "es": "Sí, tengo que coger el tren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mayAsk",
+      "categoryId": 13,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "我可以进来吗？",
+          "pinyin": "Wǒ kěyǐ jìnlái ma?",
+          "translation": {
+            "pt": "Posso entrar?",
+            "en": "May I come in?",
+            "es": "¿Puedo entrar?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "请进。",
+          "pinyin": "Qǐng jìn.",
+          "translation": {
+            "pt": "Entra.",
+            "en": "Please come in.",
+            "es": "Pasa."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "谢谢。",
+          "pinyin": "Xièxie.",
+          "translation": {
+            "pt": "Obrigado.",
+            "en": "Thanks.",
+            "es": "Gracias."
+          }
+        }
+      ]
+    },
+    {
+      "id": "shouldSleep",
+      "categoryId": 13,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你明天有考试吗？",
+          "pinyin": "Nǐ míngtiān yǒu kǎoshì ma?",
+          "translation": {
+            "pt": "Tens exame amanhã?",
+            "en": "Do you have an exam tomorrow?",
+            "es": "¿Mañana tienes examen?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "有，我应该早点睡。",
+          "pinyin": "Yǒu, wǒ yīnggāi zǎo diǎn shuì.",
+          "translation": {
+            "pt": "Sim, devia dormir cedo.",
+            "en": "Yes, I should sleep early.",
+            "es": "Sí, debería dormir pronto."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "加油！",
+          "pinyin": "Jiāyóu!",
+          "translation": {
+            "pt": "Força!",
+            "en": "You can do it!",
+            "es": "¡Ánimo!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bookHere",
+      "categoryId": 14,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "我的书在哪儿？",
+          "pinyin": "Wǒ de shū zài nǎr?",
+          "translation": {
+            "pt": "Onde está o meu livro?",
+            "en": "Where is my book?",
+            "es": "¿Dónde está mi libro?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "书在桌子上。",
+          "pinyin": "Shū zài zhuōzi shàng.",
+          "translation": {
+            "pt": "O livro está em cima da mesa.",
+            "en": "The book is on the desk.",
+            "es": "El libro está en la mesa."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "找到了，谢谢！",
+          "pinyin": "Zhǎodào le, xièxie!",
+          "translation": {
+            "pt": "Encontrei, obrigado!",
+            "en": "Found it, thanks!",
+            "es": "¡Encontrado, gracias!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "goThereNow",
+      "categoryId": 14,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你现在去哪儿？",
+          "pinyin": "Nǐ xiànzài qù nǎr?",
+          "translation": {
+            "pt": "Para onde vais agora?",
+            "en": "Where are you going now?",
+            "es": "¿Adónde vas ahora?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我去学校。",
+          "pinyin": "Wǒ qù xuéxiào.",
+          "translation": {
+            "pt": "Vou para a escola.",
+            "en": "I'm going to school.",
+            "es": "Voy al colegio."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "路上小心。",
+          "pinyin": "Lùshang xiǎoxīn.",
+          "translation": {
+            "pt": "Vai com cuidado.",
+            "en": "Be careful on the way.",
+            "es": "Ve con cuidado."
+          }
+        }
+      ]
+    },
+    {
+      "id": "haveNoTime",
+      "categoryId": 14,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你今天有时间吗？",
+          "pinyin": "Nǐ jīntiān yǒu shíjiān ma?",
+          "translation": {
+            "pt": "Tens tempo hoje?",
+            "en": "Do you have time today?",
+            "es": "¿Tienes tiempo hoy?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "今天我没有时间，明天可以吗？",
+          "pinyin": "Jīntiān wǒ méiyǒu shíjiān, míngtiān kěyǐ ma?",
+          "translation": {
+            "pt": "Hoje não tenho tempo, amanhã serve?",
+            "en": "I don't have time today, is tomorrow okay?",
+            "es": "Hoy no tengo tiempo, ¿mañana vale?"
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "可以，明天见。",
+          "pinyin": "Kěyǐ, míngtiān jiàn.",
+          "translation": {
+            "pt": "Sim, até amanhã.",
+            "en": "Sure, see you tomorrow.",
+            "es": "Vale, hasta mañana."
+          }
+        }
+      ]
+    },
+    {
+      "id": "reviewGreet",
+      "categoryId": 15,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "早上好！你好吗？",
+          "pinyin": "Zǎoshang hǎo! Nǐ hǎo ma?",
+          "translation": {
+            "pt": "Bom dia! Como estás?",
+            "en": "Good morning! How are you?",
+            "es": "¡Buenos días! ¿Cómo estás?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我很好，谢谢。你呢？",
+          "pinyin": "Wǒ hěn hǎo, xièxie. Nǐ ne?",
+          "translation": {
+            "pt": "Estou bem, obrigado. E tu?",
+            "en": "I'm fine, thanks. And you?",
+            "es": "Bien, gracias. ¿Y tú?"
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "我也很好。",
+          "pinyin": "Wǒ yě hěn hǎo.",
+          "translation": {
+            "pt": "Também estou bem.",
+            "en": "I'm fine too.",
+            "es": "Yo también bien."
+          }
+        }
+      ]
+    },
+    {
+      "id": "reviewThanks",
+      "categoryId": 15,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "谢谢你帮我。",
+          "pinyin": "Xièxie nǐ bāng wǒ.",
+          "translation": {
+            "pt": "Obrigado por me ajudares.",
+            "en": "Thanks for helping me.",
+            "es": "Gracias por ayudarme."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "不客气。",
+          "pinyin": "Bù kèqi.",
+          "translation": {
+            "pt": "De nada.",
+            "en": "You're welcome.",
+            "es": "De nada."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "对不起，我来晚了。",
+          "pinyin": "Duìbuqǐ, wǒ lái wǎn le.",
+          "translation": {
+            "pt": "Desculpa, cheguei tarde.",
+            "en": "Sorry I'm late.",
+            "es": "Perdón por llegar tarde."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "没关系。",
+          "pinyin": "Méi guānxi.",
+          "translation": {
+            "pt": "Não faz mal.",
+            "en": "No problem.",
+            "es": "No pasa nada."
+          }
+        }
+      ]
+    },
+    {
+      "id": "reviewFarewell",
+      "categoryId": 15,
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "再见！明天见。",
+          "pinyin": "Zàijiàn! Míngtiān jiàn.",
+          "translation": {
+            "pt": "Até logo! Até amanhã.",
+            "en": "Goodbye! See you tomorrow.",
+            "es": "¡Adiós! Hasta mañana."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "再见，路上小心。",
+          "pinyin": "Zàijiàn, lùshang xiǎoxīn.",
+          "translation": {
+            "pt": "Até logo, vai com cuidado.",
+            "en": "Bye, take care on the way.",
+            "es": "Adiós, cuidado en el camino."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "好的，你也保重。",
+          "pinyin": "Hǎo de, nǐ yě bǎozhòng.",
+          "translation": {
+            "pt": "Ok, cuida-te também.",
+            "en": "Okay, you take care too.",
+            "es": "Vale, tú también cuídate."
+          }
+        }
+      ]
+    }
+  ]
+}

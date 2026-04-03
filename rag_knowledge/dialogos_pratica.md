@@ -4,13 +4,13 @@
 **Contexto:** Duas pessoas se conhecem em um café.
 - A: 你好！很高兴认识你。(Nǐ hǎo! Hěn gāoxìng rènshi nǐ. - Olá! Muito prazer em conhecer você.)
 - B: 你好！我也很高兴认识你。你叫什么名字？(Nǐ hǎo! Wǒ yě hěn gāoxìng rènshi nǐ. Nǐ jiào shénme míngzi? - Olá! Eu também estou muito feliz em te conhecer. Qual é o seu nome?)
-- A: 我叫小明。你是老师吗？(Wǒ叫 Xiǎomíng. Nǐ shì lǎoshī ma? - Eu me chamo Xiao Ming. Você é professor?)
+- A: 我叫小明。你是老师吗？(Wǒ jiào Xiǎomíng. Nǐ shì lǎoshī ma? - Eu me chamo Xiao Ming. Você é professor?)
 - B: 不是，我不是老师，我是学生。(Bú shì, wǒ bú shì lǎoshī, wǒ shì xuésheng. - Não, eu não sou professor, eu sou estudante.)
 
 ## Diálogo 2: Nacionalidade e Idiomas
 **Contexto:** Conversando sobre origens.
 - A: 你是哪国人？(Nǐ shì nǎ guó rén? - De que país você é?)
-- B: 我 é 巴西人。你呢？你是中国北京人吗？(Wǒ shì Bāxī rén. Nǐ ne? Nǐ shì Zhōngguó Běijīng rén ma? - Eu sou brasileiro. E você? Você é de Pequim, na China?)
+- B: 我是巴西人。你呢？你是中国北京人吗？(Wǒ shì Bāxī rén. Nǐ ne? Nǐ shì Zhōngguó Běijīng rén ma? - Eu sou brasileiro. E você? Você é de Pequim, na China?)
 - A: 是的。你会说葡萄牙语吗？(Shì de. Nǐ huì shuō Pútáoyáyǔ ma? - Sim. Você sabe falar português?)
 - B: 我会说一点点，但是我的汉语不太好。(Wǒ huì shuō yīdiǎndiǎn, dànshì wǒ de Hànyǔ bú tài hǎo. - Eu sei falar um pouquinho, mas meu chinês não é muito bom.)
 

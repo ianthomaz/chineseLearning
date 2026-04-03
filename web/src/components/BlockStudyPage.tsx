@@ -82,7 +82,10 @@ export function BlockStudyPage({ mode, block }: Props) {
             lines={block.structures}
             structureGlosses={block.structureGlosses}
           />
-          <ReviewStandalonePhrases phrases={block.reviewStandalonePhrases} />
+          <ReviewStandalonePhrases
+            phrases={block.reviewStandalonePhrases}
+            blockId={block.id}
+          />
           <ReviewMiniDialogues conversations={block.reviewMiniDialogues} />
           <PriorityList
             items={block.priorities}
@@ -127,6 +130,7 @@ export function BlockStudyPage({ mode, block }: Props) {
         <GrammarSections
           blockId={block.id}
           structures={block.structures}
+          structureGlosses={block.structureGlosses}
           notes={block.notes}
           differences={block.differences}
           priorities={block.priorities}

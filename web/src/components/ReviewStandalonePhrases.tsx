@@ -6,10 +6,12 @@ import { pickLocalized } from "@/lib/localized-line";
 
 type Props = {
   phrases: StructureGlossesByLocale;
+  /** When set (e.g. block 15), uses clearer copy for recap-only lists. */
+  blockId?: number;
 };
 
 /** Recap lines in PT/EN/ES only (no hanzi) — always shown in the active UI language. */
-export function ReviewStandalonePhrases({ phrases }: Props) {
+export function ReviewStandalonePhrases({ phrases, blockId }: Props) {
   const { t, locale } = useLocale();
 
   const count = Math.max(
@@ -25,13 +27,17 @@ export function ReviewStandalonePhrases({ phrases }: Props) {
         className="mb-2 text-xs font-semibold uppercase tracking-widest text-ink/40"
         style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
       >
-        {t("review.standalonePhrasesTitle")}
+        {blockId === 15
+          ? t("review.standalonePhrasesTitleFinal")
+          : t("review.standalonePhrasesTitle")}
       </h2>
       <p
         className="mb-6 text-sm leading-relaxed text-ink/50"
         style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
       >
-        {t("review.standalonePhrasesHint")}
+        {blockId === 15
+          ? t("review.standalonePhrasesHintFinal")
+          : t("review.standalonePhrasesHint")}
       </p>
       <ul className="space-y-3">
         {Array.from({ length: count }, (_, i) => {
