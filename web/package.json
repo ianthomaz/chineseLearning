@@ -8,8 +8,16 @@
     "review-extras:locales": "node scripts/build-review-extras-md.mjs",
     "dev": "next dev --turbopack -p 34827",
     "build": "next build",
-    "build:webplace": "NEXT_PUBLIC_BASE_PATH=/aulaChines next build",
+    "build:webplace": "NEXT_PUBLIC_BASE_PATH=/aulaChines NEXT_STATIC_EXPORT=1 next build",
+    "build:server": "NEXT_PUBLIC_BASE_PATH=/aulaChines next build",
+    "preview:webplace": "bash scripts/preview-webplace-local.sh",
+    "deploy:webplace": "bash scripts/deploy-webplace.sh",
+    "deploy:node": "bash scripts/deploy-node.sh",
+    "deploy:local": "bash -c 'export DEPLOY_LOCAL_DIR=\"${DEPLOY_LOCAL_DIR:-/tmp/chineseLearning-webplace-out}\"; bash scripts/deploy-webplace.sh'",
+    "check:llm": "bash scripts/check-llm-health.sh",
+    "ingest:rag": "bash ../connectLLM/ingest-chinese-learning.sh",
     "start": "next start -p 34827",
+    "start:server": "next start -H 127.0.0.1 -p ${PORT:-34827}",
     "lint": "next lint"
   },
   "dependencies": {

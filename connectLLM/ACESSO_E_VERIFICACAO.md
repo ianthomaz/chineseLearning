@@ -50,7 +50,7 @@ Exemplo em curl:
 curl -s -H "Authorization: Bearer $LLM_API_TOKEN" "$LLM_API_URL/edu/vocabulary?language=zh-CN&limit=5"
 ```
 
-Exemplo em JavaScript (só no servidor, nunca no browser exposto):
+Exemplo em JavaScript (só no servidor, nunca no browser exposto), incluindo **resposta estruturada** vs fallback:
 
 ```js
 const res = await fetch(`${process.env.LLM_API_URL}/edu/chat`, {
@@ -61,7 +61,22 @@ const res = await fetch(`${process.env.LLM_API_URL}/edu/chat`, {
   },
   body: JSON.stringify({ message: 'Olá', level: 'HSK1', language: 'zh-CN' }),
 });
+const data = await res.json();
+if (!res.ok) {
+  throw new Error(data.detail || String(res.status));
+}
+// Modo estruturado: toggles Pinyin / Tradução (pt, en, es) por segmento
+const segments = data.reply_structured;
+if (Array.isArray(segments) && segments.length > 0) {
+  // Ex.: mapear segments para o teu componente de chat
+  // Cada item: segments[i].hanzi, .pinyin, .translation.pt / .en / .es
+} else {
+  // Fallback: modelo não devolveu JSON válido — mostrar só texto
+  const plain = data.reply ?? '';
+}
 ```
+
+Contrato completo dos campos: [CONTRATO_EDU_COMPLETO.md](CONTRATO_EDU_COMPLETO.md).
 
 **401 Unauthorized** — token em falta, errado ou header mal formatado (falta `Bearer ` com espaço).
 

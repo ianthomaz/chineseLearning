@@ -6,7 +6,7 @@ Este documento é **independente** do repositório da API. Descreve como usar a 
 - correr **ingest** (indexação vetorial);
 - fazer **perguntas** com RAG via `POST /ask` (assíncrono, com polling).
 
-Isto é **distinto** do eixo **`/edu`**: o `/edu` usa tabelas `edu_*` e não a biblioteca RAG. Podes usar **os dois** no mesmo produto (ex.: chat tutor `/edu/chat` + “perguntas ao material” `/ask`).
+Isto é **distinto** do eixo **`/edu`**: o `/edu` usa tabelas `edu_*` e não a biblioteca RAG. Podes usar **os dois** no mesmo produto (ex.: chat tutor `/edu/chat` + “perguntas ao material” `/ask`). O **`/edu/chat`** devolve resposta **estruturada** (hanzi, pinyin, traduções `pt`/`en`/`es` por segmento) quando o modelo cumpre o formato — ver [CONTRATO_EDU_COMPLETO.md](CONTRATO_EDU_COMPLETO.md). O **`/ask`** devolve **`answer`** em texto simples após o job.
 
 ---
 

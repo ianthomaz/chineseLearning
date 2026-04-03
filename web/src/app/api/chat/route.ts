@@ -6,7 +6,10 @@ const LLM_API_TOKEN = process.env.LLM_API_TOKEN;
 export async function POST(request: Request) {
   if (!LLM_API_TOKEN) {
     return NextResponse.json(
-      { error: 'LLM_API_TOKEN not configured' },
+      {
+        error: 'LLM_API_TOKEN not configured',
+        hint: 'Set LLM_API_TOKEN in web/.env.local (repo includes web/.env with LLM_API_URL).',
+      },
       { status: 500 }
     );
   }

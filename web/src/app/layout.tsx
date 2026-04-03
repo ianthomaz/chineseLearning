@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { AppFooter } from "@/components/AppFooter";
 import { Providers } from "@/components/Providers";
 import { SiteNav } from "@/components/SiteNav";
 import "./globals.css";
+
+const GA_MEASUREMENT_ID = "G-46HMWMHG18";
 
 export const metadata: Metadata = {
   title: {
@@ -32,6 +35,18 @@ export default function RootLayout({
         <link rel="stylesheet" href={`${publicBase}/pinyin-font.css`} />
       </head>
       <body className="min-h-screen">
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         <Providers>
           <SiteNav />
           {children}

@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useLocale } from "@/context/LocaleContext";
 import { useTranslationDisplay } from "@/context/TranslationContext";
 import { ChineseWithPinyinLine } from "@/components/ChineseWithPinyinLine";
+import { withPublicBasePath } from "@/lib/publicBasePath";
 
 type Message = {
   role: "user" | "assistant";
@@ -41,7 +42,7 @@ export default function TutorPage() {
     setError(null);
 
     try {
-      const response = await fetch("/api/chat", {
+      const response = await fetch(withPublicBasePath("/api/chat"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

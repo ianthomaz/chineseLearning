@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+set -euo pipefail
+# Next.js com Route Handlers (tutor /api/chat) — build no servidor + next start.
+# Nginx deve fazer proxy de /aulaChines/ para 127.0.0.1:PORT (ver web/README.md).
+#
+# Requer no remoto: Node 20+, ficheiro server.env com LLM_API_URL e LLM_API_TOKEN.
+#
+# Variáveis:
+#   DEPLOY_NODE_HOST   (default: DEPLOY_WEBPLACE_HOST ou itcsVM)
+#   DEPLOY_NODE_DIR    (default: /home/opc/projetos/chineseLearning-app)
+#   DEPLOY_NODE_PORT   (default: 34827) — mesmo valor no proxy_pass nginx
+#   DEPLOY_NODE_RESTART_CMD — se definido, corre por SSH após o build (ex.: pm2 reload)
+
+REMOTE="${DEPLOY_NODE_HOST:-${DEPLOY_WEBPLACE_HOST:-itcsVM}}"
+REMOTE_DIR="${DEPLOY_NODE_DIR:-/home/opc/projetos/chineseLearning-app}"
+PORT="${DEPLOY_NODE_PORT:-34827}"
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WEB_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+DEPLOY_ENV_FILE="$WEB_DIR/deploy/server.env"
+
+cd "$WEB_DIR"
+
+if [[ ! -f "$DEPLOY_ENV_FILE" ]]; then
+  echo "Missing $DEPLOY_ENV_FILE — copy deploy/server.env.example and fill LLM_*." >&2
+  exit 1
+fi
+
+echo "→ rsync sources → ${REMOTE}:${REMOTE_DIR}/"
+rsync -avz --delete -e ssh \
+  --exclude node_modules \
+  --exclude .next \
+  --exclude out \
+  --exclude .env.local \
+  ./ "${REMOTE}:${REMOTE_DIR}/"
+
+echo "→ scp deploy/server.env"
+scp "$DEPLOY_ENV_FILE" "${REMOTE}:${REMOTE_DIR}/server.env"
+
+run_build() {
+  ssh "$REMOTE" bash -s <<REMOTE_EOF
+set -euo pipefail
+cd "${REMOTE_DIR}"
+export PORT=${PORT}
+set -a
+# shellcheck source=/dev/null
+source ./server.env
+set +a
+npm ci
+npm run build:server
+REMOTE_EOF
+}
+
+if [[ -n "${DEPLOY_NODE_RESTART_CMD:-}" ]]; then
+  run_build
+  ssh "$REMOTE" "bash -lc $(printf '%q' "$DEPLOY_NODE_RESTART_CMD")"
+else
+  run_build
+  echo ""
+  echo "Build feito. No servidor, mantém o processo a correr (ex.: systemd ou pm2), por exemplo:"
+  echo "  cd $REMOTE_DIR && set -a && source ./server.env && set +a && PORT=$PORT npm run start:server"
+fi

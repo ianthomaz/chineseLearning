@@ -19,12 +19,13 @@ Content-Type: application/json
 | Dados | Vocabulário e gramática em PostgreSQL (`edu_vocabulary`, `edu_grammar`); progresso em `edu_progress`. |
 | LLM | Ollama; por defeito modelo **`smart`** (configurável com campo `model` onde existir). |
 | Idioma / nível | Por defeito `language: zh-CN`, níveis tipo **HSK1** … **HSK6**. |
+| Resposta do chat | Preferencialmente **JSON estruturado** (`reply_structured`, `full_reply_text`); ver secção abaixo e fallback em `reply`. |
 
 ---
 
 ## `POST {BASE}/edu/chat`
 
-Tutor: recebe a mensagem do aluno e devolve texto de resposta. O servidor carrega vocabulário e gramática do nível para enriquecer o prompt.
+Tutor: recebe a mensagem do aluno e devolve resposta. O modelo é instruído a responder em **JSON estruturado** (hanzi + pinyin com tons + traduções `pt` / `en` / `es` por segmento) para o site poder usar toggles de Pinyin e Tradução. O servidor carrega vocabulário e gramática do nível para enriquecer o prompt.
 
 ### Corpo JSON (request)
 
@@ -52,13 +53,65 @@ Tutor: recebe a mensagem do aluno e devolve texto de resposta. O servidor carreg
 }
 ```
 
-### Exemplo response (200)
+### Exemplo response (200) — formato estruturado (esperado)
+
+Se o modelo cumprir o formato, a API devolve:
 
 ```json
 {
-  "reply": "Para dizer 'bom dia', usamos 早上好 (Zǎoshang hǎo).",
-  "language": "zh-CN"
+  "reply": "你好！你想学习什么？",
+  "language": "zh-CN",
+  "full_reply_text": "你好！你想学习什么？",
+  "reply_structured": [
+    {
+      "hanzi": "你好！",
+      "pinyin": "Nǐ hǎo!",
+      "translation": {
+        "pt": "Olá!",
+        "en": "Hello!",
+        "es": "¡Hola!"
+      }
+    },
+    {
+      "hanzi": "你想学习什么？",
+      "pinyin": "Nǐ xiǎng xuéxí shénme?",
+      "translation": {
+        "pt": "O que você quer estudar?",
+        "en": "What do you want to study?",
+        "es": "¿Qué quieres estudiar?"
+      }
+    }
+  ]
 }
+```
+
+**Campos:**
+
+| Campo | Descrição |
+|-------|-----------|
+| `reply` | Sempre presente: em modo estruturado costuma ser o mesmo que `full_reply_text` (hanzi); se o JSON falhar, é o texto bruto do modelo (fallback). |
+| `full_reply_text` | Hanzi completo numa linha; `null` se só houver fallback em texto. |
+| `reply_structured` | Lista de segmentos; `null` se o parse JSON falhar. Cada item: `hanzi`, `pinyin` (diacríticos, não números), `translation` com `pt`, `en`, `es`. |
+
+**Fallback:** se a LLM não devolver JSON válido, `reply_structured` e `full_reply_text` vêm `null` e o frontend deve mostrar só `reply` (experiência degradada sem toggle por segmento).
+
+**Nota:** `POST /ask` (RAG assíncrono) usa o campo `answer` em texto simples; este formato estruturado aplica-se ao **`POST /edu/chat`**.
+
+### Uso no site (Next.js / UI)
+
+1. **Depois do 200:** se `reply_structured` for um array com pelo menos um elemento, usa **modo estruturado** (toggles de Pinyin e Tradução por segmento). Se for `null`, mostra só **`reply`** — a experiência fica degradada (sem alinhar pinyin/tradução por frase).
+2. **Modo estruturado:** para cada item, mostra `hanzi`; conforme o estado do utilizador, mostra `pinyin` e/ou `translation.pt`, `translation.en` ou `translation.es` (idioma da interface do chineseLearning). A API pode devolver só algumas chaves de tradução; trata strings vazias como “sem tradução nessa língua”.
+3. **`full_reply_text`:** texto contínuo em hanzi (copiar, TTS, leitura sem iterar segmentos). Em fallback é `null`.
+4. **O modelo é instruído a:** hanzi **simplificado**; **pinyin com marcas de tom** (não números); **segmentos curtos** (frases ou blocos lógicos) em `reply_structured`.
+5. **`history` nas chamadas seguintes:** podes enviar no turno `assistant` o texto simples (ex. `reply` ou `full_reply_text`) para não inflar o prompt; o formato da **resposta HTTP** mantém-se o da tabela acima.
+
+**Exemplo `curl`:**
+
+```bash
+curl -s -X POST "$LLM_API_URL/edu/chat" \
+  -H "Authorization: Bearer $LLM_API_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"message":"Como digo olá?","level":"HSK1","language":"zh-CN"}'
 ```
 
 ### Erros
@@ -307,7 +360,7 @@ Regista se o aluno acertou ou errou numa palavra (`vocab_id`). Após **5** respo
 1. Definir nível do aluno (ex.: HSK1).
 2. Garantir vocabulário (import ou `POST /edu/vocabulary`).
 3. Opcional: `POST /edu/grammar` para regras.
-4. Prática: `POST /edu/chat`.
+4. Prática: `POST /edu/chat` — no UI, preferir `reply_structured` quando existir (Pinyin + `pt`/`en`/`es` por segmento); senão `reply`.
 5. Reforço: `POST /edu/exercise`.
 6. A cada resposta do aluno a exercícios: `POST /edu/progress`.
 

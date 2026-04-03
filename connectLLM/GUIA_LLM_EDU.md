@@ -23,7 +23,7 @@ O chineseLearning (Next, conteúdo em `web/out/`, etc.) pode:
 | Ficheiro | Para quê |
 |----------|----------|
 | [ACESSO_E_VERIFICACAO.md](ACESSO_E_VERIFICACAO.md) | URL base, **como obter e usar o token**, `/health`, segurança |
-| [CONTRATO_EDU_COMPLETO.md](CONTRATO_EDU_COMPLETO.md) | Todos os endpoints `/edu` com JSON |
+| [CONTRATO_EDU_COMPLETO.md](CONTRATO_EDU_COMPLETO.md) | Todos os endpoints `/edu` com JSON; `edu/chat` com `reply_structured` e fallback |
 | [RAG_PROJETOS_INGEST_ASK.md](RAG_PROJETOS_INGEST_ASK.md) | Projetos, ingest, `/ask` e polling |
 
 ---
@@ -43,6 +43,19 @@ Para **RAG**, o servidor da API precisa de **caminhos de pastas** que o containe
 
 - `LLM_API_URL` — sem `/` final.
 - `LLM_API_TOKEN` — **apenas servidor** (nunca `NEXT_PUBLIC_*`).
+
+---
+
+## Resposta do tutor — `POST /edu/chat`
+
+O endpoint devolve sempre **`reply`** (string). Quando o modelo cumpre o JSON pedido pelo servidor, vêm também:
+
+- **`reply_structured`** — lista de `{ hanzi, pinyin, translation: { pt, en, es } }`, um bloco por frase ou ideia;
+- **`full_reply_text`** — todos os hanzi concatenados (útil para cópia ou leitura contínua).
+
+**No chineseLearning:** usa `reply_structured` para os **seletores de Pinyin e Tradução** (e para escolher `pt` / `en` / `es` consoante o idioma do site). Se `reply_structured` for `null`, mostra apenas **`reply`** como mensagem de texto — os toggles por segmento deixam de fazer sentido técnico.
+
+Isto **não** se aplica a **`POST /ask`** (RAG): aí a resposta útil é **`answer`** em texto, após o job. Detalhes e exemplos: [CONTRATO_EDU_COMPLETO.md](CONTRATO_EDU_COMPLETO.md) (secção `edu/chat`).
 
 ---
 
