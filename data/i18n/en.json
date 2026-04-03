@@ -1,7 +1,7 @@
 {
   "lang": "en",
   "langName": "English",
-  "flag": "🇺🇸",
+  "flag": "🇬🇧",
   "ui": {
     "togglePinyin": "拼音",
     "close": "Close",
@@ -12,7 +12,8 @@
     "pronomes": "Pronouns",
     "verbos": "Verbs",
     "substantivos": "Nouns",
-    "gramatica": "Grammar"
+    "gramatica": "Grammar",
+    "dialogos": "Dialogues"
   },
   "sections": {
     "numeros": "Numbers",
@@ -21,7 +22,13 @@
     "frases-padrao": "Standard Phrases",
     "nomes-sobrenomes": "Names & Surnames",
     "paises-idiomas": "Countries & Languages",
-    "tipos-caracteres": "Character Types"
+    "dialogos-curtos": "Short Dialogues",
+    "tipos-caracteres": "Character Types",
+    "apresentando-familia": "Meeting someone/introducing a family member",
+    "planos-dia": "Daily plans and times",
+    "supermercado": "Going to the supermarket",
+    "escola": "At school",
+    "parque": "In the park and physical activities"
   },
   "vocabulary": {
     "num-0": "0",
@@ -89,6 +96,14 @@
     "pi-13": "Mexico",
     "pi-14": "Italy",
     "pi-15": "Australia",
+    "dc-1": "Hello!",
+    "dc-2": "How are you?",
+    "dc-3": "I'm very well, thank you. And you?",
+    "dc-4": "I'm also very well.",
+    "dc-5": "What is your name?",
+    "dc-6": "My name is Linlin.",
+    "dc-7": "Nice to meet you.",
+    "dc-8": "Nice to meet you too.",
     "pro-1": "I",
     "pro-2": "you",
     "pro-3": "he",
@@ -132,6 +147,38 @@
     "tc-1": "Pictograms - represent visual objects",
     "tc-2": "Indicatives - represent abstract concepts",
     "tc-3": "Associatives - combination of ideas",
-    "tc-4": "Pictophonetics - radical + sound"
+    "tc-4": "Pictophonetics - radical + sound",
+    "char-mario": "Mario",
+    "char-wang": "Mr. Wang",
+    "char-pedro": "Peter (David)",
+    "char-anna": "Anna",
+    "char-li": "Mr. Li",
+    "char-cliente": "Customer",
+    "char-vendedor": "Seller",
+    "char-prof": "Teacher",
+    "char-aluno1": "Student 1",
+    "char-aluno2": "Student 2",
+    "char-zhang": "Mr. Zhang",
+    "char-wang2": "Mr. Wang",
+    "af-1": "Mr. Wang, hello! This is my younger brother.",
+    "af-2": "Hello! What is your brother's name?",
+    "af-3": "Hello! My name is David. Nice to meet you.",
+    "af-4": "Nice to meet you too.",
+    "pd-l1": "What time do you wake up today?",
+    "pd-l2": "I wake up at seven in the morning. And you?",
+    "pd-l3": "I wake up at eight. What are you doing today?",
+    "pd-l4": "In the afternoon I'm going to the bookstore to buy books.",
+    "sm-1": "Excuse me, how much is half a kilo of apples?",
+    "sm-2": "Five yuan per half a kilo.",
+    "sm-3": "Too expensive! Make it a bit cheaper.",
+    "sm-4": "Four fifty, how about that?",
+    "es-1": "Hello students! Today we are studying lesson three.",
+    "es-2": "Teacher, I don't understand this Chinese character.",
+    "es-3": "I also find it very difficult.",
+    "es-4": "It's okay, write more and see more. Read with me: 'xuéxí' (to study).",
+    "pq-1": "The scenery here is really beautiful!",
+    "pq-2": "Yes. What sport do you like?",
+    "pq-3": "I like running and swimming. And you?",
+    "pq-4": "I like to practice Tai Chi."
   }
 }
