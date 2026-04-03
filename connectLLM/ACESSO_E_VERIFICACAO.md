@@ -155,3 +155,37 @@ Recomendação: **proxy no teu servidor** (ex.: route `/api/llm/...` no Next que
 [ ] `curl -H "Authorization: Bearer …" "$LLM_API_URL/edu/vocabulary?language=zh-CN&limit=1"` responde **200** (ou lista vazia se ainda não houver dados), não **401**.  
 
 Depois segue [CONTRATO_EDU_COMPLETO.md](CONTRATO_EDU_COMPLETO.md).
+
+---
+
+## 11. Testes rápidos `POST /edu/chat` (mesma máquina que o Ollama)
+
+Com `LLM_API_URL` e `LLM_API_TOKEN` carregados no shell:
+
+1. **Saudação** — resposta com `reply_structured` não vazio; cada segmento com `hanzi`, `pinyin` e `translation.pt` preenchidos.
+
+```bash
+curl -s -X POST "$LLM_API_URL/edu/chat" \
+  -H "Authorization: Bearer $LLM_API_TOKEN" -H "Content-Type: application/json" \
+  -d '{"message":"Diz olá em chinês bem simples.","history":[],"level":"HSK1","language":"zh-CN"}' | jq '.reply_structured[0]'
+```
+
+2. **Tradução** — mesmo critério de schema.
+
+```bash
+curl -s -X POST "$LLM_API_URL/edu/chat" \
+  -H "Authorization: Bearer $LLM_API_TOKEN" -H "Content-Type: application/json" \
+  -d '{"message":"Como se diz obrigado em chinês?","history":[],"level":"HSK1","language":"zh-CN"}' | jq '.reply_structured | length'
+```
+
+3. **Histórico com `content` (formato Next.js)** — o modelo aceita `text` ou `content` em cada turno.
+
+```bash
+curl -s -X POST "$LLM_API_URL/edu/chat" \
+  -H "Authorization: Bearer $LLM_API_TOKEN" -H "Content-Type: application/json" \
+  -d '{"message":"Repete só o cumprimento.","history":[{"role":"user","content":"Olá"},{"role":"assistant","content":"你好！"}],"level":"HSK1","language":"zh-CN"}' | jq '.full_reply_text'
+```
+
+4. **Proxy do site** — com `npm run dev` na pasta `web/` e `web/.env.local` com token válido, o tutor em `/tutor` deve responder; se `/api/chat` devolver **500**, reinicia o dev server **depois** de criar ou alterar `.env.local` (o Next só lê o env à arranque).
+
+Toggles de pinyin/tradução no tutor dependem de `reply_structured`; o backend garante pelo menos um segmento válido em **HTTP 200** (modelo, retry ou fallback fixo).

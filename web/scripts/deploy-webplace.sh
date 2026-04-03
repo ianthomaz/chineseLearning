@@ -37,6 +37,9 @@ if [[ -n "${DEPLOY_LOCAL_DIR:-}" ]]; then
   mkdir -p "$DEPLOY_LOCAL_DIR"
   rsync -av --delete ./out/ "$DEPLOY_LOCAL_DIR/"
   echo "Synced out/ → $DEPLOY_LOCAL_DIR (local)"
+  echo ""
+  echo "  Nota: export estático — /api/chat e tutor com LLM NÃO funcionam aqui."
+  echo "  Para testar tutor + API localmente: npm run deploy:local:live"
 else
   rsync -avz --delete -e ssh ./out/ "${REMOTE}:${REMOTE_DIR}/"
   echo "Synced out/ → ${REMOTE}:${REMOTE_DIR}/"

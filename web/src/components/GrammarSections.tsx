@@ -1,6 +1,6 @@
 "use client";
 
-import { ChineseWithPinyinLine } from "@/components/ChineseWithPinyinLine";
+import { PhraseRevealLine } from "@/components/PhraseRevealLine";
 import { PriorityList } from "@/components/PriorityList";
 import { useLocale } from "@/context/LocaleContext";
 import type { StructureLine } from "@/lib/blocks";
@@ -78,9 +78,10 @@ function StructuresSection({
       <ul className="space-y-4">
         {lines.map((line, i) => (
           <li key={`${title}-struct-${i}`}>
-            <ChineseWithPinyinLine
+            <PhraseRevealLine
               hanzi={line.hanzi}
               pinyin={line.pinyin}
+              translation=""
               hanziClassName="font-hanzi text-xl leading-loose text-ink md:text-2xl"
             />
           </li>

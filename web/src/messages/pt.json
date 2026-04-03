@@ -26,18 +26,17 @@
     "panelTitle": "Opções de leitura",
     "panelHint": "Suas preferências ficam salvas neste dispositivo.",
     "pinyinLabel": "Pinyin",
-    "pinyinDesc": "Pinyin sobreposto nas frases de revisão/gramática e em coluna nas tabelas.",
+    "pinyinDesc": "Coluna de pinyin nas tabelas e rubi onde as preferências globais ainda se aplicam; em cada frase de revisão e gramática, use o ícone ao lado do hanzi.",
     "translationLabel": "Tradução",
-    "translationDesc": "Sentido nas tabelas e texto abaixo das falas nos diálogos."
+    "translationDesc": "Sentido nas tabelas e, na página de diálogos, abaixo das falas; nas mini-diálogos da revisão, use o ícone ao lado de cada fala."
   },
   "home": {
     "kicker": "Chinês básico",
     "title1": "15 blocos de conteúdo.",
     "title2": "Três formas de estudar.",
     "blurb": "Revisão, vocabulário e gramática interligados — cada bloco abre nas três perspectivas.",
-    "tryTutor": "Praticar com tutor IA",
     "open": "Abrir →",
-    "modeReviewDesc": "Frases com pinyin integrado na fonte (rubi). Leia primeiro, decore depois.",
+    "modeReviewDesc": "Frases em hanzi com ícone para revelar pinyin e tradução. Leia primeiro, decore depois.",
     "modeVocabDesc": "Tabelas completas por bloco — Hanzi, pinyin e tradução lado a lado.",
     "modeGrammarDesc": "Estruturas, observações e contrastes organizados por tema.",
     "modeDialoguesDesc": "Conversas completas por tema. Em cada revisão há mini-diálogos ligados a cada frase.",
@@ -50,7 +49,7 @@
   "index": {
     "reviewKicker": "复习",
     "reviewTitle": "Revisão",
-    "reviewIntro": "Frases com pinyin integrado (arquivo local). Passe o mouse para ver o pinyin como dica. Leia em voz alta e use as seções de Vocabulário e Gramática para detalhes.",
+    "reviewIntro": "Cada frase começa só em hanzi; use o ícone ao lado para revelar pinyin e depois a tradução. Leia em voz alta e use Vocabulário e Gramática para detalhes.",
     "vocabKicker": "词汇",
     "vocabTitle": "Vocabulário",
     "vocabIntro": "Tabelas hanzi · pinyin · português organizadas por bloco. Consulte Gramática para estruturas e regras de uso.",
@@ -88,6 +87,9 @@
   },
   "review": {
     "structuresTitle": "Frases e padrões",
+    "revealPhraseAria": "Alternar esta frase: só hanzi, depois hanzi com pinyin, depois com pinyin e tradução; em seguida volta ao só hanzi.",
+    "standalonePhrasesTitle": "Frases de apoio à revisão",
+    "standalonePhrasesHint": "Lembretes por tema, alinhados às prioridades deste bloco.",
     "miniDialoguesTitle": "Mini-diálogos do bloco"
   },
   "dialogues": {
@@ -114,8 +116,6 @@
   },
   "vocab": {
     "noTable": "Sem tabela de vocabulário neste bloco.",
-    "grammarLink": "Gramática deste bloco:",
-    "grammarOpen": "abrir",
     "studyTitle": "Vocabulário de estudo",
     "studyHint": "Tabela completa também em Vocabulário.",
     "hanzi": "Hanzi",
@@ -127,9 +127,7 @@
     "structures": "Estruturas e exemplos",
     "notes": "Observações",
     "differences": "Diferenças e contrastes",
-    "priorities": "Prioridades",
-    "vocabLink": "Vocabulário deste bloco:",
-    "vocabOpen": "abrir tabela"
+    "priorities": "Prioridades"
   },
   "crossLinks": {
     "aria": "Outras perspectivas deste bloco",

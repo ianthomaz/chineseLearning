@@ -4,6 +4,9 @@ set -euo pipefail
 # Nginx deve fazer proxy de /aulaChines/ para 127.0.0.1:PORT (ver web/README.md).
 #
 # Requer no remoto: Node 20+, ficheiro server.env com LLM_API_URL e LLM_API_TOKEN.
+# LLM_API_URL deve ser alcançável a partir do host remoto (ex. https://llm.webplace.cc), não 127.0.0.1
+# salvo túnel explícito — ver ITCS/featureLLM/docs/MANUAL_INTEGRACAO.md § 1.1.
+# Arranque: source server.env + PORT; start-server-stripped.mjs usa HOSTNAME (default 127.0.0.1) e PORT.
 #
 # Variáveis:
 #   DEPLOY_NODE_HOST   (default: DEPLOY_WEBPLACE_HOST ou itcsVM)
@@ -41,12 +44,14 @@ run_build() {
   ssh "$REMOTE" bash -s <<REMOTE_EOF
 set -euo pipefail
 cd "${REMOTE_DIR}"
+# Install before sourcing server.env: NODE_ENV=production there would make npm ci skip devDependencies
+# (tailwindcss, postcss, typescript) and next build would fail.
+npm ci
 export PORT=${PORT}
 set -a
 # shellcheck source=/dev/null
 source ./server.env
 set +a
-npm ci
 npm run build:server
 REMOTE_EOF
 }
@@ -58,5 +63,5 @@ else
   run_build
   echo ""
   echo "Build feito. No servidor, mantém o processo a correr (ex.: systemd ou pm2), por exemplo:"
-  echo "  cd $REMOTE_DIR && set -a && source ./server.env && set +a && PORT=$PORT npm run start:server"
+  echo "  cd $REMOTE_DIR && set -a && source ./server.env && set +a && NODE_ENV=production PORT=$PORT npm run start:server"
 fi

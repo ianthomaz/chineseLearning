@@ -1,0 +1,45 @@
+# Deploy
+
+## Estático (webplace / nginx)
+
+- **Build:** `npm run build:webplace` em `web/` (export para `out/` com `basePath` `/aulaChines`).
+- **Scripts:** `npm run deploy:webplace`, `npm run deploy:local` (destino configurável com `DEPLOY_LOCAL_DIR`).
+- **Limitação:** não há **`POST /api/chat`** no Next; o tutor com LLM **não** funciona só com estáticos.
+
+Teste local sem Node: **`./start.sh --webplace`** (export + `python3 -m http.server`, porta **34901** por defeito).
+
+Em máquina partilhada (nginx, outros Node, bases de dados), evitar matar portas: **`./start.sh --local --no-kill-port`** ou **`START_NO_KILL_PORT=1`**.
+
+## Preparar release sem arrancar serviços
+
+**`./start.sh --prepare`** — lê **`web/.env`** + **`web/deploy/server.env`** (ficheiro “produção” no disco; template **`web/deploy/server.env.example`**), exige **`LLM_API_TOKEN`**, faz health da API + (opcional) verificação do projeto RAG, corre **`npm run build:server`** em `web/`, depois **teste final** com **`POST /edu/chat`** (saltar com **`START_SKIP_EDU_SMOKE=1`**), e **termina** (não inicia Node, não liberta portas). Opcional: **`--ingest`** para `npm run ingest:rag` após os checks (variáveis já exportadas de `server.env` chegam ao script de ingest).
+
+**Handshake no servidor (mesmos caminhos que o deploy):** em `web/`, **`npm run remote:handshake`** — copia `deploy/server.env` para um ficheiro temporário no host e corre **`/health`** + **`POST /edu/chat`** **a partir da VM**, usando o **`LLM_API_URL`** definido para esse ambiente (normalmente **`https://llm.webplace.cc`**, não loopback — ver **ITCS/featureLLM** `docs/MANUAL_INTEGRACAO.md` § 1.1).
+
+## Node (`next start`) — site + tutor
+
+- **Build:** `npm run build:server`.
+- **Arranque:** `PORT=… npm run start:server` com `LLM_*` no ambiente (ex. `deploy/server.env` no servidor, copiado para `server.env` no destino pelo `deploy:node`).
+- **Script:** `npm run deploy:node` (rsync + remoto `npm ci` + `build:server`); detalhes em `web/scripts/deploy-node.sh` e comentários no script.
+
+## Nginx com prefixo
+
+O tráfego deve manter o prefixo **`/aulaChines/`** até ao Next. Exemplo (ajustar `upstream` e porta do Node):
+
+```nginx
+location /aulaChines/ {
+  proxy_pass http://127.0.0.1:34827;
+  proxy_http_version 1.1;
+  proxy_set_header Host $host;
+  proxy_set_header X-Forwarded-Proto $scheme;
+  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+}
+```
+
+A porta do Node deve coincidir com `PORT` / `DEPLOY_NODE_PORT` usados no deploy.
+
+## Deploy não faz ingest
+
+`deploy:webplace`, `deploy:local` e `deploy:node` **não** executam `POST /ingest`. Após mudanças em `rag_knowledge/`, correr **`npm run ingest:rag`** onde fizer sentido (máquina com acesso à API e caminhos corretos).
+
+Mais pormenores e overrides: **`web/README.md`** (secção Deploy).

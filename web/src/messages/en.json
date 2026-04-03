@@ -26,18 +26,17 @@
     "panelTitle": "Reading options",
     "panelHint": "Your choices are saved on this device.",
     "pinyinLabel": "Pinyin",
-    "pinyinDesc": "Ruby text on review/grammar phrases and a column in vocabulary tables.",
+    "pinyinDesc": "Pinyin column in tables and ruby where global toggles still apply; for each review or grammar line, use the icon next to the hanzi.",
     "translationLabel": "Gloss",
-    "translationDesc": "Meaning column in tables and subtitle text under dialogue lines."
+    "translationDesc": "Meaning column in tables and, on the dialogues page, under each line; in review mini-dialogues, use the icon next to each line."
   },
   "home": {
     "kicker": "Basic Chinese",
     "title1": "15 content blocks.",
     "title2": "Three ways to study.",
     "blurb": "Review, vocabulary, and grammar are linked — each block opens in all three views.",
-    "tryTutor": "Practice with AI tutor",
     "open": "Open →",
-    "modeReviewDesc": "Phrases with pinyin in the Hanzi Pinyin webfont (ruby). Read first, memorize later.",
+    "modeReviewDesc": "Hanzi-first lines with an icon to reveal pinyin and gloss. Read first, memorize later.",
     "modeVocabDesc": "Full tables per block — Hanzi, pinyin, and gloss side by side.",
     "modeGrammarDesc": "Structures, notes, and contrasts organized by topic.",
     "modeDialoguesDesc": "Full conversations by theme. Each review line also has two mini-dialogues below it.",
@@ -50,7 +49,7 @@
   "index": {
     "reviewKicker": "复习",
     "reviewTitle": "Review",
-    "reviewIntro": "Phrases use the Hanzi Pinyin font (bundled). Hover for generated pinyin as a hint. Read aloud; then use Vocabulary and Grammar for details.",
+    "reviewIntro": "Each phrase starts as hanzi only; use the icon beside it to reveal pinyin, then the gloss. Read aloud; then use Vocabulary and Grammar for details.",
     "vocabKicker": "词汇",
     "vocabTitle": "Vocabulary",
     "vocabIntro": "Hanzi · pinyin · English gloss tables by block. See Grammar for structures and usage.",
@@ -88,6 +87,9 @@
   },
   "review": {
     "structuresTitle": "Phrases and patterns",
+    "revealPhraseAria": "Cycle this line: hanzi only, then hanzi with pinyin, then pinyin plus translation; then back to hanzi only.",
+    "standalonePhrasesTitle": "Review helper phrases",
+    "standalonePhrasesHint": "Theme reminders aligned with this block’s priorities.",
     "miniDialoguesTitle": "Block mini-dialogues"
   },
   "dialogues": {
@@ -114,8 +116,6 @@
   },
   "vocab": {
     "noTable": "No vocabulary table in this block.",
-    "grammarLink": "Grammar for this block:",
-    "grammarOpen": "open",
     "studyTitle": "Study vocabulary",
     "studyHint": "Full table also under Vocabulary.",
     "hanzi": "Hanzi",
@@ -127,9 +127,7 @@
     "structures": "Structures and examples",
     "notes": "Notes",
     "differences": "Contrasts",
-    "priorities": "Priorities",
-    "vocabLink": "Vocabulary for this block:",
-    "vocabOpen": "open table"
+    "priorities": "Priorities"
   },
   "crossLinks": {
     "aria": "Other views of this block",

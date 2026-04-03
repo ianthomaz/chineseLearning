@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 
+/** Dev fallback: API on localhost. Production: set LLM_API_URL (e.g. https://llm.webplace.cc) — see ITCS/featureLLM docs/MANUAL_INTEGRACAO.md § 1.1. */
 const LLM_API_URL = process.env.LLM_API_URL || 'http://127.0.0.1:28471';
 const LLM_API_TOKEN = process.env.LLM_API_TOKEN;
 
@@ -9,9 +10,11 @@ type StructuredLine = {
   translation: Record<string, string>;
 };
 
+type ChatHistoryTurn = { role: 'user' | 'assistant'; content: string };
+
 type ChatPayload = {
   message: string;
-  history: Array<{ role: 'user' | 'assistant'; content: string }>;
+  history: ChatHistoryTurn[];
 };
 
 async function callEduChat(payload: ChatPayload) {
@@ -99,10 +102,10 @@ export async function POST(request: Request) {
 
   try {
     const { message, history } = await request.json();
-    const safeHistory = Array.isArray(history)
+    const safeHistory: ChatHistoryTurn[] = Array.isArray(history)
       ? history
           .filter((turn) => turn && typeof turn === 'object')
-          .map((turn) => ({
+          .map((turn): ChatHistoryTurn => ({
             role: turn.role === 'assistant' ? 'assistant' : 'user',
             content: typeof turn.content === 'string' ? turn.content : '',
           }))
@@ -128,6 +131,8 @@ export async function POST(request: Request) {
       extractStructuredFromReplyText(data.reply);
 
     let didRetry = false;
+    /** Prefer `reply` / `full_reply_text` from the response that supplied `structured`. */
+    let replySource: Record<string, unknown> = data;
     if (!structured) {
       didRetry = true;
       const retryResponse = await callEduChat({
@@ -136,14 +141,25 @@ export async function POST(request: Request) {
       });
 
       if (retryResponse.ok) {
-        const retryData = await retryResponse.json();
-        structured =
+        const retryData = (await retryResponse.json()) as Record<string, unknown>;
+        const fromRetry =
           normalizeStructured(retryData.reply_structured) ||
           extractStructuredFromReplyText(retryData.reply);
+        if (fromRetry) {
+          structured = fromRetry;
+          replySource = retryData;
+        }
       }
     }
 
-    const finalReply = typeof data.reply === 'string' && data.reply.trim() ? data.reply : 'Tudo bem! Vamos praticar chinês com frases curtas.';
+    const rawReply = replySource.reply;
+    const rawFull = replySource.full_reply_text;
+    const finalReply =
+      typeof rawReply === 'string' && rawReply.trim()
+        ? rawReply.trim()
+        : typeof rawFull === 'string' && rawFull.trim()
+          ? rawFull.trim()
+          : 'Tudo bem! Vamos praticar chinês com frases curtas.';
 
     return NextResponse.json({
       reply: finalReply,

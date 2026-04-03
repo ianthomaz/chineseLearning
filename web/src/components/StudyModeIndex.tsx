@@ -29,14 +29,14 @@ export function StudyModeIndex({ mode }: { mode: Mode }) {
           };
 
   return (
-    <main className="mx-auto max-w-5xl px-6 pb-24 pt-10">
+    <main className="mx-auto max-w-5xl px-4 pb-[max(6rem,env(safe-area-inset-bottom,0px))] pt-8 sm:px-6 sm:pb-24 sm:pt-10">
       <p
         className="mb-2 text-xs font-medium uppercase tracking-widest text-ink/35"
         style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
       >
         {copy.kicker}
       </p>
-      <h1 className="font-display text-3xl font-medium text-ink md:text-4xl">
+      <h1 className="font-display text-2xl font-medium text-ink sm:text-3xl md:text-4xl">
         {copy.title}
       </h1>
       <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink/55">

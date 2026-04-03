@@ -1,6 +1,6 @@
 /**
  * Reads Content/consolidado_final.md and writes src/data/consolidado.json
- * Merges Content/review_extras.md (optional): glosses per structure line + mini-dialogues after phrases in review.
+ * Merges Content/review_extras.md (optional): glosses per structure line, standalone phrase lists (blocks without structures), mini-dialogues.
  */
 import fs from "fs";
 import path from "path";
@@ -229,6 +229,8 @@ function parseBlock(headerLine, body) {
     priorities: [],
     vocabulary: [],
     structureGlosses: { pt: [], en: [], es: [] },
+    /** When there are no structure lines, phrase translations from review_extras go here */
+    reviewStandalonePhrases: { pt: [], en: [], es: [] },
     reviewMiniDialogues: [],
   };
 
@@ -262,14 +264,33 @@ function mergeReviewExtras(blocks, extrasMap) {
     const ex = extrasMap.get(block.id);
     const n = block.structures.length;
     const src = ex?.structureGlosses ?? { pt: [], en: [], es: [] };
-    const pt = padGlossArray(src.pt, n);
-    const en = padGlossArray(src.en, n);
-    const es = padGlossArray(src.es, n);
-    for (let i = 0; i < n; i++) {
-      if (!String(en[i] ?? "").trim()) en[i] = pt[i] ?? "";
-      if (!String(es[i] ?? "").trim()) es[i] = pt[i] ?? "";
+
+    if (n === 0) {
+      let pt = [...(src.pt ?? [])];
+      let en = [...(src.en ?? [])];
+      let es = [...(src.es ?? [])];
+      const m = Math.max(pt.length, en.length, es.length);
+      pt = padGlossArray(pt, m);
+      en = padGlossArray(en, m);
+      es = padGlossArray(es, m);
+      for (let i = 0; i < m; i++) {
+        if (!String(en[i] ?? "").trim()) en[i] = pt[i] ?? "";
+        if (!String(es[i] ?? "").trim()) es[i] = pt[i] ?? "";
+      }
+      block.structureGlosses = { pt: [], en: [], es: [] };
+      block.reviewStandalonePhrases = { pt, en, es };
+    } else {
+      const pt = padGlossArray(src.pt, n);
+      const en = padGlossArray(src.en, n);
+      const es = padGlossArray(src.es, n);
+      for (let i = 0; i < n; i++) {
+        if (!String(en[i] ?? "").trim()) en[i] = pt[i] ?? "";
+        if (!String(es[i] ?? "").trim()) es[i] = pt[i] ?? "";
+      }
+      block.structureGlosses = { pt, en, es };
+      block.reviewStandalonePhrases = { pt: [], en: [], es: [] };
     }
-    block.structureGlosses = { pt, en, es };
+
     block.reviewMiniDialogues = ex?.reviewMiniDialogues?.length
       ? ex.reviewMiniDialogues
       : [];

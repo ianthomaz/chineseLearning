@@ -536,7 +536,43 @@
 ## 15
 
 ### Traduções das frases (PT)
+- Números: um, dois, três…; vinte; trezentos e cinquenta e seis; quanto custa isto?
+- Data, hora e dinheiro: hoje é quarta-feira; são duas horas; trinta e cinco yuan e cinquenta máo.
+- Frutas e bebidas: gosto de chá; queres café ou chá?
+- Lugares: estou na escola; trabalho em casa; vou à cafeteria.
+- Países e línguas: sou brasileiro; que língua falas?
+- Cores e qualidades: esta maçã é vermelha; o tempo está bom hoje.
+- Família: quantas pessoas há na tua casa?; o meu pai e a minha mãe estão em casa.
+- Perguntas básicas: como te chamas?; que horas são?; que dia é hoje?
+- Pronomes e 是: sou estudante; ela não é professora; ele é chinês.
+- Advérbios: estou bem; eu também; eles estão todos na escola.
+- 会 / 能 / 想 e 在 / 有 / 去: estudo chinês; não posso conduzir; quero aprender chinês; há uma loja na escola.
 
+### Traduções das frases (EN)
+- Numbers: one, two, three…; twenty; three hundred fifty-six; how much is this?
+- Date, time, money: today is Wednesday; it's two o'clock; thirty-five yuan and fifty mao.
+- Fruit and drinks: I like tea; do you want coffee or tea?
+- Places: I'm at school; I work from home; I'm going to the café.
+- Countries and languages: I'm Brazilian; what language do you speak?
+- Colors and qualities: this apple is red; the weather is nice today.
+- Family: how many people are in your family?; my father and mother are at home.
+- Basic questions: what's your name?; what time is it?; what's today's date?
+- Pronouns and 是: I'm a student; she's not a teacher; he's Chinese.
+- Adverbs: I'm very well; me too; they're all at school.
+- 会 / 能 / 想 and 在 / 有 / 去: I study Chinese; I can't drive; I want to learn Chinese; there's a shop at the school.
+
+### Traduções das frases (ES)
+- Números: uno, dos, tres…; veinte; trescientos cincuenta y seis; ¿cuánto cuesta esto?
+- Fecha, hora y dinero: hoy es miércoles; son las dos; treinta y cinco yuanes con cincuenta máo.
+- Fruta y bebidas: me gusta el té; ¿quieres café o té?
+- Lugares: estoy en el colegio; trabajo en casa; voy a la cafetería.
+- Países y idiomas: soy brasileño; ¿qué idioma hablas?
+- Colores y cualidades: esta manzana es roja; hoy hace muy buen tiempo.
+- Familia: ¿cuántas personas hay en tu casa?; mi padre y mi madre están en casa.
+- Preguntas básicas: ¿cómo te llamas?; ¿qué hora es?; ¿qué día es hoy?
+- Pronombres y 是: soy estudiante; ella no es profesora; él es chino.
+- Adverbios: estoy muy bien; yo también; están todos en el colegio.
+- 会 / 能 / 想 y 在 / 有 / 去: estudio chino; no puedo conducir; quiero aprender chino; hay una tienda en el colegio.
 
 ### Mini-diálogos do bloco
 **Conversa 1**

@@ -51,40 +51,31 @@ export function HomeContent({ blocks }: Props) {
   const { t } = useLocale();
 
   return (
-    <main className="mx-auto max-w-5xl px-6 pb-24">
-      <section className="py-16 sm:py-20">
+    <main className="mx-auto max-w-5xl px-4 pb-[max(6rem,env(safe-area-inset-bottom,0px))] sm:px-6 sm:pb-24">
+      <section className="py-10 sm:py-16 md:py-20">
         <p
           className="mb-4 text-xs font-medium uppercase tracking-widest"
           style={{ color: "var(--accent)", fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
         >
           {t("home.kicker")}
         </p>
-        <h1 className="font-display text-4xl font-medium leading-tight tracking-tight text-ink sm:text-5xl">
+        <h1 className="font-display text-3xl font-medium leading-tight tracking-tight text-ink sm:text-4xl md:text-5xl">
           {t("home.title1")}
           <br />
           <span className="text-ink/40">{t("home.title2")}</span>
         </h1>
-        <p className="mt-5 max-w-lg text-lg leading-relaxed text-ink/60">
+        <p className="mt-5 max-w-lg text-base leading-relaxed text-ink/60 sm:text-lg">
           {t("home.blurb")}
         </p>
-        <div className="mt-6">
-          <Link
-            href="/tutor"
-            className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
-            style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
-          >
-            {t("home.tryTutor")}
-          </Link>
-        </div>
       </section>
 
       <section>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
           {modeDefs.map((m) => (
             <Link
               key={m.href}
               href={m.href}
-              className="group relative overflow-hidden rounded-2xl border p-6 transition-shadow hover:shadow-md"
+              className="group relative overflow-hidden rounded-2xl border p-5 transition-shadow active:bg-ink/[0.02] sm:p-6 sm:hover:shadow-md"
               style={{ borderColor: "var(--border)", backgroundColor: "var(--paper)" }}
             >
               <div

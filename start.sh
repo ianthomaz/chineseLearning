@@ -1,0 +1,315 @@
+#!/usr/bin/env bash
+set -euo pipefail
+#
+# Orquestra verificação de ambiente + ingest opcional + deploy local OU preparação para produção.
+#
+# Uso:
+#   ./start.sh --local              # next start + /api/chat + tutor (porta 34902)
+#   ./start.sh --webplace           # export estático + HTTP em /aulaChines (porta 34901)
+#   ./start.sh --prepare            # valida web/deploy/server.env + health LLM + build:server (NÃO inicia servidor)
+#   ./start.sh --local --ingest     # idem + fila de ingest RAG antes de subir o site
+#   ./start.sh --local --port=34903
+#   ./start.sh --local --skip-build # reutiliza .next (rápido; cuidado com código desatualizado)
+#   ./start.sh --local --no-kill-port  # falha se a porta estiver ocupada (não mata processo)
+#
+# Servidor partilhado / produção no mesmo host:
+#   export START_NO_KILL_PORT=1     # mesmo efeito que --no-kill-port em --local / --webplace
+#   (nunca matar portas em máquinas com nginx, DB, outros Node, etc.)
+#
+# Saltar smoke lento do tutor (POST /edu/chat, até ~120s):
+#   export START_SKIP_EDU_SMOKE=1
+#
+# Variáveis: DEPLOY_LOCAL_DIR, STATIC_VIEW_DIR (ver modo --webplace)
+#
+# LLM_API_URL: fallback http://127.0.0.1:28471 só faz sentido com API Docker no mesmo Mac.
+# Produção / VM: definir em web/deploy/server.env — ver ITCS/featureLLM/docs/MANUAL_INTEGRACAO.md § 1.1
+# (https://llm.webplace.cc ou IP Tailscale do mini62; itcsVM + 127.0.0.1 só com túnel SSH).
+
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WEB_DIR="$REPO_ROOT/web"
+
+MODE=""
+DO_INGEST=0
+KILL_PORT=1
+LIVE_PORT=34902
+STATIC_PORT=34901
+SKIP_BUILD=0
+DEPLOY_LOCAL_DIR="${DEPLOY_LOCAL_DIR:-/tmp/chineseLearning-webplace-out}"
+STATIC_VIEW_DIR="${STATIC_VIEW_DIR:-/tmp/chineseLearning-local-serve}"
+
+usage() {
+  echo "Uso: $0 --local | --webplace | --prepare [opções]"
+  echo ""
+  echo "  --local          Site com API (tutor + LLM). Default porta $LIVE_PORT."
+  echo "  --webplace       Só HTML estático (como nginx webplace). Default porta $STATIC_PORT."
+  echo "  --prepare        Produção: valida deploy/server.env, health LLM, npm run build:server."
+  echo "                   Não inicia Node nem mata portas (deixa pronto para systemd/pm2 no servidor)."
+  echo "  --ingest         Depois dos checks, corre npm run ingest:rag (precisa token + jq)."
+  echo "  --no-kill-port   Não mata processo na porta; erro se ocupada (recomendado em host partilhado)."
+  echo "  --port=N         Porta para --local (default $LIVE_PORT)."
+  echo "  --static-port=N  Porta para --webplace (default $STATIC_PORT)."
+  echo "  --skip-build     Com --local: não corre build:server (usa .next existente)."
+  echo "  -h, --help       Esta ajuda."
+  echo ""
+  echo "  START_NO_KILL_PORT=1   — define por ambiente o mesmo que --no-kill-port."
+  echo "  START_SKIP_EDU_SMOKE=1 — não corre POST /edu/chat ao final (só health + /projects)."
+}
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --local) MODE=local; shift ;;
+    --webplace) MODE=webplace; shift ;;
+    --prepare) MODE=prepare; shift ;;
+    --ingest) DO_INGEST=1; shift ;;
+    --no-kill-port) KILL_PORT=0; shift ;;
+    --port=*) LIVE_PORT="${1#*=}"; shift ;;
+    --static-port=*) STATIC_PORT="${1#*=}"; shift ;;
+    --skip-build) SKIP_BUILD=1; shift ;;
+    -h|--help) usage; exit 0 ;;
+    *)
+      echo "Opção desconhecida: $1" >&2
+      usage >&2
+      exit 1
+      ;;
+  esac
+done
+
+if [[ "${START_NO_KILL_PORT:-}" == "1" ]]; then
+  KILL_PORT=0
+fi
+
+if [[ -z "$MODE" ]]; then
+  echo "Indica --local, --webplace ou --prepare." >&2
+  usage >&2
+  exit 1
+fi
+
+load_env() {
+  set -a
+  # shellcheck source=/dev/null
+  [[ -f "$WEB_DIR/.env" ]] && source "$WEB_DIR/.env"
+  # shellcheck source=/dev/null
+  [[ -f "$WEB_DIR/.env.local" ]] && source "$WEB_DIR/.env.local"
+  set +a
+}
+
+# Produção: mesmo ficheiro que deploy:node envia (web/deploy/server.env). Também chamado "env.prod" no servidor.
+load_prod_env() {
+  set -a
+  # shellcheck source=/dev/null
+  [[ -f "$WEB_DIR/.env" ]] && source "$WEB_DIR/.env"
+  if [[ ! -f "$WEB_DIR/deploy/server.env" ]]; then
+    echo "Falta web/deploy/server.env — copia web/deploy/server.env.example e preenche LLM_* (e PORT se precisares)." >&2
+    exit 1
+  fi
+  # shellcheck source=/dev/null
+  source "$WEB_DIR/deploy/server.env"
+  set +a
+}
+
+free_port() {
+  local p="$1"
+  local pids
+  if ! command -v lsof >/dev/null 2>&1; then
+    echo "lsof não encontrado; não consigo libertar a porta $p." >&2
+    return 1
+  fi
+  pids="$(lsof -tiTCP:"$p" -sTCP:LISTEN 2>/dev/null || true)"
+  if [[ -z "$pids" ]]; then
+    return 0
+  fi
+  echo "  A libertar porta $p (PIDs: $pids)…"
+  kill $pids 2>/dev/null || true
+  sleep 1
+  pids="$(lsof -tiTCP:"$p" -sTCP:LISTEN 2>/dev/null || true)"
+  if [[ -n "$pids" ]]; then
+    echo "  A forçar SIGKILL…"
+    kill -9 $pids 2>/dev/null || true
+    sleep 1
+  fi
+}
+
+check_llm_health() {
+  local url="${LLM_API_URL:-http://127.0.0.1:28471}"
+  url="${url%/}"
+  echo "→ Health LLM: $url/health"
+  if [[ -n "${LLM_API_TOKEN:-}" ]]; then
+    if curl -sf -m 20 -H "Authorization: Bearer $LLM_API_TOKEN" "$url/health" >/dev/null; then
+      echo "  OK."
+    else
+      echo "  ERRO: API não respondeu (token/URL ou serviço parado)." >&2
+      return 1
+    fi
+  else
+    if curl -sf -m 20 "$url/health" >/dev/null; then
+      echo "  OK (sem Bearer)."
+    else
+      echo "  Aviso: health falhou e não há LLM_API_TOKEN." >&2
+      if [[ "$MODE" == "local" || "$MODE" == "prepare" ]]; then
+        return 1
+      fi
+    fi
+  fi
+  echo ""
+}
+
+check_chinese_learning_project() {
+  [[ -n "${LLM_API_TOKEN:-}" ]] || return 0
+  command -v jq >/dev/null 2>&1 || {
+    echo "  (Sem jq — a saltar verificação GET /projects.)"
+    echo ""
+    return 0
+  }
+  local url="${LLM_API_URL:-http://127.0.0.1:28471}"
+  url="${url%/}"
+  echo "→ Projeto RAG chinese_learning (GET /projects)…"
+  if curl -sf -m 20 -H "Authorization: Bearer $LLM_API_TOKEN" "$url/projects" | jq -e '.projects[] | select(.project_id=="chinese_learning")' >/dev/null 2>&1; then
+    echo "  OK — registado na API."
+  else
+    echo "  Aviso: não encontrado. Corre ./start.sh --ingest (com outro modo) ou npm run ingest:rag em web/." >&2
+  fi
+  echo ""
+}
+
+run_ingest() {
+  echo "→ ingest:rag…"
+  (cd "$WEB_DIR" && npm run ingest:rag)
+  echo ""
+}
+
+# Smoke: uma chamada real ao eixo educacional (mesmo caminho que o tutor no site).
+run_llm_edu_chat_smoke() {
+  if [[ "${START_SKIP_EDU_SMOKE:-}" == "1" ]]; then
+    echo "→ Smoke POST /edu/chat — omitido (START_SKIP_EDU_SMOKE=1)."
+    echo ""
+    return 0
+  fi
+  [[ -n "${LLM_API_TOKEN:-}" ]] || return 0
+  local url="${LLM_API_URL:-http://127.0.0.1:28471}"
+  url="${url%/}"
+  echo "→ Smoke POST /edu/chat (timeout 120s)…"
+  local resp
+  if ! resp="$(curl -sS -m 120 -X POST "$url/edu/chat" \
+    -H "Authorization: Bearer $LLM_API_TOKEN" \
+    -H "Content-Type: application/json" \
+    -d '{"message":"Handshake: responde com uma saudação mínima em chinês.","level":"HSK1","language":"zh-CN"}' 2>&1)"; then
+    echo "  ERRO: falha de rede ou timeout em POST /edu/chat." >&2
+    echo "$resp" >&2
+    return 1
+  fi
+  if command -v jq >/dev/null 2>&1; then
+    if ! echo "$resp" | jq -e '(.full_reply_text // .reply | type) == "string" and ((.full_reply_text // .reply | length) > 0)' >/dev/null 2>&1; then
+      echo "  ERRO: resposta sem full_reply_text/reply útil." >&2
+      echo "$resp" | head -c 1200 >&2
+      return 1
+    fi
+  else
+    if ! echo "$resp" | grep -qE '"full_reply_text"\s*:\s*"[^"]+"' && ! echo "$resp" | grep -qE '"reply"\s*:\s*"[^"]+"'; then
+      echo "  ERRO: JSON inesperado (instala jq para validação melhor)." >&2
+      echo "$resp" | head -c 1200 >&2
+      return 1
+    fi
+  fi
+  echo "  OK."
+  echo ""
+}
+
+# --- modo --prepare (produção local: validar + build; não arrancar nada)
+if [[ "$MODE" == "prepare" ]]; then
+  load_prod_env
+  export LLM_API_URL="${LLM_API_URL:-http://127.0.0.1:28471}"
+  export LLM_API_URL="${LLM_API_URL%/}"
+
+  if [[ -z "${LLM_API_TOKEN:-}" ]]; then
+    echo "LLM_API_TOKEN vazio em web/deploy/server.env." >&2
+    exit 1
+  fi
+
+  check_llm_health || exit 1
+  check_chinese_learning_project
+
+  if [[ "$DO_INGEST" == "1" ]]; then
+    run_ingest
+  fi
+
+  echo "→ build:server (NEXT_PUBLIC_BASE_PATH=/aulaChines)…"
+  (cd "$WEB_DIR" && npm run build:server)
+
+  echo "→ Testes finais (LLM)…"
+  run_llm_edu_chat_smoke || exit 1
+
+  echo ""
+  echo "  [ prepare ] Concluído. Nenhum servidor foi iniciado; nenhuma porta foi libertada."
+  echo "  Ambiente:   web/deploy/server.env (template: web/deploy/server.env.example)"
+  echo "  No servidor (após rsync / deploy:node), exemplo:"
+  echo "    cd <REMOTE_DIR> && set -a && source ./server.env && set +a && PORT=\${PORT:-34827} npm run start:server"
+  echo "  Nginx:      proxy_pass deve apontar para 127.0.0.1:\$PORT (ver docs/06_deploy.md)."
+  echo ""
+  exit 0
+fi
+
+# --- checks comuns (--local / --webplace)
+load_env
+export LLM_API_URL="${LLM_API_URL:-http://127.0.0.1:28471}"
+export LLM_API_URL="${LLM_API_URL%/}"
+
+if [[ "$MODE" == "local" ]]; then
+  if [[ ! -f "$WEB_DIR/.env.local" ]]; then
+    echo "Falta web/.env.local (mínimo: LLM_API_TOKEN)." >&2
+    exit 1
+  fi
+  if [[ -z "${LLM_API_TOKEN:-}" ]]; then
+    echo "LLM_API_TOKEN vazio em web/.env.local." >&2
+    exit 1
+  fi
+fi
+
+check_llm_health || exit 1
+check_chinese_learning_project
+
+if [[ "$DO_INGEST" == "1" ]]; then
+  if [[ -z "${LLM_API_TOKEN:-}" ]]; then
+    echo "--ingest exige LLM_API_TOKEN em web/.env.local." >&2
+    exit 1
+  fi
+  run_ingest
+fi
+
+echo "→ Testes finais (LLM)…"
+run_llm_edu_chat_smoke || exit 1
+
+if [[ "$MODE" == "local" ]]; then
+  if [[ "$KILL_PORT" == "1" ]]; then
+    free_port "$LIVE_PORT" || true
+  fi
+  if lsof -i ":$LIVE_PORT" -sTCP:LISTEN >/dev/null 2>&1; then
+    echo "Porta $LIVE_PORT ainda ocupada. Encerra o processo ou usa --port=outra ou --no-kill-port (ou START_NO_KILL_PORT=1 e resolve manualmente)." >&2
+    exit 1
+  fi
+  export SKIP_PORT_CHECK=1
+  export PORT="$LIVE_PORT"
+  export SKIP_BUILD
+  exec bash "$WEB_DIR/scripts/deploy-local-live.sh"
+fi
+
+if [[ "$MODE" == "webplace" ]]; then
+  if [[ "$KILL_PORT" == "1" ]]; then
+    free_port "$STATIC_PORT" || true
+  fi
+  if lsof -i ":$STATIC_PORT" -sTCP:LISTEN >/dev/null 2>&1; then
+    echo "Porta $STATIC_PORT ainda ocupada." >&2
+    exit 1
+  fi
+  echo "→ Build estático (webplace)…"
+  (cd "$WEB_DIR" && export DEPLOY_LOCAL_DIR && npm run deploy:local)
+  rm -rf "$STATIC_VIEW_DIR"
+  mkdir -p "$STATIC_VIEW_DIR/aulaChines"
+  rsync -a "$DEPLOY_LOCAL_DIR/" "$STATIC_VIEW_DIR/aulaChines/"
+  echo ""
+  echo "  Estático: http://127.0.0.1:${STATIC_PORT}/aulaChines/"
+  echo "  (sem POST /api/chat)"
+  echo "  Ctrl+C para parar."
+  echo ""
+  cd "$STATIC_VIEW_DIR"
+  exec python3 -m http.server "$STATIC_PORT" -b 127.0.0.1
+fi

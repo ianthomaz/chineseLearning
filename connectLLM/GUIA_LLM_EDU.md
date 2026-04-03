@@ -39,6 +39,11 @@ Para **RAG**, o servidor da API precisa de **caminhos de pastas** que o containe
 
 ---
 
+## Testes e contrato em produção
+
+- Checklist `curl` para `/edu/chat`: [ACESSO_E_VERIFICACAO.md § 11](ACESSO_E_VERIFICACAO.md).
+- Especificação alinhada com a implementação atual da API: repositório **ITCS** em `featureLLM/docs/EDU_API_CONTRACT.md` (retry, fallback estruturado, `translation.pt` obrigatório por segmento).
+
 ## Variáveis de ambiente (app)
 
 - `LLM_API_URL` — sem `/` final.

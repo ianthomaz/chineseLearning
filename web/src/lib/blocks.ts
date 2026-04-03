@@ -32,6 +32,8 @@ export type ContentBlock = {
   structures: StructureLine[];
   /** Per-locale gloss for each structure line (from review_extras) */
   structureGlosses: StructureGlossesByLocale;
+  /** Extra phrase lists when the block has no central structures (e.g. bloco 15 + review_extras) */
+  reviewStandalonePhrases: StructureGlossesByLocale;
   /** Block-level mini-dialogues shown after all phrases in review mode */
   reviewMiniDialogues: DialogueTurn[][];
   notes: string[];

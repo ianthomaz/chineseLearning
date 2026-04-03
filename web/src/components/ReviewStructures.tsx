@@ -1,8 +1,7 @@
 "use client";
 
-import { ChineseWithPinyinLine } from "@/components/ChineseWithPinyinLine";
+import { PhraseRevealLine } from "@/components/PhraseRevealLine";
 import { useLocale } from "@/context/LocaleContext";
-import { useTranslationDisplay } from "@/context/TranslationContext";
 import type { StructureGlossesByLocale, StructureLine } from "@/lib/blocks";
 import { pickLocalized } from "@/lib/localized-line";
 
@@ -14,7 +13,6 @@ type Props = {
 
 export function ReviewStructures({ blockId, lines, structureGlosses }: Props) {
   const { t, locale } = useLocale();
-  const { showTranslation } = useTranslationDisplay();
 
   if (lines.length === 0) return null;
 
@@ -41,15 +39,12 @@ export function ReviewStructures({ blockId, lines, structureGlosses }: Props) {
               className="border-l-2 pl-5"
               style={{ borderColor: "var(--border)" }}
             >
-              <ChineseWithPinyinLine hanzi={line.hanzi} pinyin={line.pinyin} />
-              {showTranslation && gloss.trim() ? (
-                <p
-                  className="mt-2 text-sm leading-snug text-ink/50"
-                  style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
-                >
-                  {gloss}
-                </p>
-              ) : null}
+              <PhraseRevealLine
+                hanzi={line.hanzi}
+                pinyin={line.pinyin}
+                translation={gloss.trim()}
+                hanziClassName="font-hanzi text-2xl leading-loose text-ink md:text-[1.7rem]"
+              />
             </li>
           );
         })}

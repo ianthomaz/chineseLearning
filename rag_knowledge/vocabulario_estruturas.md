@@ -1,5 +1,9 @@
 # Vocabulário e Estruturas Essenciais (RAG Knowledge)
 
+## Números (1)
+- **一** (yī) — “um” no uso normal (contagem, quantidades, ordem habitual).
+- **幺** (yāo) — o mesmo algarismo 1 lido assim em **telefone**, **códigos** e **sequências de dígitos** (menos ambíguo que yī nesse contexto).
+
 ## Pronomes Pessoais e Básicos
 - 我 (Wǒ) - Eu
 - 你 (Nǐ) - Você

@@ -37,7 +37,7 @@ export function ReviewMiniDialogues({ conversations }: Props) {
             >
               {t("dialogues.convLabel", { num: ci + 1 })}
             </p>
-            <DialogueConversation turns={conv} />
+            <DialogueConversation turns={conv} phraseReveal />
           </div>
         ))}
       </div>

@@ -5,7 +5,7 @@ import { useLocale } from "@/context/LocaleContext";
 export function AppFooter() {
   const { t } = useLocale();
   return (
-    <footer className="mx-auto max-w-6xl border-t border-ink/10 px-5 py-10 text-center text-xs text-ink/45">
+    <footer className="mx-auto max-w-6xl border-t border-ink/10 px-4 py-8 pb-[max(2rem,env(safe-area-inset-bottom,0px))] text-center text-xs leading-relaxed text-ink/45 sm:px-5 sm:py-10">
       {t("footer.phraseFont")}{" "}
       <a
         href="https://github.com/parlr/hanzi-pinyin-font"

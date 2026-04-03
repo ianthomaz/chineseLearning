@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { AppFooter } from "@/components/AppFooter";
 import { Providers } from "@/components/Providers";
@@ -7,13 +7,39 @@ import "./globals.css";
 
 const GA_MEASUREMENT_ID = "G-46HMWMHG18";
 
+const APP_NAME = "Chinês básico";
+
 export const metadata: Metadata = {
+  applicationName: APP_NAME,
+  manifest: "/manifest.webmanifest",
   title: {
-    default: "Chinês básico",
+    default: APP_NAME,
     template: "%s · Chinês básico",
   },
   description:
     "Revisão, vocabulário e gramática em blocos, a partir do consolidado do curso.",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: APP_NAME,
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  icons: {
+    apple: "/icons/apple-touch-icon.png",
+    icon: [
+      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icons/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#2d5a8c",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 const publicBase =
@@ -34,7 +60,7 @@ export default function RootLayout({
         */}
         <link rel="stylesheet" href={`${publicBase}/pinyin-font.css`} />
       </head>
-      <body className="min-h-screen">
+      <body>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
@@ -48,9 +74,11 @@ export default function RootLayout({
           `}
         </Script>
         <Providers>
-          <SiteNav />
-          {children}
-          <AppFooter />
+          <div className="flex min-h-dvh flex-col">
+            <SiteNav />
+            <div className="flex min-h-0 flex-1 flex-col">{children}</div>
+            <AppFooter />
+          </div>
         </Providers>
       </body>
     </html>

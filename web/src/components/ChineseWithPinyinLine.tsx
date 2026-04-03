@@ -7,6 +7,8 @@ type Props = {
   /** Used for a11y and hover hint; phrase display uses the Hanzi Pinyin webfont. */
   pinyin: string;
   hanziClassName?: string;
+  /** When set, ignores global pinyin toggle (per-line reveal UIs). */
+  showPinyinOverride?: boolean;
 };
 
 const defaultRuby =
@@ -18,8 +20,11 @@ export function ChineseWithPinyinLine({
   hanzi,
   pinyin,
   hanziClassName,
+  showPinyinOverride,
 }: Props) {
-  const { showPinyin } = usePinyin();
+  const { showPinyin: showPinyinGlobal } = usePinyin();
+  const showPinyin =
+    showPinyinOverride !== undefined ? showPinyinOverride : showPinyinGlobal;
 
   const rubyClass = hanziClassName
     ? hanziClassName.replace(/\bfont-hanzi\b/g, "font-ruby")

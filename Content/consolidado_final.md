@@ -17,12 +17,14 @@
 - 零 é usado quando há “buraco” no número
 - 两 costuma ser usado antes de classificadores, 千 e 万
 - 二 costuma ser usado em dezenas, números soltos e telefone
+- No uso corrente: 一 (yī) para “um”; em telefone, códigos e leitura dígito a dígito, o algarismo 1 costuma ler-se 幺 (yāo), mais claro nesse contexto.
 
 ### Vocabulário
 | Hanzi | Pinyin | Tradução |
 |---|---|---|
 | 零 | líng | zero |
-| 一 | yī | um |
+| 一 | yī | um (contagem, quantidade, ordem habitual) |
+| 幺 | yāo | um (telefone, códigos, sequência de algarismos) |
 | 二 | èr | dois |
 | 两 | liǎng | dois |
 | 三 | sān | três |

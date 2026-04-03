@@ -1,6 +1,8 @@
 # Contrato completo — eixo `/edu/*` (API LLM)
 
-Referência autossuficiente. **Todas** as rotas abaixo exigem:
+Referência autossuficiente para quem integra **sem** abrir o repositório da API. Quem mantém o servidor deve tratar como fonte de implementação o ficheiro **`ITCS/featureLLM/docs/EDU_API_CONTRACT.md`** (validação de `reply_structured`, **1 retry** automático, **fallback estruturado fixo** se o modelo falhar duas vezes, logs INFO).
+
+**Todas** as rotas abaixo exigem:
 
 ```
 Authorization: Bearer <LLM_API_TOKEN>
@@ -19,7 +21,7 @@ Content-Type: application/json
 | Dados | Vocabulário e gramática em PostgreSQL (`edu_vocabulary`, `edu_grammar`); progresso em `edu_progress`. |
 | LLM | Ollama; por defeito modelo **`smart`** (configurável com campo `model` onde existir). |
 | Idioma / nível | Por defeito `language: zh-CN`, níveis tipo **HSK1** … **HSK6**. |
-| Resposta do chat | Preferencialmente **JSON estruturado** (`reply_structured`, `full_reply_text`); ver secção abaixo e fallback em `reply`. |
+| Resposta do chat | **JSON estruturado** sempre em 200: modelo + retry; se falhar, **segmento fixo** (toggles preservados). |
 
 ---
 
@@ -89,21 +91,21 @@ Se o modelo cumprir o formato, a API devolve:
 
 | Campo | Descrição |
 |-------|-----------|
-| `reply` | Sempre presente: em modo estruturado costuma ser o mesmo que `full_reply_text` (hanzi); se o JSON falhar, é o texto bruto do modelo (fallback). |
-| `full_reply_text` | Hanzi completo numa linha; `null` se só houver fallback em texto. |
-| `reply_structured` | Lista de segmentos; `null` se o parse JSON falhar. Cada item: `hanzi`, `pinyin` (diacríticos, não números), `translation` com `pt`, `en`, `es`. |
+| `reply` | Hanzi da resposta; alinha com `full_reply_text` (resposta do modelo ou mensagem fixa se o modelo falhou o schema duas vezes). |
+| `full_reply_text` | Hanzi completo numa linha (sempre preenchido em **200**). |
+| `reply_structured` | Lista **não vazia** em **200**: segmentos do tutor, ou **um segmento fixo** (“tenta de novo”) se validação + retry falharem. Cada item: `hanzi`, `pinyin`, `translation` com **`pt` obrigatório**; `en` / `es` podem ser `""`. |
 
-**Fallback:** se a LLM não devolver JSON válido, `reply_structured` e `full_reply_text` vêm `null` e o frontend deve mostrar só `reply` (experiência degradada sem toggle por segmento).
+**Robustez da API:** valida schema (hanzi, pinyin e `translation.pt` não vazios); **1 retry** automático com instrução de corrigir o JSON; se ainda falhar, devolve **sempre** JSON estruturado fixo para o UI não perder toggles. Logs no servidor (INFO): nível, nº de segmentos, retry, fallback, duração.
 
 **Nota:** `POST /ask` (RAG assíncrono) usa o campo `answer` em texto simples; este formato estruturado aplica-se ao **`POST /edu/chat`**.
 
 ### Uso no site (Next.js / UI)
 
-1. **Depois do 200:** se `reply_structured` for um array com pelo menos um elemento, usa **modo estruturado** (toggles de Pinyin e Tradução por segmento). Se for `null`, mostra só **`reply`** — a experiência fica degradada (sem alinhar pinyin/tradução por frase).
-2. **Modo estruturado:** para cada item, mostra `hanzi`; conforme o estado do utilizador, mostra `pinyin` e/ou `translation.pt`, `translation.en` ou `translation.es` (idioma da interface do chineseLearning). A API pode devolver só algumas chaves de tradução; trata strings vazias como “sem tradução nessa língua”.
-3. **`full_reply_text`:** texto contínuo em hanzi (copiar, TTS, leitura sem iterar segmentos). Em fallback é `null`.
-4. **O modelo é instruído a:** hanzi **simplificado**; **pinyin com marcas de tom** (não números); **segmentos curtos** (frases ou blocos lógicos) em `reply_structured`.
-5. **`history` nas chamadas seguintes:** podes enviar no turno `assistant` o texto simples (ex. `reply` ou `full_reply_text`) para não inflar o prompt; o formato da **resposta HTTP** mantém-se o da tabela acima.
+1. **Depois do 200:** trata sempre **`reply_structured`** como lista com itens (toggles por segmento). Se for o segmento fixo, o texto em PT explica que pode voltar a perguntar.
+2. Para cada item, mostra `hanzi`, `pinyin` e `translation` conforme o idioma do site; `en` / `es` vazios = omitir ou esconder.
+3. **`full_reply_text`:** hanzi contínuo (copiar, TTS).
+4. Regras pedagógicas (nível, frases curtas, etc.) vêm do prompt do servidor.
+5. **`history`:** podes enviar `assistant` como texto simples; a **resposta** continua estruturada.
 
 **Exemplo `curl`:**
 

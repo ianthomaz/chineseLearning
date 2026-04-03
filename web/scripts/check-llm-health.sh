@@ -13,6 +13,7 @@ set -a
 [[ -f .env.local ]] && source .env.local
 set +a
 
+# Default = API Docker no mesmo Mac; produção/VM: exportar LLM_API_URL (ex. https://llm.webplace.cc — MANUAL_INTEGRACAO § 1.1).
 URL="${LLM_API_URL:-http://127.0.0.1:28471}"
 URL="${URL%/}"
 

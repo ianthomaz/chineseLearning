@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect } from "react";
 import { BlockPager } from "@/components/BlockPager";
 import { BlockTitleText } from "@/components/BlockTitleText";
@@ -8,6 +7,7 @@ import { CrossLinks } from "@/components/CrossLinks";
 import { GrammarSections } from "@/components/GrammarSections";
 import { PriorityList } from "@/components/PriorityList";
 import { ReviewMiniDialogues } from "@/components/ReviewMiniDialogues";
+import { ReviewStandalonePhrases } from "@/components/ReviewStandalonePhrases";
 import { ReviewStructures } from "@/components/ReviewStructures";
 import { VocabTable } from "@/components/VocabTable";
 import type { ContentBlock } from "@/lib/blocks";
@@ -49,16 +49,16 @@ export function BlockStudyPage({ mode, block }: Props) {
         : "block.headerGrammar";
 
   return (
-    <main className="mx-auto max-w-3xl px-6 pb-24 pt-10">
+    <main className="mx-auto max-w-3xl px-4 pb-[max(6rem,env(safe-area-inset-bottom,0px))] pt-8 sm:px-6 sm:pb-24 sm:pt-10">
       <BlockStudyDocumentTitle block={block} mode={mode} />
-      <div className={mode === "review" ? "mb-12" : "mb-10"}>
+      <div className="mb-4">
         <p
           className="mb-2 text-xs font-medium uppercase tracking-widest text-ink/35"
           style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
         >
           {t(headerKey, { num })}
         </p>
-        <h1 className="font-display text-3xl font-medium text-ink md:text-4xl">
+        <h1 className="font-display text-2xl font-medium text-ink sm:text-3xl md:text-4xl">
           <BlockTitleText id={block.id} title={block.title} />
         </h1>
         {mode === "vocabulary" && block.vocabulary.length > 0 ? (
@@ -71,31 +71,9 @@ export function BlockStudyPage({ mode, block }: Props) {
               : t("home.wordCount", { count: block.vocabulary.length })}
           </p>
         ) : null}
-        {mode === "vocabulary" ? (
-          <p className="mt-3 text-sm text-ink/50">
-            {t("vocab.grammarLink")}{" "}
-            <Link
-              href={`/grammar/${block.id}`}
-              className="text-accent underline decoration-accent/30"
-            >
-              {t("vocab.grammarOpen")}
-            </Link>
-            .
-          </p>
-        ) : null}
-        {mode === "grammar" ? (
-          <p className="mt-3 text-sm text-ink/50">
-            {t("grammar.vocabLink")}{" "}
-            <Link
-              href={`/vocabulary/${block.id}`}
-              className="text-accent underline decoration-accent/30"
-            >
-              {t("grammar.vocabOpen")}
-            </Link>
-            .
-          </p>
-        ) : null}
       </div>
+
+      <CrossLinks blockId={block.id} current={mode} placement="top" />
 
       {mode === "review" ? (
         <>
@@ -104,6 +82,7 @@ export function BlockStudyPage({ mode, block }: Props) {
             lines={block.structures}
             structureGlosses={block.structureGlosses}
           />
+          <ReviewStandalonePhrases phrases={block.reviewStandalonePhrases} />
           <ReviewMiniDialogues conversations={block.reviewMiniDialogues} />
           <PriorityList
             items={block.priorities}
@@ -154,7 +133,6 @@ export function BlockStudyPage({ mode, block }: Props) {
         />
       ) : null}
 
-      <CrossLinks blockId={block.id} current={mode} />
       <BlockPager blockId={block.id} mode={mode} />
     </main>
   );

@@ -77,7 +77,7 @@ export default function TutorPage() {
   };
 
   return (
-    <main className="mx-auto flex h-[calc(100vh-80px)] max-w-3xl flex-col px-6 pb-6 pt-10">
+    <main className="mx-auto flex min-h-0 w-full max-w-3xl flex-1 flex-col px-4 pb-[max(1.5rem,env(safe-area-inset-bottom,0px))] pt-8 sm:px-6 sm:pt-10">
       <div className="mb-6">
         <p
           className="mb-2 text-xs font-medium uppercase tracking-widest text-ink/35"
@@ -85,7 +85,7 @@ export default function TutorPage() {
         >
           {t("tutor.kicker") || "AI Tutor"}
         </p>
-        <h1 className="font-display text-3xl font-medium text-ink md:text-4xl">
+        <h1 className="font-display text-2xl font-medium text-ink sm:text-3xl md:text-4xl">
           {t("tutor.pageTitle") || "Conversa com o Professor"}
         </h1>
         <p className="mt-4 max-w-xl text-sm leading-relaxed text-ink/55">
@@ -95,7 +95,7 @@ export default function TutorPage() {
 
       <div
         ref={scrollRef}
-        className="flex-1 overflow-y-auto rounded-2xl border bg-paper p-4 shadow-inner"
+        className="min-h-[min(28rem,calc(100dvh-16rem))] flex-1 overflow-y-auto rounded-2xl border bg-paper p-3 shadow-inner sm:min-h-[min(32rem,calc(100dvh-14rem))] sm:p-4"
         style={{ borderColor: "var(--border)" }}
       >
         {messages.length === 0 && (
@@ -163,20 +163,20 @@ export default function TutorPage() {
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} className="mt-4 flex gap-2">
+      <form onSubmit={handleSubmit} className="mt-3 flex flex-col gap-2 sm:mt-4 sm:flex-row">
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder={t("tutor.placeholder")}
           disabled={loading}
-          className="flex-1 rounded-xl border bg-paper px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30"
+          className="min-h-[48px] flex-1 rounded-xl border bg-paper px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-accent/30 sm:text-sm"
           style={{ borderColor: "var(--border)" }}
         />
         <button
           type="submit"
           disabled={loading || !input.trim()}
-          className="rounded-xl bg-accent px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+          className="min-h-[48px] shrink-0 rounded-xl bg-accent px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
         >
           {t("tutor.send") || "Enviar"}
         </button>
