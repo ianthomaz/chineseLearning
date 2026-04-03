@@ -24,19 +24,41 @@ Em máquina partilhada (nginx, outros Node, bases de dados), evitar matar portas
 
 ## Nginx com prefixo
 
-O tráfego deve manter o prefixo **`/aulaChines/`** até ao Next. Exemplo (ajustar `upstream` e porta do Node):
+O tráfego deve manter o prefixo **`/aulaChines/`** até ao Next.
+
+**webplace.cc (produção):** o que recebe tráfego na porta 443 costuma ser o contentor **`nginx_global`**, com configs em **`/home/opc/projetos/webplaceMain/nginx/conf.d/`** (ex. **`default.conf`**), não o `/etc/nginx/` do host. Aí **`/aulaChines/`** deve ser **`proxy_pass`** para o Node, **não** `alias` para a pasta estática `chineseLearning/`.
+
+Dentro desse contentor, o host Linux vê-se pelo gateway da bridge Docker (típico **`172.17.0.1`**). Exemplo:
+
+```nginx
+location /aulaChines/ {
+  proxy_pass http://172.17.0.1:34827;
+  proxy_http_version 1.1;
+  proxy_set_header Host $host;
+  proxy_set_header X-Real-IP $remote_addr;
+  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  proxy_set_header X-Forwarded-Proto $scheme;
+  proxy_set_header Upgrade $http_upgrade;
+  proxy_set_header Connection "upgrade";
+}
+```
+
+Depois: **`docker exec nginx_global nginx -t`** e **`docker exec nginx_global nginx -s reload`**.
+
+O Next no host tem de escutar num endereço acessível a partir do contentor: em **`server.env`** usa **`HOSTNAME=0.0.0.0`** (com **`PORT=34827`**). Só **`127.0.0.1`** faz o proxy da bridge falhar com *connection refused*.
+
+Nginx no **mesmo** sistema que o Node, sem contentor no meio:
 
 ```nginx
 location /aulaChines/ {
   proxy_pass http://127.0.0.1:34827;
-  proxy_http_version 1.1;
-  proxy_set_header Host $host;
-  proxy_set_header X-Forwarded-Proto $scheme;
-  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  ...
 }
 ```
 
 A porta do Node deve coincidir com `PORT` / `DEPLOY_NODE_PORT` usados no deploy.
+
+Script de referência (já aplicado uma vez na VM): **`web/deploy/fix-nginx-aulachines-proxy.py`** (substitui blocos `alias` por `proxy_pass` em `default.conf`).
 
 ## Deploy não faz ingest
 

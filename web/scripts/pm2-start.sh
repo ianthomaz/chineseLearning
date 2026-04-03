@@ -19,6 +19,7 @@ set +a
 
 export NODE_ENV="${NODE_ENV:-production}"
 export PORT="${PORT:-34827}"
+# Default loopback; production behind Docker edge nginx often needs 0.0.0.0 (see server.env.example).
 export HOSTNAME="${HOSTNAME:-127.0.0.1}"
 
 exec node "$WEB_ROOT/scripts/start-server-stripped.mjs"
