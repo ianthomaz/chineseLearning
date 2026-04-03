@@ -32,7 +32,7 @@
   },
   "home": {
     "kicker": "Basic Chinese",
-    "title1": "15 content blocks.",
+    "title1": "Course blocks plus extended reference material.",
     "title2": "Three ways to study.",
     "blurb": "Review, vocabulary, and grammar are linked — each block opens in all three views.",
     "open": "Open →",
@@ -77,7 +77,13 @@
     "12": "Likes, preferences, and choices",
     "13": "Modal verbs",
     "14": "Place, existence, and movement",
-    "15": "Final review of the essentials"
+    "15": "Final review of the essentials",
+    "16": "HSK1 vocabulary (extra)",
+    "17": "Example sentences per verb",
+    "18": "Most-used measure words",
+    "19": "Connectors and natural phrasing",
+    "20": "Practice dialogues",
+    "22": "Demonstratives and place (这 · 那 · 书店)"
   },
   "block": {
     "headerReview": "Block {num} · Review",
@@ -159,7 +165,7 @@
     "roleUser": "YOU",
     "roleAssistant": "AI",
     "send": "Send",
-    "placeholder": "Write something in Portuguese or Chinese..."
+    "placeholder": "Write anything—even in Chinese if you can!"
   },
   "vocab": {
     "noTable": "No vocabulary table in this block.",
@@ -167,7 +173,22 @@
     "studyHint": "Full table also under Vocabulary.",
     "hanzi": "Hanzi",
     "pinyin": "Pinyin",
-    "translation": "Gloss"
+    "translation": "Gloss",
+    "strokes": "Strokes",
+    "openStrokesAria": "Show stroke order: {word}"
+  },
+  "hanziWriter": {
+    "modalTitle": "Stroke order",
+    "close": "Close",
+    "closeAria": "Close dialog",
+    "replay": "Replay animation",
+    "quiz": "Practice writing",
+    "skipStroke": "Skip stroke",
+    "quizHint": "Hint after 2 misses on the same stroke. On the 3rd miss the stroke is accepted and you move on. You can also skip with the button beside.",
+    "replayExitQuiz": "Leave quiz and return to animation",
+    "quizDone": "Round complete. Replay the animation or practice again.",
+    "unavailable": "No stroke animation is available for this character in the current dataset.",
+    "creditsModal": "Hanzi Writer library (MIT license). Stroke data lives in the hanzi-writer-data repository; attribution chain includes Make Me a Hanzi and Arphic (1999) sources. Read each repository’s license before redistributing data copies."
   },
   "grammar": {
     "empty": "No grammar notes for this block in the source material.",
@@ -194,7 +215,14 @@
     "phraseFont": "Phrase ruby font:",
     "phraseFontLink": "Hanzi Pinyin Font (parlr)",
     "rest": "Hanzi: Noto Sans SC. Table pinyin column: from the course outline.",
-    "license": "(CC-BY-SA-4.0)."
+    "license": "(CC-BY-SA-4.0).",
+    "hanziWriterIntro": "Vocabulary strokes:",
+    "hanziWriterLib": "Hanzi Writer",
+    "hanziWriterMid": "(MIT) · data",
+    "hanziWriterData": "hanzi-writer-data",
+    "hanziWriterTail": "· stroke origin:",
+    "hanziWriterMmh": "Make Me a Hanzi",
+    "hanziWriterEnd": "/ Arphic."
   },
   "metadata": {
     "siteTitle": "Basic Chinese",

@@ -3139,13 +3139,789 @@
     },
     {
       "id": 16,
-      "title": "Vocabulário HSK1 Completo (Complemento Exaustivo)",
+      "title": "Vocabulário HSK1 (complemento)",
       "narrative": "Este bloco adiciona todas as palavras da lista original que ainda não apareceram nos blocos anteriores.\n\n---",
       "structures": [],
       "notes": [],
       "differences": [],
       "priorities": [],
-      "vocabulary": [],
+      "vocabulary": [
+        {
+          "hanzi": "叫",
+          "pinyin": "jiào",
+          "translation": "chamar-se / chamar — 你叫什么名字？"
+        },
+        {
+          "hanzi": "告诉",
+          "pinyin": "gàosu",
+          "translation": "dizer / contar — 请告诉我你的电话。"
+        },
+        {
+          "hanzi": "打",
+          "pinyin": "dǎ",
+          "translation": "bater / ligar / jogar — 我打电话给妈妈。"
+        },
+        {
+          "hanzi": "发",
+          "pinyin": "fā",
+          "translation": "enviar — 我发邮件给你。"
+        },
+        {
+          "hanzi": "给",
+          "pinyin": "gěi",
+          "translation": "dar / para — 给我一杯水。"
+        },
+        {
+          "hanzi": "送",
+          "pinyin": "sòng",
+          "translation": "dar de presente / levar — 我送朋友一个礼物。"
+        },
+        {
+          "hanzi": "见",
+          "pinyin": "jiàn",
+          "translation": "ver / encontrar — 明天见！"
+        },
+        {
+          "hanzi": "听",
+          "pinyin": "tīng",
+          "translation": "ouvir — 我听音乐。"
+        },
+        {
+          "hanzi": "认识",
+          "pinyin": "rènshi",
+          "translation": "conhecer (pessoa) — 很高兴认识你。"
+        },
+        {
+          "hanzi": "知道",
+          "pinyin": "zhīdào",
+          "translation": "saber (informação) — 我知道这个字。"
+        },
+        {
+          "hanzi": "觉得",
+          "pinyin": "juéde",
+          "translation": "sentir / achar — 我觉得很好。"
+        },
+        {
+          "hanzi": "懂",
+          "pinyin": "dǒng",
+          "translation": "entender — 你懂不懂？"
+        },
+        {
+          "hanzi": "用",
+          "pinyin": "yòng",
+          "translation": "usar — 我用手机学汉语。"
+        },
+        {
+          "hanzi": "住",
+          "pinyin": "zhù",
+          "translation": "morar — 我住在北京。"
+        },
+        {
+          "hanzi": "跟",
+          "pinyin": "gēn",
+          "translation": "seguir / com (prep) — 我跟你一起去。"
+        },
+        {
+          "hanzi": "过",
+          "pinyin": "guò",
+          "translation": "passar / ter experiência — 我去过中国。"
+        },
+        {
+          "hanzi": "迎",
+          "pinyin": "yíng",
+          "translation": "receber / dar boas-vindas — 欢迎来我家！"
+        },
+        {
+          "hanzi": "找",
+          "pinyin": "zhǎo",
+          "translation": "procurar — 我找我的书。"
+        },
+        {
+          "hanzi": "休息",
+          "pinyin": "xiūxi",
+          "translation": "descansar — 我休息一下。"
+        },
+        {
+          "hanzi": "等",
+          "pinyin": "děng",
+          "translation": "esperar — 请等一下。"
+        },
+        {
+          "hanzi": "做",
+          "pinyin": "zuò",
+          "translation": "fazer — 我在做饭。"
+        },
+        {
+          "hanzi": "进",
+          "pinyin": "jìn",
+          "translation": "entrar — 请进！"
+        },
+        {
+          "hanzi": "出",
+          "pinyin": "chū",
+          "translation": "sair — 我出门了。"
+        },
+        {
+          "hanzi": "走",
+          "pinyin": "zǒu",
+          "translation": "andar / ir embora — 我走路去学校。"
+        },
+        {
+          "hanzi": "入",
+          "pinyin": "rù",
+          "translation": "entrar (formal) — 入场"
+        },
+        {
+          "hanzi": "开",
+          "pinyin": "kāi",
+          "translation": "abrir / dirigir — 开门 / 开车"
+        },
+        {
+          "hanzi": "关",
+          "pinyin": "guān",
+          "translation": "fechar — 关窗"
+        },
+        {
+          "hanzi": "说",
+          "pinyin": "shuō",
+          "translation": "falar — 我说汉语。"
+        },
+        {
+          "hanzi": "话",
+          "pinyin": "huà",
+          "translation": "fala / conversa — 说话"
+        },
+        {
+          "hanzi": "问",
+          "pinyin": "wèn",
+          "translation": "perguntar — 我问一个问题。"
+        },
+        {
+          "hanzi": "买",
+          "pinyin": "mǎi",
+          "translation": "comprar — 我买水果。"
+        },
+        {
+          "hanzi": "卖",
+          "pinyin": "mài",
+          "translation": "vender — 商店卖衣服。"
+        },
+        {
+          "hanzi": "睡",
+          "pinyin": "shuì",
+          "translation": "dormir — 我睡觉了。"
+        },
+        {
+          "hanzi": "用",
+          "pinyin": "yòng",
+          "translation": "usar — 用电脑工作"
+        },
+        {
+          "hanzi": "住",
+          "pinyin": "zhù",
+          "translation": "morar — 住酒店"
+        },
+        {
+          "hanzi": "猫",
+          "pinyin": "māo",
+          "translation": "gato — 我有一只猫。"
+        },
+        {
+          "hanzi": "狗",
+          "pinyin": "gǒu",
+          "translation": "cachorro — 狗很可爱。"
+        },
+        {
+          "hanzi": "鼠",
+          "pinyin": "shǔ",
+          "translation": "rato — 老鼠"
+        },
+        {
+          "hanzi": "牛",
+          "pinyin": "niú",
+          "translation": "boi / vaca — 牛肉很好吃。"
+        },
+        {
+          "hanzi": "虎",
+          "pinyin": "hǔ",
+          "translation": "tigre — 老虎"
+        },
+        {
+          "hanzi": "兔",
+          "pinyin": "tù",
+          "translation": "coelho — 小白兔"
+        },
+        {
+          "hanzi": "龙",
+          "pinyin": "lóng",
+          "translation": "dragão — 龙年"
+        },
+        {
+          "hanzi": "蛇",
+          "pinyin": "shé",
+          "translation": "cobra — 我怕蛇。"
+        },
+        {
+          "hanzi": "马",
+          "pinyin": "mǎ",
+          "translation": "cavalo — 骑马"
+        },
+        {
+          "hanzi": "羊",
+          "pinyin": "yáng",
+          "translation": "cabra / ovelha — 羊肉"
+        },
+        {
+          "hanzi": "猴",
+          "pinyin": "hóu",
+          "translation": "macaco — 猴子"
+        },
+        {
+          "hanzi": "鸡",
+          "pinyin": "jī",
+          "translation": "galinha — 鸡肉"
+        },
+        {
+          "hanzi": "猪",
+          "pinyin": "zhū",
+          "translation": "porco — 猪肉"
+        },
+        {
+          "hanzi": "山",
+          "pinyin": "shān",
+          "translation": "montanha — 这座山很高。"
+        },
+        {
+          "hanzi": "海",
+          "pinyin": "hǎi",
+          "translation": "mar — 我喜欢看海。"
+        },
+        {
+          "hanzi": "河",
+          "pinyin": "hé",
+          "translation": "rio — 这条河很长。"
+        },
+        {
+          "hanzi": "森林",
+          "pinyin": "sēnlín",
+          "translation": "floresta — 森林里有动物。"
+        },
+        {
+          "hanzi": "雨",
+          "pinyin": "yǔ",
+          "translation": "chuva — 今天下雨了。"
+        },
+        {
+          "hanzi": "风",
+          "pinyin": "fēng",
+          "translation": "vento — 风很大。"
+        },
+        {
+          "hanzi": "水",
+          "pinyin": "shuǐ",
+          "translation": "água — 我要喝水。"
+        },
+        {
+          "hanzi": "老师",
+          "pinyin": "lǎoshī",
+          "translation": "professor — 王老师好！"
+        },
+        {
+          "hanzi": "学生",
+          "pinyin": "xuésheng",
+          "translation": "estudante — 我是学生。"
+        },
+        {
+          "hanzi": "医生",
+          "pinyin": "yīshēng",
+          "translation": "médico — 医生在医院工作。"
+        },
+        {
+          "hanzi": "记者",
+          "pinyin": "jìzhě",
+          "translation": "jornalista — 他是记者。"
+        },
+        {
+          "hanzi": "程序员",
+          "pinyin": "chéngxùyuán",
+          "translation": "programador — 我哥哥是程序员。"
+        },
+        {
+          "hanzi": "律师",
+          "pinyin": "lǜshī",
+          "translation": "advogado — 律师工作很忙。"
+        },
+        {
+          "hanzi": "经理",
+          "pinyin": "jīnglǐ",
+          "translation": "gerente — 李经理"
+        },
+        {
+          "hanzi": "朋友",
+          "pinyin": "péngyou",
+          "translation": "amigo — 这是我的朋友。"
+        },
+        {
+          "hanzi": "同学",
+          "pinyin": "tóngxué",
+          "translation": "colega de classe — 我和同学一起学习。"
+        },
+        {
+          "hanzi": "厕所",
+          "pinyin": "cèsuǒ",
+          "translation": "banheiro — 厕所在哪儿？"
+        },
+        {
+          "hanzi": "公司",
+          "pinyin": "gōngsī",
+          "translation": "empresa — 我在公司工作。"
+        },
+        {
+          "hanzi": "办公室",
+          "pinyin": "bàngōngshì",
+          "translation": "escritório — 老师在办公室。"
+        },
+        {
+          "hanzi": "公园",
+          "pinyin": "gōngyuán",
+          "translation": "parque — 我们去公园。"
+        },
+        {
+          "hanzi": "饭店",
+          "pinyin": "fàndiàn",
+          "translation": "restaurante — 这个饭店很贵。"
+        },
+        {
+          "hanzi": "超市",
+          "pinyin": "chāoshì",
+          "translation": "supermercado — 我去超市买东西。"
+        },
+        {
+          "hanzi": "高",
+          "pinyin": "gāo",
+          "translation": "alto — 他很高。"
+        },
+        {
+          "hanzi": "长",
+          "pinyin": "cháng",
+          "translation": "comprido — 这条路很长。"
+        },
+        {
+          "hanzi": "快",
+          "pinyin": "kuài",
+          "translation": "rápido — 他跑得很快。"
+        },
+        {
+          "hanzi": "慢",
+          "pinyin": "màn",
+          "translation": "devagar — 请说慢一点。"
+        },
+        {
+          "hanzi": "新",
+          "pinyin": "xīn",
+          "translation": "novo — 这是我的新手机。"
+        },
+        {
+          "hanzi": "难",
+          "pinyin": "nán",
+          "translation": "difícil — 汉语难吗？"
+        },
+        {
+          "hanzi": "容易",
+          "pinyin": "róngyì",
+          "translation": "fácil — 这个很容易。"
+        },
+        {
+          "hanzi": "便宜",
+          "pinyin": "piányi",
+          "translation": "barato — 这个苹果很便宜。"
+        },
+        {
+          "hanzi": "干净",
+          "pinyin": "gānjìng",
+          "translation": "limpo — 房间很干净。"
+        },
+        {
+          "hanzi": "脏",
+          "pinyin": "zāng",
+          "translation": "sujo — 衣服脏了。"
+        },
+        {
+          "hanzi": "累",
+          "pinyin": "lèi",
+          "translation": "cansado — 我今天很累。"
+        },
+        {
+          "hanzi": "对",
+          "pinyin": "duì",
+          "translation": "correto — 你的答案对。"
+        },
+        {
+          "hanzi": "错",
+          "pinyin": "cuò",
+          "translation": "errado — 这个字错了。"
+        },
+        {
+          "hanzi": "非常",
+          "pinyin": "fēicháng",
+          "translation": "muito (intenso) — 非常好！"
+        },
+        {
+          "hanzi": "久",
+          "pinyin": "jiǔ",
+          "translation": "muito tempo — 好久不见！"
+        },
+        {
+          "hanzi": "常",
+          "pinyin": "cháng",
+          "translation": "frequente — 我常去公园。"
+        },
+        {
+          "hanzi": "干",
+          "pinyin": "gān",
+          "translation": "seco — 面包太干了。"
+        },
+        {
+          "hanzi": "湿",
+          "pinyin": "shī",
+          "translation": "molhado — 下雨了，我湿了。"
+        },
+        {
+          "hanzi": "个",
+          "pinyin": "gè",
+          "translation": "geral — 一个人 / 一个苹果"
+        },
+        {
+          "hanzi": "本",
+          "pinyin": "běn",
+          "translation": "livros — 一本书"
+        },
+        {
+          "hanzi": "口",
+          "pinyin": "kǒu",
+          "translation": "pessoas na família — 我家有五口人"
+        },
+        {
+          "hanzi": "只",
+          "pinyin": "zhī",
+          "translation": "animais / um de par — 一只猫 / 一只手"
+        },
+        {
+          "hanzi": "块",
+          "pinyin": "kuài",
+          "translation": "yuan / pedaço — 一块钱 / 一块蛋糕"
+        },
+        {
+          "hanzi": "杯",
+          "pinyin": "bēi",
+          "translation": "copo / xícara — 一杯水"
+        },
+        {
+          "hanzi": "碗",
+          "pinyin": "wǎn",
+          "translation": "tigela — 一碗米饭"
+        },
+        {
+          "hanzi": "份",
+          "pinyin": "fèn",
+          "translation": "porção — 一份菜"
+        },
+        {
+          "hanzi": "遍",
+          "pinyin": "biàn",
+          "translation": "vez (ação completa) — 我读了三遍"
+        },
+        {
+          "hanzi": "点",
+          "pinyin": "diǎn",
+          "translation": "horas / ponto — 三点 / 一点水"
+        },
+        {
+          "hanzi": "岁",
+          "pinyin": "suì",
+          "translation": "idade — 我二十岁"
+        },
+        {
+          "hanzi": "的",
+          "pinyin": "de",
+          "translation": "partícula de posse — 我的书"
+        },
+        {
+          "hanzi": "了",
+          "pinyin": "le",
+          "translation": "partícula de mudança / conclusão — 我吃饭了"
+        },
+        {
+          "hanzi": "过",
+          "pinyin": "guo",
+          "translation": "partícula de experiência — 我去过北京"
+        },
+        {
+          "hanzi": "再",
+          "pinyin": "zài",
+          "translation": "novamente (futuro) — 再见 / 再来一次"
+        },
+        {
+          "hanzi": "又",
+          "pinyin": "yòu",
+          "translation": "novamente (passado) — 他又来了"
+        },
+        {
+          "hanzi": "还",
+          "pinyin": "hái",
+          "translation": "ainda / também — 我还没吃饭"
+        },
+        {
+          "hanzi": "因为",
+          "pinyin": "yīnwèi",
+          "translation": "porque — 因为累，所以休息"
+        },
+        {
+          "hanzi": "所以",
+          "pinyin": "suǒyǐ",
+          "translation": "por isso — 所以我不去"
+        },
+        {
+          "hanzi": "但是",
+          "pinyin": "dànshì",
+          "translation": "mas — 我想去，但是没时间"
+        },
+        {
+          "hanzi": "然后",
+          "pinyin": "ránhòu",
+          "translation": "depois / então — 先吃饭，然后学习"
+        },
+        {
+          "hanzi": "上",
+          "pinyin": "shàng",
+          "translation": "em cima — 桌子上有书"
+        },
+        {
+          "hanzi": "下",
+          "pinyin": "xià",
+          "translation": "embaixo — 桌子下有猫"
+        },
+        {
+          "hanzi": "前",
+          "pinyin": "qián",
+          "translation": "na frente — 学校前面"
+        },
+        {
+          "hanzi": "后",
+          "pinyin": "hòu",
+          "translation": "atrás — 房子后面"
+        },
+        {
+          "hanzi": "左",
+          "pinyin": "zuǒ",
+          "translation": "esquerda — 左边"
+        },
+        {
+          "hanzi": "右",
+          "pinyin": "yòu",
+          "translation": "direita — 右边"
+        },
+        {
+          "hanzi": "东",
+          "pinyin": "dōng",
+          "translation": "leste — 东边"
+        },
+        {
+          "hanzi": "西",
+          "pinyin": "xī",
+          "translation": "oeste — 西边"
+        },
+        {
+          "hanzi": "北",
+          "pinyin": "běi",
+          "translation": "norte — 北京"
+        },
+        {
+          "hanzi": "中",
+          "pinyin": "zhōng",
+          "translation": "meio — 中间"
+        },
+        {
+          "hanzi": "里",
+          "pinyin": "lǐ",
+          "translation": "dentro — 家里"
+        },
+        {
+          "hanzi": "外",
+          "pinyin": "wài",
+          "translation": "fora — 外面"
+        },
+        {
+          "hanzi": "请",
+          "pinyin": "qǐng",
+          "translation": "por favor — 请进 / 请问"
+        },
+        {
+          "hanzi": "谢谢",
+          "pinyin": "xièxie",
+          "translation": "obrigado — 谢谢你！"
+        },
+        {
+          "hanzi": "不客气",
+          "pinyin": "bú kèqi",
+          "translation": "de nada — - 谢谢！ - 不客气。"
+        },
+        {
+          "hanzi": "对不起",
+          "pinyin": "duìbuqǐ",
+          "translation": "desculpa — 对不起，我错了。"
+        },
+        {
+          "hanzi": "没关系",
+          "pinyin": "méi guānxi",
+          "translation": "tudo bem — - 对不起 - 没关系"
+        },
+        {
+          "hanzi": "再见",
+          "pinyin": "zàijiàn",
+          "translation": "tchau — 明天见！"
+        },
+        {
+          "hanzi": "欢迎",
+          "pinyin": "huānyíng",
+          "translation": "bem-vindo — 欢迎来中国！"
+        },
+        {
+          "hanzi": "电脑",
+          "pinyin": "diànnǎo",
+          "translation": "computador — 我用电脑学习。"
+        },
+        {
+          "hanzi": "手机",
+          "pinyin": "shǒujī",
+          "translation": "celular — 我的手机没电了。"
+        },
+        {
+          "hanzi": "电视",
+          "pinyin": "diànshì",
+          "translation": "televisão — 看电视"
+        },
+        {
+          "hanzi": "邮件",
+          "pinyin": "yóujiàn",
+          "translation": "e-mail — 发邮件"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "translation": "livro — 看书"
+        },
+        {
+          "hanzi": "字",
+          "pinyin": "zì",
+          "translation": "caractere — 写字"
+        },
+        {
+          "hanzi": "名字",
+          "pinyin": "míngzi",
+          "translation": "nome — 你叫什么名字？"
+        },
+        {
+          "hanzi": "问题",
+          "pinyin": "wèntí",
+          "translation": "pergunta / problema — 问问题"
+        },
+        {
+          "hanzi": "意思",
+          "pinyin": "yìsi",
+          "translation": "significado — 这个字什么意思？"
+        },
+        {
+          "hanzi": "衣服",
+          "pinyin": "yīfu",
+          "translation": "roupa — 买衣服"
+        },
+        {
+          "hanzi": "椅子",
+          "pinyin": "yǐzi",
+          "translation": "cadeira — 坐椅子"
+        },
+        {
+          "hanzi": "桌子",
+          "pinyin": "zhuōzi",
+          "translation": "mesa — 桌子上有书"
+        },
+        {
+          "hanzi": "门",
+          "pinyin": "mén",
+          "translation": "porta — 开门"
+        },
+        {
+          "hanzi": "窗",
+          "pinyin": "chuāng",
+          "translation": "janela — 关窗"
+        },
+        {
+          "hanzi": "早",
+          "pinyin": "zǎo",
+          "translation": "cedo / manhã — 早上好！"
+        },
+        {
+          "hanzi": "晚",
+          "pinyin": "wǎn",
+          "translation": "tarde / noite — 晚上好！"
+        },
+        {
+          "hanzi": "午",
+          "pinyin": "wǔ",
+          "translation": "meio-dia — 中午 / 上午 / 下午"
+        },
+        {
+          "hanzi": "久",
+          "pinyin": "jiǔ",
+          "translation": "muito tempo — 好久不见"
+        },
+        {
+          "hanzi": "常",
+          "pinyin": "cháng",
+          "translation": "frequentemente — 我常去"
+        },
+        {
+          "hanzi": "昨天",
+          "pinyin": "zuótiān",
+          "translation": "ontem — 昨天我去学校。"
+        },
+        {
+          "hanzi": "今天",
+          "pinyin": "jīntiān",
+          "translation": "hoje — 今天很热。"
+        },
+        {
+          "hanzi": "明天",
+          "pinyin": "míngtiān",
+          "translation": "amanhã — 明天见！"
+        },
+        {
+          "hanzi": "年",
+          "pinyin": "nián",
+          "translation": "ano — 明年"
+        },
+        {
+          "hanzi": "月",
+          "pinyin": "yuè",
+          "translation": "mês — 这个月"
+        },
+        {
+          "hanzi": "日 / 号",
+          "pinyin": "rì / hào",
+          "translation": "dia — 三月八号"
+        },
+        {
+          "hanzi": "星期",
+          "pinyin": "xīngqī",
+          "translation": "semana — 星期一"
+        },
+        {
+          "hanzi": "时间",
+          "pinyin": "shíjiān",
+          "translation": "tempo — 有时间吗？"
+        }
+      ],
       "structureGlosses": {
         "pt": [],
         "en": [],
@@ -3224,28 +4000,7 @@
     {
       "id": 20,
       "title": "Diálogos de prática (iniciante)",
-      "narrative": "",
-      "structures": [],
-      "notes": [],
-      "differences": [],
-      "priorities": [],
-      "vocabulary": [],
-      "structureGlosses": {
-        "pt": [],
-        "en": [],
-        "es": []
-      },
-      "reviewStandalonePhrases": {
-        "pt": [],
-        "en": [],
-        "es": []
-      },
-      "reviewMiniDialogues": []
-    },
-    {
-      "id": 21,
-      "title": "Extras de revisão (traduções PT / EN / ES e mini-diálogos)",
-      "narrative": "",
+      "narrative": "## Diálogo 1: Apresentação e Cumprimentos\n**Contexto:** Duas pessoas se conhecem em um café.\n- A: 你好！很高兴认识你。(Nǐ hǎo! Hěn gāoxìng rènshi nǐ. - Olá! Muito prazer em conhecer você.)\n- B: 你好！我也很高兴认识你。你叫什么名字？(Nǐ hǎo! Wǒ yě hěn gāoxìng rènshi nǐ. Nǐ jiào shénme míngzi? - Olá! Eu também estou muito feliz em te conhecer. Qual é o seu nome?)\n- A: 我叫小明。你是老师吗？(Wǒ jiào Xiǎomíng. Nǐ shì lǎoshī ma? - Eu me chamo Xiao Ming. Você é professor?)\n- B: 不是，我不是老师，我是学生。(Bú shì, wǒ bú shì lǎoshī, wǒ shì xuésheng. - Não, eu não sou professor, eu sou estudante.)\n\n## Diálogo 2: Nacionalidade e Idiomas\n**Contexto:** Conversando sobre origens.\n- A: 你是哪国人？(Nǐ shì nǎ guó rén? - De que país você é?)\n- B: 我是巴西人。你呢？你是中国北京人吗？(Wǒ shì Bāxī rén. Nǐ ne? Nǐ shì Zhōngguó Běijīng rén ma? - Eu sou brasileiro. E você? Você é de Pequim, na China?)\n- A: 是的。你会说葡萄牙语吗？(Shì de. Nǐ huì shuō Pútáoyáyǔ ma? - Sim. Você sabe falar português?)\n- B: 我会说一点点，但是我的汉语不太好。(Wǒ huì shuō yīdiǎndiǎn, dànshì wǒ de Hànyǔ bú tài hǎo. - Eu sei falar um pouquinho, mas meu chinês não é muito bom.)\n\n## Diálogo 3: Rotina e Horas\n**Contexto:** Marcando um encontro para estudar.\n- A: 现在几点了？(Xiànzài jǐ diǎn le? - Que horas são agora?)\n- B: 现在两点一刻。你今天下午忙吗？(Xiànzài liǎng diǎn yí kè. Nǐ jīntiān xiàwǔ máng ma? - Agora são duas e quinze. Você está ocupado hoje à tarde?)\n- A: 我今天下午三点去学校学习。我们一起去吧？(Wǒ jīntiān xiàwǔ sān diǎn qù xuéxiào xuéxí. Wǒmen yìqǐ qù ba? - Hoje às três da tarde eu vou para a escola estudar. Vamos juntos?)\n- B: 太好了！下午见。(Tài hǎo le! Xiàwǔ jiàn. - Ótimo! Vejo você à tarde.)\n\n## Diálogo 4: Pedindo Comida e Bebida\n**Contexto:** Em um restaurante chinês.\n- A: 你想喝什么？茶还是咖啡？(Nǐ xiǎng hē shénme? Chá háishi kāfēi? - O que você quer beber? Chá ou café?)\n- B: 我要喝点儿热茶。你呢？(Wǒ yào hē diǎnr rè chá. Nǐ ne? - Eu quero beber um pouco de chá quente. E você?)\n- A: 我喜欢喝冷水。你饿吗？你想吃点儿什么？(Wǒ xǐhuan hē lěng shuǐ. Nǐ è ma? Nǐ xiǎng chī diǎnr shénme? - Eu gosto de beber água gelada. Você está com fome? O que quer comer?)\n- B: 我想吃米饭和水果。这里的苹果很好吃。(Wǒ xiǎng chī mǐfàn hé shuǐguǒ. Zhèlǐ de píngguǒ hěn hǎochī. - Eu quero comer arroz e frutas. As maçãs daqui são muito gostosas.)\n\n## Diálogo 5: Família e Trabalho\n**Contexto:** Mostrando fotos da família.\n- A: 这是谁？(Zhè shì shéi? - Quem é este?)\n- B: 这是我哥哥。他在医院工作，他是医生。(Zhè shì wǒ gēge. Tā zài yīyuàn gōngzuò, tā shì yīshēng. - Este é meu irmão mais velho. Ele trabalha no hospital, ele é médico.)\n- A: 你家有几口人？(Nǐ jiā yǒu jǐ kǒu rén? - Quantas pessoas tem na sua família?)\n- B: 我家有五口人：爸爸、妈妈、姐姐、妹妹和我。(Wǒ jiā yǒu wǔ kǒu rén: bàba, māma, jiějie, mèimei hé wǒ. - Minha família tem cinco pessoas: pai, mãe, irmã mais velha, irmã mais nova e eu.)",
       "structures": [],
       "notes": [],
       "differences": [],
@@ -3265,8 +4020,8 @@
     },
     {
       "id": 22,
-      "title": "Complemento: demonstrativos e local (vocabulario_estruturas.md)",
-      "narrative": "Itens da lista RAG resumida que não aparecem nas tabelas anteriores como entrada própria:\n\n| Hanzi | Pinyin | Tradução |\n|---|---|---|\n| 这 | zhè | isto / este (perto) |\n| 那 | nà | aquilo / aquele (longe) |\n| 书店 | shūdiàn | livraria |",
+      "title": "Demonstrativos e lugar (这 · 那 · 书店)",
+      "narrative": "Palavras úteis que não tinham entrada própria nas tabelas anteriores:\n\n| Hanzi | Pinyin | Tradução |\n|---|---|---|\n| 这 | zhè | isto / este (perto) |\n| 那 | nà | aquilo / aquele (longe) |\n| 书店 | shūdiàn | livraria |",
       "structures": [],
       "notes": [],
       "differences": [],

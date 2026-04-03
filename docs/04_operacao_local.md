@@ -47,4 +47,4 @@ Preferir **`127.0.0.1`** em vez de `localhost` se o browser resolver `localhost`
 - **`--skip-build`** — reutiliza `.next`; útil para iteração rápida, mas o binário pode ficar desalinhado do código.
 - **`--help`** — lista todas as flags.
 
-Variáveis: `DEPLOY_LOCAL_DIR`, `STATIC_VIEW_DIR` (modo `--webplace`); ver comentários no próprio `start.sh`.
+Variáveis: `DEPLOY_LOCAL_DIR` (default `/tmp/chineseLearning-webplace-out`). O export estático fica em **`$DEPLOY_LOCAL_DIR/aulaChines/`** para coincidir com o `basePath` `/aulaChines` nos URLs; o servidor HTTP usa **`$DEPLOY_LOCAL_DIR`** como document root. Ver `start.sh` e `web/scripts/deploy-webplace.sh`.

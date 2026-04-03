@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { BlockMarkdown } from "@/components/BlockMarkdown";
 import { BlockPager } from "@/components/BlockPager";
 import { BlockTitleText } from "@/components/BlockTitleText";
 import { CrossLinks } from "@/components/CrossLinks";
@@ -11,6 +12,7 @@ import { ReviewStandalonePhrases } from "@/components/ReviewStandalonePhrases";
 import { ReviewStructures } from "@/components/ReviewStructures";
 import { VocabTable } from "@/components/VocabTable";
 import type { ContentBlock } from "@/lib/blocks";
+import { blockHasGrammarContent } from "@/lib/blocks";
 import { localizedBlockTitle } from "@/lib/block-title";
 import { useLocale } from "@/context/LocaleContext";
 
@@ -75,6 +77,36 @@ export function BlockStudyPage({ mode, block }: Props) {
 
       <CrossLinks blockId={block.id} current={mode} placement="top" />
 
+      {mode !== "vocabulary" && block.narrative.trim() ? (
+        <BlockMarkdown markdown={block.narrative} />
+      ) : null}
+
+      {mode === "vocabulary" ? (
+        <>
+          {block.vocabulary.length > 0 ? (
+            <>
+              {block.narrative.trim() ? (
+                <BlockMarkdown markdown={block.narrative} className="mb-8" />
+              ) : null}
+              <VocabTable rows={block.vocabulary} />
+            </>
+          ) : block.narrative.trim() ? (
+            <BlockMarkdown markdown={block.narrative} />
+          ) : (
+            <p className="text-sm text-ink/50">{t("vocab.noTable")}</p>
+          )}
+          {block.id === 15 && block.priorities.length > 0 ? (
+            <div className="mt-14">
+              <PriorityList
+                items={block.priorities}
+                blockId={15}
+                studyMode="vocabulary"
+              />
+            </div>
+          ) : null}
+        </>
+      ) : null}
+
       {mode === "review" ? (
         <>
           <ReviewStructures
@@ -107,34 +139,20 @@ export function BlockStudyPage({ mode, block }: Props) {
         </>
       ) : null}
 
-      {mode === "vocabulary" ? (
+      {mode === "grammar" ? (
         <>
-          {block.vocabulary.length > 0 ? (
-            <VocabTable rows={block.vocabulary} />
-          ) : (
-            <p className="text-sm text-ink/50">{t("vocab.noTable")}</p>
-          )}
-          {block.id === 15 && block.priorities.length > 0 ? (
-            <div className="mt-14">
-              <PriorityList
-                items={block.priorities}
-                blockId={15}
-                studyMode="vocabulary"
-              />
-            </div>
+          <GrammarSections
+            blockId={block.id}
+            structures={block.structures}
+            structureGlosses={block.structureGlosses}
+            notes={block.notes}
+            differences={block.differences}
+            priorities={block.priorities}
+          />
+          {!blockHasGrammarContent(block) && !block.narrative.trim() ? (
+            <p className="text-sm text-ink/50">{t("grammar.empty")}</p>
           ) : null}
         </>
-      ) : null}
-
-      {mode === "grammar" ? (
-        <GrammarSections
-          blockId={block.id}
-          structures={block.structures}
-          structureGlosses={block.structureGlosses}
-          notes={block.notes}
-          differences={block.differences}
-          priorities={block.priorities}
-        />
       ) : null}
 
       <BlockPager blockId={block.id} mode={mode} />

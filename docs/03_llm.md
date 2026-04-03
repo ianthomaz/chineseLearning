@@ -21,6 +21,10 @@ Ficheiro de deploy: **`web/deploy/server.env`** (template **`server.env.example`
 |----------|-----|
 | `LLM_API_URL` | Base da API (sem barra final desnecessária; scripts normalizam) |
 | `LLM_API_TOKEN` | Bearer para `/health`, `/edu/chat`, ingest, etc. |
+| `LLM_EDU_CHAT_MODEL` | Opcional. Se **vazio / ausente**, o proxy **não** envia `model` e a API usa o default (**`fast`** — ver `ITCS/featureLLM/docs/EDU_API_CONTRACT.md`). `smart` = modelo maior (mais lento). |
+| `LLM_EDU_CHAT_MODEL_RETRY` | Opcional. Modelo só no **segundo** pedido quando falta `reply_structured` (ex. `smart` para melhor JSON sem tornar lenta toda a conversa). |
+
+No **servidor da API** (`featureLLM`), variáveis como **`EDU_CHAT_NUM_PREDICT`** (ex. `384`) e **`EDU_CHAT_DEFAULT_MODEL_ALIAS`** ajustam limite de tokens e default quando o cliente omite `model`; não são lidas pelo Next.
 
 O modo **`./start.sh --local`** exige **`web/.env.local`** com token preenchido.
 

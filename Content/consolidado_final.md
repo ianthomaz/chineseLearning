@@ -447,11 +447,9 @@
 
 ---
 
-## Parte II — Conteúdo estendido (site + RAG)
+*Parte II — conteúdo estendido: vocabulário HSK1, diálogos e referência.*
 
-Secções seguintes integram o que estava em `rag_knowledge/extraContent.md`, `rag_knowledge/dialogos_pratica.md`, `Content/review_extras.md` e complementos de `rag_knowledge/vocabulario_estruturas.md`, para um único ficheiro-fonte alinhado ao curso.
-
-## 16. Vocabulário HSK1 Completo (Complemento Exaustivo)
+## 16. Vocabulário HSK1 (complemento)
 
 Este bloco adiciona todas as palavras da lista original que ainda não apareceram nos blocos anteriores.
 
@@ -801,7 +799,9 @@ Aqui estão frases práticas para os verbos que apareceram na lista:
 - A: 你家有几口人？(Nǐ jiā yǒu jǐ kǒu rén? - Quantas pessoas tem na sua família?)
 - B: 我家有五口人：爸爸、妈妈、姐姐、妹妹和我。(Wǒ jiā yǒu wǔ kǒu rén: bàba, māma, jiějie, mèimei hé wǒ. - Minha família tem cinco pessoas: pai, mãe, irmã mais velha, irmã mais nova e eu.)
 
-## 21. Extras de revisão (traduções PT / EN / ES e mini-diálogos)
+## 21. Extras de revisão (cópia de referência — o site usa `Content/review_extras.md` nos blocos 1–15)
+
+> Este bloco existe só no ficheiro unificado; o *parser* do site **ignora** o §21 para evitar duplicar o que já aparece em cada bloco via `review_extras.md`.
 
 ### Bloco 1
 
@@ -1382,9 +1382,9 @@ Aqui estão frases práticas para os verbos que apareceram na lista:
 - B | 好！我们多练习句子吧。 | hǎo! wǒmen duō liànxí jùzi ba. | Sim! Vamos praticar mais frases. | Yes! Let's practice more sentences. | ¡Sí! Practiquemos más frases.
 - A | 对，复习很重要。 | duì, fùxí hěn zhòngyào. | Certo, rever é muito importante. | Right—review is very important. | Cierto, repasar es muy importante.
 
-## 22. Complemento: demonstrativos e local (vocabulario_estruturas.md)
+## 22. Demonstrativos e lugar (这 · 那 · 书店)
 
-Itens da lista RAG resumida que não aparecem nas tabelas anteriores como entrada própria:
+Palavras úteis que não tinham entrada própria nas tabelas anteriores:
 
 | Hanzi | Pinyin | Tradução |
 |---|---|---|

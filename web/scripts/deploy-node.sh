@@ -13,6 +13,8 @@ set -euo pipefail
 #   DEPLOY_NODE_DIR    (default: /home/opc/projetos/chineseLearning-app)
 #   DEPLOY_NODE_PORT   (default: 34827) — mesmo valor no proxy_pass nginx
 #   DEPLOY_NODE_RESTART_CMD — se definido, corre por SSH após o build (ex.: pm2 reload)
+#   DEPLOY_NODE_SKIP_CI=1 — não corre npm ci no remoto (só build:server). Use quando só mudaste
+#     conteúdo/código e package-lock.json não mudou — mais rápido. Se o build falhar por deps, repete sem isto.
 
 REMOTE="${DEPLOY_NODE_HOST:-${DEPLOY_WEBPLACE_HOST:-itcsVM}}"
 REMOTE_DIR="${DEPLOY_NODE_DIR:-/home/opc/projetos/chineseLearning-app}"
@@ -44,9 +46,13 @@ run_build() {
   ssh "$REMOTE" bash -s <<REMOTE_EOF
 set -euo pipefail
 cd "${REMOTE_DIR}"
-# Install before sourcing server.env: NODE_ENV=production there would make npm ci skip devDependencies
-# (tailwindcss, postcss, typescript) and next build would fail.
-npm ci
+if [[ "${DEPLOY_NODE_SKIP_CI:-0}" == "1" ]]; then
+  echo "→ skip npm ci (DEPLOY_NODE_SKIP_CI=1 — lite deploy)"
+else
+  # Install before sourcing server.env: NODE_ENV=production there would make npm ci skip devDependencies
+  # (tailwindcss, postcss, typescript) and next build would fail.
+  npm ci
+fi
 export PORT=${PORT}
 set -a
 # shellcheck source=/dev/null

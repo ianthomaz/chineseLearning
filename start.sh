@@ -19,7 +19,7 @@ set -euo pipefail
 # Saltar smoke lento do tutor (POST /edu/chat, até ~120s):
 #   export START_SKIP_EDU_SMOKE=1
 #
-# Variáveis: DEPLOY_LOCAL_DIR, STATIC_VIEW_DIR (ver modo --webplace)
+# Variáveis: DEPLOY_LOCAL_DIR (export estático fica em \$DEPLOY_LOCAL_DIR/aulaChines/; ver modo --webplace)
 #
 # LLM_API_URL: fallback http://127.0.0.1:28471 só faz sentido com API Docker no mesmo Mac.
 # Produção / VM: definir em web/deploy/server.env — ver ITCS/featureLLM/docs/MANUAL_INTEGRACAO.md § 1.1
@@ -35,7 +35,6 @@ LIVE_PORT=34902
 STATIC_PORT=34901
 SKIP_BUILD=0
 DEPLOY_LOCAL_DIR="${DEPLOY_LOCAL_DIR:-/tmp/chineseLearning-webplace-out}"
-STATIC_VIEW_DIR="${STATIC_VIEW_DIR:-/tmp/chineseLearning-local-serve}"
 
 usage() {
   echo "Uso: $0 --local | --webplace | --prepare [opções]"
@@ -264,16 +263,14 @@ if [[ "$MODE" == "webplace" ]]; then
   fi
   echo "→ Build estático (webplace)…"
   (cd "$WEB_DIR" && export DEPLOY_LOCAL_DIR && npm run deploy:local)
-  rm -rf "$STATIC_VIEW_DIR"
-  mkdir -p "$STATIC_VIEW_DIR/aulaChines"
-  rsync -a "$DEPLOY_LOCAL_DIR/" "$STATIC_VIEW_DIR/aulaChines/"
   echo ""
   echo "  Estático: http://127.0.0.1:${STATIC_PORT}/aulaChines/"
+  echo "  (ficheiros em: $DEPLOY_LOCAL_DIR/aulaChines/)"
   echo "  Tutor com LLM: ./start.sh --local  ou  cd web && npm run deploy:local:live"
   echo "  LLM_API_URL em web/.env.local: http://127.0.0.1:28471 (Docker) ou https://llm.webplace.cc (mesmo token)."
   echo "  Ctrl+C para parar."
   echo ""
-  cd "$STATIC_VIEW_DIR"
+  cd "$DEPLOY_LOCAL_DIR"
   exec python3 -m http.server "$STATIC_PORT" -b 127.0.0.1
 fi
 

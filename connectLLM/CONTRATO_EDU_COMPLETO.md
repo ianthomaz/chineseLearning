@@ -19,7 +19,7 @@ Content-Type: application/json
 |--------|--------|
 | Natureza | Rotas **síncronas** — a resposta vem no mesmo HTTP request (não há `job_id`). |
 | Dados | Vocabulário e gramática em PostgreSQL (`edu_vocabulary`, `edu_grammar`); progresso em `edu_progress`. |
-| LLM | Ollama; por defeito modelo **`smart`** (configurável com campo `model` onde existir). |
+| LLM | Ollama; no **servidor** o default do eixo educacional é **`fast`** (respostas mais curtas) quando o cliente **omite** `model`. Campo opcional **`"model":"smart"`** para modelo maior. Detalhes: **`ITCS/featureLLM/docs/EDU_API_CONTRACT.md`** (`EDU_CHAT_DEFAULT_MODEL_ALIAS`, `EDU_CHAT_NUM_PREDICT`, …). |
 | Idioma / nível | Por defeito `language: zh-CN`, níveis tipo **HSK1** … **HSK6**. |
 | Resposta do chat | **JSON estruturado** sempre em 200: modelo + retry; se falhar, **segmento fixo** (toggles preservados). |
 
@@ -38,7 +38,15 @@ Tutor: recebe a mensagem do aluno e devolve resposta. O modelo é instruído a r
 | `language` | não | string | Default `zh-CN`. |
 | `level` | não | string | Ex.: `HSK1`. Se vazio, o backend pode assumir comportamento por defeito. |
 | `history` | não | array | Turnos `{ "role": "user"\|"assistant", "text": "..." }` — também aceita `content` em vez de `text`. |
-| `model` | não | string | `fast`, `smart` ou nome completo do modelo Ollama. |
+| `model` | não | string | `fast`, `smart` ou nome completo do modelo Ollama. **Omitir** → o servidor usa o alias por defeito (em `featureLLM`, tipicamente **`fast`**). |
+
+### Cliente Next (`chineseLearning`)
+
+O proxy **`POST /aulaChines/api/chat`** monta o corpo de `/edu/chat` assim:
+
+- Por defeito **não** inclui `model` (máxima rapidez alinhada com a API).
+- **`LLM_EDU_CHAT_MODEL`** (env no Node): se definido, envia-se esse valor como `model` (ex. `smart`).
+- **`LLM_EDU_CHAT_MODEL_RETRY`**: se definido, só o **segundo** pedido (correção de JSON / `reply_structured`) usa esse `model`.
 
 ### Exemplo request
 

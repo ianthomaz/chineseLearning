@@ -27,13 +27,29 @@ function parseTable(lines) {
     if (cells.length < 3) continue;
     if (/^hanzi$/i.test(cells[0]) && /^pinyin$/i.test(cells[1])) continue;
     if (/^[-:]+$/.test(cells[0])) continue;
+    let translation = cells[2];
+    if (cells.length >= 4 && String(cells[3]).trim()) {
+      translation = `${translation} — ${cells[3].trim()}`;
+    }
     rows.push({
       hanzi: cells[0],
       pinyin: cells[1],
-      translation: cells[2],
+      translation,
     });
   }
   return rows;
+}
+
+/** Tables with Hanzi + Pinyin columns (course vocab); not verb-summary or classifier tables. */
+function linesHaveVocabStyleTable(lines) {
+  for (const line of lines) {
+    const t = line.trim();
+    if (!t.startsWith("|")) continue;
+    if (/^\|\s*[-:|]+\s*\|/.test(t)) continue;
+    const lower = t.toLowerCase();
+    return lower.includes("hanzi") && lower.includes("pinyin");
+  }
+  return false;
 }
 
 function parseListLines(lines) {
@@ -246,6 +262,9 @@ function parseBlock(headerLine, body) {
       block.priorities = parseListLines(lines);
     } else if (h.includes("vocabul")) {
       block.vocabulary = parseTable(lines);
+    } else if (linesHaveVocabStyleTable(lines)) {
+      const rows = parseTable(lines);
+      if (rows.length) block.vocabulary.push(...rows);
     }
   }
 
@@ -300,15 +319,19 @@ function mergeReviewExtras(blocks, extrasMap) {
 function main() {
   const raw = fs.readFileSync(mdPath, "utf8");
   const withoutH1 = raw.replace(/^#[^\n]*\n+/, "").replace(/^## /, "");
-  const chunks = withoutH1.split(/\n## /).filter(Boolean);
+  /** Only top-level numbered sections (## 1. … ## 22.); inner ## (e.g. dialogue titles) stay inside the chunk. */
+  const chunks = withoutH1.split(/\n(?=## \d+\.\s)/).filter(Boolean);
 
   const blocks = [];
   for (const chunk of chunks) {
     const lines = chunk.split("\n");
-    const headerLine = lines[0];
+    const headerLine = lines[0].replace(/^##\s+/, "").trim();
     const body = lines.slice(1).join("\n");
     const parsed = parseBlock(headerLine, body);
-    if (parsed) blocks.push(parsed.block);
+    if (!parsed) continue;
+    /** Duplicate of review_extras.md already merged into blocks 1–15. */
+    if (parsed.block.id === 21) continue;
+    blocks.push(parsed.block);
   }
 
   blocks.sort((a, b) => a.id - b.id);

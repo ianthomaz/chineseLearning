@@ -53,3 +53,13 @@ export function getBlock(id: string | number): ContentBlock | undefined {
 export function getBlockIds(): string[] {
   return blocks.map((b) => String(b.id));
 }
+
+export function blockHasGrammarContent(b: ContentBlock): boolean {
+  return (
+    b.structures.length +
+      b.notes.length +
+      b.differences.length +
+      b.priorities.length >
+    0
+  );
+}

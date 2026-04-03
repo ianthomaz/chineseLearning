@@ -17,19 +17,42 @@ type ChatPayload = {
   history: ChatHistoryTurn[];
 };
 
-async function callEduChat(payload: ChatPayload) {
+type EduChatKind = 'primary' | 'retry';
+
+/**
+ * Model alias for POST /edu/chat (see ITCS/featureLLM docs/EDU_API_CONTRACT.md).
+ * - Unset / empty: omit `model` → API uses its default (typically `fast`, shorter JSON replies).
+ * - `smart`: larger / slower model for quality.
+ * - Any other string: full Ollama model name if the API supports it.
+ */
+function resolveEduChatModel(kind: EduChatKind): string | undefined {
+  const retryOverride = process.env.LLM_EDU_CHAT_MODEL_RETRY?.trim();
+  if (kind === 'retry' && retryOverride) return retryOverride;
+  const primary = process.env.LLM_EDU_CHAT_MODEL?.trim();
+  if (!primary) return undefined;
+  return primary;
+}
+
+function buildEduChatBody(payload: ChatPayload, kind: EduChatKind): Record<string, unknown> {
+  const body: Record<string, unknown> = {
+    message: payload.message,
+    history: payload.history,
+    level: 'HSK1',
+    language: 'zh-CN',
+  };
+  const model = resolveEduChatModel(kind);
+  if (model) body.model = model;
+  return body;
+}
+
+async function callEduChat(payload: ChatPayload, kind: EduChatKind) {
   const response = await fetch(`${LLM_API_URL}/edu/chat`, {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${LLM_API_TOKEN}`,
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({
-      message: payload.message,
-      history: payload.history,
-      level: 'HSK1',
-      language: 'zh-CN',
-    }),
+    body: JSON.stringify(buildEduChatBody(payload, kind)),
   });
 
   return response;
@@ -116,7 +139,7 @@ export async function POST(request: Request) {
       history: safeHistory,
     };
 
-    const response = await callEduChat(basePayload);
+    const response = await callEduChat(basePayload, 'primary');
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
       return NextResponse.json(
@@ -135,10 +158,13 @@ export async function POST(request: Request) {
     let replySource: Record<string, unknown> = data;
     if (!structured) {
       didRetry = true;
-      const retryResponse = await callEduChat({
-        message: `${basePayload.message}\n\nResponda SOMENTE em JSON válido com reply_structured[] e, em cada frase, hanzi + pinyin com tons + translation.pt.`,
-        history: basePayload.history,
-      });
+      const retryResponse = await callEduChat(
+        {
+          message: `${basePayload.message}\n\nResponda SOMENTE em JSON válido com reply_structured[] e, em cada frase, hanzi + pinyin com tons + translation.pt.`,
+          history: basePayload.history,
+        },
+        'retry'
+      );
 
       if (retryResponse.ok) {
         const retryData = (await retryResponse.json()) as Record<string, unknown>;

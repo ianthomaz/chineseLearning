@@ -120,7 +120,7 @@ export function GrammarSections({
     structures.length + notes.length + differences.length + priorities.length > 0;
 
   if (!hasAnything) {
-    return <p className="text-sm text-ink/50">{t("grammar.empty")}</p>;
+    return null;
   }
 
   return (
