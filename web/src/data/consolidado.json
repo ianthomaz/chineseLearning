@@ -232,13 +232,38 @@
             }
           }
         ],
-        {
-          "cn": "你好，我是李。你叫什么名字？我叫王。",
-          "py": "Nǐ hǎo, wǒ shì Lǐ. Nǐ jiào shénme míngzì? Wǒ jiào Wáng.",
-          "pt": "Olá, eu sou Li. Como você se chama? Meu nome é Wang.",
-          "en": "Hello, I am Li. What is your name? My name is Wang.",
-          "es": "Hola, soy Li. ¿Cómo te llamas? Mi nombre es Wang."
-        }
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你的电话号码是多少？",
+            "pinyin": "nǐ de diànhuà hàomǎ shì duōshao?",
+            "translation": {
+              "pt": "Qual é o teu número de telefone?",
+              "en": "What's your phone number?",
+              "es": "¿Cuál es tu número de teléfono?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "是一三五九八八二二一。",
+            "pinyin": "shì yī sān wǔ jiǔ bā bā èr èr yī.",
+            "translation": {
+              "pt": "É um, três, cinco, nove, oito, oito, dois, dois, um.",
+              "en": "It's one, three, five, nine, eight, eight, two, two, one.",
+              "es": "Es uno, tres, cinco, nueve, ocho, ocho, dos, dos, uno."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "谢谢！",
+            "pinyin": "xièxie!",
+            "translation": {
+              "pt": "Obrigado!",
+              "en": "Thanks!",
+              "es": "¡Gracias!"
+            }
+          }
+        ]
       ]
     },
     {
@@ -536,13 +561,48 @@
             }
           }
         ],
-        {
-          "cn": "你说中文吗？我说一点中文。你说得很好。",
-          "py": "Nǐ shuō zhōngwén ma? Wǒ shuō yīdiǎn zhōngwén. Nǐ shuō de hěn hǎo.",
-          "pt": "Você fala chinês? Falo um pouco de chinês. Você fala muito bem.",
-          "en": "Do you speak Chinese? I speak a little Chinese. You speak very well.",
-          "es": "¿Hablas chino? Hablo un poco de chino. Hablas muy bien."
-        }
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你什么时候起床？",
+            "pinyin": "nǐ shénme shíhou qǐchuáng?",
+            "translation": {
+              "pt": "A que horas acordas?",
+              "en": "What time do you wake up?",
+              "es": "¿A qué hora te despiertas?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我早上七点起床。",
+            "pinyin": "wǒ zǎoshang qī diǎn qǐchuáng.",
+            "translation": {
+              "pt": "Acordo às sete da manhã.",
+              "en": "I wake up at seven in the morning.",
+              "es": "Me despierto a las siete de la mañana."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你工作到几点？",
+            "pinyin": "nǐ gōngzuò dào jǐ diǎn?",
+            "translation": {
+              "pt": "Até que horas trabalhas?",
+              "en": "Until what time do you work?",
+              "es": "¿Hasta qué hora trabajas?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我到下午六点。",
+            "pinyin": "wǒ dào xiàwǔ liù diǎn.",
+            "translation": {
+              "pt": "Até as seis da tarde.",
+              "en": "Until six in the afternoon.",
+              "es": "Hasta las seis de la tarde."
+            }
+          }
+        ]
       ]
     },
     {
@@ -773,13 +833,48 @@
             }
           }
         ],
-        {
-          "cn": "这个笔是什么颜色？它是蓝色的。蓝色很好看。",
-          "py": "Zhège bǐ shì shénme yánsè? Tā shì lán sè de. Lán sè hěn hǎokàn.",
-          "pt": "Que cor é esta caneta? É azul. Azul fica muito bem.",
-          "en": "What color is this pen? It is blue. Blue looks very nice.",
-          "es": "¿De qué color es este bolígrafo? Es azul. El azul se ve muy bien."
-        }
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你喜欢吃什么水果？",
+            "pinyin": "nǐ xǐhuan chī shénme shuǐguǒ?",
+            "translation": {
+              "pt": "Que frutas gostas de comer?",
+              "en": "What fruit do you like to eat?",
+              "es": "¿Qué frutas te gusta comer?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我喜欢吃苹果和香蕉。",
+            "pinyin": "wǒ xǐhuan chī píngguǒ hé xiāngjiāo.",
+            "translation": {
+              "pt": "Gosto de comer maçãs e bananas.",
+              "en": "I like to eat apples and bananas.",
+              "es": "Me gustan las manzanas y los plátanos."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你想喝咖啡还是茶？",
+            "pinyin": "nǐ xiǎng hē kāfēi háishi chá?",
+            "translation": {
+              "pt": "Queres beber café ou chá?",
+              "en": "Do you want coffee or tea?",
+              "es": "¿Quieres café o té?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我想要白茶，谢谢。",
+            "pinyin": "wǒ xiǎngyào báichá, xièxie.",
+            "translation": {
+              "pt": "Quero chá branco, obrigado.",
+              "en": "I want white tea, thanks.",
+              "es": "Quiero té blanco, gracias."
+            }
+          }
+        ]
       ]
     },
     {
@@ -990,13 +1085,38 @@
             }
           }
         ],
-        {
-          "cn": "这个手机多少钱？五百块。太贵了。可以便宜一点吗？",
-          "py": "Zhège shǒujī duōshao qián? Wǔbǎi kuài. Tài guì le. Kěyǐ piányi yīdiǎn ma?",
-          "pt": "Quanto custa esse celular? Quinhentos yuans. Muito caro. Pode ser mais barato?",
-          "en": "How much is this mobile phone? Five hundred yuan. Too expensive. Can it be cheaper?",
-          "es": "¿Cuánto cuesta este teléfono móvil? Quinientos yuanes. Muy caro. ¿Puede ser más barato?"
-        }
+        [
+          {
+            "speaker": "A",
+            "hanzi": "请问，最近的咖啡馆在哪里？",
+            "pinyin": "qǐngwèn, zuìjìn de kāfēiguǎn zài nǎlǐ?",
+            "translation": {
+              "pt": "Por favor, onde fica a cafeteria mais próxima?",
+              "en": "Excuse me, where is the nearest café?",
+              "es": "Por favor, ¿dónde está la cafetería más cercana?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "就在这里的右边，那个房子里面。",
+            "pinyin": "jiùzài zhèlǐ de yòubian, nàge fángzi lǐmiàn.",
+            "translation": {
+              "pt": "Fica à direita daqui, dentro daquele edifício.",
+              "en": "It's right there on the right, inside that building.",
+              "es": "Está a la derecha aquí, dentro de ese edificio."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "谢谢你！",
+            "pinyin": "xièxie nǐ!",
+            "translation": {
+              "pt": "Obrigado!",
+              "en": "Thank you!",
+              "es": "¡Gracias!"
+            }
+          }
+        ]
       ]
     },
     {
@@ -1207,13 +1327,48 @@
             }
           }
         ],
-        {
-          "cn": "现在是几点？现在三点。你什么时候来？我五点来。",
-          "py": "Xiànzài shì jǐ diǎn? Xiànzài sān diǎn. Nǐ shénme shíhou lái? Wǒ wǔ diǎn lái.",
-          "pt": "Que horas são agora? São três horas. Quando você vem? Venho às cinco.",
-          "en": "What time is it now? It is three oclock. When will you come? I will come at five.",
-          "es": "¿Qué hora es ahora? Son las tres. ¿Cuándo vendrás? Vendré a las cinco."
-        }
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你从哪个国家来？",
+            "pinyin": "nǐ cóng nǎge guójiā lái?",
+            "translation": {
+              "pt": "De que país vens?",
+              "en": "Which country are you from?",
+              "es": "¿De qué país vienes?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我来自中国，我是中国人。",
+            "pinyin": "wǒ láizì Zhōngguó, wǒ shì Zhōngguó rén.",
+            "translation": {
+              "pt": "Venho da China, sou chinês.",
+              "en": "I'm from China, I'm Chinese.",
+              "es": "Vengo de China, soy chino."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你会说汉语吗？",
+            "pinyin": "nǐ huì shuō Hànyǔ ma?",
+            "translation": {
+              "pt": "Sabes falar chinês?",
+              "en": "Can you speak Chinese?",
+              "es": "¿Sabes hablar chino?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "会一点儿。",
+            "pinyin": "huì yīdiǎnr.",
+            "translation": {
+              "pt": "Um pouquinho.",
+              "en": "A little.",
+              "es": "Un poquito."
+            }
+          }
+        ]
       ]
     },
     {
@@ -1424,13 +1579,38 @@
             }
           }
         ],
-        {
-          "cn": "你喜欢吃什么？我喜欢吃米饭。你呢？我喜欢吃面条。",
-          "py": "Nǐ xǐhuān chī shénme? Wǒ xǐhuān chī mǐfàn. Nǐ ne? Wǒ xǐhuān chī miàntiáo.",
-          "pt": "O que você gosta de comer? Gosto de comer arroz. E você? Gosto de comer macarrão.",
-          "en": "What do you like to eat? I like to eat rice. What about you? I like to eat noodles.",
-          "es": "¿Qué te gusta comer? Me gusta comer arroz. ¿Y tú? Me gusta comer fideos."
-        }
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你觉得哪个颜色比较好？",
+            "pinyin": "nǐ juéde nǎge yánsè bǐjiào hǎo?",
+            "translation": {
+              "pt": "Que cor te parece melhor?",
+              "en": "Which color do you think looks better?",
+              "es": "¿Qué color te parece mejor?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我最喜欢红色，很好看。",
+            "pinyin": "wǒ zuì xǐhuan hóngsè, hěn hǎokàn.",
+            "translation": {
+              "pt": "Prefiro vermelho, é muito bonito.",
+              "en": "I like red best, it looks very nice.",
+              "es": "Me encanta el rojo, se ve muy bonito."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "黑色也不错。",
+            "pinyin": "hēisè yě búcuò.",
+            "translation": {
+              "pt": "O preto também é bom.",
+              "en": "Black is also good.",
+              "es": "El negro también está bien."
+            }
+          }
+        ]
       ]
     },
     {
@@ -1735,13 +1915,48 @@
             }
           }
         ],
-        {
-          "cn": "学校在哪里？学校在公园旁边。医院远吗？医院不太远。",
-          "py": "Xuéxiào zài nǎlǐ? Xuéxiào zài gōngyuán pángbiān. Yīyuàn yuǎn ma? Yīyuàn búdài yuǎn.",
-          "pt": "Onde fica a escola? A escola fica perto do parque. O hospital é longe? O hospital não é muito longe.",
-          "en": "Where is the school? The school is near the park. Is the hospital far? The hospital is not very far.",
-          "es": "¿Dónde está la escuela? La escuela está cerca del parque. ¿Está lejos el hospital? El hospital no está muy lejos."
-        }
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你家有几口人？",
+            "pinyin": "nǐ jiā yǒu jǐ kǒu rén?",
+            "translation": {
+              "pt": "Quantas pessoas há na tua família?",
+              "en": "How many people are in your family?",
+              "es": "¿Cuántas personas hay en tu familia?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我家有五口人，爸爸、妈妈、我和两个姐姐。",
+            "pinyin": "wǒ jiā yǒu wǔ kǒu rén, bàba, māma, wǒ hé liǎng ge jiějie.",
+            "translation": {
+              "pt": "Na minha família somos cinco: pai, mãe, eu e duas irmãs.",
+              "en": "There are five people in my family: dad, mom, me and two sisters.",
+              "es": "Hay cinco personas en mi familia: papá, mamá, yo y dos hermanas."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你爷爷和奶奶呢？",
+            "pinyin": "nǐ yéye hé nǎinai ne?",
+            "translation": {
+              "pt": "E o teu avô e avó?",
+              "en": "What about your grandparents?",
+              "es": "¿Y tus abuelos?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "他们在北京。",
+            "pinyin": "tāmen zài Běijīng.",
+            "translation": {
+              "pt": "Eles estão em Pequim.",
+              "en": "They are in Beijing.",
+              "es": "Están en Pekín."
+            }
+          }
+        ]
       ]
     },
     {
@@ -1992,13 +2207,48 @@
             }
           }
         ],
-        {
-          "cn": "你喜欢什么课？我喜欢英文课。英文课很有意思。你呢？我喜欢数学。",
-          "py": "Nǐ xǐhuān shénme kè? Wǒ xǐhuān yīngwén kè. Yīngwén kè hěn yǒu yìsi. Nǐ ne? Wǒ xǐhuān shùxué.",
-          "pt": "Que aula você gosta? Gosto de aula de inglês. A aula de inglês é muito interessante. E você? Gosto de matemática.",
-          "en": "What class do you like? I like English class. English class is very interesting. What about you? I like mathematics.",
-          "es": "¿Qué clase te gusta? Me gusta la clase de inglés. La clase de inglés es muy interesante. ¿Y tú? Me gusta matemáticas."
-        }
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你去哪儿了？",
+            "pinyin": "nǐ qù nǎr le?",
+            "translation": {
+              "pt": "Aonde foste?",
+              "en": "Where did you go?",
+              "es": "¿Adónde fuiste?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我去医院了。",
+            "pinyin": "wǒ qù yīyuàn le.",
+            "translation": {
+              "pt": "Fui ao hospital.",
+              "en": "I went to the hospital.",
+              "es": "Fui al hospital."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你怎么了？没有事吧？",
+            "pinyin": "nǐ zěnme le? méiyǒu shì ba?",
+            "translation": {
+              "pt": "O que te aconteceu? Não é nada sério?",
+              "en": "What happened? Nothing serious?",
+              "es": "¿Qué pasó? ¿Nada grave?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "没有事，只是检查。",
+            "pinyin": "méiyǒu shì, zhǐshì jiǎnchá.",
+            "translation": {
+              "pt": "Não é nada, apenas um exame.",
+              "en": "Nothing, just a checkup.",
+              "es": "Nada, solo un examen."
+            }
+          }
+        ]
       ]
     },
     {
@@ -2194,13 +2444,48 @@
             }
           }
         ],
-        {
-          "cn": "你爸爸做什么工作？他是医生。你妈妈呢？她是老师。",
-          "py": "Nǐ bàba zuò shénme gōngzuò? Tā shì yīshēng. Nǐ māma ne? Tā shì lǎoshī.",
-          "pt": "Que trabalho seu pai faz? Ele é médico. E sua mãe? Ela é professora.",
-          "en": "What job does your father do? He is a doctor. What about your mother? She is a teacher.",
-          "es": "¿Qué trabajo hace tu padre? Es médico. ¿Y tu madre? Es profesora."
-        }
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你是做什么工作的？",
+            "pinyin": "nǐ shì zuò shénme gōngzuò de?",
+            "translation": {
+              "pt": "O que trabalhas?",
+              "en": "What do you do for work?",
+              "es": "¿Cuál es tu trabajo?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我是老师。",
+            "pinyin": "wǒ shì lǎoshī.",
+            "translation": {
+              "pt": "Sou professor.",
+              "en": "I'm a teacher.",
+              "es": "Soy profesor."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你是不是在学校工作？",
+            "pinyin": "nǐ shì búshi zài xuéxiào gōngzuò?",
+            "translation": {
+              "pt": "Trabalhas na escola?",
+              "en": "Do you work at a school?",
+              "es": "¿Trabajas en una escuela?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "是的，我在北京的一所大学工作。",
+            "pinyin": "shì de, wǒ zài Běijīng de yī suǒ dàxué gōngzuò.",
+            "translation": {
+              "pt": "Sim, trabalho numa universidade de Pequim.",
+              "en": "Yes, I work at a university in Beijing.",
+              "es": "Sí, trabajo en una universidad de Pekín."
+            }
+          }
+        ]
       ]
     },
     {
@@ -2388,13 +2673,38 @@
             }
           }
         ],
-        {
-          "cn": "你有手机吗？我有。你用手机干什么？我用来打电话和发信息。",
-          "py": "Nǐ yǒu shǒujī ma? Wǒ yǒu. Nǐ yòng shǒujī gànshénme? Wǒ yònglái dǎ diànhuà hé fā xìnxi.",
-          "pt": "Você tem celular? Tenho. Para que você usa o celular? Uso para ligar e enviar mensagens.",
-          "en": "Do you have a mobile phone? Yes, I do. What do you use your phone for? I use it to make calls and send messages.",
-          "es": "¿Tienes un teléfono móvil? Sí. ¿Para qué usas tu teléfono? Lo uso para llamar y enviar mensajes."
-        }
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你觉得这个电影怎么样？",
+            "pinyin": "nǐ juéde zhège diànyǐng zěnmeyàng?",
+            "translation": {
+              "pt": "O que achas deste filme?",
+              "en": "What do you think of this movie?",
+              "es": "¿Qué te parece esta película?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "很好，真的很有意思。",
+            "pinyin": "hěn hǎo, zhēn de hěn yǒu yìsi.",
+            "translation": {
+              "pt": "Muito bom, realmente muito interessante.",
+              "en": "Very good, really very interesting.",
+              "es": "Muy bueno, realmente muy interesante."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "我也觉得不错。",
+            "pinyin": "wǒ yě juéde búcuò.",
+            "translation": {
+              "pt": "Eu também acho bom.",
+              "en": "I think it's good too.",
+              "es": "Yo también creo que está bien."
+            }
+          }
+        ]
       ]
     },
     {
@@ -2632,13 +2942,48 @@
             }
           }
         ],
-        {
-          "cn": "今天天气怎么样？今天很冷。你喜欢这样的天气吗？不太喜欢。",
-          "py": "Jīntiān tiānqì zěnyàng? Jīntiān hěn lěng. Nǐ xǐhuān zhèyàng de tiānqì ma? Búdài xǐhuān.",
-          "pt": "Como está o tempo hoje? Está muito frio hoje. Você gosta desse tempo? Não muito.",
-          "en": "How is the weather today? It is very cold today. Do you like this kind of weather? Not really.",
-          "es": "¿Cómo está el clima hoy? Hace mucho frío hoy. ¿Te gusta este tipo de clima? No mucho."
-        }
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你今天做什么了？",
+            "pinyin": "nǐ jīntiān zuò shénme le?",
+            "translation": {
+              "pt": "O que fizeste hoje?",
+              "en": "What did you do today?",
+              "es": "¿Qué hiciste hoy?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我工作了八小时，然后我喝咖啡，看了电视。",
+            "pinyin": "wǒ gōngzuò le bā xiǎoshí, ránhòu wǒ hē kāfēi, kàn le diànshì.",
+            "translation": {
+              "pt": "Trabalhei oito horas, depois bebi café e assisti televisão.",
+              "en": "I worked for eight hours, then I drank coffee and watched TV.",
+              "es": "Trabajé ocho horas, luego bebí café y vi televisión."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你喜欢看书吗？",
+            "pinyin": "nǐ xǐhuan kàn shū ma?",
+            "translation": {
+              "pt": "Gostas de ler?",
+              "en": "Do you like reading?",
+              "es": "¿Te gusta leer?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "是的，我每天都看一点儿书。",
+            "pinyin": "shì de, wǒ měi tiān dōu kàn yīdiǎnr shū.",
+            "translation": {
+              "pt": "Sim, leio um bocado todos os dias.",
+              "en": "Yes, I read a little bit every day.",
+              "es": "Sí, leo un poco cada día."
+            }
+          }
+        ]
       ]
     },
     {
@@ -2806,13 +3151,48 @@
             }
           }
         ],
-        {
-          "cn": "你家有多少个房间？我家有四个房间。你家很大吗？还可以。",
-          "py": "Nǐ jiā yǒu duōshao ge fángjiān? Wǒ jiā yǒu sì ge fángjiān. Nǐ jiā hěn dà ma? Háishi kěyǐ.",
-          "pt": "Quantos quartos sua casa tem? Minha casa tem quatro quartos. Sua casa é grande? É razoável.",
-          "en": "How many rooms does your house have? My house has four rooms. Is your house big? It is reasonable.",
-          "es": "¿Cuántas habitaciones tiene tu casa? Mi casa tiene cuatro habitaciones. ¿Es grande tu casa? Es razonable."
-        }
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你想吃什么？",
+            "pinyin": "nǐ xiǎng chī shénme?",
+            "translation": {
+              "pt": "O que queres comer?",
+              "en": "What do you want to eat?",
+              "es": "¿Qué quieres comer?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我想吃中餐。",
+            "pinyin": "wǒ xiǎng chī Zhōngcān.",
+            "translation": {
+              "pt": "Quero comer comida chinesa.",
+              "en": "I want to eat Chinese food.",
+              "es": "Quiero comer comida china."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你最喜欢吃什么？",
+            "pinyin": "nǐ zuì xǐhuan chī shénme?",
+            "translation": {
+              "pt": "O que mais gostas de comer?",
+              "en": "What's your favorite food?",
+              "es": "¿Cuál es tu comida favorita?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我最喜欢吃鸡肉。",
+            "pinyin": "wǒ zuì xǐhuan chī jīròu.",
+            "translation": {
+              "pt": "Gosto mais de comer frango.",
+              "en": "I like chicken best.",
+              "es": "Me encanta la carne de pollo."
+            }
+          }
+        ]
       ]
     },
     {
@@ -3013,13 +3393,48 @@
             }
           }
         ],
-        {
-          "cn": "你喜欢运动吗？我喜欢。你喜欢什么运动？我喜欢打篮球。",
-          "py": "Nǐ xǐhuān yùndòng ma? Wǒ xǐhuān. Nǐ xǐhuān shénme yùndòng? Wǒ xǐhuān dǎ lánqiú.",
-          "pt": "Você gosta de esportes? Gosto. Que esporte você gosta? Gosto de jogar basquete.",
-          "en": "Do you like sports? Yes, I do. What sport do you like? I like to play basketball.",
-          "es": "¿Te gustan los deportes? Sí, me gustan. ¿Qué deporte te gusta? Me gusta jugar baloncesto."
-        }
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你会开车吗？",
+            "pinyin": "nǐ huì kāichē ma?",
+            "translation": {
+              "pt": "Sabes dirigir?",
+              "en": "Can you drive?",
+              "es": "¿Sabes conducir?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我能开车，但是我不太喜欢。",
+            "pinyin": "wǒ néng kāichē, búguò wǒ búzhào xǐhuan.",
+            "translation": {
+              "pt": "Posso dirigir, mas não gosto muito.",
+              "en": "I can drive, but I don't really like to.",
+              "es": "Puedo conducir, pero no me gusta mucho."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "为什么？",
+            "pinyin": "wèishéme?",
+            "translation": {
+              "pt": "Porque?",
+              "en": "Why?",
+              "es": "¿Por qué?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "因为很累，我想坐公共汽车。",
+            "pinyin": "yīnwèi hěn lèi, wǒ xiǎng zuò gōnggòng qìchē.",
+            "translation": {
+              "pt": "Porque é cansativo, prefiro apanhar autocarro.",
+              "en": "Because it's tiring, I prefer to take the bus.",
+              "es": "Porque es agotador, prefiero tomar el autobús."
+            }
+          }
+        ]
       ]
     },
     {
@@ -3219,13 +3634,48 @@
             }
           }
         ],
-        {
-          "cn": "你去过中国吗？我去过。你什么时候去的？去年去的。",
-          "py": "Nǐ qùguò zhōngguó ma? Wǒ qùguò. Nǐ shénme shíhou qù de? Qùnián qù de.",
-          "pt": "Você já foi para a China? Já fui. Quando você foi? Fui ano passado.",
-          "en": "Have you been to China? Yes, I have. When did you go? I went last year.",
-          "es": "¿Has estado en China? Sí, he estado. ¿Cuándo fuiste? Fui el año pasado."
-        }
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你有钱吗？",
+            "pinyin": "nǐ yǒu qián ma?",
+            "translation": {
+              "pt": "Tens dinheiro?",
+              "en": "Do you have money?",
+              "es": "¿Tienes dinero?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我有一点儿。",
+            "pinyin": "wǒ yǒu yīdiǎnr.",
+            "translation": {
+              "pt": "Tenho um pouco.",
+              "en": "I have a little.",
+              "es": "Tengo un poco."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "我们去那个商店买东西好吗？",
+            "pinyin": "wǒmen qù nàge shāngdiàn mǎi dōngxi hǎo ma?",
+            "translation": {
+              "pt": "Vamos àquela loja comprar algo?",
+              "en": "Shall we go to that store and buy something?",
+              "es": "¿Vamos a esa tienda a comprar algo?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "好的，我们去。",
+            "pinyin": "hǎo de, wǒmen qù.",
+            "translation": {
+              "pt": "Sim, vamos.",
+              "en": "Okay, let's go.",
+              "es": "Vale, vamos."
+            }
+          }
+        ]
       ]
     },
     {
@@ -3365,13 +3815,38 @@
             }
           }
         ],
-        {
-          "cn": "你喜欢看什么？我喜欢看电影。你周末看电影吗？是的，我经常看。",
-          "py": "Nǐ xǐhuān kàn shénme? Wǒ xǐhuān kàn diànyǐng. Nǐ zhōumò kàn diànyǐng ma? Shì de, wǒ jīngcháng kàn.",
-          "pt": "O que você gosta de assistir? Gosto de assistir filmes. Você assiste filmes nos fins de semana? Sim, assisto frequentemente.",
-          "en": "What do you like to watch? I like to watch movies. Do you watch movies on weekends? Yes, I watch frequently.",
-          "es": "¿Qué te gusta ver? Me gusta ver películas. ¿Ves películas los fines de semana? Sí, veo con frecuencia."
-        }
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你有什么问题吗？",
+            "pinyin": "nǐ yǒu shénme wèntí ma?",
+            "translation": {
+              "pt": "Tens alguma dúvida?",
+              "en": "Do you have any questions?",
+              "es": "¿Tienes alguna pregunta?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我想练习更多的句子。",
+            "pinyin": "wǒ xiǎng liànxí gèngduō de jùzi.",
+            "translation": {
+              "pt": "Quero praticar mais frases.",
+              "en": "I want to practice more sentences.",
+              "es": "Quiero practicar más frases."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "好的，我们一起练习。",
+            "pinyin": "hǎo de, wǒmen yīqǐ liànxí.",
+            "translation": {
+              "pt": "Claro, vamos praticar juntos.",
+              "en": "Of course, let's practice together.",
+              "es": "Claro, vamos a practicar juntos."
+            }
+          }
+        ]
       ]
     }
   ]
