@@ -5,31 +5,35 @@ import {
   BLOCK_15_PRIORITY_TARGET_IDS,
   targetsForBlock15PriorityLine,
 } from "@/lib/priorityLinks";
+import { useLocale } from "@/context/LocaleContext";
 
 export type StudyMode = "review" | "vocabulary" | "grammar";
 
 type Props = {
   items: string[];
   title?: string;
-  /** When 15, priority lines link to their target blocks (same study mode). */
   blockId?: number;
   studyMode?: StudyMode;
-  /** Card wrapper (e.g. inside grammar stack). */
   variant?: "plain" | "card";
 };
 
 export function PriorityList({
   items,
-  title = "Prioridades",
+  title,
   blockId = 0,
   studyMode = "review",
   variant = "plain",
 }: Props) {
+  const { t } = useLocale();
+  const resolvedTitle = title ?? t("priority.title");
+
   if (items.length === 0) return null;
 
   const linkBlock15 =
     blockId === 15 &&
     items.length === BLOCK_15_PRIORITY_TARGET_IDS.length;
+
+  const modeLabel = t(`nav.${studyMode}`);
 
   const inner = (
     <>
@@ -37,17 +41,11 @@ export function PriorityList({
         className="mb-4 text-xs font-semibold uppercase tracking-widest text-ink/40"
         style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
       >
-        {title}
+        {resolvedTitle}
       </h2>
       {linkBlock15 ? (
         <p className="mb-4 text-sm text-ink/50">
-          Cada item abre o bloco correspondente neste mesmo modo (
-          {studyMode === "review"
-            ? "Revisão"
-            : studyMode === "vocabulary"
-              ? "Vocabulário"
-              : "Gramática"}
-          ).
+          {t("priority.intro", { mode: modeLabel })}
         </p>
       ) : null}
       <ol className="space-y-3">
@@ -70,7 +68,7 @@ export function PriorityList({
                 <span className="text-sm text-ink/80">{item}</span>
               </div>
               {targets && targets.length > 0 ? (
-                <span className="flex flex-wrap items-center gap-1.5 sm:pl-0 pl-8">
+                <span className="flex flex-wrap items-center gap-1.5 pl-8 sm:pl-0">
                   <span className="text-xs text-ink/35">→</span>
                   {targets.map((tid) => (
                     <Link
@@ -82,7 +80,7 @@ export function PriorityList({
                         fontFamily: "ui-sans-serif, system-ui, sans-serif",
                       }}
                     >
-                      Bloco {tid}
+                      {t("priority.blockLink", { num: tid })}
                     </Link>
                   ))}
                 </span>

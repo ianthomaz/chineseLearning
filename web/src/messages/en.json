@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "lang": "en",
+    "langName": "English",
+    "flag": "🇬🇧"
+  },
+  "nav": {
+    "review": "Review",
+    "vocabulary": "Vocabulary",
+    "grammar": "Grammar",
+    "dialogues": "Dialogues",
+    "courseNav": "Course areas",
+    "language": "Interface language"
+  },
+  "pinyin": {
+    "on": "With pinyin",
+    "off": "Characters only",
+    "toggleTitle": "Use the “Read” tab on the right edge of the page."
+  },
+  "settings": {
+    "tab": "Read",
+    "expandTab": "Open reading options (pinyin and gloss)",
+    "collapseTab": "Close reading options",
+    "closeBackdrop": "Close panel",
+    "panelTitle": "Reading options",
+    "panelHint": "Your choices are saved on this device.",
+    "pinyinLabel": "Pinyin",
+    "pinyinDesc": "Ruby text on review/grammar phrases and a column in vocabulary tables.",
+    "translationLabel": "Gloss",
+    "translationDesc": "Meaning column in tables and subtitle text under dialogue lines."
+  },
+  "home": {
+    "kicker": "Basic Chinese",
+    "title1": "15 content blocks.",
+    "title2": "Three ways to study.",
+    "blurb": "Review, vocabulary, and grammar are linked — each block opens in all three views.",
+    "open": "Open →",
+    "modeReviewDesc": "Phrases with pinyin in the Hanzi Pinyin webfont (ruby). Read first, memorize later.",
+    "modeVocabDesc": "Full tables per block — Hanzi, pinyin, and gloss side by side.",
+    "modeGrammarDesc": "Structures, notes, and contrasts organized by topic.",
+    "modeDialoguesDesc": "Full conversations by theme. Each review line also has two mini-dialogues below it.",
+    "blocksTitle": "Blocks",
+    "blocksCount": "{count} blocks",
+    "wordCount": "{count} words",
+    "wordCountOne": "1 word"
+  },
+  "index": {
+    "reviewKicker": "复习",
+    "reviewTitle": "Review",
+    "reviewIntro": "Phrases use the Hanzi Pinyin font (bundled). Hover for generated pinyin as a hint. Read aloud; then use Vocabulary and Grammar for details.",
+    "vocabKicker": "词汇",
+    "vocabTitle": "Vocabulary",
+    "vocabIntro": "Hanzi · pinyin · English gloss tables by block. See Grammar for structures and usage.",
+    "grammarKicker": "语法",
+    "grammarTitle": "Grammar",
+    "grammarIntro": "Structures, notes, and contrasts by block. Isolated words are in Vocabulary."
+  },
+  "blockIndex": {
+    "phrases": "phrases",
+    "words": "words",
+    "rules": "rules"
+  },
+  "blockTitles": {
+    "1": "Numbers",
+    "2": "Time, date, clock, and money",
+    "3": "Fruit and drinks",
+    "4": "Places",
+    "5": "Countries, languages, and nationalities",
+    "6": "Colors and qualities",
+    "7": "Family and everyday people",
+    "8": "Basic questions",
+    "9": "Pronouns and sentences with 是 (shì)",
+    "10": "Adverbs and common particles",
+    "11": "Everyday verbs",
+    "12": "Likes, preferences, and choices",
+    "13": "Modal verbs",
+    "14": "Place, existence, and movement",
+    "15": "Final review of the essentials"
+  },
+  "block": {
+    "headerReview": "Block {num} · Review",
+    "headerVocab": "Block {num} · Vocabulary",
+    "headerGrammar": "Block {num} · Grammar",
+    "notFoundTitle": "Block"
+  },
+  "review": {
+    "structuresTitle": "Phrases and patterns",
+    "miniDialoguesTitle": "Block mini-dialogues"
+  },
+  "dialogues": {
+    "kicker": "对话",
+    "pageTitle": "Dialogues",
+    "pageIntro": "Five longer conversations for hearing Chinese in context. On review, model phrases come first (with translation when the toggle is on), then block mini-dialogues.",
+    "convLabel": "Dialogue {num}",
+    "global": {
+      "familyIntro": "Introducing family",
+      "dayPlan": "Daily plan",
+      "supermarket": "At the supermarket",
+      "school": "At school",
+      "park": "In the park"
+    }
+  },
+  "vocab": {
+    "noTable": "No vocabulary table in this block.",
+    "grammarLink": "Grammar for this block:",
+    "grammarOpen": "open",
+    "studyTitle": "Study vocabulary",
+    "studyHint": "Full table also under Vocabulary.",
+    "hanzi": "Hanzi",
+    "pinyin": "Pinyin",
+    "translation": "Gloss"
+  },
+  "grammar": {
+    "empty": "No grammar notes for this block in the source material.",
+    "structures": "Structures and examples",
+    "notes": "Notes",
+    "differences": "Contrasts",
+    "priorities": "Priorities",
+    "vocabLink": "Vocabulary for this block:",
+    "vocabOpen": "open table"
+  },
+  "crossLinks": {
+    "aria": "Other views of this block",
+    "prefix": "This block in:"
+  },
+  "pager": {
+    "aria": "Previous or next block",
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "priority": {
+    "title": "Priorities",
+    "intro": "Each item opens the matching block in the same mode ({mode}).",
+    "blockLink": "Block {num}"
+  },
+  "footer": {
+    "phraseFont": "Phrase ruby font:",
+    "phraseFontLink": "Hanzi Pinyin Font (parlr)",
+    "rest": "Hanzi: Noto Sans SC. Table pinyin column: from the course outline.",
+    "license": "(CC-BY-SA-4.0)."
+  },
+  "metadata": {
+    "siteTitle": "Basic Chinese",
+    "siteDescription": "Review, vocabulary, and grammar in blocks, from the course outline."
+  }
+}

@@ -4,14 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Hanzi Pinyin";
-  src: url("/fonts/Hanzi-Pinyin-Font.top.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --paper: #f7f4ef;
   --ink: #1c1917;

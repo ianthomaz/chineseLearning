@@ -1,0 +1,229 @@
+{
+  "sections": [
+    {
+      "id": "familyIntro",
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "王先生，你好！这是我弟弟。",
+          "pinyin": "Wáng xiānsheng, nǐ hǎo! Zhè shì wǒ dìdi.",
+          "translation": {
+            "pt": "Sr. Wang, olá! Este é o meu irmão mais novo.",
+            "en": "Mr. Wang, hello! This is my younger brother.",
+            "es": "Sr. Wang, ¡hola! Este es mi hermano menor."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "你好！你弟弟叫什么名字？",
+          "pinyin": "Nǐ hǎo! Nǐ dìdi jiào shénme míngzi?",
+          "translation": {
+            "pt": "Olá! Como se chama o teu irmão mais novo?",
+            "en": "Hi! What's your younger brother's name?",
+            "es": "¡Hola! ¿Cómo se llama tu hermano menor?"
+          }
+        },
+        {
+          "speaker": "C",
+          "hanzi": "您好！我叫大卫。认识您很高兴。",
+          "pinyin": "Nín hǎo! Wǒ jiào Dàwèi. Rènshi nín hěn gāoxìng.",
+          "translation": {
+            "pt": "Olá! Chamo-me David. Prazer em conhecê-lo.",
+            "en": "Hello! My name is David. Nice to meet you.",
+            "es": "¡Hola! Me llamo David. Encantado de conocerle."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "认识你我也很高兴。",
+          "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
+          "translation": {
+            "pt": "O prazer é meu também.",
+            "en": "Nice to meet you too.",
+            "es": "El placer es mío también."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dayPlan",
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "你今天几点起床？",
+          "pinyin": "Nǐ jīntiān jǐ diǎn qǐchuáng?",
+          "translation": {
+            "pt": "A que horas te levantaste hoje?",
+            "en": "What time did you get up today?",
+            "es": "¿A qué hora te levantaste hoy?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我早上七点起床。你呢？",
+          "pinyin": "Wǒ zǎoshang qī diǎn qǐchuáng. Nǐ ne?",
+          "translation": {
+            "pt": "Levanto-me às sete da manhã. E tu?",
+            "en": "I get up at seven in the morning. And you?",
+            "es": "Me levanto a las siete de la mañana. ¿Y tú?"
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "我八点起床。你今天做什么？",
+          "pinyin": "Wǒ bā diǎn qǐchuáng. Nǐ jīntiān zuò shénme?",
+          "translation": {
+            "pt": "Às oito. O que vais fazer hoje?",
+            "en": "At eight. What are you doing today?",
+            "es": "A las ocho. ¿Qué vas a hacer hoy?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我下午去书店买书。",
+          "pinyin": "Wǒ xiàwǔ qù shūdiàn mǎi shū.",
+          "translation": {
+            "pt": "À tarde vou à livraria comprar livros.",
+            "en": "This afternoon I'm going to the bookstore to buy books.",
+            "es": "Por la tarde voy a la librería a comprar libros."
+          }
+        }
+      ]
+    },
+    {
+      "id": "supermarket",
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "请问，苹果多少钱一斤？",
+          "pinyin": "Qǐngwèn, píngguǒ duōshǎo qián yī jīn?",
+          "translation": {
+            "pt": "Desculpe, quanto custa o quilo de maçãs?",
+            "en": "Excuse me, how much are the apples per jin?",
+            "es": "Perdón, ¿cuánto cuestan las manzanas el jin?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "五块钱一斤。",
+          "pinyin": "Wǔ kuài qián yī jīn.",
+          "translation": {
+            "pt": "Cinco yuan o quilo.",
+            "en": "Five yuan per jin.",
+            "es": "Cinco yuan el jin."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "太贵了！便宜一点儿吧。",
+          "pinyin": "Tài guì le! Piányi yīdiǎnr ba.",
+          "translation": {
+            "pt": "Muito caro! Faz um desconto, faz favor.",
+            "en": "Too expensive! Could you make it a bit cheaper?",
+            "es": "¡Muy caro! ¿Podría rebajar un poco?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "四块五，怎么样？",
+          "pinyin": "Sì kuài wǔ, zěnmeyàng?",
+          "translation": {
+            "pt": "Quatro e cinquenta, que achas?",
+            "en": "Four fifty, how about that?",
+            "es": "Cuatro cincuenta, ¿te parece?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "school",
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "同学们好！今天我们学习第三课。",
+          "pinyin": "Tóngxuémen hǎo! Jīntiān wǒmen xuéxí dì sān kè.",
+          "translation": {
+            "pt": "Bom dia, alunos! Hoje vamos estudar a terceira lição.",
+            "en": "Good morning, class! Today we'll study lesson three.",
+            "es": "¡Buenos días, alumnos! Hoy estudiamos la tercera lección."
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "老师，我不懂这个汉字。",
+          "pinyin": "Lǎoshī, wǒ bù dǒng zhège hànzì.",
+          "translation": {
+            "pt": "Professor, não percebo este carácter chinês.",
+            "en": "Teacher, I don't understand this Chinese character.",
+            "es": "Profesor, no entiendo este carácter chino."
+          }
+        },
+        {
+          "speaker": "C",
+          "hanzi": "我也觉得很难。",
+          "pinyin": "Wǒ yě juéde hěn nán.",
+          "translation": {
+            "pt": "Eu também acho difícil.",
+            "en": "I think it's hard too.",
+            "es": "Yo también lo encuentro difícil."
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "没关系，多写多看。跟我读：'学习'。",
+          "pinyin": "Méi guānxi, duō xiě duō kàn. Gēn wǒ dú: 'xuéxí'.",
+          "translation": {
+            "pt": "Não faz mal, escrevam e leiam mais. Repitam comigo: «xuéxí».",
+            "en": "It's okay—write and read more. Repeat after me: \"xuéxí\".",
+            "es": "No pasa nada, escriban y lean más. Repitan conmigo: «xuéxí»."
+          }
+        }
+      ]
+    },
+    {
+      "id": "park",
+      "lines": [
+        {
+          "speaker": "A",
+          "hanzi": "这里的风景真漂亮！",
+          "pinyin": "Zhèlǐ de fēngjǐng zhēn piàoliang!",
+          "translation": {
+            "pt": "A paisagem aqui é linda!",
+            "en": "The scenery here is beautiful!",
+            "es": "¡El paisaje aquí es precioso!"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "是的。你喜欢什么运动？",
+          "pinyin": "Shì de. Nǐ xǐhuān shénme yùndòng?",
+          "translation": {
+            "pt": "Sim. Que desporto gostas?",
+            "en": "Yes. What sport do you like?",
+            "es": "Sí. ¿Qué deporte te gusta?"
+          }
+        },
+        {
+          "speaker": "A",
+          "hanzi": "我喜欢跑步和游泳。你呢？",
+          "pinyin": "Wǒ xǐhuān pǎobù hé yóuyǒng. Nǐ ne?",
+          "translation": {
+            "pt": "Gosto de correr e de nadar. E tu?",
+            "en": "I like running and swimming. And you?",
+            "es": "Me gusta correr y nadar. ¿Y tú?"
+          }
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我喜欢打太极拳。",
+          "pinyin": "Wǒ xǐhuān dǎ tàijíquán.",
+          "translation": {
+            "pt": "Gosto de praticar taichi.",
+            "en": "I like practicing tai chi.",
+            "es": "Me gusta practicar taichí."
+          }
+        }
+      ]
+    }
+  ]
+}

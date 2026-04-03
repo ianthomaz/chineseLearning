@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AppFooter } from "@/components/AppFooter";
 import { Providers } from "@/components/Providers";
 import { SiteNav } from "@/components/SiteNav";
 import "./globals.css";
@@ -12,6 +13,9 @@ export const metadata: Metadata = {
     "Revisão, vocabulário e gramática em blocos, a partir do consolidado do curso.",
 };
 
+const publicBase =
+  (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "") || "";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -19,22 +23,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        {/*
+          Hanzi Pinyin woff2 lives in public/fonts. This sheet uses a relative url()
+          so it works under basePath; bundling @font-face in globals.css produced
+          invalid webpack:// URLs in static export.
+        */}
+        <link rel="stylesheet" href={`${publicBase}/pinyin-font.css`} />
+      </head>
       <body className="min-h-screen">
         <Providers>
           <SiteNav />
           {children}
-          <footer className="mx-auto max-w-6xl border-t border-ink/10 px-5 py-10 text-center text-xs text-ink/45">
-            Fonte Hanzi + Pinyin:{" "}
-            <a
-              href="https://github.com/parlr/hanzi-pinyin-font"
-              className="text-accent underline decoration-accent/25 underline-offset-2"
-              target="_blank"
-              rel="noreferrer"
-            >
-              parlr/hanzi-pinyin-font
-            </a>{" "}
-            (CC-BY-SA-4.0).
-          </footer>
+          <AppFooter />
         </Providers>
       </body>
     </html>

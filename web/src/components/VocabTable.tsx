@@ -1,6 +1,8 @@
 "use client";
 
+import { useLocale } from "@/context/LocaleContext";
 import { usePinyin } from "@/context/PinyinContext";
+import { useTranslationDisplay } from "@/context/TranslationContext";
 import type { VocabRow } from "@/lib/blocks";
 
 type Props = {
@@ -9,6 +11,8 @@ type Props = {
 
 export function VocabTable({ rows }: Props) {
   const { showPinyin } = usePinyin();
+  const { showTranslation } = useTranslationDisplay();
+  const { t } = useLocale();
 
   if (rows.length === 0) return null;
 
@@ -27,22 +31,24 @@ export function VocabTable({ rows }: Props) {
               className="px-4 py-3 text-xs font-semibold uppercase tracking-widest text-ink/40"
               style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
             >
-              Hanzi
+              {t("vocab.hanzi")}
             </th>
             {showPinyin ? (
               <th
                 className="px-4 py-3 text-xs font-semibold uppercase tracking-widest text-ink/40"
                 style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
               >
-                Pinyin
+                {t("vocab.pinyin")}
               </th>
             ) : null}
-            <th
-              className="px-4 py-3 text-xs font-semibold uppercase tracking-widest text-ink/40"
-              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
-            >
-              Tradução
-            </th>
+            {showTranslation ? (
+              <th
+                className="px-4 py-3 text-xs font-semibold uppercase tracking-widest text-ink/40"
+                style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+              >
+                {t("vocab.translation")}
+              </th>
+            ) : null}
           </tr>
         </thead>
         <tbody>
@@ -67,7 +73,9 @@ export function VocabTable({ rows }: Props) {
                   {row.pinyin}
                 </td>
               ) : null}
-              <td className="px-4 py-3 text-sm text-ink/80">{row.translation}</td>
+              {showTranslation ? (
+                <td className="px-4 py-3 text-sm text-ink/80">{row.translation}</td>
+              ) : null}
             </tr>
           ))}
         </tbody>

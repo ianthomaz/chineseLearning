@@ -1,4 +1,5 @@
 import data from "@/data/consolidado.json";
+import type { LocalizedLine } from "@/lib/localized-line";
 
 export type VocabRow = {
   hanzi: string;
@@ -6,11 +7,33 @@ export type VocabRow = {
   translation: string;
 };
 
+export type StructureLine = {
+  hanzi: string;
+  pinyin: string;
+};
+
+export type DialogueTurn = {
+  speaker: string;
+  hanzi: string;
+  pinyin: string;
+  translation: LocalizedLine;
+};
+
+export type StructureGlossesByLocale = {
+  pt: string[];
+  en: string[];
+  es: string[];
+};
+
 export type ContentBlock = {
   id: number;
   title: string;
   narrative: string;
-  structures: string[];
+  structures: StructureLine[];
+  /** Per-locale gloss for each structure line (from review_extras) */
+  structureGlosses: StructureGlossesByLocale;
+  /** Block-level mini-dialogues shown after all phrases in review mode */
+  reviewMiniDialogues: DialogueTurn[][];
   notes: string[];
   differences: string[];
   priorities: string[];

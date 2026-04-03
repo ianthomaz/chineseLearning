@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "lang": "pt",
+    "langName": "Português",
+    "flag": "🇧🇷"
+  },
+  "nav": {
+    "review": "Revisão",
+    "vocabulary": "Vocabulário",
+    "grammar": "Gramática",
+    "dialogues": "Diálogos",
+    "courseNav": "Áreas do curso",
+    "language": "Idioma da interface"
+  },
+  "pinyin": {
+    "on": "Com pinyin",
+    "off": "Sem pinyin",
+    "toggleTitle": "Use a lingueta «Ler» à direita da página."
+  },
+  "settings": {
+    "tab": "Ler",
+    "expandTab": "Abrir opções de leitura (pinyin e tradução)",
+    "collapseTab": "Fechar opções de leitura",
+    "closeBackdrop": "Fechar painel",
+    "panelTitle": "Opções de leitura",
+    "panelHint": "As escolhas ficam guardadas neste dispositivo.",
+    "pinyinLabel": "Pinyin",
+    "pinyinDesc": "Rubi nas frases de revisão/gramática e coluna nas tabelas de vocabulário.",
+    "translationLabel": "Tradução",
+    "translationDesc": "Coluna de sentido nas tabelas e texto por baixo nas réplicas dos diálogos."
+  },
+  "home": {
+    "kicker": "Chinês básico",
+    "title1": "15 blocos de conteúdo.",
+    "title2": "Três formas de estudar.",
+    "blurb": "Revisão, vocabulário e gramática interligados — cada bloco abre nas três perspectivas.",
+    "open": "Abrir →",
+    "modeReviewDesc": "Frases com pinyin integrado na fonte (rubi). Leia primeiro, decore depois.",
+    "modeVocabDesc": "Tabelas completas por bloco — Hanzi, pinyin e tradução lado a lado.",
+    "modeGrammarDesc": "Estruturas, observações e contrastes organizados por tema.",
+    "modeDialoguesDesc": "Conversas completas por tema. Em cada revisão há mini-diálogos ligados a cada frase.",
+    "blocksTitle": "Blocos",
+    "blocksCount": "{count} blocos",
+    "wordCount": "{count} palavras",
+    "wordCountOne": "1 palavra"
+  },
+  "index": {
+    "reviewKicker": "复习",
+    "reviewTitle": "Revisão",
+    "reviewIntro": "Frases com pinyin na fonte Hanzi Pinyin (ficheiro local no site). Passe o rato para ver o pinyin gerado como dica. Leia em voz alta; depois use Vocabulário e Gramática para detalhes.",
+    "vocabKicker": "词汇",
+    "vocabTitle": "Vocabulário",
+    "vocabIntro": "Tabelas hanzi · pinyin · português organizadas por bloco. Consulte Gramática para estruturas e regras de uso.",
+    "grammarKicker": "语法",
+    "grammarTitle": "Gramática",
+    "grammarIntro": "Estruturas, observações e contrastes por bloco. O vocabulário isolado está em Vocabulário."
+  },
+  "blockIndex": {
+    "phrases": "frases",
+    "words": "palavras",
+    "rules": "regras"
+  },
+  "blockTitles": {
+    "1": "Números",
+    "2": "Tempo, data, horas e dinheiro",
+    "3": "Frutas e bebidas",
+    "4": "Lugares",
+    "5": "Países, idiomas e nacionalidades",
+    "6": "Cores e qualidades",
+    "7": "Família e pessoas do cotidiano",
+    "8": "Perguntas básicas",
+    "9": "Pronomes e frases com 是",
+    "10": "Advérbios e partículas muito usados",
+    "11": "Verbos do cotidiano",
+    "12": "Gostos, preferência e escolha",
+    "13": "Verbos modais",
+    "14": "Lugar, existência e movimento",
+    "15": "Revisão final do que mais vale fixar"
+  },
+  "block": {
+    "headerReview": "Bloco {num} · Revisão",
+    "headerVocab": "Bloco {num} · Vocabulário",
+    "headerGrammar": "Bloco {num} · Gramática",
+    "notFoundTitle": "Bloco"
+  },
+  "review": {
+    "structuresTitle": "Frases e padrões",
+    "miniDialoguesTitle": "Mini-diálogos do bloco"
+  },
+  "dialogues": {
+    "kicker": "对话",
+    "pageTitle": "Diálogos",
+    "pageIntro": "Cinco conversas mais longas para ouvir o chinês em contexto. Na revisão, aparecem primeiro as frases-modelo (com tradução em português se o toggle estiver ligado) e, a seguir, mini-diálogos do bloco.",
+    "convLabel": "Diálogo {num}",
+    "global": {
+      "familyIntro": "Apresentar a família",
+      "dayPlan": "Plano do dia",
+      "supermarket": "No supermercado",
+      "school": "Na escola",
+      "park": "No parque"
+    }
+  },
+  "vocab": {
+    "noTable": "Sem tabela de vocabulário neste bloco.",
+    "grammarLink": "Gramática deste bloco:",
+    "grammarOpen": "abrir",
+    "studyTitle": "Vocabulário de estudo",
+    "studyHint": "Tabela completa também em Vocabulário.",
+    "hanzi": "Hanzi",
+    "pinyin": "Pinyin",
+    "translation": "Tradução"
+  },
+  "grammar": {
+    "empty": "Não há notas de gramática neste bloco no consolidado.",
+    "structures": "Estruturas e exemplos",
+    "notes": "Observações",
+    "differences": "Diferenças e contrastes",
+    "priorities": "Prioridades",
+    "vocabLink": "Vocabulário deste bloco:",
+    "vocabOpen": "abrir tabela"
+  },
+  "crossLinks": {
+    "aria": "Outras perspectivas deste bloco",
+    "prefix": "Este bloco em:"
+  },
+  "pager": {
+    "aria": "Bloco anterior ou seguinte",
+    "prev": "Anterior",
+    "next": "Seguinte"
+  },
+  "priority": {
+    "title": "Prioridades",
+    "intro": "Cada item abre o bloco correspondente neste mesmo modo ({mode}).",
+    "blockLink": "Bloco {num}"
+  },
+  "footer": {
+    "phraseFont": "Pinyin rubi nas frases:",
+    "phraseFontLink": "Hanzi Pinyin Font (parlr)",
+    "rest": "Hanzi: Noto Sans SC. Coluna de pinyin nas tabelas: texto do consolidado.",
+    "license": "(CC-BY-SA-4.0)."
+  },
+  "metadata": {
+    "siteTitle": "Chinês básico",
+    "siteDescription": "Revisão, vocabulário e gramática em blocos, a partir do consolidado do curso."
+  }
+}

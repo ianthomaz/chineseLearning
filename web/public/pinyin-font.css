@@ -1,0 +1,8 @@
+/* Served next to /fonts; relative URL works with and without basePath. */
+@font-face {
+  font-family: "Hanzi Pinyin";
+  src: url("./fonts/Hanzi-Pinyin-Font.top.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

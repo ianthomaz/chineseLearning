@@ -1,5 +1,9 @@
+"use client";
+
 import Link from "next/link";
+import { BlockTitleText } from "@/components/BlockTitleText";
 import type { ContentBlock } from "@/lib/blocks";
+import { useLocale } from "@/context/LocaleContext";
 
 type Mode = "review" | "vocabulary" | "grammar";
 
@@ -14,10 +18,10 @@ const path: Record<Mode, string> = {
   grammar: "/grammar",
 };
 
-const modeLabel: Record<Mode, string> = {
-  review: "Frases",
-  vocabulary: "Palavras",
-  grammar: "Regras",
+const modeLabelKey: Record<Mode, string> = {
+  review: "blockIndex.phrases",
+  vocabulary: "blockIndex.words",
+  grammar: "blockIndex.rules",
 };
 
 const modeCountFn: Record<Mode, (b: ContentBlock) => number | null> = {
@@ -30,8 +34,9 @@ const modeCountFn: Record<Mode, (b: ContentBlock) => number | null> = {
 };
 
 export function BlockIndex({ blocks, mode }: Props) {
+  const { t } = useLocale();
   const base = path[mode];
-  const label = modeLabel[mode];
+  const label = t(modeLabelKey[mode]);
   const countFn = modeCountFn[mode];
 
   return (
@@ -52,19 +57,19 @@ export function BlockIndex({ blocks, mode }: Props) {
               {String(b.id).padStart(2, "0")}
             </span>
             <span className="flex-1">
-              <span className="block text-sm font-medium text-ink/85 group-hover:text-ink transition-colors">
-                {b.title}
+              <span className="block text-sm font-medium text-ink/85 transition-colors group-hover:text-ink">
+                <BlockTitleText id={b.id} title={b.title} />
               </span>
-              {count !== null && (
+              {count !== null ? (
                 <span
                   className="mt-0.5 block text-xs text-ink/35"
                   style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
                 >
-                  {count} {label.toLowerCase()}
+                  {count} {label}
                 </span>
-              )}
+              ) : null}
             </span>
-            <span className="mt-0.5 text-xs text-ink/20 group-hover:text-ink/40 transition-colors">
+            <span className="mt-0.5 text-xs text-ink/20 transition-colors group-hover:text-ink/40">
               →
             </span>
           </Link>

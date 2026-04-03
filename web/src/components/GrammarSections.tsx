@@ -1,11 +1,13 @@
 "use client";
 
-import { usePinyin } from "@/context/PinyinContext";
+import { ChineseWithPinyinLine } from "@/components/ChineseWithPinyinLine";
 import { PriorityList } from "@/components/PriorityList";
+import { useLocale } from "@/context/LocaleContext";
+import type { StructureLine } from "@/lib/blocks";
 
 type Props = {
   blockId: number;
-  structures: string[];
+  structures: StructureLine[];
   notes: string[];
   differences: string[];
   priorities: string[];
@@ -14,14 +16,10 @@ type Props = {
 function Section({
   title,
   items,
-  useChineseLine,
-  showPinyin,
   accent,
 }: {
   title: string;
   items: string[];
-  useChineseLine?: boolean;
-  showPinyin: boolean;
   accent?: string;
 }) {
   if (items.length === 0) return null;
@@ -43,15 +41,48 @@ function Section({
         {items.map((item, i) => (
           <li
             key={`${title}-${i}`}
-            className={
-              useChineseLine
-                ? showPinyin
-                  ? "font-ruby text-xl leading-loose text-ink md:text-2xl"
-                  : "font-hanzi text-xl leading-loose text-ink md:text-2xl"
-                : "text-sm leading-relaxed text-ink/80"
-            }
+            className="text-sm leading-relaxed text-ink/80"
           >
             {item}
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+function StructuresSection({
+  title,
+  lines,
+  accent,
+}: {
+  title: string;
+  lines: StructureLine[];
+  accent?: string;
+}) {
+  if (lines.length === 0) return null;
+  return (
+    <section
+      className="rounded-xl border p-5 sm:p-6"
+      style={{ borderColor: "var(--border)" }}
+    >
+      <h2
+        className="mb-4 text-xs font-semibold uppercase tracking-widest"
+        style={{
+          fontFamily: "ui-sans-serif, system-ui, sans-serif",
+          color: accent ?? "rgba(28,25,23,0.4)",
+        }}
+      >
+        {title}
+      </h2>
+      <ul className="space-y-4">
+        {lines.map((line, i) => (
+          <li key={`${title}-struct-${i}`}>
+            <ChineseWithPinyinLine
+              hanzi={line.hanzi}
+              pinyin={line.pinyin}
+              hanziClassName="font-hanzi text-xl leading-loose text-ink md:text-2xl"
+            />
           </li>
         ))}
       </ul>
@@ -66,49 +97,37 @@ export function GrammarSections({
   differences,
   priorities,
 }: Props) {
-  const { showPinyin } = usePinyin();
+  const { t } = useLocale();
 
   const hasAnything =
     structures.length + notes.length + differences.length + priorities.length > 0;
 
   if (!hasAnything) {
-    return (
-      <p className="text-sm text-ink/50">
-        Não há notas de gramática neste bloco no consolidado.
-      </p>
-    );
+    return <p className="text-sm text-ink/50">{t("grammar.empty")}</p>;
   }
 
   return (
     <div className="space-y-4">
-      <Section
-        title="Estruturas e exemplos"
-        items={structures}
-        useChineseLine
-        showPinyin={showPinyin}
+      <StructuresSection
+        title={t("grammar.structures")}
+        lines={structures}
         accent="var(--accent)"
       />
-      <Section title="Observações" items={notes} showPinyin={showPinyin} />
+      <Section title={t("grammar.notes")} items={notes} />
       <Section
-        title="Diferenças e contrastes"
+        title={t("grammar.differences")}
         items={differences}
-        showPinyin={showPinyin}
         accent="var(--accent-warm)"
       />
       {blockId === 15 && priorities.length > 0 ? (
         <PriorityList
           items={priorities}
-          title="Prioridades"
           blockId={15}
           studyMode="grammar"
           variant="card"
         />
       ) : (
-        <Section
-          title="Prioridades"
-          items={priorities}
-          showPinyin={showPinyin}
-        />
+        <Section title={t("grammar.priorities")} items={priorities} />
       )}
     </div>
   );
