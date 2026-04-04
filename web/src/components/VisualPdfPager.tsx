@@ -33,6 +33,7 @@ export function VisualPdfPager({ pdfUrl, title, t }: Props) {
   const [loadError, setLoadError] = useState<string | null>(null);
   const [isFs, setIsFs] = useState(false);
   const [pageWidth, setPageWidth] = useState(640);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -113,6 +114,31 @@ export function VisualPdfPager({ pdfUrl, title, t }: Props) {
     [numPages],
   );
 
+  const onTouchStart = useCallback((e: React.TouchEvent<HTMLDivElement>) => {
+    setTouchStart(e.touches[0].clientX);
+  }, []);
+
+  const onTouchEnd = useCallback(
+    (e: React.TouchEvent<HTMLDivElement>) => {
+      if (touchStart === null) return;
+      const touchEnd = e.changedTouches[0].clientX;
+      const diff = touchStart - touchEnd;
+
+      // Minimum swipe distance
+      if (Math.abs(diff) < 50) return;
+
+      if (diff > 0) {
+        // Swiped left - next page
+        setPage((p) => (numPages ? Math.min(numPages, p + 1) : p));
+      } else {
+        // Swiped right - previous page
+        setPage((p) => Math.max(1, p - 1));
+      }
+      setTouchStart(null);
+    },
+    [touchStart, numPages],
+  );
+
   const uiFont = { fontFamily: "ui-sans-serif, system-ui, sans-serif" } as const;
 
   if (!lib) {
@@ -138,59 +164,44 @@ export function VisualPdfPager({ pdfUrl, title, t }: Props) {
       role="region"
       aria-label={title}
       onKeyDown={onShellKeyDown}
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
       className={
         isFs
           ? "flex h-full w-full flex-col bg-paper outline-none"
-          : "flex flex-col overflow-hidden rounded-xl border bg-stone-100/80 outline-none ring-offset-2 focus-visible:ring-2 focus-visible:ring-accent"
+          : "flex flex-col overflow-hidden rounded-xl border bg-stone-50 outline-none ring-offset-2 focus-visible:ring-2 focus-visible:ring-accent"
       }
       style={{ borderColor: isFs ? "transparent" : "var(--border)" }}
     >
+      {/* Simplified Top Bar */}
       <div
-        className="flex flex-wrap items-center justify-between gap-2 border-b border-ink/10 bg-paper px-3 py-2 sm:px-4"
+        className="flex items-center justify-between gap-2 border-b bg-paper px-4 py-3 sm:px-6"
         style={uiFont}
       >
-        <div className="flex flex-wrap items-center gap-2">
-          <button
-            type="button"
-            disabled={!canPrev}
-            onClick={() => setPage((p) => Math.max(1, p - 1))}
-            className="min-h-[40px] rounded-lg border px-3 py-2 text-sm font-medium transition-colors enabled:hover:bg-ink/5 disabled:cursor-not-allowed disabled:opacity-40"
-            style={{ borderColor: "var(--border)" }}
-          >
-            {t("visuals.pdfPrev")}
-          </button>
-          <span className="tabular-nums text-sm text-ink/70">
-            {total > 0
-              ? t("visuals.pdfPageOf", { current: String(page), total: String(total) })
-              : "—"}
-          </span>
-          <button
-            type="button"
-            disabled={!canNext}
-            onClick={() => setPage((p) => (total ? Math.min(total, p + 1) : p))}
-            className="min-h-[40px] rounded-lg border px-3 py-2 text-sm font-medium transition-colors enabled:hover:bg-ink/5 disabled:cursor-not-allowed disabled:opacity-40"
-            style={{ borderColor: "var(--border)" }}
-          >
-            {t("visuals.pdfNext")}
-          </button>
-        </div>
+        <span className="text-xs font-medium tracking-wide text-ink/60">
+          {total > 0
+            ? t("visuals.pdfPageOf", { current: String(page), total: String(total) })
+            : "—"}
+        </span>
         <button
           type="button"
           onClick={toggleFullscreen}
-          className="min-h-[40px] rounded-lg border border-ink/15 bg-ink/[0.04] px-3 py-2 text-sm font-medium text-ink/80 transition-colors hover:bg-ink/[0.08]"
+          className="rounded-lg px-2 py-1.5 text-xs font-medium text-ink/70 transition-colors hover:bg-ink/5"
+          title={isFs ? t("visuals.pdfExitFullscreen") : t("visuals.pdfFullscreen")}
         >
-          {isFs ? t("visuals.pdfExitFullscreen") : t("visuals.pdfFullscreen")}
+          {isFs ? "⛶" : "⛶"}
         </button>
       </div>
 
-      <div className="flex min-h-[min(70dvh,720px)] flex-1 items-start justify-center overflow-auto bg-stone-200/60 p-4 sm:min-h-[min(75dvh,800px)] sm:p-6">
+      {/* PDF Viewer Area */}
+      <div className="flex min-h-[min(70dvh,720px)] flex-1 items-center justify-center overflow-auto bg-stone-100/50 p-3 sm:min-h-[min(75dvh,800px)] sm:p-4 select-none">
         {loadError ? (
-          <p className="text-sm text-red-800/90">{loadError}</p>
+          <p className="text-sm text-red-700">{loadError}</p>
         ) : (
           <Document
             file={pdfUrl}
             loading={
-              <div className="py-16 text-sm text-ink/45" style={uiFont}>
+              <div className="py-12 text-sm text-ink/45" style={uiFont}>
                 {t("visuals.pdfLoading")}
               </div>
             }
@@ -208,13 +219,37 @@ export function VisualPdfPager({ pdfUrl, title, t }: Props) {
               width={pageWidth}
               renderTextLayer={false}
               renderAnnotationLayer={false}
-              className="shadow-md"
+              className="shadow-lg drop-shadow-sm"
             />
           </Document>
         )}
       </div>
 
-      <p className="border-t border-ink/10 bg-paper px-3 py-1.5 text-center text-[11px] text-ink/40" style={uiFont}>
+      {/* Navigation Footer */}
+      <div
+        className="border-t bg-paper px-4 py-2 sm:px-6 flex items-center justify-between gap-2"
+        style={uiFont}
+      >
+        <button
+          type="button"
+          disabled={!canPrev}
+          onClick={() => setPage((p) => Math.max(1, p - 1))}
+          className="flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-colors enabled:hover:bg-ink/5 disabled:opacity-30 disabled:cursor-not-allowed text-center"
+        >
+          ← {t("visuals.pdfPrev")}
+        </button>
+        <button
+          type="button"
+          disabled={!canNext}
+          onClick={() => setPage((p) => (total ? Math.min(total, p + 1) : p))}
+          className="flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-colors enabled:hover:bg-ink/5 disabled:opacity-30 disabled:cursor-not-allowed text-center"
+        >
+          {t("visuals.pdfNext")} →
+        </button>
+      </div>
+
+      {/* Gesture Hint */}
+      <p className="bg-paper px-4 py-1.5 text-center text-[11px] text-ink/40" style={uiFont}>
         {t("visuals.pdfKeyboardHint")}
       </p>
     </div>

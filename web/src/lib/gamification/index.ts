@@ -9,5 +9,8 @@ export {
   localizedExplanation,
   localizedOptions,
   localizedQuestionPrompt,
+  localizedCorrectAnswer,
+  localizedCorrectOrder,
+  localizedWords,
   questionTypeDisplayName,
 } from "./localize";

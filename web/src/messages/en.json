@@ -25,7 +25,18 @@
     "previewHeading": "Preview",
     "previewHint": "Interactive quiz UI will land in the next iteration.",
     "blockLabel": "Block {n}",
-    "roadmap": "Next: automatic grading, audio (listening), drag-and-drop ordering, and device-local progress."
+    "roadmap": "Next: automatic grading, audio (listening), drag-and-drop ordering, and device-local progress.",
+    "progress": "Question {current} of {total}",
+    "validating": "Checking answer...",
+    "correct": "✓ Correct!",
+    "incorrect": "✗ Incorrect",
+    "submit": "Submit",
+    "next": "Next question",
+    "finish": "Finish quiz",
+    "finished": "Quiz complete!",
+    "finalScore": "Your score",
+    "restart": "Try again",
+    "explanation": "Explanation"
   },
   "pinyin": {
     "on": "With pinyin",
