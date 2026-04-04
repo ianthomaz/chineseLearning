@@ -14,9 +14,9 @@
 
 ## Visão geral rápida
 
-O site de aprendizagem de chinês vive em **`web/`** (Next.js 15, React 19). O tutor usa **`POST /aulaChines/api/chat`**, que faz proxy para a API externa no eixo educacional **`/edu/chat`**. O export estático (`out/`) **não** expõe esse POST; para tutor com LLM é preciso **`next start`** (ou `npm run dev`).
+O site de aprendizagem de chinês vive em **`web/`** (Next.js 15, React 19). O tutor usa **`POST /aulaChines/api/chat`**, que faz proxy para a API externa no eixo educacional **`/edu/chat`**. O export estático (`out/`) **não** expõe esse POST; para tutor com LLM é preciso **`next dev`** / **`next start`**.
 
-Na raiz do repositório, **`./start.sh --local`** orquestra verificações (health LLM, projeto RAG) e sobe o site com API na porta **34902** (por defeito). Detalhes em [04_operacao_local.md](04_operacao_local.md).
+Para o dia a dia: na raiz, **`./start.sh`** (sem flags) sobe **hot reload** numa única URL — **http://127.0.0.1:34827/aulaChines/** (igual `cd web && npm run dev`). Para Node como em produção **com** health/smoke da API antes, usa **`./start.sh --local`** (porta **34902** por defeito). Detalhes em [04_operacao_local.md](04_operacao_local.md).
 
 Documentação técnica aprofundada da API (contratos, token, RAG na API) continua em **`connectLLM/*.md`**; este `docs/` resume o fluxo no âmbito deste repo e aponta para lá quando fizer falta.
 

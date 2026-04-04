@@ -21,6 +21,7 @@ Em máquina partilhada (nginx, outros Node, bases de dados), evitar matar portas
 - **Build:** `npm run build:server`.
 - **Arranque:** `PORT=… npm run start:server` com `LLM_*` no ambiente (ex. `deploy/server.env` no servidor, copiado para `server.env` no destino pelo `deploy:node`).
 - **Script:** `npm run deploy:node` (rsync + remoto `npm ci` + `build:server`); detalhes em `web/scripts/deploy-node.sh` e comentários no script.
+- **PDFs de vocabulário:** ficheiros em **`web/pdf-content/`** (não versionados); o rsync envia essa pasta quando existe na máquina de deploy; no remoto o **prebuild** corre **`sync-pdf-downloads.sh`** e copia para **`public/downloads/`** (evita duplicar `public/downloads/*.pdf` no rsync).
 
 ## Nginx com prefixo
 

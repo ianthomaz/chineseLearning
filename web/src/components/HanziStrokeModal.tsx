@@ -162,7 +162,7 @@ export function HanziStrokeModal({
     >
       <button
         type="button"
-        className="absolute inset-0 bg-ink/40 backdrop-blur-[2px]"
+        className="absolute inset-0 bg-stone-900"
         aria-label={t("hanziWriter.closeAria")}
         onClick={onClose}
       />
@@ -170,7 +170,8 @@ export function HanziStrokeModal({
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        className="relative z-[101] w-full max-w-md rounded-2xl border border-stone-300 bg-white p-5 shadow-xl sm:p-6"
+        className="relative z-[101] w-full max-w-md rounded-2xl border border-stone-200 bg-white p-5 shadow-xl sm:p-6"
+        style={{ backgroundColor: "#ffffff" }}
       >
         <div className="mb-4 flex items-start justify-between gap-3">
           <div>
@@ -217,7 +218,10 @@ export function HanziStrokeModal({
           </div>
         ) : null}
 
-        <div className="mx-auto flex min-h-[280px] w-full max-w-[280px] items-center justify-center rounded-xl border border-stone-200 bg-white shadow-inner">
+        <div
+          className="mx-auto flex min-h-[280px] w-full max-w-[280px] items-center justify-center rounded-xl border border-stone-200 shadow-inner"
+          style={{ backgroundColor: "#ffffff" }}
+        >
           {loadError ? (
             <p className="px-4 text-center text-sm text-stone-500">{t("hanziWriter.unavailable")}</p>
           ) : (

@@ -1,0 +1,1039 @@
+{
+  "version": "1.0",
+  "language": {
+    "source": "pt",
+    "targets": [
+      "en",
+      "es"
+    ],
+    "hanzi_field": "hanzi",
+    "pinyin_field": "pinyin"
+  },
+  "metadata": {
+    "total_questions": 30,
+    "target_question_count": 120,
+    "hsk_level": 1,
+    "blocks_covered": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16
+    ]
+  },
+  "question_types": {
+    "multiple_choice": {
+      "name": "Escolha a opção correta",
+      "name_en": "Choose the correct option",
+      "name_es": "Elige la opción correcta",
+      "layout": "grid_3_col"
+    },
+    "fill_blank": {
+      "name": "Complete a frase",
+      "name_en": "Fill in the blank",
+      "name_es": "Completa la frase",
+      "layout": "input_text"
+    },
+    "translation": {
+      "name": "Traduza para o chinês",
+      "name_en": "Translate to Chinese",
+      "name_es": "Traduce al chino",
+      "layout": "input_text"
+    },
+    "listening": {
+      "name": "Ouça e escolha",
+      "name_en": "Listen and choose",
+      "name_es": "Escucha y elige",
+      "layout": "audio_play_button + grid_3_col",
+      "audio_placeholder": "/audio/{id}.mp3"
+    },
+    "ordering": {
+      "name": "Ordene as palavras",
+      "name_en": "Order the words",
+      "name_es": "Ordena las palabras",
+      "layout": "drag_drop"
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 1,
+      "topic": "numeros",
+      "hanzi": "一",
+      "pinyin": "yī",
+      "question_pt": "Qual é o significado de 一?",
+      "question_en": "What is the meaning of 一?",
+      "question_es": "¿Cuál es el significado de 一?",
+      "options_pt": [
+        "um",
+        "dois",
+        "três"
+      ],
+      "options_en": [
+        "one",
+        "two",
+        "three"
+      ],
+      "options_es": [
+        "uno",
+        "dos",
+        "tres"
+      ],
+      "correct": 0,
+      "explanation_pt": "一 significa 'um' em chinês.",
+      "explanation_en": "一 means 'one' in Chinese.",
+      "explanation_es": "一 significa 'uno' en chino."
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 1,
+      "topic": "numeros",
+      "hanzi": "两",
+      "pinyin": "liǎng",
+      "question_pt": "Quando se usa 两 em vez de 二?",
+      "question_en": "When do you use 两 instead of 二?",
+      "question_es": "¿Cuándo se usa 两 en lugar de 二?",
+      "options_pt": [
+        "antes de classificadores (dois livros = 两本书)",
+        "em números de telefone (dois = 二)",
+        "para dizer 12 (十二 = 十二)"
+      ],
+      "options_en": [
+        "before classifiers (two books = 两本书)",
+        "in phone numbers (two = 二)",
+        "to say 12 (十二 = 十二)"
+      ],
+      "options_es": [
+        "antes de clasificadores (dos libros = 两本书)",
+        "en números de teléfono (dos = 二)",
+        "para decir 12 (十二 = 十二)"
+      ],
+      "correct": 0,
+      "explanation_pt": "两 é usado antes de classificadores: 两个人, 两本书.",
+      "explanation_en": "两 is used before classifiers: 两个人, 两本书.",
+      "explanation_es": "两 se usa antes de clasificadores: 两个人, 两本书."
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 2,
+      "topic": "tempo",
+      "hanzi": "现在两点了",
+      "pinyin": "xiànzài liǎng diǎn le",
+      "question_pt": "O que significa '现在两点了'?",
+      "question_en": "What does '现在两点了' mean?",
+      "question_es": "¿Qué significa '现在两点了'?",
+      "options_pt": [
+        "agora são duas horas",
+        "agora são três horas",
+        "agora é meio-dia"
+      ],
+      "options_en": [
+        "it's two o'clock now",
+        "it's three o'clock now",
+        "it's noon now"
+      ],
+      "options_es": [
+        "ahora son las dos",
+        "ahora son las tres",
+        "ahora es mediodía"
+      ],
+      "correct": 0,
+      "explanation_pt": "现在 = agora, 两点 = duas horas, 了 = partícula.",
+      "explanation_en": "现在 = now, 两点 = two o'clock, 了 = particle.",
+      "explanation_es": "现在 = ahora, 两点 = dos en punto, 了 = partícula."
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 2,
+      "topic": "dinheiro",
+      "hanzi": "三十五块五毛",
+      "pinyin": "sānshíwǔ kuài wǔ máo",
+      "question_pt": "Quanto é 三十五块五毛?",
+      "question_en": "How much is 三十五块五毛?",
+      "question_es": "¿Cuánto es 三十五块五毛?",
+      "options_pt": [
+        "35,50 yuan",
+        "35,05 yuan",
+        "30,55 yuan"
+      ],
+      "options_en": [
+        "35.50 yuan",
+        "35.05 yuan",
+        "30.55 yuan"
+      ],
+      "options_es": [
+        "35,50 yuanes",
+        "35,05 yuanes",
+        "30,55 yuanes"
+      ],
+      "correct": 0,
+      "explanation_pt": "三十五 = 35, 块 = yuan, 五毛 = 0,50 (5 décimos).",
+      "explanation_en": "三十五 = 35, 块 = yuan, 五毛 = 0.50 (5 tenths).",
+      "explanation_es": "三十五 = 35, 块 = yuan, 五毛 = 0,50 (5 décimos)."
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 3,
+      "topic": "frutas",
+      "hanzi": "苹果",
+      "pinyin": "píngguǒ",
+      "question_pt": "O que significa 苹果?",
+      "question_en": "What does 苹果 mean?",
+      "question_es": "¿Qué significa 苹果?",
+      "options_pt": [
+        "maçã",
+        "banana",
+        "laranja"
+      ],
+      "options_en": [
+        "apple",
+        "banana",
+        "orange"
+      ],
+      "options_es": [
+        "manzana",
+        "plátano",
+        "naranja"
+      ],
+      "correct": 0,
+      "explanation_pt": "苹果 = maçã. 苹 = píng, 果 = guǒ (fruta).",
+      "explanation_en": "苹果 = apple. 苹 = píng, 果 = guǒ (fruit).",
+      "explanation_es": "苹果 = manzana. 苹 = píng, 果 = guǒ (fruta)."
+    },
+    {
+      "id": 6,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 3,
+      "topic": "bebidas",
+      "hanzi": "咖啡",
+      "pinyin": "kāfēi",
+      "question_pt": "O que significa 咖啡?",
+      "question_en": "What does 咖啡 mean?",
+      "question_es": "¿Qué significa 咖啡?",
+      "options_pt": [
+        "café",
+        "chá",
+        "suco"
+      ],
+      "options_en": [
+        "coffee",
+        "tea",
+        "juice"
+      ],
+      "options_es": [
+        "café",
+        "té",
+        "jugo"
+      ],
+      "correct": 0,
+      "explanation_pt": "咖啡 = café (empréstimo fonético).",
+      "explanation_en": "咖啡 = coffee (phonetic loan).",
+      "explanation_es": "咖啡 = café (préstamo fonético)."
+    },
+    {
+      "id": 7,
+      "type": "fill_blank",
+      "difficulty": 1,
+      "block": 4,
+      "topic": "lugares",
+      "hanzi": "我在___。",
+      "pinyin": "wǒ zài ___",
+      "question_pt": "Complete: Eu estou na escola.",
+      "question_en": "Complete: I am at school.",
+      "question_es": "Completa: Estoy en la escuela.",
+      "correct_answer_pt": "学校",
+      "correct_answer_en": "学校",
+      "correct_answer_es": "学校",
+      "options_pt": [
+        "学校",
+        "医院",
+        "商店"
+      ],
+      "options_en": [
+        "学校",
+        "医院",
+        "商店"
+      ],
+      "options_es": [
+        "学校",
+        "医院",
+        "商店"
+      ],
+      "explanation_pt": "学校 = escola. 我在学校 = estou na escola.",
+      "explanation_en": "学校 = school. 我在学校 = I am at school.",
+      "explanation_es": "学校 = escuela. 我在学校 = estoy en la escuela."
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 5,
+      "topic": "paises",
+      "hanzi": "巴西人",
+      "pinyin": "Bāxī rén",
+      "question_pt": "O que significa 巴西人?",
+      "question_en": "What does 巴西人 mean?",
+      "question_es": "¿Qué significa 巴西人?",
+      "options_pt": [
+        "brasileiro",
+        "chinês",
+        "português"
+      ],
+      "options_en": [
+        "Brazilian",
+        "Chinese",
+        "Portuguese"
+      ],
+      "options_es": [
+        "brasileño",
+        "chino",
+        "portugués"
+      ],
+      "correct": 0,
+      "explanation_pt": "巴西 = Brasil, 人 = pessoa → brasileiro.",
+      "explanation_en": "巴西 = Brazil, 人 = person → Brazilian.",
+      "explanation_es": "巴西 = Brasil, 人 = persona → brasileño."
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 5,
+      "topic": "idiomas",
+      "hanzi": "汉语",
+      "pinyin": "Hànyǔ",
+      "question_pt": "O que significa 汉语?",
+      "question_en": "What does 汉语 mean?",
+      "question_es": "¿Qué significa 汉语?",
+      "options_pt": [
+        "chinês (idioma)",
+        "japonês",
+        "coreano"
+      ],
+      "options_en": [
+        "Chinese (language)",
+        "Japanese",
+        "Korean"
+      ],
+      "options_es": [
+        "chino (idioma)",
+        "japonés",
+        "coreano"
+      ],
+      "correct": 0,
+      "explanation_pt": "汉 = etnia Han, 语 = língua → língua chinesa.",
+      "explanation_en": "汉 = Han ethnic group, 语 = language → Chinese language.",
+      "explanation_es": "汉 = etnia Han, 语 = idioma → idioma chino."
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 6,
+      "topic": "cores",
+      "hanzi": "红色",
+      "pinyin": "hóngsè",
+      "question_pt": "Que cor é 红色?",
+      "question_en": "What color is 红色?",
+      "question_es": "¿Qué color es 红色?",
+      "options_pt": [
+        "vermelho",
+        "azul",
+        "verde"
+      ],
+      "options_en": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "options_es": [
+        "rojo",
+        "azul",
+        "verde"
+      ],
+      "correct": 0,
+      "explanation_pt": "红 = vermelho, 色 = cor.",
+      "explanation_en": "红 = red, 色 = color.",
+      "explanation_es": "红 = rojo, 色 = color."
+    },
+    {
+      "id": 11,
+      "type": "fill_blank",
+      "difficulty": 1,
+      "block": 7,
+      "topic": "familia",
+      "hanzi": "我家有___口人。",
+      "pinyin": "wǒ jiā yǒu ___ kǒu rén",
+      "question_pt": "Complete: Na minha casa somos 4 pessoas.",
+      "question_en": "Complete: There are 4 people in my family.",
+      "question_es": "Completa: En mi casa somos 4 personas.",
+      "correct_answer_pt": "四",
+      "correct_answer_en": "四",
+      "correct_answer_es": "四",
+      "options_pt": [
+        "四",
+        "五",
+        "三"
+      ],
+      "options_en": [
+        "四",
+        "五",
+        "三"
+      ],
+      "options_es": [
+        "四",
+        "五",
+        "三"
+      ],
+      "explanation_pt": "四 = quatro. 口 é o classificador para pessoas da família.",
+      "explanation_en": "四 = four. 口 is the classifier for family members.",
+      "explanation_es": "四 = cuatro. 口 es el clasificador para miembros de la familia."
+    },
+    {
+      "id": 12,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 7,
+      "topic": "familia",
+      "hanzi": "姐姐",
+      "pinyin": "jiějie",
+      "question_pt": "Quem é 姐姐?",
+      "question_en": "Who is 姐姐?",
+      "question_es": "¿Quién es 姐姐?",
+      "options_pt": [
+        "irmã mais velha",
+        "irmã mais nova",
+        "irmão mais velho"
+      ],
+      "options_en": [
+        "older sister",
+        "younger sister",
+        "older brother"
+      ],
+      "options_es": [
+        "hermana mayor",
+        "hermana menor",
+        "hermano mayor"
+      ],
+      "correct": 0,
+      "explanation_pt": "姐姐 = irmã mais velha. 妹妹 = irmã mais nova.",
+      "explanation_en": "姐姐 = older sister. 妹妹 = younger sister.",
+      "explanation_es": "姐姐 = hermana mayor. 妹妹 = hermana menor."
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 8,
+      "topic": "perguntas",
+      "hanzi": "你叫什么名字？",
+      "pinyin": "nǐ jiào shénme míngzi?",
+      "question_pt": "O que significa esta pergunta?",
+      "question_en": "What does this question mean?",
+      "question_es": "¿Qué significa esta pregunta?",
+      "options_pt": [
+        "Como você se chama?",
+        "Quantos anos você tem?",
+        "Onde você mora?"
+      ],
+      "options_en": [
+        "What's your name?",
+        "How old are you?",
+        "Where do you live?"
+      ],
+      "options_es": [
+        "¿Cómo te llamas?",
+        "¿Cuántos años tienes?",
+        "¿Dónde vives?"
+      ],
+      "correct": 0,
+      "explanation_pt": "你 = você, 叫 = chamar-se, 什么 = que, 名字 = nome.",
+      "explanation_en": "你 = you, 叫 = to be called, 什么 = what, 名字 = name.",
+      "explanation_es": "你 = tú, 叫 = llamarse, 什么 = qué, 名字 = nombre."
+    },
+    {
+      "id": 14,
+      "type": "fill_blank",
+      "difficulty": 1,
+      "block": 9,
+      "topic": "pronomes",
+      "hanzi": "___ 是学生。",
+      "pinyin": "___ shì xuésheng",
+      "question_pt": "Complete com 'eu': Eu sou estudante.",
+      "question_en": "Complete with 'I': I am a student.",
+      "question_es": "Completa con 'yo': Yo soy estudiante.",
+      "correct_answer_pt": "我",
+      "correct_answer_en": "我",
+      "correct_answer_es": "我",
+      "options_pt": [
+        "我",
+        "你",
+        "他"
+      ],
+      "options_en": [
+        "我",
+        "你",
+        "他"
+      ],
+      "options_es": [
+        "我",
+        "你",
+        "他"
+      ],
+      "explanation_pt": "我 = eu. 我是学生 = eu sou estudante.",
+      "explanation_en": "我 = I. 我是学生 = I am a student.",
+      "explanation_es": "我 = yo. 我是学生 = yo soy estudiante."
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 10,
+      "topic": "adverbios",
+      "hanzi": "也",
+      "pinyin": "yě",
+      "question_pt": "O que significa 也?",
+      "question_en": "What does 也 mean?",
+      "question_es": "¿Qué significa 也?",
+      "options_pt": [
+        "também",
+        "muito",
+        "não"
+      ],
+      "options_en": [
+        "also",
+        "very",
+        "not"
+      ],
+      "options_es": [
+        "también",
+        "muy",
+        "no"
+      ],
+      "correct": 0,
+      "explanation_pt": "也 = também. 我也喜欢 = eu também gosto.",
+      "explanation_en": "也 = also. 我也喜欢 = I also like.",
+      "explanation_es": "也 = también. 我也喜欢 = a mí también me gusta."
+    },
+    {
+      "id": 16,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 11,
+      "topic": "verbos",
+      "hanzi": "学习",
+      "pinyin": "xuéxí",
+      "question_pt": "O que significa 学习?",
+      "question_en": "What does 学习 mean?",
+      "question_es": "¿Qué significa 学习?",
+      "options_pt": [
+        "estudar",
+        "trabalhar",
+        "comer"
+      ],
+      "options_en": [
+        "to study",
+        "to work",
+        "to eat"
+      ],
+      "options_es": [
+        "estudiar",
+        "trabajar",
+        "comer"
+      ],
+      "correct": 0,
+      "explanation_pt": "学 = aprender, 习 = praticar → estudar.",
+      "explanation_en": "学 = to learn, 习 = to practice → to study.",
+      "explanation_es": "学 = aprender, 习 = practicar → estudiar."
+    },
+    {
+      "id": 17,
+      "type": "fill_blank",
+      "difficulty": 2,
+      "block": 11,
+      "topic": "verbos",
+      "hanzi": "我___汉语。",
+      "pinyin": "wǒ ___ Hànyǔ",
+      "question_pt": "Complete: Eu estudo chinês.",
+      "question_en": "Complete: I study Chinese.",
+      "question_es": "Completa: Yo estudio chino.",
+      "correct_answer_pt": "学习",
+      "correct_answer_en": "学习",
+      "correct_answer_es": "学习",
+      "options_pt": [
+        "学习",
+        "工作",
+        "看"
+      ],
+      "options_en": [
+        "学习",
+        "工作",
+        "看"
+      ],
+      "options_es": [
+        "学习",
+        "工作",
+        "看"
+      ],
+      "explanation_pt": "学习 = estudar. 我学习汉语 = eu estudo chinês.",
+      "explanation_en": "学习 = to study. 我学习汉语 = I study Chinese.",
+      "explanation_es": "学习 = estudiar. 我学习汉语 = yo estudio chino."
+    },
+    {
+      "id": 18,
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "block": 12,
+      "topic": "preferencias",
+      "hanzi": "喜欢",
+      "pinyin": "xǐhuan",
+      "question_pt": "O que significa 喜欢?",
+      "question_en": "What does 喜欢 mean?",
+      "question_es": "¿Qué significa 喜欢?",
+      "options_pt": [
+        "gostar",
+        "querer",
+        "saber"
+      ],
+      "options_en": [
+        "to like",
+        "to want",
+        "to know"
+      ],
+      "options_es": [
+        "gustar",
+        "querer",
+        "saber"
+      ],
+      "correct": 0,
+      "explanation_pt": "喜欢 = gostar. 我喜欢茶 = eu gosto de chá.",
+      "explanation_en": "喜欢 = to like. 我喜欢茶 = I like tea.",
+      "explanation_es": "喜欢 = gustar. 我喜欢茶 = me gusta el té."
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "block": 13,
+      "topic": "verbos_modais",
+      "hanzi": "会",
+      "pinyin": "huì",
+      "question_pt": "Quando se usa 会?",
+      "question_en": "When do you use 会?",
+      "question_es": "¿Cuándo se usa 会?",
+      "options_pt": [
+        "habilidade aprendida (saber fazer algo)",
+        "permissão (poder fazer algo)",
+        "vontade (querer fazer algo)"
+      ],
+      "options_en": [
+        "learned skill (know how to do something)",
+        "permission (can do something)",
+        "desire (want to do something)"
+      ],
+      "options_es": [
+        "habilidad aprendida (saber hacer algo)",
+        "permiso (poder hacer algo)",
+        "voluntad (querer hacer algo)"
+      ],
+      "correct": 0,
+      "explanation_pt": "会 indica habilidade aprendida. 我会开车 = sei dirigir.",
+      "explanation_en": "会 indicates a learned skill. 我会开车 = I know how to drive.",
+      "explanation_es": "会 indica habilidad aprendida. 我会开车 = sé conducir."
+    },
+    {
+      "id": 20,
+      "type": "fill_blank",
+      "difficulty": 2,
+      "block": 14,
+      "topic": "existencia",
+      "hanzi": "桌子上___一本书。",
+      "pinyin": "zhuōzi shàng ___ yì běn shū",
+      "question_pt": "Complete: Em cima da mesa há um livro.",
+      "question_en": "Complete: There is a book on the table.",
+      "question_es": "Completa: Hay un libro sobre la mesa.",
+      "correct_answer_pt": "有",
+      "correct_answer_en": "有",
+      "correct_answer_es": "有",
+      "options_pt": [
+        "有",
+        "在",
+        "是"
+      ],
+      "options_en": [
+        "有",
+        "在",
+        "是"
+      ],
+      "options_es": [
+        "有",
+        "在",
+        "是"
+      ],
+      "explanation_pt": "有 = haver/existir. 桌子上有一本书 = há um livro na mesa.",
+      "explanation_en": "有 = there is/there are. 桌子上有一本书 = there is a book on the table.",
+      "explanation_es": "有 = haber/existir. 桌子上有一本书 = hay un libro en la mesa."
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "block": 16,
+      "topic": "animais",
+      "hanzi": "狗",
+      "pinyin": "gǒu",
+      "question_pt": "O que significa 狗?",
+      "question_en": "What does 狗 mean?",
+      "question_es": "¿Qué significa 狗?",
+      "options_pt": [
+        "cachorro",
+        "gato",
+        "rato"
+      ],
+      "options_en": [
+        "dog",
+        "cat",
+        "mouse"
+      ],
+      "options_es": [
+        "perro",
+        "gato",
+        "ratón"
+      ],
+      "correct": 0,
+      "explanation_pt": "狗 = cachorro. 猫 = gato.",
+      "explanation_en": "狗 = dog. 猫 = cat.",
+      "explanation_es": "狗 = perro. 猫 = gato."
+    },
+    {
+      "id": 22,
+      "type": "fill_blank",
+      "difficulty": 2,
+      "block": 16,
+      "topic": "adjetivos",
+      "hanzi": "今天天气真___。",
+      "pinyin": "jīntiān tiānqì zhēn ___",
+      "question_pt": "Complete: Hoje o tempo está muito bom.",
+      "question_en": "Complete: The weather is really good today.",
+      "question_es": "Completa: Hoy hace muy buen tiempo.",
+      "correct_answer_pt": "好",
+      "correct_answer_en": "好",
+      "correct_answer_es": "好",
+      "options_pt": [
+        "好",
+        "热",
+        "冷"
+      ],
+      "options_en": [
+        "好",
+        "热",
+        "冷"
+      ],
+      "options_es": [
+        "好",
+        "热",
+        "冷"
+      ],
+      "explanation_pt": "好 = bom. 今天天气真好 = o tempo hoje está realmente bom.",
+      "explanation_en": "好 = good. 今天天气真好 = the weather is really good today.",
+      "explanation_es": "好 = bueno. 今天天气真好 = hoy hace muy buen tiempo."
+    },
+    {
+      "id": 23,
+      "type": "translation",
+      "difficulty": 2,
+      "block": 8,
+      "topic": "perguntas",
+      "hanzi": "",
+      "pinyin": "",
+      "question_pt": "Como se diz 'Onde você está?' em chinês?",
+      "question_en": "How do you say 'Where are you?' in Chinese?",
+      "question_es": "¿Cómo se dice '¿Dónde estás?' en chino?",
+      "correct_answer_pt": "你在哪儿？",
+      "correct_answer_en": "你在哪儿？",
+      "correct_answer_es": "你在哪儿？",
+      "options_pt": [
+        "你在哪儿？",
+        "你叫什么？",
+        "你是谁？"
+      ],
+      "options_en": [
+        "你在哪儿？",
+        "你叫什么？",
+        "你是谁？"
+      ],
+      "options_es": [
+        "你在哪儿？",
+        "你叫什么？",
+        "你是谁？"
+      ],
+      "explanation_pt": "你 = você, 在 = estar, 哪儿 = onde.",
+      "explanation_en": "你 = you, 在 = to be, 哪儿 = where.",
+      "explanation_es": "你 = tú, 在 = estar, 哪儿 = dónde."
+    },
+    {
+      "id": 24,
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "block": 16,
+      "topic": "classificadores",
+      "hanzi": "一本书",
+      "pinyin": "yì běn shū",
+      "question_pt": "Qual é o classificador correto para 'livro'?",
+      "question_en": "What is the correct classifier for 'book'?",
+      "question_es": "¿Cuál es el clasificador correcto para 'libro'?",
+      "options_pt": [
+        "本",
+        "个",
+        "只"
+      ],
+      "options_en": [
+        "本",
+        "个",
+        "只"
+      ],
+      "options_es": [
+        "本",
+        "个",
+        "只"
+      ],
+      "correct": 0,
+      "explanation_pt": "本 é o classificador para livros. 一本书 = um livro.",
+      "explanation_en": "本 is the classifier for books. 一本书 = one book.",
+      "explanation_es": "本 es el clasificador para libros. 一本书 = un libro."
+    },
+    {
+      "id": 25,
+      "type": "fill_blank",
+      "difficulty": 2,
+      "block": 16,
+      "topic": "conectivos",
+      "hanzi": "___ 下雨，___ 我不去公园。",
+      "pinyin": "___ xiàyǔ, ___ wǒ bú qù gōngyuán",
+      "question_pt": "Complete: Porque está chovendo, não vou ao parque.",
+      "question_en": "Complete: Because it's raining, I'm not going to the park.",
+      "question_es": "Completa: Porque está lloviendo, no voy al parque.",
+      "correct_answer_pt": "因为/所以",
+      "correct_answer_en": "因为/所以",
+      "correct_answer_es": "因为/所以",
+      "options_pt": [
+        "因为/所以",
+        "虽然/但是",
+        "先/然后"
+      ],
+      "options_en": [
+        "因为/所以",
+        "虽然/但是",
+        "先/然后"
+      ],
+      "options_es": [
+        "因为/所以",
+        "虽然/但是",
+        "先/然后"
+      ],
+      "explanation_pt": "因为 = porque, 所以 = por isso. 因为下雨，所以我不去公园.",
+      "explanation_en": "因为 = because, 所以 = therefore. 因为下雨，所以我不去公园.",
+      "explanation_es": "因为 = porque, 所以 = por eso. 因为下雨，所以我不去公园."
+    },
+    {
+      "id": 26,
+      "type": "ordering",
+      "difficulty": 2,
+      "block": 14,
+      "topic": "estrutura",
+      "hanzi": "",
+      "pinyin": "",
+      "question_pt": "Ordene as palavras para formar 'Eu vou à escola às três horas'.",
+      "question_en": "Order the words to form 'I go to school at three o'clock'.",
+      "question_es": "Ordena las palabras para formar 'Voy a la escuela a las tres'.",
+      "words_pt": [
+        "我",
+        "三点",
+        "去",
+        "学校"
+      ],
+      "words_en": [
+        "我",
+        "三点",
+        "去",
+        "学校"
+      ],
+      "words_es": [
+        "我",
+        "三点",
+        "去",
+        "学校"
+      ],
+      "correct_order_pt": [
+        "我",
+        "三点",
+        "去",
+        "学校"
+      ],
+      "correct_order_en": [
+        "我",
+        "三点",
+        "去",
+        "学校"
+      ],
+      "correct_order_es": [
+        "我",
+        "三点",
+        "去",
+        "学校"
+      ],
+      "explanation_pt": "Em chinês: sujeito + tempo + verbo + objeto. 我三点去学校.",
+      "explanation_en": "In Chinese: subject + time + verb + object. 我三点去学校.",
+      "explanation_es": "En chino: sujeto + tiempo + verbo + objeto. 我三点去学校."
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "block": 16,
+      "topic": "profissoes",
+      "hanzi": "医生",
+      "pinyin": "yīshēng",
+      "question_pt": "O que significa 医生?",
+      "question_en": "What does 医生 mean?",
+      "question_es": "¿Qué significa 医生?",
+      "options_pt": [
+        "médico",
+        "professor",
+        "estudante"
+      ],
+      "options_en": [
+        "doctor",
+        "teacher",
+        "student"
+      ],
+      "options_es": [
+        "médico",
+        "profesor",
+        "estudiante"
+      ],
+      "correct": 0,
+      "explanation_pt": "医 = medicina, 生 = pessoa → médico.",
+      "explanation_en": "医 = medicine, 生 = person → doctor.",
+      "explanation_es": "医 = medicina, 生 = persona → médico."
+    },
+    {
+      "id": 28,
+      "type": "fill_blank",
+      "difficulty": 2,
+      "block": 16,
+      "topic": "direcoes",
+      "hanzi": "书在桌子___。",
+      "pinyin": "shū zài zhuōzi ___",
+      "question_pt": "Complete: O livro está em cima da mesa.",
+      "question_en": "Complete: The book is on the table.",
+      "question_es": "Completa: El libro está sobre la mesa.",
+      "correct_answer_pt": "上",
+      "correct_answer_en": "上",
+      "correct_answer_es": "上",
+      "options_pt": [
+        "上",
+        "下",
+        "里"
+      ],
+      "options_en": [
+        "上",
+        "下",
+        "里"
+      ],
+      "options_es": [
+        "上",
+        "下",
+        "里"
+      ],
+      "explanation_pt": "上 = em cima. 桌子上 = em cima da mesa.",
+      "explanation_en": "上 = on/above. 桌子上 = on the table.",
+      "explanation_es": "上 = encima/sobre. 桌子上 = sobre la mesa."
+    },
+    {
+      "id": 29,
+      "type": "translation",
+      "difficulty": 2,
+      "block": 12,
+      "topic": "preferencias",
+      "hanzi": "",
+      "pinyin": "",
+      "question_pt": "Como se diz 'Eu quero beber café' em chinês?",
+      "question_en": "How do you say 'I want to drink coffee' in Chinese?",
+      "question_es": "¿Cómo se dice 'Quiero beber café' en chino?",
+      "correct_answer_pt": "我想喝咖啡。",
+      "correct_answer_en": "我想喝咖啡。",
+      "correct_answer_es": "我想喝咖啡。",
+      "options_pt": [
+        "我想喝咖啡。",
+        "我喜欢咖啡。",
+        "我要咖啡。"
+      ],
+      "options_en": [
+        "我想喝咖啡。",
+        "我喜欢咖啡。",
+        "我要咖啡。"
+      ],
+      "options_es": [
+        "我想喝咖啡。",
+        "我喜欢咖啡。",
+        "我要咖啡。"
+      ],
+      "explanation_pt": "我 = eu, 想 = querer, 喝 = beber, 咖啡 = café.",
+      "explanation_en": "我 = I, 想 = want, 喝 = to drink, 咖啡 = coffee.",
+      "explanation_es": "我 = yo, 想 = querer, 喝 = beber, 咖啡 = café."
+    },
+    {
+      "id": 30,
+      "type": "multiple_choice",
+      "difficulty": 2,
+      "block": 16,
+      "topic": "natureza",
+      "hanzi": "山",
+      "pinyin": "shān",
+      "question_pt": "O que significa 山?",
+      "question_en": "What does 山 mean?",
+      "question_es": "¿Qué significa 山?",
+      "options_pt": [
+        "montanha",
+        "rio",
+        "floresta"
+      ],
+      "options_en": [
+        "mountain",
+        "river",
+        "forest"
+      ],
+      "options_es": [
+        "montaña",
+        "río",
+        "bosque"
+      ],
+      "correct": 0,
+      "explanation_pt": "山 = montanha.",
+      "explanation_en": "山 = mountain.",
+      "explanation_es": "山 = montaña."
+    }
+  ]
+}

@@ -1,15 +1,21 @@
 # Operação local
 
-## Estático vs tutor (LLM)
+## URL principal (hot reload)
+
+| Objetivo | Comando | Porta | URL base |
+|----------|---------|-------|----------|
+| **Dia a dia (recomendado)** | **`./start.sh`** ou **`./start.sh --dev`** | **34827** | **http://127.0.0.1:34827/aulaChines/** |
+
+Igual a `cd web && npm run dev` (ou `npm run hot`). Tutor: **`…/aulaChines/tutor`** — para a LLM responder, **`web/.env.local`** com **`LLM_API_TOKEN`** (e opcionalmente **`LLM_API_URL`**).
+
+## Outros modos
 
 | Objetivo | Comando | Porta típica | LLM no tutor |
 |----------|---------|----------------|--------------|
-| Só HTML (como webplace) | `./start.sh --webplace` ou `npm run deploy:local` + servidor de ficheiros | 34901 | Não |
-| Site + `POST /api/chat` + tutor | `./start.sh --local` ou `npm run deploy:local:with-api` | 34902 | Sim |
+| Só HTML (como webplace) | `./start.sh --webplace` | 34901 | Não |
+| Node como produção + checks LLM antes | `./start.sh --local` ou `npm run deploy:local:with-api` | 34902 | Sim |
 
-Em **`web/.env.local`** define **`LLM_API_TOKEN`** e, se quiseres, **`LLM_API_URL`** (`http://127.0.0.1:28471` ou `https://llm.webplace.cc`).
-
-## Comando principal na raiz
+## Comando com checks completos (não é o default)
 
 ```bash
 ./start.sh --local
@@ -28,15 +34,15 @@ Fluxo resumido:
 
 | Serviço | Porta (defeito) | Notas |
 |---------|-----------------|-------|
-| Next dev (`npm run dev`) | **34827** | `basePath` pode não ser o mesmo que produção; ver `web/README.md` |
+| **Hot dev** (`./start.sh`, `npm run dev`) | **34827** | Mesmo **`basePath` `/aulaChines`** que produção |
 | Next “live” local (`start.sh --local`) | **34902** | Igual a `deploy:local:live`; override com `--port=N` |
 | Preview estático webplace | **34901** | `./start.sh --webplace` (Python `http.server`) |
 | API LLM | **28471** (no Mac) | Em dev local, `LLM_API_URL` típico `http://127.0.0.1:28471`; em VM usa URL pública ou Tailscale — ver ITCS/featureLLM `docs/MANUAL_INTEGRACAO.md` § 1.1 |
 
 ## URLs com `basePath` `/aulaChines`
 
-- Site: `http://127.0.0.1:34902/aulaChines` (com ou sem barra final; o Next pode responder 308 numa variante)
-- Tutor: `http://127.0.0.1:34902/aulaChines/tutor`
+- **Hot dev:** `http://127.0.0.1:34827/aulaChines` · tutor: `…/aulaChines/tutor`
+- **Modo `--local`:** `http://127.0.0.1:34902/aulaChines` · tutor: `…/aulaChines/tutor`
 
 Preferir **`127.0.0.1`** em vez de `localhost` se o browser resolver `localhost` para IPv6 (`::1`) e o servidor estiver só em IPv4 (`next`/script escuta em `127.0.0.1` por defeito).
 

@@ -4,7 +4,9 @@ set -euo pipefail
 # Orquestra verificação de ambiente + ingest opcional + deploy local OU preparação para produção.
 #
 # Uso:
-#   ./start.sh --local              # next start + /api/chat + tutor (porta 34902)
+#   ./start.sh                      # default: hot dev (Next + Turbopack, porta 34827) — UMA URL para o dia-a-dia
+#   ./start.sh --dev                # igual ao default
+#   ./start.sh --local              # next start + /api/chat + tutor (porta 34902; checks LLM antes)
 #   ./start.sh --webplace           # export estático + HTTP (34901); NÃO fala com LLM (só HTML)
 #   ./start.sh --prepare            # valida web/deploy/server.env + health LLM + build:server (NÃO inicia servidor)
 #   ./start.sh --local --ingest     # idem + fila de ingest RAG antes de subir o site
@@ -33,14 +35,17 @@ DO_INGEST=0
 KILL_PORT=1
 LIVE_PORT=34902
 STATIC_PORT=34901
+DEV_PORT=34827
 SKIP_BUILD=0
 DEPLOY_LOCAL_DIR="${DEPLOY_LOCAL_DIR:-/tmp/chineseLearning-webplace-out}"
 
 usage() {
-  echo "Uso: $0 --local | --webplace | --prepare [opções]"
+  echo "Uso: $0 [ --dev | --local | --webplace | --prepare ] [opções]"
   echo ""
-  echo "  --local          Site com API (tutor + LLM). Default porta $LIVE_PORT."
-  echo "  --webplace       Só HTML estático (como nginx webplace). Default porta $STATIC_PORT."
+  echo "  (default / --dev)  Hot reload: Next + Turbopack. URL: http://127.0.0.1:${DEV_PORT}/aulaChines/"
+  echo "                     Tutor usa /tutor (precisa web/.env.local com LLM_API_TOKEN)."
+  echo "  --local          Site com API como em produção + checks LLM antes. Porta $LIVE_PORT."
+  echo "  --webplace       Só HTML estático (como nginx webplace). Porta $STATIC_PORT."
   echo "  --prepare        Produção: valida deploy/server.env, health LLM, npm run build:server."
   echo "                   Não inicia Node nem mata portas (deixa pronto para systemd/pm2 no servidor)."
   echo "  --ingest         Só com --local ou --prepare: corre npm run ingest:rag (precisa token + jq)."
@@ -56,6 +61,7 @@ usage() {
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
+    --dev) MODE=dev; shift ;;
     --local) MODE=local; shift ;;
     --webplace) MODE=webplace; shift ;;
     --prepare) MODE=prepare; shift ;;
@@ -78,9 +84,7 @@ if [[ "${START_NO_KILL_PORT:-}" == "1" ]]; then
 fi
 
 if [[ -z "$MODE" ]]; then
-  echo "Indica --local, --webplace ou --prepare." >&2
-  usage >&2
-  exit 1
+  MODE=dev
 fi
 
 load_env() {
@@ -212,6 +216,28 @@ run_llm_edu_chat_smoke() {
   echo "  OK."
   echo ""
 }
+
+# --- modo dev (default): Next + Turbopack, hot reload — uma URL para desenvolvimento diário
+if [[ "$MODE" == "dev" ]]; then
+  if [[ "$DO_INGEST" == "1" ]]; then
+    echo "Aviso: --ingest não aplica ao modo dev; usa: $0 --local --ingest" >&2
+  fi
+  if [[ "$KILL_PORT" == "1" ]]; then
+    free_port "$DEV_PORT" || true
+  fi
+  if lsof -i ":$DEV_PORT" -sTCP:LISTEN >/dev/null 2>&1; then
+    echo "Porta $DEV_PORT ocupada. Encerra o processo ou altera a porta em web/package.json (script dev)." >&2
+    exit 1
+  fi
+  echo "→ Hot dev (Turbopack) · http://127.0.0.1:${DEV_PORT}/aulaChines/"
+  echo "  Tutor: http://127.0.0.1:${DEV_PORT}/aulaChines/tutor  (precisa web/.env.local)"
+  echo "  Igual: cd web && npm run dev"
+  echo "  Para build + Node como produção (checks LLM): $0 --local"
+  echo "  Ctrl+C para parar."
+  echo ""
+  cd "$WEB_DIR"
+  exec npm run dev
+fi
 
 # --- modo --prepare (produção local: validar + build; não arrancar nada)
 if [[ "$MODE" == "prepare" ]]; then

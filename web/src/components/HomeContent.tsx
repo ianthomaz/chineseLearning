@@ -21,6 +21,13 @@ const modeDefs = [
     descKey: "home.modeVocabDesc",
   },
   {
+    href: "/visuals",
+    modeKey: "visuals" as const,
+    hanzi: "图",
+    color: "#b45309",
+    descKey: "home.modeVisualsDesc",
+  },
+  {
     href: "/grammar",
     modeKey: "grammar" as const,
     hanzi: "语法",
@@ -33,6 +40,13 @@ const modeDefs = [
     hanzi: "对话",
     color: "#6b4f8c",
     descKey: "home.modeDialoguesDesc",
+  },
+  {
+    href: "/gamification",
+    modeKey: "gamification" as const,
+    hanzi: "测",
+    color: "#0d9488",
+    descKey: "home.modeQuizDesc",
   },
   {
     href: "/tutor",
@@ -70,7 +84,7 @@ export function HomeContent({ blocks }: Props) {
       </section>
 
       <section>
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
           {modeDefs.map((m) => (
             <Link
               key={m.href}

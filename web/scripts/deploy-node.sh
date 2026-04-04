@@ -32,11 +32,14 @@ if [[ ! -f "$DEPLOY_ENV_FILE" ]]; then
 fi
 
 echo "→ rsync sources → ${REMOTE}:${REMOTE_DIR}/"
+# pdf-content/*.pdf is gitignored locally but present on your machine → uploaded here.
+# public/downloads/*.pdf is excluded (copied on remote from pdf-content via prebuild sync).
 rsync -avz --delete -e ssh \
   --exclude node_modules \
   --exclude .next \
   --exclude out \
   --exclude .env.local \
+  --exclude 'public/downloads/*.pdf' \
   ./ "${REMOTE}:${REMOTE_DIR}/"
 
 echo "→ scp deploy/server.env"

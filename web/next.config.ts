@@ -8,10 +8,26 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH?.replace(/\/$/, "") ?? "";
 const staticExport = process.env.NEXT_STATIC_EXPORT === "1";
 
 const nextConfig: NextConfig = {
+  transpilePackages: ["react-pdf", "pdfjs-dist"],
   ...(staticExport
-    ? { output: "export" as const, images: { unoptimized: true } }
+    ? {
+        output: "export" as const,
+        images: { unoptimized: true },
+        /** Flat `*.html` paths break `python -m http.server` (no rewrite to `23.html`). Folders + index.html work with `/path/`. */
+        trailingSlash: true,
+      }
     : {}),
   ...(basePath ? { basePath } : {}),
+  /** Prefer in-browser viewing over attachment download for vocabulary PDFs. */
+  async headers() {
+    const prefix = basePath || "";
+    return [
+      {
+        source: `${prefix}/downloads/:path*.pdf`,
+        headers: [{ key: "Content-Disposition", value: "inline" }],
+      },
+    ];
+  },
 };
 
 const withPWA = withPWAInit({

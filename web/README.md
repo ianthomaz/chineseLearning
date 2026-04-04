@@ -4,21 +4,23 @@ This is a [Next.js](https://nextjs.org) project for the Chinese Learning site.
 
 ## `start.sh` (raiz do repositório `chineseLearning/`)
 
-Orquestra **health da API**, verificação do projeto **`chinese_learning`** em `/projects`, **`--ingest`** opcional, e deploy:
+**Desenvolvimento diário (hot reload) — uma URL:**  
+**`./start.sh`** (ou **`./start.sh --dev`**, ou **`cd web && npm run hot`**) → **http://127.0.0.1:34827/aulaChines/** · tutor: **…/aulaChines/tutor** (para a LLM: **`web/.env.local`** com **`LLM_API_TOKEN`**).
 
-- **`./start.sh --local`** — `build:server` + `npm run start:server` na **34902**; **tutor chama a LLM** via `LLM_API_URL` em **`web/.env.local`** (Docker **`http://127.0.0.1:28471`** ou **`https://llm.webplace.cc`** — mesmo token). Site: `http://127.0.0.1:34902/aulaChines/tutor`
-- **`./start.sh --webplace`** — só export estático + Python em **34901**; **não** há `/api/chat` (não testa LLM ao arrancar). Corre `deploy:local` e serve **`$DEPLOY_LOCAL_DIR`** com o site em **`/aulaChines/`**.
-- **`npm run deploy:local:with-api`** — igual a **`deploy:local:live`**: build servidor + Next na **34902** com tutor (precisa **`web/.env.local`**)
-- **`./start.sh --prepare`** — valida **`web/deploy/server.env`** (env de produção no disco; template **`deploy/server.env.example`**) + health LLM + **`npm run build:server`** + teste final **`POST /edu/chat`** (omitir com **`START_SKIP_EDU_SMOKE=1`**); **não** inicia servidor nem mexe em portas
-- **`npm run remote:handshake`** (em `web/`) — SSH para o host de deploy: **`/health`** + **`POST /edu/chat`** usando `server.env` na VM (ver `scripts/remote-prod-handshake.sh`)
-- **`./start.sh --local --ingest`** — checks + fila de ingest + sobe o site com API
-- **`./start.sh --local --skip-build`** — só reinicia o Node (usa `.next` existente)
+Outros modos (só quando precisares):
 
-`./start.sh --help` para todas as opções. **`--local`** e **`deploy:local:with-api`** exigem **`web/.env.local`** (token; URL opcional). **`--webplace`** não precisa de token. Em host partilhado: **`--no-kill-port`** ou **`START_NO_KILL_PORT=1`**.
+- **`./start.sh --local`** — `build:server` + Node na **34902**, com health/smoke da API antes. **`web/.env.local`** obrigatório.
+- **`./start.sh --webplace`** — export estático + Python na **34901**; sem **`/api/chat`**.
+- **`./start.sh --prepare`** — valida **`web/deploy/server.env`** + build + smoke; não inicia servidor.
+- **`npm run deploy:local:with-api`** — igual **`deploy:local:live`** (build + **34902**).
+- **`npm run remote:handshake`** (em `web/`) — SSH: **`/health`** + **`POST /edu/chat`** na VM.
+- **`./start.sh --local --ingest`** / **`--skip-build`** — ver **`./start.sh --help`**.
+
+Em host partilhado: **`--no-kill-port`** ou **`START_NO_KILL_PORT=1`**.
 
 ## Local dev (site + tutor LLM)
 
-O tutor chama **`POST …/api/chat`**, que faz proxy para **`/edu/chat`** na API externa. Isto **não** existe no export estático (`out/`); precisas de **`npm run dev`** ou de **`npm run start:server`** após `npm run build:server` (não uses `next start` em bruto com `basePath` — ver `scripts/start-server-stripped.mjs`).
+O tutor chama **`POST …/api/chat`** → proxy **`/edu/chat`**. No export estático (`out/`) isso não existe; usa **`./start.sh`** (dev) ou **`npm run start:server`** após build (não uses `next start` em bruto com `basePath` — ver `scripts/start-server-stripped.mjs`).
 
 1. **API LLM** — Docker em **`~/Documents/ITCS/featureLLM`**, porta **28471** no Mac. Em **servidor/VM**, o Next deve chamar a API por **URL alcançável** (típico **`https://llm.webplace.cc`**) — ver **`ITCS/featureLLM/docs/MANUAL_INTEGRACAO.md`** § 1.1; **`web/deploy/server.env`** no deploy. Verificação rápida: `npm run check:llm` (lê `.env` + `.env.local`).
 
@@ -27,16 +29,11 @@ O tutor chama **`POST …/api/chat`**, que faz proxy para **`/edu/chat`** na API
 
 4. **RAG** — `ITCS/featureLLM/docs/CHINESE_LEARNING_PROJECT.md` + `CHINESE_LEARNING_SOURCES` no `featureLLM/.env`.
 
-5. **Next em dev** (porta **34827**, **`basePath` `/aulaChines`** — igual à produção local; **hot reload** ao guardar):
-
-   ```bash
-   npm run check:llm   # opcional
-   npm run dev
-   ```
+5. **Hot dev** — preferir na raiz do repo: **`./start.sh`**. Em `web/`: **`npm run dev`** ou **`npm run hot`** (porta **34827**, **`basePath` `/aulaChines`**, reload ao guardar).
 
    Site: [http://127.0.0.1:34827/aulaChines](http://127.0.0.1:34827/aulaChines) · Tutor: [http://127.0.0.1:34827/aulaChines/tutor](http://127.0.0.1:34827/aulaChines/tutor).
 
-   Sem `basePath` (URLs na raiz): `npm run dev:plain`.
+   Sem `basePath`: `npm run dev:plain`.
 
 6. **Produção local (como no servidor)** — mesmo código que em webplace com `basePath` `/aulaChines`:
 
@@ -56,6 +53,15 @@ O tutor chama **`POST …/api/chat`**, que faz proxy para **`/edu/chat`** na API
    Isto corre `connectLLM/ingest-chinese-learning.sh`, que lê `web/.env.local` e faz `POST …/ingest` com `project_id: chinese_learning`. O caminho em `sources` tem de existir **no processo da API** (no Docker, monta o repo ou define `RAG_SOURCES_PATH` — ver [`connectLLM/RAG_PROJETOS_INGEST_ASK.md`](../connectLLM/RAG_PROJETOS_INGEST_ASK.md)).
 
 **Requisitos extra para ingest:** `jq` instalado (`brew install jq`).
+
+## PDFs de vocabulário (`pdf-content/`)
+
+Os ficheiros grandes ficam em **`web/pdf-content/`** (`*.pdf` gitignored). O **`predev`** / **`prebuild`** corre **`sync-pdf-downloads.sh`** (copia para **`public/downloads/`**) e **`build-vocabulary-pdf-manifest.mjs`**, que reescreve **`src/data/vocabulary-pdf-downloads.json`** só com os PDFs que existem na pasta (sem linhas “em breve”).
+
+- **`npm run dev`** / **`npm run build`** — atualiza manifest + cópia para **`public/downloads/`**.
+- **`deploy:node`** — o **rsync** envia a pasta **`pdf-content/`** quando existe na tua máquina; **não** envia cópias redundantes em `public/downloads/*.pdf` (no servidor o **prebuild** volta a sincronizar a partir de `pdf-content/`).
+- **`deploy:webplace`** — corre o build **localmente**; garante que `pdf-content/` tem os PDFs antes do build para o **`out/`** incluir os ficheiros.
+- **URL da lista de PDFs no site:** **`/aulaChines/vocabulary/23`** (o segmento **23** não é bloco do consolidado; está reservado a esta lista).
 
 ## Docs LLM
 

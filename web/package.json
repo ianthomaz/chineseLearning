@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "node scripts/parse-consolidado.mjs",
-    "prebuild": "node scripts/parse-consolidado.mjs",
+    "predev": "node scripts/parse-consolidado.mjs && bash scripts/sync-pdf-downloads.sh && node scripts/build-vocabulary-pdf-manifest.mjs",
+    "prebuild": "node scripts/parse-consolidado.mjs && bash scripts/sync-pdf-downloads.sh && node scripts/build-vocabulary-pdf-manifest.mjs",
     "review-extras:locales": "node scripts/build-review-extras-md.mjs",
     "dev": "NEXT_PUBLIC_BASE_PATH=/aulaChines next dev --turbopack -p 34827",
+    "hot": "npm run dev",
     "dev:plain": "next dev --turbopack -p 34827",
     "build": "next build",
     "build:webplace": "NEXT_PUBLIC_BASE_PATH=/aulaChines NEXT_STATIC_EXPORT=1 next build",
@@ -32,9 +33,11 @@
     "@ducanh2912/next-pwa": "^10.2.9",
     "hanzi-writer": "^3.7.3",
     "next": "^15.3.9",
+    "pdfjs-dist": "^4.8.69",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-markdown": "^10.1.0",
+    "react-pdf": "^9.2.1",
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {

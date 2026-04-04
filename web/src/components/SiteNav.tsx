@@ -8,8 +8,10 @@ import { localeMeta, locales, useLocale } from "@/context/LocaleContext";
 const NAV_TABS = [
   { href: "/review", key: "review" as const },
   { href: "/vocabulary", key: "vocabulary" as const },
+  { href: "/visuals", key: "visuals" as const },
   { href: "/grammar", key: "grammar" as const },
   { href: "/dialogues", key: "dialogues" as const },
+  { href: "/gamification", key: "gamification" as const },
   { href: "/tutor", key: "tutor" as const },
 ] as const;
 
