@@ -1,5 +1,5 @@
-import { GamificationHub } from "@/components/gamification/GamificationHub";
+import { QuizGame } from "@/components/QuizGame";
 
 export default function GamificationPage() {
-  return <GamificationHub />;
+  return <QuizGame />;
 }

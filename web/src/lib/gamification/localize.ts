@@ -42,3 +42,21 @@ export function questionTypeDisplayName(
   if (locale === "es") return spec.name_es;
   return spec.name;
 }
+
+export function localizedCorrectAnswer(q: QuizQuestion, locale: AppLocale): string {
+  const key = `correct_answer_${locale}` as keyof QuizQuestion;
+  const v = q[key];
+  return typeof v === "string" ? v : "";
+}
+
+export function localizedCorrectOrder(q: QuizQuestion, locale: AppLocale): string[] {
+  const key = `correct_order_${locale}` as keyof QuizQuestion;
+  const v = q[key];
+  return Array.isArray(v) ? (v as string[]) : [];
+}
+
+export function localizedWords(q: QuizQuestion, locale: AppLocale): string[] {
+  const key = `words_${locale}` as keyof QuizQuestion;
+  const v = q[key];
+  return Array.isArray(v) ? (v as string[]) : [];
+}

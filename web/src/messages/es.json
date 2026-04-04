@@ -25,7 +25,18 @@
     "previewHeading": "Vista previa",
     "previewHint": "La interfaz interactiva del cuestionario llegará en la siguiente fase.",
     "blockLabel": "Bloque {n}",
-    "roadmap": "Siguientes pasos: corrección automática, audio (listening), ordenar arrastrando y progreso guardado en este dispositivo."
+    "roadmap": "Siguientes pasos: corrección automática, audio (listening), ordenar arrastrando y progreso guardado en este dispositivo.",
+    "progress": "Pregunta {current} de {total}",
+    "validating": "Comprobando respuesta...",
+    "correct": "✓ ¡Correcto!",
+    "incorrect": "✗ Incorrecto",
+    "submit": "Responder",
+    "next": "Siguiente pregunta",
+    "finish": "Terminar quiz",
+    "finished": "¡Quiz completado!",
+    "finalScore": "Tu puntuación",
+    "restart": "Intentar de nuevo",
+    "explanation": "Explicación"
   },
   "pinyin": {
     "on": "Con pinyin",

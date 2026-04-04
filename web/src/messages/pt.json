@@ -25,7 +25,18 @@
     "previewHeading": "Pré-visualização",
     "previewHint": "A interface de quiz interativa virá na próxima etapa.",
     "blockLabel": "Bloco {n}",
-    "roadmap": "Próximos passos: correção automática, áudio (listening), arrastar para ordenar e progresso guardado neste dispositivo."
+    "roadmap": "Próximos passos: correção automática, áudio (listening), arrastar para ordenar e progresso guardado neste dispositivo.",
+    "progress": "Pergunta {current} de {total}",
+    "validating": "Validando resposta...",
+    "correct": "✓ Correto!",
+    "incorrect": "✗ Incorreto",
+    "submit": "Responder",
+    "next": "Próxima pergunta",
+    "finish": "Terminar quiz",
+    "finished": "Quiz concluído!",
+    "finalScore": "Sua pontuação",
+    "restart": "Começar novamente",
+    "explanation": "Explicação"
   },
   "pinyin": {
     "on": "Com pinyin",
