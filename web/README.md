@@ -59,7 +59,7 @@ O tutor chama **`POST …/api/chat`** → proxy **`/edu/chat`**. No export está
 Os ficheiros grandes ficam em **`web/pdf-content/`** (`*.pdf` gitignored). O **`predev`** / **`prebuild`** corre **`sync-pdf-downloads.sh`** (copia para **`public/downloads/`**) e **`build-vocabulary-pdf-manifest.mjs`**, que reescreve **`src/data/vocabulary-pdf-downloads.json`** só com os PDFs que existem na pasta (sem linhas “em breve”).
 
 - **`npm run dev`** / **`npm run build`** — atualiza manifest + cópia para **`public/downloads/`**.
-- **`deploy:node`** — o **rsync** envia a pasta **`pdf-content/`** quando existe na tua máquina; **não** envia cópias redundantes em `public/downloads/*.pdf` (no servidor o **prebuild** volta a sincronizar a partir de `pdf-content/`).
+- **`deploy:node`** — o **rsync** envia a pasta **`pdf-content/`** quando existe na tua máquina; **não** envia cópias redundantes em `public/downloads/*.pdf` (no servidor o **`build:server`** corre **`npm run prebuild:pdf`** primeiro — só sync + manifest, sem `parse-consolidado`, porque **`Content/`** não vai no rsync).
 - **`deploy:webplace`** — corre o build **localmente**; garante que `pdf-content/` tem os PDFs antes do build para o **`out/`** incluir os ficheiros.
 - **URL da lista de PDFs no site:** **`/aulaChines/vocabulary/23`** (o segmento **23** não é bloco do consolidado; está reservado a esta lista).
 

@@ -33,7 +33,7 @@ fi
 
 echo "→ rsync sources → ${REMOTE}:${REMOTE_DIR}/"
 # pdf-content/*.pdf is gitignored locally but present on your machine → uploaded here.
-# public/downloads/*.pdf is excluded (copied on remote from pdf-content via prebuild sync).
+# public/downloads/*.pdf is excluded (copied on remote from pdf-content via prebuild:pdf before next build in build:server).
 rsync -avz --delete -e ssh \
   --exclude node_modules \
   --exclude .next \

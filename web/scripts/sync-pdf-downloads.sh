@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 # Copy large vocabulary PDFs from pdf-content/ → public/downloads/ before Next build.
-# pdf-content/*.pdf is gitignored; deploy rsync uploads pdf-content/; remote prebuild runs this script.
+# pdf-content/*.pdf is gitignored; deploy rsync uploads pdf-content/; prebuild / prebuild:pdf runs this before next build.
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WEB_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 SRC="$WEB_DIR/pdf-content"
