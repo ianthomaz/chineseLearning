@@ -23,4 +23,4 @@ Isto invoca **`connectLLM/ingest-chinese-learning.sh`**. Requisitos adicionais (
 
 ## Ficheiros de referência em `rag_knowledge/`
 
-Exemplos: `extraContent.md`, `vocabulario_estruturas.md`, `dialogos_pratica.md`. Alterações aqui implicam **voltar a correr ingest** se quiseres o índice na API atualizado.
+Exemplos: `extraContent.md`, `vocabulario_estruturas.md`, `dialogos_pratica.md`, `hsk1_interrogatives_pt.md` (perguntas WH / HSK1). Alterações aqui implicam **voltar a correr ingest** se quiseres o índice na API atualizado.
