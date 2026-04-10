@@ -238,6 +238,19 @@
     "unavailable": "Não há animação de traços para este carácter nos dados em uso.",
     "creditsModal": "Biblioteca Hanzi Writer (licença MIT). Dados de traços no repositório hanzi-writer-data; a cadeia de atribuição inclui Make Me a Hanzi e fontes Arphic (1999). Consulta as licenças nos repositórios antes de redistribuir cópias dos dados."
   },
+  "writingGame": {
+    "sectionTitle": "Escrita aleatória",
+    "sectionDesc": "10 hanzi de 2 temas sorteados — vê a animação, pratica a escrita e passa ao seguinte.",
+    "start": "Começar sessão",
+    "progress": "{current} / {total}",
+    "blockBadge": "Bloco {id} · {title}",
+    "next": "Próximo →",
+    "prev": "← Anterior",
+    "finish": "Concluir",
+    "done": "Sessão concluída!",
+    "doneDesc": "Praticaste caracteres de: {blocks}.",
+    "newSession": "Nova sessão"
+  },
   "grammar": {
     "empty": "Não há notas de gramática neste bloco no consolidado.",
     "structures": "Estruturas e exemplos",

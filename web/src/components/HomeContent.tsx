@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { BlockTitleText } from "@/components/BlockTitleText";
+import { HanziWritingGame } from "@/components/HanziWritingGame";
 import type { ContentBlock } from "@/lib/blocks";
 import { useLocale } from "@/context/LocaleContext";
 
@@ -130,6 +131,8 @@ export function HomeContent({ blocks }: Props) {
           ))}
         </div>
       </section>
+
+      <HanziWritingGame />
 
       <section className="mt-16 border-t pt-12" style={{ borderColor: "var(--border)" }}>
         <div className="mb-6 flex items-baseline justify-between">
