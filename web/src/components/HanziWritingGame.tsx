@@ -3,7 +3,6 @@
 import HanziWriter from "hanzi-writer";
 import { useCallback, useEffect, useRef, useState, useMemo } from "react";
 import { useLocale } from "@/context/LocaleContext";
-import { blocks } from "@/lib/blocks";
 import { extractHanziFromWord } from "@/lib/hanzi-chars";
 import type { VocabRow, ContentBlock } from "@/lib/blocks";
 
@@ -37,8 +36,8 @@ function pickRandom<T>(arr: T[], n: number): T[] {
   return shuffled(arr).slice(0, n);
 }
 
-function buildSession(): { cards: GameCard[]; ok: boolean } {
-  const eligible = blocks.filter(
+function buildSession(allBlocks: ContentBlock[]): { cards: GameCard[]; ok: boolean } {
+  const eligible = allBlocks.filter(
     (b) => b.vocabulary.filter((v) => extractHanziFromWord(v.hanzi).length > 0).length >= 5,
   );
 
@@ -246,7 +245,7 @@ function InlineHanziWriter({ characters }: { characters: string[] }) {
 // Main game component
 // ---------------------------------------------------------------------------
 
-export function HanziWritingGame() {
+export function HanziWritingGame({ blocks }: { blocks: ContentBlock[] }) {
   const { t } = useLocale();
   const [state, setState] = useState<GameState>("idle");
   const [cards, setCards] = useState<GameCard[]>([]);
@@ -265,12 +264,12 @@ export function HanziWritingGame() {
   }, [cards]);
 
   const startSession = useCallback(() => {
-    const session = buildSession();
+    const session = buildSession(blocks);
     if (!session.ok) return;
     setCards(session.cards);
     setCurrentIndex(0);
     setState("playing");
-  }, []);
+  }, [blocks]);
 
   const goNext = useCallback(() => {
     if (currentIndex < cards.length - 1) {

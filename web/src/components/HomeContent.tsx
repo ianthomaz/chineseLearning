@@ -132,7 +132,7 @@ export function HomeContent({ blocks }: Props) {
         </div>
       </section>
 
-      <HanziWritingGame />
+      <HanziWritingGame blocks={blocks} />
 
       <section className="mt-16 border-t pt-12" style={{ borderColor: "var(--border)" }}>
         <div className="mb-6 flex items-baseline justify-between">
