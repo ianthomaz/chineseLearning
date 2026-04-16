@@ -3,6 +3,7 @@
 import HanziWriter from "hanzi-writer";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState, useMemo } from "react";
+import { trackEvent } from "@/lib/analytics";
 import { useLocale } from "@/context/LocaleContext";
 import { extractHanziFromWord } from "@/lib/hanzi-chars";
 import type { VocabRow, ContentBlock } from "@/lib/blocks";
@@ -69,7 +70,15 @@ function buildSession(allBlocks: ContentBlock[]): { cards: GameCard[]; ok: boole
 // Inline HanziWriter (no modal — lives inside the game card)
 // ---------------------------------------------------------------------------
 
-function InlineHanziWriter({ characters }: { characters: string[] }) {
+function InlineHanziWriter({
+  characters,
+  autoStartQuiz = true,
+  onCharComplete,
+}: {
+  characters: string[];
+  autoStartQuiz?: boolean;
+  onCharComplete?: (char: string) => void;
+}) {
   const { t } = useLocale();
   const containerRef = useRef<HTMLDivElement>(null);
   const writerRef = useRef<HanziWriter | null>(null);
@@ -121,19 +130,32 @@ function InlineHanziWriter({ characters }: { characters: string[] }) {
 
     writerRef.current = writer;
 
-    const prefersReduced =
-      typeof window !== "undefined" &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReduced) {
-      void writer.showOutline().then(() => writer.animateCharacter());
+    if (autoStartQuiz) {
+      setInQuiz(true);
+      void writer.quiz({
+        markStrokeCorrectAfterMisses: 3,
+        showHintAfterMisses: 2,
+        onComplete: () => {
+          setQuizDone(true);
+          setInQuiz(false);
+          onCharComplete?.(activeChar);
+        },
+      });
     } else {
-      void writer.animateCharacter();
+      const prefersReduced =
+        typeof window !== "undefined" &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (prefersReduced) {
+        void writer.showOutline().then(() => writer.animateCharacter());
+      } else {
+        void writer.animateCharacter();
+      }
     }
 
     return () => {
       disposeWriter();
     };
-  }, [activeChar, disposeWriter]);
+  }, [activeChar, autoStartQuiz, disposeWriter, onCharComplete]);
 
   const replayAnimation = useCallback(() => {
     const w = writerRef.current;
@@ -202,7 +224,11 @@ function InlineHanziWriter({ characters }: { characters: string[] }) {
             {t("hanziWriter.unavailable")}
           </p>
         ) : (
-          <div ref={containerRef} className="hanzi-writer-host" />
+          <div
+            ref={containerRef}
+            className="hanzi-writer-host"
+            style={{ width: "220px", height: "220px" }}
+          />
         )}
       </div>
 
@@ -269,6 +295,14 @@ export function HanziWritingGame({
   autoStartSession = false,
 }: HanziWritingGameProps) {
   const { t } = useLocale();
+
+  const handleCharComplete = useCallback((char: string) => {
+    trackEvent({
+      action: "hanzi_drawn",
+      category: "writing_game",
+      label: char,
+    });
+  }, []);
   const router = useRouter();
   const sectionClass = embeddedInPage ? "mt-0" : "mt-12";
   const [state, setState] = useState<GameState>("idle");
@@ -294,6 +328,11 @@ export function HanziWritingGame({
     setCards(session.cards);
     setCurrentIndex(0);
     setState("playing");
+    trackEvent({
+      action: "practice_start",
+      category: "writing_game",
+      label: "randomhanzi",
+    });
     return true;
   }, [blocks]);
 
@@ -314,6 +353,11 @@ export function HanziWritingGame({
       setCurrentIndex((i) => i + 1);
     } else {
       setState("done");
+      trackEvent({
+        action: "practice_complete",
+        category: "writing_game",
+        label: "randomhanzi",
+      });
     }
   }, [currentIndex, cards.length]);
 
@@ -489,6 +533,8 @@ export function HanziWritingGame({
         <InlineHanziWriter
           key={`${currentIndex}-${currentCard.vocab.hanzi}`}
           characters={currentCard.chars}
+          autoStartQuiz={true}
+          onCharComplete={handleCharComplete}
         />
 
         {/* Navigation */}
