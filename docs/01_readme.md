@@ -16,7 +16,7 @@
 
 O site de aprendizagem de chinês vive em **`web/`** (Next.js 15, React 19). O tutor usa **`POST /aulaChines/api/chat`**, que faz proxy para a API externa no eixo educacional **`/edu/chat`**. O export estático (`out/`) **não** expõe esse POST; para tutor com LLM é preciso **`next dev`** / **`next start`**.
 
-Para o dia a dia: na raiz, **`./start.sh`** (sem flags) sobe **hot reload** numa única URL — **http://127.0.0.1:34827/aulaChines/** (igual `cd web && npm run dev`). Para Node como em produção **com** health/smoke da API antes, usa **`./start.sh --local`** (porta **34902** por defeito). Detalhes em [04_operacao_local.md](04_operacao_local.md).
+Operação em máquina (portas, URLs, deploy local, `start.sh`): **[04_operacao_local.md](04_operacao_local.md)** — **única** fonte; não duplicar noutros ficheiros.
 
 Documentação técnica aprofundada da API (contratos, token, RAG na API) continua em **`connectLLM/*.md`**; este `docs/` resume o fluxo no âmbito deste repo e aponta para lá quando fizer falta.
 

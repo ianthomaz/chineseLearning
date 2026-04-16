@@ -3,7 +3,7 @@ set -euo pipefail
 # Serve o export de deploy:local (basePath /aulaChines). Corre deploy:local antes se a pasta não existir.
 #
 #   npm run serve:local
-#   DEPLOY_LOCAL_DIR=/caminho PORT=34902 npm run serve:local
+#   DEPLOY_LOCAL_DIR=/caminho PORT=34901 npm run serve:local
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WEB_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"

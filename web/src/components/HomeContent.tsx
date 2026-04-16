@@ -2,61 +2,83 @@
 
 import Link from "next/link";
 import { BlockTitleText } from "@/components/BlockTitleText";
-import { HanziWritingGame } from "@/components/HanziWritingGame";
 import type { ContentBlock } from "@/lib/blocks";
 import { useLocale } from "@/context/LocaleContext";
 
-const modeDefs = [
+type NavGridCard = {
+  href: string;
+  modeKey:
+    | "review"
+    | "vocabulary"
+    | "visuals"
+    | "grammar"
+    | "dialogues"
+    | "writing"
+    | "gamification"
+    | "tutor";
+  hanzi: string;
+  color: string;
+  descKey: string;
+};
+
+const homeGridCards: ReadonlyArray<NavGridCard> = [
   {
     href: "/review",
-    modeKey: "review" as const,
+    modeKey: "review",
     hanzi: "复习",
     color: "var(--accent)",
     descKey: "home.modeReviewDesc",
   },
   {
     href: "/vocabulary",
-    modeKey: "vocabulary" as const,
+    modeKey: "vocabulary",
     hanzi: "词汇",
     color: "var(--accent-warm)",
     descKey: "home.modeVocabDesc",
   },
   {
     href: "/visuals",
-    modeKey: "visuals" as const,
+    modeKey: "visuals",
     hanzi: "图",
     color: "#b45309",
     descKey: "home.modeVisualsDesc",
   },
   {
     href: "/grammar",
-    modeKey: "grammar" as const,
+    modeKey: "grammar",
     hanzi: "语法",
     color: "#3d6b4a",
     descKey: "home.modeGrammarDesc",
   },
   {
     href: "/dialogues",
-    modeKey: "dialogues" as const,
+    modeKey: "dialogues",
     hanzi: "对话",
     color: "#6b4f8c",
     descKey: "home.modeDialoguesDesc",
   },
   {
+    href: "/randomhanzi?autostart=1",
+    modeKey: "writing",
+    hanzi: "写",
+    color: "#047857",
+    descKey: "home.modeWritingDesc",
+  },
+  {
     href: "/gamification",
-    modeKey: "gamification" as const,
+    modeKey: "gamification",
     hanzi: "测",
     color: "#0d9488",
     descKey: "home.modeQuizDesc",
   },
   {
     href: "/tutor",
-    modeKey: "tutor" as const,
+    modeKey: "tutor",
     hanzi: "练习",
     color: "#d97706",
     descKey: "home.modeTutorDesc",
   },
-] as const;
+];
 
 type Props = {
   blocks: ContentBlock[];
@@ -86,7 +108,7 @@ export function HomeContent({ blocks }: Props) {
 
       <section>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
-          {modeDefs.map((m) => (
+          {homeGridCards.map((m) => (
             <Link
               key={m.href}
               href={m.href}
@@ -131,8 +153,6 @@ export function HomeContent({ blocks }: Props) {
           ))}
         </div>
       </section>
-
-      <HanziWritingGame blocks={blocks} />
 
       <section className="mt-16 border-t pt-12" style={{ borderColor: "var(--border)" }}>
         <div className="mb-6 flex items-baseline justify-between">

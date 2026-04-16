@@ -25,7 +25,7 @@
     "deploy:local:with-api": "bash scripts/deploy-local-live.sh",
     "check:llm": "bash scripts/check-llm-health.sh",
     "ingest:rag": "bash ../connectLLM/ingest-chinese-learning.sh",
-    "start": "PORT=34827 node scripts/start-server-stripped.mjs",
+    "start": "PORT=34902 node scripts/start-server-stripped.mjs",
     "start:server": "node scripts/start-server-stripped.mjs",
     "lint": "next lint",
     "pwa:icons": "node scripts/generate-pwa-icons.mjs"

@@ -1,6 +1,7 @@
 "use client";
 
 import HanziWriter from "hanzi-writer";
+import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState, useMemo } from "react";
 import { useLocale } from "@/context/LocaleContext";
 import { extractHanziFromWord } from "@/lib/hanzi-chars";
@@ -119,7 +120,15 @@ function InlineHanziWriter({ characters }: { characters: string[] }) {
     });
 
     writerRef.current = writer;
-    void writer.loopCharacterAnimation();
+
+    const prefersReduced =
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReduced) {
+      void writer.showOutline().then(() => writer.animateCharacter());
+    } else {
+      void writer.animateCharacter();
+    }
 
     return () => {
       disposeWriter();
@@ -136,7 +145,7 @@ function InlineHanziWriter({ characters }: { characters: string[] }) {
     } catch {
       /* ignore */
     }
-    void w.pauseAnimation().then(() => void w.loopCharacterAnimation());
+    void w.pauseAnimation().then(() => void w.animateCharacter());
   }, [loadError]);
 
   const startQuiz = useCallback(() => {
@@ -203,7 +212,8 @@ function InlineHanziWriter({ characters }: { characters: string[] }) {
           <button
             type="button"
             onClick={replayAnimation}
-            className="rounded-lg border-2 border-stone-300 bg-white px-3 py-2 text-sm font-semibold text-stone-800 shadow-sm transition-all hover:border-stone-400 hover:bg-stone-50 active:bg-stone-100 active:shadow-inner"
+            title={inQuiz ? t("hanziWriter.replayExitQuiz") : undefined}
+            className="rounded-lg border-2 border-teal-600 bg-teal-600 px-3 py-2 text-sm font-semibold text-white shadow-md transition-all hover:bg-teal-700 active:bg-teal-800 active:translate-y-px active:shadow-inner"
           >
             {t("hanziWriter.replay")}
           </button>
@@ -211,7 +221,7 @@ function InlineHanziWriter({ characters }: { characters: string[] }) {
             type="button"
             onClick={startQuiz}
             disabled={inQuiz}
-            className="rounded-lg border-2 border-teal-600 bg-teal-600 px-3 py-2 text-sm font-semibold text-white shadow-md transition-all hover:bg-teal-700 disabled:pointer-events-none disabled:opacity-40 active:bg-teal-800 active:translate-y-px active:shadow-inner"
+            className="rounded-lg border-2 border-stone-300 bg-white px-3 py-2 text-sm font-semibold text-stone-800 shadow-sm transition-all hover:border-stone-400 hover:bg-stone-50 disabled:pointer-events-none disabled:opacity-40 active:bg-stone-100 active:shadow-inner"
           >
             {t("hanziWriter.quiz")}
           </button>
@@ -245,11 +255,26 @@ function InlineHanziWriter({ characters }: { characters: string[] }) {
 // Main game component
 // ---------------------------------------------------------------------------
 
-export function HanziWritingGame({ blocks }: { blocks: ContentBlock[] }) {
+export type HanziWritingGameProps = {
+  blocks: ContentBlock[];
+  /** Tighter top margin when embedded in `/randomhanzi` instead of a standalone shell. */
+  embeddedInPage?: boolean;
+  /** When true (from `?autostart=1`), start a session once after mount on the practice page. */
+  autoStartSession?: boolean;
+};
+
+export function HanziWritingGame({
+  blocks,
+  embeddedInPage = false,
+  autoStartSession = false,
+}: HanziWritingGameProps) {
   const { t } = useLocale();
+  const router = useRouter();
+  const sectionClass = embeddedInPage ? "mt-0" : "mt-12";
   const [state, setState] = useState<GameState>("idle");
   const [cards, setCards] = useState<GameCard[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const autostartConsumedRef = useRef(false);
 
   const blockTitles = useMemo(() => {
     const seen = new Set<number>();
@@ -263,13 +288,26 @@ export function HanziWritingGame({ blocks }: { blocks: ContentBlock[] }) {
     return titles;
   }, [cards]);
 
-  const startSession = useCallback(() => {
+  const startSession = useCallback((): boolean => {
     const session = buildSession(blocks);
-    if (!session.ok) return;
+    if (!session.ok) return false;
     setCards(session.cards);
     setCurrentIndex(0);
     setState("playing");
+    return true;
   }, [blocks]);
+
+  useEffect(() => {
+    if (!autoStartSession) return;
+    if (autostartConsumedRef.current) return;
+    autostartConsumedRef.current = true;
+    const ok = startSession();
+    if (!ok) {
+      autostartConsumedRef.current = false;
+      return;
+    }
+    router.replace("/randomhanzi", { scroll: false });
+  }, [autoStartSession, router, startSession]);
 
   const goNext = useCallback(() => {
     if (currentIndex < cards.length - 1) {
@@ -287,8 +325,24 @@ export function HanziWritingGame({ blocks }: { blocks: ContentBlock[] }) {
 
   // --- Idle ---
   if (state === "idle") {
+    const startCtaClassName =
+      "inline-flex rounded-lg px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90 active:opacity-80";
+    if (embeddedInPage) {
+      return (
+        <button
+          type="button"
+          onClick={() => {
+            void startSession();
+          }}
+          className={startCtaClassName}
+          style={{ backgroundColor: "#0d9488" }}
+        >
+          {t("writingGame.start")}
+        </button>
+      );
+    }
     return (
-      <section className="mt-12">
+      <section className={sectionClass}>
         <div
           className="rounded-2xl border p-6 sm:p-8"
           style={{ borderColor: "var(--border)", backgroundColor: "var(--paper)" }}
@@ -302,7 +356,7 @@ export function HanziWritingGame({ blocks }: { blocks: ContentBlock[] }) {
                 写
               </span>
             </div>
-            <div className="flex-1">
+            <div className="min-w-0 flex-1">
               <h2
                 className="text-base font-semibold text-ink"
                 style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
@@ -314,8 +368,10 @@ export function HanziWritingGame({ blocks }: { blocks: ContentBlock[] }) {
               </p>
               <button
                 type="button"
-                onClick={startSession}
-                className="mt-5 rounded-lg px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90 active:opacity-80"
+                onClick={() => {
+                  void startSession();
+                }}
+                className={`${startCtaClassName} mt-5`}
                 style={{ backgroundColor: "#0d9488" }}
               >
                 {t("writingGame.start")}
@@ -330,7 +386,7 @@ export function HanziWritingGame({ blocks }: { blocks: ContentBlock[] }) {
   // --- Done ---
   if (state === "done") {
     return (
-      <section className="mt-12">
+      <section className={sectionClass}>
         <div
           className="rounded-2xl border p-6 sm:p-8"
           style={{ borderColor: "var(--border)", backgroundColor: "var(--paper)" }}
@@ -347,7 +403,9 @@ export function HanziWritingGame({ blocks }: { blocks: ContentBlock[] }) {
           </p>
           <button
             type="button"
-            onClick={startSession}
+            onClick={() => {
+              void startSession();
+            }}
             className="mt-5 rounded-lg px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90 active:opacity-80"
             style={{ backgroundColor: "#0d9488" }}
           >
@@ -362,14 +420,14 @@ export function HanziWritingGame({ blocks }: { blocks: ContentBlock[] }) {
   if (!currentCard) return null;
 
   return (
-    <section className="mt-12">
+    <section className={sectionClass}>
       <div
         className="rounded-2xl border p-6 sm:p-8"
         style={{ borderColor: "var(--border)", backgroundColor: "var(--paper)" }}
       >
         {/* Header row */}
-        <div className="mb-5 flex items-start justify-between gap-4">
-          <div>
+        <div className="mb-5 flex flex-wrap items-start justify-between gap-3">
+          <div className="min-w-0 flex-1">
             <p
               className="text-xs font-medium uppercase tracking-widest text-ink/40"
               style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
@@ -386,15 +444,17 @@ export function HanziWritingGame({ blocks }: { blocks: ContentBlock[] }) {
               })}
             </p>
           </div>
-          <span
-            className="shrink-0 rounded-full px-3 py-1 text-xs font-semibold text-white"
-            style={{ backgroundColor: "#0d9488" }}
-          >
-            {t("writingGame.progress", {
-              current: currentIndex + 1,
-              total: cards.length,
-            })}
-          </span>
+          <div className="flex shrink-0 flex-wrap items-center justify-end gap-2">
+            <span
+              className="rounded-full px-3 py-1 text-xs font-semibold text-white"
+              style={{ backgroundColor: "#0d9488" }}
+            >
+              {t("writingGame.progress", {
+                current: currentIndex + 1,
+                total: cards.length,
+              })}
+            </span>
+          </div>
         </div>
 
         {/* Progress bar */}

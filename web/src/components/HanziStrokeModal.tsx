@@ -93,7 +93,7 @@ export function HanziStrokeModal({
     if (prefersReduced) {
       void writer.showOutline().then(() => writer.animateCharacter());
     } else {
-      void writer.loopCharacterAnimation();
+      void writer.animateCharacter();
     }
 
     return () => {
@@ -121,7 +121,7 @@ export function HanziStrokeModal({
       /* ignore */
     }
     void w.pauseAnimation().then(() => {
-      void w.loopCharacterAnimation();
+      void w.animateCharacter();
     });
   };
 
@@ -234,7 +234,7 @@ export function HanziStrokeModal({
             <div className="flex flex-wrap gap-2">
               <button
                 type="button"
-                className="rounded-lg border-2 border-stone-300 bg-white px-3 py-2 text-sm font-semibold text-stone-800 shadow-sm transition-all hover:border-stone-400 hover:bg-stone-50 active:border-stone-500 active:bg-stone-100 active:shadow-inner"
+                className="rounded-lg border-2 border-teal-600 bg-teal-600 px-3 py-2 text-sm font-semibold text-white shadow-md transition-all hover:border-teal-700 hover:bg-teal-700 active:border-teal-800 active:bg-teal-800 active:shadow-inner active:translate-y-px"
                 onClick={replayAnimation}
                 title={inQuiz ? t("hanziWriter.replayExitQuiz") : undefined}
               >
@@ -243,7 +243,7 @@ export function HanziStrokeModal({
               <button
                 type="button"
                 disabled={inQuiz}
-                className="rounded-lg border-2 border-teal-600 bg-teal-600 px-3 py-2 text-sm font-semibold text-white shadow-md transition-all hover:border-teal-700 hover:bg-teal-700 disabled:pointer-events-none disabled:opacity-40 active:border-teal-800 active:bg-teal-800 active:shadow-inner active:translate-y-px"
+                className="rounded-lg border-2 border-stone-300 bg-white px-3 py-2 text-sm font-semibold text-stone-800 shadow-sm transition-all hover:border-stone-400 hover:bg-stone-50 disabled:pointer-events-none disabled:opacity-40 active:border-stone-500 active:bg-stone-100 active:shadow-inner active:translate-y-px"
                 onClick={startQuiz}
               >
                 {t("hanziWriter.quiz")}

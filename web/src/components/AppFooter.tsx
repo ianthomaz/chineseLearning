@@ -1,53 +1,20 @@
 "use client";
 
-import { useLocale } from "@/context/LocaleContext";
+import { usePathname } from "next/navigation";
+import { SiteAttributionCredits } from "@/components/SiteAttributionCredits";
+
+function isRandomHanziPath(pathname: string | null): boolean {
+  if (!pathname) return false;
+  return pathname === "/randomhanzi" || pathname.endsWith("/randomhanzi");
+}
 
 export function AppFooter() {
-  const { t } = useLocale();
+  const pathname = usePathname();
+  if (isRandomHanziPath(pathname)) return null;
+
   return (
-    <footer className="mx-auto max-w-6xl border-t border-ink/10 px-4 py-8 pb-[max(2rem,env(safe-area-inset-bottom,0px))] text-center text-xs leading-relaxed text-ink/45 sm:px-5 sm:py-10">
-      <p>
-        {t("footer.phraseFont")}{" "}
-        <a
-          href="https://github.com/parlr/hanzi-pinyin-font"
-          className="text-accent underline decoration-accent/25 underline-offset-2"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {t("footer.phraseFontLink")}
-        </a>
-        . {t("footer.rest")} {t("footer.license")}
-      </p>
-      <p className="mt-3">
-        {t("footer.hanziWriterIntro")}{" "}
-        <a
-          href="https://github.com/chanind/hanzi-writer"
-          className="text-accent underline decoration-accent/25 underline-offset-2"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {t("footer.hanziWriterLib")}
-        </a>{" "}
-        {t("footer.hanziWriterMid")}{" "}
-        <a
-          href="https://github.com/chanind/hanzi-writer-data"
-          className="text-accent underline decoration-accent/25 underline-offset-2"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {t("footer.hanziWriterData")}
-        </a>{" "}
-        {t("footer.hanziWriterTail")}{" "}
-        <a
-          href="https://github.com/skishore/makemeahanzi"
-          className="text-accent underline decoration-accent/25 underline-offset-2"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {t("footer.hanziWriterMmh")}
-        </a>
-        {t("footer.hanziWriterEnd")}
-      </p>
+    <footer className="mx-auto max-w-6xl border-t border-ink/10 px-4 py-8 pb-[max(2rem,env(safe-area-inset-bottom,0px))] sm:px-5 sm:py-10">
+      <SiteAttributionCredits />
     </footer>
   );
 }

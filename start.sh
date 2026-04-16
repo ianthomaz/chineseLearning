@@ -4,10 +4,11 @@ set -euo pipefail
 # Orquestra verificação de ambiente + ingest opcional + deploy local OU preparação para produção.
 #
 # Uso:
-#   ./start.sh                      # default: hot dev (Next + Turbopack, porta 34827) — UMA URL para o dia-a-dia
+#   Portas, URLs, deploy local: docs/04_operacao_local.md (única fonte)
+#   ./start.sh                      # default: hot dev (34827)
 #   ./start.sh --dev                # igual ao default
-#   ./start.sh --local              # next start + /api/chat + tutor (porta 34902; checks LLM antes)
-#   ./start.sh --webplace           # export estático + HTTP (34901); NÃO fala com LLM (só HTML)
+#   ./start.sh --local              # deploy local Node (34902) + checks LLM
+#   ./start.sh --webplace           # estático (34901)
 #   ./start.sh --prepare            # valida web/deploy/server.env + health LLM + build:server (NÃO inicia servidor)
 #   ./start.sh --local --ingest     # idem + fila de ingest RAG antes de subir o site
 #   ./start.sh --local --port=34903
@@ -23,9 +24,8 @@ set -euo pipefail
 #
 # Variáveis: DEPLOY_LOCAL_DIR (export estático fica em \$DEPLOY_LOCAL_DIR/aulaChines/; ver modo --webplace)
 #
-# LLM_API_URL: fallback http://127.0.0.1:28471 só faz sentido com API Docker no mesmo Mac.
-# Produção / VM: definir em web/deploy/server.env — ver ITCS/featureLLM/docs/MANUAL_INTEGRACAO.md § 1.1
-# (https://llm.webplace.cc ou IP Tailscale do mini62; itcsVM + 127.0.0.1 só com túnel SSH).
+# LLM: --local (default) continua a chamar a API (health, smoke, ingest com --ingest) via LLM_API_URL em .env/.env.local.
+# Isso é integração / “está operacional?”, não é “porta da LLM no contrato deste repo” — a URL é teu env (ver connectLLM/).
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WEB_DIR="$REPO_ROOT/web"
@@ -42,6 +42,8 @@ DEPLOY_LOCAL_DIR="${DEPLOY_LOCAL_DIR:-/tmp/chineseLearning-webplace-out}"
 usage() {
   echo "Uso: $0 [ --dev | --local | --webplace | --prepare ] [opções]"
   echo ""
+  echo "  Portas fixas (só este site): dev=$DEV_PORT  node-local=$LIVE_PORT  estático=$STATIC_PORT"
+  echo ""
   echo "  (default / --dev)  Hot reload: Next + Turbopack. URL: http://127.0.0.1:${DEV_PORT}/aulaChines/"
   echo "                     Tutor usa /tutor (precisa web/.env.local com LLM_API_TOKEN)."
   echo "  --local          Site com API como em produção + checks LLM antes. Porta $LIVE_PORT."
@@ -55,8 +57,9 @@ usage() {
   echo "  --skip-build     Com --local: não corre build:server (usa .next existente)."
   echo "  -h, --help       Esta ajuda."
   echo ""
-  echo "  START_NO_KILL_PORT=1   — define por ambiente o mesmo que --no-kill-port."
-  echo "  START_SKIP_EDU_SMOKE=1 — não corre POST /edu/chat ao final (só health + /projects)."
+  echo "  START_NO_KILL_PORT=1       — define por ambiente o mesmo que --no-kill-port."
+  echo "  START_SKIP_EDU_SMOKE=1     — com --local: não corre POST /edu/chat no smoke."
+  echo "  START_SKIP_LLM_CHECKS=1    — com --local: não exige .env.local/token nem health LLM (site sobe; tutor pode falhar)."
 }
 
 while [[ $# -gt 0 ]]; do
@@ -229,10 +232,15 @@ if [[ "$MODE" == "dev" ]]; then
     echo "Porta $DEV_PORT ocupada. Encerra o processo ou altera a porta em web/package.json (script dev)." >&2
     exit 1
   fi
+  if lsof -i ":$LIVE_PORT" -sTCP:LISTEN >/dev/null 2>&1; then
+    echo "Aviso: há servidor na porta $LIVE_PORT (deploy local ./start.sh --local)." >&2
+    echo "  Para seguir só uma URL ao codar: para esse processo (Ctrl+C) e usa só esta janela (hot reload)." >&2
+    echo "" >&2
+  fi
   echo "→ Hot dev (Turbopack) · http://127.0.0.1:${DEV_PORT}/aulaChines/"
   echo "  Tutor: http://127.0.0.1:${DEV_PORT}/aulaChines/tutor  (precisa web/.env.local)"
   echo "  Igual: cd web && npm run dev"
-  echo "  Para build + Node como produção (checks LLM): $0 --local"
+  echo "  Modo prod local (outra porta, sem hot): $0 --local  — ver docs/04_operacao_local.md"
   echo "  Ctrl+C para parar."
   echo ""
   cd "$WEB_DIR"
@@ -292,37 +300,46 @@ if [[ "$MODE" == "webplace" ]]; then
   echo ""
   echo "  Estático: http://127.0.0.1:${STATIC_PORT}/aulaChines/"
   echo "  (ficheiros em: $DEPLOY_LOCAL_DIR/aulaChines/)"
-  echo "  Tutor com LLM: ./start.sh --local  ou  cd web && npm run deploy:local:live"
-  echo "  LLM_API_URL em web/.env.local: http://127.0.0.1:28471 (Docker) ou https://llm.webplace.cc (mesmo token)."
+  echo "  Tutor / Node com API: ./start.sh --local  (ou START_SKIP_LLM_CHECKS=1 para saltar cheks LLM — ver docs/04)."
   echo "  Ctrl+C para parar."
   echo ""
   cd "$DEPLOY_LOCAL_DIR"
   exec python3 -m http.server "$STATIC_PORT" -b 127.0.0.1
 fi
 
-# --- modo --local: Next com /api/chat; LLM_API_URL pode ser local ou HTTPS (MANUAL_INTEGRACAO § 1.1)
+# --- modo --local: Next com /api/chat (checks LLM opcionais com START_SKIP_LLM_CHECKS=1)
+if [[ "${START_SKIP_LLM_CHECKS:-}" == "1" && "$DO_INGEST" == "1" ]]; then
+  echo "ERRO: --ingest precisa da API LLM; não uses START_SKIP_LLM_CHECKS=1." >&2
+  exit 1
+fi
+
 load_env
 export LLM_API_URL="${LLM_API_URL:-http://127.0.0.1:28471}"
 export LLM_API_URL="${LLM_API_URL%/}"
 
-if [[ ! -f "$WEB_DIR/.env.local" ]]; then
-  echo "Falta web/.env.local (mínimo: LLM_API_TOKEN)." >&2
-  exit 1
-fi
-if [[ -z "${LLM_API_TOKEN:-}" ]]; then
-  echo "LLM_API_TOKEN vazio em web/.env.local." >&2
-  exit 1
-fi
+if [[ "${START_SKIP_LLM_CHECKS:-}" == "1" ]]; then
+  echo "→ START_SKIP_LLM_CHECKS=1 — a saltar exigência de web/.env.local, health e smoke LLM (tutor pode falhar até haver API)." >&2
+  export SKIP_LLM_CHECKS=1
+else
+  if [[ ! -f "$WEB_DIR/.env.local" ]]; then
+    echo "Falta web/.env.local (mínimo: LLM_API_TOKEN). Ou: START_SKIP_LLM_CHECKS=1 $0 --local" >&2
+    exit 1
+  fi
+  if [[ -z "${LLM_API_TOKEN:-}" ]]; then
+    echo "LLM_API_TOKEN vazio em web/.env.local. Ou: START_SKIP_LLM_CHECKS=1 $0 --local" >&2
+    exit 1
+  fi
 
-check_llm_health || exit 1
-check_chinese_learning_project
+  check_llm_health || exit 1
+  check_chinese_learning_project
 
-if [[ "$DO_INGEST" == "1" ]]; then
-  run_ingest
+  if [[ "$DO_INGEST" == "1" ]]; then
+    run_ingest
+  fi
+
+  echo "→ Testes finais (LLM)…"
+  run_llm_edu_chat_smoke || exit 1
 fi
-
-echo "→ Testes finais (LLM)…"
-run_llm_edu_chat_smoke || exit 1
 
 if [[ "$KILL_PORT" == "1" ]]; then
   free_port "$LIVE_PORT" || true
@@ -330,6 +347,11 @@ fi
 if lsof -i ":$LIVE_PORT" -sTCP:LISTEN >/dev/null 2>&1; then
   echo "Porta $LIVE_PORT ainda ocupada. Encerra o processo ou usa --port=outra ou --no-kill-port (ou START_NO_KILL_PORT=1 e resolve manualmente)." >&2
   exit 1
+fi
+if lsof -i ":$DEV_PORT" -sTCP:LISTEN >/dev/null 2>&1; then
+  echo "Aviso: hot dev ainda na porta $DEV_PORT (./start.sh sem --local)." >&2
+  echo "  São duas URLs diferentes (34827 vs $LIVE_PORT). Para uma só ao codar: para o deploy local depois ou usa só o dev." >&2
+  echo "" >&2
 fi
 export SKIP_PORT_CHECK=1
 export PORT="$LIVE_PORT"
