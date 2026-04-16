@@ -2,6 +2,7 @@
 
 import HanziWriter from "hanzi-writer";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
+import { trackEvent } from "@/lib/analytics";
 import { useLocale } from "@/context/LocaleContext";
 
 export type HanziStrokeModalProps = {
@@ -90,6 +91,9 @@ export function HanziStrokeModal({
 
     writerRef.current = writer;
 
+    // We don't auto-start quiz in the modal by default,
+    // as it's often used just for reference.
+    // But we still apply the width/height fix and can add analytics if needed.
     if (prefersReduced) {
       void writer.showOutline().then(() => writer.animateCharacter());
     } else {
@@ -138,6 +142,11 @@ export function HanziStrokeModal({
         onComplete: () => {
           setQuizDone(true);
           setInQuiz(false);
+          trackEvent({
+            action: "hanzi_drawn",
+            category: "modal",
+            label: activeChar,
+          });
         },
       });
     });
@@ -225,7 +234,11 @@ export function HanziStrokeModal({
           {loadError ? (
             <p className="px-4 text-center text-sm text-stone-500">{t("hanziWriter.unavailable")}</p>
           ) : (
-            <div ref={containerRef} className="hanzi-writer-host" />
+            <div
+              ref={containerRef}
+              className="hanzi-writer-host"
+              style={{ width: "280px", height: "280px" }}
+            />
           )}
         </div>
 
