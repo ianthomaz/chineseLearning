@@ -238,6 +238,19 @@
     "unavailable": "No stroke animation is available for this character in the current dataset.",
     "creditsModal": "Hanzi Writer library (MIT license). Stroke data lives in the hanzi-writer-data repository; attribution chain includes Make Me a Hanzi and Arphic (1999) sources. Read each repository’s license before redistributing data copies."
   },
+  "writingGame": {
+    "sectionTitle": "Random writing",
+    "sectionDesc": "10 hanzi from 2 random themes — watch the animation, practice the strokes, and move on.",
+    "start": "Start session",
+    "progress": "{current} / {total}",
+    "blockBadge": "Block {id} · {title}",
+    "next": "Next →",
+    "prev": "← Back",
+    "finish": "Finish",
+    "done": "Session complete!",
+    "doneDesc": "You practised characters from: {blocks}.",
+    "newSession": "New session"
+  },
   "grammar": {
     "empty": "No grammar notes for this block in the source material.",
     "structures": "Structures and examples",
