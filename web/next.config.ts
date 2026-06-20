@@ -18,24 +18,9 @@ const nextConfig: NextConfig = {
       }
     : {}),
   ...(basePath ? { basePath } : {}),
-  /** Bare `/` → app (no middleware: Edge pathname + basePath caused bad double redirects in dev). */
-  async redirects() {
-    if (!basePath) return [];
-    return [
-      {
-        source: "/",
-        destination: `${basePath}/`,
-        permanent: false,
-        basePath: false,
-      },
-      {
-        source: "/randomhanzi",
-        destination: `${basePath}/randomhanzi`,
-        permanent: false,
-        basePath: false,
-      },
-    ];
-  },
+  // Intentionally no `redirects()`: `scripts/start-server-stripped.mjs` strips `basePath` before
+  // Next, so internal paths are `/`, `/randomhanzi`, etc. Redirects to `${basePath}/…` would loop
+  // in the browser (ERR_TOO_MANY_REDIRECTS).
   /** Prefer in-browser viewing over attachment download for vocabulary PDFs. */
   async headers() {
     const prefix = basePath || "";

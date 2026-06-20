@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "source": "consolidado",
+  "nivel": 3,
+  "count": 2,
+  "phrases": [
+    {
+      "nivel": 3,
+      "pt": "",
+      "hanzi": "五万零九百零七",
+      "pinyin": "wǔ wàn líng jiǔ bǎi líng qī",
+      "tokens": [
+        {
+          "palavra": "五",
+          "caracteres": [
+            {
+              "hanzi": "五",
+              "pinyin": "wǔ"
+            }
+          ],
+          "pinyin": "wǔ",
+          "pt": "cinco",
+          "dificil": false
+        },
+        {
+          "palavra": "万",
+          "caracteres": [
+            {
+              "hanzi": "万",
+              "pinyin": "wàn"
+            }
+          ],
+          "pinyin": "wàn",
+          "pt": "dez mil",
+          "dificil": false
+        },
+        {
+          "palavra": "零",
+          "caracteres": [
+            {
+              "hanzi": "零",
+              "pinyin": "líng"
+            }
+          ],
+          "pinyin": "líng",
+          "pt": "zero",
+          "dificil": false
+        },
+        {
+          "palavra": "九",
+          "caracteres": [
+            {
+              "hanzi": "九",
+              "pinyin": "jiǔ"
+            }
+          ],
+          "pinyin": "jiǔ",
+          "pt": "nove",
+          "dificil": false
+        },
+        {
+          "palavra": "百",
+          "caracteres": [
+            {
+              "hanzi": "百",
+              "pinyin": "bǎi"
+            }
+          ],
+          "pinyin": "bǎi",
+          "pt": "cem",
+          "dificil": false
+        },
+        {
+          "palavra": "零",
+          "caracteres": [
+            {
+              "hanzi": "零",
+              "pinyin": "líng"
+            }
+          ],
+          "pinyin": "líng",
+          "pt": "zero",
+          "dificil": false
+        },
+        {
+          "palavra": "七",
+          "caracteres": [
+            {
+              "hanzi": "七",
+              "pinyin": "qī"
+            }
+          ],
+          "pinyin": "qī",
+          "pt": "sete",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "这个",
+          "pinyin": "",
+          "pt": "这个"
+        },
+        {
+          "hanzi": "比较小",
+          "pinyin": "Bǐjiào xiǎo",
+          "pt": "比较小"
+        },
+        {
+          "hanzi": "明天见",
+          "pinyin": "",
+          "pt": "明天见"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n3-seed-001"
+    },
+    {
+      "nivel": 3,
+      "pt": "",
+      "hanzi": "我今年四十一岁",
+      "pinyin": "wǒ jīn nián sì shí yī suì。",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "今",
+          "caracteres": [
+            {
+              "hanzi": "今",
+              "pinyin": "jīn"
+            }
+          ],
+          "pinyin": "jīn",
+          "pt": "",
+          "dificil": false
+        },
+        {
+          "palavra": "年",
+          "caracteres": [
+            {
+              "hanzi": "年",
+              "pinyin": "nián"
+            }
+          ],
+          "pinyin": "nián",
+          "pt": "ano — 明年",
+          "dificil": false
+        },
+        {
+          "palavra": "四",
+          "caracteres": [
+            {
+              "hanzi": "四",
+              "pinyin": "sì"
+            }
+          ],
+          "pinyin": "sì",
+          "pt": "quatro",
+          "dificil": false
+        },
+        {
+          "palavra": "十",
+          "caracteres": [
+            {
+              "hanzi": "十",
+              "pinyin": "shí"
+            }
+          ],
+          "pinyin": "shí",
+          "pt": "dez",
+          "dificil": false
+        },
+        {
+          "palavra": "一",
+          "caracteres": [
+            {
+              "hanzi": "一",
+              "pinyin": "yī"
+            }
+          ],
+          "pinyin": "yī",
+          "pt": "um (contagem, quantidade, ordem habitual)",
+          "dificil": false
+        },
+        {
+          "palavra": "岁",
+          "caracteres": [
+            {
+              "hanzi": "岁",
+              "pinyin": "suì。"
+            }
+          ],
+          "pinyin": "suì。",
+          "pt": "idade — 我二十岁",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "知道",
+          "pinyin": "zhīdào",
+          "pt": "saber (informação) — 我知道这个字。"
+        },
+        {
+          "hanzi": "蛇",
+          "pinyin": "shé",
+          "pt": "cobra — 我怕蛇。"
+        },
+        {
+          "hanzi": "谁",
+          "pinyin": "shéi",
+          "pt": "quem"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n3-seed-002"
+    }
+  ]
+}

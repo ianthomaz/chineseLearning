@@ -11,6 +11,8 @@
 | [05_rag_e_conteudo.md](05_rag_e_conteudo.md) | `rag_knowledge`, ingest, projeto `chinese_learning` |
 | [06_deploy.md](06_deploy.md) | Estático (webplace) vs Node (`next start`) e nginx |
 | [07_vocabulario_hanzi_strokes.md](07_vocabulario_hanzi_strokes.md) | Vocabulário: Make Me a Hanzi, Hanzi Writer, modal, licenças |
+| [08_plano_jogo_frases.md](08_plano_jogo_frases.md) | Plano do jogo de montar frases + banco de frases |
+| [09_google_auth_jogo.md](09_google_auth_jogo.md) | Login Google (OAuth ChineseSite), credenciais locais, memória do jogo |
 
 ## Visão geral rápida
 

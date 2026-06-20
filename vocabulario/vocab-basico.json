@@ -1,0 +1,7866 @@
+{
+  "version": 2,
+  "generated_at": "2026-06-20T14:17:43.404Z",
+  "purpose": "Course lexicon; hsk1 marks official HSK1 words (beginner subset derived later)",
+  "stats": {
+    "total": 1052,
+    "hsk1": 324,
+    "basic": 728
+  },
+  "entries": [
+    {
+      "hanzi": "安全",
+      "pinyin": "ānquán",
+      "gloss_pt": "seguro",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "八",
+      "sources": [
+        "consolidado-structure",
+        "consolidado-vocab"
+      ],
+      "pinyin": "bā",
+      "gloss_pt": "oito",
+      "hsk1": true
+    },
+    {
+      "hanzi": "巴西",
+      "pinyin": "Bāxī",
+      "gloss_pt": "Brasil",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "巴西地图",
+      "pinyin": "Bāxī dìtú",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "巴西饭店",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "巴西人",
+      "pinyin": "Bāxī rén",
+      "gloss_pt": "brasileiro",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "爸爸",
+      "pinyin": "bàba",
+      "gloss_pt": "pai",
+      "sources": [
+        "consolidado-vocab",
+        "rag:dialogos_pratica.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "白",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "白茶",
+      "pinyin": "bái chá",
+      "gloss_pt": "chá branco",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "白衬衫",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "白色",
+      "pinyin": "báisè",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab"
+      ],
+      "gloss_pt": "branco",
+      "hsk1": true
+    },
+    {
+      "hanzi": "白小红",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "白小红比较小我家在那儿",
+      "pinyin": ":       。    。",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "白小红米饭",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "白小红那儿没有龙只有山",
+      "pinyin": ":         ，  。",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "白小红那好啊你看这是北京",
+      "pinyin": ":       ! ，   。",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "白小红能吃一点儿辣的",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "白小红你看中国地图干什么",
+      "pinyin": ":             ?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "白小红我能吃",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "白小红我能吃一点儿",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "白小红行你要中文的还是",
+      "pinyin": ":          。",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "白小红有没有中国地图",
+      "pinyin": "1.       ？",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "白小红有我有两张",
+      "pinyin": ":     。",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "白小红这是龙山",
+      "pinyin": ":        。",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "白小红这是上海",
+      "pinyin": ":        。",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "百",
+      "pinyin": "bǎi",
+      "gloss_pt": "cem",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "办公室",
+      "pinyin": "bàngōngshì",
+      "gloss_pt": "escritório — 老师在办公室。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "保罗好来一个糖醋鱼",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "保罗来啤酒",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "保罗来三瓶啤酒",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "保罗那本呢",
+      "pinyin": "Bǎoluó: Nà běn ne?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "保罗小姐你们饭店菜是什么",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "保罗这两本词典都是你的吗",
+      "pinyin": ":              ?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "保罗这是什么词典",
+      "pinyin": ":        ?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "杯",
+      "pinyin": "bēi",
+      "gloss_pt": "copo / xícara — 一杯水",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "杯子",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "北",
+      "pinyin": "běi",
+      "gloss_pt": "norte — 北京",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "北京",
+      "pinyin": "Běijīng",
+      "gloss_pt": "Pequim",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "本",
+      "pinyin": "běn",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "gloss_pt": "livros — 一本书",
+      "hsk1": true
+    },
+    {
+      "hanzi": "比较",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "比较便宜",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "比较大",
+      "pinyin": "Bǐjiào dà",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "比较贵",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "比较很",
+      "pinyin": "Esse livro é chato, não gosto dele",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "比较小",
+      "pinyin": "Bǐjiào xiǎo",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "便宜",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "piányi",
+      "gloss_pt": "barato — 这个苹果很便宜。",
+      "hsk1": true
+    },
+    {
+      "hanzi": "遍",
+      "pinyin": "biàn",
+      "gloss_pt": "vez (ação completa) — 我读了三遍",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "不",
+      "pinyin": "bù",
+      "gloss_pt": "não",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "不好吃",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "不会说葡语",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "不可以",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "不客气",
+      "pinyin": "bú kèqi",
+      "gloss_pt": "de nada — - 谢谢！ - 不客气。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "不冷也不热",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "不能",
+      "pinyin": "Bùnéng",
+      "gloss_pt": "perguntas e frases negativas, sem que “可以\" ser usado;",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "不是",
+      "pinyin": "bú shì",
+      "gloss_pt": "não ser",
+      "sources": [
+        "consolidado-vocab",
+        "rag:dialogos_pratica.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "不太",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "不太便宜",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "不太贵",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "不学习",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "菜",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "餐厅",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "草莓",
+      "pinyin": "cǎoméi",
+      "gloss_pt": "morango",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "厕所",
+      "pinyin": "cèsuǒ",
+      "gloss_pt": "banheiro — 厕所在哪儿？",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "厕所在哪儿",
+      "sources": [
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "厕所在右边",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "茶",
+      "pinyin": "chá",
+      "gloss_pt": "chá",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "茶还是咖啡",
+      "sources": [
+        "rag:dialogos_pratica.md"
+      ]
+    },
+    {
+      "hanzi": "常",
+      "pinyin": "cháng",
+      "gloss_pt": "frequentemente — 我常去",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "唱歌",
+      "pinyin": "Chànggē",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "超市",
+      "pinyin": "chāoshì",
+      "gloss_pt": "supermercado — 我去超市买东西。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "衬衫",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "程序员",
+      "pinyin": "chéngxùyuán",
+      "gloss_pt": "programador — 我哥哥是程序员。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "橙色",
+      "pinyin": "Chéng sè",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "橙子",
+      "pinyin": "chéngzi",
+      "gloss_pt": "laranja",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "吃",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "pinyin": "chī",
+      "gloss_pt": "comer",
+      "hsk1": true
+    },
+    {
+      "hanzi": "出",
+      "pinyin": "chū",
+      "gloss_pt": "sair — 我出门了。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "窗",
+      "pinyin": "chuāng",
+      "gloss_pt": "janela — 关窗",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "床",
+      "pinyin": "chuáng",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "词典",
+      "pinyin": "Cídiǎn",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "词汇",
+      "pinyin": "cíhuì",
+      "gloss_pt": "vocabulário",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "醋",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "醋是酸的",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "醋酸",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "错",
+      "pinyin": "cuò",
+      "gloss_pt": "errado — 这个字错了。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "打",
+      "pinyin": "dǎ",
+      "gloss_pt": "bater / ligar / jogar — 我打电话给妈妈。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "打篮球",
+      "pinyin": "dǎ lánqiú",
+      "gloss_pt": "jogar basquete",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "大",
+      "pinyin": "dà",
+      "gloss_pt": "grande",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "但是",
+      "pinyin": "dànshì",
+      "gloss_pt": "mas — 我想去，但是没时间",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "但是没时间",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "当然可以",
+      "pinyin": "Dāngrán kěyǐ",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "地图",
+      "gloss_pt": "Dì tú",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "的",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "de",
+      "gloss_pt": "partícula de posse — 我的书",
+      "hsk1": true
+    },
+    {
+      "hanzi": "的东西",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "等",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "děng",
+      "gloss_pt": "esperar — 请等一下。",
+      "hsk1": true
+    },
+    {
+      "hanzi": "等等",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "等等等",
+      "gloss_pt": "==etc.",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "等下",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "等一等",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "等一下",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "弟弟",
+      "pinyin": "dìdi",
+      "gloss_pt": "irmão mais novo",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "第四课",
+      "gloss_pt": "Dì sì kè",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "第五课能不能试一试",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "点",
+      "pinyin": "diǎn",
+      "gloss_pt": "horas / ponto — 三点 / 一点水",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "电话",
+      "pinyin": "diànhuà",
+      "gloss_pt": "telefone",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "电脑",
+      "pinyin": "diànnǎo",
+      "gloss_pt": "computador — 我用电脑学习。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "电视",
+      "pinyin": "diànshì",
+      "gloss_pt": "televisão — 看电视",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "丁汉生",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "丁汉生可以来一个吧",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "丁汉生水饺",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "东",
+      "pinyin": "dōng",
+      "gloss_pt": "leste — 东边",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "东边",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "东西",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab"
+      ],
+      "pinyin": "dōngxi",
+      "gloss_pt": "coisa",
+      "hsk1": true
+    },
+    {
+      "hanzi": "懂",
+      "pinyin": "dǒng",
+      "gloss_pt": "entender — 你懂不懂？",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "都",
+      "pinyin": "dōu",
+      "gloss_pt": "todos / ambos",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "读一遍",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "对",
+      "pinyin": "duì",
+      "gloss_pt": "correto — 你的答案对。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "对不对",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "对不起",
+      "pinyin": "duìbuqǐ",
+      "gloss_pt": "desculpa — 对不起，我错了。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "多少",
+      "pinyin": "duōshao",
+      "gloss_pt": "quanto / quantos",
+      "sources": [
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "多少钱",
+      "pinyin": "duōshao qián",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "gloss_pt": "quanto custa",
+      "hsk1": true
+    },
+    {
+      "hanzi": "饿",
+      "sources": [
+        "rag:vocabulario_estruturas.md"
+      ]
+    },
+    {
+      "hanzi": "儿子",
+      "pinyin": "érzi",
+      "gloss_pt": "filho",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "二",
+      "sources": [
+        "consolidado-structure",
+        "consolidado-vocab"
+      ],
+      "pinyin": "èr",
+      "gloss_pt": "dois",
+      "hsk1": true
+    },
+    {
+      "hanzi": "二十",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "èr shí"
+    },
+    {
+      "hanzi": "二十块元",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "发",
+      "pinyin": "fā",
+      "gloss_pt": "enviar — 我发邮件给你。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "发邮件",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "法国",
+      "pinyin": "Fǎguó",
+      "gloss_pt": "França",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "法语",
+      "pinyin": "Fǎyǔ",
+      "gloss_pt": "francês",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "饭店",
+      "pinyin": "fàndiàn",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "gloss_pt": "restaurante — 这个饭店很贵。",
+      "hsk1": true
+    },
+    {
+      "hanzi": "饭店最好吃的菜是糖醋鱼",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "饭馆",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "房间很干净",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "房子",
+      "pinyin": "fángzi",
+      "gloss_pt": "casa / prédio",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "房子后面",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "非常",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "fēicháng",
+      "gloss_pt": "muito (intenso) — 非常好！",
+      "hsk1": true
+    },
+    {
+      "hanzi": "非常便宜",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "非常大",
+      "pinyin": "fēicháng dà",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "非常贵",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "非常好",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "非常很",
+      "pinyin": "gosto muito de aprender",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "分",
+      "pinyin": "fēn",
+      "gloss_pt": "minutos",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "份",
+      "pinyin": "fèn",
+      "gloss_pt": "porção — 一份菜",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "风",
+      "pinyin": "fēng",
+      "gloss_pt": "vento — 风很大。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "风很大",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "复",
+      "pinyin": "fùxí",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "复习",
+      "pinyin": "fùxí",
+      "gloss_pt": "revisão",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "干",
+      "pinyin": "gān",
+      "gloss_pt": "seco — 面包太干了。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "干家务工作活儿",
+      "pinyin": "O que você está fazendo",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "干净",
+      "pinyin": "gānjìng",
+      "gloss_pt": "limpo — 房间很干净。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "高",
+      "pinyin": "gāo",
+      "gloss_pt": "alto — 他很高。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "告诉",
+      "pinyin": "gàosu",
+      "gloss_pt": "dizer / contar — 请告诉我你的电话。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "哥哥",
+      "pinyin": "gēge",
+      "gloss_pt": "irmão mais velho",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "个",
+      "gloss_pt": "geral — 一个人 / 一个苹果",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "gè",
+      "hsk1": true
+    },
+    {
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "gloss_pt": "dar / para — 给我一杯水。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "给我来一杯水",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "给我一杯水",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "跟",
+      "pinyin": "gēn",
+      "gloss_pt": "seguir / com (prep) — 我跟你一起去。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "工作",
+      "pinyin": "gōngzuò",
+      "gloss_pt": "trabalhar",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "公司",
+      "pinyin": "gōngsī",
+      "gloss_pt": "empresa — 我在公司工作。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "公园",
+      "pinyin": "gōngyuán",
+      "gloss_pt": "parque — 我们去公园。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "狗",
+      "pinyin": "gǒu",
+      "gloss_pt": "cachorro — 狗很可爱。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "狗很可爱",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "狗在外面",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "关",
+      "pinyin": "guān",
+      "gloss_pt": "fechar — 关窗",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "关窗",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "贵",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "国人",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "果汁",
+      "pinyin": "guǒzhī",
+      "gloss_pt": "suco",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "过",
+      "pinyin": "guo",
+      "gloss_pt": "partícula de experiência — 我去过北京",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "还",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "hái",
+      "gloss_pt": "ainda / também — 我还没吃饭",
+      "hsk1": true
+    },
+    {
+      "hanzi": "还是",
+      "pinyin": "háishi",
+      "gloss_pt": "ou",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "孩子在学校很安全",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "hái zi zài xué xiào hěn ān quán。"
+    },
+    {
+      "hanzi": "海",
+      "pinyin": "hǎi",
+      "gloss_pt": "mar — 我喜欢看海。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "汉语",
+      "pinyin": "Hànyǔ",
+      "gloss_pt": "chinês",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "汉语难吗",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "汉字",
+      "pinyin": "Hànzì",
+      "gloss_pt": "caracteres chineses",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "好",
+      "pinyin": "hǎo",
+      "gloss_pt": "bom",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "好吃",
+      "sources": [
+        "lexicon-base",
+        "rag:vocabulario_estruturas.md"
+      ]
+    },
+    {
+      "hanzi": "好吃的菜",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "好吃吗",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "好喝",
+      "sources": [
+        "rag:vocabulario_estruturas.md"
+      ]
+    },
+    {
+      "hanzi": "好久不见",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "号",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "号/日",
+      "pinyin": "hào / rì",
+      "gloss_pt": "dia",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "喝",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "pinyin": "hē",
+      "gloss_pt": "beber",
+      "hsk1": true
+    },
+    {
+      "hanzi": "河",
+      "pinyin": "hé",
+      "gloss_pt": "rio — 这条河很长。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "黑板",
+      "pinyin": "Hēibǎn",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "黑色",
+      "pinyin": "hēisè",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab"
+      ],
+      "gloss_pt": "preto",
+      "hsk1": true
+    },
+    {
+      "hanzi": "很",
+      "pinyin": "hěn",
+      "gloss_pt": "muito",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "很比较",
+      "pinyin": "Bǐ       jiào",
+      "gloss_pt": "relativamente",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "很大",
+      "pinyin": "Hěn dà",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "很高兴认识你",
+      "sources": [
+        "rag:dialogos_pratica.md",
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "很好",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "很好吃",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "红",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "红色",
+      "pinyin": "hóngsè",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "gloss_pt": "vermelho",
+      "hsk1": true
+    },
+    {
+      "hanzi": "红烧",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "红烧牛肉",
+      "pinyin": "Hóngshāo niúròu",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "猴",
+      "pinyin": "hóu",
+      "gloss_pt": "macaco — 猴子",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "猴子",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "后",
+      "pinyin": "hòu",
+      "gloss_pt": "atrás — 房子后面",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "虎",
+      "pinyin": "hǔ",
+      "gloss_pt": "tigre — 老虎",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "画",
+      "pinyin": "para superfícies planas",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "画画",
+      "pinyin": "Huà huà",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "话",
+      "pinyin": "huà",
+      "gloss_pt": "fala / conversa — 说话",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "欢迎",
+      "pinyin": "huānyíng",
+      "gloss_pt": "bem-vindo — 欢迎来中国！",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "欢迎来我家",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "欢迎来中国",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "黄色",
+      "pinyin": "huángsè",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab"
+      ],
+      "gloss_pt": "amarelo",
+      "hsk1": true
+    },
+    {
+      "hanzi": "回",
+      "pinyin": "huí",
+      "gloss_pt": "voltar",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "会",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "pinyin": "huì",
+      "gloss_pt": "saber / conseguir",
+      "hsk1": true
+    },
+    {
+      "hanzi": "会话",
+      "pinyin": "huìhuà",
+      "gloss_pt": "conversação",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "会说一点儿葡语",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "鸡",
+      "pinyin": "jī",
+      "gloss_pt": "galinha — 鸡肉",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "鸡肉",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "几",
+      "pinyin": "jǐ",
+      "gloss_pt": "quantos / qual",
+      "sources": [
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "几点",
+      "pinyin": "jǐ diǎn",
+      "gloss_pt": "que horas",
+      "sources": [
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "几号",
+      "pinyin": "jǐ hào",
+      "gloss_pt": "que dia",
+      "sources": [
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "几口人",
+      "pinyin": "jǐ kǒu rén",
+      "gloss_pt": "quantas pessoas na família",
+      "sources": [
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "几岁",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "几月几号",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "记者",
+      "pinyin": "jìzhě",
+      "gloss_pt": "jornalista — 他是记者。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "加油",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "gloss_pt": "família / casa",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "家里",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "见",
+      "pinyin": "jiàn",
+      "gloss_pt": "ver / encontrar — 明天见！",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "件",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "饺子",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "饺子水饺",
+      "pinyin": "Jiǎozǐ (shuǐjiǎo)",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "饺子真好吃",
+      "pinyin": "Jiǎozi zhēn hào chī",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "叫",
+      "pinyin": "jiào",
+      "gloss_pt": "chamar-se / chamar — 你叫什么名字？",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "叫什么名字",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "教室",
+      "pinyin": "Jiàoshì",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "姐姐",
+      "pinyin": "jiějie",
+      "gloss_pt": "irmã mais velha",
+      "sources": [
+        "consolidado-vocab",
+        "rag:dialogos_pratica.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "今天",
+      "pinyin": "jīntiān",
+      "gloss_pt": "hoje — 今天很热。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "今天很热",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "今天几号",
+      "sources": [
+        "consolidado-structure",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "pinyin": "jīn tiān jǐ hào？"
+    },
+    {
+      "hanzi": "今天几月几号",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "今天是三月九号",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "jīn tiān shì sān yuè jiǔ hào。"
+    },
+    {
+      "hanzi": "今天天气真好",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "jīn tiān tiān qì zhēn hǎo。"
+    },
+    {
+      "hanzi": "今天下雨了",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "今天星期几",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "今天星期三",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "jīn tiān xīng qī sān。"
+    },
+    {
+      "hanzi": "进",
+      "pinyin": "jìn",
+      "gloss_pt": "entrar — 请进！",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "经理",
+      "pinyin": "jīnglǐ",
+      "gloss_pt": "gerente — 李经理",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "九",
+      "sources": [
+        "consolidado-structure",
+        "consolidado-vocab"
+      ],
+      "pinyin": "jiǔ",
+      "gloss_pt": "nove",
+      "hsk1": true
+    },
+    {
+      "hanzi": "九词典",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "久",
+      "pinyin": "jiǔ",
+      "gloss_pt": "muito tempo — 好久不见",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "句子",
+      "pinyin": "jùzi",
+      "gloss_pt": "frase",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "觉得",
+      "pinyin": "juéde",
+      "gloss_pt": "sentir / achar — 我觉得很好。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "咖啡",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab"
+      ],
+      "pinyin": "kāfēi",
+      "gloss_pt": "café",
+      "hsk1": true
+    },
+    {
+      "hanzi": "咖啡店在哪儿",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "咖啡店在左边",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "咖啡馆",
+      "pinyin": "kāfēiguǎn",
+      "gloss_pt": "cafeteria",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "卡米洛汉葡词典",
+      "pinyin": "Kǎmǐluò: Hànpú cídiǎn。",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "卡米洛来个",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "卡米洛来个酸辣汤",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "卡米洛能吃一点儿辣的",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "卡米洛你有没有中国地图",
+      "pinyin": ":           ?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "卡米洛葡汉词典",
+      "pinyin": ":   。",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "卡米洛葡萄牙文的",
+      "pinyin": ":     。",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "卡米洛是的我想去中国玩儿",
+      "pinyin": ": ，           。",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "卡米洛我看一下行吗",
+      "pinyin": "Kǎmǐluò: Wǒ kàn yíxià , xíng ma?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "卡米洛我知道",
+      "pinyin": ":   。",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "卡米洛我最喜欢吃的你吃的",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "卡米洛谢谢",
+      "pinyin": ":   !",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "卡米洛要中国地图干什么",
+      "pinyin": "2.      ？",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "开",
+      "pinyin": "kāi",
+      "gloss_pt": "abrir / dirigir — 开门 / 开车",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "开车",
+      "pinyin": "kāichē",
+      "gloss_pt": "dirigir",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "开门",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "看",
+      "gloss_pt": "ver / olhar",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab"
+      ],
+      "pinyin": "kàn",
+      "hsk1": true
+    },
+    {
+      "hanzi": "看电视",
+      "pinyin": "kàn diànshì",
+      "gloss_pt": "ver televisão",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "看见",
+      "pinyin": "kànjiàn",
+      "gloss_pt": "ver / enxergar",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "看你",
+      "pinyin": "Kàn nǐ",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "看书",
+      "pinyin": "kàn shū",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "gloss_pt": "ler",
+      "hsk1": true
+    },
+    {
+      "hanzi": "看我",
+      "pinyin": "kàn wǒ",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "看一看",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "看一看看一下看看",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "看一下",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "可不可以",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "可乐",
+      "pinyin": "kělè",
+      "gloss_pt": "coca-cola",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "可以",
+      "pinyin": "kěyǐ",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "课文",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "孔子学院",
+      "pinyin": "Kǒngzǐ Xuéyuàn",
+      "gloss_pt": "Instituto Confúcio",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "口",
+      "pinyin": "kǒu",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "gloss_pt": "pessoas na família — 我家有五口人",
+      "hsk1": true
+    },
+    {
+      "hanzi": "裤子",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "块",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "kuài",
+      "gloss_pt": "yuan / pedaço — 一块钱 / 一块蛋糕",
+      "hsk1": true
+    },
+    {
+      "hanzi": "快",
+      "pinyin": "kuài",
+      "gloss_pt": "rápido — 他跑得很快。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "困",
+      "pinyin": "kùn",
+      "gloss_pt": "com sono / cansado",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "蜡烛",
+      "pinyin": "Làzhú",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "辣",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "辣的",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "来",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "pinyin": "lái",
+      "gloss_pt": "vir",
+      "hsk1": true
+    },
+    {
+      "hanzi": "来十瓶啤酒",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "来一杯咖啡",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "来一点儿什么",
+      "pinyin": "Lái yīdiǎnr shénme?",
+      "gloss_pt": "Vir",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "蓝色",
+      "pinyin": "lánsè",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "gloss_pt": "azul",
+      "hsk1": true
+    },
+    {
+      "hanzi": "老虎",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "老师",
+      "pinyin": "lǎoshī",
+      "gloss_pt": "professor — 王老师好！",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "老师说什么",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "老师在办公室",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "老师在教室里",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "老鼠",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "了",
+      "pinyin": "le",
+      "gloss_pt": "partícula de mudança / conclusão — 我吃饭了",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "雷",
+      "pinyin": "Léi",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "雷亚尔",
+      "pinyin": "Léi yà ěr",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "累",
+      "pinyin": "lèi",
+      "gloss_pt": "cansado — 我今天很累。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "冷",
+      "pinyin": "lěng",
+      "gloss_pt": "frio",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "李经理",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "里",
+      "pinyin": "lǐ",
+      "gloss_pt": "dentro — 家里",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "里面",
+      "pinyin": "lǐmiàn",
+      "gloss_pt": "dentro",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "练习",
+      "pinyin": "liànxí",
+      "gloss_pt": "exercício",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "两",
+      "pinyin": "liǎng",
+      "gloss_pt": "dois",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "两点",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "两苹果",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "零",
+      "pinyin": "líng",
+      "gloss_pt": "zero",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "六",
+      "sources": [
+        "consolidado-structure",
+        "consolidado-vocab"
+      ],
+      "pinyin": "liù",
+      "gloss_pt": "seis",
+      "hsk1": true
+    },
+    {
+      "hanzi": "龙",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "lóng",
+      "gloss_pt": "dragão — 龙年",
+      "hsk1": true
+    },
+    {
+      "hanzi": "龙年",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "龙山大不大",
+      "pinyin": "Lóngshān dà bù dà?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "龙山有龙吗",
+      "pinyin": "4.       ？",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "律师",
+      "pinyin": "lǜshī",
+      "gloss_pt": "advogado — 律师工作很忙。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "律师工作很忙",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "绿色",
+      "pinyin": "lǜsè",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "gloss_pt": "verde",
+      "hsk1": true
+    },
+    {
+      "hanzi": "绿色的苹果最大",
+      "pinyin": "Lǜsè de píngguǒ zuìdà",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "妈妈",
+      "pinyin": "māma",
+      "gloss_pt": "mãe",
+      "sources": [
+        "consolidado-vocab",
+        "rag:dialogos_pratica.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "妈妈在家",
+      "sources": [
+        "consolidado-structure"
+      ]
+    },
+    {
+      "hanzi": "马",
+      "pinyin": "mǎ",
+      "gloss_pt": "cavalo — 骑马",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "吗",
+      "pinyin": "ma",
+      "gloss_pt": "partícula de pergunta",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "买",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "mǎi",
+      "gloss_pt": "comprar — 我买水果。",
+      "hsk1": true
+    },
+    {
+      "hanzi": "买东西",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "买书笔衬衫",
+      "pinyin": "mǎi",
+      "gloss_pt": "comprar",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "买一件衬衫",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "买一件衣服",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "买衣服",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "卖",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "mài",
+      "gloss_pt": "vender — 商店卖衣服。",
+      "hsk1": true
+    },
+    {
+      "hanzi": "慢",
+      "pinyin": "màn",
+      "gloss_pt": "devagar — 请说慢一点。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "忙",
+      "sources": [
+        "rag:vocabulario_estruturas.md"
+      ]
+    },
+    {
+      "hanzi": "猫",
+      "pinyin": "māo",
+      "gloss_pt": "gato — 我有一只猫。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "猫在哪儿",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "猫在椅子下",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "猫怎么上去的",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "毛",
+      "pinyin": "máo",
+      "gloss_pt": "décimo de yuan",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "没关系",
+      "pinyin": "méi guānxi",
+      "gloss_pt": "tudo bem — - 对不起 - 没关系",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "没有",
+      "pinyin": "méiyǒu",
+      "gloss_pt": "não ter / não haver",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "妹妹",
+      "pinyin": "mèimei",
+      "gloss_pt": "irmã mais nova",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "妹妹和我",
+      "sources": [
+        "rag:dialogos_pratica.md"
+      ]
+    },
+    {
+      "hanzi": "门",
+      "pinyin": "mén",
+      "gloss_pt": "porta — 开门",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "门口",
+      "pinyin": "ménkǒu",
+      "gloss_pt": "entrada / porta",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "米饭",
+      "pinyin": "Mǐfàn",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "米格尔不能试裤子",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "米格尔好我要那一件",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "米格尔会说一点儿汉语",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "米格尔你好",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "米格尔太贵了那件红衬衫呢",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "米格尔太了那件呢",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "米格尔我会说",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "米格尔我会说一点儿",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "米格尔我想买一件衬衫",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "米格尔一条能不能试一试",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "米格尔这条",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "米格尔这条太大",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "米格尔只想买一条裤子",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "面包太干了",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "名字",
+      "pinyin": "míngzi",
+      "gloss_pt": "nome — 你叫什么名字？",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "明年",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "明天",
+      "pinyin": "míngtiān",
+      "gloss_pt": "amanhã — 明天见！",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "明天会下雨吗",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "míng tiān huì xià yǔ ma？"
+    },
+    {
+      "hanzi": "明天几点见面",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "明天见",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "明天三点",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "明天谁来",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "明天谁送你去医院",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "míng tiān shuí sòng nǐ qù yī yuàn？"
+    },
+    {
+      "hanzi": "哪",
+      "pinyin": "nǎ",
+      "gloss_pt": "qual",
+      "sources": [
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "哪本书是你的",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "哪儿",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md",
+        "rag:vocabulario_estruturas.md"
+      ]
+    },
+    {
+      "hanzi": "哪儿/哪里",
+      "pinyin": "nǎr / nǎlǐ",
+      "gloss_pt": "onde",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "哪个",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "哪个是你的猫",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "哪个医院最好",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "哪国人",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md",
+        "rag:vocabulario_estruturas.md"
+      ]
+    },
+    {
+      "hanzi": "哪里",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md",
+        "rag:vocabulario_estruturas.md"
+      ]
+    },
+    {
+      "hanzi": "哪一天",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "哪一种",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "那",
+      "sources": [
+        "lexicon-base",
+        "rag:vocabulario_estruturas.md"
+      ]
+    },
+    {
+      "hanzi": "那儿没有龙只有山",
+      "pinyin": "Nà'er méiyǒu lóng, zhǐyǒu shān.",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "那儿有一家个饭店",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "那个白色的",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "那个地方非常小",
+      "pinyin": "Nàgè dìfāng fēicháng xiǎo",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "那个红色的",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "那里",
+      "pinyin": "nàlǐ",
+      "gloss_pt": "ali / lá",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "那四支笔",
+      "pinyin": "Nà sì zhī bǐ",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "那条裤子怎么样",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "奶奶",
+      "pinyin": "nǎinai",
+      "gloss_pt": "avó paterna",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "难",
+      "pinyin": "nán",
+      "gloss_pt": "difícil — 汉语难吗？",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "难吃",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "呢",
+      "pinyin": "ne",
+      "gloss_pt": "e...?",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "能",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab"
+      ],
+      "pinyin": "néng",
+      "gloss_pt": "poder",
+      "hsk1": true
+    },
+    {
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "gloss_pt": "você",
+      "sources": [
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "你吃什么",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你从哪儿来",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你的答案对",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "你的猫在哪儿",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你弟弟几岁",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你懂不懂",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "你饿吗",
+      "sources": [
+        "rag:dialogos_pratica.md"
+      ]
+    },
+    {
+      "hanzi": "你哥哥几岁",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你还要买什么",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "你好",
+      "sources": [
+        "rag:dialogos_pratica.md"
+      ]
+    },
+    {
+      "hanzi": "你会吗你会不会",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "你几点起床",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你几岁",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你家有几口人",
+      "sources": [
+        "consolidado-structure",
+        "rag:dialogos_pratica.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "pinyin": "nǐ jiā yǒu jǐ kǒu rén？"
+    },
+    {
+      "hanzi": "你家有几只猫",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你叫什么名字",
+      "sources": [
+        "consolidado-structure",
+        "rag:dialogos_pratica.md",
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "pinyin": "nǐ jiào shén me míng zì？"
+    },
+    {
+      "hanzi": "你姐姐是谁",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你来巴西干什么",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "你买哪个苹果",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你买什么东西",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你们",
+      "pinyin": "nǐmen",
+      "gloss_pt": "vocês",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "你们饭店最好吃的菜是什么",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "你呢",
+      "sources": [
+        "consolidado-structure",
+        "rag:dialogos_pratica.md"
+      ],
+      "pinyin": "nǐ ne？"
+    },
+    {
+      "hanzi": "你能不能吃辣的",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "你女朋友太漂亮了",
+      "pinyin": "Nǐ nǚ péngyǒu tài piàoliangle",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "你去巴西干什么",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "你是老师吗",
+      "sources": [
+        "consolidado-structure",
+        "rag:dialogos_pratica.md"
+      ],
+      "pinyin": "nǐ shì lǎo shī ma？"
+    },
+    {
+      "hanzi": "你是哪国人",
+      "sources": [
+        "consolidado-structure",
+        "rag:dialogos_pratica.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "pinyin": "nǐ shì nǎ guó rén？"
+    },
+    {
+      "hanzi": "你是谁",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你说什么语言",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "nǐ shuō shén me yǔ yán？"
+    },
+    {
+      "hanzi": "你问他的名字",
+      "pinyin": "3.   A     B    C   D",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "你喜欢哪本书",
+      "pinyin": "Nǐ xǐhuān nǎ běn shū?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "你想吃什么",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你想吃什么菜",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你想喝茶还是咖啡",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "nǐ xiǎng hē chá hái shì kā fēi？"
+    },
+    {
+      "hanzi": "你想喝哪种茶",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你想喝什么",
+      "sources": [
+        "rag:dialogos_pratica.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你想买什么",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "你想去中国吗",
+      "pinyin": "Nǐ xiǎng qù zhōngguó ma?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "你要几本书",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你要买什么",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "你在干什么",
+      "pinyin": "Nǐ zài gànshénme",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "你在看什么",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你在哪儿",
+      "sources": [
+        "consolidado-structure",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "pinyin": "nǐ zài nǎ ér？"
+    },
+    {
+      "hanzi": "你在做什么",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你怎么去公司",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你怎么去学校",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你怎么说",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "你住在哪儿",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "年",
+      "pinyin": "nián",
+      "gloss_pt": "ano — 明年",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "您",
+      "pinyin": "nín",
+      "gloss_pt": "você formal",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "牛",
+      "pinyin": "niú",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "gloss_pt": "boi / vaca — 牛肉很好吃。",
+      "hsk1": true
+    },
+    {
+      "hanzi": "牛肉",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "牛肉很好吃",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "女儿",
+      "pinyin": "nǚ'ér",
+      "gloss_pt": "filha",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "旁边",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "跑",
+      "pinyin": "pǎo",
+      "gloss_pt": "correr",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "跑步",
+      "pinyin": "pǎobù",
+      "gloss_pt": "correr",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "朋友",
+      "pinyin": "péngyou",
+      "gloss_pt": "amigo — 这是我的朋友。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "啤酒",
+      "pinyin": "Pí jiǔ",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "漂亮",
+      "pinyin": "piàoliang",
+      "gloss_pt": "bonito / bonita",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "苹果",
+      "pinyin": "píngguǒ",
+      "gloss_pt": "maçã",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "苹果汁",
+      "pinyin": "píngguǒzhī",
+      "gloss_pt": "suco de maçã",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "瓶",
+      "pinyin": "Píng",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "瓶子",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "葡萄",
+      "pinyin": "pútao",
+      "gloss_pt": "uva",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "葡萄牙",
+      "pinyin": "Pútáoyá",
+      "gloss_pt": "Portugal",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "葡萄牙文",
+      "pinyin": "Pútáoyá wén",
+      "gloss_pt": "Língua chinesa",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "葡萄牙文的",
+      "pinyin": "pútáoyáwén de。",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "葡萄牙语",
+      "pinyin": "Pútáoyáyǔ",
+      "gloss_pt": "português",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "葡语",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "七",
+      "sources": [
+        "consolidado-structure",
+        "consolidado-vocab"
+      ],
+      "pinyin": "qī",
+      "gloss_pt": "sete",
+      "hsk1": true
+    },
+    {
+      "hanzi": "骑马",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "千",
+      "pinyin": "qiān",
+      "gloss_pt": "mil",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "前",
+      "pinyin": "qián",
+      "gloss_pt": "na frente — 学校前面",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "钱",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "pinyin": "qián",
+      "gloss_pt": "dinheiro",
+      "hsk1": true
+    },
+    {
+      "hanzi": "请",
+      "pinyin": "qǐng",
+      "gloss_pt": "por favor — 请进 / 请问",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "请等一下",
+      "sources": [
+        "lexicon-base",
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "请关窗",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "请进",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "请开门",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "请说慢一点",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "请问",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "请问你叫什么名字",
+      "pinyin": ",   ?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "请问这个多少钱",
+      "pinyin": "Qǐngwèn, zhège duōshǎo qián",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "去",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "pinyin": "qù",
+      "gloss_pt": "ir",
+      "hsk1": true
+    },
+    {
+      "hanzi": "去北京",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "然后",
+      "pinyin": "ránhòu",
+      "gloss_pt": "depois / então — 先吃饭，然后学习",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "然后学习",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "热",
+      "pinyin": "rè",
+      "gloss_pt": "quente",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "人",
+      "pinyin": "rén",
+      "gloss_pt": "pessoa",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "人民币",
+      "pinyin": "Rénmín bì",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "认识",
+      "pinyin": "rènshi",
+      "gloss_pt": "conhecer (pessoa) — 很高兴认识你。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "日",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "日/号",
+      "pinyin": "rì / hào",
+      "gloss_pt": "dia — 三月八号",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "日本",
+      "pinyin": "Rìběn",
+      "gloss_pt": "Japão",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "日本人",
+      "pinyin": "Rìběn rén",
+      "gloss_pt": "japonês",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "日文",
+      "pinyin": "Rìwén",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "容易",
+      "pinyin": "róngyì",
+      "gloss_pt": "fácil — 这个很容易。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "肉",
+      "pinyin": "Ròu",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "如果你喜欢这条裤子那就买",
+      "pinyin": "Rúguǒ nǐ xǐhuān zhè tiáo kùzǐ, nà jiù mǎi",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "入",
+      "pinyin": "rù",
+      "gloss_pt": "entrar (formal) — 入场",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "入场",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "三",
+      "sources": [
+        "consolidado-structure",
+        "consolidado-vocab"
+      ],
+      "pinyin": "sān",
+      "gloss_pt": "três",
+      "hsk1": true
+    },
+    {
+      "hanzi": "三百五十六",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "sān bǎi wǔ shí liù"
+    },
+    {
+      "hanzi": "三点",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "三个苹果",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "三口人",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "三块钱一斤",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "三瓶啤酒",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "三千学生",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "三十五块五毛",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "sān shí wǔ kuài wǔ máo。",
+      "hsk1": true
+    },
+    {
+      "hanzi": "三月八号",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "森林",
+      "pinyin": "sēnlín",
+      "gloss_pt": "floresta — 森林里有动物。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "森林里有动物",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "沙发",
+      "pinyin": "shā fā",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "山",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "shān",
+      "gloss_pt": "montanha — 这座山很高。",
+      "hsk1": true
+    },
+    {
+      "hanzi": "商店",
+      "pinyin": "shāngdiàn",
+      "gloss_pt": "loja",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "商店几点开门",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "商店卖衣服",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "商店在家后面",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "gloss_pt": "em cima — 桌子上有书",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "上课",
+      "pinyin": "Shàngkè",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "上午",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "蛇",
+      "pinyin": "shé",
+      "gloss_pt": "cobra — 我怕蛇。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "谁",
+      "pinyin": "shéi",
+      "gloss_pt": "quem",
+      "sources": [
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "谁的",
+      "pinyin": "shéi de",
+      "gloss_pt": "de quem",
+      "sources": [
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "谁的电话",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "谁是你的老师",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "谁喜欢吃草莓",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "谁想去咖啡馆",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "谁有猫",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "谁在学校",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "谁在医院工作",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "什么",
+      "pinyin": "shénme",
+      "gloss_pt": "o que",
+      "sources": [
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "什么时候",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "什么意思",
+      "pinyin": "shěnme yì si",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "湿",
+      "pinyin": "shī",
+      "gloss_pt": "molhado — 下雨了，我湿了。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "十",
+      "sources": [
+        "consolidado-structure",
+        "consolidado-vocab"
+      ],
+      "pinyin": "shí",
+      "gloss_pt": "dez",
+      "hsk1": true
+    },
+    {
+      "hanzi": "十八岁",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "十二生肖",
+      "pinyin": "Shí'èr shēngxiào",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "十块元",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "时间",
+      "pinyin": "shíjiān",
+      "gloss_pt": "tempo — 有时间吗？",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "试",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "试一试试一下试试",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "是",
+      "pinyin": "shì",
+      "gloss_pt": "ser",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "是不是",
+      "pinyin": "shì bú shì",
+      "gloss_pt": "é ou não é",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "是的",
+      "sources": [
+        "rag:dialogos_pratica.md"
+      ]
+    },
+    {
+      "hanzi": "是你的老师",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "是我的手机",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "是我妈妈",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "手机",
+      "pinyin": "shǒujī",
+      "gloss_pt": "celular — 我的手机没电了。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "手机在书包里",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "书",
+      "pinyin": "shū",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "gloss_pt": "livro — 看书",
+      "hsk1": true
+    },
+    {
+      "hanzi": "书店",
+      "sources": [
+        "rag:vocabulario_estruturas.md"
+      ]
+    },
+    {
+      "hanzi": "书店在哪儿",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "书在桌子上",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "鼠",
+      "pinyin": "shǔ",
+      "gloss_pt": "rato — 老鼠",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "帅",
+      "pinyin": "shuài",
+      "gloss_pt": "bonito / bonito (homem)",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "水",
+      "pinyin": "shuǐ",
+      "gloss_pt": "água — 我要喝水。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "水果",
+      "pinyin": "shuǐguǒ",
+      "gloss_pt": "frutas",
+      "sources": [
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "水饺",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "睡",
+      "pinyin": "shuì",
+      "gloss_pt": "dormir — 我睡觉了。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "说",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "shuō",
+      "gloss_pt": "falar — 我说汉语。",
+      "hsk1": true
+    },
+    {
+      "hanzi": "说话",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "说葡语",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "说一点儿葡语",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "说一说",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "说一下说说",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "四",
+      "sources": [
+        "consolidado-structure",
+        "consolidado-vocab"
+      ],
+      "pinyin": "sì",
+      "gloss_pt": "quatro",
+      "hsk1": true
+    },
+    {
+      "hanzi": "送",
+      "pinyin": "sòng",
+      "gloss_pt": "dar de presente / levar — 我送朋友一个礼物。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "酸",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "酸的",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "酸辣汤",
+      "pinyin": "Suān là tāng",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "岁",
+      "pinyin": "suì",
+      "gloss_pt": "idade — 我二十岁",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "所以",
+      "pinyin": "suǒyǐ",
+      "gloss_pt": "por isso — 所以我不去",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "所以我不去",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "所以休息",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "他",
+      "pinyin": "tā",
+      "gloss_pt": "ele",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "他不能游泳",
+      "pinyin": "Tā bùnéng yóuyǒng",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "他很高",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "他会游泳",
+      "pinyin": "Tā huì yóuyǒng",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "他来中国玩儿",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "他们",
+      "pinyin": "tāmen",
+      "gloss_pt": "eles",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "他们都在学校",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "tā men dōu zài xué xiào。"
+    },
+    {
+      "hanzi": "他们去了一个西餐厅",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "他们学校很大",
+      "pinyin": "Tāmen xuéxiào hěn dà",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "他能游泳",
+      "pinyin": "Tā néng yóuyǒng",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "他跑得很快",
+      "sources": [
+        "consolidado-structure",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "tā pǎo dé hěn kuài。"
+    },
+    {
+      "hanzi": "他去中国玩儿",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "他十岁",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "他是记者",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "他是医生",
+      "sources": [
+        "rag:dialogos_pratica.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "他是中国人",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "tā shì zhōng guó rén。"
+    },
+    {
+      "hanzi": "他为什么不来",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "他想买一本词典",
+      "pinyin": "Tā xiǎng mǎi yī běn cídiǎn",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "他想去中国玩儿",
+      "pinyin": "Tā xiǎng qù zhōngguó wán er",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "他又来了",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "他在医院工作",
+      "sources": [
+        "rag:dialogos_pratica.md"
+      ]
+    },
+    {
+      "hanzi": "他在用电脑",
+      "pinyin": "Tā zài yòng diànnǎo",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "她",
+      "pinyin": "tā",
+      "gloss_pt": "ela",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "她不会游泳",
+      "pinyin": "Tā bù huì yóuyǒng",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "她的眼睛很大",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "tā de yǎn jīng hěn dà。"
+    },
+    {
+      "hanzi": "她是不是老师",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "tā shì bu shì lǎo shī？"
+    },
+    {
+      "hanzi": "她是谁",
+      "pinyin": "Tā shì shéi?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "她是我妈妈",
+      "pinyin": "Tā shì wǒ māmā",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "她是中国人",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "tā shì zhōng guó rén。"
+    },
+    {
+      "hanzi": "她想休息",
+      "pinyin": "2.  A    B   C",
+      "gloss_pt": "Onde “一下\" deveria aparecer?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "她有两张中国地图",
+      "pinyin": "Tā yǒu liǎng zhāng zhōngguó dìtú,",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "太",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "太便宜了",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "太贵了",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "太好了",
+      "sources": [
+        "rag:dialogos_pratica.md"
+      ]
+    },
+    {
+      "hanzi": "太空兔",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "太了",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "汤",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "汤热",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "汤是热的",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "糖",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "糖醋鱼",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "糖是甜的",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "糖甜",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "踢",
+      "pinyin": "tī",
+      "gloss_pt": "chutar",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "踢足球",
+      "pinyin": "tī zúqiú",
+      "gloss_pt": "jogar futebol",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "天气真好",
+      "pinyin": "Tiānqì zhēn hǎo!",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "甜",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "甜的",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "填空",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "条",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "跳舞",
+      "pinyin": "Tiàowǔ",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "听",
+      "pinyin": "tīng",
+      "gloss_pt": "ouvir — 我听音乐。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "同学",
+      "pinyin": "tóngxué",
+      "gloss_pt": "colega de classe — 我和同学一起学习。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "兔",
+      "pinyin": "tù",
+      "gloss_pt": "coelho — 小白兔",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "外",
+      "pinyin": "wài",
+      "gloss_pt": "fora — 外面",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "外公",
+      "pinyin": "wàigōng",
+      "gloss_pt": "avô materno",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "外面",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "外婆",
+      "pinyin": "wàipó",
+      "gloss_pt": "avó materna",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "玩",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "玩儿",
+      "pinyin": "saber",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "玩一玩",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "玩一下玩玩",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "晚",
+      "pinyin": "wǎn",
+      "gloss_pt": "tarde / noite — 晚上好！",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "晚上好",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "碗",
+      "pinyin": "wǎn",
+      "gloss_pt": "tigela — 一碗米饭",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "万",
+      "pinyin": "wàn",
+      "gloss_pt": "dez mil",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "王老师好",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "为什么",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "问",
+      "pinyin": "wèn",
+      "gloss_pt": "perguntar — 我问一个问题。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "问题",
+      "pinyin": "wèntí",
+      "gloss_pt": "pergunta / problema — 问问题",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "问问题",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "问问题路价格",
+      "pinyin": "Wèn",
+      "gloss_pt": "perguntar",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我",
+      "pinyin": "wǒ",
+      "gloss_pt": "eu",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "我爸爸",
+      "sources": [
+        "consolidado-structure"
+      ]
+    },
+    {
+      "hanzi": "我爸爸妈妈在家",
+      "pinyin": "wǒ bà ba、 mā ma zài jiā。",
+      "sources": [
+        "consolidado-structure"
+      ]
+    },
+    {
+      "hanzi": "我不会开车",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ bú huì kāi chē。"
+    },
+    {
+      "hanzi": "我不能开车",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ bù néng kāi chē。"
+    },
+    {
+      "hanzi": "我不去",
+      "pinyin": "Wǒ bù qù",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我不是老师",
+      "sources": [
+        "consolidado-structure",
+        "rag:dialogos_pratica.md"
+      ],
+      "pinyin": "wǒ bú shì lǎo shī。"
+    },
+    {
+      "hanzi": "我不太喜欢",
+      "pinyin": "Wǒ bù tài xǐhuān",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我不想开车",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ bù xiǎng kāi chē。"
+    },
+    {
+      "hanzi": "我不想去你们学校学习汉语",
+      "pinyin": "Wǒ  bù xiǎng qù nǐmen xuéxiào xuéxí hànyǔ",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我不知道他",
+      "pinyin": "Wǒ bù zhīdào tā",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我常去",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我常去公园",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我吃饭了",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我出门了",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我错了",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我的家非常大",
+      "pinyin": "Wǒ de jiā fēicháng dà",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我的书",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我的衣服很漂亮",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ de yī fu hěn piào liang。"
+    },
+    {
+      "hanzi": "我读了三遍",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我二十岁",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我发邮件给你",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我非常喜欢学习",
+      "pinyin": "Wǒ fēicháng xǐhuān xuéxí",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我跟你一起去",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我还没吃",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我还没吃饭",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我还要买一件衬衫",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我还要一个",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我很好",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ hěn hǎo。"
+    },
+    {
+      "hanzi": "我回答一下这个问题",
+      "pinyin": "Wǒ huídá yīxià zhège wèntí",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我会说葡萄牙语",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ huì shuō pú táo yá yǔ。"
+    },
+    {
+      "hanzi": "我会说一点点",
+      "sources": [
+        "rag:dialogos_pratica.md"
+      ]
+    },
+    {
+      "hanzi": "我会说一点儿葡语",
+      "pinyin": "Wǒ huì shuō yīdiǎnr pú yǔ",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我会写汉字",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ huì xiě hàn zì。"
+    },
+    {
+      "hanzi": "我家",
+      "pinyin": "wǒ jiā",
+      "gloss_pt": "minha casa / minha família",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "我家有三人",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我家有四口人",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ jiā yǒu sì kǒu rén。"
+    },
+    {
+      "hanzi": "我家有五口人",
+      "sources": [
+        "rag:dialogos_pratica.md",
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "我叫小明",
+      "sources": [
+        "rag:dialogos_pratica.md"
+      ]
+    },
+    {
+      "hanzi": "我姐姐在医院",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ jiě jie zài yī yuàn。"
+    },
+    {
+      "hanzi": "我今年四十一岁",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ jīn nián sì shí yī suì。"
+    },
+    {
+      "hanzi": "我今天很累",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我觉得很好",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我看电视",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ kàn diàn shì。"
+    },
+    {
+      "hanzi": "我看时间",
+      "pinyin": "1.  A    B    C",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我可以问你一个问题吗",
+      "pinyin": "Wǒ kěyǐ wèn nǐ yīgè wèntí ma",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我困了",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ kùn le。"
+    },
+    {
+      "hanzi": "我来孔子学院学汉语",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我买东西",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ mǎi dōng xī。"
+    },
+    {
+      "hanzi": "我买水果",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我没有中国地图",
+      "pinyin": "Wǒ méiyǒu zhōngguó dìtú",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我妹妹在学校",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ mèi mei zài xué xiào。"
+    },
+    {
+      "hanzi": "我们",
+      "pinyin": "wǒmen",
+      "gloss_pt": "nós",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "我们出去玩儿吧",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我们家",
+      "pinyin": "wǒmen jiā",
+      "gloss_pt": "nossa casa / nossa família",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "我们去公园",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我们去哪儿",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "我们要不要买几个椅子",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ men yào bu yào mǎi jǐ gè yǐ zi？"
+    },
+    {
+      "hanzi": "我们一起去吧",
+      "sources": [
+        "rag:dialogos_pratica.md"
+      ]
+    },
+    {
+      "hanzi": "我能不能看一下",
+      "pinyin": "Wǒ néng bùnéng kàn yīxià?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我能吃一点儿辣的",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我能看电视吗",
+      "pinyin": "Wǒ néng kàn diànshì ma?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我能去学校",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ néng qù xué xiào。"
+    },
+    {
+      "hanzi": "我能坐那里吗",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ néng zuò nà lǐ ma？"
+    },
+    {
+      "hanzi": "我怕蛇",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我去",
+      "pinyin": "Wǒ qù",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我去超市",
+      "pinyin": "4.   A     B    C",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我去过北京",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我去过中国",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我去咖啡馆喝咖啡",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ qù kā fēi guǎn hē kā fēi。"
+    },
+    {
+      "hanzi": "我去孔子学院学汉语",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我去学校看书",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ qù xué xiào kàn shū。"
+    },
+    {
+      "hanzi": "我湿了",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我是巴西人",
+      "sources": [
+        "consolidado-structure",
+        "rag:dialogos_pratica.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "pinyin": "wǒ shì bā xī rén。"
+    },
+    {
+      "hanzi": "我是学生",
+      "sources": [
+        "consolidado-structure",
+        "rag:dialogos_pratica.md",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "wǒ shì xué shēng。"
+    },
+    {
+      "hanzi": "我睡觉了",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我说汉语",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我太喜欢他了",
+      "pinyin": "Wǒ tài xǐhuān tāle!",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我听音乐",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我问一个问题",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我问一下老师",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ wèn yí xià lǎo shī。"
+    },
+    {
+      "hanzi": "我喜欢草莓",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "我喜欢吃饭",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我喜欢吃水果",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ xǐ huan chī shuǐ guǒ。"
+    },
+    {
+      "hanzi": "我喜欢喝茶",
+      "sources": [
+        "lexicon-base",
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ xǐ huan hē chá。"
+    },
+    {
+      "hanzi": "我喜欢喝冷水",
+      "sources": [
+        "rag:dialogos_pratica.md"
+      ]
+    },
+    {
+      "hanzi": "我喜欢看海",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我想喝咖啡",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ xiǎng hē kā fēi。"
+    },
+    {
+      "hanzi": "我想喝一点儿水",
+      "pinyin": "Wǒ xiǎng hè yīdiǎnr shuǐ",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我想看电视行吗",
+      "pinyin": "Wǒ xiǎng kàn diànshì，xíng ma?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我想买一点儿苹果",
+      "pinyin": "Wǒ xiǎng mǎi yīdiǎnr píngguǒ",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我想买一件衣服",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我想去",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我想去你们学校学习汉语",
+      "pinyin": "Wǒ xiǎng qù nǐmen xuéxiào xuéxí hànyǔ",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我想去学校",
+      "pinyin": "Wǒ xiǎng qù xuéxiào",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我想去中国玩儿",
+      "pinyin": "Wǒ xiǎng qù zhōngguó wán er",
+      "gloss_pt": "Fazer uma viagem",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我想学汉语",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ xiǎng xué hàn yǔ。"
+    },
+    {
+      "hanzi": "我休息一下",
+      "sources": [
+        "consolidado-structure",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "wǒ xiū xi yí xià。"
+    },
+    {
+      "hanzi": "我学习汉语",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ xué xí hàn yǔ。"
+    },
+    {
+      "hanzi": "我要吃米饭",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ yào chī mǐ fàn。"
+    },
+    {
+      "hanzi": "我要吃一个苹果",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ yào chī yí gè píng guǒ。"
+    },
+    {
+      "hanzi": "我要喝水",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我要去饭店",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我要去饭店吃东西",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我要去咖啡店喝咖啡",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我要去学校",
+      "pinyin": "Wǒ yào qù xuéxiào",
+      "gloss_pt": "/v.o.",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我也喜欢茶",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ yě xǐ huan chá。"
+    },
+    {
+      "hanzi": "我用笔写字",
+      "pinyin": "Wǒ yòng bǐ xiězì",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我用电脑学习",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我有一张中国地图",
+      "pinyin": "Wǒ yǒuyī zhāng zhōngguó dìtú",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我有一只猫",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我有这本书了我还想要一本",
+      "pinyin": "Wǒ yǒu zhè běn shūle, wǒ hái xiǎng yào yī běn",
+      "gloss_pt": "Indica que existem suplementos",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我在干家务",
+      "pinyin": "Wǒ zài gàn jiāwù.",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我在公司工作",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我在家工作",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ zài jiā gōng zuò。"
+    },
+    {
+      "hanzi": "我在教室上课",
+      "pinyin": "Wǒ zài jiàoshì shàngkè",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我在看书",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "我在学习汉语",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "我在学校",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ zài xué xiào。"
+    },
+    {
+      "hanzi": "我在做饭",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我找我的书",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我知道这个字",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我住在北京",
+      "sources": [
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "我走路去学校",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "我最不喜欢吃鱼",
+      "pinyin": "Wǒ zuì bù xǐhuān chī yú",
+      "gloss_pt": "2.最+不+adj/v",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "我最喜欢茶",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ zuì xǐ huan chá。"
+    },
+    {
+      "hanzi": "我最喜欢苹果汁",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǒ zuì xǐ huan píng guǒ zhī。"
+    },
+    {
+      "hanzi": "我坐公交车去",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "我坐在中间",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "五",
+      "sources": [
+        "consolidado-structure",
+        "consolidado-vocab"
+      ],
+      "pinyin": "wǔ",
+      "gloss_pt": "cinco",
+      "hsk1": true
+    },
+    {
+      "hanzi": "五笔",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "五块元",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "五十二地图",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "五十块元",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "五万零九百零七",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "wǔ wàn líng jiǔ bǎi líng qī"
+    },
+    {
+      "hanzi": "午",
+      "pinyin": "wǔ",
+      "gloss_pt": "meio-dia — 中午 / 上午 / 下午",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "西",
+      "pinyin": "xī",
+      "gloss_pt": "oeste — 西边",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "西班牙语",
+      "pinyin": "Xībānyáyǔ",
+      "gloss_pt": "espanhol",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "西边",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "西餐厅",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "西瓜",
+      "pinyin": "xīguā",
+      "gloss_pt": "melancia",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "习",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "喜欢",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "pinyin": "xǐhuan",
+      "gloss_pt": "gostar",
+      "hsk1": true
+    },
+    {
+      "hanzi": "喜欢什么",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "下",
+      "pinyin": "xià",
+      "gloss_pt": "embaixo — 桌子下有猫",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "下午",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "下午见",
+      "sources": [
+        "rag:dialogos_pratica.md"
+      ]
+    },
+    {
+      "hanzi": "下雨",
+      "pinyin": "xiàyǔ",
+      "gloss_pt": "chover",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "下雨了",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "先吃饭",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "先生",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "先生小姐你想买什么",
+      "pinyin": "Xiānshēng/xiǎojiě, nǐ xiǎng mǎi shénme?",
+      "gloss_pt": "senhor",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "现在",
+      "pinyin": "xiànzài",
+      "gloss_pt": "agora",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "现在几点",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "现在几点了",
+      "sources": [
+        "consolidado-structure",
+        "rag:dialogos_pratica.md"
+      ],
+      "pinyin": "xiàn zài jǐ diǎn le？"
+    },
+    {
+      "hanzi": "现在两点了",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "xiàn zài liǎng diǎn le。",
+      "hsk1": true
+    },
+    {
+      "hanzi": "现在两点一刻",
+      "sources": [
+        "rag:dialogos_pratica.md"
+      ]
+    },
+    {
+      "hanzi": "现在三点半",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "相册",
+      "pinyin": "Xiàngcè",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "香蕉",
+      "pinyin": "xiāngjiāo",
+      "gloss_pt": "banana",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "想",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "pinyin": "xiǎng",
+      "gloss_pt": "querer",
+      "hsk1": true
+    },
+    {
+      "hanzi": "想买一件衬衫",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "想买一件衣服",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "想要",
+      "pinyin": "xiǎngyào",
+      "gloss_pt": "querer",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "想一想",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "向一位同学描述自己的词典",
+      "pinyin": "Descreva  o  seu  dicionário  para  um  colega.",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小",
+      "pinyin": "xiǎo",
+      "gloss_pt": "pequeno",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "小白兔",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "小姐",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐当然可以",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐还要什么",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐好请等一下",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐好请一下",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐好要不要来个牛肉",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐可以",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐块比较也比较",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐来一点儿什么",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐您还要买什么",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐请坐请喝茶",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐四百二十八块",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐糖醋鱼",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐先生想买什么",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐一点儿什么",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐哟您会说",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐哟您会说汉语",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小姐怎么样",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "小时",
+      "pinyin": "xiǎoshí",
+      "gloss_pt": "hora",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "写",
+      "pinyin": "xiě",
+      "gloss_pt": "escrever",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "写字",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "谢谢",
+      "pinyin": "xièxie",
+      "gloss_pt": "obrigado — 谢谢你！",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "谢谢你",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "新",
+      "pinyin": "xīn",
+      "gloss_pt": "novo — 这是我的新手机。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "星期",
+      "pinyin": "xīngqī",
+      "gloss_pt": "semana — 星期一",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "星期几",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "星期一",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "休息",
+      "pinyin": "xiūxi",
+      "gloss_pt": "descansar — 我休息一下。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "学生",
+      "pinyin": "xuésheng",
+      "gloss_pt": "estudante — 我是学生。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "学习",
+      "pinyin": "xuéxí",
+      "gloss_pt": "estudar",
+      "sources": [
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "学校",
+      "pinyin": "xuéxiào",
+      "gloss_pt": "escola",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "学校里有商店",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "xué xiào lǐ yǒu shāng diàn。"
+    },
+    {
+      "hanzi": "学校前面",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "学校在哪儿",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "烟",
+      "pinyin": "Yān",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "眼睛",
+      "pinyin": "yǎnjing",
+      "gloss_pt": "olhos",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "羊",
+      "pinyin": "yáng",
+      "gloss_pt": "cabra / ovelha — 羊肉",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "羊肉",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "幺",
+      "pinyin": "yāo",
+      "gloss_pt": "um (telefone, códigos, sequência de algarismos)",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "要",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab"
+      ],
+      "pinyin": "yào",
+      "gloss_pt": "querer / precisar",
+      "hsk1": true
+    },
+    {
+      "hanzi": "要不要",
+      "pinyin": "yào bú yào",
+      "gloss_pt": "quer ou não quer",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "爷爷",
+      "pinyin": "yéye",
+      "gloss_pt": "avô paterno",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "也",
+      "pinyin": "yě",
+      "gloss_pt": "também",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "一",
+      "sources": [
+        "lexicon-base",
+        "consolidado-structure",
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "pinyin": "yī",
+      "gloss_pt": "um (contagem, quantidade, ordem habitual)",
+      "hsk1": true
+    },
+    {
+      "hanzi": "一百块元",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "一百零二",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "yì bǎi líng èr"
+    },
+    {
+      "hanzi": "一杯茶",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "一杯咖啡",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "一杯水",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "一本书",
+      "sources": [
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "一点儿",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "一点水",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "一二三四五六七八九十",
+      "pinyin": "yī， èr， sān， sì， wǔ， liù， qī， bā， jiǔ， shí",
+      "sources": [
+        "consolidado-structure"
+      ]
+    },
+    {
+      "hanzi": "一份菜",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "一份工作",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "一个本子",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "一个苹果",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "一个人",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "一件",
+      "pinyin": "Yī     jiàn",
+      "gloss_pt": "camisa",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "一件白衬衫",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "一件衬衫",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "一件衣服",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "一块蛋糕",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "一块钱",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "一块元",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "一瓶啤酒",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "一条",
+      "pinyin": "Yī   tiáo",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "一条裤子",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "一碗米饭",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "一下",
+      "pinyin": "yíxià",
+      "gloss_pt": "rapidinho / um pouco",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "一行字",
+      "pinyin": "Yī hángzì",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "一张中文的一张葡萄牙文的",
+      "pinyin": "yī zhāng zhōngwén de, yī zhāng pútáoyá wén de.",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "一只猫",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "一只手",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "一座山",
+      "pinyin": "Yīzuò shān",
+      "gloss_pt": "Montanha",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "衣服",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "yīfu",
+      "gloss_pt": "roupa — 买衣服",
+      "hsk1": true
+    },
+    {
+      "hanzi": "衣服脏了",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "医生",
+      "pinyin": "yīshēng",
+      "gloss_pt": "médico — 医生在医院工作。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "医院",
+      "pinyin": "yīyuàn",
+      "gloss_pt": "hospital",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "疑问词",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "椅子",
+      "pinyin": "yǐzi",
+      "gloss_pt": "cadeira — 坐椅子",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "意思",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "yìsi",
+      "gloss_pt": "significado — 这个字什么意思？",
+      "hsk1": true
+    },
+    {
+      "hanzi": "意思看一下",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "因为",
+      "pinyin": "yīnwèi",
+      "gloss_pt": "porque — 因为累，所以休息",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "因为茶很好喝",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "因为很便宜",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "因为今天很冷",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "因为累",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "因为累了",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "因为他很忙",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "因为他生病了",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "因为我困了",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "因为下雨",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "因为下雨了",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "饮料",
+      "pinyin": "yǐnliào",
+      "gloss_pt": "bebida",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "英文",
+      "pinyin": "Yīngwén",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "英语",
+      "pinyin": "Yīngyǔ",
+      "gloss_pt": "inglês",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "迎",
+      "pinyin": "yíng",
+      "gloss_pt": "receber / dar boas-vindas — 欢迎来我家！",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "用",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "yòng",
+      "gloss_pt": "usar — 用电脑工作",
+      "hsk1": true
+    },
+    {
+      "hanzi": "用笔电电话",
+      "pinyin": "Yòng",
+      "gloss_pt": "usar",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "用电脑工作",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "用一下用用",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "用一用",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "用于可以卷起来或展开",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "用于平面的东西",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "邮件",
+      "pinyin": "yóujiàn",
+      "gloss_pt": "e-mail — 发邮件",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "有",
+      "pinyin": "yǒu",
+      "gloss_pt": "ter / haver",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "有时间吗",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "有用",
+      "pinyin": "perguntar",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "又",
+      "pinyin": "yòu",
+      "gloss_pt": "novamente (passado) — 他又来了",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "右",
+      "pinyin": "yòu",
+      "gloss_pt": "direita — 右边",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "右边",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "鱼",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "雨",
+      "pinyin": "yǔ",
+      "gloss_pt": "chuva — 今天下雨了。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "语法",
+      "pinyin": "yǔfǎ",
+      "gloss_pt": "gramática",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "语言",
+      "pinyin": "yǔyán",
+      "gloss_pt": "idioma",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "元块",
+      "pinyin": "Yuán (kuài)",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "月",
+      "pinyin": "yuè",
+      "gloss_pt": "mês — 这个月",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "再",
+      "pinyin": "zài",
+      "gloss_pt": "novamente (futuro) — 再见 / 再来一次",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "再见",
+      "pinyin": "zàijiàn",
+      "gloss_pt": "tchau — 明天见！",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "再来一次",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "在",
+      "pinyin": "zài",
+      "gloss_pt": "estar em",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "在哪儿",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "在学校",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "在医院旁边",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "在右边",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "在桌子上",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "脏",
+      "pinyin": "zāng",
+      "gloss_pt": "sujo — 衣服脏了。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "早",
+      "pinyin": "zǎo",
+      "gloss_pt": "cedo / manhã — 早上好！",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "早上好",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "怎么",
+      "pinyin": "zěnme",
+      "gloss_pt": "como",
+      "sources": [
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "怎么样",
+      "pinyin": "zěnmeyàng",
+      "gloss_pt": "como é / como está",
+      "sources": [
+        "consolidado-vocab",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "张",
+      "pinyin": "zhāng",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "长",
+      "pinyin": "cháng",
+      "gloss_pt": "comprido — 这条路很长。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "丈夫",
+      "pinyin": "zhàngfu",
+      "gloss_pt": "marido",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "gloss_pt": "procurar — 我找我的书。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "照片",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这",
+      "sources": [
+        "lexicon-base",
+        "rag:vocabulario_estruturas.md"
+      ]
+    },
+    {
+      "hanzi": "这本本子多少钱",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这本本子元钱",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这本还是那本",
+      "pinyin": "Zhè běn hái shì nà běn?",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这本书比较无聊我不",
+      "pinyin": "Zhè běn shū bǐjiào wúliáo, wǒ bù xǐhuān",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这本书多少钱",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这本书很有用",
+      "pinyin": "Zhè běn shū hěn yǒuyòng",
+      "gloss_pt": "útil",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这本书块钱",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这本书是谁的",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "这本书真有意思",
+      "pinyin": "Zhè běn shūZhēnyǒuyìsi",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这儿有瓶冰啤酒",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这个",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "这个菜是辣的",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这个菜怎么样",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "这个多少钱",
+      "sources": [
+        "consolidado-structure",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "pinyin": "zhè ge duō shǎo qián？"
+    },
+    {
+      "hanzi": "这个饭店很贵",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "这个很容易",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "这个苹果是红色的",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "zhè ge píng guǒ shì hóng sè de。"
+    },
+    {
+      "hanzi": "这个月",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "这个字错了",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "这个字是什么意思",
+      "pinyin": "Zhègè zì shì shěnme yì si",
+      "gloss_pt": "significar",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这个字怎么写",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "这个最贵",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "zhè ge zuì guì。"
+    },
+    {
+      "hanzi": "这家个饭店很大很漂亮",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这件白衬衫多少钱",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这件白衬衫四百二十八块",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这件白衬衫一百块",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这件白衬衫真漂亮",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这件衬衫钱",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这件衣服真漂亮",
+      "pinyin": "Zhè jiàn yīfú zhēnPiàoliang!",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这里",
+      "pinyin": "zhèlǐ",
+      "gloss_pt": "aqui",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "这是谁",
+      "sources": [
+        "rag:dialogos_pratica.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "这是谁的家",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "zhè shì shuí de jiā？"
+    },
+    {
+      "hanzi": "这是我的家",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "zhè shì wǒ de jiā。"
+    },
+    {
+      "hanzi": "这是我的朋友",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "这是我哥哥",
+      "sources": [
+        "rag:dialogos_pratica.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "这四支笔",
+      "pinyin": "Zhè sì zhī bǐ",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这条河很长",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "这条裤子",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这条裤子太好看了",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这条路很长",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "这张地图多少钱",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这张地图块钱",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这张地图是葡萄牙文的",
+      "pinyin": "Zhè zhāng dìtú shì pútáoyá wén de",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这支笔多少钱",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这支笔元钱",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "这座山很高",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "真",
+      "pinyin": "zhēn",
+      "gloss_pt": "realmente",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "真便宜",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "真贵",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "支",
+      "pinyin": "Zhī",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "支张本个口",
+      "pinyin": "Zhī    zhāng  běn      gè       kǒu",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "知道",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "pinyin": "zhīdào",
+      "gloss_pt": "saber (informação) — 我知道这个字。",
+      "hsk1": true
+    },
+    {
+      "hanzi": "只",
+      "pinyin": "zhī",
+      "gloss_pt": "animais / um de par — 一只猫 / 一只手",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "纸",
+      "pinyin": "zhǐ",
+      "gloss_pt": "张",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "中",
+      "pinyin": "zhōng",
+      "gloss_pt": "meio — 中间",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "中餐厅",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "中国",
+      "pinyin": "Zhōngguó",
+      "gloss_pt": "China",
+      "sources": [
+        "consolidado-vocab",
+        "rag:vocabulario_estruturas.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "中国地图",
+      "pinyin": "Zhōngguó dìtú",
+      "gloss_pt": "mapa",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "中国地图一张中文的一张",
+      "pinyin": "。          ,",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "中国饭店",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "中国人",
+      "pinyin": "Zhōngguó rén",
+      "gloss_pt": "chinês",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "中间",
+      "pinyin": "zhōngjiān",
+      "gloss_pt": "meio",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "中间的人是谁",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "zhōng jiān de rén shì shuí？"
+    },
+    {
+      "hanzi": "中文",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab"
+      ],
+      "pinyin": "Zhōngwén",
+      "gloss_pt": "chinês",
+      "hsk1": true
+    },
+    {
+      "hanzi": "中午",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "钟",
+      "pinyin": "zhōng",
+      "gloss_pt": "relógio",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "猪",
+      "pinyin": "zhū",
+      "gloss_pt": "porco — 猪肉",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "猪肉",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "主菜",
+      "pinyin": "Zhǔ cài",
+      "gloss_pt": "prato",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "住",
+      "pinyin": "zhù",
+      "gloss_pt": "morar — 住酒店",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "住酒店",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "桌子",
+      "pinyin": "zhuōzi",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "gloss_pt": "mesa — 桌子上有书",
+      "hsk1": true
+    },
+    {
+      "hanzi": "桌子上有什么",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "桌子上有书",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "桌子下有猫",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "桌子下有一个猫",
+      "sources": [
+        "consolidado-structure"
+      ],
+      "pinyin": "zhuō zi xià yǒu yí gè māo。"
+    },
+    {
+      "hanzi": "紫色",
+      "pinyin": "Zǐ    sè",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "字",
+      "pinyin": "zì",
+      "gloss_pt": "caractere — 写字",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "走",
+      "pinyin": "zǒu",
+      "gloss_pt": "andar / ir embora — 我走路去学校。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "走路去",
+      "sources": [
+        "rag:hsk1_interrogatives_pt.md"
+      ]
+    },
+    {
+      "hanzi": "最",
+      "sources": [
+        "lexicon-base",
+        "consolidado-vocab"
+      ],
+      "pinyin": "zuì",
+      "gloss_pt": "mais / o mais",
+      "hsk1": true
+    },
+    {
+      "hanzi": "最大的大学",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "最好吃的菜",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "最好的学校",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "最漂亮的人",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "最小的国家",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "昨天",
+      "pinyin": "zuótiān",
+      "gloss_pt": "ontem — 昨天我去学校。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "昨天我去学校",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "左",
+      "pinyin": "zuǒ",
+      "gloss_pt": "esquerda — 左边",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md",
+        "rag:hsk1_interrogatives_pt.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "左边",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "作业没做完当然不能看电视",
+      "pinyin": "Zuòyè méi zuò wán, dāngrán bùnéng kàn diànshì",
+      "sources": [
+        "lexicon-base"
+      ]
+    },
+    {
+      "hanzi": "坐",
+      "pinyin": "zuò",
+      "gloss_pt": "sentar",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "坐椅子",
+      "sources": [
+        "rag:extraContent.md"
+      ]
+    },
+    {
+      "hanzi": "做",
+      "pinyin": "zuò",
+      "gloss_pt": "fazer — 我在做饭。",
+      "sources": [
+        "consolidado-vocab",
+        "rag:extraContent.md"
+      ],
+      "hsk1": true
+    },
+    {
+      "hanzi": "做饭",
+      "pinyin": "zuòfàn",
+      "gloss_pt": "cozinhar",
+      "sources": [
+        "consolidado-vocab"
+      ],
+      "hsk1": true
+    }
+  ]
+}

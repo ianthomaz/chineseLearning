@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-06-20T13:40:29.663Z",
+  "nivel": 1,
+  "model": "qwen2.5:14b-instruct",
+  "phrases": [
+    {
+      "nivel": 1,
+      "pt": "Eu estou em casa",
+      "hanzi": "我在家",
+      "pinyin": "wǒ zài jiā",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "在",
+          "caracteres": [
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            }
+          ],
+          "pinyin": "zài",
+          "pt": "estar em",
+          "dificil": false
+        },
+        {
+          "palavra": "家",
+          "caracteres": [
+            {
+              "hanzi": "家",
+              "pinyin": "jiā"
+            }
+          ],
+          "pinyin": "jiā",
+          "pt": "casa",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "学校",
+          "pinyin": "xuéxiào",
+          "pt": "escola"
+        },
+        {
+          "hanzi": "医院",
+          "pinyin": "yīyuàn",
+          "pt": "hospital"
+        },
+        {
+          "hanzi": "办公室",
+          "pinyin": "bàngōngshì",
+          "pt": "escritório"
+        }
+      ],
+      "tags": [
+        "tema:local"
+      ],
+      "id": "n1-046"
+    }
+  ],
+  "rejected": [
+    {
+      "hanzi": "我是巴西人",
+      "err": "duplicate"
+    },
+    {
+      "hanzi": "这是巴西地图",
+      "err": "distractor in tokens"
+    }
+  ]
+}

@@ -20,6 +20,8 @@ Estes números **não se alteram** ao refatorar docs nem ao “simplificar” �
 
 `--port=` / `PREVIEW_WEBPLACE_PORT` / `PORT=` só em **exceção** (máquina partilhada, conflito real).
 
+**Login Google (OAuth):** as URIs registadas no GCP usam **34827** (dev) e **34902** (`--local`). A porta **34901** (estático) **não** tem OAuth. Mudar portas sem actualizar o Google Console quebra o login — ver [09_google_auth_jogo.md](09_google_auth_jogo.md) § Contrato de URIs. A **API LLM** (`LLM_API_URL`) pode mudar de host **sem** afectar OAuth.
+
 ---
 
 ## Ver o site a correr (recomendado — **não** precisa de API LLM)

@@ -10,3 +10,10 @@ node_modules/
 # Next.js
 web/.next/
 web/out/
+
+# Local credentials (Auth Google, etc.) — see docs/09_google_auth_jogo.md
+local/credentials/credentials.json
+local/credentials/google-oauth-client.json
+local/credentials/generated/
+local/credentials/*.env
+local/credentials/*.env.*

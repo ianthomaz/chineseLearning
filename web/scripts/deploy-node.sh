@@ -12,7 +12,8 @@ set -euo pipefail
 #   DEPLOY_NODE_HOST   (default: DEPLOY_WEBPLACE_HOST ou itcsVM)
 #   DEPLOY_NODE_DIR    (default: /home/opc/projetos/chineseLearning-app)
 #   DEPLOY_NODE_PORT   (default: 34827) — mesmo valor no proxy_pass nginx
-#   DEPLOY_NODE_RESTART_CMD — se definido, corre por SSH após o build (ex.: pm2 reload)
+#   DEPLOY_NODE_RESTART_CMD — se definido, corre por SSH após o build (substitui o reload default).
+#   DEPLOY_NODE_SKIP_PM2_RELOAD=1 — não corre o pm2 reload automático (VM sem PM2 ou outro nome de app).
 #   DEPLOY_NODE_SKIP_CI=1 — não corre npm ci no remoto (só build:server). Use quando só mudaste
 #     conteúdo/código e package-lock.json não mudou — mais rápido. Se o build falhar por deps, repete sem isto.
 
@@ -65,12 +66,16 @@ npm run build:server
 REMOTE_EOF
 }
 
+run_build
+
 if [[ -n "${DEPLOY_NODE_RESTART_CMD:-}" ]]; then
-  run_build
+  echo "→ DEPLOY_NODE_RESTART_CMD"
   ssh "$REMOTE" "bash -lc $(printf '%q' "$DEPLOY_NODE_RESTART_CMD")"
+elif [[ "${DEPLOY_NODE_SKIP_PM2_RELOAD:-0}" != "1" ]]; then
+  echo "→ pm2 reload chinese-learning-app (skip with DEPLOY_NODE_SKIP_PM2_RELOAD=1)"
+  ssh "$REMOTE" "cd ${REMOTE_DIR} && pm2 reload chinese-learning-app --update-env"
 else
-  run_build
   echo ""
-  echo "Build feito. No servidor, mantém o processo a correr (ex.: systemd ou pm2), por exemplo:"
-  echo "  cd $REMOTE_DIR && set -a && source ./server.env && set +a && NODE_ENV=production PORT=$PORT npm run start:server"
+  echo "Build feito. PM2 reload saltado. Arranca ou recarrega o processo manualmente, por exemplo:"
+  echo "  cd $REMOTE_DIR && pm2 reload chinese-learning-app --update-env"
 fi

@@ -1,0 +1,2630 @@
+{
+  "version": 1,
+  "source": "consolidado",
+  "nivel": 1,
+  "count": 46,
+  "phrases": [
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "二十",
+      "pinyin": "èr shí",
+      "tokens": [
+        {
+          "palavra": "二十",
+          "caracteres": [
+            {
+              "hanzi": "二",
+              "pinyin": "èr"
+            },
+            {
+              "hanzi": "十",
+              "pinyin": "shí"
+            }
+          ],
+          "pinyin": "èr shí",
+          "pt": "",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "填空",
+          "pinyin": "",
+          "pt": "填空"
+        },
+        {
+          "hanzi": "风",
+          "pinyin": "fēng",
+          "pt": "vento — 风很大。"
+        },
+        {
+          "hanzi": "但是",
+          "pinyin": "dànshì",
+          "pt": "mas — 我想去，但是没时间"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-001"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "三百五十六",
+      "pinyin": "sān bǎi wǔ shí liù",
+      "tokens": [
+        {
+          "palavra": "三百五十六",
+          "caracteres": [
+            {
+              "hanzi": "三",
+              "pinyin": "sān"
+            },
+            {
+              "hanzi": "百",
+              "pinyin": "bǎi"
+            },
+            {
+              "hanzi": "五",
+              "pinyin": "wǔ"
+            },
+            {
+              "hanzi": "十",
+              "pinyin": "shí"
+            },
+            {
+              "hanzi": "六",
+              "pinyin": "liù"
+            }
+          ],
+          "pinyin": "sān bǎi wǔ shí liù",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "巴西",
+          "pinyin": "Bāxī",
+          "pt": "Brasil"
+        },
+        {
+          "hanzi": "肉",
+          "pinyin": "Ròu",
+          "pt": "肉"
+        },
+        {
+          "hanzi": "李经理",
+          "pinyin": "",
+          "pt": "李经理"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-002"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "一百零二",
+      "pinyin": "yì bǎi líng èr",
+      "tokens": [
+        {
+          "palavra": "一百零二",
+          "caracteres": [
+            {
+              "hanzi": "一",
+              "pinyin": "yì"
+            },
+            {
+              "hanzi": "百",
+              "pinyin": "bǎi"
+            },
+            {
+              "hanzi": "零",
+              "pinyin": "líng"
+            },
+            {
+              "hanzi": "二",
+              "pinyin": "èr"
+            }
+          ],
+          "pinyin": "yì bǎi líng èr",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "干净",
+          "pinyin": "gānjìng",
+          "pt": "limpo — 房间很干净。"
+        },
+        {
+          "hanzi": "小时",
+          "pinyin": "xiǎoshí",
+          "pt": "hora"
+        },
+        {
+          "hanzi": "裤子",
+          "pinyin": "",
+          "pt": "裤子"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-003"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "现在两点了",
+      "pinyin": "xiàn zài liǎng diǎn le。",
+      "tokens": [
+        {
+          "palavra": "现在两点了",
+          "caracteres": [
+            {
+              "hanzi": "现",
+              "pinyin": "xiàn"
+            },
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            },
+            {
+              "hanzi": "两",
+              "pinyin": "liǎng"
+            },
+            {
+              "hanzi": "点",
+              "pinyin": "diǎn"
+            },
+            {
+              "hanzi": "了",
+              "pinyin": "le。"
+            }
+          ],
+          "pinyin": "xiàn zài liǎng diǎn le。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "旁边",
+          "pinyin": "",
+          "pt": "旁边"
+        },
+        {
+          "hanzi": "工作",
+          "pinyin": "gōngzuò",
+          "pt": "trabalhar"
+        },
+        {
+          "hanzi": "办公室",
+          "pinyin": "bàngōngshì",
+          "pt": "escritório — 老师在办公室。"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-004"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "今天星期三",
+      "pinyin": "jīn tiān xīng qī sān。",
+      "tokens": [
+        {
+          "palavra": "今天星期三",
+          "caracteres": [
+            {
+              "hanzi": "今",
+              "pinyin": "jīn"
+            },
+            {
+              "hanzi": "天",
+              "pinyin": "tiān"
+            },
+            {
+              "hanzi": "星",
+              "pinyin": "xīng"
+            },
+            {
+              "hanzi": "期",
+              "pinyin": "qī"
+            },
+            {
+              "hanzi": "三",
+              "pinyin": "sān。"
+            }
+          ],
+          "pinyin": "jīn tiān xīng qī sān。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "真",
+          "pinyin": "zhēn",
+          "pt": "realmente"
+        },
+        {
+          "hanzi": "开",
+          "pinyin": "kāi",
+          "pt": "abrir / dirigir — 开门 / 开车"
+        },
+        {
+          "hanzi": "好吃吗",
+          "pinyin": "",
+          "pt": "好吃吗"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-005"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "三十五块五毛",
+      "pinyin": "sān shí wǔ kuài wǔ máo。",
+      "tokens": [
+        {
+          "palavra": "三十五块五毛",
+          "caracteres": [
+            {
+              "hanzi": "三",
+              "pinyin": "sān"
+            },
+            {
+              "hanzi": "十",
+              "pinyin": "shí"
+            },
+            {
+              "hanzi": "五",
+              "pinyin": "wǔ"
+            },
+            {
+              "hanzi": "块",
+              "pinyin": "kuài"
+            },
+            {
+              "hanzi": "五",
+              "pinyin": "wǔ"
+            },
+            {
+              "hanzi": "毛",
+              "pinyin": "máo。"
+            }
+          ],
+          "pinyin": "sān shí wǔ kuài wǔ máo。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "红烧",
+          "pinyin": "",
+          "pt": "红烧"
+        },
+        {
+          "hanzi": "习",
+          "pinyin": "",
+          "pt": "习"
+        },
+        {
+          "hanzi": "见",
+          "pinyin": "jiàn",
+          "pt": "ver / encontrar — 明天见！"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-006"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我喜欢吃水果",
+      "pinyin": "wǒ xǐ huan chī shuǐ guǒ。",
+      "tokens": [
+        {
+          "palavra": "我喜欢吃水果",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "喜",
+              "pinyin": "xǐ"
+            },
+            {
+              "hanzi": "欢",
+              "pinyin": "huan"
+            },
+            {
+              "hanzi": "吃",
+              "pinyin": "chī"
+            },
+            {
+              "hanzi": "水",
+              "pinyin": "shuǐ"
+            },
+            {
+              "hanzi": "果",
+              "pinyin": "guǒ。"
+            }
+          ],
+          "pinyin": "wǒ xǐ huan chī shuǐ guǒ。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "你几岁",
+          "pinyin": "",
+          "pt": "你几岁"
+        },
+        {
+          "hanzi": "快",
+          "pinyin": "kuài",
+          "pt": "rápido — 他跑得很快。"
+        },
+        {
+          "hanzi": "看电视",
+          "pinyin": "kàn diànshì",
+          "pt": "ver televisão"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-007"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我喜欢喝茶",
+      "pinyin": "wǒ xǐ huan hē chá。",
+      "tokens": [
+        {
+          "palavra": "我喜欢喝茶",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "喜",
+              "pinyin": "xǐ"
+            },
+            {
+              "hanzi": "欢",
+              "pinyin": "huan"
+            },
+            {
+              "hanzi": "喝",
+              "pinyin": "hē"
+            },
+            {
+              "hanzi": "茶",
+              "pinyin": "chá。"
+            }
+          ],
+          "pinyin": "wǒ xǐ huan hē chá。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "你们",
+          "pinyin": "nǐmen",
+          "pt": "vocês"
+        },
+        {
+          "hanzi": "李经理",
+          "pinyin": "",
+          "pt": "李经理"
+        },
+        {
+          "hanzi": "慢",
+          "pinyin": "màn",
+          "pt": "devagar — 请说慢一点。"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-008"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我在学校",
+      "pinyin": "wǒ zài xué xiào。",
+      "tokens": [
+        {
+          "palavra": "我在学校",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            },
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "校",
+              "pinyin": "xiào。"
+            }
+          ],
+          "pinyin": "wǒ zài xué xiào。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "雷亚尔",
+          "pinyin": "Léi yà ěr",
+          "pt": "雷亚尔"
+        },
+        {
+          "hanzi": "一点儿",
+          "pinyin": "",
+          "pt": "一点儿"
+        },
+        {
+          "hanzi": "人",
+          "pinyin": "rén",
+          "pt": "pessoa"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-009"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我在家工作",
+      "pinyin": "wǒ zài jiā gōng zuò。",
+      "tokens": [
+        {
+          "palavra": "我在家工作",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            },
+            {
+              "hanzi": "家",
+              "pinyin": "jiā"
+            },
+            {
+              "hanzi": "工",
+              "pinyin": "gōng"
+            },
+            {
+              "hanzi": "作",
+              "pinyin": "zuò。"
+            }
+          ],
+          "pinyin": "wǒ zài jiā gōng zuò。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "卖",
+          "pinyin": "mài",
+          "pt": "vender — 商店卖衣服。"
+        },
+        {
+          "hanzi": "说",
+          "pinyin": "shuō",
+          "pt": "falar — 我说汉语。"
+        },
+        {
+          "hanzi": "意思",
+          "pinyin": "yìsi",
+          "pt": "significado — 这个字什么意思？"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-010"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "学校里有商店",
+      "pinyin": "xué xiào lǐ yǒu shāng diàn。",
+      "tokens": [
+        {
+          "palavra": "学校里有商店",
+          "caracteres": [
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "校",
+              "pinyin": "xiào"
+            },
+            {
+              "hanzi": "里",
+              "pinyin": "lǐ"
+            },
+            {
+              "hanzi": "有",
+              "pinyin": "yǒu"
+            },
+            {
+              "hanzi": "商",
+              "pinyin": "shāng"
+            },
+            {
+              "hanzi": "店",
+              "pinyin": "diàn。"
+            }
+          ],
+          "pinyin": "xué xiào lǐ yǒu shāng diàn。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "人民币",
+          "pinyin": "Rénmín bì",
+          "pt": "人民币"
+        },
+        {
+          "hanzi": "雷亚尔",
+          "pinyin": "Léi yà ěr",
+          "pt": "雷亚尔"
+        },
+        {
+          "hanzi": "看我",
+          "pinyin": "kàn wǒ",
+          "pt": "看我"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-011"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我是巴西人",
+      "pinyin": "wǒ shì bā xī rén。",
+      "tokens": [
+        {
+          "palavra": "我是巴西人",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "是",
+              "pinyin": "shì"
+            },
+            {
+              "hanzi": "巴",
+              "pinyin": "bā"
+            },
+            {
+              "hanzi": "西",
+              "pinyin": "xī"
+            },
+            {
+              "hanzi": "人",
+              "pinyin": "rén。"
+            }
+          ],
+          "pinyin": "wǒ shì bā xī rén。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "风",
+          "pinyin": "fēng",
+          "pt": "vento — 风很大。"
+        },
+        {
+          "hanzi": "一",
+          "pinyin": "yī",
+          "pt": "um (contagem, quantidade, ordem habitual)"
+        },
+        {
+          "hanzi": "办公室",
+          "pinyin": "bàngōngshì",
+          "pt": "escritório — 老师在办公室。"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-012"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "他是中国人",
+      "pinyin": "tā shì zhōng guó rén。",
+      "tokens": [
+        {
+          "palavra": "他是中国人",
+          "caracteres": [
+            {
+              "hanzi": "他",
+              "pinyin": "tā"
+            },
+            {
+              "hanzi": "是",
+              "pinyin": "shì"
+            },
+            {
+              "hanzi": "中",
+              "pinyin": "zhōng"
+            },
+            {
+              "hanzi": "国",
+              "pinyin": "guó"
+            },
+            {
+              "hanzi": "人",
+              "pinyin": "rén。"
+            }
+          ],
+          "pinyin": "tā shì zhōng guó rén。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "法语",
+          "pinyin": "Fǎyǔ",
+          "pt": "francês"
+        },
+        {
+          "hanzi": "千",
+          "pinyin": "qiān",
+          "pt": "mil"
+        },
+        {
+          "hanzi": "几点",
+          "pinyin": "jǐ diǎn",
+          "pt": "que horas"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-013"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "今天天气真好",
+      "pinyin": "jīn tiān tiān qì zhēn hǎo。",
+      "tokens": [
+        {
+          "palavra": "今天天气真好",
+          "caracteres": [
+            {
+              "hanzi": "今",
+              "pinyin": "jīn"
+            },
+            {
+              "hanzi": "天",
+              "pinyin": "tiān"
+            },
+            {
+              "hanzi": "天",
+              "pinyin": "tiān"
+            },
+            {
+              "hanzi": "气",
+              "pinyin": "qì"
+            },
+            {
+              "hanzi": "真",
+              "pinyin": "zhēn"
+            },
+            {
+              "hanzi": "好",
+              "pinyin": "hǎo。"
+            }
+          ],
+          "pinyin": "jīn tiān tiān qì zhēn hǎo。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "谁有猫",
+          "pinyin": "",
+          "pt": "谁有猫"
+        },
+        {
+          "hanzi": "蜡烛",
+          "pinyin": "Làzhú",
+          "pt": "蜡烛"
+        },
+        {
+          "hanzi": "辣的",
+          "pinyin": "",
+          "pt": "辣的"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-014"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "她的眼睛很大",
+      "pinyin": "tā de yǎn jīng hěn dà。",
+      "tokens": [
+        {
+          "palavra": "她的眼睛很大",
+          "caracteres": [
+            {
+              "hanzi": "她",
+              "pinyin": "tā"
+            },
+            {
+              "hanzi": "的",
+              "pinyin": "de"
+            },
+            {
+              "hanzi": "眼",
+              "pinyin": "yǎn"
+            },
+            {
+              "hanzi": "睛",
+              "pinyin": "jīng"
+            },
+            {
+              "hanzi": "很",
+              "pinyin": "hěn"
+            },
+            {
+              "hanzi": "大",
+              "pinyin": "dà。"
+            }
+          ],
+          "pinyin": "tā de yǎn jīng hěn dà。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "看一看",
+          "pinyin": "",
+          "pt": "看一看"
+        },
+        {
+          "hanzi": "一行字",
+          "pinyin": "Yī hángzì",
+          "pt": "一行字"
+        },
+        {
+          "hanzi": "六",
+          "pinyin": "liù",
+          "pt": "seis"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-015"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我家有四口人",
+      "pinyin": "wǒ jiā yǒu sì kǒu rén。",
+      "tokens": [
+        {
+          "palavra": "我家有四口人",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "家",
+              "pinyin": "jiā"
+            },
+            {
+              "hanzi": "有",
+              "pinyin": "yǒu"
+            },
+            {
+              "hanzi": "四",
+              "pinyin": "sì"
+            },
+            {
+              "hanzi": "口",
+              "pinyin": "kǒu"
+            },
+            {
+              "hanzi": "人",
+              "pinyin": "rén。"
+            }
+          ],
+          "pinyin": "wǒ jiā yǒu sì kǒu rén。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "想",
+          "pinyin": "xiǎng",
+          "pt": "querer"
+        },
+        {
+          "hanzi": "裤子",
+          "pinyin": "",
+          "pt": "裤子"
+        },
+        {
+          "hanzi": "瓶",
+          "pinyin": "Píng",
+          "pt": "瓶"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-016"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "这是我的家",
+      "pinyin": "zhè shì wǒ de jiā。",
+      "tokens": [
+        {
+          "palavra": "这是我的家",
+          "caracteres": [
+            {
+              "hanzi": "这",
+              "pinyin": "zhè"
+            },
+            {
+              "hanzi": "是",
+              "pinyin": "shì"
+            },
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "的",
+              "pinyin": "de"
+            },
+            {
+              "hanzi": "家",
+              "pinyin": "jiā。"
+            }
+          ],
+          "pinyin": "zhè shì wǒ de jiā。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "姐姐",
+          "pinyin": "jiějie",
+          "pt": "irmã mais velha"
+        },
+        {
+          "hanzi": "百",
+          "pinyin": "bǎi",
+          "pt": "cem"
+        },
+        {
+          "hanzi": "醋",
+          "pinyin": "",
+          "pt": "醋"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-017"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我爸爸妈妈在家",
+      "pinyin": "wǒ bà ba、 mā ma zài jiā。",
+      "tokens": [
+        {
+          "palavra": "我爸爸",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "爸",
+              "pinyin": "bà"
+            },
+            {
+              "hanzi": "爸",
+              "pinyin": "ba、"
+            }
+          ],
+          "pinyin": "wǒ bà ba、",
+          "pt": "",
+          "dificil": true
+        },
+        {
+          "palavra": "妈妈在家",
+          "caracteres": [
+            {
+              "hanzi": "妈",
+              "pinyin": "mā"
+            },
+            {
+              "hanzi": "妈",
+              "pinyin": "ma"
+            },
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            },
+            {
+              "hanzi": "家",
+              "pinyin": "jiā。"
+            }
+          ],
+          "pinyin": "mā ma zài jiā。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "中间",
+          "pinyin": "zhōngjiān",
+          "pt": "meio"
+        },
+        {
+          "hanzi": "猴",
+          "pinyin": "hóu",
+          "pt": "macaco — 猴子"
+        },
+        {
+          "hanzi": "看我",
+          "pinyin": "kàn wǒ",
+          "pt": "看我"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-018"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我姐姐在医院",
+      "pinyin": "wǒ jiě jie zài yī yuàn。",
+      "tokens": [
+        {
+          "palavra": "我姐姐在医院",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "姐",
+              "pinyin": "jiě"
+            },
+            {
+              "hanzi": "姐",
+              "pinyin": "jie"
+            },
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            },
+            {
+              "hanzi": "医",
+              "pinyin": "yī"
+            },
+            {
+              "hanzi": "院",
+              "pinyin": "yuàn。"
+            }
+          ],
+          "pinyin": "wǒ jiě jie zài yī yuàn。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "本",
+          "pinyin": "běn",
+          "pt": "livros — 一本书"
+        },
+        {
+          "hanzi": "份",
+          "pinyin": "fèn",
+          "pt": "porção — 一份菜"
+        },
+        {
+          "hanzi": "甜",
+          "pinyin": "",
+          "pt": "甜"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-019"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我妹妹在学校",
+      "pinyin": "wǒ mèi mei zài xué xiào。",
+      "tokens": [
+        {
+          "palavra": "我妹妹在学校",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "妹",
+              "pinyin": "mèi"
+            },
+            {
+              "hanzi": "妹",
+              "pinyin": "mei"
+            },
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            },
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "校",
+              "pinyin": "xiào。"
+            }
+          ],
+          "pinyin": "wǒ mèi mei zài xué xiào。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "加油",
+          "pinyin": "",
+          "pt": "加油"
+        },
+        {
+          "hanzi": "您",
+          "pinyin": "nín",
+          "pt": "você formal"
+        },
+        {
+          "hanzi": "九",
+          "pinyin": "jiǔ",
+          "pt": "nove"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-020"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我是学生",
+      "pinyin": "wǒ shì xué shēng。",
+      "tokens": [
+        {
+          "palavra": "我是学生",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "是",
+              "pinyin": "shì"
+            },
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "生",
+              "pinyin": "shēng。"
+            }
+          ],
+          "pinyin": "wǒ shì xué shēng。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "的东西",
+          "pinyin": "",
+          "pt": "的东西"
+        },
+        {
+          "hanzi": "国人",
+          "pinyin": "",
+          "pt": "国人"
+        },
+        {
+          "hanzi": "不可以",
+          "pinyin": "",
+          "pt": "不可以"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-021"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "她是中国人",
+      "pinyin": "tā shì zhōng guó rén。",
+      "tokens": [
+        {
+          "palavra": "她是中国人",
+          "caracteres": [
+            {
+              "hanzi": "她",
+              "pinyin": "tā"
+            },
+            {
+              "hanzi": "是",
+              "pinyin": "shì"
+            },
+            {
+              "hanzi": "中",
+              "pinyin": "zhōng"
+            },
+            {
+              "hanzi": "国",
+              "pinyin": "guó"
+            },
+            {
+              "hanzi": "人",
+              "pinyin": "rén。"
+            }
+          ],
+          "pinyin": "tā shì zhōng guó rén。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "老虎",
+          "pinyin": "",
+          "pt": "老虎"
+        },
+        {
+          "hanzi": "多少",
+          "pinyin": "duōshao",
+          "pt": "quanto / quantos"
+        },
+        {
+          "hanzi": "干",
+          "pinyin": "gān",
+          "pt": "seco — 面包太干了。"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-022"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我不是老师",
+      "pinyin": "wǒ bú shì lǎo shī。",
+      "tokens": [
+        {
+          "palavra": "我不是老师",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "不",
+              "pinyin": "bú"
+            },
+            {
+              "hanzi": "是",
+              "pinyin": "shì"
+            },
+            {
+              "hanzi": "老",
+              "pinyin": "lǎo"
+            },
+            {
+              "hanzi": "师",
+              "pinyin": "shī。"
+            }
+          ],
+          "pinyin": "wǒ bú shì lǎo shī。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "中文",
+          "pinyin": "Zhōngwén",
+          "pt": "chinês"
+        },
+        {
+          "hanzi": "汉字",
+          "pinyin": "Hànzì",
+          "pt": "caracteres chineses"
+        },
+        {
+          "hanzi": "看你",
+          "pinyin": "Kàn nǐ",
+          "pt": "看你"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-023"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "她是不是老师",
+      "pinyin": "tā shì bu shì lǎo shī？",
+      "tokens": [
+        {
+          "palavra": "她是不是老师",
+          "caracteres": [
+            {
+              "hanzi": "她",
+              "pinyin": "tā"
+            },
+            {
+              "hanzi": "是",
+              "pinyin": "shì"
+            },
+            {
+              "hanzi": "不",
+              "pinyin": "bu"
+            },
+            {
+              "hanzi": "是",
+              "pinyin": "shì"
+            },
+            {
+              "hanzi": "老",
+              "pinyin": "lǎo"
+            },
+            {
+              "hanzi": "师",
+              "pinyin": "shī？"
+            }
+          ],
+          "pinyin": "tā shì bu shì lǎo shī？",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "一行字",
+          "pinyin": "Yī hángzì",
+          "pt": "一行字"
+        },
+        {
+          "hanzi": "久",
+          "pinyin": "jiǔ",
+          "pt": "muito tempo — 好久不见"
+        },
+        {
+          "hanzi": "看电视",
+          "pinyin": "kàn diànshì",
+          "pt": "ver televisão"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-024"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我很好",
+      "pinyin": "wǒ hěn hǎo。",
+      "tokens": [
+        {
+          "palavra": "我很好",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "很",
+              "pinyin": "hěn"
+            },
+            {
+              "hanzi": "好",
+              "pinyin": "hǎo。"
+            }
+          ],
+          "pinyin": "wǒ hěn hǎo。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "苹果汁",
+          "pinyin": "píngguǒzhī",
+          "pt": "suco de maçã"
+        },
+        {
+          "hanzi": "你",
+          "pinyin": "nǐ",
+          "pt": "você"
+        },
+        {
+          "hanzi": "女儿",
+          "pinyin": "nǚ'ér",
+          "pt": "filha"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-025"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我也喜欢茶",
+      "pinyin": "wǒ yě xǐ huan chá。",
+      "tokens": [
+        {
+          "palavra": "我也喜欢茶",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "也",
+              "pinyin": "yě"
+            },
+            {
+              "hanzi": "喜",
+              "pinyin": "xǐ"
+            },
+            {
+              "hanzi": "欢",
+              "pinyin": "huan"
+            },
+            {
+              "hanzi": "茶",
+              "pinyin": "chá。"
+            }
+          ],
+          "pinyin": "wǒ yě xǐ huan chá。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "画",
+          "pinyin": "para superfícies planas",
+          "pt": "画"
+        },
+        {
+          "hanzi": "哪个",
+          "pinyin": "",
+          "pt": "哪个"
+        },
+        {
+          "hanzi": "早",
+          "pinyin": "zǎo",
+          "pt": "cedo / manhã — 早上好！"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-026"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "他们都在学校",
+      "pinyin": "tā men dōu zài xué xiào。",
+      "tokens": [
+        {
+          "palavra": "他们都在学校",
+          "caracteres": [
+            {
+              "hanzi": "他",
+              "pinyin": "tā"
+            },
+            {
+              "hanzi": "们",
+              "pinyin": "men"
+            },
+            {
+              "hanzi": "都",
+              "pinyin": "dōu"
+            },
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            },
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "校",
+              "pinyin": "xiào。"
+            }
+          ],
+          "pinyin": "tā men dōu zài xué xiào。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "猪肉",
+          "pinyin": "",
+          "pt": "猪肉"
+        },
+        {
+          "hanzi": "七",
+          "pinyin": "qī",
+          "pt": "sete"
+        },
+        {
+          "hanzi": "他很高",
+          "pinyin": "",
+          "pt": "他很高"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-027"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "这个最贵",
+      "pinyin": "zhè ge zuì guì。",
+      "tokens": [
+        {
+          "palavra": "这个最贵",
+          "caracteres": [
+            {
+              "hanzi": "这",
+              "pinyin": "zhè"
+            },
+            {
+              "hanzi": "个",
+              "pinyin": "ge"
+            },
+            {
+              "hanzi": "最",
+              "pinyin": "zuì"
+            },
+            {
+              "hanzi": "贵",
+              "pinyin": "guì。"
+            }
+          ],
+          "pinyin": "zhè ge zuì guì。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "东边",
+          "pinyin": "",
+          "pt": "东边"
+        },
+        {
+          "hanzi": "小时",
+          "pinyin": "xiǎoshí",
+          "pt": "hora"
+        },
+        {
+          "hanzi": "猴",
+          "pinyin": "hóu",
+          "pt": "macaco — 猴子"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-028"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "你呢",
+      "pinyin": "nǐ ne？",
+      "tokens": [
+        {
+          "palavra": "你呢",
+          "caracteres": [
+            {
+              "hanzi": "你",
+              "pinyin": "nǐ"
+            },
+            {
+              "hanzi": "呢",
+              "pinyin": "ne？"
+            }
+          ],
+          "pinyin": "nǐ ne？",
+          "pt": "",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "红",
+          "pinyin": "",
+          "pt": "红"
+        },
+        {
+          "hanzi": "试",
+          "pinyin": "",
+          "pt": "试"
+        },
+        {
+          "hanzi": "发邮件",
+          "pinyin": "",
+          "pt": "发邮件"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-029"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我困了",
+      "pinyin": "wǒ kùn le。",
+      "tokens": [
+        {
+          "palavra": "我困了",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "困",
+              "pinyin": "kùn"
+            },
+            {
+              "hanzi": "了",
+              "pinyin": "le。"
+            }
+          ],
+          "pinyin": "wǒ kùn le。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "牛肉",
+          "pinyin": "",
+          "pt": "牛肉"
+        },
+        {
+          "hanzi": "入",
+          "pinyin": "rù",
+          "pt": "entrar (formal) — 入场"
+        },
+        {
+          "hanzi": "我们家",
+          "pinyin": "wǒmen jiā",
+          "pt": "nossa casa / nossa família"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-030"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我学习汉语",
+      "pinyin": "wǒ xué xí hàn yǔ。",
+      "tokens": [
+        {
+          "palavra": "我学习汉语",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "习",
+              "pinyin": "xí"
+            },
+            {
+              "hanzi": "汉",
+              "pinyin": "hàn"
+            },
+            {
+              "hanzi": "语",
+              "pinyin": "yǔ。"
+            }
+          ],
+          "pinyin": "wǒ xué xí hàn yǔ。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "法语",
+          "pinyin": "Fǎyǔ",
+          "pt": "francês"
+        },
+        {
+          "hanzi": "打",
+          "pinyin": "dǎ",
+          "pt": "bater / ligar / jogar — 我打电话给妈妈。"
+        },
+        {
+          "hanzi": "都",
+          "pinyin": "dōu",
+          "pt": "todos / ambos"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-031"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我看电视",
+      "pinyin": "wǒ kàn diàn shì。",
+      "tokens": [
+        {
+          "palavra": "我看电视",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "看",
+              "pinyin": "kàn"
+            },
+            {
+              "hanzi": "电",
+              "pinyin": "diàn"
+            },
+            {
+              "hanzi": "视",
+              "pinyin": "shì。"
+            }
+          ],
+          "pinyin": "wǒ kàn diàn shì。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "打篮球",
+          "pinyin": "dǎ lánqiú",
+          "pt": "jogar basquete"
+        },
+        {
+          "hanzi": "岁",
+          "pinyin": "suì",
+          "pt": "idade — 我二十岁"
+        },
+        {
+          "hanzi": "窗",
+          "pinyin": "chuāng",
+          "pt": "janela — 关窗"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-032"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我买东西",
+      "pinyin": "wǒ mǎi dōng xī。",
+      "tokens": [
+        {
+          "palavra": "我买东西",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "买",
+              "pinyin": "mǎi"
+            },
+            {
+              "hanzi": "东",
+              "pinyin": "dōng"
+            },
+            {
+              "hanzi": "西",
+              "pinyin": "xī。"
+            }
+          ],
+          "pinyin": "wǒ mǎi dōng xī。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "果汁",
+          "pinyin": "guǒzhī",
+          "pt": "suco"
+        },
+        {
+          "hanzi": "上",
+          "pinyin": "shàng",
+          "pt": "em cima — 桌子上有书"
+        },
+        {
+          "hanzi": "九",
+          "pinyin": "jiǔ",
+          "pt": "nove"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-033"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我休息一下",
+      "pinyin": "wǒ xiū xi yí xià。",
+      "tokens": [
+        {
+          "palavra": "我休息一下",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "休",
+              "pinyin": "xiū"
+            },
+            {
+              "hanzi": "息",
+              "pinyin": "xi"
+            },
+            {
+              "hanzi": "一",
+              "pinyin": "yí"
+            },
+            {
+              "hanzi": "下",
+              "pinyin": "xià。"
+            }
+          ],
+          "pinyin": "wǒ xiū xi yí xià。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "没有",
+          "pinyin": "méiyǒu",
+          "pt": "não ter / não haver"
+        },
+        {
+          "hanzi": "烟",
+          "pinyin": "Yān",
+          "pt": "烟"
+        },
+        {
+          "hanzi": "爸爸",
+          "pinyin": "bàba",
+          "pt": "pai"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-034"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我问一下老师",
+      "pinyin": "wǒ wèn yí xià lǎo shī。",
+      "tokens": [
+        {
+          "palavra": "我问一下老师",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "问",
+              "pinyin": "wèn"
+            },
+            {
+              "hanzi": "一",
+              "pinyin": "yí"
+            },
+            {
+              "hanzi": "下",
+              "pinyin": "xià"
+            },
+            {
+              "hanzi": "老",
+              "pinyin": "lǎo"
+            },
+            {
+              "hanzi": "师",
+              "pinyin": "shī。"
+            }
+          ],
+          "pinyin": "wǒ wèn yí xià lǎo shī。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "困",
+          "pinyin": "kùn",
+          "pt": "com sono / cansado"
+        },
+        {
+          "hanzi": "难吃",
+          "pinyin": "",
+          "pt": "难吃"
+        },
+        {
+          "hanzi": "奶奶",
+          "pinyin": "nǎinai",
+          "pt": "avó paterna"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-035"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "他跑得很快",
+      "pinyin": "tā pǎo dé hěn kuài。",
+      "tokens": [
+        {
+          "palavra": "他跑得很快",
+          "caracteres": [
+            {
+              "hanzi": "他",
+              "pinyin": "tā"
+            },
+            {
+              "hanzi": "跑",
+              "pinyin": "pǎo"
+            },
+            {
+              "hanzi": "得",
+              "pinyin": "dé"
+            },
+            {
+              "hanzi": "很",
+              "pinyin": "hěn"
+            },
+            {
+              "hanzi": "快",
+              "pinyin": "kuài。"
+            }
+          ],
+          "pinyin": "tā pǎo dé hěn kuài。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "看书",
+          "pinyin": "kàn shū",
+          "pt": "ler"
+        },
+        {
+          "hanzi": "真",
+          "pinyin": "zhēn",
+          "pt": "realmente"
+        },
+        {
+          "hanzi": "商店",
+          "pinyin": "shāngdiàn",
+          "pt": "loja"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-036"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我最喜欢茶",
+      "pinyin": "wǒ zuì xǐ huan chá。",
+      "tokens": [
+        {
+          "palavra": "我最喜欢茶",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "最",
+              "pinyin": "zuì"
+            },
+            {
+              "hanzi": "喜",
+              "pinyin": "xǐ"
+            },
+            {
+              "hanzi": "欢",
+              "pinyin": "huan"
+            },
+            {
+              "hanzi": "茶",
+              "pinyin": "chá。"
+            }
+          ],
+          "pinyin": "wǒ zuì xǐ huan chá。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "做",
+          "pinyin": "zuò",
+          "pt": "fazer — 我在做饭。"
+        },
+        {
+          "hanzi": "晚上好",
+          "pinyin": "",
+          "pt": "晚上好"
+        },
+        {
+          "hanzi": "我家",
+          "pinyin": "wǒ jiā",
+          "pt": "minha casa / minha família"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-037"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我想喝咖啡",
+      "pinyin": "wǒ xiǎng hē kā fēi。",
+      "tokens": [
+        {
+          "palavra": "我想喝咖啡",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "想",
+              "pinyin": "xiǎng"
+            },
+            {
+              "hanzi": "喝",
+              "pinyin": "hē"
+            },
+            {
+              "hanzi": "咖",
+              "pinyin": "kā"
+            },
+            {
+              "hanzi": "啡",
+              "pinyin": "fēi。"
+            }
+          ],
+          "pinyin": "wǒ xiǎng hē kā fēi。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "欢迎",
+          "pinyin": "huānyíng",
+          "pt": "bem-vindo — 欢迎来中国！"
+        },
+        {
+          "hanzi": "碗",
+          "pinyin": "wǎn",
+          "pt": "tigela — 一碗米饭"
+        },
+        {
+          "hanzi": "湿",
+          "pinyin": "shī",
+          "pt": "molhado — 下雨了，我湿了。"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-038"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我要吃米饭",
+      "pinyin": "wǒ yào chī mǐ fàn。",
+      "tokens": [
+        {
+          "palavra": "我要吃米饭",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "要",
+              "pinyin": "yào"
+            },
+            {
+              "hanzi": "吃",
+              "pinyin": "chī"
+            },
+            {
+              "hanzi": "米",
+              "pinyin": "mǐ"
+            },
+            {
+              "hanzi": "饭",
+              "pinyin": "fàn。"
+            }
+          ],
+          "pinyin": "wǒ yào chī mǐ fàn。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "上",
+          "pinyin": "shàng",
+          "pt": "em cima — 桌子上有书"
+        },
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "干净",
+          "pinyin": "gānjìng",
+          "pt": "limpo — 房间很干净。"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-039"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我会写汉字",
+      "pinyin": "wǒ huì xiě hàn zì。",
+      "tokens": [
+        {
+          "palavra": "我会写汉字",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "会",
+              "pinyin": "huì"
+            },
+            {
+              "hanzi": "写",
+              "pinyin": "xiě"
+            },
+            {
+              "hanzi": "汉",
+              "pinyin": "hàn"
+            },
+            {
+              "hanzi": "字",
+              "pinyin": "zì。"
+            }
+          ],
+          "pinyin": "wǒ huì xiě hàn zì。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "这里",
+          "pinyin": "zhèlǐ",
+          "pt": "aqui"
+        },
+        {
+          "hanzi": "饭店",
+          "pinyin": "fàndiàn",
+          "pt": "restaurante — 这个饭店很贵。"
+        },
+        {
+          "hanzi": "几岁",
+          "pinyin": "",
+          "pt": "几岁"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-040"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我能去学校",
+      "pinyin": "wǒ néng qù xué xiào。",
+      "tokens": [
+        {
+          "palavra": "我能去学校",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "能",
+              "pinyin": "néng"
+            },
+            {
+              "hanzi": "去",
+              "pinyin": "qù"
+            },
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "校",
+              "pinyin": "xiào。"
+            }
+          ],
+          "pinyin": "wǒ néng qù xué xiào。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "练习",
+          "pinyin": "liànxí",
+          "pt": "exercício"
+        },
+        {
+          "hanzi": "元块",
+          "pinyin": "Yuán (kuài)",
+          "pt": "元块"
+        },
+        {
+          "hanzi": "难吃",
+          "pinyin": "",
+          "pt": "难吃"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-041"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我想学汉语",
+      "pinyin": "wǒ xiǎng xué hàn yǔ。",
+      "tokens": [
+        {
+          "palavra": "我想学汉语",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "想",
+              "pinyin": "xiǎng"
+            },
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "汉",
+              "pinyin": "hàn"
+            },
+            {
+              "hanzi": "语",
+              "pinyin": "yǔ。"
+            }
+          ],
+          "pinyin": "wǒ xiǎng xué hàn yǔ。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "月",
+          "pinyin": "yuè",
+          "pt": "mês — 这个月"
+        },
+        {
+          "hanzi": "猫",
+          "pinyin": "māo",
+          "pt": "gato — 我有一只猫。"
+        },
+        {
+          "hanzi": "你呢",
+          "pinyin": "nǐ ne？",
+          "pt": "你呢"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-042"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我不会开车",
+      "pinyin": "wǒ bú huì kāi chē。",
+      "tokens": [
+        {
+          "palavra": "我不会开车",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "不",
+              "pinyin": "bú"
+            },
+            {
+              "hanzi": "会",
+              "pinyin": "huì"
+            },
+            {
+              "hanzi": "开",
+              "pinyin": "kāi"
+            },
+            {
+              "hanzi": "车",
+              "pinyin": "chē。"
+            }
+          ],
+          "pinyin": "wǒ bú huì kāi chē。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "中国人",
+          "pinyin": "Zhōngguó rén",
+          "pt": "chinês"
+        },
+        {
+          "hanzi": "西边",
+          "pinyin": "",
+          "pt": "西边"
+        },
+        {
+          "hanzi": "外公",
+          "pinyin": "wàigōng",
+          "pt": "avô materno"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-043"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我不能开车",
+      "pinyin": "wǒ bù néng kāi chē。",
+      "tokens": [
+        {
+          "palavra": "我不能开车",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "不",
+              "pinyin": "bù"
+            },
+            {
+              "hanzi": "能",
+              "pinyin": "néng"
+            },
+            {
+              "hanzi": "开",
+              "pinyin": "kāi"
+            },
+            {
+              "hanzi": "车",
+              "pinyin": "chē。"
+            }
+          ],
+          "pinyin": "wǒ bù néng kāi chē。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "累",
+          "pinyin": "lèi",
+          "pt": "cansado — 我今天很累。"
+        },
+        {
+          "hanzi": "哪国人",
+          "pinyin": "",
+          "pt": "哪国人"
+        },
+        {
+          "hanzi": "醋酸",
+          "pinyin": "",
+          "pt": "醋酸"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-044"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我不想开车",
+      "pinyin": "wǒ bù xiǎng kāi chē。",
+      "tokens": [
+        {
+          "palavra": "我不想开车",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "不",
+              "pinyin": "bù"
+            },
+            {
+              "hanzi": "想",
+              "pinyin": "xiǎng"
+            },
+            {
+              "hanzi": "开",
+              "pinyin": "kāi"
+            },
+            {
+              "hanzi": "车",
+              "pinyin": "chē。"
+            }
+          ],
+          "pinyin": "wǒ bù xiǎng kāi chē。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "这个月",
+          "pinyin": "",
+          "pt": "这个月"
+        },
+        {
+          "hanzi": "八",
+          "pinyin": "bā",
+          "pt": "oito"
+        },
+        {
+          "hanzi": "程序员",
+          "pinyin": "chéngxùyuán",
+          "pt": "programador — 我哥哥是程序员。"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-045"
+    },
+    {
+      "nivel": 1,
+      "pt": "",
+      "hanzi": "我去学校看书",
+      "pinyin": "wǒ qù xué xiào kàn shū。",
+      "tokens": [
+        {
+          "palavra": "我去学校看书",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "去",
+              "pinyin": "qù"
+            },
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "校",
+              "pinyin": "xiào"
+            },
+            {
+              "hanzi": "看",
+              "pinyin": "kàn"
+            },
+            {
+              "hanzi": "书",
+              "pinyin": "shū。"
+            }
+          ],
+          "pinyin": "wǒ qù xué xiào kàn shū。",
+          "pt": "",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "买东西",
+          "pinyin": "",
+          "pt": "买东西"
+        },
+        {
+          "hanzi": "葡萄牙",
+          "pinyin": "Pútáoyá",
+          "pt": "Portugal"
+        },
+        {
+          "hanzi": "左边",
+          "pinyin": "",
+          "pt": "左边"
+        }
+      ],
+      "tags": [
+        "seed:consolidado"
+      ],
+      "id": "n1-seed-046"
+    }
+  ]
+}

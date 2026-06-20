@@ -48,6 +48,12 @@ createServer(async (req, res) => {
         u.pathname = p.slice(base.length) || "/";
       }
     }
+    // Next emits trailing-slash redirects with Location relative to the host root; that drops
+    // basePath in the browser (e.g. /aulaChines/foo/ → Location: /foo). Strip a single
+    // trailing slash before handing off when `trailingSlash: false` in next.config.
+    if (u.pathname.length > 1 && u.pathname.endsWith("/")) {
+      u.pathname = u.pathname.replace(/\/+$/, "") || "/";
+    }
     req.url = u.pathname + u.search;
     await handle(req, res, parse(req.url, true));
   } catch (err) {

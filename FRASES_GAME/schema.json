@@ -1,0 +1,72 @@
+{
+  "$schema": "phrase-game-dataset-v1",
+  "description": "Static phrase bank for drag-and-drop sentence game. No dialogues.",
+  "phrase": {
+    "required": ["id", "nivel", "pt", "hanzi", "pinyin", "tokens", "distratores"],
+    "properties": {
+      "id": { "type": "string", "example": "n1-001" },
+      "nivel": { "type": "integer", "minimum": 1, "maximum": 6 },
+      "pt": { "type": "string", "description": "Full sentence in Portuguese (prompt shown to user)" },
+      "hanzi": { "type": "string", "description": "Canonical answer string, no spaces" },
+      "pinyin": { "type": "string", "description": "Full sentence pinyin" },
+      "tokens": {
+        "type": "array",
+        "description": "Ordered word pieces for the game",
+        "items": {
+          "required": ["palavra", "caracteres", "pinyin", "pt", "dificil"],
+          "properties": {
+            "palavra": { "type": "string", "description": "Hanzi word (may be multi-char)" },
+            "caracteres": {
+              "type": "array",
+              "items": {
+                "required": ["hanzi", "pinyin"],
+                "properties": {
+                  "hanzi": { "type": "string" },
+                  "pinyin": { "type": "string" }
+                }
+              }
+            },
+            "pinyin": { "type": "string" },
+            "pt": { "type": "string" },
+            "dificil": { "type": "boolean" }
+          }
+        }
+      },
+      "distratores": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 3,
+        "items": {
+          "required": ["hanzi", "pinyin", "pt"],
+          "properties": {
+            "hanzi": { "type": "string" },
+            "pinyin": { "type": "string" },
+            "pt": { "type": "string" }
+          }
+        }
+      },
+      "respostasAceitas": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Optional alternate valid hanzi strings"
+      },
+      "tags": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "e.g. tema:comida, estrutura:svo"
+      }
+    }
+  },
+  "levelTargets": {
+    "1": { "tokens": "about 3", "note": "minimal SVO / adj, affirmative only", "targetCount": 150 },
+    "2": { "tokens": "4-6", "note": "color, place, object", "targetCount": 200 },
+    "3": { "tokens": "6-9", "note": "compound sentence", "targetCount": 200 },
+    "4": { "tokens": "7-12", "note": "full question, no dialogue", "targetCount": 150 }
+  },
+  "rules": [
+    "No dialogues (no speaker names, no  A：B： format)",
+    "Single standalone sentence per entry",
+    "Vocabulary within basic/intermediate course lexicon",
+    "Distractors must not compose another valid sentence with answer tokens"
+  ]
+}

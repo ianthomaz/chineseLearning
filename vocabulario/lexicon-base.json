@@ -1,0 +1,1552 @@
+{
+  "version": "2",
+  "generated_at": "2026-06-20T13:24:46.378038+00:00",
+  "purpose": "Character/word base for phrase-building games",
+  "stats": {
+    "total": 437,
+    "by_type": {
+      "noun": 155,
+      "verb": 26,
+      "adjective": 4,
+      "adverb": 15,
+      "color": 8,
+      "classifier": 11,
+      "number": 1,
+      "phrase_question": 47,
+      "phrase": 170
+    },
+    "with_pinyin": 174,
+    "with_gloss_pt": 26
+  },
+  "groups": {
+    "noun": [
+      {
+        "hanzi": "一件衣服"
+      },
+      {
+        "hanzi": "一件衬衫"
+      },
+      {
+        "hanzi": "一块元"
+      },
+      {
+        "hanzi": "一座山",
+        "pinyin": "Yīzuò shān",
+        "gloss_pt": "Montanha"
+      },
+      {
+        "hanzi": "一条裤子"
+      },
+      {
+        "hanzi": "一杯咖啡"
+      },
+      {
+        "hanzi": "一瓶啤酒"
+      },
+      {
+        "hanzi": "一百块元"
+      },
+      {
+        "hanzi": "一行字",
+        "pinyin": "Yī hángzì"
+      },
+      {
+        "hanzi": "丁汉生"
+      },
+      {
+        "hanzi": "三千学生"
+      },
+      {
+        "hanzi": "三瓶啤酒"
+      },
+      {
+        "hanzi": "上课",
+        "pinyin": "Shàngkè"
+      },
+      {
+        "hanzi": "东西"
+      },
+      {
+        "hanzi": "两苹果"
+      },
+      {
+        "hanzi": "中国地图",
+        "pinyin": "Zhōngguó dìtú",
+        "gloss_pt": "mapa"
+      },
+      {
+        "hanzi": "中国饭店"
+      },
+      {
+        "hanzi": "中文"
+      },
+      {
+        "hanzi": "中餐厅"
+      },
+      {
+        "hanzi": "主菜",
+        "pinyin": "Zhǔ cài",
+        "gloss_pt": "prato"
+      },
+      {
+        "hanzi": "九词典"
+      },
+      {
+        "hanzi": "习"
+      },
+      {
+        "hanzi": "书",
+        "pinyin": "Shū"
+      },
+      {
+        "hanzi": "买东西"
+      },
+      {
+        "hanzi": "二十块元"
+      },
+      {
+        "hanzi": "五十块元"
+      },
+      {
+        "hanzi": "五块元"
+      },
+      {
+        "hanzi": "五笔"
+      },
+      {
+        "hanzi": "人民币",
+        "pinyin": "Rénmín bì"
+      },
+      {
+        "hanzi": "他会游泳",
+        "pinyin": "Tā huì yóuyǒng"
+      },
+      {
+        "hanzi": "他能游泳",
+        "pinyin": "Tā néng yóuyǒng"
+      },
+      {
+        "hanzi": "元块",
+        "pinyin": "Yuán (kuài)"
+      },
+      {
+        "hanzi": "先生"
+      },
+      {
+        "hanzi": "十二生肖",
+        "pinyin": "Shí'èr shēngxiào"
+      },
+      {
+        "hanzi": "十块元"
+      },
+      {
+        "hanzi": "卖"
+      },
+      {
+        "hanzi": "口",
+        "pinyin": "Kǒu"
+      },
+      {
+        "hanzi": "咖啡"
+      },
+      {
+        "hanzi": "唱歌",
+        "pinyin": "Chànggē"
+      },
+      {
+        "hanzi": "啤酒",
+        "pinyin": "Pí jiǔ"
+      },
+      {
+        "hanzi": "喜欢"
+      },
+      {
+        "hanzi": "地图",
+        "gloss_pt": "Dì tú"
+      },
+      {
+        "hanzi": "填空"
+      },
+      {
+        "hanzi": "复",
+        "pinyin": "fùxí"
+      },
+      {
+        "hanzi": "天气真好",
+        "pinyin": "Tiānqì zhēn hǎo!"
+      },
+      {
+        "hanzi": "她想休息",
+        "pinyin": "2.  A    B   C",
+        "gloss_pt": "Onde “一下\" deveria aparecer?"
+      },
+      {
+        "hanzi": "好吃的菜"
+      },
+      {
+        "hanzi": "对不对"
+      },
+      {
+        "hanzi": "小姐"
+      },
+      {
+        "hanzi": "山"
+      },
+      {
+        "hanzi": "巴西地图",
+        "pinyin": "Bāxī dìtú"
+      },
+      {
+        "hanzi": "巴西饭店"
+      },
+      {
+        "hanzi": "床",
+        "pinyin": "chuáng"
+      },
+      {
+        "hanzi": "很大",
+        "pinyin": "Hěn dà"
+      },
+      {
+        "hanzi": "意思"
+      },
+      {
+        "hanzi": "我去超市",
+        "pinyin": "4.   A     B    C"
+      },
+      {
+        "hanzi": "我看时间",
+        "pinyin": "1.  A    B    C"
+      },
+      {
+        "hanzi": "教室",
+        "pinyin": "Jiàoshì"
+      },
+      {
+        "hanzi": "日文",
+        "pinyin": "Rìwén"
+      },
+      {
+        "hanzi": "最"
+      },
+      {
+        "hanzi": "有用",
+        "pinyin": "perguntar"
+      },
+      {
+        "hanzi": "杯子"
+      },
+      {
+        "hanzi": "桌子",
+        "pinyin": "zhuō zi"
+      },
+      {
+        "hanzi": "比较"
+      },
+      {
+        "hanzi": "比较便宜"
+      },
+      {
+        "hanzi": "比较大",
+        "pinyin": "Bǐjiào dà"
+      },
+      {
+        "hanzi": "比较小",
+        "pinyin": "Bǐjiào xiǎo"
+      },
+      {
+        "hanzi": "比较很",
+        "pinyin": "Esse livro é chato, não gosto dele"
+      },
+      {
+        "hanzi": "比较贵"
+      },
+      {
+        "hanzi": "水饺"
+      },
+      {
+        "hanzi": "汤"
+      },
+      {
+        "hanzi": "汤是热的"
+      },
+      {
+        "hanzi": "汤热"
+      },
+      {
+        "hanzi": "沙发",
+        "pinyin": "shā fā"
+      },
+      {
+        "hanzi": "烟",
+        "pinyin": "Yān"
+      },
+      {
+        "hanzi": "照片"
+      },
+      {
+        "hanzi": "牛",
+        "pinyin": "Niú"
+      },
+      {
+        "hanzi": "牛肉"
+      },
+      {
+        "hanzi": "玩"
+      },
+      {
+        "hanzi": "玩一玩"
+      },
+      {
+        "hanzi": "玩儿",
+        "pinyin": "saber"
+      },
+      {
+        "hanzi": "瓶子"
+      },
+      {
+        "hanzi": "甜"
+      },
+      {
+        "hanzi": "甜的"
+      },
+      {
+        "hanzi": "用"
+      },
+      {
+        "hanzi": "用一用"
+      },
+      {
+        "hanzi": "画",
+        "pinyin": "para superfícies planas"
+      },
+      {
+        "hanzi": "画画",
+        "pinyin": "Huà huà"
+      },
+      {
+        "hanzi": "白小红"
+      },
+      {
+        "hanzi": "白衬衫"
+      },
+      {
+        "hanzi": "的"
+      },
+      {
+        "hanzi": "的东西"
+      },
+      {
+        "hanzi": "相册",
+        "pinyin": "Xiàngcè"
+      },
+      {
+        "hanzi": "看一下"
+      },
+      {
+        "hanzi": "看书",
+        "pinyin": "Kànshū"
+      },
+      {
+        "hanzi": "看你",
+        "pinyin": "Kàn nǐ"
+      },
+      {
+        "hanzi": "看我",
+        "pinyin": "kàn wǒ"
+      },
+      {
+        "hanzi": "真便宜"
+      },
+      {
+        "hanzi": "真贵"
+      },
+      {
+        "hanzi": "知道"
+      },
+      {
+        "hanzi": "第四课",
+        "gloss_pt": "Dì sì kè"
+      },
+      {
+        "hanzi": "等"
+      },
+      {
+        "hanzi": "等一下"
+      },
+      {
+        "hanzi": "等一等"
+      },
+      {
+        "hanzi": "等下"
+      },
+      {
+        "hanzi": "等等"
+      },
+      {
+        "hanzi": "等等等",
+        "gloss_pt": "==etc."
+      },
+      {
+        "hanzi": "米饭",
+        "pinyin": "Mǐfàn"
+      },
+      {
+        "hanzi": "糖"
+      },
+      {
+        "hanzi": "糖是甜的"
+      },
+      {
+        "hanzi": "糖甜"
+      },
+      {
+        "hanzi": "糖醋鱼"
+      },
+      {
+        "hanzi": "红烧"
+      },
+      {
+        "hanzi": "红烧牛肉",
+        "pinyin": "Hóngshāo niúròu"
+      },
+      {
+        "hanzi": "肉",
+        "pinyin": "Ròu"
+      },
+      {
+        "hanzi": "英文",
+        "pinyin": "Yīngwén"
+      },
+      {
+        "hanzi": "菜"
+      },
+      {
+        "hanzi": "葡萄牙文",
+        "pinyin": "Pútáoyá wén",
+        "gloss_pt": "Língua chinesa"
+      },
+      {
+        "hanzi": "葡语"
+      },
+      {
+        "hanzi": "蜡烛",
+        "pinyin": "Làzhú"
+      },
+      {
+        "hanzi": "衣服"
+      },
+      {
+        "hanzi": "衬衫"
+      },
+      {
+        "hanzi": "裤子"
+      },
+      {
+        "hanzi": "西餐厅"
+      },
+      {
+        "hanzi": "词典",
+        "pinyin": "Cídiǎn"
+      },
+      {
+        "hanzi": "试"
+      },
+      {
+        "hanzi": "说葡语"
+      },
+      {
+        "hanzi": "请等一下"
+      },
+      {
+        "hanzi": "课文"
+      },
+      {
+        "hanzi": "跳舞",
+        "pinyin": "Tiàowǔ"
+      },
+      {
+        "hanzi": "辣"
+      },
+      {
+        "hanzi": "辣的"
+      },
+      {
+        "hanzi": "还"
+      },
+      {
+        "hanzi": "这"
+      },
+      {
+        "hanzi": "这四支笔",
+        "pinyin": "Zhè sì zhī bǐ"
+      },
+      {
+        "hanzi": "这条裤子"
+      },
+      {
+        "hanzi": "那"
+      },
+      {
+        "hanzi": "那四支笔",
+        "pinyin": "Nà sì zhī bǐ"
+      },
+      {
+        "hanzi": "酸"
+      },
+      {
+        "hanzi": "酸的"
+      },
+      {
+        "hanzi": "酸辣汤",
+        "pinyin": "Suān là tāng"
+      },
+      {
+        "hanzi": "醋"
+      },
+      {
+        "hanzi": "醋是酸的"
+      },
+      {
+        "hanzi": "醋酸"
+      },
+      {
+        "hanzi": "钱"
+      },
+      {
+        "hanzi": "雷",
+        "pinyin": "Léi"
+      },
+      {
+        "hanzi": "雷亚尔",
+        "pinyin": "Léi yà ěr"
+      },
+      {
+        "hanzi": "餐厅"
+      },
+      {
+        "hanzi": "饭店",
+        "pinyin": "Fàndiàn"
+      },
+      {
+        "hanzi": "饭馆"
+      },
+      {
+        "hanzi": "饺子"
+      },
+      {
+        "hanzi": "饺子水饺",
+        "pinyin": "Jiǎozǐ (shuǐjiǎo)"
+      },
+      {
+        "hanzi": "鱼"
+      },
+      {
+        "hanzi": "黑板",
+        "pinyin": "Hēibǎn"
+      },
+      {
+        "hanzi": "龙"
+      }
+    ],
+    "verb": [
+      {
+        "hanzi": "不可以"
+      },
+      {
+        "hanzi": "不好吃"
+      },
+      {
+        "hanzi": "不能",
+        "pinyin": "Bùnéng",
+        "gloss_pt": "perguntas e frases negativas, sem que “可以\" ser usado;"
+      },
+      {
+        "hanzi": "买"
+      },
+      {
+        "hanzi": "会"
+      },
+      {
+        "hanzi": "去"
+      },
+      {
+        "hanzi": "可不可以"
+      },
+      {
+        "hanzi": "可以",
+        "pinyin": "kěyǐ"
+      },
+      {
+        "hanzi": "吃"
+      },
+      {
+        "hanzi": "喝"
+      },
+      {
+        "hanzi": "好吃"
+      },
+      {
+        "hanzi": "小姐可以"
+      },
+      {
+        "hanzi": "当然可以",
+        "pinyin": "Dāngrán kěyǐ"
+      },
+      {
+        "hanzi": "想"
+      },
+      {
+        "hanzi": "想一想"
+      },
+      {
+        "hanzi": "我不去",
+        "pinyin": "Wǒ bù qù"
+      },
+      {
+        "hanzi": "我去",
+        "pinyin": "Wǒ qù"
+      },
+      {
+        "hanzi": "来"
+      },
+      {
+        "hanzi": "看",
+        "gloss_pt": "A(一)A"
+      },
+      {
+        "hanzi": "看一看"
+      },
+      {
+        "hanzi": "看电视",
+        "pinyin": "kàn diànshì",
+        "gloss_pt": "olhar"
+      },
+      {
+        "hanzi": "能"
+      },
+      {
+        "hanzi": "要"
+      },
+      {
+        "hanzi": "说"
+      },
+      {
+        "hanzi": "说一说"
+      },
+      {
+        "hanzi": "难吃"
+      }
+    ],
+    "adjective": [
+      {
+        "hanzi": "便宜"
+      },
+      {
+        "hanzi": "白"
+      },
+      {
+        "hanzi": "红"
+      },
+      {
+        "hanzi": "贵"
+      }
+    ],
+    "adverb": [
+      {
+        "hanzi": "一点儿"
+      },
+      {
+        "hanzi": "不太"
+      },
+      {
+        "hanzi": "不太便宜"
+      },
+      {
+        "hanzi": "不太贵"
+      },
+      {
+        "hanzi": "太"
+      },
+      {
+        "hanzi": "太了"
+      },
+      {
+        "hanzi": "太便宜了"
+      },
+      {
+        "hanzi": "太空兔"
+      },
+      {
+        "hanzi": "太贵了"
+      },
+      {
+        "hanzi": "很比较",
+        "pinyin": "Bǐ       jiào",
+        "gloss_pt": "relativamente"
+      },
+      {
+        "hanzi": "非常"
+      },
+      {
+        "hanzi": "非常便宜"
+      },
+      {
+        "hanzi": "非常大",
+        "pinyin": "fēicháng dà"
+      },
+      {
+        "hanzi": "非常很",
+        "pinyin": "gosto muito de aprender"
+      },
+      {
+        "hanzi": "非常贵"
+      }
+    ],
+    "color": [
+      {
+        "hanzi": "橙色",
+        "pinyin": "Chéng sè"
+      },
+      {
+        "hanzi": "白色",
+        "pinyin": "Bái   sè"
+      },
+      {
+        "hanzi": "紫色",
+        "pinyin": "Zǐ    sè"
+      },
+      {
+        "hanzi": "红色",
+        "pinyin": "Hóng  sè"
+      },
+      {
+        "hanzi": "绿色",
+        "pinyin": "Lǜ    sè"
+      },
+      {
+        "hanzi": "蓝色",
+        "pinyin": "Lán   sè"
+      },
+      {
+        "hanzi": "黄色",
+        "pinyin": "Huáng  sè"
+      },
+      {
+        "hanzi": "黑色",
+        "pinyin": "Hēi    sè"
+      }
+    ],
+    "classifier": [
+      {
+        "hanzi": "一件",
+        "pinyin": "Yī     jiàn",
+        "gloss_pt": "camisa"
+      },
+      {
+        "hanzi": "一条",
+        "pinyin": "Yī   tiáo"
+      },
+      {
+        "hanzi": "个",
+        "gloss_pt": "Gè"
+      },
+      {
+        "hanzi": "件"
+      },
+      {
+        "hanzi": "块"
+      },
+      {
+        "hanzi": "张",
+        "pinyin": "zhāng"
+      },
+      {
+        "hanzi": "支",
+        "pinyin": "Zhī"
+      },
+      {
+        "hanzi": "本",
+        "pinyin": "Běn"
+      },
+      {
+        "hanzi": "条"
+      },
+      {
+        "hanzi": "瓶",
+        "pinyin": "Píng"
+      },
+      {
+        "hanzi": "纸",
+        "pinyin": "zhǐ",
+        "gloss_pt": "张"
+      }
+    ],
+    "number": [
+      {
+        "hanzi": "一"
+      }
+    ],
+    "phrase_question": [
+      {
+        "hanzi": "什么意思",
+        "pinyin": "shěnme yì si"
+      },
+      {
+        "hanzi": "你们饭店最好吃的菜是什么"
+      },
+      {
+        "hanzi": "你会吗你会不会"
+      },
+      {
+        "hanzi": "你去巴西干什么"
+      },
+      {
+        "hanzi": "你在干什么",
+        "pinyin": "Nǐ zài gànshénme"
+      },
+      {
+        "hanzi": "你想买什么"
+      },
+      {
+        "hanzi": "你想去中国吗",
+        "pinyin": "Nǐ xiǎng qù zhōngguó ma?"
+      },
+      {
+        "hanzi": "你来巴西干什么"
+      },
+      {
+        "hanzi": "你能不能吃辣的"
+      },
+      {
+        "hanzi": "你要买什么"
+      },
+      {
+        "hanzi": "你还要买什么"
+      },
+      {
+        "hanzi": "保罗小姐你们饭店最好吃的菜是什么"
+      },
+      {
+        "hanzi": "保罗小姐你们饭店菜是什么"
+      },
+      {
+        "hanzi": "保罗这两本词典都是你的吗",
+        "pinyin": ":              ?"
+      },
+      {
+        "hanzi": "保罗这是什么词典",
+        "pinyin": ":        ?"
+      },
+      {
+        "hanzi": "先生小姐你想买什么",
+        "pinyin": "Xiānshēng/xiǎojiě, nǐ xiǎng mǎi shénme?",
+        "gloss_pt": "senhor"
+      },
+      {
+        "hanzi": "卡米洛我最喜欢吃辣的你能不能吃辣的"
+      },
+      {
+        "hanzi": "卡米洛我看一下行吗",
+        "pinyin": "Kǎmǐluò: Wǒ kàn yíxià , xíng ma?"
+      },
+      {
+        "hanzi": "卡米洛要中国地图干什么",
+        "pinyin": "2.      ？"
+      },
+      {
+        "hanzi": "卡米洛这个名字真有意思那儿有龙吗",
+        "pinyin": ":         !?"
+      },
+      {
+        "hanzi": "多少钱",
+        "pinyin": "Duōshǎo qián?"
+      },
+      {
+        "hanzi": "她是谁",
+        "pinyin": "Tā shì shéi?"
+      },
+      {
+        "hanzi": "小姐一点儿什么"
+      },
+      {
+        "hanzi": "小姐先生想买什么"
+      },
+      {
+        "hanzi": "小姐怎么样"
+      },
+      {
+        "hanzi": "小姐您还要买什么"
+      },
+      {
+        "hanzi": "小姐来一点儿什么"
+      },
+      {
+        "hanzi": "小姐还要什么"
+      },
+      {
+        "hanzi": "我可以问你一个问题吗",
+        "pinyin": "Wǒ kěyǐ wèn nǐ yīgè wèntí ma"
+      },
+      {
+        "hanzi": "我想看电视行吗",
+        "pinyin": "Wǒ xiǎng kàn diànshì，xíng ma?"
+      },
+      {
+        "hanzi": "我能不能看一下",
+        "pinyin": "Wǒ néng bùnéng kàn yīxià?"
+      },
+      {
+        "hanzi": "我能看电视吗",
+        "pinyin": "Wǒ néng kàn diànshì ma?"
+      },
+      {
+        "hanzi": "来一点儿什么",
+        "pinyin": "Lái yīdiǎnr shénme?",
+        "gloss_pt": "Vir"
+      },
+      {
+        "hanzi": "白小红你看中国地图干什么",
+        "pinyin": ":             ?"
+      },
+      {
+        "hanzi": "第五课能不能试一试"
+      },
+      {
+        "hanzi": "米格尔一条能不能试一试"
+      },
+      {
+        "hanzi": "米格尔一条裤子能不能试一试"
+      },
+      {
+        "hanzi": "请问你叫什么名字",
+        "pinyin": ",   ?"
+      },
+      {
+        "hanzi": "请问这个多少钱",
+        "pinyin": "Qǐngwèn, zhège duōshǎo qián"
+      },
+      {
+        "hanzi": "这个字是什么意思",
+        "pinyin": "Zhègè zì shì shěnme yì si",
+        "gloss_pt": "significar"
+      },
+      {
+        "hanzi": "这件白衬衫多少钱"
+      },
+      {
+        "hanzi": "这张地图多少钱"
+      },
+      {
+        "hanzi": "这支笔多少钱"
+      },
+      {
+        "hanzi": "这本书多少钱"
+      },
+      {
+        "hanzi": "这本本子多少钱"
+      },
+      {
+        "hanzi": "那条裤子怎么样"
+      },
+      {
+        "hanzi": "龙山有龙吗",
+        "pinyin": "4.       ？"
+      }
+    ],
+    "phrase": [
+      {
+        "hanzi": "一件白衬衫"
+      },
+      {
+        "hanzi": "一张中文的一张葡萄牙文的",
+        "pinyin": "yī zhāng zhōngwén de, yī zhāng pútáoyá wén de."
+      },
+      {
+        "hanzi": "丁汉生可以来一个吧"
+      },
+      {
+        "hanzi": "丁汉生可以来一个红烧牛肉吧"
+      },
+      {
+        "hanzi": "丁汉生水饺"
+      },
+      {
+        "hanzi": "不会说葡语"
+      },
+      {
+        "hanzi": "中国地图一张中文的一张",
+        "pinyin": "。          ,"
+      },
+      {
+        "hanzi": "买一件衣服"
+      },
+      {
+        "hanzi": "买一件衬衫"
+      },
+      {
+        "hanzi": "买书笔衬衫",
+        "pinyin": "mǎi",
+        "gloss_pt": "comprar"
+      },
+      {
+        "hanzi": "五十二地图"
+      },
+      {
+        "hanzi": "他不能游泳",
+        "pinyin": "Tā bùnéng yóuyǒng"
+      },
+      {
+        "hanzi": "他们去了一个西餐厅"
+      },
+      {
+        "hanzi": "他们学校很大",
+        "pinyin": "Tāmen xuéxiào hěn dà"
+      },
+      {
+        "hanzi": "他们还要米饭水饺和一瓶啤酒"
+      },
+      {
+        "hanzi": "他去中国玩儿"
+      },
+      {
+        "hanzi": "他在用电脑",
+        "pinyin": "Tā zài yòng diànnǎo"
+      },
+      {
+        "hanzi": "他想买一本词典",
+        "pinyin": "Tā xiǎng mǎi yī běn cídiǎn"
+      },
+      {
+        "hanzi": "他想去中国玩儿",
+        "pinyin": "Tā xiǎng qù zhōngguó wán er"
+      },
+      {
+        "hanzi": "他来中国玩儿"
+      },
+      {
+        "hanzi": "会说一点儿葡语"
+      },
+      {
+        "hanzi": "作业没做完当然不能看电视",
+        "pinyin": "Zuòyè méi zuò wán, dāngrán bùnéng kàn diànshì"
+      },
+      {
+        "hanzi": "你喜欢哪本书",
+        "pinyin": "Nǐ xǐhuān nǎ běn shū?"
+      },
+      {
+        "hanzi": "你女朋友太漂亮了",
+        "pinyin": "Nǐ nǚ péngyǒu tài piàoliangle"
+      },
+      {
+        "hanzi": "你问他的名字",
+        "pinyin": "3.   A     B    C   D"
+      },
+      {
+        "hanzi": "保罗卡米洛白小红丁汉生谢谢"
+      },
+      {
+        "hanzi": "保罗好来一个糖醋鱼"
+      },
+      {
+        "hanzi": "保罗来三瓶啤酒"
+      },
+      {
+        "hanzi": "保罗来啤酒"
+      },
+      {
+        "hanzi": "保罗那本呢",
+        "pinyin": "Bǎoluó: Nà běn ne?"
+      },
+      {
+        "hanzi": "卡米洛你有没有中国地图",
+        "pinyin": ":           ?"
+      },
+      {
+        "hanzi": "卡米洛我最喜欢吃的你吃的"
+      },
+      {
+        "hanzi": "卡米洛我知道",
+        "pinyin": ":   。"
+      },
+      {
+        "hanzi": "卡米洛是的我想去中国玩儿",
+        "pinyin": ": ，           。"
+      },
+      {
+        "hanzi": "卡米洛来个"
+      },
+      {
+        "hanzi": "卡米洛来个酸辣汤"
+      },
+      {
+        "hanzi": "卡米洛汉葡词典",
+        "pinyin": "Kǎmǐluò: Hànpú cídiǎn。"
+      },
+      {
+        "hanzi": "卡米洛能吃一点儿辣的"
+      },
+      {
+        "hanzi": "卡米洛葡汉词典",
+        "pinyin": ":   。"
+      },
+      {
+        "hanzi": "卡米洛葡萄牙文的",
+        "pinyin": ":     。"
+      },
+      {
+        "hanzi": "卡米洛谢谢",
+        "pinyin": ":   !"
+      },
+      {
+        "hanzi": "卡米洛龙山不知道龙山大不大",
+        "pinyin": ":   ?    。      ?"
+      },
+      {
+        "hanzi": "向一位同学描述自己的词典",
+        "pinyin": "Descreva  o  seu  dicionário  para  um  colega."
+      },
+      {
+        "hanzi": "她不会游泳",
+        "pinyin": "Tā bù huì yóuyǒng"
+      },
+      {
+        "hanzi": "她是我妈妈",
+        "pinyin": "Tā shì wǒ māmā"
+      },
+      {
+        "hanzi": "她有两张中国地图",
+        "pinyin": "Tā yǒu liǎng zhāng zhōngguó dìtú,"
+      },
+      {
+        "hanzi": "如果你喜欢这条裤子那就买",
+        "pinyin": "Rúguǒ nǐ xǐhuān zhè tiáo kùzǐ, nà jiù mǎi"
+      },
+      {
+        "hanzi": "小姐一百六十五块比较便宜也比较漂亮"
+      },
+      {
+        "hanzi": "小姐哟您会说"
+      },
+      {
+        "hanzi": "小姐哟您会说汉语"
+      },
+      {
+        "hanzi": "小姐四百二十八块"
+      },
+      {
+        "hanzi": "小姐块比较也比较"
+      },
+      {
+        "hanzi": "小姐好要不要来个牛肉"
+      },
+      {
+        "hanzi": "小姐好请一下"
+      },
+      {
+        "hanzi": "小姐好请等一下"
+      },
+      {
+        "hanzi": "小姐当然可以"
+      },
+      {
+        "hanzi": "小姐糖醋鱼"
+      },
+      {
+        "hanzi": "小姐请坐请喝茶"
+      },
+      {
+        "hanzi": "小姐那您试试这条吧这条不太大"
+      },
+      {
+        "hanzi": "干家务工作活儿",
+        "pinyin": "O que você está fazendo"
+      },
+      {
+        "hanzi": "想买一件衣服"
+      },
+      {
+        "hanzi": "想买一件衬衫"
+      },
+      {
+        "hanzi": "意思看一下"
+      },
+      {
+        "hanzi": "我不喜欢那一本我喜欢这三本",
+        "pinyin": "Wǒ bùxǐhuān nà yī běn,   wǒ Xǐhuān zhè sān běn"
+      },
+      {
+        "hanzi": "我不太喜欢",
+        "pinyin": "Wǒ bù tài xǐhuān"
+      },
+      {
+        "hanzi": "我不想去你们学校学习汉语",
+        "pinyin": "Wǒ  bù xiǎng qù nǐmen xuéxiào xuéxí hànyǔ"
+      },
+      {
+        "hanzi": "我不知道他",
+        "pinyin": "Wǒ bù zhīdào tā"
+      },
+      {
+        "hanzi": "我们出去玩儿吧"
+      },
+      {
+        "hanzi": "我会说一点儿葡语",
+        "pinyin": "Wǒ huì shuō yīdiǎnr pú yǔ"
+      },
+      {
+        "hanzi": "我去孔子学院学汉语"
+      },
+      {
+        "hanzi": "我喜欢吃饭"
+      },
+      {
+        "hanzi": "我喜欢喝茶"
+      },
+      {
+        "hanzi": "我回答一下这个问题",
+        "pinyin": "Wǒ huídá yīxià zhège wèntí"
+      },
+      {
+        "hanzi": "我在干家务",
+        "pinyin": "Wǒ zài gàn jiāwù."
+      },
+      {
+        "hanzi": "我在教室上课",
+        "pinyin": "Wǒ zài jiàoshì shàngkè"
+      },
+      {
+        "hanzi": "我太喜欢他了",
+        "pinyin": "Wǒ tài xǐhuān tāle!"
+      },
+      {
+        "hanzi": "我家有三人"
+      },
+      {
+        "hanzi": "我想买一件衣服"
+      },
+      {
+        "hanzi": "我想买一点儿苹果",
+        "pinyin": "Wǒ xiǎng mǎi yīdiǎnr píngguǒ"
+      },
+      {
+        "hanzi": "我想去中国玩儿",
+        "pinyin": "Wǒ xiǎng qù zhōngguó wán er",
+        "gloss_pt": "Fazer uma viagem"
+      },
+      {
+        "hanzi": "我想去你们学校学习汉语",
+        "pinyin": "Wǒ xiǎng qù nǐmen xuéxiào xuéxí hànyǔ"
+      },
+      {
+        "hanzi": "我想去学校",
+        "pinyin": "Wǒ xiǎng qù xuéxiào"
+      },
+      {
+        "hanzi": "我想喝一点儿水",
+        "pinyin": "Wǒ xiǎng hè yīdiǎnr shuǐ"
+      },
+      {
+        "hanzi": "我最不喜欢吃鱼",
+        "pinyin": "Wǒ zuì bù xǐhuān chī yú",
+        "gloss_pt": "2.最+不+adj/v"
+      },
+      {
+        "hanzi": "我有一张中国地图",
+        "pinyin": "Wǒ yǒuyī zhāng zhōngguó dìtú"
+      },
+      {
+        "hanzi": "我有这本书了我还想要一本",
+        "pinyin": "Wǒ yǒu zhè běn shūle, wǒ hái xiǎng yào yī běn",
+        "gloss_pt": "Indica que existem suplementos"
+      },
+      {
+        "hanzi": "我来孔子学院学汉语"
+      },
+      {
+        "hanzi": "我没有中国地图",
+        "pinyin": "Wǒ méiyǒu zhōngguó dìtú"
+      },
+      {
+        "hanzi": "我用笔写字",
+        "pinyin": "Wǒ yòng bǐ xiězì"
+      },
+      {
+        "hanzi": "我的家非常大",
+        "pinyin": "Wǒ de jiā fēicháng dà"
+      },
+      {
+        "hanzi": "我能吃一点儿辣的"
+      },
+      {
+        "hanzi": "我要去咖啡店喝咖啡"
+      },
+      {
+        "hanzi": "我要去学校",
+        "pinyin": "Wǒ yào qù xuéxiào",
+        "gloss_pt": "/v.o."
+      },
+      {
+        "hanzi": "我要去饭店"
+      },
+      {
+        "hanzi": "我要去饭店吃东西"
+      },
+      {
+        "hanzi": "我还要买一件衬衫"
+      },
+      {
+        "hanzi": "我非常喜欢学习",
+        "pinyin": "Wǒ fēicháng xǐhuān xuéxí"
+      },
+      {
+        "hanzi": "支张本个口",
+        "pinyin": "Zhī    zhāng  běn      gè       kǒu"
+      },
+      {
+        "hanzi": "最大的大学"
+      },
+      {
+        "hanzi": "最好吃的菜"
+      },
+      {
+        "hanzi": "最好的学校"
+      },
+      {
+        "hanzi": "最小的国家"
+      },
+      {
+        "hanzi": "最漂亮的人"
+      },
+      {
+        "hanzi": "来一杯咖啡"
+      },
+      {
+        "hanzi": "来三瓶啤酒请给我来三瓶啤酒"
+      },
+      {
+        "hanzi": "来十瓶啤酒"
+      },
+      {
+        "hanzi": "玩一下玩玩"
+      },
+      {
+        "hanzi": "用一下用用"
+      },
+      {
+        "hanzi": "用于可以卷起来或展开"
+      },
+      {
+        "hanzi": "用于平面的东西"
+      },
+      {
+        "hanzi": "用笔电电话",
+        "pinyin": "Yòng",
+        "gloss_pt": "usar"
+      },
+      {
+        "hanzi": "白小红我能吃"
+      },
+      {
+        "hanzi": "白小红我能吃一点儿"
+      },
+      {
+        "hanzi": "白小红有我有两张",
+        "pinyin": ":     。"
+      },
+      {
+        "hanzi": "白小红有没有中国地图",
+        "pinyin": "1.       ？"
+      },
+      {
+        "hanzi": "白小红比较小我家在那儿",
+        "pinyin": ":       。    。"
+      },
+      {
+        "hanzi": "白小红米饭"
+      },
+      {
+        "hanzi": "白小红给这张地图是葡萄牙文的",
+        "pinyin": ":           。        。"
+      },
+      {
+        "hanzi": "白小红能吃一点儿辣的"
+      },
+      {
+        "hanzi": "白小红行你要中文的还是",
+        "pinyin": ":          。"
+      },
+      {
+        "hanzi": "白小红这是上海",
+        "pinyin": ":        。"
+      },
+      {
+        "hanzi": "白小红这是龙山",
+        "pinyin": ":        。"
+      },
+      {
+        "hanzi": "白小红那儿没有龙只有山",
+        "pinyin": ":         ，  。"
+      },
+      {
+        "hanzi": "白小红那好啊你看这是北京",
+        "pinyin": ":       ! ，   。"
+      },
+      {
+        "hanzi": "看一看看一下看看"
+      },
+      {
+        "hanzi": "米格尔不能试裤子"
+      },
+      {
+        "hanzi": "米格尔会说一点儿汉语"
+      },
+      {
+        "hanzi": "米格尔你好"
+      },
+      {
+        "hanzi": "米格尔只想买一条裤子"
+      },
+      {
+        "hanzi": "米格尔太了那件呢"
+      },
+      {
+        "hanzi": "米格尔太贵了那件红衬衫呢"
+      },
+      {
+        "hanzi": "米格尔好我要那一件"
+      },
+      {
+        "hanzi": "米格尔我会说"
+      },
+      {
+        "hanzi": "米格尔我会说一点儿"
+      },
+      {
+        "hanzi": "米格尔我想买一件衬衫"
+      },
+      {
+        "hanzi": "米格尔这条"
+      },
+      {
+        "hanzi": "米格尔这条太大"
+      },
+      {
+        "hanzi": "给我来一杯水"
+      },
+      {
+        "hanzi": "绿色的苹果最大",
+        "pinyin": "Lǜsè de píngguǒ zuìdà"
+      },
+      {
+        "hanzi": "葡萄牙文的",
+        "pinyin": "pútáoyáwén de。"
+      },
+      {
+        "hanzi": "试一试试一下试试"
+      },
+      {
+        "hanzi": "说一下说说"
+      },
+      {
+        "hanzi": "说一点儿葡语"
+      },
+      {
+        "hanzi": "这个菜是辣的"
+      },
+      {
+        "hanzi": "这个问题你去问老师吧我不知道",
+        "pinyin": "Zhège wèntí nǐ qù wèn lǎoshī ba, wǒ bù zhīdào"
+      },
+      {
+        "hanzi": "这件白衬衫一百块"
+      },
+      {
+        "hanzi": "这件白衬衫四百二十八块"
+      },
+      {
+        "hanzi": "这件白衬衫真漂亮"
+      },
+      {
+        "hanzi": "这件衣服真漂亮",
+        "pinyin": "Zhè jiàn yīfú zhēnPiàoliang!"
+      },
+      {
+        "hanzi": "这件衬衫钱"
+      },
+      {
+        "hanzi": "这儿有瓶冰啤酒"
+      },
+      {
+        "hanzi": "这家个饭店很大很漂亮"
+      },
+      {
+        "hanzi": "这张地图块钱"
+      },
+      {
+        "hanzi": "这张地图是葡萄牙文的",
+        "pinyin": "Zhè zhāng dìtú shì pútáoyá wén de"
+      },
+      {
+        "hanzi": "这支笔元钱"
+      },
+      {
+        "hanzi": "这本书块钱"
+      },
+      {
+        "hanzi": "这本书很有用",
+        "pinyin": "Zhè běn shū hěn yǒuyòng",
+        "gloss_pt": "útil"
+      },
+      {
+        "hanzi": "这本书比较无聊我不",
+        "pinyin": "Zhè běn shū bǐjiào wúliáo, wǒ bù xǐhuān"
+      },
+      {
+        "hanzi": "这本书真有意思",
+        "pinyin": "Zhè běn shūZhēnyǒuyìsi"
+      },
+      {
+        "hanzi": "这本本子元钱"
+      },
+      {
+        "hanzi": "这本还是那本",
+        "pinyin": "Zhè běn hái shì nà běn?"
+      },
+      {
+        "hanzi": "这条裤子太好看了"
+      },
+      {
+        "hanzi": "那个地方非常小",
+        "pinyin": "Nàgè dìfāng fēicháng xiǎo"
+      },
+      {
+        "hanzi": "那件红衬衫比较便宜也比较漂亮"
+      },
+      {
+        "hanzi": "那儿有一家个饭店"
+      },
+      {
+        "hanzi": "那儿没有龙只有山",
+        "pinyin": "Nà'er méiyǒu lóng, zhǐyǒu shān."
+      },
+      {
+        "hanzi": "问问题路价格",
+        "pinyin": "Wèn",
+        "gloss_pt": "perguntar"
+      },
+      {
+        "hanzi": "饭店最好吃的菜是糖醋鱼"
+      },
+      {
+        "hanzi": "饺子真好吃",
+        "pinyin": "Jiǎozi zhēn hào chī"
+      },
+      {
+        "hanzi": "龙山大不大",
+        "pinyin": "Lóngshān dà bù dà?"
+      }
+    ]
+  }
+}
