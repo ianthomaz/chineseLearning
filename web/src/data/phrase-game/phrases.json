@@ -1,0 +1,2140 @@
+{
+  "version": 1,
+  "count": 28,
+  "byTier": {
+    "hsk1": 19,
+    "basico": 9
+  },
+  "byLevel": {
+    "1": 12,
+    "2": 8,
+    "3": 5,
+    "4": 3
+  },
+  "phrases": [
+    {
+      "id": "pg-001",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu sou estudante.",
+      "en": "I am a student.",
+      "es": "Soy estudiante.",
+      "hanzi": "我是学生",
+      "pinyin": "wǒ shì xué shēng",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "是",
+          "caracteres": [
+            {
+              "hanzi": "是",
+              "pinyin": "shì"
+            }
+          ],
+          "pinyin": "shì",
+          "pt": "ser",
+          "dificil": false
+        },
+        {
+          "palavra": "学生",
+          "caracteres": [
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "生",
+              "pinyin": "shēng"
+            }
+          ],
+          "pinyin": "xué shēng",
+          "pt": "estudante",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "他",
+          "pinyin": "tā",
+          "pt": "ele"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-002",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu te amo.",
+      "en": "I love you.",
+      "es": "Te amo.",
+      "hanzi": "我爱你",
+      "pinyin": "wǒ ài nǐ",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "爱",
+          "caracteres": [
+            {
+              "hanzi": "爱",
+              "pinyin": "ài"
+            }
+          ],
+          "pinyin": "ài",
+          "pt": "amar",
+          "dificil": false
+        },
+        {
+          "palavra": "你",
+          "caracteres": [
+            {
+              "hanzi": "你",
+              "pinyin": "nǐ"
+            }
+          ],
+          "pinyin": "nǐ",
+          "pt": "você",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        },
+        {
+          "hanzi": "喝",
+          "pinyin": "hē",
+          "pt": "beber"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-003",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Ele é professor.",
+      "en": "He is a teacher.",
+      "es": "Él es profesor.",
+      "hanzi": "他是老师",
+      "pinyin": "tā shì lǎo shī",
+      "tokens": [
+        {
+          "palavra": "他",
+          "caracteres": [
+            {
+              "hanzi": "他",
+              "pinyin": "tā"
+            }
+          ],
+          "pinyin": "tā",
+          "pt": "ele",
+          "dificil": false
+        },
+        {
+          "palavra": "是",
+          "caracteres": [
+            {
+              "hanzi": "是",
+              "pinyin": "shì"
+            }
+          ],
+          "pinyin": "shì",
+          "pt": "ser",
+          "dificil": false
+        },
+        {
+          "palavra": "老师",
+          "caracteres": [
+            {
+              "hanzi": "老",
+              "pinyin": "lǎo"
+            },
+            {
+              "hanzi": "师",
+              "pinyin": "shī"
+            }
+          ],
+          "pinyin": "lǎo shī",
+          "pt": "professor",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "钱",
+          "pinyin": "qián",
+          "pt": "dinheiro"
+        },
+        {
+          "hanzi": "去",
+          "pinyin": "qù",
+          "pt": "ir"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-004",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu bebo chá.",
+      "en": "I drink tea.",
+      "es": "Bebo té.",
+      "hanzi": "我喝茶",
+      "pinyin": "wǒ hē chá",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "喝",
+          "caracteres": [
+            {
+              "hanzi": "喝",
+              "pinyin": "hē"
+            }
+          ],
+          "pinyin": "hē",
+          "pt": "beber",
+          "dificil": false
+        },
+        {
+          "palavra": "茶",
+          "caracteres": [
+            {
+              "hanzi": "茶",
+              "pinyin": "chá"
+            }
+          ],
+          "pinyin": "chá",
+          "pt": "chá",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "看",
+          "pinyin": "kàn",
+          "pt": "ver / olhar"
+        },
+        {
+          "hanzi": "学校",
+          "pinyin": "xuéxiào",
+          "pt": "escola"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-005",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu como arroz.",
+      "en": "I eat rice.",
+      "es": "Como arroz.",
+      "hanzi": "我吃米饭",
+      "pinyin": "wǒ chī mǐ fàn",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "吃",
+          "caracteres": [
+            {
+              "hanzi": "吃",
+              "pinyin": "chī"
+            }
+          ],
+          "pinyin": "chī",
+          "pt": "comer",
+          "dificil": false
+        },
+        {
+          "palavra": "米饭",
+          "caracteres": [
+            {
+              "hanzi": "米",
+              "pinyin": "mǐ"
+            },
+            {
+              "hanzi": "饭",
+              "pinyin": "fàn"
+            }
+          ],
+          "pinyin": "mǐ fàn",
+          "pt": "arroz",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "他",
+          "pinyin": "tā",
+          "pt": "ele"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-006",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu gosto de você.",
+      "en": "I like you.",
+      "es": "Me gustas.",
+      "hanzi": "我喜欢你",
+      "pinyin": "wǒ xǐ huan nǐ",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "喜欢",
+          "caracteres": [
+            {
+              "hanzi": "喜",
+              "pinyin": "xǐ"
+            },
+            {
+              "hanzi": "欢",
+              "pinyin": "huan"
+            }
+          ],
+          "pinyin": "xǐ huan",
+          "pt": "gostar",
+          "dificil": false
+        },
+        {
+          "palavra": "你",
+          "caracteres": [
+            {
+              "hanzi": "你",
+              "pinyin": "nǐ"
+            }
+          ],
+          "pinyin": "nǐ",
+          "pt": "você",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "是",
+          "pinyin": "shì",
+          "pt": "ser"
+        },
+        {
+          "hanzi": "钱",
+          "pinyin": "qián",
+          "pt": "dinheiro"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-007",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Ela é chinesa.",
+      "en": "She is Chinese.",
+      "es": "Ella es china.",
+      "hanzi": "她是中国人",
+      "pinyin": "tā shì zhōng guó rén",
+      "tokens": [
+        {
+          "palavra": "她",
+          "caracteres": [
+            {
+              "hanzi": "她",
+              "pinyin": "tā"
+            }
+          ],
+          "pinyin": "tā",
+          "pt": "ela",
+          "dificil": false
+        },
+        {
+          "palavra": "是",
+          "caracteres": [
+            {
+              "hanzi": "是",
+              "pinyin": "shì"
+            }
+          ],
+          "pinyin": "shì",
+          "pt": "ser",
+          "dificil": false
+        },
+        {
+          "palavra": "中国人",
+          "caracteres": [
+            {
+              "hanzi": "中",
+              "pinyin": "zhōng"
+            },
+            {
+              "hanzi": "国",
+              "pinyin": "guó"
+            },
+            {
+              "hanzi": "人",
+              "pinyin": "rén"
+            }
+          ],
+          "pinyin": "zhōng guó rén",
+          "pt": "chinês/chinesa",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        },
+        {
+          "hanzi": "吃",
+          "pinyin": "chī",
+          "pt": "comer"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-008",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu tenho dinheiro.",
+      "en": "I have money.",
+      "es": "Tengo dinero.",
+      "hanzi": "我有钱",
+      "pinyin": "wǒ yǒu qián",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "有",
+          "caracteres": [
+            {
+              "hanzi": "有",
+              "pinyin": "yǒu"
+            }
+          ],
+          "pinyin": "yǒu",
+          "pt": "ter",
+          "dificil": false
+        },
+        {
+          "palavra": "钱",
+          "caracteres": [
+            {
+              "hanzi": "钱",
+              "pinyin": "qián"
+            }
+          ],
+          "pinyin": "qián",
+          "pt": "dinheiro",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "学校",
+          "pinyin": "xuéxiào",
+          "pt": "escola"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-009",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu vou à escola.",
+      "en": "I go to school.",
+      "es": "Voy a la escuela.",
+      "hanzi": "我去学校",
+      "pinyin": "wǒ qù xué xiào",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "去",
+          "caracteres": [
+            {
+              "hanzi": "去",
+              "pinyin": "qù"
+            }
+          ],
+          "pinyin": "qù",
+          "pt": "ir",
+          "dificil": false
+        },
+        {
+          "palavra": "学校",
+          "caracteres": [
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "校",
+              "pinyin": "xiào"
+            }
+          ],
+          "pinyin": "xué xiào",
+          "pt": "escola",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "爱",
+          "pinyin": "ài",
+          "pt": ""
+        },
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-010",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu leio um livro.",
+      "en": "I read a book.",
+      "es": "Leo un libro.",
+      "hanzi": "我看书",
+      "pinyin": "wǒ kàn shū",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "看",
+          "caracteres": [
+            {
+              "hanzi": "看",
+              "pinyin": "kàn"
+            }
+          ],
+          "pinyin": "kàn",
+          "pt": "ler / olhar",
+          "dificil": false
+        },
+        {
+          "palavra": "书",
+          "caracteres": [
+            {
+              "hanzi": "书",
+              "pinyin": "shū"
+            }
+          ],
+          "pinyin": "shū",
+          "pt": "livro",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "他",
+          "pinyin": "tā",
+          "pt": "ele"
+        },
+        {
+          "hanzi": "钱",
+          "pinyin": "qián",
+          "pt": "dinheiro"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-011",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Obrigado a você.",
+      "en": "Thank you.",
+      "es": "Gracias.",
+      "hanzi": "谢谢你",
+      "pinyin": "xiè xiè nǐ",
+      "tokens": [
+        {
+          "palavra": "谢谢",
+          "caracteres": [
+            {
+              "hanzi": "谢",
+              "pinyin": "xiè"
+            },
+            {
+              "hanzi": "谢",
+              "pinyin": "xiè"
+            }
+          ],
+          "pinyin": "xiè xiè",
+          "pt": "obrigado",
+          "dificil": false
+        },
+        {
+          "palavra": "你",
+          "caracteres": [
+            {
+              "hanzi": "你",
+              "pinyin": "nǐ"
+            }
+          ],
+          "pinyin": "nǐ",
+          "pt": "você",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "我",
+          "pinyin": "wǒ",
+          "pt": "eu"
+        },
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-012",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Hoje está muito quente.",
+      "en": "It is very hot today.",
+      "es": "Hoy hace mucho calor.",
+      "hanzi": "今天很热",
+      "pinyin": "jīn tiān hěn rè",
+      "tokens": [
+        {
+          "palavra": "今天",
+          "caracteres": [
+            {
+              "hanzi": "今",
+              "pinyin": "jīn"
+            },
+            {
+              "hanzi": "天",
+              "pinyin": "tiān"
+            }
+          ],
+          "pinyin": "jīn tiān",
+          "pt": "hoje",
+          "dificil": false
+        },
+        {
+          "palavra": "很",
+          "caracteres": [
+            {
+              "hanzi": "很",
+              "pinyin": "hěn"
+            }
+          ],
+          "pinyin": "hěn",
+          "pt": "muito",
+          "dificil": false
+        },
+        {
+          "palavra": "热",
+          "caracteres": [
+            {
+              "hanzi": "热",
+              "pinyin": "rè"
+            }
+          ],
+          "pinyin": "rè",
+          "pt": "quente",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        },
+        {
+          "hanzi": "去",
+          "pinyin": "qù",
+          "pt": "ir"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-101",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Eu vou à escola todos os dias.",
+      "en": "I go to school every day.",
+      "es": "Voy a la escuela todos los días.",
+      "hanzi": "我每天去学校",
+      "pinyin": "wǒ měi tiān qù xué xiào",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "每天",
+          "caracteres": [
+            {
+              "hanzi": "每",
+              "pinyin": "měi"
+            },
+            {
+              "hanzi": "天",
+              "pinyin": "tiān"
+            }
+          ],
+          "pinyin": "měi tiān",
+          "pt": "todos os dias",
+          "dificil": false
+        },
+        {
+          "palavra": "去",
+          "caracteres": [
+            {
+              "hanzi": "去",
+              "pinyin": "qù"
+            }
+          ],
+          "pinyin": "qù",
+          "pt": "ir",
+          "dificil": false
+        },
+        {
+          "palavra": "学校",
+          "caracteres": [
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "校",
+              "pinyin": "xiào"
+            }
+          ],
+          "pinyin": "xué xiào",
+          "pt": "escola",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "钱",
+          "pinyin": "qián",
+          "pt": "dinheiro"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-102",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Eu tenho um irmão mais velho.",
+      "en": "I have an older brother.",
+      "es": "Tengo un hermano mayor.",
+      "hanzi": "我有一个哥哥",
+      "pinyin": "wǒ yǒu yí gè gē ge",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "有",
+          "caracteres": [
+            {
+              "hanzi": "有",
+              "pinyin": "yǒu"
+            }
+          ],
+          "pinyin": "yǒu",
+          "pt": "ter",
+          "dificil": false
+        },
+        {
+          "palavra": "一个",
+          "caracteres": [
+            {
+              "hanzi": "一",
+              "pinyin": "yí"
+            },
+            {
+              "hanzi": "个",
+              "pinyin": "gè"
+            }
+          ],
+          "pinyin": "yí gè",
+          "pt": "um (classificador)",
+          "dificil": false
+        },
+        {
+          "palavra": "哥哥",
+          "caracteres": [
+            {
+              "hanzi": "哥",
+              "pinyin": "gē"
+            },
+            {
+              "hanzi": "哥",
+              "pinyin": "ge"
+            }
+          ],
+          "pinyin": "gē ge",
+          "pt": "irmão mais velho",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "去",
+          "pinyin": "qù",
+          "pt": "ir"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-103",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Hoje o tempo está muito bom.",
+      "en": "The weather is very nice today.",
+      "es": "Hoy hace muy buen tiempo.",
+      "hanzi": "今天天气很好",
+      "pinyin": "jīn tiān tiān qì hěn hǎo",
+      "tokens": [
+        {
+          "palavra": "今天",
+          "caracteres": [
+            {
+              "hanzi": "今",
+              "pinyin": "jīn"
+            },
+            {
+              "hanzi": "天",
+              "pinyin": "tiān"
+            }
+          ],
+          "pinyin": "jīn tiān",
+          "pt": "hoje",
+          "dificil": false
+        },
+        {
+          "palavra": "天气",
+          "caracteres": [
+            {
+              "hanzi": "天",
+              "pinyin": "tiān"
+            },
+            {
+              "hanzi": "气",
+              "pinyin": "qì"
+            }
+          ],
+          "pinyin": "tiān qì",
+          "pt": "tempo / clima",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "caracteres": [
+            {
+              "hanzi": "很",
+              "pinyin": "hěn"
+            }
+          ],
+          "pinyin": "hěn",
+          "pt": "muito",
+          "dificil": false
+        },
+        {
+          "palavra": "好",
+          "caracteres": [
+            {
+              "hanzi": "好",
+              "pinyin": "hǎo"
+            }
+          ],
+          "pinyin": "hǎo",
+          "pt": "bom",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        },
+        {
+          "hanzi": "他",
+          "pinyin": "tā",
+          "pt": "ele"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-104",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Eu quero comprar um livro.",
+      "en": "I want to buy a book.",
+      "es": "Quiero comprar un libro.",
+      "hanzi": "我想买一本书",
+      "pinyin": "wǒ xiǎng mǎi yì běn shū",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "想",
+          "caracteres": [
+            {
+              "hanzi": "想",
+              "pinyin": "xiǎng"
+            }
+          ],
+          "pinyin": "xiǎng",
+          "pt": "querer",
+          "dificil": false
+        },
+        {
+          "palavra": "买",
+          "caracteres": [
+            {
+              "hanzi": "买",
+              "pinyin": "mǎi"
+            }
+          ],
+          "pinyin": "mǎi",
+          "pt": "comprar",
+          "dificil": false
+        },
+        {
+          "palavra": "一本",
+          "caracteres": [
+            {
+              "hanzi": "一",
+              "pinyin": "yì"
+            },
+            {
+              "hanzi": "本",
+              "pinyin": "běn"
+            }
+          ],
+          "pinyin": "yì běn",
+          "pt": "um (classificador de livros)",
+          "dificil": false
+        },
+        {
+          "palavra": "书",
+          "caracteres": [
+            {
+              "hanzi": "书",
+              "pinyin": "shū"
+            }
+          ],
+          "pinyin": "shū",
+          "pt": "livro",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "学校",
+          "pinyin": "xuéxiào",
+          "pt": "escola"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-105",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Ele gosta de comer comida chinesa.",
+      "en": "He likes to eat Chinese food.",
+      "es": "Le gusta comer comida china.",
+      "hanzi": "他喜欢吃中国菜",
+      "pinyin": "tā xǐ huan chī zhōng guó cài",
+      "tokens": [
+        {
+          "palavra": "他",
+          "caracteres": [
+            {
+              "hanzi": "他",
+              "pinyin": "tā"
+            }
+          ],
+          "pinyin": "tā",
+          "pt": "ele",
+          "dificil": false
+        },
+        {
+          "palavra": "喜欢",
+          "caracteres": [
+            {
+              "hanzi": "喜",
+              "pinyin": "xǐ"
+            },
+            {
+              "hanzi": "欢",
+              "pinyin": "huan"
+            }
+          ],
+          "pinyin": "xǐ huan",
+          "pt": "gostar",
+          "dificil": false
+        },
+        {
+          "palavra": "吃",
+          "caracteres": [
+            {
+              "hanzi": "吃",
+              "pinyin": "chī"
+            }
+          ],
+          "pinyin": "chī",
+          "pt": "comer",
+          "dificil": false
+        },
+        {
+          "palavra": "中国菜",
+          "caracteres": [
+            {
+              "hanzi": "中",
+              "pinyin": "zhōng"
+            },
+            {
+              "hanzi": "国",
+              "pinyin": "guó"
+            },
+            {
+              "hanzi": "菜",
+              "pinyin": "cài"
+            }
+          ],
+          "pinyin": "zhōng guó cài",
+          "pt": "comida chinesa",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "钱",
+          "pinyin": "qián",
+          "pt": "dinheiro"
+        },
+        {
+          "hanzi": "去",
+          "pinyin": "qù",
+          "pt": "ir"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-106",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Eu bebo café todos os dias.",
+      "en": "I drink coffee every day.",
+      "es": "Bebo café todos los días.",
+      "hanzi": "我每天喝咖啡",
+      "pinyin": "wǒ měi tiān hē kā fēi",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "每天",
+          "caracteres": [
+            {
+              "hanzi": "每",
+              "pinyin": "měi"
+            },
+            {
+              "hanzi": "天",
+              "pinyin": "tiān"
+            }
+          ],
+          "pinyin": "měi tiān",
+          "pt": "todos os dias",
+          "dificil": false
+        },
+        {
+          "palavra": "喝",
+          "caracteres": [
+            {
+              "hanzi": "喝",
+              "pinyin": "hē"
+            }
+          ],
+          "pinyin": "hē",
+          "pt": "beber",
+          "dificil": false
+        },
+        {
+          "palavra": "咖啡",
+          "caracteres": [
+            {
+              "hanzi": "咖",
+              "pinyin": "kā"
+            },
+            {
+              "hanzi": "啡",
+              "pinyin": "fēi"
+            }
+          ],
+          "pinyin": "kā fēi",
+          "pt": "café",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        },
+        {
+          "hanzi": "他",
+          "pinyin": "tā",
+          "pt": "ele"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-107",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Este é o meu livro.",
+      "en": "This is my book.",
+      "es": "Este es mi libro.",
+      "hanzi": "这是我的书",
+      "pinyin": "zhè shì wǒ de shū",
+      "tokens": [
+        {
+          "palavra": "这",
+          "caracteres": [
+            {
+              "hanzi": "这",
+              "pinyin": "zhè"
+            }
+          ],
+          "pinyin": "zhè",
+          "pt": "este",
+          "dificil": false
+        },
+        {
+          "palavra": "是",
+          "caracteres": [
+            {
+              "hanzi": "是",
+              "pinyin": "shì"
+            }
+          ],
+          "pinyin": "shì",
+          "pt": "ser",
+          "dificil": false
+        },
+        {
+          "palavra": "我的",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "的",
+              "pinyin": "de"
+            }
+          ],
+          "pinyin": "wǒ de",
+          "pt": "meu",
+          "dificil": false
+        },
+        {
+          "palavra": "书",
+          "caracteres": [
+            {
+              "hanzi": "书",
+              "pinyin": "shū"
+            }
+          ],
+          "pinyin": "shū",
+          "pt": "livro",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "去",
+          "pinyin": "qù",
+          "pt": "ir"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-108",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Eu tenho muitos amigos.",
+      "en": "I have many friends.",
+      "es": "Tengo muchos amigos.",
+      "hanzi": "我有很多朋友",
+      "pinyin": "wǒ yǒu hěn duō péng yǒu",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "有",
+          "caracteres": [
+            {
+              "hanzi": "有",
+              "pinyin": "yǒu"
+            }
+          ],
+          "pinyin": "yǒu",
+          "pt": "ter",
+          "dificil": false
+        },
+        {
+          "palavra": "很多",
+          "caracteres": [
+            {
+              "hanzi": "很",
+              "pinyin": "hěn"
+            },
+            {
+              "hanzi": "多",
+              "pinyin": "duō"
+            }
+          ],
+          "pinyin": "hěn duō",
+          "pt": "muitos",
+          "dificil": false
+        },
+        {
+          "palavra": "朋友",
+          "caracteres": [
+            {
+              "hanzi": "朋",
+              "pinyin": "péng"
+            },
+            {
+              "hanzi": "友",
+              "pinyin": "yǒu"
+            }
+          ],
+          "pinyin": "péng yǒu",
+          "pt": "amigo",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "热",
+          "pinyin": "rè",
+          "pt": "quente"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-201",
+      "nivel": 3,
+      "tier": "hsk1",
+      "pt": "Eu quero beber uma xícara de chá.",
+      "en": "I want to drink a cup of tea.",
+      "es": "Quiero beber una taza de té.",
+      "hanzi": "我想喝一杯茶",
+      "pinyin": "wǒ xiǎng hē yì bēi chá",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "想",
+          "caracteres": [
+            {
+              "hanzi": "想",
+              "pinyin": "xiǎng"
+            }
+          ],
+          "pinyin": "xiǎng",
+          "pt": "querer",
+          "dificil": false
+        },
+        {
+          "palavra": "喝",
+          "caracteres": [
+            {
+              "hanzi": "喝",
+              "pinyin": "hē"
+            }
+          ],
+          "pinyin": "hē",
+          "pt": "beber",
+          "dificil": false
+        },
+        {
+          "palavra": "一杯",
+          "caracteres": [
+            {
+              "hanzi": "一",
+              "pinyin": "yì"
+            },
+            {
+              "hanzi": "杯",
+              "pinyin": "bēi"
+            }
+          ],
+          "pinyin": "yì bēi",
+          "pt": "uma xícara",
+          "dificil": false
+        },
+        {
+          "palavra": "茶",
+          "caracteres": [
+            {
+              "hanzi": "茶",
+              "pinyin": "chá"
+            }
+          ],
+          "pinyin": "chá",
+          "pt": "chá",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        },
+        {
+          "hanzi": "学校",
+          "pinyin": "xuéxiào",
+          "pt": "escola"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-202",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Ela estuda na escola.",
+      "en": "She studies at school.",
+      "es": "Ella estudia en la escuela.",
+      "hanzi": "她在学校学习",
+      "pinyin": "tā zài xué xiào xué xí",
+      "tokens": [
+        {
+          "palavra": "她",
+          "caracteres": [
+            {
+              "hanzi": "她",
+              "pinyin": "tā"
+            }
+          ],
+          "pinyin": "tā",
+          "pt": "ela",
+          "dificil": false
+        },
+        {
+          "palavra": "在",
+          "caracteres": [
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            }
+          ],
+          "pinyin": "zài",
+          "pt": "em / estar em",
+          "dificil": false
+        },
+        {
+          "palavra": "学校",
+          "caracteres": [
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "校",
+              "pinyin": "xiào"
+            }
+          ],
+          "pinyin": "xué xiào",
+          "pt": "escola",
+          "dificil": false
+        },
+        {
+          "palavra": "学习",
+          "caracteres": [
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "习",
+              "pinyin": "xí"
+            }
+          ],
+          "pinyin": "xué xí",
+          "pt": "estudar",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "钱",
+          "pinyin": "qián",
+          "pt": "dinheiro"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-203",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Vamos comer juntos.",
+      "en": "Let's go eat together.",
+      "es": "Vamos a comer juntos.",
+      "hanzi": "我们一起去吃饭",
+      "pinyin": "wǒ men yì qǐ qù chī fàn",
+      "tokens": [
+        {
+          "palavra": "我们",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "们",
+              "pinyin": "men"
+            }
+          ],
+          "pinyin": "wǒ men",
+          "pt": "nós",
+          "dificil": false
+        },
+        {
+          "palavra": "一起",
+          "caracteres": [
+            {
+              "hanzi": "一",
+              "pinyin": "yì"
+            },
+            {
+              "hanzi": "起",
+              "pinyin": "qǐ"
+            }
+          ],
+          "pinyin": "yì qǐ",
+          "pt": "juntos",
+          "dificil": true
+        },
+        {
+          "palavra": "去",
+          "caracteres": [
+            {
+              "hanzi": "去",
+              "pinyin": "qù"
+            }
+          ],
+          "pinyin": "qù",
+          "pt": "ir",
+          "dificil": false
+        },
+        {
+          "palavra": "吃饭",
+          "caracteres": [
+            {
+              "hanzi": "吃",
+              "pinyin": "chī"
+            },
+            {
+              "hanzi": "饭",
+              "pinyin": "fàn"
+            }
+          ],
+          "pinyin": "chī fàn",
+          "pt": "comer (uma refeição)",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        },
+        {
+          "hanzi": "他",
+          "pinyin": "tā",
+          "pt": "ele"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-204",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Eu gosto de assistir filmes.",
+      "en": "I like watching movies.",
+      "es": "Me gusta ver películas.",
+      "hanzi": "我喜欢看电影",
+      "pinyin": "wǒ xǐ huan kàn diàn yǐng",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "喜欢",
+          "caracteres": [
+            {
+              "hanzi": "喜",
+              "pinyin": "xǐ"
+            },
+            {
+              "hanzi": "欢",
+              "pinyin": "huan"
+            }
+          ],
+          "pinyin": "xǐ huan",
+          "pt": "gostar",
+          "dificil": false
+        },
+        {
+          "palavra": "看",
+          "caracteres": [
+            {
+              "hanzi": "看",
+              "pinyin": "kàn"
+            }
+          ],
+          "pinyin": "kàn",
+          "pt": "assistir / ver",
+          "dificil": false
+        },
+        {
+          "palavra": "电影",
+          "caracteres": [
+            {
+              "hanzi": "电",
+              "pinyin": "diàn"
+            },
+            {
+              "hanzi": "影",
+              "pinyin": "yǐng"
+            }
+          ],
+          "pinyin": "diàn yǐng",
+          "pt": "filme",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "钱",
+          "pinyin": "qián",
+          "pt": "dinheiro"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-205",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Ele trabalha no hospital.",
+      "en": "He works at the hospital.",
+      "es": "Él trabaja en el hospital.",
+      "hanzi": "他在医院工作",
+      "pinyin": "tā zài yī yuàn gōng zuò",
+      "tokens": [
+        {
+          "palavra": "他",
+          "caracteres": [
+            {
+              "hanzi": "他",
+              "pinyin": "tā"
+            }
+          ],
+          "pinyin": "tā",
+          "pt": "ele",
+          "dificil": false
+        },
+        {
+          "palavra": "在",
+          "caracteres": [
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            }
+          ],
+          "pinyin": "zài",
+          "pt": "em / estar em",
+          "dificil": false
+        },
+        {
+          "palavra": "医院",
+          "caracteres": [
+            {
+              "hanzi": "医",
+              "pinyin": "yī"
+            },
+            {
+              "hanzi": "院",
+              "pinyin": "yuàn"
+            }
+          ],
+          "pinyin": "yī yuàn",
+          "pt": "hospital",
+          "dificil": true
+        },
+        {
+          "palavra": "工作",
+          "caracteres": [
+            {
+              "hanzi": "工",
+              "pinyin": "gōng"
+            },
+            {
+              "hanzi": "作",
+              "pinyin": "zuò"
+            }
+          ],
+          "pinyin": "gōng zuò",
+          "pt": "trabalhar",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "去",
+          "pinyin": "qù",
+          "pt": "ir"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-206",
+      "nivel": 4,
+      "tier": "basico",
+      "pt": "O que você quer beber?",
+      "en": "What do you want to drink?",
+      "es": "¿Qué quieres beber?",
+      "hanzi": "你想喝什么",
+      "pinyin": "nǐ xiǎng hē shén me",
+      "tokens": [
+        {
+          "palavra": "你",
+          "caracteres": [
+            {
+              "hanzi": "你",
+              "pinyin": "nǐ"
+            }
+          ],
+          "pinyin": "nǐ",
+          "pt": "você",
+          "dificil": false
+        },
+        {
+          "palavra": "想",
+          "caracteres": [
+            {
+              "hanzi": "想",
+              "pinyin": "xiǎng"
+            }
+          ],
+          "pinyin": "xiǎng",
+          "pt": "querer",
+          "dificil": false
+        },
+        {
+          "palavra": "喝",
+          "caracteres": [
+            {
+              "hanzi": "喝",
+              "pinyin": "hē"
+            }
+          ],
+          "pinyin": "hē",
+          "pt": "beber",
+          "dificil": false
+        },
+        {
+          "palavra": "什么",
+          "caracteres": [
+            {
+              "hanzi": "什",
+              "pinyin": "shén"
+            },
+            {
+              "hanzi": "么",
+              "pinyin": "me"
+            }
+          ],
+          "pinyin": "shén me",
+          "pt": "o quê",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        },
+        {
+          "hanzi": "他",
+          "pinyin": "tā",
+          "pt": "ele"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-207",
+      "nivel": 4,
+      "tier": "basico",
+      "pt": "Que horas são agora?",
+      "en": "What time is it now?",
+      "es": "¿Qué hora es ahora?",
+      "hanzi": "现在几点了",
+      "pinyin": "xiàn zài jǐ diǎn liǎo",
+      "tokens": [
+        {
+          "palavra": "现在",
+          "caracteres": [
+            {
+              "hanzi": "现",
+              "pinyin": "xiàn"
+            },
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            }
+          ],
+          "pinyin": "xiàn zài",
+          "pt": "agora",
+          "dificil": true
+        },
+        {
+          "palavra": "几点",
+          "caracteres": [
+            {
+              "hanzi": "几",
+              "pinyin": "jǐ"
+            },
+            {
+              "hanzi": "点",
+              "pinyin": "diǎn"
+            }
+          ],
+          "pinyin": "jǐ diǎn",
+          "pt": "que horas",
+          "dificil": false
+        },
+        {
+          "palavra": "了",
+          "caracteres": [
+            {
+              "hanzi": "了",
+              "pinyin": "liǎo"
+            }
+          ],
+          "pinyin": "liǎo",
+          "pt": "(partícula)",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "学校",
+          "pinyin": "xuéxiào",
+          "pt": "escola"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    },
+    {
+      "id": "pg-208",
+      "nivel": 4,
+      "tier": "basico",
+      "pt": "Eu quero comer um prato de macarrão.",
+      "en": "I want to eat a bowl of noodles.",
+      "es": "Quiero comer un plato de fideos.",
+      "hanzi": "我想吃一碗面条",
+      "pinyin": "wǒ xiǎng chī yì wǎn miàn tiáo",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "想",
+          "caracteres": [
+            {
+              "hanzi": "想",
+              "pinyin": "xiǎng"
+            }
+          ],
+          "pinyin": "xiǎng",
+          "pt": "querer",
+          "dificil": false
+        },
+        {
+          "palavra": "吃",
+          "caracteres": [
+            {
+              "hanzi": "吃",
+              "pinyin": "chī"
+            }
+          ],
+          "pinyin": "chī",
+          "pt": "comer",
+          "dificil": false
+        },
+        {
+          "palavra": "一碗",
+          "caracteres": [
+            {
+              "hanzi": "一",
+              "pinyin": "yì"
+            },
+            {
+              "hanzi": "碗",
+              "pinyin": "wǎn"
+            }
+          ],
+          "pinyin": "yì wǎn",
+          "pt": "uma tigela",
+          "dificil": false
+        },
+        {
+          "palavra": "面条",
+          "caracteres": [
+            {
+              "hanzi": "面",
+              "pinyin": "miàn"
+            },
+            {
+              "hanzi": "条",
+              "pinyin": "tiáo"
+            }
+          ],
+          "pinyin": "miàn tiáo",
+          "pt": "macarrão",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "钱",
+          "pinyin": "qián",
+          "pt": "dinheiro"
+        }
+      ],
+      "tags": [
+        "curated"
+      ]
+    }
+  ]
+}
