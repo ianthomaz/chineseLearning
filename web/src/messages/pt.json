@@ -14,7 +14,8 @@
     "writing": "Escrita aleatória",
     "visuals": "Visuais",
     "courseNav": "Áreas do curso",
-    "language": "Idioma da interface"
+    "language": "Idioma da interface",
+    "phraseGame": "Frases"
   },
   "gamification": {
     "title": "Quiz",
@@ -73,7 +74,8 @@
     "blocksTitle": "Blocos",
     "blocksCount": "{count} blocos",
     "wordCount": "{count} palavras",
-    "wordCountOne": "1 palavra"
+    "wordCountOne": "1 palavra",
+    "modePhraseGameDesc": "Monte frases em chinês arrastando as peças na ordem certa."
   },
   "index": {
     "reviewKicker": "复习",
@@ -247,8 +249,7 @@
     "pageHeading": "Escrita aleatória",
     "pageDesc": "Dez caracteres de dois blocos sorteados. Na página inicial, «Iniciar sessão» abre esta página e começa logo. Usa o menu em cima para voltar ao curso.",
     "pageDocTitle": "Escrita hanzi",
-    "pageFooterVocab":
-      "Vocabulário (hanzi, pinyin e traduções usados na sessão): listas do consolidado do curso. Conteúdo lexical sob os mesmos termos do material do site (incluindo CC-BY-SA-4.0 onde indicado no rodapé geral).",
+    "pageFooterVocab": "Vocabulário (hanzi, pinyin e traduções usados na sessão): listas do consolidado do curso. Conteúdo lexical sob os mesmos termos do material do site (incluindo CC-BY-SA-4.0 onde indicado no rodapé geral).",
     "start": "Iniciar sessão!",
     "progress": "{current} / {total}",
     "blockBadge": "Bloco {id} · {title}",
@@ -296,5 +297,70 @@
   "metadata": {
     "siteTitle": "Chinês básico",
     "siteDescription": "Revisão, vocabulário e gramática em blocos, a partir do consolidado do curso."
+  },
+  "phraseGame": {
+    "title": "Quebra-Cabeça de Frases",
+    "subtitle": "Monte a frase em chinês na ordem correta.",
+    "tierLabel": "Nível de idioma",
+    "tier": {
+      "iniciante": "Iniciante",
+      "basico": "Básico",
+      "intermediario": "Intermediário",
+      "avancado": "Avançado"
+    },
+    "soonBadge": "Em breve",
+    "levelLabel": "Dificuldade",
+    "inicianteCap": "No nível Iniciante, só os níveis 1 e 2 estão disponíveis.",
+    "level": {
+      "1": "Frases curtas",
+      "2": "Até ~5 palavras",
+      "3": "Frase complexa",
+      "4": "Maior + dividir",
+      "5": "Todos os caracteres soltos"
+    },
+    "extrasLabel": "Ajustes de dificuldade",
+    "extra": {
+      "hanziOnly": "Apenas hanzi",
+      "addExtra": "Adicionar até 2 hanzi extras",
+      "pinyinDifficult": "Pinyin nas palavras difíceis",
+      "hanziPinyin": "Hanzi + Pinyin",
+      "translationDifficult": "Tradução nas palavras difíceis"
+    },
+    "play": "Jogar",
+    "progress": "Frase {current} de {total}",
+    "promptLabel": "Monte a frase",
+    "bankLabel": "Peças",
+    "answerLabel": "Sua frase",
+    "answerEmpty": "Toque ou arraste as peças para cá",
+    "moveLeft": "Mover para a esquerda",
+    "moveRight": "Mover para a direita",
+    "submit": "Enviar",
+    "next": "Próxima",
+    "finish": "Ver resultado",
+    "correct": "Correto!",
+    "wrong": "Quase!",
+    "correctAnswer": "Resposta certa:",
+    "help": {
+      "removeExtras": "Remover peças extras",
+      "showPinyin": "Mostrar pinyin",
+      "showTranslation": "Mostrar tradução",
+      "nextPiece": "Próxima peça"
+    },
+    "roundComplete": {
+      "title": "Rodada concluída!",
+      "score": "Você acertou {correct} de {total}.",
+      "playAgain": "Jogar de novo",
+      "changeSettings": "Mudar configurações"
+    },
+    "auth": {
+      "guest": "Jogando como convidado",
+      "serverOnly": "O login requer o modo servidor.",
+      "signIn": "Entrar com Google",
+      "signOut": "Sair",
+      "greeting": "Olá, {name}",
+      "nickLabel": "Apelido",
+      "nickSave": "Salvar",
+      "nickSaved": "Salvo"
+    }
   }
 }

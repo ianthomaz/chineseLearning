@@ -14,7 +14,8 @@
     "writing": "Random writing",
     "visuals": "Visuals",
     "courseNav": "Course areas",
-    "language": "Interface language"
+    "language": "Interface language",
+    "phraseGame": "Phrases"
   },
   "gamification": {
     "title": "Quiz",
@@ -73,7 +74,8 @@
     "blocksTitle": "Blocks",
     "blocksCount": "{count} blocks",
     "wordCount": "{count} words",
-    "wordCountOne": "1 word"
+    "wordCountOne": "1 word",
+    "modePhraseGameDesc": "Build Chinese sentences by dragging the pieces into the right order."
   },
   "index": {
     "reviewKicker": "复习",
@@ -247,8 +249,7 @@
     "pageHeading": "Random writing",
     "pageDesc": "Ten characters from two random blocks. On the home page, “Start session” opens this page and begins right away. Use the top menu to return to the course.",
     "pageDocTitle": "Hanzi writing",
-    "pageFooterVocab":
-      "Vocabulary (hanzi, readings, and glosses in each draw): from the course outline tables. Lexical content is under the same terms as the rest of this site (including CC-BY-SA-4.0 where noted in the global footer).",
+    "pageFooterVocab": "Vocabulary (hanzi, readings, and glosses in each draw): from the course outline tables. Lexical content is under the same terms as the rest of this site (including CC-BY-SA-4.0 where noted in the global footer).",
     "start": "Start session!",
     "progress": "{current} / {total}",
     "blockBadge": "Block {id} · {title}",
@@ -296,5 +297,70 @@
   "metadata": {
     "siteTitle": "Basic Chinese",
     "siteDescription": "Review, vocabulary, and grammar in blocks, from the course outline."
+  },
+  "phraseGame": {
+    "title": "Phrase Puzzle",
+    "subtitle": "Arrange the Chinese sentence in the correct order.",
+    "tierLabel": "Language level",
+    "tier": {
+      "iniciante": "Beginner",
+      "basico": "Basic",
+      "intermediario": "Intermediate",
+      "avancado": "Advanced"
+    },
+    "soonBadge": "Soon",
+    "levelLabel": "Difficulty",
+    "inicianteCap": "At Beginner level, only levels 1 and 2 are available.",
+    "level": {
+      "1": "Short phrases",
+      "2": "Up to ~5 words",
+      "3": "Complex sentence",
+      "4": "Larger + split",
+      "5": "All characters loose"
+    },
+    "extrasLabel": "Difficulty extras",
+    "extra": {
+      "hanziOnly": "Hanzi only",
+      "addExtra": "Add up to 2 extra hanzi",
+      "pinyinDifficult": "Pinyin on difficult words",
+      "hanziPinyin": "Hanzi + Pinyin",
+      "translationDifficult": "Translation on difficult words"
+    },
+    "play": "Play",
+    "progress": "Phrase {current} of {total}",
+    "promptLabel": "Build the sentence",
+    "bankLabel": "Pieces",
+    "answerLabel": "Your sentence",
+    "answerEmpty": "Tap or drag the pieces here",
+    "moveLeft": "Move left",
+    "moveRight": "Move right",
+    "submit": "Submit",
+    "next": "Next",
+    "finish": "See result",
+    "correct": "Correct!",
+    "wrong": "Not quite!",
+    "correctAnswer": "Correct answer:",
+    "help": {
+      "removeExtras": "Remove extra pieces",
+      "showPinyin": "Show pinyin",
+      "showTranslation": "Show translation",
+      "nextPiece": "Next piece"
+    },
+    "roundComplete": {
+      "title": "Round complete!",
+      "score": "You got {correct} of {total}.",
+      "playAgain": "Play again",
+      "changeSettings": "Change settings"
+    },
+    "auth": {
+      "guest": "Playing as guest",
+      "serverOnly": "Login requires server mode.",
+      "signIn": "Sign in with Google",
+      "signOut": "Sign out",
+      "greeting": "Hi, {name}",
+      "nickLabel": "Nickname",
+      "nickSave": "Save",
+      "nickSaved": "Saved"
+    }
   }
 }

@@ -9,6 +9,15 @@ const staticExport = process.env.NEXT_STATIC_EXPORT === "1";
 
 const nextConfig: NextConfig = {
   transpilePackages: ["react-pdf", "pdfjs-dist"],
+  // The auth/progress API routes are server-only: `route.server.ts`. The `.server.ts`
+  // extension is recognised as a route handler ONLY in the server build (`build:server`,
+  // `dev`). Under static export the extension is dropped, so those files are not routes —
+  // the routes simply do not exist in `output: 'export'` (no dynamic route handler to
+  // break the build), and the UI degrades to guest-only via NEXT_PUBLIC_AUTH_ENABLED=0.
+  // Every other route uses the plain `.ts`/`.tsx` extensions in both modes.
+  pageExtensions: staticExport
+    ? ["ts", "tsx", "js", "jsx"]
+    : ["server.ts", "server.tsx", "ts", "tsx", "js", "jsx"],
   ...(staticExport
     ? {
         output: "export" as const,
