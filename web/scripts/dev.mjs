@@ -49,9 +49,15 @@ if (!authReady && !authForced) {
   );
 }
 
+const nextBin = path.join(WEB_DIR, "node_modules", ".bin", "next");
+if (!fs.existsSync(nextBin)) {
+  console.error("Missing Next.js — run npm ci in web/");
+  process.exit(1);
+}
+
 const child = spawn(
-  "npx",
-  ["next", "dev", "--turbopack", "-p", "34827"],
+  nextBin,
+  ["dev", "--turbopack", "-p", "34827"],
   { stdio: "inherit", env: process.env, cwd: WEB_DIR },
 );
 

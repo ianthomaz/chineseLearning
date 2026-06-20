@@ -86,8 +86,14 @@ Cada item: **impacto**, **esforço**, **ficheiros**. Ordem = melhor valor primei
     ou forma frase alternativa válida (hoje: WARN em colisões triviais).
     _Impacto: alto · Esforço: ~2h · `build-phrase-game-data.mjs`._
 
-14. **`respostasAceitas`.** Variantes de ordem válidas (tempo, colocação de 了) para não
-    marcar correcto como errado. _Esforço: curadoria + flag no validador._
+14. **`respostasAceitas`.** Variantes de ordem válidas (tempo, colocação de 了, sujeito/objeto
+    permutável) para não marcar correcto como errado. _Esforço: curadoria + flag no validador._
+
+    **Reportado jun 2026 (não corrigir ainda):** `pg-559` — peças `他 给 太太 一只 很小的 狗`.
+    Canónica: `太太给他一只很小的狗`. User montou ordem alternativa válida (ex. `他给太太一只很小的狗`);
+    jogo mostrou “Quase!” com uma só resposta certa. Código já suporta `respostasAceitas[]`
+    em `validate.ts` — falta popular no banco + UI mostrar variantes aceites na revisão.
+    Revisão mais ampla do **vocabulário** fica para depois.
 
 15. **Passagem de glosses.** ~centenas de tokens com `words[].pt` fraco ou = hanzi;
     priorizar partículas e compostos do lote `expansion-05-temas-gerais`.

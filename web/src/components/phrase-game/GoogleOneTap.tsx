@@ -15,7 +15,7 @@ function isLocalDevHost(): boolean {
 }
 
 /** FedCM is flaky on localhost / hot reload; prefer classic prompt in dev unless forced. */
-function useFedcmForPrompt(): boolean {
+function fedcmForPrompt(): boolean {
   if (process.env.NEXT_PUBLIC_GSI_USE_FEDCM === "0") return false;
   if (process.env.NEXT_PUBLIC_GSI_USE_FEDCM === "1") return true;
   return !isLocalDevHost();
@@ -73,7 +73,7 @@ export function GoogleOneTap({ onSignedIn, locale = "pt" }: Props) {
       cancel_on_tap_outside: true,
       context: "signin",
       itp_support: true,
-      use_fedcm_for_prompt: useFedcmForPrompt(),
+      use_fedcm_for_prompt: fedcmForPrompt(),
     });
 
     if (buttonRef.current) {
