@@ -19,6 +19,12 @@ set -a
 [[ -f .env ]] && source .env
 # shellcheck source=/dev/null
 [[ -f .env.local ]] && source .env.local
+# Local Node (34902): OAuth URLs must match port — overlay auth block from sync-env
+AUTH_NODE_FILE="$WEB_DIR/../local/credentials/generated/web.auth.env.local-node"
+if [[ "${PORT}" == "34902" && -f "$AUTH_NODE_FILE" ]]; then
+  # shellcheck source=/dev/null
+  source "$AUTH_NODE_FILE"
+fi
 set +a
 
 if [[ -z "${LLM_API_TOKEN:-}" && "${SKIP_LLM_CHECKS:-}" != "1" ]]; then

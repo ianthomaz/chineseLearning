@@ -301,6 +301,7 @@
   "phraseGame": {
     "title": "Phrase Puzzle",
     "subtitle": "Arrange the Chinese sentence in the correct order.",
+    "prototypeNotice": "Prototype version — scores and attempt history are not saved. Have fun and learn!",
     "tierLabel": "Language level",
     "tier": {
       "iniciante": "Beginner",
@@ -309,28 +310,31 @@
       "avancado": "Advanced"
     },
     "soonBadge": "Soon",
+    "tierPhraseCount": "{count} phrases",
+    "basicoFullAccess": "Basic includes the full bank — HSK1 plus extended vocabulary — with levels 1–5.",
+    "levelPoolCount": "Pool: {count} phrases",
     "levelLabel": "Difficulty",
     "inicianteCap": "At Beginner level, only levels 1 and 2 are available.",
     "level": {
       "1": "Short phrases",
       "2": "Up to ~5 words",
       "3": "Complex sentence",
-      "4": "Larger + split",
+      "4": "Longer phrases — extra hanzi on by default",
       "5": "All characters loose"
     },
     "extrasLabel": "Difficulty extras",
     "extra": {
-      "hanziOnly": "Hanzi only",
-      "addExtra": "Add up to 2 extra hanzi",
       "pinyinDifficult": "Pinyin on difficult words",
       "hanziPinyin": "Hanzi + Pinyin",
-      "translationDifficult": "Translation on difficult words"
+      "translationDifficult": "Translation on difficult words",
+      "showNativePrompt": "Show sentence in English",
+      "addExtra": "Add up to 2 extra hanzi (not needed for the answer)"
     },
     "play": "Play",
     "progress": "Phrase {current} of {total}",
-    "promptLabel": "Build the sentence",
+    "promptLabel": "Build the sentence:",
     "bankLabel": "Pieces",
-    "answerLabel": "Your sentence",
+    "answerLabel": "Your sentence!",
     "answerEmpty": "Tap or drag the pieces here",
     "moveLeft": "Move left",
     "moveRight": "Move right",
@@ -341,6 +345,7 @@
     "wrong": "Not quite!",
     "correctAnswer": "Correct answer:",
     "help": {
+      "showFullPrompt": "Show translated sentence",
       "removeExtras": "Remove extra pieces",
       "showPinyin": "Show pinyin",
       "showTranslation": "Show translation",
@@ -354,8 +359,12 @@
     },
     "auth": {
       "guest": "Playing as guest",
+      "guestHint": "Sign in with Google to save your nickname on this device.",
       "serverOnly": "Login requires server mode.",
       "signIn": "Sign in with Google",
+      "signInAlt": "Use another account",
+      "signingIn": "Signing in…",
+      "signInFailed": "Could not sign in. Try again.",
       "signOut": "Sign out",
       "greeting": "Hi, {name}",
       "nickLabel": "Nickname",

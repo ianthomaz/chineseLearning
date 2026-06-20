@@ -6,7 +6,7 @@ Esta pasta contém **toda a documentação** para integrar o projeto **chineseLe
 
 **Não é necessário ter o repositório da API no computador** — os ficheiros abaixo repetem URLs, headers, corpos JSON e fluxos.
 
-**URL base da API (HTTPS vs Tailscale vs VM):** a matriz oficial e o caso **itcsVM** estão em **ITCS/featureLLM** — **`docs/MANUAL_INTEGRACAO.md`** § 1.1. Em **`web/deploy/server.env`**, usa **`https://llm.webplace.cc`** (ou o IP Tailscale do Mac) para o Node **não** depender de `127.0.0.1` na nuvem.
+**URL base da API (HTTPS vs Tailscale vs VM):** a matriz oficial e o caso **itcsVM1** estão em **ITCS/featureLLM** — **`docs/MANUAL_INTEGRACAO.md`** § 1.1. Em **`web/deploy/server.env`**, usa **`https://llm.webplace.cc`** (ou o IP Tailscale do Mac) para o Node **não** depender de `127.0.0.1` na nuvem.
 
 | Documento | Conteúdo |
 |-----------|----------|

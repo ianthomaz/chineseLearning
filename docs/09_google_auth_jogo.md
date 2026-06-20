@@ -1,6 +1,6 @@
 # Google Auth — utilizador do jogo e memória de progresso
 
-Estado: **planeado** (jun 2026). Login Google para identificar quem joga e **persistir histórico** (frases, acertos, níveis).
+Estado: **implementado** (jun 2026). Login Google + **One Tap** no jogo (`/phrase-game`). Histórico de pontuação ainda por fazer (Fase 2).
 
 **Stack:** Auth.js (NextAuth) v5 + Google OAuth.
 
@@ -24,9 +24,25 @@ Estado: **planeado** (jun 2026). Login Google para identificar quem joga e **per
 | Sync env | `node scripts/sync-env-from-credentials.mjs` |
 | `basePath` site | `/aulaChines` → Auth em `/aulaChines/api/auth` |
 
-Ficheiros previstos em `web/` (implementação pendente): `auth.config.ts`, `auth.ts`, `google-oauth-env.ts`, `api/auth/[...nextauth]/route.ts`, `SessionProvider`.
+Ficheiros em `web/` (implementados): `src/server/auth/`, `api/auth/[...nextauth]/route.server.ts`, `GoogleOneTap.tsx`, `PhraseGameSession`, SQLite `data/phrase-game.sqlite`.
 
-OAuth **não** funciona em export estático (`build:webplace`) — precisa `build:server` + `next start`. Ver [06_deploy.md](06_deploy.md).
+---
+
+## Google One Tap (jogo)
+
+No `/phrase-game`, convidados veem:
+
+1. **One Tap** — popup Google (conta já logada no browser)
+2. **Botão oficial** Google Sign-In
+3. **“Outra conta”** — OAuth redirect clássico (`signIn("google")`)
+
+One Tap envia o `credential` (JWT) para o provider Auth.js `google-onetap` (`Credentials`), validado com JWKS Google (`jose`).
+
+**Requisito client-side:** `NEXT_PUBLIC_GOOGLE_CLIENT_ID` (= mesmo Client ID do GCP **ChineseSite**). O script `dev.mjs` copia de `GOOGLE_CLIENT_ID` se faltar.
+
+**Origins JavaScript** no GCP têm de incluir o host exacto (`127.0.0.1:34827`, não `localhost`, se usares 127.0.0.1 no browser).
+
+---
 
 ---
 
@@ -99,7 +115,13 @@ Mudar domínio, `basePath` ou portas locais → actualiza GCP, `credentials.json
 node scripts/sync-env-from-credentials.mjs
 ```
 
-Saída (gitignored): `generated/web.auth.env.local` → `web/.env.local`; `generated/deploy.auth.env` → `web/deploy/server.env`.
+Saída automática (gitignored):
+
+| Ficheiro | Uso |
+|----------|-----|
+| `web/.env.local` | Dev 34827 + LLM local + auth |
+| `web/deploy/server.env` | Produção / `deploy:node` |
+| `generated/web.auth.env.local-node` | Auth 34902 (`--local`) |
 
 | Variável | Notas |
 |----------|-------|
@@ -107,6 +129,7 @@ Saída (gitignored): `generated/web.auth.env.local` → `web/.env.local`; `gener
 | `NEXTAUTH_URL` / `AUTH_URL` | Com `/aulaChines`, sem barra final |
 | `NEXTAUTH_SECRET` / `AUTH_SECRET` | `openssl rand -base64 32` |
 | `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` | Client **ChineseSite** |
+| `NEXT_PUBLIC_GOOGLE_CLIENT_ID` | Mesmo Client ID (One Tap + botão GIS) |
 | `AUTH_GOOGLE_*` | Aliases Auth.js v5 (opcional) |
 
 Template: `local/credentials/credentials.example.json`.
@@ -123,12 +146,40 @@ Ver [08_plano_jogo_frases.md](08_plano_jogo_frases.md).
 
 ---
 
-## Implementação (pendente)
+## Ativar login local (checklist)
 
-- [ ] `next-auth` em `web/`
-- [ ] Auth routes + `SessionProvider`
-- [ ] Botão Google em `/gamification`
-- [ ] API progresso (fase 2)
+```bash
+# 1. Credenciais (fora do git)
+cp local/credentials/credentials.example.json local/credentials/credentials.json
+# preencher google_oauth + NEXTAUTH_SECRET (openssl rand -base64 32)
+
+# 2. Gerar env (tudo de uma vez)
+node scripts/sync-env-from-credentials.mjs
+
+# 3a. Dev hot reload (34827)
+cd web && npm run dev:auth
+
+# 3b. Local Node como prod (34902)
+./start.sh --local
+
+# 4. Jogo — usar 127.0.0.1 (não localhost)
+open http://127.0.0.1:34827/aulaChines/phrase-game   # dev
+open http://127.0.0.1:34902/aulaChines/phrase-game   # --local
+```
+
+Produção: `web/deploy/server.env` já gerado — `npm run deploy:node`. Ver [06_deploy.md](06_deploy.md).
+
+OAuth **não** funciona em export estático (`build:webplace`) — convidado only. Ver [06_deploy.md](06_deploy.md).
+
+---
+
+## Implementação
+
+- [x] `next-auth` em `web/`
+- [x] Auth routes + `SessionProvider` (só `/phrase-game`)
+- [x] Google One Tap + botão + nick SQLite
+- [ ] API progresso com pontuação (fase 2)
+- [ ] Botão Google em `/gamification` (opcional)
 
 ---
 

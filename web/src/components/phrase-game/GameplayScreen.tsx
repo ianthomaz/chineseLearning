@@ -6,6 +6,7 @@ import { trackEvent } from "@/lib/analytics";
 import { deriveBoard } from "@/lib/phrase-game/pieces";
 import { validateAttempt } from "@/lib/phrase-game/validate";
 import { localizedPrompt } from "@/lib/phrase-game/display";
+import { nativePromptDisabled } from "@/lib/phrase-game/settings-by-level";
 import type { DisplaySettings, GameLevel, Piece, RoundItem } from "@/lib/phrase-game/types";
 import type { HelpAction } from "@/lib/phrase-game/scoring";
 import { Board, type BoardValue } from "./Board";
@@ -19,6 +20,7 @@ type Props = {
   total: number;
   results: Array<"correct" | "wrong" | null>;
   isLast: boolean;
+  onSettingsChange: (settings: DisplaySettings) => void;
   onResult: (correct: boolean) => void;
   onNext: () => void;
 };
@@ -33,6 +35,7 @@ export function GameplayScreen({
   total,
   results,
   isLast,
+  onSettingsChange,
   onResult,
   onNext,
 }: Props) {
@@ -46,7 +49,7 @@ export function GameplayScreen({
   );
 
   const [board, setBoard] = useState<BoardValue>({ bank: derived.bank, answer: [] });
-  const [reveal, setReveal] = useState({ pinyin: false, translation: false });
+  const [reveal, setReveal] = useState({ fullPrompt: false, pinyin: false, translation: false });
   const [removedExtras, setRemovedExtras] = useState(false);
   const [submitted, setSubmitted] = useState<boolean | null>(null);
   const [helpUsed] = useState<Set<HelpAction>>(() => new Set());
@@ -56,9 +59,9 @@ export function GameplayScreen({
     [board],
   );
 
-  // Optional auto-advance after a submit (user may click Next sooner).
+  // Auto-advance only after a correct answer (wrong answers wait for the Next button).
   useEffect(() => {
-    if (submitted === null) return;
+    if (submitted !== true) return;
     const id = window.setTimeout(onNext, AUTO_ADVANCE_MS);
     return () => window.clearTimeout(id);
   }, [submitted, onNext]);
@@ -71,6 +74,9 @@ export function GameplayScreen({
   function handleSubmit() {
     const result = validateAttempt(board.answer, phrase);
     setSubmitted(result.correct);
+    if (result.correct) {
+      setReveal((r) => ({ ...r, pinyin: true, translation: true }));
+    }
     trackEvent({ action: "phrase_submit", category: "phrase_game", label: phrase.id });
     trackEvent({
       action: result.correct ? "phrase_correct" : "phrase_wrong",
@@ -108,6 +114,10 @@ export function GameplayScreen({
   const disabled = submitted !== null;
   const answerState = submitted === null ? "neutral" : submitted ? "correct" : "wrong";
   const canSubmit = board.answer.length > 0 && submitted === null;
+  const showPrompt = settings.showNativePrompt || reveal.fullPrompt;
+  const promptText = localizedPrompt(phrase, locale);
+  const boardReveal =
+    submitted === true ? { pinyin: true, translation: true } : { pinyin: reveal.pinyin, translation: reveal.translation };
 
   return (
     <div className="space-y-6">
@@ -118,18 +128,20 @@ export function GameplayScreen({
         </span>
       </div>
 
-      <div>
-        <p className="mb-1 text-xs font-medium uppercase tracking-wide text-ink/40">
-          {t("phraseGame.promptLabel")}
-        </p>
-        <p className="font-display text-xl text-ink sm:text-2xl">{localizedPrompt(phrase, locale)}</p>
-      </div>
+      {showPrompt ? (
+        <div>
+          <p className="mb-1 text-xs font-medium uppercase tracking-wide text-ink/40">
+            {t("phraseGame.promptLabel")}
+          </p>
+          <p className="font-display text-xl text-ink sm:text-2xl">{promptText}</p>
+        </div>
+      ) : null}
 
       <Board
         value={board}
         onChange={setBoard}
         settings={settings}
-        reveal={reveal}
+        reveal={boardReveal}
         disabled={disabled}
         answerState={answerState}
         labels={{
@@ -141,29 +153,50 @@ export function GameplayScreen({
         }}
       />
 
-      {/* In-phrase help */}
-      <div className="flex flex-wrap gap-2">
-        {hasExtras && !removedExtras ? (
-          <HelpButton label={t("phraseGame.help.removeExtras")} onClick={handleRemoveExtras} />
-        ) : null}
-        <HelpButton
-          label={t("phraseGame.help.showPinyin")}
-          onClick={() => {
-            setReveal((r) => ({ ...r, pinyin: true }));
-            logHelp("showPinyin");
-          }}
-        />
-        <HelpButton
-          label={t("phraseGame.help.showTranslation")}
-          onClick={() => {
-            setReveal((r) => ({ ...r, translation: true }));
-            logHelp("showTranslation");
-          }}
-        />
-        {!disabled ? (
+      {/* In-phrase help + mid-round display toggles */}
+      {submitted === null ? (
+        <div className="flex flex-wrap gap-2">
+          {!showPrompt ? (
+            <HelpButton
+              label={t("phraseGame.help.showFullPrompt")}
+              onClick={() => {
+                setReveal((r) => ({ ...r, fullPrompt: true }));
+                logHelp("showFullPrompt");
+              }}
+            />
+          ) : null}
+          {hasExtras && !removedExtras ? (
+            <HelpButton label={t("phraseGame.help.removeExtras")} onClick={handleRemoveExtras} />
+          ) : null}
+          <HelpButton
+            label={t("phraseGame.help.showPinyin")}
+            onClick={() => {
+              setReveal((r) => ({ ...r, pinyin: true }));
+              logHelp("showPinyin");
+            }}
+          />
+          <HelpButton
+            label={t("phraseGame.help.showTranslation")}
+            onClick={() => {
+              setReveal((r) => ({ ...r, translation: true }));
+              logHelp("showTranslation");
+            }}
+          />
           <HelpButton label={t("phraseGame.help.nextPiece")} onClick={handleNextPiece} />
-        ) : null}
-      </div>
+        </div>
+      ) : null}
+
+      {submitted === null && !nativePromptDisabled(level) ? (
+        <label className="flex cursor-pointer items-center gap-2 text-xs text-ink/55">
+          <input
+            type="checkbox"
+            checked={settings.showNativePrompt}
+            onChange={(e) => onSettingsChange({ ...settings, showNativePrompt: e.target.checked })}
+            className="h-3.5 w-3.5 rounded border-ink/30 accent-accent"
+          />
+          {t("phraseGame.extra.showNativePrompt")}
+        </label>
+      ) : null}
 
       {/* Result feedback */}
       {submitted !== null ? (
@@ -177,12 +210,18 @@ export function GameplayScreen({
           <p className="font-medium" style={{ color: submitted ? "var(--accent)" : "#b91c1c" }}>
             {submitted ? t("phraseGame.correct") : t("phraseGame.wrong")}
           </p>
-          {!submitted ? (
+          {submitted ? (
+            <div className="mt-2 space-y-1 text-sm text-ink/70">
+              <p className="font-hanzi text-lg text-ink">{phrase.hanzi}</p>
+              {phrase.pinyin ? <p>{phrase.pinyin}</p> : null}
+              <p>{promptText}</p>
+            </div>
+          ) : (
             <p className="mt-2 text-sm text-ink/70">
               {t("phraseGame.correctAnswer")}{" "}
               <span className="font-hanzi text-lg text-ink">{phrase.hanzi}</span>
             </p>
-          ) : null}
+          )}
         </div>
       ) : null}
 

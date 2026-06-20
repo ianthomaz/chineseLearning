@@ -5,6 +5,7 @@ import { useLocale } from "@/context/LocaleContext";
 import { trackEvent } from "@/lib/analytics";
 import { ALL_PHRASES } from "@/lib/phrase-game/phrases";
 import { buildRound, type Round } from "@/lib/phrase-game/select-phrases";
+import { clampDisplaySettingsForLevel } from "@/lib/phrase-game/settings-by-level";
 import {
   DEFAULT_DISPLAY_SETTINGS,
   type DisplaySettings,
@@ -64,7 +65,16 @@ export function PhraseGame() {
   // Tier change resets an invalid level (Iniciante caps to 1-2).
   function handleTierChange(next: GameTier) {
     setTier(next);
-    if (next === "iniciante" && level > 2) setLevel(2);
+    if (next === "iniciante" && level > 2) {
+      const capped: GameLevel = 2;
+      setLevel(capped);
+      setSettings((s) => clampDisplaySettingsForLevel(capped, s));
+    }
+  }
+
+  function handleLevelChange(next: GameLevel) {
+    setLevel(next);
+    setSettings((s) => clampDisplaySettingsForLevel(next, s));
   }
 
   return (
@@ -78,6 +88,14 @@ export function PhraseGame() {
         </div>
       </header>
 
+      <div
+        role="status"
+        className="mb-4 rounded-2xl border px-4 py-3 text-sm text-ink/75"
+        style={{ borderColor: "var(--border)", backgroundColor: "rgba(45,90,140,0.06)" }}
+      >
+        {t("phraseGame.prototypeNotice")}
+      </div>
+
       <AuthPanel />
 
       <div className="mt-6">
@@ -87,7 +105,7 @@ export function PhraseGame() {
             level={level}
             settings={settings}
             onTierChange={handleTierChange}
-            onLevelChange={setLevel}
+            onLevelChange={handleLevelChange}
             onSettingsChange={setSettings}
             onPlay={startRound}
           />
@@ -103,6 +121,7 @@ export function PhraseGame() {
             total={round.items.length}
             results={results}
             isLast={index === round.items.length - 1}
+            onSettingsChange={setSettings}
             onResult={handleResult}
             onNext={handleNext}
           />

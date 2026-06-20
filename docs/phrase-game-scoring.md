@@ -26,6 +26,7 @@ raises the score back up):
 |-----------:|------------------------------|------:|
 | 0          | none                         | 1.00  |
 | 1          | `removeExtras` (remove distractors) | 1.00  |
+| 2          | `showFullPrompt` (reveal sentence prompt) | 0.75  |
 | 2          | `showPinyin`                 | 0.75  |
 | 3          | `showTranslation`            | 0.50  |
 | 4          | `nextPiece` (partial)        | 0.25  |

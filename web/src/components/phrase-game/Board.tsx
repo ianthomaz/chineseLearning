@@ -249,6 +249,24 @@ export function Board({
       onDragCancel={() => setActiveId(null)}
     >
       <div className="space-y-5">
+        <Zone id="bank" title={labels.bank}>
+          <SortableContext items={value.bank.map((p) => p.id)} strategy={rectSortingStrategy}>
+            {value.bank.map((piece) => (
+              <SortablePiece
+                key={piece.id}
+                piece={piece}
+                zone="bank"
+                settings={settings}
+                reveal={reveal}
+                disabled={disabled}
+                state="neutral"
+                onActivate={() => activate(piece.id)}
+                nudgeLabels={{ left: labels.moveLeft, right: labels.moveRight }}
+              />
+            ))}
+          </SortableContext>
+        </Zone>
+
         <Zone id="answer" title={labels.answer} emptyHint={value.answer.length === 0 ? labels.answerEmpty : undefined}>
           <SortableContext items={value.answer.map((p) => p.id)} strategy={rectSortingStrategy}>
             {value.answer.map((piece) => (
@@ -262,24 +280,6 @@ export function Board({
                 state={answerState}
                 onActivate={() => activate(piece.id)}
                 onNudge={(dir) => nudge(piece.id, dir)}
-                nudgeLabels={{ left: labels.moveLeft, right: labels.moveRight }}
-              />
-            ))}
-          </SortableContext>
-        </Zone>
-
-        <Zone id="bank" title={labels.bank}>
-          <SortableContext items={value.bank.map((p) => p.id)} strategy={rectSortingStrategy}>
-            {value.bank.map((piece) => (
-              <SortablePiece
-                key={piece.id}
-                piece={piece}
-                zone="bank"
-                settings={settings}
-                reveal={reveal}
-                disabled={disabled}
-                state="neutral"
-                onActivate={() => activate(piece.id)}
                 nudgeLabels={{ left: labels.moveLeft, right: labels.moveRight }}
               />
             ))}

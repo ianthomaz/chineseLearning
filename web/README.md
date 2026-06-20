@@ -48,7 +48,7 @@ Os ficheiros grandes ficam em **`web/pdf-content/`** (`*.pdf` gitignored). O **`
 
 Só páginas; **tutor não funciona**.
 
-- `npm run deploy:webplace` — rsync para `itcsVM:/home/opc/projetos/chineseLearning` (ver script).
+- `npm run deploy:webplace` — rsync para `itcsVM1:/home/opc/projetos/chineseLearning` (ver script).
 - `npm run deploy:local` — `build:webplace` + cópia para **`$DEPLOY_LOCAL_DIR/aulaChines/`** (default `/tmp/chineseLearning-webplace-out/aulaChines/`).
 - `npm run serve:local` — estático local; URL em **04**.
 - `npm run deploy:local:live` — Node local com API; ver **04**.

@@ -63,6 +63,8 @@ export type GameLevel = 1 | 2 | 3 | 4 | 5;
 
 /** Display / hint toggles, adjustable on setup and mid-phrase. */
 export type DisplaySettings = {
+  /** Show the sentence prompt in the user's locale (default). */
+  showNativePrompt: boolean;
   /** Pieces show hanzi only (default). */
   hanziOnly: boolean;
   /** Add up to 2 extra hanzi distractors (respects global max of 2). */
@@ -76,6 +78,7 @@ export type DisplaySettings = {
 };
 
 export const DEFAULT_DISPLAY_SETTINGS: DisplaySettings = {
+  showNativePrompt: true,
   hanziOnly: true,
   addExtraHanzi: false,
   pinyinDifficult: false,

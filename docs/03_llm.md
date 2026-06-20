@@ -11,7 +11,7 @@ Sem esse fluxo (por exemplo, só ficheiros estáticos servidos de `out/`), o tut
 A API corre **fora** deste repo (Docker em `featureLLM` no Mac mini, atrás de Nginx/Cloudflare para HTTPS público). O site lê **`LLM_API_URL`** (sem barra final).
 
 - **Dev no mesmo Mac que o Docker da API:** típico **`http://127.0.0.1:28471`** — `web/.env` no repo.
-- **Node em servidor (VM, nginx):** a URL tem de ser **alcançável a partir desse host**. Não uses **`127.0.0.1:28471`** na VM salvo túnel SSH explícito (itcsVM — ver manual abaixo). Em geral: **`https://llm.webplace.cc`** (caminho A, HTTPS) ou **`http://<IP-Tailscale-do-Mac>:28471`** (caminho B). Referência: repositório **ITCS/featureLLM**, **`docs/MANUAL_INTEGRACAO.md`** § 1.1 e § 2.
+- **Node em servidor (VM, nginx):** a URL tem de ser **alcançável a partir desse host**. Não uses **`127.0.0.1:28471`** na VM salvo túnel SSH explícito (itcsVM1 — ver manual abaixo). Em geral: **`https://llm.webplace.cc`** (caminho A, HTTPS) ou **`http://<IP-Tailscale-do-Mac>:28471`** (caminho B). Referência: repositório **ITCS/featureLLM**, **`docs/MANUAL_INTEGRACAO.md`** § 1.1 e § 2.
 
 Ficheiro de deploy: **`web/deploy/server.env`** (template **`server.env.example`**).
 

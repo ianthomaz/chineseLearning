@@ -9,10 +9,16 @@
  * In-phrase help actions, ordered by increasing cost. The numbering matches the
  * spec's help list (1 = remove extras … 4 = next piece).
  */
-export type HelpAction = "removeExtras" | "showPinyin" | "showTranslation" | "nextPiece";
+export type HelpAction =
+  | "removeExtras"
+  | "showFullPrompt"
+  | "showPinyin"
+  | "showTranslation"
+  | "nextPiece";
 
 export const HELP_LEVEL: Record<HelpAction, number> = {
   removeExtras: 1,
+  showFullPrompt: 2,
   showPinyin: 2,
   showTranslation: 3,
   nextPiece: 4,

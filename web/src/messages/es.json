@@ -301,6 +301,7 @@
   "phraseGame": {
     "title": "Rompecabezas de Frases",
     "subtitle": "Ordena la frase en chino correctamente.",
+    "prototypeNotice": "Versión prototipo — no guarda puntos ni historial de intentos. ¡Diviértete y aprende!",
     "tierLabel": "Nivel de idioma",
     "tier": {
       "iniciante": "Principiante",
@@ -309,28 +310,31 @@
       "avancado": "Avanzado"
     },
     "soonBadge": "Pronto",
+    "tierPhraseCount": "{count} frases",
+    "basicoFullAccess": "Básico incluye todo el banco — HSK1 y vocabulario ampliado — con niveles 1 a 5.",
+    "levelPoolCount": "Pool: {count} frases",
     "levelLabel": "Dificultad",
     "inicianteCap": "En el nivel Principiante, solo están disponibles los niveles 1 y 2.",
     "level": {
       "1": "Frases cortas",
       "2": "Hasta ~5 palabras",
       "3": "Frase compleja",
-      "4": "Más larga + dividir",
+      "4": "Frases más largas — hanzi extra por defecto",
       "5": "Todos los caracteres sueltos"
     },
     "extrasLabel": "Ajustes de dificultad",
     "extra": {
-      "hanziOnly": "Solo hanzi",
-      "addExtra": "Añadir hasta 2 hanzi extra",
       "pinyinDifficult": "Pinyin en palabras difíciles",
       "hanziPinyin": "Hanzi + Pinyin",
-      "translationDifficult": "Traducción en palabras difíciles"
+      "translationDifficult": "Traducción en palabras difíciles",
+      "showNativePrompt": "Mostrar frase en español",
+      "addExtra": "Añadir hasta 2 hanzi extra (no hacen falta en la respuesta)"
     },
     "play": "Jugar",
     "progress": "Frase {current} de {total}",
-    "promptLabel": "Forma la frase",
+    "promptLabel": "Forma la frase:",
     "bankLabel": "Piezas",
-    "answerLabel": "Tu frase",
+    "answerLabel": "¡Tu frase!",
     "answerEmpty": "Toca o arrastra las piezas aquí",
     "moveLeft": "Mover a la izquierda",
     "moveRight": "Mover a la derecha",
@@ -341,6 +345,7 @@
     "wrong": "¡Casi!",
     "correctAnswer": "Respuesta correcta:",
     "help": {
+      "showFullPrompt": "Mostrar frase traducida",
       "removeExtras": "Quitar piezas extra",
       "showPinyin": "Mostrar pinyin",
       "showTranslation": "Mostrar traducción",
@@ -354,8 +359,12 @@
     },
     "auth": {
       "guest": "Jugando como invitado",
+      "guestHint": "Entra con Google para guardar tu apodo en este dispositivo.",
       "serverOnly": "El inicio de sesión requiere modo servidor.",
       "signIn": "Entrar con Google",
+      "signInAlt": "Otra cuenta",
+      "signingIn": "Entrando…",
+      "signInFailed": "No se pudo entrar. Inténtalo de nuevo.",
       "signOut": "Salir",
       "greeting": "Hola, {name}",
       "nickLabel": "Apodo",

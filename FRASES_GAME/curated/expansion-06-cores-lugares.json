@@ -1,0 +1,1491 @@
+{
+  "version": 1,
+  "source": "handcrafted — colors (4.13) and places (4.7–4.8) from course lexicon",
+  "phrases": [
+    {
+      "id": "pg-901",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Isto é vermelho.",
+      "en": "This is red.",
+      "es": "Esto es rojo.",
+      "words": [
+        {
+          "palavra": "这",
+          "pt": "isto"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "红色",
+          "pt": "vermelho",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-902",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Aquilo é azul.",
+      "en": "That is blue.",
+      "es": "Eso es azul.",
+      "words": [
+        {
+          "palavra": "那",
+          "pt": "aquilo"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "蓝色",
+          "pt": "azul",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-903",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Eu gosto da cor vermelha.",
+      "en": "I like red.",
+      "es": "Me gusta el rojo.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "喜欢",
+          "pt": "gostar"
+        },
+        {
+          "palavra": "红色",
+          "pt": "vermelho",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-904",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Amarelo é bonito.",
+      "en": "Yellow is pretty.",
+      "es": "El amarillo es bonito.",
+      "words": [
+        {
+          "palavra": "黄色",
+          "pt": "amarelo",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-905",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Verde fica bonito.",
+      "en": "Green looks nice.",
+      "es": "El verde se ve bien.",
+      "words": [
+        {
+          "palavra": "绿色",
+          "pt": "verde",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "好看",
+          "pt": "bonito de ver",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-906",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Preto é elegante.",
+      "en": "Black is elegant.",
+      "es": "El negro es elegante.",
+      "words": [
+        {
+          "palavra": "黑色",
+          "pt": "preto",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-907",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Branco fica bonito.",
+      "en": "White looks nice.",
+      "es": "El blanco se ve bien.",
+      "words": [
+        {
+          "palavra": "白色",
+          "pt": "branco"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "好看",
+          "pt": "bonito de ver",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-908",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Que cor você quer?",
+      "en": "What color would you like?",
+      "es": "¿Qué color quiere?",
+      "words": [
+        {
+          "palavra": "您",
+          "pt": "você (formal)",
+          "dificil": true
+        },
+        {
+          "palavra": "要",
+          "pt": "querer"
+        },
+        {
+          "palavra": "什么",
+          "pt": "qual"
+        },
+        {
+          "palavra": "颜色",
+          "pt": "cor",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:cores",
+        "tema:gramatica",
+        "tema:perguntas"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-909",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Quero o vermelho.",
+      "en": "I want the red one.",
+      "es": "Quiero el rojo.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "要",
+          "pt": "querer"
+        },
+        {
+          "palavra": "红色",
+          "pt": "vermelho",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        }
+      ],
+      "tags": [
+        "tema:cores",
+        "tema:gramatica"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-910",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Aquele azul também é bonito.",
+      "en": "That blue one is also pretty.",
+      "es": "Ese azul también es bonito.",
+      "words": [
+        {
+          "palavra": "那",
+          "pt": "aquele"
+        },
+        {
+          "palavra": "件",
+          "pt": "classificador de roupa",
+          "dificil": true
+        },
+        {
+          "palavra": "蓝色",
+          "pt": "azul",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "也",
+          "pt": "também"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-911",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Que cor é esta?",
+      "en": "What color is this?",
+      "es": "¿De qué color es esto?",
+      "words": [
+        {
+          "palavra": "这",
+          "pt": "isto"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "什么",
+          "pt": "qual"
+        },
+        {
+          "palavra": "颜色",
+          "pt": "cor",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:cores",
+        "tema:perguntas"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-912",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Rosa é muito bonito.",
+      "en": "Pink is very pretty.",
+      "es": "El rosa es muy bonito.",
+      "words": [
+        {
+          "palavra": "粉色",
+          "pt": "rosa",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-913",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Cinza é bonito.",
+      "en": "Gray is nice.",
+      "es": "El gris es bonito.",
+      "words": [
+        {
+          "palavra": "灰色",
+          "pt": "cinza",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "好看",
+          "pt": "bonito de ver",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-914",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Laranja é bonita.",
+      "en": "Orange is pretty.",
+      "es": "La naranja es bonita.",
+      "words": [
+        {
+          "palavra": "橙色",
+          "pt": "laranja",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-920",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Chengdu fica na China.",
+      "en": "Chengdu is in China.",
+      "es": "Chengdu está en China.",
+      "words": [
+        {
+          "palavra": "成都",
+          "pt": "Chengdu",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "中国",
+          "pt": "China"
+        }
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-921",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Guangzhou é grande.",
+      "en": "Guangzhou is big.",
+      "es": "Cantón es grande.",
+      "words": [
+        {
+          "palavra": "广州",
+          "pt": "Guangzhou",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "大",
+          "pt": "grande"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-922",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Shenzhen fica na China.",
+      "en": "Shenzhen is in China.",
+      "es": "Shenzhen está en China.",
+      "words": [
+        {
+          "palavra": "深圳",
+          "pt": "Shenzhen",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "中国",
+          "pt": "China"
+        }
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-923",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Hong Kong é bonita.",
+      "en": "Hong Kong is beautiful.",
+      "es": "Hong Kong es bonita.",
+      "words": [
+        {
+          "palavra": "香港",
+          "pt": "Hong Kong",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-924",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Paris é bonita.",
+      "en": "Paris is beautiful.",
+      "es": "París es bonita.",
+      "words": [
+        {
+          "palavra": "巴黎",
+          "pt": "Paris",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-925",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Londres fica no Reino Unido.",
+      "en": "London is in the UK.",
+      "es": "Londres está en el Reino Unido.",
+      "words": [
+        {
+          "palavra": "伦敦",
+          "pt": "Londres",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "英国",
+          "pt": "Reino Unido",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-926",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Nova York fica nos EUA.",
+      "en": "New York is in the USA.",
+      "es": "Nueva York está en EE.UU.",
+      "words": [
+        {
+          "palavra": "纽约",
+          "pt": "Nova York",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "美国",
+          "pt": "EUA",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-927",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Lisboa é bonita.",
+      "en": "Lisbon is beautiful.",
+      "es": "Lisboa es bonita.",
+      "words": [
+        {
+          "palavra": "里斯本",
+          "pt": "Lisboa",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-928",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "São Paulo fica no Brasil.",
+      "en": "São Paulo is in Brazil.",
+      "es": "São Paulo está en Brasil.",
+      "words": [
+        {
+          "palavra": "圣保罗",
+          "pt": "São Paulo",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "巴西",
+          "pt": "Brasil"
+        }
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-929",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "O Rio de Janeiro fica no Brasil.",
+      "en": "Rio de Janeiro is in Brazil.",
+      "es": "Río de Janeiro está en Brasil.",
+      "words": [
+        {
+          "palavra": "里约热内卢",
+          "pt": "Rio de Janeiro",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "巴西",
+          "pt": "Brasil"
+        }
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:gramatica",
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-930",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Seul fica na Coreia do Sul.",
+      "en": "Seoul is in South Korea.",
+      "es": "Seúl está en Corea del Sur.",
+      "words": [
+        {
+          "palavra": "首尔",
+          "pt": "Seul",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "韩国",
+          "pt": "Coreia do Sul",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-931",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Eu trabalho em Xangai.",
+      "en": "I work in Shanghai.",
+      "es": "Trabajo en Shanghái.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "上海",
+          "pt": "Xangai",
+          "dificil": true
+        },
+        {
+          "palavra": "工作",
+          "pt": "trabalhar"
+        }
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares",
+        "tema:trabalho-estudo"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-932",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Vou a Chengdu.",
+      "en": "I am going to Chengdu.",
+      "es": "Voy a Chengdu.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "去",
+          "pt": "ir"
+        },
+        {
+          "palavra": "成都",
+          "pt": "Chengdu",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-933",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "O aeroporto fica no lado leste da cidade.",
+      "en": "The airport is on the east side of the city.",
+      "es": "El aeropuerto está al este de la ciudad.",
+      "words": [
+        {
+          "palavra": "机场",
+          "pt": "aeroporto",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "城",
+          "pt": "cidade",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "东",
+          "pt": "leste"
+        },
+        {
+          "palavra": "边",
+          "pt": "lado",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-934",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Vou ao parque.",
+      "en": "I go to the park.",
+      "es": "Voy al parque.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "去",
+          "pt": "ir"
+        },
+        {
+          "palavra": "公园",
+          "pt": "parque",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-935",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Cozinho na cozinha.",
+      "en": "I cook in the kitchen.",
+      "es": "Cocino en la cocina.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "厨房",
+          "pt": "cozinha",
+          "dificil": true
+        },
+        {
+          "palavra": "做饭",
+          "pt": "cozinhar",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:comida-bebida",
+        "tema:gramatica",
+        "tema:lugares",
+        "tema:rotina"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-936",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "A estação fica ao norte da cidade.",
+      "en": "The station is north of the city.",
+      "es": "La estación está al norte de la ciudad.",
+      "words": [
+        {
+          "palavra": "火车站",
+          "pt": "estação de trem",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "城",
+          "pt": "cidade",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "北",
+          "pt": "norte"
+        },
+        {
+          "palavra": "边",
+          "pt": "lado",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-937",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Madrid é bonita.",
+      "en": "Madrid is beautiful.",
+      "es": "Madrid es bonita.",
+      "words": [
+        {
+          "palavra": "马德里",
+          "pt": "Madrid",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:animais",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-938",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Barcelona fica na Espanha.",
+      "en": "Barcelona is in Spain.",
+      "es": "Barcelona está en España.",
+      "words": [
+        {
+          "palavra": "巴塞罗那",
+          "pt": "Barcelona",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "西班牙",
+          "pt": "Espanha",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-939",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Berlim é bonita.",
+      "en": "Berlin is beautiful.",
+      "es": "Berlín es bonita.",
+      "words": [
+        {
+          "palavra": "柏林",
+          "pt": "Berlim",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-940",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Roma é bonita.",
+      "en": "Rome is beautiful.",
+      "es": "Roma es bonita.",
+      "words": [
+        {
+          "palavra": "罗马",
+          "pt": "Roma",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:animais",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-941",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Sydney é bonita.",
+      "en": "Sydney is beautiful.",
+      "es": "Sídney es bonita.",
+      "words": [
+        {
+          "palavra": "悉尼",
+          "pt": "Sydney",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-942",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Moscou é grande.",
+      "en": "Moscow is big.",
+      "es": "Moscú es grande.",
+      "words": [
+        {
+          "palavra": "莫斯科",
+          "pt": "Moscou",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "大",
+          "pt": "grande"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-943",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Porto é bonita.",
+      "en": "Porto is beautiful.",
+      "es": "Oporto es bonita.",
+      "words": [
+        {
+          "palavra": "波尔图",
+          "pt": "Porto",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-944",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Osaka fica no Japão.",
+      "en": "Osaka is in Japan.",
+      "es": "Osaka está en Japón.",
+      "words": [
+        {
+          "palavra": "大阪",
+          "pt": "Osaka",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "日本",
+          "pt": "Japão"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:gramatica",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-945",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Busan fica na Coreia do Sul.",
+      "en": "Busan is in South Korea.",
+      "es": "Busan está en Corea del Sur.",
+      "words": [
+        {
+          "palavra": "釜山",
+          "pt": "Busan",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "韩国",
+          "pt": "Coreia do Sul",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-946",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Los Angeles é grande.",
+      "en": "Los Angeles is big.",
+      "es": "Los Ángeles es grande.",
+      "words": [
+        {
+          "palavra": "洛杉矶",
+          "pt": "Los Angeles",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "大",
+          "pt": "grande"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-947",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Toronto fica no Canadá.",
+      "en": "Toronto is in Canada.",
+      "es": "Toronto está en Canadá.",
+      "words": [
+        {
+          "palavra": "多伦多",
+          "pt": "Toronto",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "加拿大",
+          "pt": "Canadá",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:gramatica",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-948",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Cidade do México é grande.",
+      "en": "Mexico City is big.",
+      "es": "Ciudad de México es grande.",
+      "words": [
+        {
+          "palavra": "墨西哥城",
+          "pt": "Cidade do México",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "大",
+          "pt": "grande"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-949",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Nova Delhi fica na Índia.",
+      "en": "New Delhi is in India.",
+      "es": "Nueva Delhi está en India.",
+      "words": [
+        {
+          "palavra": "新德里",
+          "pt": "Nova Delhi",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "印度",
+          "pt": "Índia",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:clima-tempo",
+        "tema:gramatica",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-950",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Melbourne é bonita.",
+      "en": "Melbourne is beautiful.",
+      "es": "Melbourne es bonita.",
+      "words": [
+        {
+          "palavra": "墨尔本",
+          "pt": "Melbourne",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    }
+  ]
+}

@@ -1,16 +1,18 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { signIn, signOut, useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 import { useLocale } from "@/context/LocaleContext";
+import { GoogleOneTap, GoogleSignInRedirect } from "./GoogleOneTap";
 
 /** Disabled in static-export builds (no server route handlers). */
 const AUTH_ENABLED = process.env.NEXT_PUBLIC_AUTH_ENABLED !== "0";
+const HAS_ONE_TAP = Boolean(process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID);
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const PROGRESS_URL = `${BASE_PATH}/api/game/progress`;
 
 export function AuthPanel() {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
 
   if (!AUTH_ENABLED) {
     return (
@@ -24,31 +26,39 @@ export function AuthPanel() {
     );
   }
 
-  return <AuthPanelLive label={t} />;
+  return <AuthPanelLive t={t} locale={locale} />;
 }
 
-function AuthPanelLive({ label: t }: { label: (k: string, v?: Record<string, string | number>) => string }) {
-  const { data: session, status } = useSession();
+function AuthPanelLive({
+  t,
+  locale,
+}: {
+  t: (k: string, v?: Record<string, string | number>) => string;
+  locale: string;
+}) {
+  const { data: session, status, update } = useSession();
 
   if (status === "loading") {
-    return <div className="h-12 animate-pulse rounded-2xl border" style={{ borderColor: "var(--border)" }} />;
+    return <div className="h-14 animate-pulse rounded-2xl border" style={{ borderColor: "var(--border)" }} />;
   }
 
   if (status !== "authenticated" || !session?.user) {
     return (
       <div
-        className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border px-4 py-3"
+        className="rounded-2xl border px-4 py-4"
         style={{ borderColor: "var(--border)" }}
       >
-        <span className="text-sm text-ink/60">{t("phraseGame.auth.guest")}</span>
-        <button
-          type="button"
-          onClick={() => signIn("google")}
-          className="rounded-full border px-4 py-2 text-sm font-medium text-ink/80 hover:bg-ink/5"
-          style={{ borderColor: "var(--border)" }}
-        >
-          {t("phraseGame.auth.signIn")}
-        </button>
+        <p className="text-sm text-ink/65">{t("phraseGame.auth.guestHint")}</p>
+        <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          {HAS_ONE_TAP ? (
+            <GoogleOneTap locale={locale} onSignedIn={() => void update()} />
+          ) : (
+            <GoogleSignInRedirect label={t("phraseGame.auth.signIn")} />
+          )}
+          {HAS_ONE_TAP ? (
+            <GoogleSignInRedirect label={t("phraseGame.auth.signInAlt")} />
+          ) : null}
+        </div>
       </div>
     );
   }
@@ -59,8 +69,14 @@ function AuthPanelLive({ label: t }: { label: (k: string, v?: Record<string, str
       className="flex flex-col gap-3 rounded-2xl border px-4 py-3 sm:flex-row sm:items-center sm:justify-between"
       style={{ borderColor: "var(--border)" }}
     >
-      <div className="text-sm text-ink/70">{t("phraseGame.auth.greeting", { name })}</div>
       <div className="flex items-center gap-3">
+        {session.user.image ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={session.user.image} alt="" className="h-9 w-9 rounded-full border object-cover" style={{ borderColor: "var(--border)" }} />
+        ) : null}
+        <p className="text-sm text-ink/70">{t("phraseGame.auth.greeting", { name })}</p>
+      </div>
+      <div className="flex flex-wrap items-center gap-3">
         <NickEditor t={t} />
         <button
           type="button"

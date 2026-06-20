@@ -5,8 +5,10 @@
  * (that is Phase 2 — see docs/phrase-game-scoring.md).
  */
 import NextAuth from "next-auth";
+import Credentials from "next-auth/providers/credentials";
 import { authConfig } from "./config";
 import { upsertPlayer } from "@/server/db/players";
+import { verifyGoogleIdToken } from "./verify-google-id-token";
 
 /** Google's stable user id is the OIDC `sub` claim. */
 function profileSub(profile: unknown): string | undefined {
@@ -17,12 +19,35 @@ function profileSub(profile: unknown): string | undefined {
   return undefined;
 }
 
+function userId(user: { id?: string } | undefined, profile: unknown): string | undefined {
+  return user?.id ?? profileSub(profile);
+}
+
 export const { handlers, auth, signIn, signOut } = NextAuth({
   ...authConfig,
+  providers: [
+    ...authConfig.providers,
+    Credentials({
+      id: "google-onetap",
+      credentials: { credential: { label: "Credential", type: "text" } },
+      async authorize(credentials) {
+        const raw = credentials?.credential;
+        if (typeof raw !== "string") return null;
+        const payload = await verifyGoogleIdToken(raw);
+        if (!payload) return null;
+        return {
+          id: payload.sub,
+          email: payload.email ?? null,
+          name: payload.name ?? null,
+          image: payload.picture ?? null,
+        };
+      },
+    }),
+  ],
   callbacks: {
-    jwt({ token, profile }) {
-      const sub = profileSub(profile);
-      if (sub) token.sub = sub;
+    jwt({ token, user, profile }) {
+      const id = userId(user, profile);
+      if (id) token.sub = id;
       return token;
     },
     session({ session, token }) {
@@ -31,7 +56,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     },
     signIn({ user, profile }) {
       try {
-        const id = profileSub(profile) ?? user?.id;
+        const id = userId(user, profile);
         if (id) {
           upsertPlayer({ id, email: user?.email, name: user?.name, image: user?.image });
         }

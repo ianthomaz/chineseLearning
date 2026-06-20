@@ -1,177 +1,917 @@
 {
   "version": 1,
   "source": "curated-by-hand",
-  "note": "Authoring format: per-character pinyin and the canonical schema are filled by scripts/build-phrase-game-data.mjs. Each word = { palavra, pt, dificil? }. Distractors = hanzi strings (max 2). tier: hsk1 | basico.",
+  "note": "Authoring format: per-character pinyin and the canonical schema are filled by scripts/build-phrase-game-data.mjs. Each word = { palavra, pt, dificil? }. Distractors = hanzi strings (max 2). tier: hsk1 | basico. Additional hand-reviewed batches: expansion-*.json (dialogos, PDF Básico II, Review May 2026, etc.).",
   "phrases": [
     {
-      "id": "pg-001", "nivel": 1, "tier": "hsk1",
-      "pt": "Eu sou estudante.", "en": "I am a student.", "es": "Soy estudiante.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "是", "pt": "ser"}, {"palavra": "学生", "pt": "estudante"} ],
-      "distratores": ["茶", "他"]
+      "id": "pg-001",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu sou estudante.",
+      "en": "I am a student.",
+      "es": "Soy estudiante.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "学生",
+          "pt": "estudante"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:trabalho-estudo"
+      ]
     },
     {
-      "id": "pg-002", "nivel": 1, "tier": "hsk1",
-      "pt": "Eu te amo.", "en": "I love you.", "es": "Te amo.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "爱", "pt": "amar"}, {"palavra": "你", "pt": "você"} ],
-      "distratores": ["书", "喝"]
+      "id": "pg-002",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu te amo.",
+      "en": "I love you.",
+      "es": "Te amo.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "爱",
+          "pt": "amar"
+        },
+        {
+          "palavra": "你",
+          "pt": "você"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:geral"
+      ]
     },
     {
-      "id": "pg-003", "nivel": 1, "tier": "hsk1",
-      "pt": "Ele é professor.", "en": "He is a teacher.", "es": "Él es profesor.",
-      "words": [ {"palavra": "他", "pt": "ele"}, {"palavra": "是", "pt": "ser"}, {"palavra": "老师", "pt": "professor"} ],
-      "distratores": ["钱", "去"]
+      "id": "pg-003",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Ele é professor.",
+      "en": "He is a teacher.",
+      "es": "Él es profesor.",
+      "words": [
+        {
+          "palavra": "他",
+          "pt": "ele"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "老师",
+          "pt": "professor"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:trabalho-estudo"
+      ]
     },
     {
-      "id": "pg-004", "nivel": 1, "tier": "hsk1",
-      "pt": "Eu bebo chá.", "en": "I drink tea.", "es": "Bebo té.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "喝", "pt": "beber"}, {"palavra": "茶", "pt": "chá"} ],
-      "distratores": ["看", "学校"]
+      "id": "pg-004",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu bebo chá.",
+      "en": "I drink tea.",
+      "es": "Bebo té.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "喝",
+          "pt": "beber"
+        },
+        {
+          "palavra": "茶",
+          "pt": "chá"
+        }
+      ],
+      "distratores": [
+        "书",
+        "钱"
+      ],
+      "tags": [
+        "tema:comida-bebida"
+      ]
     },
     {
-      "id": "pg-005", "nivel": 1, "tier": "hsk1",
-      "pt": "Eu como arroz.", "en": "I eat rice.", "es": "Como arroz.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "吃", "pt": "comer"}, {"palavra": "米饭", "pt": "arroz"} ],
-      "distratores": ["茶", "他"]
+      "id": "pg-005",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu como arroz.",
+      "en": "I eat rice.",
+      "es": "Como arroz.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "吃",
+          "pt": "comer"
+        },
+        {
+          "palavra": "米饭",
+          "pt": "arroz"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida"
+      ]
     },
     {
-      "id": "pg-006", "nivel": 1, "tier": "hsk1",
-      "pt": "Eu gosto de você.", "en": "I like you.", "es": "Me gustas.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "喜欢", "pt": "gostar"}, {"palavra": "你", "pt": "você"} ],
-      "distratores": ["是", "钱"]
+      "id": "pg-006",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu gosto de você.",
+      "en": "I like you.",
+      "es": "Me gustas.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "喜欢",
+          "pt": "gostar"
+        },
+        {
+          "palavra": "你",
+          "pt": "você"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:geral"
+      ]
     },
     {
-      "id": "pg-007", "nivel": 1, "tier": "hsk1",
-      "pt": "Ela é chinesa.", "en": "She is Chinese.", "es": "Ella es china.",
-      "words": [ {"palavra": "她", "pt": "ela"}, {"palavra": "是", "pt": "ser"}, {"palavra": "中国人", "pt": "chinês/chinesa"} ],
-      "distratores": ["书", "吃"]
+      "id": "pg-007",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Ela é chinesa.",
+      "en": "She is Chinese.",
+      "es": "Ella es china.",
+      "words": [
+        {
+          "palavra": "她",
+          "pt": "ela"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "中国人",
+          "pt": "chinês/chinesa"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:lugares"
+      ]
     },
     {
-      "id": "pg-008", "nivel": 1, "tier": "hsk1",
-      "pt": "Eu tenho dinheiro.", "en": "I have money.", "es": "Tengo dinero.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "有", "pt": "ter"}, {"palavra": "钱", "pt": "dinheiro"} ],
-      "distratores": ["茶", "学校"]
+      "id": "pg-008",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu tenho dinheiro.",
+      "en": "I have money.",
+      "es": "Tengo dinero.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "有",
+          "pt": "ter"
+        },
+        {
+          "palavra": "钱",
+          "pt": "dinheiro"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:compras"
+      ]
     },
     {
-      "id": "pg-009", "nivel": 1, "tier": "hsk1",
-      "pt": "Eu vou à escola.", "en": "I go to school.", "es": "Voy a la escuela.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "去", "pt": "ir"}, {"palavra": "学校", "pt": "escola"} ],
-      "distratores": ["爱", "茶"]
+      "id": "pg-009",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu vou à escola.",
+      "en": "I go to school.",
+      "es": "Voy a la escuela.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "去",
+          "pt": "ir"
+        },
+        {
+          "palavra": "学校",
+          "pt": "escola"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:trabalho-estudo",
+        "tema:transporte-direcoes"
+      ]
     },
     {
-      "id": "pg-010", "nivel": 1, "tier": "hsk1",
-      "pt": "Eu leio um livro.", "en": "I read a book.", "es": "Leo un libro.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "看", "pt": "ler / olhar"}, {"palavra": "书", "pt": "livro"} ],
-      "distratores": ["他", "钱"]
+      "id": "pg-010",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu leio um livro.",
+      "en": "I read a book.",
+      "es": "Leo un libro.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "看",
+          "pt": "ler / olhar"
+        },
+        {
+          "palavra": "书",
+          "pt": "livro"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "钱"
+      ],
+      "tags": [
+        "tema:geral"
+      ]
     },
     {
-      "id": "pg-011", "nivel": 1, "tier": "hsk1",
-      "pt": "Obrigado a você.", "en": "Thank you.", "es": "Gracias.",
-      "words": [ {"palavra": "谢谢", "pt": "obrigado"}, {"palavra": "你", "pt": "você"} ],
-      "distratores": ["我", "茶"]
+      "id": "pg-011",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Obrigado a você.",
+      "en": "Thank you.",
+      "es": "Gracias.",
+      "words": [
+        {
+          "palavra": "谢谢",
+          "pt": "obrigado"
+        },
+        {
+          "palavra": "你",
+          "pt": "você"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:saudacoes"
+      ]
     },
     {
-      "id": "pg-012", "nivel": 1, "tier": "hsk1",
-      "pt": "Hoje está muito quente.", "en": "It is very hot today.", "es": "Hoy hace mucho calor.",
-      "words": [ {"palavra": "今天", "pt": "hoje"}, {"palavra": "很", "pt": "muito"}, {"palavra": "热", "pt": "quente"} ],
-      "distratores": ["书", "去"]
-    },
-
-    {
-      "id": "pg-101", "nivel": 2, "tier": "hsk1",
-      "pt": "Eu vou à escola todos os dias.", "en": "I go to school every day.", "es": "Voy a la escuela todos los días.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "每天", "pt": "todos os dias"}, {"palavra": "去", "pt": "ir"}, {"palavra": "学校", "pt": "escola"} ],
-      "distratores": ["茶", "钱"]
-    },
-    {
-      "id": "pg-102", "nivel": 2, "tier": "hsk1",
-      "pt": "Eu tenho um irmão mais velho.", "en": "I have an older brother.", "es": "Tengo un hermano mayor.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "有", "pt": "ter"}, {"palavra": "一个", "pt": "um (classificador)"}, {"palavra": "哥哥", "pt": "irmão mais velho"} ],
-      "distratores": ["茶", "去"]
-    },
-    {
-      "id": "pg-103", "nivel": 2, "tier": "hsk1",
-      "pt": "Hoje o tempo está muito bom.", "en": "The weather is very nice today.", "es": "Hoy hace muy buen tiempo.",
-      "words": [ {"palavra": "今天", "pt": "hoje"}, {"palavra": "天气", "pt": "tempo / clima", "dificil": true}, {"palavra": "很", "pt": "muito"}, {"palavra": "好", "pt": "bom"} ],
-      "distratores": ["书", "他"]
-    },
-    {
-      "id": "pg-104", "nivel": 2, "tier": "hsk1",
-      "pt": "Eu quero comprar um livro.", "en": "I want to buy a book.", "es": "Quiero comprar un libro.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "想", "pt": "querer"}, {"palavra": "买", "pt": "comprar"}, {"palavra": "一本", "pt": "um (classificador de livros)"}, {"palavra": "书", "pt": "livro"} ],
-      "distratores": ["茶", "学校"]
+      "id": "pg-012",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Hoje está muito quente.",
+      "en": "It is very hot today.",
+      "es": "Hoy hace mucho calor.",
+      "words": [
+        {
+          "palavra": "今天",
+          "pt": "hoje"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "热",
+          "pt": "quente"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo"
+      ]
     },
     {
-      "id": "pg-105", "nivel": 2, "tier": "basico",
-      "pt": "Ele gosta de comer comida chinesa.", "en": "He likes to eat Chinese food.", "es": "Le gusta comer comida china.",
-      "words": [ {"palavra": "他", "pt": "ele"}, {"palavra": "喜欢", "pt": "gostar"}, {"palavra": "吃", "pt": "comer"}, {"palavra": "中国菜", "pt": "comida chinesa", "dificil": true} ],
-      "distratores": ["钱", "去"]
+      "id": "pg-101",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Eu vou à escola todos os dias.",
+      "en": "I go to school every day.",
+      "es": "Voy a la escuela todos los días.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "每天",
+          "pt": "todos os dias"
+        },
+        {
+          "palavra": "去",
+          "pt": "ir"
+        },
+        {
+          "palavra": "学校",
+          "pt": "escola"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:trabalho-estudo",
+        "tema:transporte-direcoes"
+      ]
     },
     {
-      "id": "pg-106", "nivel": 2, "tier": "hsk1",
-      "pt": "Eu bebo café todos os dias.", "en": "I drink coffee every day.", "es": "Bebo café todos los días.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "每天", "pt": "todos os dias"}, {"palavra": "喝", "pt": "beber"}, {"palavra": "咖啡", "pt": "café", "dificil": true} ],
-      "distratores": ["书", "他"]
+      "id": "pg-102",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Eu tenho um irmão mais velho.",
+      "en": "I have an older brother.",
+      "es": "Tengo un hermano mayor.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "有",
+          "pt": "ter"
+        },
+        {
+          "palavra": "一个",
+          "pt": "um (classificador)"
+        },
+        {
+          "palavra": "哥哥",
+          "pt": "irmão mais velho"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:familia"
+      ]
     },
     {
-      "id": "pg-107", "nivel": 2, "tier": "hsk1",
-      "pt": "Este é o meu livro.", "en": "This is my book.", "es": "Este es mi libro.",
-      "words": [ {"palavra": "这", "pt": "este"}, {"palavra": "是", "pt": "ser"}, {"palavra": "我的", "pt": "meu"}, {"palavra": "书", "pt": "livro"} ],
-      "distratores": ["茶", "去"]
+      "id": "pg-103",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Hoje o tempo está muito bom.",
+      "en": "The weather is very nice today.",
+      "es": "Hoy hace muy buen tiempo.",
+      "words": [
+        {
+          "palavra": "今天",
+          "pt": "hoje"
+        },
+        {
+          "palavra": "天气",
+          "pt": "tempo / clima",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "好",
+          "pt": "bom"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:clima-tempo"
+      ]
     },
     {
-      "id": "pg-108", "nivel": 2, "tier": "basico",
-      "pt": "Eu tenho muitos amigos.", "en": "I have many friends.", "es": "Tengo muchos amigos.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "有", "pt": "ter"}, {"palavra": "很多", "pt": "muitos"}, {"palavra": "朋友", "pt": "amigo"} ],
-      "distratores": ["茶", "热"]
-    },
-
-    {
-      "id": "pg-201", "nivel": 3, "tier": "hsk1",
-      "pt": "Eu quero beber uma xícara de chá.", "en": "I want to drink a cup of tea.", "es": "Quiero beber una taza de té.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "想", "pt": "querer"}, {"palavra": "喝", "pt": "beber"}, {"palavra": "一杯", "pt": "uma xícara"}, {"palavra": "茶", "pt": "chá"} ],
-      "distratores": ["书", "学校"]
-    },
-    {
-      "id": "pg-202", "nivel": 3, "tier": "basico",
-      "pt": "Ela estuda na escola.", "en": "She studies at school.", "es": "Ella estudia en la escuela.",
-      "words": [ {"palavra": "她", "pt": "ela"}, {"palavra": "在", "pt": "em / estar em"}, {"palavra": "学校", "pt": "escola"}, {"palavra": "学习", "pt": "estudar", "dificil": true} ],
-      "distratores": ["茶", "钱"]
-    },
-    {
-      "id": "pg-203", "nivel": 3, "tier": "basico",
-      "pt": "Vamos comer juntos.", "en": "Let's go eat together.", "es": "Vamos a comer juntos.",
-      "words": [ {"palavra": "我们", "pt": "nós"}, {"palavra": "一起", "pt": "juntos", "dificil": true}, {"palavra": "去", "pt": "ir"}, {"palavra": "吃饭", "pt": "comer (uma refeição)"} ],
-      "distratores": ["书", "他"]
-    },
-    {
-      "id": "pg-204", "nivel": 3, "tier": "basico",
-      "pt": "Eu gosto de assistir filmes.", "en": "I like watching movies.", "es": "Me gusta ver películas.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "喜欢", "pt": "gostar"}, {"palavra": "看", "pt": "assistir / ver"}, {"palavra": "电影", "pt": "filme", "dificil": true} ],
-      "distratores": ["茶", "钱"]
-    },
-    {
-      "id": "pg-205", "nivel": 3, "tier": "basico",
-      "pt": "Ele trabalha no hospital.", "en": "He works at the hospital.", "es": "Él trabaja en el hospital.",
-      "words": [ {"palavra": "他", "pt": "ele"}, {"palavra": "在", "pt": "em / estar em"}, {"palavra": "医院", "pt": "hospital", "dificil": true}, {"palavra": "工作", "pt": "trabalhar", "dificil": true} ],
-      "distratores": ["茶", "去"]
-    },
-    {
-      "id": "pg-206", "nivel": 4, "tier": "basico",
-      "pt": "O que você quer beber?", "en": "What do you want to drink?", "es": "¿Qué quieres beber?",
-      "words": [ {"palavra": "你", "pt": "você"}, {"palavra": "想", "pt": "querer"}, {"palavra": "喝", "pt": "beber"}, {"palavra": "什么", "pt": "o quê", "dificil": true} ],
-      "distratores": ["书", "他"]
+      "id": "pg-104",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Eu quero comprar um livro.",
+      "en": "I want to buy a book.",
+      "es": "Quiero comprar un libro.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "想",
+          "pt": "querer"
+        },
+        {
+          "palavra": "买",
+          "pt": "comprar"
+        },
+        {
+          "palavra": "一本",
+          "pt": "um (classificador de livros)"
+        },
+        {
+          "palavra": "书",
+          "pt": "livro"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "钱"
+      ],
+      "tags": [
+        "tema:compras",
+        "tema:gramatica"
+      ]
     },
     {
-      "id": "pg-207", "nivel": 4, "tier": "basico",
-      "pt": "Que horas são agora?", "en": "What time is it now?", "es": "¿Qué hora es ahora?",
-      "words": [ {"palavra": "现在", "pt": "agora", "dificil": true}, {"palavra": "几点", "pt": "que horas"}, {"palavra": "了", "pt": "(partícula)"} ],
-      "distratores": ["茶", "学校"]
+      "id": "pg-105",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Ele gosta de comer comida chinesa.",
+      "en": "He likes to eat Chinese food.",
+      "es": "Le gusta comer comida china.",
+      "words": [
+        {
+          "palavra": "他",
+          "pt": "ele"
+        },
+        {
+          "palavra": "喜欢",
+          "pt": "gostar"
+        },
+        {
+          "palavra": "吃",
+          "pt": "comer"
+        },
+        {
+          "palavra": "中国菜",
+          "pt": "comida chinesa",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida",
+        "tema:lugares"
+      ]
     },
     {
-      "id": "pg-208", "nivel": 4, "tier": "basico",
-      "pt": "Eu quero comer um prato de macarrão.", "en": "I want to eat a bowl of noodles.", "es": "Quiero comer un plato de fideos.",
-      "words": [ {"palavra": "我", "pt": "eu"}, {"palavra": "想", "pt": "querer"}, {"palavra": "吃", "pt": "comer"}, {"palavra": "一碗", "pt": "uma tigela"}, {"palavra": "面条", "pt": "macarrão", "dificil": true} ],
-      "distratores": ["茶", "钱"]
+      "id": "pg-106",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Eu bebo café todos os dias.",
+      "en": "I drink coffee every day.",
+      "es": "Bebo café todos los días.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "每天",
+          "pt": "todos os dias"
+        },
+        {
+          "palavra": "喝",
+          "pt": "beber"
+        },
+        {
+          "palavra": "咖啡",
+          "pt": "café",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-107",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Este é o meu livro.",
+      "en": "This is my book.",
+      "es": "Este es mi libro.",
+      "words": [
+        {
+          "palavra": "这",
+          "pt": "este"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "我的",
+          "pt": "meu"
+        },
+        {
+          "palavra": "书",
+          "pt": "livro"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "钱"
+      ],
+      "tags": [
+        "tema:geral"
+      ]
+    },
+    {
+      "id": "pg-108",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Eu tenho muitos amigos.",
+      "en": "I have many friends.",
+      "es": "Tengo muchos amigos.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "有",
+          "pt": "ter"
+        },
+        {
+          "palavra": "很多",
+          "pt": "muitos"
+        },
+        {
+          "palavra": "朋友",
+          "pt": "amigo"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade"
+      ]
+    },
+    {
+      "id": "pg-201",
+      "nivel": 3,
+      "tier": "hsk1",
+      "pt": "Eu quero beber uma xícara de chá.",
+      "en": "I want to drink a cup of tea.",
+      "es": "Quiero beber una taza de té.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "想",
+          "pt": "querer"
+        },
+        {
+          "palavra": "喝",
+          "pt": "beber"
+        },
+        {
+          "palavra": "一杯",
+          "pt": "uma xícara"
+        },
+        {
+          "palavra": "茶",
+          "pt": "chá"
+        }
+      ],
+      "distratores": [
+        "书",
+        "钱"
+      ],
+      "tags": [
+        "tema:comida-bebida",
+        "tema:gramatica"
+      ]
+    },
+    {
+      "id": "pg-202",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Ela estuda na escola.",
+      "en": "She studies at school.",
+      "es": "Ella estudia en la escuela.",
+      "words": [
+        {
+          "palavra": "她",
+          "pt": "ela"
+        },
+        {
+          "palavra": "在",
+          "pt": "em / estar em"
+        },
+        {
+          "palavra": "学校",
+          "pt": "escola"
+        },
+        {
+          "palavra": "学习",
+          "pt": "estudar",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-203",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Vamos comer juntos.",
+      "en": "Let's go eat together.",
+      "es": "Vamos a comer juntos.",
+      "words": [
+        {
+          "palavra": "我们",
+          "pt": "nós"
+        },
+        {
+          "palavra": "一起",
+          "pt": "juntos",
+          "dificil": true
+        },
+        {
+          "palavra": "去",
+          "pt": "ir"
+        },
+        {
+          "palavra": "吃饭",
+          "pt": "comer (uma refeição)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida",
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-204",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Eu gosto de assistir filmes.",
+      "en": "I like watching movies.",
+      "es": "Me gusta ver películas.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "喜欢",
+          "pt": "gostar"
+        },
+        {
+          "palavra": "看",
+          "pt": "assistir / ver"
+        },
+        {
+          "palavra": "电影",
+          "pt": "filme",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:geral"
+      ]
+    },
+    {
+      "id": "pg-205",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Ele trabalha no hospital.",
+      "en": "He works at the hospital.",
+      "es": "Él trabaja en el hospital.",
+      "words": [
+        {
+          "palavra": "他",
+          "pt": "ele"
+        },
+        {
+          "palavra": "在",
+          "pt": "em / estar em"
+        },
+        {
+          "palavra": "医院",
+          "pt": "hospital",
+          "dificil": true
+        },
+        {
+          "palavra": "工作",
+          "pt": "trabalhar",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares",
+        "tema:saude",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-206",
+      "nivel": 4,
+      "tier": "basico",
+      "pt": "O que você quer beber?",
+      "en": "What do you want to drink?",
+      "es": "¿Qué quieres beber?",
+      "words": [
+        {
+          "palavra": "你",
+          "pt": "você"
+        },
+        {
+          "palavra": "想",
+          "pt": "querer"
+        },
+        {
+          "palavra": "喝",
+          "pt": "beber"
+        },
+        {
+          "palavra": "什么",
+          "pt": "o quê",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida",
+        "tema:gramatica",
+        "tema:perguntas"
+      ]
+    },
+    {
+      "id": "pg-207",
+      "nivel": 4,
+      "tier": "basico",
+      "pt": "Que horas são agora?",
+      "en": "What time is it now?",
+      "es": "¿Qué hora es ahora?",
+      "words": [
+        {
+          "palavra": "现在",
+          "pt": "agora",
+          "dificil": true
+        },
+        {
+          "palavra": "几点",
+          "pt": "que horas"
+        },
+        {
+          "palavra": "了",
+          "pt": "(partícula)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:gramatica",
+        "tema:perguntas"
+      ]
+    },
+    {
+      "id": "pg-208",
+      "nivel": 4,
+      "tier": "basico",
+      "pt": "Eu quero comer um prato de macarrão.",
+      "en": "I want to eat a bowl of noodles.",
+      "es": "Quiero comer un plato de fideos.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "想",
+          "pt": "querer"
+        },
+        {
+          "palavra": "吃",
+          "pt": "comer"
+        },
+        {
+          "palavra": "一碗",
+          "pt": "uma tigela"
+        },
+        {
+          "palavra": "面条",
+          "pt": "macarrão",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida",
+        "tema:gramatica"
+      ]
     }
   ]
 }

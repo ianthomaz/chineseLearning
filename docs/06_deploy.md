@@ -61,13 +61,13 @@ A porta do Node deve coincidir com `PORT` / `DEPLOY_NODE_PORT` usados no deploy.
 
 Script de referência (já aplicado uma vez na VM): **`web/deploy/fix-nginx-aulachines-proxy.py`** (substitui blocos `alias` por `proxy_pass` em `default.conf`).
 
-### itcsVM: sem pasta estática montada no nginx
+### itcsVM1: sem pasta estática montada no nginx
 
 - O volume Docker **`…/chineseLearning` → contentor** foi removido do compose **`/home/opc/decomposers/nginx-global/nginx_decompose.yaml`** (o site em produção não depende dele).
 - O export antigo foi arquivado em **`/home/opc/projetos/_archive/chineseLearning-static.<timestamp>`** (recuperável se precisares).
 - Ficheiros **`default.conf.bak_*`** que citavam `alias …/chineseLearning` foram movidos para **`_archive/nginx-conf-d-bak-chineseLearning.<timestamp>`**.
 
-### itcsVM: `nginx_global` e porta 443
+### itcsVM1: `nginx_global` e porta 443
 
 Se **`docker compose up`** falhar com *address already in use* em **443**, o **Tailscale** na VM pode já estar a escutar HTTPS na stack. Nesse caso o compose foi ajustado para publicar só no IPv4 da interface principal, por exemplo **`10.0.0.73:80:80`** e **`10.0.0.73:443:443`** (ajusta o IP se a NIC mudar). O ficheiro de compose no servidor tem backups `*.bak.*` na mesma pasta.
 

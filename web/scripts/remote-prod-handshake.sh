@@ -4,11 +4,11 @@ set -euo pipefail
 # Copies web/deploy/server.env to a temp file on the remote, sources it, then deletes it.
 #
 #   cd web && npm run remote:handshake
-#   DEPLOY_NODE_HOST=itcsVM DEPLOY_NODE_DIR=/path npm run remote:handshake
+#   DEPLOY_NODE_HOST=itcsVM1 DEPLOY_NODE_DIR=/path npm run remote:handshake
 #
 # Requires: ssh + scp to the host; on the remote: curl (and jq optional).
 
-REMOTE="${DEPLOY_NODE_HOST:-${DEPLOY_WEBPLACE_HOST:-itcsVM}}"
+REMOTE="${DEPLOY_NODE_HOST:-${DEPLOY_WEBPLACE_HOST:-itcsVM1}}"
 REMOTE_DIR="${DEPLOY_NODE_DIR:-/home/opc/projetos/chineseLearning-app}"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

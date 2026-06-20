@@ -1,0 +1,3236 @@
+{
+  "version": 1,
+  "source": "handcrafted-final-batch",
+  "phrases": [
+    {
+      "id": "pg-601",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Quanto custa isto?",
+      "en": "How much does this cost?",
+      "es": "¿Cuánto cuesta esto?",
+      "words": [
+        {
+          "palavra": "这个",
+          "pt": "isto"
+        },
+        {
+          "palavra": "多少",
+          "pt": "quanto"
+        },
+        {
+          "palavra": "钱",
+          "pt": "dinheiro"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:compras",
+        "tema:perguntas"
+      ]
+    },
+    {
+      "id": "pg-602",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Um livro custa vinte yuan.",
+      "en": "One book costs twenty yuan.",
+      "es": "Un libro cuesta veinte yuanes.",
+      "words": [
+        {
+          "palavra": "一本",
+          "pt": "um (classificador de livros)"
+        },
+        {
+          "palavra": "书",
+          "pt": "livro"
+        },
+        {
+          "palavra": "二十",
+          "pt": "vinte"
+        },
+        {
+          "palavra": "块",
+          "pt": "yuan (colloquial)"
+        },
+        {
+          "palavra": "钱",
+          "pt": "dinheiro"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "学校"
+      ],
+      "tags": [
+        "tema:compras"
+      ]
+    },
+    {
+      "id": "pg-603",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Um café custa dez yuan.",
+      "en": "A cup of coffee costs ten yuan.",
+      "es": "Un café cuesta diez yuanes.",
+      "words": [
+        {
+          "palavra": "一杯",
+          "pt": "uma xícara de"
+        },
+        {
+          "palavra": "咖啡",
+          "pt": "café",
+          "dificil": true
+        },
+        {
+          "palavra": "十",
+          "pt": "dez"
+        },
+        {
+          "palavra": "块",
+          "pt": "yuan (colloquial)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida",
+        "tema:compras"
+      ]
+    },
+    {
+      "id": "pg-604",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Está caro demais, não compro.",
+      "en": "It's too expensive, I won't buy it.",
+      "es": "Es demasiado caro, no lo compro.",
+      "words": [
+        {
+          "palavra": "太",
+          "pt": "demais"
+        },
+        {
+          "palavra": "贵",
+          "pt": "caro"
+        },
+        {
+          "palavra": "了",
+          "pt": "(partícula)"
+        },
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "不",
+          "pt": "não"
+        },
+        {
+          "palavra": "买",
+          "pt": "comprar"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:compras",
+        "tema:gramatica"
+      ]
+    },
+    {
+      "id": "pg-605",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Está barato, compro dois.",
+      "en": "It's cheap, I'll buy two.",
+      "es": "Es barato, compro dos.",
+      "words": [
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "便宜",
+          "pt": "barato",
+          "dificil": true
+        },
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "买",
+          "pt": "comprar"
+        },
+        {
+          "palavra": "两个",
+          "pt": "dois (classificador)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:compras"
+      ]
+    },
+    {
+      "id": "pg-606",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Quero uma tigela de arroz.",
+      "en": "I want a bowl of rice.",
+      "es": "Quiero un bol de arroz.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "要",
+          "pt": "querer"
+        },
+        {
+          "palavra": "一碗",
+          "pt": "uma tigela de"
+        },
+        {
+          "palavra": "米饭",
+          "pt": "arroz cozido"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida",
+        "tema:gramatica"
+      ]
+    },
+    {
+      "id": "pg-607",
+      "nivel": 1,
+      "tier": "basico",
+      "pt": "Eu não como carne.",
+      "en": "I don't eat meat.",
+      "es": "No como carne.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "不",
+          "pt": "não"
+        },
+        {
+          "palavra": "吃",
+          "pt": "comer"
+        },
+        {
+          "palavra": "肉",
+          "pt": "carne"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida",
+        "tema:gramatica"
+      ]
+    },
+    {
+      "id": "pg-608",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Ela gosta de comer fruta.",
+      "en": "She likes to eat fruit.",
+      "es": "A ella le gusta comer fruta.",
+      "words": [
+        {
+          "palavra": "她",
+          "pt": "ela"
+        },
+        {
+          "palavra": "喜欢",
+          "pt": "gostar"
+        },
+        {
+          "palavra": "吃",
+          "pt": "comer"
+        },
+        {
+          "palavra": "水果",
+          "pt": "fruta"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-609",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Comemos juntos.",
+      "en": "We eat together.",
+      "es": "Comemos juntos.",
+      "words": [
+        {
+          "palavra": "我们",
+          "pt": "nós"
+        },
+        {
+          "palavra": "一起",
+          "pt": "juntos"
+        },
+        {
+          "palavra": "吃饭",
+          "pt": "comer (refeição)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-610",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "O que você come?",
+      "en": "What do you eat?",
+      "es": "¿Qué comes?",
+      "words": [
+        {
+          "palavra": "你",
+          "pt": "você"
+        },
+        {
+          "palavra": "吃",
+          "pt": "comer"
+        },
+        {
+          "palavra": "什么",
+          "pt": "o quê"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida",
+        "tema:perguntas"
+      ]
+    },
+    {
+      "id": "pg-611",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Eu bebo água fria.",
+      "en": "I drink cold water.",
+      "es": "Bebo agua fría.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "喝",
+          "pt": "beber"
+        },
+        {
+          "palavra": "冷水",
+          "pt": "água fria"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-612",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Chá quente é muito bom.",
+      "en": "Hot tea is very good.",
+      "es": "El té caliente es muy bueno.",
+      "words": [
+        {
+          "palavra": "热",
+          "pt": "quente"
+        },
+        {
+          "palavra": "茶",
+          "pt": "chá"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "好",
+          "pt": "bom"
+        }
+      ],
+      "distratores": [
+        "书",
+        "钱"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:clima-tempo",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-613",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Vou viajar para a China.",
+      "en": "I am going to travel to China.",
+      "es": "Voy a viajar a China.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "去",
+          "pt": "ir"
+        },
+        {
+          "palavra": "中国",
+          "pt": "China"
+        },
+        {
+          "palavra": "旅行",
+          "pt": "viajar",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-614",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Bem-vindo a Pequim.",
+      "en": "Welcome to Beijing.",
+      "es": "Bienvenido a Pekín.",
+      "words": [
+        {
+          "palavra": "欢迎",
+          "pt": "bem-vindo"
+        },
+        {
+          "palavra": "来",
+          "pt": "vir"
+        },
+        {
+          "palavra": "北京",
+          "pt": "Pequim",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:saudacoes",
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-615",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Xangai é muito grande.",
+      "en": "Shanghai is very big.",
+      "es": "Shanghái es muy grande.",
+      "words": [
+        {
+          "palavra": "上海",
+          "pt": "Xangai",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "大",
+          "pt": "grande"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares"
+      ]
+    },
+    {
+      "id": "pg-616",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Eu venho do Brasil.",
+      "en": "I come from Brazil.",
+      "es": "Vengo de Brasil.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "从",
+          "pt": "de / desde"
+        },
+        {
+          "palavra": "巴西",
+          "pt": "Brasil",
+          "dificil": true
+        },
+        {
+          "palavra": "来",
+          "pt": "vir"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-617",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "O avião está muito atrasado.",
+      "en": "The plane is very late.",
+      "es": "El avión llega muy tarde.",
+      "words": [
+        {
+          "palavra": "飞机",
+          "pt": "avião",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "晚",
+          "pt": "tarde"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-618",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "O trem é muito rápido.",
+      "en": "The train is very fast.",
+      "es": "El tren es muy rápido.",
+      "words": [
+        {
+          "palavra": "火车",
+          "pt": "trem",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "快",
+          "pt": "rápido"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-619",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Ele é professor de chinês.",
+      "en": "He is a Chinese teacher.",
+      "es": "Él es profesor de chino.",
+      "words": [
+        {
+          "palavra": "他",
+          "pt": "ele"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "中文",
+          "pt": "chinês (idioma)",
+          "dificil": true
+        },
+        {
+          "palavra": "老师",
+          "pt": "professor"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-620",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Ela ensina inglês.",
+      "en": "She teaches English.",
+      "es": "Ella enseña inglés.",
+      "words": [
+        {
+          "palavra": "她",
+          "pt": "ela"
+        },
+        {
+          "palavra": "教",
+          "pt": "ensinar"
+        },
+        {
+          "palavra": "英语",
+          "pt": "inglês",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-621",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Eu estudo português.",
+      "en": "I study Portuguese.",
+      "es": "Estudio portugués.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "学",
+          "pt": "estudar"
+        },
+        {
+          "palavra": "葡萄牙语",
+          "pt": "português",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida",
+        "tema:lugares",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-622",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Os caracteres chineses são difíceis.",
+      "en": "Chinese characters are difficult.",
+      "es": "Los caracteres chinos son difíciles.",
+      "words": [
+        {
+          "palavra": "汉字",
+          "pt": "caracteres chineses",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "难",
+          "pt": "difícil"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-623",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Sei falar um pouco de chinês.",
+      "en": "I can speak a little Chinese.",
+      "es": "Sé hablar un poco de chino.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "会",
+          "pt": "saber"
+        },
+        {
+          "palavra": "说",
+          "pt": "falar"
+        },
+        {
+          "palavra": "一点儿",
+          "pt": "um pouco"
+        },
+        {
+          "palavra": "汉语",
+          "pt": "chinês (idioma)",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:gramatica",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-624",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Por favor, diga de novo.",
+      "en": "Please say it again.",
+      "es": "Por favor, repítelo.",
+      "words": [
+        {
+          "palavra": "请",
+          "pt": "por favor"
+        },
+        {
+          "palavra": "再",
+          "pt": "de novo"
+        },
+        {
+          "palavra": "说",
+          "pt": "falar"
+        },
+        {
+          "palavra": "一次",
+          "pt": "uma vez"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:geral"
+      ]
+    },
+    {
+      "id": "pg-625",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Escrevo devagar.",
+      "en": "I write slowly.",
+      "es": "Escribo despacio.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "写字",
+          "pt": "escrever caracteres"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "慢",
+          "pt": "devagar"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade"
+      ]
+    },
+    {
+      "id": "pg-626",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Estou muito feliz em conhecê-lo.",
+      "en": "I am very happy to meet you.",
+      "es": "Estoy muy feliz de conocerte.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "高兴",
+          "pt": "feliz"
+        },
+        {
+          "palavra": "认识",
+          "pt": "conhecer",
+          "dificil": true
+        },
+        {
+          "palavra": "你",
+          "pt": "você"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade"
+      ]
+    },
+    {
+      "id": "pg-627",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Ela não está muito feliz.",
+      "en": "She is not very happy.",
+      "es": "Ella no está muy feliz.",
+      "words": [
+        {
+          "palavra": "她",
+          "pt": "ela"
+        },
+        {
+          "palavra": "不太",
+          "pt": "não muito"
+        },
+        {
+          "palavra": "高兴",
+          "pt": "feliz"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:gramatica"
+      ]
+    },
+    {
+      "id": "pg-628",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Hoje não estou ocupado.",
+      "en": "I'm not busy today.",
+      "es": "Hoy no estoy ocupado.",
+      "words": [
+        {
+          "palavra": "今天",
+          "pt": "hoje"
+        },
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "不",
+          "pt": "não"
+        },
+        {
+          "palavra": "忙",
+          "pt": "ocupado"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:gramatica",
+        "tema:saude"
+      ]
+    },
+    {
+      "id": "pg-629",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Amanhã estou muito ocupado.",
+      "en": "Tomorrow I am very busy.",
+      "es": "Mañana estoy muy ocupado.",
+      "words": [
+        {
+          "palavra": "明天",
+          "pt": "amanhã"
+        },
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "忙",
+          "pt": "ocupado"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:saude"
+      ]
+    },
+    {
+      "id": "pg-630",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Ele está doente e não vem.",
+      "en": "He is sick and isn't coming.",
+      "es": "Está enfermo y no viene.",
+      "words": [
+        {
+          "palavra": "他",
+          "pt": "ele"
+        },
+        {
+          "palavra": "病了",
+          "pt": "estar doente"
+        },
+        {
+          "palavra": "不",
+          "pt": "não"
+        },
+        {
+          "palavra": "来",
+          "pt": "vir"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:saude",
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-631",
+      "nivel": 1,
+      "tier": "basico",
+      "pt": "Já estou bem.",
+      "en": "I'm better now.",
+      "es": "Ya estoy bien.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "好了",
+          "pt": "recuperado / bem"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:gramatica"
+      ]
+    },
+    {
+      "id": "pg-632",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Pequim é maior que Xangai.",
+      "en": "Beijing is bigger than Shanghai.",
+      "es": "Pekín es más grande que Shanghái.",
+      "words": [
+        {
+          "palavra": "北京",
+          "pt": "Pequim",
+          "dificil": true
+        },
+        {
+          "palavra": "比",
+          "pt": "que (comparativo)"
+        },
+        {
+          "palavra": "上海",
+          "pt": "Xangai",
+          "dificil": true
+        },
+        {
+          "palavra": "大",
+          "pt": "grande"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:gramatica",
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-633",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Ele é mais alto que eu.",
+      "en": "He is taller than me.",
+      "es": "Él es más alto que yo.",
+      "words": [
+        {
+          "palavra": "他",
+          "pt": "ele"
+        },
+        {
+          "palavra": "比",
+          "pt": "que (comparativo)"
+        },
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "高",
+          "pt": "alto"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:gramatica"
+      ]
+    },
+    {
+      "id": "pg-634",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Este é melhor que aquele.",
+      "en": "This one is better than that one.",
+      "es": "Este es mejor que aquel.",
+      "words": [
+        {
+          "palavra": "这个",
+          "pt": "este"
+        },
+        {
+          "palavra": "比",
+          "pt": "que (comparativo)"
+        },
+        {
+          "palavra": "那个",
+          "pt": "aquele"
+        },
+        {
+          "palavra": "好",
+          "pt": "bom"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:gramatica"
+      ]
+    },
+    {
+      "id": "pg-635",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Quanto custam estes dois carros?",
+      "en": "How much do these two cars cost?",
+      "es": "¿Cuánto cuestan estos dos coches?",
+      "words": [
+        {
+          "palavra": "这",
+          "pt": "estes"
+        },
+        {
+          "palavra": "两",
+          "pt": "dois"
+        },
+        {
+          "palavra": "辆",
+          "pt": "(classificador de veículos)",
+          "dificil": true
+        },
+        {
+          "palavra": "汽车",
+          "pt": "carro",
+          "dificil": true
+        },
+        {
+          "palavra": "多少",
+          "pt": "quanto"
+        },
+        {
+          "palavra": "钱",
+          "pt": "dinheiro"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:compras",
+        "tema:perguntas",
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-636",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "O carro vermelho é caro.",
+      "en": "The red car is expensive.",
+      "es": "El coche rojo es caro.",
+      "words": [
+        {
+          "palavra": "红色",
+          "pt": "vermelho",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "(partícula possessiva)"
+        },
+        {
+          "palavra": "车",
+          "pt": "carro"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "贵",
+          "pt": "caro"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:compras",
+        "tema:cores"
+      ]
+    },
+    {
+      "id": "pg-637",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "O carro branco é barato.",
+      "en": "The white car is cheap.",
+      "es": "El coche blanco es barato.",
+      "words": [
+        {
+          "palavra": "白色",
+          "pt": "branco",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "(partícula possessiva)"
+        },
+        {
+          "palavra": "车",
+          "pt": "carro"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "便宜",
+          "pt": "barato",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:compras",
+        "tema:cores"
+      ]
+    },
+    {
+      "id": "pg-638",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Há quinhentos e cinquenta Institutos Confúcio no mundo.",
+      "en": "There are five hundred and fifty Confucius Institutes in the world.",
+      "es": "Hay quinientos cincuenta Institutos Confucio en el mundo.",
+      "words": [
+        {
+          "palavra": "世界上",
+          "pt": "no mundo"
+        },
+        {
+          "palavra": "有",
+          "pt": "haver"
+        },
+        {
+          "palavra": "五百五十",
+          "pt": "quinhentos e cinquenta",
+          "dificil": true
+        },
+        {
+          "palavra": "所",
+          "pt": "classificador (instituições)"
+        },
+        {
+          "palavra": "孔子学院",
+          "pt": "Instituto Confúcio",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-639",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Os Institutos Confúcio estão em cento e sessenta e dois países.",
+      "en": "Confucius Institutes are in one hundred and sixty-two countries.",
+      "es": "Los Institutos Confucio están en ciento sesenta y dos países.",
+      "words": [
+        {
+          "palavra": "孔子学院",
+          "pt": "Instituto Confúcio",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em / estar em"
+        },
+        {
+          "palavra": "一百六十二",
+          "pt": "cento e sessenta e dois",
+          "dificil": true
+        },
+        {
+          "palavra": "个",
+          "pt": "classificador"
+        },
+        {
+          "palavra": "国家",
+          "pt": "países",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-640",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Como está a sua saúde?",
+      "en": "How is your health?",
+      "es": "¿Cómo está tu salud?",
+      "words": [
+        {
+          "palavra": "你",
+          "pt": "você"
+        },
+        {
+          "palavra": "身体",
+          "pt": "corpo / saúde",
+          "dificil": true
+        },
+        {
+          "palavra": "好",
+          "pt": "bom"
+        },
+        {
+          "palavra": "吗",
+          "pt": "(partícula interrogativa)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:gramatica",
+        "tema:perguntas",
+        "tema:saude"
+      ]
+    },
+    {
+      "id": "pg-641",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Minha saúde está muito boa.",
+      "en": "My health is very good.",
+      "es": "Mi salud está muy bien.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "身体",
+          "pt": "corpo / saúde",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "好",
+          "pt": "bom"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:saude"
+      ]
+    },
+    {
+      "id": "pg-642",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Por favor, cuide de mim.",
+      "en": "Please look after me. / Please take care of me.",
+      "es": "Por favor, cuídame.",
+      "words": [
+        {
+          "palavra": "请",
+          "pt": "por favor"
+        },
+        {
+          "palavra": "多",
+          "pt": "muito"
+        },
+        {
+          "palavra": "关照",
+          "pt": "cuidar / ajudar",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:rotina",
+        "tema:saudacoes"
+      ]
+    },
+    {
+      "id": "pg-643",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Espero a sua ligação.",
+      "en": "I'm waiting for your call.",
+      "es": "Espero tu llamada.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "等",
+          "pt": "esperar"
+        },
+        {
+          "palavra": "你",
+          "pt": "você"
+        },
+        {
+          "palavra": "电话",
+          "pt": "telefone / ligação",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:rotina"
+      ]
+    },
+    {
+      "id": "pg-644",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Ela não vai à escola hoje.",
+      "en": "She isn't going to school today.",
+      "es": "Ella no va a la escuela hoy.",
+      "words": [
+        {
+          "palavra": "她",
+          "pt": "ela"
+        },
+        {
+          "palavra": "今天",
+          "pt": "hoje"
+        },
+        {
+          "palavra": "不",
+          "pt": "não"
+        },
+        {
+          "palavra": "去",
+          "pt": "ir"
+        },
+        {
+          "palavra": "学校",
+          "pt": "escola"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:gramatica",
+        "tema:lugares",
+        "tema:trabalho-estudo",
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-645",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Somos bons amigos.",
+      "en": "We are good friends.",
+      "es": "Somos buenos amigos.",
+      "words": [
+        {
+          "palavra": "我们",
+          "pt": "nós"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "好",
+          "pt": "bom"
+        },
+        {
+          "palavra": "朋友",
+          "pt": "amigo"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade"
+      ]
+    },
+    {
+      "id": "pg-646",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Estudo em casa.",
+      "en": "I study at home.",
+      "es": "Estudio en casa.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "在家",
+          "pt": "em casa"
+        },
+        {
+          "palavra": "学习",
+          "pt": "estudar"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-647",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Ele tem um filho.",
+      "en": "He has a son.",
+      "es": "Él tiene un hijo.",
+      "words": [
+        {
+          "palavra": "他",
+          "pt": "ele"
+        },
+        {
+          "palavra": "有",
+          "pt": "ter"
+        },
+        {
+          "palavra": "一个",
+          "pt": "um (classificador)"
+        },
+        {
+          "palavra": "儿子",
+          "pt": "filho",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:familia"
+      ]
+    },
+    {
+      "id": "pg-648",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Ela tem duas filhas.",
+      "en": "She has two daughters.",
+      "es": "Ella tiene dos hijas.",
+      "words": [
+        {
+          "palavra": "她",
+          "pt": "ela"
+        },
+        {
+          "palavra": "有",
+          "pt": "ter"
+        },
+        {
+          "palavra": "两个",
+          "pt": "duas (classificador)"
+        },
+        {
+          "palavra": "女儿",
+          "pt": "filha",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:familia"
+      ]
+    },
+    {
+      "id": "pg-649",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Comprei três maçãs.",
+      "en": "I bought three apples.",
+      "es": "Compré tres manzanas.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "买了",
+          "pt": "comprei"
+        },
+        {
+          "palavra": "三个",
+          "pt": "três (classificador)"
+        },
+        {
+          "palavra": "苹果",
+          "pt": "maçã",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida",
+        "tema:compras",
+        "tema:gramatica"
+      ]
+    },
+    {
+      "id": "pg-650",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Esta escola é muito grande.",
+      "en": "This school is very big.",
+      "es": "Esta escuela es muy grande.",
+      "words": [
+        {
+          "palavra": "这个",
+          "pt": "este"
+        },
+        {
+          "palavra": "学校",
+          "pt": "escola"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "大",
+          "pt": "grande"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-651",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Meu quarto é pequeno.",
+      "en": "My room is small.",
+      "es": "Mi habitación es pequeña.",
+      "words": [
+        {
+          "palavra": "我的",
+          "pt": "meu/minha"
+        },
+        {
+          "palavra": "房间",
+          "pt": "quarto",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "小",
+          "pt": "pequeno"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares"
+      ]
+    },
+    {
+      "id": "pg-652",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Por favor, me ajude.",
+      "en": "Please help me.",
+      "es": "Por favor, ayúdame.",
+      "words": [
+        {
+          "palavra": "请",
+          "pt": "por favor"
+        },
+        {
+          "palavra": "你",
+          "pt": "você"
+        },
+        {
+          "palavra": "帮",
+          "pt": "ajudar"
+        },
+        {
+          "palavra": "我",
+          "pt": "eu"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:geral"
+      ]
+    },
+    {
+      "id": "pg-653",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Estou muito ocupado agora.",
+      "en": "I am very busy now.",
+      "es": "Estoy muy ocupado ahora.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "现在",
+          "pt": "agora"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "忙",
+          "pt": "ocupado"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:gramatica",
+        "tema:saude"
+      ]
+    },
+    {
+      "id": "pg-654",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Amanhã não vai chover.",
+      "en": "It won't rain tomorrow.",
+      "es": "Mañana no lloverá.",
+      "words": [
+        {
+          "palavra": "明天",
+          "pt": "amanhã"
+        },
+        {
+          "palavra": "不",
+          "pt": "não"
+        },
+        {
+          "palavra": "下雨",
+          "pt": "chover",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:gramatica",
+        "tema:lugares"
+      ]
+    },
+    {
+      "id": "pg-655",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Estudo à noite.",
+      "en": "I study at night.",
+      "es": "Estudio por la noche.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "晚上",
+          "pt": "noite"
+        },
+        {
+          "palavra": "学习",
+          "pt": "estudar"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:lugares",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-656",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Ele volta para casa à tarde.",
+      "en": "He goes home in the afternoon.",
+      "es": "Él vuelve a casa por la tarde.",
+      "words": [
+        {
+          "palavra": "他",
+          "pt": "ele"
+        },
+        {
+          "palavra": "下午",
+          "pt": "tarde"
+        },
+        {
+          "palavra": "回家",
+          "pt": "voltar para casa"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-657",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Meu irmão mais novo é alto.",
+      "en": "My younger brother is tall.",
+      "es": "Mi hermano menor es alto.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "弟弟",
+          "pt": "irmão mais novo"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "高",
+          "pt": "alto"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:familia"
+      ]
+    },
+    {
+      "id": "pg-658",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "A irmã dela é muito bonita.",
+      "en": "Her younger sister is very pretty.",
+      "es": "Su hermana menor es muy bonita.",
+      "words": [
+        {
+          "palavra": "她",
+          "pt": "ela"
+        },
+        {
+          "palavra": "妹妹",
+          "pt": "irmã mais nova"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonita",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:familia"
+      ]
+    },
+    {
+      "id": "pg-659",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Quero descansar.",
+      "en": "I want to rest.",
+      "es": "Quiero descansar.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "想",
+          "pt": "querer"
+        },
+        {
+          "palavra": "休息",
+          "pt": "descansar"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:rotina",
+        "tema:saude"
+      ]
+    },
+    {
+      "id": "pg-660",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Ele está muito cansado do trabalho.",
+      "en": "He is very tired from work.",
+      "es": "Está muy cansado del trabajo.",
+      "words": [
+        {
+          "palavra": "他",
+          "pt": "ele"
+        },
+        {
+          "palavra": "工作",
+          "pt": "trabalhar"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "累",
+          "pt": "cansado"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:saude",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-661",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Onde está o seu pai?",
+      "en": "Where is your father?",
+      "es": "¿Dónde está tu padre?",
+      "words": [
+        {
+          "palavra": "你",
+          "pt": "você"
+        },
+        {
+          "palavra": "爸爸",
+          "pt": "pai"
+        },
+        {
+          "palavra": "在",
+          "pt": "estar em"
+        },
+        {
+          "palavra": "哪儿",
+          "pt": "onde"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:familia",
+        "tema:gramatica",
+        "tema:perguntas"
+      ]
+    },
+    {
+      "id": "pg-662",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Minha mãe não está em casa.",
+      "en": "My mother isn't home.",
+      "es": "Mi madre no está en casa.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "妈妈",
+          "pt": "mãe"
+        },
+        {
+          "palavra": "不",
+          "pt": "não"
+        },
+        {
+          "palavra": "在家",
+          "pt": "em casa"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:familia",
+        "tema:gramatica"
+      ]
+    },
+    {
+      "id": "pg-663",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Amanhã não vou.",
+      "en": "I'm not going tomorrow.",
+      "es": "Mañana no voy.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "明天",
+          "pt": "amanhã"
+        },
+        {
+          "palavra": "不",
+          "pt": "não"
+        },
+        {
+          "palavra": "去",
+          "pt": "ir"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:gramatica",
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-664",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Estou estudando agora.",
+      "en": "I am studying now.",
+      "es": "Estoy estudiando ahora.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "现在",
+          "pt": "agora"
+        },
+        {
+          "palavra": "学习",
+          "pt": "estudar"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:gramatica",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-665",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Ele é meu professor.",
+      "en": "He is my teacher.",
+      "es": "Él es mi profesor.",
+      "words": [
+        {
+          "palavra": "他",
+          "pt": "ele"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "我的",
+          "pt": "meu/minha"
+        },
+        {
+          "palavra": "老师",
+          "pt": "professor"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-666",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Ela é minha colega de classe.",
+      "en": "She is my classmate.",
+      "es": "Ella es mi compañera de clase.",
+      "words": [
+        {
+          "palavra": "她",
+          "pt": "ela"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "我的",
+          "pt": "meu/minha"
+        },
+        {
+          "palavra": "同学",
+          "pt": "colega de classe",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-667",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Minha família tem três pessoas.",
+      "en": "There are three people in my family.",
+      "es": "Mi familia tiene tres personas.",
+      "words": [
+        {
+          "palavra": "我家",
+          "pt": "minha família / minha casa"
+        },
+        {
+          "palavra": "有",
+          "pt": "ter"
+        },
+        {
+          "palavra": "三口",
+          "pt": "três (classificador de pessoas)"
+        },
+        {
+          "palavra": "人",
+          "pt": "pessoa"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:familia"
+      ]
+    },
+    {
+      "id": "pg-668",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Quero ir de trem.",
+      "en": "I want to go by train.",
+      "es": "Quiero ir en tren.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "想",
+          "pt": "querer"
+        },
+        {
+          "palavra": "坐",
+          "pt": "pegar / sentar-se"
+        },
+        {
+          "palavra": "火车",
+          "pt": "trem",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-669",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Por favor, me dê um livro.",
+      "en": "Please give me a book.",
+      "es": "Por favor, dame un libro.",
+      "words": [
+        {
+          "palavra": "请",
+          "pt": "por favor"
+        },
+        {
+          "palavra": "给",
+          "pt": "dar"
+        },
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "一本",
+          "pt": "um (classificador de livros)"
+        },
+        {
+          "palavra": "书",
+          "pt": "livro"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "钱"
+      ],
+      "tags": [
+        "tema:geral"
+      ]
+    },
+    {
+      "id": "pg-670",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Escrevi caracteres chineses.",
+      "en": "I wrote Chinese characters.",
+      "es": "Escribí caracteres chinos.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "写了",
+          "pt": "escrevi"
+        },
+        {
+          "palavra": "汉字",
+          "pt": "caracteres chineses",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-671",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Você quer comprar um livro?",
+      "en": "Do you want to buy a book?",
+      "es": "¿Quieres comprar un libro?",
+      "words": [
+        {
+          "palavra": "你",
+          "pt": "você"
+        },
+        {
+          "palavra": "想",
+          "pt": "querer"
+        },
+        {
+          "palavra": "买",
+          "pt": "comprar"
+        },
+        {
+          "palavra": "书",
+          "pt": "livro"
+        },
+        {
+          "palavra": "吗",
+          "pt": "(partícula interrogativa)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "钱"
+      ],
+      "tags": [
+        "tema:compras",
+        "tema:gramatica",
+        "tema:perguntas"
+      ]
+    },
+    {
+      "id": "pg-672",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Como se escreve este caractere?",
+      "en": "How do you write this character?",
+      "es": "¿Cómo se escribe este carácter?",
+      "words": [
+        {
+          "palavra": "这个",
+          "pt": "este"
+        },
+        {
+          "palavra": "汉字",
+          "pt": "caractere chinês",
+          "dificil": true
+        },
+        {
+          "palavra": "怎么",
+          "pt": "como"
+        },
+        {
+          "palavra": "写",
+          "pt": "escrever"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:perguntas",
+        "tema:trabalho-estudo",
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-673",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Consigo entender chinês.",
+      "en": "I can understand Chinese.",
+      "es": "Puedo entender chino.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "能",
+          "pt": "poder"
+        },
+        {
+          "palavra": "看懂",
+          "pt": "entender (lendo)",
+          "dificil": true
+        },
+        {
+          "palavra": "汉语",
+          "pt": "chinês (idioma)",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-674",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Hoje estou muito cansado.",
+      "en": "I am very tired today.",
+      "es": "Hoy estoy muy cansado.",
+      "words": [
+        {
+          "palavra": "今天",
+          "pt": "hoje"
+        },
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "累",
+          "pt": "cansado"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:saude"
+      ]
+    },
+    {
+      "id": "pg-675",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Comemos comida chinesa.",
+      "en": "We eat Chinese food.",
+      "es": "Comemos comida china.",
+      "words": [
+        {
+          "palavra": "我们",
+          "pt": "nós"
+        },
+        {
+          "palavra": "吃",
+          "pt": "comer"
+        },
+        {
+          "palavra": "中国菜",
+          "pt": "comida chinesa",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida",
+        "tema:lugares"
+      ]
+    },
+    {
+      "id": "pg-676",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Que chá você bebe?",
+      "en": "What tea do you drink?",
+      "es": "¿Qué té bebes?",
+      "words": [
+        {
+          "palavra": "你",
+          "pt": "você"
+        },
+        {
+          "palavra": "喝",
+          "pt": "beber"
+        },
+        {
+          "palavra": "什么",
+          "pt": "o quê"
+        },
+        {
+          "palavra": "茶",
+          "pt": "chá"
+        }
+      ],
+      "distratores": [
+        "书",
+        "钱"
+      ],
+      "tags": [
+        "tema:comida-bebida",
+        "tema:perguntas"
+      ]
+    },
+    {
+      "id": "pg-677",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Eu moro aqui.",
+      "en": "I live here.",
+      "es": "Vivo aquí.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "住",
+          "pt": "morar"
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "这里",
+          "pt": "aqui"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:lugares"
+      ]
+    },
+    {
+      "id": "pg-678",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Ele comprou muitos livros.",
+      "en": "He bought many books.",
+      "es": "Él compró muchos libros.",
+      "words": [
+        {
+          "palavra": "他",
+          "pt": "ele"
+        },
+        {
+          "palavra": "买了",
+          "pt": "comprou"
+        },
+        {
+          "palavra": "很多",
+          "pt": "muitos"
+        },
+        {
+          "palavra": "书",
+          "pt": "livros"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "钱"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:compras",
+        "tema:gramatica"
+      ]
+    },
+    {
+      "id": "pg-679",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Tenho três irmãs mais velhas.",
+      "en": "I have three older sisters.",
+      "es": "Tengo tres hermanas mayores.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "有",
+          "pt": "ter"
+        },
+        {
+          "palavra": "三个",
+          "pt": "três (classificador)"
+        },
+        {
+          "palavra": "姐姐",
+          "pt": "irmã mais velha"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:familia"
+      ]
+    },
+    {
+      "id": "pg-680",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Meu pai é médico.",
+      "en": "My father is a doctor.",
+      "es": "Mi padre es médico.",
+      "words": [
+        {
+          "palavra": "我的",
+          "pt": "meu/minha"
+        },
+        {
+          "palavra": "爸爸",
+          "pt": "pai"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "医生",
+          "pt": "médico"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:familia",
+        "tema:saude",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-681",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "A mãe dela é professora.",
+      "en": "Her mother is a teacher.",
+      "es": "Su madre es profesora.",
+      "words": [
+        {
+          "palavra": "她的",
+          "pt": "dela"
+        },
+        {
+          "palavra": "妈妈",
+          "pt": "mãe"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "老师",
+          "pt": "professora"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:familia",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-682",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Jantamos às sete.",
+      "en": "We eat dinner at seven.",
+      "es": "Cenamos a las siete.",
+      "words": [
+        {
+          "palavra": "我们",
+          "pt": "nós"
+        },
+        {
+          "palavra": "七点",
+          "pt": "sete horas"
+        },
+        {
+          "palavra": "吃饭",
+          "pt": "comer (refeição)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-683",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Levanto-me às oito.",
+      "en": "I get up at eight.",
+      "es": "Me levanto a las ocho.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "八点",
+          "pt": "oito horas"
+        },
+        {
+          "palavra": "起床",
+          "pt": "levantar-se",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:rotina"
+      ]
+    },
+    {
+      "id": "pg-684",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Ele dorme às nove.",
+      "en": "He goes to sleep at nine.",
+      "es": "Él se duerme a las nueve.",
+      "words": [
+        {
+          "palavra": "他",
+          "pt": "ele"
+        },
+        {
+          "palavra": "九",
+          "pt": "nove"
+        },
+        {
+          "palavra": "点钟",
+          "pt": "horas (relógio)"
+        },
+        {
+          "palavra": "睡觉",
+          "pt": "dormir"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:rotina"
+      ]
+    },
+    {
+      "id": "pg-685",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "A loja fica ao lado do banco.",
+      "en": "The shop is next to the bank.",
+      "es": "La tienda está al lado del banco.",
+      "words": [
+        {
+          "palavra": "商店",
+          "pt": "loja",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "estar em"
+        },
+        {
+          "palavra": "银行",
+          "pt": "banco",
+          "dificil": true
+        },
+        {
+          "palavra": "旁边",
+          "pt": "ao lado",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:compras",
+        "tema:cores",
+        "tema:gramatica",
+        "tema:lugares"
+      ]
+    },
+    {
+      "id": "pg-686",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "A escola fica perto da empresa.",
+      "en": "The school is near the company.",
+      "es": "La escuela está cerca de la empresa.",
+      "words": [
+        {
+          "palavra": "学校",
+          "pt": "escola"
+        },
+        {
+          "palavra": "在",
+          "pt": "estar em"
+        },
+        {
+          "palavra": "公司",
+          "pt": "empresa",
+          "dificil": true
+        },
+        {
+          "palavra": "附近",
+          "pt": "perto",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:gramatica",
+        "tema:lugares",
+        "tema:trabalho-estudo"
+      ]
+    },
+    {
+      "id": "pg-687",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Não tenho tempo.",
+      "en": "I don't have time.",
+      "es": "No tengo tiempo.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "没有",
+          "pt": "não ter"
+        },
+        {
+          "palavra": "时间",
+          "pt": "tempo",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:gramatica"
+      ]
+    },
+    {
+      "id": "pg-688",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Você está livre?",
+      "en": "Are you free?",
+      "es": "¿Estás libre?",
+      "words": [
+        {
+          "palavra": "你",
+          "pt": "você"
+        },
+        {
+          "palavra": "有",
+          "pt": "ter"
+        },
+        {
+          "palavra": "空",
+          "pt": "livre / tempo livre",
+          "dificil": true
+        },
+        {
+          "palavra": "吗",
+          "pt": "(partícula interrogativa)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:perguntas"
+      ]
+    },
+    {
+      "id": "pg-689",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Falo devagar.",
+      "en": "I speak slowly.",
+      "es": "Hablo despacio.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "说话",
+          "pt": "falar"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "慢",
+          "pt": "devagar"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade"
+      ]
+    },
+    {
+      "id": "pg-690",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Ela canta muito bem.",
+      "en": "She sings very well.",
+      "es": "Ella canta muy bien.",
+      "words": [
+        {
+          "palavra": "她",
+          "pt": "ela"
+        },
+        {
+          "palavra": "唱歌",
+          "pt": "cantar",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "好听",
+          "pt": "agradável (som)",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade"
+      ]
+    },
+    {
+      "id": "pg-691",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Todos nós gostamos de comer arroz.",
+      "en": "We all like to eat rice.",
+      "es": "A todos nos gusta comer arroz.",
+      "words": [
+        {
+          "palavra": "我们",
+          "pt": "nós"
+        },
+        {
+          "palavra": "都",
+          "pt": "todos"
+        },
+        {
+          "palavra": "喜欢",
+          "pt": "gostar"
+        },
+        {
+          "palavra": "吃",
+          "pt": "comer"
+        },
+        {
+          "palavra": "米饭",
+          "pt": "arroz cozido"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-692",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Em que mês você vem à China?",
+      "en": "In which month are you coming to China?",
+      "es": "¿En qué mes vienes a China?",
+      "words": [
+        {
+          "palavra": "你",
+          "pt": "você"
+        },
+        {
+          "palavra": "几",
+          "pt": "quantos / qual"
+        },
+        {
+          "palavra": "月",
+          "pt": "mês"
+        },
+        {
+          "palavra": "来",
+          "pt": "vir"
+        },
+        {
+          "palavra": "中国",
+          "pt": "China"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:lugares",
+        "tema:perguntas",
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-693",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Vou para a China no ano que vem.",
+      "en": "I will go to China next year.",
+      "es": "Iré a China el año que viene.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "明年",
+          "pt": "ano que vem"
+        },
+        {
+          "palavra": "去",
+          "pt": "ir"
+        },
+        {
+          "palavra": "中国",
+          "pt": "China"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-694",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Tenho um dicionário.",
+      "en": "I have a dictionary.",
+      "es": "Tengo un diccionario.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "有",
+          "pt": "ter"
+        },
+        {
+          "palavra": "一本",
+          "pt": "um (classificador de livros)"
+        },
+        {
+          "palavra": "词典",
+          "pt": "dicionário",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:geral"
+      ]
+    }
+  ]
+}

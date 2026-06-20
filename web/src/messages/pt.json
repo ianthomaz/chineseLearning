@@ -301,6 +301,7 @@
   "phraseGame": {
     "title": "Quebra-Cabeça de Frases",
     "subtitle": "Monte a frase em chinês na ordem correta.",
+    "prototypeNotice": "Versão protótipo — não salva pontos nem histórico de tentativas. Divirta-se e aprenda!",
     "tierLabel": "Nível de idioma",
     "tier": {
       "iniciante": "Iniciante",
@@ -309,28 +310,31 @@
       "avancado": "Avançado"
     },
     "soonBadge": "Em breve",
+    "tierPhraseCount": "{count} frases",
+    "basicoFullAccess": "Básico inclui todo o banco — HSK1 e vocabulário ampliado — com níveis 1 a 5.",
+    "levelPoolCount": "Pool: {count} frases",
     "levelLabel": "Dificuldade",
     "inicianteCap": "No nível Iniciante, só os níveis 1 e 2 estão disponíveis.",
     "level": {
       "1": "Frases curtas",
       "2": "Até ~5 palavras",
       "3": "Frase complexa",
-      "4": "Maior + dividir",
+      "4": "Frases maiores — hanzi extras por padrão",
       "5": "Todos os caracteres soltos"
     },
     "extrasLabel": "Ajustes de dificuldade",
     "extra": {
-      "hanziOnly": "Apenas hanzi",
-      "addExtra": "Adicionar até 2 hanzi extras",
       "pinyinDifficult": "Pinyin nas palavras difíceis",
       "hanziPinyin": "Hanzi + Pinyin",
-      "translationDifficult": "Tradução nas palavras difíceis"
+      "translationDifficult": "Tradução nas palavras difíceis",
+      "showNativePrompt": "Apresentar frase em português",
+      "addExtra": "Adicionar até 2 hanzi extras (não precisam ser usados)"
     },
     "play": "Jogar",
     "progress": "Frase {current} de {total}",
-    "promptLabel": "Monte a frase",
+    "promptLabel": "Monte a Frase:",
     "bankLabel": "Peças",
-    "answerLabel": "Sua frase",
+    "answerLabel": "Sua frase!",
     "answerEmpty": "Toque ou arraste as peças para cá",
     "moveLeft": "Mover para a esquerda",
     "moveRight": "Mover para a direita",
@@ -341,6 +345,7 @@
     "wrong": "Quase!",
     "correctAnswer": "Resposta certa:",
     "help": {
+      "showFullPrompt": "Mostrar frase traduzida",
       "removeExtras": "Remover peças extras",
       "showPinyin": "Mostrar pinyin",
       "showTranslation": "Mostrar tradução",
@@ -354,8 +359,12 @@
     },
     "auth": {
       "guest": "Jogando como convidado",
+      "guestHint": "Entre com Google para guardar o seu apelido neste dispositivo.",
       "serverOnly": "O login requer o modo servidor.",
       "signIn": "Entrar com Google",
+      "signInAlt": "Outra conta",
+      "signingIn": "A entrar…",
+      "signInFailed": "Não foi possível entrar. Tente de novo.",
       "signOut": "Sair",
       "greeting": "Olá, {name}",
       "nickLabel": "Apelido",

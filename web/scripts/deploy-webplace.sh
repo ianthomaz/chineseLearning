@@ -4,12 +4,12 @@ set -euo pipefail
 # Produção em webplace.cc: /aulaChines/ → proxy para Node (PM2), não alias estático. Este rsync é legado / backup offline.
 #
 # Overrides:
-#   DEPLOY_WEBPLACE_HOST, DEPLOY_WEBPLACE_DIR  — SSH rsync target (default: itcsVM + /home/opc/projetos/chineseLearning)
+#   DEPLOY_WEBPLACE_HOST, DEPLOY_WEBPLACE_DIR  — SSH rsync target (default: itcsVM1 + /home/opc/projetos/chineseLearning)
 #   DEPLOY_LOCAL_DIR                           — if set, rsync ./out/ → $DEPLOY_LOCAL_DIR/aulaChines/ (no SSH); raiz para http.server = DEPLOY_LOCAL_DIR
 #   DEPLOY_LOAD_SERVER_ENV=1                 — source deploy/server.env before build (optional)
 #   DEPLOY_PUSH_SERVER_ENV=1                 — after rsync, scp deploy/server.env → REMOTE_DIR/server.env
 
-REMOTE="${DEPLOY_WEBPLACE_HOST:-itcsVM}"
+REMOTE="${DEPLOY_WEBPLACE_HOST:-itcsVM1}"
 REMOTE_DIR="${DEPLOY_WEBPLACE_DIR:-/home/opc/projetos/chineseLearning}"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

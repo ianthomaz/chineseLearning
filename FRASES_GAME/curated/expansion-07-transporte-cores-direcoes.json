@@ -1,0 +1,1927 @@
+{
+  "version": 1,
+  "source": "handcrafted — colors on objects, transport, directions, venues",
+  "phrases": [
+    {
+      "id": "pg-951",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Isto é uma bicicleta vermelha.",
+      "en": "This is a red bicycle.",
+      "es": "Esta es una bicicleta roja.",
+      "words": [
+        {
+          "palavra": "这",
+          "pt": "isto"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "一辆",
+          "pt": "uma (classificador)",
+          "dificil": true
+        },
+        {
+          "palavra": "红色",
+          "pt": "vermelho",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "自行车",
+          "pt": "bicicleta",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:cores",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-952",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Aquilo é um carro azul.",
+      "en": "That is a blue car.",
+      "es": "Ese es un coche azul.",
+      "words": [
+        {
+          "palavra": "那",
+          "pt": "aquilo"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "一辆",
+          "pt": "um (classificador)",
+          "dificil": true
+        },
+        {
+          "palavra": "蓝色",
+          "pt": "azul",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "汽车",
+          "pt": "carro",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:cores",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-953",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Tenho um chapéu preto.",
+      "en": "I have a black hat.",
+      "es": "Tengo un sombrero negro.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "有",
+          "pt": "ter"
+        },
+        {
+          "palavra": "一顶",
+          "pt": "um (chapéu)",
+          "dificil": true
+        },
+        {
+          "palavra": "黑色",
+          "pt": "preto",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "帽子",
+          "pt": "chapéu",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-954",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Ela usa uma saia vermelha.",
+      "en": "She wears a red skirt.",
+      "es": "Ella lleva una falda roja.",
+      "words": [
+        {
+          "palavra": "她",
+          "pt": "ela"
+        },
+        {
+          "palavra": "穿",
+          "pt": "vestir/usar",
+          "dificil": true
+        },
+        {
+          "palavra": "一条",
+          "pt": "uma (saia)",
+          "dificil": true
+        },
+        {
+          "palavra": "红色",
+          "pt": "vermelho",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "裙子",
+          "pt": "saia",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-955",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Flores amarelas são bonitas.",
+      "en": "Yellow flowers are pretty.",
+      "es": "Las flores amarillas son bonitas.",
+      "words": [
+        {
+          "palavra": "黄色",
+          "pt": "amarelo",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "花",
+          "pt": "flor"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-956",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Minha mochila é azul.",
+      "en": "My backpack is blue.",
+      "es": "Mi mochila es azul.",
+      "words": [
+        {
+          "palavra": "我的",
+          "pt": "meu/minha",
+          "dificil": true
+        },
+        {
+          "palavra": "书包",
+          "pt": "mochila",
+          "dificil": true
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "蓝色",
+          "pt": "azul",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        }
+      ],
+      "tags": [
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "钱"
+      ]
+    },
+    {
+      "id": "pg-957",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Aquele par de sapatos vermelhos é caro.",
+      "en": "Those red shoes are expensive.",
+      "es": "Esos zapatos rojos son caros.",
+      "words": [
+        {
+          "palavra": "那",
+          "pt": "aquele"
+        },
+        {
+          "palavra": "双",
+          "pt": "par (sapatos)",
+          "dificil": true
+        },
+        {
+          "palavra": "红色",
+          "pt": "vermelho",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "鞋",
+          "pt": "sapato"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "贵",
+          "pt": "caro"
+        }
+      ],
+      "tags": [
+        "tema:compras",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-958",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Esta calça é preta.",
+      "en": "These pants are black.",
+      "es": "Este pantalón es negro.",
+      "words": [
+        {
+          "palavra": "这",
+          "pt": "isto"
+        },
+        {
+          "palavra": "条",
+          "pt": "classificador (calça)",
+          "dificil": true
+        },
+        {
+          "palavra": "裤子",
+          "pt": "calça",
+          "dificil": true
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "黑色",
+          "pt": "preto",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        }
+      ],
+      "tags": [
+        "tema:compras",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-959",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Os sapatos dela são brancos.",
+      "en": "Her shoes are white.",
+      "es": "Sus zapatos son blancos.",
+      "words": [
+        {
+          "palavra": "她的",
+          "pt": "dela",
+          "dificil": true
+        },
+        {
+          "palavra": "鞋",
+          "pt": "sapato"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "白色",
+          "pt": "branco"
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        }
+      ],
+      "tags": [
+        "tema:compras",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-960",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Aquele chapéu é amarelo.",
+      "en": "That hat is yellow.",
+      "es": "Ese sombrero es amarillo.",
+      "words": [
+        {
+          "palavra": "那",
+          "pt": "aquele"
+        },
+        {
+          "palavra": "顶",
+          "pt": "classificador (chapéu)",
+          "dificil": true
+        },
+        {
+          "palavra": "帽子",
+          "pt": "chapéu",
+          "dificil": true
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "黄色",
+          "pt": "amarelo",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        }
+      ],
+      "tags": [
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-961",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Camisa vermelha fica bonita.",
+      "en": "Red shirts look nice.",
+      "es": "Las camisas rojas se ven bien.",
+      "words": [
+        {
+          "palavra": "红色",
+          "pt": "vermelho",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "衬衫",
+          "pt": "camisa",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "好看",
+          "pt": "bonito de ver",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:compras",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-962",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Visto um casaco verde.",
+      "en": "I am wearing a green coat.",
+      "es": "Llevo un abrigo verde.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "穿",
+          "pt": "vestir",
+          "dificil": true
+        },
+        {
+          "palavra": "一件",
+          "pt": "um (roupa)",
+          "dificil": true
+        },
+        {
+          "palavra": "绿色",
+          "pt": "verde",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "外套",
+          "pt": "casaco",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:cores",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-963",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Flores roxas são bonitas.",
+      "en": "Purple flowers are pretty.",
+      "es": "Las flores moradas son bonitas.",
+      "words": [
+        {
+          "palavra": "紫色",
+          "pt": "roxo",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "花",
+          "pt": "flor"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "漂亮",
+          "pt": "bonito"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-964",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Mochila marrom fica bonita.",
+      "en": "Brown bags look nice.",
+      "es": "Las bolsas marrones se ven bien.",
+      "words": [
+        {
+          "palavra": "棕色",
+          "pt": "marrom",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "包",
+          "pt": "bolsa/mochila"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "好看",
+          "pt": "bonito de ver",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-965",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Meu cachorro é preto.",
+      "en": "My dog is black.",
+      "es": "Mi perro es negro.",
+      "words": [
+        {
+          "palavra": "我的",
+          "pt": "meu",
+          "dificil": true
+        },
+        {
+          "palavra": "狗",
+          "pt": "cachorro"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "黑色",
+          "pt": "preto",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        }
+      ],
+      "tags": [
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-966",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Meu gato é branco.",
+      "en": "My cat is white.",
+      "es": "Mi gato es blanco.",
+      "words": [
+        {
+          "palavra": "我的",
+          "pt": "meu",
+          "dificil": true
+        },
+        {
+          "palavra": "猫",
+          "pt": "gato"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "白色",
+          "pt": "branco"
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        }
+      ],
+      "tags": [
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-967",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Copo laranja fica bonito.",
+      "en": "Orange cups look nice.",
+      "es": "Los vasos naranjas se ven bien.",
+      "words": [
+        {
+          "palavra": "橙色",
+          "pt": "laranja",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "杯子",
+          "pt": "copo",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "好看",
+          "pt": "bonito de ver",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-968",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Este relógio é dourado.",
+      "en": "This watch is gold.",
+      "es": "Este reloj es dorado.",
+      "words": [
+        {
+          "palavra": "这",
+          "pt": "isto"
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "金色",
+          "pt": "dourado",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "手表",
+          "pt": "relógio",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-969",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Caneta azul.",
+      "en": "A blue pen.",
+      "es": "Un bolígrafo azul.",
+      "words": [
+        {
+          "palavra": "蓝色",
+          "pt": "azul",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "笔",
+          "pt": "caneta"
+        }
+      ],
+      "tags": [
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-971",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Vou à escola de bicicleta.",
+      "en": "I go to school by bicycle.",
+      "es": "Voy a la escuela en bicicleta.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "骑",
+          "pt": "andar/montar",
+          "dificil": true
+        },
+        {
+          "palavra": "自行车",
+          "pt": "bicicleta",
+          "dificil": true
+        },
+        {
+          "palavra": "去",
+          "pt": "ir"
+        },
+        {
+          "palavra": "学校",
+          "pt": "escola"
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-972",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Vamos a Pequim de trem.",
+      "en": "We go to Beijing by train.",
+      "es": "Vamos a Pekín en tren.",
+      "words": [
+        {
+          "palavra": "我们",
+          "pt": "nós"
+        },
+        {
+          "palavra": "坐",
+          "pt": "pegar/ir de"
+        },
+        {
+          "palavra": "火车",
+          "pt": "trem",
+          "dificil": true
+        },
+        {
+          "palavra": "去",
+          "pt": "ir"
+        },
+        {
+          "palavra": "北京",
+          "pt": "Pequim",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-973",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Vou para a China de avião.",
+      "en": "I go to China by plane.",
+      "es": "Voy a China en avión.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "坐",
+          "pt": "pegar/ir de"
+        },
+        {
+          "palavra": "飞机",
+          "pt": "avião"
+        },
+        {
+          "palavra": "去",
+          "pt": "ir"
+        },
+        {
+          "palavra": "中国",
+          "pt": "China"
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-974",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Chame um táxi, por favor.",
+      "en": "Please call a taxi.",
+      "es": "Llame un taxi, por favor.",
+      "words": [
+        {
+          "palavra": "请",
+          "pt": "por favor"
+        },
+        {
+          "palavra": "叫",
+          "pt": "chamar",
+          "dificil": true
+        },
+        {
+          "palavra": "一辆",
+          "pt": "um (classificador)",
+          "dificil": true
+        },
+        {
+          "palavra": "出租车",
+          "pt": "táxi",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-975",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "O ônibus chegou.",
+      "en": "The bus arrived.",
+      "es": "Llegó el autobús.",
+      "words": [
+        {
+          "palavra": "公共汽车",
+          "pt": "ônibus",
+          "dificil": true
+        },
+        {
+          "palavra": "来",
+          "pt": "vir/chegar"
+        },
+        {
+          "palavra": "了",
+          "pt": "partícula"
+        }
+      ],
+      "tags": [
+        "tema:gramatica",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-976",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Vou de moto.",
+      "en": "I ride a motorcycle.",
+      "es": "Voy en moto.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "骑",
+          "pt": "andar/montar",
+          "dificil": true
+        },
+        {
+          "palavra": "摩托车",
+          "pt": "motocicleta",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-977",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "O barco é grande.",
+      "en": "The boat is big.",
+      "es": "El barco es grande.",
+      "words": [
+        {
+          "palavra": "船",
+          "pt": "barco"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "大",
+          "pt": "grande"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-978",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Vou de barco.",
+      "en": "I go by boat.",
+      "es": "Voy en barco.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "坐",
+          "pt": "pegar/ir de"
+        },
+        {
+          "palavra": "船",
+          "pt": "barco"
+        },
+        {
+          "palavra": "去",
+          "pt": "ir"
+        }
+      ],
+      "tags": [
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-979",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "O metrô é rápido.",
+      "en": "The subway is fast.",
+      "es": "El metro es rápido.",
+      "words": [
+        {
+          "palavra": "地铁",
+          "pt": "metrô",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "快",
+          "pt": "rápido"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-980",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "O avião é rápido.",
+      "en": "The plane is fast.",
+      "es": "El avión es rápido.",
+      "words": [
+        {
+          "palavra": "飞机",
+          "pt": "avião"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "快",
+          "pt": "rápido"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-981",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Táxi é caro.",
+      "en": "Taxis are expensive.",
+      "es": "El taxi es caro.",
+      "words": [
+        {
+          "palavra": "出租车",
+          "pt": "táxi",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "贵",
+          "pt": "caro"
+        }
+      ],
+      "tags": [
+        "tema:compras",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-982",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Amanhã vou de avião.",
+      "en": "Tomorrow I will take a plane.",
+      "es": "Mañana voy en avión.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "明天",
+          "pt": "amanhã"
+        },
+        {
+          "palavra": "坐",
+          "pt": "pegar/ir de"
+        },
+        {
+          "palavra": "飞机",
+          "pt": "avião"
+        }
+      ],
+      "tags": [
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-983",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Tenho uma bicicleta.",
+      "en": "I have a bicycle.",
+      "es": "Tengo una bicicleta.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "有",
+          "pt": "ter"
+        },
+        {
+          "palavra": "一辆",
+          "pt": "uma (classificador)",
+          "dificil": true
+        },
+        {
+          "palavra": "自行车",
+          "pt": "bicicleta",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-984",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Ele dirige um carro vermelho.",
+      "en": "He drives a red car.",
+      "es": "Él conduce un coche rojo.",
+      "words": [
+        {
+          "palavra": "他",
+          "pt": "ele"
+        },
+        {
+          "palavra": "开",
+          "pt": "dirigir",
+          "dificil": true
+        },
+        {
+          "palavra": "红色",
+          "pt": "vermelho",
+          "dificil": true
+        },
+        {
+          "palavra": "的",
+          "pt": "partícula"
+        },
+        {
+          "palavra": "车",
+          "pt": "carro"
+        }
+      ],
+      "tags": [
+        "tema:cores"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-985",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Como chego à estação de trem?",
+      "en": "How do I get to the train station?",
+      "es": "¿Cómo llego a la estación de tren?",
+      "words": [
+        {
+          "palavra": "火车站",
+          "pt": "estação de trem",
+          "dificil": true
+        },
+        {
+          "palavra": "怎么",
+          "pt": "como"
+        },
+        {
+          "palavra": "走",
+          "pt": "ir/a pé"
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:perguntas",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-991",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "O banco fica à esquerda.",
+      "en": "The bank is on the left.",
+      "es": "El banco está a la izquierda.",
+      "words": [
+        {
+          "palavra": "银行",
+          "pt": "banco"
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "左边",
+          "pt": "esquerda",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-992",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "A escola fica à direita.",
+      "en": "The school is on the right.",
+      "es": "La escuela está a la derecha.",
+      "words": [
+        {
+          "palavra": "学校",
+          "pt": "escola"
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "右边",
+          "pt": "direita",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-993",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Siga em frente.",
+      "en": "Go straight ahead.",
+      "es": "Siga adelante.",
+      "words": [
+        {
+          "palavra": "往",
+          "pt": "em direção a",
+          "dificil": true
+        },
+        {
+          "palavra": "前面",
+          "pt": "frente",
+          "dificil": true
+        },
+        {
+          "palavra": "走",
+          "pt": "ir"
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-994",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Siga sempre em frente.",
+      "en": "Keep going straight.",
+      "es": "Siga todo recto.",
+      "words": [
+        {
+          "palavra": "一直",
+          "pt": "sempre/continuamente",
+          "dificil": true
+        },
+        {
+          "palavra": "往",
+          "pt": "em direção a",
+          "dificil": true
+        },
+        {
+          "palavra": "前",
+          "pt": "frente"
+        },
+        {
+          "palavra": "走",
+          "pt": "ir"
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-995",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Fica muito longe daqui.",
+      "en": "It is very far from here.",
+      "es": "Está muy lejos de aquí.",
+      "words": [
+        {
+          "palavra": "离",
+          "pt": "de/distância de",
+          "dificil": true
+        },
+        {
+          "palavra": "这儿",
+          "pt": "aqui",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "远",
+          "pt": "longe"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-996",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Fica perto daqui.",
+      "en": "It is close to here.",
+      "es": "Está cerca de aquí.",
+      "words": [
+        {
+          "palavra": "离",
+          "pt": "de/distância de",
+          "dificil": true
+        },
+        {
+          "palavra": "这儿",
+          "pt": "aqui",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "近",
+          "pt": "perto"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-997",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Onde fica o supermercado?",
+      "en": "Where is the supermarket?",
+      "es": "¿Dónde está el supermercado?",
+      "words": [
+        {
+          "palavra": "超市",
+          "pt": "supermercado",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "哪儿",
+          "pt": "onde",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:perguntas"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-998",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Vire à esquerda.",
+      "en": "Turn left.",
+      "es": "Gire a la izquierda.",
+      "words": [
+        {
+          "palavra": "往",
+          "pt": "em direção a",
+          "dificil": true
+        },
+        {
+          "palavra": "左",
+          "pt": "esquerda"
+        },
+        {
+          "palavra": "走",
+          "pt": "ir"
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-999",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Vire à direita.",
+      "en": "Turn right.",
+      "es": "Gire a la derecha.",
+      "words": [
+        {
+          "palavra": "往",
+          "pt": "em direção a",
+          "dificil": true
+        },
+        {
+          "palavra": "右",
+          "pt": "direita"
+        },
+        {
+          "palavra": "走",
+          "pt": "ir"
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-1000",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "O parque fica na frente.",
+      "en": "The park is in front.",
+      "es": "El parque está adelante.",
+      "words": [
+        {
+          "palavra": "公园",
+          "pt": "parque",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "前面",
+          "pt": "frente",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-1001",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "O hospital fica atrás.",
+      "en": "The hospital is behind.",
+      "es": "El hospital está atrás.",
+      "words": [
+        {
+          "palavra": "医院",
+          "pt": "hospital"
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "后面",
+          "pt": "atrás",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-1002",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Siga para o norte.",
+      "en": "Go north.",
+      "es": "Vaya hacia el norte.",
+      "words": [
+        {
+          "palavra": "往",
+          "pt": "em direção a",
+          "dificil": true
+        },
+        {
+          "palavra": "北",
+          "pt": "norte"
+        },
+        {
+          "palavra": "走",
+          "pt": "ir"
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-1011",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Vou à biblioteca.",
+      "en": "I go to the library.",
+      "es": "Voy a la biblioteca.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "去",
+          "pt": "ir"
+        },
+        {
+          "palavra": "图书馆",
+          "pt": "biblioteca",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "钱"
+      ]
+    },
+    {
+      "id": "pg-1012",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Vou ao cinema.",
+      "en": "I go to the movie theater.",
+      "es": "Voy al cine.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "去",
+          "pt": "ir"
+        },
+        {
+          "palavra": "电影院",
+          "pt": "cinema",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-1013",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Assisto TV na sala.",
+      "en": "I watch TV in the living room.",
+      "es": "Veo la tele en la sala.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "客厅",
+          "pt": "sala de estar",
+          "dificil": true
+        },
+        {
+          "palavra": "看",
+          "pt": "ver/assistir"
+        },
+        {
+          "palavra": "电视",
+          "pt": "televisão",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-1014",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Onde fica o aeroporto?",
+      "en": "Where is the airport?",
+      "es": "¿Dónde está el aeropuerto?",
+      "words": [
+        {
+          "palavra": "飞机场",
+          "pt": "aeroporto",
+          "dificil": true
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "哪儿",
+          "pt": "onde",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:perguntas",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-1015",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "A próxima parada é o metrô.",
+      "en": "The next stop is the subway.",
+      "es": "La próxima parada es el metro.",
+      "words": [
+        {
+          "palavra": "下一站",
+          "pt": "próxima parada",
+          "dificil": true
+        },
+        {
+          "palavra": "是",
+          "pt": "ser"
+        },
+        {
+          "palavra": "地铁站",
+          "pt": "estação de metrô",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-1016",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Comemos no restaurante.",
+      "en": "We eat at the restaurant.",
+      "es": "Comemos en el restaurante.",
+      "words": [
+        {
+          "palavra": "我们",
+          "pt": "nós"
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "餐厅",
+          "pt": "restaurante",
+          "dificil": true
+        },
+        {
+          "palavra": "吃饭",
+          "pt": "comer",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:comida-bebida",
+        "tema:lugares"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    },
+    {
+      "id": "pg-1018",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "A loja fica a leste.",
+      "en": "The shop is on the east side.",
+      "es": "La tienda está al este.",
+      "words": [
+        {
+          "palavra": "商店",
+          "pt": "loja"
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "东边",
+          "pt": "lado leste",
+          "dificil": true
+        }
+      ],
+      "tags": [
+        "tema:compras",
+        "tema:lugares",
+        "tema:transporte-direcoes"
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ]
+    }
+  ]
+}

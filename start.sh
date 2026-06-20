@@ -237,8 +237,14 @@ if [[ "$MODE" == "dev" ]]; then
     echo "  Para seguir só uma URL ao codar: para esse processo (Ctrl+C) e usa só esta janela (hot reload)." >&2
     echo "" >&2
   fi
+  load_env
+  if [[ -z "${AUTH_SECRET:-}${NEXTAUTH_SECRET:-}" && "${NEXT_PUBLIC_AUTH_ENABLED:-}" != "1" ]]; then
+    export NEXT_PUBLIC_AUTH_ENABLED=0
+    echo "→ Auth off (no AUTH_SECRET) — phrase game as guest. See docs/09_google_auth_jogo.md"
+  fi
   echo "→ Hot dev (Turbopack) · http://127.0.0.1:${DEV_PORT}/aulaChines/"
   echo "  Tutor: http://127.0.0.1:${DEV_PORT}/aulaChines/tutor  (precisa web/.env.local)"
+  echo "  Login Google: npm run dev:auth  (com credenciais em web/.env.local)"
   echo "  Igual: cd web && npm run dev"
   echo "  Modo prod local (outra porta, sem hot): $0 --local  — ver docs/04_operacao_local.md"
   echo "  Ctrl+C para parar."

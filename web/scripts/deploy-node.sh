@@ -9,7 +9,7 @@ set -euo pipefail
 # Arranque: source server.env + PORT; start-server-stripped.mjs usa HOSTNAME (default 127.0.0.1) e PORT.
 #
 # Variáveis:
-#   DEPLOY_NODE_HOST   (default: DEPLOY_WEBPLACE_HOST ou itcsVM)
+#   DEPLOY_NODE_HOST   (default: DEPLOY_WEBPLACE_HOST ou itcsVM1)
 #   DEPLOY_NODE_DIR    (default: /home/opc/projetos/chineseLearning-app)
 #   DEPLOY_NODE_PORT   (default: 34827) — mesmo valor no proxy_pass nginx
 #   DEPLOY_NODE_RESTART_CMD — se definido, corre por SSH após o build (substitui o reload default).
@@ -17,7 +17,7 @@ set -euo pipefail
 #   DEPLOY_NODE_SKIP_CI=1 — não corre npm ci no remoto (só build:server). Use quando só mudaste
 #     conteúdo/código e package-lock.json não mudou — mais rápido. Se o build falhar por deps, repete sem isto.
 
-REMOTE="${DEPLOY_NODE_HOST:-${DEPLOY_WEBPLACE_HOST:-itcsVM}}"
+REMOTE="${DEPLOY_NODE_HOST:-${DEPLOY_WEBPLACE_HOST:-itcsVM1}}"
 REMOTE_DIR="${DEPLOY_NODE_DIR:-/home/opc/projetos/chineseLearning-app}"
 PORT="${DEPLOY_NODE_PORT:-34827}"
 

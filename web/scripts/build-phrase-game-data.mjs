@@ -2,14 +2,16 @@
 /**
  * Build + validate the phrase-game data.
  *
- * Reads the hand-authored curated bank (FRASES_GAME/curated/phrases.json), enriches
+ * Reads the hand-authored curated bank:
+ *   FRASES_GAME/curated/phrases.json (core)
+ *   FRASES_GAME/curated/expansion-*.json (hand-reviewed batches)
  * per-character pinyin via pinyin-pro, validates the canonical schema (max 2
  * distractors, tier consistency, no trivial distractor collisions), and emits the
  * runtime artifact web/src/data/phrase-game/phrases.json.
  *
  * Run from web/: `node scripts/build-phrase-game-data.mjs` (wired into prebuild/predev).
  */
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { pinyin } from "pinyin-pro";
@@ -18,7 +20,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const WEB_ROOT = join(__dirname, "..");
 const REPO_ROOT = join(WEB_ROOT, "..");
 
-const SRC = join(REPO_ROOT, "FRASES_GAME", "curated", "phrases.json");
+const CURATED_DIR = join(REPO_ROOT, "FRASES_GAME", "curated");
+const SRC = join(CURATED_DIR, "phrases.json");
 const VOCAB = join(REPO_ROOT, "vocabulario", "vocab-basico.json");
 const OUT_DIR = join(WEB_ROOT, "src", "data", "phrase-game");
 const OUT = join(OUT_DIR, "phrases.json");
@@ -127,13 +130,23 @@ function buildPhrase(raw, vocab) {
   };
 }
 
+function loadCuratedPhrases() {
+  const rawList = [];
+  rawList.push(...(JSON.parse(readFileSync(SRC, "utf8")).phrases ?? []));
+  for (const name of readdirSync(CURATED_DIR).sort()) {
+    if (!name.startsWith("expansion-") || !name.endsWith(".json")) continue;
+    const batch = JSON.parse(readFileSync(join(CURATED_DIR, name), "utf8"));
+    rawList.push(...(batch.phrases ?? []));
+  }
+  return rawList;
+}
+
 function main() {
-  const src = JSON.parse(readFileSync(SRC, "utf8"));
   const vocab = loadVocab();
   const phrases = [];
   const ids = new Set();
 
-  for (const raw of src.phrases ?? []) {
+  for (const raw of loadCuratedPhrases()) {
     if (raw.id && ids.has(raw.id)) errors.push(`duplicate id: ${raw.id}`);
     if (raw.id) ids.add(raw.id);
     const built = buildPhrase(raw, vocab);

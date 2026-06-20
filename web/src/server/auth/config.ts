@@ -1,10 +1,13 @@
 /** Auth.js v5 base config (no DB imports — safe to share). */
 import type { NextAuthConfig } from "next-auth";
 import Google from "next-auth/providers/google";
+import { getAuthBasePath } from "./base-path";
 
 const THIRTY_DAYS = 30 * 24 * 60 * 60;
 
 export const authConfig = {
+  /** Must match public URL (`/aulaChines/api/auth`), not NEXTAUTH_URL pathname alone. */
+  basePath: getAuthBasePath(),
   providers: [
     Google({
       clientId: process.env.GOOGLE_CLIENT_ID ?? process.env.AUTH_GOOGLE_ID,

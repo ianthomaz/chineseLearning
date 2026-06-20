@@ -46,8 +46,7 @@ web/
 
 ## Editing / building the bank
 
-1. Edit `FRASES_GAME/curated/phrases.json` (real, grammatical sentences; **max 2 distractors**;
-   distractors must not reorder into another valid sentence).
+1. Edit `FRASES_GAME/curated/phrases.json` (core) and/or `expansion-*.json` batches (hand-reviewed; merged at build time).
 2. Rebuild + validate:
    ```bash
    cd web
