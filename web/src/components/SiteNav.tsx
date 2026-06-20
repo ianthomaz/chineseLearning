@@ -12,6 +12,7 @@ const NAV_TABS = [
   { href: "/grammar", key: "grammar" as const },
   { href: "/dialogues", key: "dialogues" as const },
   { href: "/gamification", key: "gamification" as const },
+  { href: "/phrase-game", key: "phraseGame" as const },
   { href: "/tutor", key: "tutor" as const },
 ] as const;
 

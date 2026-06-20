@@ -15,6 +15,7 @@ type NavGridCard = {
     | "dialogues"
     | "writing"
     | "gamification"
+    | "phraseGame"
     | "tutor";
   hanzi: string;
   color: string;
@@ -70,6 +71,13 @@ const homeGridCards: ReadonlyArray<NavGridCard> = [
     hanzi: "测",
     color: "#0d9488",
     descKey: "home.modeQuizDesc",
+  },
+  {
+    href: "/phrase-game",
+    modeKey: "phraseGame",
+    hanzi: "拼",
+    color: "#7c3aed",
+    descKey: "home.modePhraseGameDesc",
   },
   {
     href: "/tutor",
