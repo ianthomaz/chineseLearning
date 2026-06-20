@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocale } from "@/context/LocaleContext";
 import { trackEvent } from "@/lib/analytics";
 import { ALL_PHRASES } from "@/lib/phrase-game/phrases";
@@ -49,11 +49,17 @@ export function PhraseGame() {
     if (index < round.items.length - 1) {
       setIndex((i) => i + 1);
     } else {
-      const correct = results.filter((r) => r === "correct").length;
-      trackEvent({ action: "round_complete", category: "phrase_game", value: correct });
       setPhase("complete");
     }
   }
+
+  // Report the round score once results are final — reading them here (rather
+  // than inside the click handler) avoids counting a stale results array.
+  useEffect(() => {
+    if (phase !== "complete") return;
+    const correct = results.filter((r) => r === "correct").length;
+    trackEvent({ action: "round_complete", category: "phrase_game", value: correct });
+  }, [phase, results]);
 
   // Tier change resets an invalid level (Iniciante caps to 1-2).
   function handleTierChange(next: GameTier) {

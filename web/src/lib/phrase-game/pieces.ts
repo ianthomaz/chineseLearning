@@ -5,6 +5,7 @@
  * phrase by the caller and stored in state — never re-derived on every render.
  */
 
+import { shuffle } from "./random";
 import type { GameLevel, Phrase, Piece, Token } from "./types";
 
 let pieceSeq = 0;
@@ -12,15 +13,6 @@ let pieceSeq = 0;
 function nextPieceId(prefix: string): string {
   pieceSeq += 1;
   return `${prefix}-${pieceSeq}`;
-}
-
-function shuffle<T>(input: readonly T[]): T[] {
-  const arr = [...input];
-  for (let i = arr.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
 }
 
 /** Whether a level splits multi-char words into individual hanzi. */

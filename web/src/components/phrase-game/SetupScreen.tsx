@@ -42,6 +42,12 @@ export function SetupScreen({
     onSettingsChange({ ...settings, ...patch });
   }
 
+  // Any visual hint (pinyin / translation) is mutually exclusive with
+  // "hanzi only", so the label can never contradict what is actually shown.
+  function setHint(patch: Partial<DisplaySettings>, enabled: boolean) {
+    setDisplay(enabled ? { ...patch, hanziOnly: false } : patch);
+  }
+
   return (
     <div className="space-y-8">
       {/* Language tier */}
@@ -124,7 +130,16 @@ export function SetupScreen({
             label={t("phraseGame.extra.hanziOnly")}
             checked={settings.hanziOnly}
             onChange={(v) =>
-              setDisplay({ hanziOnly: v, ...(v ? { hanziPlusPinyin: false } : {}) })
+              setDisplay(
+                v
+                  ? {
+                      hanziOnly: true,
+                      hanziPlusPinyin: false,
+                      pinyinDifficult: false,
+                      translationDifficult: false,
+                    }
+                  : { hanziOnly: false },
+              )
             }
           />
           <Checkbox
@@ -135,19 +150,17 @@ export function SetupScreen({
           <Checkbox
             label={t("phraseGame.extra.pinyinDifficult")}
             checked={settings.pinyinDifficult}
-            onChange={(v) => setDisplay({ pinyinDifficult: v })}
+            onChange={(v) => setHint({ pinyinDifficult: v }, v)}
           />
           <Checkbox
             label={t("phraseGame.extra.hanziPinyin")}
             checked={settings.hanziPlusPinyin}
-            onChange={(v) =>
-              setDisplay({ hanziPlusPinyin: v, ...(v ? { hanziOnly: false } : {}) })
-            }
+            onChange={(v) => setHint({ hanziPlusPinyin: v }, v)}
           />
           <Checkbox
             label={t("phraseGame.extra.translationDifficult")}
             checked={settings.translationDifficult}
-            onChange={(v) => setDisplay({ translationDifficult: v })}
+            onChange={(v) => setHint({ translationDifficult: v }, v)}
           />
         </div>
       </fieldset>

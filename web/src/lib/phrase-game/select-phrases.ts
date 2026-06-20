@@ -3,6 +3,7 @@
  * and decide each one's distractor budget per the level rules (global max 2).
  */
 
+import { shuffle } from "./random";
 import {
   type DisplaySettings,
   type GameLevel,
@@ -32,13 +33,14 @@ function levelBand(phrases: Phrase[], level: GameLevel): Phrase[] {
 function sample<T>(pool: T[], n: number): { items: T[]; usedReplacement: boolean } {
   if (pool.length === 0) return { items: [], usedReplacement: false };
   if (pool.length >= n) {
-    // Sample without replacement.
-    const shuffled = [...pool].sort(() => Math.random() - 0.5);
-    return { items: shuffled.slice(0, n), usedReplacement: false };
+    // Enough unique phrases: sample without replacement.
+    return { items: shuffle(pool).slice(0, n), usedReplacement: false };
   }
-  // Pool too small — sample with replacement and warn (dev only).
-  const items: T[] = [];
-  for (let i = 0; i < n; i += 1) {
+  // Pool smaller than a full round: show every phrase once (shuffled), then top
+  // up with random repeats so the round still has n items while keeping
+  // duplicates to the strict minimum.
+  const items = shuffle(pool);
+  while (items.length < n) {
     items.push(pool[Math.floor(Math.random() * pool.length)]);
   }
   return { items, usedReplacement: true };
@@ -67,26 +69,32 @@ export type Round = {
  * Build a full round of {@link ROUND_SIZE} phrases for the given configuration.
  */
 export function buildRound(phrases: Phrase[], config: RoundConfig): Round {
-  const pool = levelBand(tierFilter(phrases, config.tier), config.level);
+  // Defensive: the Iniciante tier only exposes levels 1-2 in the UI; clamp here
+  // too so a stray config can never select an out-of-range band.
+  const level: GameLevel =
+    config.tier === "iniciante" && config.level > 2 ? 2 : config.level;
+
+  const pool = levelBand(tierFilter(phrases, config.tier), level);
   const { items: sampled, usedReplacement } = sample(pool, ROUND_SIZE);
 
   if (usedReplacement && process.env.NODE_ENV !== "production") {
     console.warn(
-      `[phrase-game] pool for tier=${config.tier} level=${config.level} has only ` +
+      `[phrase-game] pool for tier=${config.tier} level=${level} has only ` +
         `${pool.length} phrase(s); sampling ${ROUND_SIZE} with replacement.`,
     );
   }
 
   // Level 4: exactly ~3 of the 10 phrases receive one extra distractor.
   const level4ExtraIdx = new Set<number>();
-  if (config.level === 4) {
-    const indices = sampled.map((_, i) => i).sort(() => Math.random() - 0.5);
-    indices.slice(0, Math.min(3, sampled.length)).forEach((i) => level4ExtraIdx.add(i));
+  if (level === 4) {
+    shuffle(sampled.map((_, i) => i))
+      .slice(0, Math.min(3, sampled.length))
+      .forEach((i) => level4ExtraIdx.add(i));
   }
 
   const items: RoundItem[] = sampled.map((phrase, i) => ({
     phrase,
-    distractorCount: distractorBudget(config.level, config.settings, level4ExtraIdx.has(i)),
+    distractorCount: distractorBudget(level, config.settings, level4ExtraIdx.has(i)),
   }));
 
   return { items, usedReplacement };
