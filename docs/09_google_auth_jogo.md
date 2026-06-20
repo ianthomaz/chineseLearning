@@ -42,9 +42,10 @@ One Tap envia o `credential` (JWT) para o provider Auth.js `google-onetap` (`Cre
 
 **Origins JavaScript** no GCP têm de incluir o host exacto (`127.0.0.1:34827`, não `localhost`, se usares 127.0.0.1 no browser).
 
----
-
----
+**FedCM / consola em dev:** o popup One Tap usa FedCM no Chrome; em localhost + hot reload
+pode aparecer `[GSI_LOGGER]: FedCM … AbortError` (inofensivo). `GoogleOneTap.tsx` desactiva
+FedCM em `127.0.0.1` / `localhost` por defeito. Forçar: `NEXT_PUBLIC_GSI_USE_FEDCM=1` ou `=0`.
+Fallback fiável: botão **Outra conta** (OAuth redirect).
 
 ## Contrato de URIs (ChineseSite no GCP)
 
@@ -142,7 +143,7 @@ Template: `local/credentials/credentials.example.json`.
 2. Login Google recomendado — sessão JWT 30 dias.
 3. Fase 2: `GET/POST /aulaChines/api/game/progress`, histórico server-side por `userId`.
 
-Ver [08_plano_jogo_frases.md](08_plano_jogo_frases.md).
+Ver [08_plano_jogo_frases.md](08_plano_jogo_frases.md) (estado actual) e [phrase-game-upgrades.md](phrase-game-upgrades.md).
 
 ---
 

@@ -1,8 +1,6 @@
 "use client";
 
 import { useLocale } from "@/context/LocaleContext";
-import { ALL_PHRASES } from "@/lib/phrase-game/phrases";
-import { phrasePoolSize, tierPhraseTotal } from "@/lib/phrase-game/select-phrases";
 import type {
   DisplaySettings,
   GameLevel,
@@ -10,7 +8,8 @@ import type {
 } from "@/lib/phrase-game/types";
 import {
   nativePromptDisabled,
-  pieceHintsDisabled,
+  pinyinHintsDisabled,
+  translationDifficultDisabled,
 } from "@/lib/phrase-game/settings-by-level";
 
 type Props = {
@@ -59,9 +58,9 @@ export function SetupScreen({
     return { ...s, hanziOnly: !anyPieceHint };
   }
 
-  const pieceHintsOff = pieceHintsDisabled(level);
+  const pinyinHintsOff = pinyinHintsDisabled(level);
+  const translationHintOff = translationDifficultDisabled(level);
   const nativePromptOff = nativePromptDisabled(level);
-  const basico = tier === "basico";
 
   return (
     <div className="space-y-8">
@@ -71,10 +70,6 @@ export function SetupScreen({
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
           {TIERS.map(({ id, enabled }) => {
             const active = tier === id;
-            const tierCount =
-              enabled && (id === "iniciante" || id === "basico")
-                ? tierPhraseTotal(ALL_PHRASES, id)
-                : null;
             return (
               <button
                 key={id}
@@ -90,13 +85,6 @@ export function SetupScreen({
                 }}
               >
                 {t(`phraseGame.tier.${id}`)}
-                {tierCount !== null ? (
-                  <span
-                    className={`mt-1 block text-[0.65rem] ${active ? "text-white/85" : "text-ink/45"}`}
-                  >
-                    {t("phraseGame.tierPhraseCount", { count: tierCount })}
-                  </span>
-                ) : null}
                 {!enabled ? (
                   <span className="mt-1 block text-[0.6rem] uppercase tracking-wide text-ink/40">
                     {t("phraseGame.soonBadge")}
@@ -106,28 +94,22 @@ export function SetupScreen({
             );
           })}
         </div>
-        {basico ? (
-          <p className="mt-2 text-xs text-ink/55">{t("phraseGame.basicoFullAccess")}</p>
-        ) : null}
       </fieldset>
 
       {/* Game level */}
       <fieldset>
         <legend className="mb-3 text-sm font-semibold text-ink">{t("phraseGame.levelLabel")}</legend>
         <div className="space-y-2">
-          {LEVELS.map((lv) => {
-            const disabled = iniciante && lv > 2;
+          {LEVELS.filter((lv) => !iniciante || lv <= 2).map((lv) => {
             const active = level === lv;
-            const poolSize = disabled ? null : phrasePoolSize(ALL_PHRASES, tier, lv);
             return (
               <button
                 key={lv}
                 type="button"
-                disabled={disabled}
-                onClick={() => !disabled && onLevelChange(lv)}
+                onClick={() => onLevelChange(lv)}
                 className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 text-left transition-colors ${
                   active ? "" : "hover:bg-ink/5"
-                } ${disabled ? "cursor-not-allowed opacity-40" : ""}`}
+                }`}
                 style={{
                   borderColor: active ? "var(--accent)" : "var(--border)",
                   backgroundColor: active ? "rgba(45,90,140,0.06)" : "transparent",
@@ -142,21 +124,11 @@ export function SetupScreen({
                 >
                   {lv}
                 </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block text-sm text-ink/80">{t(`phraseGame.level.${lv}`)}</span>
-                  {poolSize !== null ? (
-                    <span className="block text-xs text-ink/45">
-                      {t("phraseGame.levelPoolCount", { count: poolSize })}
-                    </span>
-                  ) : null}
-                </span>
+                <span className="text-sm text-ink/80">{t(`phraseGame.level.${lv}`)}</span>
               </button>
             );
           })}
         </div>
-        {iniciante ? (
-          <p className="mt-2 text-xs text-ink/45">{t("phraseGame.inicianteCap")}</p>
-        ) : null}
       </fieldset>
 
       {/* Difficulty extras */}
@@ -166,19 +138,19 @@ export function SetupScreen({
           <Checkbox
             label={t("phraseGame.extra.pinyinDifficult")}
             checked={settings.pinyinDifficult}
-            disabled={pieceHintsOff}
+            disabled={pinyinHintsOff}
             onChange={(v) => setHint("pinyinDifficult", v)}
           />
           <Checkbox
             label={t("phraseGame.extra.hanziPinyin")}
             checked={settings.hanziPlusPinyin}
-            disabled={pieceHintsOff}
+            disabled={pinyinHintsOff}
             onChange={(v) => setHint("hanziPlusPinyin", v)}
           />
           <Checkbox
             label={t("phraseGame.extra.translationDifficult")}
             checked={settings.translationDifficult}
-            disabled={pieceHintsOff}
+            disabled={translationHintOff}
             onChange={(v) => setHint("translationDifficult", v)}
           />
           <Checkbox

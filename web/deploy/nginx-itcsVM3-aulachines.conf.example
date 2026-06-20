@@ -1,0 +1,49 @@
+# itcsVM3 — vhost partilhado (nginx no host, sem Docker).
+# Copiar para /etc/nginx/conf.d/ no servidor quando SSH estiver OK.
+# Não substitui o default_server — acrescenta server_name próprio.
+#
+# Pré-requisitos:
+#   - Node escuta 127.0.0.1:34827 (server.env: HOSTNAME=127.0.0.1 PORT=34827)
+#   - PM2: chinese-learning-app (scripts/pm2-start.sh)
+#   - TLS: certbot ou Cloudflare proxied (decidir antes — ver docs/06_deploy.md)
+#
+# Depois: sudo nginx -t && sudo systemctl reload nginx
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name aulaChines.webplace.cc;
+
+    location /aulaChines/ {
+        proxy_pass http://127.0.0.1:34827;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+    }
+}
+
+# HTTPS (descomentar após certbot ou cert em /etc/letsencrypt/live/aulaChines.webplace.cc/)
+#
+# server {
+#     listen 443 ssl http2;
+#     listen [::]:443 ssl http2;
+#     server_name aulaChines.webplace.cc;
+#
+#     ssl_certificate     /etc/letsencrypt/live/aulaChines.webplace.cc/fullchain.pem;
+#     ssl_certificate_key /etc/letsencrypt/live/aulaChines.webplace.cc/privkey.pem;
+#
+#     location /aulaChines/ {
+#         proxy_pass http://127.0.0.1:34827;
+#         proxy_http_version 1.1;
+#         proxy_set_header Host $host;
+#         proxy_set_header X-Real-IP $remote_addr;
+#         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#         proxy_set_header X-Forwarded-Proto $scheme;
+#         proxy_set_header Upgrade $http_upgrade;
+#         proxy_set_header Connection "upgrade";
+#     }
+# }

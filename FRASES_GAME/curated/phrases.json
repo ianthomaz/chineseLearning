@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "curated-by-hand",
-  "note": "Authoring format: per-character pinyin and the canonical schema are filled by scripts/build-phrase-game-data.mjs. Each word = { palavra, pt, dificil? }. Distractors = hanzi strings (max 2). tier: hsk1 | basico. Additional hand-reviewed batches: expansion-*.json (dialogos, PDF Básico II, Review May 2026, etc.).",
+  "note": "Authoring format: per-character pinyin filled by build-phrase-game-data.mjs. words[] = { palavra, pt, dificil? }. distractors max 2. tier: hsk1 | basico. Merged with expansion-*.json at build.",
   "phrases": [
     {
       "id": "pg-001",

@@ -310,9 +310,6 @@
       "avancado": "Avançado"
     },
     "soonBadge": "Em breve",
-    "tierPhraseCount": "{count} frases",
-    "basicoFullAccess": "Básico inclui todo o banco — HSK1 e vocabulário ampliado — com níveis 1 a 5.",
-    "levelPoolCount": "Pool: {count} frases",
     "levelLabel": "Dificuldade",
     "inicianteCap": "No nível Iniciante, só os níveis 1 e 2 estão disponíveis.",
     "level": {

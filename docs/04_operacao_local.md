@@ -43,7 +43,7 @@ Guardas o ficheiro → recarregas o browser → vês a alteração. `Ctrl+C` no 
 
 Rotas relativas ao site (sem repetir o prefixo no browser): **`/randomhanzi`**, **`/randomhanzi?autostart=1`**, tutor **`/tutor`**. O Next já serve sob **`/aulaChines`**; se estiveres em `…/aulaChines/` e colares **`aulaChines/randomhanzi`**, o URL fica errado (`…/aulaChines/aulaChines/…`) — usa só o segmento extra ou o URL completo abaixo.
 
-URLs completos de exemplo (copiar à vontade): `http://127.0.0.1:34827/aulaChines/randomhanzi?autostart=1` · `http://127.0.0.1:34827/aulaChines/tutor`
+URLs completos de exemplo (copiar à vontade): `http://127.0.0.1:34827/aulaChines/randomhanzi?autostart=1` · `http://127.0.0.1:34827/aulaChines/tutor` · `http://127.0.0.1:34827/aulaChines/phrase-game`
 
 Preferir **`127.0.0.1`** em vez de `localhost` se o browser resolver `localhost` para IPv6 (`::1`) e o servidor estiver só em IPv4.
 

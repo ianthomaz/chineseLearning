@@ -115,11 +115,11 @@ function main() {
   ].join("\n");
 
   const serverEnvContent = [
-    "# Gerado por scripts/sync-env-from-credentials.mjs — produção (itcsVM / deploy:node)",
+    "# Gerado por scripts/sync-env-from-credentials.mjs — produção (./start.sh --prod)",
     "# gitignored — ver deploy/server.env.example",
     "",
-    "# --- Process / nginx",
-    `HOSTNAME=${dep.server_hostname ?? "0.0.0.0"}`,
+    "# --- Process / nginx (127.0.0.1 = nginx no mesmo host; 0.0.0.0 = proxy Docker → bridge)",
+    `HOSTNAME=${dep.server_hostname ?? "127.0.0.1"}`,
     `PORT=${dep.production_node_port ?? 34827}`,
     "",
     "# --- LLM (alcançável a partir do servidor)",

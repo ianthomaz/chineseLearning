@@ -19,6 +19,8 @@
     "preview:webplace": "bash scripts/preview-webplace-local.sh",
     "deploy:webplace": "bash scripts/deploy-webplace.sh",
     "deploy:node": "bash scripts/deploy-node.sh",
+    "deploy:prod": "bash scripts/deploy-prod.sh",
+    "deploy:prod:restart": "env DEPLOY_PROD_RESTART=1 bash scripts/deploy-prod.sh",
     "deploy:node:lite": "env DEPLOY_NODE_SKIP_CI=1 bash scripts/deploy-node.sh",
     "remote:handshake": "bash scripts/remote-prod-handshake.sh",
     "deploy:local": "bash -c 'export DEPLOY_LOCAL_DIR=\"${DEPLOY_LOCAL_DIR:-/tmp/chineseLearning-webplace-out}\"; bash scripts/deploy-webplace.sh'",

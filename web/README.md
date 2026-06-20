@@ -54,27 +54,43 @@ Só páginas; **tutor não funciona**.
 - `npm run deploy:local:live` — Node local com API; ver **04**.
 - `deploy/server.env` + `DEPLOY_PUSH_SERVER_ENV=1` — envia `server.env` junto (documentação / ingest noutra máquina).
 
-### B) Node (`next start`) — site + tutor
+### B) Node (`next start`) — site + tutor — **itcsVM1 (legado)**
 
-1. `cp deploy/server.env.example deploy/server.env` e preenche `LLM_*` (e opcionalmente `PORT`, `HOSTNAME=127.0.0.1` — ver comentários no example).
-2. Localmente, antes de enviar: **`../../start.sh --prepare`** na raiz do repo (opcional **`--ingest`**) para confirmar env + build sem arrancar nada.
-3. `npm run deploy:node` — rsync do código, `scp server.env`, no remoto `npm ci` + `npm run build:server`.
-   - **`npm run deploy:node:lite`** — igual, mas **sem** `npm ci` no remoto (só `build:server`). Mais rápido quando só mudaste conteúdo/código e **`package-lock.json`** não mudou. Se o build falhar com *module not found*, volta a correr o deploy normal (há deps novas no lockfile).
-4. No servidor, processo permanente, por exemplo:
+Build no remoto — **não usar em itcsVM3** (VM pequena).
 
-   ```bash
-   cd …/chineseLearning-app && set -a && source ./server.env && set +a && NODE_ENV=production PORT=34827 npm run start:server
-   ```
+1. `cp deploy/server.env.example deploy/server.env` e preenche `LLM_*`.
+2. **`../../start.sh --prepare`** na raiz (opcional **`--ingest`**).
+3. `npm run deploy:node` — rsync, `scp server.env`, remoto `npm ci` + `build:server`.
+4. PM2 / nginx — ver abaixo.
 
-   Com **PM2** (carrega `server.env` via `scripts/pm2-start.sh`):
+### C) Node — **itcsVM3** (produção nova, VM E2.Micro)
+
+Build **sempre no Mac**; remoto só recebe artefactos.
+
+| Passo | Comando | O que faz |
+|-------|---------|-----------|
+| 1 | `node scripts/sync-env-from-credentials.mjs` | `credentials.json` → `deploy/server.env` |
+| 2 | `./start.sh --prod` | valida env + LLM + `build:server` local |
+| 3 | `./start.sh --prod --upload` | rsync + `server.env` + `npm ci --omit=dev` no remoto |
+| 4 | `npm run remote:handshake` | health LLM **desde a VM** |
+
+Alternativa passo 3: `npm run deploy:prod` (requer passos 1–2 feitos). PM2 reload: `DEPLOY_PROD_RESTART=1 npm run deploy:prod`.
+
+**Env:** `local/credentials/credentials.json` → `deployment.prod_ssh_host` (`itcsVM3`), `prod_remote_dir`, `server_hostname` (`127.0.0.1`).
+
+**Nginx (host partilhado, sem monopolizar :80):** template `deploy/nginx-itcsVM3-aulachines.conf.example` — vhost `aulaChines.webplace.cc` → `127.0.0.1:34827`.
+
+**itcsVM1 legado:** secção B + `deploy:node`. Detalhes: [`../docs/06_deploy.md`](../docs/06_deploy.md).
+
+### PM2 + nginx (comum)
+
+1. No servidor:
 
    ```bash
    cd …/chineseLearning-app && pm2 start scripts/pm2-start.sh --name chinese-learning-app && pm2 save
    ```
 
-   Após reboot do SO: `pm2 startup` (uma vez, como o utilizador que corre o PM2) e garantir `pm2 save` com a lista atual.
-
-5. **Nginx** — proxy para o Node (mantém o prefixo `/aulaChines`):
+2. **Nginx** — proxy (prefixo `/aulaChines`):
 
    ```nginx
    location /aulaChines/ {
@@ -86,9 +102,9 @@ Só páginas; **tutor não funciona**.
    }
    ```
 
-   Ajusta `34827` a `DEPLOY_NODE_PORT` / `PORT` se mudares.
+   Ajusta `34827` a `PORT` em `server.env`.
 
-Overrides: comentários em `scripts/deploy-webplace.sh` e `scripts/deploy-node.sh`.
+Overrides: `scripts/deploy-prod.sh`, `scripts/deploy-node.sh` (legado).
 
 ---
 

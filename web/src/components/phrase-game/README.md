@@ -2,89 +2,81 @@
 
 Drag-and-drop sentence builder at route **`/phrase-game`** (served as `/aulaChines/phrase-game`).
 Players assemble a Chinese sentence from word/character pieces using
-[`@dnd-kit`](https://dndkit.com/) (pointer drag + keyboard nudge). Guest play is fully static;
-optional Google sign-in (server mode) remembers a nickname.
+[`@dnd-kit`](https://dndkit.com/) (pointer drag + keyboard nudge). Guest play works on static export;
+Google sign-in (server mode) + optional nick.
+
+**Docs:** [docs/08_plano_jogo_frases.md](../../../../docs/08_plano_jogo_frases.md) (estado) ·
+[docs/phrase-game-upgrades.md](../../../../docs/phrase-game-upgrades.md) (backlog) ·
+[docs/phrase-game-scoring.md](../../../../docs/phrase-game-scoring.md) (pontuação)
 
 ## Layout
 
 ```
 FRASES_GAME/
   schema.json                 canonical dataset schema (v2)
-  curated/phrases.json        hand-authored source bank (edit this)
+  curated/
+    phrases.json              core hand-authored phrases
+    expansion-01 … 07.json      themed batches (merged at build)
 web/
   scripts/build-phrase-game-data.mjs   validator + build (curated → runtime artifact)
-  src/data/phrase-game/phrases.json    GENERATED runtime artifact (do not hand-edit)
-  src/lib/phrase-game/        pure game logic (no React, strict TS, no `any`)
-    types.ts        core types (Phrase, Token, Piece, GameLevel, DisplaySettings, ROUND_SIZE)
-    phrases.ts      typed loader for the generated JSON
-    select-phrases.ts  build a 10-phrase round (tier + token-count band, distractor budget)
-    pieces.ts       derive draggable pieces per level (whole-word L1–3, split L4, full L5)
-    validate.ts     compare the answer strip to the canonical hanzi / respostasAceitas
-    display.ts      pinyin/gloss reveal + locale-aware prompt
-    scoring.ts      planned score (see docs/phrase-game-scoring.md — no UI yet)
-  src/components/phrase-game/ React UI (client)
-    PhraseGame.tsx       state machine: setup → playing → roundComplete
-    SetupScreen.tsx      tier / level / difficulty-extras pickers
-    GameplayScreen.tsx   board + submit/next + in-phrase help
-    Board.tsx            @dnd-kit board (bank ↔ answer, mid-strip reorder, keyboard ◀▶)
-    PieceCard.tsx        presentational piece (hanzi + optional pinyin/gloss)
-    ProgressDots.tsx     2×5 round progress
-    AuthPanel.tsx        Google sign-in + nick editor (degrades to guest on static)
-    PhraseGameSession.tsx  next-auth SessionProvider, scoped to this route only
-  src/server/            server-only (never bundled into the static export)
-    auth/                Auth.js v5 instance + Google provider config
-    db/                  node:sqlite players/progress layer (DB at web/data/, gitignored)
+  src/data/phrase-game/phrases.json    GENERATED (596 phrases — do not hand-edit)
+  src/lib/phrase-game/
+    types.ts              Phrase, Token, GameLevel, DisplaySettings, ROUND_SIZE
+    phrases.ts            loader for generated JSON
+    select-phrases.ts     tier filter + weighted length mix + distractor budget
+    settings-by-level.ts  hint toggles clamped by game level
+    pieces.ts             draggable pieces (whole-word L1–3, split L4, full L5)
+    validate.ts           answer strip vs hanzi / respostasAceitas
+    display.ts            pinyin/gloss reveal + localized prompt
+    scoring.ts            weighted score (no UI yet)
+  src/components/phrase-game/
+    PhraseGame.tsx        setup → playing → roundComplete (+ miss review)
+    SetupScreen.tsx       tier / level / extras
+    GameplayScreen.tsx    board + submit/next + in-phrase help
+    Board.tsx             @dnd-kit (bank ↔ answer, keyboard ◀▶)
+    GoogleOneTap.tsx      GIS One Tap + sign-in button
+    AuthPanel.tsx         guest / Google / nick
+    PhraseGameSession.tsx SessionProvider (route-scoped)
+  src/server/             server-only (not in static export)
+    auth/                 Auth.js v5 + google-onetap provider
+    db/                   SQLite players + progress stub
 ```
 
-### Format decision
+Legacy `FRASES_GAME/Nivel*` and `all-phrases.json` are **not** consumed by the build.
 
-- **Content → static JSON.** Read-only, matches the rest of the site, and keeps the game
-  playable under static export. Curated source is validated at prebuild and emitted to
-  `src/data/phrase-game/phrases.json`.
-- **Player data → SQLite** (`node:sqlite`, Node ≥ 22.5 — no native build), server mode only.
-  Content is never stored in SQL.
+## Game rules (code)
+
+| Config | Behaviour |
+|--------|-----------|
+| Tier Iniciante | `tier === hsk1` only; UI levels 1–2 |
+| Tier Básico | full bank; UI levels 1–5 |
+| Level 1 | sample: 100% short (≤3 tokens) |
+| Level 2 | 25% short / 75% medium (≤5 tokens); translation-on-difficult allowed |
+| Levels 3–5 | weighted mix (`ROUND_MIX_WEIGHTS`); short phrases can still appear |
+| Max distractors | 2 globally |
 
 ## Editing / building the bank
 
-1. Edit `FRASES_GAME/curated/phrases.json` (core) and/or `expansion-*.json` batches (hand-reviewed; merged at build time).
-2. Rebuild + validate:
+1. Edit `FRASES_GAME/curated/phrases.json` and/or `expansion-*.json`.
+2. Tags: use themes (`tema:cores`, `tema:lugares`, …), not source PDF names.
+3. Rebuild:
    ```bash
    cd web
-   npm run prebuild:phrase-game     # node scripts/build-phrase-game-data.mjs
+   npm run prebuild:phrase-game
    ```
-   The validator fills per-character pinyin (`pinyin-pro`), enforces the schema and the max-2
-   cap, cross-checks tiers against `vocabulario/vocab-basico.json`, and rejects trivial
-   distractor collisions. It is wired into `predev`, `prebuild` and `prebuild:pdf`, so a normal
-   `npm run dev` / `build:*` always regenerates the artifact. `WARN` lines (e.g. a compound
-   token not individually flagged HSK1) are non-fatal; `errors` abort the build.
+   Runs on `predev` / `prebuild` automatically. `WARN` = non-fatal; `errors` abort.
 
 ## Running locally
 
 | Mode | Command | Port | OAuth |
 |------|---------|-----:|-------|
-| Dev | `npm run dev` | 34827 | yes (with env) |
-| Local Node | `./start.sh --local` | 34902 | yes (with env) |
-| Static only | `npm run build:webplace` → `./start.sh --webplace` | 34901 | no (guest only) |
+| Dev | `./start.sh` or `npm run dev` | 34827 | yes (with env) |
+| Local Node | `./start.sh --local` | 34902 | yes |
+| Static | `./start.sh --webplace` | 34901 | no (guest) |
 
-### Google OAuth (server mode)
+OAuth setup: [docs/09_google_auth_jogo.md](../../../../docs/09_google_auth_jogo.md).
 
-Credentials live outside git (`local/credentials/credentials.json`). Generate the env files
-and merge them — see [`docs/09_google_auth_jogo.md`](../../../../docs/09_google_auth_jogo.md):
+## Static export
 
-```bash
-node scripts/sync-env-from-credentials.mjs                     # from repo root
-cat local/credentials/generated/web.auth.env.local >> web/.env.local
-cat local/credentials/generated/deploy.auth.env   >> web/deploy/server.env
-```
-
-`NEXTAUTH_URL` host+port must match the browser (`127.0.0.1` ≠ `localhost` for Google), and the
-matching redirect URI must be registered on the GCP **ChineseSite** client.
-
-## Static export note
-
-`build:webplace` runs with `NEXT_STATIC_EXPORT=1 NEXT_PUBLIC_AUTH_ENABLED=0`. There is no server,
-so the API routes must not exist. The auth/progress handlers are named **`route.server.ts`** and
-`next.config.ts` `pageExtensions` only treats `.server.ts` as a route in server mode — under
-static export those files are not routes (the routes simply vanish, so `output: 'export'` never
-sees a dynamic route handler). The UI then renders guest-only via `NEXT_PUBLIC_AUTH_ENABLED=0`.
-Both `npm run build:server` (auth live) and `npm run build:webplace` (guest static) must stay green.
+`build:webplace` sets `NEXT_PUBLIC_AUTH_ENABLED=0`. Auth routes use `route.server.ts` and are
+omitted from static export. Guest-only UI on webplace; server build keeps full auth.

@@ -10,6 +10,10 @@ set -euo pipefail
 #   ./start.sh --local              # deploy local Node (34902) + checks LLM
 #   ./start.sh --webplace           # estático (34901)
 #   ./start.sh --prepare            # valida web/deploy/server.env + health LLM + build:server (NÃO inicia servidor)
+#   ./start.sh --prod               # preparar: sync env + validar + build local (sem SSH)
+#   ./start.sh --prod --upload      # enviar ao itcsVM3 (quando TU pedires)
+#
+# Scripts prontos; o agente prepara — não executa upload/deploy sem ordem explícita.
 #   ./start.sh --local --ingest     # idem + fila de ingest RAG antes de subir o site
 #   ./start.sh --local --port=34903
 #   ./start.sh --local --skip-build # reutiliza .next (rápido; cuidado com código desatualizado)
@@ -37,10 +41,13 @@ LIVE_PORT=34902
 STATIC_PORT=34901
 DEV_PORT=34827
 SKIP_BUILD=0
+SKIP_ENV_SYNC=0
+PROD_UPLOAD=0
+PROD_RESTART=0
 DEPLOY_LOCAL_DIR="${DEPLOY_LOCAL_DIR:-/tmp/chineseLearning-webplace-out}"
 
 usage() {
-  echo "Uso: $0 [ --dev | --local | --webplace | --prepare ] [opções]"
+  echo "Uso: $0 [ --dev | --local | --webplace | --prepare | --prod ] [opções]"
   echo ""
   echo "  Portas fixas (só este site): dev=$DEV_PORT  node-local=$LIVE_PORT  estático=$STATIC_PORT"
   echo ""
@@ -50,15 +57,21 @@ usage() {
   echo "  --webplace       Só HTML estático (como nginx webplace). Porta $STATIC_PORT."
   echo "  --prepare        Produção: valida deploy/server.env, health LLM, npm run build:server."
   echo "                   Não inicia Node nem mata portas (deixa pronto para systemd/pm2 no servidor)."
-  echo "  --ingest         Só com --local ou --prepare: corre npm run ingest:rag (precisa token + jq)."
+  echo "  --prod           Preparar produção (itcsVM3): sync env, validar, build LOCAL."
+  echo "                   Não envia nada ao servidor (usa --upload só quando pedires)."
+  echo "  --upload         Com --prod: envia .next + server.env ao remoto (deploy-prod.sh)."
+  echo "  --ingest         Só com --local, --prepare ou --prod: corre npm run ingest:rag."
+  echo "  --skip-env-sync  Com --prod: não corre sync-env-from-credentials.mjs."
+  echo "  --restart        Com --prod --upload: pm2 reload após envio."
   echo "  --no-kill-port   Não mata processo na porta; erro se ocupada (recomendado em host partilhado)."
   echo "  --port=N         Porta para --local (default $LIVE_PORT)."
   echo "  --static-port=N  Porta para --webplace (default $STATIC_PORT)."
-  echo "  --skip-build     Com --local: não corre build:server (usa .next existente)."
+  echo "  --skip-build     Com --local ou --prod: não corre build:server (usa .next existente)."
   echo "  -h, --help       Esta ajuda."
   echo ""
+  echo "  Produção: DEPLOY_PROD_HOST=itcsVM3  DEPLOY_PROD_DIR=/home/opc/projetos/chineseLearning-app"
   echo "  START_NO_KILL_PORT=1       — define por ambiente o mesmo que --no-kill-port."
-  echo "  START_SKIP_EDU_SMOKE=1     — com --local: não corre POST /edu/chat no smoke."
+  echo "  START_SKIP_EDU_SMOKE=1     — com --local/--prepare/--prod: não corre POST /edu/chat no smoke."
   echo "  START_SKIP_LLM_CHECKS=1    — com --local: não exige .env.local/token nem health LLM (site sobe; tutor pode falhar)."
 }
 
@@ -68,7 +81,11 @@ while [[ $# -gt 0 ]]; do
     --local) MODE=local; shift ;;
     --webplace) MODE=webplace; shift ;;
     --prepare) MODE=prepare; shift ;;
+    --prod) MODE=prod; shift ;;
     --ingest) DO_INGEST=1; shift ;;
+    --skip-env-sync) SKIP_ENV_SYNC=1; shift ;;
+    --upload) PROD_UPLOAD=1; shift ;;
+    --restart) PROD_RESTART=1; shift ;;
     --no-kill-port) KILL_PORT=0; shift ;;
     --port=*) LIVE_PORT="${1#*=}"; shift ;;
     --static-port=*) STATIC_PORT="${1#*=}"; shift ;;
@@ -88,6 +105,16 @@ fi
 
 if [[ -z "$MODE" ]]; then
   MODE=dev
+fi
+
+if [[ "$PROD_UPLOAD" == "1" && "$MODE" != "prod" ]]; then
+  echo "ERRO: --upload só combina com --prod." >&2
+  exit 1
+fi
+
+if [[ "$PROD_RESTART" == "1" && "$PROD_UPLOAD" != "1" ]]; then
+  echo "ERRO: --restart só combina com --prod --upload." >&2
+  exit 1
 fi
 
 load_env() {
@@ -111,6 +138,58 @@ load_prod_env() {
   # shellcheck source=/dev/null
   source "$WEB_DIR/deploy/server.env"
   set +a
+}
+
+sync_prod_env() {
+  local cred="$REPO_ROOT/local/credentials/credentials.json"
+  if [[ "$SKIP_ENV_SYNC" == "1" ]]; then
+    echo "→ sync env omitido (--skip-env-sync)."
+    echo ""
+    return 0
+  fi
+  if [[ ! -f "$cred" ]]; then
+    echo "→ Sem $cred — usa web/deploy/server.env existente (ou copia server.env.example)." >&2
+    echo ""
+    return 0
+  fi
+  echo "→ sync env: credentials.json → web/deploy/server.env + web/.env.local…"
+  node "$REPO_ROOT/scripts/sync-env-from-credentials.mjs"
+  echo ""
+}
+
+validate_prod_env() {
+  local missing=()
+  [[ -n "${LLM_API_URL:-}" ]] || missing+=("LLM_API_URL")
+  [[ -n "${LLM_API_TOKEN:-}" ]] || missing+=("LLM_API_TOKEN")
+  [[ -n "${PORT:-}" ]] || missing+=("PORT")
+  [[ -n "${HOSTNAME:-}" ]] || missing+=("HOSTNAME")
+  [[ -n "${AUTH_SECRET:-}${NEXTAUTH_SECRET:-}" ]] || missing+=("AUTH_SECRET ou NEXTAUTH_SECRET")
+  [[ -n "${GOOGLE_CLIENT_ID:-}${AUTH_GOOGLE_ID:-}" ]] || missing+=("GOOGLE_CLIENT_ID")
+  [[ -n "${GOOGLE_CLIENT_SECRET:-}${AUTH_GOOGLE_SECRET:-}" ]] || missing+=("GOOGLE_CLIENT_SECRET")
+  [[ -n "${NEXTAUTH_URL:-}" ]] || missing+=("NEXTAUTH_URL")
+  if [[ ${#missing[@]} -gt 0 ]]; then
+    echo "web/deploy/server.env incompleto — falta: ${missing[*]}" >&2
+    echo "  Corre: node scripts/sync-env-from-credentials.mjs" >&2
+    exit 1
+  fi
+}
+
+apply_prod_deploy_defaults() {
+  local cred="$REPO_ROOT/local/credentials/credentials.json"
+  if [[ -f "$cred" ]] && command -v node >/dev/null 2>&1; then
+    DEPLOY_PROD_HOST="${DEPLOY_PROD_HOST:-$(node -e "
+      const d=require('$cred').deployment||{};
+      process.stdout.write(d.prod_ssh_host||'itcsVM3');
+    ")}"
+    DEPLOY_PROD_DIR="${DEPLOY_PROD_DIR:-$(node -e "
+      const d=require('$cred').deployment||{};
+      process.stdout.write(d.prod_remote_dir||'/home/opc/projetos/chineseLearning-app');
+    ")}"
+  else
+    DEPLOY_PROD_HOST="${DEPLOY_PROD_HOST:-itcsVM3}"
+    DEPLOY_PROD_DIR="${DEPLOY_PROD_DIR:-/home/opc/projetos/chineseLearning-app}"
+  fi
+  export DEPLOY_PROD_HOST DEPLOY_PROD_DIR
 }
 
 free_port() {
@@ -151,7 +230,7 @@ check_llm_health() {
       echo "  OK (sem Bearer)."
     else
       echo "  Aviso: health falhou e não há LLM_API_TOKEN." >&2
-      if [[ "$MODE" == "local" || "$MODE" == "prepare" ]]; then
+      if [[ "$MODE" == "local" || "$MODE" == "prepare" || "$MODE" == "prod" ]]; then
         return 1
       fi
     fi
@@ -284,6 +363,68 @@ if [[ "$MODE" == "prepare" ]]; then
   echo "    cd <REMOTE_DIR> && set -a && source ./server.env && set +a && PORT=\${PORT:-34827} npm run start:server"
   echo "  Nginx:      proxy_pass deve apontar para 127.0.0.1:\$PORT (ver docs/06_deploy.md)."
   echo ""
+  exit 0
+fi
+
+# --- modo --prod: preparar produção (local) — upload só com --upload explícito
+if [[ "$MODE" == "prod" ]]; then
+  echo "=== Preparar produção (local — sem envio ao servidor) ==="
+  echo ""
+
+  sync_prod_env
+  load_prod_env
+  export LLM_API_URL="${LLM_API_URL:-https://llm.webplace.cc}"
+  export LLM_API_URL="${LLM_API_URL%/}"
+
+  validate_prod_env
+
+  apply_prod_deploy_defaults
+  echo "→ Alvo (quando fizeres upload): ${DEPLOY_PROD_HOST}:${DEPLOY_PROD_DIR}"
+  echo "→ server.env: PORT=${PORT:-?} HOSTNAME=${HOSTNAME:-?} LLM_API_URL=${LLM_API_URL}"
+  echo ""
+
+  check_llm_health || exit 1
+  check_chinese_learning_project
+
+  if [[ "$DO_INGEST" == "1" ]]; then
+    run_ingest
+  fi
+
+  if [[ "$SKIP_BUILD" == "1" ]]; then
+    echo "→ build:server omitido (--skip-build — usa .next existente)."
+    if [[ ! -f "$WEB_DIR/.next/BUILD_ID" ]]; then
+      echo "  ERRO: falta web/.next/BUILD_ID — corre sem --skip-build." >&2
+      exit 1
+    fi
+  else
+    echo "→ build:server local (NEXT_PUBLIC_BASE_PATH=/aulaChines)…"
+    (cd "$WEB_DIR" && npm run build:server)
+  fi
+  echo ""
+
+  echo "→ Testes finais (LLM)…"
+  run_llm_edu_chat_smoke || exit 1
+
+  echo ""
+  echo "  [ prod ] Preparação concluída. Nada foi enviado ao servidor."
+  echo "  Env:        web/deploy/server.env (gitignored)"
+  echo "  Build:      web/.next/ (local)"
+  echo "  Alvo:       ${DEPLOY_PROD_HOST}:${DEPLOY_PROD_DIR}"
+  echo ""
+  echo "  Quando pedires upload (SSH + rsync + server.env):"
+  echo "    ./start.sh --prod --upload"
+  echo "    ./start.sh --prod --upload --restart   # + pm2 reload"
+  echo "    cd web && npm run deploy:prod            # só upload (requer .next + server.env prontos)"
+  echo ""
+  echo "  Nginx no servidor: proxy_pass /aulaChines/ → 127.0.0.1:\${PORT} (ver docs/06_deploy.md)."
+  echo ""
+
+  if [[ "$PROD_UPLOAD" == "1" ]]; then
+    if [[ "$PROD_RESTART" == "1" ]]; then
+      export DEPLOY_PROD_RESTART=1
+    fi
+    bash "$WEB_DIR/scripts/deploy-prod.sh"
+  fi
   exit 0
 fi
 

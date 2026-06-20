@@ -12,7 +12,35 @@ Em máquina partilhada (nginx, outros Node, bases de dados), evitar matar portas
 
 ## Preparar release sem arrancar serviços
 
-**`./start.sh --prepare`** — lê **`web/.env`** + **`web/deploy/server.env`** (ficheiro “produção” no disco; template **`web/deploy/server.env.example`**), exige **`LLM_API_TOKEN`**, faz health da API + (opcional) verificação do projeto RAG, corre **`npm run build:server`** em `web/`, depois **teste final** com **`POST /edu/chat`** (saltar com **`START_SKIP_EDU_SMOKE=1`**), e **termina** (não inicia Node, não liberta portas). Opcional: **`--ingest`** para `npm run ingest:rag` após os checks (variáveis já exportadas de `server.env` chegam ao script de ingest).
+**`./start.sh --prepare`** — lê **`web/.env`** + **`web/deploy/server.env`**, exige **`LLM_API_TOKEN`**, faz health da API + (opcional) verificação do projeto RAG, corre **`npm run build:server`** em `web/`, depois **teste final** com **`POST /edu/chat`** (saltar com **`START_SKIP_EDU_SMOKE=1`**), e **termina** (não inicia Node, não liberta portas).
+
+## Preparar produção (itcsVM3 — VM pequena)
+
+Pipeline **pronto** em scripts — corre **tu** quando o servidor estiver OK (agente não executa upload por defeito).
+
+| # | Comando | Onde |
+|---|---------|------|
+| 1 | `node scripts/sync-env-from-credentials.mjs` | Mac — monta `web/deploy/server.env` |
+| 2 | `./start.sh --prod` | Mac — valida env + LLM + `build:server` local |
+| 3 | `./start.sh --prod --upload` | Mac → itcsVM3 — rsync + `server.env` + `npm ci --omit=dev` |
+| 4 | `cd web && npm run remote:handshake` | valida LLM **a partir da VM** |
+
+Passo 1 incluído no `--prod` (salta com `--skip-env-sync`). Passo 3 alternativo: `cd web && npm run deploy:prod`.
+
+**Remoto nunca corre `next build`** — só instala deps de runtime.
+
+Overrides: `DEPLOY_PROD_HOST=itcsVM3`, `DEPLOY_PROD_DIR=/home/opc/projetos/chineseLearning-app`, `DEPLOY_PROD_RESTART=1` (pm2 reload).
+
+Legado itcsVM1: **`npm run deploy:node`** (build no remoto) — não usar em itcsVM3.
+
+### itcsVM3: nginx no host (partilhado)
+
+- Node: porta alta **`34827`**, `HOSTNAME=127.0.0.1` em `server.env`
+- Nginx: **:80/:443** partilhados — vhost por `server_name`, não monopolizar a porta
+- Template: **`web/deploy/nginx-itcsVM3-aulachines.conf.example`**
+- TLS: certbot na VM **ou** Cloudflare proxied — decidir antes (ver diagnóstico SSL)
+
+Diferente de itcsVM1 (`nginx_global` em Docker → `172.17.0.1` — secção abaixo).
 
 **Handshake no servidor (mesmos caminhos que o deploy):** em `web/`, **`npm run remote:handshake`** — copia `deploy/server.env` para um ficheiro temporário no host e corre **`/health`** + **`POST /edu/chat`** **a partir da VM**, usando o **`LLM_API_URL`** definido para esse ambiente (normalmente **`https://llm.webplace.cc`**, não loopback — ver **ITCS/featureLLM** `docs/MANUAL_INTEGRACAO.md` § 1.1).
 

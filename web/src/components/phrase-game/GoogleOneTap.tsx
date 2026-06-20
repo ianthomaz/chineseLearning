@@ -8,6 +8,19 @@ import { useLocale } from "@/context/LocaleContext";
 const CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ?? "";
 const GIS_SRC = "https://accounts.google.com/gsi/client";
 
+function isLocalDevHost(): boolean {
+  if (typeof window === "undefined") return false;
+  const h = window.location.hostname;
+  return h === "localhost" || h === "127.0.0.1" || h === "[::1]";
+}
+
+/** FedCM is flaky on localhost / hot reload; prefer classic prompt in dev unless forced. */
+function useFedcmForPrompt(): boolean {
+  if (process.env.NEXT_PUBLIC_GSI_USE_FEDCM === "0") return false;
+  if (process.env.NEXT_PUBLIC_GSI_USE_FEDCM === "1") return true;
+  return !isLocalDevHost();
+}
+
 type Props = {
   /** Called after a successful One Tap sign-in (session refresh is async). */
   onSignedIn?: () => void;
@@ -25,14 +38,15 @@ export function GoogleOneTap({ onSignedIn, locale = "pt" }: Props) {
   const [scriptReady, setScriptReady] = useState(false);
   const [signingIn, setSigningIn] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const initializedRef = useRef(false);
+  const onSignedInRef = useRef(onSignedIn);
+  onSignedInRef.current = onSignedIn;
 
   useEffect(() => {
-    if (!scriptReady || !CLIENT_ID || initializedRef.current) return;
+    if (!scriptReady || !CLIENT_ID) return;
     const g = window.google?.accounts?.id;
     if (!g) return;
 
-    initializedRef.current = true;
+    let cancelled = false;
 
     g.initialize({
       client_id: CLIENT_ID,
@@ -47,7 +61,7 @@ export function GoogleOneTap({ onSignedIn, locale = "pt" }: Props) {
           if (result?.error) {
             setError("signin_failed");
           } else {
-            onSignedIn?.();
+            onSignedInRef.current?.();
           }
         } catch {
           setError("signin_failed");
@@ -59,6 +73,7 @@ export function GoogleOneTap({ onSignedIn, locale = "pt" }: Props) {
       cancel_on_tap_outside: true,
       context: "signin",
       itp_support: true,
+      use_fedcm_for_prompt: useFedcmForPrompt(),
     });
 
     if (buttonRef.current) {
@@ -73,8 +88,22 @@ export function GoogleOneTap({ onSignedIn, locale = "pt" }: Props) {
       });
     }
 
-    g.prompt();
-  }, [scriptReady, locale, onSignedIn]);
+    // Defer prompt so GIS script + button render settle (avoids abort on hot reload).
+    const promptTimer = window.setTimeout(() => {
+      if (cancelled) return;
+      g.prompt();
+    }, 100);
+
+    return () => {
+      cancelled = true;
+      window.clearTimeout(promptTimer);
+      try {
+        g.cancel();
+      } catch {
+        /* ignore — cancel may race with an in-flight FedCM prompt */
+      }
+    };
+  }, [scriptReady, locale]);
 
   if (!CLIENT_ID) return null;
 

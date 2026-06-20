@@ -1,5 +1,14 @@
 # Phrase Builder Game — implementation spec
 
+> **Estado (jun 2026):** MVP **implementado**. Este ficheiro é a spec histórica usada para
+> construir a primeira versão. Para o que existe hoje, ver
+> [08_plano_jogo_frases.md](08_plano_jogo_frases.md),
+> [phrase-game-upgrades.md](phrase-game-upgrades.md) e
+> `web/src/components/phrase-game/README.md`.
+> Desvios importantes face à spec original: banco em `FRASES_GAME/curated/` (não
+> `all-phrases.json`); selecção com **mix ponderado** em níveis 3–5; revisão de erros
+> no fim da rodada; níveis 3–5 **ocultos** (não disabled) no Iniciante.
+
 You are implementing a new game inside an existing Chinese-learning website. **Read the repo first** — stack, components, i18n, styling, deploy model, and existing content. Follow existing conventions. Do not invent parallel patterns.
 
 ## Mission
@@ -12,11 +21,12 @@ This is a **new standalone game route**, not an extension of the existing quiz h
 
 The product owner does not care about current folder names. You **may and should** reorganize phrase data, lexicon references, game code, and DB paths into a clean layout. Treat these as **starting inputs**, not fixed contracts:
 
-- `FRASES_GAME/` — phrase bank (`all-phrases.json`, per-level files, `schema.json`)
+- `FRASES_GAME/curated/` — phrase bank (merged at build; see `schema.json`)
+- `FRASES_GAME/schema.json`
 - `vocabulario/hsk1-reference.json` — 333 HSK1 words (blocks 1–16 + quiz bank)
 - `vocabulario/vocab-basico.json` — 1052 entries; 324 with `hsk1: true`, ~728 implicit basic (HSK1+2) without flag
 - `docs/09_google_auth_jogo.md` — Google OAuth plan (Auth.js v5, JWT session)
-- `docs/08_plano_jogo_frases.md` — earlier plan (informative only; this prompt overrides)
+- `docs/08_plano_jogo_frases.md` — estado actual do jogo (substitui plano antigo)
 
 Document your final layout in a short `README` next to the game module.
 
@@ -59,7 +69,9 @@ Two playable language tiers on the setup screen:
 
 **“Difficult words”** (for optional pinyin/translation hints) = words belonging to **HSK2** / marked `dificil: true` on phrase tokens.
 
-**Iniciante level cap**: can only select game **levels 1–2**. Levels 3–5 are disabled when Iniciante is selected.
+**Iniciante level cap**: levels **3–5 hidden** in the UI when Iniciante is selected (not shown as disabled). Levels 1–2 only.
+
+**Level 2 hint rule (implemented):** pinyin-on-pieces off; **translation on difficult words** still allowed. See `settings-by-level.ts`.
 
 Lexicon may stay JSON for MVP; SQLite migration for lexicon is optional later.
 
@@ -83,7 +95,9 @@ Radio levels **1–5**:
 | **4** | Larger + split | Longer phrases | **Partial split**: break **one or two** multi-char words into separate hanzi pieces (pick any suitable word per phrase — do not over-engineer). **Extras**: in a 10-phrase round, **exactly ~3 random phrases** receive **1** extra distractor piece; the other 7 have **zero** extras unless the user enabled the extras checkbox |
 | **5** | All characters loose | Same pool as level 3–4 length | **Full split**: **every** token becomes individual hanzi pieces — **no pair appears joined** (e.g. 高兴 → 高 + 兴). **Extras**: **every** phrase gets **1 or 2** distractor pieces (never >2) |
 
-Map phrase pool by **token count + tier filter**, not only by dataset `nivel` field if it diverges. Adapt/validate phrase JSON accordingly (max 2 distractors per entry — trim schema if needed).
+Map phrase pool by **token count + tier filter + weighted length bands** (`ROUND_MIX_WEIGHTS` in
+`select-phrases.ts`). Higher game levels favour longer phrases but may still draw short ones
+(~10% at level 5). Do not use strict exclusive bands for levels 3–5.
 
 ### 3.3 Difficulty extras (checkboxes)
 
@@ -174,14 +188,16 @@ Wire validated output into `web/` (path of your choice) via `prebuild` if approp
 
 ## 7. Integration checklist
 
-- [ ] New route (you choose slug, e.g. `/phrase-game`) + entry in `SiteNav` and home if appropriate
-- [ ] i18n keys in `pt.json`, `en.json`, `es.json`
-- [ ] `trackEvent` — category `phrase_game`, actions: `round_start`, `phrase_submit`, `phrase_correct`, `phrase_wrong`, `help_used`, `round_complete`
-- [ ] Mobile-first layout; match existing `--border`, `text-ink`, `rounded-2xl` patterns
-- [ ] Auth button on game page (Google sign-in); nick editor for logged-in users
-- [ ] SQLite + migrations in a dedicated folder (e.g. `web/data/` or `web/src/server/db/`)
-- [ ] Auth routes under `/aulaChines/api/auth` respecting `basePath`
-- [ ] README: how to run locally with OAuth (port 34827 / 34902), env sync script, phrase validation
+- [x] Route `/phrase-game` + nav / home
+- [x] i18n `pt.json`, `en.json`, `es.json`
+- [x] `trackEvent` — `phrase_game` (round_start, round_complete, …)
+- [x] Mobile-first layout; design tokens
+- [x] Auth + nick on game page (`AuthPanel`, `GoogleOneTap`)
+- [x] SQLite players (`web/src/server/db/`)
+- [x] Auth routes under `/aulaChines/api/auth`
+- [x] README em `web/src/components/phrase-game/README.md`
+- [ ] Weighted score UI + persist round results (Phase 2 — see `phrase-game-upgrades.md`)
+- [ ] Leaderboard / Intermediário / Avançado tiers
 
 ---
 

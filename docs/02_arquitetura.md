@@ -20,7 +20,20 @@
 
 ## Pré-build de conteúdo
 
-Os scripts `predev` e `prebuild` correm **`scripts/parse-consolidado.mjs`**, que lê `Content/` e alimenta dados usados pelas páginas (ex. lições, vocabulário).
+Os scripts `predev` e `prebuild` correm:
+
+- **`scripts/parse-consolidado.mjs`** — lê `Content/` → `consolidado.json` (revisão, vocabulário).
+- **`scripts/build-phrase-game-data.mjs`** — merge `FRASES_GAME/curated/*.json` → `src/data/phrase-game/phrases.json` (jogo de frases).
+
+## Jogo de frases (`FRASES_GAME/`)
+
+| Caminho | Função |
+|---------|--------|
+| `FRASES_GAME/curated/` | Fonte editável (frases + `expansion-*.json`) |
+| `FRASES_GAME/schema.json` | Schema do banco |
+| `FRASES_GAME/Nivel*`, `all-phrases.json` | Legado — **não** usados pelo build actual |
+
+Runtime: rota Next **`/phrase-game`**, lógica em `web/src/lib/phrase-game/`. Ver [08_plano_jogo_frases.md](08_plano_jogo_frases.md).
 
 ## API do tutor
 

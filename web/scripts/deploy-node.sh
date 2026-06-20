@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
-# Next.js com Route Handlers (tutor /api/chat) — build no servidor + next start.
-# Nginx deve fazer proxy de /aulaChines/ para 127.0.0.1:PORT (ver web/README.md).
+# LEGADO itcsVM1 — build NO REMOTO (npm ci + build:server). Não usar em itcsVM3 (E2.Micro).
+# Produção itcsVM3: ./start.sh --prod  depois  ./start.sh --prod --upload  (ver deploy-prod.sh).
+#
+# Next.js com Route Handlers (tutor /api/chat) — nginx proxy de /aulaChines/ para 127.0.0.1:PORT.
 #
 # Requer no remoto: Node 20+, ficheiro server.env com LLM_API_URL e LLM_API_TOKEN.
 # LLM_API_URL deve ser alcançável a partir do host remoto (ex. https://llm.webplace.cc), não 127.0.0.1

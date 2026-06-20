@@ -2,10 +2,12 @@
 
 Status: **planned / encoded, not surfaced.** The MVP has **no scoring UI and no leaderboard**.
 The rules below are implemented as a pure function in
-[`web/src/lib/phrase-game/scoring.ts`](../web/src/lib/phrase-game/scoring.ts) (`computeScore`)
-so they are encoded and testable, but nothing renders a score yet. Persisting and ranking
-scores is **Phase 2** (see [`08_plano_jogo_frases.md`](08_plano_jogo_frases.md) and
-[`09_google_auth_jogo.md`](09_google_auth_jogo.md)).
+[`web/src/lib/phrase-game/scoring.ts`](../web/src/lib/phrase-game/scoring.ts) (`computeScore`).
+The round-complete screen shows **correct/wrong count** and a **review list** for missed phrases
+(hanzi + pinyin + translation) — not weighted points yet.
+
+Phase 2 (persist + display score): see [phrase-game-upgrades.md](phrase-game-upgrades.md) and
+[09_google_auth_jogo.md](09_google_auth_jogo.md).
 
 ## Per-phrase score
 
@@ -42,8 +44,8 @@ Notes:
 
 ## Round score
 
-The round score is the sum (or mean) of the 10 per-phrase scores. The MVP only counts raw
-correct/wrong for the progress dots and the "X de 10" summary; the weighted score above is
+The round score is the sum (or mean) of the 10 per-phrase scores. The MVP shows raw
+correct/wrong for progress dots and `"X de 10"` on round complete; the weighted score above is
 not displayed.
 
 ## Phase 2 (not in this change)
