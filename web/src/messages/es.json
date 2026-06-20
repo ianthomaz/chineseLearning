@@ -354,6 +354,8 @@
     "roundComplete": {
       "title": "¡Ronda completada!",
       "score": "Acertaste {correct} de {total}.",
+      "reviewTitle": "Repasa estas frases:",
+      "allCorrect": "¡Las acertaste todas! 🎉",
       "playAgain": "Jugar de nuevo",
       "changeSettings": "Cambiar configuración"
     },
