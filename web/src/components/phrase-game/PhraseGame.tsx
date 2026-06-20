@@ -6,11 +6,13 @@ import { trackEvent } from "@/lib/analytics";
 import { ALL_PHRASES } from "@/lib/phrase-game/phrases";
 import { buildRound, type Round } from "@/lib/phrase-game/select-phrases";
 import { clampDisplaySettingsForLevel } from "@/lib/phrase-game/settings-by-level";
+import { localizedPrompt } from "@/lib/phrase-game/display";
 import {
   DEFAULT_DISPLAY_SETTINGS,
   type DisplaySettings,
   type GameLevel,
   type GameTier,
+  type Phrase,
 } from "@/lib/phrase-game/types";
 import { AuthPanel } from "./AuthPanel";
 import { GameplayScreen } from "./GameplayScreen";
@@ -131,6 +133,9 @@ export function PhraseGame() {
           <RoundComplete
             correct={results.filter((r) => r === "correct").length}
             total={round.items.length}
+            misses={round.items
+              .filter((_, i) => results[i] === "wrong")
+              .map((it) => it.phrase)}
             onPlayAgain={startRound}
             onChangeSettings={() => setPhase("setup")}
           />
@@ -143,21 +148,55 @@ export function PhraseGame() {
 function RoundComplete({
   correct,
   total,
+  misses,
   onPlayAgain,
   onChangeSettings,
 }: {
   correct: number;
   total: number;
+  misses: Phrase[];
   onPlayAgain: () => void;
   onChangeSettings: () => void;
 }) {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   return (
     <div className="rounded-2xl border p-6 text-center" style={{ borderColor: "var(--border)" }}>
       <p className="font-display text-2xl font-medium text-ink">{t("phraseGame.roundComplete.title")}</p>
       <p className="mt-2 text-ink/70">
         {t("phraseGame.roundComplete.score", { correct, total })}
       </p>
+
+      {/* Review the missed phrases in their correct form — closes the learning loop. */}
+      {misses.length > 0 ? (
+        <div className="mt-6 text-left">
+          <p className="mb-3 text-sm font-semibold text-ink">
+            {t("phraseGame.roundComplete.reviewTitle")}
+          </p>
+          <ul className="space-y-2.5">
+            {misses.map((p) => (
+              <li
+                key={p.id}
+                className="rounded-xl border p-3"
+                style={{ borderColor: "var(--border)" }}
+              >
+                <p className="font-hanzi text-lg leading-snug text-ink">{p.hanzi}</p>
+                {p.pinyin ? (
+                  <p
+                    className="text-sm text-ink/55"
+                    style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                  >
+                    {p.pinyin}
+                  </p>
+                ) : null}
+                <p className="mt-0.5 text-sm text-ink/70">{localizedPrompt(p, locale)}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : (
+        <p className="mt-3 text-sm text-ink/55">{t("phraseGame.roundComplete.allCorrect")}</p>
+      )}
+
       <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
         <button
           type="button"
