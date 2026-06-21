@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocale } from "@/context/LocaleContext";
 import { trackEvent } from "@/lib/analytics";
 import { ALL_PHRASES } from "@/lib/phrase-game/phrases";
 import { buildRound, type Round } from "@/lib/phrase-game/select-phrases";
 import { clampDisplaySettingsForLevel } from "@/lib/phrase-game/settings-by-level";
 import { localizedPrompt } from "@/lib/phrase-game/display";
+import { logGameEvent, newRoundId } from "@/lib/phrase-game/game-log";
 import {
   DEFAULT_DISPLAY_SETTINGS,
   type DisplaySettings,
@@ -30,13 +31,31 @@ export function PhraseGame() {
   const [index, setIndex] = useState(0);
   const [results, setResults] = useState<Array<"correct" | "wrong" | null>>([]);
 
+  const roundIdRef = useRef("");
+  const abandonedRef = useRef(false);
+  // Mirror the live round state so the mount-only abandon listener can read the
+  // latest values without re-subscribing every render.
+  const liveRef = useRef({ playing: false, completed: false, tier, level, total: 0, index: 0 });
+  liveRef.current = {
+    playing: phase === "playing",
+    completed: phase === "complete",
+    tier,
+    level,
+    total: round?.items.length ?? 0,
+    index,
+  };
+
   function startRound() {
     const built = buildRound(ALL_PHRASES, { tier, level, settings });
+    const roundId = newRoundId();
+    roundIdRef.current = roundId;
+    abandonedRef.current = false;
     setRound(built);
     setIndex(0);
     setResults(new Array(built.items.length).fill(null));
     setPhase("playing");
     trackEvent({ action: "round_start", category: "phrase_game", label: `${tier}/L${level}` });
+    logGameEvent("round_start", { roundId, tier, level });
   }
 
   function handleResult(correct: boolean) {
@@ -62,7 +81,38 @@ export function PhraseGame() {
     if (phase !== "complete") return;
     const correct = results.filter((r) => r === "correct").length;
     trackEvent({ action: "round_complete", category: "phrase_game", value: correct });
-  }, [phase, results]);
+    logGameEvent("round_complete", {
+      roundId: roundIdRef.current,
+      tier,
+      level,
+      detail: `${correct}/${results.length}`,
+    });
+  }, [phase, results, tier, level]);
+
+  // Entries: log that the game was opened, once per mount.
+  useEffect(() => {
+    logGameEvent("game_enter");
+  }, []);
+
+  // Abandons: log if the player leaves mid-round (SPA navigation/unmount or tab close).
+  useEffect(() => {
+    const maybeAbandon = () => {
+      const s = liveRef.current;
+      if (abandonedRef.current || !s.playing || s.completed || !roundIdRef.current) return;
+      abandonedRef.current = true;
+      logGameEvent("round_abandon", {
+        roundId: roundIdRef.current,
+        tier: s.tier,
+        level: s.level,
+        detail: `reached:${s.index + 1}/${s.total}`,
+      });
+    };
+    window.addEventListener("pagehide", maybeAbandon);
+    return () => {
+      window.removeEventListener("pagehide", maybeAbandon);
+      maybeAbandon();
+    };
+  }, []);
 
   // Tier change resets an invalid level (Iniciante caps to 1-2).
   function handleTierChange(next: GameTier) {
@@ -117,6 +167,8 @@ export function PhraseGame() {
           <GameplayScreen
             key={index}
             item={round.items[index]}
+            tier={tier}
+            roundId={roundIdRef.current}
             level={level}
             settings={settings}
             index={index}

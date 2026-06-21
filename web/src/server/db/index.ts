@@ -34,6 +34,29 @@ CREATE TABLE IF NOT EXISTS progress (
   score      REAL,
   created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
+
+-- Game event log: entries, round starts, per-phrase results, help usage,
+-- abandons and completions. Works for logged-in (user_id) and anonymous
+-- (anon_id) players. Read by the owner backoffice.
+CREATE TABLE IF NOT EXISTS events (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  created_at TEXT NOT NULL DEFAULT (datetime('now')),
+  event      TEXT NOT NULL,
+  user_id    TEXT,
+  anon_id    TEXT,
+  round_id   TEXT,
+  tier       TEXT,
+  level      INTEGER,
+  phrase_id  TEXT,
+  correct    INTEGER,
+  attempt    TEXT,
+  detail     TEXT,
+  locale     TEXT,
+  user_agent TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_events_created ON events(created_at);
+CREATE INDEX IF NOT EXISTS idx_events_event ON events(event);
+CREATE INDEX IF NOT EXISTS idx_events_round ON events(round_id);
 `;
 
 export function getDb(): DatabaseSync {

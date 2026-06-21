@@ -7,13 +7,16 @@ import { deriveBoard } from "@/lib/phrase-game/pieces";
 import { validateAttempt } from "@/lib/phrase-game/validate";
 import { localizedPrompt } from "@/lib/phrase-game/display";
 import { nativePromptDisabled } from "@/lib/phrase-game/settings-by-level";
-import type { DisplaySettings, GameLevel, Piece, RoundItem } from "@/lib/phrase-game/types";
+import type { DisplaySettings, GameLevel, GameTier, Piece, RoundItem } from "@/lib/phrase-game/types";
 import type { HelpAction } from "@/lib/phrase-game/scoring";
+import { logGameEvent } from "@/lib/phrase-game/game-log";
 import { Board, type BoardValue } from "./Board";
 import { ProgressDots } from "./ProgressDots";
 
 type Props = {
   item: RoundItem;
+  tier: GameTier;
+  roundId: string;
   level: GameLevel;
   settings: DisplaySettings;
   index: number;
@@ -29,6 +32,8 @@ const AUTO_ADVANCE_MS = 6000;
 
 export function GameplayScreen({
   item,
+  tier,
+  roundId,
   level,
   settings,
   index,
@@ -69,6 +74,7 @@ export function GameplayScreen({
   function logHelp(action: HelpAction) {
     helpUsed.add(action);
     trackEvent({ action: "help_used", category: "phrase_game", label: action });
+    logGameEvent("help_used", { roundId, tier, level, phraseId: phrase.id, detail: action });
   }
 
   function handleSubmit() {
@@ -82,6 +88,14 @@ export function GameplayScreen({
       action: result.correct ? "phrase_correct" : "phrase_wrong",
       category: "phrase_game",
       label: phrase.id,
+    });
+    logGameEvent("phrase_result", {
+      roundId,
+      tier,
+      level,
+      phraseId: phrase.id,
+      correct: result.correct,
+      attempt: result.attempt,
     });
     onResult(result.correct);
   }
