@@ -370,6 +370,7 @@
       "signOut": "Sair",
       "dashboard": "Dashboard",
       "greeting": "Olá, {name}",
+      "greetingShort": "Olá!",
       "nickLabel": "Apelido",
       "nickSave": "Salvar",
       "nickSaved": "Salvo"

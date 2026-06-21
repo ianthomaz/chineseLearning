@@ -1,11 +1,6 @@
 /**
- * Phrase-game dashboard — SERVER MODE only (`page.server.tsx`; absent under
- * static export). Owner-only view of the game event log: KPIs, an engagement
- * funnel, the hardest phrases, rounds by tier/level, and a filterable activity
- * feed. Filters are plain URL query params (no client JS).
- *
- * Access: the signed-in Google email must pass `isAdminEmail` (NEXT_PUBLIC_ADMIN_EMAIL,
- * defaults to the repo owner).
+ * Phrase-game dashboard — SERVER MODE only. Owner-only analytics from the SQLite
+ * event log. Filters via URL query params (no client JS).
  */
 import { auth } from "@/server/auth";
 import { isAdminEmail } from "@/lib/phrase-game/admin";
@@ -33,12 +28,12 @@ const EVENT_NAMES = [
 ] as const;
 
 const EVENT_LABEL: Record<string, string> = {
-  game_enter: "Entrou no jogo",
-  round_start: "Início de rodada",
-  phrase_result: "Resultado de frase",
-  help_used: "Ajuda usada",
-  round_abandon: "Abandono",
-  round_complete: "Rodada concluída",
+  game_enter: "Entrou",
+  round_start: "Rodada",
+  phrase_result: "Frase",
+  help_used: "Ajuda",
+  round_abandon: "Abandonou",
+  round_complete: "Concluiu",
 };
 
 const phraseById = new Map(ALL_PHRASES.map((p) => [p.id, p]));
@@ -58,30 +53,30 @@ function ago(utc: string): string {
   const t = Date.parse(utc.replace(" ", "T") + "Z");
   if (Number.isNaN(t)) return utc;
   const s = Math.max(0, Math.round((Date.now() - t) / 1000));
-  if (s < 60) return `há ${s}s`;
+  if (s < 60) return `${s}s`;
   const m = Math.round(s / 60);
-  if (m < 60) return `há ${m}min`;
+  if (m < 60) return `${m}min`;
   const h = Math.round(m / 60);
-  if (h < 48) return `há ${h}h`;
-  return `há ${Math.round(h / 24)}d`;
+  if (h < 48) return `${h}h`;
+  return `${Math.round(h / 24)}d`;
 }
 
-function eventStyle(event: string, correct: number | null): { bg: string; fg: string; label: string } {
+function eventBadge(event: string, correct: number | null): { bg: string; fg: string; label: string } {
   switch (event) {
     case "game_enter":
-      return { bg: "rgba(100,116,139,0.14)", fg: "#475569", label: "entrou" };
+      return { bg: "#f1f5f9", fg: "#475569", label: EVENT_LABEL.game_enter };
     case "round_start":
-      return { bg: "rgba(45,90,140,0.14)", fg: "var(--accent)", label: "início" };
+      return { bg: "rgba(45,90,140,0.12)", fg: "var(--accent)", label: EVENT_LABEL.round_start };
     case "round_complete":
-      return { bg: "rgba(21,128,61,0.14)", fg: "#15803d", label: "concluiu" };
+      return { bg: "#dcfce7", fg: "#166534", label: EVENT_LABEL.round_complete };
     case "round_abandon":
-      return { bg: "rgba(217,119,6,0.16)", fg: "#b45309", label: "abandonou" };
+      return { bg: "#ffedd5", fg: "#c2410c", label: EVENT_LABEL.round_abandon };
     case "help_used":
-      return { bg: "rgba(202,138,4,0.16)", fg: "#a16207", label: "ajuda" };
+      return { bg: "#fef9c3", fg: "#a16207", label: EVENT_LABEL.help_used };
     case "phrase_result":
       return correct === 1
-        ? { bg: "rgba(21,128,61,0.14)", fg: "#15803d", label: "acerto" }
-        : { bg: "rgba(185,28,28,0.12)", fg: "#b91c1c", label: "erro" };
+        ? { bg: "#dcfce7", fg: "#166534", label: "Acerto" }
+        : { bg: "#fee2e2", fg: "#b91c1c", label: "Erro" };
     default:
       return { bg: "var(--paper)", fg: "var(--ink)", label: event };
   }
@@ -89,9 +84,9 @@ function eventStyle(event: string, correct: number | null): { bg: string; fg: st
 
 function who(row: EventRow): string {
   if (row.nick) return row.nick;
-  if (row.email) return row.email;
+  if (row.email) return row.email.split("@")[0] ?? row.email;
   if (row.user_id) return `user:${row.user_id.slice(0, 6)}`;
-  if (row.anon_id) return `guest:${row.anon_id.slice(0, 6)}`;
+  if (row.anon_id) return `convidado`;
   return "—";
 }
 
@@ -101,15 +96,19 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
 
   if (!isAdminEmail(email)) {
     return (
-      <main className="mx-auto max-w-xl px-6 py-16">
+      <main className="mx-auto max-w-lg px-6 py-20 text-center">
         <h1 className="font-display text-2xl font-medium text-ink">Dashboard</h1>
-        <p className="mt-3 text-sm text-ink/70">
+        <p className="mt-4 text-sm leading-relaxed text-ink/65">
           {email
             ? `A conta ${email} não tem permissão de administrador.`
-            : "Inicie sessão com a conta de administrador (na página do jogo) para ver o dashboard."}
+            : "Inicie sessão com a conta de administrador na página do jogo."}
         </p>
-        <a href={`${BASE_PATH}/phrase-game`} className="mt-4 inline-block text-sm" style={{ color: "var(--accent)" }}>
-          ← Voltar ao jogo
+        <a
+          href={`${BASE_PATH}/phrase-game`}
+          className="mt-6 inline-flex rounded-xl px-5 py-2.5 text-sm font-semibold text-white"
+          style={{ backgroundColor: "var(--accent)" }}
+        >
+          Ir ao jogo
         </a>
       </main>
     );
@@ -118,27 +117,19 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
   const sp = await searchParams;
   const whoRaw = one(sp, "who");
   const resultRaw = one(sp, "result");
-  const filters: {
-    event: string;
-    tier: string;
-    who: "logged" | "guests" | "";
-    result: "correct" | "wrong" | "";
-    sinceDays: number;
-    limit: number;
-  } = {
+  const filters = {
     event: one(sp, "event"),
     tier: one(sp, "tier"),
-    who: whoRaw === "logged" || whoRaw === "guests" ? whoRaw : "",
-    result: resultRaw === "correct" || resultRaw === "wrong" ? resultRaw : "",
+    who: whoRaw === "logged" || whoRaw === "guests" ? whoRaw : ("" as "" | "logged" | "guests"),
+    result: resultRaw === "correct" || resultRaw === "wrong" ? resultRaw : ("" as "" | "correct" | "wrong"),
     sinceDays: Number(one(sp, "since")) || 0,
-    limit: Number(one(sp, "limit")) || 200,
+    limit: Number(one(sp, "limit")) || 100,
   };
-  const hasFilters =
-    Boolean(filters.event || filters.tier || filters.who || filters.result || filters.sinceDays);
+  const hasFilters = Boolean(filters.event || filters.tier || filters.who || filters.result || filters.sinceDays);
 
   const stats = eventStats();
   const rows = queryEvents(filters);
-  const missed = topMissedPhrases(8);
+  const missed = topMissedPhrases(6);
   const byTL = roundsByTierLevel();
 
   const enters = stats.byEvent.find((e) => e.event === "game_enter")?.n ?? 0;
@@ -146,69 +137,88 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
   const answered = stats.correct + stats.wrong;
   const funnelMax = Math.max(enters, stats.rounds, stats.completes, 1);
   const tlMax = Math.max(1, ...byTL.map((r) => r.n));
-  const missedMax = Math.max(1, ...missed.map((m) => m.total));
+  const missedMax = Math.max(1, ...missed.map((m) => m.wrong));
 
   return (
-    <main className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-      <header className="mb-8 flex flex-wrap items-end justify-between gap-3">
+    <main className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-10">
+      {/* Header */}
+      <header className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <h1 className="font-display text-2xl font-medium text-ink sm:text-3xl">
-            Dashboard · Quebra-Cabeça de Frases
+          <p className="text-xs font-medium uppercase tracking-widest text-ink/40">Backoffice</p>
+          <h1 className="mt-1 font-display text-2xl font-medium text-ink sm:text-3xl">
+            Quebra-Cabeça de Frases
           </h1>
-          <p className="mt-1 text-sm text-ink/55">
-            {email} · {stats.last24h} eventos nas últimas 24h
+          <p className="mt-2 text-sm text-ink/50">
+            {stats.total} eventos no total · {stats.last24h} nas últimas 24h
           </p>
         </div>
-        <div className="flex gap-2 text-xs">
-          <a href={`${BASE_PATH}/backoffice`} className="rounded-full border px-3 py-1.5 text-ink/70 hover:bg-ink/5" style={{ borderColor: "var(--border)" }}>
-            ↻ Atualizar
+        <div className="flex shrink-0 gap-2">
+          <a
+            href={`${BASE_PATH}/backoffice`}
+            className="rounded-xl border px-4 py-2 text-xs font-medium text-ink/70 transition-colors hover:bg-ink/5"
+            style={{ borderColor: "var(--border)" }}
+          >
+            Atualizar
           </a>
-          <a href={`${BASE_PATH}/phrase-game`} className="rounded-full border px-3 py-1.5 text-ink/70 hover:bg-ink/5" style={{ borderColor: "var(--border)" }}>
-            ← Jogo
+          <a
+            href={`${BASE_PATH}/phrase-game`}
+            className="rounded-xl px-4 py-2 text-xs font-semibold text-white"
+            style={{ backgroundColor: "var(--accent)" }}
+          >
+            Jogo
           </a>
         </div>
       </header>
 
-      {/* KPIs */}
-      <section className="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-        <Stat label="Entradas" value={enters} />
-        <Stat label="Rodadas" value={stats.rounds} />
-        <Stat label="Concluídas" value={stats.completes} sub={`${pct(stats.completes, stats.rounds)} das rodadas`} tone="good" />
-        <Stat label="Abandonos" value={stats.abandons} sub={`${pct(stats.abandons, stats.rounds)} das rodadas`} tone="warn" />
-        <Stat label="Precisão" value={pct(stats.correct, answered)} sub={`${stats.correct}✓ / ${stats.wrong}✗`} tone="good" />
-        <Stat label="Ajudas" value={helps} />
-        <Stat label="Jogadores" value={stats.players} sub="logados" />
-        <Stat label="Convidados" value={stats.guests} />
-        <Stat label="Acertos" value={stats.correct} tone="good" />
-        <Stat label="Erros" value={stats.wrong} tone="bad" />
-        <Stat label="Eventos" value={stats.total} />
-        <Stat label="Últimas 24h" value={stats.last24h} />
+      {/* Primary KPIs — 4 cards, not 12 */}
+      <section className="mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <Kpi
+          label="Últimas 24h"
+          value={stats.last24h}
+          hint="eventos registados"
+          accent
+        />
+        <Kpi
+          label="Rodadas"
+          value={stats.rounds}
+          hint={`${stats.completes} concluídas (${pct(stats.completes, stats.rounds)})`}
+        />
+        <Kpi
+          label="Precisão"
+          value={pct(stats.correct, answered)}
+          hint={answered > 0 ? `${stats.correct} acertos · ${stats.wrong} erros` : "sem respostas ainda"}
+          tone={stats.correct > stats.wrong ? "good" : undefined}
+        />
+        <Kpi
+          label="Jogadores"
+          value={stats.players + stats.guests}
+          hint={`${stats.players} logados · ${stats.guests} convidados`}
+        />
       </section>
 
-      <div className="mb-8 grid gap-6 lg:grid-cols-2">
-        {/* Funnel */}
-        <Section title="Funil de engajamento">
-          <div className="space-y-3">
-            <FunnelBar label="Entradas" value={enters} max={funnelMax} color="#64748b" />
-            <FunnelBar label="Rodadas iniciadas" value={stats.rounds} max={funnelMax} color="var(--accent)" />
-            <FunnelBar label="Rodadas concluídas" value={stats.completes} max={funnelMax} color="#15803d" />
-            <FunnelBar label="Abandonos" value={stats.abandons} max={funnelMax} color="#b45309" />
+      {/* Insights row */}
+      <section className="mb-8 grid gap-4 lg:grid-cols-2">
+        <Panel title="Funil">
+          <div className="space-y-3.5">
+            <Bar label="Visitas ao jogo" value={enters} max={funnelMax} color="#94a3b8" />
+            <Bar label="Rodadas iniciadas" value={stats.rounds} max={funnelMax} color="var(--accent)" />
+            <Bar label="Rodadas concluídas" value={stats.completes} max={funnelMax} color="#16a34a" />
+            <Bar label="Abandonos" value={stats.abandons} max={funnelMax} color="#ea580c" />
           </div>
-          <p className="mt-3 text-xs text-ink/45">
-            Conclusão {pct(stats.completes, stats.rounds)} · abandono {pct(stats.abandons, stats.rounds)} · precisão {pct(stats.correct, answered)}
+          <p className="mt-4 border-t pt-3 text-xs text-ink/45" style={{ borderColor: "var(--border)" }}>
+            {helps} ajudas usadas · abandono {pct(stats.abandons, stats.rounds)}
           </p>
-        </Section>
+        </Panel>
 
-        {/* Rounds by tier/level */}
-        <Section title="Rodadas por nível">
+        <Panel title="Por nível">
           {byTL.length === 0 ? (
-            <p className="text-sm text-ink/45">Sem rodadas ainda.</p>
+            <Empty hint="Nenhuma rodada registada ainda." />
           ) : (
-            <div className="space-y-2">
+            <div className="space-y-2.5">
               {byTL.map((r) => (
-                <FunnelBar
+                <Bar
                   key={`${r.tier}-${r.level}`}
-                  label={`${r.tier ?? "?"} · L${r.level ?? "?"}`}
+                  label={tierLabel(r.tier, r.level)}
                   value={r.n}
                   max={tlMax}
                   color="var(--accent)"
@@ -216,171 +226,240 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
               ))}
             </div>
           )}
-        </Section>
-      </div>
+        </Panel>
+      </section>
 
       {/* Hardest phrases */}
-      <Section title="Frases mais erradas" className="mb-8">
+      <Panel title="Frases mais difíceis" className="mb-8">
         {missed.length === 0 ? (
-          <p className="text-sm text-ink/45">Sem erros registados ainda.</p>
+          <Empty hint="Sem erros registados — ótimo sinal!" />
         ) : (
-          <div className="space-y-2.5">
-            {missed.map((m) => {
+          <ul className="divide-y" style={{ borderColor: "var(--border)" }}>
+            {missed.map((m, i) => {
               const p = phraseById.get(m.phrase_id);
+              const rate = m.total > 0 ? Math.round((m.wrong / m.total) * 100) : 0;
               return (
-                <div key={m.phrase_id} className="flex items-center gap-3">
-                  <div className="w-44 shrink-0">
-                    <span className="font-hanzi text-base text-ink">{p?.hanzi ?? m.phrase_id}</span>
-                    {p?.pt ? <span className="ml-2 text-xs text-ink/45">{p.pt}</span> : null}
-                  </div>
-                  <div className="h-2.5 flex-1 overflow-hidden rounded-full" style={{ backgroundColor: "var(--paper)" }}>
-                    <div
-                      className="h-full rounded-full"
-                      style={{ width: `${(m.wrong / missedMax) * 100}%`, backgroundColor: "#b91c1c" }}
-                    />
-                  </div>
-                  <span className="w-20 shrink-0 text-right text-xs text-ink/60">
-                    {m.wrong}✗ / {m.total}
+                <li key={m.phrase_id} className="flex flex-col gap-2 py-3 sm:flex-row sm:items-center sm:gap-4">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-semibold text-white" style={{ backgroundColor: "var(--accent)" }}>
+                    {i + 1}
                   </span>
-                </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="font-hanzi text-lg leading-snug text-ink">{p?.hanzi ?? m.phrase_id}</p>
+                    {p?.pinyin ? <p className="text-xs text-ink/45">{p.pinyin}</p> : null}
+                    {p?.pt ? <p className="mt-0.5 text-xs text-ink/55">{p.pt}</p> : null}
+                  </div>
+                  <div className="flex items-center gap-3 sm:w-44">
+                    <div className="h-2 flex-1 overflow-hidden rounded-full bg-ink/8">
+                      <div
+                        className="h-full rounded-full bg-red-600/70"
+                        style={{ width: `${(m.wrong / missedMax) * 100}%` }}
+                      />
+                    </div>
+                    <span className="shrink-0 text-xs tabular-nums text-ink/60">
+                      {m.wrong}✗ <span className="text-ink/35">({rate}%)</span>
+                    </span>
+                  </div>
+                </li>
               );
             })}
-          </div>
+          </ul>
         )}
-      </Section>
+      </Panel>
 
-      {/* Activity feed + filters */}
-      <Section title={`Atividade recente (${rows.length})`}>
-        <form method="get" className="mb-4 flex flex-wrap items-end gap-2">
-          <Field label="Evento" name="event" value={filters.event}
+      {/* Activity feed */}
+      <Panel title="Atividade recente">
+        <form method="get" className="mb-5 flex flex-wrap gap-2">
+          <FilterSelect label="Evento" name="event" value={filters.event}
             options={[["", "Todos"], ...EVENT_NAMES.map((e) => [e, EVENT_LABEL[e]])]} />
-          <Field label="Tier" name="tier" value={filters.tier}
+          <FilterSelect label="Tier" name="tier" value={filters.tier}
             options={[["", "Todos"], ["iniciante", "Iniciante"], ["basico", "Básico"]]} />
-          <Field label="Quem" name="who" value={filters.who}
+          <FilterSelect label="Quem" name="who" value={filters.who}
             options={[["", "Todos"], ["logged", "Logados"], ["guests", "Convidados"]]} />
-          <Field label="Resultado" name="result" value={filters.result}
+          <FilterSelect label="Resultado" name="result" value={filters.result}
             options={[["", "Todos"], ["correct", "Acertos"], ["wrong", "Erros"]]} />
-          <Field label="Período" name="since" value={filters.sinceDays ? String(filters.sinceDays) : ""}
-            options={[["", "Tudo"], ["1", "24h"], ["7", "7 dias"], ["30", "30 dias"]]} />
-          <Field label="Limite" name="limit" value={String(filters.limit)}
-            options={[["50", "50"], ["100", "100"], ["200", "200"], ["500", "500"]]} />
-          <button type="submit" className="rounded-lg px-4 py-2 text-xs font-semibold text-white" style={{ backgroundColor: "var(--accent)" }}>
-            Filtrar
-          </button>
-          {hasFilters ? (
-            <a href={`${BASE_PATH}/backoffice`} className="rounded-lg border px-4 py-2 text-xs text-ink/70 hover:bg-ink/5" style={{ borderColor: "var(--border)" }}>
-              Limpar
-            </a>
-          ) : null}
+          <FilterSelect label="Período" name="since" value={filters.sinceDays ? String(filters.sinceDays) : ""}
+            options={[["", "Tudo"], ["1", "24h"], ["7", "7d"], ["30", "30d"]]} />
+          <div className="flex items-end gap-2">
+            <button
+              type="submit"
+              className="rounded-xl px-4 py-2 text-xs font-semibold text-white"
+              style={{ backgroundColor: "var(--accent)" }}
+            >
+              Filtrar
+            </button>
+            {hasFilters ? (
+              <a
+                href={`${BASE_PATH}/backoffice`}
+                className="rounded-xl border px-4 py-2 text-xs text-ink/60 hover:bg-ink/5"
+                style={{ borderColor: "var(--border)" }}
+              >
+                Limpar
+              </a>
+            ) : null}
+          </div>
         </form>
 
         {rows.length === 0 ? (
-          <p className="text-sm text-ink/45">Nenhum evento para estes filtros.</p>
+          <Empty hint="Nenhum evento para estes filtros." />
         ) : (
-          <div className="overflow-x-auto rounded-xl border" style={{ borderColor: "var(--border)" }}>
-            <table className="w-full border-collapse text-left text-xs">
-              <thead>
-                <tr className="text-ink/55" style={{ backgroundColor: "var(--paper)" }}>
-                  <Th>Quando</Th>
-                  <Th>Evento</Th>
-                  <Th>Quem</Th>
-                  <Th>Nível</Th>
-                  <Th>Frase</Th>
-                  <Th>Tentativa / detalhe</Th>
-                </tr>
-              </thead>
-              <tbody>
-                {rows.map((r) => {
-                  const st = eventStyle(r.event, r.correct);
-                  const p = r.phrase_id ? phraseById.get(r.phrase_id) : undefined;
-                  return (
-                    <tr key={r.id} className="border-t" style={{ borderColor: "var(--border)" }}>
-                      <Td>
-                        <span className="text-ink/70">{ago(r.created_at)}</span>
-                        <span className="ml-1 text-ink/30" style={{ fontFamily: "ui-monospace, monospace" }}>
-                          {r.created_at.slice(11, 16)}
-                        </span>
-                      </Td>
-                      <Td>
-                        <span className="rounded-full px-2 py-0.5 text-[0.65rem] font-medium" style={{ backgroundColor: st.bg, color: st.fg }}>
-                          {st.label}
-                        </span>
-                      </Td>
-                      <Td>{who(r)}</Td>
-                      <Td>{r.tier ? `${r.tier}/L${r.level ?? "?"}` : ""}</Td>
-                      <Td>{p ? <span className="font-hanzi text-sm text-ink">{p.hanzi}</span> : r.phrase_id ?? ""}</Td>
-                      <Td>
-                        <span className="font-hanzi text-ink/80">{r.attempt ?? ""}</span>
-                        {r.detail ? <span className="text-ink/45">{r.attempt ? " · " : ""}{r.detail}</span> : null}
-                      </Td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
+          <ul className="divide-y" style={{ borderColor: "var(--border)" }}>
+            {rows.map((r) => (
+              <ActivityRow key={r.id} row={r} />
+            ))}
+          </ul>
         )}
-      </Section>
+        <p className="mt-3 text-center text-[0.65rem] text-ink/35">
+          Mostrando {rows.length} eventos · limite {filters.limit}
+        </p>
+      </Panel>
     </main>
   );
 }
 
-function Stat({ label, value, sub, tone }: { label: string; value: number | string; sub?: string; tone?: "good" | "warn" | "bad" }) {
-  const color = tone === "good" ? "#15803d" : tone === "bad" ? "#b91c1c" : tone === "warn" ? "#b45309" : "var(--ink)";
+function tierLabel(tier: string | null, level: number | null): string {
+  const t = tier === "iniciante" ? "Iniciante" : tier === "basico" ? "Básico" : tier ?? "?";
+  return `${t} · nível ${level ?? "?"}`;
+}
+
+function Kpi({
+  label,
+  value,
+  hint,
+  accent,
+  tone,
+}: {
+  label: string;
+  value: number | string;
+  hint?: string;
+  accent?: boolean;
+  tone?: "good";
+}) {
   return (
-    <div className="rounded-xl border p-3" style={{ borderColor: "var(--border)", backgroundColor: "var(--paper)" }}>
-      <p className="text-2xl font-semibold" style={{ color }}>{value}</p>
-      <p className="mt-0.5 text-xs font-medium text-ink/70">{label}</p>
-      {sub ? <p className="mt-0.5 text-[0.65rem] text-ink/40">{sub}</p> : null}
+    <div
+      className="rounded-2xl border p-5"
+      style={{
+        borderColor: accent ? "rgba(45,90,140,0.25)" : "var(--border)",
+        backgroundColor: accent ? "rgba(45,90,140,0.06)" : "rgba(255,255,255,0.45)",
+      }}
+    >
+      <p
+        className="font-display text-3xl font-medium tabular-nums"
+        style={{ color: tone === "good" ? "#166534" : accent ? "var(--accent)" : "var(--ink)" }}
+      >
+        {value}
+      </p>
+      <p className="mt-1 text-sm font-medium text-ink/75">{label}</p>
+      {hint ? <p className="mt-0.5 text-xs text-ink/45">{hint}</p> : null}
     </div>
   );
 }
 
-function Section({ title, children, className }: { title: string; children: React.ReactNode; className?: string }) {
+function Panel({
+  title,
+  children,
+  className = "",
+}: {
+  title: string;
+  children: React.ReactNode;
+  className?: string;
+}) {
   return (
     <section className={className}>
-      <h2 className="mb-3 text-sm font-semibold text-ink">{title}</h2>
-      <div className="rounded-2xl border p-4" style={{ borderColor: "var(--border)" }}>
+      <h2 className="mb-3 font-display text-base font-medium text-ink">{title}</h2>
+      <div
+        className="rounded-2xl border p-4 sm:p-5"
+        style={{ borderColor: "var(--border)", backgroundColor: "rgba(255,255,255,0.45)" }}
+      >
         {children}
       </div>
     </section>
   );
 }
 
-function FunnelBar({ label, value, max, color }: { label: string; value: number; max: number; color: string }) {
+function Bar({ label, value, max, color }: { label: string; value: number; max: number; color: string }) {
+  const w = max > 0 ? Math.max(2, (value / max) * 100) : 0;
   return (
     <div className="flex items-center gap-3">
-      <span className="w-36 shrink-0 text-xs text-ink/65">{label}</span>
-      <div className="h-3 flex-1 overflow-hidden rounded-full" style={{ backgroundColor: "var(--paper)" }}>
-        <div className="h-full rounded-full" style={{ width: `${(value / max) * 100}%`, backgroundColor: color }} />
+      <span className="w-32 shrink-0 truncate text-xs text-ink/60 sm:w-36">{label}</span>
+      <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-ink/8">
+        <div className="h-full rounded-full transition-all" style={{ width: `${w}%`, backgroundColor: color }} />
       </div>
-      <span className="w-12 shrink-0 text-right text-xs font-medium text-ink">{value}</span>
+      <span className="w-8 shrink-0 text-right text-xs font-medium tabular-nums text-ink">{value}</span>
     </div>
   );
 }
 
-function Field({ label, name, value, options }: { label: string; name: string; value: string; options: string[][] }) {
+function FilterSelect({
+  label,
+  name,
+  value,
+  options,
+}: {
+  label: string;
+  name: string;
+  value: string;
+  options: string[][];
+}) {
   return (
-    <label className="flex flex-col gap-1 text-[0.65rem] text-ink/55">
-      {label}
+    <label className="flex flex-col gap-1">
+      <span className="text-[0.65rem] font-medium uppercase tracking-wide text-ink/40">{label}</span>
       <select
         name={name}
         defaultValue={value}
-        className="rounded-lg border px-2 py-1.5 text-xs text-ink"
-        style={{ borderColor: "var(--border)", backgroundColor: "var(--paper)" }}
+        className="rounded-xl border bg-white/60 px-3 py-2 text-xs text-ink"
+        style={{ borderColor: "var(--border)" }}
       >
         {options.map((o) => (
-          <option key={o[0]} value={o[0]}>{o[1]}</option>
+          <option key={o[0]} value={o[0]}>
+            {o[1]}
+          </option>
         ))}
       </select>
     </label>
   );
 }
 
-function Th({ children }: { children: React.ReactNode }) {
-  return <th className="whitespace-nowrap px-3 py-2 font-medium">{children}</th>;
+function ActivityRow({ row }: { row: EventRow }) {
+  const badge = eventBadge(row.event, row.correct);
+  const p = row.phrase_id ? phraseById.get(row.phrase_id) : undefined;
+  const level = row.tier ? `${row.tier} L${row.level ?? "?"}` : null;
+
+  return (
+    <li className="flex gap-3 py-3 sm:gap-4">
+      <div className="w-12 shrink-0 pt-0.5 text-right">
+        <p className="text-xs font-medium tabular-nums text-ink/50">{ago(row.created_at)}</p>
+        <p className="text-[0.6rem] tabular-nums text-ink/30">{row.created_at.slice(11, 16)}</p>
+      </div>
+
+      <span
+        className="mt-0.5 inline-flex h-6 shrink-0 items-center rounded-lg px-2 text-[0.65rem] font-semibold"
+        style={{ backgroundColor: badge.bg, color: badge.fg }}
+      >
+        {badge.label}
+      </span>
+
+      <div className="min-w-0 flex-1">
+        <p className="text-sm text-ink/80">
+          <span className="font-medium text-ink">{who(row)}</span>
+          {level ? <span className="text-ink/40"> · {level}</span> : null}
+        </p>
+        {(p || row.attempt || row.detail) ? (
+          <p className="mt-0.5 text-xs text-ink/55">
+            {p ? <span className="font-hanzi text-sm text-ink">{p.hanzi}</span> : null}
+            {row.attempt ? (
+              <span className={p ? " ml-2 text-ink/40" : ""}>
+                {p ? "→ " : ""}
+                <span className="font-hanzi text-ink/70">{row.attempt}</span>
+              </span>
+            ) : null}
+            {row.detail ? <span className="text-ink/40">{row.attempt || p ? " · " : ""}{row.detail}</span> : null}
+          </p>
+        ) : null}
+      </div>
+    </li>
+  );
 }
 
-function Td({ children }: { children: React.ReactNode }) {
-  return <td className="whitespace-nowrap px-3 py-1.5 align-top text-ink/80">{children}</td>;
+function Empty({ hint }: { hint: string }) {
+  return <p className="py-6 text-center text-sm text-ink/45">{hint}</p>;
 }

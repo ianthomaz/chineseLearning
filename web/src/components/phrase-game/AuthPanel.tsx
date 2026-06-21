@@ -38,8 +38,25 @@ function AuthPanelLive({
   locale: string;
 }) {
   const { data: session, status, update } = useSession();
+  const [nick, setNick] = useState<string | null>(null);
 
-  if (status === "loading") {
+  useEffect(() => {
+    if (status !== "authenticated") return;
+    let active = true;
+    fetch(PROGRESS_URL, { credentials: "same-origin" })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data: { nick?: string } | null) => {
+        if (active) setNick(data?.nick?.trim() ?? "");
+      })
+      .catch(() => {
+        if (active) setNick("");
+      });
+    return () => {
+      active = false;
+    };
+  }, [status]);
+
+  if (status === "loading" || (status === "authenticated" && nick === null)) {
     return <div className="h-14 animate-pulse rounded-2xl border" style={{ borderColor: "var(--border)" }} />;
   }
 
@@ -64,7 +81,7 @@ function AuthPanelLive({
     );
   }
 
-  const name = session.user.name ?? session.user.email ?? "";
+  const savedNick = nick ?? "";
   const isAdmin = isAdminEmail(session.user.email);
   return (
     <div
@@ -76,7 +93,11 @@ function AuthPanelLive({
           // eslint-disable-next-line @next/next/no-img-element
           <img src={session.user.image} alt="" className="h-9 w-9 rounded-full border object-cover" style={{ borderColor: "var(--border)" }} />
         ) : null}
-        <p className="text-sm text-ink/70">{t("phraseGame.auth.greeting", { name })}</p>
+        <p className="text-sm text-ink/70">
+          {savedNick
+            ? t("phraseGame.auth.greeting", { name: savedNick })
+            : t("phraseGame.auth.greetingShort")}
+        </p>
       </div>
       <div className="flex flex-wrap items-center gap-3">
         {isAdmin ? (
@@ -88,7 +109,7 @@ function AuthPanelLive({
             {t("phraseGame.auth.dashboard")}
           </a>
         ) : null}
-        <NickEditor t={t} />
+        {!savedNick ? <NickEditor t={t} onSaved={setNick} /> : null}
         <button
           type="button"
           onClick={() => signOut()}
@@ -102,35 +123,35 @@ function AuthPanelLive({
   );
 }
 
-function NickEditor({ t }: { t: (k: string, v?: Record<string, string | number>) => string }) {
+function NickEditor({
+  t,
+  onSaved,
+}: {
+  t: (k: string, v?: Record<string, string | number>) => string;
+  onSaved: (nick: string) => void;
+}) {
   const [nick, setNick] = useState("");
-  const [saved, setSaved] = useState(false);
-
-  useEffect(() => {
-    let active = true;
-    fetch(PROGRESS_URL, { credentials: "same-origin" })
-      .then((r) => (r.ok ? r.json() : null))
-      .then((data: { nick?: string } | null) => {
-        if (active && data?.nick) setNick(data.nick);
-      })
-      .catch(() => {});
-    return () => {
-      active = false;
-    };
-  }, []);
+  const [saving, setSaving] = useState(false);
 
   async function save() {
-    setSaved(false);
+    const trimmed = nick.trim();
+    if (!trimmed || saving) return;
+    setSaving(true);
     try {
-      await fetch(PROGRESS_URL, {
+      const res = await fetch(PROGRESS_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "same-origin",
-        body: JSON.stringify({ nick }),
+        body: JSON.stringify({ nick: trimmed }),
       });
-      setSaved(true);
+      if (res.ok) {
+        const data = (await res.json()) as { nick?: string };
+        onSaved((data.nick ?? trimmed).trim());
+      }
     } catch {
       /* ignore — nick is cosmetic for now */
+    } finally {
+      setSaving(false);
     }
   }
 
@@ -138,22 +159,23 @@ function NickEditor({ t }: { t: (k: string, v?: Record<string, string | number>)
     <div className="flex items-center gap-2">
       <input
         value={nick}
-        onChange={(e) => {
-          setNick(e.target.value);
-          setSaved(false);
-        }}
+        onChange={(e) => setNick(e.target.value)}
         placeholder={t("phraseGame.auth.nickLabel")}
         className="w-28 rounded-lg border px-2 py-1.5 text-sm"
         style={{ borderColor: "var(--border)" }}
         maxLength={24}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") void save();
+        }}
       />
       <button
         type="button"
-        onClick={save}
-        className="rounded-lg px-3 py-1.5 text-xs font-medium text-white"
+        onClick={() => void save()}
+        disabled={!nick.trim() || saving}
+        className="rounded-lg px-3 py-1.5 text-xs font-medium text-white transition-opacity disabled:opacity-40"
         style={{ backgroundColor: "var(--accent)" }}
       >
-        {saved ? t("phraseGame.auth.nickSaved") : t("phraseGame.auth.nickSave")}
+        {t("phraseGame.auth.nickSave")}
       </button>
     </div>
   );

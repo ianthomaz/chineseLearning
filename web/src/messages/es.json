@@ -370,6 +370,7 @@
       "signOut": "Salir",
       "dashboard": "Panel",
       "greeting": "Hola, {name}",
+      "greetingShort": "¡Hola!",
       "nickLabel": "Apodo",
       "nickSave": "Guardar",
       "nickSaved": "Guardado"

@@ -13,6 +13,7 @@ import { logGameEvent } from "@/lib/phrase-game/game-log";
 import { Board, type BoardValue } from "./Board";
 import { ProgressDots } from "./ProgressDots";
 import { SpeakButton } from "./SpeakButton";
+import { HelpIconButton } from "./HelpIconButton";
 
 type Props = {
   item: RoundItem;
@@ -163,6 +164,16 @@ export function GameplayScreen({
         reveal={boardReveal}
         disabled={disabled}
         answerState={answerState}
+        bankAction={
+          submitted === null ? (
+            <SpeakButton
+              text={phrase.hanzi}
+              label={t("phraseGame.help.listen")}
+              variant="active"
+              onPlay={() => logHelp("listen")}
+            />
+          ) : null
+        }
         labels={{
           bank: t("phraseGame.bankLabel"),
           answer: t("phraseGame.answerLabel"),
@@ -176,7 +187,8 @@ export function GameplayScreen({
       {submitted === null ? (
         <div className="flex flex-wrap gap-2">
           {!showPrompt ? (
-            <HelpButton
+            <HelpIconButton
+              icon="subtitles"
               label={t("phraseGame.help.showFullPrompt")}
               onClick={() => {
                 setReveal((r) => ({ ...r, fullPrompt: true }));
@@ -185,29 +197,33 @@ export function GameplayScreen({
             />
           ) : null}
           {hasExtras && !removedExtras ? (
-            <HelpButton label={t("phraseGame.help.removeExtras")} onClick={handleRemoveExtras} />
+            <HelpIconButton
+              icon="delete_sweep"
+              label={t("phraseGame.help.removeExtras")}
+              onClick={handleRemoveExtras}
+            />
           ) : null}
-          <HelpButton
+          <HelpIconButton
+            icon="abc"
             label={t("phraseGame.help.showPinyin")}
             onClick={() => {
               setReveal((r) => ({ ...r, pinyin: true }));
               logHelp("showPinyin");
             }}
           />
-          <HelpButton
+          <HelpIconButton
+            icon="translate"
             label={t("phraseGame.help.showTranslation")}
             onClick={() => {
               setReveal((r) => ({ ...r, translation: true }));
               logHelp("showTranslation");
             }}
           />
-          <SpeakButton
-            text={phrase.hanzi}
-            label={t("phraseGame.help.listen")}
-            variant="pill"
-            onPlay={() => logHelp("listen")}
+          <HelpIconButton
+            icon="extension"
+            label={t("phraseGame.help.nextPiece")}
+            onClick={handleNextPiece}
           />
-          <HelpButton label={t("phraseGame.help.nextPiece")} onClick={handleNextPiece} />
         </div>
       ) : null}
 
@@ -277,18 +293,5 @@ export function GameplayScreen({
         )}
       </div>
     </div>
-  );
-}
-
-function HelpButton({ label, onClick }: { label: string; onClick: () => void }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className="rounded-full border px-3 py-1.5 text-xs text-ink/65 transition-colors hover:bg-ink/5"
-      style={{ borderColor: "var(--border)", fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
-    >
-      {label}
-    </button>
   );
 }

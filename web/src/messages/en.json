@@ -370,6 +370,7 @@
       "signOut": "Sign out",
       "dashboard": "Dashboard",
       "greeting": "Hi, {name}",
+      "greetingShort": "Hi!",
       "nickLabel": "Nickname",
       "nickSave": "Save",
       "nickSaved": "Saved"

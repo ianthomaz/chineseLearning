@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import {
   DndContext,
   DragOverlay,
@@ -37,6 +37,8 @@ type Props = {
   /** Per-piece state for answer pieces after a submit. */
   answerState?: "neutral" | "correct" | "wrong";
   labels: { bank: string; answer: string; answerEmpty: string; moveLeft: string; moveRight: string };
+  /** Optional control in the bank zone header (e.g. listen). */
+  bankAction?: ReactNode;
 };
 
 function SortablePiece({
@@ -113,22 +115,27 @@ function Zone({
   id,
   title,
   emptyHint,
+  headerAction,
   children,
 }: {
   id: ZoneId;
   title: string;
   emptyHint?: string;
+  headerAction?: ReactNode;
   children: React.ReactNode;
 }) {
   const { setNodeRef, isOver } = useDroppable({ id });
   return (
     <div>
-      <p
-        className="mb-2 text-xs font-medium uppercase tracking-wide text-ink/40"
-        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
-      >
-        {title}
-      </p>
+      <div className="mb-2 flex items-center justify-between gap-2">
+        <p
+          className="text-xs font-medium uppercase tracking-wide text-ink/40"
+          style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        >
+          {title}
+        </p>
+        {headerAction}
+      </div>
       <div
         ref={setNodeRef}
         className="flex min-h-[4.5rem] flex-wrap items-center gap-2 gap-y-4 rounded-2xl border border-dashed p-3 transition-colors"
@@ -152,6 +159,7 @@ export function Board({
   disabled,
   answerState = "neutral",
   labels,
+  bankAction,
 }: Props) {
   const [activeId, setActiveId] = useState<string | null>(null);
   const sensors = useSensors(
@@ -249,7 +257,7 @@ export function Board({
       onDragCancel={() => setActiveId(null)}
     >
       <div className="space-y-5">
-        <Zone id="bank" title={labels.bank}>
+        <Zone id="bank" title={labels.bank} headerAction={bankAction}>
           <SortableContext items={value.bank.map((p) => p.id)} strategy={rectSortingStrategy}>
             {value.bank.map((piece) => (
               <SortablePiece
