@@ -48,6 +48,8 @@ const withPWA = withPWAInit({
     process.env.NODE_ENV === "development" ||
     process.env.NEXT_PWA_DISABLED === "1",
   register: true,
+  // Large vocabulary PDFs (~50MB) — not on every deploy; precache would fail install.
+  publicExcludes: ["!downloads/**/*.pdf"],
 });
 
 export default withPWA(nextConfig);
