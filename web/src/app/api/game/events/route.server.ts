@@ -8,6 +8,7 @@
  */
 import { auth } from "@/server/auth";
 import { recordEvent, type EventInput, type GameEventName } from "@/server/db/events";
+import { rateLimit } from "@/server/rate-limit";
 
 export const dynamic = "force-dynamic";
 
@@ -52,6 +53,13 @@ function normalize(raw: RawEvent, userId: string | null, userAgent: string | nul
 }
 
 export async function POST(req: Request) {
+  // Shed scripted floods on this public, unauthenticated endpoint. A fast round
+  // is ~15 events, so 240/min/IP is generous for real play but blocks abuse.
+  const ip = (req.headers.get("x-forwarded-for") ?? "").split(",")[0]?.trim() || "unknown";
+  if (!rateLimit(`events:${ip}`, 240, 60_000)) {
+    return Response.json({ ok: false, error: "rate_limited" }, { status: 429 });
+  }
+
   let userId: string | null = null;
   try {
     const session = await auth();

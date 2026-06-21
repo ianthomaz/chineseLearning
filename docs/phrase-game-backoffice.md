@@ -28,7 +28,8 @@ Every row also stores: `created_at`, `user_id` (Google sub, when signed in),
   `keepalive` lets abandon events flush during navigation/unload.
 - **API** — `web/src/app/api/game/events/route.server.ts` (server-mode route).
   Attaches the signed-in `user_id` from the session; the client only supplies the
-  anonymous id. Best-effort, never blocks gameplay.
+  anonymous id. Best-effort, never blocks gameplay. Rate-limited per IP
+  (240/min, `web/src/server/rate-limit.ts`); batch capped at 50; field lengths clamped.
 - **Storage** — `web/src/server/db/events.ts` (`recordEvent`, `recentEvents`,
   `eventStats`) on the existing `node:sqlite` connection.
 
