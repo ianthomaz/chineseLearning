@@ -365,6 +365,7 @@
       "signingIn": "Signing in…",
       "signInFailed": "Could not sign in. Try again.",
       "signOut": "Sign out",
+      "dashboard": "Dashboard",
       "greeting": "Hi, {name}",
       "nickLabel": "Nickname",
       "nickSave": "Save",

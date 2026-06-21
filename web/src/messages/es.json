@@ -365,6 +365,7 @@
       "signingIn": "Entrando…",
       "signInFailed": "No se pudo entrar. Inténtalo de nuevo.",
       "signOut": "Salir",
+      "dashboard": "Panel",
       "greeting": "Hola, {name}",
       "nickLabel": "Apodo",
       "nickSave": "Guardar",

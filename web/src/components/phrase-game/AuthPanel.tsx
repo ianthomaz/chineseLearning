@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { signOut, useSession } from "next-auth/react";
 import { useLocale } from "@/context/LocaleContext";
 import { GoogleOneTap, GoogleSignInRedirect } from "./GoogleOneTap";
+import { isAdminEmail } from "@/lib/phrase-game/admin";
 
 /** Disabled in static-export builds (no server route handlers). */
 const AUTH_ENABLED = process.env.NEXT_PUBLIC_AUTH_ENABLED !== "0";
@@ -64,6 +65,7 @@ function AuthPanelLive({
   }
 
   const name = session.user.name ?? session.user.email ?? "";
+  const isAdmin = isAdminEmail(session.user.email);
   return (
     <div
       className="flex flex-col gap-3 rounded-2xl border px-4 py-3 sm:flex-row sm:items-center sm:justify-between"
@@ -77,6 +79,15 @@ function AuthPanelLive({
         <p className="text-sm text-ink/70">{t("phraseGame.auth.greeting", { name })}</p>
       </div>
       <div className="flex flex-wrap items-center gap-3">
+        {isAdmin ? (
+          <a
+            href={`${BASE_PATH}/backoffice`}
+            className="rounded-full px-3 py-1.5 text-xs font-semibold text-white"
+            style={{ backgroundColor: "var(--accent)" }}
+          >
+            {t("phraseGame.auth.dashboard")}
+          </a>
+        ) : null}
         <NickEditor t={t} />
         <button
           type="button"

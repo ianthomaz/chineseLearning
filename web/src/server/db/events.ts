@@ -126,3 +126,82 @@ export function eventStats(): EventStats {
     guests: count(`SELECT COUNT(DISTINCT anon_id) AS n FROM events WHERE anon_id IS NOT NULL`),
   };
 }
+
+export type EventFilters = {
+  event?: string;
+  tier?: string;
+  who?: "logged" | "guests" | "";
+  result?: "correct" | "wrong" | "";
+  sinceDays?: number;
+  limit?: number;
+};
+
+/** Filtered recent events for the dashboard (joined to player nick/email). */
+export function queryEvents(f: EventFilters): EventRow[] {
+  const where: string[] = [];
+  const args: Array<string | number> = [];
+  if (f.event) {
+    where.push("e.event = ?");
+    args.push(f.event);
+  }
+  if (f.tier) {
+    where.push("e.tier = ?");
+    args.push(f.tier);
+  }
+  if (f.who === "logged") where.push("e.user_id IS NOT NULL");
+  else if (f.who === "guests") where.push("e.user_id IS NULL");
+  if (f.result === "correct") where.push("e.correct = 1");
+  else if (f.result === "wrong") where.push("e.correct = 0");
+  if (f.sinceDays && f.sinceDays > 0) {
+    where.push("e.created_at >= datetime('now', ?)");
+    args.push(`-${Math.floor(f.sinceDays)} days`);
+  }
+  const limit = Math.min(Math.max(1, Math.floor(f.limit ?? 200)), 1000);
+  args.push(limit);
+  return getDb()
+    .prepare(
+      `SELECT e.id, e.created_at, e.event, e.user_id, e.anon_id, e.round_id, e.tier,
+              e.level, e.phrase_id, e.correct, e.attempt, e.detail, e.locale, e.user_agent,
+              p.nick AS nick, p.email AS email
+         FROM events e
+         LEFT JOIN players p ON p.id = e.user_id
+        ${where.length ? `WHERE ${where.join(" AND ")}` : ""}
+        ORDER BY e.id DESC
+        LIMIT ?`,
+    )
+    .all(...args) as EventRow[];
+}
+
+export type MissedPhrase = { phrase_id: string; wrong: number; total: number };
+
+/** Phrases with the most wrong submits — the ones tripping players up. */
+export function topMissedPhrases(limit = 10): MissedPhrase[] {
+  return getDb()
+    .prepare(
+      `SELECT phrase_id,
+              SUM(CASE WHEN correct = 0 THEN 1 ELSE 0 END) AS wrong,
+              COUNT(*) AS total
+         FROM events
+        WHERE event = 'phrase_result' AND phrase_id IS NOT NULL
+        GROUP BY phrase_id
+       HAVING wrong > 0
+        ORDER BY wrong DESC, total DESC
+        LIMIT ?`,
+    )
+    .all(Math.min(Math.max(1, limit), 50)) as MissedPhrase[];
+}
+
+export type TierLevelCount = { tier: string | null; level: number | null; n: number };
+
+/** Rounds started, grouped by tier + level. */
+export function roundsByTierLevel(): TierLevelCount[] {
+  return getDb()
+    .prepare(
+      `SELECT tier, level, COUNT(*) AS n
+         FROM events
+        WHERE event = 'round_start'
+        GROUP BY tier, level
+        ORDER BY tier, level`,
+    )
+    .all() as TierLevelCount[];
+}

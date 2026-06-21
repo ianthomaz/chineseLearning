@@ -36,14 +36,20 @@ Every row also stores: `created_at`, `user_id` (Google sub, when signed in),
 ## Backoffice (owner)
 
 `/aulaChines/backoffice` — server-rendered, **admin-gated**, absent on static
-export (`page.server.tsx`). Shows summary cards (rounds, completes, abandons,
-correct/wrong, distinct players/guests) and the 200 most recent events.
+export (`page.server.tsx`). KPI cards (with completion / abandon / accuracy
+rates), an engagement funnel, the hardest phrases (by wrong count, shown in
+hanzi), rounds by tier/level, and a **filterable** activity feed (event, tier,
+who, result, period, limit — plain URL query params, no client JS). A
+**Dashboard** button in the game's auth panel links here, shown only to admins.
 
-**Access:** the signed-in Google account email must be in `ADMIN_EMAIL`
-(comma-separated) in `deploy/server.env`. Defaults to the repo owner if unset.
+**Access:** the signed-in Google account email must pass `isAdminEmail`
+(`web/src/lib/phrase-game/admin.ts`), driven by **build-time**
+`NEXT_PUBLIC_ADMIN_EMAIL` (comma-separated; defaults to the repo owner). The same
+value decides who sees the Dashboard button.
 
 ```
-ADMIN_EMAIL=you@example.com,teammate@example.com
+# web/.env.local (build-time)
+NEXT_PUBLIC_ADMIN_EMAIL=you@example.com,teammate@example.com
 ```
 
 ## Requirements / notes
