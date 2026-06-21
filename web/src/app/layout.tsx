@@ -9,9 +9,14 @@ const GA_MEASUREMENT_ID = "G-46HMWMHG18";
 
 const APP_NAME = "Chinês básico";
 
+const publicBase =
+  (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "") || "";
+
+const asset = (path: string) => `${publicBase}${path}`;
+
 export const metadata: Metadata = {
   applicationName: APP_NAME,
-  manifest: "/manifest.webmanifest",
+  manifest: asset("/manifest.webmanifest"),
   title: {
     default: APP_NAME,
     template: "%s · Chinês básico",
@@ -27,10 +32,10 @@ export const metadata: Metadata = {
     telephone: false,
   },
   icons: {
-    apple: "/icons/apple-touch-icon.png",
+    apple: asset("/icons/apple-touch-icon.png"),
     icon: [
-      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/icons/icon-512.png", sizes: "512x512", type: "image/png" },
+      { url: asset("/icons/icon-192.png"), sizes: "192x192", type: "image/png" },
+      { url: asset("/icons/icon-512.png"), sizes: "512x512", type: "image/png" },
     ],
   },
 };
@@ -41,9 +46,6 @@ export const viewport: Viewport = {
   initialScale: 1,
   viewportFit: "cover",
 };
-
-const publicBase =
-  (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "") || "";
 
 export default function RootLayout({
   children,
