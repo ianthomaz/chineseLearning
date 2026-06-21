@@ -31,6 +31,51 @@ const hostname = process.env.HOSTNAME || "127.0.0.1";
 const port = Number.parseInt(process.env.PORT || "34827", 10);
 const base = basePathFromBuild();
 
+/** Dynamic SSR HTML omits basePath on /_next/* ; static prerender already includes it. */
+function prefixRootNextAssets(body, basePath) {
+  if (!basePath || !body.includes('"/_next/')) return body;
+  return body.replaceAll('"/_next/', `"${basePath}/_next/`);
+}
+
+/** Buffer HTML for dynamic routes so asset URLs get the public basePath prefix. */
+function wrapResForBasePath(res, basePath) {
+  const chunks = [];
+  const origEnd = res.end.bind(res);
+
+  res.write = (chunk, encoding, cb) => {
+    if (chunk) {
+      chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk, typeof encoding === "string" ? encoding : "utf8"));
+    }
+    if (typeof encoding === "function") cb = encoding;
+    if (cb) setImmediate(cb);
+    return true;
+  };
+
+  res.end = (chunk, encoding, cb) => {
+    if (typeof encoding === "function") {
+      cb = encoding;
+      encoding = undefined;
+    }
+    if (chunk) {
+      chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk, typeof encoding === "string" ? encoding : "utf8"));
+    }
+
+    let out = chunks.length ? Buffer.concat(chunks) : Buffer.alloc(0);
+    const ct = res.getHeader("content-type");
+    const ctStr = Array.isArray(ct) ? ct[0] : String(ct ?? "");
+
+    if (ctStr.includes("text/html") && out.length > 0) {
+      const text = out.toString("utf8");
+      if (text.includes('"/_next/')) {
+        out = Buffer.from(prefixRootNextAssets(text, basePath));
+        res.setHeader("content-length", out.length);
+      }
+    }
+
+    return origEnd(out, encoding, cb);
+  };
+}
+
 const app = next({ dev, hostname, port, dir: webRoot });
 const handle = app.getRequestHandler();
 
@@ -53,6 +98,10 @@ createServer(async (req, res) => {
     // trailing slash before handing off when `trailingSlash: false` in next.config.
     if (u.pathname.length > 1 && u.pathname.endsWith("/")) {
       u.pathname = u.pathname.replace(/\/+$/, "") || "/";
+    }
+    // backoffice is force-dynamic SSR — flight HTML ships /_next/* without basePath.
+    if (base && u.pathname === "/backoffice") {
+      wrapResForBasePath(res, base);
     }
     req.url = u.pathname + u.search;
     await handle(req, res, parse(req.url, true));
