@@ -341,6 +341,7 @@
     "correct": "Correct!",
     "wrong": "Not quite!",
     "correctAnswer": "Correct answer:",
+    "speak": "Listen",
     "help": {
       "showFullPrompt": "Show translated sentence",
       "removeExtras": "Remove extra pieces",

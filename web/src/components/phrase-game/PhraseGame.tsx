@@ -18,6 +18,7 @@ import {
 import { AuthPanel } from "./AuthPanel";
 import { GameplayScreen } from "./GameplayScreen";
 import { SetupScreen } from "./SetupScreen";
+import { SpeakButton } from "./SpeakButton";
 
 type Phase = "setup" | "playing" | "complete";
 
@@ -231,7 +232,10 @@ function RoundComplete({
                 className="rounded-xl border p-3"
                 style={{ borderColor: "var(--border)" }}
               >
-                <p className="font-hanzi text-lg leading-snug text-ink">{p.hanzi}</p>
+                <div className="flex items-center gap-2">
+                  <span className="font-hanzi text-lg leading-snug text-ink">{p.hanzi}</span>
+                  <SpeakButton text={p.hanzi} label={t("phraseGame.speak")} />
+                </div>
                 {p.pinyin ? (
                   <p
                     className="text-sm text-ink/55"

@@ -341,6 +341,7 @@
     "correct": "¡Correcto!",
     "wrong": "¡Casi!",
     "correctAnswer": "Respuesta correcta:",
+    "speak": "Escuchar",
     "help": {
       "showFullPrompt": "Mostrar frase traducida",
       "removeExtras": "Quitar piezas extra",
