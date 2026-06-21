@@ -347,12 +347,14 @@
       "removeExtras": "Remove extra pieces",
       "showPinyin": "Show pinyin",
       "showTranslation": "Show translation",
+      "listen": "Listen to the sentence",
       "nextPiece": "Next piece"
     },
     "roundComplete": {
       "title": "Round complete!",
       "score": "You got {correct} of {total}.",
       "reviewTitle": "Review these phrases:",
+      "allPhrasesTitle": "This round's phrases:",
       "allCorrect": "You got them all! 🎉",
       "playAgain": "Play again",
       "changeSettings": "Change settings"

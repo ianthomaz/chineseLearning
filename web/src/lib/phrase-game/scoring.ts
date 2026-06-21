@@ -14,12 +14,14 @@ export type HelpAction =
   | "showFullPrompt"
   | "showPinyin"
   | "showTranslation"
+  | "listen"
   | "nextPiece";
 
 export const HELP_LEVEL: Record<HelpAction, number> = {
   removeExtras: 1,
   showFullPrompt: 2,
   showPinyin: 2,
+  listen: 2,
   showTranslation: 3,
   nextPiece: 4,
 };

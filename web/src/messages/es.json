@@ -347,12 +347,14 @@
       "removeExtras": "Quitar piezas extra",
       "showPinyin": "Mostrar pinyin",
       "showTranslation": "Mostrar traducción",
+      "listen": "Escuchar la frase",
       "nextPiece": "Siguiente pieza"
     },
     "roundComplete": {
       "title": "¡Ronda completada!",
       "score": "Acertaste {correct} de {total}.",
       "reviewTitle": "Repasa estas frases:",
+      "allPhrasesTitle": "Frases de esta ronda:",
       "allCorrect": "¡Las acertaste todas! 🎉",
       "playAgain": "Jugar de nuevo",
       "changeSettings": "Cambiar configuración"

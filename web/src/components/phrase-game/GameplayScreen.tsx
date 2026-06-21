@@ -201,6 +201,12 @@ export function GameplayScreen({
               logHelp("showTranslation");
             }}
           />
+          <SpeakButton
+            text={phrase.hanzi}
+            label={t("phraseGame.help.listen")}
+            variant="pill"
+            onPlay={() => logHelp("listen")}
+          />
           <HelpButton label={t("phraseGame.help.nextPiece")} onClick={handleNextPiece} />
         </div>
       ) : null}

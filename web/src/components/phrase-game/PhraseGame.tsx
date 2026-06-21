@@ -186,9 +186,10 @@ export function PhraseGame() {
           <RoundComplete
             correct={results.filter((r) => r === "correct").length}
             total={round.items.length}
-            misses={round.items
-              .filter((_, i) => results[i] === "wrong")
-              .map((it) => it.phrase)}
+            items={round.items.map((it, i) => ({
+              phrase: it.phrase,
+              correct: results[i] === "correct",
+            }))}
             onPlayAgain={startRound}
             onChangeSettings={() => setPhase("setup")}
           />
@@ -201,13 +202,13 @@ export function PhraseGame() {
 function RoundComplete({
   correct,
   total,
-  misses,
+  items,
   onPlayAgain,
   onChangeSettings,
 }: {
   correct: number;
   total: number;
-  misses: Phrase[];
+  items: Array<{ phrase: Phrase; correct: boolean }>;
   onPlayAgain: () => void;
   onChangeSettings: () => void;
 }) {
@@ -219,19 +220,29 @@ function RoundComplete({
         {t("phraseGame.roundComplete.score", { correct, total })}
       </p>
 
-      {/* Review the missed phrases in their correct form — closes the learning loop. */}
-      {misses.length > 0 ? (
-        <div className="mt-6 text-left">
-          <p className="mb-3 text-sm font-semibold text-ink">
-            {t("phraseGame.roundComplete.reviewTitle")}
-          </p>
-          <ul className="space-y-2.5">
-            {misses.map((p) => (
-              <li
-                key={p.id}
-                className="rounded-xl border p-3"
-                style={{ borderColor: "var(--border)" }}
+      {/* All phrases from the round, in order — wrong ones flagged, each with audio. */}
+      <div className="mt-6 text-left">
+        <p className="mb-3 text-sm font-semibold text-ink">
+          {t("phraseGame.roundComplete.allPhrasesTitle")}
+        </p>
+        <ul className="space-y-2.5">
+          {items.map(({ phrase: p, correct: ok }, i) => (
+            <li
+              key={`${p.id}-${i}`}
+              className="flex items-start gap-3 rounded-xl border p-3"
+              style={{
+                borderColor: ok ? "var(--border)" : "#fca5a5",
+                backgroundColor: ok ? "transparent" : "rgba(185,28,28,0.05)",
+              }}
+            >
+              <span
+                className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[0.7rem] font-semibold text-white"
+                style={{ backgroundColor: ok ? "#15803d" : "#b91c1c" }}
+                title={ok ? t("phraseGame.correct") : t("phraseGame.wrong")}
               >
+                {i + 1}
+              </span>
+              <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2">
                   <span className="font-hanzi text-lg leading-snug text-ink">{p.hanzi}</span>
                   <SpeakButton text={p.hanzi} label={t("phraseGame.speak")} />
@@ -245,13 +256,11 @@ function RoundComplete({
                   </p>
                 ) : null}
                 <p className="mt-0.5 text-sm text-ink/70">{localizedPrompt(p, locale)}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : (
-        <p className="mt-3 text-sm text-ink/55">{t("phraseGame.roundComplete.allCorrect")}</p>
-      )}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
         <button
