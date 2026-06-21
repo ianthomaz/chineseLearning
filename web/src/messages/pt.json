@@ -365,6 +365,7 @@
       "signingIn": "A entrar…",
       "signInFailed": "Não foi possível entrar. Tente de novo.",
       "signOut": "Sair",
+      "dashboard": "Dashboard",
       "greeting": "Olá, {name}",
       "nickLabel": "Apelido",
       "nickSave": "Salvar",
