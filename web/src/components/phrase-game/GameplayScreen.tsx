@@ -12,6 +12,7 @@ import type { HelpAction } from "@/lib/phrase-game/scoring";
 import { logGameEvent } from "@/lib/phrase-game/game-log";
 import { Board, type BoardValue } from "./Board";
 import { ProgressDots } from "./ProgressDots";
+import { SpeakButton } from "./SpeakButton";
 
 type Props = {
   item: RoundItem;
@@ -200,6 +201,12 @@ export function GameplayScreen({
               logHelp("showTranslation");
             }}
           />
+          <SpeakButton
+            text={phrase.hanzi}
+            label={t("phraseGame.help.listen")}
+            variant="pill"
+            onPlay={() => logHelp("listen")}
+          />
           <HelpButton label={t("phraseGame.help.nextPiece")} onClick={handleNextPiece} />
         </div>
       ) : null}
@@ -229,14 +236,17 @@ export function GameplayScreen({
             {submitted ? t("phraseGame.correct") : t("phraseGame.wrong")}
           </p>
           <div className="mt-2 space-y-1 text-sm text-ink/70">
-            {submitted ? (
-              <p className="font-hanzi text-lg text-ink">{phrase.hanzi}</p>
-            ) : (
-              <p>
-                {t("phraseGame.correctAnswer")}{" "}
+            <div className="flex items-center gap-2">
+              {submitted ? (
                 <span className="font-hanzi text-lg text-ink">{phrase.hanzi}</span>
-              </p>
-            )}
+              ) : (
+                <span>
+                  {t("phraseGame.correctAnswer")}{" "}
+                  <span className="font-hanzi text-lg text-ink">{phrase.hanzi}</span>
+                </span>
+              )}
+              <SpeakButton text={phrase.hanzi} label={t("phraseGame.speak")} />
+            </div>
             {phrase.pinyin ? <p>{phrase.pinyin}</p> : null}
             <p>{promptText}</p>
           </div>

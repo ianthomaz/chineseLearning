@@ -341,17 +341,20 @@
     "correct": "Correct!",
     "wrong": "Not quite!",
     "correctAnswer": "Correct answer:",
+    "speak": "Listen",
     "help": {
       "showFullPrompt": "Show translated sentence",
       "removeExtras": "Remove extra pieces",
       "showPinyin": "Show pinyin",
       "showTranslation": "Show translation",
+      "listen": "Listen to the sentence",
       "nextPiece": "Next piece"
     },
     "roundComplete": {
       "title": "Round complete!",
       "score": "You got {correct} of {total}.",
       "reviewTitle": "Review these phrases:",
+      "allPhrasesTitle": "This round's phrases:",
       "allCorrect": "You got them all! 🎉",
       "playAgain": "Play again",
       "changeSettings": "Change settings"
@@ -365,6 +368,7 @@
       "signingIn": "Signing in…",
       "signInFailed": "Could not sign in. Try again.",
       "signOut": "Sign out",
+      "dashboard": "Dashboard",
       "greeting": "Hi, {name}",
       "nickLabel": "Nickname",
       "nickSave": "Save",

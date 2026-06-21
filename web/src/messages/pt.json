@@ -341,17 +341,20 @@
     "correct": "Correto!",
     "wrong": "Quase!",
     "correctAnswer": "Resposta certa:",
+    "speak": "Ouvir",
     "help": {
       "showFullPrompt": "Mostrar frase traduzida",
       "removeExtras": "Remover peças extras",
       "showPinyin": "Mostrar pinyin",
       "showTranslation": "Mostrar tradução",
+      "listen": "Ouvir a frase",
       "nextPiece": "Próxima peça"
     },
     "roundComplete": {
       "title": "Rodada concluída!",
       "score": "Você acertou {correct} de {total}.",
       "reviewTitle": "Revise estas frases:",
+      "allPhrasesTitle": "Frases desta rodada:",
       "allCorrect": "Você acertou todas! 🎉",
       "playAgain": "Jogar de novo",
       "changeSettings": "Mudar configurações"
@@ -365,6 +368,7 @@
       "signingIn": "A entrar…",
       "signInFailed": "Não foi possível entrar. Tente de novo.",
       "signOut": "Sair",
+      "dashboard": "Dashboard",
       "greeting": "Olá, {name}",
       "nickLabel": "Apelido",
       "nickSave": "Salvar",
