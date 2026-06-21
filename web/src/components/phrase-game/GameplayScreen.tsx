@@ -80,9 +80,11 @@ export function GameplayScreen({
   function handleSubmit() {
     const result = validateAttempt(board.answer, phrase);
     setSubmitted(result.correct);
-    if (result.correct) {
-      setReveal((r) => ({ ...r, pinyin: true, translation: true }));
-    }
+    setReveal((r) => ({
+      ...r,
+      pinyin: true,
+      translation: result.correct ? true : r.translation,
+    }));
     trackEvent({ action: "phrase_submit", category: "phrase_game", label: phrase.id });
     trackEvent({
       action: result.correct ? "phrase_correct" : "phrase_wrong",
@@ -131,7 +133,9 @@ export function GameplayScreen({
   const showPrompt = settings.showNativePrompt || reveal.fullPrompt;
   const promptText = localizedPrompt(phrase, locale);
   const boardReveal =
-    submitted === true ? { pinyin: true, translation: true } : { pinyin: reveal.pinyin, translation: reveal.translation };
+    submitted !== null
+      ? { pinyin: true, translation: submitted === true ? true : reveal.translation }
+      : { pinyin: reveal.pinyin, translation: reveal.translation };
 
   return (
     <div className="space-y-6">
@@ -224,18 +228,18 @@ export function GameplayScreen({
           <p className="font-medium" style={{ color: submitted ? "var(--accent)" : "#b91c1c" }}>
             {submitted ? t("phraseGame.correct") : t("phraseGame.wrong")}
           </p>
-          {submitted ? (
-            <div className="mt-2 space-y-1 text-sm text-ink/70">
+          <div className="mt-2 space-y-1 text-sm text-ink/70">
+            {submitted ? (
               <p className="font-hanzi text-lg text-ink">{phrase.hanzi}</p>
-              {phrase.pinyin ? <p>{phrase.pinyin}</p> : null}
-              <p>{promptText}</p>
-            </div>
-          ) : (
-            <p className="mt-2 text-sm text-ink/70">
-              {t("phraseGame.correctAnswer")}{" "}
-              <span className="font-hanzi text-lg text-ink">{phrase.hanzi}</span>
-            </p>
-          )}
+            ) : (
+              <p>
+                {t("phraseGame.correctAnswer")}{" "}
+                <span className="font-hanzi text-lg text-ink">{phrase.hanzi}</span>
+              </p>
+            )}
+            {phrase.pinyin ? <p>{phrase.pinyin}</p> : null}
+            <p>{promptText}</p>
+          </div>
         </div>
       ) : null}
 
