@@ -99,7 +99,7 @@ createServer(async (req, res) => {
     if (u.pathname.length > 1 && u.pathname.endsWith("/")) {
       u.pathname = u.pathname.replace(/\/+$/, "") || "/";
     }
-    // backoffice is force-dynamic SSR — flight HTML ships /_next/* without basePath.
+    // Dynamic SSR HTML may omit basePath on /_next/* (static prerender already includes it).
     if (base && u.pathname === "/backoffice") {
       wrapResForBasePath(res, base);
     }
