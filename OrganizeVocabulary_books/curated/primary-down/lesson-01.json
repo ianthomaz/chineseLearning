@@ -1,0 +1,362 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "volumeLabel": "初级·下",
+    "lesson": 1,
+    "title": "认识新同学",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "level2.pdf",
+      "pages": {
+        "textVocab": 14,
+        "extensionVocab": 20,
+        "produceSupport": 24
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "智慧",
+        "pinyin": "zhìhuì",
+        "pos": "名",
+        "glossEn": "wisdom",
+        "examples": [
+          "人的智慧",
+          "有智慧"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "来自",
+        "pinyin": "láizì",
+        "pos": "动",
+        "glossEn": "come from",
+        "examples": [
+          "来自日本",
+          "来自不同的国家"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "诗（歌）",
+        "pinyin": "shī",
+        "pos": "",
+        "glossEn": "(gē)",
+        "examples": [
+          "名 poetry 写诗",
+          "中国诗歌"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "哲学",
+        "pinyin": "zhéxué",
+        "pos": "名",
+        "glossEn": "philosophy",
+        "examples": [
+          "中国哲学",
+          "哲学家"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "将来",
+        "pinyin": "jiānglái",
+        "pos": "名",
+        "glossEn": "future",
+        "examples": [
+          "将来的生活",
+          "美好的将来"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "计划",
+        "pinyin": "jìhuà",
+        "pos": "名动",
+        "glossEn": "plan",
+        "examples": [
+          "做学习计划",
+          "计划去旅行"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "通过",
+        "pinyin": "tōngguò",
+        "pos": "动",
+        "glossEn": "pass",
+        "examples": [
+          "通过了HSK4级考试"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "流利",
+        "pinyin": "liúlì",
+        "pos": "形",
+        "glossEn": "fluent",
+        "examples": [
+          "汉语说得很流利",
+          "能流利地"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "优秀",
+        "pinyin": "yōuxiù",
+        "pos": "形",
+        "glossEn": "excellent",
+        "examples": [
+          "成绩很优秀",
+          "优秀的学生"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "孔子",
+        "pinyin": "Kǒngzǐ",
+        "pos": "专有",
+        "glossEn": "Confucius",
+        "examples": [
+          "孔子的话",
+          "孔子的智慧"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "君子",
+        "pinyin": "jūnzǐ",
+        "pos": "名",
+        "glossEn": "man of noble virtue",
+        "examples": [
+          "一位君子",
+          "孔子是君子"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "君子尚德",
+        "pinyin": "jūnzǐ shàng dé",
+        "pos": "",
+        "glossEn": "an exemplary person esteems virtue",
+        "examples": []
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "思考",
+        "pinyin": "sīkǎo",
+        "pos": "动",
+        "glossEn": "think",
+        "examples": [
+          "思考问题",
+          "认真思考"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "确实",
+        "pinyin": "quèshí",
+        "pos": "副",
+        "glossEn": "indeed",
+        "examples": [
+          "她确实很聪明"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "比如",
+        "pinyin": "bǐrú",
+        "pos": "动",
+        "glossEn": "for example",
+        "examples": [
+          "我很喜欢吃水果，比如苹果、香蕉"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "教育",
+        "pinyin": "jiàoyù",
+        "pos": "名动",
+        "glossEn": "education",
+        "examples": [
+          "educate 国际中文教育",
+          "教育孩子"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "打交道",
+        "pinyin": "dǎ jiāodao",
+        "pos": "",
+        "glossEn": "have dealings with",
+        "examples": [
+          "跟外国人打交道",
+          "打过一次交道"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "联系",
+        "pinyin": "liánxì",
+        "pos": "动",
+        "glossEn": "contact",
+        "examples": [
+          "connect 和同学联系",
+          "联系老师"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "密切",
+        "pinyin": "mìqiè",
+        "pos": "形",
+        "glossEn": "close",
+        "examples": [
+          "关系密切",
+          "密切联系"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "本科",
+        "pinyin": "běnkē",
+        "pos": "名",
+        "glossEn": "undergraduate course",
+        "examples": [
+          "大学本科",
+          "本科生"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "毕业",
+        "pinyin": "bìyè",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 10,
+        "hanzi": "动",
+        "pinyin": "graduate",
+        "pos": "",
+        "glossEn": "小学毕业",
+        "examples": [
+          "从……毕业"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "姓名",
+          "core": [
+            "智慧",
+            "思考"
+          ],
+          "supplement": [
+            "发音",
+            "像"
+          ]
+        },
+        {
+          "theme": "专业",
+          "core": [
+            "诗（歌）",
+            "哲学",
+            "教育",
+            "打交道",
+            "联系",
+            "密切",
+            "计划",
+            "将来",
+            "计划",
+            "通过",
+            "流利",
+            "优秀",
+            "本科",
+            "毕业"
+          ],
+          "supplement": [
+            "密切",
+            "实习",
+            "外交官",
+            "理想"
+          ]
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "来自",
+            "确实",
+            "比如"
+          ],
+          "supplement": []
+        }
+      ],
+      "expressionPatterns": [
+        "（1）我的名字是我的第一位汉语老师起的。（是……的）",
+        "（2）我妈妈查了词典以后给我起的这个名字。（给……起名字）",
+        "（3）我对中国历史特别感兴趣。（对……感兴趣）",
+        "（4）除了学好汉语以外，我还要多了解中国的历史和文化。（除了……以外，还……）",
+        "（5）我打算毕业以后做和国际贸易有关的工作。（和……有关）",
+        "（6）希望将来我的理想能够实现。（实现理想）"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "来自",
+      "通过",
+      "思考",
+      "比如",
+      "联系"
+    ],
+    "noun": [
+      "智慧",
+      "哲学",
+      "将来",
+      "君子",
+      "本科"
+    ],
+    "adjective": [
+      "流利",
+      "优秀",
+      "密切"
+    ],
+    "adverb": [
+      "确实"
+    ],
+    "properNoun": [
+      "孔子"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "发音",
+        "像",
+        "诗（歌）",
+        "教育",
+        "打交道",
+        "计划",
+        "毕业",
+        "实习",
+        "外交官",
+        "理想"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 12,
+    "extensionEntries": 10,
+    "produceCoreWords": 19,
+    "produceSupplementWords": 6,
+    "uniqueHanziInLesson": 27
+  }
+}

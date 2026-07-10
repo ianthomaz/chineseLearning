@@ -12,7 +12,9 @@
 | [06_deploy.md](06_deploy.md) | Estático (webplace) vs Node (`next start`) e nginx |
 | [07_vocabulario_hanzi_strokes.md](07_vocabulario_hanzi_strokes.md) | Vocabulário: Make Me a Hanzi, Hanzi Writer, modal, licenças |
 | [08_plano_jogo_frases.md](08_plano_jogo_frases.md) | Jogo de frases — **estado actual** (MVP implementado) |
-| [09_google_auth_jogo.md](09_google_auth_jogo.md) | Login Google (OAuth ChineseSite), credenciais, One Tap |
+| [09_google_auth_jogo.md](09_google_auth_jogo.md) | Login Google site-wide (OAuth ChineseSite), JWT, SQLite `users` |
+| [11_content_db_schema.md](11_content_db_schema.md) | Caminho para conteúdo 100% BD (`CONTENT_SOURCE`, schema proposto) |
+| [12_aula_registro_roadmap.md](12_aula_registro_roadmap.md) | **Registo de aulas** — formulário, léxico global, roadmap (planeamento) |
 | [phrase-game-scoring.md](phrase-game-scoring.md) | Regras de pontuação (implementadas, sem UI) |
 | [phrase-game-upgrades.md](phrase-game-upgrades.md) | Backlog e sugestões de melhoria do jogo de frases |
 | [10_phrase_game_implementation_prompt.md](10_phrase_game_implementation_prompt.md) | Spec histórica do MVP (referência; ver 08 + README do módulo) |

@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 1,
+    "title": "你也是留学生吗？",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 15,
+        "extensionVocab": 19,
+        "produceSupport": 23
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "遇到",
+        "pinyin": "yùdào",
+        "pos": "动",
+        "glossEn": "come across",
+        "examples": [
+          "遇到朋友",
+          "在商店遇到……"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "留学生",
+        "pinyin": "liúxuéshēng",
+        "pos": "名",
+        "glossEn": "student studying abroad一个留学生",
+        "examples": [
+          "意大利留学生"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "中文",
+        "pinyin": "Zhōngwén",
+        "pos": "名",
+        "glossEn": "Chinese language",
+        "examples": [
+          "学习中文",
+          "中文课"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "学院",
+        "pinyin": "xuéyuàn",
+        "pos": "名",
+        "glossEn": "institute",
+        "examples": [
+          "中文学院",
+          "旅游学院"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "新生",
+        "pinyin": "xīnshēng",
+        "pos": "名",
+        "glossEn": "new student",
+        "examples": [
+          "一个新生"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "咱们",
+        "pinyin": "zánmen",
+        "pos": "代",
+        "glossEn": "we",
+        "examples": [
+          "us 咱们走吧！"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "啊",
+        "pinyin": "à",
+        "pos": "叹",
+        "glossEn": "[used to express sudden realization] ah",
+        "examples": [
+          "aha 啊……是这样。"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "以为",
+        "pinyin": "yǐwéi",
+        "pos": "动",
+        "glossEn": "think",
+        "examples": [
+          "believe 我以为她是中国人。"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "意大利",
+        "pinyin": "Yìdàlì",
+        "pos": "专有",
+        "glossEn": "Italy",
+        "examples": [
+          "意大利人"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "法国",
+        "pinyin": "Fǎguó",
+        "pos": "专有",
+        "glossEn": "France",
+        "examples": [
+          "法国人"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "室友",
+        "pinyin": "shìyǒu",
+        "pos": "名",
+        "glossEn": "roommate",
+        "examples": [
+          "我的室友"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "见面",
+        "pinyin": "jiànmiàn",
+        "pos": "动",
+        "glossEn": "meet",
+        "examples": [
+          "和朋友见面",
+          "第一次见面",
+          "见过面"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "加",
+        "pinyin": "jiā",
+        "pos": "动",
+        "glossEn": "add",
+        "examples": [
+          "加一下我的微信"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "微信",
+        "pinyin": "wēixìn",
+        "pos": "名",
+        "glossEn": "WeChat",
+        "examples": [
+          "加微信",
+          "发微信"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "俄罗斯",
+        "pinyin": "Éluósī",
+        "pos": "专有",
+        "glossEn": "Russia",
+        "examples": [
+          "俄罗斯人"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "介绍自己",
+          "core": [
+            "留学生",
+            "中文",
+            "学院",
+            "新生",
+            "室友"
+          ],
+          "supplement": [
+            "交换生",
+            "专业",
+            "工作",
+            "爱好"
+          ]
+        },
+        {
+          "theme": "第一次见面时的其他表达",
+          "core": [
+            "遇到",
+            "咱们",
+            "啊",
+            "以为",
+            "见面",
+            "加",
+            "微信"
+          ],
+          "supplement": [
+            "下次",
+            "以后"
+          ]
+        }
+      ],
+      "expressionPatterns": [
+        "认识一下。",
+        "我来介绍一下。",
+        "我来给你们介绍一下。",
+        "我是……",
+        "我叫……",
+        "我是从……来的。",
+        "我是……学院的……",
+        "这是……，我的……",
+        "认识你很高兴！",
+        "咱们加个微信吧。",
+        "有时间咱们一起……吧。"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "遇到",
+      "以为",
+      "见面",
+      "加"
+    ],
+    "noun": [
+      "留学生",
+      "中文",
+      "学院",
+      "新生",
+      "室友",
+      "微信"
+    ],
+    "pronoun": [
+      "咱们"
+    ],
+    "interjection": [
+      "啊"
+    ],
+    "properNoun": [
+      "意大利",
+      "法国",
+      "俄罗斯"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "交换生",
+        "专业",
+        "工作",
+        "爱好",
+        "下次",
+        "以后"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 10,
+    "extensionEntries": 5,
+    "produceCoreWords": 12,
+    "produceSupplementWords": 6,
+    "uniqueHanziInLesson": 21
+  }
+}

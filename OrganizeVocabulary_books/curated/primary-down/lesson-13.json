@@ -1,0 +1,380 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "volumeLabel": "初级·下",
+    "lesson": 13,
+    "title": "来我的家乡旅行吧",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "level2.pdf",
+      "pages": {
+        "textVocab": 192,
+        "extensionVocab": 197,
+        "produceSupport": 201
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "激动",
+        "pinyin": "jīdòng",
+        "pos": "形",
+        "glossEn": "excited",
+        "examples": [
+          "激动得跳了起来",
+          "心情很激动"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "景点",
+        "pinyin": "jǐngdiǎn",
+        "pos": "名",
+        "glossEn": "scenic spot",
+        "examples": [
+          "旅游景点",
+          "文化景点"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "运气",
+        "pinyin": "yùnqi",
+        "pos": "名",
+        "glossEn": "luck",
+        "examples": [
+          "fortune 运气好",
+          "坏运气"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "美食",
+        "pinyin": "měishí",
+        "pos": "名",
+        "glossEn": "table delicacies",
+        "examples": [
+          "美食节",
+          "各种各样的美食"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "地道",
+        "pinyin": "dìdao",
+        "pos": "形",
+        "glossEn": "real",
+        "examples": [
+          "pure 地道的扬州炒饭",
+          "他的普通话说"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "放松",
+        "pinyin": "fàngsōng",
+        "pos": "动",
+        "glossEn": "relax",
+        "examples": [
+          "放松一下心情"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "天空",
+        "pinyin": "tiānkōng",
+        "pos": "名",
+        "glossEn": "sky",
+        "examples": [
+          "蓝蓝的天空"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "虾",
+        "pinyin": "xiā",
+        "pos": "名",
+        "glossEn": "shrimp",
+        "examples": [
+          "一只虾",
+          "大虾",
+          "虾肉"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "尤其",
+        "pinyin": "yóuqí",
+        "pos": "副",
+        "glossEn": "particularly",
+        "examples": [
+          "especially 我喜欢吃水果，尤其爱吃苹果"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "菠萝",
+        "pinyin": "bōluó",
+        "pos": "名",
+        "glossEn": "pineapple",
+        "examples": [
+          "一个菠萝",
+          "菠萝饭"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "适合",
+        "pinyin": "shìhé",
+        "pos": "动",
+        "glossEn": "suit",
+        "examples": [
+          "这套衣服不适合我",
+          "他适合当"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "自然",
+        "pinyin": "zìrán",
+        "pos": "名",
+        "glossEn": "nature",
+        "examples": [
+          "自然风景",
+          "自然环境"
+        ]
+      },
+      {
+        "index": 13,
+        "hanzi": "椰子",
+        "pinyin": "yēzi",
+        "pos": "名",
+        "glossEn": "coconut",
+        "examples": [
+          "椰子汁",
+          "椰子树"
+        ]
+      },
+      {
+        "index": 14,
+        "hanzi": "汁",
+        "pinyin": "zhī",
+        "pos": "名",
+        "glossEn": "juice",
+        "examples": [
+          "菠萝汁",
+          "椰子汁"
+        ]
+      },
+      {
+        "index": 15,
+        "hanzi": "特产",
+        "pinyin": "tèchǎn",
+        "pos": "名",
+        "glossEn": "speciality",
+        "examples": [
+          "unique local product 家乡的特产"
+        ]
+      },
+      {
+        "index": 16,
+        "hanzi": "瘦西湖",
+        "pinyin": "Shòuxīhú",
+        "pos": "专有",
+        "glossEn": "Slender West Lake , located in the northwest of Yangzhou",
+        "examples": []
+      },
+      {
+        "index": 17,
+        "hanzi": "海南",
+        "pinyin": "Hǎinán",
+        "pos": "",
+        "glossEn": "the southernmost province in China , consisting of various islands in the South China Sea",
+        "examples": []
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "火锅",
+        "pinyin": "huǒguō",
+        "pos": "名",
+        "glossEn": "hotpot",
+        "examples": [
+          "四川火锅",
+          "吃火锅"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "博物馆",
+        "pinyin": "bówùguǎn",
+        "pos": "名",
+        "glossEn": "museum",
+        "examples": [
+          "国家博物馆",
+          "参观博物馆"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "天津",
+        "pinyin": "Tiānjīn",
+        "pos": "",
+        "glossEn": "a municipality and coastal metropolis in northern China",
+        "examples": []
+      },
+      {
+        "index": 4,
+        "hanzi": "狗不理包子",
+        "pinyin": "Gǒubùlǐ",
+        "pos": "专有",
+        "glossEn": "Bāozi a renowned Chinese food brand originated in Tianjin , known for its steamed stuffed buns",
+        "examples": []
+      },
+      {
+        "index": 5,
+        "hanzi": "成都",
+        "pinyin": "Chéngdū",
+        "pos": "",
+        "glossEn": "the provincial capital of Sichuan Province",
+        "examples": []
+      },
+      {
+        "index": 6,
+        "hanzi": "青城山",
+        "pinyin": "Qīngchéng",
+        "pos": "专有",
+        "glossEn": "Shān Mount Qingcheng , one of the four famous Taoist mountains in China, located in Dujiang Weirs, Sichuan Province",
+        "examples": []
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "",
+          "core": [
+            "景点",
+            "景点",
+            "天空",
+            "自然",
+            "博物馆",
+            "美食",
+            "美食",
+            "地道",
+            "虾",
+            "菠萝",
+            "椰子",
+            "汁",
+            "特产",
+            "火锅"
+          ],
+          "supplement": [
+            "景色",
+            "草原",
+            "湖",
+            "江",
+            "河",
+            "风景",
+            "建筑",
+            "历史",
+            "牛排",
+            "烤羊",
+            "比萨饼",
+            "咖喱",
+            "海鲜"
+          ]
+        },
+        {
+          "theme": "气候",
+          "core": [
+            "适合"
+          ],
+          "supplement": [
+            "温暖",
+            "舒适"
+          ]
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "激动",
+            "运气",
+            "放松",
+            "尤其"
+          ],
+          "supplement": []
+        }
+      ],
+      "expressionPatterns": [
+        "（1）我打算一放假就去海南。（一……就……）",
+        "（2）云南以当地的少数民族而闻名。（以……而闻名）",
+        "（3）不管你喜欢什么，在成都你都可以找到想去的景点。（不管……，……都……）",
+        "（4）小笼包、阳春面、葱油饼等是上海小吃的代表。（……的代表）",
+        "（5） 总之，“吃在成都，玩在成都”，成都的确是一个既好吃又好玩的城市。（总之；既……"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "放松",
+      "适合"
+    ],
+    "noun": [
+      "景点",
+      "运气",
+      "美食",
+      "天空",
+      "虾",
+      "菠萝",
+      "自然",
+      "椰子",
+      "汁",
+      "特产",
+      "火锅",
+      "博物馆"
+    ],
+    "adjective": [
+      "激动",
+      "地道"
+    ],
+    "adverb": [
+      "尤其"
+    ],
+    "properNoun": [
+      "瘦西湖",
+      "狗不理包子",
+      "青城山"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "景色",
+        "草原",
+        "湖",
+        "江",
+        "河",
+        "风景",
+        "建筑",
+        "历史",
+        "牛排",
+        "烤羊",
+        "比萨饼",
+        "咖喱",
+        "海鲜",
+        "温暖",
+        "舒适"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 17,
+    "extensionEntries": 6,
+    "produceCoreWords": 19,
+    "produceSupplementWords": 15,
+    "uniqueHanziInLesson": 38
+  }
+}

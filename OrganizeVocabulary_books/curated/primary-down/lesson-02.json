@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "volumeLabel": "初级·下",
+    "lesson": 2,
+    "title": "住校内还是住校外？",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "level2.pdf",
+      "pages": {
+        "textVocab": 28,
+        "extensionVocab": 34,
+        "produceSupport": 38
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "填",
+        "pinyin": "tián",
+        "pos": "动",
+        "glossEn": "fill in",
+        "examples": [
+          "填空",
+          "填表",
+          "填住址"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "住址",
+        "pinyin": "zhùzhǐ",
+        "pos": "名",
+        "glossEn": "address",
+        "examples": [
+          "家庭住址"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "区",
+        "pinyin": "qū",
+        "pos": "名",
+        "glossEn": "district",
+        "examples": [
+          "西城区"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "不好意思",
+        "pinyin": "bù hǎoyìsi",
+        "pos": "",
+        "glossEn": "sorry",
+        "examples": [
+          "excuse me 不好意思，我迟到了"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "租",
+        "pinyin": "zū",
+        "pos": "动",
+        "glossEn": "rent",
+        "examples": [
+          "租房子",
+          "租车"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "堵",
+        "pinyin": "dǔ",
+        "pos": "动",
+        "glossEn": "jam",
+        "examples": [
+          "block up 堵车",
+          "路上很堵"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "申请",
+        "pinyin": "shēnqǐng",
+        "pos": "动",
+        "glossEn": "apply for",
+        "examples": [
+          "申请宿舍",
+          "申请学校"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "宿舍",
+        "pinyin": "sùshè",
+        "pos": "名",
+        "glossEn": "dormitory",
+        "examples": [
+          "学生宿舍"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "吵",
+        "pinyin": "chǎo",
+        "pos": "形",
+        "glossEn": "noisy",
+        "examples": [
+          "外面有点儿吵"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "洗衣机",
+        "pinyin": "xǐyījī",
+        "pos": "名",
+        "glossEn": "washing machine",
+        "examples": [
+          "一台洗衣机"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "房东",
+        "pinyin": "fángdōng",
+        "pos": "名",
+        "glossEn": "landlord or landlady",
+        "examples": [
+          "房东很热情"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "提前",
+        "pinyin": "tíqián",
+        "pos": "动",
+        "glossEn": "do sth ahead of time",
+        "examples": [
+          "提前申请",
+          "提前毕业"
+        ]
+      },
+      {
+        "index": 13,
+        "hanzi": "住宿",
+        "pinyin": "zhùsù",
+        "pos": "动",
+        "glossEn": "get accommodation",
+        "examples": [
+          "在校外住宿",
+          "住宿费"
+        ]
+      },
+      {
+        "index": 14,
+        "hanzi": "三元桥",
+        "pinyin": "Sānyuán",
+        "pos": "专有",
+        "glossEn": "Qiáo the name of a place in Beijing",
+        "examples": []
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "报到",
+        "pinyin": "bàodào",
+        "pos": "动",
+        "glossEn": "register",
+        "examples": [
+          "新生报到",
+          "报完到以后"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "提供",
+        "pinyin": "tígōng",
+        "pos": "动",
+        "glossEn": "provide",
+        "examples": [
+          "supply 给留学生提供宿舍"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "卫生间",
+        "pinyin": "wèishēngjiān",
+        "pos": "名",
+        "glossEn": "toilet",
+        "examples": [
+          "bathroom 上卫生间",
+          "公共卫生间"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "麻烦",
+        "pinyin": "máfan",
+        "pos": "形",
+        "glossEn": "troublesome",
+        "examples": [
+          "有点儿麻烦"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "打招呼",
+        "pinyin": "dǎ zhāohu",
+        "pos": "",
+        "glossEn": "greet",
+        "examples": [
+          "say hello (to) 跟老师打招呼",
+          "打了一下招呼"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "",
+          "core": [
+            "住址",
+            "填",
+            "住址",
+            "区"
+          ],
+          "supplement": [
+            "省",
+            "市",
+            "县",
+            "路",
+            "街",
+            "号"
+          ]
+        },
+        {
+          "theme": "住校内",
+          "core": [
+            "申请",
+            "宿舍",
+            "吵",
+            "洗衣机",
+            "提前",
+            "住宿",
+            "报到",
+            "提供",
+            "卫生间"
+          ],
+          "supplement": [
+            "安全",
+            "规定",
+            "打扰",
+            "洗澡",
+            "条件"
+          ]
+        },
+        {
+          "theme": "住校外",
+          "core": [
+            "租",
+            "堵",
+            "房东",
+            "麻烦",
+            "打招呼",
+            "不好意思"
+          ],
+          "supplement": [
+            "自由",
+            "交通",
+            "不好意思"
+          ]
+        }
+      ],
+      "expressionPatterns": [
+        "（1）刚来的时候我记不住自己在中国的住址，现在能记住了。（记住，记不住）",
+        "（2）这个大学提供的宿舍不多，要是想住宿舍就得提前申请。（要是……就……）",
+        "（3）在美国租房子，有时候房间里什么都没有，比较麻烦。（什么都……）",
+        "（4）住在校内，不但住宿费便宜，而且去食堂吃饭也很方便。（不但……，而且……）",
+        "（5） 自己租房子比住学校的宿舍方便一些，想什么时候睡觉就什么时候睡觉，也可以自己做饭。",
+        "（A比B+Adj+一些）"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "填",
+      "租",
+      "堵",
+      "申请",
+      "提前",
+      "住宿",
+      "报到",
+      "提供"
+    ],
+    "noun": [
+      "住址",
+      "区",
+      "宿舍",
+      "洗衣机",
+      "房东",
+      "卫生间"
+    ],
+    "adjective": [
+      "吵",
+      "麻烦"
+    ],
+    "properNoun": [
+      "三元桥"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "省",
+        "市",
+        "县",
+        "路",
+        "街",
+        "号",
+        "安全",
+        "规定",
+        "打扰",
+        "洗澡",
+        "条件",
+        "打招呼",
+        "不好意思",
+        "自由",
+        "交通"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 14,
+    "extensionEntries": 5,
+    "produceCoreWords": 19,
+    "produceSupplementWords": 14,
+    "uniqueHanziInLesson": 32
+  }
+}

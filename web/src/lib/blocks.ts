@@ -1,5 +1,5 @@
-import data from "@/data/consolidado.json";
 import type { LocalizedLine } from "@/lib/localized-line";
+import { getContentRepository } from "@/lib/content";
 
 export type VocabRow = {
   hanzi: string;
@@ -42,16 +42,16 @@ export type ContentBlock = {
   vocabulary: VocabRow[];
 };
 
-export const blocks: ContentBlock[] = data.blocks as ContentBlock[];
+const repo = getContentRepository();
+
+export const blocks: ContentBlock[] = repo.getBlocks();
 
 export function getBlock(id: string | number): ContentBlock | undefined {
-  const n = typeof id === "string" ? Number.parseInt(id, 10) : id;
-  if (Number.isNaN(n)) return undefined;
-  return blocks.find((b) => b.id === n);
+  return repo.getBlock(id);
 }
 
 export function getBlockIds(): string[] {
-  return blocks.map((b) => String(b.id));
+  return repo.getBlockIds();
 }
 
 export function blockHasGrammarContent(b: ContentBlock): boolean {

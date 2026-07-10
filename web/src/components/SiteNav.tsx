@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { localeMeta, locales, useLocale } from "@/context/LocaleContext";
+import { SiteNavAuth } from "@/components/SiteNavAuth";
 
 const NAV_TABS = [
   { href: "/review", key: "review" as const },
@@ -63,6 +64,7 @@ export function SiteNav() {
         </Link>
 
         <div className="flex shrink-0 items-center gap-2 sm:gap-3">
+          <SiteNavAuth />
           <div className="relative" ref={menuRef}>
             <button
               type="button"

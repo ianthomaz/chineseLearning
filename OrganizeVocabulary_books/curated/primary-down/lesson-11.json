@@ -1,0 +1,346 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "volumeLabel": "初级·下",
+    "lesson": 11,
+    "title": "摘下星星送给你",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "level2.pdf",
+      "pages": {
+        "textVocab": 165,
+        "extensionVocab": 170,
+        "produceSupport": 175
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "温柔",
+        "pinyin": "wēnróu",
+        "pos": "形",
+        "glossEn": "gentle and soft",
+        "examples": [
+          "温柔的女孩儿",
+          "对人很温柔"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "星星",
+        "pinyin": "xīngxing",
+        "pos": "名",
+        "glossEn": "star",
+        "examples": [
+          "一颗星星",
+          "很亮的星星"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "摘",
+        "pinyin": "zhāi",
+        "pos": "动",
+        "glossEn": "pick",
+        "examples": [
+          "take off 摘花",
+          "摘眼镜"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "颗",
+        "pinyin": "kē",
+        "pos": "量",
+        "glossEn": "[usually for things small and roundish]",
+        "examples": [
+          "一颗星星",
+          "一颗牙"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "亲手",
+        "pinyin": "qīnshǒu",
+        "pos": "副",
+        "glossEn": "personally",
+        "examples": [
+          "with one’s own hands 亲手做的礼物",
+          "把礼物亲手送"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "浪漫",
+        "pinyin": "làngmàn",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 7,
+        "hanzi": "形",
+        "pinyin": "romantic",
+        "pos": "",
+        "glossEn": "这部电影很浪漫",
+        "examples": []
+      },
+      {
+        "index": 8,
+        "hanzi": "飞行员",
+        "pinyin": "fēixíngyuán",
+        "pos": "名",
+        "glossEn": "pilot",
+        "examples": [
+          "一名飞行员"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "标准",
+        "pinyin": "biāozhǔn",
+        "pos": "名",
+        "glossEn": "standard",
+        "examples": [
+          "criterion 标准很高",
+          "招聘的标准"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "考虑",
+        "pinyin": "kǎolǜ",
+        "pos": "动",
+        "glossEn": "consider",
+        "examples": [
+          "think over 考虑老师的建议",
+          "再考虑考虑"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "十全十美",
+        "pinyin": "shíquánshíměi",
+        "pos": "",
+        "glossEn": "be perfect in every way",
+        "examples": [
+          "十全十美的男/女朋友"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "理想",
+        "pinyin": "lǐxiǎng",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 13,
+        "hanzi": "形",
+        "pinyin": "ideal",
+        "pos": "",
+        "glossEn": "",
+        "examples": [
+          "perfect 理想的工作",
+          "成绩很不理想"
+        ]
+      },
+      {
+        "index": 14,
+        "hanzi": "支持",
+        "pinyin": "zhīchí",
+        "pos": "动",
+        "glossEn": "support",
+        "examples": [
+          "stand by 互相支持",
+          "请支持我"
+        ]
+      },
+      {
+        "index": 15,
+        "hanzi": "性格",
+        "pinyin": "xìnggé",
+        "pos": "名",
+        "glossEn": "nature",
+        "examples": [
+          "character 性格温柔",
+          "性格外向"
+        ]
+      },
+      {
+        "index": 16,
+        "hanzi": "恋爱",
+        "pinyin": "liàn",
+        "pos": "",
+        "glossEn": "'ài",
+        "examples": [
+          "动  名 be in love",
+          "love 正在恋爱",
+          "谈恋爱"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "研究生",
+        "pinyin": "yánjiūshēng",
+        "pos": "名",
+        "glossEn": "postgraduate",
+        "examples": [
+          "graduate 读研究生",
+          "研究生考试"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "学历",
+        "pinyin": "xuélì",
+        "pos": "名",
+        "glossEn": "academic background",
+        "examples": [
+          "学历很高",
+          "研究生学历"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "分手",
+        "pinyin": "fēnshǒu",
+        "pos": "动",
+        "glossEn": "split up",
+        "examples": [
+          "和女朋友分手",
+          "分过一次手"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "白雪公主",
+        "pinyin": "Báixuě",
+        "pos": "专有",
+        "glossEn": "Gōngzhǔ Snow White",
+        "examples": []
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "找男/女朋友的",
+          "core": [
+            "标准",
+            "考虑",
+            "理想",
+            "恋爱"
+          ],
+          "supplement": [
+            "要求"
+          ]
+        },
+        {
+          "theme": "个人条件",
+          "core": [
+            "温柔",
+            "性格",
+            "十全十美",
+            "研究生",
+            "学历"
+          ],
+          "supplement": [
+            "收入",
+            "工资"
+          ]
+        },
+        {
+          "theme": "感情基础",
+          "core": [
+            "支持"
+          ],
+          "supplement": [
+            "反对",
+            "安慰",
+            "吵架"
+          ]
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "星星",
+            "摘",
+            "颗",
+            "亲手",
+            "浪漫",
+            "飞行员",
+            "分手"
+          ],
+          "supplement": [
+            "飞行员",
+            "分手"
+          ]
+        }
+      ],
+      "expressionPatterns": [
+        "（1） 我和他是在羽毛球比赛的时候认识的。因为有共同的爱好，所以我俩经常一起玩，最后慢慢爱",
+        "（2） 我认为恋爱和结婚不一样。恋爱只是谈感情，而结婚得考虑很多现实（real）问题。（……，",
+        "（3）我认为两个人的成长环境差不多，才更容易互相理解。（才……）",
+        "（4）很多人觉得找一个外国人做男/女朋友很好，但我还是担心万一文化不一样，会常常吵架。",
+        "（万一……）",
+        "（5）尽管她那么优秀，我还是选择了分手。因为我压力太大，在她面前我很不自信。（尽管……）"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "摘",
+      "考虑",
+      "支持",
+      "分手"
+    ],
+    "noun": [
+      "星星",
+      "飞行员",
+      "标准",
+      "性格",
+      "研究生",
+      "学历"
+    ],
+    "adjective": [
+      "温柔"
+    ],
+    "adverb": [
+      "亲手"
+    ],
+    "measureWord": [
+      "颗"
+    ],
+    "properNoun": [
+      "白雪公主"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "理想",
+        "恋爱",
+        "要求",
+        "十全十美",
+        "收入",
+        "工资",
+        "反对",
+        "安慰",
+        "吵架",
+        "浪漫"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 16,
+    "extensionEntries": 4,
+    "produceCoreWords": 17,
+    "produceSupplementWords": 8,
+    "uniqueHanziInLesson": 25
+  }
+}

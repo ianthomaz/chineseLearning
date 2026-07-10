@@ -1,0 +1,391 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 12,
+    "title": "你哪儿不舒服？",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 149,
+        "extensionVocab": 154,
+        "produceSupport": 157
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "挂号",
+        "pinyin": "guàhào",
+        "pos": "动",
+        "glossEn": "register [esp at a hospital]",
+        "examples": [
+          "挂个号",
+          "挂……（号）"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "收费处",
+        "pinyin": "shōufèichù",
+        "pos": "名",
+        "glossEn": "cashier",
+        "examples": []
+      },
+      {
+        "index": 3,
+        "hanzi": "费",
+        "pinyin": "fèi",
+        "pos": "名",
+        "glossEn": "fee",
+        "examples": [
+          "expenses 挂号费",
+          "交费"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "科",
+        "pinyin": "kē",
+        "pos": "名",
+        "glossEn": "department",
+        "examples": [
+          "外科",
+          "挂什么科"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "肚子",
+        "pinyin": "dùzi",
+        "pos": "名",
+        "glossEn": "belly",
+        "examples": [
+          "肚子不舒服"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "疼",
+        "pinyin": "téng",
+        "pos": "形",
+        "glossEn": "painful",
+        "examples": [
+          "肚子疼",
+          "头疼"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "内科",
+        "pinyin": "nèikē",
+        "pos": "名",
+        "glossEn": "internal medicine",
+        "examples": [
+          "看内科",
+          "挂内科（的号）"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "拉肚子",
+        "pinyin": "lā dùzi",
+        "pos": "",
+        "glossEn": "have loose bowels",
+        "examples": [
+          "我从昨天晚上开始拉肚子。"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "检查",
+        "pinyin": "jiǎnchá",
+        "pos": "动",
+        "glossEn": "check (up)",
+        "examples": [
+          "检查身体",
+          "检查一下"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "新鲜",
+        "pinyin": "xīnxiān",
+        "pos": "形",
+        "glossEn": "fresh",
+        "examples": [
+          "新鲜的水果",
+          "新鲜的鸡肉"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "开",
+        "pinyin": "kāi",
+        "pos": "动",
+        "glossEn": "write out",
+        "examples": [
+          "开药"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "片",
+        "pinyin": "piàn",
+        "pos": "量",
+        "glossEn": "tablet",
+        "examples": [
+          "一片药"
+        ]
+      },
+      {
+        "index": 13,
+        "hanzi": "注意",
+        "pinyin": "zhùyì",
+        "pos": "动",
+        "glossEn": "pay attention to",
+        "examples": [
+          "注意什么",
+          "注意一下"
+        ]
+      },
+      {
+        "index": 14,
+        "hanzi": "凉",
+        "pinyin": "liáng",
+        "pos": "形",
+        "glossEn": "cool",
+        "examples": [
+          "cold 凉水",
+          "凉菜"
+        ]
+      },
+      {
+        "index": 15,
+        "hanzi": "药房",
+        "pinyin": "yàofáng",
+        "pos": "名",
+        "glossEn": "pharmacy",
+        "examples": []
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "腿",
+        "pinyin": "tuǐ",
+        "pos": "名",
+        "glossEn": "leg",
+        "examples": [
+          "一条腿",
+          "腿破了"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "血",
+        "pinyin": "xuè",
+        "pos": "名",
+        "glossEn": "blood",
+        "examples": [
+          "出血",
+          "检查血"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "上",
+        "pinyin": "shàng",
+        "pos": "动",
+        "glossEn": "apply (medicine)",
+        "examples": [
+          "上药"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "感冒",
+        "pinyin": "gǎnmào",
+        "pos": "名动",
+        "glossEn": "(common) cold",
+        "examples": [
+          "catch cold有点儿感冒",
+          "我这两天感冒了。"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "咳嗽",
+        "pinyin": "késou",
+        "pos": "动",
+        "glossEn": "cough",
+        "examples": [
+          "常常咳嗽",
+          "有点儿咳嗽"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "发烧",
+        "pinyin": "fāshāo",
+        "pos": "动",
+        "glossEn": "have a fever",
+        "examples": [
+          "有点儿发烧",
+          "发烧两天了"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "度",
+        "pinyin": "dù",
+        "pos": "量",
+        "glossEn": "degree",
+        "examples": [
+          "发烧38度"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "结果",
+        "pinyin": "jiéguǒ",
+        "pos": "名",
+        "glossEn": "result",
+        "examples": [
+          "检查结果",
+          "有结果了"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "健康问题",
+          "core": [
+            "肚子",
+            "疼",
+            "拉肚子",
+            "新鲜",
+            "腿",
+            "血",
+            "感冒",
+            "咳嗽",
+            "发烧",
+            "度"
+          ],
+          "supplement": [
+            "吐",
+            "骨折",
+            "咬",
+            "过敏"
+          ]
+        },
+        {
+          "theme": "看病流程",
+          "core": [
+            "挂号",
+            "收费处",
+            "费",
+            "科",
+            "内科",
+            "药房"
+          ],
+          "supplement": [
+            "交费",
+            "拿药"
+          ]
+        },
+        {
+          "theme": "医生建议",
+          "core": [
+            "检查",
+            "开",
+            "片",
+            "注意",
+            "凉",
+            "上",
+            "结果"
+          ],
+          "supplement": [
+            "照",
+            "光",
+            "打针"
+          ]
+        }
+      ],
+      "expressionPatterns": [
+        "我这几天有点儿…… ， 还……",
+        "我……几天了。不知道是什",
+        "我不小心……，……破了/出",
+        "我从……开始……疼/不舒服。",
+        "可能是因为……",
+        "我给你开点儿药。",
+        "我帮你上点儿药。",
+        "我给你检查一下。",
+        "你再检查一下……，拿着检查结果……",
+        "你吃这种药，一天吃……次，一次……",
+        "注意……，不要……，多/少……",
+        "问题不大。",
+        "别担心，很快就会好！"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "挂号",
+      "检查",
+      "开",
+      "注意",
+      "上",
+      "咳嗽",
+      "发烧"
+    ],
+    "noun": [
+      "收费处",
+      "费",
+      "科",
+      "肚子",
+      "内科",
+      "药房",
+      "腿",
+      "血",
+      "结果"
+    ],
+    "adjective": [
+      "疼",
+      "新鲜",
+      "凉"
+    ],
+    "measureWord": [
+      "片",
+      "度"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "拉肚子",
+        "感冒",
+        "吐",
+        "骨折",
+        "咬",
+        "过敏",
+        "交费",
+        "拿药",
+        "照",
+        "光",
+        "打针"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 15,
+    "extensionEntries": 8,
+    "produceCoreWords": 23,
+    "produceSupplementWords": 9,
+    "uniqueHanziInLesson": 32
+  }
+}

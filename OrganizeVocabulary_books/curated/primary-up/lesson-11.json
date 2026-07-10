@@ -1,0 +1,298 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 11,
+    "title": "换一个新的",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 137,
+        "extensionVocab": 140,
+        "produceSupport": 143
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "坏",
+        "pinyin": "huài",
+        "pos": "形",
+        "glossEn": "break down",
+        "examples": [
+          "go bad 车坏了",
+          "牛奶坏了"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "网",
+        "pinyin": "wǎng",
+        "pos": "名",
+        "glossEn": "Internet",
+        "examples": [
+          "在网上",
+          "上网"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "小票",
+        "pinyin": "xiǎopiào",
+        "pos": "名",
+        "glossEn": "small note",
+        "examples": [
+          "一张小票"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "刚",
+        "pinyin": "gāng",
+        "pos": "副",
+        "glossEn": "just",
+        "examples": [
+          "刚下飞机",
+          "刚半年"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "摔",
+        "pinyin": "shuāi",
+        "pos": "动",
+        "glossEn": "cause to fall and break",
+        "examples": [
+          "摔坏",
+          "手机摔了"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "突然",
+        "pinyin": "tūrán",
+        "pos": "形",
+        "glossEn": "sudden",
+        "examples": [
+          "suddenly 很突然",
+          "突然坏了"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "质量",
+        "pinyin": "zhìliàng",
+        "pos": "名",
+        "glossEn": "quality",
+        "examples": [
+          "质量好",
+          "眼镜的质量"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "寄",
+        "pinyin": "jì",
+        "pos": "动",
+        "glossEn": "mail",
+        "examples": [
+          "send 寄给我",
+          "寄到家"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "双十一",
+        "pinyin": "Shuāng",
+        "pos": "专有",
+        "glossEn": "Shíyī Double Eleven (Nov. 11)",
+        "examples": []
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "鞋",
+        "pinyin": "xié",
+        "pos": "名",
+        "glossEn": "shoe",
+        "examples": [
+          "一双鞋",
+          "穿鞋"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "退",
+        "pinyin": "tuì",
+        "pos": "动",
+        "glossEn": "return",
+        "examples": [
+          "退货",
+          "退东西",
+          "退票"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "合适",
+        "pinyin": "héshì",
+        "pos": "形",
+        "glossEn": "suitable",
+        "examples": [
+          "这件衣服穿着很合适。"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "发现",
+        "pinyin": "fāxiàn",
+        "pos": "动",
+        "glossEn": "find",
+        "examples": [
+          "发现一个新方法",
+          "发现有问题"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "页",
+        "pinyin": "yè",
+        "pos": "量",
+        "glossEn": "page",
+        "examples": [
+          "一页纸",
+          "一页书"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "破",
+        "pinyin": "pò",
+        "pos": "动",
+        "glossEn": "tear",
+        "examples": [
+          "纸破了",
+          "衣服破了"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "说明退换货原因",
+          "core": [
+            "坏",
+            "摔",
+            "突然",
+            "质量",
+            "合适",
+            "发现",
+            "页",
+            "破"
+          ],
+          "supplement": [
+            "充电",
+            "看起来"
+          ]
+        },
+        {
+          "theme": "讲述购物经历",
+          "core": [
+            "网",
+            "小票",
+            "刚",
+            "鞋"
+          ],
+          "supplement": [
+            "店"
+          ]
+        },
+        {
+          "theme": "表达自己的要求",
+          "core": [
+            "寄",
+            "退"
+          ],
+          "supplement": [
+            "换",
+            "打折"
+          ]
+        }
+      ],
+      "expressionPatterns": [
+        "……坏了。",
+        "……破了。",
+        "我发现……",
+        "这个比……贵。",
+        "……有质量问题。",
+        "我穿起来不好看。",
+        "我不喜欢……的颜色。",
+        "……的大小不合适，",
+        "……",
+        "我突然有事，没时间",
+        "……",
+        "这是我刚买的。",
+        "我是在网上买的。",
+        "我是在这儿买的。",
+        "这是……（的时候）",
+        "我上周末在你们店买",
+        "了一个……",
+        "在这儿能修吗？",
+        "帮我换一个新的吧。",
+        "我不要了，退了吧。",
+        "能帮我寄到家吗？"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "摔",
+      "寄",
+      "退",
+      "发现",
+      "破"
+    ],
+    "noun": [
+      "网",
+      "小票",
+      "质量",
+      "鞋"
+    ],
+    "adjective": [
+      "坏",
+      "突然",
+      "合适"
+    ],
+    "adverb": [
+      "刚"
+    ],
+    "measureWord": [
+      "页"
+    ],
+    "properNoun": [
+      "双十一"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "充电",
+        "看起来",
+        "店",
+        "换",
+        "打折"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 9,
+    "extensionEntries": 6,
+    "produceCoreWords": 14,
+    "produceSupplementWords": 5,
+    "uniqueHanziInLesson": 20
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "volumeLabel": "初级·下",
+    "lesson": 7,
+    "title": "要舒适还是要美丽？",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "level2.pdf",
+      "pages": {
+        "textVocab": 103,
+        "extensionVocab": 109,
+        "produceSupport": 113
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "搭配",
+        "pinyin": "dāpèi",
+        "pos": "动",
+        "glossEn": "match T恤搭配牛仔裤",
+        "examples": []
+      },
+      {
+        "index": 2,
+        "hanzi": "牛仔裤",
+        "pinyin": "niúzǎikù",
+        "pos": "名",
+        "glossEn": "jeans",
+        "examples": [
+          "一条牛仔裤"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "戴",
+        "pinyin": "dài",
+        "pos": "动",
+        "glossEn": "put on",
+        "examples": [
+          "wear 戴眼镜/帽子/手表/手套"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "太阳镜",
+        "pinyin": "tàiyángjìng",
+        "pos": "名",
+        "glossEn": "sunglasses",
+        "examples": [
+          "一副太阳镜"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "正装",
+        "pinyin": "zhèngzhuāng",
+        "pos": "名",
+        "glossEn": "formal wear",
+        "examples": [
+          "一套正装"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "套",
+        "pinyin": "tào",
+        "pos": "量",
+        "glossEn": "[used for books, furniture, rooms, methods, etc] set",
+        "examples": [
+          "suit 一套西服/家具"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "即使",
+        "pinyin": "jíshǐ",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 8,
+        "hanzi": "连",
+        "pinyin": "even",
+        "pos": "",
+        "glossEn": "if",
+        "examples": [
+          "即使天气很冷，我也不喜欢穿很多"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "舒适",
+        "pinyin": "shūshì",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 10,
+        "hanzi": "形",
+        "pinyin": "comfortable",
+        "pos": "",
+        "glossEn": "舒适的衣服",
+        "examples": [
+          "房间很舒适"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "时尚",
+        "pinyin": "shíshàng",
+        "pos": "形",
+        "glossEn": "fashionable",
+        "examples": [
+          "穿得很时尚",
+          "裙子很时尚"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "不管",
+        "pinyin": "bùguǎn",
+        "pos": "连",
+        "glossEn": "regardless of",
+        "examples": [
+          "不管什么场合，她都穿休闲服"
+        ]
+      },
+      {
+        "index": 13,
+        "hanzi": "休闲",
+        "pinyin": "xiūxián",
+        "pos": "动",
+        "glossEn": "have leisure",
+        "examples": [
+          "休闲服"
+        ]
+      },
+      {
+        "index": 14,
+        "hanzi": "流行",
+        "pinyin": "liúxíng",
+        "pos": "动",
+        "glossEn": "be popular",
+        "examples": [
+          "流行的颜色",
+          "这种款式不流行了"
+        ]
+      },
+      {
+        "index": 15,
+        "hanzi": "自信",
+        "pinyin": "zìxìn",
+        "pos": "形",
+        "glossEn": "self-confident",
+        "examples": [
+          "很自信"
+        ]
+      },
+      {
+        "index": 16,
+        "hanzi": "场合",
+        "pinyin": "chǎnghé",
+        "pos": "名",
+        "glossEn": "occasion",
+        "examples": [
+          "正式场合",
+          "普通场合"
+        ]
+      },
+      {
+        "index": 17,
+        "hanzi": "建议",
+        "pinyin": "jiànyì",
+        "pos": "动",
+        "glossEn": "suggest",
+        "examples": [
+          "建议穿正装"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "印象",
+        "pinyin": "yìnxiàng",
+        "pos": "名",
+        "glossEn": "impression",
+        "examples": [
+          "第一印象",
+          "留下很深的印象"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "逛",
+        "pinyin": "guàng",
+        "pos": "动",
+        "glossEn": "stroll",
+        "examples": [
+          "逛街",
+          "逛商场"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "实习",
+        "pinyin": "shíxí",
+        "pos": "动",
+        "glossEn": "(of students, trainees, etc) practice (what has been taught in class)",
+        "examples": [
+          "教学实习",
+          "实习医生"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "灰",
+        "pinyin": "huī",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 5,
+        "hanzi": "形",
+        "pinyin": "gray",
+        "pos": "",
+        "glossEn": "灰色",
+        "examples": []
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "什么场合？",
+          "core": [
+            "场合",
+            "逛",
+            "实习"
+          ],
+          "supplement": [
+            "商务"
+          ]
+        },
+        {
+          "theme": "穿什么？",
+          "core": [
+            "搭配",
+            "牛仔裤",
+            "戴",
+            "太阳镜",
+            "正装",
+            "套",
+            "休闲",
+            "灰"
+          ],
+          "supplement": [
+            "T恤"
+          ]
+        },
+        {
+          "theme": "为什么？",
+          "core": [
+            "舒适",
+            "时尚",
+            "流行",
+            "自信",
+            "印象"
+          ],
+          "supplement": [
+            "明亮",
+            "简单",
+            "适合"
+          ]
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "即使",
+            "不管",
+            "建议"
+          ],
+          "supplement": []
+        }
+      ],
+      "expressionPatterns": [
+        "（1）照相的时候，穿颜色亮的衣服照出来最漂亮。（V+出来）",
+        "（2）为了给别人留下好印象，我每天都穿得干干净净的。（留下……印象）",
+        "（3）在我看来，不太重要的场合都可以穿休闲服。（在……看来）",
+        "（4）不管别人喜欢不喜欢，自己觉得好看就行。（不管……）",
+        "（5）高中的时候，学校不允许我们随便穿衣服，每天都得穿校服。（得）"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "搭配",
+      "戴",
+      "休闲",
+      "流行",
+      "建议",
+      "逛",
+      "实习"
+    ],
+    "noun": [
+      "牛仔裤",
+      "太阳镜",
+      "正装",
+      "场合",
+      "印象"
+    ],
+    "adjective": [
+      "时尚",
+      "自信"
+    ],
+    "conjunction": [
+      "不管"
+    ],
+    "measureWord": [
+      "套"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "商务",
+        "灰",
+        "T恤",
+        "舒适",
+        "明亮",
+        "简单",
+        "适合",
+        "即使"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 17,
+    "extensionEntries": 5,
+    "produceCoreWords": 19,
+    "produceSupplementWords": 5,
+    "uniqueHanziInLesson": 26
+  }
+}

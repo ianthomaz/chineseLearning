@@ -1,0 +1,483 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "volumeLabel": "初级·下",
+    "lesson": 9,
+    "title": "我们得了亚军",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "level2.pdf",
+      "pages": {
+        "textVocab": 135,
+        "extensionVocab": 141,
+        "produceSupport": 144
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "冠军",
+        "pinyin": "guànjūn",
+        "pos": "名",
+        "glossEn": "champion",
+        "examples": [
+          "获得冠军",
+          "世界冠军"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "赢",
+        "pinyin": "yíng",
+        "pos": "动",
+        "glossEn": "win",
+        "examples": [
+          "比赛赢了",
+          "赢了对手"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "对手",
+        "pinyin": "duìshǒu",
+        "pos": "名",
+        "glossEn": "opponent",
+        "examples": [
+          "比赛对手",
+          "对手赢了"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "输",
+        "pinyin": "shū",
+        "pos": "动",
+        "glossEn": "lose",
+        "examples": [
+          "be defeated 输了比赛",
+          "输了两个球"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "单",
+        "pinyin": "dān",
+        "pos": "形",
+        "glossEn": "single",
+        "examples": [
+          "单人",
+          "单打比赛"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "教练",
+        "pinyin": "jiàoliàn",
+        "pos": "名",
+        "glossEn": "coach",
+        "examples": [
+          "当教练",
+          "足球队教练"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "加油",
+        "pinyin": "jiāyóu",
+        "pos": "动",
+        "glossEn": "step up efforts",
+        "examples": [
+          "cheer 观众给运动员加油"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "哎呀",
+        "pinyin": "āiyā",
+        "pos": "叹",
+        "glossEn": "[used to express complaint, regret or impatience] oh",
+        "examples": [
+          "哎呀，他怎么总是输球啊？"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "领先",
+        "pinyin": "lǐngxiān",
+        "pos": "动",
+        "glossEn": "take the lead",
+        "examples": [
+          "领先三分"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "唉",
+        "pinyin": "ài",
+        "pos": "叹",
+        "glossEn": "[used to express sadness or regret] alas",
+        "examples": [
+          "唉，又输了！"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "落后",
+        "pinyin": "luòhòu",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 12,
+        "hanzi": "动",
+        "pinyin": "fall",
+        "pos": "",
+        "glossEn": "behind",
+        "examples": [
+          "落后六分"
+        ]
+      },
+      {
+        "index": 13,
+        "hanzi": "局",
+        "pinyin": "jú",
+        "pos": "量",
+        "glossEn": "game",
+        "examples": [
+          "set 第一局",
+          "五局三胜"
+        ]
+      },
+      {
+        "index": 14,
+        "hanzi": "受伤",
+        "pinyin": "shòushāng",
+        "pos": "动",
+        "glossEn": "be injured",
+        "examples": [
+          "手受伤了",
+          "受过一次伤"
+        ]
+      },
+      {
+        "index": 15,
+        "hanzi": "难怪",
+        "pinyin": "nánguài",
+        "pos": "副",
+        "glossEn": "(itʼs) no wonder",
+        "examples": [
+          "难怪她不高兴呢，原来是比"
+        ]
+      },
+      {
+        "index": 16,
+        "hanzi": "配合",
+        "pinyin": "pèihé",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 17,
+        "hanzi": "动",
+        "pinyin": "cooperate",
+        "pos": "",
+        "glossEn": "和队友配合得很好",
+        "examples": []
+      },
+      {
+        "index": 18,
+        "hanzi": "亚军",
+        "pinyin": "yàjūn",
+        "pos": "名",
+        "glossEn": "second place (in a sports contest)",
+        "examples": [
+          "得了亚军",
+          "世界杯亚军"
+        ]
+      },
+      {
+        "index": 19,
+        "hanzi": "半决赛",
+        "pinyin": "bànjuésài",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 20,
+        "hanzi": "名",
+        "pinyin": "semifinal",
+        "pos": "",
+        "glossEn": "进入半决赛",
+        "examples": []
+      },
+      {
+        "index": 21,
+        "hanzi": "决赛",
+        "pinyin": "juésài",
+        "pos": "动",
+        "glossEn": "play in the finals",
+        "examples": [
+          "决赛输了"
+        ]
+      },
+      {
+        "index": 22,
+        "hanzi": "失败是成功之母",
+        "pinyin": "shībài shì chénggōng zhī mǔ",
+        "pos": "",
+        "glossEn": "failure is the mother of success",
+        "examples": []
+      },
+      {
+        "index": 23,
+        "hanzi": "成功之母",
+        "pinyin": "shībài shì chénggōng zhī mǔ",
+        "pos": "",
+        "glossEn": "failure is the mother of success",
+        "examples": []
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "上半场",
+        "pinyin": "shàngbànchǎng",
+        "pos": "名",
+        "glossEn": "first half (of a game, concert, etc)",
+        "examples": [
+          "上半场我们领先两分"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "下半场",
+        "pinyin": "xiàbànchǎng",
+        "pos": "名",
+        "glossEn": "second half (of a game, a performance, etc)",
+        "examples": []
+      },
+      {
+        "index": 3,
+        "hanzi": "平",
+        "pinyin": "píng",
+        "pos": "形",
+        "glossEn": "equal",
+        "examples": [
+          "on the same level 7∶7平",
+          "比赛结果是3∶3平"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "加时赛",
+        "pinyin": "jiāshísài",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 5,
+        "hanzi": "名",
+        "pinyin": "play",
+        "pos": "",
+        "glossEn": "-off",
+        "examples": [
+          "比赛进入加时赛"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "排球",
+        "pinyin": "páiqiú",
+        "pos": "名",
+        "glossEn": "volleyball",
+        "examples": [
+          "排球比赛",
+          "排球运动员"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "现场",
+        "pinyin": "xiànchǎng",
+        "pos": "名",
+        "glossEn": "site",
+        "examples": [
+          "比赛现场",
+          "观看现场表演"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "放弃",
+        "pinyin": "fàngqì",
+        "pos": "动",
+        "glossEn": "give up",
+        "examples": [
+          "abandon 放弃出国留学的机会",
+          "放弃"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "坚持",
+        "pinyin": "jiānchí",
+        "pos": "动",
+        "glossEn": "persist in",
+        "examples": [
+          "insist on 坚持锻炼",
+          "坚持下去"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "什么比赛？",
+          "core": [
+            "半决赛",
+            "决赛",
+            "排球",
+            "对手",
+            "领先",
+            "落后",
+            "局",
+            "受伤",
+            "配合",
+            "上半场",
+            "下半场",
+            "加时赛",
+            "现场"
+          ],
+          "supplement": [
+            "单（打）",
+            "篮球",
+            "网球",
+            "棒球",
+            "乒乓球"
+          ]
+        },
+        {
+          "theme": "（球）迷",
+          "core": [
+            "加油",
+            "教练"
+          ],
+          "supplement": []
+        },
+        {
+          "theme": "比赛结果",
+          "core": [
+            "冠军",
+            "亚军",
+            "赢",
+            "输",
+            "平"
+          ],
+          "supplement": [
+            "金牌",
+            "银牌",
+            "铜牌"
+          ]
+        },
+        {
+          "theme": "心情/感受/感想 失败是成功之母",
+          "core": [
+            "放弃",
+            "坚持"
+          ],
+          "supplement": [
+            "激动",
+            "兴奋",
+            "紧张",
+            "自豪",
+            "可惜",
+            "支持"
+          ]
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "哎呀",
+            "唉",
+            "难怪"
+          ],
+          "supplement": []
+        }
+      ],
+      "expressionPatterns": []
+    }
+  },
+  "byPos": {
+    "verb": [
+      "赢",
+      "输",
+      "加油",
+      "领先",
+      "受伤",
+      "决赛",
+      "放弃",
+      "坚持"
+    ],
+    "noun": [
+      "冠军",
+      "对手",
+      "教练",
+      "亚军",
+      "上半场",
+      "下半场",
+      "排球",
+      "现场"
+    ],
+    "adjective": [
+      "单",
+      "平"
+    ],
+    "adverb": [
+      "难怪"
+    ],
+    "interjection": [
+      "哎呀",
+      "唉"
+    ],
+    "measureWord": [
+      "局"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "半决赛",
+        "落后",
+        "配合",
+        "加时赛",
+        "单（打）",
+        "篮球",
+        "网球",
+        "棒球",
+        "乒乓球",
+        "金牌",
+        "银牌",
+        "铜牌",
+        "激动",
+        "兴奋",
+        "紧张",
+        "自豪",
+        "可惜",
+        "支持"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 23,
+    "extensionEntries": 9,
+    "produceCoreWords": 25,
+    "produceSupplementWords": 14,
+    "uniqueHanziInLesson": 44
+  }
+}

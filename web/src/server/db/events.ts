@@ -82,9 +82,9 @@ export function recentEvents(limit = 200): EventRow[] {
     .prepare(
       `SELECT e.id, e.created_at, e.event, e.user_id, e.anon_id, e.round_id, e.tier,
               e.level, e.phrase_id, e.correct, e.attempt, e.detail, e.locale, e.user_agent,
-              p.nick AS nick, p.email AS email
+              u.nick AS nick, u.email AS email
          FROM events e
-         LEFT JOIN players p ON p.id = e.user_id
+         LEFT JOIN users u ON u.id = e.user_id
         ORDER BY e.id DESC
         LIMIT ?`,
     )
@@ -162,9 +162,9 @@ export function queryEvents(f: EventFilters): EventRow[] {
     .prepare(
       `SELECT e.id, e.created_at, e.event, e.user_id, e.anon_id, e.round_id, e.tier,
               e.level, e.phrase_id, e.correct, e.attempt, e.detail, e.locale, e.user_agent,
-              p.nick AS nick, p.email AS email
+              u.nick AS nick, u.email AS email
          FROM events e
-         LEFT JOIN players p ON p.id = e.user_id
+         LEFT JOIN users u ON u.id = e.user_id
         ${where.length ? `WHERE ${where.join(" AND ")}` : ""}
         ORDER BY e.id DESC
         LIMIT ?`,

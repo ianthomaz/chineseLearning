@@ -1,0 +1,419 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "volumeLabel": "初级·下",
+    "lesson": 14,
+    "title": "晴晴家的四合院",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "level2.pdf",
+      "pages": {
+        "textVocab": 207,
+        "extensionVocab": 212,
+        "produceSupport": 216
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "四合院",
+        "pinyin": "sìhéyuàn",
+        "pos": "名",
+        "glossEn": "courtyard dwelling [traditional residential compound in northern China]",
+        "examples": []
+      },
+      {
+        "index": 2,
+        "hanzi": "留",
+        "pinyin": "liú",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 3,
+        "hanzi": "动",
+        "pinyin": "leave",
+        "pos": "",
+        "glossEn": "behind",
+        "examples": [
+          "把钱留给孩子",
+          "留下很"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "柿子",
+        "pinyin": "shìzi",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 5,
+        "hanzi": "名",
+        "pinyin": "persimmon",
+        "pos": "",
+        "glossEn": "吃柿子",
+        "examples": [
+          "柿子树"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "事事如意",
+        "pinyin": "shì shì rúyì",
+        "pos": "",
+        "glossEn": "everything comes off satisfactorily",
+        "examples": []
+      },
+      {
+        "index": 7,
+        "hanzi": "金鱼",
+        "pinyin": "jīnyú",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 8,
+        "hanzi": "名",
+        "pinyin": "goldfish",
+        "pos": "",
+        "glossEn": "几条小金鱼",
+        "examples": [
+          "养金鱼"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "年年有余",
+        "pinyin": "nián nián yǒuyú",
+        "pos": "",
+        "glossEn": "every year ends with ample surplus",
+        "examples": []
+      },
+      {
+        "index": 10,
+        "hanzi": "墙",
+        "pinyin": "qiáng",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 11,
+        "hanzi": "名",
+        "pinyin": "wall",
+        "pos": "",
+        "glossEn": "围墙",
+        "examples": [
+          "灰色的院墙",
+          "一"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "砖",
+        "pinyin": "zhuān",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 13,
+        "hanzi": "名",
+        "pinyin": "brick",
+        "pos": "",
+        "glossEn": "灰砖",
+        "examples": [
+          "地砖"
+        ]
+      },
+      {
+        "index": 14,
+        "hanzi": "围",
+        "pinyin": "wéi",
+        "pos": "动",
+        "glossEn": "enclose",
+        "examples": [
+          "surround 四面房屋围在一起",
+          "队"
+        ]
+      },
+      {
+        "index": 15,
+        "hanzi": "质量",
+        "pinyin": "zhìliàng",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 16,
+        "hanzi": "名",
+        "pinyin": "quality",
+        "pos": "",
+        "glossEn": "质量好",
+        "examples": [
+          "提高质量"
+        ]
+      },
+      {
+        "index": 17,
+        "hanzi": "碎",
+        "pinyin": "suì",
+        "pos": "动",
+        "glossEn": "break into pieces",
+        "examples": [
+          "打碎",
+          "杯子容易碎"
+        ]
+      },
+      {
+        "index": 18,
+        "hanzi": "房屋",
+        "pinyin": "fángwū",
+        "pos": "名",
+        "glossEn": "house",
+        "examples": [
+          "building 传统房屋",
+          "出租房屋"
+        ]
+      },
+      {
+        "index": 19,
+        "hanzi": "传统",
+        "pinyin": "chuántǒng",
+        "pos": "形名",
+        "glossEn": "traditional",
+        "examples": [
+          "tradition 传统房屋",
+          "文化传统"
+        ]
+      },
+      {
+        "index": 20,
+        "hanzi": "木头",
+        "pinyin": "mùtou",
+        "pos": "名",
+        "glossEn": "wood",
+        "examples": [
+          "用木头做一张桌子",
+          "木"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "瓦",
+        "pinyin": "wǎ",
+        "pos": "名",
+        "glossEn": "tile",
+        "examples": [
+          "灰色的瓦",
+          "红墙黄瓦"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "暖气",
+        "pinyin": "nuǎnqì",
+        "pos": "名",
+        "glossEn": "central heating equipment",
+        "examples": [
+          "装暖气",
+          "暖气很热"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "楼梯",
+        "pinyin": "lóutī",
+        "pos": "名",
+        "glossEn": "staircase",
+        "examples": [
+          "爬楼梯"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "响声",
+        "pinyin": "xiǎngshēng",
+        "pos": "名",
+        "glossEn": "sound",
+        "examples": [
+          "noise 发出响声"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "闻",
+        "pinyin": "wén",
+        "pos": "动",
+        "glossEn": "smell",
+        "examples": [
+          "闻味道",
+          "闻到香味"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "潮湿",
+        "pinyin": "cháoshī",
+        "pos": "形",
+        "glossEn": "moist",
+        "examples": [
+          "房间很潮湿",
+          "潮湿的空气"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "房屋的种类",
+          "core": [
+            "四合院",
+            "房屋",
+            "传统"
+          ],
+          "supplement": [
+            "现代",
+            "高楼",
+            "楼房"
+          ]
+        },
+        {
+          "theme": "房屋的材料",
+          "core": [
+            "砖",
+            "质量",
+            "碎",
+            "木头",
+            "楼梯",
+            "响声"
+          ],
+          "supplement": [
+            "水泥",
+            "石头",
+            "树枝",
+            "草"
+          ]
+        },
+        {
+          "theme": "房屋的颜色",
+          "core": [
+            "墙",
+            "瓦"
+          ],
+          "supplement": [
+            "窗户",
+            "五颜六色"
+          ]
+        },
+        {
+          "theme": "房屋的样子",
+          "core": [
+            "围"
+          ],
+          "supplement": [
+            "屋顶"
+          ]
+        },
+        {
+          "theme": "房屋的院子",
+          "core": [
+            "柿子",
+            "事事如意",
+            "金鱼",
+            "年年有余",
+            "闻"
+          ],
+          "supplement": [
+            "桥",
+            "池塘"
+          ]
+        },
+        {
+          "theme": "房屋的缺点",
+          "core": [
+            "暖气",
+            "潮湿",
+            "留"
+          ],
+          "supplement": [
+            "老旧",
+            "修理",
+            "留"
+          ]
+        }
+      ],
+      "expressionPatterns": [
+        "（1）花草的香味让我的心很快就能平静下来。（V+下来）",
+        "（2） 四合院只有一个大门，而日本传统房屋常常有两个门。一个给客人用，比较大；一个给家人",
+        "（3）日本的传统房屋也用外墙围起来，既安静又安全。（既……又……）",
+        "（4）在泰国，高脚楼里没有床，我们在地上睡觉。为了保持干净，进去都得脱鞋。（为了）",
+        "（5） 韩国传统房屋的房间里没有椅子，吃饭、看电视、聊天儿的时候都得坐在地上，我常常坐得腰"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "围",
+      "碎",
+      "闻"
+    ],
+    "noun": [
+      "四合院",
+      "房屋",
+      "木头",
+      "瓦",
+      "暖气",
+      "楼梯",
+      "响声"
+    ],
+    "adjective": [
+      "潮湿"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "传统",
+        "现代",
+        "高楼",
+        "楼房",
+        "砖",
+        "质量",
+        "水泥",
+        "石头",
+        "树枝",
+        "草",
+        "墙",
+        "窗户",
+        "五颜六色",
+        "屋顶",
+        "柿子",
+        "事事如意",
+        "金鱼",
+        "年年有余",
+        "桥",
+        "池塘",
+        "留",
+        "老旧",
+        "修理"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 20,
+    "extensionEntries": 6,
+    "produceCoreWords": 20,
+    "produceSupplementWords": 15,
+    "uniqueHanziInLesson": 36
+  }
+}

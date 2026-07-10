@@ -1,0 +1,300 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 16,
+    "title": "你有什么打算？",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 203,
+        "extensionVocab": 207,
+        "produceSupport": 209
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "结束",
+        "pinyin": "jiéshù",
+        "pos": "动",
+        "glossEn": "end",
+        "examples": [
+          "finish 学期结束",
+          "结束了"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "打算",
+        "pinyin": "dǎsuàn",
+        "pos": "动名",
+        "glossEn": "plan",
+        "examples": [
+          "打算做什么",
+          "有什么打算"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "申请",
+        "pinyin": "shēnqǐng",
+        "pos": "动",
+        "glossEn": "apply for",
+        "examples": [
+          "申请……大学"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "专业",
+        "pinyin": "zhuānyè",
+        "pos": "名",
+        "glossEn": "speciality",
+        "examples": [
+          "中文专业",
+          "申请……专业"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "继续",
+        "pinyin": "jìxù",
+        "pos": "动",
+        "glossEn": "continue",
+        "examples": [
+          "继续学习",
+          "继续工作"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "毕业",
+        "pinyin": "bìyè",
+        "pos": "动",
+        "glossEn": "graduate",
+        "examples": [
+          "毕业以后",
+          "大学毕业"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "了解",
+        "pinyin": "li2ojiě",
+        "pos": "动",
+        "glossEn": "understand",
+        "examples": [
+          "了解历史",
+          "了解一下"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "文化",
+        "pinyin": "wénhuà",
+        "pos": "名",
+        "glossEn": "culture",
+        "examples": [
+          "了解文化",
+          "中国文化"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "参加",
+        "pinyin": "cānjiā",
+        "pos": "动",
+        "glossEn": "participate in",
+        "examples": [
+          "参加考试",
+          "参加活动"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "水平",
+        "pinyin": "shuǐpíng",
+        "pos": "名",
+        "glossEn": "level",
+        "examples": [
+          "standard 汉语水平",
+          "水平很高"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "本科",
+        "pinyin": "běnkē",
+        "pos": "名",
+        "glossEn": "regular college course",
+        "examples": [
+          "申请本科",
+          "本科生"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "决定",
+        "pinyin": "juédìng",
+        "pos": "动",
+        "glossEn": "decide",
+        "examples": [
+          "决定回国",
+          "还没决定"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "导游",
+        "pinyin": "dǎoyóu",
+        "pos": "名",
+        "glossEn": "tour guide",
+        "examples": [
+          "当导游"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "和……有关",
+        "pinyin": "hé",
+        "pos": "",
+        "glossEn": "…yǒuguān be related to",
+        "examples": [
+          "和专业有关",
+          "和……没关"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "提高",
+        "pinyin": "tígāo",
+        "pos": "动",
+        "glossEn": "improve",
+        "examples": [
+          "提高水平",
+          "提高得很快"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "结婚",
+        "pinyin": "jiéhūn",
+        "pos": "动",
+        "glossEn": "get married",
+        "examples": [
+          "和……结婚"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "",
+          "core": [
+            "打算",
+            "结束",
+            "打算",
+            "申请",
+            "专业",
+            "继续",
+            "毕业",
+            "参加",
+            "本科",
+            "决定",
+            "导游"
+          ],
+          "supplement": [
+            "理想",
+            "成为",
+            "找（工作）"
+          ]
+        },
+        {
+          "theme": "原因",
+          "core": [
+            "了解",
+            "文化",
+            "水平",
+            "提高",
+            "结婚"
+          ],
+          "supplement": [
+            "和",
+            "有关",
+            "练习",
+            "那要看"
+          ]
+        }
+      ],
+      "expressionPatterns": [
+        "我打算……",
+        "我可能……",
+        "我想当……",
+        "我决定……",
+        "我会继续……",
+        "我要申请……",
+        "我想参加……",
+        "我一定要……",
+        "我还没想好……",
+        "一……就……",
+        "一边……一边……",
+        "学习上，……；工作上，……；生活上，……",
+        "……太可惜了。",
+        "……是因为……",
+        "……和……有关。",
+        "……的原因是……",
+        "因为……，所以……",
+        "原因有……个：……",
+        "不但能……，还能……",
+        "一是……，二是……，更重要的是……"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "结束",
+      "申请",
+      "继续",
+      "毕业",
+      "了解",
+      "参加",
+      "决定",
+      "提高",
+      "结婚"
+    ],
+    "noun": [
+      "专业",
+      "文化",
+      "水平",
+      "本科",
+      "导游"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "打算",
+        "理想",
+        "成为",
+        "找（工作）",
+        "和",
+        "有关",
+        "练习",
+        "那要看"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 11,
+    "extensionEntries": 5,
+    "produceCoreWords": 16,
+    "produceSupplementWords": 7,
+    "uniqueHanziInLesson": 23
+  }
+}

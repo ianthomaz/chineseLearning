@@ -1,0 +1,323 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 4,
+    "title": "听听周杰伦的歌吧",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 53,
+        "extensionVocab": 57,
+        "produceSupport": 59
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "推荐",
+        "pinyin": "tuījiàn",
+        "pos": "动",
+        "glossEn": "recommend",
+        "examples": [
+          "推荐中国歌",
+          "非常推荐"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "一定",
+        "pinyin": "yídìng",
+        "pos": "副",
+        "glossEn": "surely",
+        "examples": [
+          "一定得试试",
+          "一定要来"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "有名",
+        "pinyin": "yǒumíng",
+        "pos": "形",
+        "glossEn": "famous",
+        "examples": [
+          "有名的人",
+          "很有名"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "清楚",
+        "pinyin": "qīngchu",
+        "pos": "形",
+        "glossEn": "clear",
+        "examples": [
+          "唱得不清楚",
+          "说得很清楚"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "特别",
+        "pinyin": "tèbié",
+        "pos": "形副",
+        "glossEn": "special",
+        "examples": [
+          "especially很特别",
+          "特别好吃"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "中国风",
+        "pinyin": "zhōngguófēng",
+        "pos": "名",
+        "glossEn": "Chinese style",
+        "examples": [
+          "中国风音乐 不但……，"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "而且……",
+        "pinyin": "búdàn",
+        "pos": "",
+        "glossEn": "…, érqiě… not only... but also...",
+        "examples": [
+          "这里的中国菜不但好吃，而 且便宜。"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "浪漫",
+        "pinyin": "làngmàn",
+        "pos": "形",
+        "glossEn": "romantic",
+        "examples": [
+          "浪漫的歌",
+          "浪漫的人"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "重要",
+        "pinyin": "zhòngyào",
+        "pos": "形",
+        "glossEn": "important",
+        "examples": [
+          "重要的人",
+          "最重要的是……"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "如果",
+        "pinyin": "rúguǒ",
+        "pos": "连",
+        "glossEn": "if",
+        "examples": [
+          "如果……，就……"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "原因",
+        "pinyin": "yuányīn",
+        "pos": "名",
+        "glossEn": "reason",
+        "examples": [
+          "推荐的原因",
+          "重要的原因"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "周杰伦",
+        "pinyin": "Zhōu",
+        "pos": "专有",
+        "glossEn": "Jiélún Jay Chou (Chinese pop musician)",
+        "examples": []
+      },
+      {
+        "index": 13,
+        "hanzi": "青花瓷",
+        "pinyin": "Qīnghuācí",
+        "pos": "专有",
+        "glossEn": "It originally refers to the blue -and-white porcelain, but here refers to the title of a song of Jay Chou",
+        "examples": []
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "经常",
+        "pinyin": "jīngcháng",
+        "pos": "副",
+        "glossEn": "often",
+        "examples": [
+          "regularly 经常去",
+          "经常吃中国菜"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "环境",
+        "pinyin": "huánjìng",
+        "pos": "名",
+        "glossEn": "environment",
+        "examples": [
+          "环境好",
+          "环境浪漫"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "又……又……",
+        "pinyin": "yòu… yòu…",
+        "pos": "连",
+        "glossEn": "both... and...",
+        "examples": [
+          "又大又红",
+          "他长得又高又瘦。"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "翻译",
+        "pinyin": "fānyì",
+        "pos": "动",
+        "glossEn": "translate",
+        "examples": [
+          "翻译一下",
+          "这个APP能把英语翻 译成汉语。"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "用",
+        "pinyin": "yòng",
+        "pos": "动",
+        "glossEn": "use",
+        "examples": [
+          "不用",
+          "好用"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "免费",
+        "pinyin": "miǎnfèi",
+        "pos": "动",
+        "glossEn": "be cost-free",
+        "examples": [
+          "免费用",
+          "这个APP是免费的。"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "",
+          "core": [
+            "有名",
+            "清楚",
+            "特别",
+            "中国风",
+            "浪漫",
+            "重要",
+            "如果",
+            "原因",
+            "经常",
+            "环境",
+            "翻译",
+            "免费"
+          ],
+          "supplement": [
+            "不但",
+            "而且",
+            "又",
+            "又",
+            "免费"
+          ]
+        },
+        {
+          "theme": "向别人",
+          "core": [
+            "推荐",
+            "一定",
+            "用"
+          ],
+          "supplement": [
+            "试",
+            "尝"
+          ]
+        }
+      ],
+      "expressionPatterns": [
+        "你听/去/吃/用/看/玩过……吗？",
+        "我给你推荐……",
+        "你一定要听/去/吃/用/看/玩",
+        "你听听/用用/看看/玩玩吧。",
+        "第一，……；第二，……",
+        "最重要的是……",
+        "不但……，而且……",
+        "又……又……"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "推荐",
+      "翻译",
+      "用",
+      "免费"
+    ],
+    "noun": [
+      "中国风",
+      "原因",
+      "环境"
+    ],
+    "adjective": [
+      "有名",
+      "清楚",
+      "浪漫",
+      "重要"
+    ],
+    "adverb": [
+      "一定",
+      "经常"
+    ],
+    "conjunction": [
+      "如果",
+      "又……又……"
+    ],
+    "properNoun": [
+      "周杰伦",
+      "青花瓷"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "特别",
+        "不但",
+        "而且",
+        "又",
+        "试",
+        "尝"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 13,
+    "extensionEntries": 6,
+    "produceCoreWords": 15,
+    "produceSupplementWords": 7,
+    "uniqueHanziInLesson": 24
+  }
+}

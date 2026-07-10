@@ -1,0 +1,321 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 14,
+    "title": "对不起，我迟到了",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 175,
+        "extensionVocab": 179,
+        "produceSupport": 183
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "迟到",
+        "pinyin": "chídào",
+        "pos": "动",
+        "glossEn": "be late",
+        "examples": [
+          "迟到了",
+          "迟到半个小时"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "生气",
+        "pinyin": "shēngqì",
+        "pos": "动",
+        "glossEn": "get angry",
+        "examples": [
+          "别生气",
+          "生某人的气"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "堵车",
+        "pinyin": "dǔchē",
+        "pos": "动",
+        "glossEn": "be traffic-jammed",
+        "examples": [
+          "路上堵车",
+          "堵了1个小时（车）"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "怪",
+        "pinyin": "guài",
+        "pos": "动",
+        "glossEn": "blame",
+        "examples": [
+          "怪某人"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "其实",
+        "pinyin": "qíshí",
+        "pos": "副",
+        "glossEn": "actually",
+        "examples": [
+          "她看起来很年轻，其实已经60岁了。"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "出门",
+        "pinyin": "chūmén",
+        "pos": "动",
+        "glossEn": "go out",
+        "examples": []
+      },
+      {
+        "index": 7,
+        "hanzi": "保证",
+        "pinyin": "bǎozhèng",
+        "pos": "动",
+        "glossEn": "assure",
+        "examples": [
+          "guarantee 我保证",
+          "保证不迟到"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "准时",
+        "pinyin": "zhǔnshí",
+        "pos": "形",
+        "glossEn": "on time",
+        "examples": [
+          "准时到",
+          "不准时"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "故意",
+        "pinyin": "gùyì",
+        "pos": "副",
+        "glossEn": "deliberately",
+        "examples": [
+          "不是故意的",
+          "故意让她生气"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "道歉",
+        "pinyin": "dàoqiàn",
+        "pos": "动",
+        "glossEn": "apologize",
+        "examples": [
+          "给某人道歉",
+          "道个歉"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "好好",
+        "pinyin": "hǎohǎo",
+        "pos": "副",
+        "glossEn": "to one’s heart’s content",
+        "examples": [
+          "好好检查",
+          "好好学习"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "接",
+        "pinyin": "jiē",
+        "pos": "动",
+        "glossEn": "answer (the phone)",
+        "examples": [
+          "接电话"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "解释",
+        "pinyin": "jiěshì",
+        "pos": "动",
+        "glossEn": "explain",
+        "examples": [
+          "听我解释",
+          "解释清楚"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "刚才",
+        "pinyin": "gāngcái",
+        "pos": "名",
+        "glossEn": "just now A：你刚才去哪儿了？ B：我刚才在睡觉。",
+        "examples": []
+      },
+      {
+        "index": 5,
+        "hanzi": "跟",
+        "pinyin": "gēn",
+        "pos": "介",
+        "glossEn": "with",
+        "examples": [
+          "跟某人道歉",
+          "跟某人说话"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "请假",
+        "pinyin": "qǐngjià",
+        "pos": "动",
+        "glossEn": "ask for leave of absence",
+        "examples": [
+          "请一天假",
+          "跟老师请假"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "交",
+        "pinyin": "jiāo",
+        "pos": "动",
+        "glossEn": "hand over",
+        "examples": [
+          "deliver 交作业",
+          "按时交"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "承认错误并道歉",
+          "core": [
+            "迟到",
+            "生气",
+            "故意",
+            "道歉",
+            "跟",
+            "请假"
+          ],
+          "supplement": [
+            "错",
+            "抱歉"
+          ]
+        },
+        {
+          "theme": "解释原因",
+          "core": [
+            "堵车",
+            "怪",
+            "其实",
+            "出门",
+            "好好",
+            "解释",
+            "刚才",
+            "保证",
+            "准时"
+          ],
+          "supplement": [
+            "没电",
+            "坏",
+            "经验",
+            "注意",
+            "以后",
+            "请客"
+          ]
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "接",
+            "交"
+          ],
+          "supplement": []
+        }
+      ],
+      "expressionPatterns": [
+        "很抱歉！",
+        "这是我的错。",
+        "我跟你道歉。",
+        "我错了！你别生气了。",
+        "对不起！我不是故意……",
+        "其实……",
+        "刚才……",
+        "都怪我……",
+        "……，而且……",
+        "你听我解释，……",
+        "因为……，所以……",
+        "我保证……",
+        "我以后不这样了。",
+        "我一定注意这个问题。",
+        "我下次一定（不）……",
+        "我请你吃饭。",
+        "我给您换一个。",
+        "多少钱？我给您。",
+        "我给你买个新的吧。"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "迟到",
+      "生气",
+      "堵车",
+      "怪",
+      "出门",
+      "保证",
+      "道歉",
+      "接",
+      "解释",
+      "请假",
+      "交"
+    ],
+    "noun": [
+      "刚才"
+    ],
+    "adjective": [
+      "准时"
+    ],
+    "adverb": [
+      "其实",
+      "故意",
+      "好好"
+    ],
+    "preposition": [
+      "跟"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "错",
+        "抱歉",
+        "没电",
+        "坏",
+        "经验",
+        "注意",
+        "以后",
+        "请客"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 10,
+    "extensionEntries": 7,
+    "produceCoreWords": 17,
+    "produceSupplementWords": 8,
+    "uniqueHanziInLesson": 25
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "动": { "labelEn": "verb", "key": "verb" },
+  "名": { "labelEn": "noun", "key": "noun" },
+  "形": { "labelEn": "adjective", "key": "adjective" },
+  "副": { "labelEn": "adverb", "key": "adverb" },
+  "代": { "labelEn": "pronoun", "key": "pronoun" },
+  "连": { "labelEn": "conjunction", "key": "conjunction" },
+  "介": { "labelEn": "preposition", "key": "preposition" },
+  "叹": { "labelEn": "interjection", "key": "interjection" },
+  "量": { "labelEn": "measure word", "key": "measureWord" },
+  "专有": { "labelEn": "proper noun", "key": "properNoun" }
+}

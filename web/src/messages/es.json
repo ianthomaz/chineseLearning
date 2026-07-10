@@ -15,7 +15,11 @@
     "visuals": "Visuales",
     "courseNav": "Áreas del curso",
     "language": "Idioma de la interfaz",
-    "phraseGame": "Frases"
+    "phraseGame": "Frases",
+    "authSignIn": "Entrar",
+    "authSignInHint": "Inicio de sesión con Google en el juego de frases",
+    "authSignOut": "Salir",
+    "authSignedIn": "Cuenta"
   },
   "gamification": {
     "title": "Quiz",

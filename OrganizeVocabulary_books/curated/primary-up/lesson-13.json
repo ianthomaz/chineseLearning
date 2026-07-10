@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 13,
+    "title": "你喜欢踢足球吗？",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 163,
+        "extensionVocab": 166,
+        "produceSupport": 169
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "交",
+        "pinyin": "jiāo",
+        "pos": "动",
+        "glossEn": "befriend",
+        "examples": [
+          "交朋友",
+          "和……交朋友"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "感受",
+        "pinyin": "gǎnshòu",
+        "pos": "动名",
+        "glossEn": "feel",
+        "examples": [
+          "experience",
+          "feeling 感受到快乐",
+          "一种感受"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "场",
+        "pinyin": "chǎng",
+        "pos": "名",
+        "glossEn": "place used for a particular purpose足球场",
+        "examples": [
+          "运动场"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "好处",
+        "pinyin": "hǎochù",
+        "pos": "名",
+        "glossEn": "benefit",
+        "examples": [
+          "对……有好处",
+          "对……没好处"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "汗",
+        "pinyin": "hàn",
+        "pos": "名",
+        "glossEn": "sweat",
+        "examples": [
+          "出汗"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "为了",
+        "pinyin": "wèile",
+        "pos": "介",
+        "glossEn": "in order to",
+        "examples": [
+          "为了来中国留学，他学习了汉语。"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "健康",
+        "pinyin": "jiànkāng",
+        "pos": "形",
+        "glossEn": "healthy",
+        "examples": [
+          "身体健康"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "懒",
+        "pinyin": "lǎn",
+        "pos": "形",
+        "glossEn": "lazy",
+        "examples": [
+          "太懒了"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "感兴趣",
+        "pinyin": "gǎnxìngqù",
+        "pos": "",
+        "glossEn": "be interested in",
+        "examples": [
+          "对……感兴趣",
+          "对……不感兴趣"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "德国",
+        "pinyin": "Déguó",
+        "pos": "专有",
+        "glossEn": "Germany",
+        "examples": [
+          "德国人"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "冬天",
+        "pinyin": "dōngtiān",
+        "pos": "名",
+        "glossEn": "winter",
+        "examples": [
+          "北京的冬天很冷。"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "滑雪",
+        "pinyin": "huáxuě",
+        "pos": "动",
+        "glossEn": "ski",
+        "examples": [
+          "我很喜欢滑雪。"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "速度",
+        "pinyin": "sùdù",
+        "pos": "名",
+        "glossEn": "speed",
+        "examples": [
+          "速度快",
+          "速度慢"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "更",
+        "pinyin": "gèng",
+        "pos": "副",
+        "glossEn": "more",
+        "examples": [
+          "更健康",
+          "更好"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "爱好",
+        "pinyin": "àihào",
+        "pos": "名",
+        "glossEn": "hobby",
+        "examples": [
+          "我的爱好",
+          "爱好很多"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "太极拳",
+        "pinyin": "tàijíquán",
+        "pos": "名",
+        "glossEn": "tai chi",
+        "examples": [
+          "打太极拳"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "适合",
+        "pinyin": "shìhé",
+        "pos": "动",
+        "glossEn": "suit",
+        "examples": [
+          "fit 适合我",
+          "不适合"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "介绍运动喜好",
+          "core": [
+            "感兴趣",
+            "滑雪",
+            "爱好",
+            "太极拳"
+          ],
+          "supplement": [
+            "擅长"
+          ]
+        },
+        {
+          "theme": "喜欢或者不喜欢这种运动的原因",
+          "core": [
+            "交",
+            "感受",
+            "好处",
+            "汗",
+            "为了",
+            "健康",
+            "懒",
+            "速度",
+            "更",
+            "适合"
+          ],
+          "supplement": []
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "场",
+            "冬天"
+          ],
+          "supplement": []
+        }
+      ],
+      "expressionPatterns": [
+        "我喜欢……",
+        "我的爱好是……",
+        "我对……感兴趣。",
+        "我不喜欢……",
+        "我对……不感兴趣。",
+        "……太有意思了！",
+        "……对身体有好处。",
+        "为了变得更漂亮，我……",
+        "……能交到很多朋友。",
+        "……的天气很适合……",
+        "只有……过，才能感受到……",
+        "……不但让我更健康，而且还让我更……",
+        "我太懒了。",
+        "我的工作又忙又累。",
+        "只有不忙的人才……",
+        "……不适合我，因为……",
+        "虽然我知道……的好处很多，但是……"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "交",
+      "滑雪",
+      "适合"
+    ],
+    "noun": [
+      "场",
+      "好处",
+      "汗",
+      "冬天",
+      "速度",
+      "爱好",
+      "太极拳"
+    ],
+    "adjective": [
+      "健康",
+      "懒"
+    ],
+    "adverb": [
+      "更"
+    ],
+    "preposition": [
+      "为了"
+    ],
+    "properNoun": [
+      "德国"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "感兴趣",
+        "擅长",
+        "感受"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 10,
+    "extensionEntries": 7,
+    "produceCoreWords": 16,
+    "produceSupplementWords": 1,
+    "uniqueHanziInLesson": 18
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 3,
+    "title": "这个小女孩儿是谁？",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 41,
+        "extensionVocab": 45,
+        "produceSupport": 48
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "照片",
+        "pinyin": "zhàopiàn",
+        "pos": "名",
+        "glossEn": "photo",
+        "examples": [
+          "一张照片",
+          "照照片"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "拿",
+        "pinyin": "ná",
+        "pos": "动",
+        "glossEn": "hold",
+        "examples": [
+          "take 拿着书",
+          "拿着手机"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "可爱",
+        "pinyin": "kě",
+        "pos": "",
+        "glossEn": "'ài",
+        "examples": [
+          "形 lovely",
+          "cute 很可爱",
+          "可爱的人"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "起来",
+        "pinyin": "qǐlái",
+        "pos": "动",
+        "glossEn": "[used after a verb to indicate an impression or a judgement]",
+        "examples": [
+          "看起来",
+          "听起来"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "年轻",
+        "pinyin": "niánqīng",
+        "pos": "形",
+        "glossEn": "young",
+        "examples": [
+          "youthful 年轻时",
+          "很年轻"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "长",
+        "pinyin": "zhǎng",
+        "pos": "动",
+        "glossEn": "grow",
+        "examples": [
+          "长得漂亮",
+          "他长着黑色 的眼睛。"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "鼻子",
+        "pinyin": "bízi",
+        "pos": "名",
+        "glossEn": "nose",
+        "examples": [
+          "高高的鼻子",
+          "鼻子很高"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "像",
+        "pinyin": "xiàng",
+        "pos": "动",
+        "glossEn": "look like",
+        "examples": [
+          "像爸爸",
+          "长得像……"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "戴",
+        "pinyin": "dài",
+        "pos": "动",
+        "glossEn": "put on",
+        "examples": [
+          "wear 戴手表"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "眼镜",
+        "pinyin": "yǎnjìng",
+        "pos": "名",
+        "glossEn": "eyeglasses",
+        "examples": [
+          "戴眼镜",
+          "一副眼镜"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "瘦",
+        "pinyin": "shòu",
+        "pos": "形",
+        "glossEn": "thin",
+        "examples": [
+          "很瘦",
+          "长得瘦"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "马来西亚",
+        "pinyin": "Mǎláixīyà",
+        "pos": "专有",
+        "glossEn": "Malaysia",
+        "examples": [
+          "马来西亚人"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "个子",
+        "pinyin": "gèzi",
+        "pos": "名",
+        "glossEn": "height",
+        "examples": [
+          "stature 个子很高",
+          "个子不高"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "头发",
+        "pinyin": "tóufa",
+        "pos": "名",
+        "glossEn": "hair",
+        "examples": [
+          "黑头发",
+          "长头发"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "帅",
+        "pinyin": "shuài",
+        "pos": "形",
+        "glossEn": "handsome",
+        "examples": [
+          "长得帅",
+          "真帅"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "胖",
+        "pinyin": "pàng",
+        "pos": "形",
+        "glossEn": "plump",
+        "examples": [
+          "胖胖的"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "双",
+        "pinyin": "shuāng",
+        "pos": "量",
+        "glossEn": "pair",
+        "examples": [
+          "一双眼睛",
+          "一双手"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "样子",
+          "core": [
+            "可爱",
+            "年轻",
+            "长",
+            "鼻子",
+            "像",
+            "瘦",
+            "个子",
+            "头发",
+            "帅",
+            "胖",
+            "双"
+          ],
+          "supplement": [
+            "眼睛",
+            "高",
+            "矮",
+            "短",
+            "黑色",
+            "黄色",
+            "棕色"
+          ]
+        },
+        {
+          "theme": "衣着",
+          "core": [
+            "戴",
+            "眼镜"
+          ],
+          "supplement": [
+            "穿",
+            "衣服",
+            "裤子",
+            "鞋",
+            "包"
+          ]
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "照片",
+            "拿",
+            "起来"
+          ],
+          "supplement": []
+        }
+      ],
+      "expressionPatterns": [
+        "他/她长得……",
+        "他/她长着……",
+        "他/她有……",
+        "他/她穿着……",
+        "他/她戴着……",
+        "他/她是我的……",
+        "他/她叫……",
+        "他/她今年……",
+        "他/她是……人。",
+        "名字、年龄、国家……1",
+        "我觉得他/她……",
+        "和他/她在一起，我……",
+        "他/她是一个……的人。"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "拿",
+      "起来",
+      "长",
+      "像",
+      "戴"
+    ],
+    "noun": [
+      "照片",
+      "鼻子",
+      "眼镜",
+      "个子",
+      "头发"
+    ],
+    "adjective": [
+      "年轻",
+      "瘦",
+      "帅",
+      "胖"
+    ],
+    "measureWord": [
+      "双"
+    ],
+    "properNoun": [
+      "马来西亚"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "可爱",
+        "眼睛",
+        "高",
+        "矮",
+        "短",
+        "黑色",
+        "黄色",
+        "棕色",
+        "穿",
+        "衣服",
+        "裤子",
+        "鞋",
+        "包"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 12,
+    "extensionEntries": 5,
+    "produceCoreWords": 16,
+    "produceSupplementWords": 12,
+    "uniqueHanziInLesson": 29
+  }
+}

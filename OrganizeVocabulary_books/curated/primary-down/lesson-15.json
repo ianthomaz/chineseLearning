@@ -1,0 +1,350 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "volumeLabel": "初级·下",
+    "lesson": 15,
+    "title": "你知道鉴真吗？",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "level2.pdf",
+      "pages": {
+        "textVocab": 220,
+        "extensionVocab": 225,
+        "produceSupport": 229
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "吸引",
+        "pinyin": "xīyǐn",
+        "pos": "动",
+        "glossEn": "attract",
+        "examples": [
+          "鉴真的故事很吸引我"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "促进",
+        "pinyin": "cùjìn",
+        "pos": "动",
+        "glossEn": "promote",
+        "examples": [
+          "boost 促进交流",
+          "互相促进"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "僧人",
+        "pinyin": "sēngrén",
+        "pos": "名",
+        "glossEn": "Buddhist monk",
+        "examples": [
+          "一位僧人"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "建",
+        "pinyin": "jiàn",
+        "pos": "动",
+        "glossEn": "build",
+        "examples": [
+          "建寺院",
+          "建高楼"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "寺院",
+        "pinyin": "sìyuàn",
+        "pos": "名",
+        "glossEn": "temple",
+        "examples": [
+          "一座寺院",
+          "佛教寺院"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "了不起",
+        "pinyin": "liǎobuqǐ",
+        "pos": "形",
+        "glossEn": "amazing",
+        "examples": [
+          "terrific 了不起的思想家",
+          "他真 了不起！"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "讲授",
+        "pinyin": "jiǎngshòu",
+        "pos": "动",
+        "glossEn": "teach",
+        "examples": [
+          "lecture 讲授知识"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "中医",
+        "pinyin": "zhōngyī",
+        "pos": "名",
+        "glossEn": "traditional Chinese medicine",
+        "examples": [
+          "doctor of traditional Chinese medicine 中医经典",
+          "看中医"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "传播",
+        "pinyin": "chuánbō",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 10,
+        "hanzi": "动",
+        "pinyin": "spread",
+        "pos": "",
+        "glossEn": "传播文化",
+        "examples": [
+          "传播知识"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "建筑",
+        "pinyin": "jiànzhù",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 12,
+        "hanzi": "名",
+        "pinyin": "building",
+        "pos": "",
+        "glossEn": "西方建筑",
+        "examples": [
+          "高层建筑"
+        ]
+      },
+      {
+        "index": 13,
+        "hanzi": "贡献",
+        "pinyin": "gòngxiàn",
+        "pos": "名",
+        "glossEn": "contribution",
+        "examples": [
+          "为世界文化交流做贡献"
+        ]
+      },
+      {
+        "index": 14,
+        "hanzi": "唐代",
+        "pinyin": "Tángdài",
+        "pos": "专有",
+        "glossEn": "Tang Dynasty",
+        "examples": []
+      },
+      {
+        "index": 15,
+        "hanzi": "佛教",
+        "pinyin": "Fójiào",
+        "pos": "专有",
+        "glossEn": "Buddhism",
+        "examples": [
+          "佛教知识",
+          "佛教寺院"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "困难",
+        "pinyin": "kùnnan",
+        "pos": "名",
+        "glossEn": "difficulty",
+        "examples": [
+          "遇到困难"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "著名",
+        "pinyin": "zhùmíng",
+        "pos": "形",
+        "glossEn": "famous",
+        "examples": [
+          "著名的文学家"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "官",
+        "pinyin": "guān",
+        "pos": "名",
+        "glossEn": "government official",
+        "examples": [
+          "地方官",
+          "做官",
+          "当官"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "国王",
+        "pinyin": "guówáng",
+        "pos": "名",
+        "glossEn": "king",
+        "examples": [
+          "成为国王"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "管理",
+        "pinyin": "guǎnlǐ",
+        "pos": "动",
+        "glossEn": "manage",
+        "examples": [
+          "administer 管理国家",
+          "管理者"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "印度",
+        "pinyin": "Yìndù",
+        "pos": "专有",
+        "glossEn": "India",
+        "examples": []
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "谁",
+          "core": [
+            "僧人",
+            "著名"
+          ],
+          "supplement": [
+            "文学家",
+            "政治家",
+            "思想家",
+            "教育家",
+            "科学家"
+          ]
+        },
+        {
+          "theme": "经历",
+          "core": [
+            "困难",
+            "官",
+            "贡献",
+            "促进",
+            "建",
+            "寺院",
+            "讲授",
+            "中医",
+            "传播",
+            "建筑",
+            "国王",
+            "管理"
+          ],
+          "supplement": [
+            "分离",
+            "痛苦",
+            "思念",
+            "忍受",
+            "克服",
+            "考察"
+          ]
+        },
+        {
+          "theme": "感想",
+          "core": [
+            "吸引",
+            "了不起"
+          ],
+          "supplement": [
+            "崇拜",
+            "佩服"
+          ]
+        }
+      ],
+      "expressionPatterns": [
+        "（1）由于父母很早就去世（pass away）了，他只能到寺院里生活。（由于）",
+        "（2）随着他一年年长大，他对佛教的了解也越来越深。（随着）",
+        "（3）玄奘努力学习的态度感动了许多印度人。（感动）",
+        "（4）经过无数的困难，鉴真终于到达了日本。（终于）",
+        "（5）鉴真为中国和日本之间的文化交流做出了重大的贡献。（为……做贡献）"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "吸引",
+      "促进",
+      "建",
+      "讲授",
+      "管理"
+    ],
+    "noun": [
+      "僧人",
+      "寺院",
+      "中医",
+      "贡献",
+      "困难",
+      "官",
+      "国王"
+    ],
+    "adjective": [
+      "了不起",
+      "著名"
+    ],
+    "properNoun": [
+      "唐代",
+      "佛教",
+      "印度"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "文学家",
+        "政治家",
+        "思想家",
+        "教育家",
+        "科学家",
+        "传播",
+        "建筑",
+        "分离",
+        "痛苦",
+        "思念",
+        "忍受",
+        "克服",
+        "考察",
+        "崇拜",
+        "佩服"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 15,
+    "extensionEntries": 6,
+    "produceCoreWords": 16,
+    "produceSupplementWords": 13,
+    "uniqueHanziInLesson": 34
+  }
+}

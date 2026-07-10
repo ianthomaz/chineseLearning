@@ -1,0 +1,13 @@
+# --- Local only (not committed) ---
+
+# Source PDFs (size, licensing — keep on your machine)
+*.pdf
+
+# Extraction / rebuild tooling (workflow local)
+scripts/
+
+# Automatic scrape drafts — superseded by curated/
+output/
+
+# Schema for old output/ pipeline (not curated JSON)
+schema.json

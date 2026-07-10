@@ -1,0 +1,388 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 10,
+    "title": "我想养只小狗",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 125,
+        "extensionVocab": 128,
+        "produceSupport": 131
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "宠物",
+        "pinyin": "chǒngwù",
+        "pos": "名",
+        "glossEn": "pet (animal)",
+        "examples": [
+          "一个宠物"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "养",
+        "pinyin": "yǎng",
+        "pos": "动",
+        "glossEn": "keep",
+        "examples": [
+          "养狗",
+          "养宠物"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "毛茸茸",
+        "pinyin": "máoróngróng",
+        "pos": "形",
+        "glossEn": "hairy",
+        "examples": [
+          "downy 毛茸茸的小猫"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "毛",
+        "pinyin": "máo",
+        "pos": "名",
+        "glossEn": "hair",
+        "examples": [
+          "身上的毛",
+          "狗毛"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "雪球",
+        "pinyin": "xuěqiú",
+        "pos": "名",
+        "glossEn": "snowball",
+        "examples": [
+          "一个雪球"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "陪",
+        "pinyin": "péi",
+        "pos": "动",
+        "glossEn": "accompany",
+        "examples": [
+          "陪我",
+          "陪他去医院"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "长大",
+        "pinyin": "zhǎngdà",
+        "pos": "动",
+        "glossEn": "grow up",
+        "examples": [
+          "长大了"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "照顾",
+        "pinyin": "zhàogù",
+        "pos": "动",
+        "glossEn": "look after",
+        "examples": [
+          "照顾别人",
+          "照顾宠物"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "害怕",
+        "pinyin": "hàipà",
+        "pos": "动",
+        "glossEn": "fear",
+        "examples": [
+          "害怕狗",
+          "害怕坐飞机"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "怕",
+        "pinyin": "pà",
+        "pos": "动",
+        "glossEn": "worry about",
+        "examples": [
+          "怕麻烦",
+          "怕考不好"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "钥匙",
+        "pinyin": "yàoshi",
+        "pos": "名",
+        "glossEn": "key",
+        "examples": [
+          "一把钥匙",
+          "忘带钥匙"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "羡慕",
+        "pinyin": "xiànmù",
+        "pos": "动",
+        "glossEn": "admire",
+        "examples": [
+          "envy 羡慕你",
+          "太羡慕了"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "脸",
+        "pinyin": "liǎn",
+        "pos": "名",
+        "glossEn": "face",
+        "examples": [
+          "一张脸"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "乖",
+        "pinyin": "guāi",
+        "pos": "形",
+        "glossEn": "well-behaved",
+        "examples": [
+          "我的狗很乖。 小女孩儿很乖。"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "干净",
+        "pinyin": "gānjìng",
+        "pos": "形",
+        "glossEn": "clean",
+        "examples": [
+          "爱干净",
+          "干净的房间"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "花",
+        "pinyin": "huā",
+        "pos": "动",
+        "glossEn": "spend",
+        "examples": [
+          "花时间",
+          "花钱"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "兔子",
+        "pinyin": "tùzi",
+        "pos": "名",
+        "glossEn": "rabbit",
+        "examples": [
+          "一只兔子",
+          "养兔子"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "亲近",
+        "pinyin": "qīnjìn",
+        "pos": "动",
+        "glossEn": "make advances to (sb)亲近人",
+        "examples": [
+          "和人亲近"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "后来",
+        "pinyin": "hòulái",
+        "pos": "名",
+        "glossEn": "afterwards",
+        "examples": [
+          "later 我小时候有一只兔子，后来送人了。"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "死",
+        "pinyin": "sǐ",
+        "pos": "动",
+        "glossEn": "die",
+        "examples": [
+          "死了"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "",
+          "core": [
+            "宠物",
+            "宠物",
+            "养",
+            "兔子"
+          ],
+          "supplement": [
+            "鸟",
+            "蛇",
+            "鱼"
+          ]
+        },
+        {
+          "theme": "宠物的样子",
+          "core": [
+            "毛茸茸",
+            "毛",
+            "雪球",
+            "脸"
+          ],
+          "supplement": [
+            "身上",
+            "尾巴",
+            "花纹"
+          ]
+        },
+        {
+          "theme": "养宠物的原因",
+          "core": [
+            "陪",
+            "长大",
+            "照顾",
+            "乖",
+            "干净",
+            "亲近"
+          ],
+          "supplement": [
+            "看家",
+            "聪明"
+          ]
+        },
+        {
+          "theme": "不养宠物的原因",
+          "core": [
+            "害怕",
+            "怕",
+            "花",
+            "死"
+          ],
+          "supplement": [
+            "脏",
+            "过敏",
+            "危险"
+          ]
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "钥匙",
+            "羡慕",
+            "后来"
+          ],
+          "supplement": []
+        }
+      ],
+      "expressionPatterns": [
+        "它是一只……",
+        "它叫……",
+        "它……岁。",
+        "它毛茸茸的。",
+        "它很漂亮/可爱。",
+        "它的毛……",
+        "它长着……",
+        "它长得像……",
+        "它身上有……的花纹。",
+        "它爱干净。",
+        "它很乖/聪明……",
+        "它喜欢亲近人。",
+        "它喜欢吃……",
+        "它不喜欢……",
+        "它爱干净。",
+        "它陪我长大。",
+        "它很乖/聪明。",
+        "养它不麻烦。",
+        "它喜欢亲近人。",
+        "它让我学会照顾人。",
+        "它给我带来很多快乐。",
+        "它可以帮我……",
+        "……",
+        "我害怕它。",
+        "养……要花很多钱。",
+        "我对……过敏（be allergic to）。",
+        "……有点儿危险。",
+        "我怕麻烦/花时间/脏……",
+        "如果它死了，我会很难过。",
+        "……"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "养",
+      "陪",
+      "长大",
+      "照顾",
+      "害怕",
+      "怕",
+      "羡慕",
+      "花",
+      "亲近",
+      "死"
+    ],
+    "noun": [
+      "宠物",
+      "毛",
+      "雪球",
+      "钥匙",
+      "脸",
+      "兔子",
+      "后来"
+    ],
+    "adjective": [
+      "毛茸茸",
+      "乖",
+      "干净"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "鸟",
+        "蛇",
+        "鱼",
+        "身上",
+        "尾巴",
+        "花纹",
+        "看家",
+        "聪明",
+        "脏",
+        "过敏",
+        "危险"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 12,
+    "extensionEntries": 8,
+    "produceCoreWords": 21,
+    "produceSupplementWords": 11,
+    "uniqueHanziInLesson": 31
+  }
+}

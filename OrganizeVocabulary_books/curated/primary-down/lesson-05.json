@@ -1,0 +1,319 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "volumeLabel": "初级·下",
+    "lesson": 5,
+    "title": "手机付款就可以",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "level2.pdf",
+      "pages": {
+        "textVocab": 72,
+        "extensionVocab": 78,
+        "produceSupport": 82
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "付款",
+        "pinyin": "fù kuǎn pay",
+        "pos": "",
+        "glossEn": "(a sum of money)",
+        "examples": [
+          "用手机付款",
+          "付房款"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "绑",
+        "pinyin": "bǎng",
+        "pos": "动",
+        "glossEn": "tie",
+        "examples": [
+          "bind 把行李绑在行李架上",
+          "绑定银"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "嗯",
+        "pinyin": "èng",
+        "pos": "叹",
+        "glossEn": "yes [expressing agreement]",
+        "examples": [
+          "嗯，好的！"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "信息",
+        "pinyin": "xìnxī",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 5,
+        "hanzi": "名",
+        "pinyin": "information",
+        "pos": "",
+        "glossEn": "个人信息",
+        "examples": [
+          "填信息"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "仔细",
+        "pinyin": "zǐxì",
+        "pos": "形",
+        "glossEn": "careful",
+        "examples": [
+          "仔细点儿",
+          "做作业做得很仔细"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "支付",
+        "pinyin": "zhīfù",
+        "pos": "动",
+        "glossEn": "pay",
+        "examples": [
+          "支付学费",
+          "手机支付"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "接着",
+        "pinyin": "jiēzhe",
+        "pos": "副",
+        "glossEn": "after that",
+        "examples": [
+          "and then 付完学费，接着付住宿费"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "角",
+        "pinyin": "jiǎo",
+        "pos": "名",
+        "glossEn": "corner",
+        "examples": [
+          "右上角",
+          "汉语角"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "方式",
+        "pinyin": "fāngshì",
+        "pos": "名",
+        "glossEn": "way",
+        "examples": [
+          "mode 付款方式"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "二维码",
+        "pinyin": "èrwéimǎ",
+        "pos": "名",
+        "glossEn": "QR code",
+        "examples": [
+          "扫二维码"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "万一",
+        "pinyin": "wànyī",
+        "pos": "连",
+        "glossEn": "what if",
+        "examples": [
+          "万一手机没电了怎么办？"
+        ]
+      },
+      {
+        "index": 13,
+        "hanzi": "现金",
+        "pinyin": "xiànjīn",
+        "pos": "名",
+        "glossEn": "cash",
+        "examples": [
+          "现金支付"
+        ]
+      },
+      {
+        "index": 14,
+        "hanzi": "另外",
+        "pinyin": "lìngwài",
+        "pos": "连",
+        "glossEn": "in addition",
+        "examples": [
+          "besides"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "假",
+        "pinyin": "jiǎ",
+        "pos": "形",
+        "glossEn": "fake",
+        "examples": [
+          "假钱",
+          "假花"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "直接",
+        "pinyin": "zhíjiē",
+        "pos": "形",
+        "glossEn": "direct",
+        "examples": [
+          "immediate 直接支付",
+          "直接问老师"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "信任",
+        "pinyin": "xìnrèn",
+        "pos": "动",
+        "glossEn": "trust",
+        "examples": [
+          "信任朋友"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "任何",
+        "pinyin": "rènhé",
+        "pos": "代",
+        "glossEn": "any",
+        "examples": [
+          "任何时候",
+          "任何地方"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "设备",
+        "pinyin": "shèbèi",
+        "pos": "名",
+        "glossEn": "equipment",
+        "examples": [
+          "电子设备",
+          "教学设备"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "",
+          "core": [
+            "付款",
+            "方式",
+            "万一",
+            "现金",
+            "假",
+            "直接",
+            "信任",
+            "任何",
+            "设备",
+            "绑",
+            "信息",
+            "仔细",
+            "支付"
+          ],
+          "supplement": [
+            "转账",
+            "刷脸"
+          ]
+        },
+        {
+          "theme": "付款过程",
+          "core": [
+            "角",
+            "二维码"
+          ],
+          "supplement": []
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "嗯",
+            "接着",
+            "另外"
+          ],
+          "supplement": []
+        }
+      ],
+      "expressionPatterns": [
+        "（1）如果用现金付款，需要数钱，太浪费时间。（需要……）",
+        "（2）虽然现金支付也有缺点，但我认为这是最简单、最方便的付款方式。（虽然……，但……）",
+        "（3）用银行卡和手机付款容易不小心花很多钱，因为看不到现金。（容易……）",
+        "（4）现金付款只能当面完成，手机付款即使离得很远，也能完成。（即使……，也……）",
+        "（5） 手机支付需要有手机和网络。如果没有，就没法儿用。另外，如果付款软件有问题，手机支付"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "绑",
+      "支付",
+      "信任"
+    ],
+    "noun": [
+      "角",
+      "方式",
+      "二维码",
+      "现金",
+      "设备"
+    ],
+    "adjective": [
+      "仔细",
+      "假",
+      "直接"
+    ],
+    "adverb": [
+      "接着"
+    ],
+    "pronoun": [
+      "任何"
+    ],
+    "conjunction": [
+      "万一",
+      "另外"
+    ],
+    "interjection": [
+      "嗯"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "付款",
+        "信息",
+        "转账",
+        "刷脸"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 14,
+    "extensionEntries": 5,
+    "produceCoreWords": 18,
+    "produceSupplementWords": 2,
+    "uniqueHanziInLesson": 21
+  }
+}

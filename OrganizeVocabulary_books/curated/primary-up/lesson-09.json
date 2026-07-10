@@ -1,0 +1,282 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 9,
+    "title": "别难过了",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 113,
+        "extensionVocab": 116,
+        "produceSupport": 120
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "难过",
+        "pinyin": "nánguò",
+        "pos": "形",
+        "glossEn": "sad",
+        "examples": [
+          "觉得难过",
+          "别难过"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "关心",
+        "pinyin": "guānxīn",
+        "pos": "动",
+        "glossEn": "be concerned about",
+        "examples": [
+          "关心朋友",
+          "关心他的工作"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "以后",
+        "pinyin": "yǐhòu",
+        "pos": "名",
+        "glossEn": "after",
+        "examples": [
+          "later 两个月以后",
+          "放假以后"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "机会",
+        "pinyin": "jīhuì",
+        "pos": "名",
+        "glossEn": "opportunity",
+        "examples": [
+          "好机会",
+          "有机会"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "信心",
+        "pinyin": "xìnxīn",
+        "pos": "名",
+        "glossEn": "confidence （对……）有信心",
+        "examples": []
+      },
+      {
+        "index": 6,
+        "hanzi": "聪明",
+        "pinyin": "cōngmíng",
+        "pos": "形",
+        "glossEn": "clever",
+        "examples": [
+          "smart 聪明的人",
+          "很聪明"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "着急",
+        "pinyin": "zháojí",
+        "pos": "形",
+        "glossEn": "worried",
+        "examples": [
+          "anxious 看起来很着急",
+          "着急复习"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "办法",
+        "pinyin": "bànfǎ",
+        "pos": "名",
+        "glossEn": "solution",
+        "examples": [
+          "means 想办法",
+          "没办法"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "努力",
+        "pinyin": "nǔlì",
+        "pos": "动形",
+        "glossEn": "make efforts (to do sth)一起努力",
+        "examples": [
+          "努力复习"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "鼓励",
+        "pinyin": "gǔlì",
+        "pos": "动",
+        "glossEn": "encourage",
+        "examples": [
+          "鼓励自己",
+          "朋友鼓励我去中国。"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "哭",
+        "pinyin": "kū",
+        "pos": "动",
+        "glossEn": "cry",
+        "examples": [
+          "他哭了。 别哭了。"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "丢",
+        "pinyin": "diū",
+        "pos": "动",
+        "glossEn": "lose",
+        "examples": [
+          "手机丢了。"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "担心",
+        "pinyin": "dānxīn",
+        "pos": "动",
+        "glossEn": "worry",
+        "examples": [
+          "担心他",
+          "别担心"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "放心",
+        "pinyin": "fàngxīn",
+        "pos": "动",
+        "glossEn": "set one’s mind at rest",
+        "examples": [
+          "放心吧，没问题。 放心吧，不会丢。"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "广播",
+        "pinyin": "guǎngbō",
+        "pos": "名",
+        "glossEn": "broadcast",
+        "examples": [
+          "广播响了",
+          "听广播"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "",
+          "core": [
+            "关心",
+            "哭"
+          ],
+          "supplement": [
+            "出事"
+          ]
+        },
+        {
+          "theme": "安慰和鼓励别人",
+          "core": [
+            "难过",
+            "以后",
+            "机会",
+            "信心",
+            "聪明",
+            "着急",
+            "鼓励",
+            "丢",
+            "担心",
+            "放心"
+          ],
+          "supplement": [
+            "安慰",
+            "没问题",
+            "加油"
+          ]
+        },
+        {
+          "theme": "帮别人想",
+          "core": [
+            "办法",
+            "努力",
+            "广播"
+          ],
+          "supplement": [
+            "要不",
+            "广播"
+          ]
+        }
+      ],
+      "expressionPatterns": [
+        "我帮你……",
+        "这样好不好，……",
+        "下次……",
+        "……",
+        "你怎么了？",
+        "你是不是……？",
+        "出什么事了？",
+        "……",
+        "别难过，……",
+        "别担心，……",
+        "放心吧，……",
+        "……"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "关心",
+      "鼓励",
+      "哭",
+      "丢",
+      "担心",
+      "放心"
+    ],
+    "noun": [
+      "以后",
+      "机会",
+      "信心",
+      "办法",
+      "广播"
+    ],
+    "adjective": [
+      "难过",
+      "聪明",
+      "着急"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "出事",
+        "安慰",
+        "没问题",
+        "加油",
+        "努力",
+        "要不"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 10,
+    "extensionEntries": 5,
+    "produceCoreWords": 15,
+    "produceSupplementWords": 6,
+    "uniqueHanziInLesson": 20
+  }
+}

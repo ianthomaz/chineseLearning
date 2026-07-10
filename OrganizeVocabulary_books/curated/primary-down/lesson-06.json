@@ -1,0 +1,399 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "volumeLabel": "初级·下",
+    "lesson": 6,
+    "title": "周末去爬长城吧",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "level2.pdf",
+      "pages": {
+        "textVocab": 87,
+        "extensionVocab": 93,
+        "produceSupport": 97
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "活动",
+        "pinyin": "huódòng",
+        "pos": "动名",
+        "glossEn": "move about",
+        "examples": [
+          "activity 出去活动活动",
+          "参加"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "熟悉",
+        "pinyin": "shúxi",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 3,
+        "hanzi": "动",
+        "pinyin": "be",
+        "pos": "",
+        "glossEn": "familiar with",
+        "examples": [
+          "对……很熟悉"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "正好",
+        "pinyin": "zhènghǎo",
+        "pos": "形副",
+        "glossEn": "just right/enough",
+        "examples": [
+          "coincidentally",
+          "by chance 这双鞋我穿正好",
+          "我 要去图书馆，正好我 室友也想去，我们就"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "增进",
+        "pinyin": "zēngjìn",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 6,
+        "hanzi": "动",
+        "pinyin": "promote",
+        "pos": "",
+        "glossEn": "",
+        "examples": [
+          "enhance 增进了解",
+          "增进友情"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "合影",
+        "pinyin": "héyǐng",
+        "pos": "名动",
+        "glossEn": "group photo",
+        "examples": [
+          "take a group photo 班级合影",
+          "和老师合 影",
+          "合一张影"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "通知",
+        "pinyin": "tōngzhī",
+        "pos": "动名",
+        "glossEn": "notify (sb of sth)",
+        "examples": [
+          "notification 通知大家开会",
+          "一个"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "群",
+        "pinyin": "qún",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 10,
+        "hanzi": "名",
+        "pinyin": "group",
+        "pos": "",
+        "glossEn": "微信群",
+        "examples": []
+      },
+      {
+        "index": 11,
+        "hanzi": "组织",
+        "pinyin": "zǔzhī",
+        "pos": "动",
+        "glossEn": "organize",
+        "examples": [
+          "组织晚会",
+          "组织活动"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "集合",
+        "pinyin": "jíhé",
+        "pos": "动",
+        "glossEn": "assemble",
+        "examples": [
+          "gather 马上集合",
+          "在校门口"
+        ]
+      },
+      {
+        "index": 13,
+        "hanzi": "清酒",
+        "pinyin": "qīngjiǔ",
+        "pos": "名",
+        "glossEn": "sake (an alcoholic drink in Japan)",
+        "examples": []
+      },
+      {
+        "index": 14,
+        "hanzi": "于是",
+        "pinyin": "yúshì",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 15,
+        "hanzi": "连",
+        "pinyin": "so",
+        "pos": "",
+        "glossEn": "",
+        "examples": [
+          "then",
+          "hence 吵，于是就在学校外"
+        ]
+      },
+      {
+        "index": 16,
+        "hanzi": "长城",
+        "pinyin": "Chángchéng",
+        "pos": "专有",
+        "glossEn": "Great Wall",
+        "examples": []
+      },
+      {
+        "index": 17,
+        "hanzi": "不到长城非好汉",
+        "pinyin": "bú dào Chángchéng fēi hǎohàn",
+        "pos": "",
+        "glossEn": "one who fails to reach the Great Wall cannot be called a man; one should not give up until one succeeds",
+        "examples": []
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "交际",
+        "pinyin": "jiāojì",
+        "pos": "动",
+        "glossEn": "associate",
+        "examples": [
+          "contact 交际能力",
+          "他很会交际"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "学生会",
+        "pinyin": "xuéshēnghuì",
+        "pos": "名",
+        "glossEn": "student union",
+        "examples": [
+          "加入学生会"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "汉语角",
+        "pinyin": "hànyǔjiǎo",
+        "pos": "名",
+        "glossEn": "Chinese corner",
+        "examples": [
+          "汉语角活动"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "饮食",
+        "pinyin": "yǐnshí",
+        "pos": "名",
+        "glossEn": "diet",
+        "examples": [
+          "饮食习惯",
+          "饮食文化"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "名胜古迹",
+        "pinyin": "míngshèng gǔjì",
+        "pos": "",
+        "glossEn": "scenic spots and historical sites",
+        "examples": [
+          "参观名胜古迹",
+          "保护名胜古迹"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "鼓励",
+        "pinyin": "gǔlì",
+        "pos": "动",
+        "glossEn": "encourage",
+        "examples": [
+          "老师鼓励学生"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "无论",
+        "pinyin": "wúlùn",
+        "pos": "连",
+        "glossEn": "whatever",
+        "examples": [
+          "regardless of 无论刮风还是下雨，他都会出"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "什么活动？",
+          "core": [
+            "活动",
+            "组织",
+            "学生会",
+            "汉语角",
+            "饮食",
+            "名胜古迹"
+          ],
+          "supplement": [
+            "主题",
+            "话剧",
+            "舞会",
+            "春游",
+            "秋游",
+            "唱"
+          ]
+        },
+        {
+          "theme": "活动目的是什么？",
+          "core": [
+            "熟悉",
+            "增进",
+            "交际",
+            "鼓励"
+          ],
+          "supplement": [
+            "放松",
+            "享受",
+            "锻炼",
+            "热闹"
+          ]
+        },
+        {
+          "theme": "活动前准备什么？",
+          "core": [
+            "通知",
+            "群",
+            "集合"
+          ],
+          "supplement": [
+            "抽时间"
+          ]
+        },
+        {
+          "theme": "活动时做什么？",
+          "core": [
+            "合影"
+          ],
+          "supplement": [
+            "拍照",
+            "唱歌",
+            "跳舞",
+            "参观",
+            "游览",
+            "庆祝"
+          ]
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "正好",
+            "清酒",
+            "于是",
+            "无论"
+          ],
+          "supplement": []
+        }
+      ],
+      "expressionPatterns": [
+        "（1）这个周六是我朋友的生日，正好也是中秋节，我们要一起庆祝一下。（正好）",
+        "（2） 上个周末我们班一起参观了博物馆。一开始打算周六去，可是有的同学得参加HSK考试，于是我",
+        "（3）为了提高自己的口语交际能力，我每周五都参加汉语角活动。（为了）",
+        "（4）我差不多每个月都要去爬一次长城。（差不多）",
+        "（5）在我的生日晚会上，无论是我的家人还是朋友，都祝我开心、幸福。（无论……，都……）"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "组织",
+      "集合",
+      "交际",
+      "鼓励"
+    ],
+    "noun": [
+      "清酒",
+      "学生会",
+      "汉语角",
+      "饮食"
+    ],
+    "conjunction": [
+      "无论"
+    ],
+    "properNoun": [
+      "长城"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "活动",
+        "名胜古迹",
+        "主题",
+        "话剧",
+        "舞会",
+        "春游",
+        "秋游",
+        "唱",
+        "熟悉",
+        "增进",
+        "放松",
+        "享受",
+        "锻炼",
+        "热闹",
+        "通知",
+        "群",
+        "抽时间",
+        "合影",
+        "拍照",
+        "唱歌",
+        "跳舞",
+        "参观",
+        "游览",
+        "庆祝",
+        "正好",
+        "于是"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 17,
+    "extensionEntries": 7,
+    "produceCoreWords": 18,
+    "produceSupplementWords": 17,
+    "uniqueHanziInLesson": 40
+  }
+}

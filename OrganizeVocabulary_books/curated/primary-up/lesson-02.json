@@ -1,0 +1,312 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 2,
+    "title": "怎么办？",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 29,
+        "extensionVocab": 33,
+        "produceSupport": 36
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "地铁",
+        "pinyin": "dìtiě",
+        "pos": "名",
+        "glossEn": "subway",
+        "examples": [
+          "坐地铁",
+          "地铁站"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "大巴",
+        "pinyin": "dàbā",
+        "pos": "名",
+        "glossEn": "bus",
+        "examples": [
+          "机场大巴",
+          "坐大巴"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "或者",
+        "pinyin": "huòzhě",
+        "pos": "连",
+        "glossEn": "or",
+        "examples": [
+          "你可以坐大巴或者出租车。"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "种",
+        "pinyin": "zhǒng",
+        "pos": "量",
+        "glossEn": "kind",
+        "examples": [
+          "一种",
+          "哪种",
+          "很多种"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "线",
+        "pinyin": "xiàn",
+        "pos": "名",
+        "glossEn": "line",
+        "examples": []
+      },
+      {
+        "index": 6,
+        "hanzi": "查",
+        "pinyin": "chá",
+        "pos": "动",
+        "glossEn": "search",
+        "examples": [
+          "查一下"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "换",
+        "pinyin": "huàn",
+        "pos": "动",
+        "glossEn": "change",
+        "examples": [
+          "换地铁",
+          "换10号线"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "先",
+        "pinyin": "xiān",
+        "pos": "副",
+        "glossEn": "first",
+        "examples": [
+          "先……，然后……"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "然后",
+        "pinyin": "ránhòu",
+        "pos": "连",
+        "glossEn": "then",
+        "examples": [
+          "先……，然后……"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "感谢",
+        "pinyin": "gǎnxiè",
+        "pos": "动",
+        "glossEn": "thank",
+        "examples": [
+          "appreciate 非常感谢",
+          "感谢您（的帮助）"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "中汉大学",
+        "pinyin": "Zhōnghàn",
+        "pos": "专有",
+        "glossEn": "Dàxué Zhonghan University",
+        "examples": []
+      },
+      {
+        "index": 12,
+        "hanzi": "中山桥",
+        "pinyin": "Zh4ngshn",
+        "pos": "专有",
+        "glossEn": "Qiáo Zhongshan Bridge",
+        "examples": []
+      },
+      {
+        "index": 13,
+        "hanzi": "新月公园",
+        "pinyin": "Xīnyuè",
+        "pos": "专有",
+        "glossEn": "GōngyuánXinyue Park",
+        "examples": []
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "修",
+        "pinyin": "xiū",
+        "pos": "动",
+        "glossEn": "repair",
+        "examples": [
+          "修电视",
+          "修好"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "一会儿",
+        "pinyin": "yíhuìr",
+        "pos": "",
+        "glossEn": "in a while",
+        "examples": [
+          "一会儿见",
+          "一会儿来"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "办公室",
+        "pinyin": "bàngōngshì",
+        "pos": "名",
+        "glossEn": "office",
+        "examples": [
+          "一间办公室",
+          "学院办公室"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "课表",
+        "pinyin": "kèbiǎo",
+        "pos": "名",
+        "glossEn": "class schedule",
+        "examples": [
+          "口语课表",
+          "汉语课表"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "麻烦",
+        "pinyin": "máfan",
+        "pos": "动",
+        "glossEn": "bother",
+        "examples": [
+          "trouble sb 麻烦您了！"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "遇到了什么问题？",
+          "core": [
+            "课表"
+          ],
+          "supplement": [
+            "迷路",
+            "坏",
+            "丢",
+            "空调",
+            "马桶"
+          ]
+        },
+        {
+          "theme": "怎么找人帮忙？",
+          "core": [
+            "地铁",
+            "大巴",
+            "或者",
+            "种",
+            "线",
+            "查",
+            "换",
+            "先",
+            "然后",
+            "修",
+            "一会儿",
+            "办公室"
+          ],
+          "supplement": [
+            "师傅",
+            "不好意思"
+          ]
+        },
+        {
+          "theme": "怎么感谢？",
+          "core": [
+            "感谢",
+            "麻烦"
+          ],
+          "supplement": [
+            "辛苦"
+          ]
+        }
+      ],
+      "expressionPatterns": [
+        "……坏了",
+        "请问……",
+        "麻烦您帮我……",
+        "您能帮我……吗？"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "查",
+      "换",
+      "感谢",
+      "修",
+      "麻烦"
+    ],
+    "noun": [
+      "地铁",
+      "大巴",
+      "线",
+      "办公室",
+      "课表"
+    ],
+    "adverb": [
+      "先"
+    ],
+    "conjunction": [
+      "或者",
+      "然后"
+    ],
+    "measureWord": [
+      "种"
+    ],
+    "properNoun": [
+      "中汉大学",
+      "中山桥",
+      "新月公园"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "迷路",
+        "坏",
+        "丢",
+        "空调",
+        "马桶",
+        "一会儿",
+        "师傅",
+        "不好意思",
+        "辛苦"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 13,
+    "extensionEntries": 5,
+    "produceCoreWords": 15,
+    "produceSupplementWords": 8,
+    "uniqueHanziInLesson": 26
+  }
+}

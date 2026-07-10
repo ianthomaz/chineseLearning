@@ -7,7 +7,7 @@
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import { authConfig } from "./config";
-import { upsertPlayer } from "@/server/db/players";
+import { upsertUser } from "@/server/db/users";
 import { verifyGoogleIdToken } from "./verify-google-id-token";
 
 /** Google's stable user id is the OIDC `sub` claim. */
@@ -58,7 +58,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       try {
         const id = userId(user, profile);
         if (id) {
-          upsertPlayer({ id, email: user?.email, name: user?.name, image: user?.image });
+          upsertUser({ id, email: user?.email, name: user?.name, image: user?.image });
         }
       } catch {
         /* best-effort — auth must not fail if the DB write does */

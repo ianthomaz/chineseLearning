@@ -1,0 +1,388 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 5,
+    "title": "武汉是个好地方",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 65,
+        "extensionVocab": 69,
+        "produceSupport": 72
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "放假",
+        "pinyin": "fàngjià",
+        "pos": "动",
+        "glossEn": "have a holiday",
+        "examples": [
+          "放假的时候",
+          "放三天假"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "历史",
+        "pinyin": "lìshǐ",
+        "pos": "名",
+        "glossEn": "history",
+        "examples": [
+          "五千年的历史",
+          "学习历史"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "城市",
+        "pinyin": "chéngshì",
+        "pos": "名",
+        "glossEn": "city",
+        "examples": [
+          "有名的城市",
+          "中国的城市"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "景色",
+        "pinyin": "jǐngsè",
+        "pos": "名",
+        "glossEn": "scenery",
+        "examples": [
+          "城市的景色",
+          "景色漂亮"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "秋天",
+        "pinyin": "qiūtiān",
+        "pos": "名",
+        "glossEn": "autumn",
+        "examples": [
+          "fall 北京的秋天很漂亮。"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "舒服",
+        "pinyin": "shūfu",
+        "pos": "形",
+        "glossEn": "comfortable",
+        "examples": [
+          "觉得舒服",
+          "很舒服"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "季节",
+        "pinyin": "jìjié",
+        "pos": "名",
+        "glossEn": "season",
+        "examples": [
+          "四个季节",
+          "舒服的季节"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "热情",
+        "pinyin": "rèqíng",
+        "pos": "形",
+        "glossEn": "warm",
+        "examples": [
+          "enthusiastic 热情的人",
+          "对我很热情"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "热干面",
+        "pinyin": "règānmiàn",
+        "pos": "名",
+        "glossEn": "hot noodles with sesame paste",
+        "examples": [
+          "一碗热干面",
+          "吃热干面"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "小吃",
+        "pinyin": "xiǎochī",
+        "pos": "名",
+        "glossEn": "snack",
+        "examples": [
+          "有名的小吃",
+          "北京小吃"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "地方",
+        "pinyin": "dìfang",
+        "pos": "名",
+        "glossEn": "place",
+        "examples": [
+          "一个地方",
+          "好地方",
+          "有名的地方"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "人山人海",
+        "pinyin": "rénshānrénhǎi",
+        "pos": "",
+        "glossEn": "huge crowds of people",
+        "examples": [
+          "这儿人山人海。"
+        ]
+      },
+      {
+        "index": 13,
+        "hanzi": "比如",
+        "pinyin": "bǐrú",
+        "pos": "动",
+        "glossEn": "take for example中国大城市很多，比如北京。",
+        "examples": []
+      },
+      {
+        "index": 14,
+        "hanzi": "武汉",
+        "pinyin": "Wǔhàn",
+        "pos": "专有",
+        "glossEn": "Wuhan [capital city of Hubei Province]",
+        "examples": []
+      },
+      {
+        "index": 15,
+        "hanzi": "黄鹤楼",
+        "pinyin": "Huánghè",
+        "pos": "专有",
+        "glossEn": "Lóu Yellow Crane Tower [a landmark in Wuhan]",
+        "examples": []
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "熊猫",
+        "pinyin": "xióngmāo",
+        "pos": "名",
+        "glossEn": "panda",
+        "examples": [
+          "一只熊猫",
+          "大熊猫"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "辣",
+        "pinyin": "là",
+        "pos": "形",
+        "glossEn": "spicy",
+        "examples": [
+          "太辣了",
+          "辣的菜"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "山",
+        "pinyin": "shān",
+        "pos": "名",
+        "glossEn": "mountain",
+        "examples": [
+          "雪山",
+          "高山"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "镜子",
+        "pinyin": "jìngzi",
+        "pos": "名",
+        "glossEn": "mirror",
+        "examples": [
+          "照镜子",
+          "一面镜子"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "天池",
+        "pinyin": "tiānchí",
+        "pos": "名",
+        "glossEn": "Heavenly Lake, name of any of the lakes on the top of high mountains or plateaus especially in China, here refers to the Heavenly Lake on top of the Tianshan Mountain",
+        "examples": []
+      },
+      {
+        "index": 6,
+        "hanzi": "成都",
+        "pinyin": "Chéngdū",
+        "pos": "专有",
+        "glossEn": "Chengdu [capital city of Sichuan Province]",
+        "examples": []
+      },
+      {
+        "index": 7,
+        "hanzi": "新疆",
+        "pinyin": "Xīnjiāng",
+        "pos": "专有",
+        "glossEn": "Xinjiang Uygur Autonomous Region",
+        "examples": []
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "和天气有关",
+          "core": [
+            "秋天",
+            "舒服",
+            "季节"
+          ],
+          "supplement": [
+            "湿",
+            "冷",
+            "下雨",
+            "下雪",
+            "刮风"
+          ]
+        },
+        {
+          "theme": "和景色有关",
+          "core": [
+            "历史",
+            "城市",
+            "景色",
+            "地方",
+            "熊猫",
+            "山",
+            "镜子",
+            "天池"
+          ],
+          "supplement": [
+            "天池"
+          ]
+        },
+        {
+          "theme": "和食物有关",
+          "core": [
+            "热干面",
+            "小吃",
+            "辣"
+          ],
+          "supplement": [
+            "新鲜",
+            "各种各样"
+          ]
+        },
+        {
+          "theme": "和人有关",
+          "core": [
+            "热情",
+            "人山人海"
+          ],
+          "supplement": [
+            "友好",
+            "忙"
+          ]
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "放假",
+            "比如"
+          ],
+          "supplement": []
+        }
+      ],
+      "expressionPatterns": [
+        "天气……，经常……",
+        "……，就是人太多了。",
+        "那儿人山人海，看不见……",
+        "我不喜欢吃辣的/……",
+        "吃完……不舒服。",
+        "……",
+        "……人很热情。",
+        "……人喜欢……",
+        "什么都好吃，特别是……",
+        "好吃的很多，比如……",
+        "我最喜欢吃……",
+        "景色很……",
+        "最有名的地方是……",
+        "它的历史……",
+        "那儿有……",
+        "在那儿，能看到……",
+        "天气……",
+        "……是最舒服/漂亮的季节。",
+        "我喜欢……╱",
+        "我不太喜欢……"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "放假",
+      "比如"
+    ],
+    "noun": [
+      "历史",
+      "城市",
+      "景色",
+      "秋天",
+      "季节",
+      "热干面",
+      "小吃",
+      "地方",
+      "熊猫",
+      "山",
+      "镜子",
+      "天池"
+    ],
+    "adjective": [
+      "舒服",
+      "热情",
+      "辣"
+    ],
+    "properNoun": [
+      "武汉",
+      "黄鹤楼",
+      "成都",
+      "新疆"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "湿",
+        "冷",
+        "下雨",
+        "下雪",
+        "刮风",
+        "新鲜",
+        "各种各样",
+        "人山人海",
+        "友好",
+        "忙"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 15,
+    "extensionEntries": 7,
+    "produceCoreWords": 18,
+    "produceSupplementWords": 10,
+    "uniqueHanziInLesson": 31
+  }
+}

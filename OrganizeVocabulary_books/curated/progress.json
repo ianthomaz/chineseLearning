@@ -1,0 +1,171 @@
+{
+  "method": "PDF extraction + supervised review (build_curated.py + review_and_fix_curated.py)",
+  "reviewedAt": "2026-07-10",
+  "order": [
+    "primary-up 01-16",
+    "primary-down 01-16"
+  ],
+  "completed": [
+    {
+      "bookId": "primary-up",
+      "lesson": 1,
+      "file": "primary-up/lesson-01.json"
+    },
+    {
+      "bookId": "primary-up",
+      "lesson": 2,
+      "file": "primary-up/lesson-02.json"
+    },
+    {
+      "bookId": "primary-up",
+      "lesson": 3,
+      "file": "primary-up/lesson-03.json"
+    },
+    {
+      "bookId": "primary-up",
+      "lesson": 4,
+      "file": "primary-up/lesson-04.json"
+    },
+    {
+      "bookId": "primary-up",
+      "lesson": 5,
+      "file": "primary-up/lesson-05.json"
+    },
+    {
+      "bookId": "primary-up",
+      "lesson": 6,
+      "file": "primary-up/lesson-06.json"
+    },
+    {
+      "bookId": "primary-up",
+      "lesson": 7,
+      "file": "primary-up/lesson-07.json"
+    },
+    {
+      "bookId": "primary-up",
+      "lesson": 8,
+      "file": "primary-up/lesson-08.json"
+    },
+    {
+      "bookId": "primary-up",
+      "lesson": 9,
+      "file": "primary-up/lesson-09.json"
+    },
+    {
+      "bookId": "primary-up",
+      "lesson": 10,
+      "file": "primary-up/lesson-10.json"
+    },
+    {
+      "bookId": "primary-up",
+      "lesson": 11,
+      "file": "primary-up/lesson-11.json"
+    },
+    {
+      "bookId": "primary-up",
+      "lesson": 12,
+      "file": "primary-up/lesson-12.json"
+    },
+    {
+      "bookId": "primary-up",
+      "lesson": 13,
+      "file": "primary-up/lesson-13.json"
+    },
+    {
+      "bookId": "primary-up",
+      "lesson": 14,
+      "file": "primary-up/lesson-14.json"
+    },
+    {
+      "bookId": "primary-up",
+      "lesson": 15,
+      "file": "primary-up/lesson-15.json"
+    },
+    {
+      "bookId": "primary-up",
+      "lesson": 16,
+      "file": "primary-up/lesson-16.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 1,
+      "file": "primary-down/lesson-01.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 2,
+      "file": "primary-down/lesson-02.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 3,
+      "file": "primary-down/lesson-03.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 4,
+      "file": "primary-down/lesson-04.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 5,
+      "file": "primary-down/lesson-05.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 6,
+      "file": "primary-down/lesson-06.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 7,
+      "file": "primary-down/lesson-07.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 8,
+      "file": "primary-down/lesson-08.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 9,
+      "file": "primary-down/lesson-09.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 10,
+      "file": "primary-down/lesson-10.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 11,
+      "file": "primary-down/lesson-11.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 12,
+      "file": "primary-down/lesson-12.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 13,
+      "file": "primary-down/lesson-13.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 14,
+      "file": "primary-down/lesson-14.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 15,
+      "file": "primary-down/lesson-15.json"
+    },
+    {
+      "bookId": "primary-down",
+      "lesson": 16,
+      "file": "primary-down/lesson-16.json"
+    }
+  ],
+  "status": "complete"
+}

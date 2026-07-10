@@ -1,0 +1,350 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "volumeLabel": "初级·下",
+    "lesson": 4,
+    "title": "我想借《马可·波罗游记》",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "level2.pdf",
+      "pages": {
+        "textVocab": 58,
+        "extensionVocab": 64,
+        "produceSupport": 67
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "网页",
+        "pinyin": "wǎngyè",
+        "pos": "名",
+        "glossEn": "webpage",
+        "examples": [
+          "图书馆网页",
+          "个人网页"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "输入",
+        "pinyin": "shūrù",
+        "pos": "动",
+        "glossEn": "input",
+        "examples": [
+          "输入书名",
+          "输入学号"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "查",
+        "pinyin": "chá",
+        "pos": "动",
+        "glossEn": "look up",
+        "examples": [
+          "consult 查电话号码",
+          "查词典"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "书架",
+        "pinyin": "shūjià",
+        "pos": "名",
+        "glossEn": "bookshelf",
+        "examples": [
+          "把书放回书架上"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "刷",
+        "pinyin": "shuā",
+        "pos": "动",
+        "glossEn": "swipe",
+        "examples": [
+          "刷卡",
+          "刷脸"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "扫",
+        "pinyin": "sǎo",
+        "pos": "动",
+        "glossEn": "scan",
+        "examples": [
+          "扫码",
+          "用手机扫一下"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "拍",
+        "pinyin": "pāi",
+        "pos": "动",
+        "glossEn": "take (a picture)",
+        "examples": [
+          "shoot 拍照",
+          "拍电影"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "哦",
+        "pinyin": "ò",
+        "pos": "叹",
+        "glossEn": "[expressing realization, understanding, etc] oh",
+        "examples": [
+          "哦，我懂了",
+          "哦，我想"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "订",
+        "pinyin": "dìng",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 10,
+        "hanzi": "动",
+        "pinyin": "order",
+        "pos": "",
+        "glossEn": "",
+        "examples": [
+          "book 订票",
+          "订会议室"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "点",
+        "pinyin": "diǎn",
+        "pos": "动",
+        "glossEn": "click",
+        "examples": [
+          "点一下手机",
+          "点开网页"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "讲座",
+        "pinyin": "jiǎngzuò",
+        "pos": "名",
+        "glossEn": "lecture",
+        "examples": [
+          "听讲座",
+          "做讲座"
+        ]
+      },
+      {
+        "index": 13,
+        "hanzi": "约会",
+        "pinyin": "yuēhuì",
+        "pos": "动",
+        "glossEn": "have a date",
+        "examples": [
+          "跟女朋友约会"
+        ]
+      },
+      {
+        "index": 14,
+        "hanzi": "《马可·",
+        "pinyin": "",
+        "pos": "",
+        "glossEn": "《马可· 波罗游记》",
+        "examples": []
+      },
+      {
+        "index": 15,
+        "hanzi": "《马可·波罗游记》",
+        "pinyin": "Mǎkě",
+        "pos": "专有",
+        "glossEn": "Bōluó Yóujì 》 The Travels of Marco Polo",
+        "examples": []
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "专心",
+        "pinyin": "zhuānxīn",
+        "pos": "形",
+        "glossEn": "absorbed",
+        "examples": [
+          "concentrated 专心思考",
+          "上课很专心"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "效果",
+        "pinyin": "xiàoguǒ",
+        "pos": "名",
+        "glossEn": "effect",
+        "examples": [
+          "result 取得很好的效果",
+          "学习效果"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "资料",
+        "pinyin": "zīliào",
+        "pos": "名",
+        "glossEn": "material",
+        "examples": [
+          "查资料",
+          "学习资料"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "满",
+        "pinyin": "mǎn",
+        "pos": "形",
+        "glossEn": "full (of)",
+        "examples": [
+          "教室里坐满了人",
+          "倒满水"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "随时",
+        "pinyin": "suíshí",
+        "pos": "副",
+        "glossEn": "whenever necessary",
+        "examples": [
+          "随时查找想看的书"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "下载",
+        "pinyin": "xiàzài",
+        "pos": "动",
+        "glossEn": "download",
+        "examples": [
+          "下载资料",
+          "免费下载"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "关键",
+        "pinyin": "guānjiàn",
+        "pos": "形",
+        "glossEn": "crucial",
+        "examples": [
+          "key 关键词",
+          "关键问题"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "借书",
+          "core": [
+            "网页",
+            "输入",
+            "查",
+            "书架",
+            "刷",
+            "扫",
+            "随时",
+            "订",
+            "点",
+            "讲座"
+          ],
+          "supplement": [
+            "讲座"
+          ]
+        },
+        {
+          "theme": "上自习",
+          "core": [
+            "专心",
+            "效果",
+            "满"
+          ],
+          "supplement": []
+        },
+        {
+          "theme": "查",
+          "core": [
+            "资料",
+            "下载",
+            "关键"
+          ],
+          "supplement": []
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "拍",
+            "哦",
+            "约会"
+          ],
+          "supplement": []
+        }
+      ],
+      "expressionPatterns": []
+    }
+  },
+  "byPos": {
+    "verb": [
+      "输入",
+      "查",
+      "刷",
+      "扫",
+      "拍",
+      "点",
+      "约会",
+      "下载"
+    ],
+    "noun": [
+      "网页",
+      "书架",
+      "讲座",
+      "效果",
+      "资料"
+    ],
+    "adjective": [
+      "专心",
+      "满",
+      "关键"
+    ],
+    "adverb": [
+      "随时"
+    ],
+    "interjection": [
+      "哦"
+    ],
+    "properNoun": [
+      "《马可·波罗游记》"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "订"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 15,
+    "extensionEntries": 7,
+    "produceCoreWords": 19,
+    "produceSupplementWords": 1,
+    "uniqueHanziInLesson": 22
+  }
+}

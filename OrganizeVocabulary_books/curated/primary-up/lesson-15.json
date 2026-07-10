@@ -1,0 +1,410 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 15,
+    "title": "你们国家怎么庆祝新年？",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 189,
+        "extensionVocab": 193,
+        "produceSupport": 196
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "新年",
+        "pinyin": "xīnnián",
+        "pos": "名",
+        "glossEn": "new year",
+        "examples": [
+          "新年快乐",
+          "中国新年"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "烟花",
+        "pinyin": "yānhuā",
+        "pos": "名",
+        "glossEn": "fireworks",
+        "examples": [
+          "买烟花"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "放",
+        "pinyin": "fàng",
+        "pos": "动",
+        "glossEn": "set off (fireworks)",
+        "examples": [
+          "放烟花"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "一样",
+        "pinyin": "yíyàng",
+        "pos": "形",
+        "glossEn": "the same",
+        "examples": [
+          "和A一样，B也……",
+          "A和B一样，都……"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "聚会",
+        "pinyin": "jùhuì",
+        "pos": "动",
+        "glossEn": "get together",
+        "examples": [
+          "和朋友聚会"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "庆祝",
+        "pinyin": "qìngzhù",
+        "pos": "动",
+        "glossEn": "celebrate",
+        "examples": [
+          "庆祝新年",
+          "庆祝生日"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "游戏",
+        "pinyin": "yóuxì",
+        "pos": "名",
+        "glossEn": "game",
+        "examples": [
+          "玩游戏",
+          "一个游戏"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "酒",
+        "pinyin": "jiǔ",
+        "pos": "名",
+        "glossEn": "alcoholic drink",
+        "examples": [
+          "喝酒",
+          "一杯酒"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "猪",
+        "pinyin": "zhū",
+        "pos": "名",
+        "glossEn": "pig",
+        "examples": [
+          "一头猪",
+          "小猪"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "好运",
+        "pinyin": "hǎoyùn",
+        "pos": "名",
+        "glossEn": "good luck",
+        "examples": [
+          "祝你好运",
+          "有好运"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "礼物",
+        "pinyin": "lǐwù",
+        "pos": "名",
+        "glossEn": "gift",
+        "examples": [
+          "一个礼物",
+          "送礼物",
+          "新年礼物"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "春节",
+        "pinyin": "Chūnjié",
+        "pos": "名",
+        "glossEn": "Spring Festival",
+        "examples": [
+          "庆祝春节",
+          "过春节"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "迎接",
+        "pinyin": "yíngjiē",
+        "pos": "动",
+        "glossEn": "greet",
+        "examples": [
+          "迎接新年",
+          "迎接客人"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "打扫",
+        "pinyin": "d2sǎo",
+        "pos": "动",
+        "glossEn": "sweep",
+        "examples": [
+          "clean 打扫房间",
+          "打扫一下"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "传统",
+        "pinyin": "chuántǒng",
+        "pos": "形",
+        "glossEn": "traditional",
+        "examples": [
+          "传统衣服",
+          "传统小吃"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "寺庙",
+        "pinyin": "sìmiào",
+        "pos": "名",
+        "glossEn": "temple",
+        "examples": [
+          "去寺庙"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "祈祷",
+        "pinyin": "qídǎo",
+        "pos": "动",
+        "glossEn": "pray",
+        "examples": [
+          "为某人祈祷",
+          "祈祷健康快乐"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "装饰",
+        "pinyin": "zhuāngshì",
+        "pos": "动",
+        "glossEn": "decorate",
+        "examples": [
+          "装饰房间",
+          "用……装饰"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "倒数",
+        "pinyin": "dàoshǔ",
+        "pos": "动",
+        "glossEn": "countdown",
+        "examples": [
+          "倒数三个数"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "亲吻",
+        "pinyin": "qīnwěn",
+        "pos": "动",
+        "glossEn": "kiss",
+        "examples": [
+          "互相亲吻",
+          "亲吻爱人"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "许愿",
+        "pinyin": "xǔyuàn",
+        "pos": "动",
+        "glossEn": "make a vow (to a god)",
+        "examples": [
+          "向烟花许愿"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "愿望",
+        "pinyin": "yuànwàng",
+        "pos": "名",
+        "glossEn": "desire",
+        "examples": [
+          "wish 许下愿望",
+          "许一个愿望"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "点着",
+        "pinyin": "diǎnzháo",
+        "pos": "动",
+        "glossEn": "light",
+        "examples": [
+          "把纸点着"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "节日",
+          "core": [
+            "新年",
+            "春节"
+          ],
+          "supplement": [
+            "中秋节"
+          ]
+        },
+        {
+          "theme": "新年活动",
+          "core": [
+            "烟花",
+            "放",
+            "聚会",
+            "庆祝",
+            "游戏",
+            "酒",
+            "猪",
+            "礼物",
+            "迎接",
+            "打扫",
+            "传统",
+            "寺庙",
+            "祈祷",
+            "装饰",
+            "倒数",
+            "亲吻",
+            "许愿",
+            "点着"
+          ],
+          "supplement": []
+        },
+        {
+          "theme": "解释原因",
+          "core": [
+            "好运",
+            "愿望",
+            "一样"
+          ],
+          "supplement": [
+            "倒霉",
+            "发财",
+            "平安",
+            "一样"
+          ]
+        }
+      ],
+      "expressionPatterns": [
+        "我是……（国）人。",
+        "我们新年的时候喜",
+        "欢……",
+        "我们会……，",
+        "……什么的。",
+        "有的人……",
+        "有的人……",
+        "为了迎接新年，",
+        "……",
+        "新年的活动有",
+        "……",
+        "我们会送……",
+        "我们会吃……",
+        "我们不会……",
+        "这样做是因为",
+        "……",
+        "如果没有这样",
+        "做，……就……",
+        "……的意思是",
+        "……，所以……",
+        "因为……有……",
+        "在这些活动中，",
+        "我最喜欢……",
+        "我喜欢的新年活",
+        "……",
+        "我最喜欢的活动",
+        "是……，因为",
+        "……",
+        "……，所以我最",
+        "喜欢……",
+        "一样的是……",
+        "和……一样，",
+        "……",
+        "……和……都",
+        "……",
+        "不一样的是……",
+        "和……不一样，",
+        "……"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "放",
+      "聚会",
+      "庆祝",
+      "迎接",
+      "打扫",
+      "祈祷",
+      "装饰",
+      "倒数",
+      "亲吻",
+      "许愿",
+      "点着"
+    ],
+    "noun": [
+      "新年",
+      "烟花",
+      "游戏",
+      "酒",
+      "猪",
+      "好运",
+      "礼物",
+      "春节",
+      "寺庙",
+      "愿望"
+    ],
+    "adjective": [
+      "一样",
+      "传统"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "中秋节",
+        "倒霉",
+        "发财",
+        "平安"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 12,
+    "extensionEntries": 11,
+    "produceCoreWords": 23,
+    "produceSupplementWords": 5,
+    "uniqueHanziInLesson": 27
+  }
+}

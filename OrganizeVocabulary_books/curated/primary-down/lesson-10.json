@@ -1,0 +1,344 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "volumeLabel": "初级·下",
+    "lesson": 10,
+    "title": "参观新农村",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "level2.pdf",
+      "pages": {
+        "textVocab": 150,
+        "extensionVocab": 155,
+        "produceSupport": 159
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "农村",
+        "pinyin": "nóngcūn",
+        "pos": "名",
+        "glossEn": "rural area",
+        "examples": [
+          "the countryside 农村生活",
+          "新农村"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "优美",
+        "pinyin": "yōuměi",
+        "pos": "形",
+        "glossEn": "graceful",
+        "examples": [
+          "fine 环境优美",
+          "优美的音乐"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "羡慕",
+        "pinyin": "xiànmù",
+        "pos": "动",
+        "glossEn": "admire",
+        "examples": [
+          "envy 羡慕别人",
+          "让人羡慕"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "污染",
+        "pinyin": "wūrǎn",
+        "pos": "动",
+        "glossEn": "pollute",
+        "examples": [
+          "污染很严重",
+          "污染环境"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "院子",
+        "pinyin": "yuànzi",
+        "pos": "名",
+        "glossEn": "courtyard",
+        "examples": [
+          "大院子"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "要不",
+        "pinyin": "yàobù",
+        "pos": "副",
+        "glossEn": "so thatʼs why",
+        "examples": [
+          "要不人们喜欢在城市里工 作呢！"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "种",
+        "pinyin": "zhòng",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 8,
+        "hanzi": "动",
+        "pinyin": "grow",
+        "pos": "",
+        "glossEn": "",
+        "examples": [
+          "plant 种菜",
+          "院子里种着花"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "食品",
+        "pinyin": "shípǐn",
+        "pos": "名",
+        "glossEn": "food",
+        "examples": [
+          "美味的食品",
+          "绿色食品"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "绿色食品",
+        "pinyin": "lǜsè shípǐn",
+        "pos": "",
+        "glossEn": "eco -food",
+        "examples": [
+          "health food"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "养",
+        "pinyin": "yǎng",
+        "pos": "动",
+        "glossEn": "raise",
+        "examples": [
+          "keep",
+          "grow 养狗",
+          "养鱼",
+          "养花"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "到处",
+        "pinyin": "dàochù",
+        "pos": "副",
+        "glossEn": "everywhere",
+        "examples": [
+          "到处走走",
+          "到处乱跑"
+        ]
+      },
+      {
+        "index": 13,
+        "hanzi": "场所",
+        "pinyin": "chǎngsuǒ",
+        "pos": "名",
+        "glossEn": "place",
+        "examples": [
+          "site 公共场所",
+          "学习场所"
+        ]
+      },
+      {
+        "index": 14,
+        "hanzi": "夜",
+        "pinyin": "yè",
+        "pos": "名",
+        "glossEn": "night",
+        "examples": [
+          "住了两夜",
+          "熬夜"
+        ]
+      },
+      {
+        "index": 15,
+        "hanzi": "赚",
+        "pinyin": "zhuàn",
+        "pos": "动",
+        "glossEn": "make a profit",
+        "examples": [
+          "赚钱",
+          "赚生活费"
+        ]
+      },
+      {
+        "index": 16,
+        "hanzi": "哎",
+        "pinyin": "āi",
+        "pos": "叹",
+        "glossEn": "[used to express surprise] ah",
+        "examples": [
+          "oh 哎，是你呀！"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "理由",
+        "pinyin": "lǐyóu",
+        "pos": "名",
+        "glossEn": "reason",
+        "examples": [
+          "说明理由",
+          "有很多理由"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "交通工具",
+        "pinyin": "jiāotōng gōngjù",
+        "pos": "",
+        "glossEn": "means of transportation",
+        "examples": [
+          "各种交通工具"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "速度",
+        "pinyin": "sùdù",
+        "pos": "名",
+        "glossEn": "speed",
+        "examples": [
+          "加快速度",
+          "速度很慢"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "工厂",
+        "pinyin": "gōngchǎng",
+        "pos": "名",
+        "glossEn": "factory",
+        "examples": [
+          "食品工厂",
+          "工厂的设备"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "严重",
+        "pinyin": "yánzhòng",
+        "pos": "形",
+        "glossEn": "serious",
+        "examples": [
+          "污染严重",
+          "严重影响"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "",
+          "core": [
+            "农村",
+            "农村",
+            "优美",
+            "羡慕",
+            "院子",
+            "种",
+            "食品",
+            "绿色食品",
+            "养",
+            "到处",
+            "场所"
+          ],
+          "supplement": []
+        },
+        {
+          "theme": "城市",
+          "core": [
+            "污染",
+            "交通工具",
+            "速度",
+            "工厂",
+            "严重"
+          ],
+          "supplement": []
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "要不",
+            "夜",
+            "赚",
+            "哎",
+            "理由"
+          ],
+          "supplement": []
+        }
+      ],
+      "expressionPatterns": [
+        "（1）农村的风景很漂亮。每天早上一看到花草树木，压力就没有了。（一……，……就……）",
+        "（2）农村有很多虫子，赶都赶不走。（赶不走）",
+        "（3） 农村的公共汽车比较少。要是没赶上这趟车，下一趟就得等很长时间。（要是……，……",
+        "（4）城市里到处都是人和车，有时候让人喘不上来气。（喘不上来气）",
+        "（5）在城市生活，即使收入不错，要想过得轻松也不容易。（即使……，……也……）",
+        "（6）我不喜欢改变，一旦对一个地方熟悉了，就不愿意再去别的地方生活。（一旦……，就……）"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "羡慕",
+      "污染",
+      "养",
+      "赚"
+    ],
+    "noun": [
+      "农村",
+      "院子",
+      "食品",
+      "场所",
+      "夜",
+      "理由",
+      "速度",
+      "工厂"
+    ],
+    "adjective": [
+      "优美",
+      "严重"
+    ],
+    "adverb": [
+      "要不",
+      "到处"
+    ],
+    "interjection": [
+      "哎"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "种",
+        "绿色食品",
+        "交通工具"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 16,
+    "extensionEntries": 5,
+    "produceCoreWords": 21,
+    "produceSupplementWords": 0,
+    "uniqueHanziInLesson": 21
+  }
+}

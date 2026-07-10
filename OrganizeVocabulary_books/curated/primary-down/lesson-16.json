@@ -1,0 +1,354 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "volumeLabel": "初级·下",
+    "lesson": 16,
+    "title": "假期我要去实习",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "level2.pdf",
+      "pages": {
+        "textVocab": 234,
+        "extensionVocab": 239,
+        "produceSupport": 243
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "贸易",
+        "pinyin": "màoyì",
+        "pos": "名",
+        "glossEn": "trade",
+        "examples": [
+          "国际贸易",
+          "贸易公司"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "客户",
+        "pinyin": "kèhù",
+        "pos": "名",
+        "glossEn": "customer",
+        "examples": [
+          "老客户",
+          "跟客户打交道"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "积累",
+        "pinyin": "jīlěi",
+        "pos": "动",
+        "glossEn": "accumulate",
+        "examples": [
+          "积累经验",
+          "积累词汇"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "经验",
+        "pinyin": "jīngyàn",
+        "pos": "名",
+        "glossEn": "experience, referring to the knowledge or skills gained from practice",
+        "examples": [
+          "交流经验",
+          "工作经验"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "经历",
+        "pinyin": "jīnglì",
+        "pos": "名",
+        "glossEn": "experience, referring to things that have been seen, done, or encountered in person, emphasizing the process",
+        "examples": [
+          "生活经历",
+          "工作经历"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "提交",
+        "pinyin": "tíjiāo",
+        "pos": "动",
+        "glossEn": "submit (a problem, etc) to",
+        "examples": [
+          "提交证明",
+          "提交简历"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "简历",
+        "pinyin": "jiǎnlì",
+        "pos": "名",
+        "glossEn": "résumé",
+        "examples": [
+          "curriculum vitae 个人简历"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "基本",
+        "pinyin": "jīběn",
+        "pos": "形",
+        "glossEn": "main",
+        "examples": [
+          "essential 基本内容",
+          "基本信息"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "突出",
+        "pinyin": "tūchū",
+        "pos": "动形",
+        "glossEn": "stress",
+        "examples": [
+          "highlight",
+          "outstanding",
+          "remarkable 突出自己的优点",
+          "突出 的贡献",
+          "成绩很突出"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "销售",
+        "pinyin": "xiāoshòu",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 11,
+        "hanzi": "动",
+        "pinyin": "sell",
+        "pos": "",
+        "glossEn": "",
+        "examples": [
+          "market 销售人员",
+          "房屋销售"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "奖",
+        "pinyin": "jiǎng",
+        "pos": "名",
+        "glossEn": "prize",
+        "examples": [
+          "得奖",
+          "一等奖"
+        ]
+      },
+      {
+        "index": 13,
+        "hanzi": "参考",
+        "pinyin": "cānkǎo",
+        "pos": "动",
+        "glossEn": "refer to",
+        "examples": [
+          "read sth for reference 参考别人的简历",
+          "参考"
+        ]
+      },
+      {
+        "index": 14,
+        "hanzi": "指导",
+        "pinyin": "zhǐdǎo",
+        "pos": "",
+        "glossEn": "",
+        "examples": []
+      },
+      {
+        "index": 15,
+        "hanzi": "动",
+        "pinyin": "guide",
+        "pos": "",
+        "glossEn": "",
+        "examples": [
+          "instruct 老师指导学生写论文"
+        ]
+      },
+      {
+        "index": 16,
+        "hanzi": "面试",
+        "pinyin": "miànshì",
+        "pos": "动",
+        "glossEn": "interview",
+        "examples": [
+          "give an oral examination 面试官",
+          "通过面试",
+          "面"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "初级·下",
+        "pinyin": "H",
+        "pos": "",
+        "glossEn": "根据课文（二），看下面的图，说一说：朴智慧想去哪儿实习？她是怎么准备简 历的？ 基本信息 突出优点 申请原因 提交　希望 想去哪儿实习？ 为什么？ 简历怎么写？",
+        "examples": []
+      },
+      {
+        "index": 2,
+        "hanzi": "性别",
+        "pinyin": "xìngbié",
+        "pos": "名",
+        "glossEn": "gender",
+        "examples": [
+          "不同的性别"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "特长",
+        "pinyin": "tècháng",
+        "pos": "名",
+        "glossEn": "strong point",
+        "examples": [
+          "specialty 体育特长生",
+          "你有什么特长？"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "真实",
+        "pinyin": "zhēnshí",
+        "pos": "形",
+        "glossEn": "true",
+        "examples": [
+          "real 真实的经历",
+          "真实的信息"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "珍惜",
+        "pinyin": "zhēnxī",
+        "pos": "动",
+        "glossEn": "cherish",
+        "examples": [
+          "treasure 珍惜机会",
+          "珍惜时间"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "实习做什么？",
+          "core": [
+            "贸易"
+          ],
+          "supplement": [
+            "辅导",
+            "助教",
+            "口译",
+            "笔译",
+            "市场"
+          ]
+        },
+        {
+          "theme": "为什么实习？",
+          "core": [
+            "客户",
+            "积累",
+            "经验",
+            "经历"
+          ],
+          "supplement": [
+            "体验",
+            "适应"
+          ]
+        },
+        {
+          "theme": "怎么写简历？",
+          "core": [
+            "提交",
+            "简历",
+            "基本",
+            "突出",
+            "销售",
+            "奖",
+            "参考",
+            "指导",
+            "性别",
+            "特长",
+            "真实"
+          ],
+          "supplement": []
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "面试",
+            "珍惜"
+          ],
+          "supplement": []
+        }
+      ],
+      "expressionPatterns": [
+        "（1）面试过程差不多是这样：先是简单的自我介绍，然后是回答各种问题。（先……，然后……）",
+        "（2）通过实习，我能提前适应职场生活。（适应）",
+        "（3）选择实习工作的时候，我更愿意做和专业相关的工作。（和……相关）",
+        "（4）申请实习的时候，得考虑这个实习工作是否有助于提升自己。（有助于）",
+        "（5） 一份漂亮的简历可以帮你得到更好的工作机会，但是能不能把工作做好，得看你的专业能力、"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "积累",
+      "提交",
+      "参考",
+      "面试",
+      "珍惜"
+    ],
+    "noun": [
+      "贸易",
+      "客户",
+      "经验",
+      "经历",
+      "简历",
+      "奖",
+      "性别",
+      "特长"
+    ],
+    "adjective": [
+      "基本",
+      "真实"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "辅导",
+        "助教",
+        "口译",
+        "笔译",
+        "市场",
+        "体验",
+        "适应",
+        "突出",
+        "销售",
+        "指导"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 16,
+    "extensionEntries": 5,
+    "produceCoreWords": 18,
+    "produceSupplementWords": 7,
+    "uniqueHanziInLesson": 27
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 6,
+    "title": "声音小点儿，可以吗？",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 77,
+        "extensionVocab": 81,
+        "produceSupport": 84
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "灯",
+        "pinyin": "dēng",
+        "pos": "名",
+        "glossEn": "light",
+        "examples": [
+          "开灯"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "关",
+        "pinyin": "guān",
+        "pos": "动",
+        "glossEn": "turn off",
+        "examples": [
+          "关灯",
+          "关电视"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "安静",
+        "pinyin": "ānjìng",
+        "pos": "形",
+        "glossEn": "quiet",
+        "examples": [
+          "很安静",
+          "安静一点儿"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "聊（天儿）",
+        "pinyin": "liáo",
+        "pos": "",
+        "glossEn": "(tiānr)",
+        "examples": [
+          "动 chat 和……聊天儿",
+          "聊一会儿天儿"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "商量",
+        "pinyin": "shāngliang",
+        "pos": "动",
+        "glossEn": "discuss",
+        "examples": [
+          "商量一下",
+          "和……商量"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "打扰",
+        "pinyin": "dǎrǎo",
+        "pos": "动",
+        "glossEn": "disturb",
+        "examples": [
+          "bother 对不起，打扰你了。"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "声音",
+        "pinyin": "shēngyīn",
+        "pos": "名",
+        "glossEn": "sound",
+        "examples": [
+          "voice 声音大",
+          "声音小"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "理解",
+        "pinyin": "lǐjiě",
+        "pos": "动",
+        "glossEn": "understand",
+        "examples": [
+          "理解我",
+          "不理解"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "互相",
+        "pinyin": "hùxiāng",
+        "pos": "副",
+        "glossEn": "mutually",
+        "examples": [
+          "互相理解",
+          "互相帮助"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "满意",
+        "pinyin": "mǎnyì",
+        "pos": "动",
+        "glossEn": "be satisfied",
+        "examples": [
+          "不满意",
+          "对……很满意"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "美国",
+        "pinyin": "Měiguó",
+        "pos": "专有",
+        "glossEn": "United States of America (USA)",
+        "examples": [
+          "美国人"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "节",
+        "pinyin": "jié",
+        "pos": "量",
+        "glossEn": "section",
+        "examples": [
+          "一节课"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "建议",
+        "pinyin": "jiànyì",
+        "pos": "动名",
+        "glossEn": "suggest",
+        "examples": [
+          "suggestion 我建议……",
+          "一个建议"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "最好",
+        "pinyin": "zuìhǎo",
+        "pos": "副",
+        "glossEn": "had better",
+        "examples": [
+          "你生病了，最好多休息。"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "主意",
+        "pinyin": "zhǔyi",
+        "pos": "名",
+        "glossEn": "idea",
+        "examples": [
+          "一个主意",
+          "好主意"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "考虑",
+        "pinyin": "kǎolǜ",
+        "pos": "动",
+        "glossEn": "think over",
+        "examples": [
+          "考虑一下",
+          "考虑这个问题"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "表达不满",
+          "core": [
+            "灯",
+            "关",
+            "安静",
+            "聊（天儿）",
+            "打扰",
+            "满意"
+          ],
+          "supplement": [
+            "快",
+            "慢",
+            "难",
+            "贵",
+            "有点儿",
+            "加班"
+          ]
+        },
+        {
+          "theme": "提出建议",
+          "core": [
+            "商量",
+            "声音",
+            "节",
+            "建议",
+            "最好",
+            "主意",
+            "考虑"
+          ],
+          "supplement": [
+            "一点儿",
+            "换"
+          ]
+        },
+        {
+          "theme": "表示感谢",
+          "core": [
+            "理解",
+            "互相"
+          ],
+          "supplement": [
+            "感谢"
+          ]
+        }
+      ],
+      "expressionPatterns": [
+        "我觉得……",
+        "我……，因为你经常……",
+        "……什么都好，就是……",
+        "最好……",
+        "我建议……",
+        "我希望……",
+        "能不能……？",
+        "你下次……吧。",
+        "你……，好吗？",
+        "我和你商量一下……",
+        "如果……，就太好了。",
+        "非常感谢！",
+        "麻烦你了！",
+        "谢谢您/你的理解。"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "关",
+      "商量",
+      "打扰",
+      "理解",
+      "满意",
+      "考虑"
+    ],
+    "noun": [
+      "灯",
+      "声音",
+      "主意"
+    ],
+    "adjective": [
+      "安静"
+    ],
+    "adverb": [
+      "互相",
+      "最好"
+    ],
+    "measureWord": [
+      "节"
+    ],
+    "properNoun": [
+      "美国"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "聊（天儿）",
+        "快",
+        "慢",
+        "难",
+        "贵",
+        "有点儿",
+        "加班",
+        "建议",
+        "一点儿",
+        "换",
+        "感谢"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 11,
+    "extensionEntries": 5,
+    "produceCoreWords": 15,
+    "produceSupplementWords": 9,
+    "uniqueHanziInLesson": 25
+  }
+}

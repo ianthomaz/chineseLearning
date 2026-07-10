@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 8,
+    "title": "帮我复习汉字吧",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 101,
+        "extensionVocab": 104,
+        "produceSupport": 107
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "语伴",
+        "pinyin": "yǔbàn",
+        "pos": "名",
+        "glossEn": "language partner",
+        "examples": [
+          "找语伴",
+          "中国语伴"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "发音",
+        "pinyin": "fāyīn",
+        "pos": "名",
+        "glossEn": "pronunciation",
+        "examples": [
+          "发音清楚",
+          "发音的问题"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "口语",
+        "pinyin": "k6uyǔ",
+        "pos": "名",
+        "glossEn": "spoken language",
+        "examples": [
+          "口语课",
+          "口语老师",
+          "口语考试"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "选修课",
+        "pinyin": "xuǎnxiūkè",
+        "pos": "名",
+        "glossEn": "elective course",
+        "examples": [
+          "汉字选修课"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "门",
+        "pinyin": "mén",
+        "pos": "量",
+        "glossEn": "measure word [for subjects of study]",
+        "examples": [
+          "一门课",
+          "一门选修课"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "讲",
+        "pinyin": "jiǎng",
+        "pos": "动",
+        "glossEn": "explain",
+        "examples": [
+          "lecture 讲课",
+          "讲得清楚"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "纠正",
+        "pinyin": "jiūzhèng",
+        "pos": "动",
+        "glossEn": "correct",
+        "examples": [
+          "纠正发音"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "活动",
+        "pinyin": "huódòng",
+        "pos": "名",
+        "glossEn": "activity",
+        "examples": [
+          "做活动",
+          "课外活动"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "德语",
+        "pinyin": "Déyǔ",
+        "pos": "名",
+        "glossEn": "German (language)",
+        "examples": [
+          "德语学院",
+          "学德语"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "语法",
+        "pinyin": "y",
+        "pos": "",
+        "glossEn": "^fǎ",
+        "examples": [
+          "名 grammar 汉语语法",
+          "学习语法"
+        ]
+      },
+      {
+        "index": 11,
+        "hanzi": "越……越……",
+        "pinyin": "yuè",
+        "pos": "",
+        "glossEn": "… yuè… the more... the more...越写越漂亮",
+        "examples": [
+          "越说越好"
+        ]
+      },
+      {
+        "index": 12,
+        "hanzi": "忘",
+        "pinyin": "wàng",
+        "pos": "动",
+        "glossEn": "forget",
+        "examples": [
+          "忘了怎么写",
+          "（别）忘了"
+        ]
+      },
+      {
+        "index": 13,
+        "hanzi": "期中",
+        "pinyin": "qīzhōng",
+        "pos": "名",
+        "glossEn": "midterm",
+        "examples": [
+          "期中考试"
+        ]
+      },
+      {
+        "index": 14,
+        "hanzi": "当",
+        "pinyin": "dāng",
+        "pos": "动",
+        "glossEn": "serve as",
+        "examples": [
+          "当老师",
+          "当售货员"
+        ]
+      },
+      {
+        "index": 15,
+        "hanzi": "学期",
+        "pinyin": "xuéqī",
+        "pos": "名",
+        "glossEn": "semester",
+        "examples": [
+          "一个学期",
+          "学期考试"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "记",
+        "pinyin": "jì",
+        "pos": "动",
+        "glossEn": "memorize",
+        "examples": [
+          "记汉字",
+          "记发音"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "方法",
+        "pinyin": "fāngfǎ",
+        "pos": "名",
+        "glossEn": "method",
+        "examples": [
+          "学习方法",
+          "有用的方法"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "一边……一边……",
+        "pinyin": "yìbiān",
+        "pos": "",
+        "glossEn": "… yìbiān… at the same time",
+        "examples": [
+          "while 一边听音乐，一边写作业",
+          "一边看，一边学"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "耐心",
+        "pinyin": "nàixīn",
+        "pos": "名",
+        "glossEn": "patience",
+        "examples": [
+          "有耐心",
+          "没有耐心"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "汉字听写大会",
+        "pinyin": "Hànzì",
+        "pos": "专有",
+        "glossEn": "Tīngxiě Dàhuì Chinese Characters Dictation Competition",
+        "examples": []
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "",
+          "core": [
+            "发音",
+            "口语",
+            "选修课",
+            "门",
+            "讲",
+            "纠正",
+            "活动",
+            "德语",
+            "语法",
+            "期中",
+            "学期",
+            "记",
+            "方法"
+          ],
+          "supplement": [
+            "一边",
+            "一边"
+          ]
+        },
+        {
+          "theme": "谈论对课程的看法 越……越……",
+          "core": [
+            "忘",
+            "耐心"
+          ],
+          "supplement": [
+            "气氛",
+            "进步",
+            "热情",
+            "鼓励",
+            "害怕"
+          ]
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "语伴",
+            "当"
+          ],
+          "supplement": []
+        }
+      ],
+      "expressionPatterns": []
+    }
+  },
+  "byPos": {
+    "verb": [
+      "讲",
+      "纠正",
+      "忘",
+      "当",
+      "记"
+    ],
+    "noun": [
+      "语伴",
+      "发音",
+      "口语",
+      "选修课",
+      "活动",
+      "德语",
+      "期中",
+      "学期",
+      "方法",
+      "耐心"
+    ],
+    "measureWord": [
+      "门"
+    ],
+    "properNoun": [
+      "汉字听写大会"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "语法",
+        "一边",
+        "气氛",
+        "进步",
+        "热情",
+        "鼓励",
+        "害怕"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 15,
+    "extensionEntries": 5,
+    "produceCoreWords": 17,
+    "produceSupplementWords": 7,
+    "uniqueHanziInLesson": 26
+  }
+}

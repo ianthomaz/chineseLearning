@@ -39,7 +39,7 @@ web/
     PhraseGameSession.tsx SessionProvider (route-scoped)
   src/server/             server-only (not in static export)
     auth/                 Auth.js v5 + google-onetap provider
-    db/                   SQLite players + progress stub
+    db/                   SQLite users + events + progress stub
 ```
 
 Legacy `FRASES_GAME/Nivel*` and `all-phrases.json` are **not** consumed by the build.
@@ -74,7 +74,7 @@ Legacy `FRASES_GAME/Nivel*` and `all-phrases.json` are **not** consumed by the b
 | Local Node | `./start.sh --local` | 34902 | yes |
 | Static | `./start.sh --webplace` | 34901 | no (guest) |
 
-OAuth setup: [docs/09_google_auth_jogo.md](../../../../docs/09_google_auth_jogo.md).
+OAuth setup: [docs/09_google_auth_jogo.md](../../../../docs/09_google_auth_jogo.md). Session is site-wide via `AuthSessionProvider` in root `Providers.tsx`.
 
 ## Static export
 

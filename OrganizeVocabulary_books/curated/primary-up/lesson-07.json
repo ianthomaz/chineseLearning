@@ -1,0 +1,312 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "volumeLabel": "初级·上",
+    "lesson": 7,
+    "title": "要不再说吧",
+    "curatedAt": "2026-07-10",
+    "source": {
+      "pdf": "Level1.pdf",
+      "pages": {
+        "textVocab": 89,
+        "extensionVocab": 92,
+        "produceSupport": 96
+      }
+    },
+    "reviewedAt": "2026-07-10"
+  },
+  "byLessonSource": {
+    "text": [
+      {
+        "index": 1,
+        "hanzi": "演唱会",
+        "pinyin": "yǎnchànghuì",
+        "pos": "名",
+        "glossEn": "vocal concert",
+        "examples": [
+          "一场演唱会",
+          "看演唱会"
+        ]
+      },
+      {
+        "index": 2,
+        "hanzi": "行",
+        "pinyin": "xíng",
+        "pos": "动",
+        "glossEn": "OK",
+        "examples": [
+          "be all right 行，没问题。 不行。"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "马上",
+        "pinyin": "mǎshàng",
+        "pos": "副",
+        "glossEn": "at once",
+        "examples": [
+          "right away 马上回来。 马上要上课了。"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "周末",
+        "pinyin": "zhōumò",
+        "pos": "名",
+        "glossEn": "weekend",
+        "examples": [
+          "上周末",
+          "下周末"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "复习",
+        "pinyin": "fùxí",
+        "pos": "动",
+        "glossEn": "review",
+        "examples": [
+          "复习一下",
+          "复习汉语"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "来不及",
+        "pinyin": "láibují",
+        "pos": "动",
+        "glossEn": "find no time to do sth",
+        "examples": [
+          "来不及吃饭了。 今天来不及了。"
+        ]
+      },
+      {
+        "index": 7,
+        "hanzi": "要不",
+        "pinyin": "yàobù",
+        "pos": "连",
+        "glossEn": "or",
+        "examples": [
+          "otherwise 今天没时间，要不明天吧。"
+        ]
+      },
+      {
+        "index": 8,
+        "hanzi": "可惜",
+        "pinyin": "kěxī",
+        "pos": "形",
+        "glossEn": "regrettable",
+        "examples": [
+          "很可惜",
+          "太可惜了"
+        ]
+      },
+      {
+        "index": 9,
+        "hanzi": "抱歉",
+        "pinyin": "bàoqiàn",
+        "pos": "形",
+        "glossEn": "be sorry",
+        "examples": [
+          "觉得抱歉",
+          "真抱歉！"
+        ]
+      },
+      {
+        "index": 10,
+        "hanzi": "拒绝",
+        "pinyin": "jùjué",
+        "pos": "动",
+        "glossEn": "refuse",
+        "examples": [
+          "拒绝帮助",
+          "拒绝要求"
+        ]
+      }
+    ],
+    "extension": [
+      {
+        "index": 1,
+        "hanzi": "售货员",
+        "pinyin": "shòuhuòyuán",
+        "pos": "名",
+        "glossEn": "shop assistant商店的售货员",
+        "examples": []
+      },
+      {
+        "index": 2,
+        "hanzi": "需要",
+        "pinyin": "xūyào",
+        "pos": "动",
+        "glossEn": "need",
+        "examples": [
+          "需要帮助",
+          "需要三天"
+        ]
+      },
+      {
+        "index": 3,
+        "hanzi": "自己",
+        "pinyin": "zìjǐ",
+        "pos": "代",
+        "glossEn": "oneself",
+        "examples": [
+          "我自己",
+          "他自己"
+        ]
+      },
+      {
+        "index": 4,
+        "hanzi": "方便",
+        "pinyin": "fāngbiàn",
+        "pos": "形",
+        "glossEn": "appropriate",
+        "examples": [
+          "买东西方便",
+          "现在不方便"
+        ]
+      },
+      {
+        "index": 5,
+        "hanzi": "蛋糕",
+        "pinyin": "dàngāo",
+        "pos": "名",
+        "glossEn": "cake",
+        "examples": [
+          "一个蛋糕",
+          "生日蛋糕"
+        ]
+      },
+      {
+        "index": 6,
+        "hanzi": "尝",
+        "pinyin": "cháng",
+        "pos": "动",
+        "glossEn": "taste",
+        "examples": [
+          "尝一下",
+          "尝尝"
+        ]
+      }
+    ],
+    "produce": {
+      "groups": [
+        {
+          "theme": "礼貌地拒绝别人",
+          "core": [
+            "行",
+            "可惜",
+            "抱歉",
+            "拒绝",
+            "需要",
+            "方便"
+          ],
+          "supplement": [
+            "考虑",
+            "下次"
+          ]
+        },
+        {
+          "theme": "说明拒绝的原因",
+          "core": [
+            "马上",
+            "周末",
+            "复习",
+            "来不及",
+            "自己"
+          ],
+          "supplement": [
+            "忙",
+            "累",
+            "安排",
+            "事"
+          ]
+        },
+        {
+          "theme": "提出新的建议",
+          "core": [
+            "要不"
+          ],
+          "supplement": [
+            "以后"
+          ]
+        },
+        {
+          "theme": "其他",
+          "core": [
+            "演唱会",
+            "售货员",
+            "蛋糕",
+            "尝"
+          ],
+          "supplement": [
+            "服务员",
+            "店员"
+          ]
+        }
+      ],
+      "expressionPatterns": [
+        "我考虑考虑。 • 对不起，不太方便。",
+        "太可惜了，…… • 下次吧。",
+        "真抱歉，…… • 以后再说吧。",
+        "不用了，谢谢。 • 不好意思，不行。礼貌拒绝1",
+        "如果……，就来不及了。",
+        "我现在很忙。",
+        "我想自己……",
+        "要不……吧。",
+        "……怎么样？"
+      ]
+    }
+  },
+  "byPos": {
+    "verb": [
+      "行",
+      "复习",
+      "来不及",
+      "拒绝",
+      "需要",
+      "尝"
+    ],
+    "noun": [
+      "演唱会",
+      "周末",
+      "售货员",
+      "蛋糕"
+    ],
+    "adjective": [
+      "可惜",
+      "抱歉",
+      "方便"
+    ],
+    "adverb": [
+      "马上"
+    ],
+    "pronoun": [
+      "自己"
+    ],
+    "conjunction": [
+      "要不"
+    ],
+    "produceOnly": {
+      "note": "Listed in 任务支持 without full entry in this lesson's 词语表",
+      "words": [
+        "考虑",
+        "下次",
+        "忙",
+        "累",
+        "安排",
+        "事",
+        "以后",
+        "服务员",
+        "店员"
+      ]
+    }
+  },
+  "stats": {
+    "textEntries": 10,
+    "extensionEntries": 6,
+    "produceCoreWords": 16,
+    "produceSupplementWords": 9,
+    "uniqueHanziInLesson": 25
+  }
+}
