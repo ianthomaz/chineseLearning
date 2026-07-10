@@ -143,7 +143,7 @@ export function GameplayScreen({
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <ProgressDots results={results} currentIndex={index} />
-        <span className="text-xs text-ink/40" style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}>
+        <span className="text-xs text-ink/40" style={{ fontFamily: "var(--font-sans)" }}>
           {t("phraseGame.progress", { current: index + 1, total })}
         </span>
       </div>

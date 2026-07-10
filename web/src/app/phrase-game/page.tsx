@@ -1,5 +1,10 @@
+import { LoginGate } from "@/components/AuthGate";
 import { PhraseGame } from "@/components/phrase-game/PhraseGame";
 
 export default function PhraseGamePage() {
-  return <PhraseGame />;
+  return (
+    <LoginGate>
+      <PhraseGame />
+    </LoginGate>
+  );
 }

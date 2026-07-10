@@ -7,16 +7,20 @@ import { useLocale } from "@/context/LocaleContext";
 const AUTH_ENABLED = process.env.NEXT_PUBLIC_AUTH_ENABLED !== "0";
 
 export function SiteNavAuth() {
+  // Static export has no SessionProvider; bail out before touching useSession.
+  if (!AUTH_ENABLED) return null;
+  return <SiteNavAuthLive />;
+}
+
+function SiteNavAuthLive() {
   const { t } = useLocale();
   const { data: session, status } = useSession();
-
-  if (!AUTH_ENABLED) return null;
 
   if (status === "loading") {
     return (
       <span
         className="hidden min-h-[44px] items-center px-2 text-xs text-ink/35 sm:flex"
-        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        style={{ fontFamily: "var(--font-sans)" }}
         aria-hidden
       >
         …
@@ -29,7 +33,7 @@ export function SiteNavAuth() {
       <Link
         href="/phrase-game"
         className="flex min-h-[44px] items-center rounded-full border px-3 text-xs font-medium text-ink/65 transition-colors hover:bg-ink/5 sm:px-4"
-        style={{ borderColor: "var(--border)", fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        style={{ borderColor: "var(--border)", fontFamily: "var(--font-sans)" }}
         title={t("nav.authSignInHint")}
       >
         {t("nav.authSignIn")}
@@ -42,7 +46,7 @@ export function SiteNavAuth() {
   return (
     <div
       className="flex min-h-[44px] items-center gap-1.5 sm:gap-2"
-      style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+      style={{ fontFamily: "var(--font-sans)" }}
     >
       {session.user.image ? (
         // eslint-disable-next-line @next/next/no-img-element

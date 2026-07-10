@@ -4,6 +4,14 @@
     "langName": "Português",
     "flag": "🇧🇷"
   },
+  "authGate": {
+    "title": "Entre para continuar",
+    "hint": "Esta área é interativa e requer login com Google.",
+    "signIn": "Entrar com Google",
+    "signInAlt": "Outra conta",
+    "disabledTitle": "Funcionalidade desativada",
+    "disabledBody": "Disponível apenas na versão do site com login (servidor)."
+  },
   "nav": {
     "review": "Revisão",
     "vocabulary": "Vocabulário",
@@ -19,7 +27,9 @@
     "authSignIn": "Entrar",
     "authSignInHint": "Login com Google no jogo de frases",
     "authSignOut": "Sair",
-    "authSignedIn": "Conta"
+    "authSignedIn": "Conta",
+    "registerClass": "Cadastrar aula",
+    "reviewClass": "Minhas aulas"
   },
   "gamification": {
     "title": "Quiz",

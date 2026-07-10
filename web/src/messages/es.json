@@ -4,6 +4,14 @@
     "langName": "Español",
     "flag": "🇪🇸"
   },
+  "authGate": {
+    "title": "Inicia sesión para continuar",
+    "hint": "Esta área es interactiva y requiere inicio de sesión con Google.",
+    "signIn": "Entrar con Google",
+    "signInAlt": "Otra cuenta",
+    "disabledTitle": "Funcionalidad desactivada",
+    "disabledBody": "Disponible solo en la versión del sitio con login (servidor)."
+  },
   "nav": {
     "review": "Repaso",
     "vocabulary": "Vocabulario",
@@ -19,7 +27,9 @@
     "authSignIn": "Entrar",
     "authSignInHint": "Inicio de sesión con Google en el juego de frases",
     "authSignOut": "Salir",
-    "authSignedIn": "Cuenta"
+    "authSignedIn": "Cuenta",
+    "registerClass": "Registrar clase",
+    "reviewClass": "Mis clases"
   },
   "gamification": {
     "title": "Quiz",

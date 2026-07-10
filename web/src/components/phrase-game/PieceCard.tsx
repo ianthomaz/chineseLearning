@@ -40,7 +40,7 @@ export function PieceContent({ piece, settings, reveal, inAnswer, state = "neutr
       {showPinyin && piece.pinyin ? (
         <span
           className="font-ruby text-[0.65rem] text-ink/55"
-          style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+          style={{ fontFamily: "var(--font-sans)" }}
         >
           {piece.pinyin}
         </span>
@@ -49,7 +49,7 @@ export function PieceContent({ piece, settings, reveal, inAnswer, state = "neutr
       {showTranslation && piece.pt ? (
         <span
           className="mt-0.5 max-w-[8rem] truncate text-[0.6rem] text-ink/50"
-          style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+          style={{ fontFamily: "var(--font-sans)" }}
           title={piece.pt}
         >
           {piece.pt}

@@ -56,7 +56,7 @@ export function BlockStudyPage({ mode, block }: Props) {
       <div className="mb-4">
         <p
           className="mb-2 text-xs font-medium uppercase tracking-widest text-ink/35"
-          style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+          style={{ fontFamily: "var(--font-sans)" }}
         >
           {t(headerKey, { num })}
         </p>
@@ -66,7 +66,7 @@ export function BlockStudyPage({ mode, block }: Props) {
         {mode === "vocabulary" && block.vocabulary.length > 0 ? (
           <p
             className="mt-2 text-sm text-ink/40"
-            style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            style={{ fontFamily: "var(--font-sans)" }}
           >
             {block.vocabulary.length === 1
               ? t("home.wordCountOne")
@@ -128,7 +128,7 @@ export function BlockStudyPage({ mode, block }: Props) {
             <section className="mt-14">
               <h2
                 className="mb-1 text-xs font-semibold uppercase tracking-widest text-ink/40"
-                style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                style={{ fontFamily: "var(--font-sans)" }}
               >
                 {t("vocab.studyTitle")}
               </h2>

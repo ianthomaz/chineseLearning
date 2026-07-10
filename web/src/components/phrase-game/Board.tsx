@@ -130,7 +130,7 @@ function Zone({
       <div className="mb-2 flex items-center justify-between gap-2">
         <p
           className="text-xs font-medium uppercase tracking-wide text-ink/40"
-          style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+          style={{ fontFamily: "var(--font-sans)" }}
         >
           {title}
         </p>

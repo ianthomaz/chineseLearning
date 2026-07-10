@@ -13,7 +13,7 @@ export function AppFooter() {
   if (isRandomHanziPath(pathname)) return null;
 
   return (
-    <footer className="mx-auto max-w-6xl border-t border-ink/10 px-4 py-8 pb-[max(2rem,env(safe-area-inset-bottom,0px))] sm:px-5 sm:py-10">
+    <footer className="mx-auto max-w-5xl border-t border-border px-4 py-8 pb-[max(2rem,env(safe-area-inset-bottom,0px))] sm:px-5 sm:py-10">
       <SiteAttributionCredits />
     </footer>
   );

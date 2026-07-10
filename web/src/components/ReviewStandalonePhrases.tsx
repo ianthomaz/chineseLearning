@@ -25,7 +25,7 @@ export function ReviewStandalonePhrases({ phrases, blockId }: Props) {
     <section className="mb-14">
       <h2
         className="mb-2 text-xs font-semibold uppercase tracking-widest text-ink/40"
-        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        style={{ fontFamily: "var(--font-sans)" }}
       >
         {blockId === 15
           ? t("review.standalonePhrasesTitleFinal")
@@ -33,7 +33,7 @@ export function ReviewStandalonePhrases({ phrases, blockId }: Props) {
       </h2>
       <p
         className="mb-6 text-sm leading-relaxed text-ink/50"
-        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        style={{ fontFamily: "var(--font-sans)" }}
       >
         {blockId === 15
           ? t("review.standalonePhrasesHintFinal")
@@ -54,7 +54,7 @@ export function ReviewStandalonePhrases({ phrases, blockId }: Props) {
               className="border-l-2 pl-4 text-sm leading-relaxed text-ink"
               style={{
                 borderColor: "var(--border)",
-                fontFamily: "ui-sans-serif, system-ui, sans-serif",
+                fontFamily: "var(--font-sans)",
               }}
             >
               {line}

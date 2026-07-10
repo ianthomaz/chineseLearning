@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { LoginGate } from "@/components/AuthGate";
 import { useLocale } from "@/context/LocaleContext";
 import { useTranslationDisplay } from "@/context/TranslationContext";
 import { ChineseWithPinyinLine } from "@/components/ChineseWithPinyinLine";
@@ -17,6 +18,14 @@ type Message = {
 };
 
 export default function TutorPage() {
+  return (
+    <LoginGate>
+      <TutorChat />
+    </LoginGate>
+  );
+}
+
+function TutorChat() {
   const { t, locale } = useLocale();
   const { showTranslation } = useTranslationDisplay();
   const [input, setInput] = useState("");
@@ -81,7 +90,7 @@ export default function TutorPage() {
       <div className="mb-6">
         <p
           className="mb-2 text-xs font-medium uppercase tracking-widest text-ink/35"
-          style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+          style={{ fontFamily: "var(--font-sans)" }}
         >
           {t("tutor.kicker") || "AI Tutor"}
         </p>
@@ -151,12 +160,12 @@ export default function TutorPage() {
             </div>
           )}
           {error && (
-            <div className="text-center text-xs text-red-500 bg-red-50 py-2 rounded-lg border border-red-100">
+            <div className="rounded-lg border border-danger/20 bg-danger-bg py-2 text-center text-xs text-danger">
               {error}
             </div>
           )}
           {notice && !error && (
-            <div className="text-center text-xs text-amber-700 bg-amber-50 py-2 rounded-lg border border-amber-100">
+            <div className="rounded-lg border border-warn/20 bg-warn-bg py-2 text-center text-xs text-warn">
               {notice}
             </div>
           )}

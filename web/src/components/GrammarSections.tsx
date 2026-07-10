@@ -33,8 +33,8 @@ function Section({
       <h2
         className="mb-4 text-xs font-semibold uppercase tracking-widest"
         style={{
-          fontFamily: "ui-sans-serif, system-ui, sans-serif",
-          color: accent ?? "rgba(28,25,23,0.4)",
+          fontFamily: "var(--font-sans)",
+          color: accent ?? "color-mix(in srgb, var(--ink) 40%, transparent)",
         }}
       >
         {title}
@@ -76,8 +76,8 @@ function StructuresSection({
       <h2
         className="mb-4 text-xs font-semibold uppercase tracking-widest"
         style={{
-          fontFamily: "ui-sans-serif, system-ui, sans-serif",
-          color: accent ?? "rgba(28,25,23,0.4)",
+          fontFamily: "var(--font-sans)",
+          color: accent ?? "color-mix(in srgb, var(--ink) 40%, transparent)",
         }}
       >
         {title}

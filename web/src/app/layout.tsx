@@ -1,9 +1,18 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { Newsreader } from "next/font/google";
 import { AppFooter } from "@/components/AppFooter";
 import { Providers } from "@/components/Providers";
 import { SiteNav } from "@/components/SiteNav";
 import "./globals.css";
+
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-newsreader",
+});
 
 const GA_MEASUREMENT_ID = "G-46HMWMHG18";
 
@@ -53,13 +62,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className={newsreader.variable} suppressHydrationWarning>
       <head>
-        {/*
-          Hanzi Pinyin woff2 lives in public/fonts. This sheet uses a relative url()
-          so it works under basePath; bundling @font-face in globals.css produced
-          invalid webpack:// URLs in static export.
-        */}
+        {/* Set the theme before paint to avoid a flash (reads the saved choice,
+            falls back to the OS preference). */}
+        <Script id="theme-init" strategy="beforeInteractive">
+          {`(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();`}
+        </Script>
+        {/* Noto Sans SC (CJK) is too large for next/font subsetting; load it
+            non-blocking with preconnect. Hanzi Pinyin woff2 uses a basePath-
+            relative url() so it works in static export. */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap"
+        />
         <link rel="stylesheet" href={`${publicBase}/pinyin-font.css`} />
       </head>
       <body>

@@ -38,6 +38,13 @@ function pickRandom<T>(arr: T[], n: number): T[] {
   return shuffled(arr).slice(0, n);
 }
 
+/** Resolve a theme CSS variable to a concrete color for the hanzi-writer canvas. */
+function themeColor(name: string, fallback: string): string {
+  if (typeof window === "undefined") return fallback;
+  const v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  return v || fallback;
+}
+
 function buildSession(allBlocks: ContentBlock[]): { cards: GameCard[]; ok: boolean } {
   const eligible = allBlocks.filter(
     (b) => b.vocabulary.filter((v) => extractHanziFromWord(v.hanzi).length > 0).length >= 5,
@@ -64,6 +71,19 @@ function buildSession(allBlocks: ContentBlock[]): { cards: GameCard[]; ok: boole
   ];
 
   return { cards, ok: true };
+}
+
+/** Lesson mode: every word of the given blocks, in order (no 2-block/5-word sampling). */
+function buildFullSession(allBlocks: ContentBlock[]): { cards: GameCard[]; ok: boolean } {
+  const cards: GameCard[] = [];
+  for (const b of allBlocks) {
+    for (const v of b.vocabulary) {
+      const chars = extractHanziFromWord(v.hanzi);
+      if (chars.length === 0) continue;
+      cards.push({ vocab: v, blockId: b.id, blockTitle: b.title, chars });
+    }
+  }
+  return { cards, ok: cards.length > 0 };
 }
 
 // ---------------------------------------------------------------------------
@@ -120,11 +140,11 @@ function InlineHanziWriter({
       padding: 8,
       showOutline: true,
       showCharacter: false,
-      strokeColor: "#1c1917",
-      outlineColor: "#a8a29e",
-      radicalColor: "#b45309",
-      drawingColor: "#1c1917",
-      highlightColor: "#0d9488",
+      strokeColor: themeColor("--ink", "#1c1917"),
+      outlineColor: themeColor("--muted", "#a8a29e"),
+      radicalColor: themeColor("--cat-amber", "#b45309"),
+      drawingColor: themeColor("--ink", "#1c1917"),
+      highlightColor: themeColor("--accent-2", "#0d9488"),
       onLoadCharDataError: () => setLoadError(true),
     });
 
@@ -287,12 +307,15 @@ export type HanziWritingGameProps = {
   embeddedInPage?: boolean;
   /** When true (from `?autostart=1`), start a session once after mount on the practice page. */
   autoStartSession?: boolean;
+  /** Practice EVERY word of the given blocks in order (lesson mode) instead of sampling. */
+  useAllWords?: boolean;
 };
 
 export function HanziWritingGame({
   blocks,
   embeddedInPage = false,
   autoStartSession = false,
+  useAllWords = false,
 }: HanziWritingGameProps) {
   const { t } = useLocale();
 
@@ -323,7 +346,7 @@ export function HanziWritingGame({
   }, [cards]);
 
   const startSession = useCallback((): boolean => {
-    const session = buildSession(blocks);
+    const session = useAllWords ? buildFullSession(blocks) : buildSession(blocks);
     if (!session.ok) return false;
     setCards(session.cards);
     setCurrentIndex(0);
@@ -334,7 +357,7 @@ export function HanziWritingGame({
       label: "randomhanzi",
     });
     return true;
-  }, [blocks]);
+  }, [blocks, useAllWords]);
 
   useEffect(() => {
     if (!autoStartSession) return;
@@ -379,7 +402,7 @@ export function HanziWritingGame({
             void startSession();
           }}
           className={startCtaClassName}
-          style={{ backgroundColor: "#0d9488" }}
+          style={{ backgroundColor: "var(--accent-2)" }}
         >
           {t("writingGame.start")}
         </button>
@@ -394,16 +417,16 @@ export function HanziWritingGame({
           <div className="flex items-start gap-5">
             <div
               className="hidden shrink-0 items-center justify-center rounded-xl px-3 py-1.5 sm:inline-flex"
-              style={{ backgroundColor: "#0d948815" }}
+              style={{ backgroundColor: "color-mix(in srgb, var(--accent-2) 8%, transparent)" }}
             >
-              <span className="font-hanzi text-2xl font-bold" style={{ color: "#0d9488" }}>
+              <span className="font-hanzi text-2xl font-bold" style={{ color: "var(--accent-2)" }}>
                 写
               </span>
             </div>
             <div className="min-w-0 flex-1">
               <h2
                 className="text-base font-semibold text-ink"
-                style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                style={{ fontFamily: "var(--font-sans)" }}
               >
                 {t("writingGame.sectionTitle")}
               </h2>
@@ -416,7 +439,7 @@ export function HanziWritingGame({
                   void startSession();
                 }}
                 className={`${startCtaClassName} mt-5`}
-                style={{ backgroundColor: "#0d9488" }}
+                style={{ backgroundColor: "var(--accent-2)" }}
               >
                 {t("writingGame.start")}
               </button>
@@ -437,7 +460,7 @@ export function HanziWritingGame({
         >
           <p
             className="text-xs font-medium uppercase tracking-widest text-ink/40"
-            style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            style={{ fontFamily: "var(--font-sans)" }}
           >
             {t("writingGame.sectionTitle")}
           </p>
@@ -451,7 +474,7 @@ export function HanziWritingGame({
               void startSession();
             }}
             className="mt-5 rounded-lg px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90 active:opacity-80"
-            style={{ backgroundColor: "#0d9488" }}
+            style={{ backgroundColor: "var(--accent-2)" }}
           >
             {t("writingGame.newSession")}
           </button>
@@ -474,13 +497,13 @@ export function HanziWritingGame({
           <div className="min-w-0 flex-1">
             <p
               className="text-xs font-medium uppercase tracking-widest text-ink/40"
-              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+              style={{ fontFamily: "var(--font-sans)" }}
             >
               {t("writingGame.sectionTitle")}
             </p>
             <p
               className="mt-0.5 text-xs text-ink/35"
-              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+              style={{ fontFamily: "var(--font-sans)" }}
             >
               {t("writingGame.blockBadge", {
                 id: String(currentCard.blockId),
@@ -491,7 +514,7 @@ export function HanziWritingGame({
           <div className="flex shrink-0 flex-wrap items-center justify-end gap-2">
             <span
               className="rounded-full px-3 py-1 text-xs font-semibold text-white"
-              style={{ backgroundColor: "#0d9488" }}
+              style={{ backgroundColor: "var(--accent-2)" }}
             >
               {t("writingGame.progress", {
                 current: currentIndex + 1,
@@ -507,7 +530,7 @@ export function HanziWritingGame({
             className="h-full rounded-full transition-all duration-300"
             style={{
               width: `${((currentIndex + 1) / cards.length) * 100}%`,
-              backgroundColor: "#0d9488",
+              backgroundColor: "var(--accent-2)",
             }}
           />
         </div>
@@ -517,13 +540,13 @@ export function HanziWritingGame({
           <p className="font-hanzi text-5xl font-bold text-ink">{currentCard.vocab.hanzi}</p>
           <p
             className="mt-2 text-base text-ink/55"
-            style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            style={{ fontFamily: "var(--font-sans)" }}
           >
             {currentCard.vocab.pinyin}
           </p>
           <p
             className="mt-1 text-sm text-ink/40"
-            style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            style={{ fontFamily: "var(--font-sans)" }}
           >
             {currentCard.vocab.translation}
           </p>
@@ -552,7 +575,7 @@ export function HanziWritingGame({
             type="button"
             onClick={goNext}
             className="rounded-lg px-5 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90 active:opacity-80"
-            style={{ backgroundColor: "#0d9488" }}
+            style={{ backgroundColor: "var(--accent-2)" }}
           >
             {currentIndex === cards.length - 1
               ? t("writingGame.finish")

@@ -1,6 +1,6 @@
 # Registo de aulas — spec e roadmap
 
-Estado: **planeamento** (jul 2026). Nada implementado no site.
+Estado: **MVP implementado** (jul 2026). Painel do curador em `/registerClass` (cadastrar/editar) e `/reviewClass` (histórico + revisão por aula) — ver §12 Trilha B.
 
 **Relacionado:** [11_content_db_schema.md](11_content_db_schema.md), [09_google_auth_jogo.md](09_google_auth_jogo.md), `OrganizeVocabulary_books/` (léxico dos livros — trabalho **separado**).
 
@@ -175,12 +175,12 @@ Cadastrar / Editar aula
 
 ## 8. Depois de guardar — por aula
 
-| # | Feature | Descrição |
-|---|---------|-----------|
-| 1 | **Página Hanzi** | Hanzi grandes, copiar para caderno. URL privada (sem nav). |
-| 2 | **Treino digital** | `HanziWritingGame` filtrado ao léxico **desta aula**. |
+| # | Feature | Descrição | Estado |
+|---|---------|-----------|--------|
+| 1 | **Página Hanzi** | Hanzi grandes, copiar para caderno. Em `/reviewClass/[id]` (curador). | ✅ |
+| 2 | **Treino digital** | `HanziWritingGame` filtrado ao léxico **desta aula** (`useAllWords`). | ✅ |
 
-Futuro: revisão por tema, phrase-game, etc.
+Ambos em `web/src/app/reviewClass/[id]/page.server.tsx`. Futuro: revisão por tema, phrase-game, etc.
 
 ---
 
@@ -217,7 +217,7 @@ Para visitantes **não logados**, estas rotas podem ficar **desactivadas** ou pe
 | Chat com IA (tutor) | `/tutor` |
 | Jogos / quiz | `/phrase-game`, `/gamification` |
 
-**Estado:** planeado — ainda não implementado. Hoje o site permite convidado em várias destas rotas.
+**Estado:** **implementado** via `LoginGate` (`web/src/components/AuthGate.tsx`) em `/randomhanzi`, `/tutor`, `/phrase-game`, `/gamification`. Convidado vê cartão de login (One Tap + Google). O `/api/chat` (tutor) também exige sessão no servidor. No export estático (`NEXT_PUBLIC_AUTH_ENABLED=0`) mostra aviso «funcionalidade desativada».
 
 **Conteúdo estático** (revisão, vocabulário, gramática, diálogos do consolidado) — **sem** exigir login, salvo decisão futura.
 
@@ -238,9 +238,9 @@ Para visitantes **não logados**, estas rotas podem ficar **desactivadas** ou pe
 | Duplicidade | Destaque da aula sempre; global upsert; sem apagar global ao remover da aula |
 | Revisão por aula | URL privada |
 | Tradução | Foco hanzi + pinyin; PT se houver, senão EN; vazio OK |
-| Curador (aulas) | **Decidido:** `ianthomaz@gmail.com` hardcoded |
-| Login em features interactivas | **Decidido:** treino hanzi, tutor, jogos/quiz — login mínimo ou disabled para convidado (a implementar) |
-| Chave do global | **Aberto** — hanzi exacto vs normalizado |
+| Curador (aulas) | **Decidido + implementado:** `ianthomaz@gmail.com` via `isAdminEmail` |
+| Login em features interactivas | **Implementado:** treino hanzi, tutor, jogos/quiz com gate bloqueante (`LoginGate`); export estático mostra aviso «desativado» |
+| Chave do global | **Decidido:** hanzi **exacto** (sem normalização) |
 
 ---
 
@@ -257,19 +257,19 @@ Dois trabalhos **em paralelo**. Nenhum bloqueia o outro.
 ### Trilha B — Registo de aulas (site)
 
 - [x] OAuth + `users` (fundação)
-- [ ] Gate curador: `ianthomaz@gmail.com` (hardcoded)
-- [ ] Formulário + tabela + guardar → global
-- [ ] Histórico de aulas
-- [ ] Página Hanzi da aula
-- [ ] Treino hanzi da aula
+- [x] Gate curador: `ianthomaz@gmail.com` (via `isAdminEmail`) — páginas `.server.tsx` + API `requireCurator`
+- [x] Formulário + tabela + guardar → `lessons`/`lesson_material_refs`/`lesson_vocab_items` + upsert `lexicon_global`
+- [x] Histórico de aulas (`/reviewClass`)
+- [x] Página Hanzi da aula (`/reviewClass/[id]` — hanzi grandes para caderno)
+- [x] Treino hanzi da aula (`HanziWritingGame` com `useAllWords`)
 - [ ] Sugestões a partir de capítulo/global (quando A existir)
 - [ ] LLM no pipeline
 
 ### Trilha C — Login em features interactivas (site geral)
 
-- [ ] Treino hanzi — login ou disabled para convidado
-- [ ] Tutor / chat IA — login ou disabled para convidado
-- [ ] Jogos e quiz — login ou disabled para convidado
+- [x] Treino hanzi — `LoginGate` (login obrigatório; convidado vê cartão de login)
+- [x] Tutor / chat IA — `LoginGate` + `/api/chat` exige sessão (+ rate-limit)
+- [x] Jogos e quiz — `LoginGate` em `/phrase-game` e `/gamification`
 - [ ] Outros utilizadores logados — política de features **a definir depois**
 
 ---

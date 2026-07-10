@@ -3,8 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useSession } from "next-auth/react";
 import { localeMeta, locales, useLocale } from "@/context/LocaleContext";
 import { SiteNavAuth } from "@/components/SiteNavAuth";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { Icon } from "@/components/ui/Icon";
+import { isAdminEmail } from "@/lib/phrase-game/admin";
+
+const AUTH_ENABLED = process.env.NEXT_PUBLIC_AUTH_ENABLED !== "0";
 
 const NAV_TABS = [
   { href: "/review", key: "review" as const },
@@ -16,6 +22,71 @@ const NAV_TABS = [
   { href: "/phrase-game", key: "phraseGame" as const },
   { href: "/tutor", key: "tutor" as const },
 ] as const;
+
+const CURATOR_TABS = [
+  { href: "/registerClass", key: "registerClass" as const },
+  { href: "/reviewClass", key: "reviewClass" as const },
+] as const;
+
+/**
+ * Curator-only nav links. Only mounted when AUTH_ENABLED (so useSession has a
+ * provider) and rendered only for the curator email — invisible to everyone
+ * else and to the static export.
+ */
+function CuratorTabs({
+  pathname,
+  variant,
+  t,
+}: {
+  pathname: string;
+  variant: "desktop" | "mobile";
+  t: (key: string) => string;
+}) {
+  const { data: session } = useSession();
+  if (!isAdminEmail(session?.user?.email)) return null;
+
+  return (
+    <>
+      {CURATOR_TABS.map((tab) => {
+        const isActive = pathname === tab.href || pathname.startsWith(`${tab.href}/`);
+        if (variant === "desktop") {
+          return (
+            <Link
+              key={tab.href}
+              href={tab.href}
+              className={
+                isActive
+                  ? "rounded-full px-4 py-2 text-sm font-medium text-white transition-colors"
+                  : "rounded-full px-4 py-2 text-sm text-accent transition-colors hover:bg-ink/5"
+              }
+              style={isActive ? { backgroundColor: "var(--accent)" } : {}}
+            >
+              {t(`nav.${tab.key}`)}
+            </Link>
+          );
+        }
+        return (
+          <Link
+            key={tab.href}
+            href={tab.href}
+            className={
+              isActive
+                ? "rounded-xl px-4 py-3.5 text-base font-medium text-white"
+                : "rounded-xl px-4 py-3.5 text-base text-accent transition-colors hover:bg-ink/5"
+            }
+            style={
+              isActive
+                ? { backgroundColor: "var(--accent)", fontFamily: "var(--font-sans)" }
+                : { fontFamily: "var(--font-sans)" }
+            }
+          >
+            {t(`nav.${tab.key}`)}
+          </Link>
+        );
+      })}
+    </>
+  );
+}
 
 export function SiteNav() {
   const pathname = usePathname();
@@ -65,6 +136,7 @@ export function SiteNav() {
 
         <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <SiteNavAuth />
+          <ThemeToggle />
           <div className="relative" ref={menuRef}>
             <button
               type="button"
@@ -72,8 +144,8 @@ export function SiteNav() {
               className="flex min-h-[44px] min-w-[44px] items-center justify-center gap-2 rounded-full border px-3 text-xs font-medium transition-colors hover:bg-ink/5 sm:min-w-0 sm:py-1.5"
               style={{
                 borderColor: "var(--border)",
-                fontFamily: "ui-sans-serif, system-ui, sans-serif",
-                color: "rgba(28,25,23,0.65)",
+                fontFamily: "var(--font-sans)",
+                color: "color-mix(in srgb, var(--ink) 65%, transparent)",
               }}
               aria-expanded={langOpen}
               aria-haspopup="listbox"
@@ -81,9 +153,7 @@ export function SiteNav() {
             >
               <span className="text-base">{localeMeta(locale).flag}</span>
               <span className="hidden sm:inline">{localeMeta(locale).langName}</span>
-              <span className="text-ink/35 sm:inline" aria-hidden>
-                ▾
-              </span>
+              <Icon name="chevronDown" size="0.9em" className="text-ink/35" />
             </button>
             {langOpen ? (
               <ul
@@ -102,7 +172,7 @@ export function SiteNav() {
                         closeMenu();
                       }}
                       className="flex min-h-[44px] w-full items-center gap-2 px-3 py-2 text-left text-sm hover:bg-ink/5"
-                      style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                      style={{ fontFamily: "var(--font-sans)" }}
                     >
                       <span>{localeMeta(loc).flag}</span>
                       {localeMeta(loc).langName}
@@ -116,20 +186,17 @@ export function SiteNav() {
           <button
             ref={mobileMenuButtonRef}
             type="button"
-            className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full border text-ink/70 transition-colors hover:bg-ink/5 lg:hidden"
-            style={{ borderColor: "var(--border)", fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full border border-border text-ink/70 transition-colors hover:bg-ink/5 xl:hidden"
             aria-expanded={mobileNavOpen}
             aria-controls="site-mobile-nav"
             onClick={() => setMobileNavOpen((o) => !o)}
           >
             <span className="sr-only">{t("nav.courseNav")}</span>
-            <span aria-hidden className="text-lg leading-none">
-              {mobileNavOpen ? "✕" : "☰"}
-            </span>
+            <Icon name={mobileNavOpen ? "close" : "menu"} size="1.2em" />
           </button>
 
           <nav
-            className="hidden flex-wrap items-center justify-end gap-1 lg:flex"
+            className="hidden flex-wrap items-center justify-end gap-1 xl:flex"
             aria-label={t("nav.courseNav")}
           >
             {NAV_TABS.map((tab) => {
@@ -150,6 +217,7 @@ export function SiteNav() {
                 </Link>
               );
             })}
+            {AUTH_ENABLED && <CuratorTabs pathname={pathname} variant="desktop" t={t} />}
           </nav>
         </div>
       </div>
@@ -158,7 +226,7 @@ export function SiteNav() {
         <div
           id="site-mobile-nav"
           ref={mobileNavRef}
-          className="border-t lg:hidden"
+          className="border-t border-border xl:hidden"
           style={{ borderColor: "var(--border)" }}
         >
           <nav
@@ -179,14 +247,15 @@ export function SiteNav() {
                   }
                   style={
                     isActive
-                      ? { backgroundColor: "var(--accent)", fontFamily: "ui-sans-serif, system-ui, sans-serif" }
-                      : { fontFamily: "ui-sans-serif, system-ui, sans-serif" }
+                      ? { backgroundColor: "var(--accent)", fontFamily: "var(--font-sans)" }
+                      : { fontFamily: "var(--font-sans)" }
                   }
                 >
                   {t(`nav.${tab.key}`)}
                 </Link>
               );
             })}
+            {AUTH_ENABLED && <CuratorTabs pathname={pathname} variant="mobile" t={t} />}
           </nav>
         </div>
       ) : null}

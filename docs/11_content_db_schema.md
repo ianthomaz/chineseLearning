@@ -96,19 +96,21 @@ Espelha `hsk1-quiz-bank.json` — gamification.
 
 Espelha `global-dialogues.json` + extra.
 
-### Reservado (feature aulas — ver [12_aula_registro_roadmap.md](12_aula_registro_roadmap.md))
+### Feature aulas — ver [12_aula_registro_roadmap.md](12_aula_registro_roadmap.md)
 
-| Tabela | Uso |
-|--------|-----|
-| `classes` | Config: Confúcio B1/B2, Prepely, X-Mandarin T3/Privado |
-| `books` | `primary-up`, `primary-down` |
-| `book_vocab_entries` | Léxico por **capítulo** do livro (import `OrganizeVocabulary_books/`) |
-| `lessons` | Registo por **aula** real (data, classe, notas) |
-| `lesson_material_refs` | Livro + **capítulo** (0..N por aula) |
-| `lesson_vocab_items` | Palavras validadas da aula |
-| `lexicon_global` | Léxico acumulado do site (upsert ao salvar aula) |
+Eixo B **implementado** no `MIGRATION` de [`web/src/server/db/index.ts`](../web/src/server/db/index.ts)
+(criadas em BDs existentes via `CREATE TABLE IF NOT EXISTS`; `classes` com seed `INSERT OR IGNORE`).
+Eixo A (livros) continua **reservado**.
 
-FK: curador → `users.id`.
+| Tabela | Estado | Uso |
+|--------|--------|-----|
+| `classes` | ✅ MIGRATION | Config seed: Confúcio B1/B2, Prepely, X-Mandarin T3/Privado |
+| `lessons` | ✅ MIGRATION | Registo por **aula** real (data, classe, notas, `created_by → users.id`) |
+| `lesson_material_refs` | ✅ MIGRATION | Livro + **capítulo** (0..N por aula), `ON DELETE CASCADE` |
+| `lesson_vocab_items` | ✅ MIGRATION | Palavras da aula (hanzi, pinyin, translation, notes, theme), `ON DELETE CASCADE` |
+| `lexicon_global` | ✅ MIGRATION | Léxico acumulado (chave = hanzi **exacto**; upsert ao salvar; não apaga ao remover da aula) |
+| `books` | Reservado | `primary-up`, `primary-down` |
+| `book_vocab_entries` | Reservado | Léxico por **capítulo** do livro (import `OrganizeVocabulary_books/`) |
 
 ---
 

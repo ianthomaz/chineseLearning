@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import { LoginGate } from "@/components/AuthGate";
 import { RandomHanziAutostartGate } from "@/components/RandomHanziAutostartGate";
 import { blocks } from "@/lib/blocks";
 
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
 export default function RandomHanziPage() {
   return (
     <Suspense fallback={null}>
-      <RandomHanziAutostartGate blocks={blocks} />
+      <LoginGate>
+        <RandomHanziAutostartGate blocks={blocks} />
+      </LoginGate>
     </Suspense>
   );
 }

@@ -31,7 +31,7 @@ export function BlockMarkdown({ markdown, className = "" }: Props) {
             </h2>
           ),
           p: ({ children }) => (
-            <p className="mb-3 last:mb-0" style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}>
+            <p className="mb-3 last:mb-0" style={{ fontFamily: "var(--font-sans)" }}>
               {children}
             </p>
           ),
@@ -39,7 +39,7 @@ export function BlockMarkdown({ markdown, className = "" }: Props) {
             <ul className="mb-4 list-disc space-y-1.5 pl-5 last:mb-0">{children}</ul>
           ),
           li: ({ children }) => (
-            <li style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}>{children}</li>
+            <li style={{ fontFamily: "var(--font-sans)" }}>{children}</li>
           ),
           strong: ({ children }) => <strong className="font-medium text-ink">{children}</strong>,
           table: ({ children }) => (
@@ -47,12 +47,12 @@ export function BlockMarkdown({ markdown, className = "" }: Props) {
               <table className="w-full min-w-[20rem] border-collapse text-left text-sm">{children}</table>
             </div>
           ),
-          thead: ({ children }) => <thead style={{ backgroundColor: "rgba(28,25,23,0.04)" }}>{children}</thead>,
+          thead: ({ children }) => <thead style={{ backgroundColor: "color-mix(in srgb, var(--ink) 4%, transparent)" }}>{children}</thead>,
           th: ({ children }) => (
             <th
               className="border-b px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/50"
               style={{
-                fontFamily: "ui-sans-serif, system-ui, sans-serif",
+                fontFamily: "var(--font-sans)",
                 borderColor: "var(--border)",
               }}
             >
@@ -63,7 +63,7 @@ export function BlockMarkdown({ markdown, className = "" }: Props) {
             <td
               className="border-b px-3 py-2 align-top text-ink/90"
               style={{
-                fontFamily: "ui-sans-serif, system-ui, sans-serif",
+                fontFamily: "var(--font-sans)",
                 borderColor: "var(--border)",
               }}
             >

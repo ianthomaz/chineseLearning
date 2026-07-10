@@ -250,7 +250,7 @@ function RoundComplete({
                 {p.pinyin ? (
                   <p
                     className="text-sm text-ink/55"
-                    style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                    style={{ fontFamily: "var(--font-sans)" }}
                   >
                     {p.pinyin}
                   </p>

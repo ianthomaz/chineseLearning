@@ -1,4 +1,6 @@
 import { NextResponse } from 'next/server';
+import { getSessionUser } from '@/server/auth/session';
+import { rateLimit } from '@/server/rate-limit';
 
 /** Dev fallback: API on localhost. Production: set LLM_API_URL (e.g. https://llm.webplace.cc) — see ITCS/featureLLM docs/MANUAL_INTEGRACAO.md § 1.1. */
 const LLM_API_URL = process.env.LLM_API_URL || 'http://127.0.0.1:28471';
@@ -113,6 +115,16 @@ function extractStructuredFromReplyText(reply: unknown): StructuredLine[] | null
 }
 
 export async function POST(request: Request) {
+  // Interactive features require a session (docs/12 §10.2); the LLM proxy is
+  // the expensive resource, so it also gets a per-user rate limit.
+  const user = await getSessionUser();
+  if (!user) {
+    return NextResponse.json({ error: 'unauthenticated' }, { status: 401 });
+  }
+  if (!rateLimit(`chat:${user.id}`, 20, 60_000)) {
+    return NextResponse.json({ error: 'rate_limited' }, { status: 429 });
+  }
+
   if (!LLM_API_TOKEN) {
     return NextResponse.json(
       {
