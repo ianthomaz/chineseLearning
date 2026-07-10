@@ -29,7 +29,16 @@ Passo 1 incluído no `--prod` (salta com `--skip-env-sync`). Passo 3 alternativo
 
 **Remoto nunca corre `next build`** — só instala deps de runtime.
 
-Overrides: `DEPLOY_PROD_HOST=itcsVM3`, `DEPLOY_PROD_DIR=/home/opc/projetos/chineseLearning-app`, `DEPLOY_PROD_RESTART=1` (pm2 reload).
+**SQLite em prod:** o rsync **exclui** `data/` e `*.sqlite` — users, events e aulas no servidor **não** são sobrescritos pelo Mac. Conteúdo editorial (blocos, frases, livros) actualiza-se no remoto com:
+
+```bash
+ssh itcsVM3 'cd /home/opc/projetos/chineseLearning-app && npm run seed:content'
+# ou no upload: DEPLOY_PROD_SEED_CONTENT=1 ./start.sh --prod --upload
+```
+
+(`seed:content` só reescreve tabelas editoriais; não apaga `users` / `lessons` / `events`.)
+
+Overrides: `DEPLOY_PROD_HOST=itcsVM3`, `DEPLOY_PROD_DIR=/home/opc/projetos/chineseLearning-app`, `DEPLOY_PROD_RESTART=1` (pm2 reload), `DEPLOY_PROD_SEED_CONTENT=1`.
 
 Legado itcsVM1: **`npm run deploy:node`** (build no remoto) — não usar em itcsVM3.
 

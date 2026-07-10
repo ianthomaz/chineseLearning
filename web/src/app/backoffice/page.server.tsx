@@ -4,7 +4,7 @@
  */
 import { auth } from "@/server/auth";
 import { isAdminEmail } from "@/lib/phrase-game/admin";
-import { ALL_PHRASES } from "@/lib/phrase-game/phrases";
+import { getAllPhrases } from "@/lib/phrase-game/phrases";
 import {
   eventStats,
   queryEvents,
@@ -35,8 +35,6 @@ const EVENT_LABEL: Record<string, string> = {
   round_abandon: "Abandonou",
   round_complete: "Concluiu",
 };
-
-const phraseById = new Map(ALL_PHRASES.map((p) => [p.id, p]));
 
 type SP = Record<string, string | string[] | undefined>;
 const one = (sp: SP, key: string): string => {
@@ -129,6 +127,7 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
 
   const stats = eventStats();
   const rows = queryEvents(filters);
+  const phraseById = new Map(getAllPhrases().map((p) => [p.id, p]));
   const missed = topMissedPhrases(6);
   const byTL = roundsByTierLevel();
 
@@ -304,7 +303,7 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
         ) : (
           <ul className="divide-y" style={{ borderColor: "var(--border)" }}>
             {rows.map((r) => (
-              <ActivityRow key={r.id} row={r} />
+              <ActivityRow key={r.id} row={r} phraseById={phraseById} />
             ))}
           </ul>
         )}
@@ -419,7 +418,13 @@ function FilterSelect({
   );
 }
 
-function ActivityRow({ row }: { row: EventRow }) {
+function ActivityRow({
+  row,
+  phraseById,
+}: {
+  row: EventRow;
+  phraseById: Map<string, { hanzi: string; pt?: string }>;
+}) {
   const badge = eventBadge(row.event, row.correct);
   const p = row.phrase_id ? phraseById.get(row.phrase_id) : undefined;
   const level = row.tier ? `${row.tier} L${row.level ?? "?"}` : null;

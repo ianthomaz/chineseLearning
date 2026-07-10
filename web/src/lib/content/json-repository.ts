@@ -1,5 +1,5 @@
 import data from "@/data/consolidado.json";
-import type { ContentBlock } from "@/lib/blocks";
+import type { ContentBlock } from "@/lib/blocks-types";
 import type { ContentRepository } from "./content-repository";
 
 const blocks = data.blocks as ContentBlock[];

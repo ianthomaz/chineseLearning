@@ -11,8 +11,8 @@ import { ReviewMiniDialogues } from "@/components/ReviewMiniDialogues";
 import { ReviewStandalonePhrases } from "@/components/ReviewStandalonePhrases";
 import { ReviewStructures } from "@/components/ReviewStructures";
 import { VocabTable } from "@/components/VocabTable";
-import type { ContentBlock } from "@/lib/blocks";
-import { blockHasGrammarContent } from "@/lib/blocks";
+import type { BlockSummary, ContentBlock } from "@/lib/blocks-types";
+import { blockHasGrammarContent } from "@/lib/blocks-types";
 import { localizedBlockTitle } from "@/lib/block-title";
 import { useLocale } from "@/context/LocaleContext";
 
@@ -21,6 +21,7 @@ type Mode = "review" | "vocabulary" | "grammar";
 type Props = {
   mode: Mode;
   block: ContentBlock;
+  blockSummaries: BlockSummary[];
 };
 
 function BlockStudyDocumentTitle({
@@ -39,7 +40,7 @@ function BlockStudyDocumentTitle({
   return null;
 }
 
-export function BlockStudyPage({ mode, block }: Props) {
+export function BlockStudyPage({ mode, block, blockSummaries }: Props) {
   const { t } = useLocale();
   const num = String(block.id).padStart(2, "0");
 
@@ -155,7 +156,7 @@ export function BlockStudyPage({ mode, block }: Props) {
         </>
       ) : null}
 
-      <BlockPager blockId={block.id} mode={mode} />
+      <BlockPager blockId={block.id} mode={mode} blocks={blockSummaries} />
     </main>
   );
 }

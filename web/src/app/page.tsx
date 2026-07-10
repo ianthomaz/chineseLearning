@@ -1,6 +1,8 @@
 import { HomeContent } from "@/components/HomeContent";
-import { blocks } from "@/lib/blocks";
+import { getBlocks } from "@/lib/blocks";
+
+
 
 export default function HomePage() {
-  return <HomeContent blocks={blocks} />;
+  return <HomeContent blocks={getBlocks()} />;
 }

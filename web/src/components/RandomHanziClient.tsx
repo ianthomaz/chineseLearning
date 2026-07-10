@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { HanziWritingGame } from "@/components/HanziWritingGame";
 import { SiteAttributionCredits } from "@/components/SiteAttributionCredits";
 import { useLocale } from "@/context/LocaleContext";
-import type { ContentBlock } from "@/lib/blocks";
+import type { ContentBlock } from "@/lib/blocks-types";
 
 type Props = {
   blocks: ContentBlock[];

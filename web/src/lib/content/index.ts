@@ -1,21 +1,21 @@
 import type { ContentRepository } from "./content-repository";
 import { contentSource } from "./content-repository";
 import { jsonContentRepository } from "./json-repository";
+import { sqlContentRepository } from "./sql-repository";
 
 let cached: ContentRepository | null = null;
 
 /**
- * Returns the active content backend. Today only `json` is implemented;
- * `CONTENT_SOURCE=db` will be wired when editorial content moves to SQLite.
+ * Active content backend. Default is `db` (SQLite). Set CONTENT_SOURCE=json
+ * to force consolidado.json (dev/fallback).
+ *
+ * Server-only: do not import from Client Components. Pass data via props.
  */
 export function getContentRepository(): ContentRepository {
   if (cached) return cached;
-  const source = contentSource();
-  if (source === "db") {
-    throw new Error(
-      "CONTENT_SOURCE=db is not implemented yet — use json or omit CONTENT_SOURCE",
-    );
-  }
-  cached = jsonContentRepository;
+  cached = contentSource() === "db" ? sqlContentRepository : jsonContentRepository;
   return cached;
 }
+
+export { contentSource } from "./content-repository";
+export type { ContentRepository, ContentSource } from "./content-repository";

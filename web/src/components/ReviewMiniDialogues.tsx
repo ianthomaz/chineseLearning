@@ -2,7 +2,7 @@
 
 import { DialogueConversation } from "@/components/DialogueTurnRow";
 import { useLocale } from "@/context/LocaleContext";
-import type { DialogueTurn } from "@/lib/blocks";
+import type { DialogueTurn } from "@/lib/blocks-types";
 
 type Props = {
   conversations: DialogueTurn[][];

@@ -2,7 +2,7 @@
 
 Seed do léxico dos livros **新时代汉语口语** (初级·上 + 初级·下).
 
-**Escopo:** só léxico estruturado por lição. Sem ligação a site, HTML ou aulas reais.
+**Uso no site:** `curated/` é input do `npm run seed:content` → tabela SQLite `book_vocab_entries` (sugestões no formulário de aulas). Não substitui o consolidado editorial.
 
 ## O que vai para o git
 

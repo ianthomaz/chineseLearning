@@ -1,65 +1,32 @@
-import type { LocalizedLine } from "@/lib/localized-line";
+/**
+ * Server-side content accessors. Client components must receive data via props
+ * and import types from `@/lib/blocks-types` only.
+ */
 import { getContentRepository } from "@/lib/content";
+import type { BlockSummary, ContentBlock } from "@/lib/blocks-types";
 
-export type VocabRow = {
-  hanzi: string;
-  pinyin: string;
-  translation: string;
-};
+export type {
+  BlockSummary,
+  ContentBlock,
+  DialogueTurn,
+  StructureGlossesByLocale,
+  StructureLine,
+  VocabRow,
+} from "@/lib/blocks-types";
+export { blockHasGrammarContent } from "@/lib/blocks-types";
 
-export type StructureLine = {
-  hanzi: string;
-  pinyin: string;
-};
-
-export type DialogueTurn = {
-  speaker: string;
-  hanzi: string;
-  pinyin: string;
-  translation: LocalizedLine;
-};
-
-export type StructureGlossesByLocale = {
-  pt: string[];
-  en: string[];
-  es: string[];
-};
-
-export type ContentBlock = {
-  id: number;
-  title: string;
-  narrative: string;
-  structures: StructureLine[];
-  /** Per-locale gloss for each structure line (from review_extras) */
-  structureGlosses: StructureGlossesByLocale;
-  /** Extra phrase lists when the block has no central structures (e.g. bloco 15 + review_extras) */
-  reviewStandalonePhrases: StructureGlossesByLocale;
-  /** Block-level mini-dialogues shown after all phrases in review mode */
-  reviewMiniDialogues: DialogueTurn[][];
-  notes: string[];
-  differences: string[];
-  priorities: string[];
-  vocabulary: VocabRow[];
-};
-
-const repo = getContentRepository();
-
-export const blocks: ContentBlock[] = repo.getBlocks();
+export function getBlocks(): ContentBlock[] {
+  return getContentRepository().getBlocks();
+}
 
 export function getBlock(id: string | number): ContentBlock | undefined {
-  return repo.getBlock(id);
+  return getContentRepository().getBlock(id);
 }
 
 export function getBlockIds(): string[] {
-  return repo.getBlockIds();
+  return getContentRepository().getBlockIds();
 }
 
-export function blockHasGrammarContent(b: ContentBlock): boolean {
-  return (
-    b.structures.length +
-      b.notes.length +
-      b.differences.length +
-      b.priorities.length >
-    0
-  );
+export function getBlockSummaries(): BlockSummary[] {
+  return getBlocks().map((b) => ({ id: b.id, title: b.title }));
 }

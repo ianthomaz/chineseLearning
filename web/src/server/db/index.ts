@@ -136,6 +136,151 @@ CREATE TABLE IF NOT EXISTS lexicon_global (
   created_at  TEXT NOT NULL DEFAULT (datetime('now')),
   updated_at  TEXT NOT NULL DEFAULT (datetime('now'))
 );
+
+-- Editorial content (docs/11). Runtime source when CONTENT_SOURCE=db.
+-- payload_json holds the full ContentBlock for faithful round-trip.
+CREATE TABLE IF NOT EXISTS content_blocks (
+  id         INTEGER PRIMARY KEY,
+  title      TEXT NOT NULL,
+  narrative  TEXT NOT NULL DEFAULT '',
+  sort_order INTEGER NOT NULL DEFAULT 0,
+  payload_json TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS vocab_entries (
+  id          INTEGER PRIMARY KEY AUTOINCREMENT,
+  block_id    INTEGER NOT NULL REFERENCES content_blocks(id) ON DELETE CASCADE,
+  hanzi       TEXT NOT NULL,
+  pinyin      TEXT NOT NULL DEFAULT '',
+  translation TEXT NOT NULL DEFAULT '',
+  sort_order  INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS idx_vocab_block ON vocab_entries(block_id);
+CREATE INDEX IF NOT EXISTS idx_vocab_hanzi ON vocab_entries(hanzi);
+
+CREATE TABLE IF NOT EXISTS structure_lines (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  block_id   INTEGER NOT NULL REFERENCES content_blocks(id) ON DELETE CASCADE,
+  hanzi      TEXT NOT NULL,
+  pinyin     TEXT NOT NULL DEFAULT '',
+  sort_order INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS idx_structure_block ON structure_lines(block_id);
+
+CREATE TABLE IF NOT EXISTS structure_glosses (
+  structure_id INTEGER NOT NULL REFERENCES structure_lines(id) ON DELETE CASCADE,
+  locale       TEXT NOT NULL CHECK (locale IN ('pt','en','es')),
+  gloss        TEXT NOT NULL,
+  PRIMARY KEY (structure_id, locale)
+);
+
+CREATE TABLE IF NOT EXISTS block_notes (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  block_id   INTEGER NOT NULL REFERENCES content_blocks(id) ON DELETE CASCADE,
+  body       TEXT NOT NULL,
+  sort_order INTEGER NOT NULL DEFAULT 0
+);
+CREATE TABLE IF NOT EXISTS block_differences (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  block_id   INTEGER NOT NULL REFERENCES content_blocks(id) ON DELETE CASCADE,
+  body       TEXT NOT NULL,
+  sort_order INTEGER NOT NULL DEFAULT 0
+);
+CREATE TABLE IF NOT EXISTS block_priorities (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  block_id   INTEGER NOT NULL REFERENCES content_blocks(id) ON DELETE CASCADE,
+  body       TEXT NOT NULL,
+  sort_order INTEGER NOT NULL DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS review_standalone_phrases (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  block_id   INTEGER NOT NULL REFERENCES content_blocks(id) ON DELETE CASCADE,
+  locale     TEXT NOT NULL CHECK (locale IN ('pt','en','es')),
+  body       TEXT NOT NULL,
+  sort_order INTEGER NOT NULL DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS dialogue_conversations (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  block_id   INTEGER NOT NULL REFERENCES content_blocks(id) ON DELETE CASCADE,
+  sort_order INTEGER NOT NULL DEFAULT 0
+);
+CREATE TABLE IF NOT EXISTS dialogue_turns (
+  id              INTEGER PRIMARY KEY AUTOINCREMENT,
+  conversation_id INTEGER NOT NULL REFERENCES dialogue_conversations(id) ON DELETE CASCADE,
+  sort_order      INTEGER NOT NULL DEFAULT 0,
+  speaker         TEXT NOT NULL DEFAULT '',
+  hanzi           TEXT NOT NULL DEFAULT '',
+  pinyin          TEXT NOT NULL DEFAULT '',
+  translation_pt  TEXT NOT NULL DEFAULT '',
+  translation_en  TEXT NOT NULL DEFAULT '',
+  translation_es  TEXT NOT NULL DEFAULT ''
+);
+
+-- Phrase game bank
+CREATE TABLE IF NOT EXISTS phrase_game_phrases (
+  id           TEXT PRIMARY KEY,
+  nivel        INTEGER NOT NULL,
+  tier         TEXT NOT NULL,
+  payload_json TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_pgp_tier ON phrase_game_phrases(tier);
+CREATE INDEX IF NOT EXISTS idx_pgp_nivel ON phrase_game_phrases(nivel);
+
+-- Gamification quiz (full bank as one row + per-question rows)
+CREATE TABLE IF NOT EXISTS quiz_bank_meta (
+  id           INTEGER PRIMARY KEY CHECK (id = 1),
+  payload_json TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS quiz_questions (
+  id           INTEGER PRIMARY KEY,
+  type         TEXT NOT NULL,
+  difficulty   INTEGER NOT NULL DEFAULT 1,
+  block        INTEGER,
+  payload_json TEXT NOT NULL
+);
+
+-- Global dialogues page
+CREATE TABLE IF NOT EXISTS global_dialogue_sections (
+  id           TEXT PRIMARY KEY,
+  category_id  INTEGER,
+  sort_order   INTEGER NOT NULL DEFAULT 0,
+  payload_json TEXT NOT NULL
+);
+
+-- Visual PDF catalog (binaries stay on disk)
+CREATE TABLE IF NOT EXISTS visual_pdf_entries (
+  id           TEXT PRIMARY KEY,
+  file         TEXT NOT NULL,
+  sort_order   INTEGER NOT NULL DEFAULT 0,
+  payload_json TEXT NOT NULL
+);
+
+-- Eixo A: book chapter lexicon
+CREATE TABLE IF NOT EXISTS books (
+  id           TEXT PRIMARY KEY,
+  volume_label TEXT NOT NULL,
+  sort_order   INTEGER NOT NULL DEFAULT 0
+);
+INSERT OR IGNORE INTO books (id, volume_label, sort_order) VALUES
+  ('primary-up',   '初级·上', 1),
+  ('primary-down', '初级·下', 2);
+
+CREATE TABLE IF NOT EXISTS book_vocab_entries (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  book_id    TEXT NOT NULL REFERENCES books(id) ON DELETE CASCADE,
+  lesson     INTEGER NOT NULL CHECK (lesson BETWEEN 1 AND 16),
+  source     TEXT NOT NULL CHECK (source IN ('text','extension','produce')),
+  hanzi      TEXT NOT NULL,
+  pinyin     TEXT,
+  pos        TEXT,
+  gloss_en   TEXT,
+  examples_json TEXT,
+  sort_order INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS idx_bve_book_lesson ON book_vocab_entries(book_id, lesson);
+CREATE INDEX IF NOT EXISTS idx_bve_hanzi ON book_vocab_entries(hanzi);
 `;
 
 /** One-time: copy legacy `players` rows into `users`, then expose `players` as a view. */

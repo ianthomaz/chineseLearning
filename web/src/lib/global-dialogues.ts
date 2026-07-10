@@ -1,26 +1,26 @@
-import raw from "@/data/global-dialogues.json";
-import extra from "@/data/global-dialogues-extra.json";
-import type { DialogueTurn } from "@/lib/blocks";
+import type { DialogueTurn } from "@/lib/blocks-types";
 import type { LocalizedLine } from "@/lib/localized-line";
 
 export type GlobalDialogueSection = {
   id: string;
-  /** Matches `ContentBlock.id` (1–15) for category filter on /dialogues */
   categoryId?: number;
   lines: DialogueTurn[];
 };
 
-type RawLine = {
+export type RawDialogueLine = {
   speaker: string;
   hanzi: string;
   pinyin: string;
   translation: string | LocalizedLine;
 };
 
-type RawSection = { id: string; categoryId?: number; lines: RawLine[] };
-type RawFile = { sections: RawSection[] };
+export type RawDialogueSection = {
+  id: string;
+  categoryId?: number;
+  lines: RawDialogueLine[];
+};
 
-function normalizeTurn(line: RawLine): DialogueTurn {
+export function normalizeDialogueTurn(line: RawDialogueLine): DialogueTurn {
   const tr = line.translation;
   if (typeof tr === "object" && tr !== null && "pt" in tr) {
     const o = tr as LocalizedLine;
@@ -44,18 +44,10 @@ function normalizeTurn(line: RawLine): DialogueTurn {
   };
 }
 
-function mapSection(sec: RawSection): GlobalDialogueSection {
+export function mapDialogueSection(sec: RawDialogueSection): GlobalDialogueSection {
   return {
     id: sec.id,
     ...(typeof sec.categoryId === "number" ? { categoryId: sec.categoryId } : {}),
-    lines: sec.lines.map(normalizeTurn),
+    lines: sec.lines.map(normalizeDialogueTurn),
   };
 }
-
-const mergedSections = [
-  ...(raw as RawFile).sections,
-  ...(extra as RawFile).sections,
-];
-
-export const globalDialogueSections: GlobalDialogueSection[] =
-  mergedSections.map(mapSection);

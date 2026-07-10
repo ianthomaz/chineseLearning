@@ -1,12 +1,18 @@
 "use client";
 
 import { BlockIndex } from "@/components/BlockIndex";
-import { blocks } from "@/lib/blocks";
+import type { ContentBlock } from "@/lib/blocks-types";
 import { useLocale } from "@/context/LocaleContext";
 
 type Mode = "review" | "vocabulary" | "grammar";
 
-export function StudyModeIndex({ mode }: { mode: Mode }) {
+export function StudyModeIndex({
+  mode,
+  blocks,
+}: {
+  mode: Mode;
+  blocks: ContentBlock[];
+}) {
   const { t } = useLocale();
 
   const copy =

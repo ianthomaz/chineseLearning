@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { BlockTitleText } from "@/components/BlockTitleText";
-import type { ContentBlock } from "@/lib/blocks";
+import type { ContentBlock } from "@/lib/blocks-types";
 import { useLocale } from "@/context/LocaleContext";
 
 type NavGridCard = {

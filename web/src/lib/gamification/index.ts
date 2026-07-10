@@ -1,4 +1,3 @@
-export { quizBank } from "./bank";
 export type {
   QuizBank,
   QuizQuestion,

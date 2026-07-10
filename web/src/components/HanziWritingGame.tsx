@@ -6,7 +6,7 @@ import { useCallback, useEffect, useRef, useState, useMemo } from "react";
 import { trackEvent } from "@/lib/analytics";
 import { useLocale } from "@/context/LocaleContext";
 import { extractHanziFromWord } from "@/lib/hanzi-chars";
-import type { VocabRow, ContentBlock } from "@/lib/blocks";
+import type { VocabRow, ContentBlock } from "@/lib/blocks-types";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -331,6 +331,7 @@ export function HanziWritingGame({
   const [state, setState] = useState<GameState>("idle");
   const [cards, setCards] = useState<GameCard[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [startError, setStartError] = useState<string | null>(null);
   const autostartConsumedRef = useRef(false);
 
   const blockTitles = useMemo(() => {
@@ -347,7 +348,11 @@ export function HanziWritingGame({
 
   const startSession = useCallback((): boolean => {
     const session = useAllWords ? buildFullSession(blocks) : buildSession(blocks);
-    if (!session.ok) return false;
+    if (!session.ok) {
+      setStartError("Nenhum hanzi válido para treinar nesta aula.");
+      return false;
+    }
+    setStartError(null);
     setCards(session.cards);
     setCurrentIndex(0);
     setState("playing");
@@ -396,16 +401,19 @@ export function HanziWritingGame({
       "inline-flex rounded-lg px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90 active:opacity-80";
     if (embeddedInPage) {
       return (
-        <button
-          type="button"
-          onClick={() => {
-            void startSession();
-          }}
-          className={startCtaClassName}
-          style={{ backgroundColor: "var(--accent-2)" }}
-        >
-          {t("writingGame.start")}
-        </button>
+        <div className="flex flex-col items-start gap-2">
+          <button
+            type="button"
+            onClick={() => {
+              void startSession();
+            }}
+            className={startCtaClassName}
+            style={{ backgroundColor: "var(--accent-2)" }}
+          >
+            {t("writingGame.start")}
+          </button>
+          {startError ? <p className="text-xs text-danger">{startError}</p> : null}
+        </div>
       );
     }
     return (

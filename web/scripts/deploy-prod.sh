@@ -65,12 +65,16 @@ if [[ "${DEPLOY_PROD_SKIP_SSH_CHECK:-0}" != "1" ]]; then
   echo ""
 fi
 
-echo "→ rsync (código + .next/, sem node_modules)…"
+echo "→ rsync (código + .next/, sem node_modules; preserva SQLite remoto)…"
 # pdf-content/*.pdf is gitignored locally but uploaded when present.
+# NEVER sync local data/*.sqlite — prod holds users/events/lessons; editorial
+# content is re-seeded on the server via a separate step or SITE_DB outside tree.
 rsync -avz --delete -e ssh \
   --exclude node_modules \
   --exclude out \
   --exclude .env.local \
+  --exclude data \
+  --exclude '*.sqlite' \
   --exclude 'public/downloads/*.pdf' \
   ./ "${REMOTE}:${REMOTE_DIR}/"
 
@@ -107,6 +111,22 @@ else
   echo "  Ou repetir deploy com: DEPLOY_PROD_RESTART=1 ./start.sh --prod --upload --skip-build"
 fi
 
+if [[ "${DEPLOY_PROD_SEED_CONTENT:-0}" == "1" ]]; then
+  echo ""
+  echo "→ Remoto: npm run seed:content (só tabelas editoriais; users/aulas intactos)…"
+  ssh "$REMOTE" bash -s "$REMOTE_DIR" <<'REMOTE_SEED'
+set -euo pipefail
+DIR="$1"
+cd "$DIR"
+npm run seed:content
+REMOTE_SEED
+  echo "  OK."
+fi
+
 echo ""
 echo "  Deploy prod concluído (artefactos + server.env no remoto)."
+echo "  SQLite remoto preservado (data/ e *.sqlite excluídos do rsync)."
+echo "  Para actualizar só o conteúdo editorial no servidor (sem apagar users/aulas):"
+echo "    ssh ${REMOTE} 'cd ${REMOTE_DIR} && npm run seed:content'"
+echo "  Ou: DEPLOY_PROD_SEED_CONTENT=1 ./start.sh --prod --upload"
 echo "  Nginx: proxy_pass /aulaChines/ → 127.0.0.1:\${PORT} (ver docs/06_deploy.md)."

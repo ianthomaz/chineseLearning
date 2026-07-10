@@ -41,7 +41,7 @@ flowchart LR
 
 | Eixo | O quê | Onde vive |
 |------|-------|-----------|
-| **A** | Vocabulário **canónico por capítulo** do livro (课文, 拓展, …) | `OrganizeVocabulary_books/` → BD (`book_vocab_entries`) — **construção em curso** |
+| **A** | Vocabulário **canónico por capítulo** do livro (课文, 拓展, …) | `OrganizeVocabulary_books/` → BD (`book_vocab_entries`) — **seedado** via `npm run seed:content` |
 | **B** | **Aula** real que tu registas (data, classe, palavras, notas) | Feature «Cadastrar aula» no site |
 
 **Regras:**
@@ -250,8 +250,9 @@ Dois trabalhos **em paralelo**. Nenhum bloqueia o outro.
 
 ### Trilha A — Léxico por capítulo (repo + BD)
 
-- [ ] Curadoria `OrganizeVocabulary_books/curated/`
-- [ ] Import → `book_vocab_entries`
+- [x] Curadoria `OrganizeVocabulary_books/curated/`
+- [x] Import → `book_vocab_entries` (`npm run seed:content`)
+- [x] Sugestões no formulário de aula (`/api/book-vocab/suggest`)
 - [ ] (Opcional) UI consulta capítulo
 
 ### Trilha B — Registo de aulas (site)
@@ -262,7 +263,7 @@ Dois trabalhos **em paralelo**. Nenhum bloqueia o outro.
 - [x] Histórico de aulas (`/reviewClass`)
 - [x] Página Hanzi da aula (`/reviewClass/[id]` — hanzi grandes para caderno)
 - [x] Treino hanzi da aula (`HanziWritingGame` com `useAllWords`)
-- [ ] Sugestões a partir de capítulo/global (quando A existir)
+- [x] Sugestões a partir de capítulo/global (quando A existir)
 - [ ] LLM no pipeline
 
 ### Trilha C — Login em features interactivas (site geral)

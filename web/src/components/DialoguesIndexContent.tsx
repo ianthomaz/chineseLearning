@@ -3,19 +3,23 @@
 import { useState } from "react";
 import { DialogueConversation } from "@/components/DialogueTurnRow";
 import { useLocale } from "@/context/LocaleContext";
-import { globalDialogueSections } from "@/lib/global-dialogues";
-import { blocks } from "@/lib/blocks";
+import type { BlockSummary } from "@/lib/blocks-types";
+import type { GlobalDialogueSection } from "@/lib/global-dialogues";
 
-export function DialoguesIndexContent() {
+export function DialoguesIndexContent({
+  sections,
+  blocks,
+}: {
+  sections: GlobalDialogueSection[];
+  blocks: BlockSummary[];
+}) {
   const { t } = useLocale();
   const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
 
   const filteredSections =
     selectedCategory === null
-      ? globalDialogueSections
-      : globalDialogueSections.filter(
-          (section) => section.categoryId === selectedCategory
-        );
+      ? sections
+      : sections.filter((section) => section.categoryId === selectedCategory);
 
   return (
     <main className="mx-auto max-w-3xl px-4 pb-[max(6rem,env(safe-area-inset-bottom,0px))] pt-8 sm:px-6 sm:pb-24 sm:pt-10">
@@ -32,7 +36,6 @@ export function DialoguesIndexContent() {
         {t("dialogues.pageIntro")}
       </p>
 
-      {/* Category Filter */}
       <div className="mt-8 flex items-center gap-3">
         <label htmlFor="category-select" className="text-sm font-medium text-ink">
           {t("dialogues.filterLabel")}
@@ -48,7 +51,6 @@ export function DialoguesIndexContent() {
         >
           <option value="">{t("dialogues.allCategories")}</option>
           {blocks
-            /* categoryId in dialogues = course blocks 1–15; 16+ are HSK extras without blockTitles.* i18n */
             .filter((block) => block.id >= 1 && block.id <= 15)
             .map((block) => (
               <option key={block.id} value={block.id}>

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useLocale } from "@/context/LocaleContext";
 import { usePinyin } from "@/context/PinyinContext";
 import { useTranslationDisplay } from "@/context/TranslationContext";
-import type { VocabRow } from "@/lib/blocks";
+import type { VocabRow } from "@/lib/blocks-types";
 import { extractHanziFromWord } from "@/lib/hanzi-chars";
 
 const HanziStrokeModal = dynamic(

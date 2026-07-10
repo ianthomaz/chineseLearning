@@ -9,9 +9,8 @@ import {
   localizedCorrectAnswer,
   localizedCorrectOrder,
   questionTypeDisplayName,
-  quizBank,
 } from "@/lib/gamification";
-import type { QuizQuestion } from "@/lib/gamification";
+import type { QuizBank, QuizQuestion } from "@/lib/gamification";
 import type { AppLocale } from "@/lib/i18n-core";
 import { MultipleChoiceQuestion } from "./quiz/MultipleChoiceQuestion";
 import { FillBlankQuestion } from "./quiz/FillBlankQuestion";
@@ -20,7 +19,7 @@ import { OrderingQuestion } from "./quiz/OrderingQuestion";
 
 type QuizState = "idle" | "answering" | "validating" | "result";
 
-export function QuizGame() {
+export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
   const { locale, t } = useLocale();
   const { question_types: questionTypes, questions } = quizBank;
 

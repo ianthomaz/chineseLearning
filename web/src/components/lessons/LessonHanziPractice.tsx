@@ -2,7 +2,7 @@
 
 import { useMemo } from "react";
 import { HanziWritingGame } from "@/components/HanziWritingGame";
-import type { ContentBlock, StructureGlossesByLocale } from "@/lib/blocks";
+import type { ContentBlock, StructureGlossesByLocale } from "@/lib/blocks-types";
 
 export type LessonPracticeWord = {
   hanzi: string;

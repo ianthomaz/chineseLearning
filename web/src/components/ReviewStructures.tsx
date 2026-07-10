@@ -2,7 +2,7 @@
 
 import { PhraseRevealLine } from "@/components/PhraseRevealLine";
 import { useLocale } from "@/context/LocaleContext";
-import type { StructureGlossesByLocale, StructureLine } from "@/lib/blocks";
+import type { StructureGlossesByLocale, StructureLine } from "@/lib/blocks-types";
 import { pickLocalized } from "@/lib/localized-line";
 
 type Props = {

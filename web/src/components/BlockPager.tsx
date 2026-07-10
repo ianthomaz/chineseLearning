@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { blocks } from "@/lib/blocks";
 import { localizedBlockTitle } from "@/lib/block-title";
+import type { BlockSummary } from "@/lib/blocks-types";
 import { useLocale } from "@/context/LocaleContext";
 
 type Props = {
   blockId: number;
   mode: "review" | "vocabulary" | "grammar";
+  blocks: BlockSummary[];
 };
 
 const path = {
@@ -16,7 +17,7 @@ const path = {
   grammar: "/grammar",
 } as const;
 
-export function BlockPager({ blockId, mode }: Props) {
+export function BlockPager({ blockId, mode, blocks }: Props) {
   const { t } = useLocale();
   const base = path[mode];
   const idx = blocks.findIndex((b) => b.id === blockId);

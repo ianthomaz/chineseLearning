@@ -6,14 +6,17 @@ import type { VocabPdfRow } from "@/lib/vocabulary-pdf-downloads";
 import {
   vocabPdfDescription,
   vocabPdfTitle,
-  vocabularyPdfDownloads,
 } from "@/lib/vocabulary-pdf-downloads";
 import { VisualPdfPager } from "@/components/VisualPdfPager";
 import { withPublicBasePath } from "@/lib/publicBasePath";
 
-export function VisualsView() {
+export function VisualsView({
+  catalog,
+}: {
+  catalog: { pdfs: VocabPdfRow[] };
+}) {
   const { locale, t } = useLocale();
-  const { pdfs } = vocabularyPdfDownloads;
+  const { pdfs } = catalog;
   const [active, setActive] = useState(0);
   const [compactPortrait, setCompactPortrait] = useState(false);
   const [hintDismissed, setHintDismissed] = useState(false);

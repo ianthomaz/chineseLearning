@@ -1,4 +1,4 @@
-import type { ContentBlock } from "@/lib/blocks";
+import type { ContentBlock } from "@/lib/blocks-types";
 
 export type ContentSource = "json" | "db";
 
@@ -9,7 +9,9 @@ export interface ContentRepository {
 }
 
 export function contentSource(): ContentSource {
+  // Static export cannot open SQLite — always use JSON artifacts.
+  if (process.env.NEXT_STATIC_EXPORT === "1") return "json";
   const raw = process.env.CONTENT_SOURCE?.toLowerCase();
-  if (raw === "db") return "db";
-  return "json";
+  if (raw === "json") return "json";
+  return "db";
 }

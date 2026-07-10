@@ -1,11 +1,8 @@
 /**
- * Typed loader for the validated phrase bank.
- *
- * The JSON is produced at build time by `scripts/build-phrase-game-data.mjs`
- * (run via the `prebuild:phrase-game` npm step) from `FRASES_GAME/curated/phrases.json`.
+ * Typed phrase bank loader (server-only). Pass results into client as props.
  */
-
-import data from "@/data/phrase-game/phrases.json";
+import { getDb } from "@/server/db";
+import { contentSource } from "@/lib/content/content-repository";
 import type { Phrase } from "./types";
 
 type PhraseBank = {
@@ -14,10 +11,26 @@ type PhraseBank = {
   phrases: Phrase[];
 };
 
-const bank = data as PhraseBank;
+function loadFromJson(): Phrase[] {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const data = require("@/data/phrase-game/phrases.json") as PhraseBank;
+  return data.phrases;
+}
 
-export const ALL_PHRASES: Phrase[] = bank.phrases;
+function loadFromDb(): Phrase[] {
+  const rows = getDb()
+    .prepare(`SELECT payload_json FROM phrase_game_phrases ORDER BY id`)
+    .all() as { payload_json: string }[];
+  return rows.map((r) => JSON.parse(r.payload_json) as Phrase);
+}
 
-export function phraseCount(): number {
-  return bank.phrases.length;
+export function getAllPhrases(): Phrase[] {
+  if (contentSource() === "json") return loadFromJson();
+  try {
+    const fromDb = loadFromDb();
+    if (fromDb.length === 0) return loadFromJson();
+    return fromDb;
+  } catch {
+    return loadFromJson();
+  }
 }

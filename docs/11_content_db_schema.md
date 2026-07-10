@@ -1,8 +1,8 @@
 # Conteúdo editorial em BD — schema e migração
 
-Estado: **preparação** (jul 2026). O site continua a servir conteúdo via JSON em build (`CONTENT_SOURCE=json` por defeito). Este documento descreve o caminho para `CONTENT_SOURCE=db`.
+Estado: **runtime BD** (jul 2026). O site serve conteúdo via SQLite (`CONTENT_SOURCE=db` por defeito). JSON/MD continuam como fonte de edição humana + input do seed.
 
-Ver também: [02_arquitetura.md](02_arquitetura.md), [09_google_auth_jogo.md](09_google_auth_jogo.md) (utilizadores em `users`).
+Ver também: [02_arquitetura.md](02_arquitetura.md), [09_google_auth_jogo.md](09_google_auth_jogo.md), [12_aula_registro_roadmap.md](12_aula_registro_roadmap.md).
 
 ---
 
@@ -10,11 +10,13 @@ Ver também: [02_arquitetura.md](02_arquitetura.md), [09_google_auth_jogo.md](09
 
 | Variável | Valor | Comportamento |
 |----------|-------|---------------|
-| *(omitida)* | `json` | `consolidado.json` + build scripts (actual) |
-| `CONTENT_SOURCE=json` | `json` | Igual |
-| `CONTENT_SOURCE=db` | `db` | **Não implementado** — `getContentRepository()` falha até existir import |
+| *(omitida)* | `db` | SQLite (`SITE_DB` / `web/data/phrase-game.sqlite`) |
+| `CONTENT_SOURCE=db` | `db` | Igual |
+| `CONTENT_SOURCE=json` | `json` | Fallback: `consolidado.json` + loaders JSON (static export / emergência) |
 
-Código: [`web/src/lib/content/`](../web/src/lib/content/) — interface `ContentRepository`, implementação `json-repository.ts`.
+Código: [`web/src/lib/content/`](../web/src/lib/content/) — `ContentRepository`, `json-repository.ts`, `sql-repository.ts`.
+
+Seed: `cd web && npm run seed:content` ([`scripts/seed-content-db.mjs`](../web/scripts/seed-content-db.mjs)).
 
 ---
 
@@ -22,115 +24,50 @@ Código: [`web/src/lib/content/`](../web/src/lib/content/) — interface `Conten
 
 | BD / tabela | Fase | Ficheiro SQLite |
 |-------------|------|-----------------|
-| `users`, `events`, `progress` | **Fase 1 — feito** | `web/data/phrase-game.sqlite` (env `SITE_DB` ou `PHRASE_GAME_DB`) |
-| Tabelas abaixo | **Fase 2 — futuro** | Mesmo ficheiro ou `site.sqlite` dedicado |
-
-Utilizadores **não** misturar com blocos editoriais — FK futura `lesson_sessions.user_id → users.id`.
+| `users`, `events`, `progress` | Feito | `web/data/phrase-game.sqlite` |
+| Tabelas editoriais / jogos / livros | Feito | Mesmo ficheiro |
 
 ---
 
-## Schema proposto (conteúdo editorial)
+## Schema (conteúdo)
 
-Espelha [`ContentBlock`](../web/src/lib/blocks.ts) e fontes actuais.
+Espelha [`ContentBlock`](../web/src/lib/blocks-types.ts) e fontes actuais. Definido em [`web/src/server/db/index.ts`](../web/src/server/db/index.ts) `MIGRATION`.
 
-### `content_blocks`
-
-| Coluna | Tipo | Notas |
-|--------|------|-------|
-| `id` | INTEGER PK | Mesmo id do consolidado (1–16, …) |
-| `title` | TEXT | |
-| `narrative` | TEXT | Markdown ou texto simples |
-| `sort_order` | INTEGER | Ordem na navegação |
-
-### `vocab_entries`
-
-| Coluna | Tipo | Notas |
-|--------|------|-------|
-| `id` | INTEGER PK AUTO | |
-| `block_id` | INTEGER FK | → `content_blocks.id` |
-| `hanzi` | TEXT | |
-| `pinyin` | TEXT | |
-| `translation` | TEXT | PT (legado); i18n futuro em tabela à parte |
-| `sort_order` | INTEGER | |
-
-### `structure_lines`
-
-| Coluna | Tipo | Notas |
-|--------|------|-------|
-| `id` | INTEGER PK AUTO | |
-| `block_id` | INTEGER FK | |
-| `hanzi` | TEXT | |
-| `pinyin` | TEXT | |
-| `sort_order` | INTEGER | |
-
-### `structure_glosses`
-
-| Coluna | Tipo | Notas |
-|--------|------|-------|
-| `structure_id` | INTEGER FK | → `structure_lines.id` |
-| `locale` | TEXT | `pt` \| `en` \| `es` |
-| `gloss` | TEXT | Uma linha por gloss |
-
-### `block_notes`, `block_differences`, `block_priorities`
-
-| Coluna | Tipo |
-|--------|------|
-| `id` | INTEGER PK AUTO |
-| `block_id` | INTEGER FK |
-| `body` | TEXT |
-| `sort_order` | INTEGER |
-
-### `dialogue_turns` + `dialogue_conversations`
-
-Mini-diálogos de revisão — conversa = grupo ordenado de turnos (`speaker`, `hanzi`, `pinyin`, traduções por locale em JSON ou tabela `dialogue_translations`).
-
-### `phrase_game_phrases`
-
-Espelha [`FRASES_GAME/schema.json`](../FRASES_GAME/schema.json) — import desde `phrases.json` ou pipeline `curated/`.
-
-### `quiz_questions`
-
-Espelha `hsk1-quiz-bank.json` — gamification.
-
-### `global_dialogues`
-
-Espelha `global-dialogues.json` + extra.
-
-### Feature aulas — ver [12_aula_registro_roadmap.md](12_aula_registro_roadmap.md)
-
-Eixo B **implementado** no `MIGRATION` de [`web/src/server/db/index.ts`](../web/src/server/db/index.ts)
-(criadas em BDs existentes via `CREATE TABLE IF NOT EXISTS`; `classes` com seed `INSERT OR IGNORE`).
-Eixo A (livros) continua **reservado**.
-
-| Tabela | Estado | Uso |
-|--------|--------|-----|
-| `classes` | ✅ MIGRATION | Config seed: Confúcio B1/B2, Prepely, X-Mandarin T3/Privado |
-| `lessons` | ✅ MIGRATION | Registo por **aula** real (data, classe, notas, `created_by → users.id`) |
-| `lesson_material_refs` | ✅ MIGRATION | Livro + **capítulo** (0..N por aula), `ON DELETE CASCADE` |
-| `lesson_vocab_items` | ✅ MIGRATION | Palavras da aula (hanzi, pinyin, translation, notes, theme), `ON DELETE CASCADE` |
-| `lexicon_global` | ✅ MIGRATION | Léxico acumulado (chave = hanzi **exacto**; upsert ao salvar; não apaga ao remover da aula) |
-| `books` | Reservado | `primary-up`, `primary-down` |
-| `book_vocab_entries` | Reservado | Léxico por **capítulo** do livro (import `OrganizeVocabulary_books/`) |
+| Tabela | Uso |
+|--------|-----|
+| `content_blocks` (+ filhos normalizados + `payload_json`) | Blocos de estudo |
+| `phrase_game_phrases` | Banco do phrase game |
+| `quiz_bank_meta` / `quiz_questions` | Gamification |
+| `global_dialogue_sections` | Página diálogos |
+| `visual_pdf_entries` | Catálogo Visuais (PDFs no disco) |
+| `books` / `book_vocab_entries` | Eixo A — léxico por capítulo |
+| `classes` / `lessons` / … | Eixo B — registo de aulas |
 
 ---
 
-## Import inicial (futuro)
+## Import / seed
 
-1. Script one-shot: `Content/consolidado_final.md` + `review_extras.md` → SQLite (equivalente a [`parse-consolidado.mjs`](../web/scripts/parse-consolidado.mjs)).
-2. `FRASES_GAME/curated/` → `phrase_game_phrases`.
-3. Activar `SqlContentRepository` em `web/src/lib/content/sql-repository.ts` (server-only).
-4. Páginas Next: deixar de depender só de `generateStaticParams` + JSON; passar a `dynamic` ou ISR com repository.
+```bash
+cd web
+npm run prebuild:phrase-game   # se phrases.json desactualizado
+node scripts/parse-consolidado.mjs
+npm run seed:content
+```
 
-**Consequência:** `build:webplace` deixa de ser viável para conteúdo dinâmico — alinhado com produção `build:server` em itcsVM3.
+Ordem no seed: editorial → phrases → quiz → dialogues → visuals → books.
+
+`predev` / `prebuild` / `build:server` correm o seed automaticamente.
 
 ---
 
-## Ordem sugerida
+## Checklist
 
-1. [x] `ContentRepository` + `JsonRepository` (prep)
-2. [ ] Documentar e validar schema SQL (este ficheiro)
-3. [ ] Import consolidado → SQLite
-4. [ ] `CONTENT_SOURCE=db` em dev
-5. [ ] Descontinuar `prebuild` de conteúdo editorial quando BD for fonte única
+1. [x] `ContentRepository` + `JsonRepository`
+2. [x] Schema SQL no `MIGRATION`
+3. [x] Import consolidado → SQLite
+4. [x] `SqlContentRepository` + `CONTENT_SOURCE=db` default
+5. [x] Phrases / dialogues / quiz / visuals via BD
+6. [x] `books` / `book_vocab_entries` + API sugestão
+7. [x] JSON deixa de ser lido em runtime (excepto fallback `CONTENT_SOURCE=json`)
 
 *Última revisão: jul 2026*

@@ -7,10 +7,6 @@ export type LocalizedLine = {
   es: string;
 };
 
-export function emptyLocalizedLine(): LocalizedLine {
-  return { pt: "", en: "", es: "" };
-}
-
 export function pickLocalized(L: LocalizedLine, locale: AppLocale): string {
   const primary = L[locale]?.trim();
   if (primary) return primary;

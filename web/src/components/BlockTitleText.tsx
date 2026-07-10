@@ -2,7 +2,7 @@
 
 import { useLocale } from "@/context/LocaleContext";
 import { localizedBlockTitle } from "@/lib/block-title";
-import type { ContentBlock } from "@/lib/blocks";
+import type { ContentBlock } from "@/lib/blocks-types";
 
 type Props = Pick<ContentBlock, "id" | "title">;
 

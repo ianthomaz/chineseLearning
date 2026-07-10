@@ -4,7 +4,7 @@ import { ChineseWithPinyinLine } from "@/components/ChineseWithPinyinLine";
 import { PhraseRevealLine } from "@/components/PhraseRevealLine";
 import { useLocale } from "@/context/LocaleContext";
 import { useTranslationDisplay } from "@/context/TranslationContext";
-import type { DialogueTurn } from "@/lib/blocks";
+import type { DialogueTurn } from "@/lib/blocks-types";
 import { pickLocalized } from "@/lib/localized-line";
 
 type Props = {
