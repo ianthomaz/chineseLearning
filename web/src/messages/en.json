@@ -27,7 +27,9 @@
     "authSignIn": "Sign in",
     "authSignInHint": "Google login on the phrase game",
     "authSignOut": "Sign out",
-    "authSignedIn": "Account"
+    "authSignedIn": "Account",
+    "registerClass": "Log lesson",
+    "reviewClass": "My lessons"
   },
   "gamification": {
     "title": "Quiz",

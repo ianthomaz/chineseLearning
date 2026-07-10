@@ -27,7 +27,9 @@
     "authSignIn": "Entrar",
     "authSignInHint": "Login com Google no jogo de frases",
     "authSignOut": "Sair",
-    "authSignedIn": "Conta"
+    "authSignedIn": "Conta",
+    "registerClass": "Cadastrar aula",
+    "reviewClass": "Minhas aulas"
   },
   "gamification": {
     "title": "Quiz",
