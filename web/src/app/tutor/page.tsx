@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { LoginGate } from "@/components/AuthGate";
 import { useLocale } from "@/context/LocaleContext";
 import { useTranslationDisplay } from "@/context/TranslationContext";
 import { ChineseWithPinyinLine } from "@/components/ChineseWithPinyinLine";
@@ -17,6 +18,14 @@ type Message = {
 };
 
 export default function TutorPage() {
+  return (
+    <LoginGate>
+      <TutorChat />
+    </LoginGate>
+  );
+}
+
+function TutorChat() {
   const { t, locale } = useLocale();
   const { showTranslation } = useTranslationDisplay();
   const [input, setInput] = useState("");

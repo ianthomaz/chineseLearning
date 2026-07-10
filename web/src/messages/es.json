@@ -4,6 +4,14 @@
     "langName": "Español",
     "flag": "🇪🇸"
   },
+  "authGate": {
+    "title": "Inicia sesión para continuar",
+    "hint": "Esta área es interactiva y requiere inicio de sesión con Google.",
+    "signIn": "Entrar con Google",
+    "signInAlt": "Otra cuenta",
+    "disabledTitle": "Funcionalidad desactivada",
+    "disabledBody": "Disponible solo en la versión del sitio con login (servidor)."
+  },
   "nav": {
     "review": "Repaso",
     "vocabulary": "Vocabulario",

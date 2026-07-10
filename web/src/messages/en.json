@@ -4,6 +4,14 @@
     "langName": "English",
     "flag": "🇬🇧"
   },
+  "authGate": {
+    "title": "Sign in to continue",
+    "hint": "This area is interactive and requires Google sign-in.",
+    "signIn": "Sign in with Google",
+    "signInAlt": "Another account",
+    "disabledTitle": "Feature disabled",
+    "disabledBody": "Available only on the login-enabled (server) version of the site."
+  },
   "nav": {
     "review": "Review",
     "vocabulary": "Vocabulary",
