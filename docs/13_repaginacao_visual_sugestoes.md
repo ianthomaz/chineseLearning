@@ -1,8 +1,11 @@
 # Repaginação visual — sugestões (backlog)
 
-Estado: **backlog visual** (jul 2026). **Nada aplicado.** Este ficheiro só regista sugestões de
-melhoria gráfica levantadas numa auditoria de UI, para serem aplicadas **quando o curador decidir** —
-nunca misturar com PRs funcionais (ver §5).
+Estado: **implementado** (jul 2026). O backlog abaixo foi aplicado numa passagem única:
+fundação de tokens (CSS vars) + **dark mode** (toggle no nav, `prefers-color-scheme` por defeito),
+`next/font` (Newsreader), primitivos em `components/ui/`, migração dos `fontFamily` inline para
+`var(--font-sans)`, tokenização das cores hardcoded, unificação de larguras/ritmo, `Icon` SVG no chrome,
+nav a colapsar em `xl`, `metadata` no tutor e remoção do `GamificationHub` morto. Identidade clara
+mantida (§5). Este ficheiro fica como **mapa do que foi feito** e base para ajustes futuros.
 
 Relacionado: [01_readme.md](01_readme.md), [02_arquitetura.md](02_arquitetura.md).
 
