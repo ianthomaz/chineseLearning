@@ -29,10 +29,15 @@ Ficheiros principais:
 | Caminho | Função |
 |---------|--------|
 | `web/src/server/auth/` | Auth.js config + callbacks |
-| `web/src/server/auth/session.ts` | `getSessionUser()`, `requireSession()` |
+| `web/src/server/auth/session.ts` | `getSessionUser()`, `requireSession()`, **`requireCurator()`** (401/403) |
 | `web/src/server/db/users.ts` | `upsertUser`, `getUser`, `setNick` |
+| `web/src/server/db/{classes,lessons,lexicon}.ts` | DAOs do registo de aulas (curador) |
+| `web/src/components/AuthGate.tsx` | **`LoginGate`** — gate bloqueante nas rotas interactivas |
+| `web/src/app/api/lessons/**` | CRUD de aulas (`route.server.ts`, `requireCurator`) |
+| `web/src/app/api/chat/route.server.ts` | Proxy LLM do tutor — **exige sessão** + rate-limit |
 | `web/src/components/AuthSessionProvider.tsx` | `SessionProvider` no root |
 | `web/src/components/SiteNavAuth.tsx` | Entrar / avatar / Sair no nav |
+| `web/src/components/SiteNav.tsx` | `CuratorTabs` — links do curador (só `isAdminEmail`) |
 | `web/data/phrase-game.sqlite` | BD (env `SITE_DB` ou `PHRASE_GAME_DB`) |
 
 Legado: `players` é **view** sobre `users`; `@/server/db/players` re-exporta aliases.
@@ -45,9 +50,9 @@ Detalhe da feature de aulas: [12_aula_registro_roadmap.md](12_aula_registro_road
 
 | Nível | Quem | O quê |
 |-------|------|-------|
-| **Curador** | `ianthomaz@gmail.com` (hardcoded MVP) | Cadastrar / editar aulas |
-| **Logado** | Qualquer conta Google | Treino hanzi, tutor, jogos/quiz — **a implementar** (hoje muitas rotas aceitam convidado) |
-| **Convidado** | Sem sessão | Conteúdo estático do consolidado; interactivos bloqueados ou redirect login |
+| **Curador** | `ianthomaz@gmail.com` (via `isAdminEmail`) | Cadastrar / editar aulas (`/registerClass`, `/reviewClass`) |
+| **Logado** | Qualquer conta Google | Treino hanzi, tutor, jogos/quiz — **implementado** (`LoginGate`) |
+| **Convidado** | Sem sessão | Conteúdo estático do consolidado; interactivos mostram cartão de login |
 | **Outros users** | Futuro | Features próprias — não definido |
 
 ---
@@ -153,8 +158,8 @@ Local Node (34902): mesmo path com porta 34902 e `NEXTAUTH_URL` correspondente.
 - [x] `getSessionUser` / `requireSession`
 - [x] Nav: Entrar / Sair
 - [x] Google One Tap + nick no jogo
-- [ ] Gate curador aulas: `ianthomaz@gmail.com`
-- [ ] Login obrigatório: treino hanzi, tutor, jogos/quiz (convidado disabled ou redirect)
+- [x] Gate curador aulas: `ianthomaz@gmail.com` (`requireCurator` em `session.ts`; páginas `/registerClass`, `/reviewClass`)
+- [x] Login obrigatório: treino hanzi, tutor, jogos/quiz (`LoginGate`; `/api/chat` exige sessão)
 - [ ] API progresso com pontuação (fase 2 jogo)
 
 ---
