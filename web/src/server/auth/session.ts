@@ -1,4 +1,5 @@
 import { auth } from "@/server/auth";
+import { isAdminEmail } from "@/lib/phrase-game/admin";
 
 export type SessionUser = {
   id: string;
@@ -25,6 +26,15 @@ export async function requireSession(): Promise<SessionUser> {
   const user = await getSessionUser();
   if (!user) {
     throw Response.json({ error: "unauthenticated" }, { status: 401 });
+  }
+  return user;
+}
+
+/** Returns the signed-in curator or throws a 401/403 Response (for Route Handlers). */
+export async function requireCurator(): Promise<SessionUser> {
+  const user = await requireSession();
+  if (!isAdminEmail(user.email)) {
+    throw Response.json({ error: "forbidden" }, { status: 403 });
   }
   return user;
 }
