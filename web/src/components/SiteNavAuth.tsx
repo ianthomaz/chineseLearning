@@ -7,10 +7,14 @@ import { useLocale } from "@/context/LocaleContext";
 const AUTH_ENABLED = process.env.NEXT_PUBLIC_AUTH_ENABLED !== "0";
 
 export function SiteNavAuth() {
+  // Static export has no SessionProvider; bail out before touching useSession.
+  if (!AUTH_ENABLED) return null;
+  return <SiteNavAuthLive />;
+}
+
+function SiteNavAuthLive() {
   const { t } = useLocale();
   const { data: session, status } = useSession();
-
-  if (!AUTH_ENABLED) return null;
 
   if (status === "loading") {
     return (
