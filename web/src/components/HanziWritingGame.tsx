@@ -66,6 +66,19 @@ function buildSession(allBlocks: ContentBlock[]): { cards: GameCard[]; ok: boole
   return { cards, ok: true };
 }
 
+/** Lesson mode: every word of the given blocks, in order (no 2-block/5-word sampling). */
+function buildFullSession(allBlocks: ContentBlock[]): { cards: GameCard[]; ok: boolean } {
+  const cards: GameCard[] = [];
+  for (const b of allBlocks) {
+    for (const v of b.vocabulary) {
+      const chars = extractHanziFromWord(v.hanzi);
+      if (chars.length === 0) continue;
+      cards.push({ vocab: v, blockId: b.id, blockTitle: b.title, chars });
+    }
+  }
+  return { cards, ok: cards.length > 0 };
+}
+
 // ---------------------------------------------------------------------------
 // Inline HanziWriter (no modal — lives inside the game card)
 // ---------------------------------------------------------------------------
@@ -287,12 +300,15 @@ export type HanziWritingGameProps = {
   embeddedInPage?: boolean;
   /** When true (from `?autostart=1`), start a session once after mount on the practice page. */
   autoStartSession?: boolean;
+  /** Practice EVERY word of the given blocks in order (lesson mode) instead of sampling. */
+  useAllWords?: boolean;
 };
 
 export function HanziWritingGame({
   blocks,
   embeddedInPage = false,
   autoStartSession = false,
+  useAllWords = false,
 }: HanziWritingGameProps) {
   const { t } = useLocale();
 
@@ -323,7 +339,7 @@ export function HanziWritingGame({
   }, [cards]);
 
   const startSession = useCallback((): boolean => {
-    const session = buildSession(blocks);
+    const session = useAllWords ? buildFullSession(blocks) : buildSession(blocks);
     if (!session.ok) return false;
     setCards(session.cards);
     setCurrentIndex(0);
@@ -334,7 +350,7 @@ export function HanziWritingGame({
       label: "randomhanzi",
     });
     return true;
-  }, [blocks]);
+  }, [blocks, useAllWords]);
 
   useEffect(() => {
     if (!autoStartSession) return;
