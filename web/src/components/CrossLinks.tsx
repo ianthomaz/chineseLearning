@@ -37,7 +37,7 @@ export function CrossLinks({ blockId, current, placement = "bottom" }: Props) {
       {placement === "bottom" ? (
         <span
           className="mr-1 text-xs text-ink/35"
-          style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+          style={{ fontFamily: "var(--font-sans)" }}
         >
           {t("crossLinks.prefix")}
         </span>
@@ -49,8 +49,8 @@ export function CrossLinks({ blockId, current, placement = "bottom" }: Props) {
           className="flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs transition-colors hover:bg-ink/5"
           style={{
             borderColor: "var(--border)",
-            fontFamily: "ui-sans-serif, system-ui, sans-serif",
-            color: "rgba(28,25,23,0.6)",
+            fontFamily: "var(--font-sans)",
+            color: "color-mix(in srgb, var(--ink) 60%, transparent)",
           }}
         >
           <span className="font-hanzi text-sm">{hanzi[key]}</span>

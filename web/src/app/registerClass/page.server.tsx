@@ -57,7 +57,7 @@ export default async function RegisterClassPage({ searchParams }: { searchParams
           {initialLesson ? `Editar aula #${initialLesson.id}` : "Cadastrar aula"}
         </h1>
         {editingId && !initialLesson && (
-          <p className="mt-2 text-sm text-red-600">Aula #{editingId} não encontrada — a criar uma nova.</p>
+          <p className="mt-2 text-sm text-danger">Aula #{editingId} não encontrada — a criar uma nova.</p>
         )}
       </header>
       <RegisterClassForm classes={classes} initialLesson={initialLesson} />

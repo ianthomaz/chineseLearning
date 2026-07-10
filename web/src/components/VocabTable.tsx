@@ -42,19 +42,19 @@ export function VocabTable({ rows }: Props) {
             className="border-b"
             style={{
               borderColor: "var(--border)",
-              backgroundColor: "rgba(28,25,23,0.025)",
+              backgroundColor: "color-mix(in srgb, var(--ink) 2.5%, transparent)",
             }}
           >
             <th
               className="px-4 py-3 text-xs font-semibold uppercase tracking-widest text-ink/40"
-              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+              style={{ fontFamily: "var(--font-sans)" }}
             >
               {t("vocab.hanzi")}
             </th>
             {showPinyin ? (
               <th
                 className="px-4 py-3 text-xs font-semibold uppercase tracking-widest text-ink/40"
-                style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                style={{ fontFamily: "var(--font-sans)" }}
               >
                 {t("vocab.pinyin")}
               </th>
@@ -62,7 +62,7 @@ export function VocabTable({ rows }: Props) {
             {showTranslation ? (
               <th
                 className="px-4 py-3 text-xs font-semibold uppercase tracking-widest text-ink/40"
-                style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                style={{ fontFamily: "var(--font-sans)" }}
               >
                 {t("vocab.translation")}
               </th>
@@ -80,7 +80,7 @@ export function VocabTable({ rows }: Props) {
               style={{
                 borderColor: "var(--border)",
                 backgroundColor:
-                  idx % 2 === 1 ? "rgba(28,25,23,0.018)" : "transparent",
+                  idx % 2 === 1 ? "color-mix(in srgb, var(--ink) 1.8%, transparent)" : "transparent",
               }}
             >
               <td className="px-4 py-3">
@@ -90,7 +90,7 @@ export function VocabTable({ rows }: Props) {
                     <button
                       type="button"
                       className="shrink-0 rounded-md border border-ink/15 px-2 py-1 text-xs font-medium text-ink/55 transition-colors hover:border-[var(--accent)]/40 hover:bg-[var(--accent)]/5 hover:text-ink"
-                      style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                      style={{ fontFamily: "var(--font-sans)" }}
                       aria-label={t("vocab.openStrokesAria", { word: row.hanzi })}
                       onClick={() =>
                         setStrokeModal({

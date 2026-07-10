@@ -20,7 +20,7 @@ function SiteNavAuthLive() {
     return (
       <span
         className="hidden min-h-[44px] items-center px-2 text-xs text-ink/35 sm:flex"
-        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        style={{ fontFamily: "var(--font-sans)" }}
         aria-hidden
       >
         …
@@ -33,7 +33,7 @@ function SiteNavAuthLive() {
       <Link
         href="/phrase-game"
         className="flex min-h-[44px] items-center rounded-full border px-3 text-xs font-medium text-ink/65 transition-colors hover:bg-ink/5 sm:px-4"
-        style={{ borderColor: "var(--border)", fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        style={{ borderColor: "var(--border)", fontFamily: "var(--font-sans)" }}
         title={t("nav.authSignInHint")}
       >
         {t("nav.authSignIn")}
@@ -46,7 +46,7 @@ function SiteNavAuthLive() {
   return (
     <div
       className="flex min-h-[44px] items-center gap-1.5 sm:gap-2"
-      style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+      style={{ fontFamily: "var(--font-sans)" }}
     >
       {session.user.image ? (
         // eslint-disable-next-line @next/next/no-img-element

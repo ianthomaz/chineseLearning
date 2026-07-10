@@ -192,7 +192,7 @@ export function HanziStrokeModal({
               {pinyin ? (
                 <span
                   className="ml-2 text-base font-normal italic text-stone-500"
-                  style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                  style={{ fontFamily: "var(--font-sans)" }}
                 >
                   {pinyin}
                 </span>

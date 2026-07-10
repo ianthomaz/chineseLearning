@@ -58,7 +58,7 @@ export default async function ReviewClassDetailPage({ params }: { params: Promis
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-10">
-      <header className="mb-8" style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}>
+      <header className="mb-8" style={{ fontFamily: "var(--font-sans)" }}>
         <a href={`${BASE_PATH}/reviewClass`} className="text-sm text-accent hover:underline">
           ← Minhas aulas
         </a>
@@ -83,19 +83,19 @@ export default async function ReviewClassDetailPage({ params }: { params: Promis
 
       {/* Hanzi para o caderno */}
       <section className="mb-12">
-        <h2 className="mb-4 text-xs font-medium uppercase tracking-widest text-ink/40" style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}>
+        <h2 className="mb-4 text-xs font-medium uppercase tracking-widest text-ink/40" style={{ fontFamily: "var(--font-sans)" }}>
           Hanzi para o caderno
         </h2>
         <ul className="space-y-6">
           {lesson.words.map((w, i) => (
             <li key={i} className="border-b pb-4" style={{ borderColor: "var(--border)" }}>
               <p className="font-hanzi text-5xl leading-tight text-ink">{w.hanzi}</p>
-              <p className="mt-1 text-sm text-ink/50" style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}>
+              <p className="mt-1 text-sm text-ink/50" style={{ fontFamily: "var(--font-sans)" }}>
                 {[w.pinyin, w.translation].filter(Boolean).join(" · ")}
                 {w.theme ? `  ·  ${w.theme}` : ""}
               </p>
               {w.notes && (
-                <p className="mt-1 text-sm text-ink/60" style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}>
+                <p className="mt-1 text-sm text-ink/60" style={{ fontFamily: "var(--font-sans)" }}>
                   {w.notes}
                 </p>
               )}
@@ -106,7 +106,7 @@ export default async function ReviewClassDetailPage({ params }: { params: Promis
 
       {/* Treino digital */}
       <section>
-        <h2 className="mb-4 text-xs font-medium uppercase tracking-widest text-ink/40" style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}>
+        <h2 className="mb-4 text-xs font-medium uppercase tracking-widest text-ink/40" style={{ fontFamily: "var(--font-sans)" }}>
           Treino digital
         </h2>
         <LessonHanziPractice

@@ -41,7 +41,7 @@ export default async function ReviewClassPage() {
   return (
     <main
       className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-10"
-      style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+      style={{ fontFamily: "var(--font-sans)" }}
     >
       <header className="mb-8 flex items-end justify-between">
         <div>

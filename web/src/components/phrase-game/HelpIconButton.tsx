@@ -17,7 +17,7 @@ export function HelpIconButton({
       aria-label={label}
       title={label}
       className="inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs text-ink/65 transition-colors hover:bg-ink/5"
-      style={{ borderColor: "var(--border)", fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+      style={{ borderColor: "var(--border)", fontFamily: "var(--font-sans)" }}
     >
       <MaterialIcon name={icon} className="text-[1.125rem]" />
       <span>{label}</span>

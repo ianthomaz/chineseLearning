@@ -17,7 +17,7 @@ export function ReviewMiniDialogues({ conversations }: Props) {
     <section className="mt-14">
       <h2
         className="mb-8 text-xs font-semibold uppercase tracking-widest text-ink/40"
-        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        style={{ fontFamily: "var(--font-sans)" }}
       >
         {t("review.miniDialoguesTitle")}
       </h2>
@@ -28,12 +28,12 @@ export function ReviewMiniDialogues({ conversations }: Props) {
             className="rounded-xl border p-4 sm:p-5"
             style={{
               borderColor: "var(--border)",
-              backgroundColor: "rgba(28,25,23,0.02)",
+              backgroundColor: "color-mix(in srgb, var(--ink) 2%, transparent)",
             }}
           >
             <p
               className="mb-3 text-[10px] font-medium uppercase tracking-wider text-ink/35"
-              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+              style={{ fontFamily: "var(--font-sans)" }}
             >
               {t("dialogues.convLabel", { num: ci + 1 })}
             </p>

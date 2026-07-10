@@ -21,7 +21,7 @@ export function DialoguesIndexContent() {
     <main className="mx-auto max-w-3xl px-4 pb-[max(6rem,env(safe-area-inset-bottom,0px))] pt-8 sm:px-6 sm:pb-24 sm:pt-10">
       <p
         className="mb-2 text-xs font-medium uppercase tracking-widest text-ink/35"
-        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        style={{ fontFamily: "var(--font-sans)" }}
       >
         {t("dialogues.kicker")}
       </p>

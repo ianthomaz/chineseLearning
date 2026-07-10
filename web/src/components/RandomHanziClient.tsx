@@ -23,16 +23,16 @@ export function RandomHanziClient({ blocks, autoStartSession = false }: Props) {
     <main className="mx-auto max-w-3xl px-4 pb-24 pt-8 sm:px-6 sm:pt-10">
       <p
         className="text-xs font-medium uppercase tracking-widest text-ink/35"
-        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        style={{ fontFamily: "var(--font-sans)" }}
       >
         {t("writingGame.pageKicker")}
       </p>
-      <h1 className="mt-2 font-display text-2xl font-medium text-ink sm:text-3xl">
+      <h1 className="mt-2 font-display text-2xl font-medium text-ink sm:text-3xl md:text-4xl">
         {t("writingGame.pageHeading")}
       </h1>
       <p
         className="mt-2 max-w-xl text-sm leading-relaxed text-ink/55 sm:text-base"
-        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        style={{ fontFamily: "var(--font-sans)" }}
       >
         {t("writingGame.pageDesc")}
       </p>
@@ -46,7 +46,7 @@ export function RandomHanziClient({ blocks, autoStartSession = false }: Props) {
 
       <footer
         className="mt-16 border-t border-ink/10 pb-[max(2rem,env(safe-area-inset-bottom,0px))] pt-10"
-        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        style={{ fontFamily: "var(--font-sans)" }}
       >
         <p className="mx-auto max-w-2xl text-center text-xs leading-relaxed text-ink/45">
           {t("writingGame.pageFooterVocab")}

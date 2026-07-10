@@ -39,7 +39,7 @@ export function PriorityList({
     <>
       <h2
         className="mb-4 text-xs font-semibold uppercase tracking-widest text-ink/40"
-        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        style={{ fontFamily: "var(--font-sans)" }}
       >
         {resolvedTitle}
       </h2>
@@ -61,7 +61,7 @@ export function PriorityList({
               <div className="flex items-baseline gap-3">
                 <span
                   className="w-5 shrink-0 text-right text-xs tabular-nums text-ink/30"
-                  style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                  style={{ fontFamily: "var(--font-sans)" }}
                 >
                   {i + 1}
                 </span>
@@ -77,7 +77,7 @@ export function PriorityList({
                       className="rounded-full border px-2.5 py-0.5 text-xs font-medium text-accent transition-colors hover:bg-accent/10"
                       style={{
                         borderColor: "var(--border)",
-                        fontFamily: "ui-sans-serif, system-ui, sans-serif",
+                        fontFamily: "var(--font-sans)",
                       }}
                     >
                       {t("priority.blockLink", { num: tid })}

@@ -39,7 +39,7 @@ export function BlockPager({ blockId, mode }: Props) {
           <span>
             <span
               className="block text-xs uppercase tracking-widest text-ink/35"
-              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+              style={{ fontFamily: "var(--font-sans)" }}
             >
               {t("pager.prev")}
             </span>
@@ -61,7 +61,7 @@ export function BlockPager({ blockId, mode }: Props) {
           <span>
             <span
               className="block text-xs uppercase tracking-widest text-ink/35"
-              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+              style={{ fontFamily: "var(--font-sans)" }}
             >
               {t("pager.next")}
             </span>

@@ -44,7 +44,7 @@ export function DialogueTurnRow({ turn, variant, phraseReveal }: Props) {
       >
         <span
           className="mb-1 block px-3 text-[10px] font-semibold uppercase tracking-wider text-ink/40"
-          style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+          style={{ fontFamily: "var(--font-sans)" }}
         >
           {turn.speaker}
         </span>
@@ -67,7 +67,7 @@ export function DialogueTurnRow({ turn, variant, phraseReveal }: Props) {
               {showTranslation ? (
                 <p
                   className="mt-1 text-xs leading-snug text-ink/50"
-                  style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                  style={{ fontFamily: "var(--font-sans)" }}
                 >
                   {pickLocalized(turn.translation, locale)}
                 </p>

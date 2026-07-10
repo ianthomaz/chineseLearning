@@ -20,7 +20,7 @@ export function ReviewStructures({ blockId, lines, structureGlosses }: Props) {
     <div>
       <h2
         className="mb-8 text-xs font-semibold uppercase tracking-widest text-ink/40"
-        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        style={{ fontFamily: "var(--font-sans)" }}
       >
         {t("review.structuresTitle")}
       </h2>

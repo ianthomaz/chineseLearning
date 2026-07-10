@@ -1,16 +1,83 @@
-@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Noto+Sans+SC:wght@400;500;700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Design tokens. Light is the default identity; dark mode mirrors it warm.
+   Toggle stamps data-theme on <html>; otherwise prefers-color-scheme wins. */
 :root {
   --paper: #f7f4ef;
+  --surface: #fffdf9;
+  --bg: #ffffff;
   --ink: #1c1917;
   --accent: #2d5a8c;
   --accent-warm: #8c4a2d;
+  --accent-2: #0d9488;
+  --cat-amber: #b45309;
+  --cat-green: #3d6b4a;
+  --cat-purple: #6b4f8c;
+  --cat-emerald: #047857;
+  --cat-violet: #7c3aed;
+  --cat-orange: #d97706;
   --muted: rgba(28, 25, 23, 0.5);
   --border: rgba(28, 25, 23, 0.12);
+  --success: #15803d;
+  --success-bg: #dcfce7;
+  --danger: #b91c1c;
+  --danger-bg: #fee2e2;
+  --warn: #a16207;
+  --warn-bg: #fef9c3;
+  --on-accent: #ffffff;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-serif: var(--font-newsreader), "Newsreader", Georgia, "Times New Roman", serif;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --paper: #16130f;
+  --surface: #211c17;
+  --bg: #2a241e;
+  --ink: #ece5db;
+  --accent: #4a83c5;
+  --accent-warm: #d18a63;
+  --accent-2: #2dd4bf;
+  --cat-amber: #f0a860;
+  --cat-green: #7cc39a;
+  --cat-purple: #c3a9e0;
+  --cat-emerald: #34d399;
+  --cat-violet: #b794f6;
+  --cat-orange: #f0a860;
+  --muted: rgba(236, 229, 219, 0.55);
+  --border: rgba(236, 229, 219, 0.14);
+  --success: #4ade80;
+  --success-bg: rgba(34, 197, 94, 0.16);
+  --danger: #f87171;
+  --danger-bg: rgba(239, 68, 68, 0.16);
+  --warn: #fbbf24;
+  --warn-bg: rgba(234, 179, 8, 0.16);
+  --on-accent: #ffffff;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #16130f;
+    --surface: #211c17;
+    --bg: #2a241e;
+    --ink: #ece5db;
+    --accent: #4a83c5;
+    --accent-warm: #d18a63;
+    --accent-2: #2dd4bf;
+    --muted: rgba(236, 229, 219, 0.55);
+    --border: rgba(236, 229, 219, 0.14);
+    --success: #4ade80;
+    --success-bg: rgba(34, 197, 94, 0.16);
+    --danger: #f87171;
+    --danger-bg: rgba(239, 68, 68, 0.16);
+    --warn: #fbbf24;
+    --warn-bg: rgba(234, 179, 8, 0.16);
+    --on-accent: #ffffff;
+    color-scheme: dark;
+  }
 }
 
 html {
@@ -19,7 +86,7 @@ html {
 
 body {
   @apply min-h-dvh bg-paper text-ink antialiased;
-  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   padding-left: env(safe-area-inset-left, 0px);
   padding-right: env(safe-area-inset-right, 0px);
 }

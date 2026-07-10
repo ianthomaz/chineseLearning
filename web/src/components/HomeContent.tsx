@@ -41,49 +41,49 @@ const homeGridCards: ReadonlyArray<NavGridCard> = [
     href: "/visuals",
     modeKey: "visuals",
     hanzi: "图",
-    color: "#b45309",
+    color: "var(--cat-amber)",
     descKey: "home.modeVisualsDesc",
   },
   {
     href: "/grammar",
     modeKey: "grammar",
     hanzi: "语法",
-    color: "#3d6b4a",
+    color: "var(--cat-green)",
     descKey: "home.modeGrammarDesc",
   },
   {
     href: "/dialogues",
     modeKey: "dialogues",
     hanzi: "对话",
-    color: "#6b4f8c",
+    color: "var(--cat-purple)",
     descKey: "home.modeDialoguesDesc",
   },
   {
     href: "/randomhanzi?autostart=1",
     modeKey: "writing",
     hanzi: "写",
-    color: "#047857",
+    color: "var(--cat-emerald)",
     descKey: "home.modeWritingDesc",
   },
   {
     href: "/gamification",
     modeKey: "gamification",
     hanzi: "测",
-    color: "#0d9488",
+    color: "var(--accent-2)",
     descKey: "home.modeQuizDesc",
   },
   {
     href: "/phrase-game",
     modeKey: "phraseGame",
     hanzi: "拼",
-    color: "#7c3aed",
+    color: "var(--cat-violet)",
     descKey: "home.modePhraseGameDesc",
   },
   {
     href: "/tutor",
     modeKey: "tutor",
     hanzi: "练习",
-    color: "#d97706",
+    color: "var(--cat-orange)",
     descKey: "home.modeTutorDesc",
   },
 ];
@@ -100,7 +100,7 @@ export function HomeContent({ blocks }: Props) {
       <section className="py-10 sm:py-16 md:py-20">
         <p
           className="mb-4 text-xs font-medium uppercase tracking-widest"
-          style={{ color: "var(--accent)", fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+          style={{ color: "var(--accent)", fontFamily: "var(--font-sans)" }}
         >
           {t("home.kicker")}
         </p>
@@ -120,12 +120,11 @@ export function HomeContent({ blocks }: Props) {
             <Link
               key={m.href}
               href={m.href}
-              className="group relative overflow-hidden rounded-2xl border p-5 transition-shadow active:bg-ink/[0.02] sm:p-6 sm:hover:shadow-md"
-              style={{ borderColor: "var(--border)", backgroundColor: "var(--paper)" }}
+              className="group relative overflow-hidden rounded-2xl border border-border bg-surface p-5 transition-shadow active:bg-ink/[0.02] sm:p-6 sm:hover:shadow-md"
             >
               <div
                 className="mb-4 inline-flex items-center justify-center rounded-xl px-3 py-1.5"
-                style={{ backgroundColor: m.color + "15" }}
+                style={{ backgroundColor: `color-mix(in srgb, ${m.color} 14%, transparent)` }}
               >
                 <span
                   className="font-hanzi text-lg font-bold"
@@ -137,7 +136,7 @@ export function HomeContent({ blocks }: Props) {
               <h2
                 className="font-display text-xl font-medium text-ink"
                 style={{
-                  fontFamily: "ui-sans-serif, system-ui, sans-serif",
+                  fontFamily: "var(--font-sans)",
                   fontSize: "1rem",
                   fontWeight: 600,
                 }}
@@ -151,7 +150,7 @@ export function HomeContent({ blocks }: Props) {
                 className="mt-4 inline-block text-xs font-medium transition-colors group-hover:opacity-100"
                 style={{
                   color: m.color,
-                  fontFamily: "ui-sans-serif, system-ui, sans-serif",
+                  fontFamily: "var(--font-sans)",
                   opacity: 0.7,
                 }}
               >
@@ -166,13 +165,13 @@ export function HomeContent({ blocks }: Props) {
         <div className="mb-6 flex items-baseline justify-between">
           <h2
             className="text-sm font-semibold uppercase tracking-widest text-ink/40"
-            style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            style={{ fontFamily: "var(--font-sans)" }}
           >
             {t("home.blocksTitle")}
           </h2>
           <span
             className="text-xs text-ink/35"
-            style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            style={{ fontFamily: "var(--font-sans)" }}
           >
             {t("home.blocksCount", { count: blocks.length })}
           </span>
@@ -186,7 +185,7 @@ export function HomeContent({ blocks }: Props) {
               >
                 <span
                   className="w-7 shrink-0 text-right text-xs tabular-nums text-ink/30"
-                  style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                  style={{ fontFamily: "var(--font-sans)" }}
                 >
                   {String(b.id).padStart(2, "0")}
                 </span>
@@ -196,7 +195,7 @@ export function HomeContent({ blocks }: Props) {
                 {b.vocabulary.length > 0 ? (
                   <span
                     className="ml-auto shrink-0 text-xs text-ink/25"
-                    style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                    style={{ fontFamily: "var(--font-sans)" }}
                   >
                     {b.vocabulary.length === 1
                       ? t("home.wordCountOne")

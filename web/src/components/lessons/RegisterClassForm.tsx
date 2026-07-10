@@ -36,7 +36,7 @@ function emptyWord(hanzi = ""): WordRow {
 
 const inputClass =
   "w-full rounded-lg border px-2 py-1.5 text-sm outline-none focus:border-accent";
-const inputStyle = { borderColor: "var(--border)", fontFamily: "ui-sans-serif, system-ui, sans-serif" };
+const inputStyle = { borderColor: "var(--border)", fontFamily: "var(--font-sans)" };
 
 export function RegisterClassForm({
   classes,
@@ -148,7 +148,7 @@ export function RegisterClassForm({
   }
 
   return (
-    <form onSubmit={submit} className="space-y-8" style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}>
+    <form onSubmit={submit} className="space-y-8" style={{ fontFamily: "var(--font-sans)" }}>
       {/* Meta */}
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="block text-sm">
@@ -283,9 +283,9 @@ export function RegisterClassForm({
         <button type="submit" disabled={status.kind === "saving"} className="rounded-xl px-5 py-2.5 text-sm font-semibold text-white disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>
           {status.kind === "saving" ? "A guardar…" : editing ? "Guardar alterações" : "Guardar aula"}
         </button>
-        {status.kind === "error" && <span className="text-sm text-red-600">{status.msg}</span>}
+        {status.kind === "error" && <span className="text-sm text-danger">{status.msg}</span>}
         {status.kind === "saved" && (
-          <span className="flex flex-wrap items-center gap-3 text-sm text-green-700">
+          <span className="flex flex-wrap items-center gap-3 text-sm text-success">
             Aula guardada.
             <a href={`${BASE_PATH}/reviewClass/${status.id}`} className="text-accent hover:underline">
               Ver aula

@@ -22,7 +22,7 @@ export function LoginGate({ children }: { children: React.ReactNode }) {
         <h1 className="font-display text-2xl text-ink">{t("authGate.disabledTitle")}</h1>
         <p
           className="mt-3 text-sm text-ink/60"
-          style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+          style={{ fontFamily: "var(--font-sans)" }}
         >
           {t("authGate.disabledBody")}
         </p>
@@ -59,7 +59,7 @@ function LoginGateLive({ children }: { children: React.ReactNode }) {
           <h1 className="font-display text-2xl text-ink">{t("authGate.title")}</h1>
           <p
             className="mt-3 text-sm text-ink/60"
-            style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            style={{ fontFamily: "var(--font-sans)" }}
           >
             {t("authGate.hint")}
           </p>

@@ -80,7 +80,7 @@ export function PhraseRevealLine({
       {showGloss ? (
         <p
           className={glossClassName}
-          style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+          style={{ fontFamily: "var(--font-sans)" }}
         >
           {translation}
         </p>

@@ -139,7 +139,7 @@ export function VisualPdfPager({ pdfUrl, title, t }: Props) {
     [touchStart, numPages],
   );
 
-  const uiFont = { fontFamily: "ui-sans-serif, system-ui, sans-serif" } as const;
+  const uiFont = { fontFamily: "var(--font-sans)" } as const;
 
   if (!lib) {
     return (
@@ -196,7 +196,7 @@ export function VisualPdfPager({ pdfUrl, title, t }: Props) {
       {/* PDF Viewer Area */}
       <div className="flex min-h-[min(70dvh,720px)] flex-1 items-center justify-center overflow-auto bg-stone-100/50 p-3 sm:min-h-[min(75dvh,800px)] sm:p-4 select-none">
         {loadError ? (
-          <p className="text-sm text-red-700">{loadError}</p>
+          <p className="text-sm text-danger">{loadError}</p>
         ) : (
           <Document
             file={pdfUrl}

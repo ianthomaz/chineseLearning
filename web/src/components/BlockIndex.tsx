@@ -52,7 +52,7 @@ export function BlockIndex({ blocks, mode }: Props) {
           >
             <span
               className="mt-0.5 w-7 shrink-0 text-right text-xs tabular-nums text-ink/25"
-              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+              style={{ fontFamily: "var(--font-sans)" }}
             >
               {String(b.id).padStart(2, "0")}
             </span>
@@ -63,7 +63,7 @@ export function BlockIndex({ blocks, mode }: Props) {
               {count !== null ? (
                 <span
                   className="mt-0.5 block text-xs text-ink/35"
-                  style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                  style={{ fontFamily: "var(--font-sans)" }}
                 >
                   {count} {label}
                 </span>

@@ -117,7 +117,7 @@ export function QuizGame() {
   }
 
   return (
-    <main className="mx-auto max-w-2xl flex-1 px-4 py-8 sm:px-6 sm:py-10">
+    <main className="mx-auto max-w-3xl flex-1 px-4 py-8 sm:px-6 sm:py-10">
       {/* Progress Bar */}
       <div className="mb-8">
         <div className="flex items-center justify-between mb-2">
@@ -190,7 +190,7 @@ export function QuizGame() {
           <div className="mt-6 space-y-4">
             <div
               className={`rounded-lg px-4 py-3 ${
-                isCorrect ? "bg-green-50 text-green-800" : "bg-red-50 text-red-800"
+                isCorrect ? "bg-success-bg text-success" : "bg-danger-bg text-danger"
               }`}
             >
               <p className="font-medium">

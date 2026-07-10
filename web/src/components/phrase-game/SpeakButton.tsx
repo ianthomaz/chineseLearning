@@ -52,7 +52,7 @@ export function SpeakButton({
           borderColor: "var(--accent)",
           color: "var(--accent)",
           backgroundColor: "rgba(45,90,140,0.08)",
-          fontFamily: "ui-sans-serif, system-ui, sans-serif",
+          fontFamily: "var(--font-sans)",
         }}
       >
         <MaterialIcon name="volume_up" className="text-xl" filled />

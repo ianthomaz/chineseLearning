@@ -53,7 +53,7 @@ export function VisualsView() {
     <main className="mx-auto max-w-5xl px-4 pb-[max(6rem,env(safe-area-inset-bottom,0px))] pt-8 sm:px-6 sm:pb-24 sm:pt-10">
       <p
         className="mb-2 text-xs font-medium uppercase tracking-widest text-ink/35"
-        style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+        style={{ fontFamily: "var(--font-sans)" }}
       >
         {t("visuals.kicker")}
       </p>
@@ -68,7 +68,7 @@ export function VisualsView() {
         <>
           {showPortraitHint ? (
             <div
-              className="mt-4 flex flex-col gap-3 rounded-xl border border-amber-200/80 bg-amber-50/90 px-4 py-3 text-sm text-amber-950 sm:flex-row sm:items-center sm:justify-between"
+              className="mt-4 flex flex-col gap-3 rounded-xl border border-warn/25 bg-warn-bg px-4 py-3 text-sm text-ink sm:flex-row sm:items-center sm:justify-between"
               role="status"
             >
               <p className="min-w-0 flex-1 leading-relaxed">{t("visuals.landscapeHint")}</p>
@@ -77,15 +77,15 @@ export function VisualsView() {
                   type="button"
                   onClick={tryLandscape}
                   className="rounded-lg border border-amber-300/80 bg-white px-3 py-2 text-xs font-medium text-amber-950 transition-colors hover:bg-amber-100/80"
-                  style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                  style={{ fontFamily: "var(--font-sans)" }}
                 >
                   {t("visuals.landscapeButton")}
                 </button>
                 <button
                   type="button"
                   onClick={() => setHintDismissed(true)}
-                  className="rounded-lg px-3 py-2 text-xs text-amber-900/70 underline decoration-amber-400/60 underline-offset-2"
-                  style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                  className="rounded-lg px-3 py-2 text-xs text-warn underline decoration-warn/50 underline-offset-2"
+                  style={{ fontFamily: "var(--font-sans)" }}
                 >
                   {t("visuals.landscapeDismiss")}
                 </button>
@@ -95,7 +95,7 @@ export function VisualsView() {
           {orientMsg ? (
             <p
               className="mt-2 text-xs text-ink/45"
-              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+              style={{ fontFamily: "var(--font-sans)" }}
             >
               {orientMsg}
             </p>
@@ -125,9 +125,9 @@ export function VisualsView() {
                         ? {
                             backgroundColor: "var(--accent)",
                             borderColor: "var(--accent)",
-                            fontFamily: "ui-sans-serif, system-ui, sans-serif",
+                            fontFamily: "var(--font-sans)",
                           }
-                        : { fontFamily: "ui-sans-serif, system-ui, sans-serif" }
+                        : { fontFamily: "var(--font-sans)" }
                     }
                   >
                     {label}

@@ -33,13 +33,13 @@ export function EdgeSettingsDrawer() {
         <div className="min-w-0 flex-1">
           <p
             className="text-sm font-medium text-ink/85"
-            style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            style={{ fontFamily: "var(--font-sans)" }}
           >
             {label}
           </p>
           <p
             className="mt-0.5 text-xs leading-snug text-ink/45"
-            style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            style={{ fontFamily: "var(--font-sans)" }}
           >
             {description}
           </p>
@@ -51,7 +51,7 @@ export function EdgeSettingsDrawer() {
           onClick={() => setOn(!on)}
           className="relative h-7 w-12 shrink-0 rounded-full transition-colors"
           style={{
-            backgroundColor: on ? "var(--accent)" : "rgba(28,25,23,0.15)",
+            backgroundColor: on ? "var(--accent)" : "color-mix(in srgb, var(--ink) 15%, transparent)",
           }}
         >
           <span
@@ -91,13 +91,13 @@ export function EdgeSettingsDrawer() {
             <div className="p-4 pt-5">
               <h2
                 className="mb-1 text-lg font-medium text-ink"
-                style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                style={{ fontFamily: "var(--font-sans)" }}
               >
                 {t("settings.panelTitle")}
               </h2>
               <p
                 className="mb-2 text-xs text-ink/45"
-                style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                style={{ fontFamily: "var(--font-sans)" }}
               >
                 {t("settings.panelHint")}
               </p>
@@ -137,7 +137,7 @@ export function EdgeSettingsDrawer() {
             style={{
               writingMode: "vertical-rl",
               textOrientation: "mixed",
-              fontFamily: "ui-sans-serif, system-ui, sans-serif",
+              fontFamily: "var(--font-sans)",
             }}
           >
             {t("settings.tab")}

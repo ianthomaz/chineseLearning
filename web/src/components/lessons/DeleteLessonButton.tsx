@@ -31,7 +31,7 @@ export function DeleteLessonButton({ lessonId, label }: { lessonId: number; labe
       type="button"
       onClick={onDelete}
       disabled={busy}
-      className="text-ink/40 hover:text-red-600 disabled:opacity-50"
+      className="text-ink/40 hover:text-danger disabled:opacity-50"
     >
       {busy ? "…" : label}
     </button>
