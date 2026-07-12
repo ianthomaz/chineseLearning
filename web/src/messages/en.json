@@ -73,7 +73,7 @@
   },
   "home": {
     "kicker": "Basic Chinese",
-    "title1": "Course blocks plus extended reference material.",
+    "title1": "Course blocks plus reference material.",
     "title2": "Several ways to study.",
     "blurb": "Review, vocabulary, and grammar are linked.",
     "open": "Open →",
@@ -107,7 +107,7 @@
     "title": "Visuals",
     "intro": "Illustrated course PDFs. Pick a volume and turn page by page; fullscreen when you want more space.",
     "tablistLabel": "PDF volumes",
-    "empty": "No PDFs listed yet. Add .pdf files under web/pdf-content/, then run dev or build again (manifest is generated in prebuild).",
+    "empty": "No visuals in the database catalog yet. Run npm run seed:content.",
     "landscapeHint": "These sheets work best in landscape. Rotating your phone usually gives a better view.",
     "landscapeButton": "Try locking landscape",
     "landscapeDismiss": "Dismiss tip",

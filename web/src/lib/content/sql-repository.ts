@@ -1,12 +1,11 @@
 /**
  * SQLite-backed ContentRepository (server-only).
  * Reads ContentBlock from content_blocks.payload_json (seeded from consolidado.json).
- * Falls back to JSON when the editorial tables are empty (unseeded DB).
+ * In CONTENT_SOURCE=db mode there is no JSON fallback — empty means unseeded.
  */
 import { getDb } from "@/server/db";
 import type { ContentBlock } from "@/lib/blocks-types";
 import type { ContentRepository } from "./content-repository";
-import { jsonContentRepository } from "./json-repository";
 
 function loadBlocksFromDb(): ContentBlock[] {
   const rows = getDb()
@@ -14,21 +13,16 @@ function loadBlocksFromDb(): ContentBlock[] {
       `SELECT payload_json FROM content_blocks ORDER BY sort_order ASC, id ASC`,
     )
     .all() as { payload_json: string }[];
-  return rows.map((r) => JSON.parse(r.payload_json) as ContentBlock);
+  return rows.map((r) => JSON.parse(String(r.payload_json)) as ContentBlock);
 }
 
 let cache: ContentBlock[] | null = null;
 
 function blocks(): ContentBlock[] {
   if (cache) return cache;
-  const fromDb = loadBlocksFromDb();
-  if (fromDb.length === 0) {
-    console.warn(
-      "[content] content_blocks empty — falling back to consolidado.json (run npm run seed:content)",
-    );
-    cache = jsonContentRepository.getBlocks();
-  } else {
-    cache = fromDb;
+  cache = loadBlocksFromDb();
+  if (cache.length === 0) {
+    console.warn("[content] content_blocks empty — run npm run seed:content");
   }
   return cache;
 }

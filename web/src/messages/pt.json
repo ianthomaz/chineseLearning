@@ -73,7 +73,7 @@
   },
   "home": {
     "kicker": "Chinês básico",
-    "title1": "Blocos do curso e materiais de referência alargados.",
+    "title1": "Blocos do curso e materiais de referência.",
     "title2": "Várias formas de estudar.",
     "blurb": "Revisão, vocabulário e gramática interligados.",
     "open": "Abrir →",
@@ -107,7 +107,7 @@
     "title": "Visuais",
     "intro": "PDFs ilustrados do curso. Escolhe o volume e folheia página a página; há ecrã inteiro quando quiseres.",
     "tablistLabel": "Volumes em PDF",
-    "empty": "Ainda não há PDFs listados. Coloca ficheiros .pdf em web/pdf-content/ e volta a correr o dev ou o build (o manifest é gerado no prebuild).",
+    "empty": "Ainda não há visuais no catálogo da base de dados. Corre npm run seed:content.",
     "landscapeHint": "Estes materiais funcionam melhor em horizontal. Roda o telemóvel para aproveitar a largura.",
     "landscapeButton": "Tentar bloquear em horizontal",
     "landscapeDismiss": "Fechar dica",

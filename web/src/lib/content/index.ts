@@ -7,7 +7,7 @@ let cached: ContentRepository | null = null;
 
 /**
  * Active content backend. Default is `db` (SQLite). Set CONTENT_SOURCE=json
- * to force consolidado.json (dev/fallback).
+ * only for static export / explicit JSON mode — db mode never falls back to JSON.
  *
  * Server-only: do not import from Client Components. Pass data via props.
  */

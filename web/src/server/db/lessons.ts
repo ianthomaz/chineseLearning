@@ -166,12 +166,33 @@ export function getLesson(id: number): LessonDetail | null {
     )
     .all(id) as LessonWord[];
 
-  return { ...lesson, materialRefs, words };
+  // Plain objects: node:sqlite returns null-prototype rows (breaks RSC → client props).
+  return {
+    id: Number(lesson.id),
+    lessonDate: String(lesson.lessonDate),
+    classId: String(lesson.classId),
+    classLabel: String(lesson.classLabel),
+    notes: lesson.notes == null ? null : String(lesson.notes),
+    createdAt: String(lesson.createdAt),
+    updatedAt: String(lesson.updatedAt),
+    materialRefs: materialRefs.map((r) => ({
+      book: r.book,
+      chapter: Number(r.chapter),
+    })),
+    words: words.map((w) => ({
+      hanzi: String(w.hanzi),
+      pinyin: w.pinyin == null ? null : String(w.pinyin),
+      translation: w.translation == null ? null : String(w.translation),
+      notes: w.notes == null ? null : String(w.notes),
+      theme: w.theme == null ? null : String(w.theme),
+      position: Number(w.position),
+    })),
+  };
 }
 
 export function listLessons(limit = 200): LessonSummary[] {
   const n = Math.min(Math.max(1, Math.floor(limit)), 1000);
-  return getDb()
+  const rows = getDb()
     .prepare(
       `SELECT l.id, l.lesson_date AS lessonDate, l.class_id AS classId, c.label AS classLabel,
               (SELECT COUNT(*) FROM lesson_vocab_items v WHERE v.lesson_id = l.id) AS wordCount,
@@ -181,6 +202,15 @@ export function listLessons(limit = 200): LessonSummary[] {
        LIMIT ?`,
     )
     .all(n) as LessonSummary[];
+  return rows.map((r) => ({
+    id: Number(r.id),
+    lessonDate: String(r.lessonDate),
+    classId: String(r.classId),
+    classLabel: String(r.classLabel),
+    wordCount: Number(r.wordCount),
+    createdAt: String(r.createdAt),
+    updatedAt: String(r.updatedAt),
+  }));
 }
 
 /** Deletes the lesson (refs/words via cascade). Never touches lexicon_global (docs/12 §6). */

@@ -23,20 +23,16 @@ function loadFromDb(): VocabPdfRow[] {
   const rows = getDb()
     .prepare(`SELECT payload_json FROM visual_pdf_entries ORDER BY sort_order ASC`)
     .all() as { payload_json: string }[];
-  return rows.map((r) => JSON.parse(r.payload_json) as VocabPdfRow);
+  // JSON.parse → plain objects (safe for Client Component props).
+  return rows.map((r) => JSON.parse(String(r.payload_json)) as VocabPdfRow);
 }
 
+/** Site Visuais catalog: DB when CONTENT_SOURCE=db (after seed:content). */
 export function getVisualPdfCatalog(): { pdfs: VocabPdfRow[] } {
   if (contentSource() === "json") return { pdfs: loadFromJson() };
   try {
-    const fromDb = loadFromDb();
-    // Empty is valid when there are no PDFs locally — still prefer DB over stale JSON only if seeded.
-    if (fromDb.length === 0) {
-      const fromJson = loadFromJson();
-      return { pdfs: fromJson.length > 0 ? fromJson : fromDb };
-    }
-    return { pdfs: fromDb };
+    return { pdfs: loadFromDb() };
   } catch {
-    return { pdfs: loadFromJson() };
+    return { pdfs: [] };
   }
 }

@@ -108,6 +108,10 @@ function seedEditorial(db) {
     throw new Error(`Missing ${consolidadoPath} — run: node scripts/parse-consolidado.mjs`);
   }
   const { blocks } = readJson(consolidadoPath);
+  if (!Array.isArray(blocks) || blocks.length === 0) {
+    console.warn("[seed] consolidado.json has 0 blocks — skipping editorial (DB preserved)");
+    return 0;
+  }
   clearEditorial(db);
 
   const insertBlock = db.prepare(
@@ -201,21 +205,31 @@ function seedPhrases(db) {
     throw new Error(`Missing ${path} — run: npm run prebuild:phrase-game`);
   }
   const bank = readJson(path);
+  const phrases = bank.phrases ?? [];
+  if (phrases.length === 0) {
+    console.warn("[seed] phrases.json empty — skipping phrase_game_phrases (DB preserved)");
+    return 0;
+  }
   db.exec("DELETE FROM phrase_game_phrases");
   const insert = db.prepare(
     `INSERT INTO phrase_game_phrases (id, nivel, tier, payload_json) VALUES (?, ?, ?, ?)`,
   );
   db.exec("BEGIN");
-  for (const p of bank.phrases ?? []) {
+  for (const p of phrases) {
     insert.run(p.id, p.nivel, p.tier, JSON.stringify(p));
   }
   db.exec("COMMIT");
-  return (bank.phrases ?? []).length;
+  return phrases.length;
 }
 
 function seedQuiz(db) {
   const path = join(WEB_ROOT, "src/data/gamification/hsk1-quiz-bank.json");
   const bank = readJson(path);
+  const questions = bank.questions ?? [];
+  if (questions.length === 0) {
+    console.warn("[seed] quiz bank empty — skipping quiz tables (DB preserved)");
+    return 0;
+  }
   db.exec("DELETE FROM quiz_questions; DELETE FROM quiz_bank_meta;");
   db.prepare(`INSERT INTO quiz_bank_meta (id, payload_json) VALUES (1, ?)`).run(
     JSON.stringify(bank),
@@ -224,17 +238,21 @@ function seedQuiz(db) {
     `INSERT INTO quiz_questions (id, type, difficulty, block, payload_json) VALUES (?, ?, ?, ?, ?)`,
   );
   db.exec("BEGIN");
-  for (const q of bank.questions ?? []) {
+  for (const q of questions) {
     insert.run(q.id, q.type, q.difficulty ?? 1, q.block ?? null, JSON.stringify(q));
   }
   db.exec("COMMIT");
-  return (bank.questions ?? []).length;
+  return questions.length;
 }
 
 function seedDialogues(db) {
   const main = readJson(join(WEB_ROOT, "src/data/global-dialogues.json"));
   const extra = readJson(join(WEB_ROOT, "src/data/global-dialogues-extra.json"));
   const sections = [...(main.sections ?? []), ...(extra.sections ?? [])];
+  if (sections.length === 0) {
+    console.warn("[seed] dialogue JSON empty — skipping global_dialogue_sections (DB preserved)");
+    return 0;
+  }
   db.exec("DELETE FROM global_dialogue_sections");
   const insert = db.prepare(
     `INSERT INTO global_dialogue_sections (id, category_id, sort_order, payload_json) VALUES (?, ?, ?, ?)`,
@@ -257,12 +275,19 @@ function seedVisuals(db) {
   const descriptions = readJson(
     join(WEB_ROOT, "src/data/vocabulary-pdf-descriptions.json"),
   );
+  const pdfs = raw.pdfs ?? [];
+  if (pdfs.length === 0) {
+    console.warn(
+      "[seed] vocabulary-pdf-downloads.json empty — skipping visual_pdf_entries (DB preserved)",
+    );
+    return 0;
+  }
   db.exec("DELETE FROM visual_pdf_entries");
   const insert = db.prepare(
     `INSERT INTO visual_pdf_entries (id, file, sort_order, payload_json) VALUES (?, ?, ?, ?)`,
   );
   db.exec("BEGIN");
-  (raw.pdfs ?? []).forEach((row, i) => {
+  pdfs.forEach((row, i) => {
     const d = descriptions[row.file];
     const merged = d
       ? { ...row, desc_pt: d.pt, desc_en: d.en, desc_es: d.es }
@@ -270,11 +295,23 @@ function seedVisuals(db) {
     insert.run(row.id, row.file, i, JSON.stringify(merged));
   });
   db.exec("COMMIT");
-  return (raw.pdfs ?? []).length;
+  return pdfs.length;
 }
 
 function seedBooks(db) {
   const curatedRoot = join(REPO_ROOT, "OrganizeVocabulary_books/curated");
+  let lessonFiles = 0;
+  for (const bookId of ["primary-up", "primary-down"]) {
+    const dir = join(curatedRoot, bookId);
+    if (!existsSync(dir)) continue;
+    lessonFiles += readdirSync(dir).filter((f) => /^lesson-\d+\.json$/.test(f)).length;
+  }
+  if (lessonFiles === 0) {
+    console.warn(
+      `[seed] no lesson-*.json under ${curatedRoot} — skipping book_vocab_entries (DB preserved)`,
+    );
+    return 0;
+  }
   db.exec("DELETE FROM book_vocab_entries");
   const insert = db.prepare(
     `INSERT INTO book_vocab_entries

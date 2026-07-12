@@ -6,10 +6,16 @@ export type ClassRow = {
   label: string;
 };
 
+/** node:sqlite rows use null-prototype objects; Client Components need plain objects. */
+function plainClass(row: ClassRow): ClassRow {
+  return { id: row.id, label: row.label };
+}
+
 export function listClasses(): ClassRow[] {
-  return getDb()
+  const rows = getDb()
     .prepare(`SELECT id, label FROM classes WHERE active = 1 ORDER BY sort_order, id`)
     .all() as ClassRow[];
+  return rows.map(plainClass);
 }
 
 export function classExists(id: string): boolean {

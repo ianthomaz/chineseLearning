@@ -23,17 +23,17 @@ function loadFromDb(): GlobalDialogueSection[] {
     )
     .all() as { payload_json: string }[];
   return rows.map((r) =>
-    mapDialogueSection(JSON.parse(r.payload_json) as RawDialogueSection),
+    mapDialogueSection(JSON.parse(String(r.payload_json)) as RawDialogueSection),
   );
 }
 
+/** Global dialogues: SQLite when CONTENT_SOURCE=db (no JSON fallback). */
 export function getGlobalDialogueSections(): GlobalDialogueSection[] {
   if (contentSource() === "json") return loadFromJson();
   try {
-    const fromDb = loadFromDb();
-    if (fromDb.length === 0) return loadFromJson();
-    return fromDb;
-  } catch {
-    return loadFromJson();
+    return loadFromDb();
+  } catch (err) {
+    console.warn("[dialogues] DB read failed — run npm run seed:content", err);
+    return [];
   }
 }

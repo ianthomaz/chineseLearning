@@ -107,7 +107,7 @@
     "title": "Visuales",
     "intro": "PDFs ilustrados del curso. Elige el volumen y pasa página a página; pantalla completa cuando quieras.",
     "tablistLabel": "Volúmenes en PDF",
-    "empty": "Aún no hay PDFs en la lista. Añade archivos .pdf en web/pdf-content/ y vuelve a ejecutar dev o build (el manifiesto se genera en prebuild).",
+    "empty": "Aún no hay visuales en el catálogo de la base de datos. Ejecuta npm run seed:content.",
     "landscapeHint": "Estos materiales se ven mejor en horizontal. Gira el móvil para aprovechar el ancho.",
     "landscapeButton": "Intentar bloquear en horizontal",
     "landscapeDismiss": "Cerrar aviso",
