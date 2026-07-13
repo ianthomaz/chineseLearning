@@ -34,14 +34,18 @@ if [[ ! -f "$DEPLOY_ENV_FILE" ]]; then
   exit 1
 fi
 
-echo "→ rsync sources → ${REMOTE}:${REMOTE_DIR}/"
+echo "→ rsync sources → ${REMOTE}:${REMOTE_DIR}/ (preserva SQLite remoto)"
 # pdf-content/*.pdf is gitignored locally but present on your machine → uploaded here.
 # public/downloads/*.pdf is excluded (copied on remote from pdf-content via prebuild:pdf before next build in build:server).
+# NEVER sync data/ or *.sqlite — prod holds users/lessons/events; --delete would
+# otherwise clobber the remote DB with the local dev one (see deploy-prod.sh).
 rsync -avz --delete -e ssh \
   --exclude node_modules \
   --exclude .next \
   --exclude out \
   --exclude .env.local \
+  --exclude data \
+  --exclude '*.sqlite' \
   --exclude 'public/downloads/*.pdf' \
   ./ "${REMOTE}:${REMOTE_DIR}/"
 
