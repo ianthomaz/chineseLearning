@@ -281,6 +281,55 @@ CREATE TABLE IF NOT EXISTS book_vocab_entries (
 );
 CREATE INDEX IF NOT EXISTS idx_bve_book_lesson ON book_vocab_entries(book_id, lesson);
 CREATE INDEX IF NOT EXISTS idx_bve_hanzi ON book_vocab_entries(hanzi);
+
+-- Context flashcard decks (/praticar). SQL is source of truth.
+CREATE TABLE IF NOT EXISTS context_decks (
+  id          TEXT PRIMARY KEY,
+  title       TEXT NOT NULL,
+  description TEXT NOT NULL DEFAULT '',
+  sort_order  INTEGER NOT NULL DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS context_deck_cards (
+  id               INTEGER PRIMARY KEY AUTOINCREMENT,
+  deck_id          TEXT NOT NULL REFERENCES context_decks(id) ON DELETE CASCADE,
+  sort_order       INTEGER NOT NULL DEFAULT 0,
+  word             TEXT NOT NULL,
+  pinyin           TEXT NOT NULL DEFAULT '',
+  meaning          TEXT NOT NULL DEFAULT '',
+  section          TEXT,
+  pattern          TEXT,
+  pattern_label    TEXT,
+  sentence         TEXT,
+  sentence_pinyin  TEXT,
+  sentence_meaning TEXT,
+  related          TEXT,
+  patterns         TEXT,
+  notes            TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_cdc_deck ON context_deck_cards(deck_id);
+
+-- Shared lexicon for APP_hanziMemorize (and future API).
+CREATE TABLE IF NOT EXISTS lexico_rotation_categories (
+  id               TEXT PRIMARY KEY,
+  title            TEXT NOT NULL,
+  source_block_ids TEXT NOT NULL DEFAULT '[]',
+  sort_order       INTEGER NOT NULL DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS lexico_entries (
+  id                   TEXT PRIMARY KEY,
+  hanzi                TEXT NOT NULL,
+  pinyin               TEXT NOT NULL DEFAULT '',
+  translation          TEXT NOT NULL DEFAULT '',
+  hanzi_length         INTEGER NOT NULL,
+  source_block_id      INTEGER NOT NULL,
+  source_block_title   TEXT NOT NULL DEFAULT '',
+  rotation_category_id TEXT NOT NULL REFERENCES lexico_rotation_categories(id) ON DELETE CASCADE,
+  sort_order           INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS idx_lexico_hanzi ON lexico_entries(hanzi);
+CREATE INDEX IF NOT EXISTS idx_lexico_rotation ON lexico_entries(rotation_category_id);
 `;
 
 /** One-time: copy legacy `players` rows into `users`, then expose `players` as a view. */

@@ -1,0 +1,12 @@
+{
+  "songs": [
+    {
+      "file": "letras/guohuo.json",
+      "titleHanzi": "過火"
+    },
+    {
+      "file": "letras/yueliang-daibiao-wode-xin.json",
+      "titleHanzi": "月亮代表我的心"
+    }
+  ]
+}

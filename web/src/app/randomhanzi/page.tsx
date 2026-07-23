@@ -1,23 +1,6 @@
-import type { Metadata } from "next";
-import { Suspense } from "react";
-import { LoginGate } from "@/components/AuthGate";
-import { RandomHanziAutostartGate } from "@/components/RandomHanziAutostartGate";
-import { getBlocks } from "@/lib/blocks";
+import { redirect } from "next/navigation";
 
-
-export const metadata: Metadata = {
-  title: "Escrita hanzi",
-  description:
-    "Sessão de escrita com caracteres sorteados a partir do vocabulário do curso.",
-};
-
-
-export default function RandomHanziPage() {
-  return (
-    <Suspense fallback={null}>
-      <LoginGate>
-        <RandomHanziAutostartGate blocks={getBlocks()} />
-      </LoginGate>
-    </Suspense>
-  );
+/** Legacy URL — hub vive em /praticar. */
+export default function RandomHanziRedirectPage() {
+  redirect("/praticar");
 }

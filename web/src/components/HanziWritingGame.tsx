@@ -302,17 +302,48 @@ function InlineHanziWriter({
 // ---------------------------------------------------------------------------
 
 export type HanziWritingGameProps = {
-  blocks: ContentBlock[];
-  /** Tighter top margin when embedded in `/randomhanzi` instead of a standalone shell. */
+  /** Lesson / study path — ContentBlocks with vocabulary. */
+  blocks?: ContentBlock[];
+  /**
+   * Practice library path (SQL lexico_*). Preferred for /praticar avulso —
+   * same source as the app pack. When set, used instead of `blocks` for sessions.
+   */
+  pools?: Array<{
+    id: string;
+    title: string;
+    /** Numeric id used only for UI grouping (sortOrder). */
+    sortOrder: number;
+    vocabulary: VocabRow[];
+  }>;
+  /** Tighter top margin when embedded in `/praticar` instead of a standalone shell. */
   embeddedInPage?: boolean;
   /** When true (from `?autostart=1`), start a session once after mount on the practice page. */
   autoStartSession?: boolean;
-  /** Practice EVERY word of the given blocks in order (lesson mode) instead of sampling. */
+  /** Practice EVERY word of the given blocks/pools in order instead of sampling. */
   useAllWords?: boolean;
 };
 
+function poolsToSessionBlocks(
+  pools: NonNullable<HanziWritingGameProps["pools"]>,
+): ContentBlock[] {
+  return pools.map((p) => ({
+    id: p.sortOrder + 1,
+    title: p.title,
+    narrative: "",
+    structures: [],
+    structureGlosses: { pt: [], en: [], es: [] },
+    reviewStandalonePhrases: { pt: [], en: [], es: [] },
+    reviewMiniDialogues: [],
+    notes: [],
+    differences: [],
+    priorities: [],
+    vocabulary: p.vocabulary,
+  }));
+}
+
 export function HanziWritingGame({
   blocks,
+  pools,
   embeddedInPage = false,
   autoStartSession = false,
   useAllWords = false,
@@ -334,6 +365,11 @@ export function HanziWritingGame({
   const [startError, setStartError] = useState<string | null>(null);
   const autostartConsumedRef = useRef(false);
 
+  const sessionBlocks = useMemo(() => {
+    if (pools && pools.length > 0) return poolsToSessionBlocks(pools);
+    return blocks ?? [];
+  }, [pools, blocks]);
+
   const blockTitles = useMemo(() => {
     const seen = new Set<number>();
     const titles: string[] = [];
@@ -347,7 +383,9 @@ export function HanziWritingGame({
   }, [cards]);
 
   const startSession = useCallback((): boolean => {
-    const session = useAllWords ? buildFullSession(blocks) : buildSession(blocks);
+    const session = useAllWords
+      ? buildFullSession(sessionBlocks)
+      : buildSession(sessionBlocks);
     if (!session.ok) {
       setStartError("Nenhum hanzi válido para treinar nesta aula.");
       return false;
@@ -362,7 +400,7 @@ export function HanziWritingGame({
       label: "randomhanzi",
     });
     return true;
-  }, [blocks, useAllWords]);
+  }, [sessionBlocks, useAllWords]);
 
   useEffect(() => {
     if (!autoStartSession) return;
@@ -373,7 +411,7 @@ export function HanziWritingGame({
       autostartConsumedRef.current = false;
       return;
     }
-    router.replace("/randomhanzi", { scroll: false });
+    router.replace("/praticar", { scroll: false });
   }, [autoStartSession, router, startSession]);
 
   const goNext = useCallback(() => {

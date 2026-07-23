@@ -1,35 +1,54 @@
 #!/usr/bin/env bash
 set -euo pipefail
 #
-# Orquestra verificação de ambiente + ingest opcional + deploy local OU preparação para produção.
+# Orchestrates env checks + optional ingest + local deploy OR production prep.
 #
-# Uso:
-#   Portas, URLs, deploy local: docs/04_operacao_local.md (única fonte)
+# =============================================================================
+# AGENT / WHOEVER RUNS THIS — READ BEFORE --prod --upload
+# =============================================================================
+# itcsVM3 is FRAGILE (very little RAM). RESPECT THE SERVER.
+#
+# The user ALREADY WARNED: build is LOCAL; on the remote do NOT invent “one more
+# heavy step”. Stupid proactivity (full remote npm ci + seed + SSH retries when
+# the VM already has node_modules, or anything that can OOM) MUST NEVER be done
+# without an explicit, risk-aware order from the user.
+#
+# Rules:
+#   1. Do what the user ordered — no unsolicited deploy “improvements”.
+#   2. --prod = prepare on the Mac. --upload = only when THEY ask to upload.
+#   3. Remote: NEVER next build. Prefer the MINIMAL path (rsync + server.env;
+#      DEPLOY_PROD_SKIP_NPM_CI=1 if remote node_modules is enough; seed only if
+#      they explicitly set DEPLOY_PROD_SEED_CONTENT=1).
+#   4. If the VM is slow/unstable: STOP. Do not hammer npm ci / SSH in a loop.
+# =============================================================================
+#
+# Usage:
+#   Ports, URLs, local deploy: docs/04_operacao_local.md (source of truth)
 #   ./start.sh                      # default: hot dev (34827)
-#   ./start.sh --dev                # igual ao default
-#   ./start.sh --local              # deploy local Node (34902) + checks LLM
-#   ./start.sh --webplace           # estático (34901)
-#   ./start.sh --prepare            # valida web/deploy/server.env + health LLM + build:server (NÃO inicia servidor)
-#   ./start.sh --prod               # preparar: sync env + validar + build local (sem SSH)
-#   ./start.sh --prod --upload      # enviar ao itcsVM3 (quando TU pedires)
+#   ./start.sh --dev                # same as default
+#   ./start.sh --local              # local Node deploy (34902) + LLM checks
+#   ./start.sh --webplace           # static (34901)
+#   ./start.sh --prepare            # validate deploy/server.env + LLM health + build:server (does NOT start server)
+#   ./start.sh --prod               # prepare: sync env + validate + local build (no SSH)
+#   ./start.sh --prod --upload      # push to itcsVM3 (only when YOU ask)
 #
-# Scripts prontos; o agente prepara — não executa upload/deploy sem ordem explícita.
-#   ./start.sh --local --ingest     # idem + fila de ingest RAG antes de subir o site
+# Scripts are ready; the agent prepares — does not upload/deploy without an explicit order.
+#   ./start.sh --local --ingest     # same + RAG ingest queue before bringing the site up
 #   ./start.sh --local --port=34903
-#   ./start.sh --local --skip-build # reutiliza .next (rápido; cuidado com código desatualizado)
-#   ./start.sh --local --no-kill-port  # falha se a porta estiver ocupada (não mata processo)
+#   ./start.sh --local --skip-build # reuse .next (fast; watch for stale code)
+#   ./start.sh --local --no-kill-port  # fail if port busy (do not kill process)
 #
-# Servidor partilhado / produção no mesmo host:
-#   export START_NO_KILL_PORT=1     # mesmo efeito que --no-kill-port em --local / --webplace
-#   (nunca matar portas em máquinas com nginx, DB, outros Node, etc.)
+# Shared host / production on same machine:
+#   export START_NO_KILL_PORT=1     # same as --no-kill-port for --local / --webplace
+#   (never kill ports on machines with nginx, DB, other Node, etc.)
 #
-# Saltar smoke lento do tutor (POST /edu/chat, até ~120s):
+# Skip slow tutor smoke (POST /edu/chat, up to ~120s):
 #   export START_SKIP_EDU_SMOKE=1
 #
-# Variáveis: DEPLOY_LOCAL_DIR (export estático fica em \$DEPLOY_LOCAL_DIR/aulaChines/; ver modo --webplace)
+# Vars: DEPLOY_LOCAL_DIR (static export under \$DEPLOY_LOCAL_DIR/aulaChines/; see --webplace)
 #
-# LLM: --local (default) continua a chamar a API (health, smoke, ingest com --ingest) via LLM_API_URL em .env/.env.local.
-# Isso é integração / “está operacional?”, não é “porta da LLM no contrato deste repo” — a URL é teu env (ver connectLLM/).
+# LLM: --local (default) still calls the API (health, smoke, ingest with --ingest) via LLM_API_URL in .env/.env.local.
+# That is integration / “is it up?”, not “LLM port contract for this repo” — URL comes from your env (see connectLLM/).
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WEB_DIR="$REPO_ROOT/web"
@@ -171,6 +190,10 @@ validate_prod_env() {
     echo "web/deploy/server.env incompleto — falta: ${missing[*]}" >&2
     echo "  Corre: node scripts/sync-env-from-credentials.mjs" >&2
     exit 1
+  fi
+  if [[ -z "${APP_LIBRARY_TOKEN:-}" ]]; then
+    echo "AVISO: APP_LIBRARY_TOKEN vazio — API do app (/api/app/content/*) devolve 503." >&2
+    echo "  credentials.json → hanzi_app.APP_LIBRARY_TOKEN + sync-env." >&2
   fi
 }
 
@@ -408,18 +431,24 @@ if [[ "$MODE" == "prod" ]]; then
   echo ""
   echo "  [ prod ] Preparação concluída. Nada foi enviado ao servidor."
   echo "  Env:        web/deploy/server.env (gitignored)"
-  echo "  Build:      web/.next/ (local)"
+  echo "  Build:      web/.next/ (local — VM não tem RAM para next build)"
+  echo "  Pack app:   web/data/app-library/ (sobe no upload; sqlite remoto não)"
   echo "  Alvo:       ${DEPLOY_PROD_HOST}:${DEPLOY_PROD_DIR}"
   echo ""
   echo "  Quando pedires upload (SSH + rsync + server.env):"
   echo "    ./start.sh --prod --upload"
   echo "    ./start.sh --prod --upload --restart   # + pm2 reload"
+  echo "    DEPLOY_PROD_SEED_CONTENT=1 ./start.sh --prod --upload   # seed fill-empty remoto"
   echo "    cd web && npm run deploy:prod            # só upload (requer .next + server.env prontos)"
   echo ""
   echo "  Nginx no servidor: proxy_pass /aulaChines/ → 127.0.0.1:\${PORT} (ver docs/06_deploy.md)."
   echo ""
 
   if [[ "$PROD_UPLOAD" == "1" ]]; then
+    echo ""
+    echo "!!! itcsVM3 is fragile — MINIMAL path only; no unsolicited npm ci/seed !!!"
+    echo "    Prefer DEPLOY_PROD_SKIP_NPM_CI=1 if remote node_modules is already OK."
+    echo ""
     if [[ "$PROD_RESTART" == "1" ]]; then
       export DEPLOY_PROD_RESTART=1
     fi

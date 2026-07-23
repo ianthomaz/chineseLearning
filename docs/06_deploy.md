@@ -14,33 +14,37 @@ Em máquina partilhada (nginx, outros Node, bases de dados), evitar matar portas
 
 **`./start.sh --prepare`** — lê **`web/.env`** + **`web/deploy/server.env`**, exige **`LLM_API_TOKEN`**, faz health da API + (opcional) verificação do projeto RAG, corre **`npm run build:server`** em `web/`, depois **teste final** com **`POST /edu/chat`** (saltar com **`START_SKIP_EDU_SMOKE=1`**), e **termina** (não inicia Node, não liberta portas).
 
-## Preparar produção (itcsVM3 — VM pequena)
+## Preparar produção (itcsVM3 — VM pequena / pouca RAM)
 
-Pipeline **pronto** em scripts — corre **tu** quando o servidor estiver OK (agente não executa upload por defeito).
+**Regra de ouro:** `next build` **só no Mac**. O remoto **nunca** corre `next build` — só `npm ci --omit=dev` + `pm2`.
 
-| # | Comando | Onde |
-|---|---------|------|
-| 1 | `node scripts/sync-env-from-credentials.mjs` | Mac — monta `web/deploy/server.env` |
-| 2 | `./start.sh --prod` | Mac — valida env + LLM + `build:server` local |
-| 3 | `./start.sh --prod --upload` | Mac → itcsVM3 — rsync + `server.env` + `npm ci --omit=dev` |
-| 4 | `cd web && npm run remote:handshake` | valida LLM **a partir da VM** |
+Pipeline (corre **tu** quando autorizares upload):
 
-Passo 1 incluído no `--prod` (salta com `--skip-env-sync`). Passo 3 alternativo: `cd web && npm run deploy:prod`.
+| # | Comando | Onde | O que faz |
+|---|---------|------|-----------|
+| 1 | `node scripts/sync-env-from-credentials.mjs` | Mac | `server.env` + `.env.local` (inclui `APP_LIBRARY_TOKEN`) |
+| 2 | `./start.sh --prod` | Mac | valida env + LLM + **`build:server` local** (seed + app-library + `.next`) |
+| 3 | `./start.sh --prod --upload` | Mac → itcsVM3 | rsync (`.next` + código + `data/app-library/`) + `server.env` + `npm ci --omit=dev` |
+| 4 | `cd web && npm run remote:handshake` | Mac→VM | health LLM **a partir da VM** |
 
-**Remoto nunca corre `next build`** — só instala deps de runtime.
+Opcionais no passo 3: `--restart` (pm2 reload), `DEPLOY_PROD_SEED_CONTENT=1` (seed fill-empty no remoto — leve; **não** é `next build`).
 
-**SQLite em prod:** o rsync **exclui** `data/` e `*.sqlite` — users, events e aulas no servidor **não** são sobrescritos pelo Mac. Conteúdo editorial (blocos, frases, livros) actualiza-se no remoto com:
+Passo 1 incluído no `--prod` (salta com `--skip-env-sync`). Upload só: `cd web && npm run deploy:prod`.
 
-```bash
-ssh itcsVM3 'cd /home/opc/projetos/chineseLearning-app && npm run seed:content'
-# ou no upload: DEPLOY_PROD_SEED_CONTENT=1 ./start.sh --prod --upload
-```
+### O que sobe / o que fica no servidor
 
-(`seed:content` só reescreve tabelas editoriais; não apaga `users` / `lessons` / `events`.)
+| Item | Comportamento |
+|------|----------------|
+| `.next/` | Build **local** → rsync |
+| `data/app-library/` | Pack da API do app — build local → rsync |
+| `*.sqlite` / DB de users/aulas | **Não** sobe — preservado no servidor |
+| `node_modules` | Instalado no remoto com `npm ci --omit=dev` (sem deps de build) |
+| `public/ktv/` | Sobe (Lyric Cards) |
+| Conteúdo editorial vazio | `DEPLOY_PROD_SEED_CONTENT=1` ou `ssh … npm run seed:content` (fill-empty) |
 
-Overrides: `DEPLOY_PROD_HOST=itcsVM3`, `DEPLOY_PROD_DIR=/home/opc/projetos/chineseLearning-app`, `DEPLOY_PROD_RESTART=1` (pm2 reload), `DEPLOY_PROD_SEED_CONTENT=1`.
+Overrides: `DEPLOY_PROD_HOST`, `DEPLOY_PROD_DIR`, `DEPLOY_PROD_RESTART=1`, `DEPLOY_PROD_SEED_CONTENT=1`, `DEPLOY_PROD_SKIP_NPM_CI=1` (só código/env, sem reinstalar deps).
 
-Legado itcsVM1: **`npm run deploy:node`** (build no remoto) — não usar em itcsVM3.
+**Legado itcsVM1:** `npm run deploy:node` (build **no remoto**) — **não** usar em itcsVM3.
 
 ### itcsVM3: nginx no host (partilhado)
 

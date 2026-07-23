@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "titleHanzi": "月亮代表我的心",
+    "titlePinyin": "yuè liang dài biǎo wǒ de xīn",
+    "titleEn": "The Moon Represents My Heart"
+  },
+  "lines": [
+    {
+      "section": "Verso 1",
+      "hanzi": "你问我爱你有多深",
+      "pinyin": "nǐ wèn wǒ ài nǐ yǒu duō shēn",
+      "words": [
+        { "h": "你", "p": "nǐ", "g": "você" },
+        { "h": "问", "p": "wèn", "g": "pergunta" },
+        { "h": "我", "p": "wǒ", "g": "eu" },
+        { "h": "爱", "p": "ài", "g": "amo" },
+        { "h": "你", "p": "nǐ", "g": "você" },
+        { "h": "有", "p": "yǒu", "g": "tem" },
+        { "h": "多深", "p": "duō shēn", "g": "quão profundo" }
+      ]
+    },
+    {
+      "section": "Verso 1",
+      "hanzi": "我爱你有几分",
+      "pinyin": "wǒ ài nǐ yǒu jǐ fēn",
+      "words": [
+        { "h": "我", "p": "wǒ", "g": "eu" },
+        { "h": "爱", "p": "ài", "g": "amo" },
+        { "h": "你", "p": "nǐ", "g": "você" },
+        { "h": "有", "p": "yǒu", "g": "tem" },
+        { "h": "几分", "p": "jǐ fēn", "g": "quanto / quantas partes" }
+      ]
+    },
+    {
+      "section": "Verso 1",
+      "hanzi": "我的情也真",
+      "pinyin": "wǒ de qíng yě zhēn",
+      "words": [
+        { "h": "我的", "p": "wǒ de", "g": "meu" },
+        { "h": "情", "p": "qíng", "g": "sentimento" },
+        { "h": "也", "p": "yě", "g": "também" },
+        { "h": "真", "p": "zhēn", "g": "verdadeiro" }
+      ]
+    },
+    {
+      "section": "Verso 1",
+      "hanzi": "我的爱也真",
+      "pinyin": "wǒ de ài yě zhēn",
+      "words": [
+        { "h": "我的", "p": "wǒ de", "g": "meu" },
+        { "h": "爱", "p": "ài", "g": "amor" },
+        { "h": "也", "p": "yě", "g": "também" },
+        { "h": "真", "p": "zhēn", "g": "verdadeiro" }
+      ]
+    },
+    {
+      "section": "Verso 1",
+      "hanzi": "月亮代表我的心",
+      "pinyin": "yuè liang dài biǎo wǒ de xīn",
+      "words": [
+        { "h": "月亮", "p": "yuè liang", "g": "lua" },
+        { "h": "代表", "p": "dài biǎo", "g": "representa" },
+        { "h": "我的", "p": "wǒ de", "g": "meu" },
+        { "h": "心", "p": "xīn", "g": "coração" }
+      ]
+    },
+    {
+      "section": "Verso 2",
+      "hanzi": "你问我爱你有多深",
+      "pinyin": "nǐ wèn wǒ ài nǐ yǒu duō shēn",
+      "words": [
+        { "h": "你", "p": "nǐ", "g": "você" },
+        { "h": "问", "p": "wèn", "g": "pergunta" },
+        { "h": "我", "p": "wǒ", "g": "eu" },
+        { "h": "爱", "p": "ài", "g": "amo" },
+        { "h": "你", "p": "nǐ", "g": "você" },
+        { "h": "有", "p": "yǒu", "g": "tem" },
+        { "h": "多深", "p": "duō shēn", "g": "quão profundo" }
+      ]
+    },
+    {
+      "section": "Verso 2",
+      "hanzi": "我爱你有几分",
+      "pinyin": "wǒ ài nǐ yǒu jǐ fēn",
+      "words": [
+        { "h": "我", "p": "wǒ", "g": "eu" },
+        { "h": "爱", "p": "ài", "g": "amo" },
+        { "h": "你", "p": "nǐ", "g": "você" },
+        { "h": "有", "p": "yǒu", "g": "tem" },
+        { "h": "几分", "p": "jǐ fēn", "g": "quanto / quantas partes" }
+      ]
+    },
+    {
+      "section": "Verso 2",
+      "hanzi": "我的情不移",
+      "pinyin": "wǒ de qíng bù yí",
+      "words": [
+        { "h": "我的", "p": "wǒ de", "g": "meu" },
+        { "h": "情", "p": "qíng", "g": "sentimento" },
+        { "h": "不", "p": "bù", "g": "não" },
+        { "h": "移", "p": "yí", "g": "se move" }
+      ]
+    },
+    {
+      "section": "Verso 2",
+      "hanzi": "我的爱不变",
+      "pinyin": "wǒ de ài bù biàn",
+      "words": [
+        { "h": "我的", "p": "wǒ de", "g": "meu" },
+        { "h": "爱", "p": "ài", "g": "amor" },
+        { "h": "不", "p": "bù", "g": "não" },
+        { "h": "变", "p": "biàn", "g": "muda" }
+      ]
+    },
+    {
+      "section": "Verso 2",
+      "hanzi": "月亮代表我的心",
+      "pinyin": "yuè liang dài biǎo wǒ de xīn",
+      "words": [
+        { "h": "月亮", "p": "yuè liang", "g": "lua" },
+        { "h": "代表", "p": "dài biǎo", "g": "representa" },
+        { "h": "我的", "p": "wǒ de", "g": "meu" },
+        { "h": "心", "p": "xīn", "g": "coração" }
+      ]
+    },
+    {
+      "section": "Refrão",
+      "hanzi": "轻轻的一个吻",
+      "pinyin": "qīng qīng de yī gè wěn",
+      "words": [
+        { "h": "轻轻的", "p": "qīng qīng de", "g": "de leve" },
+        { "h": "一个", "p": "yī gè", "g": "um" },
+        { "h": "吻", "p": "wěn", "g": "beijo" }
+      ]
+    },
+    {
+      "section": "Refrão",
+      "hanzi": "已经打动我的心",
+      "pinyin": "yǐ jīng dǎ dòng wǒ de xīn",
+      "words": [
+        { "h": "已经", "p": "yǐ jīng", "g": "já" },
+        { "h": "打动", "p": "dǎ dòng", "g": "tocou / comoveu" },
+        { "h": "我的", "p": "wǒ de", "g": "meu" },
+        { "h": "心", "p": "xīn", "g": "coração" }
+      ]
+    },
+    {
+      "section": "Refrão",
+      "hanzi": "深深的一段情",
+      "pinyin": "shēn shēn de yī duàn qíng",
+      "words": [
+        { "h": "深深的", "p": "shēn shēn de", "g": "profundo" },
+        { "h": "一段", "p": "yī duàn", "g": "um trecho" },
+        { "h": "情", "p": "qíng", "g": "sentimento" }
+      ]
+    },
+    {
+      "section": "Refrão",
+      "hanzi": "叫我思念到如今",
+      "pinyin": "jiào wǒ sī niàn dào rú jīn",
+      "words": [
+        { "h": "叫", "p": "jiào", "g": "faz" },
+        { "h": "我", "p": "wǒ", "g": "eu" },
+        { "h": "思念", "p": "sī niàn", "g": "sentir saudade" },
+        { "h": "到", "p": "dào", "g": "até" },
+        { "h": "如今", "p": "rú jīn", "g": "agora" }
+      ]
+    },
+    {
+      "section": "Verso 3",
+      "hanzi": "你问我爱你有多深",
+      "pinyin": "nǐ wèn wǒ ài nǐ yǒu duō shēn",
+      "words": [
+        { "h": "你", "p": "nǐ", "g": "você" },
+        { "h": "问", "p": "wèn", "g": "pergunta" },
+        { "h": "我", "p": "wǒ", "g": "eu" },
+        { "h": "爱", "p": "ài", "g": "amo" },
+        { "h": "你", "p": "nǐ", "g": "você" },
+        { "h": "有", "p": "yǒu", "g": "tem" },
+        { "h": "多深", "p": "duō shēn", "g": "quão profundo" }
+      ]
+    },
+    {
+      "section": "Verso 3",
+      "hanzi": "我爱你有几分",
+      "pinyin": "wǒ ài nǐ yǒu jǐ fēn",
+      "words": [
+        { "h": "我", "p": "wǒ", "g": "eu" },
+        { "h": "爱", "p": "ài", "g": "amo" },
+        { "h": "你", "p": "nǐ", "g": "você" },
+        { "h": "有", "p": "yǒu", "g": "tem" },
+        { "h": "几分", "p": "jǐ fēn", "g": "quanto / quantas partes" }
+      ]
+    },
+    {
+      "section": "Verso 3",
+      "hanzi": "你去想一想",
+      "pinyin": "nǐ qù xiǎng yī xiǎng",
+      "words": [
+        { "h": "你", "p": "nǐ", "g": "você" },
+        { "h": "去", "p": "qù", "g": "vá" },
+        { "h": "想一想", "p": "xiǎng yī xiǎng", "g": "pense um pouco" }
+      ]
+    },
+    {
+      "section": "Verso 3",
+      "hanzi": "你去看一看",
+      "pinyin": "nǐ qù kàn yī kàn",
+      "words": [
+        { "h": "你", "p": "nǐ", "g": "você" },
+        { "h": "去", "p": "qù", "g": "vá" },
+        { "h": "看一看", "p": "kàn yī kàn", "g": "olhe um pouco" }
+      ]
+    },
+    {
+      "section": "Verso 3",
+      "hanzi": "月亮代表我的心",
+      "pinyin": "yuè liang dài biǎo wǒ de xīn",
+      "words": [
+        { "h": "月亮", "p": "yuè liang", "g": "lua" },
+        { "h": "代表", "p": "dài biǎo", "g": "representa" },
+        { "h": "我的", "p": "wǒ de", "g": "meu" },
+        { "h": "心", "p": "xīn", "g": "coração" }
+      ]
+    }
+  ]
+}

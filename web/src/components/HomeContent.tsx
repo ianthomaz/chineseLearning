@@ -13,7 +13,6 @@ type NavGridCard = {
     | "visuals"
     | "grammar"
     | "dialogues"
-    | "writing"
     | "gamification"
     | "phraseGame"
     | "tutor";
@@ -59,13 +58,6 @@ const homeGridCards: ReadonlyArray<NavGridCard> = [
     descKey: "home.modeDialoguesDesc",
   },
   {
-    href: "/randomhanzi?autostart=1",
-    modeKey: "writing",
-    hanzi: "写",
-    color: "var(--cat-emerald)",
-    descKey: "home.modeWritingDesc",
-  },
-  {
     href: "/gamification",
     modeKey: "gamification",
     hanzi: "测",
@@ -80,9 +72,9 @@ const homeGridCards: ReadonlyArray<NavGridCard> = [
     descKey: "home.modePhraseGameDesc",
   },
   {
-    href: "/tutor",
+    href: "/praticar",
     modeKey: "tutor",
-    hanzi: "练习",
+    hanzi: "练",
     color: "var(--cat-orange)",
     descKey: "home.modeTutorDesc",
   },

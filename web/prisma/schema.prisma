@@ -1,0 +1,379 @@
+// SQL is the source of truth for editorial content.
+// Edit via: npx prisma studio  (or sqlite3 / any SQL client)
+// Bootstrap JSON/MD only fills EMPTY tables unless FORCE_RESEED=1.
+// See docs/11_content_db_schema.md
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  // Path relative to this schema file (prisma/) → web/data/phrase-game.sqlite
+  url      = env("DATABASE_URL")
+}
+
+// ── Users / game ──────────────────────────────────────────────
+
+model User {
+  id         String    @id
+  email      String?
+  name       String?
+  image      String?
+  nick       String?
+  createdAt  String    @default(dbgenerated("(datetime('now'))")) @map("created_at")
+  updatedAt  String    @default(dbgenerated("(datetime('now'))")) @map("updated_at")
+  lessons    Lesson[]
+
+  @@map("users")
+}
+
+model Progress {
+  id        Int     @id @default(autoincrement())
+  userId    String  @map("user_id")
+  phraseId  String  @map("phrase_id")
+  score     Float?
+  createdAt String  @default(dbgenerated("(datetime('now'))")) @map("created_at")
+
+  @@map("progress")
+}
+
+model Event {
+  id        Int     @id @default(autoincrement())
+  createdAt String  @default(dbgenerated("(datetime('now'))")) @map("created_at")
+  event     String
+  userId    String? @map("user_id")
+  anonId    String? @map("anon_id")
+  roundId   String? @map("round_id")
+  tier      String?
+  level     Int?
+  phraseId  String? @map("phrase_id")
+  correct   Int?
+  attempt   String?
+  detail    String?
+  locale    String?
+  userAgent String? @map("user_agent")
+
+  @@index([roundId], map: "idx_events_round")
+  @@index([event], map: "idx_events_event")
+  @@index([createdAt], map: "idx_events_created")
+  @@map("events")
+}
+
+// ── Lesson registry (eixo B) ──────────────────────────────────
+
+model Class {
+  id        String   @id
+  label     String
+  sortOrder Int      @default(0) @map("sort_order")
+  active    Int      @default(1)
+  createdAt String   @default(dbgenerated("(datetime('now'))")) @map("created_at")
+  lessons   Lesson[]
+
+  @@map("classes")
+}
+
+model Lesson {
+  id             Int                 @id @default(autoincrement())
+  lessonDate     String              @map("lesson_date")
+  classId        String              @map("class_id")
+  notes          String?
+  createdBy      String              @map("created_by")
+  createdAt      String              @default(dbgenerated("(datetime('now'))")) @map("created_at")
+  updatedAt      String              @default(dbgenerated("(datetime('now'))")) @map("updated_at")
+  materialRefs   LessonMaterialRef[]
+  vocabItems     LessonVocabItem[]
+  user           User                @relation(fields: [createdBy], references: [id])
+  class          Class               @relation(fields: [classId], references: [id])
+  lexiconFirsts  LexiconGlobal[]
+
+  @@index([classId], map: "idx_lessons_class")
+  @@index([lessonDate], map: "idx_lessons_date")
+  @@map("lessons")
+}
+
+model LessonMaterialRef {
+  id       Int    @id @default(autoincrement())
+  lessonId Int    @map("lesson_id")
+  book     String
+  chapter  Int
+  lesson   Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@index([lessonId], map: "idx_lmr_lesson")
+  @@map("lesson_material_refs")
+}
+
+model LessonVocabItem {
+  id          Int     @id @default(autoincrement())
+  lessonId    Int     @map("lesson_id")
+  position    Int     @default(0)
+  hanzi       String
+  pinyin      String?
+  translation String?
+  notes       String?
+  theme       String?
+  createdAt   String  @default(dbgenerated("(datetime('now'))")) @map("created_at")
+  lesson      Lesson  @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@index([hanzi], map: "idx_lvi_hanzi")
+  @@index([lessonId], map: "idx_lvi_lesson")
+  @@map("lesson_vocab_items")
+}
+
+model LexiconGlobal {
+  hanzi             String  @id
+  pinyin            String?
+  translation       String?
+  theme             String?
+  firstSeenLessonId Int?    @map("first_seen_lesson_id")
+  seenCount         Int     @default(1) @map("seen_count")
+  createdAt         String  @default(dbgenerated("(datetime('now'))")) @map("created_at")
+  updatedAt         String  @default(dbgenerated("(datetime('now'))")) @map("updated_at")
+  firstSeenLesson   Lesson? @relation(fields: [firstSeenLessonId], references: [id], onDelete: SetNull)
+
+  @@map("lexicon_global")
+}
+
+// ── Editorial consolidado ─────────────────────────────────────
+
+model ContentBlock {
+  id          Int    @id
+  title       String
+  narrative   String @default("")
+  sortOrder   Int    @default(0) @map("sort_order")
+  payloadJson String @map("payload_json")
+
+  @@map("content_blocks")
+}
+
+model VocabEntry {
+  id          Int    @id @default(autoincrement())
+  blockId     Int    @map("block_id")
+  hanzi       String
+  pinyin      String @default("")
+  translation String @default("")
+  sortOrder   Int    @default(0) @map("sort_order")
+
+  @@index([hanzi], map: "idx_vocab_hanzi")
+  @@index([blockId], map: "idx_vocab_block")
+  @@map("vocab_entries")
+}
+
+model StructureLine {
+  id        Int    @id @default(autoincrement())
+  blockId   Int    @map("block_id")
+  hanzi     String
+  pinyin    String @default("")
+  sortOrder Int    @default(0) @map("sort_order")
+
+  @@index([blockId], map: "idx_structure_block")
+  @@map("structure_lines")
+}
+
+model StructureGloss {
+  structureId Int    @map("structure_id")
+  locale      String
+  gloss       String
+
+  @@id([structureId, locale])
+  @@map("structure_glosses")
+}
+
+model BlockNote {
+  id        Int    @id @default(autoincrement())
+  blockId   Int    @map("block_id")
+  body      String
+  sortOrder Int    @default(0) @map("sort_order")
+
+  @@map("block_notes")
+}
+
+model BlockDifference {
+  id        Int    @id @default(autoincrement())
+  blockId   Int    @map("block_id")
+  body      String
+  sortOrder Int    @default(0) @map("sort_order")
+
+  @@map("block_differences")
+}
+
+model BlockPriority {
+  id        Int    @id @default(autoincrement())
+  blockId   Int    @map("block_id")
+  body      String
+  sortOrder Int    @default(0) @map("sort_order")
+
+  @@map("block_priorities")
+}
+
+model ReviewStandalonePhrase {
+  id        Int    @id @default(autoincrement())
+  blockId   Int    @map("block_id")
+  locale    String
+  body      String
+  sortOrder Int    @default(0) @map("sort_order")
+
+  @@map("review_standalone_phrases")
+}
+
+model DialogueConversation {
+  id        Int @id @default(autoincrement())
+  blockId   Int @map("block_id")
+  sortOrder Int @default(0) @map("sort_order")
+
+  @@map("dialogue_conversations")
+}
+
+model DialogueTurn {
+  id             Int    @id @default(autoincrement())
+  conversationId Int    @map("conversation_id")
+  sortOrder      Int    @default(0) @map("sort_order")
+  speaker        String @default("")
+  hanzi          String @default("")
+  pinyin         String @default("")
+  translationPt  String @default("") @map("translation_pt")
+  translationEn  String @default("") @map("translation_en")
+  translationEs  String @default("") @map("translation_es")
+
+  @@map("dialogue_turns")
+}
+
+// ── Phrase game / quiz / dialogues / visuals ──────────────────
+
+model PhraseGamePhrase {
+  id          String @id
+  nivel       Int
+  tier        String
+  payloadJson String @map("payload_json")
+
+  @@index([nivel], map: "idx_pgp_nivel")
+  @@index([tier], map: "idx_pgp_tier")
+  @@map("phrase_game_phrases")
+}
+
+model QuizBankMeta {
+  id          Int    @id @default(autoincrement())
+  payloadJson String @map("payload_json")
+
+  @@map("quiz_bank_meta")
+}
+
+model QuizQuestion {
+  id          Int    @id @default(autoincrement())
+  type        String
+  difficulty  Int    @default(1)
+  block       Int?
+  payloadJson String @map("payload_json")
+
+  @@map("quiz_questions")
+}
+
+model GlobalDialogueSection {
+  id          String @id
+  categoryId  Int?   @map("category_id")
+  sortOrder   Int    @default(0) @map("sort_order")
+  payloadJson String @map("payload_json")
+
+  @@map("global_dialogue_sections")
+}
+
+model VisualPdfEntry {
+  id          String @id
+  file        String
+  sortOrder   Int    @default(0) @map("sort_order")
+  payloadJson String @map("payload_json")
+
+  @@map("visual_pdf_entries")
+}
+
+// ── Book chapter vocab (eixo A) ───────────────────────────────
+
+model Book {
+  id          String            @id
+  volumeLabel String            @map("volume_label")
+  sortOrder   Int               @default(0) @map("sort_order")
+  entries     BookVocabEntry[]
+
+  @@map("books")
+}
+
+model BookVocabEntry {
+  id           Int     @id @default(autoincrement())
+  bookId       String  @map("book_id")
+  lesson       Int
+  source       String
+  hanzi        String
+  pinyin       String?
+  pos          String?
+  glossEn      String? @map("gloss_en")
+  examplesJson String? @map("examples_json")
+  sortOrder    Int     @default(0) @map("sort_order")
+  book         Book    @relation(fields: [bookId], references: [id], onDelete: Cascade)
+
+  @@index([hanzi], map: "idx_bve_hanzi")
+  @@index([bookId, lesson], map: "idx_bve_book_lesson")
+  @@map("book_vocab_entries")
+}
+
+// ── Context flashcard decks (/praticar) ───────────────────────
+
+model ContextDeck {
+  id          String            @id
+  title       String
+  description String            @default("")
+  sortOrder   Int               @default(0) @map("sort_order")
+  cards       ContextDeckCard[]
+
+  @@map("context_decks")
+}
+
+model ContextDeckCard {
+  id              Int         @id @default(autoincrement())
+  deckId          String      @map("deck_id")
+  sortOrder       Int         @default(0) @map("sort_order")
+  word            String
+  pinyin          String      @default("")
+  meaning         String      @default("")
+  section         String?
+  pattern         String?
+  patternLabel    String?     @map("pattern_label")
+  sentence        String?
+  sentencePinyin  String?     @map("sentence_pinyin")
+  sentenceMeaning String?     @map("sentence_meaning")
+  related         String?
+  patterns        String?
+  notes           String?
+  deck            ContextDeck @relation(fields: [deckId], references: [id], onDelete: Cascade)
+
+  @@index([deckId], map: "idx_cdc_deck")
+  @@map("context_deck_cards")
+}
+
+// ── App Hanzi Memorize lexicon (shared library) ───────────────
+
+model LexicoRotationCategory {
+  id             String         @id
+  title          String
+  sourceBlockIds String         @map("source_block_ids") // JSON array of block ids
+  sortOrder      Int            @default(0) @map("sort_order")
+  entries        LexicoEntry[]
+
+  @@map("lexico_rotation_categories")
+}
+
+model LexicoEntry {
+  id                    String                  @id
+  hanzi                 String
+  pinyin                String                  @default("")
+  translation           String                  @default("")
+  hanziLength           Int                     @map("hanzi_length")
+  sourceBlockId         Int                     @map("source_block_id")
+  sourceBlockTitle      String                  @default("") @map("source_block_title")
+  rotationCategoryId    String                  @map("rotation_category_id")
+  sortOrder             Int                     @default(0) @map("sort_order")
+  rotationCategory      LexicoRotationCategory  @relation(fields: [rotationCategoryId], references: [id], onDelete: Cascade)
+
+  @@index([hanzi], map: "idx_lexico_hanzi")
+  @@index([rotationCategoryId], map: "idx_lexico_rotation")
+  @@map("lexico_entries")
+}

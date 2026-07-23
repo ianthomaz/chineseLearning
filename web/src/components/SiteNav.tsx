@@ -20,8 +20,20 @@ const NAV_TABS = [
   { href: "/dialogues", key: "dialogues" as const },
   { href: "/gamification", key: "gamification" as const },
   { href: "/phrase-game", key: "phraseGame" as const },
-  { href: "/tutor", key: "tutor" as const },
+  { href: "/praticar", key: "tutor" as const },
 ] as const;
+
+/** Paths that keep the Prática tab highlighted (hub + sub-flows). */
+function isPracticePath(pathname: string): boolean {
+  return (
+    pathname === "/praticar" ||
+    pathname.startsWith("/praticar/") ||
+    pathname === "/tutor" ||
+    pathname.startsWith("/tutor/") ||
+    pathname === "/randomhanzi" ||
+    pathname.startsWith("/randomhanzi/")
+  );
+}
 
 const CURATOR_TABS = [
   { href: "/registerClass", key: "registerClass" as const },
@@ -88,6 +100,11 @@ function CuratorTabs({
   );
 }
 
+function isKtvPath(pathname: string | null): boolean {
+  if (!pathname) return false;
+  return pathname === "/ktv" || pathname.endsWith("/ktv");
+}
+
 export function SiteNav() {
   const pathname = usePathname();
   const { locale, setLocale, t } = useLocale();
@@ -118,6 +135,8 @@ export function SiteNav() {
   }, [pathname]);
 
   const closeMenu = useCallback(() => setLangOpen(false), []);
+
+  if (isKtvPath(pathname)) return null;
 
   return (
     <header
@@ -201,7 +220,9 @@ export function SiteNav() {
           >
             {NAV_TABS.map((tab) => {
               const isActive =
-                pathname === tab.href || pathname.startsWith(`${tab.href}/`);
+                tab.href === "/praticar"
+                  ? isPracticePath(pathname)
+                  : pathname === tab.href || pathname.startsWith(`${tab.href}/`);
               return (
                 <Link
                   key={tab.href}
@@ -235,7 +256,9 @@ export function SiteNav() {
           >
             {NAV_TABS.map((tab) => {
               const isActive =
-                pathname === tab.href || pathname.startsWith(`${tab.href}/`);
+                tab.href === "/praticar"
+                  ? isPracticePath(pathname)
+                  : pathname === tab.href || pathname.startsWith(`${tab.href}/`);
               return (
                 <Link
                   key={tab.href}

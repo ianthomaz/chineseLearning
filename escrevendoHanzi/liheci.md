@@ -1,0 +1,245 @@
+# 离合词
+
+30 离合词 básicos. Cada frase mostra um "recheio" diferente entre os dois
+caracteres do verbo: 了, duração, medida (个/一次/一首/一场/一架/几张),
+complemento 完, 的, 过 e repetição (VV).
+
+## 睡觉
+- pinyin: shuìjiào
+- meaning: dormir
+- pattern: 了 + duração
+- sentence: 我睡了十个小时觉。
+- sentencePinyin: Wǒ shuì le shí gè xiǎoshí jiào.
+- sentenceMeaning: Eu dormi dez horas.
+
+## 洗澡
+- pinyin: xǐzǎo
+- meaning: tomar banho
+- pattern: complemento 完
+- sentence: 我刚洗完澡。
+- sentencePinyin: Wǒ gāng xǐ wán zǎo.
+- sentenceMeaning: Acabei de tomar banho.
+
+## 吃饭
+- pinyin: chīfàn
+- meaning: comer, fazer refeição
+- pattern: 个 (suaviza o convite)
+- sentence: 我们一起吃个饭吧。
+- sentencePinyin: Wǒmen yìqǐ chī ge fàn ba.
+- sentenceMeaning: Vamos comer juntos.
+
+## 理发
+- pinyin: lǐfà
+- meaning: cortar o cabelo
+- pattern: 了
+- sentence: 我昨天理了发。
+- sentencePinyin: Wǒ zuótiān lǐ le fà.
+- sentenceMeaning: Cortei o cabelo ontem.
+
+## 生病
+- pinyin: shēngbìng
+- meaning: ficar doente
+- pattern: 了 + 一场
+- sentence: 他生了一场病。
+- sentencePinyin: Tā shēng le yì chǎng bìng.
+- sentenceMeaning: Ele ficou doente.
+
+## 发烧
+- pinyin: fāshāo
+- meaning: ter febre
+- pattern: 了 + duração
+- sentence: 他发了两天烧。
+- sentencePinyin: Tā fā le liǎng tiān shāo.
+- sentenceMeaning: Ele teve febre por dois dias.
+
+## 游泳
+- pinyin: yóuyǒng
+- meaning: nadar
+- pattern: 了
+- sentence: 我今天游了泳。
+- sentencePinyin: Wǒ jīntiān yóu le yǒng.
+- sentenceMeaning: Hoje eu nadei.
+
+## 跑步
+- pinyin: pǎobù
+- meaning: correr
+- pattern: duração
+- sentence: 我每天跑半个小时步。
+- sentencePinyin: Wǒ měitiān pǎo bàn gè xiǎoshí bù.
+- sentenceMeaning: Eu corro meia hora todos os dias.
+
+## 散步
+- pinyin: sànbù
+- meaning: caminhar, passear
+- pattern: repetição VV (bem casual)
+- sentence: 我们去散散步吧。
+- sentencePinyin: Wǒmen qù sàn sàn bù ba.
+- sentenceMeaning: Vamos dar uma caminhadinha.
+
+## 唱歌
+- pinyin: chànggē
+- meaning: cantar
+- pattern: 了 + 一首
+- sentence: 她唱了一首歌。
+- sentencePinyin: Tā chàng le yì shǒu gē.
+- sentenceMeaning: Ela cantou uma música.
+
+## 跳舞
+- pinyin: tiàowǔ
+- meaning: dançar
+- pattern: repetição VV (bem casual)
+- sentence: 来，我们跳跳舞吧！
+- sentencePinyin: Lái, wǒmen tiào tiào wǔ ba!
+- sentenceMeaning: Vem, vamos dançar um pouco!
+
+## 照相
+- pinyin: zhàoxiàng
+- meaning: tirar foto
+- pattern: 了 + 几张
+- sentence: 我们照了几张相。
+- sentencePinyin: Wǒmen zhào le jǐ zhāng xiàng.
+- sentenceMeaning: Tiramos algumas fotos.
+
+## 聊天
+- pinyin: liáotiān
+- meaning: conversar
+- pattern: 了 + 一会儿
+- sentence: 我们聊了一会儿天。
+- sentencePinyin: Wǒmen liáo le yíhuìr tiān.
+- sentenceMeaning: Nós conversamos por um tempinho.
+
+## 见面
+- pinyin: jiànmiàn
+- meaning: encontrar-se
+- pattern: 过 + 一次
+- sentence: 我们以前见过一次面。
+- sentencePinyin: Wǒmen yǐqián jiàn guo yí cì miàn.
+- sentenceMeaning: Nós já nos encontramos uma vez.
+
+## 帮忙
+- pinyin: bāngmáng
+- meaning: ajudar
+- pattern: 个
+- sentence: 你可以帮个忙吗？
+- sentencePinyin: Nǐ kěyǐ bāng ge máng ma?
+- sentenceMeaning: Você pode me dar uma ajuda?
+
+## 生气
+- pinyin: shēngqì
+- meaning: ficar bravo
+- pattern: 的 (alvo da raiva)
+- sentence: 他生我的气了。
+- sentencePinyin: Tā shēng wǒ de qì le.
+- sentenceMeaning: Ele ficou bravo comigo.
+
+## 吵架
+- pinyin: chǎojià
+- meaning: brigar, discutir
+- pattern: 了 + 一架
+- sentence: 他们昨天吵了一架。
+- sentencePinyin: Tāmen zuótiān chǎo le yí jià.
+- sentenceMeaning: Eles brigaram ontem.
+
+## 道歉
+- pinyin: dàoqiàn
+- meaning: pedir desculpas
+- pattern: 了
+- sentence: 他向老师道了歉。
+- sentencePinyin: Tā xiàng lǎoshī dào le qiàn.
+- sentenceMeaning: Ele pediu desculpas ao professor.
+
+## 鼓掌
+- pinyin: gǔzhǎng
+- meaning: aplaudir
+- pattern: 了
+- sentence: 大家鼓了掌。
+- sentencePinyin: Dàjiā gǔ le zhǎng.
+- sentenceMeaning: Todos aplaudiram.
+
+## 结婚
+- pinyin: jiéhūn
+- meaning: casar-se
+- pattern: 了
+- sentence: 他们去年结了婚。
+- sentencePinyin: Tāmen qùnián jié le hūn.
+- sentenceMeaning: Eles se casaram no ano passado.
+
+## 上课
+- pinyin: shàngkè
+- meaning: ter aula
+- pattern: 了 + 三节
+- sentence: 我们上了三节课。
+- sentencePinyin: Wǒmen shàng le sān jié kè.
+- sentenceMeaning: Tivemos três aulas.
+
+## 考试
+- pinyin: kǎoshì
+- meaning: fazer prova
+- pattern: 了 + duração
+- sentence: 我们考了两个小时试。
+- sentencePinyin: Wǒmen kǎo le liǎng gè xiǎoshí shì.
+- sentenceMeaning: Fizemos duas horas de prova.
+
+## 报名
+- pinyin: bàomíng
+- meaning: inscrever-se
+- pattern: 了
+- sentence: 我已经报了名。
+- sentencePinyin: Wǒ yǐjīng bào le míng.
+- sentenceMeaning: Eu já me inscrevi.
+
+## 上班
+- pinyin: shàngbān
+- meaning: trabalhar (ir ao trabalho)
+- pattern: 了 + duração
+- sentence: 我上了一天班。
+- sentencePinyin: Wǒ shàng le yì tiān bān.
+- sentenceMeaning: Trabalhei o dia inteiro.
+
+## 加班
+- pinyin: jiābān
+- meaning: fazer hora extra
+- pattern: 了 + duração
+- sentence: 他昨天加了三个小时班。
+- sentencePinyin: Tā zuótiān jiā le sān gè xiǎoshí bān.
+- sentenceMeaning: Ontem ele fez três horas extras.
+
+## 开会
+- pinyin: kāihuì
+- meaning: participar de reunião
+- pattern: duração
+- sentence: 我们下午开两个小时会。
+- sentencePinyin: Wǒmen xiàwǔ kāi liǎng gè xiǎoshí huì.
+- sentenceMeaning: Teremos reunião de duas horas à tarde.
+
+## 请假
+- pinyin: qǐngjià
+- meaning: pedir folga
+- pattern: 了 + duração
+- sentence: 他请了一天假。
+- sentencePinyin: Tā qǐng le yì tiān jià.
+- sentenceMeaning: Ele pediu um dia de folga.
+
+## 放假
+- pinyin: fàngjià
+- meaning: estar de férias/folga
+- pattern: 了 + duração
+- sentence: 我们放了三天假。
+- sentencePinyin: Wǒmen fàng le sān tiān jià.
+- sentenceMeaning: Tivemos três dias de folga.
+
+## 排队
+- pinyin: páiduì
+- meaning: fazer fila
+- pattern: 了 + duração
+- sentence: 我们排了半个小时队。
+- sentencePinyin: Wǒmen pái le bàn gè xiǎoshí duì.
+- sentenceMeaning: Ficamos meia hora na fila.
+
+## 打折
+- pinyin: dǎzhé
+- meaning: dar desconto
+- pattern: 了 + número
+- sentence: 这件衣服打了八折。
+- sentencePinyin: Zhè jiàn yīfu dǎ le bā zhé.
+- sentenceMeaning: Esta roupa está com 20% de desconto.

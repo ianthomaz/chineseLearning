@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>escrevendoHanzi</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+  html, body {
+    height: 100%;
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  #card {
+    height: 100dvh;
+    max-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    padding:
+      calc(18px + env(safe-area-inset-top))
+      16px
+      calc(12px + env(safe-area-inset-bottom));
+    overflow: hidden;
+  }
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 13px;
+    color: #888;
+    flex: 0 0 auto;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .head-left {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .deck-title { color: #555; }
+  .section {
+    color: #9e9e9e;
+    flex: 0 1 auto;
+    max-width: 48%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  /* Top block: hanzi zone (may shrink) + pinyin/gloss reserved (never clipped) */
+  .main {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    gap: 0;
+    overflow: hidden;
+    padding: 8px 4px 12px;
+  }
+  .word-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .word {
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-align: center;
+    max-width: 100%;
+    padding: 4px 0;
+    user-select: text;
+    -webkit-user-select: text;
+  }
+  /* Reserved rows — flex-shrink: 0 so they never sit under the divider */
+  .pinyin {
+    color: #4db8ff;
+    font-size: 5vw;
+    flex: 0 0 auto;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 6px;
+    line-height: 1.25;
+    position: relative;
+    z-index: 1;
+  }
+  .gloss {
+    color: #bbb;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.35;
+    max-width: 96%;
+    flex: 0 0 auto;
+    margin-top: 4px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .sentence-box {
+    flex: 1 1 46%;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    margin-top: 2px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+  }
+
+  .pattern {
+    align-self: center;
+    flex: 0 0 auto;
+    font-size: 13px;
+    color: #ffb74d;
+    background: #2a2115;
+    border: 1px solid #5a4726;
+    border-radius: 999px;
+    padding: 4px 14px;
+    margin-bottom: 6px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .pattern.hidden { display: none; }
+
+  .sentence-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    padding: 4px 0;
+  }
+  .sentence {
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.3;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    max-width: 100%;
+    padding: 2px 0;
+    user-select: text;
+    -webkit-user-select: text;
+  }
+  .sentence.muted { color: #555; font-weight: 500; }
+  .hl { color: #ff5252; }
+
+  .meta {
+    flex: 0 0 auto;
+    margin-top: 6px;
+  }
+  .s-pinyin,
+  .s-meaning {
+    text-align: center;
+    line-height: 1.35;
+    max-width: 100%;
+  }
+  .s-pinyin  { color: #4db8ff; font-size: 4vw; }
+  .s-meaning { color: #bbb;    font-size: 4vw; margin-top: 2px; }
+
+  .extra {
+    flex: 0 1 auto;
+    min-height: 0;
+    max-height: 28%;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #2a2a2a;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #888;
+    text-align: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .extra:empty,
+  .extra.is-empty { display: none; }
+  .extra .row { margin-top: 3px; word-break: break-word; }
+  .extra .row:first-child { margin-top: 0; }
+  .extra .label { color: #555; }
+  .extra .related { color: #81c784; }
+  .extra .patterns { color: #ffb74d; }
+  .extra .notes { color: #90caf9; }
+
+  .nav {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex: 0 0 auto;
+  }
+  .nav button {
+    flex: 1;
+    padding: 14px 0;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    background: #2a2a2a;
+    color: #fff;
+  }
+  .nav button:active { background: #4db8ff; color: #111; }
+  .nav button:disabled { opacity: .35; }
+
+  .tap {
+    position: fixed;
+    top: 0;
+    bottom: 100px;
+    width: 22%;
+    z-index: 5;
+  }
+  .tap.left { left: 0; }
+  .tap.right { right: 0; }
+
+  #error {
+    display: none;
+    height: 100dvh;
+    padding: 24px 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  #error.visible { display: flex; }
+  #error h1 { font-size: 20px; color: #ffb74d; }
+  #error p { color: #bbb; font-size: 15px; line-height: 1.45; max-width: 28em; }
+  #error code {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 6px 10px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    color: #4db8ff;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<div class="tap left" id="tapL"></div>
+<div class="tap right" id="tapR"></div>
+
+<section id="card"></section>
+
+<div id="error">
+  <h1>Não deu pra carregar o deck</h1>
+  <p id="errorMsg"></p>
+  <code id="errorHint"></code>
+</div>
+
+<script>
+/**
+ * Deck viewer for escrevendoHanzi/
+ *
+ * Usage (local HTTP server — file:// cannot fetch .md):
+ *   cd escrevendoHanzi && python3 -m http.server 8765
+ *   http://localhost:8765/deck.html?src=liheci.md
+ *   http://localhost:8765/deck.html?src=aulas_semana2.md
+ *
+ * MD schema:
+ *   # Deck title
+ *   ## word
+ *   - pinyin: ...
+ *   - meaning: ...              (repeatable → joined with " · ")
+ *   - section: ...              (optional)
+ *   - pattern / patternLabel    (optional chip)
+ *   - sentence / sentencePinyin / sentenceMeaning
+ *   - related / patterns / notes (optional extras)
+ */
+
+const DEFAULT_SRC = "liheci.md";
+const SINGLE_KEYS = new Set([
+  "pinyin",
+  "section",
+  "pattern",
+  "patternLabel",
+  "sentence",
+  "sentencePinyin",
+  "sentenceMeaning",
+  "related",
+  "patterns",
+  "notes"
+]);
+const MULTI_KEYS = new Set(["meaning"]);
+
+let items = [];
+let deckTitle = "";
+let i = 0;
+const card = document.getElementById("card");
+
+function getSrc() {
+  const params = new URLSearchParams(window.location.search);
+  const raw = (params.get("src") || DEFAULT_SRC).trim();
+  if (!raw || raw.includes("/") || raw.includes("\\") || raw.includes("..")) {
+    throw new Error("src inválido — use só o nome do arquivo na pasta (ex: aulas_semana2.md)");
+  }
+  if (!raw.toLowerCase().endsWith(".md")) {
+    throw new Error("src deve ser um arquivo .md");
+  }
+  return raw;
+}
+
+function parseDeck(md) {
+  const lines = md.replace(/\r\n/g, "\n").split("\n");
+  let title = "";
+  const cards = [];
+  let current = null;
+
+  function flush() {
+    if (!current) return;
+    if (!current.word) throw new Error("Card sem ## palavra");
+    const meaning = (current.meaning || []).filter(Boolean).join(" · ");
+    if (!meaning && !current.sentence) {
+      throw new Error(`Card incompleto: "${current.word}" precisa de meaning ou sentence`);
+    }
+    cards.push({
+      word: current.word,
+      pinyin: current.pinyin || "",
+      meaning,
+      section: current.section || "",
+      pattern: current.pattern || "",
+      patternLabel: current.patternLabel || "",
+      sentence: current.sentence || "",
+      sentencePinyin: current.sentencePinyin || "",
+      sentenceMeaning: current.sentenceMeaning || "",
+      related: current.related || "",
+      patterns: current.patterns || "",
+      notes: current.notes || ""
+    });
+    current = null;
+  }
+
+  for (const line of lines) {
+    const h1 = line.match(/^#\s+(.+)$/);
+    if (h1 && !title) {
+      title = h1[1].trim();
+      continue;
+    }
+    const h2 = line.match(/^##\s+(.+)$/);
+    if (h2) {
+      flush();
+      current = { word: h2[1].trim(), meaning: [] };
+      continue;
+    }
+    if (!current) continue;
+    const field = line.match(/^-\s*([A-Za-z]+)\s*:\s*(.*)$/);
+    if (field) {
+      const key = field[1];
+      const value = field[2].trim();
+      if (MULTI_KEYS.has(key)) current.meaning.push(value);
+      else if (SINGLE_KEYS.has(key)) current[key] = value;
+    }
+  }
+  flush();
+
+  if (!cards.length) throw new Error("Nenhum card encontrado (use ## palavra + campos - chave: valor)");
+  return { title: title || "Deck", items: cards };
+}
+
+function highlight(sentence, word) {
+  if (!sentence) return "";
+  let out = "";
+  const chars = [...word].filter((ch) => ch.trim());
+  for (const ch of sentence) {
+    if (chars.includes(ch)) out += `<span class="hl">${ch}</span>`;
+    else out += escapeHtml(ch);
+  }
+  return out;
+}
+
+function escapeHtml(s) {
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function chipHtml(it) {
+  if (!it.pattern) return `<div class="pattern hidden"></div>`;
+  const label = it.patternLabel || "recheio";
+  const text = label ? `${label}: ${it.pattern}` : it.pattern;
+  return `<div class="pattern">${escapeHtml(text)}</div>`;
+}
+
+function extraHtml(it) {
+  const rows = [];
+  if (it.related) {
+    rows.push(`<div class="row related"><span class="label">related </span>${escapeHtml(it.related)}</div>`);
+  }
+  if (it.patterns) {
+    rows.push(`<div class="row patterns"><span class="label">patterns </span>${escapeHtml(it.patterns)}</div>`);
+  }
+  if (it.notes) {
+    rows.push(`<div class="row notes"><span class="label">note </span>${escapeHtml(it.notes)}</div>`);
+  }
+  if (!rows.length) return `<div class="extra is-empty"></div>`;
+  return `<div class="extra">${rows.join("")}</div>`;
+}
+
+function render() {
+  const it = items[i];
+  const hasSentence = Boolean(it.sentence);
+  const sentenceInner = hasSentence
+    ? highlight(it.sentence, it.word)
+    : `<span class="muted">—</span>`;
+
+  card.innerHTML = `
+    <div class="head">
+      <span class="head-left">${i + 1} / ${items.length}<span class="deck-title"> · ${escapeHtml(deckTitle)}</span></span>
+      <span class="section">${escapeHtml(it.section)}</span>
+    </div>
+
+    <div class="main">
+      <div class="word-wrap" id="wwrap">
+        <div class="word" id="word">${escapeHtml(it.word)}</div>
+      </div>
+      <div class="pinyin">${escapeHtml(it.pinyin)}</div>
+      <div class="gloss">${escapeHtml(it.meaning)}</div>
+    </div>
+
+    <div class="sentence-box">
+      ${chipHtml(it)}
+      <div class="sentence-wrap" id="swrap">
+        <div class="sentence${!hasSentence ? " muted" : ""}" id="sentence">${sentenceInner}</div>
+      </div>
+      <div class="meta">
+        <div class="s-pinyin">${escapeHtml(it.sentencePinyin)}</div>
+        <div class="s-meaning">${escapeHtml(it.sentenceMeaning)}</div>
+      </div>
+      ${extraHtml(it)}
+    </div>
+
+    <div class="nav">
+      <button type="button" id="prev" ${i === 0 ? "disabled" : ""}>← Anterior</button>
+      <button type="button" id="next" ${i === items.length - 1 ? "disabled" : ""}>Próximo →</button>
+    </div>
+  `;
+  document.getElementById("prev").onclick = prev;
+  document.getElementById("next").onclick = next;
+  document.title = `${it.word} · ${deckTitle}`;
+  requestAnimationFrame(fitText);
+}
+
+function overflows(el, box) {
+  return el.scrollWidth > box.clientWidth + 1 || el.scrollHeight > box.clientHeight + 1;
+}
+
+function fitEl(el, box, max, min) {
+  if (!el || !box || box.clientWidth < 8 || box.clientHeight < 8) return;
+  let size = max;
+  el.style.fontSize = size + "px";
+  // Only shrink when it actually exceeds the box — keep as large as possible
+  while (size > min && overflows(el, box)) {
+    size -= 1;
+    el.style.fontSize = size + "px";
+  }
+}
+
+function fitText() {
+  const vw = document.documentElement.clientWidth;
+  const word = document.getElementById("word");
+  const wwrap = document.getElementById("wwrap");
+  const sentence = document.getElementById("sentence");
+  const swrap = document.getElementById("swrap");
+
+  // Fit hanzi only inside .word-wrap — pinyin/gloss stay outside and never overlap.
+  fitEl(word, wwrap, Math.round(vw * 0.55), 40);
+  fitEl(sentence, swrap, Math.round(vw * 0.32), 26);
+}
+
+function next() {
+  if (i < items.length - 1) { i++; render(); }
+}
+function prev() {
+  if (i > 0) { i--; render(); }
+}
+
+document.getElementById("tapR").onclick = next;
+document.getElementById("tapL").onclick = prev;
+
+let x0 = null;
+document.body.addEventListener("touchstart", (e) => { x0 = e.touches[0].clientX; }, { passive: true });
+document.body.addEventListener("touchend", (e) => {
+  if (x0 === null) return;
+  const dx = e.changedTouches[0].clientX - x0;
+  if (dx < -50) next();
+  else if (dx > 50) prev();
+  x0 = null;
+});
+
+window.addEventListener("resize", fitText);
+
+function showError(msg) {
+  document.getElementById("card").style.display = "none";
+  document.getElementById("tapL").style.display = "none";
+  document.getElementById("tapR").style.display = "none";
+  const box = document.getElementById("error");
+  box.classList.add("visible");
+  document.getElementById("errorMsg").textContent = msg;
+  document.getElementById("errorHint").textContent =
+    "cd escrevendoHanzi && python3 -m http.server 8765  →  http://localhost:8765/deck.html?src=aulas_semana2.md";
+}
+
+async function boot() {
+  let src;
+  try { src = getSrc(); }
+  catch (err) { showError(err.message); return; }
+
+  try {
+    const res = await fetch(src, { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status} ao buscar ${src}`);
+    const deck = parseDeck(await res.text());
+    deckTitle = deck.title;
+    items = deck.items;
+    render();
+  } catch (err) {
+    const isFile = location.protocol === "file:";
+    showError(
+      isFile
+        ? "Abrir o HTML direto (file://) não deixa carregar o .md. Suba um servidor local na pasta."
+        : err.message || String(err)
+    );
+  }
+}
+
+boot();
+</script>
+</body>
+</html>

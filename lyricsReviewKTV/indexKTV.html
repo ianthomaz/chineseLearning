@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>歌词卡 · Lyric Cards</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#181614;
+    --paper:#f6f1e6;
+    --paper-dim:#ece4d2;
+    --seal:#a13d2d;
+    --seal-dim:#c17a68;
+    --gray:#8c8574;
+    --line: rgba(24,22,20,0.12);
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0;
+    height:100%;
+    height:100dvh;
+    background:var(--ink);
+    font-family:'Noto Sans SC', sans-serif;
+    overflow:hidden;
+  }
+  body{
+    display:flex;
+    flex-direction:column;
+    color:var(--paper);
+    padding:
+      env(safe-area-inset-top, 0px)
+      env(safe-area-inset-right, 0px)
+      env(safe-area-inset-bottom, 0px)
+      env(safe-area-inset-left, 0px);
+    overscroll-behavior:none;
+  }
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    padding:12px 14px 6px;
+    flex-shrink:0;
+  }
+  .brand{
+    font-family:'Noto Serif SC', serif;
+    font-weight:700;
+    font-size:15px;
+    letter-spacing:0.04em;
+    color:var(--paper);
+    opacity:0.85;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    flex-shrink:0;
+  }
+  .brand .chop{
+    width:20px;height:20px;
+    border:1.5px solid var(--seal-dim);
+    border-radius:4px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:11px;
+    color:var(--seal-dim);
+    font-family:'Noto Serif SC',serif;
+  }
+  .song-select{
+    font-family:'Noto Serif SC', serif;
+    font-size:13px;
+    letter-spacing:0.04em;
+    background:rgba(246,241,230,0.06);
+    border:1px solid rgba(246,241,230,0.25);
+    color:var(--paper);
+    padding:8px 28px 8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    max-width:min(220px, 48vw);
+    min-height:44px;
+    appearance:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23c17a68' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;
+    background-position:right 10px center;
+  }
+  .song-select:hover{ border-color:var(--seal-dim); }
+  .song-select option{
+    background:#181614;
+    color:var(--paper);
+  }
+
+  /* ---------- progress ---------- */
+  .progress-wrap{
+    padding: 2px 20px 14px;
+    flex-shrink:0;
+  }
+  .progress-track{
+    height:2px;
+    background:rgba(246,241,230,0.14);
+    border-radius:2px;
+    overflow:hidden;
+  }
+  .progress-fill{
+    height:100%;
+    background:var(--seal-dim);
+    transition:width 0.25s ease;
+  }
+  .progress-meta{
+    display:flex;
+    justify-content:space-between;
+    margin-top:8px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:10.5px;
+    color:rgba(246,241,230,0.45);
+    letter-spacing:0.03em;
+  }
+
+  /* ---------- card stage ---------- */
+  .stage{
+    flex:1;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 4px 18px 18px;
+    min-height:0;
+    touch-action:none;
+  }
+
+  .empty-state{
+    text-align:center;
+    color:rgba(246,241,230,0.55);
+    max-width:320px;
+    font-size:14px;
+    line-height:1.7;
+  }
+  .empty-state .glyph{
+    font-family:'Noto Serif SC',serif;
+    font-size:56px;
+    color:var(--seal-dim);
+    margin-bottom:18px;
+    line-height:1;
+  }
+  .empty-state code{
+    display:block;
+    margin-top:14px;
+    background:rgba(246,241,230,0.06);
+    border:1px solid rgba(246,241,230,0.1);
+    border-radius:8px;
+    padding:12px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:10.5px;
+    color:rgba(246,241,230,0.6);
+    text-align:left;
+    white-space:pre;
+    overflow-x:auto;
+  }
+
+  .card{
+    position:absolute;
+    width:auto;
+    left:8px; right:8px;
+    top:2px; bottom:8px;
+    max-width:720px;
+    margin:0 auto;
+    height:auto;
+    max-height:none;
+    background:var(--paper);
+    border-radius:18px;
+    color:var(--ink);
+    display:flex;
+    flex-direction:column;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.55), 0 2px 0 rgba(0,0,0,0.2);
+    will-change:transform, opacity;
+  }
+
+  .card-tag{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 24px 0;
+    flex-shrink:0;
+  }
+  .section-chop{
+    font-family:'Noto Serif SC', serif;
+    font-weight:700;
+    font-size:11.5px;
+    letter-spacing:0.06em;
+    color:var(--seal);
+    border:1.3px solid var(--seal);
+    padding:4px 10px 4px 9px;
+    border-radius:3px;
+  }
+  .line-index{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    color:var(--gray);
+  }
+
+  .hanzi-zone{
+    flex:1 1 auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 12px 20px 8px;
+    min-height:0;
+    width:100%;
+  }
+  .hanzi{
+    font-family:'Noto Serif SC', serif;
+    font-weight:700;
+    text-align:center;
+    line-height:1.25;
+    letter-spacing:0.04em;
+    color:var(--ink);
+    width:100%;
+    max-width:100%;
+    /* allow wrap — keep characters large across lines */
+    white-space:normal;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+  }
+
+  .pinyin-zone{
+    flex-shrink:0;
+    width:100%;
+    text-align:center;
+    padding: 8px 18px 10px;
+  }
+  .pinyin{
+    font-family:'Noto Sans SC', sans-serif;
+    font-weight:500;
+    font-size:clamp(20px, 4.8vw, 30px);
+    line-height:1.45;
+    color:var(--seal);
+    letter-spacing:0.02em;
+    width:100%;
+    display:block;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+
+  .divider{
+    margin:10px 24px 0;
+    height:1px;
+    background:var(--line);
+    flex-shrink:0;
+  }
+
+  .gloss-zone{
+    flex-shrink:0;
+    max-height:28%;
+    overflow-y:auto;
+    padding: 12px 20px 18px;
+  }
+  .gloss-label{
+    font-family:'JetBrains Mono', monospace;
+    font-size:9.5px;
+    letter-spacing:0.12em;
+    color:var(--gray);
+    text-transform:uppercase;
+    padding:0 4px 8px;
+  }
+  .gloss-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    padding:0 4px;
+  }
+  .gloss-chip{
+    background:var(--paper-dim);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:6px 10px 7px;
+    text-align:center;
+    min-width:44px;
+  }
+  .gloss-chip .h{
+    font-family:'Noto Serif SC', serif;
+    font-weight:600;
+    font-size:17px;
+    color:var(--ink);
+    line-height:1.15;
+  }
+  .gloss-chip .p{
+    font-family:'JetBrains Mono', monospace;
+    font-size:9px;
+    color:var(--gray);
+    margin-top:2px;
+  }
+  .gloss-chip .g{
+    font-size:10.5px;
+    color:var(--seal);
+    margin-top:3px;
+    font-weight:500;
+    line-height:1.25;
+  }
+
+  /* ---------- nav ---------- */
+  .navzone{
+    position:absolute;
+    top:0; bottom:0;
+    width:22%;
+    z-index:5;
+  }
+  .navzone.left{ left:0; }
+  .navzone.right{ right:0; }
+
+  .arrow-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:44px;height:44px;
+    border-radius:50%;
+    background:rgba(246,241,230,0.08);
+    border:1px solid rgba(246,241,230,0.15);
+    color:rgba(246,241,230,0.7);
+    display:flex;align-items:center;justify-content:center;
+    cursor:pointer;
+    font-size:18px;
+    z-index:6;
+    transition: all 0.15s ease;
+  }
+  .arrow-btn:hover{ background:rgba(246,241,230,0.16); color:var(--paper); }
+  .arrow-btn.left{ left:10px; }
+  .arrow-btn.right{ right:10px; }
+  .arrow-btn.hidden{ opacity:0; pointer-events:none; }
+
+  @media (max-width: 420px){
+    .brand{ font-size:13px; }
+    .song-select{ max-width:none; flex:1; }
+    .card{ left:4px; right:4px; bottom:4px; border-radius:14px; }
+    .arrow-btn{ display:none; }
+    .navzone{ display:none; }
+    .pinyin{ font-size:clamp(17px, 5.2vw, 24px); }
+    .gloss-zone{ max-height:32%; }
+    .gloss-chip .h{ font-size:15px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="brand"><span class="chop">詞</span> Lyric Cards</div>
+    <select class="song-select" id="songSelect" aria-label="Escolher música">
+      <option value="">—</option>
+    </select>
+  </div>
+
+  <div class="progress-wrap">
+    <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    <div class="progress-meta">
+      <span id="metaSection">—</span>
+      <span id="metaCount">0 / 0</span>
+    </div>
+  </div>
+
+  <div class="stage" id="stage">
+    <div class="empty-state" id="emptyState">
+      <div class="glyph">詞</div>
+      <div id="emptyMsg">Carregando catálogo…</div>
+      <code id="schemaHint">{
+  "meta": { "titleHanzi": "過火" },
+  "lines": [
+    {
+      "section": "Verso 1",
+      "hanzi": "…",
+      "pinyin": "…",
+      "words": [
+        {"h":"…","p":"…","g":"…"}
+      ]
+    }
+  ]
+}</code>
+    </div>
+  </div>
+
+<script>
+(function(){
+  let data = [];
+  let songTitle = '';
+  let idx = 0;
+  let dragStartX = null;
+  let dragCurrentX = 0;
+  let cardEl = null;
+
+  const stage = document.getElementById('stage');
+  const emptyState = document.getElementById('emptyState');
+  const progressFill = document.getElementById('progressFill');
+  const metaSection = document.getElementById('metaSection');
+  const metaCount = document.getElementById('metaCount');
+  const songSelect = document.getElementById('songSelect');
+  const emptyMsg = document.getElementById('emptyMsg');
+
+  async function loadCatalog(){
+    try{
+      const res = await fetch('catalog.json');
+      if(!res.ok) throw new Error('catalog');
+      const catalog = await res.json();
+      const songs = catalog.songs || [];
+      songSelect.innerHTML = '';
+      if(!songs.length){
+        emptyMsg.textContent = 'Nenhuma música no catálogo.';
+        return;
+      }
+      songs.forEach((s, i) => {
+        const opt = document.createElement('option');
+        opt.value = s.file;
+        opt.textContent = s.titleHanzi || s.file;
+        songSelect.appendChild(opt);
+        if(i === 0) opt.selected = true;
+      });
+      await loadSong(songs[0].file);
+    }catch(err){
+      emptyMsg.textContent =
+        'Não carregou o catálogo. Abra via servidor local (ex.: python3 -m http.server) na pasta lyricsReviewKTV/.';
+    }
+  }
+
+  async function loadSong(file){
+    try{
+      const res = await fetch(file);
+      if(!res.ok) throw new Error('song');
+      const parsed = await res.json();
+      applySong(parsed);
+    }catch(err){
+      data = [];
+      songTitle = '';
+      emptyState.style.display = 'block';
+      emptyMsg.textContent = 'Falha ao carregar: ' + file;
+      renderAll();
+    }
+  }
+
+  function applySong(parsed){
+    if(Array.isArray(parsed)){
+      data = parsed;
+      songTitle = '';
+    } else {
+      songTitle = (parsed.meta && parsed.meta.titleHanzi) || '';
+      data = parsed.lines || [];
+    }
+    if(!data.length) throw new Error('empty');
+    idx = 0;
+    renderAll();
+  }
+
+  songSelect.addEventListener('change', () => {
+    if(songSelect.value) loadSong(songSelect.value);
+  });
+
+  /** Start big; shrink only until the wrapped text fits the zone. */
+  function fitHanzi(el, zone){
+    const max = Math.min(96, Math.floor(zone.clientWidth * 0.22));
+    const min = 42;
+    let size = max;
+    el.style.fontSize = size + 'px';
+    while(size > min && el.scrollHeight > zone.clientHeight - 4){
+      size -= 2;
+      el.style.fontSize = size + 'px';
+    }
+  }
+
+  function buildCard(item){
+    const card = document.createElement('div');
+    card.className = 'card';
+
+    const tag = document.createElement('div');
+    tag.className = 'card-tag';
+    const chopLabel = item.section || songTitle || '';
+    tag.innerHTML = `<span class="section-chop">${escapeHtml(chopLabel)}</span><span class="line-index">#${String(idx+1).padStart(2,'0')}</span>`;
+    card.appendChild(tag);
+
+    const hzone = document.createElement('div');
+    hzone.className = 'hanzi-zone';
+    const hz = document.createElement('div');
+    hz.className = 'hanzi';
+    hz.textContent = item.hanzi || '';
+    hz.style.fontSize = '72px';
+    hzone.appendChild(hz);
+    card.appendChild(hzone);
+
+    const pzone = document.createElement('div');
+    pzone.className = 'pinyin-zone';
+    pzone.innerHTML = `<div class="pinyin">${escapeHtml(item.pinyin || '')}</div>`;
+    card.appendChild(pzone);
+    card._fitHanzi = () => fitHanzi(hz, hzone);
+
+    if(item.words && item.words.length){
+      const div = document.createElement('div');
+      div.className = 'divider';
+      card.appendChild(div);
+
+      const gzone = document.createElement('div');
+      gzone.className = 'gloss-zone';
+      const label = document.createElement('div');
+      label.className = 'gloss-label';
+      label.textContent = 'PALAVRA POR PALAVRA';
+      gzone.appendChild(label);
+
+      const row = document.createElement('div');
+      row.className = 'gloss-row';
+      item.words.forEach(w => {
+        const chip = document.createElement('div');
+        chip.className = 'gloss-chip';
+        chip.innerHTML = `<div class="h">${escapeHtml(w.h||'')}</div><div class="p">${escapeHtml(w.p||'')}</div><div class="g">${escapeHtml(w.g||'')}</div>`;
+        row.appendChild(chip);
+      });
+      gzone.appendChild(row);
+      card.appendChild(gzone);
+    }
+
+    return card;
+  }
+
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function renderAll(){
+    stage.querySelectorAll('.card, .arrow-btn, .navzone').forEach(el => el.remove());
+    emptyState.style.display = data.length ? 'none' : 'block';
+    if(!data.length) return;
+
+    cardEl = buildCard(data[idx]);
+    stage.appendChild(cardEl);
+    requestAnimationFrame(() => {
+      if(cardEl && cardEl._fitHanzi) cardEl._fitHanzi();
+    });
+    attachDrag(cardEl);
+
+    const leftZone = document.createElement('div');
+    leftZone.className = 'navzone left';
+    leftZone.addEventListener('click', () => go(-1));
+    const rightZone = document.createElement('div');
+    rightZone.className = 'navzone right';
+    rightZone.addEventListener('click', () => go(1));
+    stage.appendChild(leftZone);
+    stage.appendChild(rightZone);
+
+    const leftBtn = document.createElement('div');
+    leftBtn.className = 'arrow-btn left' + (idx === 0 ? ' hidden' : '');
+    leftBtn.textContent = '‹';
+    leftBtn.addEventListener('click', (e) => { e.stopPropagation(); go(-1); });
+    const rightBtn = document.createElement('div');
+    rightBtn.className = 'arrow-btn right' + (idx === data.length-1 ? ' hidden' : '');
+    rightBtn.textContent = '›';
+    rightBtn.addEventListener('click', (e) => { e.stopPropagation(); go(1); });
+    stage.appendChild(leftBtn);
+    stage.appendChild(rightBtn);
+
+    progressFill.style.width = ((idx+1)/data.length*100) + '%';
+    const sectionBit = data[idx].section || '';
+    metaSection.textContent = songTitle
+      ? (sectionBit ? songTitle + ' · ' + sectionBit : songTitle)
+      : (sectionBit || '—');
+    metaCount.textContent = (idx+1) + ' / ' + data.length;
+  }
+
+  function go(dir){
+    const next = idx + dir;
+    if(next < 0 || next >= data.length) return;
+    idx = next;
+    renderAll();
+  }
+
+  function attachDrag(el){
+    el.addEventListener('pointerdown', onDown);
+    el.addEventListener('pointermove', onMove);
+    el.addEventListener('pointerup', onUp);
+    el.addEventListener('pointerleave', onUp);
+  }
+  function onDown(e){
+    dragStartX = e.clientX;
+    dragCurrentX = 0;
+    cardEl.style.transition = 'none';
+    cardEl.setPointerCapture(e.pointerId);
+  }
+  function onMove(e){
+    if(dragStartX === null) return;
+    dragCurrentX = e.clientX - dragStartX;
+    const rot = dragCurrentX / 22;
+    cardEl.style.transform = `translateX(${dragCurrentX}px) rotate(${rot}deg)`;
+    cardEl.style.opacity = 1 - Math.min(Math.abs(dragCurrentX)/500, 0.4);
+  }
+  function onUp(){
+    if(dragStartX === null) return;
+    cardEl.style.transition = 'transform 0.28s ease, opacity 0.28s ease';
+    const threshold = 90;
+    if(dragCurrentX < -threshold && idx < data.length-1){
+      cardEl.style.transform = `translateX(-600px) rotate(-18deg)`;
+      cardEl.style.opacity = 0;
+      setTimeout(() => go(1), 180);
+    } else if(dragCurrentX > threshold && idx > 0){
+      cardEl.style.transform = `translateX(600px) rotate(18deg)`;
+      cardEl.style.opacity = 0;
+      setTimeout(() => go(-1), 180);
+    } else {
+      cardEl.style.transform = 'translateX(0) rotate(0)';
+      cardEl.style.opacity = 1;
+    }
+    dragStartX = null;
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'ArrowRight') go(1);
+    if(e.key === 'ArrowLeft') go(-1);
+  });
+
+  let wheelLock = false;
+  let touchStartY = null;
+  let touchStartX = null;
+  stage.addEventListener('wheel', (e) => {
+    if(!data.length) return;
+    const gloss = e.target.closest('.gloss-zone');
+    if(gloss){
+      const canScroll = gloss.scrollHeight > gloss.clientHeight + 2;
+      const atTop = gloss.scrollTop <= 0;
+      const atBottom = gloss.scrollTop + gloss.clientHeight >= gloss.scrollHeight - 1;
+      if(canScroll && !( (e.deltaY < 0 && atTop) || (e.deltaY > 0 && atBottom) )){
+        return;
+      }
+    }
+    e.preventDefault();
+    if(wheelLock || Math.abs(e.deltaY) < 8) return;
+    wheelLock = true;
+    go(e.deltaY < 0 ? 1 : -1);
+    setTimeout(() => { wheelLock = false; }, 320);
+  }, { passive: false });
+
+  stage.addEventListener('touchstart', (e) => {
+    if(e.target.closest('.gloss-zone')) return;
+    const t = e.changedTouches[0];
+    if(!t) return;
+    touchStartY = t.clientY;
+    touchStartX = t.clientX;
+  }, { passive: true });
+  stage.addEventListener('touchend', (e) => {
+    if(touchStartY === null || touchStartX === null) return;
+    if(e.target.closest('.gloss-zone')){
+      touchStartY = null; touchStartX = null; return;
+    }
+    const t = e.changedTouches[0];
+    if(!t) return;
+    const dy = t.clientY - touchStartY;
+    const dx = t.clientX - touchStartX;
+    touchStartY = null; touchStartX = null;
+    if(Math.abs(dy) < 48 || Math.abs(dy) < Math.abs(dx) * 1.2) return;
+    go(dy < 0 ? 1 : -1);
+  }, { passive: true });
+
+  loadCatalog();
+})();
+</script>
+</body>
+</html>
