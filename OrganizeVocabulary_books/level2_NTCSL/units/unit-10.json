@@ -1,0 +1,1298 @@
+{
+  "meta": {
+    "bookId": "ntcsl-l2",
+    "bookTitleZh": "新目标汉语口语课本 2",
+    "bookTitleEn": "New Target Chinese Spoken Language [2]",
+    "sourcePdf": "level2_NTCSL.pdf",
+    "unit": 10,
+    "titleZh": "约会",
+    "titleEn": "Making an Appointment",
+    "pdfPages": {
+      "from": 199,
+      "to": 219
+    },
+    "printPages": {
+      "from": 181,
+      "to": 201
+    },
+    "curatedAt": "2026-08-08",
+    "notes": "Lexicon harvested from unit gold blocks + brainstorm + smart extras from dialogue/tasks/cultural. OCR re-checked against page images (Vision OCR on rotated pages). priority=core is 生词大盘点 (40) + 专有名词 + 重点词语 + self-eval checklist. Unit ends at PDF 219; 221+ 词语总表 index ignored. Corrections: ornamental (OCR oramental); 牛仔裤 compound on self-eval; vocab 裤（子）/T恤（衫） normalized; 雷 'thunder' (OCR sometimes skipped). Full unit range PDF 199-219 (print 181-201); cultural on p219 (相亲). Cross-unit dedupe 2026-08-09: keep lemma in most coherent unit (core preferred; theme for extended)."
+  },
+  "objectives": {
+    "topicZh": "约会",
+    "topicEn": "Making an appointment",
+    "instructionalZh": "能正确描述人物衣着、配饰、动作状态等信息",
+    "instructionalEn": "Students can correctly describe someone's clothing, ornamental accessories and actions, etc.",
+    "keyWords": [
+      "约会",
+      "网友",
+      "见面",
+      "方式",
+      "穿",
+      "戴",
+      "按照",
+      "原来"
+    ],
+    "keySentences": [
+      {
+        "hanzi": "你怎么在这儿站着？",
+        "pinyin": "Nǐ zěnme zài zhèr zhànzhe?"
+      },
+      {
+        "hanzi": "今天下午你不是有约会吗？",
+        "pinyin": "Jīntiān xiàwǔ nǐ bú shì yǒu yuēhuì ma?"
+      },
+      {
+        "hanzi": "她会穿着一件白衬衫。",
+        "pinyin": "Tā huì chuānzhe yī jiàn bái chènshān."
+      },
+      {
+        "hanzi": "他手中拿着一本《汽车》杂志。",
+        "pinyin": "Tā shǒu zhōng názhe yī běn 《Qìchē》 zázhì."
+      }
+    ],
+    "grammarPoints": [
+      {
+        "zh": "反问句“不是……吗？”",
+        "en": "The rhetorical question using “不是……吗？”"
+      },
+      {
+        "zh": "“着”表示动作的持续状态",
+        "en": "“着” indicating the continuous state of an action"
+      },
+      {
+        "zh": "“会”表示将来、可能",
+        "en": "“会” indicating the future or possibility"
+      }
+    ]
+  },
+  "taskDemo": {
+    "pdfPage": 204,
+    "sceneZh": "查理站在一个公园门口，一会儿看看手表，一会儿看看远方，焦急地等待着。这时候美善来了……",
+    "sceneEn": "Charlie sometimes looks at his watch and sometimes looks afar, waiting anxiously at the entrance of a park. Then Meishan is coming…",
+    "lines": [
+      {
+        "speaker": "查理",
+        "hanzi": "美善！"
+      },
+      {
+        "speaker": "美善",
+        "hanzi": "查理！你怎么在这儿站着？今天下午你不是有约会吗？"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "是的。我要见一个网友，我们在网上聊了很长时间，约好今天在这儿见面。"
+      },
+      {
+        "speaker": "美善",
+        "hanzi": "你们在网上见过面了吗？"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "还没有。不过我们约好了见面的方式。"
+      },
+      {
+        "speaker": "美善",
+        "hanzi": "什么方式？"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "她会穿着一件白衬衫，一条牛仔短裤。"
+      },
+      {
+        "speaker": "美善",
+        "hanzi": "今天你穿着白色T恤衫和蓝色牛仔裤，我猜，按照你们的约定，你手中还应该拿着一本《汽车》杂志吧。"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "对啊，你怎么知道？我们约好了10:00见面，可是她还没来。"
+      },
+      {
+        "speaker": "美善",
+        "hanzi": "你再好好儿看看，真的没来吗？"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "啊？原来是你！"
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "id": "rhetorical-bushima",
+      "titleZh": "反问句“不是……吗？”",
+      "titleEn": "The rhetorical question using “不是……吗？”",
+      "patternZh": "不是……吗？",
+      "patternEn": "bú shì … ma?",
+      "examples": [
+        {
+          "hanzi": "他不是美国人吗？怎么不知道华盛顿是谁？",
+          "pinyin": "Tā bú shì Měiguórén ma? Zěnme bù zhīdào Huáshèngdùn shì shéi?"
+        },
+        {
+          "hanzi": "你不是不想来吗？怎么来了？",
+          "pinyin": "Nǐ bú shì bù xiǎng lái ma? Zěnme lái le?"
+        },
+        {
+          "hanzi": "今天下午你不是有约会吗？",
+          "note": "from key sentences / task demo"
+        }
+      ],
+      "notes": [
+        "Rhetorical; answer is already known; used for emphasis, especially in spoken Chinese."
+      ]
+    },
+    {
+      "id": "zhe-continuous",
+      "titleZh": "“着”表示动作的持续状态",
+      "titleEn": "“着” indicating the continuous state of an action",
+      "patternZh": "主语＋动词＋着＋（宾语）",
+      "patternEn": "Subject + Verb + 着 + (Object)",
+      "examples": [
+        {
+          "hanzi": "门开着。",
+          "pinyin": "Mén kāizhe."
+        },
+        {
+          "hanzi": "他穿着一件白衬衫。",
+          "pinyin": "Tā chuānzhe yī jiàn bái chènshān."
+        },
+        {
+          "hanzi": "昨天我看见他穿着一件白衬衫。",
+          "pinyin": "Zuótiān wǒ kànjian tā chuānzhe yī jiàn bái chènshān."
+        },
+        {
+          "hanzi": "明天我还会带着我的辞典来上课。",
+          "pinyin": "Míngtiān wǒ hái huì dàizhe wǒ de cídiǎn lái shàngkè."
+        },
+        {
+          "hanzi": "他没站着，他坐着呢。",
+          "pinyin": "Tā méi zhànzhe, tā zuòzhe ne."
+        }
+      ],
+      "notes": [
+        "Negation: 没＋动词＋着.",
+        "Continuous state may be past, present, or future (with time words)."
+      ]
+    },
+    {
+      "id": "hui-future-ability",
+      "titleZh": "“会”表示将来、可能",
+      "titleEn": "“会” indicating the future or possibility",
+      "patternZh": "会＋动词；会……的",
+      "patternEn": "huì + Verb; huì … de",
+      "examples": [
+        {
+          "hanzi": "那个孩子会说话了。",
+          "pinyin": "Nàge háizi huì shuōhuà le.",
+          "note": "ability acquired through learning"
+        },
+        {
+          "hanzi": "我会写一些汉字，但是写得不太好。",
+          "pinyin": "Wǒ huì xiě yìxiē Hànzì, dànshì xiě de bú tài hǎo."
+        },
+        {
+          "hanzi": "她会穿着一件白衬衫。",
+          "note": "future/possibility; from key sentences"
+        },
+        {
+          "hanzi": "下星期你会不会去上海？",
+          "note": "self-eval grammar check"
+        }
+      ],
+      "notes": [
+        "Two senses: learned ability; future possibility."
+      ]
+    }
+  ],
+  "selfEvalChecklist": [
+    "约会",
+    "网友",
+    "聊天儿",
+    "见面",
+    "着",
+    "裙子",
+    "衬衫",
+    "牛仔裤",
+    "围巾",
+    "帽子",
+    "领带",
+    "拿",
+    "站",
+    "坐",
+    "播放",
+    "方式",
+    "杂志",
+    "戴",
+    "穿",
+    "握"
+  ],
+  "entries": [
+    {
+      "hanzi": "约会",
+      "pinyin": "yuēhuì",
+      "pos": "名/动",
+      "glossEn": "date, appointment; to make an appointment",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "穿",
+      "pinyin": "chuān",
+      "pos": "动",
+      "glossEn": "to wear; to put on (clothes)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "戴",
+      "pinyin": "dài",
+      "pos": "动",
+      "glossEn": "to wear (accessories, etc.)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "靠",
+      "pinyin": "kào",
+      "pos": "动",
+      "glossEn": "to lean on",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "播放",
+      "pinyin": "bōfàng",
+      "pos": "动",
+      "glossEn": "to play (audio/video)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "握",
+      "pinyin": "wò",
+      "pos": "动",
+      "glossEn": "to hold; to grasp",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "捧",
+      "pinyin": "pěng",
+      "pos": "动",
+      "glossEn": "to carry or hold in both hands",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "着",
+      "pinyin": "zhe",
+      "pos": "助",
+      "glossEn": "particle for continuous state of an action",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "衬衫",
+      "pinyin": "chènshān",
+      "pos": "名",
+      "glossEn": "shirt",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "牛仔",
+      "pinyin": "niúzǎi",
+      "pos": "名",
+      "glossEn": "jeans; cowboy",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ],
+      "notes": "Often compounds as 牛仔裤."
+    },
+    {
+      "hanzi": "裤子",
+      "pinyin": "kùzi",
+      "pos": "名",
+      "glossEn": "trousers",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm"
+      ],
+      "notes": "Book lists 裤（子）."
+    },
+    {
+      "hanzi": "T恤衫",
+      "pinyin": "T xùshān",
+      "pos": "名",
+      "glossEn": "T-shirt",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ],
+      "notes": "Book lists T恤（衫）."
+    },
+    {
+      "hanzi": "领带",
+      "pinyin": "lǐngdài",
+      "pos": "名",
+      "glossEn": "tie",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "围巾",
+      "pinyin": "wéijīn",
+      "pos": "名",
+      "glossEn": "scarf",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "帽子",
+      "pinyin": "màozi",
+      "pos": "名",
+      "glossEn": "hat",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "杂志",
+      "pinyin": "zázhì",
+      "pos": "名",
+      "glossEn": "magazine",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "玫瑰",
+      "pinyin": "méiguī",
+      "pos": "名",
+      "glossEn": "rose",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "项链",
+      "pinyin": "xiàngliàn",
+      "pos": "名",
+      "glossEn": "necklace",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "耳环",
+      "pinyin": "ěrhuán",
+      "pos": "名",
+      "glossEn": "earring",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "戒指",
+      "pinyin": "jièzhi",
+      "pos": "名",
+      "glossEn": "ring",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "雷",
+      "pinyin": "léi",
+      "pos": "名",
+      "glossEn": "thunder",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "网友",
+      "pinyin": "wǎngyǒu",
+      "pos": "名",
+      "glossEn": "net friend",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "聊",
+      "pinyin": "liáo",
+      "pos": "动",
+      "glossEn": "to chat",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "见面",
+      "pinyin": "jiànmiàn",
+      "pos": "动",
+      "glossEn": "to meet",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "方式",
+      "pinyin": "fāngshì",
+      "pos": "名",
+      "glossEn": "way; method",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "会……（的）",
+      "pinyin": "huì……(de)",
+      "pos": "能动",
+      "glossEn": "will (future/possibility)",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "按照",
+      "pinyin": "ànzhào",
+      "pos": "介",
+      "glossEn": "according to",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords"
+      ]
+    },
+    {
+      "hanzi": "约定",
+      "pinyin": "yuēdìng",
+      "pos": "名/动",
+      "glossEn": "arrangement; to agree on",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "中",
+      "pinyin": "zhōng",
+      "pos": "名",
+      "glossEn": "center; middle",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "汽车",
+      "pinyin": "qìchē",
+      "pos": "名",
+      "glossEn": "automobile; motor vehicle",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "原来",
+      "pinyin": "yuánlái",
+      "pos": "副",
+      "glossEn": "originally; as it turns out",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords"
+      ]
+    },
+    {
+      "hanzi": "笔",
+      "pinyin": "bǐ",
+      "pos": "名",
+      "glossEn": "pen",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "牛奶",
+      "pinyin": "niúnǎi",
+      "pos": "名",
+      "glossEn": "milk",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "钟",
+      "pinyin": "zhōng",
+      "pos": "名",
+      "glossEn": "clock; bell",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "地图",
+      "pinyin": "dìtú",
+      "pos": "名",
+      "glossEn": "map",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "花",
+      "pinyin": "huā",
+      "pos": "名",
+      "glossEn": "flower",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "包",
+      "pinyin": "bāo",
+      "pos": "名",
+      "glossEn": "bag",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "钱包",
+      "pinyin": "qiánbāo",
+      "pos": "名",
+      "glossEn": "wallet; purse",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "聊天儿",
+      "pinyin": "liáotiānr",
+      "pos": "动",
+      "glossEn": "to chat",
+      "priority": "core",
+      "sources": [
+        "selfEval",
+        "tasks"
+      ],
+      "notes": "Self-eval lists 聊天儿; vocab list has 聊."
+    },
+    {
+      "hanzi": "牛仔裤",
+      "pinyin": "niúzǎikù",
+      "pos": "名",
+      "glossEn": "jeans",
+      "priority": "core",
+      "sources": [
+        "selfEval",
+        "taskDemo"
+      ],
+      "notes": "Self-eval/task demo compound; vocab splits 牛仔 + 裤（子）."
+    },
+    {
+      "hanzi": "坐",
+      "pinyin": "zuò",
+      "pos": "动",
+      "glossEn": "to sit",
+      "priority": "core",
+      "sources": [
+        "selfEval",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "打扮",
+      "pinyin": "dǎban",
+      "pos": "动",
+      "glossEn": "to dress up",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "穿着",
+      "pinyin": "chuānzhuó",
+      "pos": "名",
+      "glossEn": "apparel; what one wears",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "配饰",
+      "pinyin": "pèishì",
+      "pos": "名",
+      "glossEn": "ornamental accessories",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "场景",
+      "pinyin": "chǎngjǐng",
+      "pos": "名",
+      "glossEn": "scene",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "动作",
+      "pinyin": "dòngzuò",
+      "pos": "名",
+      "glossEn": "action",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "衣服",
+      "pinyin": "yīfu",
+      "pos": "名",
+      "glossEn": "clothes",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "裙子",
+      "pinyin": "qúnzi",
+      "pos": "名",
+      "glossEn": "skirt",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "鞋",
+      "pinyin": "xié",
+      "pos": "名",
+      "glossEn": "shoes",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "皮带",
+      "pinyin": "pídài",
+      "pos": "名",
+      "glossEn": "belt",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "首饰",
+      "pinyin": "shǒushi",
+      "pos": "名",
+      "glossEn": "jewellery",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "路边",
+      "pinyin": "lùbiān",
+      "pos": "名",
+      "glossEn": "roadside",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "公园",
+      "pinyin": "gōngyuán",
+      "pos": "名",
+      "glossEn": "park",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "手表",
+      "pinyin": "shǒubiǎo",
+      "pos": "名",
+      "glossEn": "watch",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "远方",
+      "pinyin": "yuǎnfāng",
+      "pos": "名",
+      "glossEn": "distance; far away",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "焦急",
+      "pinyin": "jiāojí",
+      "pos": "形",
+      "glossEn": "anxious",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "等待",
+      "pinyin": "děngdài",
+      "pos": "动",
+      "glossEn": "to wait",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "网上",
+      "pinyin": "wǎngshàng",
+      "pos": "名",
+      "glossEn": "online; on the internet",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "约好",
+      "pinyin": "yuēhǎo",
+      "pos": "动",
+      "glossEn": "to agree on (a time/place)",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "白色",
+      "pinyin": "báisè",
+      "pos": "名",
+      "glossEn": "white (color)",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "蓝色",
+      "pinyin": "lánsè",
+      "pos": "名",
+      "glossEn": "blue (color)",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "短裤",
+      "pinyin": "duǎnkù",
+      "pos": "名",
+      "glossEn": "shorts",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "手中",
+      "pinyin": "shǒuzhōng",
+      "pos": "名",
+      "glossEn": "in one's hand",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "keySentences"
+      ]
+    },
+    {
+      "hanzi": "不是……吗",
+      "pinyin": "bú shì……ma",
+      "pos": "短",
+      "glossEn": "rhetorical question pattern",
+      "priority": "extended",
+      "sources": [
+        "grammar",
+        "keySentences",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "美国人",
+      "pinyin": "Měiguórén",
+      "pos": "名",
+      "glossEn": "American",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "华盛顿",
+      "pinyin": "Huáshèngdùn",
+      "pos": "专有",
+      "glossEn": "Washington",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "开着",
+      "pinyin": "kāizhe",
+      "pos": "动",
+      "glossEn": "to be open (continuous)",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "昨天",
+      "pinyin": "zuótiān",
+      "pos": "名",
+      "glossEn": "yesterday",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "明天",
+      "pinyin": "míngtiān",
+      "pos": "名",
+      "glossEn": "tomorrow",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "辞典",
+      "pinyin": "cídiǎn",
+      "pos": "名",
+      "glossEn": "dictionary",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "窗户",
+      "pinyin": "chuānghu",
+      "pos": "名",
+      "glossEn": "window",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "孩子",
+      "pinyin": "háizi",
+      "pos": "名",
+      "glossEn": "child",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "说话",
+      "pinyin": "shuōhuà",
+      "pos": "动",
+      "glossEn": "to speak; to talk",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "警察",
+      "pinyin": "jǐngchá",
+      "pos": "名",
+      "glossEn": "police; police officer",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "走失",
+      "pinyin": "zǒushī",
+      "pos": "动",
+      "glossEn": "to get lost",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "着急",
+      "pinyin": "zháojí",
+      "pos": "形",
+      "glossEn": "worried; anxious",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "假期",
+      "pinyin": "jiàqī",
+      "pos": "名",
+      "glossEn": "holiday; vacation",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "爷爷",
+      "pinyin": "yéye",
+      "pos": "名",
+      "glossEn": "paternal grandfather",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "奶奶",
+      "pinyin": "nǎinai",
+      "pos": "名",
+      "glossEn": "paternal grandmother",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "相亲",
+      "pinyin": "xiāngqīn",
+      "pos": "动/名",
+      "glossEn": "blind date; arranged meeting for marriage",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "媒人",
+      "pinyin": "méirén",
+      "pos": "名",
+      "glossEn": "matchmaker",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "内向",
+      "pinyin": "nèixiàng",
+      "pos": "形",
+      "glossEn": "introverted",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "害羞",
+      "pinyin": "hàixiū",
+      "pos": "形",
+      "glossEn": "shy",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "社交",
+      "pinyin": "shèjiāo",
+      "pos": "名",
+      "glossEn": "social contact",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "谈婚论嫁",
+      "pinyin": "tán hūn lùn jià",
+      "pos": "短",
+      "glossEn": "to talk about marriage",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "开朗",
+      "pinyin": "kāilǎng",
+      "pos": "形",
+      "glossEn": "outgoing; cheerful",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "网络",
+      "pinyin": "wǎngluò",
+      "pos": "名",
+      "glossEn": "the Internet",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "过时",
+      "pinyin": "guòshí",
+      "pos": "形",
+      "glossEn": "outdated",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "异性",
+      "pinyin": "yìxìng",
+      "pos": "名",
+      "glossEn": "opposite sex",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "下午",
+      "pinyin": "xiàwǔ",
+      "pos": "名",
+      "glossEn": "afternoon",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "keySentences"
+      ]
+    },
+    {
+      "hanzi": "知道",
+      "pinyin": "zhīdào",
+      "pos": "动",
+      "glossEn": "to know",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "描述",
+      "pinyin": "miáoshù",
+      "pos": "动",
+      "glossEn": "to describe",
+      "priority": "extended",
+      "sources": [
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "衣着",
+      "pinyin": "yīzhuó",
+      "pos": "名",
+      "glossEn": "clothing; attire",
+      "priority": "extended",
+      "sources": [
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "状态",
+      "pinyin": "zhuàngtài",
+      "pos": "名",
+      "glossEn": "state; condition",
+      "priority": "extended",
+      "sources": [
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "正确",
+      "pinyin": "zhèngquè",
+      "pos": "形",
+      "glossEn": "correct",
+      "priority": "extended",
+      "sources": [
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "情景",
+      "pinyin": "qíngjǐng",
+      "pos": "名",
+      "glossEn": "scene; situation",
+      "priority": "extended",
+      "sources": [
+        "warmUp"
+      ]
+    },
+    {
+      "hanzi": "什么样",
+      "pinyin": "shénme yàng",
+      "pos": "代",
+      "glossEn": "what kind",
+      "priority": "extended",
+      "sources": [
+        "warmUp"
+      ]
+    },
+    {
+      "hanzi": "拿",
+      "pinyin": "ná",
+      "pos": "动",
+      "glossEn": "to hold; to take",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval"
+      ],
+      "notes": "Restored to U10 (official checklist/vocab overlap after dedupe)."
+    },
+    {
+      "hanzi": "站",
+      "pinyin": "zhàn",
+      "pos": "名",
+      "glossEn": "station; stop",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "objectives"
+      ],
+      "notes": "Restored to U10 (official checklist/vocab overlap after dedupe)."
+    }
+  ],
+  "stats": {
+    "entryCount": 99,
+    "byPriority": {
+      "core": 43,
+      "brainstorm": 12,
+      "extended": 44
+    },
+    "selfEvalCount": 20,
+    "vocabListCount": 40,
+    "properNounCount": 2,
+    "dedupedAt": "2026-08-09",
+    "removedCrossUnitDuplicates": 23,
+    "dedupeRule": "One home unit by theme; official selfEval/keyWords/vocabList may keep a second copy if checklist requires it."
+  }
+}

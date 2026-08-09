@@ -1,0 +1,1109 @@
+{
+  "meta": {
+    "bookId": "ntcsl-l2",
+    "bookTitleZh": "新目标汉语口语课本 2",
+    "bookTitleEn": "New Target Chinese Spoken Language [2]",
+    "sourcePdf": "level2_NTCSL.pdf",
+    "unit": 8,
+    "titleZh": "酒店入住",
+    "titleEn": "Checking in a Hotel",
+    "pdfPages": {
+      "from": 161,
+      "to": 178
+    },
+    "printPages": {
+      "from": 143,
+      "to": 160
+    },
+    "curatedAt": "2026-08-08",
+    "notes": "Lexicon harvested from unit gold blocks + brainstorm + smart extras from dialogue/tasks/cultural. OCR re-checked against page images (Vision OCR on rotated pages for self-eval/vocab). priority=core is 生词大盘点 (32) + 专有名词 (美善/查理) + 重点词语 + self-eval checklist. Corrections: 预订 yùdìng (OCR yiding); 吹风机 chuīfēngjī; 绿 (OCR grecn); self-eval includes 护照/填/换/查/层 not all on garbled OCR. Full unit range PDF 161-178 (print 143-160); cultural on p176 (农家乐). Cross-unit dedupe 2026-08-09: keep lemma in most coherent unit (core preferred; theme for extended)."
+  },
+  "objectives": {
+    "topicZh": "酒店入住",
+    "topicEn": "Checking in a hotel",
+    "instructionalZh": "会预订房间、办理酒店入住及退房手续",
+    "instructionalEn": "Students can reserve a room, check in and check out of a hotel.",
+    "keyWords": [
+      "办理",
+      "入住",
+      "预订",
+      "单人间",
+      "双人间",
+      "房卡",
+      "把"
+    ],
+    "keySentences": [
+      {
+        "hanzi": "我们办理入住。",
+        "pinyin": "Wǒmen bànlǐ rùzhù."
+      },
+      {
+        "hanzi": "我把“查”说成“chai”了。",
+        "pinyin": "Wǒ bǎ “chá” shuōchéng “chái” le."
+      },
+      {
+        "hanzi": "您预订了两个单人间。",
+        "pinyin": "Nín yùdìngle liǎng ge dānrénjiān."
+      },
+      {
+        "hanzi": "把你的护照给我。",
+        "pinyin": "Bǎ nǐ de hùzhào gěi wǒ."
+      },
+      {
+        "hanzi": "请您填一下儿登记卡。",
+        "pinyin": "Qǐng nín tián yíxiàr dēngjì kǎ."
+      },
+      {
+        "hanzi": "能不能把我们的房间换到同一层？",
+        "pinyin": "Néng bu néng bǎ wǒmen de fángjiān huàndào tóng yì céng?"
+      }
+    ],
+    "grammarPoints": [
+      {
+        "zh": "“把”字句",
+        "en": "The “把” sentence"
+      }
+    ]
+  },
+  "taskDemo": {
+    "pdfPage": 165,
+    "sceneZh": "美善和查理在酒店大堂办理入住手续。",
+    "sceneEn": "Meishan and Charlie are checking in at the lobby of a hotel.",
+    "lines": [
+      {
+        "speaker": "美善",
+        "hanzi": "您好，我们办理入住。"
+      },
+      {
+        "speaker": "服务员",
+        "hanzi": "请问您预订房间了吗？"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "预订了。"
+      },
+      {
+        "speaker": "服务员",
+        "hanzi": "请说一下儿您的名字。"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "Chai理。"
+      },
+      {
+        "speaker": "服务员",
+        "hanzi": "对不起，电脑里没有Chai理这个名字。"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "啊，对不起，是查理。我把“查”说成“chai”了。"
+      },
+      {
+        "speaker": "服务员",
+        "hanzi": "查理先生，您预订了两个单人间。"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "对，这是我的护照。美善，把你的护照给我。"
+      },
+      {
+        "speaker": "服务员",
+        "hanzi": "谢谢。请您填一下儿登记卡。"
+      },
+      {
+        "speaker": "服务员",
+        "hanzi": "这是您的房卡。1015和1506号房间。"
+      },
+      {
+        "speaker": "美善",
+        "hanzi": "能不能把我们的房间换到同一层？"
+      },
+      {
+        "speaker": "服务员",
+        "hanzi": "我查一下儿，1028房间可以吗？"
+      },
+      {
+        "speaker": "美善",
+        "hanzi": "可以，谢谢。"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "对了，房间里有网线吧？"
+      },
+      {
+        "speaker": "服务员",
+        "hanzi": "房间里有网线，可以上网。"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "谢谢。"
+      },
+      {
+        "speaker": "服务员",
+        "hanzi": "祝您愉快。"
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "id": "ba-sentence",
+      "titleZh": "“把”字句",
+      "titleEn": "The “把” sentence",
+      "patternZh": "主语＋把＋宾语＋动词＋其他成分",
+      "patternEn": "Subject + 把 + Object + Verb + other element",
+      "examples": [
+        {
+          "hanzi": "我想把窗帘换成粉色。",
+          "pinyin": "Wǒ xiǎng bǎ chuānglián huànchéng fěnsè."
+        },
+        {
+          "hanzi": "我想把床放到柜子的左边。",
+          "pinyin": "Wǒ xiǎng bǎ chuáng fàngdào guìzi de zuǒbian."
+        },
+        {
+          "hanzi": "把你的护照给我。",
+          "note": "把…给…"
+        },
+        {
+          "hanzi": "我把“查”说成“chai”了。",
+          "note": "把…成…"
+        },
+        {
+          "hanzi": "能不能把我们的房间换到同一层？",
+          "note": "把…到…"
+        }
+      ],
+      "notes": [
+        "Emphasizes how an action disposes of something and the result.",
+        "When the main verb takes result complements 到 / 给 / 成, a 把-sentence is typically required."
+      ]
+    }
+  ],
+  "selfEvalChecklist": [
+    "入住",
+    "预订",
+    "电视",
+    "手续",
+    "办理",
+    "护照",
+    "填",
+    "空调",
+    "层",
+    "退房",
+    "把",
+    "查",
+    "换",
+    "拖鞋",
+    "网线",
+    "单人间",
+    "双人间",
+    "可以",
+    "餐厅",
+    "愉快",
+    "房卡"
+  ],
+  "entries": [
+    {
+      "hanzi": "房卡",
+      "pinyin": "fángkǎ",
+      "pos": "名",
+      "glossEn": "room card",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "双人间",
+      "pinyin": "shuāngrénjiān",
+      "pos": "名",
+      "glossEn": "double room",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "单人间",
+      "pinyin": "dānrénjiān",
+      "pos": "名",
+      "glossEn": "single room",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "前台",
+      "pinyin": "qiántái",
+      "pos": "名",
+      "glossEn": "(hotel) receptionist; front desk",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "餐厅",
+      "pinyin": "cāntīng",
+      "pos": "名",
+      "glossEn": "restaurant",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "网线",
+      "pinyin": "wǎngxiàn",
+      "pos": "名",
+      "glossEn": "network cable",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "空调",
+      "pinyin": "kōngtiáo",
+      "pos": "名",
+      "glossEn": "air conditioner",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "电视",
+      "pinyin": "diànshì",
+      "pos": "名",
+      "glossEn": "television",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "被子",
+      "pinyin": "bèizi",
+      "pos": "名",
+      "glossEn": "quilt",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "吹风机",
+      "pinyin": "chuīfēngjī",
+      "pos": "名",
+      "glossEn": "hair dryer",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower"
+      ],
+      "notes": "Book gloss: hair drier."
+    },
+    {
+      "hanzi": "拖鞋",
+      "pinyin": "tuōxié",
+      "pos": "名",
+      "glossEn": "slippers",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "办理",
+      "pinyin": "bànlǐ",
+      "pos": "动",
+      "glossEn": "to handle; to process",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "入住",
+      "pinyin": "rùzhù",
+      "pos": "动",
+      "glossEn": "to check in",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "预订",
+      "pinyin": "yùdìng",
+      "pos": "动",
+      "glossEn": "to reserve; to book in advance",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ],
+      "notes": "Cover OCR yiding → yùdìng."
+    },
+    {
+      "hanzi": "成",
+      "pinyin": "chéng",
+      "pos": "动",
+      "glossEn": "to become; to turn into",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "填",
+      "pinyin": "tián",
+      "pos": "动",
+      "glossEn": "to fill in",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval"
+      ],
+      "notes": "OCR/list gloss 'to fill'."
+    },
+    {
+      "hanzi": "查",
+      "pinyin": "chá",
+      "pos": "动",
+      "glossEn": "to check",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "祝",
+      "pinyin": "zhù",
+      "pos": "动",
+      "glossEn": "to wish; to express good wishes",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "手续",
+      "pinyin": "shǒuxù",
+      "pos": "名",
+      "glossEn": "procedure",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "愉快",
+      "pinyin": "yúkuài",
+      "pos": "形",
+      "glossEn": "happy; pleasant",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "层",
+      "pinyin": "céng",
+      "pos": "量",
+      "glossEn": "floor (of a building)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "把",
+      "pinyin": "bǎ",
+      "pos": "介",
+      "glossEn": "preposition marking the disposed object (把-sentence)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "登记卡",
+      "pinyin": "dēngjì kǎ",
+      "pos": "名",
+      "glossEn": "registration card",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "可以",
+      "pinyin": "kěyǐ",
+      "pos": "能动",
+      "glossEn": "can; may",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "退房",
+      "pinyin": "tuìfáng",
+      "pos": "动",
+      "glossEn": "to check out",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "红",
+      "pinyin": "hóng",
+      "pos": "形",
+      "glossEn": "red",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "黄",
+      "pinyin": "huáng",
+      "pos": "形",
+      "glossEn": "yellow",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "蓝",
+      "pinyin": "lán",
+      "pos": "形",
+      "glossEn": "blue",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "黑",
+      "pinyin": "hēi",
+      "pos": "形",
+      "glossEn": "black",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "白",
+      "pinyin": "bái",
+      "pos": "形",
+      "glossEn": "white",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "绿",
+      "pinyin": "lǜ",
+      "pos": "形",
+      "glossEn": "green",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "护照",
+      "pinyin": "hùzhào",
+      "pos": "名",
+      "glossEn": "passport",
+      "priority": "core",
+      "sources": [
+        "selfEval",
+        "wordPower",
+        "taskDemo"
+      ],
+      "notes": "On self-eval + word power + task demo; not in 生词大盘点."
+    },
+    {
+      "hanzi": "酒店",
+      "pinyin": "jiǔdiàn",
+      "pos": "名",
+      "glossEn": "hotel",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "房间",
+      "pinyin": "fángjiān",
+      "pos": "名",
+      "glossEn": "room",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "现金",
+      "pinyin": "xiànjīn",
+      "pos": "名",
+      "glossEn": "cash",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "信用卡",
+      "pinyin": "xìnyòngkǎ",
+      "pos": "名",
+      "glossEn": "credit card",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "枕头",
+      "pinyin": "zhěntou",
+      "pos": "名",
+      "glossEn": "pillow",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "卫生纸",
+      "pinyin": "wèishēngzhǐ",
+      "pos": "名",
+      "glossEn": "toilet paper",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "牙具",
+      "pinyin": "yájù",
+      "pos": "名",
+      "glossEn": "tooth cleaners; toiletries for teeth",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "洗发水",
+      "pinyin": "xǐfǎshuǐ",
+      "pos": "名",
+      "glossEn": "shampoo",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "浴液",
+      "pinyin": "yùyè",
+      "pos": "名",
+      "glossEn": "shower gel",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "早餐券",
+      "pinyin": "zǎocānquàn",
+      "pos": "名",
+      "glossEn": "breakfast coupon",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "柜子",
+      "pinyin": "guìzi",
+      "pos": "名",
+      "glossEn": "cabinet; wardrobe",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "客房服务",
+      "pinyin": "kèfáng fúwù",
+      "pos": "名",
+      "glossEn": "room service",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "送餐",
+      "pinyin": "sòngcān",
+      "pos": "动",
+      "glossEn": "to deliver food",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "叫早",
+      "pinyin": "jiàozǎo",
+      "pos": "动/名",
+      "glossEn": "morning call; wake-up call",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "洗衣服",
+      "pinyin": "xǐ yīfu",
+      "pos": "动",
+      "glossEn": "to do laundry",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "打扫房间",
+      "pinyin": "dǎsǎo fángjiān",
+      "pos": "动",
+      "glossEn": "to clean the room",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "请勿打扰",
+      "pinyin": "qǐng wù dǎrǎo",
+      "pos": "短",
+      "glossEn": "Do not disturb",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "大堂",
+      "pinyin": "dàtáng",
+      "pos": "名",
+      "glossEn": "lobby",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "服务员",
+      "pinyin": "fúwùyuán",
+      "pos": "名",
+      "glossEn": "attendant; waiter/waitress",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "名字",
+      "pinyin": "míngzi",
+      "pos": "名",
+      "glossEn": "name",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "先生",
+      "pinyin": "xiānsheng",
+      "pos": "名",
+      "glossEn": "Mr.; sir",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "电脑",
+      "pinyin": "diànnǎo",
+      "pos": "名",
+      "glossEn": "computer",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "说成",
+      "pinyin": "shuōchéng",
+      "pos": "动",
+      "glossEn": "to say … as …; to mispronounce as",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "keySentences",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "同一",
+      "pinyin": "tóngyī",
+      "pos": "形",
+      "glossEn": "same",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "keySentences"
+      ]
+    },
+    {
+      "hanzi": "窗帘",
+      "pinyin": "chuānglián",
+      "pos": "名",
+      "glossEn": "curtain",
+      "priority": "extended",
+      "sources": [
+        "grammar",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "粉色",
+      "pinyin": "fěnsè",
+      "pos": "名",
+      "glossEn": "pink",
+      "priority": "extended",
+      "sources": [
+        "grammar",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "床",
+      "pinyin": "chuáng",
+      "pos": "名",
+      "glossEn": "bed",
+      "priority": "extended",
+      "sources": [
+        "grammar",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "换成",
+      "pinyin": "huànchéng",
+      "pos": "动",
+      "glossEn": "to change into",
+      "priority": "extended",
+      "sources": [
+        "grammar",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "放到",
+      "pinyin": "fàngdào",
+      "pos": "动",
+      "glossEn": "to put onto/into",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "农家乐",
+      "pinyin": "nóngjiālè",
+      "pos": "名",
+      "glossEn": "agritainment; farm stay",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ],
+      "notes": "Cultural tip topic."
+    },
+    {
+      "hanzi": "农民",
+      "pinyin": "nóngmín",
+      "pos": "名",
+      "glossEn": "farmer",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "放松",
+      "pinyin": "fàngsōng",
+      "pos": "动",
+      "glossEn": "to relax",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "自然",
+      "pinyin": "zìrán",
+      "pos": "名/形",
+      "glossEn": "nature; natural",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "田园",
+      "pinyin": "tiányuán",
+      "pos": "名",
+      "glossEn": "countryside; pastoral",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "风光",
+      "pinyin": "fēngguāng",
+      "pos": "名",
+      "glossEn": "scenery",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "住",
+      "pinyin": "zhù",
+      "pos": "动",
+      "glossEn": "to stay; to live",
+      "priority": "extended",
+      "sources": [
+        "warmUp",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "怎么样",
+      "pinyin": "zěnmeyàng",
+      "pos": "代",
+      "glossEn": "how; how about",
+      "priority": "extended",
+      "sources": [
+        "warmUp"
+      ]
+    },
+    {
+      "hanzi": "请问",
+      "pinyin": "qǐngwèn",
+      "pos": "动",
+      "glossEn": "excuse me; may I ask",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "号码",
+      "pinyin": "hàomǎ",
+      "pos": "名",
+      "glossEn": "number",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ],
+      "notes": "Room numbers 1015/1506/1028."
+    },
+    {
+      "hanzi": "颜色",
+      "pinyin": "yánsè",
+      "pos": "名",
+      "glossEn": "color",
+      "priority": "extended",
+      "sources": [
+        "tasks",
+        "grammar"
+      ],
+      "notes": "Color words practice with 把."
+    },
+    {
+      "hanzi": "处置",
+      "pinyin": "chǔzhì",
+      "pos": "动",
+      "glossEn": "to dispose; to handle",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "结果",
+      "pinyin": "jiéguǒ",
+      "pos": "名",
+      "glossEn": "result",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "强调",
+      "pinyin": "qiángdiào",
+      "pos": "动",
+      "glossEn": "to emphasize",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "原因",
+      "pinyin": "yuányīn",
+      "pos": "名",
+      "glossEn": "reason",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "房间号",
+      "pinyin": "fángjiān hào",
+      "pos": "名",
+      "glossEn": "room number",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "年轻人",
+      "pinyin": "niánqīngrén",
+      "pos": "名",
+      "glossEn": "young people",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "欢迎",
+      "pinyin": "huānyíng",
+      "pos": "动",
+      "glossEn": "to welcome",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "物品",
+      "pinyin": "wùpǐn",
+      "pos": "名",
+      "glossEn": "article; item",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "换",
+      "pinyin": "huàn",
+      "pos": "动",
+      "glossEn": "to change; to transfer",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "taskDemo",
+        "objectives"
+      ],
+      "notes": "Restored to U8 (official checklist/vocab overlap after dedupe)."
+    }
+  ],
+  "stats": {
+    "entryCount": 81,
+    "byPriority": {
+      "core": 33,
+      "brainstorm": 17,
+      "extended": 31
+    },
+    "selfEvalCount": 21,
+    "vocabListCount": 32,
+    "properNounCount": 2,
+    "dedupedAt": "2026-08-09",
+    "removedCrossUnitDuplicates": 26,
+    "dedupeRule": "One home unit by theme; official selfEval/keyWords/vocabList may keep a second copy if checklist requires it."
+  }
+}

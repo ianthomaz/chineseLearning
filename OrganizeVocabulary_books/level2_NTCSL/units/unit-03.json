@@ -1,0 +1,1452 @@
+{
+  "meta": {
+    "bookId": "ntcsl-l2",
+    "bookTitleZh": "新目标汉语口语课本 2",
+    "bookTitleEn": "New Target Chinese Spoken Language [2]",
+    "sourcePdf": "level2_NTCSL.pdf",
+    "unit": 3,
+    "titleZh": "谈学习",
+    "titleEn": "Talking about Study",
+    "pdfPages": {
+      "from": 55,
+      "to": 76
+    },
+    "printPages": {
+      "from": 37,
+      "to": 58
+    },
+    "curatedAt": "2026-08-08",
+    "notes": "Lexicon harvested from unit gold blocks + brainstorm + smart extras from dialogue/tasks. OCR was re-checked against page images; pinyin/POS normalized. priority=core is 生词大盘点 + 专有名词 + 重点词语 + self-eval checklist. Full unit range PDF 55-76 (print 37-58) per +18 map; cultural on p75. Cross-unit dedupe 2026-08-09: keep lemma in most coherent unit (core preferred; theme for extended)."
+  },
+  "objectives": {
+    "topicZh": "谈学习",
+    "topicEn": "Talking about study",
+    "instructionalZh": "能询问和描述学习、工作等方面的经历，并能简单描述差异",
+    "instructionalEn": "Students can enquire about and describe their study, work or other experiences; they can also briefly describe the differences.",
+    "keyWords": [
+      "班",
+      "专业",
+      "口语",
+      "听力",
+      "作业",
+      "练习",
+      "毕业",
+      "努力",
+      "汉字"
+    ],
+    "keySentences": [
+      {
+        "hanzi": "我学了三个月了。",
+        "pinyin": "Wǒ xuéle sān ge yuè le."
+      },
+      {
+        "hanzi": "你说得比我好。",
+        "pinyin": "Nǐ shuō de bǐ wǒ hǎo."
+      },
+      {
+        "hanzi": "看来，还是在中国学习汉语更好。",
+        "pinyin": "Kànlái, háishì zài Zhōngguó xuéxí Hànyǔ gèng hǎo."
+      }
+    ],
+    "grammarPoints": [
+      {
+        "zh": "时量补语",
+        "en": "Complement of duration"
+      },
+      {
+        "zh": "用“比”表示比较",
+        "en": "Use “比” to indicate comparison"
+      }
+    ]
+  },
+  "taskDemo": {
+    "pdfPage": 61,
+    "sceneZh": "大龙班里来了一位漂亮的新同学，她的名字叫茉莉。下了课，茉莉跟大龙聊天。",
+    "sceneEn": "A beautiful new classmate named Moli came to Dalong's class. Moli is chatting with Dalong after class.",
+    "lines": [
+      {
+        "speaker": "茉莉",
+        "hanzi": "你汉语说得很流利。"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "谢谢。"
+      },
+      {
+        "speaker": "茉莉",
+        "hanzi": "你学了多长时间了？"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "我学了三个月了。"
+      },
+      {
+        "speaker": "茉莉",
+        "hanzi": "什么？！才三个月？你学的时间比我短，可是你说得比我好。"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "哪里哪里，你认识的汉字比我多。你以前在哪儿学习？"
+      },
+      {
+        "speaker": "茉莉",
+        "hanzi": "在意大利。我是大学三年级的学生。"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "你是中文系的学生吗？"
+      },
+      {
+        "speaker": "茉莉",
+        "hanzi": "不是，我的专业是国际贸易。你呢？"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "我学习法律。大学毕业以后，我才开始学习汉语。"
+      },
+      {
+        "speaker": "茉莉",
+        "hanzi": "看来，还是在中国学习汉语更好。"
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "id": "duration-complement",
+      "titleZh": "时量补语",
+      "titleEn": "Complement of duration",
+      "patternZh": "主语＋（动词＋宾语）＋动词＋了＋时量补语＋了",
+      "patternEn": "Subject + (verb + object) + verb + 了 + complement of duration + 了",
+      "examples": [
+        {
+          "hanzi": "我已经学了三个月了。",
+          "pinyin": "Wǒ yǐjīng xuéle sān ge yuè le."
+        },
+        {
+          "hanzi": "我学汉语学了一年多了。",
+          "pinyin": "Wǒ xué Hànyǔ xuéle yì nián duō le."
+        },
+        {
+          "hanzi": "我学汉语学了三个月了。",
+          "note": "ongoing (final 了)"
+        },
+        {
+          "hanzi": "我学汉语学了三个月。",
+          "note": "finished (no final 了)"
+        }
+      ]
+    },
+    {
+      "id": "bi-comparison",
+      "titleZh": "用“比”表示比较",
+      "titleEn": "Use “比” to indicate comparison",
+      "patternZh": "A比B＋不同",
+      "patternEn": "A 比 B + difference",
+      "examples": [
+        {
+          "hanzi": "他比我聪明。"
+        },
+        {
+          "hanzi": "大龙汉语说得比茉莉好。"
+        },
+        {
+          "hanzi": "她现在比以前更努力。"
+        },
+        {
+          "hanzi": "她学习时间比我还长。"
+        },
+        {
+          "hanzi": "我不比他聪明。"
+        },
+        {
+          "hanzi": "大龙汉字写得不比茉莉好。"
+        }
+      ],
+      "notes": [
+        "Do not use 很/非常 after 比; use 更 or 还 instead.",
+        "Negation can use 不比."
+      ]
+    }
+  ],
+  "selfEvalChecklist": [
+    "专业",
+    "周末",
+    "有时候",
+    "法律",
+    "国际",
+    "口语",
+    "听力",
+    "听写",
+    "写",
+    "作业",
+    "练习",
+    "考试",
+    "毕业",
+    "流利",
+    "努力",
+    "还",
+    "才",
+    "看来",
+    "比",
+    "汉字",
+    "中文"
+  ],
+  "entries": [
+    {
+      "hanzi": "作业",
+      "pinyin": "zuòyè",
+      "pos": "名",
+      "glossEn": "homework",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "练习",
+      "pinyin": "liànxí",
+      "pos": "动/名",
+      "glossEn": "to practice; exercise",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "听力",
+      "pinyin": "tīnglì",
+      "pos": "名",
+      "glossEn": "listening (course)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "口语",
+      "pinyin": "kǒuyǔ",
+      "pos": "名",
+      "glossEn": "speaking (course)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "写",
+      "pinyin": "xiě",
+      "pos": "动",
+      "glossEn": "to write",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "文章",
+      "pinyin": "wénzhāng",
+      "pos": "名",
+      "glossEn": "article, essay",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "听写",
+      "pinyin": "tīngxiě",
+      "pos": "动/名",
+      "glossEn": "to dictate; dictation",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "考试",
+      "pinyin": "kǎoshì",
+      "pos": "动/名",
+      "glossEn": "to take an examination; examination",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "周末",
+      "pinyin": "zhōumò",
+      "pos": "名",
+      "glossEn": "weekend",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "常常",
+      "pinyin": "chángcháng",
+      "pos": "副",
+      "glossEn": "often, frequently",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "有时候",
+      "pinyin": "yǒu shíhou",
+      "pos": "副",
+      "glossEn": "sometimes",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "法律",
+      "pinyin": "fǎlǜ",
+      "pos": "名",
+      "glossEn": "law",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "国际",
+      "pinyin": "guójì",
+      "pos": "形",
+      "glossEn": "international",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "贸易",
+      "pinyin": "màoyì",
+      "pos": "名",
+      "glossEn": "trade",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "医学",
+      "pinyin": "yīxué",
+      "pos": "名",
+      "glossEn": "medical science",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "专业",
+      "pinyin": "zhuānyè",
+      "pos": "名",
+      "glossEn": "major, speciality",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "系",
+      "pinyin": "xì",
+      "pos": "名",
+      "glossEn": "department",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "年级",
+      "pinyin": "niánjí",
+      "pos": "名",
+      "glossEn": "grade, year",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "班",
+      "pinyin": "bān",
+      "pos": "名",
+      "glossEn": "class",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "流利",
+      "pinyin": "liúlì",
+      "pos": "形",
+      "glossEn": "fluent",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "比",
+      "pinyin": "bǐ",
+      "pos": "介",
+      "glossEn": "than (comparison)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "grammar",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "毕业",
+      "pinyin": "bìyè",
+      "pos": "动",
+      "glossEn": "to graduate",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "taskDemo",
+        "selfEval"
+      ],
+      "notes": "Book prints pinyin as 'bì yè' with a space; normalized to bìyè."
+    },
+    {
+      "hanzi": "才",
+      "pinyin": "cái",
+      "pos": "副",
+      "glossEn": "just; only then (later than expected)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "看来",
+      "pinyin": "kànlái",
+      "pos": "动",
+      "glossEn": "to seem, to appear",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "太极拳",
+      "pinyin": "tàijíquán",
+      "pos": "名",
+      "glossEn": "taijiquan (shadow boxing)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "电话",
+      "pinyin": "diànhuà",
+      "pos": "名",
+      "glossEn": "telephone, phone",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "打电话",
+      "pinyin": "dǎ diànhuà",
+      "pos": "动",
+      "glossEn": "to give sb a call",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "努力",
+      "pinyin": "nǔlì",
+      "pos": "形",
+      "glossEn": "studious; hardworking",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval"
+      ],
+      "notes": "Book glosses as 'studious'; cover lists among 重点词语."
+    },
+    {
+      "hanzi": "还",
+      "pinyin": "hái",
+      "pos": "副",
+      "glossEn": "still, even more",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "grammar",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "中文",
+      "pinyin": "Zhōngwén",
+      "pos": "专有",
+      "glossEn": "Chinese (language)",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "汉字",
+      "pinyin": "Hànzì",
+      "pos": "专有",
+      "glossEn": "Chinese character",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "keyWords",
+        "taskDemo",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "意大利",
+      "pinyin": "Yìdàlì",
+      "pos": "专有",
+      "glossEn": "Italy",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "taskDemo"
+      ],
+      "notes": "In task demo, Moli studied in Italy (OCR/image). Not New York."
+    },
+    {
+      "hanzi": "纽约",
+      "pinyin": "Niǔyuē",
+      "pos": "专有",
+      "glossEn": "New York",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "学习",
+      "pinyin": "xuéxí",
+      "pos": "动/名",
+      "glossEn": "to study; study",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "taskDemo",
+        "warmUp"
+      ]
+    },
+    {
+      "hanzi": "幼儿园",
+      "pinyin": "yòu'éryuán",
+      "pos": "名",
+      "glossEn": "kindergarten",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "小学",
+      "pinyin": "xiǎoxué",
+      "pos": "名",
+      "glossEn": "primary school",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "初中",
+      "pinyin": "chūzhōng",
+      "pos": "名",
+      "glossEn": "junior middle school",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "高中",
+      "pinyin": "gāozhōng",
+      "pos": "名",
+      "glossEn": "senior middle school",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "大学",
+      "pinyin": "dàxué",
+      "pos": "名",
+      "glossEn": "university, college",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "taskDemo",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "学院",
+      "pinyin": "xuéyuàn",
+      "pos": "名",
+      "glossEn": "college, academy, institute",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "语言",
+      "pinyin": "yǔyán",
+      "pos": "名",
+      "glossEn": "language",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "汉语",
+      "pinyin": "Hànyǔ",
+      "pos": "名",
+      "glossEn": "Chinese",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "warmUp",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "英语",
+      "pinyin": "Yīngyǔ",
+      "pos": "名",
+      "glossEn": "English",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "warmUp",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "西班牙语",
+      "pinyin": "Xībānyáyǔ",
+      "pos": "名",
+      "glossEn": "Spanish",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "国际贸易",
+      "pinyin": "guójì màoyì",
+      "pos": "名",
+      "glossEn": "international trade",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "wordPower",
+        "taskDemo"
+      ],
+      "notes": "Compound; also listed as separate 国际 + 贸易 in vocabList."
+    },
+    {
+      "hanzi": "新闻",
+      "pinyin": "xīnwén",
+      "pos": "名",
+      "glossEn": "journalism; news",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "计算机",
+      "pinyin": "jìsuànjī",
+      "pos": "名",
+      "glossEn": "computer; computer science",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "历史",
+      "pinyin": "lìshǐ",
+      "pos": "名",
+      "glossEn": "history",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "音乐",
+      "pinyin": "yīnyuè",
+      "pos": "名",
+      "glossEn": "music",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "设计",
+      "pinyin": "shèjì",
+      "pos": "名",
+      "glossEn": "design",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "经济管理",
+      "pinyin": "jīngjì guǎnlǐ",
+      "pos": "名",
+      "glossEn": "economic management",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "上课",
+      "pinyin": "shàng kè",
+      "pos": "动",
+      "glossEn": "to go to class; to attend class",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "下课",
+      "pinyin": "xià kè",
+      "pos": "动",
+      "glossEn": "to finish class",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "复习",
+      "pinyin": "fùxí",
+      "pos": "动",
+      "glossEn": "to review",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "预习",
+      "pinyin": "yùxí",
+      "pos": "动",
+      "glossEn": "to preview",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "阅读",
+      "pinyin": "yuèdú",
+      "pos": "名",
+      "glossEn": "reading (course)",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "写作",
+      "pinyin": "xiězuò",
+      "pos": "名",
+      "glossEn": "writing (course)",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "翻译",
+      "pinyin": "fānyì",
+      "pos": "动/名",
+      "glossEn": "to translate; translation (course)",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "听",
+      "pinyin": "tīng",
+      "pos": "动",
+      "glossEn": "to listen",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "pos": "动",
+      "glossEn": "to speak",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "读",
+      "pinyin": "dú",
+      "pos": "动",
+      "glossEn": "to read",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "译",
+      "pinyin": "yì",
+      "pos": "动",
+      "glossEn": "to translate",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "口试",
+      "pinyin": "kǒushì",
+      "pos": "名",
+      "glossEn": "oral examination",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "笔试",
+      "pinyin": "bǐshì",
+      "pos": "名",
+      "glossEn": "written examination",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "面试",
+      "pinyin": "miànshì",
+      "pos": "名",
+      "glossEn": "interview",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "做作业",
+      "pinyin": "zuò zuòyè",
+      "pos": "动",
+      "glossEn": "to do homework",
+      "priority": "extended",
+      "sources": [
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "练习听力",
+      "pinyin": "liànxí tīnglì",
+      "pos": "动",
+      "glossEn": "to practice listening",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "练习口语",
+      "pinyin": "liànxí kǒuyǔ",
+      "pos": "动",
+      "glossEn": "to practice speaking",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "练习汉字",
+      "pinyin": "liànxí Hànzì",
+      "pos": "动",
+      "glossEn": "to practice Chinese characters",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "写文章",
+      "pinyin": "xiě wénzhāng",
+      "pos": "动",
+      "glossEn": "to write an essay/article",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "上午",
+      "pinyin": "shàngwǔ",
+      "pos": "名",
+      "glossEn": "morning",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "晚上",
+      "pinyin": "wǎnshang",
+      "pos": "名",
+      "glossEn": "evening",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "觉得",
+      "pinyin": "juéde",
+      "pos": "动",
+      "glossEn": "to feel; to think",
+      "priority": "extended",
+      "sources": [
+        "warmUp",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "难",
+      "pinyin": "nán",
+      "pos": "形",
+      "glossEn": "difficult",
+      "priority": "extended",
+      "sources": [
+        "warmUp",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "更",
+      "pinyin": "gèng",
+      "pos": "副",
+      "glossEn": "even more",
+      "priority": "extended",
+      "sources": [
+        "warmUp",
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "同学",
+      "pinyin": "tóngxué",
+      "pos": "名",
+      "glossEn": "classmate",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "聊天",
+      "pinyin": "liáotiān",
+      "pos": "动",
+      "glossEn": "to chat",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "谢谢",
+      "pinyin": "xièxie",
+      "pos": "动",
+      "glossEn": "thank you",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "多长时间",
+      "pinyin": "duō cháng shíjiān",
+      "pos": "短语",
+      "glossEn": "how long",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "月",
+      "pinyin": "yuè",
+      "pos": "名",
+      "glossEn": "month",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "短",
+      "pinyin": "duǎn",
+      "pos": "形",
+      "glossEn": "short",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "好",
+      "pinyin": "hǎo",
+      "pos": "形",
+      "glossEn": "good; well",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "哪里哪里",
+      "pinyin": "nǎlǐ nǎlǐ",
+      "pos": "习语",
+      "glossEn": "you flatter me / not at all",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "认识",
+      "pinyin": "rènshi",
+      "pos": "动",
+      "glossEn": "to know; to recognize",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "多",
+      "pinyin": "duō",
+      "pos": "形",
+      "glossEn": "many; more",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "以后",
+      "pinyin": "yǐhòu",
+      "pos": "名",
+      "glossEn": "after; later",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "学生",
+      "pinyin": "xuéshēng",
+      "pos": "名",
+      "glossEn": "student",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "喜欢",
+      "pinyin": "xǐhuan",
+      "pos": "动",
+      "glossEn": "to like",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "时候",
+      "pinyin": "shíhou",
+      "pos": "名",
+      "glossEn": "time; moment (…的时候)",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "经历",
+      "pinyin": "jīnglì",
+      "pos": "名",
+      "glossEn": "experience",
+      "priority": "extended",
+      "sources": [
+        "tasks",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "现在",
+      "pinyin": "xiànzài",
+      "pos": "名",
+      "glossEn": "now",
+      "priority": "extended",
+      "sources": [
+        "tasks",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "两个月以前",
+      "pinyin": "liǎng ge yuè yǐqián",
+      "pos": "短语",
+      "glossEn": "two months ago",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "星期六",
+      "pinyin": "xīngqīliù",
+      "pos": "名",
+      "glossEn": "Saturday",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "上个星期天",
+      "pinyin": "shàng ge xīngqītiān",
+      "pos": "短语",
+      "glossEn": "last Sunday",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "工作",
+      "pinyin": "gōngzuò",
+      "pos": "动/名",
+      "glossEn": "to work; work",
+      "priority": "extended",
+      "sources": [
+        "tasks",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "睡觉",
+      "pinyin": "shuìjiào",
+      "pos": "动",
+      "glossEn": "to sleep",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "上网",
+      "pinyin": "shàng wǎng",
+      "pos": "动",
+      "glossEn": "to go online",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "聪明",
+      "pinyin": "cōngming",
+      "pos": "形",
+      "glossEn": "smart; clever",
+      "priority": "extended",
+      "sources": [
+        "tasks",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "留学生",
+      "pinyin": "liúxuéshēng",
+      "pos": "名",
+      "glossEn": "international student",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "面积",
+      "pinyin": "miànjī",
+      "pos": "名",
+      "glossEn": "area",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "环境",
+      "pinyin": "huánjìng",
+      "pos": "名",
+      "glossEn": "environment",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "人口",
+      "pinyin": "rénkǒu",
+      "pos": "名",
+      "glossEn": "population",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "爱好",
+      "pinyin": "àihào",
+      "pos": "名",
+      "glossEn": "hobby",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "特长",
+      "pinyin": "tècháng",
+      "pos": "名",
+      "glossEn": "strong point; special skill",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "模拟",
+      "pinyin": "mónǐ",
+      "pos": "动",
+      "glossEn": "to simulate",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "已经",
+      "pinyin": "yǐjīng",
+      "pos": "副",
+      "glossEn": "already",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "不比",
+      "pinyin": "bù bǐ",
+      "pos": "短语",
+      "glossEn": "not as … as; not more than (negation of 比)",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "长",
+      "pinyin": "cháng",
+      "pos": "形",
+      "glossEn": "long",
+      "priority": "extended",
+      "sources": [
+        "grammar",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "差异",
+      "pinyin": "chāyì",
+      "pos": "名",
+      "glossEn": "difference",
+      "priority": "extended",
+      "sources": [
+        "objectives",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "差别",
+      "pinyin": "chābié",
+      "pos": "名",
+      "glossEn": "difference",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "外语",
+      "pinyin": "wàiyǔ",
+      "pos": "名",
+      "glossEn": "foreign language",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "调查",
+      "pinyin": "diàochá",
+      "pos": "动/名",
+      "glossEn": "to investigate; survey",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "茉莉",
+      "pinyin": "Mòlì",
+      "pos": "专有",
+      "glossEn": "Moli (character name)",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 113,
+    "byPriority": {
+      "core": 33,
+      "brainstorm": 32,
+      "extended": 48
+    },
+    "selfEvalCount": 21,
+    "vocabListCount": 29,
+    "properNounCount": 4,
+    "dedupedAt": "2026-08-09",
+    "removedCrossUnitDuplicates": 15,
+    "dedupeRule": "One home unit by theme; official selfEval/keyWords/vocabList may keep a second copy if checklist requires it."
+  }
+}

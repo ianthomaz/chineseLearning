@@ -1,0 +1,1391 @@
+{
+  "meta": {
+    "bookId": "ntcsl-l2",
+    "bookTitleZh": "新目标汉语口语课本 2",
+    "bookTitleEn": "New Target Chinese Spoken Language [2]",
+    "sourcePdf": "level2_NTCSL.pdf",
+    "unit": 7,
+    "titleZh": "谈交通工具",
+    "titleEn": "Talking about Means of Transport",
+    "pdfPages": {
+      "from": 139,
+      "to": 160
+    },
+    "printPages": {
+      "from": 121,
+      "to": 142
+    },
+    "curatedAt": "2026-08-08",
+    "notes": "Lexicon harvested from unit gold blocks + brainstorm + smart extras from dialogue/tasks/cultural. OCR re-checked against page images (Vision OCR on rotated pages for self-eval/vocab). priority=core is 生词大盘点 (35 items across p143-144) + 专有名词 + 重点词语 + self-eval checklist. Corrections: warm-up 大安门→天安门; key sentence 到得了吗 (not 能到了); 调头 (not 回头); vocab continues 31-35 on p144 (麻烦/早/玩儿/给/一下儿). Full unit range PDF 139-160 (print 121-142); cultural on p160. Cross-unit dedupe 2026-08-09: keep lemma in most coherent unit (core preferred; theme for extended)."
+  },
+  "objectives": {
+    "topicZh": "谈交通工具",
+    "topicEn": "Talking about means of transport",
+    "instructionalZh": "会乘坐公共汽车、地铁、出租车等交通工具",
+    "instructionalEn": "Students can take a bus, the subway, a taxi and other vehicles.",
+    "keyWords": [
+      "公共汽车",
+      "出租车",
+      "自行车",
+      "地铁",
+      "路",
+      "站",
+      "换",
+      "调头",
+      "停",
+      "上/下（车）",
+      "估计",
+      "至少",
+      "得",
+      "应该",
+      "打算",
+      "方便",
+      "一下儿"
+    ],
+    "keySentences": [
+      {
+        "hanzi": "师傅，半个小时到得了吗？",
+        "pinyin": "Shīfu, bàn ge xiǎoshí dào de liǎo ma?"
+      },
+      {
+        "hanzi": "现在路上堵车，估计至少得一个半小时。",
+        "pinyin": "Xiànzài lùshang dǔchē, gūjì zhìshǎo děi yí ge bàn xiǎoshí."
+      },
+      {
+        "hanzi": "您知道从如家宾馆去大雁塔坐公共汽车怎么走吗？",
+        "pinyin": "Nín zhīdào cóng Rújiā Bīnguǎn qù Dàyàntǎ zuò gōnggòng qìchē zěnme zǒu ma?"
+      },
+      {
+        "hanzi": "先坐707路车，到五路口站，然后换41路车到大雁塔站下车。",
+        "pinyin": "Xiān zuò 707 lù chē, dào Wǔlùkǒu zhàn, ránhòu huàn 41 lù chē dào Dàyàntǎ zhàn xià chē."
+      },
+      {
+        "hanzi": "麻烦您停一下儿。",
+        "pinyin": "Máfan nín tíng yíxiàr."
+      }
+    ],
+    "grammarPoints": [
+      {
+        "zh": "可能补语",
+        "en": "Complement of possibility"
+      },
+      {
+        "zh": "动词“了（liǎo）”做可能补语",
+        "en": "The verb “了 (liǎo)” used as a complement of possibility"
+      },
+      {
+        "zh": "动词＋一下儿",
+        "en": "V + 一下儿"
+      }
+    ]
+  },
+  "taskDemo": {
+    "pdfPage": 144,
+    "sceneZh": "查理和美善一起来西安旅行，他们坐出租车从西安机场去如家宾馆。",
+    "sceneEn": "Charlie and Meishan are travelling together to Xi'an. They are going to Rujia Hotel from Xi'an Airport by taxi.",
+    "lines": [
+      {
+        "speaker": "司机",
+        "hanzi": "你们好，你们要去哪儿？"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "您好，师傅，我们去东大街上的如家宾馆。"
+      },
+      {
+        "speaker": "美善",
+        "hanzi": "师傅，半个小时到得了吗？"
+      },
+      {
+        "speaker": "司机",
+        "hanzi": "半个小时到不了。现在路上堵车，估计至少得一个半小时。"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "啊？早知道我应该订一个近一点儿的宾馆。"
+      },
+      {
+        "speaker": "司机",
+        "hanzi": "你们是来旅行的吧？打算去哪儿玩儿啊？"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "我们打算去大雁塔、兵马俑还有古城墙。"
+      },
+      {
+        "speaker": "美善",
+        "hanzi": "对了，师傅，您知道从如家宾馆去大雁塔坐公共汽车怎么走吗？"
+      },
+      {
+        "speaker": "司机",
+        "hanzi": "先坐707路车，到五路口站，然后换41路车到大雁塔站下车。宾馆门口就有车站，很方便。"
+      },
+      {
+        "speaker": "美善",
+        "hanzi": "太好了，谢谢您。"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "不好意思，师傅，麻烦您停一下儿，我想去厕所。"
+      },
+      {
+        "speaker": "司机",
+        "hanzi": "我给您到路口调个头，那儿有个公共厕所。"
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "id": "potential-complement",
+      "titleZh": "可能补语",
+      "titleEn": "Complement of possibility",
+      "patternZh": "动词＋得/不＋结果补语/趋向补语",
+      "patternEn": "V + 得/不 + complement of result / direction",
+      "examples": [
+        {
+          "hanzi": "今天的作业很多，我一个小时做不完。",
+          "pinyin": "Jīntiān de zuòyè hěn duō, wǒ yí ge xiǎoshí zuò bu wán."
+        },
+        {
+          "hanzi": "这座山不太高，我上得去。",
+          "pinyin": "Zhè zuò shān bú tài gāo, wǒ shàng de qù."
+        }
+      ],
+      "notes": [
+        "Affirmative uses 得 between verb and complement; negative replaces 得 with 不."
+      ]
+    },
+    {
+      "id": "liao-potential",
+      "titleZh": "动词“了（liǎo）”做可能补语",
+      "titleEn": "The verb “了 (liǎo)” used as a complement of possibility",
+      "patternZh": "动词＋得/不＋了",
+      "patternEn": "V + 得/不 + 了 (liǎo)",
+      "examples": [
+        {
+          "hanzi": "明天是我的生日晚会，你去得了吗？",
+          "pinyin": "Míngtiān shì wǒ de shēngrì wǎnhuì, nǐ qù de liǎo ma?"
+        },
+        {
+          "hanzi": "这么多饮料，我一个人喝不了。",
+          "pinyin": "Zhème duō yǐnliào, wǒ yí ge rén hē bu liǎo."
+        },
+        {
+          "hanzi": "半个小时到得了吗？",
+          "note": "from task demo / key sentences"
+        },
+        {
+          "hanzi": "半个小时到不了。",
+          "note": "from task demo"
+        }
+      ],
+      "notes": [
+        "Indicates possibility of realizing an action.",
+        "Sometimes 了 (liǎo) means 完 (finish)."
+      ]
+    },
+    {
+      "id": "yixiar",
+      "titleZh": "动词＋一下儿",
+      "titleEn": "V + 一下儿",
+      "patternZh": "动词＋一下儿",
+      "patternEn": "verb + 一下儿",
+      "examples": [
+        {
+          "hanzi": "我来介绍一下儿。"
+        },
+        {
+          "hanzi": "麻烦您，我想问一下儿。"
+        },
+        {
+          "hanzi": "麻烦您停一下儿。",
+          "note": "from key sentences / task demo"
+        }
+      ],
+      "notes": [
+        "Indicates the action is brief or done casually/lightly."
+      ]
+    }
+  ],
+  "selfEvalChecklist": [
+    "出租车",
+    "公共汽车",
+    "地铁",
+    "站",
+    "换",
+    "上/下（车）",
+    "估计",
+    "至少",
+    "打算",
+    "一下儿",
+    "不好意思",
+    "红绿灯",
+    "长途汽车",
+    "停",
+    "应该",
+    "线",
+    "自行车",
+    "路",
+    "方便",
+    "堵车",
+    "订"
+  ],
+  "entries": [
+    {
+      "hanzi": "公共汽车",
+      "pinyin": "gōnggòng qìchē",
+      "pos": "名",
+      "glossEn": "bus",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "长途汽车",
+      "pinyin": "chángtú qìchē",
+      "pos": "名",
+      "glossEn": "coach",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "brainstorm",
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "船",
+      "pinyin": "chuán",
+      "pos": "名",
+      "glossEn": "ship, steamer",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "出租车",
+      "pinyin": "chūzūchē",
+      "pos": "名",
+      "glossEn": "taxi",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "地铁",
+      "pinyin": "dìtiě",
+      "pos": "名",
+      "glossEn": "metro, subway",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower",
+        "objectives",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "自行车",
+      "pinyin": "zìxíngchē",
+      "pos": "名",
+      "glossEn": "bicycle",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "路",
+      "pinyin": "lù",
+      "pos": "名/量",
+      "glossEn": "road; line, route",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "taskDemo",
+        "objectives",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "堵车",
+      "pinyin": "dǔchē",
+      "pos": "名/动",
+      "glossEn": "traffic jam; to be stuck in traffic",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "车站",
+      "pinyin": "chēzhàn",
+      "pos": "名",
+      "glossEn": "station",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "站",
+      "pinyin": "zhàn",
+      "pos": "名",
+      "glossEn": "station; stop",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "换",
+      "pinyin": "huàn",
+      "pos": "动",
+      "glossEn": "to change; to transfer",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "线",
+      "pinyin": "xiàn",
+      "pos": "名",
+      "glossEn": "line",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "调头",
+      "pinyin": "diàotóu",
+      "pos": "动",
+      "glossEn": "to turn round",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "taskDemo"
+      ],
+      "notes": "Cover/key-words and vocab list use 调头 (not 回头)."
+    },
+    {
+      "hanzi": "路牌",
+      "pinyin": "lùpái",
+      "pos": "名",
+      "glossEn": "guidepost",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "红绿灯",
+      "pinyin": "hónglǜdēng",
+      "pos": "名",
+      "glossEn": "traffic light",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "停",
+      "pinyin": "tíng",
+      "pos": "动",
+      "glossEn": "to stop",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "下（车）",
+      "pinyin": "xià (chē)",
+      "pos": "动",
+      "glossEn": "to get off (a bus/vehicle)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords"
+      ]
+    },
+    {
+      "hanzi": "宾馆",
+      "pinyin": "bīnguǎn",
+      "pos": "名",
+      "glossEn": "hotel",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "师傅",
+      "pinyin": "shīfu",
+      "pos": "名",
+      "glossEn": "master (also used to address a driver)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "pos": "名/动",
+      "glossEn": "on; to get on",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "估计",
+      "pinyin": "gūjì",
+      "pos": "动",
+      "glossEn": "to estimate",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "taskDemo",
+        "objectives",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "至少",
+      "pinyin": "zhìshǎo",
+      "pos": "副",
+      "glossEn": "at least",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "得",
+      "pinyin": "děi",
+      "pos": "动",
+      "glossEn": "must; to need to",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "taskDemo",
+        "objectives",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "应该",
+      "pinyin": "yīnggāi",
+      "pos": "能动",
+      "glossEn": "should",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "订",
+      "pinyin": "dìng",
+      "pos": "动",
+      "glossEn": "to book in advance",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "打算",
+      "pinyin": "dǎsuàn",
+      "pos": "动",
+      "glossEn": "to plan",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "方便",
+      "pinyin": "fāngbiàn",
+      "pos": "形",
+      "glossEn": "convenient",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "（公共）厕所",
+      "pinyin": "(gōnggòng) cèsuǒ",
+      "pos": "名",
+      "glossEn": "toilet",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "不好意思",
+      "pinyin": "bù hǎoyìsi",
+      "pos": "形/习语",
+      "glossEn": "embarrassed; sorry",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "麻烦",
+      "pinyin": "máfan",
+      "pos": "动",
+      "glossEn": "to bother",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "objectives",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "早",
+      "pinyin": "zǎo",
+      "pos": "形",
+      "glossEn": "early",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "玩儿",
+      "pinyin": "wánr",
+      "pos": "动",
+      "glossEn": "to play; to have fun",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "pos": "介",
+      "glossEn": "for; to (preposition)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "一下儿",
+      "pinyin": "yíxiàr",
+      "pos": "短语",
+      "glossEn": "indicating that an action is brief or slight",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "taskDemo",
+        "objectives",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "上/下（车）",
+      "pinyin": "shàng/xià (chē)",
+      "pos": "动",
+      "glossEn": "to get on/off (a vehicle)",
+      "priority": "core",
+      "sources": [
+        "keyWords",
+        "selfEval",
+        "taskDemo"
+      ],
+      "notes": "Self-eval prints 上/下（车）; vocab list splits 上 and 下（车）."
+    },
+    {
+      "hanzi": "东大街",
+      "pinyin": "Dōngdàjiē",
+      "pos": "专有",
+      "glossEn": "name of a street",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "五路口",
+      "pinyin": "Wǔlùkǒu",
+      "pos": "专有",
+      "glossEn": "name of a bus stop",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "如家宾馆",
+      "pinyin": "Rújiā Bīnguǎn",
+      "pos": "专有",
+      "glossEn": "Home Inn (hotel name)",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "西安机场",
+      "pinyin": "Xī'ān jīchǎng",
+      "pos": "专有",
+      "glossEn": "Xi'an Airport",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "交通工具",
+      "pinyin": "jiāotōng gōngjù",
+      "pos": "名",
+      "glossEn": "means of transport",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "飞机",
+      "pinyin": "fēijī",
+      "pos": "名",
+      "glossEn": "plane",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "机票",
+      "pinyin": "jīpiào",
+      "pos": "名",
+      "glossEn": "plane ticket",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "头等舱",
+      "pinyin": "tóuděngcāng",
+      "pos": "名",
+      "glossEn": "first-class cabin",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "经济舱",
+      "pinyin": "jīngjìcāng",
+      "pos": "名",
+      "glossEn": "economy class",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "乘客",
+      "pinyin": "chéngkè",
+      "pos": "名",
+      "glossEn": "passenger",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "航班",
+      "pinyin": "hángbān",
+      "pos": "名",
+      "glossEn": "flight (number)",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "托运行李",
+      "pinyin": "tuōyùn xíngli",
+      "pos": "动",
+      "glossEn": "to check in luggage",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "登机",
+      "pinyin": "dēngjī",
+      "pos": "动",
+      "glossEn": "to board a plane",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "登机牌",
+      "pinyin": "dēngjīpái",
+      "pos": "名",
+      "glossEn": "boarding pass",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "火车",
+      "pinyin": "huǒchē",
+      "pos": "名",
+      "glossEn": "train",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "火车票",
+      "pinyin": "huǒchēpiào",
+      "pos": "名",
+      "glossEn": "train ticket",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "往返",
+      "pinyin": "wǎngfǎn",
+      "pos": "形/名",
+      "glossEn": "round-trip",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "单程",
+      "pinyin": "dānchéng",
+      "pos": "形/名",
+      "glossEn": "one-way",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "船票",
+      "pinyin": "chuánpiào",
+      "pos": "名",
+      "glossEn": "steamer ticket",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "换乘",
+      "pinyin": "huànchéng",
+      "pos": "动",
+      "glossEn": "to transfer",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "地铁票",
+      "pinyin": "dìtiěpiào",
+      "pos": "名",
+      "glossEn": "subway ticket",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "私家车",
+      "pinyin": "sījiāchē",
+      "pos": "名",
+      "glossEn": "private car",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "摩托车",
+      "pinyin": "mótuōchē",
+      "pos": "名",
+      "glossEn": "motorcycle",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "车票",
+      "pinyin": "chēpiào",
+      "pos": "名",
+      "glossEn": "bus/train ticket",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "公共汽车站",
+      "pinyin": "gōnggòng qìchē zhàn",
+      "pos": "名",
+      "glossEn": "bus stop",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "倒（车）",
+      "pinyin": "dǎo (chē)",
+      "pos": "动",
+      "glossEn": "to transfer (buses)",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ],
+      "notes": "Brainstorm branch under 公共汽车; OCR pinyin dǎo."
+    },
+    {
+      "hanzi": "始发站",
+      "pinyin": "shǐfāzhàn",
+      "pos": "名",
+      "glossEn": "departure station",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "终点站",
+      "pinyin": "zhōngdiǎnzhàn",
+      "pos": "名",
+      "glossEn": "terminal",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "司机",
+      "pinyin": "sījī",
+      "pos": "名",
+      "glossEn": "driver",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "路上",
+      "pinyin": "lùshang",
+      "pos": "名",
+      "glossEn": "on the road",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "半个小时",
+      "pinyin": "bàn ge xiǎoshí",
+      "pos": "名",
+      "glossEn": "half an hour",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "一个半小时",
+      "pinyin": "yí ge bàn xiǎoshí",
+      "pos": "名",
+      "glossEn": "one and a half hours",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "到得了",
+      "pinyin": "dào de liǎo",
+      "pos": "动",
+      "glossEn": "can arrive (possibility complement)",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar",
+        "objectives"
+      ],
+      "notes": "Cover key sentence uses 到得了吗; not 能到了吗."
+    },
+    {
+      "hanzi": "到不了",
+      "pinyin": "dào bu liǎo",
+      "pos": "动",
+      "glossEn": "cannot arrive",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "近一点儿",
+      "pinyin": "jìn yìdiǎnr",
+      "pos": "形",
+      "glossEn": "a bit nearer",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "路口",
+      "pinyin": "lùkǒu",
+      "pos": "名",
+      "glossEn": "intersection",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "公共厕所",
+      "pinyin": "gōnggòng cèsuǒ",
+      "pos": "名",
+      "glossEn": "public toilet",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "先",
+      "pinyin": "xiān",
+      "pos": "副",
+      "glossEn": "first",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "然后",
+      "pinyin": "ránhòu",
+      "pos": "连",
+      "glossEn": "then",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "下车",
+      "pinyin": "xià chē",
+      "pos": "动",
+      "glossEn": "to get off a vehicle",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "做不完",
+      "pinyin": "zuò bu wán",
+      "pos": "动",
+      "glossEn": "cannot finish",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "上得去",
+      "pinyin": "shàng de qù",
+      "pos": "动",
+      "glossEn": "can go up",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "去得了",
+      "pinyin": "qù de liǎo",
+      "pos": "动",
+      "glossEn": "can go",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "喝不了",
+      "pinyin": "hē bu liǎo",
+      "pos": "动",
+      "glossEn": "cannot drink (all)",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "价钱",
+      "pinyin": "jiàqian",
+      "pos": "名",
+      "glossEn": "price",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "小时",
+      "pinyin": "xiǎoshí",
+      "pos": "名",
+      "glossEn": "hour",
+      "priority": "extended",
+      "sources": [
+        "tasks",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "元",
+      "pinyin": "yuán",
+      "pos": "量",
+      "glossEn": "yuan (currency)",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "天津",
+      "pinyin": "Tiānjīn",
+      "pos": "专有",
+      "glossEn": "Tianjin",
+      "priority": "extended",
+      "sources": [
+        "tasks",
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "青岛",
+      "pinyin": "Qīngdǎo",
+      "pos": "专有",
+      "glossEn": "Qingdao",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "颐和园",
+      "pinyin": "Yíhéyuán",
+      "pos": "专有",
+      "glossEn": "Summer Palace",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "首都机场",
+      "pinyin": "Shǒudū Jīchǎng",
+      "pos": "专有",
+      "glossEn": "Capital Airport",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "北京语言大学",
+      "pinyin": "Běijīng Yǔyán Dàxué",
+      "pos": "专有",
+      "glossEn": "Beijing Language and Culture University",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "号线",
+      "pinyin": "hào xiàn",
+      "pos": "名",
+      "glossEn": "line number (metro)",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "左拐",
+      "pinyin": "zuǒ guǎi",
+      "pos": "动",
+      "glossEn": "to turn left",
+      "priority": "extended",
+      "sources": [
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "右拐",
+      "pinyin": "yòu guǎi",
+      "pos": "动",
+      "glossEn": "to turn right",
+      "priority": "extended",
+      "sources": [
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "交通标志",
+      "pinyin": "jiāotōng biāozhì",
+      "pos": "名",
+      "glossEn": "traffic sign",
+      "priority": "extended",
+      "sources": [
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "乘坐",
+      "pinyin": "chéngzuò",
+      "pos": "动",
+      "glossEn": "to ride; to take (transport)",
+      "priority": "extended",
+      "sources": [
+        "objectives",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "上班",
+      "pinyin": "shàngbān",
+      "pos": "动",
+      "glossEn": "to go to work",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "交通状况",
+      "pinyin": "jiāotōng zhuàngkuàng",
+      "pos": "名",
+      "glossEn": "traffic conditions",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "城际高速列车",
+      "pinyin": "chéngjì gāosù lièchē",
+      "pos": "名",
+      "glossEn": "intercity high-speed train",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "和谐号",
+      "pinyin": "Héxié Hào",
+      "pos": "专有",
+      "glossEn": "Hexie (CRH train)",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "时速",
+      "pinyin": "shíshù",
+      "pos": "名",
+      "glossEn": "speed per hour",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "公里",
+      "pinyin": "gōnglǐ",
+      "pos": "量",
+      "glossEn": "kilometer",
+      "priority": "extended",
+      "sources": [
+        "cultural",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "看不懂",
+      "pinyin": "kàn bu dǒng",
+      "pos": "动",
+      "glossEn": "cannot understand (by watching/reading)",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "坐",
+      "pinyin": "zuò",
+      "pos": "动",
+      "glossEn": "to sit",
+      "priority": "brainstorm",
+      "sources": [
+        "selfEval",
+        "grammar",
+        "brainstorm"
+      ],
+      "notes": "Restored to U7 (official checklist/vocab overlap after dedupe). Kept in U7 for transport (坐车); also official in U10 for 着."
+    }
+  ],
+  "stats": {
+    "entryCount": 100,
+    "byPriority": {
+      "core": 38,
+      "brainstorm": 25,
+      "extended": 37
+    },
+    "selfEvalCount": 21,
+    "vocabListCount": 35,
+    "properNounCount": 3,
+    "dedupedAt": "2026-08-09",
+    "removedCrossUnitDuplicates": 28,
+    "dedupeRule": "One home unit by theme; official selfEval/keyWords/vocabList may keep a second copy if checklist requires it."
+  }
+}

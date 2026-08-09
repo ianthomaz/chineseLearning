@@ -1,0 +1,1266 @@
+{
+  "meta": {
+    "bookId": "ntcsl-l2",
+    "bookTitleZh": "新目标汉语口语课本 2",
+    "bookTitleEn": "New Target Chinese Spoken Language [2]",
+    "sourcePdf": "level2_NTCSL.pdf",
+    "unit": 1,
+    "titleZh": "谈天气和季节",
+    "titleEn": "Talking about Weather and Seasons",
+    "pdfPages": {
+      "from": 19,
+      "to": 36
+    },
+    "printPages": {
+      "from": 1,
+      "to": 18
+    },
+    "curatedAt": "2026-08-08",
+    "notes": "Lexicon harvested from unit gold blocks + brainstorm + smart extras from dialogue/tasks/grammar/cultural. OCR was re-checked against page images; pinyin/POS normalized. priority=core is 生词大盘点 + 重点词语 + self-eval checklist (no separate 专有名词 block in this unit). City names from word power are extended/properNouns. Cross-unit dedupe 2026-08-09: keep lemma in most coherent unit (core preferred; theme for extended)."
+  },
+  "objectives": {
+    "topicZh": "谈天气和季节",
+    "topicEn": "Talking about weather and seasons",
+    "instructionalZh": "能听懂并说出天气情况，能说明季节名称与特点",
+    "instructionalEn": "Students can understand and tell weather conditions; they can also tell the names and characteristics of seasons.",
+    "keyWords": [
+      "天气",
+      "阴",
+      "晴",
+      "下雨",
+      "下雪",
+      "刮风",
+      "预报",
+      "春天",
+      "夏天",
+      "秋天",
+      "冬天",
+      "暖和",
+      "凉快"
+    ],
+    "keySentences": [
+      {
+        "hanzi": "天阴了。",
+        "pinyin": "Tiān yīn le."
+      },
+      {
+        "hanzi": "好像要下雨了。",
+        "pinyin": "Hǎoxiàng yào xià yǔ le."
+      },
+      {
+        "hanzi": "天气预报一点儿也不准。",
+        "pinyin": "Tiānqì yùbào yìdiǎnr yě bù zhǔn."
+      },
+      {
+        "hanzi": "一会儿阴，一会儿晴。",
+        "pinyin": "Yíhuìr yīn, yíhuìr qíng."
+      }
+    ],
+    "grammarPoints": [
+      {
+        "zh": "语气助词“了”",
+        "en": "The modal particle “了”"
+      },
+      {
+        "zh": "“（就/快）要……了”",
+        "en": "The structure “(就/快)要……了”"
+      },
+      {
+        "zh": "“一点儿也不……”",
+        "en": "The structure “一点儿也不……”"
+      }
+    ]
+  },
+  "taskDemo": {
+    "pdfPage": 24,
+    "sceneZh": "张丽的爸爸妈妈和大龙在房间里聊天。",
+    "sceneEn": "Zhang Li's parents are chatting with Dalong in the room.",
+    "lines": [
+      {
+        "speaker": "张丽妈妈",
+        "hanzi": "天阴了！"
+      },
+      {
+        "speaker": "张丽爸爸",
+        "hanzi": "天气预报说今天是晴天，36度呢，怎么阴了！"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "好像要下雨了！"
+      },
+      {
+        "speaker": "张丽爸爸",
+        "hanzi": "天气预报一点儿也不准。"
+      },
+      {
+        "speaker": "张丽妈妈",
+        "hanzi": "夏天的天气常常是这样，一会儿阴，一会儿晴。"
+      },
+      {
+        "speaker": "张丽爸爸",
+        "hanzi": "哎呀，外面下大雨啦！"
+      },
+      {
+        "speaker": "张丽妈妈",
+        "hanzi": "真糟糕，小丽没带伞！"
+      },
+      {
+        "speaker": "张丽爸爸",
+        "hanzi": "大龙，你去哪儿？"
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "id": "modal-le",
+      "titleZh": "语气助词“了”",
+      "titleEn": "The modal particle “了”",
+      "patternZh": "……了",
+      "patternEn": "… + 了 (change of situation / new situation)",
+      "examples": [
+        {
+          "hanzi": "天阴了。",
+          "pinyin": "Tiān yīn le."
+        },
+        {
+          "hanzi": "秋天了，天气凉了。",
+          "pinyin": "Qiūtiān le, tiānqì liáng le."
+        }
+      ]
+    },
+    {
+      "id": "yao-le",
+      "titleZh": "“（就/快）要……了”",
+      "titleEn": "The structure “(就/快)要……了”",
+      "patternZh": "（就/快）要＋VP＋了",
+      "patternEn": "(就/快) + 要 + VP + 了",
+      "examples": [
+        {
+          "hanzi": "好像要下大雨了。",
+          "pinyin": "Hǎoxiàng yào xià dàyǔ le."
+        },
+        {
+          "hanzi": "明天我们就要考试了。",
+          "pinyin": "Míngtiān wǒmen jiù yào kǎoshì le."
+        },
+        {
+          "hanzi": "快要到圣诞节了。",
+          "pinyin": "Kuàiyào dào Shèngdàn Jié le."
+        }
+      ],
+      "notes": [
+        "就要……了 can take a temporal noun adverbial; 快要……了 cannot."
+      ]
+    },
+    {
+      "id": "yidianr-ye-bu",
+      "titleZh": "“一点儿也不……”",
+      "titleEn": "The structure “一点儿也不……”",
+      "patternZh": "一点儿也不＋Adj/VP",
+      "patternEn": "一点儿也不 + Adj/VP (not … at all)",
+      "examples": [
+        {
+          "hanzi": "天气预报一点儿也不准。",
+          "pinyin": "Tiānqì yùbào yìdiǎnr yě bù zhǔn."
+        },
+        {
+          "hanzi": "我今天一点儿也不累。",
+          "pinyin": "Wǒ jīntiān yìdiǎnr yě bù lèi."
+        }
+      ]
+    }
+  ],
+  "selfEvalChecklist": [
+    "天气",
+    "下雨",
+    "下雪",
+    "晴",
+    "多云",
+    "刮风",
+    "春天",
+    "夏天",
+    "阴",
+    "冷",
+    "预报",
+    "秋天",
+    "冬天",
+    "度",
+    "暖和",
+    "凉快",
+    "热",
+    "好像",
+    "风",
+    "季节",
+    "伞"
+  ],
+  "entries": [
+    {
+      "hanzi": "天气",
+      "pinyin": "tiānqì",
+      "pos": "名",
+      "glossEn": "weather",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "晴",
+      "pinyin": "qíng",
+      "pos": "形",
+      "glossEn": "sunny",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "阴",
+      "pinyin": "yīn",
+      "pos": "形",
+      "glossEn": "overcast",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "grammar",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "多云",
+      "pinyin": "duōyún",
+      "pos": "名",
+      "glossEn": "cloudy",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "刮",
+      "pinyin": "guā",
+      "pos": "动",
+      "glossEn": "(of wind) to blow",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "wordPower",
+        "selfEval"
+      ],
+      "notes": "In 刮风; selfEval lists compound 刮风."
+    },
+    {
+      "hanzi": "风",
+      "pinyin": "fēng",
+      "pos": "名",
+      "glossEn": "wind",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "keyWords",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "下",
+      "pinyin": "xià",
+      "pos": "动",
+      "glossEn": "(of rain, snow) to fall",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ],
+      "notes": "In 下雨/下雪."
+    },
+    {
+      "hanzi": "雪",
+      "pinyin": "xuě",
+      "pos": "名",
+      "glossEn": "snow",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "雨",
+      "pinyin": "yǔ",
+      "pos": "名",
+      "glossEn": "rain",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "季节",
+      "pinyin": "jìjié",
+      "pos": "名",
+      "glossEn": "season",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "春天",
+      "pinyin": "chūntiān",
+      "pos": "名",
+      "glossEn": "spring",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "夏天",
+      "pinyin": "xiàtiān",
+      "pos": "名",
+      "glossEn": "summer",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "秋天",
+      "pinyin": "qiūtiān",
+      "pos": "名",
+      "glossEn": "autumn",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "grammar",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "冬天",
+      "pinyin": "dōngtiān",
+      "pos": "名",
+      "glossEn": "winter",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "冷",
+      "pinyin": "lěng",
+      "pos": "形",
+      "glossEn": "cold",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "热",
+      "pinyin": "rè",
+      "pos": "形",
+      "glossEn": "hot",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "暖和",
+      "pinyin": "nuǎnhuo",
+      "pos": "形",
+      "glossEn": "warm",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "凉快",
+      "pinyin": "liángkuai",
+      "pos": "形",
+      "glossEn": "cool",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "预报",
+      "pinyin": "yùbào",
+      "pos": "动",
+      "glossEn": "to forecast",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "度",
+      "pinyin": "dù",
+      "pos": "量",
+      "glossEn": "degree (temperature)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "怎么",
+      "pinyin": "zěnme",
+      "pos": "代",
+      "glossEn": "how",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "好像",
+      "pinyin": "hǎoxiàng",
+      "pos": "副",
+      "glossEn": "seem; as if",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "grammar",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "要……了",
+      "pinyin": "yào……le",
+      "pos": "",
+      "glossEn": "be going to; will",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "grammar",
+        "taskDemo"
+      ],
+      "notes": "Listed as pattern in vocab table."
+    },
+    {
+      "hanzi": "了",
+      "pinyin": "le",
+      "pos": "助",
+      "glossEn": "modal particle indicating change / new situation",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "grammar",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "准",
+      "pinyin": "zhǔn",
+      "pos": "形",
+      "glossEn": "accurate; exact",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "一会儿",
+      "pinyin": "yíhuìr",
+      "pos": "",
+      "glossEn": "a while; a moment",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "哎呀",
+      "pinyin": "āiyā",
+      "pos": "叹",
+      "glossEn": "ah; oh",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "外面",
+      "pinyin": "wàimiàn",
+      "pos": "名",
+      "glossEn": "outside",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "糟糕",
+      "pinyin": "zāogāo",
+      "pos": "形",
+      "glossEn": "terrible; too bad",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "带",
+      "pinyin": "dài",
+      "pos": "动",
+      "glossEn": "to bring; to take",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "伞",
+      "pinyin": "sǎn",
+      "pos": "名",
+      "glossEn": "umbrella",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "就",
+      "pinyin": "jiù",
+      "pos": "副",
+      "glossEn": "just; at once; as early as",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "快",
+      "pinyin": "kuài",
+      "pos": "副",
+      "glossEn": "quickly; soon; before long",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "下雨",
+      "pinyin": "xià yǔ",
+      "pos": "",
+      "glossEn": "to rain",
+      "priority": "core",
+      "sources": [
+        "keyWords",
+        "wordPower",
+        "taskDemo",
+        "selfEval",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "下雪",
+      "pinyin": "xià xuě",
+      "pos": "",
+      "glossEn": "to snow",
+      "priority": "core",
+      "sources": [
+        "keyWords",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "刮风",
+      "pinyin": "guā fēng",
+      "pos": "",
+      "glossEn": "to be windy; the wind blows",
+      "priority": "core",
+      "sources": [
+        "keyWords",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "晴天",
+      "pinyin": "qíngtiān",
+      "pos": "名",
+      "glossEn": "sunny day",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "今天",
+      "pinyin": "jīntiān",
+      "pos": "名",
+      "glossEn": "today",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "这样",
+      "pinyin": "zhèyàng",
+      "pos": "代",
+      "glossEn": "like this; this way",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "大雨",
+      "pinyin": "dàyǔ",
+      "pos": "名",
+      "glossEn": "heavy rain",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "也",
+      "pinyin": "yě",
+      "pos": "副",
+      "glossEn": "also; even",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "不",
+      "pinyin": "bù",
+      "pos": "副",
+      "glossEn": "not",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "真",
+      "pinyin": "zhēn",
+      "pos": "副",
+      "glossEn": "really",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "没",
+      "pinyin": "méi",
+      "pos": "副",
+      "glossEn": "not (have)",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "去",
+      "pinyin": "qù",
+      "pos": "动",
+      "glossEn": "to go",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "哪儿",
+      "pinyin": "nǎr",
+      "pos": "代",
+      "glossEn": "where",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "跑",
+      "pinyin": "pǎo",
+      "pos": "动",
+      "glossEn": "to run",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "出门",
+      "pinyin": "chūmén",
+      "pos": "动",
+      "glossEn": "to go out",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "凉",
+      "pinyin": "liáng",
+      "pos": "形",
+      "glossEn": "cool",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "圣诞节",
+      "pinyin": "Shèngdàn Jié",
+      "pos": "专有",
+      "glossEn": "Christmas",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "累",
+      "pinyin": "lèi",
+      "pos": "形",
+      "glossEn": "tired",
+      "priority": "extended",
+      "sources": [
+        "grammar",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "气温",
+      "pinyin": "qìwēn",
+      "pos": "名",
+      "glossEn": "temperature (air)",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "后天",
+      "pinyin": "hòutiān",
+      "pos": "名",
+      "glossEn": "the day after tomorrow",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "大后天",
+      "pinyin": "dàhòutiān",
+      "pos": "名",
+      "glossEn": "two days after tomorrow",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "变化",
+      "pinyin": "biànhuà",
+      "pos": "名/动",
+      "glossEn": "change; to change",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "漂亮",
+      "pinyin": "piàoliang",
+      "pos": "形",
+      "glossEn": "beautiful; pretty",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "好久不见",
+      "pinyin": "hǎojiǔ bú jiàn",
+      "pos": "",
+      "glossEn": "long time no see",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "高兴",
+      "pinyin": "gāoxìng",
+      "pos": "形",
+      "glossEn": "happy; pleased",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "又",
+      "pinyin": "yòu",
+      "pos": "副",
+      "glossEn": "again",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "饮料",
+      "pinyin": "yǐnliào",
+      "pos": "名",
+      "glossEn": "beverage; drink",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "贵",
+      "pinyin": "guì",
+      "pos": "形",
+      "glossEn": "expensive",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "渴",
+      "pinyin": "kě",
+      "pos": "形",
+      "glossEn": "thirsty",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "饿",
+      "pinyin": "è",
+      "pos": "形",
+      "glossEn": "hungry",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "小雨",
+      "pinyin": "xiǎoyǔ",
+      "pos": "名",
+      "glossEn": "light rain",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "哈尔滨",
+      "pinyin": "Hā'ěrbīn",
+      "pos": "专有",
+      "glossEn": "Harbin",
+      "priority": "extended",
+      "sources": [
+        "wordPower",
+        "cultural",
+        "properNouns"
+      ]
+    },
+    {
+      "hanzi": "东京",
+      "pinyin": "Dōngjīng",
+      "pos": "专有",
+      "glossEn": "Tokyo",
+      "priority": "extended",
+      "sources": [
+        "wordPower",
+        "properNouns"
+      ]
+    },
+    {
+      "hanzi": "昆明",
+      "pinyin": "Kūnmíng",
+      "pos": "专有",
+      "glossEn": "Kunming",
+      "priority": "extended",
+      "sources": [
+        "cultural",
+        "properNouns"
+      ]
+    },
+    {
+      "hanzi": "春城",
+      "pinyin": "Chūnchéng",
+      "pos": "专有",
+      "glossEn": "Spring City (nickname for Kunming)",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "冰灯",
+      "pinyin": "bīngdēng",
+      "pos": "名",
+      "glossEn": "ice lantern",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "一年之计在于春",
+      "pinyin": "yì nián zhī jì zàiyú chūn",
+      "pos": "",
+      "glossEn": "A year's plan starts with spring",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "俗语",
+      "pinyin": "súyǔ",
+      "pos": "名",
+      "glossEn": "common saying; proverb",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "重要性",
+      "pinyin": "zhòngyàoxìng",
+      "pos": "名",
+      "glossEn": "importance",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "张丽",
+      "pinyin": "Zhāng Lì",
+      "pos": "专有",
+      "glossEn": "Zhang Li (character name)",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "大龙",
+      "pinyin": "Dàlóng",
+      "pos": "专有",
+      "glossEn": "Dalong (character name)",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "美善",
+      "pinyin": "Měishàn",
+      "pos": "专有",
+      "glossEn": "Meishan (character name)",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "查理",
+      "pinyin": "Chálǐ",
+      "pos": "专有",
+      "glossEn": "Charlie (character name)",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "天气预报",
+      "pinyin": "tiānqì yùbào",
+      "pos": "名",
+      "glossEn": "weather forecast",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "节目",
+      "pinyin": "jiémù",
+      "pos": "名",
+      "glossEn": "program",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "最近",
+      "pinyin": "zuìjìn",
+      "pos": "形/副",
+      "glossEn": "recent; recently",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "情况",
+      "pinyin": "qíngkuàng",
+      "pos": "名",
+      "glossEn": "situation; condition",
+      "priority": "extended",
+      "sources": [
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "特点",
+      "pinyin": "tèdiǎn",
+      "pos": "名",
+      "glossEn": "characteristic; feature",
+      "priority": "extended",
+      "sources": [
+        "cover"
+      ]
+    },
+    {
+      "hanzi": "名称",
+      "pinyin": "míngchēng",
+      "pos": "名",
+      "glossEn": "name",
+      "priority": "extended",
+      "sources": [
+        "cover"
+      ]
+    },
+    {
+      "hanzi": "是",
+      "pinyin": "shì",
+      "pos": "动",
+      "glossEn": "to be",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "的",
+      "pinyin": "de",
+      "pos": "助",
+      "glossEn": "structural particle",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "呢",
+      "pinyin": "ne",
+      "pos": "助",
+      "glossEn": "modal particle",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "啦",
+      "pinyin": "la",
+      "pos": "助",
+      "glossEn": "modal particle (了+啊)",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "一起",
+      "pinyin": "yìqǐ",
+      "pos": "副",
+      "glossEn": "together",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "吃饭",
+      "pinyin": "chī fàn",
+      "pos": "",
+      "glossEn": "to eat a meal",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "喝",
+      "pinyin": "hē",
+      "pos": "动",
+      "glossEn": "to drink",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "什么",
+      "pinyin": "shénme",
+      "pos": "代",
+      "glossEn": "what",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "多少钱",
+      "pinyin": "duōshao qián",
+      "pos": "",
+      "glossEn": "how much (money)",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "pos": "量",
+      "glossEn": "yuan (colloquial MW for money)",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "一只",
+      "pinyin": "yì zhī",
+      "pos": "",
+      "glossEn": "one (animal/object with 只)",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 93,
+    "byPriority": {
+      "core": 36,
+      "brainstorm": 0,
+      "extended": 57
+    },
+    "selfEvalCount": 21,
+    "vocabListCount": 33,
+    "properNounCount": 7,
+    "dedupedAt": "2026-08-09",
+    "removedCrossUnitDuplicates": 25,
+    "dedupeRule": "One home unit by theme; official selfEval/keyWords/vocabList may keep a second copy if checklist requires it."
+  }
+}

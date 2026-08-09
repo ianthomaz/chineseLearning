@@ -1,0 +1,1472 @@
+{
+  "meta": {
+    "bookId": "ntcsl-l2",
+    "bookTitleZh": "新目标汉语口语课本 2",
+    "bookTitleEn": "New Target Chinese Spoken Language [2]",
+    "sourcePdf": "level2_NTCSL.pdf",
+    "unit": 9,
+    "titleZh": "做中国菜",
+    "titleEn": "Cooking Chinese Food",
+    "pdfPages": {
+      "from": 179,
+      "to": 198
+    },
+    "printPages": {
+      "from": 161,
+      "to": 180
+    },
+    "curatedAt": "2026-08-08",
+    "notes": "Lexicon harvested from unit gold blocks + brainstorm + smart extras from dialogue/tasks/cultural. OCR re-checked against page images. Title confirmed 做中国菜 (not garbled OCR variants). priority=core is 生词大盘点 (44) + 专有名词 + 重点词语 + self-eval checklist. Corrections: 倒 dào 'to pour'; 煎 'to fry' (OCR try); 勺子 (OCR 勺丁); 黑椒牛柳 beef (OCR Beer); directional complements POS as 趋. Full unit range PDF 179-198 (print 161-180); cultural on p197 (狗不理). Cross-unit dedupe 2026-08-09: keep lemma in most coherent unit (core preferred; theme for extended)."
+  },
+  "objectives": {
+    "topicZh": "做中国菜",
+    "topicEn": "Cooking Chinese food",
+    "instructionalZh": "了解基本的中国菜的烹调方法，能询问和谈论做菜的材料和一个国家的饮食习惯",
+    "instructionalEn": "Students get to know the basic cooking methods of Chinese food; they can also ask and talk about the cooking ingredients and dietary habits in a country.",
+    "keyWords": [
+      "炒",
+      "酱油",
+      "醋",
+      "盐",
+      "糖",
+      "碗",
+      "盘子",
+      "拿",
+      "放",
+      "过来",
+      "出来",
+      "回来",
+      "进去"
+    ],
+    "keySentences": [
+      {
+        "hanzi": "鸡蛋买回来了！",
+        "pinyin": "Jīdàn mǎi huílai le!"
+      },
+      {
+        "hanzi": "快过来帮我切西红柿吧。",
+        "pinyin": "Kuài guòlái bāng wǒ qiē xīhóngshì ba."
+      },
+      {
+        "hanzi": "再把鸡蛋放进去。",
+        "pinyin": "Zài bǎ jīdàn fàng jìnqu."
+      },
+      {
+        "hanzi": "我要端出去让阿姨尝尝。",
+        "pinyin": "Wǒ yào duān chuqu ràng āyí chángchang."
+      }
+    ],
+    "grammarPoints": [
+      {
+        "zh": "简单趋向补语",
+        "en": "Simple directional complement"
+      },
+      {
+        "zh": "复合趋向补语",
+        "en": "Compound directional complement"
+      }
+    ]
+  },
+  "taskDemo": {
+    "pdfPage": 185,
+    "sceneZh": "小丽和大龙在做中国菜。",
+    "sceneEn": "Xiaoli and Dalong are cooking Chinese food.",
+    "lines": [
+      {
+        "speaker": "大龙",
+        "hanzi": "小丽，鸡蛋买回来了！"
+      },
+      {
+        "speaker": "小丽",
+        "hanzi": "好啊，快过来帮我切西红柿吧。"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "没问题。……切好了！"
+      },
+      {
+        "speaker": "小丽",
+        "hanzi": "好的，都准备好了，我们开始炒吧。"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "你行吗？"
+      },
+      {
+        "speaker": "小丽",
+        "hanzi": "没问题！第一步，先倒一点儿油，加热，再把鸡蛋放进去。"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "好，下一步呢？"
+      },
+      {
+        "speaker": "小丽",
+        "hanzi": "把西红柿放进去。哎呀，快拿盐来！"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "给你。对了，只买回来了鸡蛋，没买酱油。我现在就出去买！"
+      },
+      {
+        "speaker": "小丽",
+        "hanzi": "别去了！西红柿炒鸡蛋不用酱油。"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "好。"
+      },
+      {
+        "speaker": "小丽",
+        "hanzi": "快炒好了，把盘子拿出来吧。"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "早准备好了。我要端出去请阿姨尝尝。"
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "id": "simple-directional",
+      "titleZh": "简单趋向补语",
+      "titleEn": "Simple directional complement",
+      "patternZh": "S＋V＋来/去；S＋上/下/进/出/回/过/到＋处所＋来/去",
+      "patternEn": "S + V + 来/去; S + directional verb + place + 来/去",
+      "examples": [
+        {
+          "hanzi": "拿来",
+          "pinyin": "ná lái",
+          "note": "towards speaker"
+        },
+        {
+          "hanzi": "送去",
+          "pinyin": "sòng qù",
+          "note": "away from speaker"
+        },
+        {
+          "hanzi": "拿盐来",
+          "pinyin": "ná yán lái"
+        },
+        {
+          "hanzi": "拿来盐",
+          "pinyin": "ná lái yán"
+        },
+        {
+          "hanzi": "他进房间去了。",
+          "pinyin": "Tā jìn fángjiān qù le."
+        },
+        {
+          "hanzi": "他回家来了。",
+          "pinyin": "Tā huí jiā lái le."
+        },
+        {
+          "hanzi": "他上楼来了。",
+          "pinyin": "Tā shàng lóu lái le."
+        }
+      ],
+      "notes": [
+        "来 = towards speaker/topic; 去 = away from speaker/topic.",
+        "Place objects go before 来/去."
+      ]
+    },
+    {
+      "id": "compound-directional",
+      "titleZh": "复合趋向补语",
+      "titleEn": "Compound directional complement",
+      "patternZh": "V＋上来/上去/下来/下去/进来/进去/出来/出去/回来/回去/过来/过去/起来/开来/开去",
+      "patternEn": "V + compound directional complement",
+      "examples": [
+        {
+          "hanzi": "鸡蛋买回来了！",
+          "note": "from key sentences / task demo"
+        },
+        {
+          "hanzi": "再把鸡蛋放进去。",
+          "note": "from key sentences"
+        },
+        {
+          "hanzi": "把盘子拿出来吧。",
+          "note": "from task demo"
+        },
+        {
+          "hanzi": "我要端出去请阿姨尝尝。",
+          "note": "from task demo"
+        }
+      ],
+      "notes": [
+        "Combines a path verb (上/下/进/出/回/过/起/开) with 来/去."
+      ]
+    }
+  ],
+  "selfEvalChecklist": [
+    "炒",
+    "酱油",
+    "醋",
+    "盐",
+    "糖",
+    "碗",
+    "鸡蛋",
+    "准备",
+    "倒",
+    "拿",
+    "加热",
+    "上来"
+  ],
+  "entries": [
+    {
+      "hanzi": "炒",
+      "pinyin": "chǎo",
+      "pos": "动",
+      "glossEn": "to stir-fry",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "煎",
+      "pinyin": "jiān",
+      "pos": "动",
+      "glossEn": "to fry; to pan-fry",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower"
+      ],
+      "notes": "OCR 'to try' → to fry."
+    },
+    {
+      "hanzi": "煮",
+      "pinyin": "zhǔ",
+      "pos": "动",
+      "glossEn": "to boil",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "蒸",
+      "pinyin": "zhēng",
+      "pos": "动",
+      "glossEn": "to steam",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "鸡蛋",
+      "pinyin": "jīdàn",
+      "pos": "名",
+      "glossEn": "egg",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "酱油",
+      "pinyin": "jiàngyóu",
+      "pos": "名",
+      "glossEn": "soy sauce",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "醋",
+      "pinyin": "cù",
+      "pos": "名",
+      "glossEn": "vinegar",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "盐",
+      "pinyin": "yán",
+      "pos": "名",
+      "glossEn": "salt",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "糖",
+      "pinyin": "táng",
+      "pos": "名",
+      "glossEn": "sugar",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "咖喱",
+      "pinyin": "gālí",
+      "pos": "名",
+      "glossEn": "curry",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "奶酪",
+      "pinyin": "nǎilào",
+      "pos": "名",
+      "glossEn": "cheese",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "沙拉酱",
+      "pinyin": "shālàjiàng",
+      "pos": "名",
+      "glossEn": "salad dressing",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "锅",
+      "pinyin": "guō",
+      "pos": "名",
+      "glossEn": "pot; wok",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "碗",
+      "pinyin": "wǎn",
+      "pos": "名",
+      "glossEn": "bowl",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "盘子",
+      "pinyin": "pánzi",
+      "pos": "名",
+      "glossEn": "plate",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "刀",
+      "pinyin": "dāo",
+      "pos": "名",
+      "glossEn": "knife",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "铲子",
+      "pinyin": "chǎnzi",
+      "pos": "名",
+      "glossEn": "spatula; scoop",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm"
+      ],
+      "notes": "Book gloss: scoop."
+    },
+    {
+      "hanzi": "微波炉",
+      "pinyin": "wēibōlú",
+      "pos": "名",
+      "glossEn": "microwave oven",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "帮",
+      "pinyin": "bāng",
+      "pos": "动",
+      "glossEn": "to help",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "切",
+      "pinyin": "qiē",
+      "pos": "动",
+      "glossEn": "to cut; to slice",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "问题",
+      "pinyin": "wèntí",
+      "pos": "名",
+      "glossEn": "question; problem",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "准备",
+      "pinyin": "zhǔnbèi",
+      "pos": "动",
+      "glossEn": "to prepare",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "行",
+      "pinyin": "xíng",
+      "pos": "形",
+      "glossEn": "capable; OK",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "步",
+      "pinyin": "bù",
+      "pos": "名",
+      "glossEn": "step",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "倒",
+      "pinyin": "dào",
+      "pos": "动",
+      "glossEn": "to pour",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval"
+      ],
+      "notes": "Cooking sense dào (not dǎo)."
+    },
+    {
+      "hanzi": "油",
+      "pinyin": "yóu",
+      "pos": "名",
+      "glossEn": "oil",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "加热",
+      "pinyin": "jiārè",
+      "pos": "动",
+      "glossEn": "to heat; to warm",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "拿",
+      "pinyin": "ná",
+      "pos": "动",
+      "glossEn": "to hold; to take",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "端",
+      "pinyin": "duān",
+      "pos": "动",
+      "glossEn": "to hold level with both hands; to carry",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "举",
+      "pinyin": "jǔ",
+      "pos": "动",
+      "glossEn": "to lift; to raise",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "盛",
+      "pinyin": "chéng",
+      "pos": "动",
+      "glossEn": "to fill; to ladle",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "上来",
+      "pinyin": "shànglái",
+      "pos": "趋",
+      "glossEn": "to come up",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "上去",
+      "pinyin": "shàngqù",
+      "pos": "趋",
+      "glossEn": "to go up",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "下来",
+      "pinyin": "xiàlái",
+      "pos": "趋",
+      "glossEn": "to come down",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "下去",
+      "pinyin": "xiàqù",
+      "pos": "趋",
+      "glossEn": "to go down",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "出来",
+      "pinyin": "chūlái",
+      "pos": "趋",
+      "glossEn": "to come out",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords"
+      ]
+    },
+    {
+      "hanzi": "出去",
+      "pinyin": "chūqù",
+      "pos": "趋",
+      "glossEn": "to go out",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "进来",
+      "pinyin": "jìnlái",
+      "pos": "趋",
+      "glossEn": "to come in",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "进去",
+      "pinyin": "jìnqù",
+      "pos": "趋",
+      "glossEn": "to go in",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords"
+      ]
+    },
+    {
+      "hanzi": "回来",
+      "pinyin": "huílái",
+      "pos": "趋",
+      "glossEn": "to come back",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords"
+      ]
+    },
+    {
+      "hanzi": "回去",
+      "pinyin": "huíqù",
+      "pos": "趋",
+      "glossEn": "to go back",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "过来",
+      "pinyin": "guòlái",
+      "pos": "趋",
+      "glossEn": "to come over",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords"
+      ]
+    },
+    {
+      "hanzi": "过去",
+      "pinyin": "guòqù",
+      "pos": "趋",
+      "glossEn": "to go over",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "起来",
+      "pinyin": "qǐlái",
+      "pos": "趋",
+      "glossEn": "to stand up; up (directional)",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "放",
+      "pinyin": "fàng",
+      "pos": "动",
+      "glossEn": "to put; to place",
+      "priority": "core",
+      "sources": [
+        "keyWords",
+        "taskDemo",
+        "keySentences"
+      ]
+    },
+    {
+      "hanzi": "小丽",
+      "pinyin": "Xiǎolì",
+      "pos": "专有",
+      "glossEn": "Xiaoli (character name)",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "做菜",
+      "pinyin": "zuò cài",
+      "pos": "动",
+      "glossEn": "to cook",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "厨具",
+      "pinyin": "chújù",
+      "pos": "名",
+      "glossEn": "cooking utensils",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "调料",
+      "pinyin": "tiáoliào",
+      "pos": "名",
+      "glossEn": "seasonings",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "做法",
+      "pinyin": "zuòfǎ",
+      "pos": "名",
+      "glossEn": "cooking method",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "原料",
+      "pinyin": "yuánliào",
+      "pos": "名",
+      "glossEn": "ingredients",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "盆",
+      "pinyin": "pén",
+      "pos": "名",
+      "glossEn": "basin",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "勺子",
+      "pinyin": "sháozi",
+      "pos": "名",
+      "glossEn": "spoon",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ],
+      "notes": "OCR 勺丁 → 勺子."
+    },
+    {
+      "hanzi": "筷子",
+      "pinyin": "kuàizi",
+      "pos": "名",
+      "glossEn": "chopsticks",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "烤箱",
+      "pinyin": "kǎoxiāng",
+      "pos": "名",
+      "glossEn": "oven",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "菜板",
+      "pinyin": "càibǎn",
+      "pos": "名",
+      "glossEn": "cutting board",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "油腻",
+      "pinyin": "yóunì",
+      "pos": "形",
+      "glossEn": "oily; greasy",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "清淡",
+      "pinyin": "qīngdàn",
+      "pos": "形",
+      "glossEn": "light (in flavor)",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "拌",
+      "pinyin": "bàn",
+      "pos": "动",
+      "glossEn": "to mix; to toss",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "炸",
+      "pinyin": "zhá",
+      "pos": "动",
+      "glossEn": "to deep-fry",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "炖",
+      "pinyin": "dùn",
+      "pos": "动",
+      "glossEn": "to stew",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "烤",
+      "pinyin": "kǎo",
+      "pos": "动",
+      "glossEn": "to roast; to bake",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "辣椒",
+      "pinyin": "làjiāo",
+      "pos": "名",
+      "glossEn": "hot pepper; chili",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "胡椒粉",
+      "pinyin": "hújiāofěn",
+      "pos": "名",
+      "glossEn": "pepper (powder)",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "芥末",
+      "pinyin": "jièmo",
+      "pos": "名",
+      "glossEn": "mustard",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "鱼",
+      "pinyin": "yú",
+      "pos": "名",
+      "glossEn": "fish",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "虾",
+      "pinyin": "xiā",
+      "pos": "名",
+      "glossEn": "shrimp",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "鸡",
+      "pinyin": "jī",
+      "pos": "名",
+      "glossEn": "chicken",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "肉",
+      "pinyin": "ròu",
+      "pos": "名",
+      "glossEn": "meat",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "牛",
+      "pinyin": "niú",
+      "pos": "名",
+      "glossEn": "cow; beef",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "羊",
+      "pinyin": "yáng",
+      "pos": "名",
+      "glossEn": "sheep; mutton",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "猪",
+      "pinyin": "zhū",
+      "pos": "名",
+      "glossEn": "pig; pork",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "葱",
+      "pinyin": "cōng",
+      "pos": "名",
+      "glossEn": "green onion; scallion",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "姜",
+      "pinyin": "jiāng",
+      "pos": "名",
+      "glossEn": "ginger",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "蒜",
+      "pinyin": "suàn",
+      "pos": "名",
+      "glossEn": "garlic",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "白菜",
+      "pinyin": "báicài",
+      "pos": "名",
+      "glossEn": "Chinese cabbage",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "香肠",
+      "pinyin": "xiāngcháng",
+      "pos": "名",
+      "glossEn": "sausage",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "西红柿",
+      "pinyin": "xīhóngshì",
+      "pos": "名",
+      "glossEn": "tomato",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "keySentences",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "阿姨",
+      "pinyin": "āyí",
+      "pos": "名",
+      "glossEn": "auntie; older woman",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "keySentences"
+      ]
+    },
+    {
+      "hanzi": "尝尝",
+      "pinyin": "chángchang",
+      "pos": "动",
+      "glossEn": "to taste; to try (food)",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "keySentences"
+      ]
+    },
+    {
+      "hanzi": "没问题",
+      "pinyin": "méi wèntí",
+      "pos": "短",
+      "glossEn": "no problem",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "第一步",
+      "pinyin": "dì yī bù",
+      "pos": "名",
+      "glossEn": "the first step",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "下一步",
+      "pinyin": "xià yī bù",
+      "pos": "名",
+      "glossEn": "the next step",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "一点儿",
+      "pinyin": "yìdiǎnr",
+      "pos": "数量",
+      "glossEn": "a little",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "买",
+      "pinyin": "mǎi",
+      "pos": "动",
+      "glossEn": "to buy",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "keySentences"
+      ]
+    },
+    {
+      "hanzi": "拿来",
+      "pinyin": "nálái",
+      "pos": "动",
+      "glossEn": "to bring here",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "送去",
+      "pinyin": "sòngqù",
+      "pos": "动",
+      "glossEn": "to send over/away",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "上楼",
+      "pinyin": "shàng lóu",
+      "pos": "动",
+      "glossEn": "to go upstairs",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "回家",
+      "pinyin": "huí jiā",
+      "pos": "动",
+      "glossEn": "to go/come home",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "开来",
+      "pinyin": "kāilái",
+      "pos": "趋",
+      "glossEn": "to open toward speaker / drive over",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "开去",
+      "pinyin": "kāiqù",
+      "pos": "趋",
+      "glossEn": "to drive away",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "麻婆豆腐",
+      "pinyin": "mápó dòufu",
+      "pos": "名",
+      "glossEn": "Mapo tofu",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "蔬菜沙拉",
+      "pinyin": "shūcài shālà",
+      "pos": "名",
+      "glossEn": "green salad",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "咖喱鸡块",
+      "pinyin": "gālí jīkuài",
+      "pos": "名",
+      "glossEn": "curry chicken",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "黑椒牛柳",
+      "pinyin": "hēijiāo niúliǔ",
+      "pos": "名",
+      "glossEn": "black pepper beef fillet",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ],
+      "notes": "OCR Beer → beef."
+    },
+    {
+      "hanzi": "三明治",
+      "pinyin": "sānmíngzhì",
+      "pos": "名",
+      "glossEn": "sandwich",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "糖醋里脊",
+      "pinyin": "tángcù lǐjī",
+      "pos": "名",
+      "glossEn": "sweet and sour fillet",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "生鱼片",
+      "pinyin": "shēngyúpiàn",
+      "pos": "名",
+      "glossEn": "sashimi",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "寿司",
+      "pinyin": "shòusī",
+      "pos": "名",
+      "glossEn": "sushi",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "炒鸡蛋",
+      "pinyin": "chǎo jīdàn",
+      "pos": "名",
+      "glossEn": "stir-fried eggs",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "中国菜",
+      "pinyin": "Zhōngguó cài",
+      "pos": "名",
+      "glossEn": "Chinese food/cuisine",
+      "priority": "extended",
+      "sources": [
+        "objectives",
+        "warmUp",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "饮食习惯",
+      "pinyin": "yǐnshí xíguàn",
+      "pos": "名",
+      "glossEn": "dietary habits",
+      "priority": "extended",
+      "sources": [
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "烹调",
+      "pinyin": "pēngtiáo",
+      "pos": "动",
+      "glossEn": "to cook",
+      "priority": "extended",
+      "sources": [
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "材料",
+      "pinyin": "cáiliào",
+      "pos": "名",
+      "glossEn": "ingredients; materials",
+      "priority": "extended",
+      "sources": [
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "狗不理",
+      "pinyin": "Gǒubulǐ",
+      "pos": "专有",
+      "glossEn": "Goubuli (famous baozi brand)",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "包子",
+      "pinyin": "bāozi",
+      "pos": "名",
+      "glossEn": "steamed stuffed bun",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "狗子",
+      "pinyin": "Gǒuzi",
+      "pos": "专有",
+      "glossEn": "Gouzi (person in cultural story)",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "不耐烦",
+      "pinyin": "bù nàifán",
+      "pos": "形",
+      "glossEn": "impatient",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "催",
+      "pinyin": "cuī",
+      "pos": "动",
+      "glossEn": "to urge; to hurry (someone)",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "答应",
+      "pinyin": "dāying",
+      "pos": "动",
+      "glossEn": "to answer; to agree",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "菜单",
+      "pinyin": "càidān",
+      "pos": "名",
+      "glossEn": "menu",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "美食",
+      "pinyin": "měishí",
+      "pos": "名",
+      "glossEn": "fine food; delicacies",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "食物",
+      "pinyin": "shíwù",
+      "pos": "名",
+      "glossEn": "food",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "含义",
+      "pinyin": "hányì",
+      "pos": "名",
+      "glossEn": "meaning",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "再",
+      "pinyin": "zài",
+      "pos": "副",
+      "glossEn": "then; again",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "tasks",
+        "keySentences"
+      ]
+    },
+    {
+      "hanzi": "楼",
+      "pinyin": "lóu",
+      "pos": "名",
+      "glossEn": "building; floor",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "礼物",
+      "pinyin": "lǐwù",
+      "pos": "名",
+      "glossEn": "gift",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 117,
+    "byPriority": {
+      "core": 46,
+      "brainstorm": 31,
+      "extended": 40
+    },
+    "selfEvalCount": 12,
+    "vocabListCount": 44,
+    "properNounCount": 2,
+    "dedupedAt": "2026-08-09",
+    "removedCrossUnitDuplicates": 15,
+    "dedupeRule": "One home unit by theme; official selfEval/keyWords/vocabList may keep a second copy if checklist requires it."
+  }
+}

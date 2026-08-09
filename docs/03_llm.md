@@ -40,3 +40,5 @@ Este ficheiro resume o papel do repo. Para contratos JSON, erros 401/403, `reply
 - `connectLLM/ACESSO_E_VERIFICACAO.md`
 - `connectLLM/CONTRATO_EDU_COMPLETO.md`
 - `connectLLM/GUIA_LLM_EDU.md`
+
+**Classificação do léxico (widgets / avulso)** — outro contrato de resposta (enum de categorias, não tutor). Ver [15_lexico_llm_classify_contract.md](15_lexico_llm_classify_contract.md). Mesma API no **mini62** (`featureLLM`); endpoint dedicado no orquestrador ainda é backlog.

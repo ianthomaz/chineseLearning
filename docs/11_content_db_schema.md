@@ -67,12 +67,33 @@ Ordem: editorial → phrases → quiz → dialogues → visuals → books → **
 | Consumidor | Fonte |
 |------------|--------|
 | Site `/praticar` (avulso + contexto) | `lexico_*` + `context_decks` |
-| Snapshot app (`build:app-library`) | as mesmas tabelas |
+| Snapshot app / widgets | as mesmas tabelas (`lexico_entries` = pool de rotação) |
 | Estudo `/review` `/vocabulary` … | `content_blocks` (currículo — outro eixo) |
 
-`lexico_*` materializa-se a partir de `vocab_entries` só se vazio (`LEXICO_REBUILD=1` força). Não se importa `APP_hanziMemorize/lexico.json`.
+**Não há tabela só para widget.** O widget consome `lexico_entries` (o léxico do projeto).
+
+### Materialização de `lexico_*`
+
+Fontes (≤3 hanzi; **sem** `book_vocab_*`):
+
+1. `vocab_entries` → categoria via mapa de blocos (`lexico-rotation-config.mjs`)
+2. `context_deck_cards` → categoria via `lexico-category-assignments.mjs`
+3. `lexicon_global` (curador) → igual, via assignments
+
+Só entra no pool quem tem categoria. Palavras novas sem assignment ficam **pending** (fora dos widgets) até classificar.
+
+```bash
+LEXICO_REBUILD=1 npm run seed:content   # rematerializa lexico_*
+npm run lexico:pending                  # lista gaps
+npm run lexico:classify-llm             # proposta via LLM_API_URL (site); review manual
+```
+
+Gancho LLM no servidor: `src/server/lexico/{pending,classify}.ts` (ainda sem auto-write).  
+Contrato de trabalho com a LLM (mini62 / featureLLM): [15_lexico_llm_classify_contract.md](15_lexico_llm_classify_contract.md).
 
 Snapshot app: `npm run build:app-library` → `data/app-library/` — ver [14_app_library_contract.md](14_app_library_contract.md).
+
+*Última revisão fluxo lexico: jul 2026*
 
 DDL também em [`web/src/server/db/index.ts`](../web/src/server/db/index.ts) `MIGRATION` (CREATE IF NOT EXISTS).
 
@@ -87,4 +108,4 @@ DDL também em [`web/src/server/db/index.ts`](../web/src/server/db/index.ts) `MI
 5. [x] Lexico (app) no SQL
 6. [x] API `manifest` + `pack/library` + Bearer (`APP_LIBRARY_TOKEN`)
 
-*Última revisão: jul 2026*
+*Última revisão: jul 2026 — lexico unificado (blocos+context+global; sem livro; assignments + gancho LLM)*

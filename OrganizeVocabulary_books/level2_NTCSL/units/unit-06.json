@@ -1,0 +1,1403 @@
+{
+  "meta": {
+    "bookId": "ntcsl-l2",
+    "bookTitleZh": "新目标汉语口语课本 2",
+    "bookTitleEn": "New Target Chinese Spoken Language [2]",
+    "sourcePdf": "level2_NTCSL.pdf",
+    "unit": 6,
+    "titleZh": "谈旅游",
+    "titleEn": "Talking about Travel",
+    "pdfPages": {
+      "from": 115,
+      "to": 138
+    },
+    "printPages": {
+      "from": 97,
+      "to": 120
+    },
+    "curatedAt": "2026-08-08",
+    "notes": "Lexicon harvested from unit gold blocks + brainstorm + smart extras from dialogue/tasks/cultural. OCR re-checked against page images (Vision OCR on rotated pages for self-eval). priority=core is 生词大盘点 + 专有名词 + 重点词语 + self-eval checklist. Corrections: 乌巢→鸟巢; 像园→豫园; vocab 玉 restored; self-eval includes 带/可惜; 古城墻→古城墙. Full unit range PDF 115-138 (print 97-120); cultural on p135. Cross-unit dedupe 2026-08-09: keep lemma in most coherent unit (core preferred; theme for extended)."
+  },
+  "objectives": {
+    "topicZh": "谈旅游",
+    "topicEn": "Talking about travel",
+    "instructionalZh": "能够介绍旅游计划、经历以及一些著名旅游景点的主要景观",
+    "instructionalEn": "Students can describe their travel plans, experiences and the famous scenic spots in some tourist attractions.",
+    "keyWords": [
+      "旅行",
+      "导游",
+      "旅行社",
+      "名胜古迹",
+      "特产",
+      "特色",
+      "好玩儿",
+      "有名"
+    ],
+    "keySentences": [
+      {
+        "hanzi": "你去过西安吗？",
+        "pinyin": "Nǐ qùguo Xī'ān ma?"
+      },
+      {
+        "hanzi": "除了兵马俑以外，西安还有什么好玩儿的地方？",
+        "pinyin": "Chúle Bīngmǎyǒng yǐwài, Xī'ān hái yǒu shénme hǎowánr de dìfang?"
+      },
+      {
+        "hanzi": "我请你当我的导游。",
+        "pinyin": "Wǒ qǐng nǐ dāng wǒ de dǎoyóu."
+      }
+    ],
+    "grammarPoints": [
+      {
+        "zh": "动态助词“过”",
+        "en": "The aspect particle “过”"
+      },
+      {
+        "zh": "“除了……（以外）”",
+        "en": "The structure “除了……（以外）”"
+      },
+      {
+        "zh": "兼语句",
+        "en": "The pivotal sentence"
+      }
+    ]
+  },
+  "taskDemo": {
+    "pdfPage": 120,
+    "sceneZh": "查理和美善在咖啡厅聊天。",
+    "sceneEn": "Charlie and Meishan are chatting in a café.",
+    "lines": [
+      {
+        "speaker": "查理",
+        "hanzi": "你去过西安吗？"
+      },
+      {
+        "speaker": "美善",
+        "hanzi": "去过，那儿有很多名胜古迹，是个旅行的好地方！"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "西安有什么特产？"
+      },
+      {
+        "speaker": "美善",
+        "hanzi": "那儿的小吃很有特色。"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "对了，你看兵马俑了吗？"
+      },
+      {
+        "speaker": "美善",
+        "hanzi": "当然看了。我觉得，没看过兵马俑等于没去过西安。"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "除了兵马俑以外，西安还有什么好玩儿的地方？"
+      },
+      {
+        "speaker": "美善",
+        "hanzi": "那儿的华清池和大雁塔也很有名，可惜我都没去，以后有机会我一定去。"
+      },
+      {
+        "speaker": "查理",
+        "hanzi": "这个周末去，怎么样？我请你当我的导游。"
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "id": "aspect-guo",
+      "titleZh": "动态助词“过”",
+      "titleEn": "The aspect particle “过”",
+      "patternZh": "动词＋过",
+      "patternEn": "verb + 过",
+      "examples": [
+        {
+          "hanzi": "我去过西安。",
+          "pinyin": "Wǒ qùguo Xī'ān."
+        },
+        {
+          "hanzi": "他没吃过烤鸭。",
+          "pinyin": "Tā méi chīguo kǎoyā."
+        }
+      ],
+      "notes": [
+        "Put after a verb to indicate a past experience.",
+        "Often used to highlight having had such an experience."
+      ]
+    },
+    {
+      "id": "chule-yiwai",
+      "titleZh": "“除了……（以外）”",
+      "titleEn": "The structure “除了……（以外）”",
+      "patternZh": "除了……（以外），……还/也…… / 都……",
+      "patternEn": "Besides/except …, … also/all …",
+      "examples": [
+        {
+          "hanzi": "除了兵马俑以外，西安还有什么好玩儿的地方？"
+        },
+        {
+          "hanzi": "除了看书以外，我也喜欢看电影。"
+        },
+        {
+          "hanzi": "除了大龙以外，他的家人都没来过中国。"
+        },
+        {
+          "hanzi": "除了看书以外，他都不喜欢。"
+        }
+      ],
+      "notes": [
+        "Addition: often paired with 还/也.",
+        "Exclusion: the mentioned person/thing is not included."
+      ]
+    },
+    {
+      "id": "pivotal-sentence",
+      "titleZh": "兼语句",
+      "titleEn": "The pivotal sentence",
+      "patternZh": "主语＋请/让/叫＋兼语＋动词短语",
+      "patternEn": "Subject + 请/让/叫 + pivot + VP",
+      "examples": [
+        {
+          "hanzi": "我想请你当我的导游。"
+        },
+        {
+          "hanzi": "我们叫她王老师。"
+        }
+      ],
+      "notes": [
+        "The object of the first verb is also the subject of the second verb.",
+        "Common causative verbs: 请, 让, 叫."
+      ]
+    }
+  ],
+  "selfEvalChecklist": [
+    "旅游",
+    "旅行",
+    "带",
+    "请",
+    "当",
+    "导游",
+    "旅行社",
+    "护照",
+    "票",
+    "地方",
+    "名胜古迹",
+    "特产",
+    "小吃",
+    "茶叶",
+    "玉",
+    "特色",
+    "除了……（以外）",
+    "机会",
+    "可惜",
+    "过",
+    "好玩儿"
+  ],
+  "entries": [
+    {
+      "hanzi": "旅游",
+      "pinyin": "lǚyóu",
+      "pos": "动",
+      "glossEn": "to travel",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "brainstorm",
+        "warmUp",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "旅行",
+      "pinyin": "lǚxíng",
+      "pos": "动",
+      "glossEn": "to travel, to tour",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "等于",
+      "pinyin": "děngyú",
+      "pos": "动",
+      "glossEn": "to be equal to",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "请",
+      "pinyin": "qǐng",
+      "pos": "动",
+      "glossEn": "to invite, to request",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "taskDemo",
+        "grammar",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "当",
+      "pinyin": "dāng",
+      "pos": "动",
+      "glossEn": "to serve as, to be used as",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "导游",
+      "pinyin": "dǎoyóu",
+      "pos": "名",
+      "glossEn": "tour guide",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "旅行社",
+      "pinyin": "lǚxíngshè",
+      "pos": "名",
+      "glossEn": "travel agency",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "名胜古迹",
+      "pinyin": "míngshèng gǔjì",
+      "pos": "名",
+      "glossEn": "places of scenic spots and historical sites",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "地方",
+      "pinyin": "dìfang",
+      "pos": "名",
+      "glossEn": "place",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "特产",
+      "pinyin": "tèchǎn",
+      "pos": "名",
+      "glossEn": "special local product",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "小吃",
+      "pinyin": "xiǎochī",
+      "pos": "名",
+      "glossEn": "snack, refreshment",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "丝绸",
+      "pinyin": "sīchóu",
+      "pos": "名",
+      "glossEn": "silk",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "tasks",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "茶叶",
+      "pinyin": "cháyè",
+      "pos": "名",
+      "glossEn": "tea",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "玉",
+      "pinyin": "yù",
+      "pos": "名",
+      "glossEn": "jade",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "tasks"
+      ],
+      "notes": "OCR skipped 玉 between 茶叶 and 面人儿; confirmed on vocab-list image."
+    },
+    {
+      "hanzi": "面人儿",
+      "pinyin": "miànrénr",
+      "pos": "名",
+      "glossEn": "dough figurine",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "特色",
+      "pinyin": "tèsè",
+      "pos": "名",
+      "glossEn": "characteristic",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "票",
+      "pinyin": "piào",
+      "pos": "名",
+      "glossEn": "ticket",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "brainstorm",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "机会",
+      "pinyin": "jīhuì",
+      "pos": "名",
+      "glossEn": "chance, opportunity",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "好玩儿",
+      "pinyin": "hǎowánr",
+      "pos": "形",
+      "glossEn": "fun, amusing, interesting",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "selfEval",
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "过",
+      "pinyin": "guo",
+      "pos": "助",
+      "glossEn": "aspect particle (past experience)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "除了……（以外）",
+      "pinyin": "chúle……(yǐwài)",
+      "pos": "介",
+      "glossEn": "except, besides",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval",
+        "taskDemo",
+        "grammar",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "兵马俑",
+      "pinyin": "Bīngmǎyǒng",
+      "pos": "专有",
+      "glossEn": "Terracotta Warriors and Horses",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "grammar",
+        "keyWords"
+      ]
+    },
+    {
+      "hanzi": "华清池",
+      "pinyin": "Huáqīngchí",
+      "pos": "专有",
+      "glossEn": "Huaqing Pool",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "brainstorm",
+        "wordPower",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "大雁塔",
+      "pinyin": "Dàyàntǎ",
+      "pos": "专有",
+      "glossEn": "Wild Goose Pagoda",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "brainstorm",
+        "wordPower",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "古城墙",
+      "pinyin": "Gǔ Chéngqiáng",
+      "pos": "专有",
+      "glossEn": "Ancient City Wall",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "brainstorm"
+      ],
+      "notes": "Normalized from 古城墻 on some pages."
+    },
+    {
+      "hanzi": "天安门",
+      "pinyin": "Tiān'ānmén",
+      "pos": "专有",
+      "glossEn": "Tian'anmen, Gate of Heavenly Peace",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "长城",
+      "pinyin": "Chángchéng",
+      "pos": "专有",
+      "glossEn": "Great Wall",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "故宫",
+      "pinyin": "Gùgōng",
+      "pos": "专有",
+      "glossEn": "Imperial Palace",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "鸟巢",
+      "pinyin": "Niǎocháo",
+      "pos": "专有",
+      "glossEn": "Bird's Nest",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "brainstorm",
+        "wordPower"
+      ],
+      "notes": "OCR misread as 乌巢; corrected from page image."
+    },
+    {
+      "hanzi": "西湖",
+      "pinyin": "Xīhú",
+      "pos": "专有",
+      "glossEn": "West Lake",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "brainstorm",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "葡萄沟",
+      "pinyin": "Pútáo Gōu",
+      "pos": "专有",
+      "glossEn": "Grape Valley",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "西安",
+      "pinyin": "Xī'ān",
+      "pos": "专有",
+      "glossEn": "Xi'an (city)",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "grammar",
+        "keyWords"
+      ]
+    },
+    {
+      "hanzi": "杭州",
+      "pinyin": "Hángzhōu",
+      "pos": "专有",
+      "glossEn": "Hangzhou (city)",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "brainstorm",
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "新疆",
+      "pinyin": "Xīnjiāng",
+      "pos": "专有",
+      "glossEn": "Xinjiang Uygur Autonomous Region",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "brainstorm",
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "和田",
+      "pinyin": "Hétián",
+      "pos": "专有",
+      "glossEn": "Hetian (place in Xinjiang)",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "西藏",
+      "pinyin": "Xīzàng",
+      "pos": "专有",
+      "glossEn": "Tibet",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "brainstorm",
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "有名",
+      "pinyin": "yǒumíng",
+      "pos": "形",
+      "glossEn": "famous, well-known",
+      "priority": "core",
+      "sources": [
+        "keyWords",
+        "taskDemo",
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "旅行团",
+      "pinyin": "lǚxíngtuán",
+      "pos": "名",
+      "glossEn": "tour group",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "旅行包",
+      "pinyin": "lǚxíngbāo",
+      "pos": "名",
+      "glossEn": "travelling bag",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "旅行箱",
+      "pinyin": "lǚxíngxiāng",
+      "pos": "名",
+      "glossEn": "suitcase",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "身份证",
+      "pinyin": "shēnfènzhèng",
+      "pos": "名",
+      "glossEn": "I.D., identification card",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "北京",
+      "pinyin": "Běijīng",
+      "pos": "专有",
+      "glossEn": "Beijing, capital of China",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "上海",
+      "pinyin": "Shànghǎi",
+      "pos": "专有",
+      "glossEn": "Shanghai (city)",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "豫园",
+      "pinyin": "Yùyuán",
+      "pos": "专有",
+      "glossEn": "Yuyuan Garden",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ],
+      "notes": "OCR misread as 像园; corrected from brainstorm image."
+    },
+    {
+      "hanzi": "布达拉宫",
+      "pinyin": "Bùdálāgōng",
+      "pos": "专有",
+      "glossEn": "Potala Palace",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "内蒙古",
+      "pinyin": "Nèiměnggǔ",
+      "pos": "专有",
+      "glossEn": "Inner Mongolia Autonomous Region",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "草原",
+      "pinyin": "cǎoyuán",
+      "pos": "名",
+      "glossEn": "grassland",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "云南",
+      "pinyin": "Yúnnán",
+      "pos": "专有",
+      "glossEn": "Yunnan (province)",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "石林",
+      "pinyin": "Shílín",
+      "pos": "专有",
+      "glossEn": "Stone Forest",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "河南",
+      "pinyin": "Hénán",
+      "pos": "专有",
+      "glossEn": "Henan (province)",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "少林寺",
+      "pinyin": "Shàolínsì",
+      "pos": "专有",
+      "glossEn": "Shaolin Temple",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "著名",
+      "pinyin": "zhùmíng",
+      "pos": "形",
+      "glossEn": "famous",
+      "priority": "extended",
+      "sources": [
+        "warmUp",
+        "objectives",
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "城市",
+      "pinyin": "chéngshì",
+      "pos": "名",
+      "glossEn": "city",
+      "priority": "extended",
+      "sources": [
+        "warmUp",
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "旅游景点",
+      "pinyin": "lǚyóu jǐngdiǎn",
+      "pos": "名",
+      "glossEn": "tourist attraction; scenic spot",
+      "priority": "extended",
+      "sources": [
+        "warmUp",
+        "wordPower",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "计划",
+      "pinyin": "jìhuà",
+      "pos": "名/动",
+      "glossEn": "plan; to plan",
+      "priority": "extended",
+      "sources": [
+        "objectives",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "景观",
+      "pinyin": "jǐngguān",
+      "pos": "名",
+      "glossEn": "scenery, landscape",
+      "priority": "extended",
+      "sources": [
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "介绍",
+      "pinyin": "jièshào",
+      "pos": "动",
+      "glossEn": "to introduce; to describe",
+      "priority": "extended",
+      "sources": [
+        "objectives",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "景点",
+      "pinyin": "jǐngdiǎn",
+      "pos": "名",
+      "glossEn": "scenic spot",
+      "priority": "extended",
+      "sources": [
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "一定",
+      "pinyin": "yídìng",
+      "pos": "副",
+      "glossEn": "certainly; must",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "有特色",
+      "pinyin": "yǒu tèsè",
+      "pos": "形",
+      "glossEn": "have distinctive features",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "好地方",
+      "pinyin": "hǎo dìfang",
+      "pos": "名",
+      "glossEn": "a good place",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "去过",
+      "pinyin": "qùguo",
+      "pos": "动",
+      "glossEn": "have been to",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "没去过",
+      "pinyin": "méi qùguo",
+      "pos": "动",
+      "glossEn": "have not been to",
+      "priority": "extended",
+      "sources": [
+        "tasks",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "看过",
+      "pinyin": "kànguo",
+      "pos": "动",
+      "glossEn": "have seen",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "没看过",
+      "pinyin": "méi kànguo",
+      "pos": "动",
+      "glossEn": "have not seen",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "吃过",
+      "pinyin": "chīguo",
+      "pos": "动",
+      "glossEn": "have eaten",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "来过",
+      "pinyin": "láiguo",
+      "pos": "动",
+      "glossEn": "have come (to)",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "看电影",
+      "pinyin": "kàn diànyǐng",
+      "pos": "动",
+      "glossEn": "to watch a movie",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "让",
+      "pinyin": "ràng",
+      "pos": "动",
+      "glossEn": "to let; to make (causative)",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "叫",
+      "pinyin": "jiào",
+      "pos": "动",
+      "glossEn": "to call; to ask (causative)",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "王老师",
+      "pinyin": "Wáng lǎoshī",
+      "pos": "专有",
+      "glossEn": "Teacher Wang",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "爬山",
+      "pinyin": "pá shān",
+      "pos": "动",
+      "glossEn": "to climb a mountain",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "邀请",
+      "pinyin": "yāoqǐng",
+      "pos": "动/名",
+      "glossEn": "to invite; invitation",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "法国",
+      "pinyin": "Fǎguó",
+      "pos": "专有",
+      "glossEn": "France",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "美国",
+      "pinyin": "Měiguó",
+      "pos": "专有",
+      "glossEn": "United States",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "澳大利亚",
+      "pinyin": "Àodàlìyà",
+      "pos": "专有",
+      "glossEn": "Australia",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "中国",
+      "pinyin": "Zhōngguó",
+      "pos": "专有",
+      "glossEn": "China",
+      "priority": "extended",
+      "sources": [
+        "grammar",
+        "tasks",
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "葡萄",
+      "pinyin": "pútao",
+      "pos": "名",
+      "glossEn": "grape",
+      "priority": "extended",
+      "sources": [
+        "tasks",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "和田玉",
+      "pinyin": "Hétián yù",
+      "pos": "名",
+      "glossEn": "Hotan jade",
+      "priority": "extended",
+      "sources": [
+        "tasks",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "信息",
+      "pinyin": "xìnxī",
+      "pos": "名",
+      "glossEn": "information",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "国家",
+      "pinyin": "guójiā",
+      "pos": "名",
+      "glossEn": "country",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "上次",
+      "pinyin": "shàng cì",
+      "pos": "名",
+      "glossEn": "last time",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "难忘",
+      "pinyin": "nánwàng",
+      "pos": "形",
+      "glossEn": "unforgettable",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "有人说",
+      "pinyin": "yǒu rén shuō",
+      "pos": "短语",
+      "glossEn": "some people say",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "首都",
+      "pinyin": "shǒudū",
+      "pos": "名",
+      "glossEn": "capital",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "古都",
+      "pinyin": "gǔdū",
+      "pos": "名",
+      "glossEn": "ancient capital",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "洛阳",
+      "pinyin": "Luòyáng",
+      "pos": "专有",
+      "glossEn": "Luoyang",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "南京",
+      "pinyin": "Nánjīng",
+      "pos": "专有",
+      "glossEn": "Nanjing",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "开封",
+      "pinyin": "Kāifēng",
+      "pos": "专有",
+      "glossEn": "Kaifeng",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "秦代",
+      "pinyin": "Qíndài",
+      "pos": "专有",
+      "glossEn": "Qin Dynasty",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "秦始皇陵",
+      "pinyin": "Qín Shǐhuáng Líng",
+      "pos": "专有",
+      "glossEn": "Mausoleum of the First Qin Emperor",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "陕西省",
+      "pinyin": "Shǎnxī Shěng",
+      "pos": "专有",
+      "glossEn": "Shaanxi Province",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "温泉",
+      "pinyin": "wēnquán",
+      "pos": "名",
+      "glossEn": "hot spring",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "杨贵妃",
+      "pinyin": "Yáng Guìfēi",
+      "pos": "专有",
+      "glossEn": "Yang Guifei",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "唐玄奘",
+      "pinyin": "Táng Xuánzàng",
+      "pos": "专有",
+      "glossEn": "Xuanzang (Tang monk)",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "印度",
+      "pinyin": "Yìndù",
+      "pos": "专有",
+      "glossEn": "India",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "佛教",
+      "pinyin": "Fójiào",
+      "pos": "名",
+      "glossEn": "Buddhism",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "旅行准备",
+      "pinyin": "lǚxíng zhǔnbèi",
+      "pos": "名",
+      "glossEn": "preparations for travelling",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "旅行之星",
+      "pinyin": "lǚxíng zhī xīng",
+      "pos": "名",
+      "glossEn": "travelling star (class activity)",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "很多",
+      "pinyin": "hěn duō",
+      "pos": "形",
+      "glossEn": "many; a lot",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "想",
+      "pinyin": "xiǎng",
+      "pos": "动",
+      "glossEn": "to want; to think",
+      "priority": "extended",
+      "sources": [
+        "grammar",
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "带",
+      "pinyin": "dài",
+      "pos": "动",
+      "glossEn": "to bring; to take",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ],
+      "notes": "Restored to U6 (official checklist/vocab overlap after dedupe)."
+    },
+    {
+      "hanzi": "护照",
+      "pinyin": "hùzhào",
+      "pos": "名",
+      "glossEn": "passport",
+      "priority": "core",
+      "sources": [
+        "selfEval",
+        "wordPower",
+        "taskDemo"
+      ],
+      "notes": "On self-eval + word power + task demo; not in 生词大盘点. Restored to U6 (official checklist/vocab overlap after dedupe)."
+    },
+    {
+      "hanzi": "可惜",
+      "pinyin": "kěxī",
+      "pos": "形",
+      "glossEn": "regrettable; what a pity",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ],
+      "notes": "Restored to U6 (official checklist/vocab overlap after dedupe)."
+    },
+    {
+      "hanzi": "烤鸭",
+      "pinyin": "kǎoyā",
+      "pos": "名",
+      "glossEn": "roast duck",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ],
+      "notes": "Moved to U6 (travel/Beijing food) from U1 after dedupe."
+    }
+  ],
+  "stats": {
+    "entryCount": 105,
+    "byPriority": {
+      "core": 40,
+      "brainstorm": 14,
+      "extended": 51
+    },
+    "selfEvalCount": 21,
+    "vocabListCount": 22,
+    "properNounCount": 15,
+    "dedupedAt": "2026-08-09",
+    "removedCrossUnitDuplicates": 30,
+    "dedupeRule": "One home unit by theme; official selfEval/keyWords/vocabList may keep a second copy if checklist requires it."
+  }
+}

@@ -24,7 +24,7 @@ export const ROTATION_CATEGORIES = [
   },
   {
     id: "food",
-    title: "Frutas e bebidas",
+    title: "Comida, cozinha e bebidas",
     sourceBlockIds: [3],
   },
   {
@@ -41,5 +41,21 @@ export const ROTATION_CATEGORIES = [
     id: "grammar_bits",
     title: "Partículas e revisão essencial",
     sourceBlockIds: [10, 15],
+  },
+  // NTCSL level-2 thematic pools (assignments only; no editorial blocks)
+  {
+    id: "weather",
+    title: "Tempo e estações",
+    sourceBlockIds: [],
+  },
+  {
+    id: "health",
+    title: "Saúde e corpo",
+    sourceBlockIds: [],
+  },
+  {
+    id: "study",
+    title: "Estudo e escola",
+    sourceBlockIds: [],
   },
 ];

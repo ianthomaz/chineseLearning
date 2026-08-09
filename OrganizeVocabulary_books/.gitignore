@@ -3,6 +3,10 @@
 # Source PDFs (size, licensing — keep on your machine)
 *.pdf
 
+# Local page renders + OCR for NTCSL level 2 (units/*.json may be tracked)
+level2_NTCSL/pages/
+level2_NTCSL/ocr/
+
 # Extraction / rebuild tooling (workflow local)
 scripts/
 

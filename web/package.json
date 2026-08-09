@@ -9,6 +9,8 @@
     "prebuild:phrase-game": "node scripts/build-phrase-game-data.mjs",
     "seed:content": "prisma generate && node scripts/seed-content-db.mjs && npm run build:app-library",
     "build:app-library": "node scripts/build-app-library.mjs",
+    "lexico:pending": "node scripts/classify-lexico-pending.mjs",
+    "lexico:classify-llm": "node scripts/classify-lexico-pending.mjs --llm",
     "db:generate": "prisma generate",
     "db:studio": "prisma studio",
     "review-extras:locales": "node scripts/build-review-extras-md.mjs",

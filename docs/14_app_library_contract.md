@@ -2,7 +2,9 @@
 
 Espelho de `APP_hanziMemorize/docs/03_contratoAtualizacaoAPP.md` (implementação neste repo).
 
-Atualizado: 2026-07-22.
+**Site = soberano** (SQL + snapshot). **App + widgets = consumidores** do pack — não editam o léxico.
+
+Atualizado: 2026-07-24.
 
 ---
 
@@ -11,7 +13,9 @@ Atualizado: 2026-07-22.
 | Consumidor | Fonte SQL |
 |------------|-----------|
 | Site `/praticar` | `lexico_*` + `context_decks` |
-| Snapshot / API do app | as mesmas tabelas |
+| Snapshot / API / widgets do app | as mesmas tabelas (`lexico_entries` = pool de rotação; sem tabela à parte) |
+
+`lexico_entries` materializa blocos + context decks + `lexicon_global` + **NTCSL level-2 core** (`OrganizeVocabulary_books/level2_NTCSL/lexico-core.json`, ≤3 hanzi, **sem** `book_vocab_*`), só com categoria. Assignments: `web/scripts/lexico-category-assignments.mjs`. Gancho LLM: `src/server/lexico/` + `npm run lexico:classify-llm`.
 
 Artefacto gerado (não é edição): `web/data/app-library/{library,meta}.json`.
 
@@ -59,3 +63,4 @@ npm run build:app-library   # também no fim de seed:content
 
 - App: `~/Projects/APP_hanziMemorize/docs/03_contratoAtualizacaoAPP.md`
 - Content DB: [11_content_db_schema.md](11_content_db_schema.md)
+- Classificação LLM do léxico: [15_lexico_llm_classify_contract.md](15_lexico_llm_classify_contract.md)

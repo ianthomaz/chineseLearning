@@ -1,0 +1,162 @@
+{
+  "bookId": "ntcsl-l2",
+  "sourcePdf": "level2_NTCSL.pdf",
+  "offsetPrintToPdf": 18,
+  "dedupedAt": "2026-08-09",
+  "dedupeRule": "Theme-coherent single home; official checklist overlaps may appear in 2 units",
+  "totalEntries": 1011,
+  "uniqueHanzi": 1002,
+  "multiUnitOfficialOverlaps": 9,
+  "units": [
+    {
+      "unit": 1,
+      "titleZh": "谈天气和季节",
+      "titleEn": "Talking about Weather and Seasons",
+      "file": "unit-01.json",
+      "pdfPages": {
+        "from": 19,
+        "to": 36
+      },
+      "printPages": {
+        "from": 1,
+        "to": 18
+      },
+      "entryCount": 93
+    },
+    {
+      "unit": 2,
+      "titleZh": "谈健康",
+      "titleEn": "Talking about Health",
+      "file": "unit-02.json",
+      "pdfPages": {
+        "from": 37,
+        "to": 54
+      },
+      "printPages": {
+        "from": 19,
+        "to": 36
+      },
+      "entryCount": 104
+    },
+    {
+      "unit": 3,
+      "titleZh": "谈学习",
+      "titleEn": "Talking about Study",
+      "file": "unit-03.json",
+      "pdfPages": {
+        "from": 55,
+        "to": 76
+      },
+      "printPages": {
+        "from": 37,
+        "to": 58
+      },
+      "entryCount": 113
+    },
+    {
+      "unit": 4,
+      "titleZh": "问路",
+      "titleEn": "Asking for Directions",
+      "file": "unit-04.json",
+      "pdfPages": {
+        "from": 77,
+        "to": 94
+      },
+      "printPages": {
+        "from": 59,
+        "to": 76
+      },
+      "entryCount": 93
+    },
+    {
+      "unit": 5,
+      "titleZh": "看比赛",
+      "titleEn": "Watching a Sports Game",
+      "file": "unit-05.json",
+      "pdfPages": {
+        "from": 95,
+        "to": 114
+      },
+      "printPages": {
+        "from": 77,
+        "to": 96
+      },
+      "entryCount": 106
+    },
+    {
+      "unit": 6,
+      "titleZh": "谈旅游",
+      "titleEn": "Talking about Travel",
+      "file": "unit-06.json",
+      "pdfPages": {
+        "from": 115,
+        "to": 138
+      },
+      "printPages": {
+        "from": 97,
+        "to": 120
+      },
+      "entryCount": 105
+    },
+    {
+      "unit": 7,
+      "titleZh": "谈交通工具",
+      "titleEn": "Talking about Means of Transport",
+      "file": "unit-07.json",
+      "pdfPages": {
+        "from": 139,
+        "to": 160
+      },
+      "printPages": {
+        "from": 121,
+        "to": 142
+      },
+      "entryCount": 100
+    },
+    {
+      "unit": 8,
+      "titleZh": "酒店入住",
+      "titleEn": "Checking in a Hotel",
+      "file": "unit-08.json",
+      "pdfPages": {
+        "from": 161,
+        "to": 178
+      },
+      "printPages": {
+        "from": 143,
+        "to": 160
+      },
+      "entryCount": 81
+    },
+    {
+      "unit": 9,
+      "titleZh": "做中国菜",
+      "titleEn": "Cooking Chinese Food",
+      "file": "unit-09.json",
+      "pdfPages": {
+        "from": 179,
+        "to": 198
+      },
+      "printPages": {
+        "from": 161,
+        "to": 180
+      },
+      "entryCount": 117
+    },
+    {
+      "unit": 10,
+      "titleZh": "约会",
+      "titleEn": "Making an Appointment",
+      "file": "unit-10.json",
+      "pdfPages": {
+        "from": 199,
+        "to": 219
+      },
+      "printPages": {
+        "from": 181,
+        "to": 201
+      },
+      "entryCount": 99
+    }
+  ]
+}

@@ -1,0 +1,1326 @@
+{
+  "meta": {
+    "bookId": "ntcsl-l2",
+    "bookTitleZh": "新目标汉语口语课本 2",
+    "bookTitleEn": "New Target Chinese Spoken Language [2]",
+    "sourcePdf": "level2_NTCSL.pdf",
+    "unit": 2,
+    "titleZh": "谈健康",
+    "titleEn": "Talking about Health",
+    "pdfPages": {
+      "from": 37,
+      "to": 54
+    },
+    "printPages": {
+      "from": 19,
+      "to": 36
+    },
+    "curatedAt": "2026-08-08",
+    "notes": "Lexicon harvested from unit gold blocks + brainstorm + smart extras from dialogue/tasks/grammar/cultural. OCR was re-checked against page images; pinyin/POS normalized. priority=core is 生词大盘点 + 重点词语 + self-eval checklist. Cover key word is 病 (not 生病). Cross-unit dedupe 2026-08-09: keep lemma in most coherent unit (core preferred; theme for extended)."
+  },
+  "objectives": {
+    "topicZh": "谈健康",
+    "topicEn": "Talking about health",
+    "instructionalZh": "能简单地说明自己的病症，能听懂医生的简单问话并回答",
+    "instructionalEn": "Students can briefly describe their symptoms; they can also understand the doctor's simple questions and answer them.",
+    "keyWords": [
+      "病",
+      "看病",
+      "发烧",
+      "打喷嚏",
+      "流鼻涕",
+      "咳嗽",
+      "嗓子",
+      "疼",
+      "休息"
+    ],
+    "keySentences": [
+      {
+        "hanzi": "我有点儿发烧，嗓子也疼得很厉害。",
+        "pinyin": "Wǒ yǒudiǎnr fā shāo, sǎngzi yě téng de hěn lìhai."
+      },
+      {
+        "hanzi": "什么时候开始的？",
+        "pinyin": "Shénme shíhou kāishǐ de?"
+      },
+      {
+        "hanzi": "你去医院了吗？",
+        "pinyin": "Nǐ qù yīyuàn le ma?"
+      },
+      {
+        "hanzi": "这是医生给我开的药，一天三次，一次两片。",
+        "pinyin": "Zhè shì yīshēng gěi wǒ kāi de yào, yì tiān sān cì, yí cì liǎng piàn."
+      },
+      {
+        "hanzi": "你要多喝水，按时吃药，好好儿休息。",
+        "pinyin": "Nǐ yào duō hē shuǐ, ànshí chī yào, hǎohāor xiūxi."
+      }
+    ],
+    "grammarPoints": [
+      {
+        "zh": "表完成的“了”",
+        "en": "“了” indicating completion"
+      },
+      {
+        "zh": "“是……的”",
+        "en": "The structure “是……的”"
+      }
+    ]
+  },
+  "taskDemo": {
+    "pdfPage": 42,
+    "sceneZh": "张丽和大龙在家聊天。",
+    "sceneEn": "Zhang Li and Dalong are chatting at home.",
+    "lines": [
+      {
+        "speaker": "张丽",
+        "hanzi": "大龙，你怎么没去上课？"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "我有点儿发烧，嗓子也疼得很厉害。"
+      },
+      {
+        "speaker": "张丽",
+        "hanzi": "什么时候开始的？"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "今天早上。"
+      },
+      {
+        "speaker": "张丽",
+        "hanzi": "一定是昨天给我送伞时着凉了。你去医院了吗？我陪你去吧。"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "去了，这是医生给我开的药，可是我没看明白怎么吃。"
+      },
+      {
+        "speaker": "张丽",
+        "hanzi": "我看看，一天三次，一次两片。你要多喝水，按时吃药，好好儿休息。"
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "id": "completion-le",
+      "titleZh": "表完成的“了”",
+      "titleEn": "“了” indicating completion",
+      "patternZh": "……了 / 没（有）＋VP",
+      "patternEn": "… + 了; negative: 没(有) + VP (no final 了)",
+      "examples": [
+        {
+          "hanzi": "我去医院了。",
+          "pinyin": "Wǒ qù yīyuàn le."
+        },
+        {
+          "hanzi": "你今天怎么没去上课？",
+          "pinyin": "Nǐ jīntiān zěnme méi qù shàng kè?"
+        }
+      ]
+    },
+    {
+      "id": "shi-de",
+      "titleZh": "“是……的”",
+      "titleEn": "The structure “是……的”",
+      "patternZh": "是＋相关信息＋的",
+      "patternEn": "是 + related info (time/place/manner/…) + 的",
+      "examples": [
+        {
+          "hanzi": "我是从昨天开始发烧的。",
+          "pinyin": "Wǒ shì cóng zuótiān kāishǐ fā shāo de."
+        },
+        {
+          "hanzi": "她是从美国来的。",
+          "pinyin": "Tā shì cóng Měiguó lái de."
+        },
+        {
+          "hanzi": "他是走路来的。",
+          "pinyin": "Tā shì zǒulù lái de."
+        },
+        {
+          "hanzi": "你什么时候来的？",
+          "pinyin": "Nǐ shénme shíhou lái de?",
+          "note": "是 may be omitted"
+        },
+        {
+          "hanzi": "他不是坐飞机来的。",
+          "pinyin": "Tā bú shì zuò fēijī lái de."
+        }
+      ],
+      "notes": [
+        "Used for already-occurred actions to highlight time, place, manner, etc.",
+        "Negative form: 不是……的."
+      ]
+    }
+  ],
+  "selfEvalChecklist": [
+    "发烧",
+    "咳嗽",
+    "头疼",
+    "嗓子",
+    "肚子",
+    "胳膊",
+    "手",
+    "腿",
+    "脚",
+    "开药",
+    "按时",
+    "着凉",
+    "鼻子",
+    "休息",
+    "开始",
+    "医生",
+    "陪",
+    "明白",
+    "看病",
+    "次",
+    "片"
+  ],
+  "entries": [
+    {
+      "hanzi": "头",
+      "pinyin": "tóu",
+      "pos": "名",
+      "glossEn": "head",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "嗓子",
+      "pinyin": "sǎngzi",
+      "pos": "名",
+      "glossEn": "throat",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "肚子",
+      "pinyin": "dùzi",
+      "pos": "名",
+      "glossEn": "belly",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "腿",
+      "pinyin": "tuǐ",
+      "pos": "名",
+      "glossEn": "leg",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "脚",
+      "pinyin": "jiǎo",
+      "pos": "名",
+      "glossEn": "foot",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "手",
+      "pinyin": "shǒu",
+      "pos": "名",
+      "glossEn": "hand",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "胳膊",
+      "pinyin": "gēbo",
+      "pos": "名",
+      "glossEn": "arm",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "咳嗽",
+      "pinyin": "késou",
+      "pos": "动",
+      "glossEn": "to cough",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "发烧",
+      "pinyin": "fā shāo",
+      "pos": "",
+      "glossEn": "to have a fever",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "grammar",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "打喷嚏",
+      "pinyin": "dǎ pēntì",
+      "pos": "",
+      "glossEn": "to sneeze",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower"
+      ],
+      "notes": "OCR often garbles 喷; tone is pēn."
+    },
+    {
+      "hanzi": "流鼻涕",
+      "pinyin": "liú bítì",
+      "pos": "",
+      "glossEn": "to have a runny nose",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "疼",
+      "pinyin": "téng",
+      "pos": "形",
+      "glossEn": "painful; to ache",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "开始",
+      "pinyin": "kāishǐ",
+      "pos": "动",
+      "glossEn": "to begin",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "grammar",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "厉害",
+      "pinyin": "lìhai",
+      "pos": "形",
+      "glossEn": "terrible; serious; severe",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "着凉",
+      "pinyin": "zháoliáng",
+      "pos": "动",
+      "glossEn": "to catch a cold",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ],
+      "notes": "Book pinyin zháoliáng."
+    },
+    {
+      "hanzi": "陪",
+      "pinyin": "péi",
+      "pos": "动",
+      "glossEn": "to accompany",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "医生",
+      "pinyin": "yīshēng",
+      "pos": "名",
+      "glossEn": "doctor",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "开",
+      "pinyin": "kāi",
+      "pos": "动",
+      "glossEn": "to prescribe; to open",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ],
+      "notes": "In 开药."
+    },
+    {
+      "hanzi": "药",
+      "pinyin": "yào",
+      "pos": "名",
+      "glossEn": "medicine",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "可是",
+      "pinyin": "kěshì",
+      "pos": "连",
+      "glossEn": "but",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "明白",
+      "pinyin": "míngbai",
+      "pos": "动/形",
+      "glossEn": "to understand; clear; obvious",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "次",
+      "pinyin": "cì",
+      "pos": "量",
+      "glossEn": "occurrence; time",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "片",
+      "pinyin": "piàn",
+      "pos": "量",
+      "glossEn": "measure word for tablets",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "按时",
+      "pinyin": "ànshí",
+      "pos": "副",
+      "glossEn": "on schedule; on time",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "休息",
+      "pinyin": "xiūxi",
+      "pos": "动",
+      "glossEn": "to rest",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "病",
+      "pinyin": "bìng",
+      "pos": "名/动",
+      "glossEn": "illness; to fall ill",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords"
+      ]
+    },
+    {
+      "hanzi": "看病",
+      "pinyin": "kàn bìng",
+      "pos": "",
+      "glossEn": "to see a doctor",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "舒服",
+      "pinyin": "shūfu",
+      "pos": "形",
+      "glossEn": "comfortable",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "身体",
+      "pinyin": "shēntǐ",
+      "pos": "名",
+      "glossEn": "body",
+      "priority": "core",
+      "sources": [
+        "vocabList"
+      ]
+    },
+    {
+      "hanzi": "感冒",
+      "pinyin": "gǎnmào",
+      "pos": "名/动",
+      "glossEn": "cold; to catch a cold",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "warmUp",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "头疼",
+      "pinyin": "tóu téng",
+      "pos": "",
+      "glossEn": "to have a headache",
+      "priority": "core",
+      "sources": [
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "开药",
+      "pinyin": "kāi yào",
+      "pos": "",
+      "glossEn": "to prescribe medicine",
+      "priority": "core",
+      "sources": [
+        "brainstorm",
+        "selfEval",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "鼻子",
+      "pinyin": "bízi",
+      "pos": "名",
+      "glossEn": "nose",
+      "priority": "core",
+      "sources": [
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "挂号",
+      "pinyin": "guà hào",
+      "pos": "",
+      "glossEn": "to register (at a hospital)",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "内科",
+      "pinyin": "nèikē",
+      "pos": "名",
+      "glossEn": "internal medicine",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "外科",
+      "pinyin": "wàikē",
+      "pos": "名",
+      "glossEn": "surgery; surgical department",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "药房",
+      "pinyin": "yàofáng",
+      "pos": "名",
+      "glossEn": "pharmacy",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "中药",
+      "pinyin": "zhōngyào",
+      "pos": "名",
+      "glossEn": "traditional Chinese medicine",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "西药",
+      "pinyin": "xīyào",
+      "pos": "名",
+      "glossEn": "Western medicine",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "眼睛",
+      "pinyin": "yǎnjing",
+      "pos": "名",
+      "glossEn": "eye",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "耳朵",
+      "pinyin": "ěrduo",
+      "pos": "名",
+      "glossEn": "ear",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "牙",
+      "pinyin": "yá",
+      "pos": "名",
+      "glossEn": "tooth",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "肚子疼",
+      "pinyin": "dùzi téng",
+      "pos": "",
+      "glossEn": "to have a stomachache",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "嗓子疼",
+      "pinyin": "sǎngzi téng",
+      "pos": "",
+      "glossEn": "to have a sore throat",
+      "priority": "extended",
+      "sources": [
+        "wordPower",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "症状",
+      "pinyin": "zhèngzhuàng",
+      "pos": "名",
+      "glossEn": "symptom",
+      "priority": "extended",
+      "sources": [
+        "warmUp",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "说明",
+      "pinyin": "shuōmíng",
+      "pos": "动",
+      "glossEn": "to explain; to describe",
+      "priority": "extended",
+      "sources": [
+        "warmUp"
+      ]
+    },
+    {
+      "hanzi": "以前",
+      "pinyin": "yǐqián",
+      "pos": "名",
+      "glossEn": "before; previously",
+      "priority": "extended",
+      "sources": [
+        "warmUp"
+      ]
+    },
+    {
+      "hanzi": "医院",
+      "pinyin": "yīyuàn",
+      "pos": "名",
+      "glossEn": "hospital",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "有点儿",
+      "pinyin": "yǒudiǎnr",
+      "pos": "副",
+      "glossEn": "a little; somewhat",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "早上",
+      "pinyin": "zǎoshang",
+      "pos": "名",
+      "glossEn": "morning",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "送",
+      "pinyin": "sòng",
+      "pos": "动",
+      "glossEn": "to give; to deliver",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "吃",
+      "pinyin": "chī",
+      "pos": "动",
+      "glossEn": "to eat; to take (medicine)",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "吃药",
+      "pinyin": "chī yào",
+      "pos": "",
+      "glossEn": "to take medicine",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "水",
+      "pinyin": "shuǐ",
+      "pos": "名",
+      "glossEn": "water",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "好好儿",
+      "pinyin": "hǎohāor",
+      "pos": "副",
+      "glossEn": "properly; well",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "看",
+      "pinyin": "kàn",
+      "pos": "动",
+      "glossEn": "to look; to see",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "什么时候",
+      "pinyin": "shénme shíhou",
+      "pos": "",
+      "glossEn": "when",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "是……的",
+      "pinyin": "shì……de",
+      "pos": "",
+      "glossEn": "structure highlighting details of a past event",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "从",
+      "pinyin": "cóng",
+      "pos": "介",
+      "glossEn": "from",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "来",
+      "pinyin": "lái",
+      "pos": "动",
+      "glossEn": "to come",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "健康",
+      "pinyin": "jiànkāng",
+      "pos": "名/形",
+      "glossEn": "health; healthy",
+      "priority": "extended",
+      "sources": [
+        "cover"
+      ]
+    },
+    {
+      "hanzi": "病症",
+      "pinyin": "bìngzhèng",
+      "pos": "名",
+      "glossEn": "symptom of illness",
+      "priority": "extended",
+      "sources": [
+        "cover"
+      ]
+    },
+    {
+      "hanzi": "问话",
+      "pinyin": "wènhuà",
+      "pos": "名",
+      "glossEn": "questioning; inquiry",
+      "priority": "extended",
+      "sources": [
+        "cover"
+      ],
+      "notes": "Cover OCR misread 问话 as 同话."
+    },
+    {
+      "hanzi": "回答",
+      "pinyin": "huídá",
+      "pos": "动",
+      "glossEn": "to answer",
+      "priority": "extended",
+      "sources": [
+        "cover"
+      ]
+    },
+    {
+      "hanzi": "简单",
+      "pinyin": "jiǎndān",
+      "pos": "形",
+      "glossEn": "simple",
+      "priority": "extended",
+      "sources": [
+        "cover"
+      ]
+    },
+    {
+      "hanzi": "老毛病",
+      "pinyin": "lǎomáobìng",
+      "pos": "名",
+      "glossEn": "old ailment; chronic problem",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "家人",
+      "pinyin": "jiārén",
+      "pos": "名",
+      "glossEn": "family member",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "朋友",
+      "pinyin": "péngyou",
+      "pos": "名",
+      "glossEn": "friend",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "生病",
+      "pinyin": "shēngbìng",
+      "pos": "动",
+      "glossEn": "to get sick",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "踢足球",
+      "pinyin": "tī zúqiú",
+      "pos": "",
+      "glossEn": "to play soccer",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "机场",
+      "pinyin": "jīchǎng",
+      "pos": "名",
+      "glossEn": "airport",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "接",
+      "pinyin": "jiē",
+      "pos": "动",
+      "glossEn": "to pick up (someone)",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "同事",
+      "pinyin": "tóngshì",
+      "pos": "名",
+      "glossEn": "colleague",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "开会",
+      "pinyin": "kāihuì",
+      "pos": "动",
+      "glossEn": "to hold/attend a meeting",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "旗袍",
+      "pinyin": "qípáo",
+      "pos": "名",
+      "glossEn": "qipao; cheongsam",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "电影",
+      "pinyin": "diànyǐng",
+      "pos": "名",
+      "glossEn": "movie",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "唱歌",
+      "pinyin": "chànggē",
+      "pos": "动",
+      "glossEn": "to sing",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "北京烤鸭",
+      "pinyin": "Běijīng kǎoyā",
+      "pos": "名",
+      "glossEn": "Beijing roast duck",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "健身",
+      "pinyin": "jiànshēn",
+      "pos": "动",
+      "glossEn": "to work out; fitness",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "上周",
+      "pinyin": "shàng zhōu",
+      "pos": "名",
+      "glossEn": "last week",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "最长",
+      "pinyin": "zuì cháng",
+      "pos": "",
+      "glossEn": "longest",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "最短",
+      "pinyin": "zuì duǎn",
+      "pos": "",
+      "glossEn": "shortest",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "时间",
+      "pinyin": "shíjiān",
+      "pos": "名",
+      "glossEn": "time",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "中医",
+      "pinyin": "zhōngyī",
+      "pos": "名",
+      "glossEn": "traditional Chinese medicine (doctor/system)",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "悠久",
+      "pinyin": "yōujiǔ",
+      "pos": "形",
+      "glossEn": "long-standing",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "治疗",
+      "pinyin": "zhìliáo",
+      "pos": "动/名",
+      "glossEn": "to treat; treatment",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "中草药",
+      "pinyin": "zhōngcǎoyào",
+      "pos": "名",
+      "glossEn": "Chinese herbal medicine",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "广泛",
+      "pinyin": "guǎngfàn",
+      "pos": "形",
+      "glossEn": "extensive; widespread",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "应用",
+      "pinyin": "yìngyòng",
+      "pos": "动/名",
+      "glossEn": "to apply; application",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "配合",
+      "pinyin": "pèihé",
+      "pos": "动",
+      "glossEn": "to coordinate with; to combine with",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "针灸",
+      "pinyin": "zhēnjiǔ",
+      "pos": "名",
+      "glossEn": "acupuncture and moxibustion",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "刮痧",
+      "pinyin": "guāshā",
+      "pos": "名/动",
+      "glossEn": "gua sha; skin scraping",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ],
+      "notes": "OCR misread as 刮疹."
+    },
+    {
+      "hanzi": "拔罐",
+      "pinyin": "báguàn",
+      "pos": "名/动",
+      "glossEn": "cupping",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "疾病",
+      "pinyin": "jíbìng",
+      "pos": "名",
+      "glossEn": "disease; illness",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "同仁堂",
+      "pinyin": "Tóngréntáng",
+      "pos": "专有",
+      "glossEn": "Tongrentang (pharmacy brand)",
+      "priority": "extended",
+      "sources": [
+        "cultural",
+        "properNouns"
+      ]
+    },
+    {
+      "hanzi": "药店",
+      "pinyin": "yàodiàn",
+      "pos": "名",
+      "glossEn": "drugstore; pharmacy",
+      "priority": "extended",
+      "sources": [
+        "cultural"
+      ]
+    },
+    {
+      "hanzi": "艾娜",
+      "pinyin": "Àinà",
+      "pos": "专有",
+      "glossEn": "Aina / Edna (character name)",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "pos": "名",
+      "glossEn": "home; family",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "看看",
+      "pinyin": "kànkan",
+      "pos": "动",
+      "glossEn": "to take a look",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "一天",
+      "pinyin": "yì tiān",
+      "pos": "",
+      "glossEn": "one day; a day",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "一次",
+      "pinyin": "yí cì",
+      "pos": "",
+      "glossEn": "one time; once",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "两",
+      "pinyin": "liǎng",
+      "pos": "数",
+      "glossEn": "two",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "要",
+      "pinyin": "yào",
+      "pos": "助动",
+      "glossEn": "should; need to",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "部位",
+      "pinyin": "bùwèi",
+      "pos": "名",
+      "glossEn": "part (of the body)",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 104,
+    "byPriority": {
+      "core": 33,
+      "brainstorm": 9,
+      "extended": 62
+    },
+    "selfEvalCount": 21,
+    "vocabListCount": 30,
+    "properNounCount": 3,
+    "dedupedAt": "2026-08-09",
+    "removedCrossUnitDuplicates": 28,
+    "dedupeRule": "One home unit by theme; official selfEval/keyWords/vocabList may keep a second copy if checklist requires it."
+  }
+}

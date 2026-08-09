@@ -1,0 +1,1427 @@
+{
+  "meta": {
+    "bookId": "ntcsl-l2",
+    "bookTitleZh": "新目标汉语口语课本 2",
+    "bookTitleEn": "New Target Chinese Spoken Language [2]",
+    "sourcePdf": "level2_NTCSL.pdf",
+    "unit": 5,
+    "titleZh": "看比赛",
+    "titleEn": "Watching a Sports Game",
+    "pdfPages": {
+      "from": 95,
+      "to": 114
+    },
+    "printPages": {
+      "from": 77,
+      "to": 96
+    },
+    "curatedAt": "2026-08-08",
+    "notes": "Lexicon harvested from unit gold blocks + brainstorm + smart extras from dialogue/tasks/cultural notes. OCR was re-checked against page images; pinyin/POS normalized. priority=core is 生词大盘点 + 专有名词 + 重点词语 + self-eval checklist. Key image fixes: 阿根廷 (not 向根廷); self-eval 比分 (OCR 北分); cheering squad written 拉拉队. Cross-unit dedupe 2026-08-09: keep lemma in most coherent unit (core preferred; theme for extended)."
+  },
+  "objectives": {
+    "topicZh": "看比赛",
+    "topicEn": "Watching a sports game",
+    "instructionalZh": "学会观看体育比赛时的常用词语、句式",
+    "instructionalEn": "Students will master the frequently-used words and sentence patterns when watching a sports game.",
+    "keyWords": [
+      "比赛",
+      "赢",
+      "输",
+      "精彩",
+      "队",
+      "场",
+      "教练",
+      "裁判",
+      "加油",
+      "比分",
+      "进球"
+    ],
+    "keySentences": [
+      {
+        "hanzi": "没看完。",
+        "pinyin": "Méi kànwán."
+      },
+      {
+        "hanzi": "我猜对了。",
+        "pinyin": "Wǒ cāiduì le."
+      },
+      {
+        "hanzi": "是几比几赢的？比分是多少？",
+        "pinyin": "Shì jǐ bǐ jǐ yíng de? Bǐfēn shì duōshǎo?"
+      },
+      {
+        "hanzi": "谁进的球？",
+        "pinyin": "Shéi jìn de qiú?"
+      }
+    ],
+    "grammarPoints": [
+      {
+        "zh": "结果补语",
+        "en": "Complement of result"
+      },
+      {
+        "zh": "“一边……一边……”",
+        "en": "The structure “一边……一边……”"
+      }
+    ]
+  },
+  "taskDemo": {
+    "pdfPage": 100,
+    "sceneZh": "大卫和大龙在教室里谈论昨晚的足球赛。",
+    "sceneEn": "David and Dalong are in the classroom talking about the football match last night.",
+    "lines": [
+      {
+        "speaker": "大龙",
+        "hanzi": "昨天的比赛你看了吗？"
+      },
+      {
+        "speaker": "大卫",
+        "hanzi": "当然看了，昨天晚上看到两点。"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "谁赢了？"
+      },
+      {
+        "speaker": "大卫",
+        "hanzi": "你没看吗？"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "别提了，我昨天一边喝啤酒，一边看比赛，可是还没看完就喝醉了。"
+      },
+      {
+        "speaker": "大卫",
+        "hanzi": "昨天的比赛特别精彩！阿根廷赢了。"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "我猜对了，是几比几赢的？"
+      },
+      {
+        "speaker": "大卫",
+        "hanzi": "2：0。"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "谁进的球？"
+      },
+      {
+        "speaker": "大卫",
+        "hanzi": "你最喜欢的球星，都是他进的。第二个是个点球。"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "太可惜了，我只能看重播了。对了，今天的比赛是谁对谁？"
+      },
+      {
+        "speaker": "大卫",
+        "hanzi": "韩国对美国。我和艾娜说好了去酒吧看。你去吗？"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "好啊，我们一起去吧。"
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "id": "result-complement",
+      "titleZh": "结果补语",
+      "titleEn": "Complement of result",
+      "patternZh": "动词＋结果补语（到／完／对／错／好…）",
+      "patternEn": "Verb + complement of result (到 / 完 / 对 / 错 / 好…)",
+      "examples": [
+        {
+          "hanzi": "看到十二点",
+          "pinyin": "kàndào shí'èr diǎn"
+        },
+        {
+          "hanzi": "找到",
+          "pinyin": "zhǎodào"
+        },
+        {
+          "hanzi": "他吃完饭了。",
+          "pinyin": "Tā chīwán fàn le."
+        },
+        {
+          "hanzi": "写完作业",
+          "pinyin": "xiěwán zuòyè"
+        },
+        {
+          "hanzi": "说对／说错",
+          "note": "V+对/错"
+        },
+        {
+          "hanzi": "猜对／猜错",
+          "note": "V+对/错"
+        },
+        {
+          "hanzi": "准备好",
+          "note": "V+好"
+        },
+        {
+          "hanzi": "修好",
+          "note": "V+好"
+        },
+        {
+          "hanzi": "没吃完饭",
+          "note": "negation: 没+V+result"
+        },
+        {
+          "hanzi": "没准备好",
+          "note": "negation: 没+V+result"
+        },
+        {
+          "hanzi": "做好饭了",
+          "note": "object after result complement"
+        },
+        {
+          "hanzi": "找到他了",
+          "note": "object after result complement"
+        }
+      ],
+      "notes": [
+        "An adjective or verb after the main verb indicates the result of the action.",
+        "Negative form is generally 没＋V＋result.",
+        "When there is an object, place it after the result complement."
+      ]
+    },
+    {
+      "id": "yibian-yibian",
+      "titleZh": "“一边……一边……”",
+      "titleEn": "The structure “一边……一边……”",
+      "patternZh": "一边＋V1，一边＋V2",
+      "patternEn": "一边 + V1, 一边 + V2",
+      "examples": [
+        {
+          "hanzi": "他一边喝啤酒，一边看比赛。",
+          "pinyin": "Tā yìbiān hē píjiǔ, yìbiān kàn bǐsài."
+        },
+        {
+          "hanzi": "大家一边唱歌，一边跳舞。",
+          "pinyin": "Dàjiā yìbiān chànggē, yìbiān tiàowǔ."
+        },
+        {
+          "hanzi": "边走边看",
+          "note": "一 may be omitted with monosyllabic verbs"
+        }
+      ],
+      "notes": [
+        "Indicates two or more actions happening at the same time.",
+        "Generally connects concrete-action verbs such as 走路、看书.",
+        "With monosyllabic verbs like 走/听/说/看/想, 一 can be omitted (边走边看)."
+      ]
+    }
+  ],
+  "selfEvalChecklist": [
+    "比赛",
+    "赢",
+    "输",
+    "精彩",
+    "对",
+    "队",
+    "比分",
+    "进球",
+    "点球",
+    "观众",
+    "教练",
+    "裁判",
+    "加油",
+    "别提了",
+    "醉",
+    "啤酒",
+    "可惜",
+    "一边",
+    "完",
+    "球星",
+    "等"
+  ],
+  "entries": [
+    {
+      "hanzi": "比赛",
+      "pinyin": "bǐsài",
+      "pos": "名/动",
+      "glossEn": "competition, match; to have a match",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "selfEval",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "队",
+      "pinyin": "duì",
+      "pos": "名",
+      "glossEn": "team",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "对",
+      "pinyin": "duì",
+      "pos": "介",
+      "glossEn": "versus; against",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "比分",
+      "pinyin": "bǐfēn",
+      "pos": "名",
+      "glossEn": "score",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "赢",
+      "pinyin": "yíng",
+      "pos": "动",
+      "glossEn": "to win",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "输",
+      "pinyin": "shū",
+      "pos": "动",
+      "glossEn": "to lose",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "拉拉队",
+      "pinyin": "lālāduì",
+      "pos": "名",
+      "glossEn": "cheering squad",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower"
+      ],
+      "notes": "Book writes 拉拉队 (not 啦啦队)."
+    },
+    {
+      "hanzi": "观众",
+      "pinyin": "guānzhòng",
+      "pos": "名",
+      "glossEn": "audience; spectators",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "裁判",
+      "pinyin": "cáipàn",
+      "pos": "名",
+      "glossEn": "referee",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "球星",
+      "pinyin": "qiúxīng",
+      "pos": "名",
+      "glossEn": "ball-game star",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "教练",
+      "pinyin": "jiàoliàn",
+      "pos": "名",
+      "glossEn": "coach",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "别提了",
+      "pinyin": "biétí le",
+      "pos": "惯",
+      "glossEn": "don't mention it",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "别",
+      "pinyin": "bié",
+      "pos": "副",
+      "glossEn": "don't; not",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "一边",
+      "pinyin": "yìbiān",
+      "pos": "连",
+      "glossEn": "one side; simultaneously (一边……一边……)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "grammar",
+        "taskDemo",
+        "selfEval"
+      ],
+      "notes": "Vocab list / grammar teach 一边……一边……; self-eval checklist shows 一边."
+    },
+    {
+      "hanzi": "啤酒",
+      "pinyin": "píjiǔ",
+      "pos": "名",
+      "glossEn": "beer",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "grammar",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "醉",
+      "pinyin": "zuì",
+      "pos": "形",
+      "glossEn": "drunk",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "进",
+      "pinyin": "jìn",
+      "pos": "动",
+      "glossEn": "to enter; to score (a goal)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "球",
+      "pinyin": "qiú",
+      "pos": "名",
+      "glossEn": "ball",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "可惜",
+      "pinyin": "kěxī",
+      "pos": "形",
+      "glossEn": "regrettable; what a pity",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "点球",
+      "pinyin": "diǎnqiú",
+      "pos": "名",
+      "glossEn": "penalty kick",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "只",
+      "pinyin": "zhǐ",
+      "pos": "副",
+      "glossEn": "only, just, merely",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "重播",
+      "pinyin": "chóngbō",
+      "pos": "名/动",
+      "glossEn": "replay; to rerun / rebroadcast",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "对了",
+      "pinyin": "duì le",
+      "pos": "惯",
+      "glossEn": "by the way",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "等",
+      "pinyin": "děng",
+      "pos": "动",
+      "glossEn": "to wait",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "tasks",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "完",
+      "pinyin": "wán",
+      "pos": "动",
+      "glossEn": "to finish, to end",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "grammar",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "加油",
+      "pinyin": "jiāyóu",
+      "pos": "动",
+      "glossEn": "to cheer on; come on",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "精彩",
+      "pinyin": "jīngcǎi",
+      "pos": "形",
+      "glossEn": "wonderful, marvelous",
+      "priority": "core",
+      "sources": [
+        "keyWords",
+        "brainstorm",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "场",
+      "pinyin": "chǎng",
+      "pos": "量",
+      "glossEn": "measure word for sports games; field",
+      "priority": "core",
+      "sources": [
+        "keyWords"
+      ]
+    },
+    {
+      "hanzi": "进球",
+      "pinyin": "jìn qiú",
+      "pos": "动",
+      "glossEn": "to score a goal",
+      "priority": "core",
+      "sources": [
+        "keyWords",
+        "brainstorm",
+        "taskDemo",
+        "selfEval",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "阿根廷",
+      "pinyin": "Āgēntíng",
+      "pos": "专有",
+      "glossEn": "Argentina",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "taskDemo"
+      ],
+      "notes": "OCR misread as 向根廷; image confirms 阿根廷."
+    },
+    {
+      "hanzi": "湖人队",
+      "pinyin": "Húrén Duì",
+      "pos": "专有",
+      "glossEn": "the Lakers",
+      "priority": "core",
+      "sources": [
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "凯尔特人队",
+      "pinyin": "Kǎi'ěrtèrén Duì",
+      "pos": "专有",
+      "glossEn": "the Celtics",
+      "priority": "core",
+      "sources": [
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "科比",
+      "pinyin": "Kēbǐ",
+      "pos": "专有",
+      "glossEn": "Kobe (Bryant)",
+      "priority": "core",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "羽毛球",
+      "pinyin": "yǔmáoqiú",
+      "pos": "名",
+      "glossEn": "badminton",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "排球",
+      "pinyin": "páiqiú",
+      "pos": "名",
+      "glossEn": "volleyball",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "网球",
+      "pinyin": "wǎngqiú",
+      "pos": "名",
+      "glossEn": "tennis",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "篮球",
+      "pinyin": "lánqiú",
+      "pos": "名",
+      "glossEn": "basketball",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "乒乓球",
+      "pinyin": "pīngpāngqiú",
+      "pos": "名",
+      "glossEn": "table tennis",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "足球",
+      "pinyin": "zúqiú",
+      "pos": "名",
+      "glossEn": "football; soccer",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "wordPower",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "棒球",
+      "pinyin": "bàngqiú",
+      "pos": "名",
+      "glossEn": "baseball",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "橄榄球",
+      "pinyin": "gǎnlǎnqiú",
+      "pos": "名",
+      "glossEn": "rugby; American football",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "奥运会",
+      "pinyin": "Àoyùnhuì",
+      "pos": "专有",
+      "glossEn": "the Olympic Games",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "世界杯",
+      "pinyin": "Shìjièbēi",
+      "pos": "专有",
+      "glossEn": "the World Cup",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "激烈",
+      "pinyin": "jīliè",
+      "pos": "形",
+      "glossEn": "intense, fierce",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "紧张",
+      "pinyin": "jǐnzhāng",
+      "pos": "形",
+      "glossEn": "tense; nervous",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "直播",
+      "pinyin": "zhíbō",
+      "pos": "名/动",
+      "glossEn": "live broadcast",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "队员",
+      "pinyin": "duìyuán",
+      "pos": "名",
+      "glossEn": "team member",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "欢呼",
+      "pinyin": "huānhū",
+      "pos": "动",
+      "glossEn": "to cheer",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "看完",
+      "pinyin": "kànwán",
+      "pos": "动",
+      "glossEn": "to finish watching",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "看到",
+      "pinyin": "kàndào",
+      "pos": "动",
+      "glossEn": "to see; to watch until",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "猜对",
+      "pinyin": "cāiduì",
+      "pos": "动",
+      "glossEn": "to guess correctly",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "喝醉",
+      "pinyin": "hēzuì",
+      "pos": "动",
+      "glossEn": "to get drunk",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "说好",
+      "pinyin": "shuōhǎo",
+      "pos": "动",
+      "glossEn": "to agree; to settle",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "做好",
+      "pinyin": "zuòhǎo",
+      "pos": "动",
+      "glossEn": "to finish doing; to get ready",
+      "priority": "extended",
+      "sources": [
+        "grammar",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "当然",
+      "pinyin": "dāngrán",
+      "pos": "副",
+      "glossEn": "of course",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "两点",
+      "pinyin": "liǎng diǎn",
+      "pos": "名",
+      "glossEn": "two o'clock",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "特别",
+      "pinyin": "tèbié",
+      "pos": "副",
+      "glossEn": "especially; particularly",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "几比几",
+      "pinyin": "jǐ bǐ jǐ",
+      "pos": "惯",
+      "glossEn": "what score (X to Y)",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "第二",
+      "pinyin": "dì èr",
+      "pos": "数",
+      "glossEn": "second",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "韩国",
+      "pinyin": "Hánguó",
+      "pos": "专有",
+      "glossEn": "South Korea",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "日本",
+      "pinyin": "Rìběn",
+      "pos": "专有",
+      "glossEn": "Japan",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "英国",
+      "pinyin": "Yīngguó",
+      "pos": "专有",
+      "glossEn": "Britain; UK",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "巴西",
+      "pinyin": "Bāxī",
+      "pos": "专有",
+      "glossEn": "Brazil",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "西班牙",
+      "pinyin": "Xībānyá",
+      "pos": "专有",
+      "glossEn": "Spain",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "德国",
+      "pinyin": "Déguó",
+      "pos": "专有",
+      "glossEn": "Germany",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "大卫",
+      "pinyin": "Dàwèi",
+      "pos": "专有",
+      "glossEn": "David (character name)",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "教室",
+      "pinyin": "jiàoshì",
+      "pos": "名",
+      "glossEn": "classroom",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "谈论",
+      "pinyin": "tánlùn",
+      "pos": "动",
+      "glossEn": "to talk about; to discuss",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "足球赛",
+      "pinyin": "zúqiúsài",
+      "pos": "名",
+      "glossEn": "football match",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "结果补语",
+      "pinyin": "jiéguǒ bǔyǔ",
+      "pos": "名",
+      "glossEn": "complement of result",
+      "priority": "extended",
+      "sources": [
+        "grammar",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "吃完",
+      "pinyin": "chīwán",
+      "pos": "动",
+      "glossEn": "to finish eating",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "写完",
+      "pinyin": "xiěwán",
+      "pos": "动",
+      "glossEn": "to finish writing",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "说对",
+      "pinyin": "shuōduì",
+      "pos": "动",
+      "glossEn": "to say correctly",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "说错",
+      "pinyin": "shuōcuò",
+      "pos": "动",
+      "glossEn": "to say incorrectly",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "准备好",
+      "pinyin": "zhǔnbèi hǎo",
+      "pos": "动",
+      "glossEn": "to get ready",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "修好",
+      "pinyin": "xiūhǎo",
+      "pos": "动",
+      "glossEn": "to fix; to repair successfully",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "跳舞",
+      "pinyin": "tiàowǔ",
+      "pos": "动",
+      "glossEn": "to dance",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "边……边……",
+      "pinyin": "biān… biān…",
+      "pos": "连",
+      "glossEn": "while… (omitted 一)",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "丈夫",
+      "pinyin": "zhàngfu",
+      "pos": "名",
+      "glossEn": "husband",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "妻子",
+      "pinyin": "qīzi",
+      "pos": "名",
+      "glossEn": "wife",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "打赌",
+      "pinyin": "dǎdǔ",
+      "pos": "动",
+      "glossEn": "to bet",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "做饭",
+      "pinyin": "zuò fàn",
+      "pos": "动",
+      "glossEn": "to cook",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "厨房",
+      "pinyin": "chúfáng",
+      "pos": "名",
+      "glossEn": "kitchen",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "晚饭",
+      "pinyin": "wǎnfàn",
+      "pos": "名",
+      "glossEn": "dinner; evening meal",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "猜",
+      "pinyin": "cāi",
+      "pos": "动",
+      "glossEn": "to guess",
+      "priority": "extended",
+      "sources": [
+        "tasks",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "实力",
+      "pinyin": "shílì",
+      "pos": "名",
+      "glossEn": "strength; competitive power",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "代表",
+      "pinyin": "dàibiǎo",
+      "pos": "名/动",
+      "glossEn": "representative; to represent",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "运动员",
+      "pinyin": "yùndòngyuán",
+      "pos": "名",
+      "glossEn": "athlete",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "解说员",
+      "pinyin": "jiěshuōyuán",
+      "pos": "名",
+      "glossEn": "commentator",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "表演",
+      "pinyin": "biǎoyǎn",
+      "pos": "名/动",
+      "glossEn": "performance; to perform",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "武术",
+      "pinyin": "wǔshù",
+      "pos": "名",
+      "glossEn": "martial arts",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "舞狮",
+      "pinyin": "wǔ shī",
+      "pos": "动/名",
+      "glossEn": "lion dance",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "龙舟",
+      "pinyin": "lóngzhōu",
+      "pos": "名",
+      "glossEn": "dragon boat",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "蹴鞠",
+      "pinyin": "cùjū",
+      "pos": "名",
+      "glossEn": "cuju (ancient Chinese football)",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "围棋",
+      "pinyin": "wéiqí",
+      "pos": "名",
+      "glossEn": "go (board game)",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "少林功夫",
+      "pinyin": "Shàolín gōngfu",
+      "pos": "专有",
+      "glossEn": "Shaolin Kung Fu",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "空竹",
+      "pinyin": "kōngzhú",
+      "pos": "名",
+      "glossEn": "diabolo",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "马球",
+      "pinyin": "mǎqiú",
+      "pos": "名",
+      "glossEn": "polo",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "摔跤",
+      "pinyin": "shuāijiāo",
+      "pos": "名/动",
+      "glossEn": "wrestling",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "射箭",
+      "pinyin": "shèjiàn",
+      "pos": "名/动",
+      "glossEn": "archery",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "端午节",
+      "pinyin": "Duānwǔjié",
+      "pos": "专有",
+      "glossEn": "Dragon Boat Festival",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "屈原",
+      "pinyin": "Qū Yuán",
+      "pos": "专有",
+      "glossEn": "Qu Yuan (patriotic poet)",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "体育",
+      "pinyin": "tǐyù",
+      "pos": "名",
+      "glossEn": "sports; physical education",
+      "priority": "extended",
+      "sources": [
+        "warmUp",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "谁",
+      "pinyin": "shéi",
+      "pos": "代",
+      "glossEn": "who",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "好啊",
+      "pinyin": "hǎo a",
+      "pos": "叹",
+      "glossEn": "okay; sure",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "看书",
+      "pinyin": "kàn shū",
+      "pos": "动",
+      "glossEn": "to read (a book)",
+      "priority": "extended",
+      "sources": [
+        "tasks",
+        "grammar"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 106,
+    "byPriority": {
+      "core": 33,
+      "brainstorm": 15,
+      "extended": 58
+    },
+    "selfEvalCount": 21,
+    "vocabListCount": 26,
+    "properNounCount": 1,
+    "dedupedAt": "2026-08-09",
+    "removedCrossUnitDuplicates": 18,
+    "dedupeRule": "One home unit by theme; official selfEval/keyWords/vocabList may keep a second copy if checklist requires it."
+  }
+}

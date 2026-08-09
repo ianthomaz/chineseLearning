@@ -17,7 +17,8 @@
 | [12_aula_registro_roadmap.md](12_aula_registro_roadmap.md) | **Registo de aulas** — formulário, léxico global, roadmap (planeamento) |
 | [phrase-game-scoring.md](phrase-game-scoring.md) | Regras de pontuação (implementadas, sem UI) |
 | [phrase-game-upgrades.md](phrase-game-upgrades.md) | Backlog e sugestões de melhoria do jogo de frases |
-| [10_phrase_game_implementation_prompt.md](10_phrase_game_implementation_prompt.md) | Spec histórica do MVP (referência; ver 08 + README do módulo) |
+| [14_app_library_contract.md](14_app_library_contract.md) | Pack app ↔ site (manifest, Bearer, `contentVersion`) |
+| [15_lexico_llm_classify_contract.md](15_lexico_llm_classify_contract.md) | Contrato LLM (mini62 / featureLLM) para categorizar léxico → widgets |
 
 ## Visão geral rápida
 

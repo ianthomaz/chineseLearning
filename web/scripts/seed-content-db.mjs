@@ -26,6 +26,7 @@ import {
   MAX_HANZI_LENGTH,
   EXCLUDED_SOURCE_BLOCK_IDS,
 } from "./lexico-rotation-config.mjs";
+import { LEXICO_CATEGORY_ASSIGNMENTS } from "./lexico-category-assignments.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WEB_ROOT = resolve(__dirname, "..");
@@ -499,9 +500,13 @@ function seedContextDecks(db) {
   return { decks: metas.length, cards: cardCount };
 }
 
+/**
+ * Unified practice/widget pool → lexico_entries.
+ * Sources (no book): vocab_entries (blocks) + context_deck_cards + lexicon_global.
+ * Only words with a rotation category enter the pool (widgets show categorized only).
+ * Block map wins over assignments when both exist for the same hanzi.
+ */
 function seedLexico(db) {
-  // Practice library SoT = lexico_* tables. Materialize from vocab_entries only
-  // when empty (or FORCE_RESEED / LEXICO_REBUILD). Never from APP lexico.json.
   const rebuild =
     process.env.LEXICO_REBUILD === "1" || FORCE_RESEED;
   if (!rebuild && tableCount(db, "lexico_entries") > 0) {
@@ -512,54 +517,155 @@ function seedLexico(db) {
     };
   }
 
-  if (tableCount(db, "vocab_entries") === 0) {
-    console.warn("[seed] vocab_entries empty — cannot materialize lexico");
-    return { categories: 0, entries: 0 };
-  }
-
   const blockToRotation = new Map();
   for (const rc of ROTATION_CATEGORIES) {
     for (const bid of rc.sourceBlockIds) blockToRotation.set(bid, rc.id);
   }
 
-  const blocks = db
-    .prepare(`SELECT id, title FROM content_blocks`)
-    .all();
+  const blocks = db.prepare(`SELECT id, title FROM content_blocks`).all();
   const titleByBlock = new Map(blocks.map((b) => [b.id, b.title]));
 
-  const vocabRows = db
-    .prepare(
-      `SELECT block_id, hanzi, pinyin, translation, sort_order
-       FROM vocab_entries ORDER BY block_id ASC, sort_order ASC`,
-    )
-    .all();
+  /** @type {Map<string, object>} */
+  const byHanzi = new Map();
+  const pendingNoCategory = [];
 
-  const entries = [];
-  for (const row of vocabRows) {
-    if (EXCLUDED_SOURCE_BLOCK_IDS.has(row.block_id)) continue;
-    const rotationCategoryId = blockToRotation.get(row.block_id);
-    if (!rotationCategoryId) continue;
-
-    const hanzi = (row.hanzi || "").trim();
-    const pinyin = (row.pinyin || "").trim();
-    const translation = (row.translation || "").trim();
+  function consider(candidate) {
+    const hanzi = (candidate.hanzi || "").trim();
+    const pinyin = (candidate.pinyin || "").trim();
+    const translation = (candidate.translation || "").trim();
     const hanziLength = [...hanzi].length;
-    if (!hanzi || !pinyin || !translation) continue;
-    if (hanziLength > MAX_HANZI_LENGTH) continue;
+    if (!hanzi || !pinyin || !translation) return;
+    if (hanziLength > MAX_HANZI_LENGTH) return;
 
-    entries.push({
-      id: `${row.block_id}-${hanzi}`,
+    const existing = byHanzi.get(hanzi);
+    // Prefer editorial block over context/global for the same hanzi.
+    if (existing && existing.priority <= candidate.priority) return;
+
+    let rotationCategoryId = candidate.rotationCategoryId ?? null;
+    if (!rotationCategoryId) {
+      rotationCategoryId = LEXICO_CATEGORY_ASSIGNMENTS[hanzi] ?? null;
+    }
+    if (!rotationCategoryId) {
+      // Already covered by a higher-priority source — not a real gap.
+      if (existing) return;
+      pendingNoCategory.push({
+        hanzi,
+        pinyin,
+        translation,
+        from: candidate.from,
+      });
+      return;
+    }
+
+    byHanzi.set(hanzi, {
+      id: candidate.id,
       hanzi,
       pinyin,
       translation,
       hanziLength,
-      sourceBlockId: row.block_id,
-      sourceBlockTitle: titleByBlock.get(row.block_id) ?? "",
+      sourceBlockId: candidate.sourceBlockId,
+      sourceBlockTitle: candidate.sourceBlockTitle,
       rotationCategoryId,
+      priority: candidate.priority,
     });
   }
 
-  entries.sort(
+  // 1) Editorial blocks (priority 0)
+  for (const row of db
+    .prepare(
+      `SELECT block_id, hanzi, pinyin, translation
+       FROM vocab_entries ORDER BY block_id ASC, sort_order ASC`,
+    )
+    .all()) {
+    if (EXCLUDED_SOURCE_BLOCK_IDS.has(row.block_id)) continue;
+    const rotationCategoryId = blockToRotation.get(row.block_id);
+    if (!rotationCategoryId) continue;
+    const hanzi = (row.hanzi || "").trim();
+    consider({
+      id: `${row.block_id}-${hanzi}`,
+      hanzi,
+      pinyin: row.pinyin,
+      translation: row.translation,
+      sourceBlockId: row.block_id,
+      sourceBlockTitle: titleByBlock.get(row.block_id) ?? "",
+      rotationCategoryId,
+      priority: 0,
+      from: `block:${row.block_id}`,
+    });
+  }
+
+  // 2) Context decks (priority 1) — category from assignments only
+  for (const row of db
+    .prepare(
+      `SELECT deck_id, word, pinyin, meaning
+       FROM context_deck_cards ORDER BY deck_id ASC, sort_order ASC`,
+    )
+    .all()) {
+    const hanzi = (row.word || "").trim();
+    consider({
+      id: `ctx-${row.deck_id}-${hanzi}`,
+      hanzi,
+      pinyin: row.pinyin,
+      translation: row.meaning,
+      sourceBlockId: 0,
+      sourceBlockTitle: `context:${row.deck_id}`,
+      rotationCategoryId: null,
+      priority: 1,
+      from: `context:${row.deck_id}`,
+    });
+  }
+
+  // 3) Curator global lexicon (priority 2) — no book_vocab_*
+  try {
+    for (const row of db
+      .prepare(
+        `SELECT hanzi, pinyin, translation FROM lexicon_global ORDER BY hanzi ASC`,
+      )
+      .all()) {
+      const hanzi = (row.hanzi || "").trim();
+      consider({
+        id: `global-${hanzi}`,
+        hanzi,
+        pinyin: row.pinyin,
+        translation: row.translation,
+        sourceBlockId: 0,
+        sourceBlockTitle: "lexicon_global",
+        rotationCategoryId: null,
+        priority: 2,
+        from: "lexicon_global",
+      });
+    }
+  } catch {
+    // Table may be absent on older DBs.
+  }
+
+  // 4) NTCSL level-2 core (≤3) — assignments only; not book_vocab_*
+  const ntcslCorePath = join(
+    REPO_ROOT,
+    "OrganizeVocabulary_books",
+    "level2_NTCSL",
+    "lexico-core.json",
+  );
+  if (existsSync(ntcslCorePath)) {
+    const ntcsl = readJson(ntcslCorePath);
+    for (const row of ntcsl.entries ?? []) {
+      const hanzi = (row.hanzi || "").trim();
+      const assigned = LEXICO_CATEGORY_ASSIGNMENTS[hanzi] ?? row.category ?? null;
+      consider({
+        id: `ntcsl-l2-${hanzi}`,
+        hanzi,
+        pinyin: row.pinyin,
+        translation: row.translation,
+        sourceBlockId: 0,
+        sourceBlockTitle: "ntcsl-l2-core",
+        rotationCategoryId: assigned,
+        priority: 2,
+        from: "ntcsl-l2-core",
+      });
+    }
+  }
+
+  const entries = [...byHanzi.values()].sort(
     (a, b) =>
       a.rotationCategoryId.localeCompare(b.rotationCategoryId) ||
       a.sourceBlockId - b.sourceBlockId ||
@@ -596,8 +702,27 @@ function seedLexico(db) {
     );
   });
   db.exec("COMMIT");
-  console.log(`[seed] lexico materialized from vocab_entries (${entries.length} entries)`);
-  return { categories: ROTATION_CATEGORIES.length, entries: entries.length };
+
+  if (pendingNoCategory.length > 0) {
+    console.warn(
+      `[seed] lexico pending (no category, skipped for widgets): ${pendingNoCategory.length}`,
+    );
+    for (const p of pendingNoCategory.slice(0, 20)) {
+      console.warn(`  - ${p.hanzi} (${p.from})`);
+    }
+    if (pendingNoCategory.length > 20) {
+      console.warn(`  … +${pendingNoCategory.length - 20} more`);
+    }
+  }
+
+  console.log(
+    `[seed] lexico materialized (${entries.length} entries; blocks+context+global+ntcsl; no book)`,
+  );
+  return {
+    categories: ROTATION_CATEGORIES.length,
+    entries: entries.length,
+    pendingNoCategory: pendingNoCategory.length,
+  };
 }
 
 function main() {

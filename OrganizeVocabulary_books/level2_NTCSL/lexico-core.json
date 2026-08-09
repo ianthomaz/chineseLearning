@@ -1,0 +1,2159 @@
+{
+  "meta": {
+    "bookId": "ntcsl-l2",
+    "source": "units/*/priority=core",
+    "maxHanziLength": 3,
+    "count": 358,
+    "note": "Core NTCSL ≤3 for lexico_entries (not book_vocab). Categories assigned 2026-08-09."
+  },
+  "entries": [
+    {
+      "hanzi": "T恤衫",
+      "pinyin": "T xùshān",
+      "translation": "T-shirt",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "一下儿",
+      "pinyin": "yíxiàr",
+      "translation": "indicating that an action is brief or slight",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "一会儿",
+      "pinyin": "yíhuìr",
+      "translation": "a while; a moment",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "一直",
+      "pinyin": "yìzhí",
+      "translation": "straight; continuously",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "一边",
+      "pinyin": "yìbiān",
+      "translation": "one side; simultaneously (一边……一边……)",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "translation": "on; to get on",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "上去",
+      "pinyin": "shàngqù",
+      "translation": "to go up",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "上来",
+      "pinyin": "shànglái",
+      "translation": "to come up",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "下",
+      "pinyin": "xià",
+      "translation": "(of rain, snow) to fall",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "下去",
+      "pinyin": "xiàqù",
+      "translation": "to go down",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "下来",
+      "pinyin": "xiàlái",
+      "translation": "to come down",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "下雨",
+      "pinyin": "xià yǔ",
+      "translation": "to rain",
+      "category": "weather"
+    },
+    {
+      "hanzi": "下雪",
+      "pinyin": "xià xuě",
+      "translation": "to snow",
+      "category": "weather"
+    },
+    {
+      "hanzi": "不用",
+      "pinyin": "búyòng",
+      "translation": "need not",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "专业",
+      "pinyin": "zhuānyè",
+      "translation": "major, speciality",
+      "category": "study"
+    },
+    {
+      "hanzi": "东",
+      "pinyin": "dōng",
+      "translation": "east; east side (东边)",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "东大街",
+      "pinyin": "Dōngdàjiē",
+      "translation": "name of a street",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "丝绸",
+      "pinyin": "sīchóu",
+      "translation": "silk",
+      "category": "basics"
+    },
+    {
+      "hanzi": "中",
+      "pinyin": "zhōng",
+      "translation": "center; middle",
+      "category": "basics"
+    },
+    {
+      "hanzi": "中文",
+      "pinyin": "Zhōngwén",
+      "translation": "Chinese (language)",
+      "category": "study"
+    },
+    {
+      "hanzi": "举",
+      "pinyin": "jǔ",
+      "translation": "to lift; to raise",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "了",
+      "pinyin": "le",
+      "translation": "modal particle indicating change / new situation",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "五路口",
+      "pinyin": "Wǔlùkǒu",
+      "translation": "name of a bus stop",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "休息",
+      "pinyin": "xiūxi",
+      "translation": "to rest",
+      "category": "health"
+    },
+    {
+      "hanzi": "伞",
+      "pinyin": "sǎn",
+      "translation": "umbrella",
+      "category": "weather"
+    },
+    {
+      "hanzi": "估计",
+      "pinyin": "gūjì",
+      "translation": "to estimate",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "体育馆",
+      "pinyin": "tǐyùguǎn",
+      "translation": "gymnasium",
+      "category": "basics"
+    },
+    {
+      "hanzi": "作业",
+      "pinyin": "zuòyè",
+      "translation": "homework",
+      "category": "study"
+    },
+    {
+      "hanzi": "倒",
+      "pinyin": "dào",
+      "translation": "to pour",
+      "category": "food"
+    },
+    {
+      "hanzi": "停",
+      "pinyin": "tíng",
+      "translation": "to stop",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "入住",
+      "pinyin": "rùzhù",
+      "translation": "to check in",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "兵马俑",
+      "pinyin": "Bīngmǎyǒng",
+      "translation": "Terracotta Warriors and Horses",
+      "category": "basics"
+    },
+    {
+      "hanzi": "写",
+      "pinyin": "xiě",
+      "translation": "to write",
+      "category": "study"
+    },
+    {
+      "hanzi": "冬天",
+      "pinyin": "dōngtiān",
+      "translation": "winter",
+      "category": "weather"
+    },
+    {
+      "hanzi": "冷",
+      "pinyin": "lěng",
+      "translation": "cold",
+      "category": "weather"
+    },
+    {
+      "hanzi": "准",
+      "pinyin": "zhǔn",
+      "translation": "accurate; exact",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "准备",
+      "pinyin": "zhǔnbèi",
+      "translation": "to prepare",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "凉快",
+      "pinyin": "liángkuai",
+      "translation": "cool",
+      "category": "weather"
+    },
+    {
+      "hanzi": "出去",
+      "pinyin": "chūqù",
+      "translation": "to go out",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "出来",
+      "pinyin": "chūlái",
+      "translation": "to come out",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "出租车",
+      "pinyin": "chūzūchē",
+      "translation": "taxi",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "刀",
+      "pinyin": "dāo",
+      "translation": "knife",
+      "category": "basics"
+    },
+    {
+      "hanzi": "切",
+      "pinyin": "qiē",
+      "translation": "to cut; to slice",
+      "category": "food"
+    },
+    {
+      "hanzi": "别",
+      "pinyin": "bié",
+      "translation": "don't; not",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "别提了",
+      "pinyin": "biétí le",
+      "translation": "don't mention it",
+      "category": "basics"
+    },
+    {
+      "hanzi": "刮",
+      "pinyin": "guā",
+      "translation": "(of wind) to blow",
+      "category": "weather"
+    },
+    {
+      "hanzi": "刮风",
+      "pinyin": "guā fēng",
+      "translation": "to be windy; the wind blows",
+      "category": "weather"
+    },
+    {
+      "hanzi": "前",
+      "pinyin": "qián",
+      "translation": "front",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "前台",
+      "pinyin": "qiántái",
+      "translation": "(hotel) receptionist; front desk",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "前门",
+      "pinyin": "Qiánmén",
+      "translation": "Qianmen (Front Gate, Beijing)",
+      "category": "basics"
+    },
+    {
+      "hanzi": "办理",
+      "pinyin": "bànlǐ",
+      "translation": "to handle; to process",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "加油",
+      "pinyin": "jiāyóu",
+      "translation": "to cheer on; come on",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "加热",
+      "pinyin": "jiārè",
+      "translation": "to heat; to warm",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "努力",
+      "pinyin": "nǔlì",
+      "translation": "studious; hardworking",
+      "category": "study"
+    },
+    {
+      "hanzi": "包",
+      "pinyin": "bāo",
+      "translation": "bag",
+      "category": "basics"
+    },
+    {
+      "hanzi": "北",
+      "pinyin": "běi",
+      "translation": "north; north side (北边)",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "医学",
+      "pinyin": "yīxué",
+      "translation": "medical science",
+      "category": "basics"
+    },
+    {
+      "hanzi": "医生",
+      "pinyin": "yīshēng",
+      "translation": "doctor",
+      "category": "health"
+    },
+    {
+      "hanzi": "半天",
+      "pinyin": "bàntiān",
+      "translation": "half a day; a long time",
+      "category": "basics"
+    },
+    {
+      "hanzi": "华清池",
+      "pinyin": "Huáqīngchí",
+      "translation": "Huaqing Pool",
+      "category": "basics"
+    },
+    {
+      "hanzi": "单人间",
+      "pinyin": "dānrénjiān",
+      "translation": "single room",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "南",
+      "pinyin": "nán",
+      "translation": "south; south side (南边)",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "厉害",
+      "pinyin": "lìhai",
+      "translation": "terrible; serious; severe",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "厕所",
+      "pinyin": "cèsuǒ",
+      "translation": "lavatory; toilet",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "原来",
+      "pinyin": "yuánlái",
+      "translation": "originally; as it turns out",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "双人间",
+      "pinyin": "shuāngrénjiān",
+      "translation": "double room",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "发烧",
+      "pinyin": "fā shāo",
+      "translation": "to have a fever",
+      "category": "health"
+    },
+    {
+      "hanzi": "口语",
+      "pinyin": "kǒuyǔ",
+      "translation": "speaking (course)",
+      "category": "study"
+    },
+    {
+      "hanzi": "古城墙",
+      "pinyin": "Gǔ Chéngqiáng",
+      "translation": "Ancient City Wall",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "只",
+      "pinyin": "zhǐ",
+      "translation": "only, just, merely",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "可以",
+      "pinyin": "kěyǐ",
+      "translation": "can; may",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "可惜",
+      "pinyin": "kěxī",
+      "translation": "regrettable; what a pity",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "可是",
+      "pinyin": "kěshì",
+      "translation": "but",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "右",
+      "pinyin": "yòu",
+      "translation": "right; right side (右边)",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "听写",
+      "pinyin": "tīngxiě",
+      "translation": "to dictate; dictation",
+      "category": "study"
+    },
+    {
+      "hanzi": "听力",
+      "pinyin": "tīnglì",
+      "translation": "listening (course)",
+      "category": "study"
+    },
+    {
+      "hanzi": "吹风机",
+      "pinyin": "chuīfēngjī",
+      "translation": "hair dryer",
+      "category": "basics"
+    },
+    {
+      "hanzi": "周末",
+      "pinyin": "zhōumò",
+      "translation": "weekend",
+      "category": "basics"
+    },
+    {
+      "hanzi": "和田",
+      "pinyin": "Hétián",
+      "translation": "Hetian (place in Xinjiang)",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "咖啡厅",
+      "pinyin": "kāfēitīng",
+      "translation": "coffee house; café",
+      "category": "basics"
+    },
+    {
+      "hanzi": "咖喱",
+      "pinyin": "gālí",
+      "translation": "curry",
+      "category": "basics"
+    },
+    {
+      "hanzi": "咳嗽",
+      "pinyin": "késou",
+      "translation": "to cough",
+      "category": "health"
+    },
+    {
+      "hanzi": "哎呀",
+      "pinyin": "āiyā",
+      "translation": "ah; oh",
+      "category": "basics"
+    },
+    {
+      "hanzi": "啤酒",
+      "pinyin": "píjiǔ",
+      "translation": "beer",
+      "category": "food"
+    },
+    {
+      "hanzi": "嗓子",
+      "pinyin": "sǎngzi",
+      "translation": "throat",
+      "category": "health"
+    },
+    {
+      "hanzi": "回去",
+      "pinyin": "huíqù",
+      "translation": "to go back",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "回来",
+      "pinyin": "huílái",
+      "translation": "to come back",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "围巾",
+      "pinyin": "wéijīn",
+      "translation": "scarf",
+      "category": "basics"
+    },
+    {
+      "hanzi": "国际",
+      "pinyin": "guójì",
+      "translation": "international",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "在",
+      "pinyin": "zài",
+      "translation": "at; in; on; to be located",
+      "category": "basics"
+    },
+    {
+      "hanzi": "地图",
+      "pinyin": "dìtú",
+      "translation": "map",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "地方",
+      "pinyin": "dìfang",
+      "translation": "place",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "地铁",
+      "pinyin": "dìtiě",
+      "translation": "metro, subway",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "地铁站",
+      "pinyin": "dìtiězhàn",
+      "translation": "metro station",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "场",
+      "pinyin": "chǎng",
+      "translation": "measure word for sports games; field",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "坐",
+      "pinyin": "zuò",
+      "translation": "to sit",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "堵车",
+      "pinyin": "dǔchē",
+      "translation": "traffic jam; to be stuck in traffic",
+      "category": "basics"
+    },
+    {
+      "hanzi": "填",
+      "pinyin": "tián",
+      "translation": "to fill in",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "夏天",
+      "pinyin": "xiàtiān",
+      "translation": "summer",
+      "category": "weather"
+    },
+    {
+      "hanzi": "外面",
+      "pinyin": "wàimiàn",
+      "translation": "outside",
+      "category": "basics"
+    },
+    {
+      "hanzi": "多云",
+      "pinyin": "duōyún",
+      "translation": "cloudy",
+      "category": "weather"
+    },
+    {
+      "hanzi": "大使馆",
+      "pinyin": "dàshǐguǎn",
+      "translation": "embassy",
+      "category": "basics"
+    },
+    {
+      "hanzi": "大雁塔",
+      "pinyin": "Dàyàntǎ",
+      "translation": "Wild Goose Pagoda",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "天安门",
+      "pinyin": "Tiān'ānmén",
+      "translation": "Tian'anmen, Gate of Heavenly Peace",
+      "category": "basics"
+    },
+    {
+      "hanzi": "天气",
+      "pinyin": "tiānqì",
+      "translation": "weather",
+      "category": "weather"
+    },
+    {
+      "hanzi": "太极拳",
+      "pinyin": "tàijíquán",
+      "translation": "taijiquan (shadow boxing)",
+      "category": "basics"
+    },
+    {
+      "hanzi": "头",
+      "pinyin": "tóu",
+      "translation": "head",
+      "category": "health"
+    },
+    {
+      "hanzi": "头疼",
+      "pinyin": "tóu téng",
+      "translation": "to have a headache",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "奶酪",
+      "pinyin": "nǎilào",
+      "translation": "cheese",
+      "category": "basics"
+    },
+    {
+      "hanzi": "好像",
+      "pinyin": "hǎoxiàng",
+      "translation": "seem; as if",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "好玩儿",
+      "pinyin": "hǎowánr",
+      "translation": "fun, amusing, interesting",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "季节",
+      "pinyin": "jìjié",
+      "translation": "season",
+      "category": "weather"
+    },
+    {
+      "hanzi": "学校",
+      "pinyin": "xuéxiào",
+      "translation": "school",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "完",
+      "pinyin": "wán",
+      "translation": "to finish, to end",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "宾馆",
+      "pinyin": "bīnguǎn",
+      "translation": "hotel",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "对",
+      "pinyin": "duì",
+      "translation": "versus; against",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "对了",
+      "pinyin": "duì le",
+      "translation": "by the way",
+      "category": "basics"
+    },
+    {
+      "hanzi": "导游",
+      "pinyin": "dǎoyóu",
+      "translation": "tour guide",
+      "category": "basics"
+    },
+    {
+      "hanzi": "小丽",
+      "pinyin": "Xiǎolì",
+      "translation": "Xiaoli (character name)",
+      "category": "people"
+    },
+    {
+      "hanzi": "小吃",
+      "pinyin": "xiǎochī",
+      "translation": "snack, refreshment",
+      "category": "basics"
+    },
+    {
+      "hanzi": "就",
+      "pinyin": "jiù",
+      "translation": "just; at once; as early as",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "层",
+      "pinyin": "céng",
+      "translation": "floor (of a building)",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "左",
+      "pinyin": "zuǒ",
+      "translation": "left; left side (左边)",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "师傅",
+      "pinyin": "shīfu",
+      "translation": "master (also used to address a driver)",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "带",
+      "pinyin": "dài",
+      "translation": "to bring; to take",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "帮",
+      "pinyin": "bāng",
+      "translation": "to help",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "常常",
+      "pinyin": "chángcháng",
+      "translation": "often, frequently",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "帽子",
+      "pinyin": "màozi",
+      "translation": "hat",
+      "category": "basics"
+    },
+    {
+      "hanzi": "年级",
+      "pinyin": "niánjí",
+      "translation": "grade, year",
+      "category": "study"
+    },
+    {
+      "hanzi": "应该",
+      "pinyin": "yīnggāi",
+      "translation": "should",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "度",
+      "pinyin": "dù",
+      "translation": "degree (temperature)",
+      "category": "weather"
+    },
+    {
+      "hanzi": "开",
+      "pinyin": "kāi",
+      "translation": "to prescribe; to open",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "开始",
+      "pinyin": "kāishǐ",
+      "translation": "to begin",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "开药",
+      "pinyin": "kāi yào",
+      "translation": "to prescribe medicine",
+      "category": "health"
+    },
+    {
+      "hanzi": "当",
+      "pinyin": "dāng",
+      "translation": "to serve as, to be used as",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "往",
+      "pinyin": "wǎng",
+      "translation": "towards",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "得",
+      "pinyin": "děi",
+      "translation": "must; to need to",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "微波炉",
+      "pinyin": "wēibōlú",
+      "translation": "microwave oven",
+      "category": "basics"
+    },
+    {
+      "hanzi": "快",
+      "pinyin": "kuài",
+      "translation": "quickly; soon; before long",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "怎么",
+      "pinyin": "zěnme",
+      "translation": "how",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "怎么办",
+      "pinyin": "zěnme bàn",
+      "translation": "what to do, how to do",
+      "category": "basics"
+    },
+    {
+      "hanzi": "愉快",
+      "pinyin": "yúkuài",
+      "translation": "happy; pleasant",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "意大利",
+      "pinyin": "Yìdàlì",
+      "translation": "Italy",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "感冒",
+      "pinyin": "gǎnmào",
+      "translation": "cold; to catch a cold",
+      "category": "health"
+    },
+    {
+      "hanzi": "成",
+      "pinyin": "chéng",
+      "translation": "to become; to turn into",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "戒指",
+      "pinyin": "jièzhi",
+      "translation": "ring",
+      "category": "basics"
+    },
+    {
+      "hanzi": "戴",
+      "pinyin": "dài",
+      "translation": "to wear (accessories, etc.)",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "房卡",
+      "pinyin": "fángkǎ",
+      "translation": "room card",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "手",
+      "pinyin": "shǒu",
+      "translation": "hand",
+      "category": "basics"
+    },
+    {
+      "hanzi": "手续",
+      "pinyin": "shǒuxù",
+      "translation": "procedure",
+      "category": "basics"
+    },
+    {
+      "hanzi": "才",
+      "pinyin": "cái",
+      "translation": "just; only then (later than expected)",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "打喷嚏",
+      "pinyin": "dǎ pēntì",
+      "translation": "to sneeze",
+      "category": "health"
+    },
+    {
+      "hanzi": "打电话",
+      "pinyin": "dǎ diànhuà",
+      "translation": "to give sb a call",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "打算",
+      "pinyin": "dǎsuàn",
+      "translation": "to plan",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "translation": "to look for, to search",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "找到",
+      "pinyin": "zhǎodào",
+      "translation": "to find",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "把",
+      "pinyin": "bǎ",
+      "translation": "preposition marking the disposed object (把-sentence)",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "护照",
+      "pinyin": "hùzhào",
+      "translation": "passport",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "拉拉队",
+      "pinyin": "lālāduì",
+      "translation": "cheering squad",
+      "category": "basics"
+    },
+    {
+      "hanzi": "拐",
+      "pinyin": "guǎi",
+      "translation": "to turn",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "拖鞋",
+      "pinyin": "tuōxié",
+      "translation": "slippers",
+      "category": "basics"
+    },
+    {
+      "hanzi": "拿",
+      "pinyin": "ná",
+      "translation": "to hold; to take",
+      "category": "food"
+    },
+    {
+      "hanzi": "按时",
+      "pinyin": "ànshí",
+      "translation": "on schedule; on time",
+      "category": "health"
+    },
+    {
+      "hanzi": "按照",
+      "pinyin": "ànzhào",
+      "translation": "according to",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "换",
+      "pinyin": "huàn",
+      "translation": "to change; to transfer",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "捧",
+      "pinyin": "pěng",
+      "translation": "to carry or hold in both hands",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "握",
+      "pinyin": "wò",
+      "translation": "to hold; to grasp",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "播放",
+      "pinyin": "bōfàng",
+      "translation": "to play (audio/video)",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "放",
+      "pinyin": "fàng",
+      "translation": "to put; to place",
+      "category": "food"
+    },
+    {
+      "hanzi": "故宫",
+      "pinyin": "Gùgōng",
+      "translation": "Imperial Palace",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "教练",
+      "pinyin": "jiàoliàn",
+      "translation": "coach",
+      "category": "basics"
+    },
+    {
+      "hanzi": "文章",
+      "pinyin": "wénzhāng",
+      "translation": "article, essay",
+      "category": "study"
+    },
+    {
+      "hanzi": "新疆",
+      "pinyin": "Xīnjiāng",
+      "translation": "Xinjiang Uygur Autonomous Region",
+      "category": "basics"
+    },
+    {
+      "hanzi": "方便",
+      "pinyin": "fāngbiàn",
+      "translation": "convenient",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "方式",
+      "pinyin": "fāngshì",
+      "translation": "way; method",
+      "category": "basics"
+    },
+    {
+      "hanzi": "旅游",
+      "pinyin": "lǚyóu",
+      "translation": "to travel",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "旅行",
+      "pinyin": "lǚxíng",
+      "translation": "to travel, to tour",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "旅行社",
+      "pinyin": "lǚxíngshè",
+      "translation": "travel agency",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "早",
+      "pinyin": "zǎo",
+      "translation": "early",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "明白",
+      "pinyin": "míngbai",
+      "translation": "to understand; clear; obvious",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "春天",
+      "pinyin": "chūntiān",
+      "translation": "spring",
+      "category": "weather"
+    },
+    {
+      "hanzi": "晴",
+      "pinyin": "qíng",
+      "translation": "sunny",
+      "category": "weather"
+    },
+    {
+      "hanzi": "暖和",
+      "pinyin": "nuǎnhuo",
+      "translation": "warm",
+      "category": "weather"
+    },
+    {
+      "hanzi": "最",
+      "pinyin": "zuì",
+      "translation": "most; -est",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "有名",
+      "pinyin": "yǒumíng",
+      "translation": "famous, well-known",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "有时候",
+      "pinyin": "yǒu shíhou",
+      "translation": "sometimes",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "机会",
+      "pinyin": "jīhuì",
+      "translation": "chance, opportunity",
+      "category": "basics"
+    },
+    {
+      "hanzi": "杂志",
+      "pinyin": "zázhì",
+      "translation": "magazine",
+      "category": "basics"
+    },
+    {
+      "hanzi": "杭州",
+      "pinyin": "Hángzhōu",
+      "translation": "Hangzhou (city)",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "查",
+      "pinyin": "chá",
+      "translation": "to check",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "次",
+      "pinyin": "cì",
+      "translation": "occurrence; time",
+      "category": "health"
+    },
+    {
+      "hanzi": "步",
+      "pinyin": "bù",
+      "translation": "step",
+      "category": "basics"
+    },
+    {
+      "hanzi": "比",
+      "pinyin": "bǐ",
+      "translation": "than (comparison)",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "比分",
+      "pinyin": "bǐfēn",
+      "translation": "score",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "比赛",
+      "pinyin": "bǐsài",
+      "translation": "competition, match; to have a match",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "毕业",
+      "pinyin": "bìyè",
+      "translation": "to graduate",
+      "category": "study"
+    },
+    {
+      "hanzi": "汉字",
+      "pinyin": "Hànzì",
+      "translation": "Chinese character",
+      "category": "study"
+    },
+    {
+      "hanzi": "汽车",
+      "pinyin": "qìchē",
+      "translation": "automobile; motor vehicle",
+      "category": "basics"
+    },
+    {
+      "hanzi": "沙拉酱",
+      "pinyin": "shālàjiàng",
+      "translation": "salad dressing",
+      "category": "basics"
+    },
+    {
+      "hanzi": "油",
+      "pinyin": "yóu",
+      "translation": "oil",
+      "category": "food"
+    },
+    {
+      "hanzi": "法律",
+      "pinyin": "fǎlǜ",
+      "translation": "law",
+      "category": "basics"
+    },
+    {
+      "hanzi": "流利",
+      "pinyin": "liúlì",
+      "translation": "fluent",
+      "category": "study"
+    },
+    {
+      "hanzi": "流鼻涕",
+      "pinyin": "liú bítì",
+      "translation": "to have a runny nose",
+      "category": "health"
+    },
+    {
+      "hanzi": "湖人队",
+      "pinyin": "Húrén Duì",
+      "translation": "the Lakers",
+      "category": "basics"
+    },
+    {
+      "hanzi": "火车站",
+      "pinyin": "huǒchēzhàn",
+      "translation": "railway station",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "炒",
+      "pinyin": "chǎo",
+      "translation": "to stir-fry",
+      "category": "food"
+    },
+    {
+      "hanzi": "点球",
+      "pinyin": "diǎnqiú",
+      "translation": "penalty kick",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "热",
+      "pinyin": "rè",
+      "translation": "hot",
+      "category": "weather"
+    },
+    {
+      "hanzi": "煎",
+      "pinyin": "jiān",
+      "translation": "to fry; to pan-fry",
+      "category": "food"
+    },
+    {
+      "hanzi": "煮",
+      "pinyin": "zhǔ",
+      "translation": "to boil",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "片",
+      "pinyin": "piàn",
+      "translation": "measure word for tablets",
+      "category": "health"
+    },
+    {
+      "hanzi": "牛仔",
+      "pinyin": "niúzǎi",
+      "translation": "jeans; cowboy",
+      "category": "basics"
+    },
+    {
+      "hanzi": "牛仔裤",
+      "pinyin": "niúzǎikù",
+      "translation": "jeans",
+      "category": "basics"
+    },
+    {
+      "hanzi": "牛奶",
+      "pinyin": "niúnǎi",
+      "translation": "milk",
+      "category": "food"
+    },
+    {
+      "hanzi": "特产",
+      "pinyin": "tèchǎn",
+      "translation": "special local product",
+      "category": "basics"
+    },
+    {
+      "hanzi": "特色",
+      "pinyin": "tèsè",
+      "translation": "characteristic",
+      "category": "basics"
+    },
+    {
+      "hanzi": "玉",
+      "pinyin": "yù",
+      "translation": "jade",
+      "category": "basics"
+    },
+    {
+      "hanzi": "玩儿",
+      "pinyin": "wánr",
+      "translation": "to play; to have fun",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "玫瑰",
+      "pinyin": "méiguī",
+      "translation": "rose",
+      "category": "basics"
+    },
+    {
+      "hanzi": "班",
+      "pinyin": "bān",
+      "translation": "class",
+      "category": "study"
+    },
+    {
+      "hanzi": "球",
+      "pinyin": "qiú",
+      "translation": "ball",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "球星",
+      "pinyin": "qiúxīng",
+      "translation": "ball-game star",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "电视",
+      "pinyin": "diànshì",
+      "translation": "television",
+      "category": "basics"
+    },
+    {
+      "hanzi": "电话",
+      "pinyin": "diànhuà",
+      "translation": "telephone, phone",
+      "category": "basics"
+    },
+    {
+      "hanzi": "疼",
+      "pinyin": "téng",
+      "translation": "painful; to ache",
+      "category": "health"
+    },
+    {
+      "hanzi": "病",
+      "pinyin": "bìng",
+      "translation": "illness; to fall ill",
+      "category": "health"
+    },
+    {
+      "hanzi": "登记卡",
+      "pinyin": "dēngjì kǎ",
+      "translation": "registration card",
+      "category": "basics"
+    },
+    {
+      "hanzi": "白",
+      "pinyin": "bái",
+      "translation": "white",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "盐",
+      "pinyin": "yán",
+      "translation": "salt",
+      "category": "food"
+    },
+    {
+      "hanzi": "盘子",
+      "pinyin": "pánzi",
+      "translation": "plate",
+      "category": "food"
+    },
+    {
+      "hanzi": "盛",
+      "pinyin": "chéng",
+      "translation": "to fill; to ladle",
+      "category": "food"
+    },
+    {
+      "hanzi": "看来",
+      "pinyin": "kànlái",
+      "translation": "to seem, to appear",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "看病",
+      "pinyin": "kàn bìng",
+      "translation": "to see a doctor",
+      "category": "health"
+    },
+    {
+      "hanzi": "着",
+      "pinyin": "zhe",
+      "translation": "particle for continuous state of an action",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "着凉",
+      "pinyin": "zháoliáng",
+      "translation": "to catch a cold",
+      "category": "health"
+    },
+    {
+      "hanzi": "碗",
+      "pinyin": "wǎn",
+      "translation": "bowl",
+      "category": "food"
+    },
+    {
+      "hanzi": "祝",
+      "pinyin": "zhù",
+      "translation": "to wish; to express good wishes",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "票",
+      "pinyin": "piào",
+      "translation": "ticket",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "离",
+      "pinyin": "lí",
+      "translation": "away from; to be from",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "秋天",
+      "pinyin": "qiūtiān",
+      "translation": "autumn",
+      "category": "weather"
+    },
+    {
+      "hanzi": "科比",
+      "pinyin": "Kēbǐ",
+      "translation": "Kobe (Bryant)",
+      "category": "basics"
+    },
+    {
+      "hanzi": "空调",
+      "pinyin": "kōngtiáo",
+      "translation": "air conditioner",
+      "category": "basics"
+    },
+    {
+      "hanzi": "穿",
+      "pinyin": "chuān",
+      "translation": "to wear; to put on (clothes)",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "站",
+      "pinyin": "zhàn",
+      "translation": "station; stop",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "端",
+      "pinyin": "duān",
+      "translation": "to hold level with both hands; to carry",
+      "category": "food"
+    },
+    {
+      "hanzi": "笔",
+      "pinyin": "bǐ",
+      "translation": "pen",
+      "category": "basics"
+    },
+    {
+      "hanzi": "第",
+      "pinyin": "dì",
+      "translation": "ordinal prefix",
+      "category": "basics"
+    },
+    {
+      "hanzi": "等",
+      "pinyin": "děng",
+      "translation": "to wait",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "等于",
+      "pinyin": "děngyú",
+      "translation": "to be equal to",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "精彩",
+      "pinyin": "jīngcǎi",
+      "translation": "wonderful, marvelous",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "糖",
+      "pinyin": "táng",
+      "translation": "sugar",
+      "category": "food"
+    },
+    {
+      "hanzi": "糟糕",
+      "pinyin": "zāogāo",
+      "translation": "terrible; too bad",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "系",
+      "pinyin": "xì",
+      "translation": "department",
+      "category": "study"
+    },
+    {
+      "hanzi": "红",
+      "pinyin": "hóng",
+      "translation": "red",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "红绿灯",
+      "pinyin": "hónglǜdēng",
+      "translation": "traffic light",
+      "category": "basics"
+    },
+    {
+      "hanzi": "约会",
+      "pinyin": "yuēhuì",
+      "translation": "date, appointment; to make an appointment",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "约定",
+      "pinyin": "yuēdìng",
+      "translation": "arrangement; to agree on",
+      "category": "basics"
+    },
+    {
+      "hanzi": "纽约",
+      "pinyin": "Niǔyuē",
+      "translation": "New York",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "线",
+      "pinyin": "xiàn",
+      "translation": "line",
+      "category": "basics"
+    },
+    {
+      "hanzi": "练习",
+      "pinyin": "liànxí",
+      "translation": "to practice; exercise",
+      "category": "study"
+    },
+    {
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "translation": "for; to (preposition)",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "绿",
+      "pinyin": "lǜ",
+      "translation": "green",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "网友",
+      "pinyin": "wǎngyǒu",
+      "translation": "net friend",
+      "category": "people"
+    },
+    {
+      "hanzi": "网线",
+      "pinyin": "wǎngxiàn",
+      "translation": "network cable",
+      "category": "basics"
+    },
+    {
+      "hanzi": "考试",
+      "pinyin": "kǎoshì",
+      "translation": "to take an examination; examination",
+      "category": "study"
+    },
+    {
+      "hanzi": "耳环",
+      "pinyin": "ěrhuán",
+      "translation": "earring",
+      "category": "basics"
+    },
+    {
+      "hanzi": "聊",
+      "pinyin": "liáo",
+      "translation": "to chat",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "聊天儿",
+      "pinyin": "liáotiānr",
+      "translation": "to chat",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "肚子",
+      "pinyin": "dùzi",
+      "translation": "belly",
+      "category": "health"
+    },
+    {
+      "hanzi": "胳膊",
+      "pinyin": "gēbo",
+      "translation": "arm",
+      "category": "basics"
+    },
+    {
+      "hanzi": "脚",
+      "pinyin": "jiǎo",
+      "translation": "foot",
+      "category": "basics"
+    },
+    {
+      "hanzi": "腿",
+      "pinyin": "tuǐ",
+      "translation": "leg",
+      "category": "basics"
+    },
+    {
+      "hanzi": "自己",
+      "pinyin": "zìjǐ",
+      "translation": "oneself",
+      "category": "people"
+    },
+    {
+      "hanzi": "自行车",
+      "pinyin": "zìxíngchē",
+      "translation": "bicycle",
+      "category": "basics"
+    },
+    {
+      "hanzi": "至少",
+      "pinyin": "zhìshǎo",
+      "translation": "at least",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "舒服",
+      "pinyin": "shūfu",
+      "translation": "comfortable",
+      "category": "health"
+    },
+    {
+      "hanzi": "船",
+      "pinyin": "chuán",
+      "translation": "ship, steamer",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "花",
+      "pinyin": "huā",
+      "translation": "flower",
+      "category": "basics"
+    },
+    {
+      "hanzi": "茶叶",
+      "pinyin": "cháyè",
+      "translation": "tea",
+      "category": "basics"
+    },
+    {
+      "hanzi": "药",
+      "pinyin": "yào",
+      "translation": "medicine",
+      "category": "health"
+    },
+    {
+      "hanzi": "葡萄沟",
+      "pinyin": "Pútáo Gōu",
+      "translation": "Grape Valley",
+      "category": "basics"
+    },
+    {
+      "hanzi": "蒸",
+      "pinyin": "zhēng",
+      "translation": "to steam",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "蓝",
+      "pinyin": "lán",
+      "translation": "blue",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "行",
+      "pinyin": "xíng",
+      "translation": "capable; OK",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "衬衫",
+      "pinyin": "chènshān",
+      "translation": "shirt",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "被子",
+      "pinyin": "bèizi",
+      "translation": "quilt",
+      "category": "basics"
+    },
+    {
+      "hanzi": "裁判",
+      "pinyin": "cáipàn",
+      "translation": "referee",
+      "category": "basics"
+    },
+    {
+      "hanzi": "裤子",
+      "pinyin": "kùzi",
+      "translation": "trousers",
+      "category": "basics"
+    },
+    {
+      "hanzi": "西",
+      "pinyin": "xī",
+      "translation": "west; west side (西边)",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "西安",
+      "pinyin": "Xī'ān",
+      "translation": "Xi'an (city)",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "西湖",
+      "pinyin": "Xīhú",
+      "translation": "West Lake",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "西藏",
+      "pinyin": "Xīzàng",
+      "translation": "Tibet",
+      "category": "basics"
+    },
+    {
+      "hanzi": "见面",
+      "pinyin": "jiànmiàn",
+      "translation": "to meet",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "观众",
+      "pinyin": "guānzhòng",
+      "translation": "audience; spectators",
+      "category": "basics"
+    },
+    {
+      "hanzi": "订",
+      "pinyin": "dìng",
+      "translation": "to book in advance",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "请",
+      "pinyin": "qǐng",
+      "translation": "to invite, to request",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "调头",
+      "pinyin": "diàotóu",
+      "translation": "to turn round",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "贸易",
+      "pinyin": "màoyì",
+      "translation": "trade",
+      "category": "basics"
+    },
+    {
+      "hanzi": "赢",
+      "pinyin": "yíng",
+      "translation": "to win",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "走",
+      "pinyin": "zǒu",
+      "translation": "to walk; to go",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "走路",
+      "pinyin": "zǒulù",
+      "translation": "to walk, to go on foot",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "起来",
+      "pinyin": "qǐlái",
+      "translation": "to stand up; up (directional)",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "超市",
+      "pinyin": "chāoshì",
+      "translation": "supermarket",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "路",
+      "pinyin": "lù",
+      "translation": "road; line, route",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "路牌",
+      "pinyin": "lùpái",
+      "translation": "guidepost",
+      "category": "basics"
+    },
+    {
+      "hanzi": "身体",
+      "pinyin": "shēntǐ",
+      "translation": "body",
+      "category": "basics"
+    },
+    {
+      "hanzi": "车站",
+      "pinyin": "chēzhàn",
+      "translation": "station",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "输",
+      "pinyin": "shū",
+      "translation": "to lose",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "过",
+      "pinyin": "guo",
+      "translation": "aspect particle (past experience)",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "过去",
+      "pinyin": "guòqù",
+      "translation": "to go over",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "过来",
+      "pinyin": "guòlái",
+      "translation": "to come over",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "近",
+      "pinyin": "jìn",
+      "translation": "near",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "还",
+      "pinyin": "hái",
+      "translation": "still, even more",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "还是",
+      "pinyin": "háishi",
+      "translation": "had better; rather",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "进",
+      "pinyin": "jìn",
+      "translation": "to enter; to score (a goal)",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "进去",
+      "pinyin": "jìnqù",
+      "translation": "to go in",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "进来",
+      "pinyin": "jìnlái",
+      "translation": "to come in",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "进球",
+      "pinyin": "jìn qiú",
+      "translation": "to score a goal",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "远",
+      "pinyin": "yuǎn",
+      "translation": "far, distant",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "退房",
+      "pinyin": "tuìfáng",
+      "translation": "to check out",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "那",
+      "pinyin": "nà",
+      "translation": "then, in that case",
+      "category": "grammar_bits"
+    },
+    {
+      "hanzi": "酒吧",
+      "pinyin": "jiǔbā",
+      "translation": "bar",
+      "category": "food"
+    },
+    {
+      "hanzi": "酱油",
+      "pinyin": "jiàngyóu",
+      "translation": "soy sauce",
+      "category": "food"
+    },
+    {
+      "hanzi": "醉",
+      "pinyin": "zuì",
+      "translation": "drunk",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "醋",
+      "pinyin": "cù",
+      "translation": "vinegar",
+      "category": "food"
+    },
+    {
+      "hanzi": "重播",
+      "pinyin": "chóngbō",
+      "translation": "replay; to rerun / rebroadcast",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "钟",
+      "pinyin": "zhōng",
+      "translation": "clock; bell",
+      "category": "basics"
+    },
+    {
+      "hanzi": "钱包",
+      "pinyin": "qiánbāo",
+      "translation": "wallet; purse",
+      "category": "basics"
+    },
+    {
+      "hanzi": "铲子",
+      "pinyin": "chǎnzi",
+      "translation": "spatula; scoop",
+      "category": "basics"
+    },
+    {
+      "hanzi": "银行",
+      "pinyin": "yínháng",
+      "translation": "bank",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "锅",
+      "pinyin": "guō",
+      "translation": "pot; wok",
+      "category": "food"
+    },
+    {
+      "hanzi": "长城",
+      "pinyin": "Chángchéng",
+      "translation": "Great Wall",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "门",
+      "pinyin": "mén",
+      "translation": "entrance, door, gate",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "门口",
+      "pinyin": "ménkǒu",
+      "translation": "entrance, doorway",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "问题",
+      "pinyin": "wèntí",
+      "translation": "question; problem",
+      "category": "basics"
+    },
+    {
+      "hanzi": "队",
+      "pinyin": "duì",
+      "translation": "team",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "阴",
+      "pinyin": "yīn",
+      "translation": "overcast",
+      "category": "weather"
+    },
+    {
+      "hanzi": "阿根廷",
+      "pinyin": "Āgēntíng",
+      "translation": "Argentina",
+      "category": "basics"
+    },
+    {
+      "hanzi": "陪",
+      "pinyin": "péi",
+      "translation": "to accompany",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "雨",
+      "pinyin": "yǔ",
+      "translation": "rain",
+      "category": "weather"
+    },
+    {
+      "hanzi": "雪",
+      "pinyin": "xuě",
+      "translation": "snow",
+      "category": "weather"
+    },
+    {
+      "hanzi": "雷",
+      "pinyin": "léi",
+      "translation": "thunder",
+      "category": "basics"
+    },
+    {
+      "hanzi": "靠",
+      "pinyin": "kào",
+      "translation": "to lean on",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "面人儿",
+      "pinyin": "miànrénr",
+      "translation": "dough figurine",
+      "category": "basics"
+    },
+    {
+      "hanzi": "项链",
+      "pinyin": "xiàngliàn",
+      "translation": "necklace",
+      "category": "basics"
+    },
+    {
+      "hanzi": "预报",
+      "pinyin": "yùbào",
+      "translation": "to forecast",
+      "category": "weather"
+    },
+    {
+      "hanzi": "预订",
+      "pinyin": "yùdìng",
+      "translation": "to reserve; to book in advance",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "领带",
+      "pinyin": "lǐngdài",
+      "translation": "tie",
+      "category": "basics"
+    },
+    {
+      "hanzi": "风",
+      "pinyin": "fēng",
+      "translation": "wind",
+      "category": "weather"
+    },
+    {
+      "hanzi": "飞机场",
+      "pinyin": "fēijīchǎng",
+      "translation": "airport",
+      "category": "basics"
+    },
+    {
+      "hanzi": "餐厅",
+      "pinyin": "cāntīng",
+      "translation": "restaurant",
+      "category": "food"
+    },
+    {
+      "hanzi": "马路",
+      "pinyin": "mǎlù",
+      "translation": "road",
+      "category": "places_world"
+    },
+    {
+      "hanzi": "鸟巢",
+      "pinyin": "Niǎocháo",
+      "translation": "Bird's Nest",
+      "category": "basics"
+    },
+    {
+      "hanzi": "鸡蛋",
+      "pinyin": "jīdàn",
+      "translation": "egg",
+      "category": "food"
+    },
+    {
+      "hanzi": "麻烦",
+      "pinyin": "máfan",
+      "translation": "to bother",
+      "category": "verbs"
+    },
+    {
+      "hanzi": "黄",
+      "pinyin": "huáng",
+      "translation": "yellow",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "黑",
+      "pinyin": "hēi",
+      "translation": "black",
+      "category": "descriptions"
+    },
+    {
+      "hanzi": "鼻子",
+      "pinyin": "bízi",
+      "translation": "nose",
+      "category": "health"
+    }
+  ]
+}

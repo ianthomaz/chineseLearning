@@ -1,0 +1,1261 @@
+{
+  "meta": {
+    "bookId": "ntcsl-l2",
+    "bookTitleZh": "新目标汉语口语课本 2",
+    "bookTitleEn": "New Target Chinese Spoken Language [2]",
+    "sourcePdf": "level2_NTCSL.pdf",
+    "unit": 4,
+    "titleZh": "问路",
+    "titleEn": "Asking for Directions",
+    "pdfPages": {
+      "from": 77,
+      "to": 94
+    },
+    "printPages": {
+      "from": 59,
+      "to": 76
+    },
+    "curatedAt": "2026-08-08",
+    "notes": "Lexicon harvested from unit gold blocks + brainstorm + smart extras from dialogue/tasks. OCR was re-checked against page images; pinyin/POS normalized. priority=core is 生词大盘点 + 专有名词 + 重点词语 + self-eval checklist. Key image fixes: task-demo scene is 给大龙打电话 (not 查理); self-eval includes 才/最/就/在 etc. Cross-unit dedupe 2026-08-09: keep lemma in most coherent unit (core preferred; theme for extended)."
+  },
+  "objectives": {
+    "topicZh": "问路",
+    "topicEn": "Asking for directions",
+    "instructionalZh": "会问路、并能听懂所指的方向，会给问路者指明方向",
+    "instructionalEn": "Students can ask for directions and understand the directions given by other people; they can also give directions to people who need them.",
+    "keyWords": [
+      "东",
+      "南",
+      "西",
+      "北",
+      "左",
+      "右",
+      "十字路口",
+      "离",
+      "拐"
+    ],
+    "keySentences": [
+      {
+        "hanzi": "酒吧在哪儿？",
+        "pinyin": "Jiǔbā zài nǎr?"
+      },
+      {
+        "hanzi": "还是我自己去吧。",
+        "pinyin": "Háishì wǒ zìjǐ qù ba."
+      },
+      {
+        "hanzi": "去酒吧怎么走？",
+        "pinyin": "Qù jiǔbā zěnme zǒu?"
+      },
+      {
+        "hanzi": "一直往前走，到第二个十字路口往右拐。",
+        "pinyin": "Yìzhí wǎng qián zǒu, dào dì èr ge shízì lùkǒu wǎng yòu guǎi."
+      },
+      {
+        "hanzi": "酒吧就在马路左边。",
+        "pinyin": "Jiǔbā jiù zài mǎlù zuǒbiān."
+      },
+      {
+        "hanzi": "酒吧离这儿远不远？",
+        "pinyin": "Jiǔbā lí zhèr yuǎn bu yuǎn?"
+      }
+    ],
+    "grammarPoints": [
+      {
+        "zh": "方位的表达",
+        "en": "The expressions of locations"
+      },
+      {
+        "zh": "“还是……吧”",
+        "en": "The structure “还是……吧”"
+      }
+    ]
+  },
+  "taskDemo": {
+    "pdfPage": 81,
+    "sceneZh": "大龙已经到酒吧了，艾娜在路上给大龙打电话。",
+    "sceneEn": "Dalong has arrived at the bar; Edna is calling him on her way.",
+    "lines": [
+      {
+        "speaker": "艾娜",
+        "hanzi": "大龙，酒吧在哪儿？我找了半天也没找到。"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "你现在在哪儿？我去接你吧。"
+      },
+      {
+        "speaker": "艾娜",
+        "hanzi": "不用，还是我自己去吧。我在天天超市门口，去酒吧怎么走？"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "一直往前走，到第二个十字路口往右拐。酒吧就在马路左边。"
+      },
+      {
+        "speaker": "艾娜",
+        "hanzi": "离这儿远不远？"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "不远，走路10分钟就能到。"
+      },
+      {
+        "speaker": "艾娜",
+        "hanzi": "大龙，马路左边是个饭店，不是酒吧啊？"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "啊？你是不是走错了？"
+      },
+      {
+        "speaker": "艾娜",
+        "hanzi": "我从超市南门一直往前走……"
+      },
+      {
+        "speaker": "大龙",
+        "hanzi": "啊，对不起，我没问明白，我以为你在北门呢。"
+      },
+      {
+        "speaker": "艾娜",
+        "hanzi": "那怎么办？现在我还要走20多分钟才能到那儿。"
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "id": "location-expressions",
+      "titleZh": "方位的表达",
+      "titleEn": "The expressions of locations",
+      "patternZh": "A＋在＋B＋方位词",
+      "patternEn": "A + 在 + B + word of locality",
+      "examples": [
+        {
+          "hanzi": "地铁站在马路左边。",
+          "pinyin": "Dìtiězhàn zài mǎlù zuǒbiān."
+        },
+        {
+          "hanzi": "我在他前边。",
+          "pinyin": "Wǒ zài tā qiánbiān."
+        },
+        {
+          "hanzi": "银行在超市西边。",
+          "pinyin": "Yínháng zài chāoshì xībiān."
+        }
+      ],
+      "notes": [
+        "方位词 include 前边、后边、左边、右边、东边、南边、西边、北边, etc.",
+        "在 introduces the locality or place where something is located."
+      ]
+    },
+    {
+      "id": "haishi-ba",
+      "titleZh": "“还是……吧”",
+      "titleEn": "The structure “还是……吧”",
+      "patternZh": "还是＋建议＋吧",
+      "patternEn": "还是 + suggestion + 吧",
+      "examples": [
+        {
+          "hanzi": "坐飞机太贵了，我们还是坐火车去吧。",
+          "pinyin": "Zuò fēijī tài guì le, wǒmen háishì zuò huǒchē qù ba."
+        },
+        {
+          "hanzi": "星期天人太多了，我们还是星期五去吧。",
+          "pinyin": "Xīngqītiān rén tài duō le, wǒmen háishì xīngqī wǔ qù ba."
+        },
+        {
+          "hanzi": "不用，还是我自己去吧。",
+          "note": "from task demo"
+        }
+      ],
+      "notes": [
+        "还是 is an adverb indicating a relatively satisfactory choice after comparison."
+      ]
+    }
+  ],
+  "selfEvalChecklist": [
+    "左",
+    "右",
+    "东",
+    "南",
+    "西",
+    "北",
+    "拐",
+    "才",
+    "酒吧",
+    "十字路口",
+    "超市",
+    "近",
+    "最",
+    "往",
+    "一直",
+    "大使馆",
+    "厕所",
+    "咖啡厅",
+    "在",
+    "就",
+    "还是"
+  ],
+  "entries": [
+    {
+      "hanzi": "左",
+      "pinyin": "zuǒ",
+      "pos": "名",
+      "glossEn": "left; left side (左边)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "右",
+      "pinyin": "yòu",
+      "pos": "名",
+      "glossEn": "right; right side (右边)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "东",
+      "pinyin": "dōng",
+      "pos": "名",
+      "glossEn": "east; east side (东边)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "西",
+      "pinyin": "xī",
+      "pos": "名",
+      "glossEn": "west; west side (西边)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "南",
+      "pinyin": "nán",
+      "pos": "名",
+      "glossEn": "south; south side (南边)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "北",
+      "pinyin": "běi",
+      "pos": "名",
+      "glossEn": "north; north side (北边)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "wordPower",
+        "selfEval",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "马路",
+      "pinyin": "mǎlù",
+      "pos": "名",
+      "glossEn": "road",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "wordPower",
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "体育馆",
+      "pinyin": "tǐyùguǎn",
+      "pos": "名",
+      "glossEn": "gymnasium",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "学校",
+      "pinyin": "xuéxiào",
+      "pos": "名",
+      "glossEn": "school",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "地铁站",
+      "pinyin": "dìtiězhàn",
+      "pos": "名",
+      "glossEn": "metro station",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "银行",
+      "pinyin": "yínháng",
+      "pos": "名",
+      "glossEn": "bank",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "酒吧",
+      "pinyin": "jiǔbā",
+      "pos": "名",
+      "glossEn": "bar",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "飞机场",
+      "pinyin": "fēijīchǎng",
+      "pos": "名",
+      "glossEn": "airport",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "火车站",
+      "pinyin": "huǒchēzhàn",
+      "pos": "名",
+      "glossEn": "railway station",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "pos": "动",
+      "glossEn": "to look for, to search",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "找到",
+      "pinyin": "zhǎodào",
+      "pos": "动",
+      "glossEn": "to find",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "半天",
+      "pinyin": "bàntiān",
+      "pos": "名",
+      "glossEn": "half a day; a long time",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "不用",
+      "pinyin": "búyòng",
+      "pos": "副",
+      "glossEn": "need not",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "还是",
+      "pinyin": "háishi",
+      "pos": "副",
+      "glossEn": "had better; rather",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "grammar",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "自己",
+      "pinyin": "zìjǐ",
+      "pos": "代",
+      "glossEn": "oneself",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "门口",
+      "pinyin": "ménkǒu",
+      "pos": "名",
+      "glossEn": "entrance, doorway",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "一直",
+      "pinyin": "yìzhí",
+      "pos": "副",
+      "glossEn": "straight; continuously",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "往",
+      "pinyin": "wǎng",
+      "pos": "介",
+      "glossEn": "towards",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "前",
+      "pinyin": "qián",
+      "pos": "名",
+      "glossEn": "front",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "第",
+      "pinyin": "dì",
+      "pos": "头",
+      "glossEn": "ordinal prefix",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "十字路口",
+      "pinyin": "shízì lùkǒu",
+      "pos": "名",
+      "glossEn": "crossroad; intersection",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "拐",
+      "pinyin": "guǎi",
+      "pos": "动",
+      "glossEn": "to turn",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "brainstorm",
+        "taskDemo",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "离",
+      "pinyin": "lí",
+      "pos": "动",
+      "glossEn": "away from; to be from",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "keyWords",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "远",
+      "pinyin": "yuǎn",
+      "pos": "形",
+      "glossEn": "far, distant",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "门",
+      "pinyin": "mén",
+      "pos": "名",
+      "glossEn": "entrance, door, gate",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "近",
+      "pinyin": "jìn",
+      "pos": "形",
+      "glossEn": "near",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "走路",
+      "pinyin": "zǒulù",
+      "pos": "动",
+      "glossEn": "to walk, to go on foot",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "那",
+      "pinyin": "nà",
+      "pos": "连",
+      "glossEn": "then, in that case",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "怎么办",
+      "pinyin": "zěnme bàn",
+      "pos": "惯",
+      "glossEn": "what to do, how to do",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "走",
+      "pinyin": "zǒu",
+      "pos": "动",
+      "glossEn": "to walk; to go",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "最",
+      "pinyin": "zuì",
+      "pos": "副",
+      "glossEn": "most; -est",
+      "priority": "core",
+      "sources": [
+        "selfEval"
+      ]
+    },
+    {
+      "hanzi": "大使馆",
+      "pinyin": "dàshǐguǎn",
+      "pos": "名",
+      "glossEn": "embassy",
+      "priority": "core",
+      "sources": [
+        "selfEval",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "厕所",
+      "pinyin": "cèsuǒ",
+      "pos": "名",
+      "glossEn": "lavatory; toilet",
+      "priority": "core",
+      "sources": [
+        "selfEval",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "咖啡厅",
+      "pinyin": "kāfēitīng",
+      "pos": "名",
+      "glossEn": "coffee house; café",
+      "priority": "core",
+      "sources": [
+        "selfEval",
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "在",
+      "pinyin": "zài",
+      "pos": "介/动",
+      "glossEn": "at; in; on; to be located",
+      "priority": "core",
+      "sources": [
+        "selfEval",
+        "grammar",
+        "taskDemo",
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "超市",
+      "pinyin": "chāoshì",
+      "pos": "名",
+      "glossEn": "supermarket",
+      "priority": "core",
+      "sources": [
+        "selfEval",
+        "brainstorm",
+        "wordPower",
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "天天超市",
+      "pinyin": "Tiāntiān Chāoshì",
+      "pos": "专有",
+      "glossEn": "Tiantian Supermarket (task-demo location)",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "taskDemo"
+      ],
+      "notes": "Appears in task demo as Edna's meeting point."
+    },
+    {
+      "hanzi": "前门",
+      "pinyin": "Qiánmén",
+      "pos": "专有",
+      "glossEn": "Qianmen (Front Gate, Beijing)",
+      "priority": "core",
+      "sources": [
+        "properNouns",
+        "tasks"
+      ],
+      "notes": "Featured on grammar-page cultural box."
+    },
+    {
+      "hanzi": "问路",
+      "pinyin": "wèn lù",
+      "pos": "动",
+      "glossEn": "to ask for directions",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "warmUp",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "方位",
+      "pinyin": "fāngwèi",
+      "pos": "名",
+      "glossEn": "direction; position",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "丁字路口",
+      "pinyin": "dīngzì lùkǒu",
+      "pos": "名",
+      "glossEn": "T-shaped road junction",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "邮局",
+      "pinyin": "yóujú",
+      "pos": "名",
+      "glossEn": "post office",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "饭馆",
+      "pinyin": "fànguǎn",
+      "pos": "名",
+      "glossEn": "restaurant",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm",
+        "tasks"
+      ],
+      "notes": "Book also shows 饭馆（儿）."
+    },
+    {
+      "hanzi": "书店",
+      "pinyin": "shūdiàn",
+      "pos": "名",
+      "glossEn": "bookshop",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "取款机",
+      "pinyin": "qǔkuǎnjī",
+      "pos": "名",
+      "glossEn": "ATM",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "轮船",
+      "pinyin": "lúnchuán",
+      "pos": "名",
+      "glossEn": "steamer; ship",
+      "priority": "brainstorm",
+      "sources": [
+        "brainstorm"
+      ]
+    },
+    {
+      "hanzi": "怎么走",
+      "pinyin": "zěnme zǒu",
+      "pos": "惯",
+      "glossEn": "how to get there",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "分钟",
+      "pinyin": "fēnzhōng",
+      "pos": "名",
+      "glossEn": "minute",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "远不远",
+      "pinyin": "yuǎn bu yuǎn",
+      "pos": "形",
+      "glossEn": "far or not",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "饭店",
+      "pinyin": "fàndiàn",
+      "pos": "名",
+      "glossEn": "restaurant; hotel restaurant",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "走错",
+      "pinyin": "zǒucuò",
+      "pos": "动",
+      "glossEn": "to go the wrong way",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "以为",
+      "pinyin": "yǐwéi",
+      "pos": "动",
+      "glossEn": "to think (mistakenly)",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "问明白",
+      "pinyin": "wèn míngbai",
+      "pos": "动",
+      "glossEn": "to ask clearly; to make sure by asking",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "对不起",
+      "pinyin": "duìbuqǐ",
+      "pos": "惯",
+      "glossEn": "sorry",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "南门",
+      "pinyin": "nánmén",
+      "pos": "名",
+      "glossEn": "south gate",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "北门",
+      "pinyin": "běimén",
+      "pos": "名",
+      "glossEn": "north gate",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "左边",
+      "pinyin": "zuǒbiān",
+      "pos": "名",
+      "glossEn": "left side",
+      "priority": "extended",
+      "sources": [
+        "wordPower",
+        "taskDemo",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "右边",
+      "pinyin": "yòubiān",
+      "pos": "名",
+      "glossEn": "right side",
+      "priority": "extended",
+      "sources": [
+        "wordPower",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "东边",
+      "pinyin": "dōngbiān",
+      "pos": "名",
+      "glossEn": "east side",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "南边",
+      "pinyin": "nánbiān",
+      "pos": "名",
+      "glossEn": "south side",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "西边",
+      "pinyin": "xībiān",
+      "pos": "名",
+      "glossEn": "west side",
+      "priority": "extended",
+      "sources": [
+        "wordPower",
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "北边",
+      "pinyin": "běibiān",
+      "pos": "名",
+      "glossEn": "north side",
+      "priority": "extended",
+      "sources": [
+        "wordPower"
+      ]
+    },
+    {
+      "hanzi": "前边",
+      "pinyin": "qiánbiān",
+      "pos": "名",
+      "glossEn": "front; in front",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "后边",
+      "pinyin": "hòubiān",
+      "pos": "名",
+      "glossEn": "back; behind",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "方位词",
+      "pinyin": "fāngwèicí",
+      "pos": "名",
+      "glossEn": "word of locality",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "星期天",
+      "pinyin": "xīngqītiān",
+      "pos": "名",
+      "glossEn": "Sunday",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "星期五",
+      "pinyin": "xīngqīwǔ",
+      "pos": "名",
+      "glossEn": "Friday",
+      "priority": "extended",
+      "sources": [
+        "grammar"
+      ]
+    },
+    {
+      "hanzi": "图书馆",
+      "pinyin": "túshūguǎn",
+      "pos": "名",
+      "glossEn": "library",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "食堂",
+      "pinyin": "shítáng",
+      "pos": "名",
+      "glossEn": "dining hall; cafeteria",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "位置",
+      "pinyin": "wèizhì",
+      "pos": "名",
+      "glossEn": "location; position",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "了解",
+      "pinyin": "liǎojiě",
+      "pos": "动",
+      "glossEn": "to understand; to learn about",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "买到",
+      "pinyin": "mǎidào",
+      "pos": "动",
+      "glossEn": "to succeed in buying",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "东西",
+      "pinyin": "dōngxi",
+      "pos": "名",
+      "glossEn": "thing; stuff",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "需要",
+      "pinyin": "xūyào",
+      "pos": "动",
+      "glossEn": "to need",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "听错",
+      "pinyin": "tīngcuò",
+      "pos": "动",
+      "glossEn": "to mishear",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "正南",
+      "pinyin": "zhèngnán",
+      "pos": "名",
+      "glossEn": "due south",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "正北",
+      "pinyin": "zhèngběi",
+      "pos": "名",
+      "glossEn": "due north",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "正东",
+      "pinyin": "zhèngdōng",
+      "pos": "名",
+      "glossEn": "due east",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "正西",
+      "pinyin": "zhèngxī",
+      "pos": "名",
+      "glossEn": "due west",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "到",
+      "pinyin": "dào",
+      "pos": "动/介",
+      "glossEn": "to arrive; to; until",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "能",
+      "pinyin": "néng",
+      "pos": "助动",
+      "glossEn": "can; to be able to",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "这儿",
+      "pinyin": "zhèr",
+      "pos": "代",
+      "glossEn": "here",
+      "priority": "extended",
+      "sources": [
+        "taskDemo",
+        "objectives"
+      ]
+    },
+    {
+      "hanzi": "那儿",
+      "pinyin": "nàr",
+      "pos": "代",
+      "glossEn": "there",
+      "priority": "extended",
+      "sources": [
+        "taskDemo"
+      ]
+    },
+    {
+      "hanzi": "很",
+      "pinyin": "hěn",
+      "pos": "副",
+      "glossEn": "very",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "用",
+      "pinyin": "yòng",
+      "pos": "动",
+      "glossEn": "to use",
+      "priority": "extended",
+      "sources": [
+        "warmUp"
+      ]
+    },
+    {
+      "hanzi": "姓名",
+      "pinyin": "xìngmíng",
+      "pos": "名",
+      "glossEn": "name (full name)",
+      "priority": "extended",
+      "sources": [
+        "tasks"
+      ]
+    },
+    {
+      "hanzi": "才",
+      "pinyin": "cái",
+      "pos": "副",
+      "glossEn": "just; only then (later than expected)",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "taskDemo",
+        "selfEval"
+      ],
+      "notes": "Restored to U4 (official checklist/vocab overlap after dedupe)."
+    },
+    {
+      "hanzi": "就",
+      "pinyin": "jiù",
+      "pos": "副",
+      "glossEn": "just; at once; as early as",
+      "priority": "core",
+      "sources": [
+        "vocabList",
+        "grammar",
+        "selfEval"
+      ],
+      "notes": "Restored to U4 (official checklist/vocab overlap after dedupe)."
+    }
+  ],
+  "stats": {
+    "entryCount": 93,
+    "byPriority": {
+      "core": 45,
+      "brainstorm": 8,
+      "extended": 40
+    },
+    "selfEvalCount": 21,
+    "vocabListCount": 35,
+    "properNounCount": 4,
+    "dedupedAt": "2026-08-09",
+    "removedCrossUnitDuplicates": 34,
+    "dedupeRule": "One home unit by theme; official selfEval/keyWords/vocabList may keep a second copy if checklist requires it."
+  }
+}
