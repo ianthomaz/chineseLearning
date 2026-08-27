@@ -4038,6 +4038,538 @@
         "es": []
       },
       "reviewMiniDialogues": []
+    },
+    {
+      "id": 23,
+      "title": "Cozinha e culinária (aula China · 2026-08-26)",
+      "narrative": "Comida, temperos, métodos de preparo, sabores, cozinha e medidas na receita. Complementa o bloco 3 (frutas e bebidas) com vocabulário de cozinhar de verdade.",
+      "structures": [
+        {
+          "hanzi": "妈妈在厨房做饭。",
+          "pinyin": "mā ma zài chú fáng zuò fàn。"
+        },
+        {
+          "hanzi": "我照着菜谱做中国菜。",
+          "pinyin": "wǒ zhào zhe cài pǔ zuò zhōng guó cài。"
+        },
+        {
+          "hanzi": "这个菜很好吃！",
+          "pinyin": "zhè ge cài hěn hǎo chī！"
+        },
+        {
+          "hanzi": "请少放盐。",
+          "pinyin": "qǐng shǎo fàng yán。"
+        },
+        {
+          "hanzi": "三文鱼可以生吃。",
+          "pinyin": "sān wén yú kě yǐ shēng chī。"
+        },
+        {
+          "hanzi": "肉熟了吗？",
+          "pinyin": "ròu shú le ma？"
+        },
+        {
+          "hanzi": "我用炒锅炒菜。",
+          "pinyin": "wǒ yòng chǎo guō chǎo cài。"
+        },
+        {
+          "hanzi": "请给我一个杯子。",
+          "pinyin": "qǐng gěi wǒ yí gè bēi zi。"
+        },
+        {
+          "hanzi": "放五百克肉。",
+          "pinyin": "fàng wǔ bǎi kè ròu。"
+        },
+        {
+          "hanzi": "奶茶要三分甜。",
+          "pinyin": "nǎi chá yào sān fēn tián。"
+        }
+      ],
+      "notes": [
+        "**老抽** lǎochōu = molho de soja **escuro** (cor). **生抽** shēngchōu = molho **claro** (sabor/sal).",
+        "**料酒** liàojiǔ = vinho de cozinha chinês — não confundir com “rice wine” genérico.",
+        "**烤箱** kǎoxiāng = **forno**. Tábua de cortar = **菜板** / **案板** / **砧板** zhēnbǎn.",
+        "Padrão **烤** kǎo: 烤串 · 烤肉 · 烤面包 · 烤箱.",
+        "Padrão **油** yóu: 酱油 · 辣椒油 · 黄油 · 橄榄油."
+      ],
+      "differences": [
+        "**生** shēng (cru) ↔ **熟** shú (cozido, pronto).",
+        "**盐** yán (sal, ingrediente) → **咸** xián (salgado, sabor).",
+        "**糖** táng (açúcar) → **甜** tián (doce, sabor).",
+        "**好吃** hǎochī (gostoso) ↔ **难吃** nánchī (ruim) — **难吃死了** = horrível (exagero coloquial)."
+      ],
+      "priorities": [
+        "Decorar os **8 métodos**: 拌 · 炒 · 煎 · 烤 · 炸 · 煮 · 蒸 · 炖.",
+        "Fixar **照着菜谱** (seguir a receita) e **在厨房做饭** (cozinhar na cozinha).",
+        "Medidas: **克** · **斤** · **两** · **少许** · **适量** · **三分甜**.",
+        "Talheres: **筷子** · **叉子** · **勺子** · **刀**; louça: **盘子** · **碗** · **杯子**."
+      ],
+      "vocabulary": [
+        {
+          "hanzi": "饺子",
+          "pinyin": "jiǎozi",
+          "translation": "jiaozi, dumpling"
+        },
+        {
+          "hanzi": "煎饺",
+          "pinyin": "jiānjiǎo",
+          "translation": "jiaozi frito na frigideira"
+        },
+        {
+          "hanzi": "火锅",
+          "pinyin": "huǒguō",
+          "translation": "hot pot"
+        },
+        {
+          "hanzi": "三文鱼",
+          "pinyin": "sānwényú",
+          "translation": "salmão"
+        },
+        {
+          "hanzi": "玉米",
+          "pinyin": "yùmǐ",
+          "translation": "milho"
+        },
+        {
+          "hanzi": "鸡汤",
+          "pinyin": "jītāng",
+          "translation": "caldo/sopa de frango"
+        },
+        {
+          "hanzi": "炒菜",
+          "pinyin": "chǎocài",
+          "translation": "prato saltado no wok"
+        },
+        {
+          "hanzi": "烤串",
+          "pinyin": "kǎochuàn",
+          "translation": "espetinho grelhado"
+        },
+        {
+          "hanzi": "烤肉",
+          "pinyin": "kǎoròu",
+          "translation": "carne grelhada"
+        },
+        {
+          "hanzi": "生",
+          "pinyin": "shēng",
+          "translation": "cru"
+        },
+        {
+          "hanzi": "熟",
+          "pinyin": "shú",
+          "translation": "cozido, pronto"
+        },
+        {
+          "hanzi": "拌",
+          "pinyin": "bàn",
+          "translation": "misturar"
+        },
+        {
+          "hanzi": "炒",
+          "pinyin": "chǎo",
+          "translation": "saltear no wok"
+        },
+        {
+          "hanzi": "煎",
+          "pinyin": "jiān",
+          "translation": "fritar na frigideira"
+        },
+        {
+          "hanzi": "烤",
+          "pinyin": "kǎo",
+          "translation": "assar, grelhar"
+        },
+        {
+          "hanzi": "炸",
+          "pinyin": "zhá",
+          "translation": "fritar por imersão"
+        },
+        {
+          "hanzi": "煮",
+          "pinyin": "zhǔ",
+          "translation": "cozinhar em água"
+        },
+        {
+          "hanzi": "蒸",
+          "pinyin": "zhēng",
+          "translation": "cozinhar no vapor"
+        },
+        {
+          "hanzi": "炖",
+          "pinyin": "dùn",
+          "translation": "cozinhar lentamente, ensopar"
+        },
+        {
+          "hanzi": "调料",
+          "pinyin": "tiáoliào",
+          "translation": "tempero, condimento"
+        },
+        {
+          "hanzi": "酱油",
+          "pinyin": "jiàngyóu",
+          "translation": "molho de soja"
+        },
+        {
+          "hanzi": "老抽",
+          "pinyin": "lǎochōu",
+          "translation": "molho de soja escuro"
+        },
+        {
+          "hanzi": "生抽",
+          "pinyin": "shēngchōu",
+          "translation": "molho de soja claro"
+        },
+        {
+          "hanzi": "陈醋",
+          "pinyin": "chéncù",
+          "translation": "vinagre envelhecido"
+        },
+        {
+          "hanzi": "料酒",
+          "pinyin": "liàojiǔ",
+          "translation": "vinho de cozinha chinês"
+        },
+        {
+          "hanzi": "辣椒油",
+          "pinyin": "làjiāoyóu",
+          "translation": "óleo de pimenta"
+        },
+        {
+          "hanzi": "芥末",
+          "pinyin": "jièmò",
+          "translation": "wasabi / mostarda forte"
+        },
+        {
+          "hanzi": "咖喱",
+          "pinyin": "gālí",
+          "translation": "curry"
+        },
+        {
+          "hanzi": "辣椒",
+          "pinyin": "làjiāo",
+          "translation": "pimenta"
+        },
+        {
+          "hanzi": "青椒",
+          "pinyin": "qīngjiāo",
+          "translation": "pimentão verde"
+        },
+        {
+          "hanzi": "盐",
+          "pinyin": "yán",
+          "translation": "sal"
+        },
+        {
+          "hanzi": "咸",
+          "pinyin": "xián",
+          "translation": "salgado"
+        },
+        {
+          "hanzi": "糖",
+          "pinyin": "táng",
+          "translation": "açúcar"
+        },
+        {
+          "hanzi": "甜",
+          "pinyin": "tián",
+          "translation": "doce"
+        },
+        {
+          "hanzi": "油",
+          "pinyin": "yóu",
+          "translation": "óleo"
+        },
+        {
+          "hanzi": "黄油",
+          "pinyin": "huángyóu",
+          "translation": "manteiga"
+        },
+        {
+          "hanzi": "橄榄油",
+          "pinyin": "gǎnlǎnyóu",
+          "translation": "azeite"
+        },
+        {
+          "hanzi": "好吃",
+          "pinyin": "hǎochī",
+          "translation": "gostoso"
+        },
+        {
+          "hanzi": "难吃",
+          "pinyin": "nánchī",
+          "translation": "ruim de comer"
+        },
+        {
+          "hanzi": "一般般",
+          "pinyin": "yìbānbān",
+          "translation": "mais ou menos"
+        },
+        {
+          "hanzi": "糟糕",
+          "pinyin": "zāogāo",
+          "translation": "péssimo"
+        },
+        {
+          "hanzi": "厨房",
+          "pinyin": "chúfáng",
+          "translation": "cozinha (sítio)"
+        },
+        {
+          "hanzi": "锅",
+          "pinyin": "guō",
+          "translation": "panela"
+        },
+        {
+          "hanzi": "炒锅",
+          "pinyin": "chǎoguō",
+          "translation": "wok"
+        },
+        {
+          "hanzi": "烤箱",
+          "pinyin": "kǎoxiāng",
+          "translation": "forno"
+        },
+        {
+          "hanzi": "微波炉",
+          "pinyin": "wēibōlú",
+          "translation": "micro-ondas"
+        },
+        {
+          "hanzi": "菜板",
+          "pinyin": "càibǎn",
+          "translation": "tábua de cortar"
+        },
+        {
+          "hanzi": "铲子",
+          "pinyin": "chǎnzi",
+          "translation": "espátula"
+        },
+        {
+          "hanzi": "洗碗",
+          "pinyin": "xǐwǎn",
+          "translation": "lavar a louça"
+        },
+        {
+          "hanzi": "加热",
+          "pinyin": "jiārè",
+          "translation": "aquecer"
+        },
+        {
+          "hanzi": "菜谱",
+          "pinyin": "càipǔ",
+          "translation": "receita"
+        },
+        {
+          "hanzi": "筷子",
+          "pinyin": "kuàizi",
+          "translation": "palitos"
+        },
+        {
+          "hanzi": "叉子",
+          "pinyin": "chāzi",
+          "translation": "garfo"
+        },
+        {
+          "hanzi": "勺子",
+          "pinyin": "sháozi",
+          "translation": "colher"
+        },
+        {
+          "hanzi": "刀",
+          "pinyin": "dāo",
+          "translation": "faca"
+        },
+        {
+          "hanzi": "盘子",
+          "pinyin": "pánzi",
+          "translation": "prato"
+        },
+        {
+          "hanzi": "碗",
+          "pinyin": "wǎn",
+          "translation": "tigela, bowl"
+        },
+        {
+          "hanzi": "杯子",
+          "pinyin": "bēizi",
+          "translation": "copo"
+        },
+        {
+          "hanzi": "克",
+          "pinyin": "kè",
+          "translation": "grama (g)"
+        },
+        {
+          "hanzi": "千克",
+          "pinyin": "qiānkè",
+          "translation": "quilograma (kg)"
+        },
+        {
+          "hanzi": "斤",
+          "pinyin": "jīn",
+          "translation": "jin (~500 g)"
+        },
+        {
+          "hanzi": "两",
+          "pinyin": "liǎng",
+          "translation": "liang (~50 g)"
+        },
+        {
+          "hanzi": "升",
+          "pinyin": "shēng",
+          "translation": "litro"
+        },
+        {
+          "hanzi": "毫升",
+          "pinyin": "háoshēng",
+          "translation": "mililitro"
+        },
+        {
+          "hanzi": "少许",
+          "pinyin": "xiǎoxǔ",
+          "translation": "um pouquinho"
+        },
+        {
+          "hanzi": "适量",
+          "pinyin": "shìliàng",
+          "translation": "quantidade adequada"
+        },
+        {
+          "hanzi": "三分甜",
+          "pinyin": "sān fēn tián",
+          "translation": "30% doce (ex.: chá/leite)"
+        }
+      ],
+      "structureGlosses": {
+        "pt": [
+          "A mãe cozinha na cozinha.",
+          "Faço comida chinesa seguindo a receita.",
+          "Este prato está muito gostoso!",
+          "Por favor põe pouco sal.",
+          "O salmão pode comer-se cru.",
+          "A carne já está cozida?",
+          "Salteio no wok.",
+          "Dá-me um copo, por favor.",
+          "Põe quinhentos gramas de carne.",
+          "Chá de leite a 30% doce."
+        ],
+        "en": [
+          "Mom cooks in the kitchen.",
+          "I make Chinese food following the recipe.",
+          "This dish is very tasty!",
+          "Please add a little salt.",
+          "Salmon can be eaten raw.",
+          "Is the meat cooked yet?",
+          "I stir-fry in the wok.",
+          "Please give me a cup.",
+          "Add five hundred grams of meat.",
+          "Milk tea at 30% sweetness."
+        ],
+        "es": [
+          "Mamá cocina en la cocina.",
+          "Hago comida china siguiendo la receta.",
+          "¡Este plato está muy rico!",
+          "Por favor pon poca sal.",
+          "El salmón se puede comer crudo.",
+          "¿Ya está cocida la carne?",
+          "Salteo en el wok.",
+          "Dame un vaso, por favor.",
+          "Pon quinientos gramos de carne.",
+          "Té con leche al 30% de dulzor."
+        ]
+      },
+      "reviewStandalonePhrases": {
+        "pt": [],
+        "en": [],
+        "es": []
+      },
+      "reviewMiniDialogues": [
+        [
+          {
+            "speaker": "A",
+            "hanzi": "你在做什么？",
+            "pinyin": "nǐ zài zuò shénme?",
+            "translation": {
+              "pt": "O que estás a fazer?",
+              "en": "What are you doing?",
+              "es": "¿Qué estás haciendo?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我在厨房做饭。",
+            "pinyin": "wǒ zài chúfáng zuò fàn.",
+            "translation": {
+              "pt": "Estou a cozinhar na cozinha.",
+              "en": "I'm cooking in the kitchen.",
+              "es": "Estoy cocinando en la cocina."
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你做什么菜？",
+            "pinyin": "nǐ zuò shénme cài?",
+            "translation": {
+              "pt": "Que prato fazes?",
+              "en": "What dish are you making?",
+              "es": "¿Qué plato haces?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我照着菜谱做中国菜。",
+            "pinyin": "wǒ zhàozhe càipǔ zuò Zhōngguó cài.",
+            "translation": {
+              "pt": "Faço comida chinesa seguindo a receita.",
+              "en": "I'm making Chinese food from the recipe.",
+              "es": "Hago comida china siguiendo la receta."
+            }
+          }
+        ],
+        [
+          {
+            "speaker": "A",
+            "hanzi": "这个菜怎么样？",
+            "pinyin": "zhège cài zěnmeyàng?",
+            "translation": {
+              "pt": "Como está este prato?",
+              "en": "How is this dish?",
+              "es": "¿Qué tal este plato?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "很好吃！",
+            "pinyin": "hěn hǎochī!",
+            "translation": {
+              "pt": "Muito gostoso!",
+              "en": "Very tasty!",
+              "es": "¡Muy rico!"
+            }
+          },
+          {
+            "speaker": "A",
+            "hanzi": "你要筷子还是叉子？",
+            "pinyin": "nǐ yào kuàizi háishì chāzi?",
+            "translation": {
+              "pt": "Queres palitos ou garfo?",
+              "en": "Do you want chopsticks or a fork?",
+              "es": "¿Quieres palillos o tenedor?"
+            }
+          },
+          {
+            "speaker": "B",
+            "hanzi": "我要筷子。",
+            "pinyin": "wǒ yào kuàizi.",
+            "translation": {
+              "pt": "Quero palitos.",
+              "en": "I want chopsticks.",
+              "es": "Quiero palillos."
+            }
+          }
+        ]
+      ]
     }
   ]
 }

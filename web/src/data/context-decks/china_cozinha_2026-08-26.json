@@ -1,0 +1,705 @@
+{
+  "id": "china_cozinha_2026-08-26",
+  "title": "Cozinha e culinária · 2026-08-26",
+  "cards": [
+    {
+      "word": "饺子",
+      "pinyin": "jiǎozi",
+      "meaning": "jiaozi, dumpling",
+      "section": "Comidas",
+      "sentence": "我想吃十个饺子。",
+      "sentencePinyin": "Wǒ xiǎng chī shí ge jiǎozi.",
+      "sentenceMeaning": "Eu quero comer dez dumplings."
+    },
+    {
+      "word": "煎饺",
+      "pinyin": "jiānjiǎo",
+      "meaning": "jiaozi frito na frigideira",
+      "section": "Comidas",
+      "sentence": "妈妈做了煎饺。",
+      "sentencePinyin": "Māma zuò le jiānjiǎo.",
+      "sentenceMeaning": "Mãe fez jiaozi-frito."
+    },
+    {
+      "word": "火锅",
+      "pinyin": "huǒguō",
+      "meaning": "hot pot",
+      "section": "Comidas",
+      "sentence": "冬天我们吃火锅。",
+      "sentencePinyin": "Dōngtiān wǒmen chī huǒguō.",
+      "sentenceMeaning": "Inverno nós comemos hot-pot."
+    },
+    {
+      "word": "三文鱼",
+      "pinyin": "sānwényú",
+      "meaning": "salmão",
+      "section": "Comidas",
+      "sentence": "三文鱼可以生吃。",
+      "sentencePinyin": "Sānwényú kěyǐ shēng chī.",
+      "sentenceMeaning": "Salmão pode cru comer."
+    },
+    {
+      "word": "玉米",
+      "pinyin": "yùmǐ",
+      "meaning": "milho",
+      "section": "Comidas",
+      "sentence": "我喜欢吃玉米。",
+      "sentencePinyin": "Wǒ xǐhuan chī yùmǐ.",
+      "sentenceMeaning": "Eu gosto comer milho."
+    },
+    {
+      "word": "鸡汤",
+      "pinyin": "jītāng",
+      "meaning": "caldo/sopa de frango",
+      "section": "Comidas",
+      "sentence": "妈妈炖了鸡汤。",
+      "sentencePinyin": "Māma dùn le jītāng.",
+      "sentenceMeaning": "Mãe ensopou caldo-frango."
+    },
+    {
+      "word": "炒菜",
+      "pinyin": "chǎocài",
+      "meaning": "prato saltado no wok",
+      "section": "Comidas",
+      "sentence": "今天爸爸炒菜。",
+      "sentencePinyin": "Jīntiān bàba chǎocài.",
+      "sentenceMeaning": "Hoje pai salta-prato."
+    },
+    {
+      "word": "烤串",
+      "pinyin": "kǎochuàn",
+      "meaning": "espetinho grelhado",
+      "section": "Comidas",
+      "sentence": "晚上我们去吃烤串。",
+      "sentencePinyin": "Wǎnshang wǒmen qù chī kǎochuàn.",
+      "sentenceMeaning": "À-noite nós vamos comer espetinho."
+    },
+    {
+      "word": "烤肉",
+      "pinyin": "kǎoròu",
+      "meaning": "carne grelhada",
+      "section": "Comidas",
+      "sentence": "周末朋友烤肉。",
+      "sentencePinyin": "Zhōumò péngyou kǎoròu.",
+      "sentenceMeaning": "Fim-de-semana amigo grelha-carne."
+    },
+    {
+      "word": "煎牛排",
+      "pinyin": "jiān niúpái",
+      "meaning": "grelhar bife na frigideira",
+      "section": "Comidas",
+      "sentence": "我照着菜谱煎牛排。",
+      "sentencePinyin": "Wǒ zhàozhe càipǔ jiān niúpái.",
+      "sentenceMeaning": "Eu seguindo receita frito bife."
+    },
+    {
+      "word": "生",
+      "pinyin": "shēng",
+      "meaning": "cru",
+      "section": "Estado",
+      "sentence": "这个可以生吃吗？",
+      "sentencePinyin": "Zhège kěyǐ shēng chī ma?",
+      "sentenceMeaning": "Isto pode cru comer ma?",
+      "related": "熟",
+      "patterns": "生; 生吃"
+    },
+    {
+      "word": "熟",
+      "pinyin": "shú",
+      "meaning": "cozido, pronto",
+      "section": "Estado",
+      "sentence": "肉熟了吗？",
+      "sentencePinyin": "Ròu shú le ma?",
+      "sentenceMeaning": "Carne cozida le ma?",
+      "related": "生"
+    },
+    {
+      "word": "拌",
+      "pinyin": "bàn",
+      "meaning": "misturar",
+      "section": "Métodos",
+      "sentence": "请帮我拌一下。",
+      "sentencePinyin": "Qǐng bāng wǒ bàn yīxià.",
+      "sentenceMeaning": "Por-favor ajuda eu misturar um-pouco."
+    },
+    {
+      "word": "炒",
+      "pinyin": "chǎo",
+      "meaning": "saltear no wok",
+      "section": "Métodos",
+      "sentence": "我用炒锅炒菜。",
+      "sentencePinyin": "Wǒ yòng chǎoguō chǎocài.",
+      "sentenceMeaning": "Eu uso wok salta-prato."
+    },
+    {
+      "word": "煎",
+      "pinyin": "jiān",
+      "meaning": "fritar na frigideira",
+      "section": "Métodos",
+      "sentence": "早上我煎鸡蛋。",
+      "sentencePinyin": "Zǎoshang wǒ jiān jīdàn.",
+      "sentenceMeaning": "Manhã eu frito ovo."
+    },
+    {
+      "word": "烤",
+      "pinyin": "kǎo",
+      "meaning": "assar, grelhar",
+      "section": "Métodos",
+      "sentence": "我在烤箱烤面包。",
+      "sentencePinyin": "Wǒ zài kǎoxiāng kǎo miànbāo.",
+      "sentenceMeaning": "Eu em forno asso pão."
+    },
+    {
+      "word": "炸",
+      "pinyin": "zhá",
+      "meaning": "fritar por imersão",
+      "section": "Métodos",
+      "sentence": "空气炸锅炸薯条。",
+      "sentencePinyin": "Kōngqì zháguō zhá shǔtiáo.",
+      "sentenceMeaning": "Air-fryer frita batata."
+    },
+    {
+      "word": "煮",
+      "pinyin": "zhǔ",
+      "meaning": "cozinhar em água",
+      "section": "Métodos",
+      "sentence": "我煮了一锅汤。",
+      "sentencePinyin": "Wǒ zhǔ le yì guō tāng.",
+      "sentenceMeaning": "Eu cozinhei uma panela sopa."
+    },
+    {
+      "word": "蒸",
+      "pinyin": "zhēng",
+      "meaning": "cozinhar no vapor",
+      "section": "Métodos",
+      "sentence": "妈妈蒸了十个饺子。",
+      "sentencePinyin": "Māma zhēng le shí ge jiǎozi.",
+      "sentenceMeaning": "Mãe vaporizou dez dumplings."
+    },
+    {
+      "word": "炖",
+      "pinyin": "dùn",
+      "meaning": "cozinhar lentamente",
+      "section": "Métodos",
+      "sentence": "晚上炖鸡汤。",
+      "sentencePinyin": "Wǎnshang dùn jītāng.",
+      "sentenceMeaning": "À-noite ensopa caldo-frango."
+    },
+    {
+      "word": "炒锅",
+      "pinyin": "chǎoguō",
+      "meaning": "wok",
+      "section": "Equipamento",
+      "sentence": "炒锅在厨房里。",
+      "sentencePinyin": "Chǎoguō zài chúfáng li.",
+      "sentenceMeaning": "Wok está cozinha dentro."
+    },
+    {
+      "word": "烤箱",
+      "pinyin": "kǎoxiāng",
+      "meaning": "forno",
+      "section": "Equipamento",
+      "sentence": "烤箱在微波炉旁边。",
+      "sentencePinyin": "Kǎoxiāng zài wēibōlú pángbiān.",
+      "sentenceMeaning": "Forno está micro-ondas ao-lado.",
+      "notes": "Forno — não confundir com tábua."
+    },
+    {
+      "word": "空气炸锅",
+      "pinyin": "kōngqì zháguō",
+      "meaning": "air fryer",
+      "section": "Equipamento",
+      "sentence": "我用空气炸锅炸 chicken。",
+      "sentencePinyin": "Wǒ yòng kōngqì zháguō zhá jī.",
+      "sentenceMeaning": "Eu uso air-fryer frito frango."
+    },
+    {
+      "word": "微波炉",
+      "pinyin": "wēibōlú",
+      "meaning": "micro-ondas",
+      "section": "Equipamento",
+      "sentence": "请用微波炉加热。",
+      "sentencePinyin": "Qǐng yòng wēibōlú jiārè.",
+      "sentenceMeaning": "Por-favor usa micro-ondas aquecer."
+    },
+    {
+      "word": "调料",
+      "pinyin": "tiáoliào",
+      "meaning": "tempero, condimento",
+      "section": "Molhos",
+      "sentence": "请加一点调料。",
+      "sentencePinyin": "Qǐng jiā yìdiǎnr tiáoliào.",
+      "sentenceMeaning": "Por-favor adiciona um-pouco tempero."
+    },
+    {
+      "word": "酱油",
+      "pinyin": "jiàngyóu",
+      "meaning": "molho de soja",
+      "section": "Molhos",
+      "sentence": "菜里加一点酱油。",
+      "sentencePinyin": "Cài li jiā yìdiǎnr jiàngyóu.",
+      "sentenceMeaning": "Prato dentro adiciona um-pouco molho-soja."
+    },
+    {
+      "word": "老抽",
+      "pinyin": "lǎochōu",
+      "meaning": "molho de soja escuro",
+      "section": "Molhos",
+      "sentence": "上色用老抽。",
+      "sentencePinyin": "Shàng sè yòng lǎochōu.",
+      "sentenceMeaning": "Dar-cor usa molho-escuro.",
+      "notes": "老抽 = escuro. 生抽 = claro."
+    },
+    {
+      "word": "生抽",
+      "pinyin": "shēngchōu",
+      "meaning": "molho de soja claro",
+      "section": "Molhos",
+      "sentence": "调味用生抽。",
+      "sentencePinyin": "Tiáowèi yòng shēngchōu.",
+      "sentenceMeaning": "Temperar usa molho-claro."
+    },
+    {
+      "word": "陈醋",
+      "pinyin": "chéncù",
+      "meaning": "vinagre envelhecido",
+      "section": "Molhos",
+      "sentence": "饺子蘸陈醋。",
+      "sentencePinyin": "Jiǎozi zhàn chéncù.",
+      "sentenceMeaning": "Dumpling mergulha vinagre."
+    },
+    {
+      "word": "料酒",
+      "pinyin": "liàojiǔ",
+      "meaning": "vinho de cozinha chinês",
+      "section": "Molhos",
+      "sentence": "肉里放一点料酒。",
+      "sentencePinyin": "Ròu li fàng yìdiǎnr liàojiǔ.",
+      "sentenceMeaning": "Carne dentro põe um-pouco vinho-cozinha."
+    },
+    {
+      "word": "辣椒油",
+      "pinyin": "làjiāoyóu",
+      "meaning": "óleo de pimenta",
+      "section": "Molhos",
+      "sentence": "我要一点辣椒油。",
+      "sentencePinyin": "Wǒ yào yìdiǎnr làjiāoyóu.",
+      "sentenceMeaning": "Eu quero um-pouco óleo-pimenta."
+    },
+    {
+      "word": "芥末",
+      "pinyin": "jièmò",
+      "meaning": "wasabi / mostarda forte",
+      "section": "Molhos",
+      "sentence": "三文鱼配芥末。",
+      "sentencePinyin": "Sānwényú pèi jièmò.",
+      "sentenceMeaning": "Salmão combina wasabi."
+    },
+    {
+      "word": "芥末酱",
+      "pinyin": "jièmòjiàng",
+      "meaning": "pasta de mostarda",
+      "section": "Molhos",
+      "sentence": "请给我芥末酱。",
+      "sentencePinyin": "Qǐng gěi wǒ jièmòjiàng.",
+      "sentenceMeaning": "Por-favor dá-me pasta-mostarda."
+    },
+    {
+      "word": "沙拉酱",
+      "pinyin": "shālājiàng",
+      "meaning": "molho de salada",
+      "section": "Molhos",
+      "sentence": "沙拉要沙拉酱。",
+      "sentencePinyin": "Shālā yào shālājiàng.",
+      "sentenceMeaning": "Salada quer molho-salada."
+    },
+    {
+      "word": "咖喱",
+      "pinyin": "gālí",
+      "meaning": "curry",
+      "section": "Molhos",
+      "sentence": "我喜欢咖喱。",
+      "sentencePinyin": "Wǒ xǐhuan gālí.",
+      "sentenceMeaning": "Eu gosto curry."
+    },
+    {
+      "word": "胡椒粉",
+      "pinyin": "hújiāofěn",
+      "meaning": "pimenta em pó",
+      "section": "Molhos",
+      "sentence": "汤里加一点胡椒粉。",
+      "sentencePinyin": "Tāng li jiā yìdiǎnr hújiāofěn.",
+      "sentenceMeaning": "Sopa dentro adiciona um-pouco pimenta-pó."
+    },
+    {
+      "word": "辣椒",
+      "pinyin": "làjiāo",
+      "meaning": "pimenta",
+      "section": "Molhos",
+      "sentence": "这个菜有很多辣椒。",
+      "sentencePinyin": "Zhège cài yǒu hěn duō làjiāo.",
+      "sentenceMeaning": "Este prato tem muito pimenta."
+    },
+    {
+      "word": "红辣椒",
+      "pinyin": "hóng làjiāo",
+      "meaning": "pimenta vermelha",
+      "section": "Molhos",
+      "sentence": "请给我一根红辣椒。",
+      "sentencePinyin": "Qǐng gěi wǒ yì gēn hóng làjiāo.",
+      "sentenceMeaning": "Por-favor dá-me um pimenta-vermelha."
+    },
+    {
+      "word": "青椒",
+      "pinyin": "qīngjiāo",
+      "meaning": "pimentão verde",
+      "section": "Molhos",
+      "sentence": "炒菜放两个青椒。",
+      "sentencePinyin": "Chǎocài fàng liǎng ge qīngjiāo.",
+      "sentenceMeaning": "Salta-prato põe dois pimentão-verde."
+    },
+    {
+      "word": "盐",
+      "pinyin": "yán",
+      "meaning": "sal",
+      "section": "Sabor",
+      "sentence": "请少放盐。",
+      "sentencePinyin": "Qǐng shǎo fàng yán.",
+      "sentenceMeaning": "Por-favor pouco põe sal.",
+      "related": "咸",
+      "patterns": "盐 → 咸"
+    },
+    {
+      "word": "咸",
+      "pinyin": "xián",
+      "meaning": "salgado",
+      "section": "Sabor",
+      "sentence": "这个菜太咸了。",
+      "sentencePinyin": "Zhège cài tài xián le.",
+      "sentenceMeaning": "Este prato demais salgado le.",
+      "related": "盐"
+    },
+    {
+      "word": "糖",
+      "pinyin": "táng",
+      "meaning": "açúcar",
+      "section": "Sabor",
+      "sentence": "咖啡要三分甜。",
+      "sentencePinyin": "Kāfēi yào sān fēn tián.",
+      "sentenceMeaning": "Café quer três-partes doce.",
+      "related": "甜",
+      "patterns": "糖 → 甜; 三分甜"
+    },
+    {
+      "word": "甜",
+      "pinyin": "tián",
+      "meaning": "doce",
+      "section": "Sabor",
+      "sentence": "这个蛋糕很甜。",
+      "sentencePinyin": "Zhège dàngāo hěn tián.",
+      "sentenceMeaning": "Este bolo muito doce.",
+      "related": "糖"
+    },
+    {
+      "word": "油",
+      "pinyin": "yóu",
+      "meaning": "óleo",
+      "section": "Óleos",
+      "sentence": "炒菜要多一点油。",
+      "sentencePinyin": "Chǎocài yào duō yìdiǎnr yóu.",
+      "sentenceMeaning": "Salta-prato precisa mais um-pouco óleo.",
+      "patterns": "酱油; 辣椒油; 黄油; 橄榄油"
+    },
+    {
+      "word": "黄油",
+      "pinyin": "huángyóu",
+      "meaning": "manteiga",
+      "section": "Óleos",
+      "sentence": "烤面包用黄油。",
+      "sentencePinyin": "Kǎo miànbāo yòng huángyóu.",
+      "sentenceMeaning": "Assar pão usa manteiga."
+    },
+    {
+      "word": "牛油",
+      "pinyin": "niúyóu",
+      "meaning": "gordura bovina (varia por região)",
+      "section": "Óleos",
+      "sentence": "火锅里有牛油。",
+      "sentencePinyin": "Huǒguō li yǒu niúyóu.",
+      "sentenceMeaning": "Hot-pot dentro tem gordura-bovina.",
+      "notes": "Mainland: sebo. HK/TW: às vezes manteiga."
+    },
+    {
+      "word": "橄榄油",
+      "pinyin": "gǎnlǎnyóu",
+      "meaning": "azeite",
+      "section": "Óleos",
+      "sentence": "沙拉用橄榄油。",
+      "sentencePinyin": "Shālā yòng gǎnlǎnyóu.",
+      "sentenceMeaning": "Salada usa azeite."
+    },
+    {
+      "word": "好吃",
+      "pinyin": "hǎochī",
+      "meaning": "gostoso",
+      "section": "Opinião",
+      "sentence": "这个菜很好吃！",
+      "sentencePinyin": "Zhège cài hěn hǎochī!",
+      "sentenceMeaning": "Este prato muito gostoso!",
+      "related": "难吃"
+    },
+    {
+      "word": "难吃",
+      "pinyin": "nánchī",
+      "meaning": "ruim de comer",
+      "section": "Opinião",
+      "sentence": "我觉得这个难吃。",
+      "sentencePinyin": "Wǒ juéde zhège nánchī.",
+      "sentenceMeaning": "Eu acho isto ruim-comer.",
+      "related": "好吃"
+    },
+    {
+      "word": "一般般",
+      "pinyin": "yìbānbān",
+      "meaning": "mais ou menos",
+      "section": "Opinião",
+      "sentence": "味道一般般。",
+      "sentencePinyin": "Wèidào yìbānbān.",
+      "sentenceMeaning": "Sabor mais-ou-menos."
+    },
+    {
+      "word": "糟糕",
+      "pinyin": "zāogāo",
+      "meaning": "péssimo",
+      "section": "Opinião",
+      "sentence": "今天做得糟糕。",
+      "sentencePinyin": "Jīntiān zuò de zāogāo.",
+      "sentenceMeaning": "Hoje feito péssimo."
+    },
+    {
+      "word": "厨房",
+      "pinyin": "chúfáng",
+      "meaning": "cozinha (sítio)",
+      "section": "Cozinha",
+      "sentence": "妈妈在厨房做饭。",
+      "sentencePinyin": "Māma zài chúfáng zuò fàn.",
+      "sentenceMeaning": "Mãe em cozinha faz comida."
+    },
+    {
+      "word": "锅",
+      "pinyin": "guō",
+      "meaning": "panela",
+      "section": "Cozinha",
+      "sentence": "请洗一下锅。",
+      "sentencePinyin": "Qǐng xǐ yīxià guō.",
+      "sentenceMeaning": "Por-favor lava um-pouco panela."
+    },
+    {
+      "word": "铲子",
+      "pinyin": "chǎnzi",
+      "meaning": "espátula",
+      "section": "Cozinha",
+      "sentence": "炒菜用铲子。",
+      "sentencePinyin": "Chǎocài yòng chǎnzi.",
+      "sentenceMeaning": "Salta-prato usa espátula."
+    },
+    {
+      "word": "菜板",
+      "pinyin": "càibǎn",
+      "meaning": "tábua de cortar",
+      "section": "Cozinha",
+      "sentence": "在菜板上切菜。",
+      "sentencePinyin": "Zài càibǎn shang qiē cài.",
+      "sentenceMeaning": "Em tábua corta legumes."
+    },
+    {
+      "word": "案板",
+      "pinyin": "ànbǎn",
+      "meaning": "tábua / bancada de preparo",
+      "section": "Cozinha",
+      "sentence": "案板在厨房里。",
+      "sentencePinyin": "Ànbǎn zài chúfáng li.",
+      "sentenceMeaning": "Bancada está cozinha dentro."
+    },
+    {
+      "word": "洗碗",
+      "pinyin": "xǐwǎn",
+      "meaning": "lavar a louça",
+      "section": "Cozinha",
+      "sentence": "吃完饭我洗碗。",
+      "sentencePinyin": "Chī wán fàn wǒ xǐwǎn.",
+      "sentenceMeaning": "Comer acabar comida eu lavo-louça."
+    },
+    {
+      "word": "加热",
+      "pinyin": "jiārè",
+      "meaning": "aquecer",
+      "section": "Cozinha",
+      "sentence": "请加热一下。",
+      "sentencePinyin": "Qǐng jiārè yīxià.",
+      "sentenceMeaning": "Por-favor aquece um-pouco."
+    },
+    {
+      "word": "筷子",
+      "pinyin": "kuàizi",
+      "meaning": "palitos",
+      "section": "Talheres",
+      "sentence": "请给我一双筷子。",
+      "sentencePinyin": "Qǐng gěi wǒ yī shuāng kuàizi.",
+      "sentenceMeaning": "Por-favor dá-me um par palitos."
+    },
+    {
+      "word": "叉子",
+      "pinyin": "chāzi",
+      "meaning": "garfo",
+      "section": "Talheres",
+      "sentence": "给我一把叉子。",
+      "sentencePinyin": "Gěi wǒ yī bǎ chāzi.",
+      "sentenceMeaning": "Dá-me um garfo."
+    },
+    {
+      "word": "勺子",
+      "pinyin": "sháozi",
+      "meaning": "colher",
+      "section": "Talheres",
+      "sentence": "汤用勺子喝。",
+      "sentencePinyin": "Tāng yòng sháozi hē.",
+      "sentenceMeaning": "Sopa usa colher beber."
+    },
+    {
+      "word": "刀",
+      "pinyin": "dāo",
+      "meaning": "faca",
+      "section": "Talheres",
+      "sentence": "用刀切肉。",
+      "sentencePinyin": "Yòng dāo qiē ròu.",
+      "sentenceMeaning": "Usa faca corta carne."
+    },
+    {
+      "word": "盘子",
+      "pinyin": "pánzi",
+      "meaning": "prato",
+      "section": "Louça",
+      "sentence": "请给我一个盘子。",
+      "sentencePinyin": "Qǐng gěi wǒ yí ge pánzi.",
+      "sentenceMeaning": "Por-favor dá-me um prato."
+    },
+    {
+      "word": "碗",
+      "pinyin": "wǎn",
+      "meaning": "tigela, bowl",
+      "section": "Louça",
+      "sentence": "米饭在一个碗里。",
+      "sentencePinyin": "Mǐfàn zài yí ge wǎn li.",
+      "sentenceMeaning": "Arroz está um bowl dentro."
+    },
+    {
+      "word": "杯子",
+      "pinyin": "bēizi",
+      "meaning": "copo",
+      "section": "Louça",
+      "sentence": "请给我一个杯子。",
+      "sentencePinyin": "Qǐng gěi wǒ yí ge bēizi.",
+      "sentenceMeaning": "Por-favor dá-me um copo."
+    },
+    {
+      "word": "菜谱",
+      "pinyin": "càipǔ",
+      "meaning": "receita",
+      "section": "Receita",
+      "sentence": "我照着菜谱做。",
+      "sentencePinyin": "Wǒ zhàozhe càipǔ zuò.",
+      "sentenceMeaning": "Eu seguindo receita faço."
+    },
+    {
+      "word": "做中国菜",
+      "pinyin": "zuò Zhōngguó cài",
+      "meaning": "fazer comida chinesa",
+      "section": "Receita",
+      "sentence": "我想做中国菜。",
+      "sentencePinyin": "Wǒ xiǎng zuò Zhōngguó cài.",
+      "sentenceMeaning": "Eu quero fazer comida-chinesa."
+    },
+    {
+      "word": "克",
+      "pinyin": "kè",
+      "meaning": "grama (g)",
+      "section": "Medidas",
+      "sentence": "放五百克肉。",
+      "sentencePinyin": "Fàng wǔbǎi kè ròu.",
+      "sentenceMeaning": "Põe quinhentos gramas carne."
+    },
+    {
+      "word": "千克",
+      "pinyin": "qiānkè",
+      "meaning": "quilograma (kg)",
+      "section": "Medidas",
+      "sentence": "买两千克米。",
+      "sentencePinyin": "Mǎi liǎng qiānkè mǐ.",
+      "sentenceMeaning": "Compra dois quilos arroz."
+    },
+    {
+      "word": "斤",
+      "pinyin": "jīn",
+      "meaning": "jin (~500 g)",
+      "section": "Medidas",
+      "sentence": "买一斤苹果。",
+      "sentencePinyin": "Mǎi yì jīn píngguǒ.",
+      "sentenceMeaning": "Compra um jin maçã."
+    },
+    {
+      "word": "两",
+      "pinyin": "liǎng",
+      "meaning": "liang (~50 g)",
+      "section": "Medidas",
+      "sentence": "放三两盐。",
+      "sentencePinyin": "Fàng sān liǎng yán.",
+      "sentenceMeaning": "Põe três liang sal."
+    },
+    {
+      "word": "升",
+      "pinyin": "shēng",
+      "meaning": "litro",
+      "section": "Medidas",
+      "sentence": "一升牛奶。",
+      "sentencePinyin": "Yì shēng niúnǎi.",
+      "sentenceMeaning": "Um litro leite."
+    },
+    {
+      "word": "毫升",
+      "pinyin": "háoshēng",
+      "meaning": "mililitro",
+      "section": "Medidas",
+      "sentence": "加五十毫升水。",
+      "sentencePinyin": "Jiā wǔshí háoshēng shuǐ.",
+      "sentenceMeaning": "Adiciona cinquenta ml água."
+    },
+    {
+      "word": "少许",
+      "pinyin": "xiǎoxǔ",
+      "meaning": "um pouquinho",
+      "section": "Medidas",
+      "sentence": "请加少许盐。",
+      "sentencePinyin": "Qǐng jiā xiǎoxǔ yán.",
+      "sentenceMeaning": "Por-favor adiciona pouquinho sal."
+    },
+    {
+      "word": "适量",
+      "pinyin": "shìliàng",
+      "meaning": "quantidade adequada",
+      "section": "Medidas",
+      "sentence": "油放适量。",
+      "sentencePinyin": "Yóu fàng shìliàng.",
+      "sentenceMeaning": "Óleo põe quantidade-adequada."
+    },
+    {
+      "word": "三分甜",
+      "pinyin": "sān fēn tián",
+      "meaning": "30% doce",
+      "section": "Medidas",
+      "sentence": "奶茶要三分甜。",
+      "sentencePinyin": "Nǎichá yào sān fēn tián.",
+      "sentenceMeaning": "Chá-leite quer três-partes doce."
+    }
+  ]
+}

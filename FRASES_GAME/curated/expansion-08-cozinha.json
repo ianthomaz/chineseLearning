@@ -1,0 +1,716 @@
+{
+  "version": 1,
+  "source": "china cozinha 2026-08-26 — aula China",
+  "phrases": [
+    {
+      "id": "pg-1101",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "A mãe fez jiaozi frito.",
+      "en": "Mom made pan-fried dumplings.",
+      "es": "Mamá hizo jiaozi frito.",
+      "words": [
+        {
+          "palavra": "妈妈",
+          "pt": "mãe"
+        },
+        {
+          "palavra": "做",
+          "pt": "fez"
+        },
+        {
+          "palavra": "了",
+          "pt": "le"
+        },
+        {
+          "palavra": "煎饺",
+          "pt": "jiaozi frito"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1102",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Este prato está muito gostoso!",
+      "en": "This dish is very tasty!",
+      "es": "¡Este plato está muy rico!",
+      "words": [
+        {
+          "palavra": "这个",
+          "pt": "este"
+        },
+        {
+          "palavra": "菜",
+          "pt": "prato"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "好吃",
+          "pt": "gostoso",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "难吃",
+        "书"
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1103",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Por favor põe pouco sal.",
+      "en": "Please add a little salt.",
+      "es": "Por favor pon poca sal.",
+      "words": [
+        {
+          "palavra": "请",
+          "pt": "por favor"
+        },
+        {
+          "palavra": "少",
+          "pt": "pouco"
+        },
+        {
+          "palavra": "放",
+          "pt": "põe"
+        },
+        {
+          "palavra": "盐",
+          "pt": "sal"
+        }
+      ],
+      "distratores": [
+        "糖",
+        "茶"
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1104",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Estou a cozinhar na cozinha.",
+      "en": "I'm cooking in the kitchen.",
+      "es": "Estoy cocinando en la cocina.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "厨房",
+          "pt": "cozinha",
+          "dificil": true
+        },
+        {
+          "palavra": "做饭",
+          "pt": "cozinhar",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "学校",
+        "书"
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:lugares"
+      ]
+    },
+    {
+      "id": "pg-1105",
+      "nivel": 1,
+      "tier": "basico",
+      "pt": "A carne já está cozida?",
+      "en": "Is the meat cooked yet?",
+      "es": "¿Ya está cocida la carne?",
+      "words": [
+        {
+          "palavra": "肉",
+          "pt": "carne",
+          "dificil": true
+        },
+        {
+          "palavra": "熟",
+          "pt": "cozida",
+          "dificil": true
+        },
+        {
+          "palavra": "了",
+          "pt": "já"
+        },
+        {
+          "palavra": "吗",
+          "pt": "?"
+        }
+      ],
+      "distratores": [
+        "生",
+        "茶"
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1106",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Quero comer dez dumplings.",
+      "en": "I want to eat ten dumplings.",
+      "es": "Quiero comer diez dumplings.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "想",
+          "pt": "quero"
+        },
+        {
+          "palavra": "吃",
+          "pt": "comer"
+        },
+        {
+          "palavra": "十个",
+          "pt": "dez"
+        },
+        {
+          "palavra": "饺子",
+          "pt": "dumplings",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1107",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Dá-me um copo, por favor.",
+      "en": "Please give me a cup.",
+      "es": "Dame un vaso, por favor.",
+      "words": [
+        {
+          "palavra": "请",
+          "pt": "por favor"
+        },
+        {
+          "palavra": "给",
+          "pt": "dá"
+        },
+        {
+          "palavra": "我",
+          "pt": "me"
+        },
+        {
+          "palavra": "一个",
+          "pt": "um"
+        },
+        {
+          "palavra": "杯子",
+          "pt": "copo",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "盘子",
+        "书"
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1108",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Hoje o pai salta o prato no wok.",
+      "en": "Today dad stir-fries.",
+      "es": "Hoy papá saltea el plato.",
+      "words": [
+        {
+          "palavra": "今天",
+          "pt": "hoje"
+        },
+        {
+          "palavra": "爸爸",
+          "pt": "pai"
+        },
+        {
+          "palavra": "炒菜",
+          "pt": "salta prato",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "妈妈",
+        "书"
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1109",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Cozinhei uma panela de sopa.",
+      "en": "I cooked a pot of soup.",
+      "es": "Cocí una olla de sopa.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "煮",
+          "pt": "cozinhei",
+          "dificil": true
+        },
+        {
+          "palavra": "了",
+          "pt": "le"
+        },
+        {
+          "palavra": "一锅",
+          "pt": "uma panela",
+          "dificil": true
+        },
+        {
+          "palavra": "汤",
+          "pt": "sopa",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1110",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "O salmão pode comer-se cru.",
+      "en": "Salmon can be eaten raw.",
+      "es": "El salmón se puede comer crudo.",
+      "words": [
+        {
+          "palavra": "三文鱼",
+          "pt": "salmão",
+          "dificil": true
+        },
+        {
+          "palavra": "可以",
+          "pt": "pode"
+        },
+        {
+          "palavra": "生",
+          "pt": "cru",
+          "dificil": true
+        },
+        {
+          "palavra": "吃",
+          "pt": "comer"
+        }
+      ],
+      "distratores": [
+        "熟",
+        "茶"
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1111",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "No inverno comemos hot pot.",
+      "en": "In winter we eat hot pot.",
+      "es": "En invierno comemos hot pot.",
+      "words": [
+        {
+          "palavra": "冬天",
+          "pt": "inverno",
+          "dificil": true
+        },
+        {
+          "palavra": "我们",
+          "pt": "nós"
+        },
+        {
+          "palavra": "吃",
+          "pt": "comemos"
+        },
+        {
+          "palavra": "火锅",
+          "pt": "hot pot",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1112",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Usa o micro-ondas para aquecer.",
+      "en": "Use the microwave to heat it.",
+      "es": "Usa el microondas para calentar.",
+      "words": [
+        {
+          "palavra": "请",
+          "pt": "por favor"
+        },
+        {
+          "palavra": "用",
+          "pt": "usa"
+        },
+        {
+          "palavra": "微波炉",
+          "pt": "micro-ondas",
+          "dificil": true
+        },
+        {
+          "palavra": "加热",
+          "pt": "aquecer",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "烤箱",
+        "书"
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1113",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "O sabor é mais ou menos.",
+      "en": "The taste is so-so.",
+      "es": "El sabor es más o menos.",
+      "words": [
+        {
+          "palavra": "味道",
+          "pt": "sabor",
+          "dificil": true
+        },
+        {
+          "palavra": "一般般",
+          "pt": "mais ou menos",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "好吃",
+        "难吃"
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1114",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Põe quinhentos gramas de carne.",
+      "en": "Add five hundred grams of meat.",
+      "es": "Pon quinientos gramos de carne.",
+      "words": [
+        {
+          "palavra": "放",
+          "pt": "põe"
+        },
+        {
+          "palavra": "五百",
+          "pt": "quinhentos",
+          "dificil": true
+        },
+        {
+          "palavra": "克",
+          "pt": "gramas",
+          "dificil": true
+        },
+        {
+          "palavra": "肉",
+          "pt": "carne",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "盐",
+        "茶"
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:numeros"
+      ]
+    },
+    {
+      "id": "pg-1115",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Chá de leite a 30% doce.",
+      "en": "Milk tea at 30% sweetness.",
+      "es": "Té con leche al 30% de dulzor.",
+      "words": [
+        {
+          "palavra": "奶茶",
+          "pt": "chá de leite",
+          "dificil": true
+        },
+        {
+          "palavra": "要",
+          "pt": "quer"
+        },
+        {
+          "palavra": "三分甜",
+          "pt": "30% doce",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "咖啡",
+        "水"
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1116",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Salteio no wok.",
+      "en": "I stir-fry in the wok.",
+      "es": "Salteo en el wok.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "用",
+          "pt": "uso"
+        },
+        {
+          "palavra": "炒锅",
+          "pt": "wok",
+          "dificil": true
+        },
+        {
+          "palavra": "炒菜",
+          "pt": "salteio",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "煮",
+        "书"
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1117",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Depois de comer lavo a louça.",
+      "en": "After eating I wash the dishes.",
+      "es": "Después de comer lavo los platos.",
+      "words": [
+        {
+          "palavra": "吃",
+          "pt": "comer"
+        },
+        {
+          "palavra": "完",
+          "pt": "acabar",
+          "dificil": true
+        },
+        {
+          "palavra": "饭",
+          "pt": "refeição",
+          "dificil": true
+        },
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "洗碗",
+          "pt": "lavo louça",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "做饭",
+        "书"
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1118",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Quero palitos.",
+      "en": "I want chopsticks.",
+      "es": "Quiero palillos.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "要",
+          "pt": "quero"
+        },
+        {
+          "palavra": "筷子",
+          "pt": "palitos",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "叉子",
+        "书"
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1119",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Este prato está demasiado salgado.",
+      "en": "This dish is too salty.",
+      "es": "Este plato está demasiado salado.",
+      "words": [
+        {
+          "palavra": "这个",
+          "pt": "este"
+        },
+        {
+          "palavra": "菜",
+          "pt": "prato"
+        },
+        {
+          "palavra": "太",
+          "pt": "demais"
+        },
+        {
+          "palavra": "咸",
+          "pt": "salgado",
+          "dificil": true
+        },
+        {
+          "palavra": "了",
+          "pt": "le"
+        }
+      ],
+      "distratores": [
+        "甜",
+        "茶"
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1120",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Faço comida chinesa seguindo a receita.",
+      "en": "I make Chinese food from the recipe.",
+      "es": "Hago comida china siguiendo la receta.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "照着",
+          "pt": "seguindo",
+          "dificil": true
+        },
+        {
+          "palavra": "菜谱",
+          "pt": "receita",
+          "dificil": true
+        },
+        {
+          "palavra": "做",
+          "pt": "faço"
+        },
+        {
+          "palavra": "中国菜",
+          "pt": "comida chinesa",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "书",
+        "茶"
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    }
+  ]
+}

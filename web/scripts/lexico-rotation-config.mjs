@@ -25,7 +25,7 @@ export const ROTATION_CATEGORIES = [
   {
     id: "food",
     title: "Comida, cozinha e bebidas",
-    sourceBlockIds: [3],
+    sourceBlockIds: [3, 23],
   },
   {
     id: "descriptions",

@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "count": 596,
+  "count": 616,
   "byTier": {
-    "hsk1": 247,
-    "basico": 349
+    "hsk1": 249,
+    "basico": 367
   },
   "byLevel": {
-    "1": 145,
-    "2": 377,
-    "3": 66,
+    "1": 146,
+    "2": 388,
+    "3": 74,
     "4": 8
   },
   "phrases": [
@@ -47685,6 +47685,1686 @@
         "tema:compras",
         "tema:lugares",
         "tema:transporte-direcoes"
+      ]
+    },
+    {
+      "id": "pg-1101",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "A mãe fez jiaozi frito.",
+      "en": "Mom made pan-fried dumplings.",
+      "es": "Mamá hizo jiaozi frito.",
+      "hanzi": "妈妈做了煎饺",
+      "pinyin": "mā ma zuò liǎo jiān jiǎo",
+      "tokens": [
+        {
+          "palavra": "妈妈",
+          "caracteres": [
+            {
+              "hanzi": "妈",
+              "pinyin": "mā"
+            },
+            {
+              "hanzi": "妈",
+              "pinyin": "ma"
+            }
+          ],
+          "pinyin": "mā ma",
+          "pt": "mãe",
+          "dificil": false
+        },
+        {
+          "palavra": "做",
+          "caracteres": [
+            {
+              "hanzi": "做",
+              "pinyin": "zuò"
+            }
+          ],
+          "pinyin": "zuò",
+          "pt": "fez",
+          "dificil": false
+        },
+        {
+          "palavra": "了",
+          "caracteres": [
+            {
+              "hanzi": "了",
+              "pinyin": "liǎo"
+            }
+          ],
+          "pinyin": "liǎo",
+          "pt": "le",
+          "dificil": false
+        },
+        {
+          "palavra": "煎饺",
+          "caracteres": [
+            {
+              "hanzi": "煎",
+              "pinyin": "jiān"
+            },
+            {
+              "hanzi": "饺",
+              "pinyin": "jiǎo"
+            }
+          ],
+          "pinyin": "jiān jiǎo",
+          "pt": "jiaozi frito",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1102",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Este prato está muito gostoso!",
+      "en": "This dish is very tasty!",
+      "es": "¡Este plato está muy rico!",
+      "hanzi": "这个菜很好吃",
+      "pinyin": "zhè ge cài hěn hǎo chī",
+      "tokens": [
+        {
+          "palavra": "这个",
+          "caracteres": [
+            {
+              "hanzi": "这",
+              "pinyin": "zhè"
+            },
+            {
+              "hanzi": "个",
+              "pinyin": "ge"
+            }
+          ],
+          "pinyin": "zhè ge",
+          "pt": "este",
+          "dificil": false
+        },
+        {
+          "palavra": "菜",
+          "caracteres": [
+            {
+              "hanzi": "菜",
+              "pinyin": "cài"
+            }
+          ],
+          "pinyin": "cài",
+          "pt": "prato",
+          "dificil": false
+        },
+        {
+          "palavra": "很",
+          "caracteres": [
+            {
+              "hanzi": "很",
+              "pinyin": "hěn"
+            }
+          ],
+          "pinyin": "hěn",
+          "pt": "muito",
+          "dificil": false
+        },
+        {
+          "palavra": "好吃",
+          "caracteres": [
+            {
+              "hanzi": "好",
+              "pinyin": "hǎo"
+            },
+            {
+              "hanzi": "吃",
+              "pinyin": "chī"
+            }
+          ],
+          "pinyin": "hǎo chī",
+          "pt": "gostoso",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "难吃",
+          "pinyin": "nán chī",
+          "pt": ""
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1103",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Por favor põe pouco sal.",
+      "en": "Please add a little salt.",
+      "es": "Por favor pon poca sal.",
+      "hanzi": "请少放盐",
+      "pinyin": "qǐng shǎo fàng yán",
+      "tokens": [
+        {
+          "palavra": "请",
+          "caracteres": [
+            {
+              "hanzi": "请",
+              "pinyin": "qǐng"
+            }
+          ],
+          "pinyin": "qǐng",
+          "pt": "por favor",
+          "dificil": false
+        },
+        {
+          "palavra": "少",
+          "caracteres": [
+            {
+              "hanzi": "少",
+              "pinyin": "shǎo"
+            }
+          ],
+          "pinyin": "shǎo",
+          "pt": "pouco",
+          "dificil": false
+        },
+        {
+          "palavra": "放",
+          "caracteres": [
+            {
+              "hanzi": "放",
+              "pinyin": "fàng"
+            }
+          ],
+          "pinyin": "fàng",
+          "pt": "põe",
+          "dificil": false
+        },
+        {
+          "palavra": "盐",
+          "caracteres": [
+            {
+              "hanzi": "盐",
+              "pinyin": "yán"
+            }
+          ],
+          "pinyin": "yán",
+          "pt": "sal",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "糖",
+          "pinyin": "táng",
+          "pt": ""
+        },
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        }
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1104",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Estou a cozinhar na cozinha.",
+      "en": "I'm cooking in the kitchen.",
+      "es": "Estoy cocinando en la cocina.",
+      "hanzi": "我在厨房做饭",
+      "pinyin": "wǒ zài chú fáng zuò fàn",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "在",
+          "caracteres": [
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            }
+          ],
+          "pinyin": "zài",
+          "pt": "em",
+          "dificil": false
+        },
+        {
+          "palavra": "厨房",
+          "caracteres": [
+            {
+              "hanzi": "厨",
+              "pinyin": "chú"
+            },
+            {
+              "hanzi": "房",
+              "pinyin": "fáng"
+            }
+          ],
+          "pinyin": "chú fáng",
+          "pt": "cozinha",
+          "dificil": true
+        },
+        {
+          "palavra": "做饭",
+          "caracteres": [
+            {
+              "hanzi": "做",
+              "pinyin": "zuò"
+            },
+            {
+              "hanzi": "饭",
+              "pinyin": "fàn"
+            }
+          ],
+          "pinyin": "zuò fàn",
+          "pt": "cozinhar",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "学校",
+          "pinyin": "xuéxiào",
+          "pt": "escola"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:lugares"
+      ]
+    },
+    {
+      "id": "pg-1105",
+      "nivel": 1,
+      "tier": "basico",
+      "pt": "A carne já está cozida?",
+      "en": "Is the meat cooked yet?",
+      "es": "¿Ya está cocida la carne?",
+      "hanzi": "肉熟了吗",
+      "pinyin": "ròu shú liǎo ma",
+      "tokens": [
+        {
+          "palavra": "肉",
+          "caracteres": [
+            {
+              "hanzi": "肉",
+              "pinyin": "ròu"
+            }
+          ],
+          "pinyin": "ròu",
+          "pt": "carne",
+          "dificil": true
+        },
+        {
+          "palavra": "熟",
+          "caracteres": [
+            {
+              "hanzi": "熟",
+              "pinyin": "shú"
+            }
+          ],
+          "pinyin": "shú",
+          "pt": "cozida",
+          "dificil": true
+        },
+        {
+          "palavra": "了",
+          "caracteres": [
+            {
+              "hanzi": "了",
+              "pinyin": "liǎo"
+            }
+          ],
+          "pinyin": "liǎo",
+          "pt": "já",
+          "dificil": false
+        },
+        {
+          "palavra": "吗",
+          "caracteres": [
+            {
+              "hanzi": "吗",
+              "pinyin": "ma"
+            }
+          ],
+          "pinyin": "ma",
+          "pt": "?",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "生",
+          "pinyin": "shēng",
+          "pt": ""
+        },
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        }
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1106",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Quero comer dez dumplings.",
+      "en": "I want to eat ten dumplings.",
+      "es": "Quiero comer diez dumplings.",
+      "hanzi": "我想吃十个饺子",
+      "pinyin": "wǒ xiǎng chī shí gè jiǎo zǐ",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "想",
+          "caracteres": [
+            {
+              "hanzi": "想",
+              "pinyin": "xiǎng"
+            }
+          ],
+          "pinyin": "xiǎng",
+          "pt": "quero",
+          "dificil": false
+        },
+        {
+          "palavra": "吃",
+          "caracteres": [
+            {
+              "hanzi": "吃",
+              "pinyin": "chī"
+            }
+          ],
+          "pinyin": "chī",
+          "pt": "comer",
+          "dificil": false
+        },
+        {
+          "palavra": "十个",
+          "caracteres": [
+            {
+              "hanzi": "十",
+              "pinyin": "shí"
+            },
+            {
+              "hanzi": "个",
+              "pinyin": "gè"
+            }
+          ],
+          "pinyin": "shí gè",
+          "pt": "dez",
+          "dificil": false
+        },
+        {
+          "palavra": "饺子",
+          "caracteres": [
+            {
+              "hanzi": "饺",
+              "pinyin": "jiǎo"
+            },
+            {
+              "hanzi": "子",
+              "pinyin": "zǐ"
+            }
+          ],
+          "pinyin": "jiǎo zǐ",
+          "pt": "dumplings",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1107",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Dá-me um copo, por favor.",
+      "en": "Please give me a cup.",
+      "es": "Dame un vaso, por favor.",
+      "hanzi": "请给我一个杯子",
+      "pinyin": "qǐng gěi wǒ yí gè bēi zi",
+      "tokens": [
+        {
+          "palavra": "请",
+          "caracteres": [
+            {
+              "hanzi": "请",
+              "pinyin": "qǐng"
+            }
+          ],
+          "pinyin": "qǐng",
+          "pt": "por favor",
+          "dificil": false
+        },
+        {
+          "palavra": "给",
+          "caracteres": [
+            {
+              "hanzi": "给",
+              "pinyin": "gěi"
+            }
+          ],
+          "pinyin": "gěi",
+          "pt": "dá",
+          "dificil": false
+        },
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "me",
+          "dificil": false
+        },
+        {
+          "palavra": "一个",
+          "caracteres": [
+            {
+              "hanzi": "一",
+              "pinyin": "yí"
+            },
+            {
+              "hanzi": "个",
+              "pinyin": "gè"
+            }
+          ],
+          "pinyin": "yí gè",
+          "pt": "um",
+          "dificil": false
+        },
+        {
+          "palavra": "杯子",
+          "caracteres": [
+            {
+              "hanzi": "杯",
+              "pinyin": "bēi"
+            },
+            {
+              "hanzi": "子",
+              "pinyin": "zi"
+            }
+          ],
+          "pinyin": "bēi zi",
+          "pt": "copo",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "盘子",
+          "pinyin": "pán zi",
+          "pt": ""
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1108",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Hoje o pai salta o prato no wok.",
+      "en": "Today dad stir-fries.",
+      "es": "Hoy papá saltea el plato.",
+      "hanzi": "今天爸爸炒菜",
+      "pinyin": "jīn tiān bà ba chǎo cài",
+      "tokens": [
+        {
+          "palavra": "今天",
+          "caracteres": [
+            {
+              "hanzi": "今",
+              "pinyin": "jīn"
+            },
+            {
+              "hanzi": "天",
+              "pinyin": "tiān"
+            }
+          ],
+          "pinyin": "jīn tiān",
+          "pt": "hoje",
+          "dificil": false
+        },
+        {
+          "palavra": "爸爸",
+          "caracteres": [
+            {
+              "hanzi": "爸",
+              "pinyin": "bà"
+            },
+            {
+              "hanzi": "爸",
+              "pinyin": "ba"
+            }
+          ],
+          "pinyin": "bà ba",
+          "pt": "pai",
+          "dificil": false
+        },
+        {
+          "palavra": "炒菜",
+          "caracteres": [
+            {
+              "hanzi": "炒",
+              "pinyin": "chǎo"
+            },
+            {
+              "hanzi": "菜",
+              "pinyin": "cài"
+            }
+          ],
+          "pinyin": "chǎo cài",
+          "pt": "salta prato",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "妈妈",
+          "pinyin": "māma",
+          "pt": "mãe"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1109",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Cozinhei uma panela de sopa.",
+      "en": "I cooked a pot of soup.",
+      "es": "Cocí una olla de sopa.",
+      "hanzi": "我煮了一锅汤",
+      "pinyin": "wǒ zhǔ liǎo yì guō tāng",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "煮",
+          "caracteres": [
+            {
+              "hanzi": "煮",
+              "pinyin": "zhǔ"
+            }
+          ],
+          "pinyin": "zhǔ",
+          "pt": "cozinhei",
+          "dificil": true
+        },
+        {
+          "palavra": "了",
+          "caracteres": [
+            {
+              "hanzi": "了",
+              "pinyin": "liǎo"
+            }
+          ],
+          "pinyin": "liǎo",
+          "pt": "le",
+          "dificil": false
+        },
+        {
+          "palavra": "一锅",
+          "caracteres": [
+            {
+              "hanzi": "一",
+              "pinyin": "yì"
+            },
+            {
+              "hanzi": "锅",
+              "pinyin": "guō"
+            }
+          ],
+          "pinyin": "yì guō",
+          "pt": "uma panela",
+          "dificil": true
+        },
+        {
+          "palavra": "汤",
+          "caracteres": [
+            {
+              "hanzi": "汤",
+              "pinyin": "tāng"
+            }
+          ],
+          "pinyin": "tāng",
+          "pt": "sopa",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1110",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "O salmão pode comer-se cru.",
+      "en": "Salmon can be eaten raw.",
+      "es": "El salmón se puede comer crudo.",
+      "hanzi": "三文鱼可以生吃",
+      "pinyin": "sān wén yú kě yǐ shēng chī",
+      "tokens": [
+        {
+          "palavra": "三文鱼",
+          "caracteres": [
+            {
+              "hanzi": "三",
+              "pinyin": "sān"
+            },
+            {
+              "hanzi": "文",
+              "pinyin": "wén"
+            },
+            {
+              "hanzi": "鱼",
+              "pinyin": "yú"
+            }
+          ],
+          "pinyin": "sān wén yú",
+          "pt": "salmão",
+          "dificil": true
+        },
+        {
+          "palavra": "可以",
+          "caracteres": [
+            {
+              "hanzi": "可",
+              "pinyin": "kě"
+            },
+            {
+              "hanzi": "以",
+              "pinyin": "yǐ"
+            }
+          ],
+          "pinyin": "kě yǐ",
+          "pt": "pode",
+          "dificil": false
+        },
+        {
+          "palavra": "生",
+          "caracteres": [
+            {
+              "hanzi": "生",
+              "pinyin": "shēng"
+            }
+          ],
+          "pinyin": "shēng",
+          "pt": "cru",
+          "dificil": true
+        },
+        {
+          "palavra": "吃",
+          "caracteres": [
+            {
+              "hanzi": "吃",
+              "pinyin": "chī"
+            }
+          ],
+          "pinyin": "chī",
+          "pt": "comer",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "熟",
+          "pinyin": "shú",
+          "pt": ""
+        },
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        }
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1111",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "No inverno comemos hot pot.",
+      "en": "In winter we eat hot pot.",
+      "es": "En invierno comemos hot pot.",
+      "hanzi": "冬天我们吃火锅",
+      "pinyin": "dōng tiān wǒ men chī huǒ guō",
+      "tokens": [
+        {
+          "palavra": "冬天",
+          "caracteres": [
+            {
+              "hanzi": "冬",
+              "pinyin": "dōng"
+            },
+            {
+              "hanzi": "天",
+              "pinyin": "tiān"
+            }
+          ],
+          "pinyin": "dōng tiān",
+          "pt": "inverno",
+          "dificil": true
+        },
+        {
+          "palavra": "我们",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "们",
+              "pinyin": "men"
+            }
+          ],
+          "pinyin": "wǒ men",
+          "pt": "nós",
+          "dificil": false
+        },
+        {
+          "palavra": "吃",
+          "caracteres": [
+            {
+              "hanzi": "吃",
+              "pinyin": "chī"
+            }
+          ],
+          "pinyin": "chī",
+          "pt": "comemos",
+          "dificil": false
+        },
+        {
+          "palavra": "火锅",
+          "caracteres": [
+            {
+              "hanzi": "火",
+              "pinyin": "huǒ"
+            },
+            {
+              "hanzi": "锅",
+              "pinyin": "guō"
+            }
+          ],
+          "pinyin": "huǒ guō",
+          "pt": "hot pot",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1112",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Usa o micro-ondas para aquecer.",
+      "en": "Use the microwave to heat it.",
+      "es": "Usa el microondas para calentar.",
+      "hanzi": "请用微波炉加热",
+      "pinyin": "qǐng yòng wēi bō lú jiā rè",
+      "tokens": [
+        {
+          "palavra": "请",
+          "caracteres": [
+            {
+              "hanzi": "请",
+              "pinyin": "qǐng"
+            }
+          ],
+          "pinyin": "qǐng",
+          "pt": "por favor",
+          "dificil": false
+        },
+        {
+          "palavra": "用",
+          "caracteres": [
+            {
+              "hanzi": "用",
+              "pinyin": "yòng"
+            }
+          ],
+          "pinyin": "yòng",
+          "pt": "usa",
+          "dificil": false
+        },
+        {
+          "palavra": "微波炉",
+          "caracteres": [
+            {
+              "hanzi": "微",
+              "pinyin": "wēi"
+            },
+            {
+              "hanzi": "波",
+              "pinyin": "bō"
+            },
+            {
+              "hanzi": "炉",
+              "pinyin": "lú"
+            }
+          ],
+          "pinyin": "wēi bō lú",
+          "pt": "micro-ondas",
+          "dificil": true
+        },
+        {
+          "palavra": "加热",
+          "caracteres": [
+            {
+              "hanzi": "加",
+              "pinyin": "jiā"
+            },
+            {
+              "hanzi": "热",
+              "pinyin": "rè"
+            }
+          ],
+          "pinyin": "jiā rè",
+          "pt": "aquecer",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "烤箱",
+          "pinyin": "kǎo xiāng",
+          "pt": ""
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1113",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "O sabor é mais ou menos.",
+      "en": "The taste is so-so.",
+      "es": "El sabor es más o menos.",
+      "hanzi": "味道一般般",
+      "pinyin": "wèi dào yì bān bān",
+      "tokens": [
+        {
+          "palavra": "味道",
+          "caracteres": [
+            {
+              "hanzi": "味",
+              "pinyin": "wèi"
+            },
+            {
+              "hanzi": "道",
+              "pinyin": "dào"
+            }
+          ],
+          "pinyin": "wèi dào",
+          "pt": "sabor",
+          "dificil": true
+        },
+        {
+          "palavra": "一般般",
+          "caracteres": [
+            {
+              "hanzi": "一",
+              "pinyin": "yì"
+            },
+            {
+              "hanzi": "般",
+              "pinyin": "bān"
+            },
+            {
+              "hanzi": "般",
+              "pinyin": "bān"
+            }
+          ],
+          "pinyin": "yì bān bān",
+          "pt": "mais ou menos",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "好吃",
+          "pinyin": "hǎo chī",
+          "pt": ""
+        },
+        {
+          "hanzi": "难吃",
+          "pinyin": "nán chī",
+          "pt": ""
+        }
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1114",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Põe quinhentos gramas de carne.",
+      "en": "Add five hundred grams of meat.",
+      "es": "Pon quinientos gramos de carne.",
+      "hanzi": "放五百克肉",
+      "pinyin": "fàng wǔ bǎi kè ròu",
+      "tokens": [
+        {
+          "palavra": "放",
+          "caracteres": [
+            {
+              "hanzi": "放",
+              "pinyin": "fàng"
+            }
+          ],
+          "pinyin": "fàng",
+          "pt": "põe",
+          "dificil": false
+        },
+        {
+          "palavra": "五百",
+          "caracteres": [
+            {
+              "hanzi": "五",
+              "pinyin": "wǔ"
+            },
+            {
+              "hanzi": "百",
+              "pinyin": "bǎi"
+            }
+          ],
+          "pinyin": "wǔ bǎi",
+          "pt": "quinhentos",
+          "dificil": true
+        },
+        {
+          "palavra": "克",
+          "caracteres": [
+            {
+              "hanzi": "克",
+              "pinyin": "kè"
+            }
+          ],
+          "pinyin": "kè",
+          "pt": "gramas",
+          "dificil": true
+        },
+        {
+          "palavra": "肉",
+          "caracteres": [
+            {
+              "hanzi": "肉",
+              "pinyin": "ròu"
+            }
+          ],
+          "pinyin": "ròu",
+          "pt": "carne",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "盐",
+          "pinyin": "yán",
+          "pt": ""
+        },
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        }
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:numeros"
+      ]
+    },
+    {
+      "id": "pg-1115",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Chá de leite a 30% doce.",
+      "en": "Milk tea at 30% sweetness.",
+      "es": "Té con leche al 30% de dulzor.",
+      "hanzi": "奶茶要三分甜",
+      "pinyin": "nǎi chá yào sān fēn tián",
+      "tokens": [
+        {
+          "palavra": "奶茶",
+          "caracteres": [
+            {
+              "hanzi": "奶",
+              "pinyin": "nǎi"
+            },
+            {
+              "hanzi": "茶",
+              "pinyin": "chá"
+            }
+          ],
+          "pinyin": "nǎi chá",
+          "pt": "chá de leite",
+          "dificil": true
+        },
+        {
+          "palavra": "要",
+          "caracteres": [
+            {
+              "hanzi": "要",
+              "pinyin": "yào"
+            }
+          ],
+          "pinyin": "yào",
+          "pt": "quer",
+          "dificil": false
+        },
+        {
+          "palavra": "三分甜",
+          "caracteres": [
+            {
+              "hanzi": "三",
+              "pinyin": "sān"
+            },
+            {
+              "hanzi": "分",
+              "pinyin": "fēn"
+            },
+            {
+              "hanzi": "甜",
+              "pinyin": "tián"
+            }
+          ],
+          "pinyin": "sān fēn tián",
+          "pt": "30% doce",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "咖啡",
+          "pinyin": "kāfēi",
+          "pt": "café"
+        },
+        {
+          "hanzi": "水",
+          "pinyin": "shuǐ",
+          "pt": "água — 我要喝水。"
+        }
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1116",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Salteio no wok.",
+      "en": "I stir-fry in the wok.",
+      "es": "Salteo en el wok.",
+      "hanzi": "我用炒锅炒菜",
+      "pinyin": "wǒ yòng chǎo guō chǎo cài",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "用",
+          "caracteres": [
+            {
+              "hanzi": "用",
+              "pinyin": "yòng"
+            }
+          ],
+          "pinyin": "yòng",
+          "pt": "uso",
+          "dificil": false
+        },
+        {
+          "palavra": "炒锅",
+          "caracteres": [
+            {
+              "hanzi": "炒",
+              "pinyin": "chǎo"
+            },
+            {
+              "hanzi": "锅",
+              "pinyin": "guō"
+            }
+          ],
+          "pinyin": "chǎo guō",
+          "pt": "wok",
+          "dificil": true
+        },
+        {
+          "palavra": "炒菜",
+          "caracteres": [
+            {
+              "hanzi": "炒",
+              "pinyin": "chǎo"
+            },
+            {
+              "hanzi": "菜",
+              "pinyin": "cài"
+            }
+          ],
+          "pinyin": "chǎo cài",
+          "pt": "salteio",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "煮",
+          "pinyin": "zhǔ",
+          "pt": ""
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1117",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Depois de comer lavo a louça.",
+      "en": "After eating I wash the dishes.",
+      "es": "Después de comer lavo los platos.",
+      "hanzi": "吃完饭我洗碗",
+      "pinyin": "chī wán fàn wǒ xǐ wǎn",
+      "tokens": [
+        {
+          "palavra": "吃",
+          "caracteres": [
+            {
+              "hanzi": "吃",
+              "pinyin": "chī"
+            }
+          ],
+          "pinyin": "chī",
+          "pt": "comer",
+          "dificil": false
+        },
+        {
+          "palavra": "完",
+          "caracteres": [
+            {
+              "hanzi": "完",
+              "pinyin": "wán"
+            }
+          ],
+          "pinyin": "wán",
+          "pt": "acabar",
+          "dificil": true
+        },
+        {
+          "palavra": "饭",
+          "caracteres": [
+            {
+              "hanzi": "饭",
+              "pinyin": "fàn"
+            }
+          ],
+          "pinyin": "fàn",
+          "pt": "refeição",
+          "dificil": true
+        },
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "洗碗",
+          "caracteres": [
+            {
+              "hanzi": "洗",
+              "pinyin": "xǐ"
+            },
+            {
+              "hanzi": "碗",
+              "pinyin": "wǎn"
+            }
+          ],
+          "pinyin": "xǐ wǎn",
+          "pt": "lavo louça",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "做饭",
+          "pinyin": "zuòfàn",
+          "pt": "cozinhar"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1118",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Quero palitos.",
+      "en": "I want chopsticks.",
+      "es": "Quiero palillos.",
+      "hanzi": "我要筷子",
+      "pinyin": "wǒ yào kuài zi",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "要",
+          "caracteres": [
+            {
+              "hanzi": "要",
+              "pinyin": "yào"
+            }
+          ],
+          "pinyin": "yào",
+          "pt": "quero",
+          "dificil": false
+        },
+        {
+          "palavra": "筷子",
+          "caracteres": [
+            {
+              "hanzi": "筷",
+              "pinyin": "kuài"
+            },
+            {
+              "hanzi": "子",
+              "pinyin": "zi"
+            }
+          ],
+          "pinyin": "kuài zi",
+          "pt": "palitos",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "叉子",
+          "pinyin": "chā zi",
+          "pt": ""
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:cozinha"
+      ]
+    },
+    {
+      "id": "pg-1119",
+      "nivel": 2,
+      "tier": "basico",
+      "pt": "Este prato está demasiado salgado.",
+      "en": "This dish is too salty.",
+      "es": "Este plato está demasiado salado.",
+      "hanzi": "这个菜太咸了",
+      "pinyin": "zhè ge cài tài xián liǎo",
+      "tokens": [
+        {
+          "palavra": "这个",
+          "caracteres": [
+            {
+              "hanzi": "这",
+              "pinyin": "zhè"
+            },
+            {
+              "hanzi": "个",
+              "pinyin": "ge"
+            }
+          ],
+          "pinyin": "zhè ge",
+          "pt": "este",
+          "dificil": false
+        },
+        {
+          "palavra": "菜",
+          "caracteres": [
+            {
+              "hanzi": "菜",
+              "pinyin": "cài"
+            }
+          ],
+          "pinyin": "cài",
+          "pt": "prato",
+          "dificil": false
+        },
+        {
+          "palavra": "太",
+          "caracteres": [
+            {
+              "hanzi": "太",
+              "pinyin": "tài"
+            }
+          ],
+          "pinyin": "tài",
+          "pt": "demais",
+          "dificil": false
+        },
+        {
+          "palavra": "咸",
+          "caracteres": [
+            {
+              "hanzi": "咸",
+              "pinyin": "xián"
+            }
+          ],
+          "pinyin": "xián",
+          "pt": "salgado",
+          "dificil": true
+        },
+        {
+          "palavra": "了",
+          "caracteres": [
+            {
+              "hanzi": "了",
+              "pinyin": "liǎo"
+            }
+          ],
+          "pinyin": "liǎo",
+          "pt": "le",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "甜",
+          "pinyin": "tián",
+          "pt": ""
+        },
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        }
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
+      ]
+    },
+    {
+      "id": "pg-1120",
+      "nivel": 3,
+      "tier": "basico",
+      "pt": "Faço comida chinesa seguindo a receita.",
+      "en": "I make Chinese food from the recipe.",
+      "es": "Hago comida china siguiendo la receta.",
+      "hanzi": "我照着菜谱做中国菜",
+      "pinyin": "wǒ zhào zhe cài pǔ zuò zhōng guó cài",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "照着",
+          "caracteres": [
+            {
+              "hanzi": "照",
+              "pinyin": "zhào"
+            },
+            {
+              "hanzi": "着",
+              "pinyin": "zhe"
+            }
+          ],
+          "pinyin": "zhào zhe",
+          "pt": "seguindo",
+          "dificil": true
+        },
+        {
+          "palavra": "菜谱",
+          "caracteres": [
+            {
+              "hanzi": "菜",
+              "pinyin": "cài"
+            },
+            {
+              "hanzi": "谱",
+              "pinyin": "pǔ"
+            }
+          ],
+          "pinyin": "cài pǔ",
+          "pt": "receita",
+          "dificil": true
+        },
+        {
+          "palavra": "做",
+          "caracteres": [
+            {
+              "hanzi": "做",
+              "pinyin": "zuò"
+            }
+          ],
+          "pinyin": "zuò",
+          "pt": "faço",
+          "dificil": false
+        },
+        {
+          "palavra": "中国菜",
+          "caracteres": [
+            {
+              "hanzi": "中",
+              "pinyin": "zhōng"
+            },
+            {
+              "hanzi": "国",
+              "pinyin": "guó"
+            },
+            {
+              "hanzi": "菜",
+              "pinyin": "cài"
+            }
+          ],
+          "pinyin": "zhōng guó cài",
+          "pt": "comida chinesa",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        },
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        }
+      ],
+      "tags": [
+        "tema:cozinha",
+        "tema:comida-bebida"
       ]
     }
   ]

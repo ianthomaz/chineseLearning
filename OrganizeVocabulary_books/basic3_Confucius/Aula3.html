@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Aula 3 · 29 frases</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    height: 100%;
+    font-family: -apple-system, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    overflow: hidden;
+  }
+  #card {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    padding:
+      calc(18px + env(safe-area-inset-top))
+      16px
+      calc(12px + env(safe-area-inset-bottom));
+    overflow: hidden;
+  }
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 13px;
+    color: #888;
+    flex: 0 0 auto;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .head-left { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .deck-title { color: #555; }
+  .section {
+    color: #9e9e9e;
+    max-width: 48%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right;
+  }
+  .main {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 4px 8px;
+  }
+  .word {
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-size: 18vw;
+  }
+  .pinyin { color: #4db8ff; font-size: 4.5vw; margin-top: 4px; }
+  .gloss { color: #bbb; font-size: 15px; margin-top: 2px; text-align: center; }
+  .sentence-box {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    border-top: 1px solid #333;
+    padding-top: 12px;
+    overflow: hidden;
+  }
+  .pattern {
+    align-self: center;
+    font-size: 13px;
+    color: #ffb74d;
+    background: #2a2115;
+    border: 1px solid #5a4726;
+    border-radius: 999px;
+    padding: 4px 14px;
+    margin-bottom: 8px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .sentence-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+  }
+  .sentence {
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.35;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    max-width: 100%;
+    user-select: text;
+    -webkit-user-select: text;
+  }
+  .hl { color: #ff5252; }
+  .meta { flex: 0 0 auto; margin-top: 8px; }
+  .s-pinyin { color: #4db8ff; font-size: 4.2vw; text-align: center; line-height: 1.35; }
+  .s-meaning { color: #bbb; font-size: 3.8vw; text-align: center; margin-top: 4px; line-height: 1.35; }
+  .nav {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex: 0 0 auto;
+  }
+  .nav button {
+    flex: 1;
+    padding: 14px 0;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    background: #2a2a2a;
+    color: #fff;
+  }
+  .nav button:active { background: #4db8ff; color: #111; }
+  .nav button:disabled { opacity: .35; }
+  .tap { position: fixed; top: 0; bottom: 100px; width: 22%; z-index: 5; }
+  .tap.left { left: 0; }
+  .tap.right { right: 0; }
+</style>
+</head>
+<body>
+<div class="tap left" id="tapL"></div>
+<div class="tap right" id="tapR"></div>
+<section id="card"></section>
+<script>
+const CARDS = [
+  { word: "明", pinyin: "míng", meaning: "brilhante · em 明天", section: "dias", pattern: "明天", sentence: "她明天去书店。", sentencePinyin: "Tā míngtiān qù shūdiàn.", sentenceMeaning: "Ela amanhã vai livraria." },
+  { word: "今", pinyin: "jīn", meaning: "agora · em 今天 / 今年", section: "dias", pattern: "今天", sentence: "老师今天很忙。", sentencePinyin: "Lǎoshī jīntiān hěn máng.", sentenceMeaning: "Professor hoje muito ocupado." },
+  { word: "昨", pinyin: "zuó", meaning: "ontem · em 昨天", section: "dias", pattern: "昨天", sentence: "昨天是星期日。", sentencePinyin: "Zuótiān shì xīngqīrì.", sentenceMeaning: "Ontem é domingo." },
+  { word: "前", pinyin: "qián", meaning: "antes · em 前天 / 前年", section: "dias", pattern: "前天", sentence: "前天我跟朋友去书店。", sentencePinyin: "Qiántiān wǒ gēn péngyou qù shūdiàn.", sentenceMeaning: "Anteontem eu com amigo vou livraria." },
+  { word: "后", pinyin: "hòu", meaning: "depois · em 后天 / 后年", section: "dias", pattern: "后天", sentence: "后天我们去饭店。", sentencePinyin: "Hòutiān wǒmen qù fàndiàn.", sentenceMeaning: "Depois-de-amanhã nós vamos restaurante." },
+  { word: "天", pinyin: "tiān", meaning: "dia · unidade de tempo", section: "duração", pattern: "N+天", sentence: "八月有三十一天。", sentencePinyin: "Bā yuè yǒu sānshíyī tiān.", sentenceMeaning: "Agosto tem trinta-e-um dias." },
+  { word: "去", pinyin: "qù", meaning: "ir · em 去年", section: "ano", pattern: "去年", sentence: "去年他在广东打工。", sentencePinyin: "Qùnián tā zài Guǎngdōng dǎgōng.", sentenceMeaning: "Ano-passado ele em Guangdong trabalha-por-conta." },
+  { word: "年", pinyin: "nián", meaning: "ano", section: "ano", pattern: "N+年", sentence: "我是一九九七年的。", sentencePinyin: "Wǒ shì yī jiǔ jiǔ qī nián de.", sentenceMeaning: "Eu sou mil-novecentos-noventa-e-sete ano de." },
+  { word: "月", pinyin: "yuè", meaning: "mês", section: "mês", pattern: "哪个月", sentence: "哪个月有三十一天？", sentencePinyin: "Nǎ ge yuè yǒu sānshíyī tiān?", sentenceMeaning: "Qual mês tem trinta-e-um dias?" },
+  { word: "日", pinyin: "rì", meaning: "dia (do mês; domingo)", section: "data", pattern: "星期日", sentence: "星期日我要休息。", sentencePinyin: "Xīngqīrì wǒ yào xiūxi.", sentenceMeaning: "Domingo eu vou descansar." },
+  { word: "号", pinyin: "hào", meaning: "dia do mês (falado)", section: "data", pattern: "几号", sentence: "今天几号？", sentencePinyin: "Jīntiān jǐ hào?", sentenceMeaning: "Hoje qual número?" },
+  { word: "上", pinyin: "shàng", meaning: "passado · em 上个月 / 上班", section: "上 / 下", pattern: "上个星期一", sentence: "上个星期一我去饭店了。", sentencePinyin: "Shàng ge xīngqīyī wǒ qù fàndiàn le.", sentenceMeaning: "Passado segunda eu fui restaurante le." },
+  { word: "下", pinyin: "xià", meaning: "próximo · em 下个", section: "上 / 下", pattern: "下下个星期五", sentence: "下下个星期五你来吗？", sentencePinyin: "Xià xià ge xīngqīwǔ nǐ lái ma?", sentenceMeaning: "Próximo-próximo sexta tu vens ma?" },
+  { word: "星", pinyin: "xīng", meaning: "estrela · em 星期", section: "semana", pattern: "星期三", sentence: "星期三我要上班。", sentencePinyin: "Xīngqīsān wǒ yào shàngbān.", sentenceMeaning: "Quarta eu vou ir-trabalhar." },
+  { word: "期", pinyin: "qī", meaning: "período · em 星期", section: "semana", pattern: "这个星期", sentence: "这个星期我没有打算。", sentencePinyin: "Zhè ge xīngqī wǒ méiyǒu dǎsuàn.", sentenceMeaning: "Este semana eu não-tenho plano." },
+  { word: "周", pinyin: "zhōu", meaning: "semana", section: "semana", pattern: "周一到周五", sentence: "周一到周五我去上班。", sentencePinyin: "Zhōuyī dào zhōuwǔ wǒ qù shàngbān.", sentenceMeaning: "Segunda até sexta eu vou ir-trabalhar." },
+  { word: "末", pinyin: "mò", meaning: "fim · em 周末", section: "semana", pattern: "这周末", sentence: "这周末我太忙了。", sentencePinyin: "Zhè zhōumò wǒ tài máng le.", sentenceMeaning: "Este fim-de-semana eu demais ocupado le." },
+  { word: "礼", pinyin: "lǐ", meaning: "rito · em 礼拜", section: "semana", pattern: "一个礼拜", sentence: "一个礼拜我学习五天。", sentencePinyin: "Yí ge lǐbài wǒ xuéxí wǔ tiān.", sentenceMeaning: "Um semana eu estudo cinco dias." },
+  { word: "拜", pinyin: "bài", meaning: "em 拜年 · Ano Novo", section: "semana", pattern: "拜年", sentence: "过年的时候我去拜年。", sentencePinyin: "Guònián de shíhou wǒ qù bàinián.", sentenceMeaning: "Ano-Novo de tempo eu vou cumprimentar." },
+  { word: "打", pinyin: "dǎ", meaning: "bater · em 打算 / 打工", section: "planos", pattern: "打算 / 打工", sentence: "弟弟打算去打工。", sentencePinyin: "Dìdi dǎsuàn qù dǎgōng.", sentenceMeaning: "Irmão-mais-novo planeja ir trabalhar-por-conta." },
+  { word: "算", pinyin: "suàn", meaning: "calcular · em 打算", section: "planos", pattern: "打算", sentence: "我的打算是去中国。", sentencePinyin: "Wǒ de dǎsuàn shì qù Zhōngguó.", sentenceMeaning: "Meu plano é ir China." },
+  { word: "工", pinyin: "gōng", meaning: "trabalho · em 打工 / 工作", section: "trabalho", pattern: "工作", sentence: "他的工作很好。", sentencePinyin: "Tā de gōngzuò hěn hǎo.", sentenceMeaning: "Dele trabalho muito bom." },
+  { word: "班", pinyin: "bān", meaning: "turno · em 上班", section: "trabalho", pattern: "上班", sentence: "今天是周末，我不去上班。", sentencePinyin: "Jīntiān shì zhōumò, wǒ bú qù shàngbān.", sentenceMeaning: "Hoje é fim-de-semana, eu não vou ir-trabalhar." },
+  { word: "约", pinyin: "yuē", meaning: "combinar · em 约会 / 约在", section: "encontro", pattern: "约在", sentence: "我跟老师约在书店。", sentencePinyin: "Wǒ gēn lǎoshī yuē zài shūdiàn.", sentenceMeaning: "Eu com professor marco em livraria." },
+  { word: "会", pinyin: "huì", meaning: "encontro · em 约会", section: "encontro", pattern: "约会", sentence: "你为什么晚上约会？", sentencePinyin: "Nǐ wèishénme wǎnshang yuēhuì?", sentenceMeaning: "Tu por-quê à-noite encontro?" },
+  { word: "馆", pinyin: "guǎn", meaning: "estabelecimento · em 咖啡馆", section: "encontro", pattern: "咖啡馆", sentence: "妈妈在咖啡馆工作。", sentencePinyin: "Māma zài kāfēiguǎn gōngzuò.", sentenceMeaning: "Mãe em café trabalha." },
+  { word: "晚", pinyin: "wǎn", meaning: "tarde (adj.); noite", section: "partes do dia", pattern: "太晚了", sentence: "太晚了，我要休息了。", sentencePinyin: "Tài wǎn le, wǒ yào xiūxi le.", sentenceMeaning: "Demais tarde le, eu vou descansar le." },
+  { word: "上", pinyin: "shang", meaning: "tom neutro em 晚上", section: "partes do dia", pattern: "晚上", sentence: "晚上我不出去。", sentencePinyin: "Wǎnshang wǒ bù chūqù.", sentenceMeaning: "À-noite eu não saio." },
+  { word: "白", pinyin: "bái", meaning: "branco · em 白天", section: "partes do dia", pattern: "白天", sentence: "白天我要在公司工作。", sentencePinyin: "Báitiān wǒ yào zài gōngsī gōngzuò.", sentenceMeaning: "De-dia eu preciso em empresa trabalhar." }
+];
+
+let i = 0;
+const card = document.getElementById("card");
+
+function escapeHtml(s) {
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function highlight(sentence, word) {
+  let out = "";
+  const chars = [...word].filter((ch) => ch.trim());
+  for (const ch of sentence) {
+    out += chars.includes(ch) ? `<span class="hl">${ch}</span>` : escapeHtml(ch);
+  }
+  return out;
+}
+
+function render() {
+  const it = CARDS[i];
+  card.innerHTML = `
+    <div class="head">
+      <span class="head-left">${i + 1} / ${CARDS.length}<span class="deck-title"> · Aula 3</span></span>
+      <span class="section">${escapeHtml(it.section)}</span>
+    </div>
+    <div class="main">
+      <div class="word">${escapeHtml(it.word)}</div>
+      <div class="pinyin">${escapeHtml(it.pinyin)}</div>
+      <div class="gloss">${escapeHtml(it.meaning)}</div>
+    </div>
+    <div class="sentence-box">
+      <div class="pattern">${escapeHtml(it.pattern)}</div>
+      <div class="sentence-wrap" id="swrap">
+        <div class="sentence" id="sentence">${highlight(it.sentence, it.word)}</div>
+      </div>
+      <div class="meta">
+        <div class="s-pinyin">${escapeHtml(it.sentencePinyin)}</div>
+        <div class="s-meaning">${escapeHtml(it.sentenceMeaning)}</div>
+      </div>
+    </div>
+    <div class="nav">
+      <button type="button" id="prev" ${i === 0 ? "disabled" : ""}>← Anterior</button>
+      <button type="button" id="next" ${i === CARDS.length - 1 ? "disabled" : ""}>Próximo →</button>
+    </div>
+  `;
+  document.getElementById("prev").onclick = prev;
+  document.getElementById("next").onclick = next;
+  document.title = `${it.word} · Aula 3`;
+  requestAnimationFrame(fitText);
+}
+
+function overflows(el, box) {
+  return el.scrollWidth > box.clientWidth + 1 || el.scrollHeight > box.clientHeight + 1;
+}
+
+function fitText() {
+  const sentence = document.getElementById("sentence");
+  const swrap = document.getElementById("swrap");
+  if (!sentence || !swrap) return;
+  let size = Math.round(document.documentElement.clientWidth * 0.42);
+  sentence.style.fontSize = size + "px";
+  while (size > 28 && overflows(sentence, swrap)) {
+    size -= 1;
+    sentence.style.fontSize = size + "px";
+  }
+}
+
+function next() { if (i < CARDS.length - 1) { i++; render(); } }
+function prev() { if (i > 0) { i--; render(); } }
+
+document.getElementById("tapR").onclick = next;
+document.getElementById("tapL").onclick = prev;
+document.body.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight" || e.key === " ") { e.preventDefault(); next(); }
+  if (e.key === "ArrowLeft") prev();
+});
+let x0 = null;
+document.body.addEventListener("touchstart", (e) => { x0 = e.touches[0].clientX; }, { passive: true });
+document.body.addEventListener("touchend", (e) => {
+  if (x0 === null) return;
+  const dx = e.changedTouches[0].clientX - x0;
+  if (dx < -50) next();
+  else if (dx > 50) prev();
+  x0 = null;
+});
+window.addEventListener("resize", fitText);
+render();
+</script>
+</body>
+</html>

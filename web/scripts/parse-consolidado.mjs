@@ -260,9 +260,7 @@ function parseBlock(headerLine, body) {
       block.differences = parseListLines(lines);
     } else if (h.includes("prioridades")) {
       block.priorities = parseListLines(lines);
-    } else if (h.includes("vocabul")) {
-      block.vocabulary = parseTable(lines);
-    } else if (linesHaveVocabStyleTable(lines)) {
+    } else if (h.includes("vocabul") || linesHaveVocabStyleTable(lines)) {
       const rows = parseTable(lines);
       if (rows.length) block.vocabulary.push(...rows);
     }
