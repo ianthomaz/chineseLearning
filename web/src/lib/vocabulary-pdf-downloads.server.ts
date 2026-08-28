@@ -32,7 +32,8 @@ export function getVisualPdfCatalog(): { pdfs: VocabPdfRow[] } {
   if (contentSource() === "json") return { pdfs: loadFromJson() };
   try {
     return { pdfs: loadFromDb() };
-  } catch {
+  } catch (err) {
+    console.warn("[visuals] DB read failed — run npm run seed:content", err);
     return { pdfs: [] };
   }
 }
