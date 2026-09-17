@@ -11,6 +11,17 @@ Site Next.js em `web/`. Documentação completa em [`docs/01_readme.md`](docs/01
   `public/sw.js`) mas não foi desenhada para guardar conteúdo. Fica para depois;
   não abrir esta frente sem o dono pedir.
 
+## Em aberto
+
+Levantamento feito, implementação por fazer —
+[`docs/19_pendentes_audio_analytics_cookies.md`](docs/19_pendentes_audio_analytics_cookies.md):
+áudio nas restantes 8 superfícies, analytics (page views por rota e taxonomia de
+eventos) e aviso de cookies. **A ordem importa:** o consentimento vem antes de
+ligar mais analytics.
+
+Curadoria por fazer: ordens alternativas aceites no jogo, 557 frases —
+[`docs/phrase-game-accepted-orders.md`](docs/phrase-game-accepted-orders.md).
+
 ## Língua
 
 A UI tem **três** línguas: **pt-BR**, **EN**, **ES** — em `web/src/messages/`.

@@ -23,6 +23,7 @@
 | [16_auth_wechat_roadmap.md](16_auth_wechat_roadmap.md) | Login WeChat — pesquisa e checklist de bloqueios (**não implementado**) |
 | [17_performance_payloads.md](17_performance_payloads.md) | Payloads de primeira pintura — como medir, o que foi corrigido, o que falta |
 | [18_jogo_frases_ux.md](18_jogo_frases_ux.md) | Jogo de frases — presets, porquê, e regra de língua (pt-BR/EN/ES) |
+| [19_pendentes_audio_analytics_cookies.md](19_pendentes_audio_analytics_cookies.md) | **Pendente** — áudio no site, analytics e aviso de cookies (levantamento) |
 | [phrase-game-backoffice.md](phrase-game-backoffice.md) | Dashboard de telemetria do jogo (`/backoffice`, só admin) |
 
 ## Visão geral rápida
