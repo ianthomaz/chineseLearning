@@ -25,28 +25,44 @@ Auth: [05_autenticacao.md](05_autenticacao.md)
 | Controlo | Escolhe |
 |---|---|
 | Dropdown "Knowledge" | **que vocabulário** entra na rodada (HSK 1 … HSK 3) |
-| Presets | **como se joga** essa rodada |
+| Presets | **que configuração** se joga |
 
-Um preset **nunca** mexe no vocabulário. Três botões em
-[`presets.ts`](../web/src/lib/phrase-game/presets.ts):
+Um preset é só isso: uma **selecção de configuração** que o jogador podia ter
+montado à mão em "Customise". Não mexe no vocabulário, e **não bloqueia nada**.
 
 | | Dificuldade | Peças | Dicas ligadas |
 |---|---|---|---|
-| 始 Start | 1 — frases curtas | palavras inteiras | pinyin em todas + frase à vista |
-| 练 Practise | 2 — até ~5 palavras | palavras inteiras | tradução nas difíceis |
-| 战 Challenge | 4 — frases longas | partidas em caracteres, + peças a mais | nenhuma |
+| 超 Super easy | 1 — frases curtas | palavras inteiras | frase + pinyin em todas + tradução nas difíceis |
+| 易 Easy | 2 — até ~5 palavras | palavras inteiras | frase + pinyin em todas |
+| 练 Practise | 3 — frases longas | palavras inteiras | frase |
+| 战 Challenge | 4 — frases longas | partidas em caracteres | nenhuma, + peças a mais |
+
+**Dificuldade e dicas são independentes.** Até set 2026 o nível *apagava* as
+dicas (`clampDisplaySettingsForLevel`): sem pinyin acima do nível 1, sem tradução
+acima do 2. Isso tornava impossível pedir "frases mais longas, mas mantém o
+pinyin" — que é exactamente o que o preset **Easy** é. Já não há esse
+bloqueio: qualquer dica funciona em qualquer nível, e as checkboxes nunca
+aparecem cinzentas.
+
+Abrir "Customise" depois de escolher um preset mostra o que ele marcou; montar à
+mão a mesma combinação volta a acender o preset (`matchPreset`).
 
 O vocabulário escolhido define o **tecto**: HSK 1 não tem frases longas o
 suficiente para os níveis 3+, por isso `applyPreset()` limita o nível ao que o
 pool permite — "Challenge" com HSK 1 é a rodada mais difícil que HSK 1 consegue
-produzir, não um salto para outro pool. Esse limite vive num só sítio,
-`maxLevelForPool()` em `settings-by-level.ts`.
-
-"Customise" fica num `<details>` fechado.
+produzir. Esse limite vive num só sítio, `maxLevelForPool()`.
 
 **Copy:** um rótulo descreve só a variável do seu próprio controlo, e não se
 acrescenta linha de ajuda a repetir o que o controlo já diz. Ver
 [`CLAUDE.md`](../CLAUDE.md) § Copy.
+
+### Por fazer — palavras que nunca se partem
+
+Níveis 1–3 mantêm as palavras inteiras, por isso 跑步 chega como uma peça só nos
+presets fáceis. A partir do nível 4 `pieces.ts` parte palavras de vários
+caracteres sem saber quais formam uma unidade indivisível. Marcar essas palavras
+no banco (`FRASES_GAME/curated/`) e respeitá-las em `pickPartialSplitTargets()`
+é curadoria de dados, ainda por fazer.
 
 ### Língua e cores
 

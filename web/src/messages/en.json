@@ -436,29 +436,30 @@
     "customize": "Customise",
     "customizeHint": "optional",
     "preset": {
-      "comecar": {
-        "name": "Start",
-        "desc": "Short phrases · pinyin on every piece · sentence shown"
+      "superEasy": {
+        "name": "Super easy",
+        "desc": "Translation and pinyin on the pieces · only the hanzi you need · words kept whole"
       },
-      "treinar": {
+      "easy": {
+        "name": "Easy",
+        "desc": "Pinyin on the pieces · only the hanzi you need"
+      },
+      "practise": {
         "name": "Practise",
-        "desc": "Phrases up to ~5 words · translation on the hard words"
+        "desc": "Longer phrases · the sentence is still shown"
       },
-      "desafio": {
+      "challenge": {
         "name": "Challenge",
-        "desc": "Long phrases · words split into characters · extra pieces · no hints"
+        "desc": "No pinyin · words split into characters · spare hanzi you will not use"
       }
     },
     "helpsLabel": "Hints",
-    "helpsHint": "These make the round easier. No need to decide now — each one has a button during the game.",
+    "helpsHint": "Every option below works at any difficulty. A preset above just ticks a set of them.",
     "harderLabel": "Make it harder",
     "harderHint": "Makes the round harder.",
-    "hintOffByLevel": "Not available at difficulty {level}.",
-    "alwaysOnByLevel": "Always on at difficulty {level}.",
     "retry": "Try again",
     "retryHint": "You can still fix it — worth more points than revealing the answer.",
-    "seeAnswer": "Show answer",
-    "helpsAllOff": "No hints are available at difficulty {level}. During the game there are buttons to ask for pinyin, translation or the prompt."
+    "seeAnswer": "Show answer"
   },
   "ktv": {
     "brand": "Lyrics",

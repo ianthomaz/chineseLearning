@@ -5,7 +5,7 @@ import { useLocale } from "@/context/LocaleContext";
 import type { AppLocale } from "@/lib/i18n-core";
 import { trackEvent } from "@/lib/analytics";
 import { buildRound, type Round } from "@/lib/phrase-game/select-phrases";
-import { clampDisplaySettingsForLevel } from "@/lib/phrase-game/settings-by-level";
+import { clampLevelToPool } from "@/lib/phrase-game/settings-by-level";
 import { localizedPrompt } from "@/lib/phrase-game/display";
 import { logGameEvent, newRoundId } from "@/lib/phrase-game/game-log";
 import { usePhraseBank } from "@/lib/phrase-game/use-phrase-bank";
@@ -177,19 +177,14 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
     setSettings(applied.settings);
   }
 
-  // Tier change resets an invalid level (Iniciante caps to 1-2).
+  /** A smaller pool can lower the level; it never touches the hints. */
   function handleTierChange(next: GameTier) {
     setTier(next);
-    if (next === "hsk1" && level > 2) {
-      const capped: GameLevel = 2;
-      setLevel(capped);
-      setSettings((s) => clampDisplaySettingsForLevel(capped, s));
-    }
+    setLevel((current) => clampLevelToPool(next, current));
   }
 
   function handleLevelChange(next: GameLevel) {
     setLevel(next);
-    setSettings((s) => clampDisplaySettingsForLevel(next, s));
   }
 
   return (

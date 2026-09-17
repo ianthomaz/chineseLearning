@@ -8,11 +8,6 @@ import {
   type PresetId,
 } from "@/lib/phrase-game/presets";
 import type { DisplaySettings, GameLevel, GameTier } from "@/lib/phrase-game/types";
-import {
-  nativePromptDisabled,
-  pinyinHintsDisabled,
-  translationDifficultDisabled,
-} from "@/lib/phrase-game/settings-by-level";
 
 type Props = {
   tier: GameTier;
@@ -63,15 +58,6 @@ export function SetupScreen({
     const anyPieceHint = s.hanziPlusPinyin || s.pinyinDifficult || s.translationDifficult;
     return { ...s, hanziOnly: !anyPieceHint };
   }
-
-  const pinyinHintsOff = pinyinHintsDisabled(level);
-  const translationHintOff = translationDifficultDisabled(level);
-  const nativePromptOff = nativePromptDisabled(level);
-  /** Shown instead of greying a control out with no explanation. */
-  const byLevel = t("phraseGame.hintOffByLevel", { level });
-  /** At higher levels every hint is off; say it once instead of four times. */
-  const allHintsOff = pinyinHintsOff && translationHintOff && nativePromptOff;
-  const perHintReason = allHintsOff ? undefined : byLevel;
 
   return (
     <div className="space-y-8">
@@ -190,35 +176,27 @@ export function SetupScreen({
               {t("phraseGame.helpsLabel")}
             </legend>
             <p className="mb-3 text-xs leading-relaxed text-ink/45">
-              {allHintsOff ? t("phraseGame.helpsAllOff", { level }) : t("phraseGame.helpsHint")}
+              {t("phraseGame.helpsHint")}
             </p>
             <div className="space-y-1">
               <Checkbox
                 label={t("phraseGame.extra.pinyinDifficult")}
                 checked={settings.pinyinDifficult}
-                disabled={pinyinHintsOff}
-                reason={perHintReason}
                 onChange={(v) => setHint("pinyinDifficult", v)}
               />
               <Checkbox
                 label={t("phraseGame.extra.hanziPinyin")}
                 checked={settings.hanziPlusPinyin}
-                disabled={pinyinHintsOff}
-                reason={perHintReason}
                 onChange={(v) => setHint("hanziPlusPinyin", v)}
               />
               <Checkbox
                 label={t("phraseGame.extra.translationDifficult")}
                 checked={settings.translationDifficult}
-                disabled={translationHintOff}
-                reason={perHintReason}
                 onChange={(v) => setHint("translationDifficult", v)}
               />
               <Checkbox
                 label={t("phraseGame.extra.showNativePrompt")}
                 checked={settings.showNativePrompt}
-                disabled={nativePromptOff}
-                reason={perHintReason}
                 onChange={(v) => setDisplay({ showNativePrompt: v })}
               />
             </div>
@@ -235,8 +213,6 @@ export function SetupScreen({
             <Checkbox
               label={t("phraseGame.extra.addExtra")}
               checked={settings.addExtraHanzi}
-              disabled={level >= 4}
-              reason={t("phraseGame.alwaysOnByLevel", { level })}
               onChange={(v) => setDisplay({ addExtraHanzi: v })}
             />
           </fieldset>
@@ -259,41 +235,21 @@ export function SetupScreen({
 function Checkbox({
   label,
   checked,
-  disabled = false,
-  reason,
   onChange,
 }: {
   label: string;
   checked: boolean;
-  disabled?: boolean;
-  /** Why the control is unavailable — shown instead of an unexplained grey box. */
-  reason?: string;
   onChange: (v: boolean) => void;
 }) {
   return (
-    <label
-      className={`flex min-h-[44px] items-start gap-3 py-1 text-sm ${
-        disabled ? "cursor-not-allowed text-ink/35" : "cursor-pointer text-ink/80"
-      }`}
-    >
+    <label className="flex min-h-[44px] cursor-pointer items-start gap-3 py-1 text-sm text-ink/80">
       <input
         type="checkbox"
         checked={checked}
-        disabled={disabled}
         onChange={(e) => onChange(e.target.checked)}
-        className="mt-1 h-4 w-4 shrink-0 rounded border-ink/30 accent-accent disabled:opacity-40"
+        className="mt-1 h-4 w-4 shrink-0 rounded border-ink/30 accent-accent"
       />
-      <span className="min-w-0">
-        {label}
-        {disabled && reason ? (
-          <span
-            className="mt-0.5 block text-xs text-ink/35"
-            style={{ fontFamily: "var(--font-sans)" }}
-          >
-            {reason}
-          </span>
-        ) : null}
-      </span>
+      <span className="min-w-0">{label}</span>
     </label>
   );
 }

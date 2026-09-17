@@ -1,15 +1,16 @@
 /**
- * Named ways to play a round.
+ * Named ways to play a round — config presets, nothing more.
  *
- * A preset decides HOW the round behaves — phrase length, whether words are
- * split into characters, which hints start on, whether extra pieces are mixed
- * in. It deliberately does NOT touch the vocabulary: that is the dropdown above
- * it, and a preset overriding the player's own choice was the bug this replaced.
+ * Each one selects a configuration the player could have assembled by hand in
+ * "Customise": a level plus a set of hints. Opening Customise after picking one
+ * shows exactly what it selected, and assembling the same combination by hand
+ * lights the matching preset back up.
  *
- * Presets carry no new game rules: they are values the setup screen could always
- * have produced. The full controls stay available under "Customise".
+ * A preset deliberately does NOT touch the vocabulary — that is the dropdown
+ * above it. And it does not lock anything: every option stays reachable at
+ * every level.
  */
-import { clampDisplaySettingsForLevel, clampLevelToPool } from "./settings-by-level";
+import { clampLevelToPool, normalizeDisplaySettings } from "./settings-by-level";
 import {
   DEFAULT_DISPLAY_SETTINGS,
   type DisplaySettings,
@@ -17,7 +18,7 @@ import {
   type GameTier,
 } from "./types";
 
-export type PresetId = "comecar" | "treinar" | "desafio";
+export type PresetId = "superEasy" | "easy" | "practise" | "challenge";
 
 export type GamePreset = {
   id: PresetId;
@@ -29,16 +30,6 @@ export type GamePreset = {
   settings: DisplaySettings;
 };
 
-/**
- * `hanziOnly` is derived, not chosen: pieces show bare hanzi exactly when no
- * per-piece hint is on. Mirrors the setup screen's own normalisation.
- */
-function normalize(settings: DisplaySettings): DisplaySettings {
-  const anyPieceHint =
-    settings.hanziPlusPinyin || settings.pinyinDifficult || settings.translationDifficult;
-  return { ...settings, hanziOnly: !anyPieceHint };
-}
-
 function preset(
   id: PresetId,
   hanzi: string,
@@ -46,30 +37,42 @@ function preset(
   level: GameLevel,
   overrides: Partial<DisplaySettings>,
 ): GamePreset {
-  // Clamp through the same rules the level enforces, so a preset can never
-  // describe a combination the game would silently undo.
-  const settings = clampDisplaySettingsForLevel(
+  return {
+    id,
+    hanzi,
+    color,
     level,
-    normalize({ ...DEFAULT_DISPLAY_SETTINGS, ...overrides }),
-  );
-  return { id, hanzi, color, level, settings: normalize(settings) };
+    settings: normalizeDisplaySettings({ ...DEFAULT_DISPLAY_SETTINGS, ...overrides }),
+  };
 }
 
 export const GAME_PRESETS: readonly GamePreset[] = [
-  // Short phrases, whole words, pinyin on every piece, prompt in view.
-  preset("comecar", "始", "var(--cat-green)", 1, {
+  // Everything visible: the sentence, pinyin on every piece, a gloss on the hard
+  // words. Level 1 keeps words whole, so 跑步 arrives as a single piece.
+  preset("superEasy", "超", "var(--cat-green)", 1, {
+    showNativePrompt: true,
+    hanziPlusPinyin: true,
+    translationDifficult: true,
+  }),
+  // Same whole words, longer phrases, pinyin still there — no gloss.
+  preset("easy", "易", "var(--accent-2)", 2, {
     showNativePrompt: true,
     hanziPlusPinyin: true,
   }),
-  // Longer phrases, whole words, gloss on the hard ones only.
-  preset("treinar", "练", "var(--accent)", 2, {
+  // Longer phrases and bare hanzi pieces; the sentence is still shown.
+  preset("practise", "练", "var(--accent)", 3, {
     showNativePrompt: true,
-    translationDifficult: true,
   }),
-  // Long phrases, words split into characters, extra pieces, no hints on.
-  // Level 4 already forces the extra hanzi.
-  preset("desafio", "战", "var(--cat-violet)", 4, {}),
+  // Words broken into single characters, spare pieces mixed in, nothing revealed
+  // unless the player asks for it mid-round.
+  preset("challenge", "战", "var(--cat-violet)", 4, {
+    addExtraHanzi: true,
+  }),
 ];
+
+export function findPreset(id: PresetId): GamePreset | undefined {
+  return GAME_PRESETS.find((p) => p.id === id);
+}
 
 /**
  * A preset applied on top of the vocabulary the player already chose. The pool
@@ -80,32 +83,28 @@ export function applyPreset(
   preset: GamePreset,
   tier: GameTier,
 ): { level: GameLevel; settings: DisplaySettings } {
-  const level = clampLevelToPool(tier, preset.level);
   return {
-    level,
-    settings: normalize(clampDisplaySettingsForLevel(level, preset.settings)),
+    level: clampLevelToPool(tier, preset.level),
+    settings: normalizeDisplaySettings(preset.settings),
   };
 }
 
-export function findPreset(id: PresetId): GamePreset | undefined {
-  return GAME_PRESETS.find((p) => p.id === id);
-}
-
 /**
- * Which preset the current configuration corresponds to, or null if custom.
- * Compared against the preset as the chosen vocabulary would apply it, so a
- * clamped "Challenge" on HSK 1 still reads as Challenge.
+ * Which preset the current configuration corresponds to, or null if the player
+ * has assembled something of their own. Compared against the preset as the
+ * chosen vocabulary would apply it, so a clamped Challenge still reads as
+ * Challenge.
  */
 export function matchPreset(
   tier: GameTier,
   level: GameLevel,
   settings: DisplaySettings,
 ): PresetId | null {
-  const current = normalize(settings);
+  const current = normalizeDisplaySettings(settings);
   const keys = Object.keys(current) as Array<keyof DisplaySettings>;
 
-  const hit = GAME_PRESETS.find((preset) => {
-    const applied = applyPreset(preset, tier);
+  const hit = GAME_PRESETS.find((candidate) => {
+    const applied = applyPreset(candidate, tier);
     return applied.level === level && keys.every((k) => applied.settings[k] === current[k]);
   });
 

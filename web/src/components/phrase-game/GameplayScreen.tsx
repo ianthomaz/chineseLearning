@@ -6,7 +6,6 @@ import { trackEvent } from "@/lib/analytics";
 import { deriveBoard } from "@/lib/phrase-game/pieces";
 import { attemptString, validateAttempt } from "@/lib/phrase-game/validate";
 import { localizedPrompt } from "@/lib/phrase-game/display";
-import { nativePromptDisabled } from "@/lib/phrase-game/settings-by-level";
 import type { DisplaySettings, GameLevel, GameTier, Piece, RoundItem } from "@/lib/phrase-game/types";
 import {
   computeScore,
@@ -279,7 +278,7 @@ export function GameplayScreen({
         </div>
       ) : null}
 
-      {submitted === null && !nativePromptDisabled(level) ? (
+      {submitted === null ? (
         <label className="flex cursor-pointer items-center gap-2 text-xs text-ink/55">
           <input
             type="checkbox"

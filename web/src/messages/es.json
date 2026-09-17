@@ -436,29 +436,30 @@
     "customize": "Personalizar",
     "customizeHint": "opcional",
     "preset": {
-      "comecar": {
-        "name": "Empezar",
-        "desc": "Frases cortas · pinyin en todas las piezas · frase a la vista"
+      "superEasy": {
+        "name": "Súper fácil",
+        "desc": "Traducción y pinyin en las piezas · solo los hanzi necesarios · palabras enteras"
       },
-      "treinar": {
+      "easy": {
+        "name": "Fácil",
+        "desc": "Pinyin en las piezas · solo los hanzi necesarios"
+      },
+      "practise": {
         "name": "Practicar",
-        "desc": "Frases de hasta ~5 palabras · traducción en las palabras difíciles"
+        "desc": "Frases más largas · la frase sigue a la vista"
       },
-      "desafio": {
+      "challenge": {
         "name": "Desafío",
-        "desc": "Frases largas · palabras partidas en caracteres · piezas de más · sin pistas"
+        "desc": "Sin pinyin · palabras partidas en caracteres · hanzi de más que no se usan"
       }
     },
     "helpsLabel": "Ayudas",
-    "helpsHint": "Hacen la ronda más fácil. No hace falta decidir ahora — durante el juego hay un botón para cada una.",
+    "helpsHint": "Todas las opciones de abajo funcionan en cualquier dificultad. Un preset de arriba solo marca un conjunto.",
     "harderLabel": "Dificultar",
     "harderHint": "Hace la ronda más difícil.",
-    "hintOffByLevel": "No disponible en la dificultad {level}.",
-    "alwaysOnByLevel": "Siempre activo en la dificultad {level}.",
     "retry": "Intentar de nuevo",
     "retryHint": "Todavía puedes corregirlo — vale más puntos que ver la respuesta.",
-    "seeAnswer": "Ver respuesta",
-    "helpsAllOff": "Ninguna ayuda está disponible en la dificultad {level}. Durante el juego hay botones para pedir pinyin, traducción o la frase."
+    "seeAnswer": "Ver respuesta"
   },
   "ktv": {
     "brand": "Letras",
