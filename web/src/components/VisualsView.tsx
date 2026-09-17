@@ -66,7 +66,7 @@ export function VisualsView({
   const desc = row ? vocabPdfDescription(row, locale) : undefined;
 
   return (
-    <main className="mx-auto max-w-5xl px-4 pb-[max(6rem,env(safe-area-inset-bottom,0px))] pt-8 sm:px-6 sm:pb-24 sm:pt-10">
+    <main className="mx-auto w-full max-w-5xl px-4 pb-[max(6rem,env(safe-area-inset-bottom,0px))] pt-8 sm:px-6 sm:pb-24 sm:pt-10">
       <p
         className="mb-2 text-xs font-medium uppercase tracking-widest text-ink/35"
         style={{ fontFamily: "var(--font-sans)" }}
@@ -92,7 +92,7 @@ export function VisualsView({
                 <button
                   type="button"
                   onClick={tryLandscape}
-                  className="rounded-lg border border-amber-300/80 bg-white px-3 py-2 text-xs font-medium text-amber-950 transition-colors hover:bg-amber-100/80"
+                  className="inline-flex min-h-[44px] items-center rounded-lg border border-amber-300/80 bg-white px-3 text-xs font-medium text-amber-950 transition-colors hover:bg-amber-100/80"
                   style={{ fontFamily: "var(--font-sans)" }}
                 >
                   {t("visuals.landscapeButton")}
@@ -100,7 +100,7 @@ export function VisualsView({
                 <button
                   type="button"
                   onClick={() => setHintDismissed(true)}
-                  className="rounded-lg px-3 py-2 text-xs text-warn underline decoration-warn/50 underline-offset-2"
+                  className="inline-flex min-h-[44px] items-center rounded-lg px-3 text-xs text-warn underline decoration-warn/50 underline-offset-2"
                   style={{ fontFamily: "var(--font-sans)" }}
                 >
                   {t("visuals.landscapeDismiss")}
@@ -133,8 +133,8 @@ export function VisualsView({
                     onClick={() => setActive(i)}
                     className={
                       selected
-                        ? "shrink-0 rounded-full border px-3 py-2 text-sm font-medium text-white transition-colors"
-                        : "shrink-0 rounded-full border border-ink/15 bg-paper px-3 py-2 text-sm font-medium text-ink/70 transition-colors hover:border-ink/25 hover:bg-ink/[0.03]"
+                        ? "inline-flex min-h-[44px] shrink-0 items-center rounded-full border px-3 text-sm font-medium text-white transition-colors"
+                        : "inline-flex min-h-[44px] shrink-0 items-center rounded-full border border-ink/15 bg-paper px-3 text-sm font-medium text-ink/70 transition-colors hover:border-ink/25 hover:bg-ink/[0.03]"
                     }
                     style={
                       selected

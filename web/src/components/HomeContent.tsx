@@ -92,7 +92,7 @@ export function HomeContent({ blocks }: Props) {
   const { t } = useLocale();
 
   return (
-    <main className="mx-auto max-w-5xl px-4 pb-[max(6rem,env(safe-area-inset-bottom,0px))] sm:px-6 sm:pb-24">
+    <main className="mx-auto w-full max-w-5xl px-4 pb-[max(6rem,env(safe-area-inset-bottom,0px))] sm:px-6 sm:pb-24">
       <section className="py-10 sm:py-16 md:py-20">
         <p
           className="mb-4 text-xs font-medium uppercase tracking-widest"
@@ -217,7 +217,7 @@ export function HomeContent({ blocks }: Props) {
                     path: `/review/${b.id}`,
                   })
                 }
-                className="group flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors hover:bg-ink/5"
+                className="group flex min-h-[44px] items-center gap-3 rounded-lg px-3 py-2 transition-colors hover:bg-ink/5"
               >
                 <span
                   className="w-7 shrink-0 text-right text-xs tabular-nums text-ink/30"

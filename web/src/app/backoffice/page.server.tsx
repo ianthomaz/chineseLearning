@@ -94,7 +94,7 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
 
   if (!isAdminEmail(email)) {
     return (
-      <main className="mx-auto max-w-lg px-6 py-20 text-center">
+      <main className="mx-auto w-full max-w-lg px-6 py-20 text-center">
         <h1 className="font-display text-2xl font-medium text-ink">Dashboard</h1>
         <p className="mt-4 text-sm leading-relaxed text-ink/65">
           {email
@@ -139,7 +139,7 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
   const missedMax = Math.max(1, ...missed.map((m) => m.wrong));
 
   return (
-    <main className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-10">
+    <main className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 sm:py-10">
       {/* Header */}
       <header className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div>

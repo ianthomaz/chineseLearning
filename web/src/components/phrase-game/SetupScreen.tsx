@@ -219,15 +219,22 @@ export function SetupScreen({
         </div>
       </details>
 
-      <button
-        type="button"
-        onClick={onPlay}
-        disabled={bankLoading}
-        className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
-        style={{ backgroundColor: "var(--accent)" }}
+      {/* Four presets push the primary action past the fold on a phone, so it
+          rides the bottom of the viewport there and sits inline from sm up. */}
+      <div
+        className="sticky bottom-0 -mx-4 border-t bg-paper/95 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom,0px))] pt-3 backdrop-blur-sm sm:static sm:mx-0 sm:border-0 sm:bg-transparent sm:p-0 sm:backdrop-blur-none"
+        style={{ borderColor: "var(--border)" }}
       >
-        {bankLoading ? t("phraseGame.bankLoading") : t("phraseGame.play")}
-      </button>
+        <button
+          type="button"
+          onClick={onPlay}
+          disabled={bankLoading}
+          className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
+          style={{ backgroundColor: "var(--accent)" }}
+        >
+          {bankLoading ? t("phraseGame.bankLoading") : t("phraseGame.play")}
+        </button>
+      </div>
     </div>
   );
 }

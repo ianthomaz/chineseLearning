@@ -64,7 +64,7 @@ export function BlockStudyPage({ mode, block, blockSummaries }: Props) {
         : "block.headerGrammar";
 
   return (
-    <main className="mx-auto max-w-3xl px-4 pb-[max(6rem,env(safe-area-inset-bottom,0px))] pt-8 sm:px-6 sm:pb-24 sm:pt-10">
+    <main className="mx-auto w-full max-w-3xl px-4 pb-[max(6rem,env(safe-area-inset-bottom,0px))] pt-8 sm:px-6 sm:pb-24 sm:pt-10">
       <BlockStudyDocumentTitle block={block} mode={mode} />
       <div className="mb-4">
         <p

@@ -431,6 +431,7 @@
     },
     "bankLoading": "Loading phrases…",
     "bankError": "Could not load the phrase bank. Please reload the page.",
+    "noRound": "No phrases matched this combination. Try another vocabulary or level.",
     "presetLabel": "How do you want to play?",
     "presetCustom": "Custom configuration.",
     "customize": "Customise",

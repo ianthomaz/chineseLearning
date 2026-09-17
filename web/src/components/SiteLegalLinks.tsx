@@ -9,13 +9,13 @@ export function SiteLegalLinks() {
 
   return (
     <nav
-      className="mb-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-ink/70"
+      className="mb-4 flex flex-wrap items-center justify-center gap-x-4 text-sm text-ink/70"
       aria-label={t("legal.footerNavLabel")}
       style={{ fontFamily: "var(--font-sans)" }}
     >
       <Link
         href="/privacy"
-        className="font-medium underline decoration-ink/20 underline-offset-2 transition-colors hover:text-accent hover:decoration-accent/40"
+        className="inline-flex min-h-[44px] items-center font-medium underline decoration-ink/20 underline-offset-2 transition-colors hover:text-accent hover:decoration-accent/40"
       >
         {t("legal.privacyLink")}
       </Link>
@@ -24,7 +24,7 @@ export function SiteLegalLinks() {
       </span>
       <Link
         href="/terms"
-        className="font-medium underline decoration-ink/20 underline-offset-2 transition-colors hover:text-accent hover:decoration-accent/40"
+        className="inline-flex min-h-[44px] items-center font-medium underline decoration-ink/20 underline-offset-2 transition-colors hover:text-accent hover:decoration-accent/40"
       >
         {t("legal.termsLink")}
       </Link>
@@ -34,7 +34,7 @@ export function SiteLegalLinks() {
       <button
         type="button"
         onClick={requestCookieBanner}
-        className="font-medium underline decoration-ink/20 underline-offset-2 transition-colors hover:text-accent hover:decoration-accent/40"
+        className="inline-flex min-h-[44px] items-center font-medium underline decoration-ink/20 underline-offset-2 transition-colors hover:text-accent hover:decoration-accent/40"
       >
         {t("legal.cookieSettings")}
       </button>

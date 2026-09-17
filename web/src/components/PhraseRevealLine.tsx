@@ -105,7 +105,7 @@ export function PhraseRevealLine({
     <div className={`flex gap-2 items-start ${containerClassName}`.trim()}>
       <button
         type="button"
-        className="mt-0.5 shrink-0 rounded-md p-1 text-ink/35 transition-colors hover:bg-ink/[0.06] hover:text-ink/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/40"
+        className="-my-2 -mr-1 flex min-h-[44px] min-w-[44px] shrink-0 items-center justify-center rounded-md p-1 text-ink/35 transition-colors hover:bg-ink/[0.06] hover:text-ink/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/40"
         aria-label={t("review.revealPhraseAria")}
         onClick={() =>
           setPhase((p) => nextRevealPhase(p, hasPinyin, hasTranslation))

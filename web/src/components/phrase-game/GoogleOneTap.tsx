@@ -138,7 +138,7 @@ export function GoogleSignInRedirect({ label }: { label: string }) {
         trackEvent({ action: "sign_in_start", category: "auth", label: "google-redirect" });
         void signIn("google");
       }}
-      className="rounded-full border px-4 py-2 text-sm font-medium text-ink/80 hover:bg-ink/5"
+      className="inline-flex min-h-[44px] items-center rounded-full border px-4 text-sm font-medium text-ink/80 hover:bg-ink/5"
       style={{ borderColor: "var(--border)" }}
     >
       {label}

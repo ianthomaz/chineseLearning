@@ -52,6 +52,9 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
   const [results, setResults] = useState<Array<"correct" | "wrong" | null>>([]);
   /** Weighted points per phrase, same indexing as `results`. */
   const [scores, setScores] = useState<number[]>([]);
+  // A round that builds to nothing used to leave Play doing nothing at all,
+  // which is indistinguishable from a broken button. Surface it instead.
+  const [noRound, setNoRound] = useState(false);
 
   const roundIdRef = useRef("");
   const abandonedRef = useRef(false);
@@ -69,11 +72,16 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
 
   function startRound() {
     if (bank.length === 0) {
+      setNoRound(true);
       setPhase("setup");
       return;
     }
     const built = buildRound(bank, { tier, level, settings });
-    if (built.items.length === 0) return;
+    if (built.items.length === 0) {
+      setNoRound(true);
+      return;
+    }
+    setNoRound(false);
     const roundId = newRoundId();
     roundIdRef.current = roundId;
     abandonedRef.current = false;
@@ -188,7 +196,7 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
   }
 
   return (
-    <main className="mx-auto max-w-2xl px-4 pb-24 pt-6 sm:px-6">
+    <main className="mx-auto w-full max-w-2xl px-4 pb-24 pt-6 sm:px-6">
       <header className="mb-6 flex items-start justify-between gap-4">
         <div>
           <h1 className="font-display text-2xl font-medium text-ink sm:text-3xl">
@@ -217,6 +225,11 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
             {bankStatus === "error" ? (
               <p className="mb-4 text-sm text-danger">{t("phraseGame.bankError")}</p>
             ) : null}
+            {noRound && bankStatus !== "error" ? (
+              <p className="mb-4 text-sm text-danger" role="alert">
+                {t("phraseGame.noRound")}
+              </p>
+            ) : null}
             <label
               className="mb-6 block"
               style={{ fontFamily: "var(--font-sans)" }}
@@ -227,7 +240,7 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
               <select
                 value={tier}
                 onChange={(e) => handleTierChange(e.target.value as GameTier)}
-                className="w-full rounded-xl border bg-transparent px-3 py-2.5 text-sm text-ink"
+                className="min-h-[44px] w-full rounded-xl border bg-transparent px-3 py-2.5 text-sm text-ink"
                 style={{ borderColor: "var(--border)" }}
               >
                 {PHRASE_POOLS.map((id) => (

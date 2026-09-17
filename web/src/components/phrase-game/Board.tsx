@@ -86,12 +86,14 @@ function SortablePiece({
         <PieceContent piece={piece} settings={settings} reveal={reveal} inAnswer={zone === "answer"} state={state} />
       </button>
       {zone === "answer" && !disabled && onNudge ? (
-        <span className="absolute -bottom-3 left-1/2 flex -translate-x-1/2 gap-1">
+        <span
+          className="absolute -bottom-3.5 left-1/2 flex -translate-x-1/2 overflow-hidden rounded-full border bg-paper"
+          style={{ borderColor: "var(--border)" }}
+        >
           <button
             type="button"
             onClick={() => onNudge(-1)}
-            className="flex h-5 w-5 items-center justify-center rounded-full border bg-paper text-[0.6rem] text-ink/60 hover:bg-ink/5"
-            style={{ borderColor: "var(--border)" }}
+            className="flex h-7 w-7 items-center justify-center text-xs text-ink/60 hover:bg-ink/5"
             aria-label={nudgeLabels.left}
           >
             ◀
@@ -99,8 +101,7 @@ function SortablePiece({
           <button
             type="button"
             onClick={() => onNudge(1)}
-            className="flex h-5 w-5 items-center justify-center rounded-full border bg-paper text-[0.6rem] text-ink/60 hover:bg-ink/5"
-            style={{ borderColor: "var(--border)" }}
+            className="flex h-7 w-7 items-center justify-center text-xs text-ink/60 hover:bg-ink/5"
             aria-label={nudgeLabels.right}
           >
             ▶
@@ -138,7 +139,7 @@ function Zone({
       </div>
       <div
         ref={setNodeRef}
-        className="flex min-h-[4.5rem] flex-wrap items-center gap-2 gap-y-4 rounded-2xl border border-dashed p-3 transition-colors"
+        className="flex min-h-[4.5rem] flex-wrap items-center gap-x-4 gap-y-6 rounded-2xl border border-dashed p-3 transition-colors"
         style={{
           borderColor: isOver ? "var(--accent)" : "var(--border)",
           backgroundColor: isOver ? "rgba(45,90,140,0.04)" : "transparent",

@@ -186,10 +186,11 @@ export function VisualPdfPager({ pdfUrl, title, t }: Props) {
         <button
           type="button"
           onClick={toggleFullscreen}
-          className="rounded-lg px-2 py-1.5 text-xs font-medium text-ink/70 transition-colors hover:bg-ink/5"
+          className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg text-base font-medium text-ink/70 transition-colors hover:bg-ink/5"
           title={isFs ? t("visuals.pdfExitFullscreen") : t("visuals.pdfFullscreen")}
+          aria-label={isFs ? t("visuals.pdfExitFullscreen") : t("visuals.pdfFullscreen")}
         >
-          {isFs ? "⛶" : "⛶"}
+          ⛶
         </button>
       </div>
 
@@ -234,7 +235,7 @@ export function VisualPdfPager({ pdfUrl, title, t }: Props) {
           type="button"
           disabled={!canPrev}
           onClick={() => setPage((p) => Math.max(1, p - 1))}
-          className="flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-colors enabled:hover:bg-ink/5 disabled:opacity-30 disabled:cursor-not-allowed text-center"
+          className="min-h-[44px] flex-1 rounded-lg px-3 text-sm font-medium transition-colors enabled:hover:bg-ink/5 disabled:opacity-30 disabled:cursor-not-allowed text-center"
         >
           ← {t("visuals.pdfPrev")}
         </button>
@@ -242,14 +243,14 @@ export function VisualPdfPager({ pdfUrl, title, t }: Props) {
           type="button"
           disabled={!canNext}
           onClick={() => setPage((p) => (total ? Math.min(total, p + 1) : p))}
-          className="flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-colors enabled:hover:bg-ink/5 disabled:opacity-30 disabled:cursor-not-allowed text-center"
+          className="min-h-[44px] flex-1 rounded-lg px-3 text-sm font-medium transition-colors enabled:hover:bg-ink/5 disabled:opacity-30 disabled:cursor-not-allowed text-center"
         >
           {t("visuals.pdfNext")} →
         </button>
       </div>
 
       {/* Gesture Hint */}
-      <p className="bg-paper px-4 py-1.5 text-center text-[11px] text-ink/40" style={uiFont}>
+      <p className="bg-paper px-4 py-1.5 text-center text-xs text-ink/40" style={uiFont}>
         {t("visuals.pdfKeyboardHint")}
       </p>
     </div>

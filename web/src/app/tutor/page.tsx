@@ -114,7 +114,7 @@ function TutorChat() {
   };
 
   return (
-    <main className="mx-auto flex min-h-0 w-full max-w-3xl flex-1 flex-col px-4 pb-[max(1.5rem,env(safe-area-inset-bottom,0px))] pt-8 sm:px-6 sm:pt-10">
+    <main className="mx-auto w-full flex min-h-0 w-full max-w-3xl flex-1 flex-col px-4 pb-[max(1.5rem,env(safe-area-inset-bottom,0px))] pt-8 sm:px-6 sm:pt-10">
       <div className="mb-6">
         <p
           className="mb-2 text-xs font-medium uppercase tracking-widest text-ink/35"
@@ -153,8 +153,8 @@ function TutorChat() {
                     : "bg-ink/5 text-ink border border-ink/10"
                 }`}
               >
-                <span className="mb-1 block text-[10px] font-semibold uppercase tracking-wider text-ink/30">
-                  {msg.role === "user" ? t("tutor.roleUser") || "VOCÊ" : t("tutor.roleAssistant") || "PROFESSOR"}
+                <span className="mb-1 block text-[11px] font-semibold uppercase tracking-wider text-ink/30">
+                  {msg.role === "user" ? t("tutor.roleUser") : t("tutor.roleAssistant")}
                 </span>
 
                 {msg.role === "assistant" && msg.structured ? (

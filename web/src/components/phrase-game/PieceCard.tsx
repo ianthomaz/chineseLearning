@@ -34,12 +34,16 @@ export function PieceContent({ piece, settings, reveal, inAnswer, state = "neutr
 
   return (
     <span
-      className="inline-flex flex-col items-center justify-center rounded-xl border px-3 py-2 text-center leading-tight"
+      className={`inline-flex flex-col items-center justify-center rounded-xl border px-3 pt-2 text-center leading-tight ${
+        // Answer pieces carry the reorder pill over their bottom edge; reserve
+        // room for it so it never lands on the gloss.
+        inAnswer ? "pb-6" : "pb-2"
+      }`}
       style={{ borderColor: border, backgroundColor: bg, minWidth: "2.75rem" }}
     >
       {showPinyin && piece.pinyin ? (
         <span
-          className="font-ruby text-[0.65rem] text-ink/55"
+          className="font-ruby text-xs text-ink/55"
           style={{ fontFamily: "var(--font-sans)" }}
         >
           {piece.pinyin}
@@ -48,7 +52,7 @@ export function PieceContent({ piece, settings, reveal, inAnswer, state = "neutr
       <span className="font-hanzi text-xl text-ink">{piece.hanzi}</span>
       {showTranslation && piece.pt ? (
         <span
-          className="mt-0.5 max-w-[8rem] truncate text-[0.6rem] text-ink/50"
+          className="mt-0.5 max-w-[8rem] truncate text-xs text-ink/50"
           style={{ fontFamily: "var(--font-sans)" }}
           title={piece.pt}
         >

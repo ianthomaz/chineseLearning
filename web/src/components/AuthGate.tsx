@@ -18,7 +18,7 @@ export function LoginGate({ children }: { children: React.ReactNode }) {
 
   if (!AUTH_ENABLED) {
     return (
-      <main className="mx-auto max-w-lg px-6 py-20 text-center">
+      <main className="mx-auto w-full max-w-lg px-6 py-20 text-center">
         <h1 className="font-display text-2xl text-ink">{t("authGate.disabledTitle")}</h1>
         <p
           className="mt-3 text-sm text-ink/60"
@@ -39,7 +39,7 @@ function LoginGateLive({ children }: { children: React.ReactNode }) {
 
   if (status === "loading") {
     return (
-      <main className="mx-auto max-w-lg px-6 py-20">
+      <main className="mx-auto w-full max-w-lg px-6 py-20">
         <div
           className="h-14 animate-pulse rounded-2xl border"
           style={{ borderColor: "var(--border)" }}
@@ -51,7 +51,7 @@ function LoginGateLive({ children }: { children: React.ReactNode }) {
 
   if (!session?.user) {
     return (
-      <main className="mx-auto max-w-lg px-6 py-20 text-center">
+      <main className="mx-auto w-full max-w-lg px-6 py-20 text-center">
         <div
           className="rounded-2xl border px-6 py-8"
           style={{ borderColor: "var(--border)" }}

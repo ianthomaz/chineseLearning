@@ -174,7 +174,7 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
 
   if (bankQuestions.length === 0) {
     return (
-      <main className="mx-auto max-w-3xl flex-1 px-4 py-8 sm:px-6 sm:py-10">
+      <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-8 sm:px-6 sm:py-10">
         <p className="text-sm text-ink/55">{t("gamification.emptyBank")}</p>
       </main>
     );
@@ -182,7 +182,7 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
 
   if (phase === "setup") {
     return (
-      <main className="mx-auto max-w-3xl flex-1 px-4 py-8 sm:px-6 sm:py-10">
+      <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-8 sm:px-6 sm:py-10">
         <header className="mb-8">
           <h1 className="font-display text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
             {t("gamification.title")}
@@ -202,7 +202,7 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
           <select
             value={tier}
             onChange={(e) => setTier(e.target.value as QuizTier)}
-            className="w-full rounded-xl border bg-transparent px-3 py-2.5 text-sm text-ink"
+            className="min-h-[44px] w-full rounded-xl border bg-transparent px-3 py-2.5 text-sm text-ink"
             style={{ borderColor: "var(--border)" }}
           >
             {PHRASE_POOLS.map((id) => (
@@ -242,7 +242,7 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
 
   if (phase === "finished") {
     return (
-      <main className="mx-auto max-w-3xl flex-1 px-4 py-8 sm:px-6 sm:py-10">
+      <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-8 sm:px-6 sm:py-10">
         <div className="rounded-2xl border p-6 sm:p-8" style={{ borderColor: "var(--border)" }}>
           <h1 className="font-display text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
             {t("gamification.finished")}
@@ -292,7 +292,7 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
   const answerLabel = currentQuestion ? correctAnswerLabel(currentQuestion, locale) : "";
 
   return (
-    <main className="mx-auto max-w-3xl flex-1 px-4 py-8 sm:px-6 sm:py-10">
+    <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-8 sm:px-6 sm:py-10">
       <header className="mb-8">
         <h1 className="font-display text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
           {t("gamification.title")}

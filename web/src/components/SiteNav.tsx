@@ -79,10 +79,11 @@ type Variant = "desktop" | "mobile";
 /** Shared tab styling so desktop and mobile stay in step. */
 function tabClassName(variant: Variant, active: boolean, featured = false): string {
   if (variant === "desktop") {
-    if (active) return "rounded-full px-3 py-2 text-sm font-medium text-white transition-colors";
+    if (active)
+      return "flex min-h-[44px] items-center rounded-full px-3 text-sm font-medium text-white transition-colors";
     if (featured)
-      return "rounded-full px-3 py-2 text-sm font-semibold transition-colors hover:brightness-95";
-    return "rounded-full px-3 py-2 text-sm text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink";
+      return "flex min-h-[44px] items-center rounded-full px-3 text-sm font-semibold transition-colors hover:brightness-95";
+    return "flex min-h-[44px] items-center rounded-full px-3 text-sm text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink";
   }
   if (active) return "rounded-xl px-4 py-3.5 text-base font-medium text-white";
   if (featured) return "rounded-xl px-4 py-3.5 text-base font-semibold";

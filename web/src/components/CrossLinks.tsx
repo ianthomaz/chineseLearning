@@ -58,7 +58,7 @@ export function CrossLinks({ blockId, current, placement = "bottom" }: Props) {
               path: `/${key}/${id}`,
             })
           }
-          className="flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs transition-colors hover:bg-ink/5"
+          className="flex min-h-[44px] items-center gap-1.5 rounded-full border px-3 text-xs transition-colors hover:bg-ink/5"
           style={{
             borderColor: "var(--border)",
             fontFamily: "var(--font-sans)",

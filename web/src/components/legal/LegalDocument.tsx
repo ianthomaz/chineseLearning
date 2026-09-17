@@ -18,7 +18,7 @@ export function LegalDocument({ kind }: Props) {
   const markdown = LEGAL_CONTENT[kind][lang];
 
   return (
-    <article className="mx-auto max-w-3xl px-4 py-10 pb-[max(3rem,env(safe-area-inset-bottom,0px))] sm:px-6 sm:py-14">
+    <article className="mx-auto w-full max-w-3xl px-4 py-10 pb-[max(3rem,env(safe-area-inset-bottom,0px))] sm:px-6 sm:py-14">
       <header className="mb-8 border-b pb-6" style={{ borderColor: "var(--border)" }}>
         <p
           className="mb-2 text-xs font-medium uppercase tracking-widest text-ink/45"

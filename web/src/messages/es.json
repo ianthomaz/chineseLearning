@@ -431,6 +431,7 @@
     },
     "bankLoading": "Cargando frases…",
     "bankError": "No se pudo cargar el banco de frases. Recarga la página.",
+    "noRound": "Ninguna frase coincide con esta combinación. Prueba otro vocabulario o nivel.",
     "presetLabel": "¿Cómo quieres jugar?",
     "presetCustom": "Configuración personalizada.",
     "customize": "Personalizar",

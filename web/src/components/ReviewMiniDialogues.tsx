@@ -32,7 +32,7 @@ export function ReviewMiniDialogues({ conversations }: Props) {
             }}
           >
             <p
-              className="mb-3 text-[10px] font-medium uppercase tracking-wider text-ink/35"
+              className="mb-3 text-xs font-medium uppercase tracking-wider text-ink/35"
               style={{ fontFamily: "var(--font-sans)" }}
             >
               {t("dialogues.convLabel", { num: ci + 1 })}

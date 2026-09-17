@@ -25,7 +25,7 @@ export default async function RegisterClassPage({ searchParams }: { searchParams
 
   if (!isAdminEmail(email)) {
     return (
-      <main className="mx-auto max-w-lg px-6 py-20 text-center">
+      <main className="mx-auto w-full max-w-lg px-6 py-20 text-center">
         <h1 className="font-display text-2xl font-medium text-ink">Cadastrar aula</h1>
         <p className="mt-4 text-sm leading-relaxed text-ink/65">
           {email
@@ -50,7 +50,7 @@ export default async function RegisterClassPage({ searchParams }: { searchParams
   const classes = listClasses();
 
   return (
-    <main className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-10">
+    <main className="mx-auto w-full max-w-3xl px-4 py-8 sm:px-6 sm:py-10">
       <header className="mb-8">
         <p className="text-xs font-medium uppercase tracking-widest text-ink/40">Curador</p>
         <h1 className="mt-1 font-display text-2xl font-medium text-ink sm:text-3xl">

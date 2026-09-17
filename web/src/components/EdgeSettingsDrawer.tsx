@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
 import { useLocale } from "@/context/LocaleContext";
-import { isImmersiveRoute } from "@/lib/immersive-routes";
+import { hidesReadingDrawer } from "@/lib/immersive-routes";
 import { usePinyin } from "@/context/PinyinContext";
 import { useTranslationDisplay } from "@/context/TranslationContext";
 import { trackEvent } from "@/lib/analytics";
@@ -18,7 +18,7 @@ export function EdgeSettingsDrawer() {
   const panelId = `${tabId}-panel`;
   // These toggles drive the course-content components; on the full-screen
   // routes they control nothing and the tab overlaps the content.
-  const hidden = isImmersiveRoute(pathname);
+  const hidden = hidesReadingDrawer(pathname);
 
   useEffect(() => {
     if (!open) return;

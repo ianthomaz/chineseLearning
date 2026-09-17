@@ -18,7 +18,7 @@ export default async function ReviewClassPage() {
 
   if (!isAdminEmail(email)) {
     return (
-      <main className="mx-auto max-w-lg px-6 py-20 text-center">
+      <main className="mx-auto w-full max-w-lg px-6 py-20 text-center">
         <h1 className="font-display text-2xl font-medium text-ink">Minhas aulas</h1>
         <p className="mt-4 text-sm leading-relaxed text-ink/65">
           {email

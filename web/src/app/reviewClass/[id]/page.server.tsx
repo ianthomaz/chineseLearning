@@ -19,7 +19,7 @@ const BOOK_LABEL: Record<string, string> = {
 
 function notAuthorized(email: string | null) {
   return (
-    <main className="mx-auto max-w-lg px-6 py-20 text-center">
+    <main className="mx-auto w-full max-w-lg px-6 py-20 text-center">
       <h1 className="font-display text-2xl font-medium text-ink">Revisão da aula</h1>
       <p className="mt-4 text-sm leading-relaxed text-ink/65">
         {email
@@ -47,7 +47,7 @@ export default async function ReviewClassDetailPage({ params }: { params: Promis
 
   if (!lesson) {
     return (
-      <main className="mx-auto max-w-lg px-6 py-20 text-center">
+      <main className="mx-auto w-full max-w-lg px-6 py-20 text-center">
         <h1 className="font-display text-2xl font-medium text-ink">Aula não encontrada</h1>
         <a href={`${BASE_PATH}/reviewClass`} className="mt-6 inline-flex text-sm text-accent hover:underline">
           ← Voltar às aulas
@@ -57,7 +57,7 @@ export default async function ReviewClassDetailPage({ params }: { params: Promis
   }
 
   return (
-    <main className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-10">
+    <main className="mx-auto w-full max-w-3xl px-4 py-8 sm:px-6 sm:py-10">
       <header className="mb-8" style={{ fontFamily: "var(--font-sans)" }}>
         <a href={`${BASE_PATH}/reviewClass`} className="text-sm text-accent hover:underline">
           ← Minhas aulas

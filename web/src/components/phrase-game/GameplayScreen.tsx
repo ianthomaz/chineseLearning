@@ -279,12 +279,12 @@ export function GameplayScreen({
       ) : null}
 
       {submitted === null ? (
-        <label className="flex cursor-pointer items-center gap-2 text-xs text-ink/55">
+        <label className="flex min-h-[44px] cursor-pointer items-center gap-2 text-xs text-ink/55">
           <input
             type="checkbox"
             checked={settings.showNativePrompt}
             onChange={(e) => onSettingsChange({ ...settings, showNativePrompt: e.target.checked })}
-            className="h-3.5 w-3.5 rounded border-ink/30 accent-accent"
+            className="h-4 w-4 rounded border-ink/30 accent-accent"
           />
           {t("phraseGame.extra.showNativePrompt")}
         </label>
@@ -325,13 +325,13 @@ export function GameplayScreen({
       ) : null}
 
       {/* Actions */}
-      <div className="flex justify-end gap-3">
+      <div className="flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
         {submitted === null ? (
           <button
             type="button"
             onClick={handleSubmit}
             disabled={!canSubmit}
-            className="rounded-xl px-6 py-3 text-sm font-semibold text-white transition-opacity disabled:opacity-40"
+            className="w-full rounded-xl px-6 py-3 text-sm font-semibold text-white transition-opacity disabled:opacity-40 sm:w-auto"
             style={{ backgroundColor: "var(--accent)" }}
           >
             {t("phraseGame.submit")}
@@ -341,7 +341,7 @@ export function GameplayScreen({
             <button
               type="button"
               onClick={() => finalize(false, attemptString(board.answer))}
-              className="rounded-xl border px-5 py-3 text-sm font-medium text-ink/70 hover:bg-ink/5"
+              className="w-full rounded-xl border px-5 py-3 text-sm font-medium text-ink/70 hover:bg-ink/5 sm:w-auto"
               style={{ borderColor: "var(--border)" }}
             >
               {t("phraseGame.seeAnswer")}
@@ -349,7 +349,7 @@ export function GameplayScreen({
             <button
               type="button"
               onClick={handleRetry}
-              className="rounded-xl px-6 py-3 text-sm font-semibold text-white"
+              className="w-full rounded-xl px-6 py-3 text-sm font-semibold text-white sm:w-auto"
               style={{ backgroundColor: "var(--accent)" }}
             >
               {t("phraseGame.retry")}
@@ -359,7 +359,7 @@ export function GameplayScreen({
           <button
             type="button"
             onClick={onNext}
-            className="rounded-xl px-6 py-3 text-sm font-semibold text-white"
+            className="w-full rounded-xl px-6 py-3 text-sm font-semibold text-white sm:w-auto"
             style={{ backgroundColor: "var(--accent)" }}
           >
             {isLast ? t("phraseGame.finish") : t("phraseGame.next")}

@@ -102,7 +102,7 @@ export function VocabTable({ rows }: Props) {
                   {canStroke ? (
                     <button
                       type="button"
-                      className="shrink-0 rounded-md border border-ink/15 px-2 py-1 text-xs font-medium text-ink/55 transition-colors hover:border-[var(--accent)]/40 hover:bg-[var(--accent)]/5 hover:text-ink"
+                      className="-my-2 inline-flex min-h-[44px] shrink-0 items-center rounded-md border border-ink/15 px-2 text-xs font-medium text-ink/55 transition-colors hover:border-[var(--accent)]/40 hover:bg-[var(--accent)]/5 hover:text-ink"
                       style={{ fontFamily: "var(--font-sans)" }}
                       aria-label={t("vocab.openStrokesAria", { word: row.hanzi })}
                       onClick={() =>

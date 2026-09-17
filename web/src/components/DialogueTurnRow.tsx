@@ -46,7 +46,7 @@ export function DialogueTurnRow({ turn, variant, phraseReveal }: Props) {
       >
         <span className="mb-1 flex items-center justify-between gap-2 px-3">
           <span
-            className="text-[10px] font-semibold uppercase tracking-wider text-ink/40"
+            className="text-xs font-semibold uppercase tracking-wider text-ink/40"
             style={{ fontFamily: "var(--font-sans)" }}
           >
             {turn.speaker}
