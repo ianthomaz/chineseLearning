@@ -5,6 +5,9 @@ import { BlockTitleText } from "@/components/BlockTitleText";
 import type { BlockIndexEntry } from "@/lib/blocks-types";
 import { useLocale } from "@/context/LocaleContext";
 
+/** The phrase game is promoted out of the grid into its own card — see FeaturedGame. */
+const FEATURED_COLOR = "var(--cat-violet)";
+
 type NavGridCard = {
   href: string;
   modeKey:
@@ -14,7 +17,6 @@ type NavGridCard = {
     | "grammar"
     | "dialogues"
     | "gamification"
-    | "phraseGame"
     | "tutor";
   hanzi: string;
   color: string;
@@ -65,13 +67,6 @@ const homeGridCards: ReadonlyArray<NavGridCard> = [
     descKey: "home.modeQuizDesc",
   },
   {
-    href: "/phrase-game",
-    modeKey: "phraseGame",
-    hanzi: "拼",
-    color: "var(--cat-violet)",
-    descKey: "home.modePhraseGameDesc",
-  },
-  {
     href: "/praticar",
     modeKey: "tutor",
     hanzi: "练",
@@ -106,7 +101,9 @@ export function HomeContent({ blocks }: Props) {
         </p>
       </section>
 
-      <section>
+      <FeaturedGame t={t} />
+
+      <section className="mt-10 sm:mt-12">
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
           {homeGridCards.map((m) => (
             <Link
@@ -200,5 +197,64 @@ export function HomeContent({ blocks }: Props) {
         </ol>
       </section>
     </main>
+  );
+}
+
+/**
+ * Hero entry to the phrase game. It is the one thing on the site that is playable
+ * without an account, so it gets a card of its own above the grid rather than an
+ * eighth equal tile in it.
+ */
+function FeaturedGame({ t }: { t: (key: string) => string }) {
+  return (
+    <section>
+      <Link
+        href="/phrase-game"
+        className="group flex flex-col gap-5 rounded-3xl border p-6 transition-shadow active:bg-ink/[0.02] sm:flex-row sm:items-center sm:gap-7 sm:p-8 sm:hover:shadow-lg"
+        style={{
+          borderColor: `color-mix(in srgb, ${FEATURED_COLOR} 35%, transparent)`,
+          backgroundColor: `color-mix(in srgb, ${FEATURED_COLOR} 8%, var(--surface))`,
+        }}
+      >
+        <span
+          className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl font-hanzi text-3xl font-bold text-white sm:h-20 sm:w-20 sm:text-4xl"
+          style={{ backgroundColor: FEATURED_COLOR }}
+          aria-hidden
+        >
+          拼
+        </span>
+
+        <span className="min-w-0 flex-1">
+          <span
+            className="block text-xs font-semibold uppercase tracking-widest"
+            style={{ color: FEATURED_COLOR, fontFamily: "var(--font-sans)" }}
+          >
+            {t("home.featuredKicker")}
+          </span>
+          <span
+            className="mt-1.5 block text-xl font-semibold text-ink sm:text-2xl"
+            style={{ fontFamily: "var(--font-sans)" }}
+          >
+            {t("phraseGame.title")}
+          </span>
+          <span className="mt-2 block text-sm leading-relaxed text-ink/60">
+            {t("home.modePhraseGameDesc")}
+          </span>
+          <span
+            className="mt-1 block text-xs text-ink/45"
+            style={{ fontFamily: "var(--font-sans)" }}
+          >
+            {t("home.featuredNote")}
+          </span>
+        </span>
+
+        <span
+          className="inline-flex w-full shrink-0 items-center justify-center rounded-2xl px-6 py-3.5 text-base font-semibold text-white transition-opacity group-hover:opacity-90 sm:w-auto"
+          style={{ backgroundColor: FEATURED_COLOR, fontFamily: "var(--font-sans)" }}
+        >
+          {t("home.featuredCta")}
+        </span>
+      </Link>
+    </section>
   );
 }

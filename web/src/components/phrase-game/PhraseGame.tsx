@@ -147,17 +147,17 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
         </div>
       </header>
 
-      <div
+      {/* The game is the first thing on the page: the prototype note is one muted
+          line, and signing in — which is optional — sits below the setup screen. */}
+      <p
         role="status"
-        className="mb-4 rounded-2xl border px-4 py-3 text-sm text-ink/75"
-        style={{ borderColor: "var(--border)", backgroundColor: "rgba(45,90,140,0.06)" }}
+        className="mb-6 text-xs leading-relaxed text-ink/45"
+        style={{ fontFamily: "var(--font-sans)" }}
       >
         {t("phraseGame.prototypeNotice")}
-      </div>
+      </p>
 
-      <AuthPanel />
-
-      <div className="mt-6">
+      <div>
         {phase === "setup" ? (
           <>
             {bankStatus === "error" ? (
@@ -173,6 +173,10 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
               onSettingsChange={setSettings}
               onPlay={startRound}
             />
+            {/* Anchor target for the header "Entrar" link, which lands here. */}
+            <div id="phrase-game-auth" className="mt-8 scroll-mt-24">
+              <AuthPanel />
+            </div>
           </>
         ) : null}
 

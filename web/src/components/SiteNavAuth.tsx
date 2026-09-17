@@ -31,7 +31,7 @@ function SiteNavAuthLive() {
   if (!session?.user) {
     return (
       <Link
-        href="/phrase-game"
+        href="/phrase-game#phrase-game-auth"
         className="flex min-h-[44px] items-center rounded-full border px-3 text-xs font-medium text-ink/65 transition-colors hover:bg-ink/5 sm:px-4"
         style={{ borderColor: "var(--border)", fontFamily: "var(--font-sans)" }}
         title={t("nav.authSignInHint")}

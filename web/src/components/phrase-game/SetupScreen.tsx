@@ -24,12 +24,10 @@ type Props = {
   onPlay: () => void;
 };
 
-const TIERS: Array<{ id: GameTier; enabled: boolean }> = [
-  { id: "iniciante", enabled: true },
-  { id: "basico", enabled: true },
-  { id: "intermediario", enabled: false },
-  { id: "avancado", enabled: false },
-];
+const PLAYABLE_TIERS: GameTier[] = ["iniciante", "basico"];
+
+/** Not in the bank yet — announced as a line of text, not as disabled buttons. */
+const UPCOMING_TIERS: GameTier[] = ["intermediario", "avancado"];
 
 const LEVELS: GameLevel[] = [1, 2, 3, 4, 5];
 
@@ -70,33 +68,32 @@ export function SetupScreen({
       {/* Language tier */}
       <fieldset>
         <legend className="mb-3 text-sm font-semibold text-ink">{t("phraseGame.tierLabel")}</legend>
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-          {TIERS.map(({ id, enabled }) => {
+        <div className="grid grid-cols-2 gap-2">
+          {PLAYABLE_TIERS.map((id) => {
             const active = tier === id;
             return (
               <button
                 key={id}
                 type="button"
-                disabled={!enabled}
-                onClick={() => enabled && onTierChange(id)}
-                className={`relative rounded-xl border px-3 py-3 text-sm transition-colors ${
+                onClick={() => onTierChange(id)}
+                className={`min-h-[48px] rounded-xl border px-3 py-3 text-sm transition-colors ${
                   active ? "font-medium text-white" : "text-ink/70 hover:bg-ink/5"
-                } ${!enabled ? "cursor-not-allowed opacity-50" : ""}`}
+                }`}
                 style={{
                   borderColor: active ? "var(--accent)" : "var(--border)",
                   backgroundColor: active ? "var(--accent)" : "transparent",
                 }}
               >
                 {t(`phraseGame.tier.${id}`)}
-                {!enabled ? (
-                  <span className="mt-1 block text-[0.6rem] uppercase tracking-wide text-ink/40">
-                    {t("phraseGame.soonBadge")}
-                  </span>
-                ) : null}
               </button>
             );
           })}
         </div>
+        <p className="mt-2 text-xs text-ink/40" style={{ fontFamily: "var(--font-sans)" }}>
+          {t("phraseGame.tierSoon", {
+            tiers: UPCOMING_TIERS.map((id) => t(`phraseGame.tier.${id}`)).join(" · "),
+          })}
+        </p>
       </fieldset>
 
       {/* Game level */}
@@ -110,7 +107,7 @@ export function SetupScreen({
                 key={lv}
                 type="button"
                 onClick={() => onLevelChange(lv)}
-                className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 text-left transition-colors ${
+                className={`flex min-h-[48px] w-full items-center gap-3 rounded-xl border px-4 py-3 text-left transition-colors ${
                   active ? "" : "hover:bg-ink/5"
                 }`}
                 style={{
@@ -135,9 +132,14 @@ export function SetupScreen({
       </fieldset>
 
       {/* Difficulty extras */}
-      <fieldset>
-        <legend className="mb-3 text-sm font-semibold text-ink">{t("phraseGame.extrasLabel")}</legend>
-        <div className="space-y-2.5">
+      <details className="rounded-xl border px-4" style={{ borderColor: "var(--border)" }}>
+        <summary className="flex min-h-[48px] cursor-pointer list-none items-center justify-between text-sm font-semibold text-ink">
+          {t("phraseGame.extrasLabel")}
+          <span className="text-xs font-normal text-ink/40" style={{ fontFamily: "var(--font-sans)" }}>
+            {t("phraseGame.extrasOptional")}
+          </span>
+        </summary>
+        <div className="space-y-2.5 pb-4 pt-1">
           <Checkbox
             label={t("phraseGame.extra.pinyinDifficult")}
             checked={settings.pinyinDifficult}
@@ -168,7 +170,7 @@ export function SetupScreen({
             onChange={(v) => setDisplay({ addExtraHanzi: v })}
           />
         </div>
-      </fieldset>
+      </details>
 
       <button
         type="button"
@@ -196,7 +198,7 @@ function Checkbox({
 }) {
   return (
     <label
-      className={`flex items-center gap-3 text-sm ${
+      className={`flex min-h-[44px] items-center gap-3 text-sm ${
         disabled ? "cursor-not-allowed text-ink/35" : "cursor-pointer text-ink/80"
       }`}
     >

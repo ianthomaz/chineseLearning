@@ -25,11 +25,15 @@
     "language": "Interface language",
     "phraseGame": "Phrases",
     "authSignIn": "Sign in",
-    "authSignInHint": "Google login on the phrase game",
+    "authSignInHint": "Sign in with Google — optional, saves your nickname",
     "authSignOut": "Sign out",
     "authSignedIn": "Account",
     "registerClass": "Log lesson",
-    "reviewClass": "My lessons"
+    "reviewClass": "My lessons",
+    "group": {
+      "play": "Play",
+      "study": "Study"
+    }
   },
   "gamification": {
     "title": "Quiz",
@@ -89,7 +93,10 @@
     "blocksCount": "{count} blocks",
     "wordCount": "{count} words",
     "wordCountOne": "1 word",
-    "modePhraseGameDesc": "Build Chinese sentences by dragging the pieces into the right order."
+    "modePhraseGameDesc": "Build Chinese sentences by dragging the pieces into the right order.",
+    "featuredKicker": "Featured",
+    "featuredCta": "Play now",
+    "featuredNote": "No account needed — play right away as a guest."
   },
   "index": {
     "reviewKicker": "复习",
@@ -341,7 +348,6 @@
       "intermediario": "Intermediate",
       "avancado": "Advanced"
     },
-    "soonBadge": "Soon",
     "levelLabel": "Difficulty",
     "inicianteCap": "At Beginner level, only levels 1 and 2 are available.",
     "level": {
@@ -408,6 +414,8 @@
       "nickSaved": "Saved"
     },
     "bankLoading": "Loading phrases…",
-    "bankError": "Could not load the phrase bank. Please reload the page."
+    "bankError": "Could not load the phrase bank. Please reload the page.",
+    "tierSoon": "{tiers} — coming soon.",
+    "extrasOptional": "optional"
   }
 }

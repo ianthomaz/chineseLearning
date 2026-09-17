@@ -12,16 +12,40 @@ import { isAdminEmail } from "@/lib/phrase-game/admin";
 
 const AUTH_ENABLED = process.env.NEXT_PUBLIC_AUTH_ENABLED !== "0";
 
-const NAV_TABS = [
-  { href: "/review", key: "review" as const },
-  { href: "/vocabulary", key: "vocabulary" as const },
-  { href: "/visuals", key: "visuals" as const },
-  { href: "/grammar", key: "grammar" as const },
-  { href: "/dialogues", key: "dialogues" as const },
-  { href: "/gamification", key: "gamification" as const },
-  { href: "/phrase-game", key: "phraseGame" as const },
-  { href: "/praticar", key: "tutor" as const },
-] as const;
+type NavTab = {
+  href: string;
+  key: string;
+  /** Renders as a call to action rather than a plain tab. */
+  featured?: boolean;
+};
+
+/**
+ * Two groups, in this order everywhere: interactive things first, reference
+ * material second. Eight flat tabs read as one undifferentiated list on a phone,
+ * and the phrase game — the thing we most want people to open — sat in the middle.
+ */
+const NAV_GROUPS: ReadonlyArray<{ key: "play" | "study"; tabs: readonly NavTab[] }> = [
+  {
+    key: "play",
+    tabs: [
+      { href: "/phrase-game", key: "phraseGame", featured: true },
+      { href: "/gamification", key: "gamification" },
+      { href: "/praticar", key: "tutor" },
+    ],
+  },
+  {
+    key: "study",
+    tabs: [
+      { href: "/review", key: "review" },
+      { href: "/vocabulary", key: "vocabulary" },
+      { href: "/visuals", key: "visuals" },
+      { href: "/grammar", key: "grammar" },
+      { href: "/dialogues", key: "dialogues" },
+    ],
+  },
+];
+
+const NAV_TABS: readonly NavTab[] = NAV_GROUPS.flatMap((g) => g.tabs);
 
 /** Paths that keep the Prática tab highlighted (hub + sub-flows). */
 function isPracticePath(pathname: string): boolean {
@@ -35,10 +59,66 @@ function isPracticePath(pathname: string): boolean {
   );
 }
 
-const CURATOR_TABS = [
-  { href: "/registerClass", key: "registerClass" as const },
-  { href: "/reviewClass", key: "reviewClass" as const },
-] as const;
+function isTabActive(tab: NavTab, pathname: string): boolean {
+  if (tab.href === "/praticar") return isPracticePath(pathname);
+  return pathname === tab.href || pathname.startsWith(`${tab.href}/`);
+}
+
+const CURATOR_TABS: readonly NavTab[] = [
+  { href: "/registerClass", key: "registerClass" },
+  { href: "/reviewClass", key: "reviewClass" },
+];
+
+type Variant = "desktop" | "mobile";
+
+/** Shared tab styling so desktop and mobile stay in step. */
+function tabClassName(variant: Variant, active: boolean, featured = false): string {
+  if (variant === "desktop") {
+    if (active) return "rounded-full px-3 py-2 text-sm font-medium text-white transition-colors";
+    if (featured)
+      return "rounded-full px-3 py-2 text-sm font-semibold transition-colors hover:brightness-95";
+    return "rounded-full px-3 py-2 text-sm text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink";
+  }
+  if (active) return "rounded-xl px-4 py-3.5 text-base font-medium text-white";
+  if (featured) return "rounded-xl px-4 py-3.5 text-base font-semibold";
+  return "rounded-xl px-4 py-3.5 text-base text-ink/75 transition-colors hover:bg-ink/5";
+}
+
+function tabStyle(active: boolean, featured = false): React.CSSProperties {
+  const base = { fontFamily: "var(--font-sans)" };
+  if (active) return { ...base, backgroundColor: "var(--accent)" };
+  if (featured)
+    return {
+      ...base,
+      color: "var(--cat-violet)",
+      backgroundColor: "color-mix(in srgb, var(--cat-violet) 12%, transparent)",
+    };
+  return base;
+}
+
+function NavTabLink({
+  tab,
+  pathname,
+  variant,
+  t,
+}: {
+  tab: NavTab;
+  pathname: string;
+  variant: Variant;
+  t: (key: string) => string;
+}) {
+  const active = isTabActive(tab, pathname);
+  return (
+    <Link
+      href={tab.href}
+      className={tabClassName(variant, active, tab.featured)}
+      style={tabStyle(active, tab.featured)}
+    >
+      {tab.featured && !active ? <span className="mr-1.5 font-hanzi">拼</span> : null}
+      {t(`nav.${tab.key}`)}
+    </Link>
+  );
+}
 
 /**
  * Curator-only nav links. Only mounted when AUTH_ENABLED (so useSession has a
@@ -51,43 +131,31 @@ function CuratorTabs({
   t,
 }: {
   pathname: string;
-  variant: "desktop" | "mobile";
+  variant: Variant;
   t: (key: string) => string;
 }) {
   const { data: session } = useSession();
   if (!isAdminEmail(session?.user?.email)) return null;
 
   return (
-    <>
+    <div className={variant === "mobile" ? "flex flex-col gap-1" : "contents"}>
       {CURATOR_TABS.map((tab) => {
-        const isActive = pathname === tab.href || pathname.startsWith(`${tab.href}/`);
-        if (variant === "desktop") {
-          return (
-            <Link
-              key={tab.href}
-              href={tab.href}
-              className={
-                isActive
-                  ? "rounded-full px-4 py-2 text-sm font-medium text-white transition-colors"
-                  : "rounded-full px-4 py-2 text-sm text-accent transition-colors hover:bg-ink/5"
-              }
-              style={isActive ? { backgroundColor: "var(--accent)" } : {}}
-            >
-              {t(`nav.${tab.key}`)}
-            </Link>
-          );
-        }
+        const active = isTabActive(tab, pathname);
         return (
           <Link
             key={tab.href}
             href={tab.href}
             className={
-              isActive
-                ? "rounded-xl px-4 py-3.5 text-base font-medium text-white"
-                : "rounded-xl px-4 py-3.5 text-base text-accent transition-colors hover:bg-ink/5"
+              variant === "desktop"
+                ? active
+                  ? "rounded-full px-3 py-2 text-sm font-medium text-white transition-colors"
+                  : "rounded-full px-3 py-2 text-sm text-accent transition-colors hover:bg-ink/5"
+                : active
+                  ? "rounded-xl px-4 py-3.5 text-base font-medium text-white"
+                  : "rounded-xl px-4 py-3.5 text-base text-accent transition-colors hover:bg-ink/5"
             }
             style={
-              isActive
+              active
                 ? { backgroundColor: "var(--accent)", fontFamily: "var(--font-sans)" }
                 : { fontFamily: "var(--font-sans)" }
             }
@@ -96,7 +164,7 @@ function CuratorTabs({
           </Link>
         );
       })}
-    </>
+    </div>
   );
 }
 
@@ -143,10 +211,10 @@ export function SiteNav() {
       className="sticky top-0 z-40 border-b bg-paper/95 backdrop-blur-sm supports-[backdrop-filter]:bg-paper/80"
       style={{ borderColor: "var(--border)", paddingTop: "env(safe-area-inset-top, 0px)" }}
     >
-      <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4">
         <Link
           href="/"
-          className="flex min-h-[44px] min-w-0 shrink-0 items-center font-display text-lg font-medium tracking-tight text-ink transition-colors hover:text-accent sm:text-xl"
+          className="flex min-h-[44px] min-w-[5rem] shrink items-center font-display text-lg font-medium tracking-tight text-ink transition-colors hover:text-accent sm:text-xl"
         >
           <span className="line-clamp-2 leading-snug">
             漢語 <span className="font-light text-ink/40">· {t("metadata.siteTitle")}</span>
@@ -218,26 +286,15 @@ export function SiteNav() {
             className="hidden flex-wrap items-center justify-end gap-1 xl:flex"
             aria-label={t("nav.courseNav")}
           >
-            {NAV_TABS.map((tab) => {
-              const isActive =
-                tab.href === "/praticar"
-                  ? isPracticePath(pathname)
-                  : pathname === tab.href || pathname.startsWith(`${tab.href}/`);
-              return (
-                <Link
-                  key={tab.href}
-                  href={tab.href}
-                  className={
-                    isActive
-                      ? "rounded-full px-4 py-2 text-sm font-medium text-white transition-colors"
-                      : "rounded-full px-4 py-2 text-sm text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink"
-                  }
-                  style={isActive ? { backgroundColor: "var(--accent)" } : {}}
-                >
-                  {t(`nav.${tab.key}`)}
-                </Link>
-              );
-            })}
+            {NAV_TABS.map((tab) => (
+              <NavTabLink
+                key={tab.href}
+                tab={tab}
+                pathname={pathname}
+                variant="desktop"
+                t={t}
+              />
+            ))}
             {AUTH_ENABLED && <CuratorTabs pathname={pathname} variant="desktop" t={t} />}
           </nav>
         </div>
@@ -247,37 +304,32 @@ export function SiteNav() {
         <div
           id="site-mobile-nav"
           ref={mobileNavRef}
-          className="border-t border-border xl:hidden"
+          className="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-border xl:hidden"
           style={{ borderColor: "var(--border)" }}
         >
           <nav
-            className="mx-auto flex max-w-5xl flex-col gap-1 px-4 py-3 sm:px-6"
+            className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom,0px))] sm:px-6"
             aria-label={t("nav.courseNav")}
           >
-            {NAV_TABS.map((tab) => {
-              const isActive =
-                tab.href === "/praticar"
-                  ? isPracticePath(pathname)
-                  : pathname === tab.href || pathname.startsWith(`${tab.href}/`);
-              return (
-                <Link
-                  key={tab.href}
-                  href={tab.href}
-                  className={
-                    isActive
-                      ? "rounded-xl px-4 py-3.5 text-base font-medium text-white"
-                      : "rounded-xl px-4 py-3.5 text-base text-ink/75 transition-colors hover:bg-ink/5"
-                  }
-                  style={
-                    isActive
-                      ? { backgroundColor: "var(--accent)", fontFamily: "var(--font-sans)" }
-                      : { fontFamily: "var(--font-sans)" }
-                  }
+            {NAV_GROUPS.map((group) => (
+              <div key={group.key} className="flex flex-col gap-1">
+                <p
+                  className="px-4 pb-1 text-[0.7rem] font-semibold uppercase tracking-widest text-ink/35"
+                  style={{ fontFamily: "var(--font-sans)" }}
                 >
-                  {t(`nav.${tab.key}`)}
-                </Link>
-              );
-            })}
+                  {t(`nav.group.${group.key}`)}
+                </p>
+                {group.tabs.map((tab) => (
+                  <NavTabLink
+                    key={tab.href}
+                    tab={tab}
+                    pathname={pathname}
+                    variant="mobile"
+                    t={t}
+                  />
+                ))}
+              </div>
+            ))}
             {AUTH_ENABLED && <CuratorTabs pathname={pathname} variant="mobile" t={t} />}
           </nav>
         </div>

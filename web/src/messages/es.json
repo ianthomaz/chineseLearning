@@ -25,11 +25,15 @@
     "language": "Idioma de la interfaz",
     "phraseGame": "Frases",
     "authSignIn": "Entrar",
-    "authSignInHint": "Inicio de sesión con Google en el juego de frases",
+    "authSignInHint": "Entrar con Google — opcional, guarda tu apodo",
     "authSignOut": "Salir",
     "authSignedIn": "Cuenta",
     "registerClass": "Registrar clase",
-    "reviewClass": "Mis clases"
+    "reviewClass": "Mis clases",
+    "group": {
+      "play": "Jugar",
+      "study": "Estudiar"
+    }
   },
   "gamification": {
     "title": "Quiz",
@@ -89,7 +93,10 @@
     "blocksCount": "{count} bloques",
     "wordCount": "{count} palabras",
     "wordCountOne": "1 palabra",
-    "modePhraseGameDesc": "Forma frases en chino arrastrando las piezas en el orden correcto."
+    "modePhraseGameDesc": "Forma frases en chino arrastrando las piezas en el orden correcto.",
+    "featuredKicker": "Destacado",
+    "featuredCta": "Jugar ahora",
+    "featuredNote": "No necesitas cuenta — juega ya como invitado."
   },
   "index": {
     "reviewKicker": "复习",
@@ -341,7 +348,6 @@
       "intermediario": "Intermedio",
       "avancado": "Avanzado"
     },
-    "soonBadge": "Pronto",
     "levelLabel": "Dificultad",
     "inicianteCap": "En el nivel Principiante, solo están disponibles los niveles 1 y 2.",
     "level": {
@@ -408,6 +414,8 @@
       "nickSaved": "Guardado"
     },
     "bankLoading": "Cargando frases…",
-    "bankError": "No se pudo cargar el banco de frases. Recarga la página."
+    "bankError": "No se pudo cargar el banco de frases. Recarga la página.",
+    "tierSoon": "{tiers} — muy pronto.",
+    "extrasOptional": "opcional"
   }
 }
