@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { BlockTitleText } from "@/components/BlockTitleText";
-import type { ContentBlock } from "@/lib/blocks-types";
+import type { BlockIndexEntry } from "@/lib/blocks-types";
 import { useLocale } from "@/context/LocaleContext";
 
 type Mode = "review" | "vocabulary" | "grammar";
 
 type Props = {
-  blocks: ContentBlock[];
+  blocks: BlockIndexEntry[];
   mode: Mode;
 };
 
@@ -24,13 +24,10 @@ const modeLabelKey: Record<Mode, string> = {
   grammar: "blockIndex.rules",
 };
 
-const modeCountFn: Record<Mode, (b: ContentBlock) => number | null> = {
-  review: (b) => (b.structures.length > 0 ? b.structures.length : null),
-  vocabulary: (b) => (b.vocabulary.length > 0 ? b.vocabulary.length : null),
-  grammar: (b) => {
-    const n = b.structures.length + b.notes.length + b.differences.length;
-    return n > 0 ? n : null;
-  },
+const modeCountFn: Record<Mode, (b: BlockIndexEntry) => number | null> = {
+  review: (b) => b.structureCount || null,
+  vocabulary: (b) => b.vocabCount || null,
+  grammar: (b) => b.grammarCount || null,
 };
 
 export function BlockIndex({ blocks, mode }: Props) {

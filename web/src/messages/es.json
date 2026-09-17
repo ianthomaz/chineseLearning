@@ -406,6 +406,8 @@
       "nickLabel": "Apodo",
       "nickSave": "Guardar",
       "nickSaved": "Guardado"
-    }
+    },
+    "bankLoading": "Cargando frases…",
+    "bankError": "No se pudo cargar el banco de frases. Recarga la página."
   }
 }

@@ -3,9 +3,15 @@
  * and import types from `@/lib/blocks-types` only.
  */
 import { getContentRepository } from "@/lib/content";
-import type { BlockSummary, ContentBlock } from "@/lib/blocks-types";
+import {
+  toBlockIndexEntry,
+  type BlockIndexEntry,
+  type BlockSummary,
+  type ContentBlock,
+} from "@/lib/blocks-types";
 
 export type {
+  BlockIndexEntry,
   BlockSummary,
   ContentBlock,
   DialogueTurn,
@@ -29,4 +35,9 @@ export function getBlockIds(): string[] {
 
 export function getBlockSummaries(): BlockSummary[] {
   return getBlocks().map((b) => ({ id: b.id, title: b.title }));
+}
+
+/** Index-card projection — see {@link BlockIndexEntry} for why pages send this. */
+export function getBlockIndexEntries(): BlockIndexEntry[] {
+  return getBlocks().map(toBlockIndexEntry);
 }

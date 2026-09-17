@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { BlockTitleText } from "@/components/BlockTitleText";
-import type { ContentBlock } from "@/lib/blocks-types";
+import type { BlockIndexEntry } from "@/lib/blocks-types";
 import { useLocale } from "@/context/LocaleContext";
 
 type NavGridCard = {
@@ -81,7 +81,7 @@ const homeGridCards: ReadonlyArray<NavGridCard> = [
 ];
 
 type Props = {
-  blocks: ContentBlock[];
+  blocks: BlockIndexEntry[];
 };
 
 export function HomeContent({ blocks }: Props) {
@@ -184,14 +184,14 @@ export function HomeContent({ blocks }: Props) {
                 <span className="text-sm text-ink/80 transition-colors group-hover:text-ink">
                   <BlockTitleText id={b.id} title={b.title} />
                 </span>
-                {b.vocabulary.length > 0 ? (
+                {b.vocabCount > 0 ? (
                   <span
                     className="ml-auto shrink-0 text-xs text-ink/25"
                     style={{ fontFamily: "var(--font-sans)" }}
                   >
-                    {b.vocabulary.length === 1
+                    {b.vocabCount === 1
                       ? t("home.wordCountOne")
-                      : t("home.wordCount", { count: b.vocabulary.length })}
+                      : t("home.wordCount", { count: b.vocabCount })}
                   </span>
                 ) : null}
               </Link>

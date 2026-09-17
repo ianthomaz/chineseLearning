@@ -37,8 +37,11 @@ export type Tier = "hsk1" | "basico";
 /** A canonical phrase from the validated bank. */
 export type Phrase = {
   id: string;
-  /** Authoring hint (1..5). Pool selection uses token count + tier, not only this. */
-  nivel: number;
+  /**
+   * Authoring hint (1..5). Pool selection uses token count + tier, not this, so
+   * the bank served to the browser drops it — see `getRuntimePhrases`.
+   */
+  nivel?: number;
   tier: Tier;
   /** Prompt shown to the user — Portuguese is required, en/es optional (fallback → pt). */
   pt: string;

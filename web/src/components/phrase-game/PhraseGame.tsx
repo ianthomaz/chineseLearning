@@ -7,6 +7,7 @@ import { buildRound, type Round } from "@/lib/phrase-game/select-phrases";
 import { clampDisplaySettingsForLevel } from "@/lib/phrase-game/settings-by-level";
 import { localizedPrompt } from "@/lib/phrase-game/display";
 import { logGameEvent, newRoundId } from "@/lib/phrase-game/game-log";
+import { usePhraseBank } from "@/lib/phrase-game/use-phrase-bank";
 import {
   DEFAULT_DISPLAY_SETTINGS,
   type DisplaySettings,
@@ -21,8 +22,8 @@ import { SpeakButton } from "./SpeakButton";
 
 type Phase = "setup" | "playing" | "complete";
 
-export function PhraseGame({ phrases }: { phrases: Phrase[] }) {
-  const bank = phrases;
+export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null }) {
+  const { bank, status: bankStatus } = usePhraseBank(initialPhrases);
   const { t } = useLocale();
   const [phase, setPhase] = useState<Phase>("setup");
   const [tier, setTier] = useState<GameTier>("iniciante");
@@ -159,15 +160,14 @@ export function PhraseGame({ phrases }: { phrases: Phrase[] }) {
       <div className="mt-6">
         {phase === "setup" ? (
           <>
-            {bank.length === 0 ? (
-              <p className="mb-4 text-sm text-danger">
-                Banco de frases vazio — corre <code>npm run seed:content</code> no servidor.
-              </p>
+            {bankStatus === "error" ? (
+              <p className="mb-4 text-sm text-danger">{t("phraseGame.bankError")}</p>
             ) : null}
             <SetupScreen
               tier={tier}
               level={level}
               settings={settings}
+              bankLoading={bankStatus === "loading"}
               onTierChange={handleTierChange}
               onLevelChange={handleLevelChange}
               onSettingsChange={setSettings}

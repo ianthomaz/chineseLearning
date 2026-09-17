@@ -16,6 +16,8 @@ type Props = {
   tier: GameTier;
   level: GameLevel;
   settings: DisplaySettings;
+  /** Bank still in flight — the round cannot be built yet. */
+  bankLoading: boolean;
   onTierChange: (tier: GameTier) => void;
   onLevelChange: (level: GameLevel) => void;
   onSettingsChange: (settings: DisplaySettings) => void;
@@ -35,6 +37,7 @@ export function SetupScreen({
   tier,
   level,
   settings,
+  bankLoading,
   onTierChange,
   onLevelChange,
   onSettingsChange,
@@ -170,10 +173,11 @@ export function SetupScreen({
       <button
         type="button"
         onClick={onPlay}
-        className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-opacity hover:opacity-90"
+        disabled={bankLoading}
+        className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
         style={{ backgroundColor: "var(--accent)" }}
       >
-        {t("phraseGame.play")}
+        {bankLoading ? t("phraseGame.bankLoading") : t("phraseGame.play")}
       </button>
     </div>
   );

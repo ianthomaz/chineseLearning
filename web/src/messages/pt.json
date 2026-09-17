@@ -406,6 +406,8 @@
       "nickLabel": "Apelido",
       "nickSave": "Salvar",
       "nickSaved": "Salvo"
-    }
+    },
+    "bankLoading": "A carregar frases…",
+    "bankError": "Não foi possível carregar o banco de frases. Recarregue a página."
   }
 }

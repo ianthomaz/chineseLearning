@@ -1,7 +1,7 @@
 "use client";
 
 import { BlockIndex } from "@/components/BlockIndex";
-import type { ContentBlock } from "@/lib/blocks-types";
+import type { BlockIndexEntry } from "@/lib/blocks-types";
 import { useLocale } from "@/context/LocaleContext";
 
 type Mode = "review" | "vocabulary" | "grammar";
@@ -11,7 +11,7 @@ export function StudyModeIndex({
   blocks,
 }: {
   mode: Mode;
-  blocks: ContentBlock[];
+  blocks: BlockIndexEntry[];
 }) {
   const { t } = useLocale();
 

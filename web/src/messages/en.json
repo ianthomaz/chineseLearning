@@ -406,6 +406,8 @@
       "nickLabel": "Nickname",
       "nickSave": "Save",
       "nickSaved": "Saved"
-    }
+    },
+    "bankLoading": "Loading phrases…",
+    "bankError": "Could not load the phrase bank. Please reload the page."
   }
 }
