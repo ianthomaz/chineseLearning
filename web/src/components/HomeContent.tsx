@@ -295,12 +295,6 @@ function FeaturedGame({ t }: { t: (key: string) => string }) {
           <span className="mt-2 block text-sm leading-relaxed text-ink/60">
             {t("home.modePhraseGameDesc")}
           </span>
-          <span
-            className="mt-1 block text-xs text-ink/45"
-            style={{ fontFamily: "var(--font-sans)" }}
-          >
-            {t("home.featuredNote")}
-          </span>
         </span>
 
         <span

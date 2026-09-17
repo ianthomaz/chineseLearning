@@ -1,0 +1,14 @@
+# itcsVM3 shared host — HTTP default only (do not serve apps on bare IP :443).
+# Installed once at bootstrap; prepare-prod-server does NOT overwrite this file.
+# HTTPS default: nginx-itcs-ssl-default.conf
+
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name _;
+    root /var/www/default;
+    index index.html;
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}

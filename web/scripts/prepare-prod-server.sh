@@ -16,7 +16,11 @@ WEB_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 REPO_ROOT="$(cd "$WEB_DIR/.." && pwd)"
 CRED="$REPO_ROOT/local/credentials/credentials.json"
 NGINX_SRC="$WEB_DIR/deploy/nginx-learnchinese.today.conf"
+NGINX_SSL_DEFAULT="$WEB_DIR/deploy/nginx-itcs-ssl-default.conf"
 SERVER_ENV="$WEB_DIR/deploy/server.env"
+SSL_DIR="$REPO_ROOT/local/credentials/generated/ssl"
+SSL_CRT="$SSL_DIR/learnchinese.crt"
+SSL_KEY="$SSL_DIR/learnchinese.key"
 
 if [[ -f "$CRED" ]] && command -v node >/dev/null 2>&1; then
   REMOTE="${DEPLOY_PROD_HOST:-$(node -e "const d=require('$CRED').deployment||{};process.stdout.write(d.prod_ssh_host||'itcsVM3');")}"
@@ -48,8 +52,20 @@ echo ""
 
 echo "→ Instalar nginx vhost learnchinese.today…"
 scp -q "$NGINX_SRC" "${REMOTE}:/tmp/learnchinese.today.conf"
+if [[ -f "$SSL_CRT" && -f "$SSL_KEY" ]]; then
+  scp -q "$SSL_CRT" "$SSL_KEY" "${REMOTE}:/tmp/"
+  ssh "$REMOTE" 'sudo cp /tmp/learnchinese.crt /etc/nginx/ssl/learnchinese.crt && sudo cp /tmp/learnchinese.key /etc/nginx/ssl/learnchinese.key && sudo chmod 644 /etc/nginx/ssl/learnchinese.crt && sudo chmod 600 /etc/nginx/ssl/learnchinese.key && rm -f /tmp/learnchinese.crt /tmp/learnchinese.key'
+  echo "  OK — origin cert → /etc/nginx/ssl/learnchinese.{crt,key}"
+else
+  echo "  WARN: sem $SSL_CRT — nginx :443 requer origin cert (Cloudflare Origin CA)." >&2
+fi
 ssh "$REMOTE" 'sudo cp /tmp/learnchinese.today.conf /etc/nginx/conf.d/learnchinese.today.conf && rm -f /tmp/learnchinese.today.conf && sudo rm -f /etc/nginx/conf.d/learnchinese.com.conf /etc/nginx/conf.d/learchinese.com.conf && sudo mkdir -p /etc/nginx/ssl && sudo chmod 755 /etc/nginx/ssl'
 echo "  OK — /etc/nginx/conf.d/learnchinese.today.conf"
+if [[ -f "$NGINX_SSL_DEFAULT" ]]; then
+  scp -q "$NGINX_SSL_DEFAULT" "${REMOTE}:/tmp/itcs-ssl-default.conf"
+  ssh "$REMOTE" 'sudo cp /tmp/itcs-ssl-default.conf /etc/nginx/conf.d/00-itcs-ssl-default.conf && rm -f /tmp/itcs-ssl-default.conf'
+  echo "  OK — /etc/nginx/conf.d/00-itcs-ssl-default.conf (não mexe em itcs-default.conf)"
+fi
 echo ""
 
 echo "→ Parar app legado (porta 34827 livre para o deploy)…"
@@ -118,10 +134,10 @@ echo ""
 echo "  VM IP público: ${VM_IP}"
 echo "  DNS learnchinese.today → este IP (Cloudflare proxied)"
 echo "  learnchinese.page → 301 learnchinese.today (CF + nginx fallback)"
-echo "  Nginx: learnchinese.today :80 → 127.0.0.1:34827"
+echo "  Nginx: learnchinese.today :443 (CF origin cert) → 127.0.0.1:34827"
 echo "  server.env.next staged — activar no deploy:"
 echo "    ssh ${REMOTE} 'cd ${REMOTE_DIR} && cp server.env.next server.env && pm2 reload chinese-learning-app --update-env'"
 echo ""
-echo "  SSL origin (opcional Full strict): cert em /etc/nginx/ssl/learnchinese.{crt,key}"
+echo "  SSL: Cloudflare Full (strict) — cert local em local/credentials/generated/ssl/"
 echo "  Ver web/deploy/README.md"
 echo "════════════════════════════════════════════════════════════"
