@@ -438,15 +438,15 @@
     "preset": {
       "comecar": {
         "name": "Começar",
-        "desc": "HSK 1, frases curtas, com pinyin e a frase em português à vista."
+        "desc": "Frases curtas · pinyin em todas as peças · frase à vista"
       },
       "treinar": {
         "name": "Treinar",
-        "desc": "Até HSK 2+, frases até ~5 palavras, tradução só nas palavras difíceis."
+        "desc": "Frases até ~5 palavras · tradução nas palavras difíceis"
       },
       "desafio": {
         "name": "Desafio",
-        "desc": "Frases longas, palavras partidas em caracteres, peças a mais e sem tradução — peça ajuda se precisar."
+        "desc": "Frases longas · palavras partidas em caracteres · peças a mais · sem dicas"
       }
     },
     "helpsLabel": "Ajudas",
@@ -455,12 +455,6 @@
     "harderHint": "Torna a rodada mais difícil.",
     "hintOffByLevel": "Indisponível na dificuldade {level}.",
     "alwaysOnByLevel": "Sempre ligado na dificuldade {level}.",
-    "tierDesc": {
-      "hsk1": "Só vocabulário HSK 1",
-      "hsk2": "HSK 1 e 2",
-      "hsk2plus": "Até vocabulário HSK 2+",
-      "hsk3": "Banco completo, incluindo frases mais complexas"
-    },
     "retry": "Tentar de novo",
     "retryHint": "Ainda dá para corrigir — vale mais pontos do que ver a resposta.",
     "seeAnswer": "Ver resposta",

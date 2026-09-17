@@ -21,7 +21,9 @@ Curadoria por fazer: ordens alternativas aceites no jogo, 557 frases —
 
 ## Língua
 
-A UI tem **três** línguas: **pt-BR**, **EN**, **ES** — em `web/src/messages/`.
+A UI tem **três** línguas em `web/src/messages/`. **O idioma base é o inglês** —
+é o default do `LocaleContext` e é onde a copy se escreve primeiro; pt e es são
+traduções dela.
 
 - O português é **brasileiro**: "você", "tela", "celular", "salvar", "arquivo",
   "Carregando…". Nunca pt-PT ("ecrã", "telemóvel", "podes", "a carregar",
@@ -30,6 +32,17 @@ A UI tem **três** línguas: **pt-BR**, **EN**, **ES** — em `web/src/messages/
   `createTranslator` renderiza o próprio caminho da chave no ecrã.
 - Números seguem a língua (`1,39` em pt/es, `1.39` em en) — usar `Intl`.
 - Ver [`docs/06_jogo_frases.md`](docs/06_jogo_frases.md) § UX.
+
+## Copy
+
+**Não inventar texto de ajuda.** Se um controlo já diz o que faz, não pôr uma
+linha por baixo a explicá-lo — polui. Um `<option>` que diz "HSK 1" não precisa
+de um "HSK 1 vocabulary only" ao lado.
+
+Um rótulo descreve **a variável que aquele controlo mexe**, e só essa. Os presets
+(Start / Practise / Challenge) escolhem **o jeito de jogar** — comprimento da
+frase, palavras partidas, dicas ligadas, peças a mais. **Não** escolhem
+vocabulário: isso é o dropdown, e um preset nunca o altera.
 
 ## Código
 

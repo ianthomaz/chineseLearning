@@ -211,9 +211,6 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
               </option>
             ))}
           </select>
-          <span className="mt-1.5 block text-xs text-ink/45">
-            {t(`phraseGame.tierDesc.${tier}`)}
-          </span>
         </label>
 
         {tierCount === 0 ? (

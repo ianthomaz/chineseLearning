@@ -20,15 +20,33 @@ Auth: [05_autenticacao.md](05_autenticacao.md)
 
 ## UX — presets (não o setup antigo)
 
-Três botões em [`presets.ts`](../web/src/lib/phrase-game/presets.ts):
+**Dois eixos, dois controlos — não misturar:**
 
-| | Vocabulário | Dificuldade | Ajudas |
+| Controlo | Escolhe |
+|---|---|
+| Dropdown "Knowledge" | **que vocabulário** entra na rodada (HSK 1 … HSK 3) |
+| Presets | **como se joga** essa rodada |
+
+Um preset **nunca** mexe no vocabulário. Três botões em
+[`presets.ts`](../web/src/lib/phrase-game/presets.ts):
+
+| | Dificuldade | Peças | Dicas ligadas |
 |---|---|---|---|
-| 始 Começar | HSK1 | 1 | pinyin + frase à vista |
-| 练 Treinar | completo | 2 | tradução nas difíceis |
-| 战 Desafio | completo | 4 | nenhuma |
+| 始 Start | 1 — frases curtas | palavras inteiras | pinyin em todas + frase à vista |
+| 练 Practise | 2 — até ~5 palavras | palavras inteiras | tradução nas difíceis |
+| 战 Challenge | 4 — frases longas | partidas em caracteres, + peças a mais | nenhuma |
 
-"Personalizar" fica num `<details>` fechado. Tiers Intermediário/Avançado = texto, não botões mortos.
+O vocabulário escolhido define o **tecto**: HSK 1 não tem frases longas o
+suficiente para os níveis 3+, por isso `applyPreset()` limita o nível ao que o
+pool permite — "Challenge" com HSK 1 é a rodada mais difícil que HSK 1 consegue
+produzir, não um salto para outro pool. Esse limite vive num só sítio,
+`maxLevelForPool()` em `settings-by-level.ts`.
+
+"Customise" fica num `<details>` fechado.
+
+**Copy:** um rótulo descreve só a variável do seu próprio controlo, e não se
+acrescenta linha de ajuda a repetir o que o controlo já diz. Ver
+[`CLAUDE.md`](../CLAUDE.md) § Copy.
 
 ### Língua e cores
 

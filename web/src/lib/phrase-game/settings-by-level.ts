@@ -1,4 +1,4 @@
-import type { DisplaySettings, GameLevel } from "./types";
+import type { DisplaySettings, GameLevel, GameTier } from "./types";
 
 /** Clear options that higher game levels forbid (see setup screen disabled rules). */
 export function clampDisplaySettingsForLevel(
@@ -40,4 +40,19 @@ export function translationDifficultDisabled(level: GameLevel): boolean {
 
 export function nativePromptDisabled(level: GameLevel): boolean {
   return level >= 3;
+}
+
+/**
+ * Hardest level the chosen vocabulary supports. HSK 1 has no phrases long
+ * enough for levels 3+, so the level list and the presets both stop at 2.
+ * One place, because three callers used to hard-code it.
+ */
+export function maxLevelForPool(tier: GameTier): GameLevel {
+  return tier === "hsk1" ? 2 : 5;
+}
+
+/** Level clamped to what the chosen vocabulary allows. */
+export function clampLevelToPool(tier: GameTier, level: GameLevel): GameLevel {
+  const max = maxLevelForPool(tier);
+  return level > max ? max : level;
 }

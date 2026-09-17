@@ -1,16 +1,15 @@
 /**
- * Named starting points for a round.
+ * Named ways to play a round.
  *
- * The setup screen used to ask eight separate questions (vocabulary tier, game
- * level, five hint checkboxes) before the player had seen a single phrase — and
- * every one of those hints is already available as a one-tap button during play.
- * A preset is one decision that expands into a legal (tier, level, settings)
- * triple; the full controls stay available under "Personalizar".
+ * A preset decides HOW the round behaves — phrase length, whether words are
+ * split into characters, which hints start on, whether extra pieces are mixed
+ * in. It deliberately does NOT touch the vocabulary: that is the dropdown above
+ * it, and a preset overriding the player's own choice was the bug this replaced.
  *
  * Presets carry no new game rules: they are values the setup screen could always
- * have produced.
+ * have produced. The full controls stay available under "Customise".
  */
-import { clampDisplaySettingsForLevel } from "./settings-by-level";
+import { clampDisplaySettingsForLevel, clampLevelToPool } from "./settings-by-level";
 import {
   DEFAULT_DISPLAY_SETTINGS,
   type DisplaySettings,
@@ -26,7 +25,6 @@ export type GamePreset = {
   hanzi: string;
   /** Design token, matching the card colour families used on the home page. */
   color: string;
-  tier: GameTier;
   level: GameLevel;
   settings: DisplaySettings;
 };
@@ -45,7 +43,6 @@ function preset(
   id: PresetId,
   hanzi: string,
   color: string,
-  tier: GameTier,
   level: GameLevel,
   overrides: Partial<DisplaySettings>,
 ): GamePreset {
@@ -55,43 +52,62 @@ function preset(
     level,
     normalize({ ...DEFAULT_DISPLAY_SETTINGS, ...overrides }),
   );
-  return { id, hanzi, color, tier, level, settings: normalize(settings) };
+  return { id, hanzi, color, level, settings: normalize(settings) };
 }
 
 export const GAME_PRESETS: readonly GamePreset[] = [
-  // HSK1 only, short phrases, pinyin on every piece and the prompt in view.
-  preset("comecar", "始", "var(--cat-green)", "hsk1", 1, {
+  // Short phrases, whole words, pinyin on every piece, prompt in view.
+  preset("comecar", "始", "var(--cat-green)", 1, {
     showNativePrompt: true,
     hanziPlusPinyin: true,
   }),
-  // HSK2+ pool, up to ~5 words, prompt still shown, gloss on the hard words only.
-  preset("treinar", "练", "var(--accent)", "hsk2plus", 2, {
+  // Longer phrases, whole words, gloss on the hard ones only.
+  preset("treinar", "练", "var(--accent)", 2, {
     showNativePrompt: true,
     translationDifficult: true,
   }),
-  // Full bank, long phrases, words split into characters, distractors, no prompt
-  // unless asked for. Level 4 already forces the extra hanzi.
-  preset("desafio", "战", "var(--cat-violet)", "hsk3", 4, {}),
+  // Long phrases, words split into characters, extra pieces, no hints on.
+  // Level 4 already forces the extra hanzi.
+  preset("desafio", "战", "var(--cat-violet)", 4, {}),
 ];
+
+/**
+ * A preset applied on top of the vocabulary the player already chose. The pool
+ * decides the ceiling — HSK 1 has no phrases long enough for level 3+ — so
+ * "Challenge" on HSK 1 means the hardest round HSK 1 can produce.
+ */
+export function applyPreset(
+  preset: GamePreset,
+  tier: GameTier,
+): { level: GameLevel; settings: DisplaySettings } {
+  const level = clampLevelToPool(tier, preset.level);
+  return {
+    level,
+    settings: normalize(clampDisplaySettingsForLevel(level, preset.settings)),
+  };
+}
 
 export function findPreset(id: PresetId): GamePreset | undefined {
   return GAME_PRESETS.find((p) => p.id === id);
 }
 
-/** Which preset the current configuration corresponds to, or null if custom. */
+/**
+ * Which preset the current configuration corresponds to, or null if custom.
+ * Compared against the preset as the chosen vocabulary would apply it, so a
+ * clamped "Challenge" on HSK 1 still reads as Challenge.
+ */
 export function matchPreset(
   tier: GameTier,
   level: GameLevel,
   settings: DisplaySettings,
 ): PresetId | null {
   const current = normalize(settings);
-  const hit = GAME_PRESETS.find(
-    (p) =>
-      p.tier === tier &&
-      p.level === level &&
-      (Object.keys(p.settings) as Array<keyof DisplaySettings>).every(
-        (k) => p.settings[k] === current[k],
-      ),
-  );
+  const keys = Object.keys(current) as Array<keyof DisplaySettings>;
+
+  const hit = GAME_PRESETS.find((preset) => {
+    const applied = applyPreset(preset, tier);
+    return applied.level === level && keys.every((k) => applied.settings[k] === current[k]);
+  });
+
   return hit?.id ?? null;
 }

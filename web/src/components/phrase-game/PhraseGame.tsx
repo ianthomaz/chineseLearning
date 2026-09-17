@@ -9,7 +9,7 @@ import { clampDisplaySettingsForLevel } from "@/lib/phrase-game/settings-by-leve
 import { localizedPrompt } from "@/lib/phrase-game/display";
 import { logGameEvent, newRoundId } from "@/lib/phrase-game/game-log";
 import { usePhraseBank } from "@/lib/phrase-game/use-phrase-bank";
-import { GAME_PRESETS, type GamePreset } from "@/lib/phrase-game/presets";
+import { applyPreset, GAME_PRESETS, type GamePreset } from "@/lib/phrase-game/presets";
 import { recordFinishedRound, usePlayerProgress } from "@/lib/game-progress";
 import { roundScore } from "@/lib/phrase-game/scoring";
 import {
@@ -43,7 +43,8 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
   const [phase, setPhase] = useState<Phase>("setup");
   // Open on the gentlest preset rather than on a bare default, so the setup
   // screen starts in a state the player can recognise and just press Play.
-  const [tier, setTier] = useState<GameTier>(INITIAL_PRESET.tier);
+  // The vocabulary is its own choice — a preset never sets it.
+  const [tier, setTier] = useState<GameTier>(PHRASE_POOLS[0]);
   const [level, setLevel] = useState<GameLevel>(INITIAL_PRESET.level);
   const [settings, setSettings] = useState<DisplaySettings>(INITIAL_PRESET.settings);
   const [round, setRound] = useState<Round | null>(null);
@@ -169,9 +170,11 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
 
   /** A preset sets all three axes at once — that is the point of it. */
   function handlePresetChange(preset: GamePreset) {
-    setTier(preset.tier);
-    setLevel(preset.level);
-    setSettings(preset.settings);
+    // The chosen vocabulary stays put and sets the ceiling: Challenge on HSK 1
+    // is the hardest round HSK 1 can produce, not a jump to another pool.
+    const applied = applyPreset(preset, tier);
+    setLevel(applied.level);
+    setSettings(applied.settings);
   }
 
   // Tier change resets an invalid level (Iniciante caps to 1-2).
@@ -238,9 +241,6 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
                   </option>
                 ))}
               </select>
-              <span className="mt-1.5 block text-xs text-ink/45">
-                {t(`phraseGame.tierDesc.${tier}`)}
-              </span>
             </label>
             <SetupScreen
               tier={tier}
