@@ -15,6 +15,7 @@ import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { pinyin } from "pinyin-pro";
+import { validatePhraseAcceptedOrders } from "./accepted-orders-lib.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WEB_ROOT = join(__dirname, "..");
@@ -90,6 +91,18 @@ function buildPhrase(raw, vocab) {
   const hanzi = tokens.map((t) => t.palavra).join("");
   const phrasePinyin = tokens.map((t) => t.pinyin).join(" ");
 
+  // An accepted answer must be a reordering of the very pieces the player gets;
+  // anything else could never be built on the board. Last gate before a player
+  // sees it — see scripts/accepted-orders-lib.mjs.
+  errors.push(
+    ...validatePhraseAcceptedOrders({
+      id: raw.id ?? "(no id)",
+      hanzi,
+      pieces: tokens.map((t) => t.palavra),
+      accepted: raw.respostasAceitas,
+    }),
+  );
+
   const distratoresRaw = Array.isArray(raw.distratores) ? raw.distratores : [];
   if (distratoresRaw.length > 2) {
     errors.push(`${where}: ${distratoresRaw.length} distractors (max 2)`);
@@ -125,7 +138,9 @@ function buildPhrase(raw, vocab) {
     pinyin: phrasePinyin,
     tokens,
     distratores,
-    ...(Array.isArray(raw.respostasAceitas) ? { respostasAceitas: raw.respostasAceitas } : {}),
+    ...(Array.isArray(raw.respostasAceitas) && raw.respostasAceitas.length > 0
+      ? { respostasAceitas: raw.respostasAceitas }
+      : {}),
     tags: Array.isArray(raw.tags) ? raw.tags : ["curated"],
   };
 }

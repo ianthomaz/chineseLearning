@@ -113,8 +113,9 @@ sobre fundo escuro. Agora espelha o `:root[data-theme="dark"]`.
   para re-enfileirar frases falhadas; falta guardá-las por jogador.
 - **Preset adaptativo.** Com histórico, um quarto preset "Continuar de onde
   parei" faria mais sentido do que escolher a dificuldade à mão.
-- **`respostasAceitas`.** Ordens alternativas válidas ainda dão "Quase!" — ver
-  [phrase-game-upgrades.md](phrase-game-upgrades.md) §14, caso `pg-559`.
+- **`respostasAceitas`.** Ferramenta pronta, curadoria por fazer: 557 frases
+  ainda têm uma só ordem aceite. Ver
+  [phrase-game-accepted-orders.md](phrase-game-accepted-orders.md).
 - **`EdgeSettingsDrawer`** continua montado em `/phrase-game`, onde os seus
   interruptores não controlam nada.
 
