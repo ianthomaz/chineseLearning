@@ -436,12 +436,12 @@
     "customize": "Customise",
     "customizeHint": "optional",
     "preset": {
-      "superEasy": {
-        "name": "Super easy",
-        "desc": "Translation and pinyin on the pieces · only the hanzi you need · words kept whole"
-      },
       "easy": {
         "name": "Easy",
+        "desc": "Translation and pinyin on the pieces · only the hanzi you need · words kept whole"
+      },
+      "medium": {
+        "name": "Medium",
         "desc": "Pinyin on the pieces · only the hanzi you need"
       },
       "practise": {

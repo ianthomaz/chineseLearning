@@ -436,12 +436,12 @@
     "customize": "Personalizar",
     "customizeHint": "opcional",
     "preset": {
-      "superEasy": {
-        "name": "Super fácil",
-        "desc": "Tradução e pinyin nas peças · só os hanzi necessários · palavras inteiras"
-      },
       "easy": {
         "name": "Fácil",
+        "desc": "Tradução e pinyin nas peças · só os hanzi necessários · palavras inteiras"
+      },
+      "medium": {
+        "name": "Médio",
         "desc": "Pinyin nas peças · só os hanzi necessários"
       },
       "practise": {

@@ -32,15 +32,15 @@ montado à mão em "Customise". Não mexe no vocabulário, e **não bloqueia nad
 
 | | Dificuldade | Peças | Dicas ligadas |
 |---|---|---|---|
-| 超 Super easy | 1 — frases curtas | palavras inteiras | frase + pinyin em todas + tradução nas difíceis |
-| 易 Easy | 2 — até ~5 palavras | palavras inteiras | frase + pinyin em todas |
+| 易 Easy | 1 — frases curtas | palavras inteiras | frase + pinyin em todas + tradução nas difíceis |
+| 中 Medium | 2 — até ~5 palavras | palavras inteiras | frase + pinyin em todas |
 | 练 Practise | 3 — frases longas | palavras inteiras | frase |
 | 战 Challenge | 4 — frases longas | partidas em caracteres | nenhuma, + peças a mais |
 
 **Dificuldade e dicas são independentes.** Até set 2026 o nível *apagava* as
 dicas (`clampDisplaySettingsForLevel`): sem pinyin acima do nível 1, sem tradução
 acima do 2. Isso tornava impossível pedir "frases mais longas, mas mantém o
-pinyin" — que é exactamente o que o preset **Easy** é. Já não há esse
+pinyin" — que é exactamente o que o preset **Medium** é. Já não há esse
 bloqueio: qualquer dica funciona em qualquer nível, e as checkboxes nunca
 aparecem cinzentas.
 

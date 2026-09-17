@@ -18,7 +18,7 @@ import {
   type GameTier,
 } from "./types";
 
-export type PresetId = "superEasy" | "easy" | "practise" | "challenge";
+export type PresetId = "easy" | "medium" | "practise" | "challenge";
 
 export type GamePreset = {
   id: PresetId;
@@ -49,13 +49,13 @@ function preset(
 export const GAME_PRESETS: readonly GamePreset[] = [
   // Everything visible: the sentence, pinyin on every piece, a gloss on the hard
   // words. Level 1 keeps words whole, so 跑步 arrives as a single piece.
-  preset("superEasy", "超", "var(--cat-green)", 1, {
+  preset("easy", "易", "var(--cat-green)", 1, {
     showNativePrompt: true,
     hanziPlusPinyin: true,
     translationDifficult: true,
   }),
   // Same whole words, longer phrases, pinyin still there — no gloss.
-  preset("easy", "易", "var(--accent-2)", 2, {
+  preset("medium", "中", "var(--accent-2)", 2, {
     showNativePrompt: true,
     hanziPlusPinyin: true,
   }),
