@@ -15,12 +15,13 @@
 | [09_google_auth_jogo.md](09_google_auth_jogo.md) | **Autenticação** — modelo de utilizador, convidado vs. logado, o que fica guardado, que rotas exigem login |
 | [11_content_db_schema.md](11_content_db_schema.md) | Conteúdo editorial em BD (`CONTENT_SOURCE=db`, seed, schema) |
 | [12_aula_registro_roadmap.md](12_aula_registro_roadmap.md) | **Registo de aulas** — formulário, léxico global, roadmap (planeamento) |
-| [phrase-game-scoring.md](phrase-game-scoring.md) | Regras de pontuação (implementadas, sem UI) |
+| [phrase-game-scoring.md](phrase-game-scoring.md) | Regras de pontuação — implementadas e visíveis no fim da rodada |
 | [phrase-game-upgrades.md](phrase-game-upgrades.md) | Backlog e sugestões de melhoria do jogo de frases |
 | [14_app_library_contract.md](14_app_library_contract.md) | Pack app ↔ site (manifest, Bearer, `contentVersion`) |
 | [15_lexico_llm_classify_contract.md](15_lexico_llm_classify_contract.md) | Contrato LLM (mini62 / featureLLM) para categorizar léxico → widgets |
 | [16_auth_wechat_roadmap.md](16_auth_wechat_roadmap.md) | Login WeChat — pesquisa e checklist de bloqueios (**não implementado**) |
 | [17_performance_payloads.md](17_performance_payloads.md) | Payloads de primeira pintura — como medir, o que foi corrigido, o que falta |
+| [18_jogo_frases_ux.md](18_jogo_frases_ux.md) | Jogo de frases — presets, porquê, e regra de língua (pt-BR/EN/ES) |
 | [phrase-game-backoffice.md](phrase-game-backoffice.md) | Dashboard de telemetria do jogo (`/backoffice`, só admin) |
 
 ## Visão geral rápida

@@ -62,7 +62,7 @@
   "pinyin": {
     "on": "Com pinyin",
     "off": "Sem pinyin",
-    "toggleTitle": "Use a aba «Ler» à direita da página."
+    "toggleTitle": "Use a aba “Ler” à direita da página."
   },
   "settings": {
     "tab": "Ler",
@@ -84,11 +84,10 @@
     "open": "Abrir →",
     "modeReviewDesc": "Frases em hanzi com ícone para revelar pinyin e tradução. Leia primeiro, decore depois.",
     "modeVocabDesc": "Tabelas completas por bloco — Hanzi, pinyin e tradução lado a lado.",
-    "modeVisualsDesc": "PDFs ilustrados do curso: escolhe o volume e lê no próprio site.",
+    "modeVisualsDesc": "PDFs ilustrados do curso: escolha o volume e leia no próprio site.",
     "modeGrammarDesc": "Estruturas, observações e contrastes organizados por tema.",
     "modeDialoguesDesc": "Conversas completas por tema. Em cada revisão há mini-diálogos ligados a cada frase.",
-    "modeTutorDesc": "Chat, hanzi aleatório ou em contexto — escolhe o treino.",
-    "modeWritingDesc": "Escolhe: hanzi avulso (escrita) ou hanzi em contexto (flashcards das aulas).",
+    "modeTutorDesc": "Chat, hanzi aleatório ou em contexto — escolha o treino.",
     "modeQuizDesc": "Banco de perguntas HSK 1 (escolha múltipla, lacunas e mais). Sessões interativas em desenvolvimento.",
     "blocksTitle": "Blocos",
     "blocksCount": "{count} blocos",
@@ -114,23 +113,23 @@
   "visuals": {
     "kicker": "图",
     "title": "Visuais",
-    "intro": "PDFs ilustrados do curso. Escolhe o volume e folheia página a página; há ecrã inteiro quando quiseres.",
+    "intro": "PDFs ilustrados do curso. Escolha o volume e folheie página a página; há tela cheia e download.",
     "tablistLabel": "Volumes em PDF",
     "empty": "Ainda não há visuais no catálogo da base de dados. Corre npm run seed:content.",
-    "landscapeHint": "Estes materiais funcionam melhor em horizontal. Roda o telemóvel para aproveitar a largura.",
+    "landscapeHint": "Estes materiais funcionam melhor na horizontal. Gire o celular para aproveitar a largura.",
     "landscapeButton": "Tentar bloquear em horizontal",
     "landscapeDismiss": "Fechar dica",
     "landscapeUnsupported": "Este browser não permite bloquear a orientação a partir da página.",
     "landscapeFail": "Não foi possível bloquear em horizontal (permissão ou política do dispositivo).",
     "iframeTitle": "PDF",
-    "pdfLoading": "A carregar PDF…",
+    "pdfLoading": "Carregando PDF…",
     "pdfPrev": "Anterior",
     "pdfNext": "Seguinte",
     "pdfPageOf": "{current} / {total}",
-    "pdfFullscreen": "Ecrã inteiro",
-    "pdfExitFullscreen": "Sair do ecrã inteiro",
+    "pdfFullscreen": "Tela cheia",
+    "pdfExitFullscreen": "Sair da tela cheia",
     "pdfError": "Não foi possível carregar este PDF.",
-    "pdfKeyboardHint": "Clica na área do leitor e usa as setas ← → para mudar de página."
+    "pdfKeyboardHint": "Clique na área do leitor e use as setas ← → para mudar de página."
   },
   "blockIndex": {
     "phrases": "frases",
@@ -172,7 +171,7 @@
     "standalonePhrasesTitle": "Resumo em português",
     "standalonePhrasesHint": "Cada linha lembra um tema com exemplos — não são frases literárias nem o único modo de dizer.",
     "standalonePhrasesTitleFinal": "Resumo final por tema",
-    "standalonePhrasesHintFinal": "Síntese em português do que praticaste nos blocos 1–14: exemplos para reactivar memória. Para chinês e pinyin, volta aos blocos ou usa Vocabulário e Gramática.",
+    "standalonePhrasesHintFinal": "Síntese em português do que você praticou nos blocos 1–14: exemplos para reativar a memória. Para chinês, veja os blocos.",
     "miniDialoguesTitle": "Mini-diálogos do bloco"
   },
   "dialogues": {
@@ -182,7 +181,7 @@
     "convLabel": "Diálogo {num}",
     "filterLabel": "Filtrar por categoria:",
     "allCategories": "Todas as categorias",
-    "emptyFilter": "Ainda não há diálogos nesta categoria. Escolhe outra ou «Todas as categorias».",
+    "emptyFilter": "Ainda não há diálogos nesta categoria. Escolha outra ou “Todas as categorias”.",
     "global": {
       "familyIntro": "Apresentar a família",
       "dayPlan": "Plano do dia",
@@ -259,9 +258,9 @@
     "replay": "Ver animação",
     "quiz": "Praticar escrita",
     "skipStroke": "Saltar traço",
-    "quizHint": "Dica após 2 erros no mesmo traço. Ao 3.º erro o traço é aceite e segues para o seguinte. Podes também saltar com o botão ao lado.",
+    "quizHint": "Dica após 2 erros no mesmo traço. Ao 3.º erro o traço é aceito e você segue para o seguinte.",
     "replayExitQuiz": "Sair do quiz e voltar à animação",
-    "quizDone": "Percurso concluído. Podes ver a animação de novo ou praticar outra vez.",
+    "quizDone": "Percurso concluído. Você pode ver a animação de novo ou praticar outra vez.",
     "unavailable": "Não há animação de traços para este carácter nos dados em uso.",
     "creditsModal": "Biblioteca Hanzi Writer (licença MIT). Dados de traços no repositório hanzi-writer-data; a cadeia de atribuição inclui Make Me a Hanzi e fontes Arphic (1999). Consulta as licenças nos repositórios antes de redistribuir cópias dos dados."
   },
@@ -273,18 +272,18 @@
     "pageDesc": "Dez caracteres de dois blocos sorteados. Usa o menu em cima para voltar ao curso.",
     "pageDocTitle": "Praticar",
     "pageFooterVocab": "Vocabulário (hanzi, pinyin e traduções usados na sessão): listas do consolidado do curso. Conteúdo lexical sob os mesmos termos do material do site (incluindo CC-BY-SA-4.0 onde indicado no rodapé geral).",
-    "start": "Iniciar sessão!",
+    "start": "Começar!",
     "progress": "{current} / {total}",
     "blockBadge": "Bloco {id} · {title}",
     "next": "Próximo →",
     "prev": "← Anterior",
     "finish": "Concluir",
     "done": "Sessão concluída!",
-    "doneDesc": "Praticaste caracteres de: {blocks}.",
+    "doneDesc": "Você praticou caracteres de: {blocks}.",
     "newSession": "Nova sessão",
     "back": "Voltar",
     "hubHeading": "Praticar",
-    "hubDesc": "Escolhe o tipo de treino.",
+    "hubDesc": "Escolha o tipo de treino.",
     "hubChat": "Chat",
     "hubChatDesc": "Conversa com o tutor de IA em chinês.",
     "hubAvulso": "Hanzi aleatório",
@@ -293,7 +292,7 @@
     "hubContextDesc": "Flashcards com palavra, frase e padrões das aulas.",
     "contextPickHeading": "Escolher base",
     "contextPickDesc": "Deck local para revisão em contexto.",
-    "contextCardCount": "{count} cards",
+    "contextCardCount": "{count} cartões",
     "contextStrokes": "Ver traços",
     "contextRelated": "related",
     "contextPatterns": "patterns",
@@ -342,7 +341,7 @@
     "title": "Quebra-Cabeça de Frases",
     "subtitle": "Monte a frase em chinês na ordem correta.",
     "prototypeNotice": "Versão protótipo — não salva pontos nem histórico de tentativas. Divirta-se e aprenda!",
-    "tierLabel": "Nível de idioma",
+    "tierLabel": "Vocabulário",
     "tier": {
       "iniciante": "Iniciante",
       "basico": "Básico",
@@ -358,7 +357,6 @@
       "4": "Frases maiores — hanzi extras por padrão",
       "5": "Todos os caracteres soltos"
     },
-    "extrasLabel": "Ajustes de dificuldade",
     "extra": {
       "pinyinDifficult": "Pinyin nas palavras difíceis",
       "hanziPinyin": "Hanzi + Pinyin",
@@ -396,15 +394,17 @@
       "allPhrasesTitle": "Frases desta rodada:",
       "allCorrect": "Você acertou todas! 🎉",
       "playAgain": "Jogar de novo",
-      "changeSettings": "Mudar configurações"
+      "changeSettings": "Mudar configurações",
+      "points": "{points} de {total} pontos",
+      "pointsHint": "Acertar de primeira e sem ajudas vale 1 ponto por frase."
     },
     "auth": {
       "guest": "Jogando como convidado",
-      "guestHint": "Podes jogar sem entrar. Entre com Google se quiser guardar o apelido neste dispositivo.",
+      "guestHint": "Você pode jogar sem entrar. Entre com o Google se quiser salvar seu apelido neste dispositivo.",
       "serverOnly": "O login requer o modo servidor.",
       "signIn": "Entrar com Google",
       "signInAlt": "Outra conta",
-      "signingIn": "A entrar…",
+      "signingIn": "Entrando…",
       "signInFailed": "Não foi possível entrar. Tente de novo.",
       "signOut": "Sair",
       "dashboard": "Dashboard",
@@ -414,13 +414,43 @@
       "nickSave": "Salvar",
       "nickSaved": "Salvo"
     },
-    "bankLoading": "A carregar frases…",
+    "bankLoading": "Carregando frases…",
     "bankError": "Não foi possível carregar o banco de frases. Recarregue a página.",
     "tierSoon": "{tiers} — em breve.",
-    "extrasOptional": "opcional"
+    "presetLabel": "Como você quer jogar?",
+    "presetCustom": "Configuração personalizada.",
+    "customize": "Personalizar",
+    "customizeHint": "opcional",
+    "preset": {
+      "comecar": {
+        "name": "Começar",
+        "desc": "Só vocabulário HSK1, frases curtas, com pinyin e a frase em português à vista."
+      },
+      "treinar": {
+        "name": "Treinar",
+        "desc": "Vocabulário completo, frases até ~5 palavras, tradução só nas palavras difíceis."
+      },
+      "desafio": {
+        "name": "Desafio",
+        "desc": "Frases longas, palavras partidas em caracteres, peças a mais e sem tradução — peça ajuda se precisar."
+      }
+    },
+    "helpsLabel": "Ajudas",
+    "helpsHint": "Tornam a rodada mais fácil. Você não precisa decidir agora — durante o jogo há um botão para cada uma.",
+    "harderLabel": "Dificultar",
+    "harderHint": "Torna a rodada mais difícil.",
+    "hintOffByLevel": "Indisponível na dificuldade {level}.",
+    "alwaysOnByLevel": "Sempre ligado na dificuldade {level}.",
+    "tierDesc": {
+      "iniciante": "só HSK1",
+      "basico": "HSK1 + extra"
+    },
+    "retry": "Tentar de novo",
+    "retryHint": "Ainda dá para corrigir — vale mais pontos do que ver a resposta.",
+    "seeAnswer": "Ver resposta",
+    "helpsAllOff": "Nenhuma ajuda está disponível na dificuldade {level}. Durante o jogo há botões para pedir pinyin, tradução ou a frase."
   },
   "ktv": {
-    "title": "Letras / KTV",
     "brand": "Letras",
     "backSite": "← Site",
     "backHome": "← Início",
@@ -433,7 +463,7 @@
     "prev": "‹ Anterior",
     "next": "Próxima ›",
     "wordByWord": "Palavra por palavra",
-    "loading": "A carregar…",
+    "loading": "Carregando…",
     "emptyCatalog": "Nenhuma música no catálogo.",
     "catalogFailed": "Não foi possível carregar o catálogo.",
     "songFailed": "Falha ao carregar: {song}",

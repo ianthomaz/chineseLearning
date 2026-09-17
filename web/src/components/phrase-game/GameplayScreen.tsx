@@ -4,11 +4,15 @@ import { useEffect, useMemo, useState } from "react";
 import { useLocale } from "@/context/LocaleContext";
 import { trackEvent } from "@/lib/analytics";
 import { deriveBoard } from "@/lib/phrase-game/pieces";
-import { validateAttempt } from "@/lib/phrase-game/validate";
+import { attemptString, validateAttempt } from "@/lib/phrase-game/validate";
 import { localizedPrompt } from "@/lib/phrase-game/display";
 import { nativePromptDisabled } from "@/lib/phrase-game/settings-by-level";
 import type { DisplaySettings, GameLevel, GameTier, Piece, RoundItem } from "@/lib/phrase-game/types";
-import type { HelpAction } from "@/lib/phrase-game/scoring";
+import {
+  computeScore,
+  placementAccuracy,
+  type HelpAction,
+} from "@/lib/phrase-game/scoring";
 import { logGameEvent } from "@/lib/phrase-game/game-log";
 import { Board, type BoardValue } from "./Board";
 import { ProgressDots } from "./ProgressDots";
@@ -26,7 +30,7 @@ type Props = {
   results: Array<"correct" | "wrong" | null>;
   isLast: boolean;
   onSettingsChange: (settings: DisplaySettings) => void;
-  onResult: (correct: boolean) => void;
+  onResult: (correct: boolean, score: number) => void;
   onNext: () => void;
 };
 
@@ -59,7 +63,14 @@ export function GameplayScreen({
   const [reveal, setReveal] = useState({ fullPrompt: false, pinyin: false, translation: false });
   const [removedExtras, setRemovedExtras] = useState(false);
   const [submitted, setSubmitted] = useState<boolean | null>(null);
+  /** The phrase is settled: no more retries, the score has been reported. */
+  const [finalized, setFinalized] = useState(false);
+  const [wrongSubmit, setWrongSubmit] = useState(false);
+  const [gaveUp, setGaveUp] = useState(false);
   const [helpUsed] = useState<Set<HelpAction>>(() => new Set());
+
+  /** One retry per phrase: fixing your own mistake should beat being told. */
+  const canRetry = submitted === false && !finalized;
 
   const hasExtras = useMemo(
     () => [...board.bank, ...board.answer].some((p) => p.isDistractor),
@@ -68,10 +79,10 @@ export function GameplayScreen({
 
   // Auto-advance only after a correct answer (wrong answers wait for the Next button).
   useEffect(() => {
-    if (submitted !== true) return;
+    if (submitted !== true || !finalized) return;
     const id = window.setTimeout(onNext, AUTO_ADVANCE_MS);
     return () => window.clearTimeout(id);
-  }, [submitted, onNext]);
+  }, [submitted, finalized, onNext]);
 
   function logHelp(action: HelpAction) {
     helpUsed.add(action);
@@ -81,27 +92,66 @@ export function GameplayScreen({
 
   function handleSubmit() {
     const result = validateAttempt(board.answer, phrase);
+    // A first wrong answer offers a retry; the phrase only settles after that.
+    const isFinal = result.correct || wrongSubmit;
+
     setSubmitted(result.correct);
     setReveal((r) => ({
       ...r,
       pinyin: true,
       translation: result.correct ? true : r.translation,
     }));
+
     trackEvent({ action: "phrase_submit", category: "phrase_game", label: phrase.id });
     trackEvent({
       action: result.correct ? "phrase_correct" : "phrase_wrong",
       category: "phrase_game",
       label: phrase.id,
     });
+
+    if (!isFinal) {
+      logGameEvent("phrase_result", {
+        roundId,
+        tier,
+        level,
+        phraseId: phrase.id,
+        correct: false,
+        attempt: result.attempt,
+        detail: "retry",
+      });
+      return;
+    }
+
+    finalize(result.correct, result.attempt);
+  }
+
+  /** Settle the phrase: score it once, log it once, report it once. */
+  function finalize(correct: boolean, attempt: string) {
+    const score = computeScore({
+      correct,
+      wrongSubmit,
+      helpUsed: [...helpUsed],
+      nextPieceFilledAll: gaveUp,
+      placement: placementAccuracy(board.answer, derived.correctOrder),
+    });
+
+    setFinalized(true);
     logGameEvent("phrase_result", {
       roundId,
       tier,
       level,
       phraseId: phrase.id,
-      correct: result.correct,
-      attempt: result.attempt,
+      correct,
+      attempt,
+      detail: `score:${score}`,
     });
-    onResult(result.correct);
+    onResult(correct, score);
+  }
+
+  /** Reopen the board after a first wrong answer. */
+  function handleRetry() {
+    setWrongSubmit(true);
+    setSubmitted(null);
   }
 
   function handleRemoveExtras() {
@@ -126,6 +176,8 @@ export function GameplayScreen({
     const answerIds = new Set(newAnswer.map((p) => p.id));
     const newBank = all.filter((p) => !answerIds.has(p.id));
     setBoard({ bank: newBank, answer: newAnswer });
+    // Filling the last slot this way means the sentence was given away.
+    if (newAnswer.length >= order.length) setGaveUp(true);
     logHelp("nextPiece");
   }
 
@@ -251,21 +303,25 @@ export function GameplayScreen({
           <p className="font-medium" style={{ color: submitted ? "var(--accent)" : "#b91c1c" }}>
             {submitted ? t("phraseGame.correct") : t("phraseGame.wrong")}
           </p>
-          <div className="mt-2 space-y-1 text-sm text-ink/70">
-            <div className="flex items-center gap-2">
-              {submitted ? (
-                <span className="font-hanzi text-lg text-ink">{phrase.hanzi}</span>
-              ) : (
-                <span>
-                  {t("phraseGame.correctAnswer")}{" "}
+          {canRetry ? (
+            <p className="mt-1 text-sm text-ink/70">{t("phraseGame.retryHint")}</p>
+          ) : (
+            <div className="mt-2 space-y-1 text-sm text-ink/70">
+              <div className="flex items-center gap-2">
+                {submitted ? (
                   <span className="font-hanzi text-lg text-ink">{phrase.hanzi}</span>
-                </span>
-              )}
-              <SpeakButton text={phrase.hanzi} label={t("phraseGame.speak")} />
+                ) : (
+                  <span>
+                    {t("phraseGame.correctAnswer")}{" "}
+                    <span className="font-hanzi text-lg text-ink">{phrase.hanzi}</span>
+                  </span>
+                )}
+                <SpeakButton text={phrase.hanzi} label={t("phraseGame.speak")} />
+              </div>
+              {phrase.pinyin ? <p>{phrase.pinyin}</p> : null}
+              <p>{promptText}</p>
             </div>
-            {phrase.pinyin ? <p>{phrase.pinyin}</p> : null}
-            <p>{promptText}</p>
-          </div>
+          )}
         </div>
       ) : null}
 
@@ -281,6 +337,25 @@ export function GameplayScreen({
           >
             {t("phraseGame.submit")}
           </button>
+        ) : canRetry ? (
+          <>
+            <button
+              type="button"
+              onClick={() => finalize(false, attemptString(board.answer))}
+              className="rounded-xl border px-5 py-3 text-sm font-medium text-ink/70 hover:bg-ink/5"
+              style={{ borderColor: "var(--border)" }}
+            >
+              {t("phraseGame.seeAnswer")}
+            </button>
+            <button
+              type="button"
+              onClick={handleRetry}
+              className="rounded-xl px-6 py-3 text-sm font-semibold text-white"
+              style={{ backgroundColor: "var(--accent)" }}
+            >
+              {t("phraseGame.retry")}
+            </button>
+          </>
         ) : (
           <button
             type="button"

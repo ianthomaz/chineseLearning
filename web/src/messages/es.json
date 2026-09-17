@@ -87,7 +87,6 @@
     "modeVisualsDesc": "PDFs ilustrados del curso: elige el volumen y léelo en el sitio.",
     "modeGrammarDesc": "Estructuras, observaciones y contrastes por tema.",
     "modeDialoguesDesc": "Conversaciones completas por tema. En repaso, cada frase tiene dos mini-diálogos debajo.",
-    "modeWritingDesc": "Elige: hanzi suelto (escritura) o hanzi en contexto (flashcards de clase).",
     "modeQuizDesc": "Banco de preguntas HSK 1 (opción múltiple, huecos y más). Sesiones interactivas en desarrollo.",
     "modeTutorDesc": "Chat, hanzi al azar o en contexto — elige el entrenamiento.",
     "blocksTitle": "Bloques",
@@ -293,7 +292,7 @@
     "hubContextDesc": "Flashcards con palabra, frase y patrones de clase.",
     "contextPickHeading": "Elegir base",
     "contextPickDesc": "Mazo local para repaso en contexto.",
-    "contextCardCount": "{count} cards",
+    "contextCardCount": "{count} tarjetas",
     "contextStrokes": "Ver trazos",
     "contextRelated": "related",
     "contextPatterns": "patterns",
@@ -342,7 +341,7 @@
     "title": "Rompecabezas de Frases",
     "subtitle": "Ordena la frase en chino correctamente.",
     "prototypeNotice": "Versión prototipo — no guarda puntos ni historial de intentos. ¡Diviértete y aprende!",
-    "tierLabel": "Nivel de idioma",
+    "tierLabel": "Vocabulario",
     "tier": {
       "iniciante": "Principiante",
       "basico": "Básico",
@@ -358,7 +357,6 @@
       "4": "Frases más largas — hanzi extra por defecto",
       "5": "Todos los caracteres sueltos"
     },
-    "extrasLabel": "Ajustes de dificultad",
     "extra": {
       "pinyinDifficult": "Pinyin en palabras difíciles",
       "hanziPinyin": "Hanzi + Pinyin",
@@ -396,7 +394,9 @@
       "allPhrasesTitle": "Frases de esta ronda:",
       "allCorrect": "¡Las acertaste todas! 🎉",
       "playAgain": "Jugar de nuevo",
-      "changeSettings": "Cambiar configuración"
+      "changeSettings": "Cambiar configuración",
+      "points": "{points} de {total} puntos",
+      "pointsHint": "Acertar a la primera y sin ayudas vale 1 punto por frase."
     },
     "auth": {
       "guest": "Jugando como invitado",
@@ -417,10 +417,40 @@
     "bankLoading": "Cargando frases…",
     "bankError": "No se pudo cargar el banco de frases. Recarga la página.",
     "tierSoon": "{tiers} — muy pronto.",
-    "extrasOptional": "opcional"
+    "presetLabel": "¿Cómo quieres jugar?",
+    "presetCustom": "Configuración personalizada.",
+    "customize": "Personalizar",
+    "customizeHint": "opcional",
+    "preset": {
+      "comecar": {
+        "name": "Empezar",
+        "desc": "Solo vocabulario HSK1, frases cortas, con pinyin y la frase a la vista."
+      },
+      "treinar": {
+        "name": "Practicar",
+        "desc": "Vocabulario completo, frases de hasta ~5 palabras, traducción solo en las palabras difíciles."
+      },
+      "desafio": {
+        "name": "Desafío",
+        "desc": "Frases largas, palabras partidas en caracteres, piezas de más y sin traducción — pide ayuda si la necesitas."
+      }
+    },
+    "helpsLabel": "Ayudas",
+    "helpsHint": "Hacen la ronda más fácil. No hace falta decidir ahora — durante el juego hay un botón para cada una.",
+    "harderLabel": "Dificultar",
+    "harderHint": "Hace la ronda más difícil.",
+    "hintOffByLevel": "No disponible en la dificultad {level}.",
+    "alwaysOnByLevel": "Siempre activo en la dificultad {level}.",
+    "tierDesc": {
+      "iniciante": "solo HSK1",
+      "basico": "HSK1 + extra"
+    },
+    "retry": "Intentar de nuevo",
+    "retryHint": "Todavía puedes corregirlo — vale más puntos que ver la respuesta.",
+    "seeAnswer": "Ver respuesta",
+    "helpsAllOff": "Ninguna ayuda está disponible en la dificultad {level}. Durante el juego hay botones para pedir pinyin, traducción o la frase."
   },
   "ktv": {
-    "title": "Letras / KTV",
     "brand": "Letras",
     "backSite": "← Sitio",
     "backHome": "← Inicio",

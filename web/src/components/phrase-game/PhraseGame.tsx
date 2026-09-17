@@ -2,14 +2,16 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useLocale } from "@/context/LocaleContext";
+import type { AppLocale } from "@/lib/i18n-core";
 import { trackEvent } from "@/lib/analytics";
 import { buildRound, type Round } from "@/lib/phrase-game/select-phrases";
 import { clampDisplaySettingsForLevel } from "@/lib/phrase-game/settings-by-level";
 import { localizedPrompt } from "@/lib/phrase-game/display";
 import { logGameEvent, newRoundId } from "@/lib/phrase-game/game-log";
 import { usePhraseBank } from "@/lib/phrase-game/use-phrase-bank";
+import { GAME_PRESETS, type GamePreset } from "@/lib/phrase-game/presets";
+import { roundScore } from "@/lib/phrase-game/scoring";
 import {
-  DEFAULT_DISPLAY_SETTINGS,
   type DisplaySettings,
   type GameLevel,
   type GameTier,
@@ -22,16 +24,29 @@ import { SpeakButton } from "./SpeakButton";
 
 type Phase = "setup" | "playing" | "complete";
 
+/** BCP 47 tags for number formatting; the UI locale codes are bare languages. */
+const LOCALE_TAG: Record<AppLocale, string> = {
+  pt: "pt-BR",
+  en: "en-US",
+  es: "es-ES",
+};
+
+const INITIAL_PRESET = GAME_PRESETS[0];
+
 export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null }) {
   const { bank, status: bankStatus } = usePhraseBank(initialPhrases);
   const { t } = useLocale();
   const [phase, setPhase] = useState<Phase>("setup");
-  const [tier, setTier] = useState<GameTier>("iniciante");
-  const [level, setLevel] = useState<GameLevel>(1);
-  const [settings, setSettings] = useState<DisplaySettings>(DEFAULT_DISPLAY_SETTINGS);
+  // Open on the gentlest preset rather than on a bare default, so the setup
+  // screen starts in a state the player can recognise and just press Play.
+  const [tier, setTier] = useState<GameTier>(INITIAL_PRESET.tier);
+  const [level, setLevel] = useState<GameLevel>(INITIAL_PRESET.level);
+  const [settings, setSettings] = useState<DisplaySettings>(INITIAL_PRESET.settings);
   const [round, setRound] = useState<Round | null>(null);
   const [index, setIndex] = useState(0);
   const [results, setResults] = useState<Array<"correct" | "wrong" | null>>([]);
+  /** Weighted points per phrase, same indexing as `results`. */
+  const [scores, setScores] = useState<number[]>([]);
 
   const roundIdRef = useRef("");
   const abandonedRef = useRef(false);
@@ -60,15 +75,21 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
     setRound(built);
     setIndex(0);
     setResults(new Array(built.items.length).fill(null));
+    setScores(new Array(built.items.length).fill(0));
     setPhase("playing");
     trackEvent({ action: "round_start", category: "phrase_game", label: `${tier}/L${level}` });
     logGameEvent("round_start", { roundId, tier, level });
   }
 
-  function handleResult(correct: boolean) {
+  function handleResult(correct: boolean, score: number) {
     setResults((prev) => {
       const next = [...prev];
       next[index] = correct ? "correct" : "wrong";
+      return next;
+    });
+    setScores((prev) => {
+      const next = [...prev];
+      next[index] = score;
       return next;
     });
   }
@@ -87,14 +108,15 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
   useEffect(() => {
     if (phase !== "complete") return;
     const correct = results.filter((r) => r === "correct").length;
+    const points = roundScore(scores);
     trackEvent({ action: "round_complete", category: "phrase_game", value: correct });
     logGameEvent("round_complete", {
       roundId: roundIdRef.current,
       tier,
       level,
-      detail: `${correct}/${results.length}`,
+      detail: `${correct}/${results.length} · ${points}pts`,
     });
-  }, [phase, results, tier, level]);
+  }, [phase, results, scores, tier, level]);
 
   // Entries: log that the game was opened, once per mount.
   useEffect(() => {
@@ -120,6 +142,13 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
       maybeAbandon();
     };
   }, []);
+
+  /** A preset sets all three axes at once — that is the point of it. */
+  function handlePresetChange(preset: GamePreset) {
+    setTier(preset.tier);
+    setLevel(preset.level);
+    setSettings(preset.settings);
+  }
 
   // Tier change resets an invalid level (Iniciante caps to 1-2).
   function handleTierChange(next: GameTier) {
@@ -168,6 +197,7 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
               level={level}
               settings={settings}
               bankLoading={bankStatus === "loading"}
+              onPresetChange={handlePresetChange}
               onTierChange={handleTierChange}
               onLevelChange={handleLevelChange}
               onSettingsChange={setSettings}
@@ -202,9 +232,11 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
           <RoundComplete
             correct={results.filter((r) => r === "correct").length}
             total={round.items.length}
+            points={roundScore(scores)}
             items={round.items.map((it, i) => ({
               phrase: it.phrase,
               correct: results[i] === "correct",
+              score: scores[i] ?? 0,
             }))}
             onPlayAgain={startRound}
             onChangeSettings={() => setPhase("setup")}
@@ -218,13 +250,16 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
 function RoundComplete({
   correct,
   total,
+  points,
   items,
   onPlayAgain,
   onChangeSettings,
 }: {
   correct: number;
   total: number;
-  items: Array<{ phrase: Phrase; correct: boolean }>;
+  /** Weighted round total — see docs/phrase-game-scoring.md. */
+  points: number;
+  items: Array<{ phrase: Phrase; correct: boolean; score: number }>;
   onPlayAgain: () => void;
   onChangeSettings: () => void;
 }) {
@@ -235,6 +270,15 @@ function RoundComplete({
       <p className="mt-2 text-ink/70">
         {t("phraseGame.roundComplete.score", { correct, total })}
       </p>
+      <p
+        className="mt-3 text-3xl font-semibold text-ink"
+        style={{ fontFamily: "var(--font-sans)" }}
+      >
+        {t("phraseGame.roundComplete.points", { points: formatPoints(points, locale), total })}
+      </p>
+      <p className="mt-1 text-xs text-ink/45" style={{ fontFamily: "var(--font-sans)" }}>
+        {t("phraseGame.roundComplete.pointsHint")}
+      </p>
 
       {/* All phrases from the round, in order — wrong ones flagged, each with audio. */}
       <div className="mt-6 text-left">
@@ -242,7 +286,7 @@ function RoundComplete({
           {t("phraseGame.roundComplete.allPhrasesTitle")}
         </p>
         <ul className="space-y-2.5">
-          {items.map(({ phrase: p, correct: ok }, i) => (
+          {items.map(({ phrase: p, correct: ok, score }, i) => (
             <li
               key={`${p.id}-${i}`}
               className="flex items-start gap-3 rounded-xl border p-3"
@@ -273,6 +317,17 @@ function RoundComplete({
                 ) : null}
                 <p className="mt-0.5 text-sm text-ink/70">{localizedPrompt(p, locale)}</p>
               </div>
+              <span
+                className="shrink-0 text-sm font-semibold tabular-nums"
+                style={{
+                  fontFamily: "var(--font-sans)",
+                  color: score >= 1 ? "var(--success)" : score > 0 ? "var(--warn)" : "var(--ink)",
+                  opacity: score > 0 ? 1 : 0.35,
+                }}
+                title={t("phraseGame.roundComplete.pointsHint")}
+              >
+                {formatPoints(score, locale)}
+              </span>
             </li>
           ))}
         </ul>
@@ -298,4 +353,14 @@ function RoundComplete({
       </div>
     </div>
   );
+}
+
+/**
+ * Up to two decimals with the locale's own separator — "1,39" in pt/es, "1.39"
+ * in en — and no trailing zeros, so a clean score reads "1" and not "1,00".
+ */
+function formatPoints(value: number, locale: AppLocale): string {
+  return new Intl.NumberFormat(LOCALE_TAG[locale], {
+    maximumFractionDigits: 2,
+  }).format(value);
 }

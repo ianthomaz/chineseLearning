@@ -1,58 +1,75 @@
-# Quebra-Cabeça de Frases — scoring rules (planned)
+# Quebra-Cabeça de Frases — pontuação
 
-Status: **planned / encoded, not surfaced.** The MVP has **no scoring UI and no leaderboard**.
-The rules below are implemented as a pure function in
-[`web/src/lib/phrase-game/scoring.ts`](../web/src/lib/phrase-game/scoring.ts) (`computeScore`).
-The round-complete screen shows **correct/wrong count** and a **review list** for missed phrases
-(hanzi + pinyin + translation) — not weighted points yet.
+Estado: **implementada e visível** (set 2026). O ecrã de fim de rodada mostra os
+pontos da rodada e de cada frase. **Ainda não persiste** — ver §5.
 
-Phase 2 (persist + display score): see [phrase-game-upgrades.md](phrase-game-upgrades.md) and
-[09_google_auth_jogo.md](09_google_auth_jogo.md).
+Regras em [`web/src/lib/phrase-game/scoring.ts`](../web/src/lib/phrase-game/scoring.ts)
+(`computeScore`), chamadas em `GameplayScreen.tsx` quando a frase se resolve.
 
-## Per-phrase score
+## 1. Princípio
 
-Each phrase yields a score in `[0, 1]`. A round is 10 phrases (`ROUND_SIZE`).
+É um jogo de **aprender**, não um placar. As regras seguem daí:
 
-A phrase scores **0** when any of these is true:
+- Errar e corrigir vale mais do que ver a resposta.
+- Uma frase quase certa não vale zero.
+- Ouvir a frase em chinês é estudar, não é batota — não custa pontos.
+- Só desistir vale zero.
 
-- the submitted answer is wrong (`correct === false`);
-- the player submitted a wrong answer at any point on this phrase (`wrongSubmit`);
-- the "next piece" help was used to fill **every** slot (`nextPieceFilledAll`) — i.e. the
-  whole sentence was auto-completed.
+## 2. Por frase — `[0, 1]`
 
-Otherwise the score is decided by the **highest help level used** (help is cumulative —
-the most expensive hint used on the phrase wins; using a cheaper hint afterwards never
-raises the score back up):
+```
+pontos = base × multiplicador_de_ajuda
+```
 
-| Help level | Action (`HelpAction`)        | Score |
-|-----------:|------------------------------|------:|
-| 0          | none                         | 1.00  |
-| 1          | `removeExtras` (remove distractors) | 1.00  |
-| 2          | `showFullPrompt` (reveal sentence prompt) | 0.75  |
-| 2          | `showPinyin`                 | 0.75  |
-| 3          | `showTranslation`            | 0.50  |
-| 4          | `nextPiece` (partial)        | 0.25  |
+**Base**
 
-Notes:
+| Situação | Base |
+|---|---:|
+| Acertou à primeira | 1,00 |
+| Acertou depois de corrigir a própria resposta | 0,70 |
+| Errou | fracção das peças na posição certa, no máximo **0,40** |
+| Completou a frase toda com "Próxima peça" | **0** (ignora tudo o resto) |
 
-- **Removing extra pieces is free** (level 1 → 1.00). It only undoes optional added
-  difficulty, so it carries no penalty.
-- `nextPiece` used for *some* slots but with the player completing the rest scores 0.25;
-  used for *all* slots it is treated as giving up → 0 (see `nextPieceFilledAll`).
-- The mapping lives in `SCORE_BY_HELP_LEVEL = [1.0, 1.0, 0.75, 0.5, 0.25]`, indexed by the
-  highest `HELP_LEVEL` reached.
+A fracção usa `placementAccuracy`: peças na posição correcta ÷ comprimento da
+resposta certa. Peças a menos ou a mais custam, porque o denominador é fixo.
 
-## Round score
+**Multiplicador de ajuda** — vale a ajuda mais cara usada na frase; usar uma
+ajuda barata a seguir não recupera pontos.
 
-The round score is the sum (or mean) of the 10 per-phrase scores. The MVP shows raw
-correct/wrong for progress dots and `"X de 10"` on round complete; the weighted score above is
-not displayed.
+| Nível | Ajuda | × |
+|---:|---|---:|
+| 0 | nenhuma · **Ouvir** · **Remover peças extras** | 1,00 |
+| 1 | Mostrar a frase · Mostrar pinyin | 0,75 |
+| 2 | Mostrar tradução | 0,50 |
+| 3 | Próxima peça (parcial) | 0,25 |
 
-## Phase 2 (not in this change)
+Ouvir e remover extras são grátis: ouvir é uma actividade de estudo, e remover
+extras só desfaz dificuldade opcional.
 
-- Persist per-phrase and per-round scores server-side, keyed by `userId`
-  (`GET/POST /aulaChines/api/game/progress`, SQLite `progress` table — schema stub only today).
-- History, streaks and an optional ranking.
-- Surface the weighted score in the round-complete screen.
+## 3. Retry
 
-When Phase 2 lands, update this document and `scoring.ts` together so the rules stay in sync.
+Cada frase dá direito a **uma** segunda tentativa. Depois de um erro aparecem
+"Tentar de novo" e "Ver resposta"; enquanto a segunda tentativa estiver
+disponível **a resposta certa não é revelada**. A frase só é pontuada e
+registada quando se resolve — uma vez, num único sítio (`finalize`).
+
+## 4. Rodada
+
+`roundScore` soma as frases: máximo **10 pontos** numa rodada de 10 frases.
+O ecrã final mostra os acertos, o total ponderado e os pontos de cada frase.
+O evento `round_complete` guarda `"7/10 · 6.25pts"` em `detail`.
+
+Números aparecem com o separador decimal da língua — `1,39` em pt/es, `1.39`
+em en.
+
+## 5. Falta (Fase 2)
+
+- Persistir por frase e por rodada (`user_id`, `phrase_id`, `score`) — a tabela
+  `progress` existe no schema e **nunca é escrita**.
+- Histórico, sequências e frases a rever para o próprio jogador.
+- Ligar o `anon_id` do convidado ao `user_id` no login.
+
+Ver [09_google_auth_jogo.md](09_google_auth_jogo.md) §3 e
+[18_jogo_frases_ux.md](18_jogo_frases_ux.md).
+
+Quando a Fase 2 chegar, actualizar este documento e `scoring.ts` juntos.

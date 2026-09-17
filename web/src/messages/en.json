@@ -87,7 +87,6 @@
     "modeVisualsDesc": "Illustrated course PDFs: pick a volume and read in the browser.",
     "modeGrammarDesc": "Structures, notes, and contrasts organized by topic.",
     "modeDialoguesDesc": "Full conversations by theme. Each review line also has two mini-dialogues below it.",
-    "modeWritingDesc": "Choose: standalone hanzi (writing) or hanzi in context (lesson flashcards).",
     "modeQuizDesc": "HSK 1 question bank (multiple choice, fill-in-the-blank, and more). Interactive sessions coming next.",
     "modeTutorDesc": "Chat, random hanzi, or in-context flashcards — pick your practice.",
     "blocksTitle": "Blocks",
@@ -342,7 +341,7 @@
     "title": "Phrase Puzzle",
     "subtitle": "Arrange the Chinese sentence in the correct order.",
     "prototypeNotice": "Prototype version — scores and attempt history are not saved. Have fun and learn!",
-    "tierLabel": "Language level",
+    "tierLabel": "Vocabulary",
     "tier": {
       "iniciante": "Beginner",
       "basico": "Basic",
@@ -358,7 +357,6 @@
       "4": "Longer phrases — extra hanzi on by default",
       "5": "All characters loose"
     },
-    "extrasLabel": "Difficulty extras",
     "extra": {
       "pinyinDifficult": "Pinyin on difficult words",
       "hanziPinyin": "Hanzi + Pinyin",
@@ -396,7 +394,9 @@
       "allPhrasesTitle": "This round's phrases:",
       "allCorrect": "You got them all! 🎉",
       "playAgain": "Play again",
-      "changeSettings": "Change settings"
+      "changeSettings": "Change settings",
+      "points": "{points} of {total} points",
+      "pointsHint": "First try, no hints, is worth 1 point per phrase."
     },
     "auth": {
       "guest": "Playing as guest",
@@ -417,10 +417,40 @@
     "bankLoading": "Loading phrases…",
     "bankError": "Could not load the phrase bank. Please reload the page.",
     "tierSoon": "{tiers} — coming soon.",
-    "extrasOptional": "optional"
+    "presetLabel": "How do you want to play?",
+    "presetCustom": "Custom configuration.",
+    "customize": "Customise",
+    "customizeHint": "optional",
+    "preset": {
+      "comecar": {
+        "name": "Start",
+        "desc": "HSK1 vocabulary only, short phrases, pinyin and the prompt in view."
+      },
+      "treinar": {
+        "name": "Practise",
+        "desc": "Full vocabulary, phrases up to ~5 words, gloss on the hard words only."
+      },
+      "desafio": {
+        "name": "Challenge",
+        "desc": "Long phrases, words split into characters, extra pieces and no translation — ask for help if you need it."
+      }
+    },
+    "helpsLabel": "Hints",
+    "helpsHint": "These make the round easier. No need to decide now — each one has a button during the game.",
+    "harderLabel": "Make it harder",
+    "harderHint": "Makes the round harder.",
+    "hintOffByLevel": "Not available at difficulty {level}.",
+    "alwaysOnByLevel": "Always on at difficulty {level}.",
+    "tierDesc": {
+      "iniciante": "HSK1 only",
+      "basico": "HSK1 + extra"
+    },
+    "retry": "Try again",
+    "retryHint": "You can still fix it — worth more points than revealing the answer.",
+    "seeAnswer": "Show answer",
+    "helpsAllOff": "No hints are available at difficulty {level}. During the game there are buttons to ask for pinyin, translation or the prompt."
   },
   "ktv": {
-    "title": "Lyrics / KTV",
     "brand": "Lyrics",
     "backSite": "← Site",
     "backHome": "← Home",
