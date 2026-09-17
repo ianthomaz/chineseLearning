@@ -1,0 +1,439 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "bookTitleZh": "新时代汉语口语 初级·上",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 1",
+    "sourcePdf": "Level1.pdf",
+    "lesson": 8,
+    "titleZh": "帮我复习汉字吧",
+    "volumeLabel": "初级·上",
+    "pdfPages": {
+      "from": 101,
+      "to": 107,
+      "anchors": {
+        "textVocab": 101,
+        "extensionVocab": 104,
+        "produceSupport": 107
+      }
+    },
+    "importedFrom": "curated/primary-up/lesson-08.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "",
+        "core": [
+          "发音",
+          "口语",
+          "选修课",
+          "门",
+          "讲",
+          "纠正",
+          "活动",
+          "德语",
+          "语法",
+          "期中",
+          "学期",
+          "记",
+          "方法"
+        ],
+        "supplement": [
+          "一边",
+          "一边"
+        ]
+      },
+      {
+        "theme": "谈论对课程的看法 越……越……",
+        "core": [
+          "忘",
+          "耐心"
+        ],
+        "supplement": [
+          "气氛",
+          "进步",
+          "热情",
+          "鼓励",
+          "害怕"
+        ]
+      },
+      {
+        "theme": "其他",
+        "core": [
+          "语伴",
+          "当"
+        ],
+        "supplement": []
+      }
+    ],
+    "expressionPatterns": []
+  },
+  "entries": [
+    {
+      "hanzi": "语伴",
+      "pinyin": "yǔbàn",
+      "pos": "名",
+      "glossEn": "language partner",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "找语伴",
+        "中国语伴"
+      ]
+    },
+    {
+      "hanzi": "发音",
+      "pinyin": "fāyīn",
+      "pos": "名",
+      "glossEn": "pronunciation",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "发音清楚",
+        "发音的问题"
+      ]
+    },
+    {
+      "hanzi": "口语",
+      "pinyin": "k6uyǔ",
+      "pos": "名",
+      "glossEn": "spoken language",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "口语课",
+        "口语老师",
+        "口语考试"
+      ]
+    },
+    {
+      "hanzi": "选修课",
+      "pinyin": "xuǎnxiūkè",
+      "pos": "名",
+      "glossEn": "elective course",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "汉字选修课"
+      ]
+    },
+    {
+      "hanzi": "门",
+      "pinyin": "mén",
+      "pos": "量",
+      "glossEn": "measure word [for subjects of study]",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "一门课",
+        "一门选修课"
+      ]
+    },
+    {
+      "hanzi": "讲",
+      "pinyin": "jiǎng",
+      "pos": "动",
+      "glossEn": "explain",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "lecture 讲课",
+        "讲得清楚"
+      ]
+    },
+    {
+      "hanzi": "纠正",
+      "pinyin": "jiūzhèng",
+      "pos": "动",
+      "glossEn": "correct",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "纠正发音"
+      ]
+    },
+    {
+      "hanzi": "活动",
+      "pinyin": "huódòng",
+      "pos": "名",
+      "glossEn": "activity",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "做活动",
+        "课外活动"
+      ]
+    },
+    {
+      "hanzi": "德语",
+      "pinyin": "Déyǔ",
+      "pos": "名",
+      "glossEn": "German (language)",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "德语学院",
+        "学德语"
+      ]
+    },
+    {
+      "hanzi": "语法",
+      "pinyin": "y",
+      "pos": "",
+      "glossEn": "^fǎ",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore",
+        "produceOnly"
+      ],
+      "examples": [
+        "名 grammar 汉语语法",
+        "学习语法"
+      ]
+    },
+    {
+      "hanzi": "越……越……",
+      "pinyin": "yuè",
+      "pos": "",
+      "glossEn": "… yuè… the more... the more...越写越漂亮",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "越说越好"
+      ]
+    },
+    {
+      "hanzi": "忘",
+      "pinyin": "wàng",
+      "pos": "动",
+      "glossEn": "forget",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:谈论对课程的看法 越……越……"
+      ],
+      "examples": [
+        "忘了怎么写",
+        "（别）忘了"
+      ]
+    },
+    {
+      "hanzi": "期中",
+      "pinyin": "qīzhōng",
+      "pos": "名",
+      "glossEn": "midterm",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "期中考试"
+      ]
+    },
+    {
+      "hanzi": "当",
+      "pinyin": "dāng",
+      "pos": "动",
+      "glossEn": "serve as",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "当老师",
+        "当售货员"
+      ]
+    },
+    {
+      "hanzi": "学期",
+      "pinyin": "xuéqī",
+      "pos": "名",
+      "glossEn": "semester",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "一个学期",
+        "学期考试"
+      ]
+    },
+    {
+      "hanzi": "记",
+      "pinyin": "jì",
+      "pos": "动",
+      "glossEn": "memorize",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "记汉字",
+        "记发音"
+      ]
+    },
+    {
+      "hanzi": "方法",
+      "pinyin": "fāngfǎ",
+      "pos": "名",
+      "glossEn": "method",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "学习方法",
+        "有用的方法"
+      ]
+    },
+    {
+      "hanzi": "一边……一边……",
+      "pinyin": "yìbiān",
+      "pos": "",
+      "glossEn": "… yìbiān… at the same time",
+      "priority": "brainstorm",
+      "sources": [
+        "extensionVocab"
+      ],
+      "examples": [
+        "while 一边听音乐，一边写作业",
+        "一边看，一边学"
+      ]
+    },
+    {
+      "hanzi": "耐心",
+      "pinyin": "nàixīn",
+      "pos": "名",
+      "glossEn": "patience",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:谈论对课程的看法 越……越……"
+      ],
+      "examples": [
+        "有耐心",
+        "没有耐心"
+      ]
+    },
+    {
+      "hanzi": "汉字听写大会",
+      "pinyin": "Hànzì",
+      "pos": "专有",
+      "glossEn": "Tīngxiě Dàhuì Chinese Characters Dictation Competition",
+      "priority": "brainstorm",
+      "sources": [
+        "extensionVocab"
+      ]
+    },
+    {
+      "hanzi": "一边",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "气氛",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:谈论对课程的看法 越……越……",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "进步",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:谈论对课程的看法 越……越……",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "热情",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:谈论对课程的看法 越……越……",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "鼓励",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:谈论对课程的看法 越……越……",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "害怕",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:谈论对课程的看法 越……越……",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 26,
+    "core": 18,
+    "brainstorm": 2,
+    "extended": 6
+  }
+}

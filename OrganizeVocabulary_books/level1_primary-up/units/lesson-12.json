@@ -1,0 +1,537 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "bookTitleZh": "新时代汉语口语 初级·上",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 1",
+    "sourcePdf": "Level1.pdf",
+    "lesson": 12,
+    "titleZh": "你哪儿不舒服？",
+    "volumeLabel": "初级·上",
+    "pdfPages": {
+      "from": 149,
+      "to": 157,
+      "anchors": {
+        "textVocab": 149,
+        "extensionVocab": 154,
+        "produceSupport": 157
+      }
+    },
+    "importedFrom": "curated/primary-up/lesson-12.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "健康问题",
+        "core": [
+          "肚子",
+          "疼",
+          "拉肚子",
+          "新鲜",
+          "腿",
+          "血",
+          "感冒",
+          "咳嗽",
+          "发烧",
+          "度"
+        ],
+        "supplement": [
+          "吐",
+          "骨折",
+          "咬",
+          "过敏"
+        ]
+      },
+      {
+        "theme": "看病流程",
+        "core": [
+          "挂号",
+          "收费处",
+          "费",
+          "科",
+          "内科",
+          "药房"
+        ],
+        "supplement": [
+          "交费",
+          "拿药"
+        ]
+      },
+      {
+        "theme": "医生建议",
+        "core": [
+          "检查",
+          "开",
+          "片",
+          "注意",
+          "凉",
+          "上",
+          "结果"
+        ],
+        "supplement": [
+          "照",
+          "光",
+          "打针"
+        ]
+      }
+    ],
+    "expressionPatterns": [
+      "我这几天有点儿…… ， 还……",
+      "我……几天了。不知道是什",
+      "我不小心……，……破了/出",
+      "我从……开始……疼/不舒服。",
+      "可能是因为……",
+      "我给你开点儿药。",
+      "我帮你上点儿药。",
+      "我给你检查一下。",
+      "你再检查一下……，拿着检查结果……",
+      "你吃这种药，一天吃……次，一次……",
+      "注意……，不要……，多/少……",
+      "问题不大。",
+      "别担心，很快就会好！"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "挂号",
+      "pinyin": "guàhào",
+      "pos": "动",
+      "glossEn": "register [esp at a hospital]",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:看病流程"
+      ],
+      "examples": [
+        "挂个号",
+        "挂……（号）"
+      ]
+    },
+    {
+      "hanzi": "收费处",
+      "pinyin": "shōufèichù",
+      "pos": "名",
+      "glossEn": "cashier",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:看病流程"
+      ]
+    },
+    {
+      "hanzi": "费",
+      "pinyin": "fèi",
+      "pos": "名",
+      "glossEn": "fee",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:看病流程"
+      ],
+      "examples": [
+        "expenses 挂号费",
+        "交费"
+      ]
+    },
+    {
+      "hanzi": "科",
+      "pinyin": "kē",
+      "pos": "名",
+      "glossEn": "department",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:看病流程"
+      ],
+      "examples": [
+        "外科",
+        "挂什么科"
+      ]
+    },
+    {
+      "hanzi": "肚子",
+      "pinyin": "dùzi",
+      "pos": "名",
+      "glossEn": "belly",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:健康问题"
+      ],
+      "examples": [
+        "肚子不舒服"
+      ]
+    },
+    {
+      "hanzi": "疼",
+      "pinyin": "téng",
+      "pos": "形",
+      "glossEn": "painful",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:健康问题"
+      ],
+      "examples": [
+        "肚子疼",
+        "头疼"
+      ]
+    },
+    {
+      "hanzi": "内科",
+      "pinyin": "nèikē",
+      "pos": "名",
+      "glossEn": "internal medicine",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:看病流程"
+      ],
+      "examples": [
+        "看内科",
+        "挂内科（的号）"
+      ]
+    },
+    {
+      "hanzi": "拉肚子",
+      "pinyin": "lā dùzi",
+      "pos": "",
+      "glossEn": "have loose bowels",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:健康问题",
+        "produceOnly"
+      ],
+      "examples": [
+        "我从昨天晚上开始拉肚子。"
+      ]
+    },
+    {
+      "hanzi": "检查",
+      "pinyin": "jiǎnchá",
+      "pos": "动",
+      "glossEn": "check (up)",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:医生建议"
+      ],
+      "examples": [
+        "检查身体",
+        "检查一下"
+      ]
+    },
+    {
+      "hanzi": "新鲜",
+      "pinyin": "xīnxiān",
+      "pos": "形",
+      "glossEn": "fresh",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:健康问题"
+      ],
+      "examples": [
+        "新鲜的水果",
+        "新鲜的鸡肉"
+      ]
+    },
+    {
+      "hanzi": "开",
+      "pinyin": "kāi",
+      "pos": "动",
+      "glossEn": "write out",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:医生建议"
+      ],
+      "examples": [
+        "开药"
+      ]
+    },
+    {
+      "hanzi": "片",
+      "pinyin": "piàn",
+      "pos": "量",
+      "glossEn": "tablet",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:医生建议"
+      ],
+      "examples": [
+        "一片药"
+      ]
+    },
+    {
+      "hanzi": "注意",
+      "pinyin": "zhùyì",
+      "pos": "动",
+      "glossEn": "pay attention to",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:医生建议"
+      ],
+      "examples": [
+        "注意什么",
+        "注意一下"
+      ]
+    },
+    {
+      "hanzi": "凉",
+      "pinyin": "liáng",
+      "pos": "形",
+      "glossEn": "cool",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:医生建议"
+      ],
+      "examples": [
+        "cold 凉水",
+        "凉菜"
+      ]
+    },
+    {
+      "hanzi": "药房",
+      "pinyin": "yàofáng",
+      "pos": "名",
+      "glossEn": "pharmacy",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:看病流程"
+      ]
+    },
+    {
+      "hanzi": "腿",
+      "pinyin": "tuǐ",
+      "pos": "名",
+      "glossEn": "leg",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:健康问题"
+      ],
+      "examples": [
+        "一条腿",
+        "腿破了"
+      ]
+    },
+    {
+      "hanzi": "血",
+      "pinyin": "xuè",
+      "pos": "名",
+      "glossEn": "blood",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:健康问题"
+      ],
+      "examples": [
+        "出血",
+        "检查血"
+      ]
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "pos": "动",
+      "glossEn": "apply (medicine)",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:医生建议"
+      ],
+      "examples": [
+        "上药"
+      ]
+    },
+    {
+      "hanzi": "感冒",
+      "pinyin": "gǎnmào",
+      "pos": "名动",
+      "glossEn": "(common) cold",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:健康问题",
+        "produceOnly"
+      ],
+      "examples": [
+        "catch cold有点儿感冒",
+        "我这两天感冒了。"
+      ]
+    },
+    {
+      "hanzi": "咳嗽",
+      "pinyin": "késou",
+      "pos": "动",
+      "glossEn": "cough",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:健康问题"
+      ],
+      "examples": [
+        "常常咳嗽",
+        "有点儿咳嗽"
+      ]
+    },
+    {
+      "hanzi": "发烧",
+      "pinyin": "fāshāo",
+      "pos": "动",
+      "glossEn": "have a fever",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:健康问题"
+      ],
+      "examples": [
+        "有点儿发烧",
+        "发烧两天了"
+      ]
+    },
+    {
+      "hanzi": "度",
+      "pinyin": "dù",
+      "pos": "量",
+      "glossEn": "degree",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:健康问题"
+      ],
+      "examples": [
+        "发烧38度"
+      ]
+    },
+    {
+      "hanzi": "结果",
+      "pinyin": "jiéguǒ",
+      "pos": "名",
+      "glossEn": "result",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:医生建议"
+      ],
+      "examples": [
+        "检查结果",
+        "有结果了"
+      ]
+    },
+    {
+      "hanzi": "吐",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:健康问题",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "骨折",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:健康问题",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "咬",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:健康问题",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "过敏",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:健康问题",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "交费",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:看病流程",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "拿药",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:看病流程",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "照",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:医生建议",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "光",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:医生建议",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "打针",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:医生建议",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 32,
+    "core": 23,
+    "brainstorm": 0,
+    "extended": 9
+  }
+}

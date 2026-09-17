@@ -1,0 +1,465 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "bookTitleZh": "新时代汉语口语 初级·下",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 2",
+    "sourcePdf": "level2.pdf",
+    "lesson": 1,
+    "titleZh": "认识新同学",
+    "volumeLabel": "初级·下",
+    "pdfPages": {
+      "from": 14,
+      "to": 24,
+      "anchors": {
+        "textVocab": 14,
+        "extensionVocab": 20,
+        "produceSupport": 24
+      }
+    },
+    "importedFrom": "curated/primary-down/lesson-01.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "姓名",
+        "core": [
+          "智慧",
+          "思考"
+        ],
+        "supplement": [
+          "发音",
+          "像"
+        ]
+      },
+      {
+        "theme": "专业",
+        "core": [
+          "诗（歌）",
+          "哲学",
+          "教育",
+          "打交道",
+          "联系",
+          "密切",
+          "计划",
+          "将来",
+          "计划",
+          "通过",
+          "流利",
+          "优秀",
+          "本科",
+          "毕业"
+        ],
+        "supplement": [
+          "密切",
+          "实习",
+          "外交官",
+          "理想"
+        ]
+      },
+      {
+        "theme": "其他",
+        "core": [
+          "来自",
+          "确实",
+          "比如"
+        ],
+        "supplement": []
+      }
+    ],
+    "expressionPatterns": [
+      "（1）我的名字是我的第一位汉语老师起的。（是……的）",
+      "（2）我妈妈查了词典以后给我起的这个名字。（给……起名字）",
+      "（3）我对中国历史特别感兴趣。（对……感兴趣）",
+      "（4）除了学好汉语以外，我还要多了解中国的历史和文化。（除了……以外，还……）",
+      "（5）我打算毕业以后做和国际贸易有关的工作。（和……有关）",
+      "（6）希望将来我的理想能够实现。（实现理想）"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "智慧",
+      "pinyin": "zhìhuì",
+      "pos": "名",
+      "glossEn": "wisdom",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:姓名"
+      ],
+      "examples": [
+        "人的智慧",
+        "有智慧"
+      ]
+    },
+    {
+      "hanzi": "来自",
+      "pinyin": "láizì",
+      "pos": "动",
+      "glossEn": "come from",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "来自日本",
+        "来自不同的国家"
+      ]
+    },
+    {
+      "hanzi": "诗（歌）",
+      "pinyin": "shī",
+      "pos": "",
+      "glossEn": "(gē)",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:专业",
+        "produceOnly"
+      ],
+      "examples": [
+        "名 poetry 写诗",
+        "中国诗歌"
+      ]
+    },
+    {
+      "hanzi": "哲学",
+      "pinyin": "zhéxué",
+      "pos": "名",
+      "glossEn": "philosophy",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:专业"
+      ],
+      "examples": [
+        "中国哲学",
+        "哲学家"
+      ]
+    },
+    {
+      "hanzi": "将来",
+      "pinyin": "jiānglái",
+      "pos": "名",
+      "glossEn": "future",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:专业"
+      ],
+      "examples": [
+        "将来的生活",
+        "美好的将来"
+      ]
+    },
+    {
+      "hanzi": "计划",
+      "pinyin": "jìhuà",
+      "pos": "名动",
+      "glossEn": "plan",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:专业",
+        "produceOnly"
+      ],
+      "examples": [
+        "做学习计划",
+        "计划去旅行"
+      ]
+    },
+    {
+      "hanzi": "通过",
+      "pinyin": "tōngguò",
+      "pos": "动",
+      "glossEn": "pass",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:专业"
+      ],
+      "examples": [
+        "通过了HSK4级考试"
+      ]
+    },
+    {
+      "hanzi": "流利",
+      "pinyin": "liúlì",
+      "pos": "形",
+      "glossEn": "fluent",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:专业"
+      ],
+      "examples": [
+        "汉语说得很流利",
+        "能流利地"
+      ]
+    },
+    {
+      "hanzi": "优秀",
+      "pinyin": "yōuxiù",
+      "pos": "形",
+      "glossEn": "excellent",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:专业"
+      ],
+      "examples": [
+        "成绩很优秀",
+        "优秀的学生"
+      ]
+    },
+    {
+      "hanzi": "孔子",
+      "pinyin": "Kǒngzǐ",
+      "pos": "专有",
+      "glossEn": "Confucius",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "孔子的话",
+        "孔子的智慧"
+      ]
+    },
+    {
+      "hanzi": "君子",
+      "pinyin": "jūnzǐ",
+      "pos": "名",
+      "glossEn": "man of noble virtue",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "一位君子",
+        "孔子是君子"
+      ]
+    },
+    {
+      "hanzi": "君子尚德",
+      "pinyin": "jūnzǐ shàng dé",
+      "pos": "",
+      "glossEn": "an exemplary person esteems virtue",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ]
+    },
+    {
+      "hanzi": "思考",
+      "pinyin": "sīkǎo",
+      "pos": "动",
+      "glossEn": "think",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:姓名"
+      ],
+      "examples": [
+        "思考问题",
+        "认真思考"
+      ]
+    },
+    {
+      "hanzi": "确实",
+      "pinyin": "quèshí",
+      "pos": "副",
+      "glossEn": "indeed",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "她确实很聪明"
+      ]
+    },
+    {
+      "hanzi": "比如",
+      "pinyin": "bǐrú",
+      "pos": "动",
+      "glossEn": "for example",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "我很喜欢吃水果，比如苹果、香蕉"
+      ]
+    },
+    {
+      "hanzi": "教育",
+      "pinyin": "jiàoyù",
+      "pos": "名动",
+      "glossEn": "education",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:专业",
+        "produceOnly"
+      ],
+      "examples": [
+        "educate 国际中文教育",
+        "教育孩子"
+      ]
+    },
+    {
+      "hanzi": "打交道",
+      "pinyin": "dǎ jiāodao",
+      "pos": "",
+      "glossEn": "have dealings with",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:专业",
+        "produceOnly"
+      ],
+      "examples": [
+        "跟外国人打交道",
+        "打过一次交道"
+      ]
+    },
+    {
+      "hanzi": "联系",
+      "pinyin": "liánxì",
+      "pos": "动",
+      "glossEn": "contact",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:专业"
+      ],
+      "examples": [
+        "connect 和同学联系",
+        "联系老师"
+      ]
+    },
+    {
+      "hanzi": "密切",
+      "pinyin": "mìqiè",
+      "pos": "形",
+      "glossEn": "close",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:专业",
+        "produceSupplement:专业"
+      ],
+      "examples": [
+        "关系密切",
+        "密切联系"
+      ]
+    },
+    {
+      "hanzi": "本科",
+      "pinyin": "běnkē",
+      "pos": "名",
+      "glossEn": "undergraduate course",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:专业"
+      ],
+      "examples": [
+        "大学本科",
+        "本科生"
+      ]
+    },
+    {
+      "hanzi": "毕业",
+      "pinyin": "bìyè",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:专业",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "动",
+      "pinyin": "graduate",
+      "pos": "",
+      "glossEn": "小学毕业",
+      "priority": "brainstorm",
+      "sources": [
+        "extensionVocab"
+      ],
+      "examples": [
+        "从……毕业"
+      ]
+    },
+    {
+      "hanzi": "发音",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:姓名",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "像",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:姓名",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "实习",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:专业",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "外交官",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:专业",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "理想",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:专业",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 27,
+    "core": 21,
+    "brainstorm": 1,
+    "extended": 5
+  }
+}

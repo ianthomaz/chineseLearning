@@ -1,0 +1,617 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "bookTitleZh": "新时代汉语口语 初级·下",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 2",
+    "sourcePdf": "level2.pdf",
+    "lesson": 8,
+    "titleZh": "你想加入社团吗？",
+    "volumeLabel": "初级·下",
+    "pdfPages": {
+      "from": 119,
+      "to": 128,
+      "anchors": {
+        "textVocab": 119,
+        "extensionVocab": 125,
+        "produceSupport": 128
+      }
+    },
+    "importedFrom": "curated/primary-down/lesson-08.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "社团名称",
+        "core": [
+          "社（团）",
+          "队",
+          "摄影"
+        ],
+        "supplement": [
+          "足球队",
+          "话剧社",
+          "戏曲社",
+          "滑板社",
+          "书画社"
+        ]
+      },
+      {
+        "theme": "怎么活动？",
+        "core": [
+          "经典",
+          "代表",
+          "大街小巷",
+          "收获",
+          "收获",
+          "技术",
+          "课余",
+          "丰富多彩",
+          "不仅",
+          "烦恼",
+          "遗憾",
+          "犹豫",
+          "热心",
+          "提醒",
+          "烦恼",
+          "遗憾"
+        ],
+        "supplement": [
+          "训练",
+          "练习",
+          "表演",
+          "演出",
+          "交流",
+          "提高",
+          "养成",
+          "害羞",
+          "尴尬",
+          "受伤",
+          "辛苦",
+          "花费",
+          "担心",
+          "影响"
+        ]
+      },
+      {
+        "theme": "其他",
+        "core": [
+          "招",
+          "广场",
+          "项"
+        ],
+        "supplement": []
+      }
+    ],
+    "expressionPatterns": []
+  },
+  "entries": [
+    {
+      "hanzi": "社（团）",
+      "pinyin": "shè",
+      "pos": "",
+      "glossEn": "(tuán)",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:社团名称",
+        "produceOnly"
+      ],
+      "examples": [
+        "名 association",
+        "society 书法社",
+        "诗社",
+        "参加社团"
+      ]
+    },
+    {
+      "hanzi": "招",
+      "pinyin": "zhāo",
+      "pos": "动",
+      "glossEn": "recruit",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "招新",
+        "招生",
+        "招人"
+      ]
+    },
+    {
+      "hanzi": "广场",
+      "pinyin": "guǎngchǎng",
+      "pos": "名",
+      "glossEn": "(public) square",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "天安门广场",
+        "文化广场"
+      ]
+    },
+    {
+      "hanzi": "队",
+      "pinyin": "duì",
+      "pos": "名",
+      "glossEn": "team",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:社团名称"
+      ],
+      "examples": [
+        "篮球队",
+        "游泳队"
+      ]
+    },
+    {
+      "hanzi": "经典",
+      "pinyin": "jīngdiǎn",
+      "pos": "名",
+      "glossEn": "classics",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么活动？"
+      ],
+      "examples": [
+        "文学经典",
+        "哲学经典"
+      ]
+    },
+    {
+      "hanzi": "摄影",
+      "pinyin": "shèyǐng",
+      "pos": "动",
+      "glossEn": "take a photograph (of)",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:社团名称"
+      ],
+      "examples": [
+        "摄影师",
+        "摄影社"
+      ]
+    },
+    {
+      "hanzi": "收获",
+      "pinyin": "shōuhuò",
+      "pos": "名",
+      "glossEn": "gains",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么活动？"
+      ],
+      "examples": [
+        "results 收获很多",
+        "只要努力，就有"
+      ]
+    },
+    {
+      "hanzi": "技术",
+      "pinyin": "jìshù",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么活动？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "名",
+      "pinyin": "technique",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "technology 摄影技术",
+        "学习技术"
+      ]
+    },
+    {
+      "hanzi": "课余",
+      "pinyin": "kèyú",
+      "pos": "名",
+      "glossEn": "time after school",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么活动？"
+      ],
+      "examples": [
+        "课余时间",
+        "课余生活"
+      ]
+    },
+    {
+      "hanzi": "丰富多彩",
+      "pinyin": "fēngfùduōcǎi",
+      "pos": "",
+      "glossEn": "rich and colorful",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么活动？",
+        "produceOnly"
+      ],
+      "examples": [
+        "丰富多彩的节目",
+        "活动丰富"
+      ]
+    },
+    {
+      "hanzi": "犹豫",
+      "pinyin": "yóuyù",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么活动？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "形",
+      "pinyin": "irresolute",
+      "pos": "",
+      "glossEn": "犹豫去不去看比赛",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "别犹"
+      ]
+    },
+    {
+      "hanzi": "项",
+      "pinyin": "xiàng",
+      "pos": "量",
+      "glossEn": "item",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "一项运动",
+        "哪项工作"
+      ]
+    },
+    {
+      "hanzi": "代表",
+      "pinyin": "dàibiǎo",
+      "pos": "动",
+      "glossEn": "represent",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么活动？"
+      ],
+      "examples": [
+        "stand for 代表学校",
+        "代表所有留学生"
+      ]
+    },
+    {
+      "hanzi": "不仅",
+      "pinyin": "bùjǐn",
+      "pos": "连",
+      "glossEn": "not only... (but also)",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么活动？"
+      ],
+      "examples": [
+        "我不仅认识了一些新队员，"
+      ]
+    },
+    {
+      "hanzi": "大街小巷",
+      "pinyin": "dàjiēxiǎoxiàng",
+      "pos": "",
+      "glossEn": "streets and lanes",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:怎么活动？",
+        "produceOnly"
+      ],
+      "examples": [
+        "北京的大街小巷"
+      ]
+    },
+    {
+      "hanzi": "热心",
+      "pinyin": "rèxīn",
+      "pos": "形",
+      "glossEn": "warm-hearted",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:怎么活动？"
+      ],
+      "examples": [
+        "热心地帮助同学"
+      ]
+    },
+    {
+      "hanzi": "提醒",
+      "pinyin": "tíxǐng",
+      "pos": "动",
+      "glossEn": "remind",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:怎么活动？"
+      ],
+      "examples": [
+        "提醒他早点儿来"
+      ]
+    },
+    {
+      "hanzi": "烦恼",
+      "pinyin": "fánnǎo",
+      "pos": "形",
+      "glossEn": "worried",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:怎么活动？"
+      ],
+      "examples": [
+        "annoyed 很烦恼",
+        "有很多烦恼"
+      ]
+    },
+    {
+      "hanzi": "遗憾",
+      "pinyin": "yíhàn",
+      "pos": "形名",
+      "glossEn": "regretful",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:怎么活动？",
+        "produceOnly"
+      ],
+      "examples": [
+        "regret 非常遗憾",
+        "没有遗憾"
+      ]
+    },
+    {
+      "hanzi": "足球队",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:社团名称",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "话剧社",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:社团名称",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "戏曲社",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:社团名称",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "滑板社",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:社团名称",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "书画社",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:社团名称",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "训练",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么活动？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "练习",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么活动？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "表演",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么活动？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "演出",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么活动？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "交流",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么活动？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "提高",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么活动？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "养成",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么活动？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "害羞",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么活动？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "尴尬",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么活动？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "受伤",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么活动？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "辛苦",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么活动？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "花费",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么活动？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "担心",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么活动？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "影响",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么活动？",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 40,
+    "core": 21,
+    "brainstorm": 0,
+    "extended": 19
+  }
+}

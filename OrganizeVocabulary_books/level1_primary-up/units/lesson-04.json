@@ -1,0 +1,410 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "bookTitleZh": "新时代汉语口语 初级·上",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 1",
+    "sourcePdf": "Level1.pdf",
+    "lesson": 4,
+    "titleZh": "听听周杰伦的歌吧",
+    "volumeLabel": "初级·上",
+    "pdfPages": {
+      "from": 53,
+      "to": 59,
+      "anchors": {
+        "textVocab": 53,
+        "extensionVocab": 57,
+        "produceSupport": 59
+      }
+    },
+    "importedFrom": "curated/primary-up/lesson-04.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "",
+        "core": [
+          "有名",
+          "清楚",
+          "特别",
+          "中国风",
+          "浪漫",
+          "重要",
+          "如果",
+          "原因",
+          "经常",
+          "环境",
+          "翻译",
+          "免费"
+        ],
+        "supplement": [
+          "不但",
+          "而且",
+          "又",
+          "又",
+          "免费"
+        ]
+      },
+      {
+        "theme": "向别人",
+        "core": [
+          "推荐",
+          "一定",
+          "用"
+        ],
+        "supplement": [
+          "试",
+          "尝"
+        ]
+      }
+    ],
+    "expressionPatterns": [
+      "你听/去/吃/用/看/玩过……吗？",
+      "我给你推荐……",
+      "你一定要听/去/吃/用/看/玩",
+      "你听听/用用/看看/玩玩吧。",
+      "第一，……；第二，……",
+      "最重要的是……",
+      "不但……，而且……",
+      "又……又……"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "推荐",
+      "pinyin": "tuījiàn",
+      "pos": "动",
+      "glossEn": "recommend",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:向别人"
+      ],
+      "examples": [
+        "推荐中国歌",
+        "非常推荐"
+      ]
+    },
+    {
+      "hanzi": "一定",
+      "pinyin": "yídìng",
+      "pos": "副",
+      "glossEn": "surely",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:向别人"
+      ],
+      "examples": [
+        "一定得试试",
+        "一定要来"
+      ]
+    },
+    {
+      "hanzi": "有名",
+      "pinyin": "yǒumíng",
+      "pos": "形",
+      "glossEn": "famous",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "有名的人",
+        "很有名"
+      ]
+    },
+    {
+      "hanzi": "清楚",
+      "pinyin": "qīngchu",
+      "pos": "形",
+      "glossEn": "clear",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "唱得不清楚",
+        "说得很清楚"
+      ]
+    },
+    {
+      "hanzi": "特别",
+      "pinyin": "tèbié",
+      "pos": "形副",
+      "glossEn": "special",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore",
+        "produceOnly"
+      ],
+      "examples": [
+        "especially很特别",
+        "特别好吃"
+      ]
+    },
+    {
+      "hanzi": "中国风",
+      "pinyin": "zhōngguófēng",
+      "pos": "名",
+      "glossEn": "Chinese style",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "中国风音乐 不但……，"
+      ]
+    },
+    {
+      "hanzi": "而且……",
+      "pinyin": "búdàn",
+      "pos": "",
+      "glossEn": "…, érqiě… not only... but also...",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "这里的中国菜不但好吃，而 且便宜。"
+      ]
+    },
+    {
+      "hanzi": "浪漫",
+      "pinyin": "làngmàn",
+      "pos": "形",
+      "glossEn": "romantic",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "浪漫的歌",
+        "浪漫的人"
+      ]
+    },
+    {
+      "hanzi": "重要",
+      "pinyin": "zhòngyào",
+      "pos": "形",
+      "glossEn": "important",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "重要的人",
+        "最重要的是……"
+      ]
+    },
+    {
+      "hanzi": "如果",
+      "pinyin": "rúguǒ",
+      "pos": "连",
+      "glossEn": "if",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "如果……，就……"
+      ]
+    },
+    {
+      "hanzi": "原因",
+      "pinyin": "yuányīn",
+      "pos": "名",
+      "glossEn": "reason",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "推荐的原因",
+        "重要的原因"
+      ]
+    },
+    {
+      "hanzi": "周杰伦",
+      "pinyin": "Zhōu",
+      "pos": "专有",
+      "glossEn": "Jiélún Jay Chou (Chinese pop musician)",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ]
+    },
+    {
+      "hanzi": "青花瓷",
+      "pinyin": "Qīnghuācí",
+      "pos": "专有",
+      "glossEn": "It originally refers to the blue -and-white porcelain, but here refers to the title of a song of Jay Chou",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ]
+    },
+    {
+      "hanzi": "经常",
+      "pinyin": "jīngcháng",
+      "pos": "副",
+      "glossEn": "often",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "regularly 经常去",
+        "经常吃中国菜"
+      ]
+    },
+    {
+      "hanzi": "环境",
+      "pinyin": "huánjìng",
+      "pos": "名",
+      "glossEn": "environment",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "环境好",
+        "环境浪漫"
+      ]
+    },
+    {
+      "hanzi": "又……又……",
+      "pinyin": "yòu… yòu…",
+      "pos": "连",
+      "glossEn": "both... and...",
+      "priority": "brainstorm",
+      "sources": [
+        "extensionVocab"
+      ],
+      "examples": [
+        "又大又红",
+        "他长得又高又瘦。"
+      ]
+    },
+    {
+      "hanzi": "翻译",
+      "pinyin": "fānyì",
+      "pos": "动",
+      "glossEn": "translate",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "翻译一下",
+        "这个APP能把英语翻 译成汉语。"
+      ]
+    },
+    {
+      "hanzi": "用",
+      "pinyin": "yòng",
+      "pos": "动",
+      "glossEn": "use",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:向别人"
+      ],
+      "examples": [
+        "不用",
+        "好用"
+      ]
+    },
+    {
+      "hanzi": "免费",
+      "pinyin": "miǎnfèi",
+      "pos": "动",
+      "glossEn": "be cost-free",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore",
+        "produceSupplement"
+      ],
+      "examples": [
+        "免费用",
+        "这个APP是免费的。"
+      ]
+    },
+    {
+      "hanzi": "不但",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "而且",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "又",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "试",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:向别人",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "尝",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:向别人",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 24,
+    "core": 18,
+    "brainstorm": 1,
+    "extended": 5
+  }
+}

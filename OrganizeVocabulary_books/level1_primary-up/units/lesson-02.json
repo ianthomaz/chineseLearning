@@ -1,0 +1,423 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "bookTitleZh": "新时代汉语口语 初级·上",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 1",
+    "sourcePdf": "Level1.pdf",
+    "lesson": 2,
+    "titleZh": "怎么办？",
+    "volumeLabel": "初级·上",
+    "pdfPages": {
+      "from": 29,
+      "to": 36,
+      "anchors": {
+        "textVocab": 29,
+        "extensionVocab": 33,
+        "produceSupport": 36
+      }
+    },
+    "importedFrom": "curated/primary-up/lesson-02.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "遇到了什么问题？",
+        "core": [
+          "课表"
+        ],
+        "supplement": [
+          "迷路",
+          "坏",
+          "丢",
+          "空调",
+          "马桶"
+        ]
+      },
+      {
+        "theme": "怎么找人帮忙？",
+        "core": [
+          "地铁",
+          "大巴",
+          "或者",
+          "种",
+          "线",
+          "查",
+          "换",
+          "先",
+          "然后",
+          "修",
+          "一会儿",
+          "办公室"
+        ],
+        "supplement": [
+          "师傅",
+          "不好意思"
+        ]
+      },
+      {
+        "theme": "怎么感谢？",
+        "core": [
+          "感谢",
+          "麻烦"
+        ],
+        "supplement": [
+          "辛苦"
+        ]
+      }
+    ],
+    "expressionPatterns": [
+      "……坏了",
+      "请问……",
+      "麻烦您帮我……",
+      "您能帮我……吗？"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "地铁",
+      "pinyin": "dìtiě",
+      "pos": "名",
+      "glossEn": "subway",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么找人帮忙？"
+      ],
+      "examples": [
+        "坐地铁",
+        "地铁站"
+      ]
+    },
+    {
+      "hanzi": "大巴",
+      "pinyin": "dàbā",
+      "pos": "名",
+      "glossEn": "bus",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么找人帮忙？"
+      ],
+      "examples": [
+        "机场大巴",
+        "坐大巴"
+      ]
+    },
+    {
+      "hanzi": "或者",
+      "pinyin": "huòzhě",
+      "pos": "连",
+      "glossEn": "or",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么找人帮忙？"
+      ],
+      "examples": [
+        "你可以坐大巴或者出租车。"
+      ]
+    },
+    {
+      "hanzi": "种",
+      "pinyin": "zhǒng",
+      "pos": "量",
+      "glossEn": "kind",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么找人帮忙？"
+      ],
+      "examples": [
+        "一种",
+        "哪种",
+        "很多种"
+      ]
+    },
+    {
+      "hanzi": "线",
+      "pinyin": "xiàn",
+      "pos": "名",
+      "glossEn": "line",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么找人帮忙？"
+      ]
+    },
+    {
+      "hanzi": "查",
+      "pinyin": "chá",
+      "pos": "动",
+      "glossEn": "search",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么找人帮忙？"
+      ],
+      "examples": [
+        "查一下"
+      ]
+    },
+    {
+      "hanzi": "换",
+      "pinyin": "huàn",
+      "pos": "动",
+      "glossEn": "change",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么找人帮忙？"
+      ],
+      "examples": [
+        "换地铁",
+        "换10号线"
+      ]
+    },
+    {
+      "hanzi": "先",
+      "pinyin": "xiān",
+      "pos": "副",
+      "glossEn": "first",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么找人帮忙？"
+      ],
+      "examples": [
+        "先……，然后……"
+      ]
+    },
+    {
+      "hanzi": "然后",
+      "pinyin": "ránhòu",
+      "pos": "连",
+      "glossEn": "then",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么找人帮忙？"
+      ],
+      "examples": [
+        "先……，然后……"
+      ]
+    },
+    {
+      "hanzi": "感谢",
+      "pinyin": "gǎnxiè",
+      "pos": "动",
+      "glossEn": "thank",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么感谢？"
+      ],
+      "examples": [
+        "appreciate 非常感谢",
+        "感谢您（的帮助）"
+      ]
+    },
+    {
+      "hanzi": "中汉大学",
+      "pinyin": "Zhōnghàn",
+      "pos": "专有",
+      "glossEn": "Dàxué Zhonghan University",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ]
+    },
+    {
+      "hanzi": "中山桥",
+      "pinyin": "Zh4ngshn",
+      "pos": "专有",
+      "glossEn": "Qiáo Zhongshan Bridge",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ]
+    },
+    {
+      "hanzi": "新月公园",
+      "pinyin": "Xīnyuè",
+      "pos": "专有",
+      "glossEn": "GōngyuánXinyue Park",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ]
+    },
+    {
+      "hanzi": "修",
+      "pinyin": "xiū",
+      "pos": "动",
+      "glossEn": "repair",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:怎么找人帮忙？"
+      ],
+      "examples": [
+        "修电视",
+        "修好"
+      ]
+    },
+    {
+      "hanzi": "一会儿",
+      "pinyin": "yíhuìr",
+      "pos": "",
+      "glossEn": "in a while",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:怎么找人帮忙？",
+        "produceOnly"
+      ],
+      "examples": [
+        "一会儿见",
+        "一会儿来"
+      ]
+    },
+    {
+      "hanzi": "办公室",
+      "pinyin": "bàngōngshì",
+      "pos": "名",
+      "glossEn": "office",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:怎么找人帮忙？"
+      ],
+      "examples": [
+        "一间办公室",
+        "学院办公室"
+      ]
+    },
+    {
+      "hanzi": "课表",
+      "pinyin": "kèbiǎo",
+      "pos": "名",
+      "glossEn": "class schedule",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:遇到了什么问题？"
+      ],
+      "examples": [
+        "口语课表",
+        "汉语课表"
+      ]
+    },
+    {
+      "hanzi": "麻烦",
+      "pinyin": "máfan",
+      "pos": "动",
+      "glossEn": "bother",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:怎么感谢？"
+      ],
+      "examples": [
+        "trouble sb 麻烦您了！"
+      ]
+    },
+    {
+      "hanzi": "迷路",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:遇到了什么问题？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "坏",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:遇到了什么问题？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "丢",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:遇到了什么问题？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "空调",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:遇到了什么问题？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "马桶",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:遇到了什么问题？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "师傅",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么找人帮忙？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "不好意思",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么找人帮忙？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "辛苦",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么感谢？",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 26,
+    "core": 18,
+    "brainstorm": 0,
+    "extended": 8
+  }
+}

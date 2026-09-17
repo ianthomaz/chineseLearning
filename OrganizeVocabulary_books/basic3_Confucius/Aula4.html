@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Aula 4 · esportes</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    height: 100%;
+    font-family: -apple-system, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    overflow: hidden;
+  }
+  #card {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    padding:
+      calc(14px + env(safe-area-inset-top))
+      14px
+      calc(10px + env(safe-area-inset-bottom));
+    overflow: hidden;
+  }
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 13px;
+    color: #888;
+    flex: 0 0 auto;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .head-left { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .deck-title { color: #555; }
+  .section {
+    color: #9e9e9e;
+    max-width: 48%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right;
+  }
+  .main {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 0;
+    padding: 2px 0 8px;
+  }
+  .word-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 11vh;
+    min-height: 56px;
+  }
+  .word {
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: 2px;
+    text-align: center;
+    max-width: 100%;
+  }
+  .pinyin { color: #4db8ff; font-size: 18px; margin-top: 2px; }
+  .gloss { color: #bbb; font-size: 16px; margin-top: 2px; text-align: center; }
+  .facts {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 8px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .facts:empty { display: none; }
+  .fact {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 38%;
+    text-align: center;
+    padding: 8px 6px 10px;
+    border: 1px solid #5a4726;
+    border-radius: 14px;
+    background: #2a2115;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fact .lab {
+    display: block;
+    font-size: 12px;
+    color: #c49a5a;
+    margin-bottom: 4px;
+  }
+  .fact-hanzi-wrap {
+    width: 100%;
+    height: 9.5vh;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fact .val {
+    color: #ffcc80;
+    font-weight: 700;
+    line-height: 1.15;
+    max-width: 100%;
+    letter-spacing: 1px;
+  }
+  .fact .py {
+    color: #4db8ff;
+    font-size: 15px;
+    line-height: 1.25;
+    margin-top: 4px;
+    word-break: break-word;
+  }
+  .fact .pt {
+    color: #c8c8c8;
+    font-size: 14px;
+    line-height: 1.25;
+    margin-top: 2px;
+  }
+  .sentence-box {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 34vh;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    overflow: hidden;
+  }
+  .sentence-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+  }
+  .sentence {
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.3;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    max-width: 100%;
+    user-select: text;
+    -webkit-user-select: text;
+  }
+  .hl { color: #ff5252; }
+  .meta { flex: 0 0 auto; margin-top: 8px; }
+  .s-pinyin { color: #4db8ff; font-size: 18px; text-align: center; line-height: 1.35; }
+  .s-meaning { color: #bbb; font-size: 16px; text-align: center; margin-top: 4px; line-height: 1.35; }
+  .nav {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex: 0 0 auto;
+  }
+  .nav button {
+    flex: 1;
+    padding: 14px 0;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    background: #2a2a2a;
+    color: #fff;
+  }
+  .nav button:active { background: #4db8ff; color: #111; }
+  .nav button:disabled { opacity: .35; }
+  .tap { position: fixed; top: 0; bottom: 100px; width: 22%; z-index: 5; }
+  .tap.left { left: 0; }
+  .tap.right { right: 0; }
+</style>
+</head>
+<body>
+<div class="tap left" id="tapL"></div>
+<div class="tap right" id="tapR"></div>
+<section id="card"></section>
+<script>
+const CARDS = [
+  {
+    word: "篮球", pinyin: "lánqiú", meaning: "basquete", section: "basquete",
+    sentence: "我跟朋友一起打篮球。", sentencePinyin: "Wǒ gēn péngyou yìqǐ dǎ lánqiú.", sentenceMeaning: "Eu com amigo juntos jogo basquete.",
+    facts: [
+      { lab: "como", hanzi: "打", pinyin: "dǎ", pt: "mãos" },
+      { lab: "lugar", hanzi: "篮球场", pinyin: "lánqiúchǎng", pt: "quadra" },
+      { lab: "lugar", hanzi: "篮球馆", pinyin: "lánqiúguǎn", pt: "ginásio" }
+    ]
+  },
+  {
+    word: "网球", pinyin: "wǎngqiú", meaning: "tênis", section: "tênis",
+    sentence: "她用网球拍打网球。", sentencePinyin: "Tā yòng wǎngqiúpāi dǎ wǎngqiú.", sentenceMeaning: "Ela usa tênis-raquete joga tênis.",
+    facts: [
+      { lab: "como", hanzi: "打", pinyin: "dǎ", pt: "mãos" },
+      { lab: "raquete", hanzi: "网球拍", pinyin: "wǎngqiúpāi", pt: "raquete" },
+      { lab: "lugar", hanzi: "网球场", pinyin: "wǎngqiúchǎng", pt: "quadra" }
+    ]
+  },
+  {
+    word: "足球", pinyin: "zúqiú", meaning: "futebol", section: "futebol",
+    sentence: "星期六我踢足球。", sentencePinyin: "Xīngqīliù wǒ tī zúqiú.", sentenceMeaning: "Sábado eu chuto futebol.",
+    facts: [
+      { lab: "como", hanzi: "踢", pinyin: "tī", pt: "pés" },
+      { lab: "lugar", hanzi: "足球场", pinyin: "zúqiúchǎng", pt: "campo" }
+    ]
+  },
+  {
+    word: "羽毛球", pinyin: "yǔmáoqiú", meaning: "badminton", section: "badminton",
+    sentence: "她要买羽毛球拍。", sentencePinyin: "Tā yào mǎi yǔmáoqiúpāi.", sentenceMeaning: "Ela vai-comprar badminton-raquete.",
+    facts: [
+      { lab: "como", hanzi: "打", pinyin: "dǎ", pt: "mãos" },
+      { lab: "raquete", hanzi: "羽毛球拍", pinyin: "yǔmáoqiúpāi", pt: "raquete" },
+      { lab: "lugar", hanzi: "羽毛球馆", pinyin: "yǔmáoqiúguǎn", pt: "ginásio" }
+    ]
+  },
+  {
+    word: "乒乓球", pinyin: "pīngpāngqiú", meaning: "tênis de mesa", section: "tênis de mesa",
+    sentence: "今天我打乒乓球。", sentencePinyin: "Jīntiān wǒ dǎ pīngpāngqiú.", sentenceMeaning: "Hoje eu jogo pingue-pongue.",
+    facts: [
+      { lab: "como", hanzi: "打", pinyin: "dǎ", pt: "mãos" },
+      { lab: "raquete", hanzi: "乒乓球拍", pinyin: "pīngpāngqiúpāi", pt: "raquete" },
+      { lab: "lugar", hanzi: "乒乓球台", pinyin: "pīngpāngqiútái", pt: "mesa" }
+    ]
+  },
+  {
+    word: "排球", pinyin: "páiqiú", meaning: "vôlei", section: "vôlei",
+    sentence: "我们一起打排球。", sentencePinyin: "Wǒmen yìqǐ dǎ páiqiú.", sentenceMeaning: "Nós juntos jogamos vôlei.",
+    facts: [
+      { lab: "como", hanzi: "打", pinyin: "dǎ", pt: "mãos" }
+    ]
+  },
+  {
+    word: "游泳", pinyin: "yóuyǒng", meaning: "natação", section: "natação",
+    sentence: "周末我去游泳池。", sentencePinyin: "Zhōumò wǒ qù yóuyǒngchí.", sentenceMeaning: "Fim-de-semana eu vou piscina.",
+    facts: [
+      { lab: "lugar", hanzi: "游泳池", pinyin: "yóuyǒngchí", pt: "piscina" }
+    ]
+  },
+  {
+    word: "跑步", pinyin: "pǎobù", meaning: "correr", section: "corrida",
+    sentence: "星期六我去跑步。", sentencePinyin: "Xīngqīliù wǒ qù pǎobù.", sentenceMeaning: "Sábado eu vou correr.",
+    facts: []
+  },
+  {
+    word: "毽子", pinyin: "jiànzi", meaning: "peteca", section: "peteca",
+    sentence: "我跟奶奶踢毽子。", sentencePinyin: "Wǒ gēn nǎinai tī jiànzi.", sentenceMeaning: "Eu com avó chuto peteca.",
+    facts: [
+      { lab: "como", hanzi: "踢", pinyin: "tī", pt: "pés" },
+      { lab: "lugar", hanzi: "公园", pinyin: "gōngyuán", pt: "parque" }
+    ]
+  },
+  {
+    word: "太极拳", pinyin: "tàijíquán", meaning: "tai chi", section: "tai chi",
+    sentence: "爷爷在公园打太极拳。", sentencePinyin: "Yéye zài gōngyuán dǎ tàijíquán.", sentenceMeaning: "Avô em parque pratica tai-chi.",
+    facts: [
+      { lab: "como", hanzi: "打", pinyin: "dǎ", pt: "mãos" },
+      { lab: "lugar", hanzi: "公园", pinyin: "gōngyuán", pt: "parque" }
+    ]
+  },
+  {
+    word: "滑雪", pinyin: "huáxuě", meaning: "esquiar", section: "esqui",
+    sentence: "下雪了去滑雪。", sentencePinyin: "Xià xuě le qù huáxuě.", sentenceMeaning: "Cair-neve le ir esquiar.",
+    facts: [
+      { lab: "como", hanzi: "滑", pinyin: "huá", pt: "deslizar" },
+      { lab: "lugar", hanzi: "滑雪场", pinyin: "huáxuěchǎng", pt: "pista" }
+    ]
+  },
+  {
+    word: "运动", pinyin: "yùndòng", meaning: "desporto", section: "fechar",
+    sentence: "我们打算一起做运动吧。", sentencePinyin: "Wǒmen dǎsuàn yìqǐ zuò yùndòng ba.", sentenceMeaning: "Nós planejamos juntos fazer desporto ba.",
+    facts: [
+      { lab: "plano", hanzi: "打算", pinyin: "dǎsuàn", pt: "planejar" },
+      { lab: "com", hanzi: "一起", pinyin: "yìqǐ", pt: "juntos" },
+      { lab: "como", hanzi: "做", pinyin: "zuò", pt: "fazer" }
+    ]
+  }
+];
+
+let i = 0;
+const card = document.getElementById("card");
+
+function escapeHtml(s) {
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function highlight(sentence, word) {
+  let out = "";
+  const chars = [...word].filter((ch) => ch.trim());
+  for (const ch of sentence) {
+    out += chars.includes(ch) ? `<span class="hl">${ch}</span>` : escapeHtml(ch);
+  }
+  return out;
+}
+
+function factsHtml(it) {
+  const facts = it.facts || [];
+  if (!facts.length) return "";
+  return `<div class="facts">${facts.map((f, idx) => `
+    <div class="fact">
+      <span class="lab">${escapeHtml(f.lab)}</span>
+      <div class="fact-hanzi-wrap">
+        <div class="val" data-fact="${idx}">${escapeHtml(f.hanzi)}</div>
+      </div>
+      <div class="py">${escapeHtml(f.pinyin)}</div>
+      <div class="pt">${escapeHtml(f.pt)}</div>
+    </div>
+  `).join("")}</div>`;
+}
+
+function render() {
+  const it = CARDS[i];
+  card.innerHTML = `
+    <div class="head">
+      <span class="head-left">${i + 1} / ${CARDS.length}<span class="deck-title"> · Aula 4</span></span>
+      <span class="section">${escapeHtml(it.section)}</span>
+    </div>
+    <div class="main">
+      <div class="word-wrap" id="wwrap">
+        <div class="word" id="word">${escapeHtml(it.word)}</div>
+      </div>
+      <div class="pinyin">${escapeHtml(it.pinyin)}</div>
+      <div class="gloss">${escapeHtml(it.meaning)}</div>
+      ${factsHtml(it)}
+    </div>
+    <div class="sentence-box">
+      <div class="sentence-wrap" id="swrap">
+        <div class="sentence" id="sentence">${highlight(it.sentence, it.word)}</div>
+      </div>
+      <div class="meta">
+        <div class="s-pinyin">${escapeHtml(it.sentencePinyin)}</div>
+        <div class="s-meaning">${escapeHtml(it.sentenceMeaning)}</div>
+      </div>
+    </div>
+    <div class="nav">
+      <button type="button" id="prev" ${i === 0 ? "disabled" : ""}>← Anterior</button>
+      <button type="button" id="next" ${i === CARDS.length - 1 ? "disabled" : ""}>Próximo →</button>
+    </div>
+  `;
+  document.getElementById("prev").onclick = prev;
+  document.getElementById("next").onclick = next;
+  document.title = `${it.word} · Aula 4`;
+  requestAnimationFrame(fitText);
+}
+
+function overflows(el, box) {
+  return el.scrollWidth > box.clientWidth + 1 || el.scrollHeight > box.clientHeight + 1;
+}
+
+function fitEl(el, box, max, min) {
+  if (!el || !box || box.clientWidth < 8 || box.clientHeight < 8) return max;
+  let size = max;
+  el.style.fontSize = size + "px";
+  while (size > min && overflows(el, box)) {
+    size -= 1;
+    el.style.fontSize = size + "px";
+  }
+  return size;
+}
+
+function fitText() {
+  const vw = document.documentElement.clientWidth;
+  fitEl(document.getElementById("word"), document.getElementById("wwrap"), Math.round(vw * 0.16), 40);
+  fitEl(document.getElementById("sentence"), document.getElementById("swrap"), Math.round(vw * 0.4), 34);
+
+  const wraps = card.querySelectorAll(".fact-hanzi-wrap");
+  if (!wraps.length) return;
+  let shared = Math.round(vw * 0.11);
+  wraps.forEach((box) => {
+    const el = box.querySelector(".val");
+    const fitted = fitEl(el, box, Math.round(vw * 0.11), 32);
+    shared = Math.min(shared, fitted);
+  });
+  wraps.forEach((box) => {
+    box.querySelector(".val").style.fontSize = shared + "px";
+  });
+}
+
+function next() { if (i < CARDS.length - 1) { i++; render(); } }
+function prev() { if (i > 0) { i--; render(); } }
+
+document.getElementById("tapR").onclick = next;
+document.getElementById("tapL").onclick = prev;
+document.body.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight" || e.key === " ") { e.preventDefault(); next(); }
+  if (e.key === "ArrowLeft") prev();
+});
+let x0 = null;
+document.body.addEventListener("touchstart", (e) => { x0 = e.touches[0].clientX; }, { passive: true });
+document.body.addEventListener("touchend", (e) => {
+  if (x0 === null) return;
+  const dx = e.changedTouches[0].clientX - x0;
+  if (dx < -50) next();
+  else if (dx > 50) prev();
+  x0 = null;
+});
+window.addEventListener("resize", fitText);
+render();
+</script>
+</body>
+</html>

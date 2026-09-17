@@ -1,0 +1,254 @@
+{
+  "bookId": "primary-up",
+  "workdir": "level1_primary-up",
+  "sourcePdf": "Level1.pdf",
+  "bookTitleZh": "新时代汉语口语 初级·上",
+  "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 1",
+  "importedAt": "2026-09-11",
+  "source": "curated/ import (see _import_curated_to_workdir.py)",
+  "lessonCount": 16,
+  "totalEntries": 403,
+  "uniqueHanzi": 377,
+  "lessons": [
+    {
+      "lesson": 1,
+      "titleZh": "你也是留学生吗？",
+      "file": "lesson-01.json",
+      "pdfPages": {
+        "from": 15,
+        "to": 23,
+        "anchors": {
+          "textVocab": 15,
+          "extensionVocab": 19,
+          "produceSupport": 23
+        }
+      },
+      "entryCount": 21
+    },
+    {
+      "lesson": 2,
+      "titleZh": "怎么办？",
+      "file": "lesson-02.json",
+      "pdfPages": {
+        "from": 29,
+        "to": 36,
+        "anchors": {
+          "textVocab": 29,
+          "extensionVocab": 33,
+          "produceSupport": 36
+        }
+      },
+      "entryCount": 26
+    },
+    {
+      "lesson": 3,
+      "titleZh": "这个小女孩儿是谁？",
+      "file": "lesson-03.json",
+      "pdfPages": {
+        "from": 41,
+        "to": 48,
+        "anchors": {
+          "textVocab": 41,
+          "extensionVocab": 45,
+          "produceSupport": 48
+        }
+      },
+      "entryCount": 29
+    },
+    {
+      "lesson": 4,
+      "titleZh": "听听周杰伦的歌吧",
+      "file": "lesson-04.json",
+      "pdfPages": {
+        "from": 53,
+        "to": 59,
+        "anchors": {
+          "textVocab": 53,
+          "extensionVocab": 57,
+          "produceSupport": 59
+        }
+      },
+      "entryCount": 24
+    },
+    {
+      "lesson": 5,
+      "titleZh": "武汉是个好地方",
+      "file": "lesson-05.json",
+      "pdfPages": {
+        "from": 65,
+        "to": 72,
+        "anchors": {
+          "textVocab": 65,
+          "extensionVocab": 69,
+          "produceSupport": 72
+        }
+      },
+      "entryCount": 31
+    },
+    {
+      "lesson": 6,
+      "titleZh": "声音小点儿，可以吗？",
+      "file": "lesson-06.json",
+      "pdfPages": {
+        "from": 77,
+        "to": 84,
+        "anchors": {
+          "textVocab": 77,
+          "extensionVocab": 81,
+          "produceSupport": 84
+        }
+      },
+      "entryCount": 25
+    },
+    {
+      "lesson": 7,
+      "titleZh": "要不再说吧",
+      "file": "lesson-07.json",
+      "pdfPages": {
+        "from": 89,
+        "to": 96,
+        "anchors": {
+          "textVocab": 89,
+          "extensionVocab": 92,
+          "produceSupport": 96
+        }
+      },
+      "entryCount": 25
+    },
+    {
+      "lesson": 8,
+      "titleZh": "帮我复习汉字吧",
+      "file": "lesson-08.json",
+      "pdfPages": {
+        "from": 101,
+        "to": 107,
+        "anchors": {
+          "textVocab": 101,
+          "extensionVocab": 104,
+          "produceSupport": 107
+        }
+      },
+      "entryCount": 26
+    },
+    {
+      "lesson": 9,
+      "titleZh": "别难过了",
+      "file": "lesson-09.json",
+      "pdfPages": {
+        "from": 113,
+        "to": 120,
+        "anchors": {
+          "textVocab": 113,
+          "extensionVocab": 116,
+          "produceSupport": 120
+        }
+      },
+      "entryCount": 20
+    },
+    {
+      "lesson": 10,
+      "titleZh": "我想养只小狗",
+      "file": "lesson-10.json",
+      "pdfPages": {
+        "from": 125,
+        "to": 131,
+        "anchors": {
+          "textVocab": 125,
+          "extensionVocab": 128,
+          "produceSupport": 131
+        }
+      },
+      "entryCount": 31
+    },
+    {
+      "lesson": 11,
+      "titleZh": "换一个新的",
+      "file": "lesson-11.json",
+      "pdfPages": {
+        "from": 137,
+        "to": 143,
+        "anchors": {
+          "textVocab": 137,
+          "extensionVocab": 140,
+          "produceSupport": 143
+        }
+      },
+      "entryCount": 20
+    },
+    {
+      "lesson": 12,
+      "titleZh": "你哪儿不舒服？",
+      "file": "lesson-12.json",
+      "pdfPages": {
+        "from": 149,
+        "to": 157,
+        "anchors": {
+          "textVocab": 149,
+          "extensionVocab": 154,
+          "produceSupport": 157
+        }
+      },
+      "entryCount": 32
+    },
+    {
+      "lesson": 13,
+      "titleZh": "你喜欢踢足球吗？",
+      "file": "lesson-13.json",
+      "pdfPages": {
+        "from": 163,
+        "to": 169,
+        "anchors": {
+          "textVocab": 163,
+          "extensionVocab": 166,
+          "produceSupport": 169
+        }
+      },
+      "entryCount": 18
+    },
+    {
+      "lesson": 14,
+      "titleZh": "对不起，我迟到了",
+      "file": "lesson-14.json",
+      "pdfPages": {
+        "from": 175,
+        "to": 183,
+        "anchors": {
+          "textVocab": 175,
+          "extensionVocab": 179,
+          "produceSupport": 183
+        }
+      },
+      "entryCount": 25
+    },
+    {
+      "lesson": 15,
+      "titleZh": "你们国家怎么庆祝新年？",
+      "file": "lesson-15.json",
+      "pdfPages": {
+        "from": 189,
+        "to": 196,
+        "anchors": {
+          "textVocab": 189,
+          "extensionVocab": 193,
+          "produceSupport": 196
+        }
+      },
+      "entryCount": 27
+    },
+    {
+      "lesson": 16,
+      "titleZh": "你有什么打算？",
+      "file": "lesson-16.json",
+      "pdfPages": {
+        "from": 203,
+        "to": 209,
+        "anchors": {
+          "textVocab": 203,
+          "extensionVocab": 207,
+          "produceSupport": 209
+        }
+      },
+      "entryCount": 23
+    }
+  ]
+}

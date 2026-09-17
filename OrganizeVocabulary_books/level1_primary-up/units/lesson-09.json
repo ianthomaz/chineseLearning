@@ -1,0 +1,367 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "bookTitleZh": "新时代汉语口语 初级·上",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 1",
+    "sourcePdf": "Level1.pdf",
+    "lesson": 9,
+    "titleZh": "别难过了",
+    "volumeLabel": "初级·上",
+    "pdfPages": {
+      "from": 113,
+      "to": 120,
+      "anchors": {
+        "textVocab": 113,
+        "extensionVocab": 116,
+        "produceSupport": 120
+      }
+    },
+    "importedFrom": "curated/primary-up/lesson-09.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "",
+        "core": [
+          "关心",
+          "哭"
+        ],
+        "supplement": [
+          "出事"
+        ]
+      },
+      {
+        "theme": "安慰和鼓励别人",
+        "core": [
+          "难过",
+          "以后",
+          "机会",
+          "信心",
+          "聪明",
+          "着急",
+          "鼓励",
+          "丢",
+          "担心",
+          "放心"
+        ],
+        "supplement": [
+          "安慰",
+          "没问题",
+          "加油"
+        ]
+      },
+      {
+        "theme": "帮别人想",
+        "core": [
+          "办法",
+          "努力",
+          "广播"
+        ],
+        "supplement": [
+          "要不",
+          "广播"
+        ]
+      }
+    ],
+    "expressionPatterns": [
+      "我帮你……",
+      "这样好不好，……",
+      "下次……",
+      "……",
+      "你怎么了？",
+      "你是不是……？",
+      "出什么事了？",
+      "……",
+      "别难过，……",
+      "别担心，……",
+      "放心吧，……",
+      "……"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "难过",
+      "pinyin": "nánguò",
+      "pos": "形",
+      "glossEn": "sad",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:安慰和鼓励别人"
+      ],
+      "examples": [
+        "觉得难过",
+        "别难过"
+      ]
+    },
+    {
+      "hanzi": "关心",
+      "pinyin": "guānxīn",
+      "pos": "动",
+      "glossEn": "be concerned about",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "关心朋友",
+        "关心他的工作"
+      ]
+    },
+    {
+      "hanzi": "以后",
+      "pinyin": "yǐhòu",
+      "pos": "名",
+      "glossEn": "after",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:安慰和鼓励别人"
+      ],
+      "examples": [
+        "later 两个月以后",
+        "放假以后"
+      ]
+    },
+    {
+      "hanzi": "机会",
+      "pinyin": "jīhuì",
+      "pos": "名",
+      "glossEn": "opportunity",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:安慰和鼓励别人"
+      ],
+      "examples": [
+        "好机会",
+        "有机会"
+      ]
+    },
+    {
+      "hanzi": "信心",
+      "pinyin": "xìnxīn",
+      "pos": "名",
+      "glossEn": "confidence （对……）有信心",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:安慰和鼓励别人"
+      ]
+    },
+    {
+      "hanzi": "聪明",
+      "pinyin": "cōngmíng",
+      "pos": "形",
+      "glossEn": "clever",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:安慰和鼓励别人"
+      ],
+      "examples": [
+        "smart 聪明的人",
+        "很聪明"
+      ]
+    },
+    {
+      "hanzi": "着急",
+      "pinyin": "zháojí",
+      "pos": "形",
+      "glossEn": "worried",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:安慰和鼓励别人"
+      ],
+      "examples": [
+        "anxious 看起来很着急",
+        "着急复习"
+      ]
+    },
+    {
+      "hanzi": "办法",
+      "pinyin": "bànfǎ",
+      "pos": "名",
+      "glossEn": "solution",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:帮别人想"
+      ],
+      "examples": [
+        "means 想办法",
+        "没办法"
+      ]
+    },
+    {
+      "hanzi": "努力",
+      "pinyin": "nǔlì",
+      "pos": "动形",
+      "glossEn": "make efforts (to do sth)一起努力",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:帮别人想",
+        "produceOnly"
+      ],
+      "examples": [
+        "努力复习"
+      ]
+    },
+    {
+      "hanzi": "鼓励",
+      "pinyin": "gǔlì",
+      "pos": "动",
+      "glossEn": "encourage",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:安慰和鼓励别人"
+      ],
+      "examples": [
+        "鼓励自己",
+        "朋友鼓励我去中国。"
+      ]
+    },
+    {
+      "hanzi": "哭",
+      "pinyin": "kū",
+      "pos": "动",
+      "glossEn": "cry",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "他哭了。 别哭了。"
+      ]
+    },
+    {
+      "hanzi": "丢",
+      "pinyin": "diū",
+      "pos": "动",
+      "glossEn": "lose",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:安慰和鼓励别人"
+      ],
+      "examples": [
+        "手机丢了。"
+      ]
+    },
+    {
+      "hanzi": "担心",
+      "pinyin": "dānxīn",
+      "pos": "动",
+      "glossEn": "worry",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:安慰和鼓励别人"
+      ],
+      "examples": [
+        "担心他",
+        "别担心"
+      ]
+    },
+    {
+      "hanzi": "放心",
+      "pinyin": "fàngxīn",
+      "pos": "动",
+      "glossEn": "set one’s mind at rest",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:安慰和鼓励别人"
+      ],
+      "examples": [
+        "放心吧，没问题。 放心吧，不会丢。"
+      ]
+    },
+    {
+      "hanzi": "广播",
+      "pinyin": "guǎngbō",
+      "pos": "名",
+      "glossEn": "broadcast",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:帮别人想",
+        "produceSupplement:帮别人想"
+      ],
+      "examples": [
+        "广播响了",
+        "听广播"
+      ]
+    },
+    {
+      "hanzi": "出事",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "安慰",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:安慰和鼓励别人",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "没问题",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:安慰和鼓励别人",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "加油",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:安慰和鼓励别人",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "要不",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:帮别人想",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 20,
+    "core": 15,
+    "brainstorm": 0,
+    "extended": 5
+  }
+}

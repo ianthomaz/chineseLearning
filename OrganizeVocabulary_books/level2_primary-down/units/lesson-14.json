@@ -1,0 +1,579 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "bookTitleZh": "新时代汉语口语 初级·下",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 2",
+    "sourcePdf": "level2.pdf",
+    "lesson": 14,
+    "titleZh": "晴晴家的四合院",
+    "volumeLabel": "初级·下",
+    "pdfPages": {
+      "from": 207,
+      "to": 216,
+      "anchors": {
+        "textVocab": 207,
+        "extensionVocab": 212,
+        "produceSupport": 216
+      }
+    },
+    "importedFrom": "curated/primary-down/lesson-14.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "房屋的种类",
+        "core": [
+          "四合院",
+          "房屋",
+          "传统"
+        ],
+        "supplement": [
+          "现代",
+          "高楼",
+          "楼房"
+        ]
+      },
+      {
+        "theme": "房屋的材料",
+        "core": [
+          "砖",
+          "质量",
+          "碎",
+          "木头",
+          "楼梯",
+          "响声"
+        ],
+        "supplement": [
+          "水泥",
+          "石头",
+          "树枝",
+          "草"
+        ]
+      },
+      {
+        "theme": "房屋的颜色",
+        "core": [
+          "墙",
+          "瓦"
+        ],
+        "supplement": [
+          "窗户",
+          "五颜六色"
+        ]
+      },
+      {
+        "theme": "房屋的样子",
+        "core": [
+          "围"
+        ],
+        "supplement": [
+          "屋顶"
+        ]
+      },
+      {
+        "theme": "房屋的院子",
+        "core": [
+          "柿子",
+          "事事如意",
+          "金鱼",
+          "年年有余",
+          "闻"
+        ],
+        "supplement": [
+          "桥",
+          "池塘"
+        ]
+      },
+      {
+        "theme": "房屋的缺点",
+        "core": [
+          "暖气",
+          "潮湿",
+          "留"
+        ],
+        "supplement": [
+          "老旧",
+          "修理",
+          "留"
+        ]
+      }
+    ],
+    "expressionPatterns": [
+      "（1）花草的香味让我的心很快就能平静下来。（V+下来）",
+      "（2） 四合院只有一个大门，而日本传统房屋常常有两个门。一个给客人用，比较大；一个给家人",
+      "（3）日本的传统房屋也用外墙围起来，既安静又安全。（既……又……）",
+      "（4）在泰国，高脚楼里没有床，我们在地上睡觉。为了保持干净，进去都得脱鞋。（为了）",
+      "（5） 韩国传统房屋的房间里没有椅子，吃饭、看电视、聊天儿的时候都得坐在地上，我常常坐得腰"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "四合院",
+      "pinyin": "sìhéyuàn",
+      "pos": "名",
+      "glossEn": "courtyard dwelling [traditional residential compound in northern China]",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:房屋的种类"
+      ]
+    },
+    {
+      "hanzi": "留",
+      "pinyin": "liú",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:房屋的缺点",
+        "produceSupplement:房屋的缺点",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "动",
+      "pinyin": "leave",
+      "pos": "",
+      "glossEn": "behind",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "把钱留给孩子",
+        "留下很"
+      ]
+    },
+    {
+      "hanzi": "柿子",
+      "pinyin": "shìzi",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:房屋的院子",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "名",
+      "pinyin": "persimmon",
+      "pos": "",
+      "glossEn": "吃柿子",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "柿子树",
+        "养金鱼",
+        "灰色的院墙",
+        "一",
+        "地砖",
+        "提高质量"
+      ]
+    },
+    {
+      "hanzi": "事事如意",
+      "pinyin": "shì shì rúyì",
+      "pos": "",
+      "glossEn": "everything comes off satisfactorily",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:房屋的院子",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "金鱼",
+      "pinyin": "jīnyú",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:房屋的院子",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "年年有余",
+      "pinyin": "nián nián yǒuyú",
+      "pos": "",
+      "glossEn": "every year ends with ample surplus",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:房屋的院子",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "墙",
+      "pinyin": "qiáng",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:房屋的颜色",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "砖",
+      "pinyin": "zhuān",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:房屋的材料",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "围",
+      "pinyin": "wéi",
+      "pos": "动",
+      "glossEn": "enclose",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:房屋的样子"
+      ],
+      "examples": [
+        "surround 四面房屋围在一起",
+        "队"
+      ]
+    },
+    {
+      "hanzi": "质量",
+      "pinyin": "zhìliàng",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:房屋的材料",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "碎",
+      "pinyin": "suì",
+      "pos": "动",
+      "glossEn": "break into pieces",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:房屋的材料"
+      ],
+      "examples": [
+        "打碎",
+        "杯子容易碎"
+      ]
+    },
+    {
+      "hanzi": "房屋",
+      "pinyin": "fángwū",
+      "pos": "名",
+      "glossEn": "house",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:房屋的种类"
+      ],
+      "examples": [
+        "building 传统房屋",
+        "出租房屋"
+      ]
+    },
+    {
+      "hanzi": "传统",
+      "pinyin": "chuántǒng",
+      "pos": "形名",
+      "glossEn": "traditional",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:房屋的种类",
+        "produceOnly"
+      ],
+      "examples": [
+        "tradition 传统房屋",
+        "文化传统"
+      ]
+    },
+    {
+      "hanzi": "木头",
+      "pinyin": "mùtou",
+      "pos": "名",
+      "glossEn": "wood",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:房屋的材料"
+      ],
+      "examples": [
+        "用木头做一张桌子",
+        "木"
+      ]
+    },
+    {
+      "hanzi": "瓦",
+      "pinyin": "wǎ",
+      "pos": "名",
+      "glossEn": "tile",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:房屋的颜色"
+      ],
+      "examples": [
+        "灰色的瓦",
+        "红墙黄瓦"
+      ]
+    },
+    {
+      "hanzi": "暖气",
+      "pinyin": "nuǎnqì",
+      "pos": "名",
+      "glossEn": "central heating equipment",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:房屋的缺点"
+      ],
+      "examples": [
+        "装暖气",
+        "暖气很热"
+      ]
+    },
+    {
+      "hanzi": "楼梯",
+      "pinyin": "lóutī",
+      "pos": "名",
+      "glossEn": "staircase",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:房屋的材料"
+      ],
+      "examples": [
+        "爬楼梯"
+      ]
+    },
+    {
+      "hanzi": "响声",
+      "pinyin": "xiǎngshēng",
+      "pos": "名",
+      "glossEn": "sound",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:房屋的材料"
+      ],
+      "examples": [
+        "noise 发出响声"
+      ]
+    },
+    {
+      "hanzi": "闻",
+      "pinyin": "wén",
+      "pos": "动",
+      "glossEn": "smell",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:房屋的院子"
+      ],
+      "examples": [
+        "闻味道",
+        "闻到香味"
+      ]
+    },
+    {
+      "hanzi": "潮湿",
+      "pinyin": "cháoshī",
+      "pos": "形",
+      "glossEn": "moist",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:房屋的缺点"
+      ],
+      "examples": [
+        "房间很潮湿",
+        "潮湿的空气"
+      ]
+    },
+    {
+      "hanzi": "现代",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:房屋的种类",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "高楼",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:房屋的种类",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "楼房",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:房屋的种类",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "水泥",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:房屋的材料",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "石头",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:房屋的材料",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "树枝",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:房屋的材料",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "草",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:房屋的材料",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "窗户",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:房屋的颜色",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "五颜六色",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:房屋的颜色",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "屋顶",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:房屋的样子",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "桥",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:房屋的院子",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "池塘",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:房屋的院子",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "老旧",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:房屋的缺点",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "修理",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:房屋的缺点",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 36,
+    "core": 22,
+    "brainstorm": 0,
+    "extended": 14
+  }
+}

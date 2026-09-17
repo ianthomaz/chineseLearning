@@ -1,0 +1,440 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "bookTitleZh": "新时代汉语口语 初级·下",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 2",
+    "sourcePdf": "level2.pdf",
+    "lesson": 11,
+    "titleZh": "摘下星星送给你",
+    "volumeLabel": "初级·下",
+    "pdfPages": {
+      "from": 165,
+      "to": 175,
+      "anchors": {
+        "textVocab": 165,
+        "extensionVocab": 170,
+        "produceSupport": 175
+      }
+    },
+    "importedFrom": "curated/primary-down/lesson-11.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "找男/女朋友的",
+        "core": [
+          "标准",
+          "考虑",
+          "理想",
+          "恋爱"
+        ],
+        "supplement": [
+          "要求"
+        ]
+      },
+      {
+        "theme": "个人条件",
+        "core": [
+          "温柔",
+          "性格",
+          "十全十美",
+          "研究生",
+          "学历"
+        ],
+        "supplement": [
+          "收入",
+          "工资"
+        ]
+      },
+      {
+        "theme": "感情基础",
+        "core": [
+          "支持"
+        ],
+        "supplement": [
+          "反对",
+          "安慰",
+          "吵架"
+        ]
+      },
+      {
+        "theme": "其他",
+        "core": [
+          "星星",
+          "摘",
+          "颗",
+          "亲手",
+          "浪漫",
+          "飞行员",
+          "分手"
+        ],
+        "supplement": [
+          "飞行员",
+          "分手"
+        ]
+      }
+    ],
+    "expressionPatterns": [
+      "（1） 我和他是在羽毛球比赛的时候认识的。因为有共同的爱好，所以我俩经常一起玩，最后慢慢爱",
+      "（2） 我认为恋爱和结婚不一样。恋爱只是谈感情，而结婚得考虑很多现实（real）问题。（……，",
+      "（3）我认为两个人的成长环境差不多，才更容易互相理解。（才……）",
+      "（4）很多人觉得找一个外国人做男/女朋友很好，但我还是担心万一文化不一样，会常常吵架。",
+      "（万一……）",
+      "（5）尽管她那么优秀，我还是选择了分手。因为我压力太大，在她面前我很不自信。（尽管……）"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "温柔",
+      "pinyin": "wēnróu",
+      "pos": "形",
+      "glossEn": "gentle and soft",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:个人条件"
+      ],
+      "examples": [
+        "温柔的女孩儿",
+        "对人很温柔"
+      ]
+    },
+    {
+      "hanzi": "星星",
+      "pinyin": "xīngxing",
+      "pos": "名",
+      "glossEn": "star",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "一颗星星",
+        "很亮的星星"
+      ]
+    },
+    {
+      "hanzi": "摘",
+      "pinyin": "zhāi",
+      "pos": "动",
+      "glossEn": "pick",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "take off 摘花",
+        "摘眼镜"
+      ]
+    },
+    {
+      "hanzi": "颗",
+      "pinyin": "kē",
+      "pos": "量",
+      "glossEn": "[usually for things small and roundish]",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "一颗星星",
+        "一颗牙"
+      ]
+    },
+    {
+      "hanzi": "亲手",
+      "pinyin": "qīnshǒu",
+      "pos": "副",
+      "glossEn": "personally",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "with one’s own hands 亲手做的礼物",
+        "把礼物亲手送"
+      ]
+    },
+    {
+      "hanzi": "浪漫",
+      "pinyin": "làngmàn",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "形",
+      "pinyin": "romantic",
+      "pos": "",
+      "glossEn": "这部电影很浪漫",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "perfect 理想的工作",
+        "成绩很不理想"
+      ]
+    },
+    {
+      "hanzi": "飞行员",
+      "pinyin": "fēixíngyuán",
+      "pos": "名",
+      "glossEn": "pilot",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他",
+        "produceSupplement:其他"
+      ],
+      "examples": [
+        "一名飞行员"
+      ]
+    },
+    {
+      "hanzi": "标准",
+      "pinyin": "biāozhǔn",
+      "pos": "名",
+      "glossEn": "standard",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:找男/女朋友的"
+      ],
+      "examples": [
+        "criterion 标准很高",
+        "招聘的标准"
+      ]
+    },
+    {
+      "hanzi": "考虑",
+      "pinyin": "kǎolǜ",
+      "pos": "动",
+      "glossEn": "consider",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:找男/女朋友的"
+      ],
+      "examples": [
+        "think over 考虑老师的建议",
+        "再考虑考虑"
+      ]
+    },
+    {
+      "hanzi": "十全十美",
+      "pinyin": "shíquánshíměi",
+      "pos": "",
+      "glossEn": "be perfect in every way",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:个人条件",
+        "produceOnly"
+      ],
+      "examples": [
+        "十全十美的男/女朋友"
+      ]
+    },
+    {
+      "hanzi": "理想",
+      "pinyin": "lǐxiǎng",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:找男/女朋友的",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "支持",
+      "pinyin": "zhīchí",
+      "pos": "动",
+      "glossEn": "support",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:感情基础"
+      ],
+      "examples": [
+        "stand by 互相支持",
+        "请支持我"
+      ]
+    },
+    {
+      "hanzi": "性格",
+      "pinyin": "xìnggé",
+      "pos": "名",
+      "glossEn": "nature",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:个人条件"
+      ],
+      "examples": [
+        "character 性格温柔",
+        "性格外向"
+      ]
+    },
+    {
+      "hanzi": "恋爱",
+      "pinyin": "liàn",
+      "pos": "",
+      "glossEn": "'ài",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:找男/女朋友的",
+        "produceOnly"
+      ],
+      "examples": [
+        "动  名 be in love",
+        "love 正在恋爱",
+        "谈恋爱"
+      ]
+    },
+    {
+      "hanzi": "研究生",
+      "pinyin": "yánjiūshēng",
+      "pos": "名",
+      "glossEn": "postgraduate",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:个人条件"
+      ],
+      "examples": [
+        "graduate 读研究生",
+        "研究生考试"
+      ]
+    },
+    {
+      "hanzi": "学历",
+      "pinyin": "xuélì",
+      "pos": "名",
+      "glossEn": "academic background",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:个人条件"
+      ],
+      "examples": [
+        "学历很高",
+        "研究生学历"
+      ]
+    },
+    {
+      "hanzi": "分手",
+      "pinyin": "fēnshǒu",
+      "pos": "动",
+      "glossEn": "split up",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:其他",
+        "produceSupplement:其他"
+      ],
+      "examples": [
+        "和女朋友分手",
+        "分过一次手"
+      ]
+    },
+    {
+      "hanzi": "白雪公主",
+      "pinyin": "Báixuě",
+      "pos": "专有",
+      "glossEn": "Gōngzhǔ Snow White",
+      "priority": "brainstorm",
+      "sources": [
+        "extensionVocab"
+      ]
+    },
+    {
+      "hanzi": "要求",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:找男/女朋友的",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "收入",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:个人条件",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "工资",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:个人条件",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "反对",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:感情基础",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "安慰",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:感情基础",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "吵架",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:感情基础",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 25,
+    "core": 18,
+    "brainstorm": 1,
+    "extended": 6
+  }
+}

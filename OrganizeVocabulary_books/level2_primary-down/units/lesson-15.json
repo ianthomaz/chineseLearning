@@ -1,0 +1,525 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "bookTitleZh": "新时代汉语口语 初级·下",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 2",
+    "sourcePdf": "level2.pdf",
+    "lesson": 15,
+    "titleZh": "你知道鉴真吗？",
+    "volumeLabel": "初级·下",
+    "pdfPages": {
+      "from": 220,
+      "to": 229,
+      "anchors": {
+        "textVocab": 220,
+        "extensionVocab": 225,
+        "produceSupport": 229
+      }
+    },
+    "importedFrom": "curated/primary-down/lesson-15.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "谁",
+        "core": [
+          "僧人",
+          "著名"
+        ],
+        "supplement": [
+          "文学家",
+          "政治家",
+          "思想家",
+          "教育家",
+          "科学家"
+        ]
+      },
+      {
+        "theme": "经历",
+        "core": [
+          "困难",
+          "官",
+          "贡献",
+          "促进",
+          "建",
+          "寺院",
+          "讲授",
+          "中医",
+          "传播",
+          "建筑",
+          "国王",
+          "管理"
+        ],
+        "supplement": [
+          "分离",
+          "痛苦",
+          "思念",
+          "忍受",
+          "克服",
+          "考察"
+        ]
+      },
+      {
+        "theme": "感想",
+        "core": [
+          "吸引",
+          "了不起"
+        ],
+        "supplement": [
+          "崇拜",
+          "佩服"
+        ]
+      }
+    ],
+    "expressionPatterns": [
+      "（1）由于父母很早就去世（pass away）了，他只能到寺院里生活。（由于）",
+      "（2）随着他一年年长大，他对佛教的了解也越来越深。（随着）",
+      "（3）玄奘努力学习的态度感动了许多印度人。（感动）",
+      "（4）经过无数的困难，鉴真终于到达了日本。（终于）",
+      "（5）鉴真为中国和日本之间的文化交流做出了重大的贡献。（为……做贡献）"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "吸引",
+      "pinyin": "xīyǐn",
+      "pos": "动",
+      "glossEn": "attract",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:感想"
+      ],
+      "examples": [
+        "鉴真的故事很吸引我"
+      ]
+    },
+    {
+      "hanzi": "促进",
+      "pinyin": "cùjìn",
+      "pos": "动",
+      "glossEn": "promote",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:经历"
+      ],
+      "examples": [
+        "boost 促进交流",
+        "互相促进"
+      ]
+    },
+    {
+      "hanzi": "僧人",
+      "pinyin": "sēngrén",
+      "pos": "名",
+      "glossEn": "Buddhist monk",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:谁"
+      ],
+      "examples": [
+        "一位僧人"
+      ]
+    },
+    {
+      "hanzi": "建",
+      "pinyin": "jiàn",
+      "pos": "动",
+      "glossEn": "build",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:经历"
+      ],
+      "examples": [
+        "建寺院",
+        "建高楼"
+      ]
+    },
+    {
+      "hanzi": "寺院",
+      "pinyin": "sìyuàn",
+      "pos": "名",
+      "glossEn": "temple",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:经历"
+      ],
+      "examples": [
+        "一座寺院",
+        "佛教寺院"
+      ]
+    },
+    {
+      "hanzi": "了不起",
+      "pinyin": "liǎobuqǐ",
+      "pos": "形",
+      "glossEn": "amazing",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:感想"
+      ],
+      "examples": [
+        "terrific 了不起的思想家",
+        "他真 了不起！"
+      ]
+    },
+    {
+      "hanzi": "讲授",
+      "pinyin": "jiǎngshòu",
+      "pos": "动",
+      "glossEn": "teach",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:经历"
+      ],
+      "examples": [
+        "lecture 讲授知识"
+      ]
+    },
+    {
+      "hanzi": "中医",
+      "pinyin": "zhōngyī",
+      "pos": "名",
+      "glossEn": "traditional Chinese medicine",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:经历"
+      ],
+      "examples": [
+        "doctor of traditional Chinese medicine 中医经典",
+        "看中医"
+      ]
+    },
+    {
+      "hanzi": "传播",
+      "pinyin": "chuánbō",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:经历",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "动",
+      "pinyin": "spread",
+      "pos": "",
+      "glossEn": "传播文化",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "传播知识"
+      ]
+    },
+    {
+      "hanzi": "建筑",
+      "pinyin": "jiànzhù",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:经历",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "名",
+      "pinyin": "building",
+      "pos": "",
+      "glossEn": "西方建筑",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "高层建筑"
+      ]
+    },
+    {
+      "hanzi": "贡献",
+      "pinyin": "gòngxiàn",
+      "pos": "名",
+      "glossEn": "contribution",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:经历"
+      ],
+      "examples": [
+        "为世界文化交流做贡献"
+      ]
+    },
+    {
+      "hanzi": "唐代",
+      "pinyin": "Tángdài",
+      "pos": "专有",
+      "glossEn": "Tang Dynasty",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ]
+    },
+    {
+      "hanzi": "佛教",
+      "pinyin": "Fójiào",
+      "pos": "专有",
+      "glossEn": "Buddhism",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "佛教知识",
+        "佛教寺院"
+      ]
+    },
+    {
+      "hanzi": "困难",
+      "pinyin": "kùnnan",
+      "pos": "名",
+      "glossEn": "difficulty",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:经历"
+      ],
+      "examples": [
+        "遇到困难"
+      ]
+    },
+    {
+      "hanzi": "著名",
+      "pinyin": "zhùmíng",
+      "pos": "形",
+      "glossEn": "famous",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:谁"
+      ],
+      "examples": [
+        "著名的文学家"
+      ]
+    },
+    {
+      "hanzi": "官",
+      "pinyin": "guān",
+      "pos": "名",
+      "glossEn": "government official",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:经历"
+      ],
+      "examples": [
+        "地方官",
+        "做官",
+        "当官"
+      ]
+    },
+    {
+      "hanzi": "国王",
+      "pinyin": "guówáng",
+      "pos": "名",
+      "glossEn": "king",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:经历"
+      ],
+      "examples": [
+        "成为国王"
+      ]
+    },
+    {
+      "hanzi": "管理",
+      "pinyin": "guǎnlǐ",
+      "pos": "动",
+      "glossEn": "manage",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:经历"
+      ],
+      "examples": [
+        "administer 管理国家",
+        "管理者"
+      ]
+    },
+    {
+      "hanzi": "印度",
+      "pinyin": "Yìndù",
+      "pos": "专有",
+      "glossEn": "India",
+      "priority": "brainstorm",
+      "sources": [
+        "extensionVocab"
+      ]
+    },
+    {
+      "hanzi": "文学家",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:谁",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "政治家",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:谁",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "思想家",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:谁",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "教育家",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:谁",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "科学家",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:谁",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "分离",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:经历",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "痛苦",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:经历",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "思念",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:经历",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "忍受",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:经历",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "克服",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:经历",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "考察",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:经历",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "崇拜",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:感想",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "佩服",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:感想",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 34,
+    "core": 20,
+    "brainstorm": 1,
+    "extended": 13
+  }
+}

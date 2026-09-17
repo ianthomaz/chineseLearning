@@ -1,0 +1,485 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "bookTitleZh": "新时代汉语口语 初级·上",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 1",
+    "sourcePdf": "Level1.pdf",
+    "lesson": 3,
+    "titleZh": "这个小女孩儿是谁？",
+    "volumeLabel": "初级·上",
+    "pdfPages": {
+      "from": 41,
+      "to": 48,
+      "anchors": {
+        "textVocab": 41,
+        "extensionVocab": 45,
+        "produceSupport": 48
+      }
+    },
+    "importedFrom": "curated/primary-up/lesson-03.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "样子",
+        "core": [
+          "可爱",
+          "年轻",
+          "长",
+          "鼻子",
+          "像",
+          "瘦",
+          "个子",
+          "头发",
+          "帅",
+          "胖",
+          "双"
+        ],
+        "supplement": [
+          "眼睛",
+          "高",
+          "矮",
+          "短",
+          "黑色",
+          "黄色",
+          "棕色"
+        ]
+      },
+      {
+        "theme": "衣着",
+        "core": [
+          "戴",
+          "眼镜"
+        ],
+        "supplement": [
+          "穿",
+          "衣服",
+          "裤子",
+          "鞋",
+          "包"
+        ]
+      },
+      {
+        "theme": "其他",
+        "core": [
+          "照片",
+          "拿",
+          "起来"
+        ],
+        "supplement": []
+      }
+    ],
+    "expressionPatterns": [
+      "他/她长得……",
+      "他/她长着……",
+      "他/她有……",
+      "他/她穿着……",
+      "他/她戴着……",
+      "他/她是我的……",
+      "他/她叫……",
+      "他/她今年……",
+      "他/她是……人。",
+      "名字、年龄、国家……1",
+      "我觉得他/她……",
+      "和他/她在一起，我……",
+      "他/她是一个……的人。"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "照片",
+      "pinyin": "zhàopiàn",
+      "pos": "名",
+      "glossEn": "photo",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "一张照片",
+        "照照片"
+      ]
+    },
+    {
+      "hanzi": "拿",
+      "pinyin": "ná",
+      "pos": "动",
+      "glossEn": "hold",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "take 拿着书",
+        "拿着手机"
+      ]
+    },
+    {
+      "hanzi": "可爱",
+      "pinyin": "kě",
+      "pos": "",
+      "glossEn": "'ài",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:样子",
+        "produceOnly"
+      ],
+      "examples": [
+        "形 lovely",
+        "cute 很可爱",
+        "可爱的人"
+      ]
+    },
+    {
+      "hanzi": "起来",
+      "pinyin": "qǐlái",
+      "pos": "动",
+      "glossEn": "[used after a verb to indicate an impression or a judgement]",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "看起来",
+        "听起来"
+      ]
+    },
+    {
+      "hanzi": "年轻",
+      "pinyin": "niánqīng",
+      "pos": "形",
+      "glossEn": "young",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:样子"
+      ],
+      "examples": [
+        "youthful 年轻时",
+        "很年轻"
+      ]
+    },
+    {
+      "hanzi": "长",
+      "pinyin": "zhǎng",
+      "pos": "动",
+      "glossEn": "grow",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:样子"
+      ],
+      "examples": [
+        "长得漂亮",
+        "他长着黑色 的眼睛。"
+      ]
+    },
+    {
+      "hanzi": "鼻子",
+      "pinyin": "bízi",
+      "pos": "名",
+      "glossEn": "nose",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:样子"
+      ],
+      "examples": [
+        "高高的鼻子",
+        "鼻子很高"
+      ]
+    },
+    {
+      "hanzi": "像",
+      "pinyin": "xiàng",
+      "pos": "动",
+      "glossEn": "look like",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:样子"
+      ],
+      "examples": [
+        "像爸爸",
+        "长得像……"
+      ]
+    },
+    {
+      "hanzi": "戴",
+      "pinyin": "dài",
+      "pos": "动",
+      "glossEn": "put on",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:衣着"
+      ],
+      "examples": [
+        "wear 戴手表"
+      ]
+    },
+    {
+      "hanzi": "眼镜",
+      "pinyin": "yǎnjìng",
+      "pos": "名",
+      "glossEn": "eyeglasses",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:衣着"
+      ],
+      "examples": [
+        "戴眼镜",
+        "一副眼镜"
+      ]
+    },
+    {
+      "hanzi": "瘦",
+      "pinyin": "shòu",
+      "pos": "形",
+      "glossEn": "thin",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:样子"
+      ],
+      "examples": [
+        "很瘦",
+        "长得瘦"
+      ]
+    },
+    {
+      "hanzi": "马来西亚",
+      "pinyin": "Mǎláixīyà",
+      "pos": "专有",
+      "glossEn": "Malaysia",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "马来西亚人"
+      ]
+    },
+    {
+      "hanzi": "个子",
+      "pinyin": "gèzi",
+      "pos": "名",
+      "glossEn": "height",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:样子"
+      ],
+      "examples": [
+        "stature 个子很高",
+        "个子不高"
+      ]
+    },
+    {
+      "hanzi": "头发",
+      "pinyin": "tóufa",
+      "pos": "名",
+      "glossEn": "hair",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:样子"
+      ],
+      "examples": [
+        "黑头发",
+        "长头发"
+      ]
+    },
+    {
+      "hanzi": "帅",
+      "pinyin": "shuài",
+      "pos": "形",
+      "glossEn": "handsome",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:样子"
+      ],
+      "examples": [
+        "长得帅",
+        "真帅"
+      ]
+    },
+    {
+      "hanzi": "胖",
+      "pinyin": "pàng",
+      "pos": "形",
+      "glossEn": "plump",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:样子"
+      ],
+      "examples": [
+        "胖胖的"
+      ]
+    },
+    {
+      "hanzi": "双",
+      "pinyin": "shuāng",
+      "pos": "量",
+      "glossEn": "pair",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:样子"
+      ],
+      "examples": [
+        "一双眼睛",
+        "一双手"
+      ]
+    },
+    {
+      "hanzi": "眼睛",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:样子",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "高",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:样子",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "矮",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:样子",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "短",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:样子",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "黑色",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:样子",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "黄色",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:样子",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "棕色",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:样子",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "穿",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:衣着",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "衣服",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:衣着",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "裤子",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:衣着",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "鞋",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:衣着",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "包",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:衣着",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 29,
+    "core": 17,
+    "brainstorm": 0,
+    "extended": 12
+  }
+}

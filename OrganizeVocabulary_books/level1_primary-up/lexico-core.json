@@ -1,0 +1,1381 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "source": "units/*/priority=core",
+    "maxHanziLength": 3,
+    "count": 274,
+    "note": "Core ≤3 hanzi for optional lexico/app pipeline (not book_vocab)."
+  },
+  "entries": [
+    {
+      "hanzi": "遇到",
+      "pinyin": "yùdào",
+      "translation": "come across"
+    },
+    {
+      "hanzi": "留学生",
+      "pinyin": "liúxuéshēng",
+      "translation": "student studying abroad一个留学生"
+    },
+    {
+      "hanzi": "中文",
+      "pinyin": "Zhōngwén",
+      "translation": "Chinese language"
+    },
+    {
+      "hanzi": "学院",
+      "pinyin": "xuéyuàn",
+      "translation": "institute"
+    },
+    {
+      "hanzi": "新生",
+      "pinyin": "xīnshēng",
+      "translation": "new student"
+    },
+    {
+      "hanzi": "咱们",
+      "pinyin": "zánmen",
+      "translation": "we"
+    },
+    {
+      "hanzi": "啊",
+      "pinyin": "à",
+      "translation": "[used to express sudden realization] ah"
+    },
+    {
+      "hanzi": "以为",
+      "pinyin": "yǐwéi",
+      "translation": "think"
+    },
+    {
+      "hanzi": "意大利",
+      "pinyin": "Yìdàlì",
+      "translation": "Italy"
+    },
+    {
+      "hanzi": "法国",
+      "pinyin": "Fǎguó",
+      "translation": "France"
+    },
+    {
+      "hanzi": "室友",
+      "pinyin": "shìyǒu",
+      "translation": "roommate"
+    },
+    {
+      "hanzi": "见面",
+      "pinyin": "jiànmiàn",
+      "translation": "meet"
+    },
+    {
+      "hanzi": "加",
+      "pinyin": "jiā",
+      "translation": "add"
+    },
+    {
+      "hanzi": "微信",
+      "pinyin": "wēixìn",
+      "translation": "WeChat"
+    },
+    {
+      "hanzi": "地铁",
+      "pinyin": "dìtiě",
+      "translation": "subway"
+    },
+    {
+      "hanzi": "大巴",
+      "pinyin": "dàbā",
+      "translation": "bus"
+    },
+    {
+      "hanzi": "或者",
+      "pinyin": "huòzhě",
+      "translation": "or"
+    },
+    {
+      "hanzi": "种",
+      "pinyin": "zhǒng",
+      "translation": "kind"
+    },
+    {
+      "hanzi": "线",
+      "pinyin": "xiàn",
+      "translation": "line"
+    },
+    {
+      "hanzi": "查",
+      "pinyin": "chá",
+      "translation": "search"
+    },
+    {
+      "hanzi": "换",
+      "pinyin": "huàn",
+      "translation": "change"
+    },
+    {
+      "hanzi": "先",
+      "pinyin": "xiān",
+      "translation": "first"
+    },
+    {
+      "hanzi": "然后",
+      "pinyin": "ránhòu",
+      "translation": "then"
+    },
+    {
+      "hanzi": "感谢",
+      "pinyin": "gǎnxiè",
+      "translation": "thank"
+    },
+    {
+      "hanzi": "中山桥",
+      "pinyin": "Zh4ngshn",
+      "translation": "Qiáo Zhongshan Bridge"
+    },
+    {
+      "hanzi": "修",
+      "pinyin": "xiū",
+      "translation": "repair"
+    },
+    {
+      "hanzi": "一会儿",
+      "pinyin": "yíhuìr",
+      "translation": "in a while"
+    },
+    {
+      "hanzi": "办公室",
+      "pinyin": "bàngōngshì",
+      "translation": "office"
+    },
+    {
+      "hanzi": "课表",
+      "pinyin": "kèbiǎo",
+      "translation": "class schedule"
+    },
+    {
+      "hanzi": "麻烦",
+      "pinyin": "máfan",
+      "translation": "bother"
+    },
+    {
+      "hanzi": "照片",
+      "pinyin": "zhàopiàn",
+      "translation": "photo"
+    },
+    {
+      "hanzi": "拿",
+      "pinyin": "ná",
+      "translation": "hold"
+    },
+    {
+      "hanzi": "可爱",
+      "pinyin": "kě",
+      "translation": "'ài"
+    },
+    {
+      "hanzi": "起来",
+      "pinyin": "qǐlái",
+      "translation": "[used after a verb to indicate an impression or a judgement]"
+    },
+    {
+      "hanzi": "年轻",
+      "pinyin": "niánqīng",
+      "translation": "young"
+    },
+    {
+      "hanzi": "长",
+      "pinyin": "zhǎng",
+      "translation": "grow"
+    },
+    {
+      "hanzi": "鼻子",
+      "pinyin": "bízi",
+      "translation": "nose"
+    },
+    {
+      "hanzi": "像",
+      "pinyin": "xiàng",
+      "translation": "look like"
+    },
+    {
+      "hanzi": "戴",
+      "pinyin": "dài",
+      "translation": "put on"
+    },
+    {
+      "hanzi": "眼镜",
+      "pinyin": "yǎnjìng",
+      "translation": "eyeglasses"
+    },
+    {
+      "hanzi": "瘦",
+      "pinyin": "shòu",
+      "translation": "thin"
+    },
+    {
+      "hanzi": "个子",
+      "pinyin": "gèzi",
+      "translation": "height"
+    },
+    {
+      "hanzi": "头发",
+      "pinyin": "tóufa",
+      "translation": "hair"
+    },
+    {
+      "hanzi": "帅",
+      "pinyin": "shuài",
+      "translation": "handsome"
+    },
+    {
+      "hanzi": "胖",
+      "pinyin": "pàng",
+      "translation": "plump"
+    },
+    {
+      "hanzi": "双",
+      "pinyin": "shuāng",
+      "translation": "pair"
+    },
+    {
+      "hanzi": "推荐",
+      "pinyin": "tuījiàn",
+      "translation": "recommend"
+    },
+    {
+      "hanzi": "一定",
+      "pinyin": "yídìng",
+      "translation": "surely"
+    },
+    {
+      "hanzi": "有名",
+      "pinyin": "yǒumíng",
+      "translation": "famous"
+    },
+    {
+      "hanzi": "清楚",
+      "pinyin": "qīngchu",
+      "translation": "clear"
+    },
+    {
+      "hanzi": "特别",
+      "pinyin": "tèbié",
+      "translation": "special"
+    },
+    {
+      "hanzi": "中国风",
+      "pinyin": "zhōngguófēng",
+      "translation": "Chinese style"
+    },
+    {
+      "hanzi": "浪漫",
+      "pinyin": "làngmàn",
+      "translation": "romantic"
+    },
+    {
+      "hanzi": "重要",
+      "pinyin": "zhòngyào",
+      "translation": "important"
+    },
+    {
+      "hanzi": "如果",
+      "pinyin": "rúguǒ",
+      "translation": "if"
+    },
+    {
+      "hanzi": "原因",
+      "pinyin": "yuányīn",
+      "translation": "reason"
+    },
+    {
+      "hanzi": "周杰伦",
+      "pinyin": "Zhōu",
+      "translation": "Jiélún Jay Chou (Chinese pop musician)"
+    },
+    {
+      "hanzi": "青花瓷",
+      "pinyin": "Qīnghuācí",
+      "translation": "It originally refers to the blue -and-white porcelain, but here refers to the title of a song of Jay Chou"
+    },
+    {
+      "hanzi": "经常",
+      "pinyin": "jīngcháng",
+      "translation": "often"
+    },
+    {
+      "hanzi": "环境",
+      "pinyin": "huánjìng",
+      "translation": "environment"
+    },
+    {
+      "hanzi": "翻译",
+      "pinyin": "fānyì",
+      "translation": "translate"
+    },
+    {
+      "hanzi": "用",
+      "pinyin": "yòng",
+      "translation": "use"
+    },
+    {
+      "hanzi": "免费",
+      "pinyin": "miǎnfèi",
+      "translation": "be cost-free"
+    },
+    {
+      "hanzi": "放假",
+      "pinyin": "fàngjià",
+      "translation": "have a holiday"
+    },
+    {
+      "hanzi": "历史",
+      "pinyin": "lìshǐ",
+      "translation": "history"
+    },
+    {
+      "hanzi": "城市",
+      "pinyin": "chéngshì",
+      "translation": "city"
+    },
+    {
+      "hanzi": "景色",
+      "pinyin": "jǐngsè",
+      "translation": "scenery"
+    },
+    {
+      "hanzi": "秋天",
+      "pinyin": "qiūtiān",
+      "translation": "autumn"
+    },
+    {
+      "hanzi": "舒服",
+      "pinyin": "shūfu",
+      "translation": "comfortable"
+    },
+    {
+      "hanzi": "季节",
+      "pinyin": "jìjié",
+      "translation": "season"
+    },
+    {
+      "hanzi": "热情",
+      "pinyin": "rèqíng",
+      "translation": "warm"
+    },
+    {
+      "hanzi": "热干面",
+      "pinyin": "règānmiàn",
+      "translation": "hot noodles with sesame paste"
+    },
+    {
+      "hanzi": "小吃",
+      "pinyin": "xiǎochī",
+      "translation": "snack"
+    },
+    {
+      "hanzi": "地方",
+      "pinyin": "dìfang",
+      "translation": "place"
+    },
+    {
+      "hanzi": "比如",
+      "pinyin": "bǐrú",
+      "translation": "take for example中国大城市很多，比如北京。"
+    },
+    {
+      "hanzi": "武汉",
+      "pinyin": "Wǔhàn",
+      "translation": "Wuhan [capital city of Hubei Province]"
+    },
+    {
+      "hanzi": "黄鹤楼",
+      "pinyin": "Huánghè",
+      "translation": "Lóu Yellow Crane Tower [a landmark in Wuhan]"
+    },
+    {
+      "hanzi": "熊猫",
+      "pinyin": "xióngmāo",
+      "translation": "panda"
+    },
+    {
+      "hanzi": "辣",
+      "pinyin": "là",
+      "translation": "spicy"
+    },
+    {
+      "hanzi": "山",
+      "pinyin": "shān",
+      "translation": "mountain"
+    },
+    {
+      "hanzi": "镜子",
+      "pinyin": "jìngzi",
+      "translation": "mirror"
+    },
+    {
+      "hanzi": "天池",
+      "pinyin": "tiānchí",
+      "translation": "Heavenly Lake, name of any of the lakes on the top of high mountains or plateaus especially in China, here refers to the Heavenly Lake on top of the Tianshan Mountain"
+    },
+    {
+      "hanzi": "灯",
+      "pinyin": "dēng",
+      "translation": "light"
+    },
+    {
+      "hanzi": "关",
+      "pinyin": "guān",
+      "translation": "turn off"
+    },
+    {
+      "hanzi": "安静",
+      "pinyin": "ānjìng",
+      "translation": "quiet"
+    },
+    {
+      "hanzi": "商量",
+      "pinyin": "shāngliang",
+      "translation": "discuss"
+    },
+    {
+      "hanzi": "打扰",
+      "pinyin": "dǎrǎo",
+      "translation": "disturb"
+    },
+    {
+      "hanzi": "声音",
+      "pinyin": "shēngyīn",
+      "translation": "sound"
+    },
+    {
+      "hanzi": "理解",
+      "pinyin": "lǐjiě",
+      "translation": "understand"
+    },
+    {
+      "hanzi": "互相",
+      "pinyin": "hùxiāng",
+      "translation": "mutually"
+    },
+    {
+      "hanzi": "满意",
+      "pinyin": "mǎnyì",
+      "translation": "be satisfied"
+    },
+    {
+      "hanzi": "美国",
+      "pinyin": "Měiguó",
+      "translation": "United States of America (USA)"
+    },
+    {
+      "hanzi": "节",
+      "pinyin": "jié",
+      "translation": "section"
+    },
+    {
+      "hanzi": "建议",
+      "pinyin": "jiànyì",
+      "translation": "suggest"
+    },
+    {
+      "hanzi": "最好",
+      "pinyin": "zuìhǎo",
+      "translation": "had better"
+    },
+    {
+      "hanzi": "主意",
+      "pinyin": "zhǔyi",
+      "translation": "idea"
+    },
+    {
+      "hanzi": "考虑",
+      "pinyin": "kǎolǜ",
+      "translation": "think over"
+    },
+    {
+      "hanzi": "演唱会",
+      "pinyin": "yǎnchànghuì",
+      "translation": "vocal concert"
+    },
+    {
+      "hanzi": "行",
+      "pinyin": "xíng",
+      "translation": "OK"
+    },
+    {
+      "hanzi": "马上",
+      "pinyin": "mǎshàng",
+      "translation": "at once"
+    },
+    {
+      "hanzi": "周末",
+      "pinyin": "zhōumò",
+      "translation": "weekend"
+    },
+    {
+      "hanzi": "复习",
+      "pinyin": "fùxí",
+      "translation": "review"
+    },
+    {
+      "hanzi": "来不及",
+      "pinyin": "láibují",
+      "translation": "find no time to do sth"
+    },
+    {
+      "hanzi": "要不",
+      "pinyin": "yàobù",
+      "translation": "or"
+    },
+    {
+      "hanzi": "可惜",
+      "pinyin": "kěxī",
+      "translation": "regrettable"
+    },
+    {
+      "hanzi": "抱歉",
+      "pinyin": "bàoqiàn",
+      "translation": "be sorry"
+    },
+    {
+      "hanzi": "拒绝",
+      "pinyin": "jùjué",
+      "translation": "refuse"
+    },
+    {
+      "hanzi": "售货员",
+      "pinyin": "shòuhuòyuán",
+      "translation": "shop assistant商店的售货员"
+    },
+    {
+      "hanzi": "需要",
+      "pinyin": "xūyào",
+      "translation": "need"
+    },
+    {
+      "hanzi": "自己",
+      "pinyin": "zìjǐ",
+      "translation": "oneself"
+    },
+    {
+      "hanzi": "方便",
+      "pinyin": "fāngbiàn",
+      "translation": "appropriate"
+    },
+    {
+      "hanzi": "蛋糕",
+      "pinyin": "dàngāo",
+      "translation": "cake"
+    },
+    {
+      "hanzi": "尝",
+      "pinyin": "cháng",
+      "translation": "taste"
+    },
+    {
+      "hanzi": "语伴",
+      "pinyin": "yǔbàn",
+      "translation": "language partner"
+    },
+    {
+      "hanzi": "发音",
+      "pinyin": "fāyīn",
+      "translation": "pronunciation"
+    },
+    {
+      "hanzi": "口语",
+      "pinyin": "k6uyǔ",
+      "translation": "spoken language"
+    },
+    {
+      "hanzi": "选修课",
+      "pinyin": "xuǎnxiūkè",
+      "translation": "elective course"
+    },
+    {
+      "hanzi": "门",
+      "pinyin": "mén",
+      "translation": "measure word [for subjects of study]"
+    },
+    {
+      "hanzi": "讲",
+      "pinyin": "jiǎng",
+      "translation": "explain"
+    },
+    {
+      "hanzi": "纠正",
+      "pinyin": "jiūzhèng",
+      "translation": "correct"
+    },
+    {
+      "hanzi": "活动",
+      "pinyin": "huódòng",
+      "translation": "activity"
+    },
+    {
+      "hanzi": "德语",
+      "pinyin": "Déyǔ",
+      "translation": "German (language)"
+    },
+    {
+      "hanzi": "语法",
+      "pinyin": "y",
+      "translation": "^fǎ"
+    },
+    {
+      "hanzi": "忘",
+      "pinyin": "wàng",
+      "translation": "forget"
+    },
+    {
+      "hanzi": "期中",
+      "pinyin": "qīzhōng",
+      "translation": "midterm"
+    },
+    {
+      "hanzi": "当",
+      "pinyin": "dāng",
+      "translation": "serve as"
+    },
+    {
+      "hanzi": "学期",
+      "pinyin": "xuéqī",
+      "translation": "semester"
+    },
+    {
+      "hanzi": "记",
+      "pinyin": "jì",
+      "translation": "memorize"
+    },
+    {
+      "hanzi": "方法",
+      "pinyin": "fāngfǎ",
+      "translation": "method"
+    },
+    {
+      "hanzi": "耐心",
+      "pinyin": "nàixīn",
+      "translation": "patience"
+    },
+    {
+      "hanzi": "难过",
+      "pinyin": "nánguò",
+      "translation": "sad"
+    },
+    {
+      "hanzi": "关心",
+      "pinyin": "guānxīn",
+      "translation": "be concerned about"
+    },
+    {
+      "hanzi": "以后",
+      "pinyin": "yǐhòu",
+      "translation": "after"
+    },
+    {
+      "hanzi": "机会",
+      "pinyin": "jīhuì",
+      "translation": "opportunity"
+    },
+    {
+      "hanzi": "信心",
+      "pinyin": "xìnxīn",
+      "translation": "confidence （对……）有信心"
+    },
+    {
+      "hanzi": "聪明",
+      "pinyin": "cōngmíng",
+      "translation": "clever"
+    },
+    {
+      "hanzi": "着急",
+      "pinyin": "zháojí",
+      "translation": "worried"
+    },
+    {
+      "hanzi": "办法",
+      "pinyin": "bànfǎ",
+      "translation": "solution"
+    },
+    {
+      "hanzi": "努力",
+      "pinyin": "nǔlì",
+      "translation": "make efforts (to do sth)一起努力"
+    },
+    {
+      "hanzi": "鼓励",
+      "pinyin": "gǔlì",
+      "translation": "encourage"
+    },
+    {
+      "hanzi": "哭",
+      "pinyin": "kū",
+      "translation": "cry"
+    },
+    {
+      "hanzi": "丢",
+      "pinyin": "diū",
+      "translation": "lose"
+    },
+    {
+      "hanzi": "担心",
+      "pinyin": "dānxīn",
+      "translation": "worry"
+    },
+    {
+      "hanzi": "放心",
+      "pinyin": "fàngxīn",
+      "translation": "set one’s mind at rest"
+    },
+    {
+      "hanzi": "广播",
+      "pinyin": "guǎngbō",
+      "translation": "broadcast"
+    },
+    {
+      "hanzi": "宠物",
+      "pinyin": "chǒngwù",
+      "translation": "pet (animal)"
+    },
+    {
+      "hanzi": "养",
+      "pinyin": "yǎng",
+      "translation": "keep"
+    },
+    {
+      "hanzi": "毛茸茸",
+      "pinyin": "máoróngróng",
+      "translation": "hairy"
+    },
+    {
+      "hanzi": "毛",
+      "pinyin": "máo",
+      "translation": "hair"
+    },
+    {
+      "hanzi": "雪球",
+      "pinyin": "xuěqiú",
+      "translation": "snowball"
+    },
+    {
+      "hanzi": "陪",
+      "pinyin": "péi",
+      "translation": "accompany"
+    },
+    {
+      "hanzi": "长大",
+      "pinyin": "zhǎngdà",
+      "translation": "grow up"
+    },
+    {
+      "hanzi": "照顾",
+      "pinyin": "zhàogù",
+      "translation": "look after"
+    },
+    {
+      "hanzi": "害怕",
+      "pinyin": "hàipà",
+      "translation": "fear"
+    },
+    {
+      "hanzi": "怕",
+      "pinyin": "pà",
+      "translation": "worry about"
+    },
+    {
+      "hanzi": "钥匙",
+      "pinyin": "yàoshi",
+      "translation": "key"
+    },
+    {
+      "hanzi": "羡慕",
+      "pinyin": "xiànmù",
+      "translation": "admire"
+    },
+    {
+      "hanzi": "脸",
+      "pinyin": "liǎn",
+      "translation": "face"
+    },
+    {
+      "hanzi": "乖",
+      "pinyin": "guāi",
+      "translation": "well-behaved"
+    },
+    {
+      "hanzi": "干净",
+      "pinyin": "gānjìng",
+      "translation": "clean"
+    },
+    {
+      "hanzi": "花",
+      "pinyin": "huā",
+      "translation": "spend"
+    },
+    {
+      "hanzi": "兔子",
+      "pinyin": "tùzi",
+      "translation": "rabbit"
+    },
+    {
+      "hanzi": "亲近",
+      "pinyin": "qīnjìn",
+      "translation": "make advances to (sb)亲近人"
+    },
+    {
+      "hanzi": "后来",
+      "pinyin": "hòulái",
+      "translation": "afterwards"
+    },
+    {
+      "hanzi": "死",
+      "pinyin": "sǐ",
+      "translation": "die"
+    },
+    {
+      "hanzi": "坏",
+      "pinyin": "huài",
+      "translation": "break down"
+    },
+    {
+      "hanzi": "网",
+      "pinyin": "wǎng",
+      "translation": "Internet"
+    },
+    {
+      "hanzi": "小票",
+      "pinyin": "xiǎopiào",
+      "translation": "small note"
+    },
+    {
+      "hanzi": "刚",
+      "pinyin": "gāng",
+      "translation": "just"
+    },
+    {
+      "hanzi": "摔",
+      "pinyin": "shuāi",
+      "translation": "cause to fall and break"
+    },
+    {
+      "hanzi": "突然",
+      "pinyin": "tūrán",
+      "translation": "sudden"
+    },
+    {
+      "hanzi": "质量",
+      "pinyin": "zhìliàng",
+      "translation": "quality"
+    },
+    {
+      "hanzi": "寄",
+      "pinyin": "jì",
+      "translation": "mail"
+    },
+    {
+      "hanzi": "双十一",
+      "pinyin": "Shuāng",
+      "translation": "Shíyī Double Eleven (Nov. 11)"
+    },
+    {
+      "hanzi": "鞋",
+      "pinyin": "xié",
+      "translation": "shoe"
+    },
+    {
+      "hanzi": "退",
+      "pinyin": "tuì",
+      "translation": "return"
+    },
+    {
+      "hanzi": "合适",
+      "pinyin": "héshì",
+      "translation": "suitable"
+    },
+    {
+      "hanzi": "发现",
+      "pinyin": "fāxiàn",
+      "translation": "find"
+    },
+    {
+      "hanzi": "页",
+      "pinyin": "yè",
+      "translation": "page"
+    },
+    {
+      "hanzi": "破",
+      "pinyin": "pò",
+      "translation": "tear"
+    },
+    {
+      "hanzi": "挂号",
+      "pinyin": "guàhào",
+      "translation": "register [esp at a hospital]"
+    },
+    {
+      "hanzi": "收费处",
+      "pinyin": "shōufèichù",
+      "translation": "cashier"
+    },
+    {
+      "hanzi": "费",
+      "pinyin": "fèi",
+      "translation": "fee"
+    },
+    {
+      "hanzi": "科",
+      "pinyin": "kē",
+      "translation": "department"
+    },
+    {
+      "hanzi": "肚子",
+      "pinyin": "dùzi",
+      "translation": "belly"
+    },
+    {
+      "hanzi": "疼",
+      "pinyin": "téng",
+      "translation": "painful"
+    },
+    {
+      "hanzi": "内科",
+      "pinyin": "nèikē",
+      "translation": "internal medicine"
+    },
+    {
+      "hanzi": "拉肚子",
+      "pinyin": "lā dùzi",
+      "translation": "have loose bowels"
+    },
+    {
+      "hanzi": "检查",
+      "pinyin": "jiǎnchá",
+      "translation": "check (up)"
+    },
+    {
+      "hanzi": "新鲜",
+      "pinyin": "xīnxiān",
+      "translation": "fresh"
+    },
+    {
+      "hanzi": "开",
+      "pinyin": "kāi",
+      "translation": "write out"
+    },
+    {
+      "hanzi": "片",
+      "pinyin": "piàn",
+      "translation": "tablet"
+    },
+    {
+      "hanzi": "注意",
+      "pinyin": "zhùyì",
+      "translation": "pay attention to"
+    },
+    {
+      "hanzi": "凉",
+      "pinyin": "liáng",
+      "translation": "cool"
+    },
+    {
+      "hanzi": "药房",
+      "pinyin": "yàofáng",
+      "translation": "pharmacy"
+    },
+    {
+      "hanzi": "腿",
+      "pinyin": "tuǐ",
+      "translation": "leg"
+    },
+    {
+      "hanzi": "血",
+      "pinyin": "xuè",
+      "translation": "blood"
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "translation": "apply (medicine)"
+    },
+    {
+      "hanzi": "感冒",
+      "pinyin": "gǎnmào",
+      "translation": "(common) cold"
+    },
+    {
+      "hanzi": "咳嗽",
+      "pinyin": "késou",
+      "translation": "cough"
+    },
+    {
+      "hanzi": "发烧",
+      "pinyin": "fāshāo",
+      "translation": "have a fever"
+    },
+    {
+      "hanzi": "度",
+      "pinyin": "dù",
+      "translation": "degree"
+    },
+    {
+      "hanzi": "结果",
+      "pinyin": "jiéguǒ",
+      "translation": "result"
+    },
+    {
+      "hanzi": "交",
+      "pinyin": "jiāo",
+      "translation": "befriend"
+    },
+    {
+      "hanzi": "感受",
+      "pinyin": "gǎnshòu",
+      "translation": "feel"
+    },
+    {
+      "hanzi": "场",
+      "pinyin": "chǎng",
+      "translation": "place used for a particular purpose足球场"
+    },
+    {
+      "hanzi": "好处",
+      "pinyin": "hǎochù",
+      "translation": "benefit"
+    },
+    {
+      "hanzi": "汗",
+      "pinyin": "hàn",
+      "translation": "sweat"
+    },
+    {
+      "hanzi": "为了",
+      "pinyin": "wèile",
+      "translation": "in order to"
+    },
+    {
+      "hanzi": "健康",
+      "pinyin": "jiànkāng",
+      "translation": "healthy"
+    },
+    {
+      "hanzi": "懒",
+      "pinyin": "lǎn",
+      "translation": "lazy"
+    },
+    {
+      "hanzi": "感兴趣",
+      "pinyin": "gǎnxìngqù",
+      "translation": "be interested in"
+    },
+    {
+      "hanzi": "德国",
+      "pinyin": "Déguó",
+      "translation": "Germany"
+    },
+    {
+      "hanzi": "冬天",
+      "pinyin": "dōngtiān",
+      "translation": "winter"
+    },
+    {
+      "hanzi": "滑雪",
+      "pinyin": "huáxuě",
+      "translation": "ski"
+    },
+    {
+      "hanzi": "速度",
+      "pinyin": "sùdù",
+      "translation": "speed"
+    },
+    {
+      "hanzi": "更",
+      "pinyin": "gèng",
+      "translation": "more"
+    },
+    {
+      "hanzi": "爱好",
+      "pinyin": "àihào",
+      "translation": "hobby"
+    },
+    {
+      "hanzi": "太极拳",
+      "pinyin": "tàijíquán",
+      "translation": "tai chi"
+    },
+    {
+      "hanzi": "适合",
+      "pinyin": "shìhé",
+      "translation": "suit"
+    },
+    {
+      "hanzi": "迟到",
+      "pinyin": "chídào",
+      "translation": "be late"
+    },
+    {
+      "hanzi": "生气",
+      "pinyin": "shēngqì",
+      "translation": "get angry"
+    },
+    {
+      "hanzi": "堵车",
+      "pinyin": "dǔchē",
+      "translation": "be traffic-jammed"
+    },
+    {
+      "hanzi": "怪",
+      "pinyin": "guài",
+      "translation": "blame"
+    },
+    {
+      "hanzi": "其实",
+      "pinyin": "qíshí",
+      "translation": "actually"
+    },
+    {
+      "hanzi": "出门",
+      "pinyin": "chūmén",
+      "translation": "go out"
+    },
+    {
+      "hanzi": "保证",
+      "pinyin": "bǎozhèng",
+      "translation": "assure"
+    },
+    {
+      "hanzi": "准时",
+      "pinyin": "zhǔnshí",
+      "translation": "on time"
+    },
+    {
+      "hanzi": "故意",
+      "pinyin": "gùyì",
+      "translation": "deliberately"
+    },
+    {
+      "hanzi": "道歉",
+      "pinyin": "dàoqiàn",
+      "translation": "apologize"
+    },
+    {
+      "hanzi": "好好",
+      "pinyin": "hǎohǎo",
+      "translation": "to one’s heart’s content"
+    },
+    {
+      "hanzi": "接",
+      "pinyin": "jiē",
+      "translation": "answer (the phone)"
+    },
+    {
+      "hanzi": "解释",
+      "pinyin": "jiěshì",
+      "translation": "explain"
+    },
+    {
+      "hanzi": "刚才",
+      "pinyin": "gāngcái",
+      "translation": "just now A：你刚才去哪儿了？ B：我刚才在睡觉。"
+    },
+    {
+      "hanzi": "跟",
+      "pinyin": "gēn",
+      "translation": "with"
+    },
+    {
+      "hanzi": "请假",
+      "pinyin": "qǐngjià",
+      "translation": "ask for leave of absence"
+    },
+    {
+      "hanzi": "新年",
+      "pinyin": "xīnnián",
+      "translation": "new year"
+    },
+    {
+      "hanzi": "烟花",
+      "pinyin": "yānhuā",
+      "translation": "fireworks"
+    },
+    {
+      "hanzi": "放",
+      "pinyin": "fàng",
+      "translation": "set off (fireworks)"
+    },
+    {
+      "hanzi": "一样",
+      "pinyin": "yíyàng",
+      "translation": "the same"
+    },
+    {
+      "hanzi": "聚会",
+      "pinyin": "jùhuì",
+      "translation": "get together"
+    },
+    {
+      "hanzi": "庆祝",
+      "pinyin": "qìngzhù",
+      "translation": "celebrate"
+    },
+    {
+      "hanzi": "游戏",
+      "pinyin": "yóuxì",
+      "translation": "game"
+    },
+    {
+      "hanzi": "酒",
+      "pinyin": "jiǔ",
+      "translation": "alcoholic drink"
+    },
+    {
+      "hanzi": "猪",
+      "pinyin": "zhū",
+      "translation": "pig"
+    },
+    {
+      "hanzi": "好运",
+      "pinyin": "hǎoyùn",
+      "translation": "good luck"
+    },
+    {
+      "hanzi": "礼物",
+      "pinyin": "lǐwù",
+      "translation": "gift"
+    },
+    {
+      "hanzi": "春节",
+      "pinyin": "Chūnjié",
+      "translation": "Spring Festival"
+    },
+    {
+      "hanzi": "迎接",
+      "pinyin": "yíngjiē",
+      "translation": "greet"
+    },
+    {
+      "hanzi": "打扫",
+      "pinyin": "d2sǎo",
+      "translation": "sweep"
+    },
+    {
+      "hanzi": "传统",
+      "pinyin": "chuántǒng",
+      "translation": "traditional"
+    },
+    {
+      "hanzi": "寺庙",
+      "pinyin": "sìmiào",
+      "translation": "temple"
+    },
+    {
+      "hanzi": "祈祷",
+      "pinyin": "qídǎo",
+      "translation": "pray"
+    },
+    {
+      "hanzi": "装饰",
+      "pinyin": "zhuāngshì",
+      "translation": "decorate"
+    },
+    {
+      "hanzi": "倒数",
+      "pinyin": "dàoshǔ",
+      "translation": "countdown"
+    },
+    {
+      "hanzi": "亲吻",
+      "pinyin": "qīnwěn",
+      "translation": "kiss"
+    },
+    {
+      "hanzi": "许愿",
+      "pinyin": "xǔyuàn",
+      "translation": "make a vow (to a god)"
+    },
+    {
+      "hanzi": "愿望",
+      "pinyin": "yuànwàng",
+      "translation": "desire"
+    },
+    {
+      "hanzi": "点着",
+      "pinyin": "diǎnzháo",
+      "translation": "light"
+    },
+    {
+      "hanzi": "结束",
+      "pinyin": "jiéshù",
+      "translation": "end"
+    },
+    {
+      "hanzi": "打算",
+      "pinyin": "dǎsuàn",
+      "translation": "plan"
+    },
+    {
+      "hanzi": "申请",
+      "pinyin": "shēnqǐng",
+      "translation": "apply for"
+    },
+    {
+      "hanzi": "专业",
+      "pinyin": "zhuānyè",
+      "translation": "speciality"
+    },
+    {
+      "hanzi": "继续",
+      "pinyin": "jìxù",
+      "translation": "continue"
+    },
+    {
+      "hanzi": "毕业",
+      "pinyin": "bìyè",
+      "translation": "graduate"
+    },
+    {
+      "hanzi": "了解",
+      "pinyin": "li2ojiě",
+      "translation": "understand"
+    },
+    {
+      "hanzi": "文化",
+      "pinyin": "wénhuà",
+      "translation": "culture"
+    },
+    {
+      "hanzi": "参加",
+      "pinyin": "cānjiā",
+      "translation": "participate in"
+    },
+    {
+      "hanzi": "水平",
+      "pinyin": "shuǐpíng",
+      "translation": "level"
+    },
+    {
+      "hanzi": "本科",
+      "pinyin": "běnkē",
+      "translation": "regular college course"
+    },
+    {
+      "hanzi": "决定",
+      "pinyin": "juédìng",
+      "translation": "decide"
+    },
+    {
+      "hanzi": "导游",
+      "pinyin": "dǎoyóu",
+      "translation": "tour guide"
+    },
+    {
+      "hanzi": "提高",
+      "pinyin": "tígāo",
+      "translation": "improve"
+    },
+    {
+      "hanzi": "结婚",
+      "pinyin": "jiéhūn",
+      "translation": "get married"
+    }
+  ]
+}

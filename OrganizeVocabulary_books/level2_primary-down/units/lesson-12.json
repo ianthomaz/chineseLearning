@@ -1,0 +1,455 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "bookTitleZh": "新时代汉语口语 初级·下",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 2",
+    "sourcePdf": "level2.pdf",
+    "lesson": 12,
+    "titleZh": "我坐高铁去扬州",
+    "volumeLabel": "初级·下",
+    "pdfPages": {
+      "from": 180,
+      "to": 188,
+      "anchors": {
+        "textVocab": 180,
+        "extensionVocab": 185,
+        "produceSupport": 188
+      }
+    },
+    "importedFrom": "curated/primary-down/lesson-12.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "为什么买票？",
+        "core": [
+          "据说",
+          "感受",
+          "纪念",
+          "少数民族"
+        ],
+        "supplement": [
+          "体验",
+          "欣赏"
+        ]
+      },
+      {
+        "theme": "怎么买票？",
+        "core": [
+          "出发",
+          "到达",
+          "日期",
+          "查询",
+          "高铁",
+          "直达",
+          "卧铺",
+          "取消",
+          "车次",
+          "航班"
+        ],
+        "supplement": []
+      },
+      {
+        "theme": "怎么上火车/飞机？",
+        "core": [
+          "身份证",
+          "出示",
+          "自助",
+          "航空"
+        ],
+        "supplement": [
+          "进站"
+        ]
+      },
+      {
+        "theme": "其他",
+        "core": [
+          "并",
+          "本来"
+        ],
+        "supplement": []
+      }
+    ],
+    "expressionPatterns": [
+      "（1）在朋友的帮助下，我顺利完成了买票和取票。（在……的帮助下）",
+      "（2）来中国以前，我习惯到车站的售票大厅买票。（习惯）",
+      "（3）在中国短期停留的外国人还不能用自助取票机取票，只能拿着护照去窗口取。（只能）",
+      "（4）高铁非常快，往往几个小时就能到达你想去的城市，特别方便。（往往）"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "据说",
+      "pinyin": "jùshuō",
+      "pos": "动",
+      "glossEn": "it is said (that)",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:为什么买票？"
+      ],
+      "examples": [
+        "据说他在中国南方生活"
+      ]
+    },
+    {
+      "hanzi": "并",
+      "pinyin": "bìng",
+      "pos": "副",
+      "glossEn": "[used before a negative for emphasis but with a tinge of refutation] actually",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "definitely 虽然他是北京人，但他"
+      ]
+    },
+    {
+      "hanzi": "感受",
+      "pinyin": "gǎnshòu",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:为什么买票？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "纪念",
+      "pinyin": "jìniàn",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:为什么买票？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "动",
+      "pinyin": "commemorate",
+      "pos": "",
+      "glossEn": "纪念馆",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "结婚纪念日"
+      ]
+    },
+    {
+      "hanzi": "出发",
+      "pinyin": "chūfā",
+      "pos": "动",
+      "glossEn": "set out",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么买票？"
+      ],
+      "examples": [
+        "几点出发",
+        "出发地"
+      ]
+    },
+    {
+      "hanzi": "到达",
+      "pinyin": "dàodá",
+      "pos": "动",
+      "glossEn": "arrive (in/at)",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么买票？"
+      ],
+      "examples": [
+        "按时到达北京"
+      ]
+    },
+    {
+      "hanzi": "日期",
+      "pinyin": "rìqī",
+      "pos": "名",
+      "glossEn": "date",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么买票？"
+      ],
+      "examples": [
+        "出发日期",
+        "到达日期"
+      ]
+    },
+    {
+      "hanzi": "查询",
+      "pinyin": "cháxún",
+      "pos": "动",
+      "glossEn": "make enquiries",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么买票？"
+      ],
+      "examples": [
+        "查询电话号码",
+        "查询"
+      ]
+    },
+    {
+      "hanzi": "高铁",
+      "pinyin": "gāotiě",
+      "pos": "名",
+      "glossEn": "high-speed railway",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么买票？"
+      ],
+      "examples": [
+        "坐高铁",
+        "买高铁票"
+      ]
+    },
+    {
+      "hanzi": "直达",
+      "pinyin": "zhídá",
+      "pos": "动",
+      "glossEn": "travel nonstop",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么买票？"
+      ],
+      "examples": [
+        "直达车",
+        "直达北京"
+      ]
+    },
+    {
+      "hanzi": "卧铺",
+      "pinyin": "wòpù",
+      "pos": "名",
+      "glossEn": "sleeping berth",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么买票？"
+      ],
+      "examples": [
+        "买卧铺票"
+      ]
+    },
+    {
+      "hanzi": "取消",
+      "pinyin": "qǔxiāo",
+      "pos": "动",
+      "glossEn": "cancel",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么买票？"
+      ],
+      "examples": [
+        "取消会议",
+        "比赛取消了"
+      ]
+    },
+    {
+      "hanzi": "车次",
+      "pinyin": "chēcì",
+      "pos": "名",
+      "glossEn": "train number",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么买票？"
+      ],
+      "examples": [
+        "查询车次信息"
+      ]
+    },
+    {
+      "hanzi": "身份证",
+      "pinyin": "shēnfènzhèng",
+      "pos": "名",
+      "glossEn": "identity card",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:怎么上火车/飞机？"
+      ],
+      "examples": [
+        "带身份证"
+      ]
+    },
+    {
+      "hanzi": "本来",
+      "pinyin": "běnlái",
+      "pos": "副",
+      "glossEn": "originally",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "at first 我本来想申请上海的大 学，可是没有申请上"
+      ]
+    },
+    {
+      "hanzi": "扬州",
+      "pinyin": "Yángzhōu",
+      "pos": "",
+      "glossEn": "a city in Jiangsu Province",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ]
+    },
+    {
+      "hanzi": "出示",
+      "pinyin": "chūshì",
+      "pos": "动",
+      "glossEn": "show",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:怎么上火车/飞机？"
+      ],
+      "examples": [
+        "出示护照"
+      ]
+    },
+    {
+      "hanzi": "少数民族",
+      "pinyin": "shǎoshù mínzú",
+      "pos": "",
+      "glossEn": "ethnic group",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:为什么买票？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "航班",
+      "pinyin": "hángbān",
+      "pos": "名",
+      "glossEn": "scheduled flight",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:怎么买票？"
+      ],
+      "examples": [
+        "一趟航班",
+        "航班被取消了"
+      ]
+    },
+    {
+      "hanzi": "自助",
+      "pinyin": "zìzhù",
+      "pos": "动",
+      "glossEn": "self-service",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:怎么上火车/飞机？"
+      ],
+      "examples": [
+        "自助餐",
+        "自助售票机"
+      ]
+    },
+    {
+      "hanzi": "航空",
+      "pinyin": "hángkōng",
+      "pos": "动",
+      "glossEn": "aviate",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:怎么上火车/飞机？"
+      ],
+      "examples": [
+        "航空公司",
+        "航空安全"
+      ]
+    },
+    {
+      "hanzi": "欧洲",
+      "pinyin": "Ouzhōu",
+      "pos": "专有",
+      "glossEn": "Europe",
+      "priority": "brainstorm",
+      "sources": [
+        "extensionVocab"
+      ],
+      "examples": [
+        "欧洲国家",
+        "去欧洲旅行"
+      ]
+    },
+    {
+      "hanzi": "云南",
+      "pinyin": "Yúnnán",
+      "pos": "",
+      "glossEn": "a province of China",
+      "priority": "brainstorm",
+      "sources": [
+        "extensionVocab"
+      ]
+    },
+    {
+      "hanzi": "体验",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:为什么买票？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "欣赏",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:为什么买票？",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "进站",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:怎么上火车/飞机？",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 27,
+    "core": 22,
+    "brainstorm": 2,
+    "extended": 3
+  }
+}

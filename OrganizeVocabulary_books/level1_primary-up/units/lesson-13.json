@@ -1,0 +1,351 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "bookTitleZh": "新时代汉语口语 初级·上",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 1",
+    "sourcePdf": "Level1.pdf",
+    "lesson": 13,
+    "titleZh": "你喜欢踢足球吗？",
+    "volumeLabel": "初级·上",
+    "pdfPages": {
+      "from": 163,
+      "to": 169,
+      "anchors": {
+        "textVocab": 163,
+        "extensionVocab": 166,
+        "produceSupport": 169
+      }
+    },
+    "importedFrom": "curated/primary-up/lesson-13.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "介绍运动喜好",
+        "core": [
+          "感兴趣",
+          "滑雪",
+          "爱好",
+          "太极拳"
+        ],
+        "supplement": [
+          "擅长"
+        ]
+      },
+      {
+        "theme": "喜欢或者不喜欢这种运动的原因",
+        "core": [
+          "交",
+          "感受",
+          "好处",
+          "汗",
+          "为了",
+          "健康",
+          "懒",
+          "速度",
+          "更",
+          "适合"
+        ],
+        "supplement": []
+      },
+      {
+        "theme": "其他",
+        "core": [
+          "场",
+          "冬天"
+        ],
+        "supplement": []
+      }
+    ],
+    "expressionPatterns": [
+      "我喜欢……",
+      "我的爱好是……",
+      "我对……感兴趣。",
+      "我不喜欢……",
+      "我对……不感兴趣。",
+      "……太有意思了！",
+      "……对身体有好处。",
+      "为了变得更漂亮，我……",
+      "……能交到很多朋友。",
+      "……的天气很适合……",
+      "只有……过，才能感受到……",
+      "……不但让我更健康，而且还让我更……",
+      "我太懒了。",
+      "我的工作又忙又累。",
+      "只有不忙的人才……",
+      "……不适合我，因为……",
+      "虽然我知道……的好处很多，但是……"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "交",
+      "pinyin": "jiāo",
+      "pos": "动",
+      "glossEn": "befriend",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:喜欢或者不喜欢这种运动的原因"
+      ],
+      "examples": [
+        "交朋友",
+        "和……交朋友"
+      ]
+    },
+    {
+      "hanzi": "感受",
+      "pinyin": "gǎnshòu",
+      "pos": "动名",
+      "glossEn": "feel",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:喜欢或者不喜欢这种运动的原因",
+        "produceOnly"
+      ],
+      "examples": [
+        "experience",
+        "feeling 感受到快乐",
+        "一种感受"
+      ]
+    },
+    {
+      "hanzi": "场",
+      "pinyin": "chǎng",
+      "pos": "名",
+      "glossEn": "place used for a particular purpose足球场",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "运动场"
+      ]
+    },
+    {
+      "hanzi": "好处",
+      "pinyin": "hǎochù",
+      "pos": "名",
+      "glossEn": "benefit",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:喜欢或者不喜欢这种运动的原因"
+      ],
+      "examples": [
+        "对……有好处",
+        "对……没好处"
+      ]
+    },
+    {
+      "hanzi": "汗",
+      "pinyin": "hàn",
+      "pos": "名",
+      "glossEn": "sweat",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:喜欢或者不喜欢这种运动的原因"
+      ],
+      "examples": [
+        "出汗"
+      ]
+    },
+    {
+      "hanzi": "为了",
+      "pinyin": "wèile",
+      "pos": "介",
+      "glossEn": "in order to",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:喜欢或者不喜欢这种运动的原因"
+      ],
+      "examples": [
+        "为了来中国留学，他学习了汉语。"
+      ]
+    },
+    {
+      "hanzi": "健康",
+      "pinyin": "jiànkāng",
+      "pos": "形",
+      "glossEn": "healthy",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:喜欢或者不喜欢这种运动的原因"
+      ],
+      "examples": [
+        "身体健康"
+      ]
+    },
+    {
+      "hanzi": "懒",
+      "pinyin": "lǎn",
+      "pos": "形",
+      "glossEn": "lazy",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:喜欢或者不喜欢这种运动的原因"
+      ],
+      "examples": [
+        "太懒了"
+      ]
+    },
+    {
+      "hanzi": "感兴趣",
+      "pinyin": "gǎnxìngqù",
+      "pos": "",
+      "glossEn": "be interested in",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:介绍运动喜好",
+        "produceOnly"
+      ],
+      "examples": [
+        "对……感兴趣",
+        "对……不感兴趣"
+      ]
+    },
+    {
+      "hanzi": "德国",
+      "pinyin": "Déguó",
+      "pos": "专有",
+      "glossEn": "Germany",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "德国人"
+      ]
+    },
+    {
+      "hanzi": "冬天",
+      "pinyin": "dōngtiān",
+      "pos": "名",
+      "glossEn": "winter",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "北京的冬天很冷。"
+      ]
+    },
+    {
+      "hanzi": "滑雪",
+      "pinyin": "huáxuě",
+      "pos": "动",
+      "glossEn": "ski",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:介绍运动喜好"
+      ],
+      "examples": [
+        "我很喜欢滑雪。"
+      ]
+    },
+    {
+      "hanzi": "速度",
+      "pinyin": "sùdù",
+      "pos": "名",
+      "glossEn": "speed",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:喜欢或者不喜欢这种运动的原因"
+      ],
+      "examples": [
+        "速度快",
+        "速度慢"
+      ]
+    },
+    {
+      "hanzi": "更",
+      "pinyin": "gèng",
+      "pos": "副",
+      "glossEn": "more",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:喜欢或者不喜欢这种运动的原因"
+      ],
+      "examples": [
+        "更健康",
+        "更好"
+      ]
+    },
+    {
+      "hanzi": "爱好",
+      "pinyin": "àihào",
+      "pos": "名",
+      "glossEn": "hobby",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:介绍运动喜好"
+      ],
+      "examples": [
+        "我的爱好",
+        "爱好很多"
+      ]
+    },
+    {
+      "hanzi": "太极拳",
+      "pinyin": "tàijíquán",
+      "pos": "名",
+      "glossEn": "tai chi",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:介绍运动喜好"
+      ],
+      "examples": [
+        "打太极拳"
+      ]
+    },
+    {
+      "hanzi": "适合",
+      "pinyin": "shìhé",
+      "pos": "动",
+      "glossEn": "suit",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:喜欢或者不喜欢这种运动的原因"
+      ],
+      "examples": [
+        "fit 适合我",
+        "不适合"
+      ]
+    },
+    {
+      "hanzi": "擅长",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:介绍运动喜好",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 18,
+    "core": 17,
+    "brainstorm": 0,
+    "extended": 1
+  }
+}

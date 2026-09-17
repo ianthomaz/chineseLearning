@@ -1,0 +1,374 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "bookTitleZh": "新时代汉语口语 初级·上",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 1",
+    "sourcePdf": "Level1.pdf",
+    "lesson": 11,
+    "titleZh": "换一个新的",
+    "volumeLabel": "初级·上",
+    "pdfPages": {
+      "from": 137,
+      "to": 143,
+      "anchors": {
+        "textVocab": 137,
+        "extensionVocab": 140,
+        "produceSupport": 143
+      }
+    },
+    "importedFrom": "curated/primary-up/lesson-11.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "说明退换货原因",
+        "core": [
+          "坏",
+          "摔",
+          "突然",
+          "质量",
+          "合适",
+          "发现",
+          "页",
+          "破"
+        ],
+        "supplement": [
+          "充电",
+          "看起来"
+        ]
+      },
+      {
+        "theme": "讲述购物经历",
+        "core": [
+          "网",
+          "小票",
+          "刚",
+          "鞋"
+        ],
+        "supplement": [
+          "店"
+        ]
+      },
+      {
+        "theme": "表达自己的要求",
+        "core": [
+          "寄",
+          "退"
+        ],
+        "supplement": [
+          "换",
+          "打折"
+        ]
+      }
+    ],
+    "expressionPatterns": [
+      "……坏了。",
+      "……破了。",
+      "我发现……",
+      "这个比……贵。",
+      "……有质量问题。",
+      "我穿起来不好看。",
+      "我不喜欢……的颜色。",
+      "……的大小不合适，",
+      "……",
+      "我突然有事，没时间",
+      "……",
+      "这是我刚买的。",
+      "我是在网上买的。",
+      "我是在这儿买的。",
+      "这是……（的时候）",
+      "我上周末在你们店买",
+      "了一个……",
+      "在这儿能修吗？",
+      "帮我换一个新的吧。",
+      "我不要了，退了吧。",
+      "能帮我寄到家吗？"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "坏",
+      "pinyin": "huài",
+      "pos": "形",
+      "glossEn": "break down",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:说明退换货原因"
+      ],
+      "examples": [
+        "go bad 车坏了",
+        "牛奶坏了"
+      ]
+    },
+    {
+      "hanzi": "网",
+      "pinyin": "wǎng",
+      "pos": "名",
+      "glossEn": "Internet",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:讲述购物经历"
+      ],
+      "examples": [
+        "在网上",
+        "上网"
+      ]
+    },
+    {
+      "hanzi": "小票",
+      "pinyin": "xiǎopiào",
+      "pos": "名",
+      "glossEn": "small note",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:讲述购物经历"
+      ],
+      "examples": [
+        "一张小票"
+      ]
+    },
+    {
+      "hanzi": "刚",
+      "pinyin": "gāng",
+      "pos": "副",
+      "glossEn": "just",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:讲述购物经历"
+      ],
+      "examples": [
+        "刚下飞机",
+        "刚半年"
+      ]
+    },
+    {
+      "hanzi": "摔",
+      "pinyin": "shuāi",
+      "pos": "动",
+      "glossEn": "cause to fall and break",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:说明退换货原因"
+      ],
+      "examples": [
+        "摔坏",
+        "手机摔了"
+      ]
+    },
+    {
+      "hanzi": "突然",
+      "pinyin": "tūrán",
+      "pos": "形",
+      "glossEn": "sudden",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:说明退换货原因"
+      ],
+      "examples": [
+        "suddenly 很突然",
+        "突然坏了"
+      ]
+    },
+    {
+      "hanzi": "质量",
+      "pinyin": "zhìliàng",
+      "pos": "名",
+      "glossEn": "quality",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:说明退换货原因"
+      ],
+      "examples": [
+        "质量好",
+        "眼镜的质量"
+      ]
+    },
+    {
+      "hanzi": "寄",
+      "pinyin": "jì",
+      "pos": "动",
+      "glossEn": "mail",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:表达自己的要求"
+      ],
+      "examples": [
+        "send 寄给我",
+        "寄到家"
+      ]
+    },
+    {
+      "hanzi": "双十一",
+      "pinyin": "Shuāng",
+      "pos": "专有",
+      "glossEn": "Shíyī Double Eleven (Nov. 11)",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ]
+    },
+    {
+      "hanzi": "鞋",
+      "pinyin": "xié",
+      "pos": "名",
+      "glossEn": "shoe",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:讲述购物经历"
+      ],
+      "examples": [
+        "一双鞋",
+        "穿鞋"
+      ]
+    },
+    {
+      "hanzi": "退",
+      "pinyin": "tuì",
+      "pos": "动",
+      "glossEn": "return",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:表达自己的要求"
+      ],
+      "examples": [
+        "退货",
+        "退东西",
+        "退票"
+      ]
+    },
+    {
+      "hanzi": "合适",
+      "pinyin": "héshì",
+      "pos": "形",
+      "glossEn": "suitable",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:说明退换货原因"
+      ],
+      "examples": [
+        "这件衣服穿着很合适。"
+      ]
+    },
+    {
+      "hanzi": "发现",
+      "pinyin": "fāxiàn",
+      "pos": "动",
+      "glossEn": "find",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:说明退换货原因"
+      ],
+      "examples": [
+        "发现一个新方法",
+        "发现有问题"
+      ]
+    },
+    {
+      "hanzi": "页",
+      "pinyin": "yè",
+      "pos": "量",
+      "glossEn": "page",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:说明退换货原因"
+      ],
+      "examples": [
+        "一页纸",
+        "一页书"
+      ]
+    },
+    {
+      "hanzi": "破",
+      "pinyin": "pò",
+      "pos": "动",
+      "glossEn": "tear",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:说明退换货原因"
+      ],
+      "examples": [
+        "纸破了",
+        "衣服破了"
+      ]
+    },
+    {
+      "hanzi": "充电",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:说明退换货原因",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "看起来",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:说明退换货原因",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "店",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:讲述购物经历",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "换",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:表达自己的要求",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "打折",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:表达自己的要求",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 20,
+    "core": 15,
+    "brainstorm": 0,
+    "extended": 5
+  }
+}

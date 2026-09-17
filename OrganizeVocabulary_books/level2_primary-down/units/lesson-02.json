@@ -1,0 +1,517 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "bookTitleZh": "新时代汉语口语 初级·下",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 2",
+    "sourcePdf": "level2.pdf",
+    "lesson": 2,
+    "titleZh": "住校内还是住校外？",
+    "volumeLabel": "初级·下",
+    "pdfPages": {
+      "from": 28,
+      "to": 38,
+      "anchors": {
+        "textVocab": 28,
+        "extensionVocab": 34,
+        "produceSupport": 38
+      }
+    },
+    "importedFrom": "curated/primary-down/lesson-02.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "",
+        "core": [
+          "住址",
+          "填",
+          "住址",
+          "区"
+        ],
+        "supplement": [
+          "省",
+          "市",
+          "县",
+          "路",
+          "街",
+          "号"
+        ]
+      },
+      {
+        "theme": "住校内",
+        "core": [
+          "申请",
+          "宿舍",
+          "吵",
+          "洗衣机",
+          "提前",
+          "住宿",
+          "报到",
+          "提供",
+          "卫生间"
+        ],
+        "supplement": [
+          "安全",
+          "规定",
+          "打扰",
+          "洗澡",
+          "条件"
+        ]
+      },
+      {
+        "theme": "住校外",
+        "core": [
+          "租",
+          "堵",
+          "房东",
+          "麻烦",
+          "打招呼",
+          "不好意思"
+        ],
+        "supplement": [
+          "自由",
+          "交通",
+          "不好意思"
+        ]
+      }
+    ],
+    "expressionPatterns": [
+      "（1）刚来的时候我记不住自己在中国的住址，现在能记住了。（记住，记不住）",
+      "（2）这个大学提供的宿舍不多，要是想住宿舍就得提前申请。（要是……就……）",
+      "（3）在美国租房子，有时候房间里什么都没有，比较麻烦。（什么都……）",
+      "（4）住在校内，不但住宿费便宜，而且去食堂吃饭也很方便。（不但……，而且……）",
+      "（5） 自己租房子比住学校的宿舍方便一些，想什么时候睡觉就什么时候睡觉，也可以自己做饭。",
+      "（A比B+Adj+一些）"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "填",
+      "pinyin": "tián",
+      "pos": "动",
+      "glossEn": "fill in",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "填空",
+        "填表",
+        "填住址"
+      ]
+    },
+    {
+      "hanzi": "住址",
+      "pinyin": "zhùzhǐ",
+      "pos": "名",
+      "glossEn": "address",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "家庭住址"
+      ]
+    },
+    {
+      "hanzi": "区",
+      "pinyin": "qū",
+      "pos": "名",
+      "glossEn": "district",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "西城区"
+      ]
+    },
+    {
+      "hanzi": "不好意思",
+      "pinyin": "bù hǎoyìsi",
+      "pos": "",
+      "glossEn": "sorry",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:住校外",
+        "produceSupplement:住校外",
+        "produceOnly"
+      ],
+      "examples": [
+        "excuse me 不好意思，我迟到了"
+      ]
+    },
+    {
+      "hanzi": "租",
+      "pinyin": "zū",
+      "pos": "动",
+      "glossEn": "rent",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:住校外"
+      ],
+      "examples": [
+        "租房子",
+        "租车"
+      ]
+    },
+    {
+      "hanzi": "堵",
+      "pinyin": "dǔ",
+      "pos": "动",
+      "glossEn": "jam",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:住校外"
+      ],
+      "examples": [
+        "block up 堵车",
+        "路上很堵"
+      ]
+    },
+    {
+      "hanzi": "申请",
+      "pinyin": "shēnqǐng",
+      "pos": "动",
+      "glossEn": "apply for",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:住校内"
+      ],
+      "examples": [
+        "申请宿舍",
+        "申请学校"
+      ]
+    },
+    {
+      "hanzi": "宿舍",
+      "pinyin": "sùshè",
+      "pos": "名",
+      "glossEn": "dormitory",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:住校内"
+      ],
+      "examples": [
+        "学生宿舍"
+      ]
+    },
+    {
+      "hanzi": "吵",
+      "pinyin": "chǎo",
+      "pos": "形",
+      "glossEn": "noisy",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:住校内"
+      ],
+      "examples": [
+        "外面有点儿吵"
+      ]
+    },
+    {
+      "hanzi": "洗衣机",
+      "pinyin": "xǐyījī",
+      "pos": "名",
+      "glossEn": "washing machine",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:住校内"
+      ],
+      "examples": [
+        "一台洗衣机"
+      ]
+    },
+    {
+      "hanzi": "房东",
+      "pinyin": "fángdōng",
+      "pos": "名",
+      "glossEn": "landlord or landlady",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:住校外"
+      ],
+      "examples": [
+        "房东很热情"
+      ]
+    },
+    {
+      "hanzi": "提前",
+      "pinyin": "tíqián",
+      "pos": "动",
+      "glossEn": "do sth ahead of time",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:住校内"
+      ],
+      "examples": [
+        "提前申请",
+        "提前毕业"
+      ]
+    },
+    {
+      "hanzi": "住宿",
+      "pinyin": "zhùsù",
+      "pos": "动",
+      "glossEn": "get accommodation",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:住校内"
+      ],
+      "examples": [
+        "在校外住宿",
+        "住宿费"
+      ]
+    },
+    {
+      "hanzi": "三元桥",
+      "pinyin": "Sānyuán",
+      "pos": "专有",
+      "glossEn": "Qiáo the name of a place in Beijing",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ]
+    },
+    {
+      "hanzi": "报到",
+      "pinyin": "bàodào",
+      "pos": "动",
+      "glossEn": "register",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:住校内"
+      ],
+      "examples": [
+        "新生报到",
+        "报完到以后"
+      ]
+    },
+    {
+      "hanzi": "提供",
+      "pinyin": "tígōng",
+      "pos": "动",
+      "glossEn": "provide",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:住校内"
+      ],
+      "examples": [
+        "supply 给留学生提供宿舍"
+      ]
+    },
+    {
+      "hanzi": "卫生间",
+      "pinyin": "wèishēngjiān",
+      "pos": "名",
+      "glossEn": "toilet",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:住校内"
+      ],
+      "examples": [
+        "bathroom 上卫生间",
+        "公共卫生间"
+      ]
+    },
+    {
+      "hanzi": "麻烦",
+      "pinyin": "máfan",
+      "pos": "形",
+      "glossEn": "troublesome",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:住校外"
+      ],
+      "examples": [
+        "有点儿麻烦"
+      ]
+    },
+    {
+      "hanzi": "打招呼",
+      "pinyin": "dǎ zhāohu",
+      "pos": "",
+      "glossEn": "greet",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:住校外",
+        "produceOnly"
+      ],
+      "examples": [
+        "say hello (to) 跟老师打招呼",
+        "打了一下招呼"
+      ]
+    },
+    {
+      "hanzi": "省",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "市",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "县",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "路",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "街",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "号",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "安全",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:住校内",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "规定",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:住校内",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "打扰",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:住校内",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "洗澡",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:住校内",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "条件",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:住校内",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "自由",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:住校外",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "交通",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:住校外",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 32,
+    "core": 19,
+    "brainstorm": 0,
+    "extended": 13
+  }
+}

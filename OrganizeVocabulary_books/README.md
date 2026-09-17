@@ -1,8 +1,18 @@
 # OrganizeVocabulary_books — léxico curado dos PDFs
 
-Seed do léxico dos livros **新时代汉语口语** (初级·上 + 初级·下).
+Seed do léxico dos livros **新时代汉语口语** (初级·上 + 初级·下) e pasta de trabalho **NTCSL L2**.
 
 **Uso no site:** `curated/` é input do `npm run seed:content` → tabela SQLite `book_vocab_entries` (sugestões no formulário de aulas). Não substitui o consolidado editorial.
+
+**Pastas de trabalho (modelo NTCSL):**
+
+| Livro | PDF | Pasta |
+|-------|-----|--------|
+| 新时代 初级·上 | `Level1.pdf` | `level1_primary-up/` |
+| 新时代 初级·下 | `level2.pdf` | `level2_primary-down/` |
+| 新目标口语 2 | `level2_NTCSL.pdf` | `level2_NTCSL/` |
+
+Re-importar primary-up/down a partir de `curated/`: `python3 _import_curated_to_workdir.py`
 
 ## O que vai para o git
 

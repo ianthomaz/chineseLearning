@@ -1,0 +1,435 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "bookTitleZh": "新时代汉语口语 初级·上",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 1",
+    "sourcePdf": "Level1.pdf",
+    "lesson": 14,
+    "titleZh": "对不起，我迟到了",
+    "volumeLabel": "初级·上",
+    "pdfPages": {
+      "from": 175,
+      "to": 183,
+      "anchors": {
+        "textVocab": 175,
+        "extensionVocab": 179,
+        "produceSupport": 183
+      }
+    },
+    "importedFrom": "curated/primary-up/lesson-14.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "承认错误并道歉",
+        "core": [
+          "迟到",
+          "生气",
+          "故意",
+          "道歉",
+          "跟",
+          "请假"
+        ],
+        "supplement": [
+          "错",
+          "抱歉"
+        ]
+      },
+      {
+        "theme": "解释原因",
+        "core": [
+          "堵车",
+          "怪",
+          "其实",
+          "出门",
+          "好好",
+          "解释",
+          "刚才",
+          "保证",
+          "准时"
+        ],
+        "supplement": [
+          "没电",
+          "坏",
+          "经验",
+          "注意",
+          "以后",
+          "请客"
+        ]
+      },
+      {
+        "theme": "其他",
+        "core": [
+          "接",
+          "交"
+        ],
+        "supplement": []
+      }
+    ],
+    "expressionPatterns": [
+      "很抱歉！",
+      "这是我的错。",
+      "我跟你道歉。",
+      "我错了！你别生气了。",
+      "对不起！我不是故意……",
+      "其实……",
+      "刚才……",
+      "都怪我……",
+      "……，而且……",
+      "你听我解释，……",
+      "因为……，所以……",
+      "我保证……",
+      "我以后不这样了。",
+      "我一定注意这个问题。",
+      "我下次一定（不）……",
+      "我请你吃饭。",
+      "我给您换一个。",
+      "多少钱？我给您。",
+      "我给你买个新的吧。"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "迟到",
+      "pinyin": "chídào",
+      "pos": "动",
+      "glossEn": "be late",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:承认错误并道歉"
+      ],
+      "examples": [
+        "迟到了",
+        "迟到半个小时"
+      ]
+    },
+    {
+      "hanzi": "生气",
+      "pinyin": "shēngqì",
+      "pos": "动",
+      "glossEn": "get angry",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:承认错误并道歉"
+      ],
+      "examples": [
+        "别生气",
+        "生某人的气"
+      ]
+    },
+    {
+      "hanzi": "堵车",
+      "pinyin": "dǔchē",
+      "pos": "动",
+      "glossEn": "be traffic-jammed",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:解释原因"
+      ],
+      "examples": [
+        "路上堵车",
+        "堵了1个小时（车）"
+      ]
+    },
+    {
+      "hanzi": "怪",
+      "pinyin": "guài",
+      "pos": "动",
+      "glossEn": "blame",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:解释原因"
+      ],
+      "examples": [
+        "怪某人"
+      ]
+    },
+    {
+      "hanzi": "其实",
+      "pinyin": "qíshí",
+      "pos": "副",
+      "glossEn": "actually",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:解释原因"
+      ],
+      "examples": [
+        "她看起来很年轻，其实已经60岁了。"
+      ]
+    },
+    {
+      "hanzi": "出门",
+      "pinyin": "chūmén",
+      "pos": "动",
+      "glossEn": "go out",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:解释原因"
+      ]
+    },
+    {
+      "hanzi": "保证",
+      "pinyin": "bǎozhèng",
+      "pos": "动",
+      "glossEn": "assure",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:解释原因"
+      ],
+      "examples": [
+        "guarantee 我保证",
+        "保证不迟到"
+      ]
+    },
+    {
+      "hanzi": "准时",
+      "pinyin": "zhǔnshí",
+      "pos": "形",
+      "glossEn": "on time",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:解释原因"
+      ],
+      "examples": [
+        "准时到",
+        "不准时"
+      ]
+    },
+    {
+      "hanzi": "故意",
+      "pinyin": "gùyì",
+      "pos": "副",
+      "glossEn": "deliberately",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:承认错误并道歉"
+      ],
+      "examples": [
+        "不是故意的",
+        "故意让她生气"
+      ]
+    },
+    {
+      "hanzi": "道歉",
+      "pinyin": "dàoqiàn",
+      "pos": "动",
+      "glossEn": "apologize",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:承认错误并道歉"
+      ],
+      "examples": [
+        "给某人道歉",
+        "道个歉"
+      ]
+    },
+    {
+      "hanzi": "好好",
+      "pinyin": "hǎohǎo",
+      "pos": "副",
+      "glossEn": "to one’s heart’s content",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:解释原因"
+      ],
+      "examples": [
+        "好好检查",
+        "好好学习"
+      ]
+    },
+    {
+      "hanzi": "接",
+      "pinyin": "jiē",
+      "pos": "动",
+      "glossEn": "answer (the phone)",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "接电话"
+      ]
+    },
+    {
+      "hanzi": "解释",
+      "pinyin": "jiěshì",
+      "pos": "动",
+      "glossEn": "explain",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:解释原因"
+      ],
+      "examples": [
+        "听我解释",
+        "解释清楚"
+      ]
+    },
+    {
+      "hanzi": "刚才",
+      "pinyin": "gāngcái",
+      "pos": "名",
+      "glossEn": "just now A：你刚才去哪儿了？ B：我刚才在睡觉。",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:解释原因"
+      ]
+    },
+    {
+      "hanzi": "跟",
+      "pinyin": "gēn",
+      "pos": "介",
+      "glossEn": "with",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:承认错误并道歉"
+      ],
+      "examples": [
+        "跟某人道歉",
+        "跟某人说话"
+      ]
+    },
+    {
+      "hanzi": "请假",
+      "pinyin": "qǐngjià",
+      "pos": "动",
+      "glossEn": "ask for leave of absence",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:承认错误并道歉"
+      ],
+      "examples": [
+        "请一天假",
+        "跟老师请假"
+      ]
+    },
+    {
+      "hanzi": "交",
+      "pinyin": "jiāo",
+      "pos": "动",
+      "glossEn": "hand over",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "deliver 交作业",
+        "按时交"
+      ]
+    },
+    {
+      "hanzi": "错",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:承认错误并道歉",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "抱歉",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:承认错误并道歉",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "没电",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:解释原因",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "坏",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:解释原因",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "经验",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:解释原因",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "注意",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:解释原因",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "以后",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:解释原因",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "请客",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:解释原因",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 25,
+    "core": 17,
+    "brainstorm": 0,
+    "extended": 8
+  }
+}

@@ -393,7 +393,7 @@
     },
     "auth": {
       "guest": "Jogando como convidado",
-      "guestHint": "Entre com Google para guardar o seu apelido neste dispositivo.",
+      "guestHint": "Podes jogar sem entrar. Entre com Google se quiser guardar o apelido neste dispositivo.",
       "serverOnly": "O login requer o modo servidor.",
       "signIn": "Entrar com Google",
       "signInAlt": "Outra conta",

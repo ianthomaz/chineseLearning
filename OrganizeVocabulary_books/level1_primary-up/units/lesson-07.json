@@ -1,0 +1,432 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "bookTitleZh": "新时代汉语口语 初级·上",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 1",
+    "sourcePdf": "Level1.pdf",
+    "lesson": 7,
+    "titleZh": "要不再说吧",
+    "volumeLabel": "初级·上",
+    "pdfPages": {
+      "from": 89,
+      "to": 96,
+      "anchors": {
+        "textVocab": 89,
+        "extensionVocab": 92,
+        "produceSupport": 96
+      }
+    },
+    "importedFrom": "curated/primary-up/lesson-07.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "礼貌地拒绝别人",
+        "core": [
+          "行",
+          "可惜",
+          "抱歉",
+          "拒绝",
+          "需要",
+          "方便"
+        ],
+        "supplement": [
+          "考虑",
+          "下次"
+        ]
+      },
+      {
+        "theme": "说明拒绝的原因",
+        "core": [
+          "马上",
+          "周末",
+          "复习",
+          "来不及",
+          "自己"
+        ],
+        "supplement": [
+          "忙",
+          "累",
+          "安排",
+          "事"
+        ]
+      },
+      {
+        "theme": "提出新的建议",
+        "core": [
+          "要不"
+        ],
+        "supplement": [
+          "以后"
+        ]
+      },
+      {
+        "theme": "其他",
+        "core": [
+          "演唱会",
+          "售货员",
+          "蛋糕",
+          "尝"
+        ],
+        "supplement": [
+          "服务员",
+          "店员"
+        ]
+      }
+    ],
+    "expressionPatterns": [
+      "我考虑考虑。 • 对不起，不太方便。",
+      "太可惜了，…… • 下次吧。",
+      "真抱歉，…… • 以后再说吧。",
+      "不用了，谢谢。 • 不好意思，不行。礼貌拒绝1",
+      "如果……，就来不及了。",
+      "我现在很忙。",
+      "我想自己……",
+      "要不……吧。",
+      "……怎么样？"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "演唱会",
+      "pinyin": "yǎnchànghuì",
+      "pos": "名",
+      "glossEn": "vocal concert",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "一场演唱会",
+        "看演唱会"
+      ]
+    },
+    {
+      "hanzi": "行",
+      "pinyin": "xíng",
+      "pos": "动",
+      "glossEn": "OK",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:礼貌地拒绝别人"
+      ],
+      "examples": [
+        "be all right 行，没问题。 不行。"
+      ]
+    },
+    {
+      "hanzi": "马上",
+      "pinyin": "mǎshàng",
+      "pos": "副",
+      "glossEn": "at once",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:说明拒绝的原因"
+      ],
+      "examples": [
+        "right away 马上回来。 马上要上课了。"
+      ]
+    },
+    {
+      "hanzi": "周末",
+      "pinyin": "zhōumò",
+      "pos": "名",
+      "glossEn": "weekend",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:说明拒绝的原因"
+      ],
+      "examples": [
+        "上周末",
+        "下周末"
+      ]
+    },
+    {
+      "hanzi": "复习",
+      "pinyin": "fùxí",
+      "pos": "动",
+      "glossEn": "review",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:说明拒绝的原因"
+      ],
+      "examples": [
+        "复习一下",
+        "复习汉语"
+      ]
+    },
+    {
+      "hanzi": "来不及",
+      "pinyin": "láibují",
+      "pos": "动",
+      "glossEn": "find no time to do sth",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:说明拒绝的原因"
+      ],
+      "examples": [
+        "来不及吃饭了。 今天来不及了。"
+      ]
+    },
+    {
+      "hanzi": "要不",
+      "pinyin": "yàobù",
+      "pos": "连",
+      "glossEn": "or",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:提出新的建议"
+      ],
+      "examples": [
+        "otherwise 今天没时间，要不明天吧。"
+      ]
+    },
+    {
+      "hanzi": "可惜",
+      "pinyin": "kěxī",
+      "pos": "形",
+      "glossEn": "regrettable",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:礼貌地拒绝别人"
+      ],
+      "examples": [
+        "很可惜",
+        "太可惜了"
+      ]
+    },
+    {
+      "hanzi": "抱歉",
+      "pinyin": "bàoqiàn",
+      "pos": "形",
+      "glossEn": "be sorry",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:礼貌地拒绝别人"
+      ],
+      "examples": [
+        "觉得抱歉",
+        "真抱歉！"
+      ]
+    },
+    {
+      "hanzi": "拒绝",
+      "pinyin": "jùjué",
+      "pos": "动",
+      "glossEn": "refuse",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:礼貌地拒绝别人"
+      ],
+      "examples": [
+        "拒绝帮助",
+        "拒绝要求"
+      ]
+    },
+    {
+      "hanzi": "售货员",
+      "pinyin": "shòuhuòyuán",
+      "pos": "名",
+      "glossEn": "shop assistant商店的售货员",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:其他"
+      ]
+    },
+    {
+      "hanzi": "需要",
+      "pinyin": "xūyào",
+      "pos": "动",
+      "glossEn": "need",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:礼貌地拒绝别人"
+      ],
+      "examples": [
+        "需要帮助",
+        "需要三天"
+      ]
+    },
+    {
+      "hanzi": "自己",
+      "pinyin": "zìjǐ",
+      "pos": "代",
+      "glossEn": "oneself",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:说明拒绝的原因"
+      ],
+      "examples": [
+        "我自己",
+        "他自己"
+      ]
+    },
+    {
+      "hanzi": "方便",
+      "pinyin": "fāngbiàn",
+      "pos": "形",
+      "glossEn": "appropriate",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:礼貌地拒绝别人"
+      ],
+      "examples": [
+        "买东西方便",
+        "现在不方便"
+      ]
+    },
+    {
+      "hanzi": "蛋糕",
+      "pinyin": "dàngāo",
+      "pos": "名",
+      "glossEn": "cake",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "一个蛋糕",
+        "生日蛋糕"
+      ]
+    },
+    {
+      "hanzi": "尝",
+      "pinyin": "cháng",
+      "pos": "动",
+      "glossEn": "taste",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "尝一下",
+        "尝尝"
+      ]
+    },
+    {
+      "hanzi": "考虑",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:礼貌地拒绝别人",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "下次",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:礼貌地拒绝别人",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "忙",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:说明拒绝的原因",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "累",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:说明拒绝的原因",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "安排",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:说明拒绝的原因",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "事",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:说明拒绝的原因",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "以后",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:提出新的建议",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "服务员",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:其他",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "店员",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:其他",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 25,
+    "core": 16,
+    "brainstorm": 0,
+    "extended": 9
+  }
+}

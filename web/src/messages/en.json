@@ -393,7 +393,7 @@
     },
     "auth": {
       "guest": "Playing as guest",
-      "guestHint": "Sign in with Google to save your nickname on this device.",
+      "guestHint": "You can play without signing in. Use Google if you want to save a nickname on this device.",
       "serverOnly": "Login requires server mode.",
       "signIn": "Sign in with Google",
       "signInAlt": "Use another account",

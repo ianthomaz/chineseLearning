@@ -1,0 +1,378 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "bookTitleZh": "新时代汉语口语 初级·下",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 2",
+    "sourcePdf": "level2.pdf",
+    "lesson": 5,
+    "titleZh": "手机付款就可以",
+    "volumeLabel": "初级·下",
+    "pdfPages": {
+      "from": 72,
+      "to": 82,
+      "anchors": {
+        "textVocab": 72,
+        "extensionVocab": 78,
+        "produceSupport": 82
+      }
+    },
+    "importedFrom": "curated/primary-down/lesson-05.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "",
+        "core": [
+          "付款",
+          "方式",
+          "万一",
+          "现金",
+          "假",
+          "直接",
+          "信任",
+          "任何",
+          "设备",
+          "绑",
+          "信息",
+          "仔细",
+          "支付"
+        ],
+        "supplement": [
+          "转账",
+          "刷脸"
+        ]
+      },
+      {
+        "theme": "付款过程",
+        "core": [
+          "角",
+          "二维码"
+        ],
+        "supplement": []
+      },
+      {
+        "theme": "其他",
+        "core": [
+          "嗯",
+          "接着",
+          "另外"
+        ],
+        "supplement": []
+      }
+    ],
+    "expressionPatterns": [
+      "（1）如果用现金付款，需要数钱，太浪费时间。（需要……）",
+      "（2）虽然现金支付也有缺点，但我认为这是最简单、最方便的付款方式。（虽然……，但……）",
+      "（3）用银行卡和手机付款容易不小心花很多钱，因为看不到现金。（容易……）",
+      "（4）现金付款只能当面完成，手机付款即使离得很远，也能完成。（即使……，也……）",
+      "（5） 手机支付需要有手机和网络。如果没有，就没法儿用。另外，如果付款软件有问题，手机支付"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "付款",
+      "pinyin": "fù kuǎn pay",
+      "pos": "",
+      "glossEn": "(a sum of money)",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore",
+        "produceOnly"
+      ],
+      "examples": [
+        "用手机付款",
+        "付房款"
+      ]
+    },
+    {
+      "hanzi": "绑",
+      "pinyin": "bǎng",
+      "pos": "动",
+      "glossEn": "tie",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "bind 把行李绑在行李架上",
+        "绑定银"
+      ]
+    },
+    {
+      "hanzi": "嗯",
+      "pinyin": "èng",
+      "pos": "叹",
+      "glossEn": "yes [expressing agreement]",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "嗯，好的！"
+      ]
+    },
+    {
+      "hanzi": "信息",
+      "pinyin": "xìnxī",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "名",
+      "pinyin": "information",
+      "pos": "",
+      "glossEn": "个人信息",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "填信息"
+      ]
+    },
+    {
+      "hanzi": "仔细",
+      "pinyin": "zǐxì",
+      "pos": "形",
+      "glossEn": "careful",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "仔细点儿",
+        "做作业做得很仔细"
+      ]
+    },
+    {
+      "hanzi": "支付",
+      "pinyin": "zhīfù",
+      "pos": "动",
+      "glossEn": "pay",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "支付学费",
+        "手机支付"
+      ]
+    },
+    {
+      "hanzi": "接着",
+      "pinyin": "jiēzhe",
+      "pos": "副",
+      "glossEn": "after that",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "and then 付完学费，接着付住宿费"
+      ]
+    },
+    {
+      "hanzi": "角",
+      "pinyin": "jiǎo",
+      "pos": "名",
+      "glossEn": "corner",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:付款过程"
+      ],
+      "examples": [
+        "右上角",
+        "汉语角"
+      ]
+    },
+    {
+      "hanzi": "方式",
+      "pinyin": "fāngshì",
+      "pos": "名",
+      "glossEn": "way",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "mode 付款方式"
+      ]
+    },
+    {
+      "hanzi": "二维码",
+      "pinyin": "èrwéimǎ",
+      "pos": "名",
+      "glossEn": "QR code",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:付款过程"
+      ],
+      "examples": [
+        "扫二维码"
+      ]
+    },
+    {
+      "hanzi": "万一",
+      "pinyin": "wànyī",
+      "pos": "连",
+      "glossEn": "what if",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "万一手机没电了怎么办？"
+      ]
+    },
+    {
+      "hanzi": "现金",
+      "pinyin": "xiànjīn",
+      "pos": "名",
+      "glossEn": "cash",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "现金支付"
+      ]
+    },
+    {
+      "hanzi": "另外",
+      "pinyin": "lìngwài",
+      "pos": "连",
+      "glossEn": "in addition",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "besides"
+      ]
+    },
+    {
+      "hanzi": "假",
+      "pinyin": "jiǎ",
+      "pos": "形",
+      "glossEn": "fake",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "假钱",
+        "假花"
+      ]
+    },
+    {
+      "hanzi": "直接",
+      "pinyin": "zhíjiē",
+      "pos": "形",
+      "glossEn": "direct",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "immediate 直接支付",
+        "直接问老师"
+      ]
+    },
+    {
+      "hanzi": "信任",
+      "pinyin": "xìnrèn",
+      "pos": "动",
+      "glossEn": "trust",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "信任朋友"
+      ]
+    },
+    {
+      "hanzi": "任何",
+      "pinyin": "rènhé",
+      "pos": "代",
+      "glossEn": "any",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "任何时候",
+        "任何地方"
+      ]
+    },
+    {
+      "hanzi": "设备",
+      "pinyin": "shèbèi",
+      "pos": "名",
+      "glossEn": "equipment",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore"
+      ],
+      "examples": [
+        "电子设备",
+        "教学设备"
+      ]
+    },
+    {
+      "hanzi": "转账",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "刷脸",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 21,
+    "core": 19,
+    "brainstorm": 0,
+    "extended": 2
+  }
+}

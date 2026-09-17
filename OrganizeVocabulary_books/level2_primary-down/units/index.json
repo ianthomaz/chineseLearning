@@ -1,0 +1,254 @@
+{
+  "bookId": "primary-down",
+  "workdir": "level2_primary-down",
+  "sourcePdf": "level2.pdf",
+  "bookTitleZh": "新时代汉语口语 初级·下",
+  "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 2",
+  "importedAt": "2026-09-11",
+  "source": "curated/ import (see _import_curated_to_workdir.py)",
+  "lessonCount": 16,
+  "totalEntries": 502,
+  "uniqueHanzi": 473,
+  "lessons": [
+    {
+      "lesson": 1,
+      "titleZh": "认识新同学",
+      "file": "lesson-01.json",
+      "pdfPages": {
+        "from": 14,
+        "to": 24,
+        "anchors": {
+          "textVocab": 14,
+          "extensionVocab": 20,
+          "produceSupport": 24
+        }
+      },
+      "entryCount": 27
+    },
+    {
+      "lesson": 2,
+      "titleZh": "住校内还是住校外？",
+      "file": "lesson-02.json",
+      "pdfPages": {
+        "from": 28,
+        "to": 38,
+        "anchors": {
+          "textVocab": 28,
+          "extensionVocab": 34,
+          "produceSupport": 38
+        }
+      },
+      "entryCount": 32
+    },
+    {
+      "lesson": 3,
+      "titleZh": "我每天都吃食堂",
+      "file": "lesson-03.json",
+      "pdfPages": {
+        "from": 43,
+        "to": 53,
+        "anchors": {
+          "textVocab": 43,
+          "extensionVocab": 49,
+          "produceSupport": 53
+        }
+      },
+      "entryCount": 42
+    },
+    {
+      "lesson": 4,
+      "titleZh": "我想借《马可·波罗游记》",
+      "file": "lesson-04.json",
+      "pdfPages": {
+        "from": 58,
+        "to": 67,
+        "anchors": {
+          "textVocab": 58,
+          "extensionVocab": 64,
+          "produceSupport": 67
+        }
+      },
+      "entryCount": 22
+    },
+    {
+      "lesson": 5,
+      "titleZh": "手机付款就可以",
+      "file": "lesson-05.json",
+      "pdfPages": {
+        "from": 72,
+        "to": 82,
+        "anchors": {
+          "textVocab": 72,
+          "extensionVocab": 78,
+          "produceSupport": 82
+        }
+      },
+      "entryCount": 21
+    },
+    {
+      "lesson": 6,
+      "titleZh": "周末去爬长城吧",
+      "file": "lesson-06.json",
+      "pdfPages": {
+        "from": 87,
+        "to": 97,
+        "anchors": {
+          "textVocab": 87,
+          "extensionVocab": 93,
+          "produceSupport": 97
+        }
+      },
+      "entryCount": 40
+    },
+    {
+      "lesson": 7,
+      "titleZh": "要舒适还是要美丽？",
+      "file": "lesson-07.json",
+      "pdfPages": {
+        "from": 103,
+        "to": 113,
+        "anchors": {
+          "textVocab": 103,
+          "extensionVocab": 109,
+          "produceSupport": 113
+        }
+      },
+      "entryCount": 26
+    },
+    {
+      "lesson": 8,
+      "titleZh": "你想加入社团吗？",
+      "file": "lesson-08.json",
+      "pdfPages": {
+        "from": 119,
+        "to": 128,
+        "anchors": {
+          "textVocab": 119,
+          "extensionVocab": 125,
+          "produceSupport": 128
+        }
+      },
+      "entryCount": 40
+    },
+    {
+      "lesson": 9,
+      "titleZh": "我们得了亚军",
+      "file": "lesson-09.json",
+      "pdfPages": {
+        "from": 135,
+        "to": 144,
+        "anchors": {
+          "textVocab": 135,
+          "extensionVocab": 141,
+          "produceSupport": 144
+        }
+      },
+      "entryCount": 44
+    },
+    {
+      "lesson": 10,
+      "titleZh": "参观新农村",
+      "file": "lesson-10.json",
+      "pdfPages": {
+        "from": 150,
+        "to": 159,
+        "anchors": {
+          "textVocab": 150,
+          "extensionVocab": 155,
+          "produceSupport": 159
+        }
+      },
+      "entryCount": 21
+    },
+    {
+      "lesson": 11,
+      "titleZh": "摘下星星送给你",
+      "file": "lesson-11.json",
+      "pdfPages": {
+        "from": 165,
+        "to": 175,
+        "anchors": {
+          "textVocab": 165,
+          "extensionVocab": 170,
+          "produceSupport": 175
+        }
+      },
+      "entryCount": 25
+    },
+    {
+      "lesson": 12,
+      "titleZh": "我坐高铁去扬州",
+      "file": "lesson-12.json",
+      "pdfPages": {
+        "from": 180,
+        "to": 188,
+        "anchors": {
+          "textVocab": 180,
+          "extensionVocab": 185,
+          "produceSupport": 188
+        }
+      },
+      "entryCount": 27
+    },
+    {
+      "lesson": 13,
+      "titleZh": "来我的家乡旅行吧",
+      "file": "lesson-13.json",
+      "pdfPages": {
+        "from": 192,
+        "to": 201,
+        "anchors": {
+          "textVocab": 192,
+          "extensionVocab": 197,
+          "produceSupport": 201
+        }
+      },
+      "entryCount": 38
+    },
+    {
+      "lesson": 14,
+      "titleZh": "晴晴家的四合院",
+      "file": "lesson-14.json",
+      "pdfPages": {
+        "from": 207,
+        "to": 216,
+        "anchors": {
+          "textVocab": 207,
+          "extensionVocab": 212,
+          "produceSupport": 216
+        }
+      },
+      "entryCount": 36
+    },
+    {
+      "lesson": 15,
+      "titleZh": "你知道鉴真吗？",
+      "file": "lesson-15.json",
+      "pdfPages": {
+        "from": 220,
+        "to": 229,
+        "anchors": {
+          "textVocab": 220,
+          "extensionVocab": 225,
+          "produceSupport": 229
+        }
+      },
+      "entryCount": 34
+    },
+    {
+      "lesson": 16,
+      "titleZh": "假期我要去实习",
+      "file": "lesson-16.json",
+      "pdfPages": {
+        "from": 234,
+        "to": 243,
+        "anchors": {
+          "textVocab": 234,
+          "extensionVocab": 239,
+          "produceSupport": 243
+        }
+      },
+      "entryCount": 27
+    }
+  ]
+}

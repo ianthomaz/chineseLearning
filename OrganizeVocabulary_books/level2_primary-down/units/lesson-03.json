@@ -1,0 +1,643 @@
+{
+  "meta": {
+    "bookId": "primary-down",
+    "bookTitleZh": "新时代汉语口语 初级·下",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 2",
+    "sourcePdf": "level2.pdf",
+    "lesson": 3,
+    "titleZh": "我每天都吃食堂",
+    "volumeLabel": "初级·下",
+    "pdfPages": {
+      "from": 43,
+      "to": 53,
+      "anchors": {
+        "textVocab": 43,
+        "extensionVocab": 49,
+        "produceSupport": 53
+      }
+    },
+    "importedFrom": "curated/primary-down/lesson-03.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "做菜的方法",
+        "core": [
+          "炒",
+          "煮",
+          "烤",
+          "生",
+          "酱"
+        ],
+        "supplement": [
+          "煎",
+          "炸",
+          "蒸",
+          "烧烤",
+          "火锅"
+        ]
+      },
+      {
+        "theme": "做菜的材料",
+        "core": [
+          "土豆",
+          "咖喱"
+        ],
+        "supplement": [
+          "辣椒",
+          "蒜",
+          "醋",
+          "糖",
+          "盐",
+          "奶酪",
+          "面粉",
+          "牛奶"
+        ]
+      },
+      {
+        "theme": "菜的",
+        "core": [
+          "味道",
+          "清淡"
+        ],
+        "supplement": [
+          "酸",
+          "甜",
+          "苦",
+          "辣",
+          "咸",
+          "重",
+          "麻辣",
+          "油腻"
+        ]
+      },
+      {
+        "theme": "比较",
+        "core": [
+          "川菜",
+          "特点",
+          "家乡",
+          "材料"
+        ],
+        "supplement": [
+          "做法"
+        ]
+      },
+      {
+        "theme": "其他",
+        "core": [
+          "片",
+          "顿",
+          "哈",
+          "微信",
+          "种类"
+        ],
+        "supplement": []
+      }
+    ],
+    "expressionPatterns": [
+      "（1）我最近太忙了，连周末都吃食堂。（连……都……）",
+      "（2）自己做饭很方便，想吃什么就做什么。（……什么……什么）",
+      "（3）我在中国学汉语，每天都吃中国菜。不过我还是很想吃家乡菜，最想吃咖喱鸡。（不过……）",
+      "（4）广东菜没有川菜那么辣。（A没有B+这么/那么+Adj）",
+      "（5）比起马来菜，我觉得中国菜更清淡一些。（比起A，B更+Adj）"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "炒",
+      "pinyin": "chǎo",
+      "pos": "动",
+      "glossEn": "stir-fry",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:做菜的方法"
+      ],
+      "examples": [
+        "炒菜",
+        "鸡蛋炒饭"
+      ]
+    },
+    {
+      "hanzi": "煮",
+      "pinyin": "zhǔ",
+      "pos": "动",
+      "glossEn": "boil",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:做菜的方法"
+      ],
+      "examples": [
+        "煮饺子",
+        "水煮鱼"
+      ]
+    },
+    {
+      "hanzi": "土豆",
+      "pinyin": "tǔdòu",
+      "pos": "名",
+      "glossEn": "potato",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:做菜的材料"
+      ],
+      "examples": [
+        "烤土豆",
+        "炒土豆片"
+      ]
+    },
+    {
+      "hanzi": "片",
+      "pinyin": "piàn",
+      "pos": "名",
+      "glossEn": "flat, thin piece",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "slice 土豆片",
+        "面包片"
+      ]
+    },
+    {
+      "hanzi": "烤",
+      "pinyin": "kǎo",
+      "pos": "动",
+      "glossEn": "roast",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:做菜的方法"
+      ],
+      "examples": [
+        "bake 烤鱼",
+        "北京烤鸭"
+      ]
+    },
+    {
+      "hanzi": "生",
+      "pinyin": "shēng",
+      "pos": "形",
+      "glossEn": "uncooked",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:做菜的方法"
+      ],
+      "examples": [
+        "raw 生鸡蛋",
+        "生吃西红柿"
+      ]
+    },
+    {
+      "hanzi": "酱",
+      "pinyin": "jiàng",
+      "pos": "名",
+      "glossEn": "sauce",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:做菜的方法"
+      ],
+      "examples": [
+        "jam 西红柿酱",
+        "肉酱",
+        "果酱"
+      ]
+    },
+    {
+      "hanzi": "顿",
+      "pinyin": "dùn",
+      "pos": "量",
+      "glossEn": "[used for the number of behaviors such as eating, beating and scolding] time",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "一顿饭",
+        "好好吃一顿"
+      ]
+    },
+    {
+      "hanzi": "味道",
+      "pinyin": "wèidào",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:菜的",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "名",
+      "pinyin": "flavor",
+      "pos": "",
+      "glossEn": "用微信聊天儿",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ],
+      "examples": [
+        "taste 甜甜的味道",
+        "味道很辣"
+      ]
+    },
+    {
+      "hanzi": "川菜",
+      "pinyin": "chuāncài",
+      "pos": "名",
+      "glossEn": "Sichuan cuisine",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:比较"
+      ],
+      "examples": [
+        "川菜很辣",
+        "爱吃川菜"
+      ]
+    },
+    {
+      "hanzi": "清淡",
+      "pinyin": "qīngdàn",
+      "pos": "形",
+      "glossEn": "(of food) not greasy or strongly flavored",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:菜的"
+      ],
+      "examples": [
+        "味道清淡",
+        "清淡的菜"
+      ]
+    },
+    {
+      "hanzi": "哈",
+      "pinyin": "hā",
+      "pos": "",
+      "glossEn": "拟 声 ha [sound of laughing with the mouth wide open, usually reduplicated] 哈哈，太好玩了！",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "微信",
+      "pinyin": "wēixìn",
+      "pos": "",
+      "glossEn": "",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "特点",
+      "pinyin": "tèdiǎn",
+      "pos": "名",
+      "glossEn": "characteristic",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:比较"
+      ],
+      "examples": [
+        "中国菜的特点"
+      ]
+    },
+    {
+      "hanzi": "家乡",
+      "pinyin": "jiāxiāng",
+      "pos": "名",
+      "glossEn": "hometown",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:比较"
+      ],
+      "examples": [
+        "家乡菜"
+      ]
+    },
+    {
+      "hanzi": "材料",
+      "pinyin": "cáiliào",
+      "pos": "名",
+      "glossEn": "material",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:比较"
+      ],
+      "examples": [
+        "做菜的材料"
+      ]
+    },
+    {
+      "hanzi": "广东",
+      "pinyin": "Guǎngdōng",
+      "pos": "",
+      "glossEn": "a province of China",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ]
+    },
+    {
+      "hanzi": "种类",
+      "pinyin": "zhǒnglèi",
+      "pos": "名",
+      "glossEn": "kind",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "type 种类多",
+        "不同的种类"
+      ]
+    },
+    {
+      "hanzi": "咖喱",
+      "pinyin": "gālí",
+      "pos": "名",
+      "glossEn": "curry",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:做菜的材料"
+      ],
+      "examples": [
+        "咖喱饭",
+        "咖喱鸡"
+      ]
+    },
+    {
+      "hanzi": "煎",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:做菜的方法",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "炸",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:做菜的方法",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "蒸",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:做菜的方法",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "烧烤",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:做菜的方法",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "火锅",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:做菜的方法",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "辣椒",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:做菜的材料",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "蒜",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:做菜的材料",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "醋",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:做菜的材料",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "糖",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:做菜的材料",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "盐",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:做菜的材料",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "奶酪",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:做菜的材料",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "面粉",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:做菜的材料",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "牛奶",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:做菜的材料",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "酸",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:菜的",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "甜",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:菜的",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "苦",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:菜的",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "辣",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:菜的",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "咸",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:菜的",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "重",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:菜的",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "麻辣",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:菜的",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "油腻",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:菜的",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "做法",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:比较",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 42,
+    "core": 20,
+    "brainstorm": 0,
+    "extended": 22
+  }
+}

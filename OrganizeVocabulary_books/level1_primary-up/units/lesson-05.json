@@ -1,0 +1,523 @@
+{
+  "meta": {
+    "bookId": "primary-up",
+    "bookTitleZh": "新时代汉语口语 初级·上",
+    "bookTitleEn": "New Era Chinese Spoken Language — Elementary, Volume 1",
+    "sourcePdf": "Level1.pdf",
+    "lesson": 5,
+    "titleZh": "武汉是个好地方",
+    "volumeLabel": "初级·上",
+    "pdfPages": {
+      "from": 65,
+      "to": 72,
+      "anchors": {
+        "textVocab": 65,
+        "extensionVocab": 69,
+        "produceSupport": 72
+      }
+    },
+    "importedFrom": "curated/primary-up/lesson-05.json",
+    "curatedAt": "2026-07-10",
+    "reviewedAt": "2026-07-10",
+    "importedAt": "2026-09-11",
+    "notes": "Imported from curated byLessonSource; priority: text=core, extension=brainstorm, produce=core/extended."
+  },
+  "produce": {
+    "groups": [
+      {
+        "theme": "和天气有关",
+        "core": [
+          "秋天",
+          "舒服",
+          "季节"
+        ],
+        "supplement": [
+          "湿",
+          "冷",
+          "下雨",
+          "下雪",
+          "刮风"
+        ]
+      },
+      {
+        "theme": "和景色有关",
+        "core": [
+          "历史",
+          "城市",
+          "景色",
+          "地方",
+          "熊猫",
+          "山",
+          "镜子",
+          "天池"
+        ],
+        "supplement": [
+          "天池"
+        ]
+      },
+      {
+        "theme": "和食物有关",
+        "core": [
+          "热干面",
+          "小吃",
+          "辣"
+        ],
+        "supplement": [
+          "新鲜",
+          "各种各样"
+        ]
+      },
+      {
+        "theme": "和人有关",
+        "core": [
+          "热情",
+          "人山人海"
+        ],
+        "supplement": [
+          "友好",
+          "忙"
+        ]
+      },
+      {
+        "theme": "其他",
+        "core": [
+          "放假",
+          "比如"
+        ],
+        "supplement": []
+      }
+    ],
+    "expressionPatterns": [
+      "天气……，经常……",
+      "……，就是人太多了。",
+      "那儿人山人海，看不见……",
+      "我不喜欢吃辣的/……",
+      "吃完……不舒服。",
+      "……",
+      "……人很热情。",
+      "……人喜欢……",
+      "什么都好吃，特别是……",
+      "好吃的很多，比如……",
+      "我最喜欢吃……",
+      "景色很……",
+      "最有名的地方是……",
+      "它的历史……",
+      "那儿有……",
+      "在那儿，能看到……",
+      "天气……",
+      "……是最舒服/漂亮的季节。",
+      "我喜欢……╱",
+      "我不太喜欢……"
+    ]
+  },
+  "entries": [
+    {
+      "hanzi": "放假",
+      "pinyin": "fàngjià",
+      "pos": "动",
+      "glossEn": "have a holiday",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ],
+      "examples": [
+        "放假的时候",
+        "放三天假"
+      ]
+    },
+    {
+      "hanzi": "历史",
+      "pinyin": "lìshǐ",
+      "pos": "名",
+      "glossEn": "history",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:和景色有关"
+      ],
+      "examples": [
+        "五千年的历史",
+        "学习历史"
+      ]
+    },
+    {
+      "hanzi": "城市",
+      "pinyin": "chéngshì",
+      "pos": "名",
+      "glossEn": "city",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:和景色有关"
+      ],
+      "examples": [
+        "有名的城市",
+        "中国的城市"
+      ]
+    },
+    {
+      "hanzi": "景色",
+      "pinyin": "jǐngsè",
+      "pos": "名",
+      "glossEn": "scenery",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:和景色有关"
+      ],
+      "examples": [
+        "城市的景色",
+        "景色漂亮"
+      ]
+    },
+    {
+      "hanzi": "秋天",
+      "pinyin": "qiūtiān",
+      "pos": "名",
+      "glossEn": "autumn",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:和天气有关"
+      ],
+      "examples": [
+        "fall 北京的秋天很漂亮。"
+      ]
+    },
+    {
+      "hanzi": "舒服",
+      "pinyin": "shūfu",
+      "pos": "形",
+      "glossEn": "comfortable",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:和天气有关"
+      ],
+      "examples": [
+        "觉得舒服",
+        "很舒服"
+      ]
+    },
+    {
+      "hanzi": "季节",
+      "pinyin": "jìjié",
+      "pos": "名",
+      "glossEn": "season",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:和天气有关"
+      ],
+      "examples": [
+        "四个季节",
+        "舒服的季节"
+      ]
+    },
+    {
+      "hanzi": "热情",
+      "pinyin": "rèqíng",
+      "pos": "形",
+      "glossEn": "warm",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:和人有关"
+      ],
+      "examples": [
+        "enthusiastic 热情的人",
+        "对我很热情"
+      ]
+    },
+    {
+      "hanzi": "热干面",
+      "pinyin": "règānmiàn",
+      "pos": "名",
+      "glossEn": "hot noodles with sesame paste",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:和食物有关"
+      ],
+      "examples": [
+        "一碗热干面",
+        "吃热干面"
+      ]
+    },
+    {
+      "hanzi": "小吃",
+      "pinyin": "xiǎochī",
+      "pos": "名",
+      "glossEn": "snack",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:和食物有关"
+      ],
+      "examples": [
+        "有名的小吃",
+        "北京小吃"
+      ]
+    },
+    {
+      "hanzi": "地方",
+      "pinyin": "dìfang",
+      "pos": "名",
+      "glossEn": "place",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:和景色有关"
+      ],
+      "examples": [
+        "一个地方",
+        "好地方",
+        "有名的地方"
+      ]
+    },
+    {
+      "hanzi": "人山人海",
+      "pinyin": "rénshānrénhǎi",
+      "pos": "",
+      "glossEn": "huge crowds of people",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:和人有关",
+        "produceOnly"
+      ],
+      "examples": [
+        "这儿人山人海。"
+      ]
+    },
+    {
+      "hanzi": "比如",
+      "pinyin": "bǐrú",
+      "pos": "动",
+      "glossEn": "take for example中国大城市很多，比如北京。",
+      "priority": "core",
+      "sources": [
+        "textVocab",
+        "produceCore:其他"
+      ]
+    },
+    {
+      "hanzi": "武汉",
+      "pinyin": "Wǔhàn",
+      "pos": "专有",
+      "glossEn": "Wuhan [capital city of Hubei Province]",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ]
+    },
+    {
+      "hanzi": "黄鹤楼",
+      "pinyin": "Huánghè",
+      "pos": "专有",
+      "glossEn": "Lóu Yellow Crane Tower [a landmark in Wuhan]",
+      "priority": "core",
+      "sources": [
+        "textVocab"
+      ]
+    },
+    {
+      "hanzi": "熊猫",
+      "pinyin": "xióngmāo",
+      "pos": "名",
+      "glossEn": "panda",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:和景色有关"
+      ],
+      "examples": [
+        "一只熊猫",
+        "大熊猫"
+      ]
+    },
+    {
+      "hanzi": "辣",
+      "pinyin": "là",
+      "pos": "形",
+      "glossEn": "spicy",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:和食物有关"
+      ],
+      "examples": [
+        "太辣了",
+        "辣的菜"
+      ]
+    },
+    {
+      "hanzi": "山",
+      "pinyin": "shān",
+      "pos": "名",
+      "glossEn": "mountain",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:和景色有关"
+      ],
+      "examples": [
+        "雪山",
+        "高山"
+      ]
+    },
+    {
+      "hanzi": "镜子",
+      "pinyin": "jìngzi",
+      "pos": "名",
+      "glossEn": "mirror",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:和景色有关"
+      ],
+      "examples": [
+        "照镜子",
+        "一面镜子"
+      ]
+    },
+    {
+      "hanzi": "天池",
+      "pinyin": "tiānchí",
+      "pos": "名",
+      "glossEn": "Heavenly Lake, name of any of the lakes on the top of high mountains or plateaus especially in China, here refers to the Heavenly Lake on top of the Tianshan Mountain",
+      "priority": "core",
+      "sources": [
+        "extensionVocab",
+        "produceCore:和景色有关",
+        "produceSupplement:和景色有关"
+      ]
+    },
+    {
+      "hanzi": "成都",
+      "pinyin": "Chéngdū",
+      "pos": "专有",
+      "glossEn": "Chengdu [capital city of Sichuan Province]",
+      "priority": "brainstorm",
+      "sources": [
+        "extensionVocab"
+      ]
+    },
+    {
+      "hanzi": "新疆",
+      "pinyin": "Xīnjiāng",
+      "pos": "专有",
+      "glossEn": "Xinjiang Uygur Autonomous Region",
+      "priority": "brainstorm",
+      "sources": [
+        "extensionVocab"
+      ]
+    },
+    {
+      "hanzi": "湿",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:和天气有关",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "冷",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:和天气有关",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "下雨",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:和天气有关",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "下雪",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:和天气有关",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "刮风",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:和天气有关",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "新鲜",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:和食物有关",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "各种各样",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:和食物有关",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "友好",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:和人有关",
+        "produceOnly"
+      ]
+    },
+    {
+      "hanzi": "忙",
+      "pinyin": "",
+      "pos": "",
+      "glossEn": "",
+      "priority": "extended",
+      "sources": [
+        "produceSupplement:和人有关",
+        "produceOnly"
+      ]
+    }
+  ],
+  "stats": {
+    "entryCount": 31,
+    "core": 20,
+    "brainstorm": 2,
+    "extended": 9
+  }
+}
