@@ -23,7 +23,7 @@ React Server Components que acompanha a navegação SPA. Os dois incluem, em tex
 | 1 | `/phrase-game` | **656 kB** de HTML, 538 kB de RSC | `page.tsx` passava as 616 frases inteiras como props a um client component. O ecrã de setup não lê nenhuma |
 | 2 | `/`, `/review`, `/vocabulary`, `/grammar` | ~127 kB de HTML e ~92 kB de RSC **cada** | Passavam `ContentBlock[]` completo (narrativa, vocabulário, diálogos, glosas em 3 línguas) para renderizar id, título e uma contagem |
 | 3 | `/praticar` | 218 kB de HTML | Carrega a biblioteca de prática inteira **antes** do `LoginGate` — quem não tem sessão descarrega-a e vê um cartão de login |
-| 4 | `/dialogues` | 179 kB de HTML | `getGlobalDialogueSections()` envia todos os diálogos globais para o índice |
+| 4 | `/dialogues` | 179 kB de HTML | ~~Mesma causa que 2~~ — **medido: não é.** Ver §3 |
 | 5 | `/ktv` | rota dinâmica (`ƒ`) | O gate de admin obrigava a `force-dynamic` só para ler o email da sessão |
 | 6 | Banco de frases (BD) | — | `getAllPhrases()` relia e reparseava 616 linhas de SQLite em cada pedido |
 
@@ -43,6 +43,12 @@ banco continua a ir como props — `page.tsx` decide pelo `NEXT_STATIC_EXPORT`.
 [`blocks-types.ts`](../web/src/lib/blocks-types.ts); as páginas de índice usam
 `getBlockIndexEntries()`.
 
+**3 — `/praticar` só carrega a biblioteca com sessão.**
+`getSessionUser()` antes do `loadPracticeLibrary()`; sem sessão vai uma
+biblioteca vazia. A rota deixa de ser pré-renderizada (`○` → `ƒ`), o que é
+correcto para uma página cujo conteúdo depende de quem pergunta.
+Convidado: **218 kB → 16 kB** de HTML (5,4 kB gzipado).
+
 **5 — `/ktv` público** deixou de precisar de sessão e passou a estático (`○`).
 
 **6 — `getAllPhrases()` memoizado** por processo.
@@ -56,6 +62,7 @@ banco continua a ir como props — `page.tsx` decide pelo `NEXT_STATIC_EXPORT`.
 | `/vocabulary` | 126 687 | **34 442** |
 | `/review` | 126 334 | **34 089** |
 | `/grammar` | 126 305 | **34 060** |
+| `/praticar` (convidado) | 218 193 | **16 327** |
 
 Somando HTML + RSC das 26 páginas presentes nas duas builds:
 **2 891 345 → 1 030 294 bytes (−64%)**.
@@ -63,34 +70,37 @@ Somando HTML + RSC das 26 páginas presentes nas duas builds:
 O tamanho do JS não muda de forma significativa (First Load JS continua ~104 kB
 partilhados) — o problema nunca foi o bundle, era o conteúdo embebido no HTML.
 
-## 3. Por corrigir
+## 3. `/dialogues` — medido, e **não** é o mesmo problema
 
-### `/praticar` — 218 kB para quem não tem sessão (gargalo 3)
+A primeira versão deste documento assumiu que `/dialogues` era outro caso do
+gargalo 2. Medindo antes de mexer, não é: a página **mostra mesmo tudo**.
+`DialoguesIndexContent` renderiza as 46 conversas completas (160 turnos) e o
+filtro por categoria apenas esconde secções do lado do cliente.
 
-`page.tsx` faz `await loadPracticeLibrary()` e só depois envolve em `LoginGate`.
-Como `LoginGate` é um client component, os `children` já foram renderizados no
-servidor: a biblioteca vai no payload mesmo para quem vê o cartão de login.
+| | Bytes |
+|---|---:|
+| Dados dos diálogos (JSON) | 37 066 |
+| ... só num idioma (sem en/es) | 24 670 |
+| ... só títulos + contagem | 1 889 |
+| HTML renderizado da página | ~179 000 |
+| **Na rede, gzipado** | **~31 000** |
 
-Correcção possível — carregar a biblioteca só quando há sessão:
+Ou seja: os 179 kB são sobretudo **markup dos 160 turnos que a página mostra de
+propósito**, não dados a mais. 31 kB na rede para esse conteúdo é razoável.
 
-```tsx
-const user = await getSessionUser();
-const library = user
-  ? await loadPracticeLibrary()
-  : { categories: [], contextDecks: [], contextDeckMeta: [] };
-```
+O que sobraria para cortar:
 
-**Porque não está feito:** `getSessionUser()` lê cookies, o que torna a rota
-dinâmica (deixa de ser pré-renderizada) e exige um guard para o export estático,
-onde `cookies()` não é suportado. É uma mudança com um trade-off real —
-convidados poupam 180 kB, quem está logado passa a pagar SSR por pedido — e
-merece ser decidida, não feita de passagem.
+- As traduções vão nos três idiomas (37 kB vs 24,7 kB num só) porque a troca de
+  idioma é do lado do cliente — é assim em todo o site, não é específico desta
+  página.
+- Reduzir a sério exigiria mudar a UX (índice de secções + carregar uma
+  conversa de cada vez, ou secções colapsadas). É uma decisão de produto, não
+  uma correcção de performance.
 
-### `/dialogues` — 179 kB (gargalo 4)
+**Conclusão: deixar como está.** Registado aqui para não voltar a ser
+investigado do zero.
 
-Mesmo padrão do gargalo 2: o índice provavelmente só precisa de título e
-contagem por secção. Verificar o que `DialoguesIndexContent` lê de facto antes de
-projectar.
+## 4. Por corrigir
 
 ### Outros
 
