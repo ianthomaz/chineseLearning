@@ -1,5 +1,5 @@
 /**
- * Practice library — one SQL source for site /praticar and app pack.
+ * Practice library — one SQL source for site /practice and app pack.
  * Tables: lexico_* + context_decks (not consolidado/blocks, not APP lexico.json).
  */
 import "server-only";

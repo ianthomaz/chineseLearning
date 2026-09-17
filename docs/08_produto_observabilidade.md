@@ -18,7 +18,7 @@ find .next/server/app -maxdepth 3 \( -name '*.html' -o -name '*.rsc' \) \
 |-----|--------|
 | Banco frases via `GET /api/phrase-game/bank` | `/phrase-game` HTML 656 kB → **22 kB** |
 | `BlockIndexEntry` nos índices | `/`, `/review`, etc. ~127 kB → **~34 kB** |
-| `/praticar` só carrega biblioteca com sessão | convidado 218 kB → **16 kB** |
+| `/practice` só carrega biblioteca com sessão | convidado 218 kB → **16 kB** |
 | `/ktv` estático público | sem `force-dynamic` |
 | `getAllPhrases()` memoizado | menos I/O SQLite |
 

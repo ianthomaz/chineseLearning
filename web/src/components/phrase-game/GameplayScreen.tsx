@@ -17,6 +17,18 @@ import { Board, type BoardValue } from "./Board";
 import { ProgressDots } from "./ProgressDots";
 import { SpeakButton } from "@/components/ui/SpeakButton";
 import { HelpIconButton } from "./HelpIconButton";
+import { MaterialIcon } from "./MaterialIcon";
+
+/** Shared look for View + Listen in the prompt card (not the pill helps). */
+const PROMPT_ACTION_CLASS =
+  "inline-flex min-h-[44px] shrink-0 items-center justify-center gap-2 rounded-xl border-2 px-3.5 py-2 text-sm font-semibold transition-colors hover:opacity-90 active:scale-[0.98]";
+
+const PROMPT_ACTION_STYLE = {
+  borderColor: "var(--accent)",
+  color: "var(--accent)",
+  backgroundColor: "rgba(45,90,140,0.08)",
+  fontFamily: "var(--font-sans)",
+} as const;
 
 type Props = {
   item: RoundItem;
@@ -59,7 +71,7 @@ export function GameplayScreen({
   );
 
   const [board, setBoard] = useState<BoardValue>({ bank: derived.bank, answer: [] });
-  const [reveal, setReveal] = useState({ fullPrompt: false, pinyin: false, translation: false });
+  const [reveal, setReveal] = useState({ pinyin: false, translation: false });
   const [removedExtras, setRemovedExtras] = useState(false);
   const [submitted, setSubmitted] = useState<boolean | null>(null);
   /** The phrase is settled: no more retries, the score has been reported. */
@@ -183,30 +195,77 @@ export function GameplayScreen({
   const disabled = submitted !== null;
   const answerState = submitted === null ? "neutral" : submitted ? "correct" : "wrong";
   const canSubmit = board.answer.length > 0 && submitted === null;
-  const showPrompt = settings.showNativePrompt || reveal.fullPrompt;
+  const showPrompt = settings.showNativePrompt;
   const promptText = localizedPrompt(phrase, locale);
   const boardReveal =
     submitted !== null
       ? { pinyin: true, translation: submitted === true ? true : reveal.translation }
       : { pinyin: reveal.pinyin, translation: reveal.translation };
 
+  function toggleViewTranslation() {
+    onSettingsChange({ ...settings, showNativePrompt: !settings.showNativePrompt });
+  }
+
   return (
-    <div className="space-y-6">
-      <div className="flex items-center justify-between">
+    <div className="space-y-5 sm:space-y-6">
+      <div className="flex items-center justify-between gap-3">
         <ProgressDots results={results} currentIndex={index} />
-        <span className="text-xs text-ink/40" style={{ fontFamily: "var(--font-sans)" }}>
+        <span className="shrink-0 text-xs text-ink/40" style={{ fontFamily: "var(--font-sans)" }}>
           {t("phraseGame.progress", { current: index + 1, total })}
         </span>
       </div>
 
-      {showPrompt ? (
-        <div>
-          <p className="mb-1 text-xs font-medium uppercase tracking-wide text-ink/40">
+      <section
+        className="space-y-3 rounded-2xl border px-4 py-3.5 sm:px-5"
+        style={{ borderColor: "var(--border)" }}
+        aria-label={t("phraseGame.promptLabel")}
+      >
+        <div className="min-w-0">
+          <p
+            className="mb-1 text-xs font-medium uppercase tracking-wide text-ink/40"
+            style={{ fontFamily: "var(--font-sans)" }}
+          >
             {t("phraseGame.promptLabel")}
           </p>
-          <p className="font-display text-xl text-ink sm:text-2xl">{promptText}</p>
+          {showPrompt ? (
+            <p className="font-display text-xl leading-snug text-ink sm:text-2xl">{promptText}</p>
+          ) : null}
         </div>
-      ) : null}
+
+        {submitted === null ? (
+          <div className="flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={toggleViewTranslation}
+              aria-pressed={showPrompt}
+              aria-label={t("phraseGame.help.viewTranslation")}
+              title={t("phraseGame.help.viewTranslation")}
+              className={PROMPT_ACTION_CLASS}
+              style={{
+                ...PROMPT_ACTION_STYLE,
+                opacity: showPrompt ? 1 : 0.72,
+                backgroundColor: showPrompt
+                  ? "rgba(45,90,140,0.08)"
+                  : "transparent",
+              }}
+            >
+              <MaterialIcon
+                name={showPrompt ? "visibility" : "visibility_off"}
+                className="text-xl"
+                filled={showPrompt}
+              />
+              <span className="hidden sm:inline">{t("phraseGame.help.viewTranslation")}</span>
+            </button>
+            <SpeakButton
+              text={phrase.hanzi}
+              words={phrase.tokens.map((tok) => tok.palavra)}
+              label={t("phraseGame.help.listen")}
+              variant="active"
+              onPlay={() => logHelp("listen")}
+            />
+          </div>
+        ) : null}
+      </section>
 
       <Board
         value={board}
@@ -215,16 +274,6 @@ export function GameplayScreen({
         reveal={boardReveal}
         disabled={disabled}
         answerState={answerState}
-        bankAction={
-          submitted === null ? (
-            <SpeakButton
-              text={phrase.hanzi}
-              label={t("phraseGame.help.listen")}
-              variant="active"
-              onPlay={() => logHelp("listen")}
-            />
-          ) : null
-        }
         labels={{
           bank: t("phraseGame.bankLabel"),
           answer: t("phraseGame.answerLabel"),
@@ -234,63 +283,61 @@ export function GameplayScreen({
         }}
       />
 
-      {/* In-phrase help + mid-round display toggles */}
       {submitted === null ? (
-        <div className="flex flex-wrap gap-2">
-          {!showPrompt ? (
-            <HelpIconButton
-              icon="subtitles"
-              label={t("phraseGame.help.showFullPrompt")}
-              onClick={() => {
-                setReveal((r) => ({ ...r, fullPrompt: true }));
-                logHelp("showFullPrompt");
-              }}
-            />
-          ) : null}
-          {hasExtras && !removedExtras ? (
-            <HelpIconButton
-              icon="delete_sweep"
-              label={t("phraseGame.help.removeExtras")}
-              onClick={handleRemoveExtras}
-            />
-          ) : null}
-          <HelpIconButton
-            icon="abc"
-            label={t("phraseGame.help.showPinyin")}
-            onClick={() => {
-              setReveal((r) => ({ ...r, pinyin: true }));
-              logHelp("showPinyin");
-            }}
-          />
-          <HelpIconButton
-            icon="translate"
-            label={t("phraseGame.help.showTranslation")}
-            onClick={() => {
-              setReveal((r) => ({ ...r, translation: true }));
-              logHelp("showTranslation");
-            }}
-          />
-          <HelpIconButton
-            icon="extension"
-            label={t("phraseGame.help.nextPiece")}
-            onClick={handleNextPiece}
-          />
+        <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
+          <button
+            type="button"
+            onClick={handleSubmit}
+            disabled={!canSubmit}
+            className="w-full rounded-xl px-6 py-3.5 text-sm font-semibold text-white transition-opacity disabled:opacity-40 sm:w-auto sm:min-w-[8rem]"
+            style={{ backgroundColor: "var(--accent)" }}
+          >
+            {t("phraseGame.submit")}
+          </button>
         </div>
       ) : null}
 
       {submitted === null ? (
-        <label className="flex min-h-[44px] cursor-pointer items-center gap-2 text-xs text-ink/55">
-          <input
-            type="checkbox"
-            checked={settings.showNativePrompt}
-            onChange={(e) => onSettingsChange({ ...settings, showNativePrompt: e.target.checked })}
-            className="h-4 w-4 rounded border-ink/30 accent-accent"
-          />
-          {t("phraseGame.extra.showNativePrompt")}
-        </label>
+        <div className="space-y-2">
+          <p
+            className="text-xs font-medium uppercase tracking-wide text-ink/40"
+            style={{ fontFamily: "var(--font-sans)" }}
+          >
+            {t("phraseGame.extraOptions")}
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {hasExtras && !removedExtras ? (
+              <HelpIconButton
+                icon="delete_sweep"
+                label={t("phraseGame.help.removeExtras")}
+                onClick={handleRemoveExtras}
+              />
+            ) : null}
+            <HelpIconButton
+              icon="abc"
+              label={t("phraseGame.help.showPinyin")}
+              onClick={() => {
+                setReveal((r) => ({ ...r, pinyin: true }));
+                logHelp("showPinyin");
+              }}
+            />
+            <HelpIconButton
+              icon="translate"
+              label={t("phraseGame.help.showTranslation")}
+              onClick={() => {
+                setReveal((r) => ({ ...r, translation: true }));
+                logHelp("showTranslation");
+              }}
+            />
+            <HelpIconButton
+              icon="extension"
+              label={t("phraseGame.help.nextPiece")}
+              onClick={handleNextPiece}
+            />
+          </div>
+        </div>
       ) : null}
 
-      {/* Result feedback */}
       {submitted !== null ? (
         <div
           className="rounded-2xl border p-4"
@@ -306,7 +353,7 @@ export function GameplayScreen({
             <p className="mt-1 text-sm text-ink/70">{t("phraseGame.retryHint")}</p>
           ) : (
             <div className="mt-2 space-y-1 text-sm text-ink/70">
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 {submitted ? (
                   <span className="font-hanzi text-lg text-ink">{phrase.hanzi}</span>
                 ) : (
@@ -315,7 +362,11 @@ export function GameplayScreen({
                     <span className="font-hanzi text-lg text-ink">{phrase.hanzi}</span>
                   </span>
                 )}
-                <SpeakButton text={phrase.hanzi} label={t("phraseGame.speak")} />
+                <SpeakButton
+                  text={phrase.hanzi}
+                  words={phrase.tokens.map((tok) => tok.palavra)}
+                  label={t("phraseGame.speak")}
+                />
               </div>
               {phrase.pinyin ? <p>{phrase.pinyin}</p> : null}
               <p>{promptText}</p>
@@ -324,48 +375,39 @@ export function GameplayScreen({
         </div>
       ) : null}
 
-      {/* Actions */}
-      <div className="flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
-        {submitted === null ? (
-          <button
-            type="button"
-            onClick={handleSubmit}
-            disabled={!canSubmit}
-            className="w-full rounded-xl px-6 py-3 text-sm font-semibold text-white transition-opacity disabled:opacity-40 sm:w-auto"
-            style={{ backgroundColor: "var(--accent)" }}
-          >
-            {t("phraseGame.submit")}
-          </button>
-        ) : canRetry ? (
-          <>
+      {submitted !== null ? (
+        <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
+          {canRetry ? (
+            <>
+              <button
+                type="button"
+                onClick={() => finalize(false, attemptString(board.answer))}
+                className="w-full rounded-xl border px-5 py-3.5 text-sm font-medium text-ink/70 hover:bg-ink/5 sm:w-auto"
+                style={{ borderColor: "var(--border)" }}
+              >
+                {t("phraseGame.seeAnswer")}
+              </button>
+              <button
+                type="button"
+                onClick={handleRetry}
+                className="w-full rounded-xl px-6 py-3.5 text-sm font-semibold text-white sm:w-auto sm:min-w-[8rem]"
+                style={{ backgroundColor: "var(--accent)" }}
+              >
+                {t("phraseGame.retry")}
+              </button>
+            </>
+          ) : (
             <button
               type="button"
-              onClick={() => finalize(false, attemptString(board.answer))}
-              className="w-full rounded-xl border px-5 py-3 text-sm font-medium text-ink/70 hover:bg-ink/5 sm:w-auto"
-              style={{ borderColor: "var(--border)" }}
-            >
-              {t("phraseGame.seeAnswer")}
-            </button>
-            <button
-              type="button"
-              onClick={handleRetry}
-              className="w-full rounded-xl px-6 py-3 text-sm font-semibold text-white sm:w-auto"
+              onClick={onNext}
+              className="w-full rounded-xl px-6 py-3.5 text-sm font-semibold text-white sm:w-auto sm:min-w-[8rem]"
               style={{ backgroundColor: "var(--accent)" }}
             >
-              {t("phraseGame.retry")}
+              {isLast ? t("phraseGame.finish") : t("phraseGame.next")}
             </button>
-          </>
-        ) : (
-          <button
-            type="button"
-            onClick={onNext}
-            className="w-full rounded-xl px-6 py-3 text-sm font-semibold text-white sm:w-auto"
-            style={{ backgroundColor: "var(--accent)" }}
-          >
-            {isLast ? t("phraseGame.finish") : t("phraseGame.next")}
-          </button>
-        )}
-      </div>
+          )}
+        </div>
+      ) : null}
     </div>
   );
 }

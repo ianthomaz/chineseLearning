@@ -17,16 +17,20 @@ const AUTH_ENABLED = process.env.NEXT_PUBLIC_AUTH_ENABLED !== "0";
 type NavTab = {
   href: string;
   key: string;
-  /** Renders as a call to action rather than a plain tab. */
-  featured?: boolean;
 };
+
+const NAV_LINK_INACTIVE_CLASS =
+  "flex min-h-[44px] items-center rounded-full px-3 text-sm text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink";
+
+const NAV_LINK_ACTIVE_CLASS =
+  "flex min-h-[44px] items-center rounded-full px-3 text-sm font-medium text-white transition-colors";
 
 /**
  * Primary bar: phrase game + quiz. Everything else lives in the overflow menu
  * so desktop stays scannable (Phrases · Quiz · Sign in · ☰).
  */
 const PRIMARY_NAV_TABS: readonly NavTab[] = [
-  { href: "/phrase-game", key: "phraseGame", featured: true },
+  { href: "/phrase-game", key: "phraseGame" },
   { href: "/gamification", key: "gamification" },
 ];
 
@@ -34,7 +38,7 @@ const NAV_GROUPS: ReadonlyArray<{ key: "play" | "study"; tabs: readonly NavTab[]
   {
     key: "play",
     tabs: [
-      { href: "/praticar", key: "tutor" },
+      { href: "/practice", key: "tutor" },
       { href: "/ktv", key: "ktv" },
     ],
   },
@@ -55,17 +59,15 @@ const OVERFLOW_TABS: readonly NavTab[] = NAV_GROUPS.flatMap((g) => g.tabs);
 /** Paths that keep the Prática tab highlighted (hub + sub-flows). */
 function isPracticePath(pathname: string): boolean {
   return (
-    pathname === "/praticar" ||
-    pathname.startsWith("/praticar/") ||
+    pathname === "/practice" ||
+    pathname.startsWith("/practice/") ||
     pathname === "/tutor" ||
-    pathname.startsWith("/tutor/") ||
-    pathname === "/randomhanzi" ||
-    pathname.startsWith("/randomhanzi/")
+    pathname.startsWith("/tutor/")
   );
 }
 
 function isTabActive(tab: NavTab, pathname: string): boolean {
-  if (tab.href === "/praticar") return isPracticePath(pathname);
+  if (tab.href === "/practice") return isPracticePath(pathname);
   return pathname === tab.href || pathname.startsWith(`${tab.href}/`);
 }
 
@@ -77,28 +79,17 @@ const CURATOR_TABS: readonly NavTab[] = [
 type Variant = "desktop" | "mobile";
 
 /** Shared tab styling so desktop and mobile stay in step. */
-function tabClassName(variant: Variant, active: boolean, featured = false): string {
+function tabClassName(variant: Variant, active: boolean): string {
   if (variant === "desktop") {
-    if (active)
-      return "flex min-h-[44px] items-center rounded-full px-3 text-sm font-medium text-white transition-colors";
-    if (featured)
-      return "flex min-h-[44px] items-center rounded-full px-3 text-sm font-semibold transition-colors hover:brightness-95";
-    return "flex min-h-[44px] items-center rounded-full px-3 text-sm text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink";
+    return active ? NAV_LINK_ACTIVE_CLASS : NAV_LINK_INACTIVE_CLASS;
   }
   if (active) return "rounded-xl px-4 py-3.5 text-base font-medium text-white";
-  if (featured) return "rounded-xl px-4 py-3.5 text-base font-semibold";
   return "rounded-xl px-4 py-3.5 text-base text-ink/75 transition-colors hover:bg-ink/5";
 }
 
-function tabStyle(active: boolean, featured = false): React.CSSProperties {
+function tabStyle(active: boolean): React.CSSProperties {
   const base = { fontFamily: "var(--font-sans)" };
   if (active) return { ...base, backgroundColor: "var(--accent)" };
-  if (featured)
-    return {
-      ...base,
-      color: "var(--cat-violet)",
-      backgroundColor: "color-mix(in srgb, var(--cat-violet) 12%, transparent)",
-    };
   return base;
 }
 
@@ -128,10 +119,9 @@ function NavTabLink({
         });
         onNavigate?.();
       }}
-      className={tabClassName(variant, active, tab.featured)}
-      style={tabStyle(active, tab.featured)}
+      className={tabClassName(variant, active)}
+      style={tabStyle(active)}
     >
-      {tab.featured && !active ? <span className="mr-1.5 font-hanzi">拼</span> : null}
       {t(`nav.${tab.key}`)}
     </Link>
   );

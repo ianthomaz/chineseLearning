@@ -69,7 +69,7 @@ const homeGridCards: ReadonlyArray<NavGridCard> = [
     descKey: "home.modeQuizDesc",
   },
   {
-    href: "/praticar",
+    href: "/practice",
     modeKey: "tutor",
     hanzi: "练",
     color: "var(--cat-orange)",
@@ -94,20 +94,11 @@ export function HomeContent({ blocks }: Props) {
   return (
     <main className="mx-auto w-full max-w-5xl px-4 pb-[max(6rem,env(safe-area-inset-bottom,0px))] sm:px-6 sm:pb-24">
       <section className="py-10 sm:py-16 md:py-20">
-        <p
-          className="mb-4 text-xs font-medium uppercase tracking-widest"
-          style={{ color: "var(--accent)", fontFamily: "var(--font-sans)" }}
-        >
-          {t("home.kicker")}
-        </p>
         <h1 className="font-display text-3xl font-medium leading-tight tracking-tight text-ink sm:text-4xl md:text-5xl">
           {t("home.title1")}
           <br />
           <span className="text-ink/40">{t("home.title2")}</span>
         </h1>
-        <p className="mt-5 max-w-lg text-base leading-relaxed text-ink/60 sm:text-lg">
-          {t("home.blurb")}
-        </p>
       </section>
 
       <section

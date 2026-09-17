@@ -34,7 +34,7 @@ Site Next.js em **`web/`** · produção **`https://learnchinese.today/`**
 ## Visão rápida
 
 - **Estudo:** `/review`, `/vocabulary`, `/grammar`, `/dialogues`, `/visuals`
-- **Prática:** `/phrase-game` (sem login), `/praticar` + `/tutor` (login), `/gamification` (login), `/ktv`
+- **Prática:** `/phrase-game` (sem login), `/practice` + `/tutor` (login), `/gamification` (login), `/ktv`
 - **Tutor:** `POST /api/chat` → `/edu/chat` — só com `next start` (não no export estático)
 - **Conteúdo jogo:** `FRASES_GAME/curated/` → build → SQLite
 - **Contratos LLM completos:** [`connectLLM/`](../connectLLM/README.md)

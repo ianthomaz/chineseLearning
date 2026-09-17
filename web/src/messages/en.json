@@ -27,7 +27,7 @@
     "appearance": "Appearance",
     "phraseGame": "Phrases",
     "authSignIn": "Sign in",
-    "authSignInHint": "Sign in with Google — optional, saves your nickname",
+    "authSignInHint": "Sign in with Google (optional, saves your nickname)",
     "authSignOut": "Sign out",
     "authSignedIn": "Account",
     "registerClass": "Log lesson",
@@ -79,20 +79,18 @@
     "translationDesc": "Meaning column in tables and, on the dialogues page, under each line; in review mini-dialogues, use the icon next to each line."
   },
   "home": {
-    "kicker": "Learn Chinese",
-    "title1": "Course blocks plus reference material.",
-    "title2": "Several ways to study.",
-    "blurb": "Review, vocabulary, and grammar are linked.",
+    "title1": "Blocks of information for easy review",
+    "title2": "& some language games for practice.",
     "missionTitle": "Independent & free",
     "missionBody": "Learn Chinese is an independent, free project that organizes beginner-level study. Built for one learner's path and shared online so others can follow along and learn too.",
     "open": "Open →",
     "modeReviewDesc": "Hanzi-first lines with an icon to reveal pinyin and gloss. Read first, memorize later.",
-    "modeVocabDesc": "Full tables per block — Hanzi, pinyin, and gloss side by side.",
+    "modeVocabDesc": "Full tables per block: Hanzi, pinyin, and gloss side by side.",
     "modeVisualsDesc": "Illustrated course PDFs: pick a volume and read in the browser.",
     "modeGrammarDesc": "Structures, notes, and contrasts organized by topic.",
     "modeDialoguesDesc": "Full conversations by theme. Each review line also has two mini-dialogues below it.",
     "modeQuizDesc": "HSK 1 question bank (multiple choice, fill-in-the-blank, and more). Interactive sessions coming next.",
-    "modeTutorDesc": "Chat, random hanzi, or in-context flashcards — pick your practice.",
+    "modeTutorDesc": "Chat, random hanzi, or in-context flashcards. Pick your practice.",
     "blocksTitle": "Blocks",
     "blocksCount": "{count} blocks",
     "wordCount": "{count} words",
@@ -172,7 +170,7 @@
     "structuresTitle": "Phrases and patterns",
     "revealPhraseAria": "Cycle this line: hanzi only, then hanzi with pinyin, then pinyin plus translation; then back to hanzi only.",
     "standalonePhrasesTitle": "Recap by theme",
-    "standalonePhrasesHint": "Each line recalls a theme with examples—they are not literary sentences or the only way to say something.",
+    "standalonePhrasesHint": "Each line recalls a theme with examples. They are not literary sentences or the only way to say something.",
     "standalonePhrasesTitleFinal": "Final recap by theme",
     "standalonePhrasesHintFinal": "English summary of what you practiced in blocks 1–14: examples to jog your memory. For Chinese and pinyin, use the other blocks, Vocabulary, or Grammar.",
     "miniDialoguesTitle": "Block mini-dialogues"
@@ -242,7 +240,7 @@
     "roleUser": "YOU",
     "roleAssistant": "AI",
     "send": "Send",
-    "placeholder": "Write anything—even in Chinese if you can!"
+    "placeholder": "Write anything, even in Chinese if you can!"
   },
   "vocab": {
     "noTable": "No vocabulary table in this block.",
@@ -269,7 +267,7 @@
   },
   "writingGame": {
     "sectionTitle": "Random writing",
-    "sectionDesc": "10 hanzi from 2 random themes — watch the animation, practice the strokes, and move on.",
+    "sectionDesc": "10 hanzi from 2 random themes. Watch the animation, practice the strokes, and move on.",
     "pageKicker": "Practice",
     "pageHeading": "Practice",
     "pageDesc": "Ten characters from two random blocks. Use the top menu to return to the course.",
@@ -290,7 +288,7 @@
     "hubChat": "Chat",
     "hubChatDesc": "Talk with the AI tutor in Chinese.",
     "hubAvulso": "Random hanzi",
-    "hubAvulsoDesc": "Random characters — stroke animation and writing practice.",
+    "hubAvulsoDesc": "Random characters: stroke animation and writing practice.",
     "hubContext": "Hanzi in context",
     "hubContextDesc": "Flashcards with word, sentence, and lesson patterns.",
     "contextPickHeading": "Choose a deck",
@@ -351,11 +349,11 @@
   },
   "metadata": {
     "siteTitle": "Learn Chinese",
-    "siteDescription": "Free beginner Chinese learning — review, vocabulary, grammar, games, and lyrics."
+    "siteDescription": "Free beginner Chinese learning: review, vocabulary, grammar, games, and lyrics."
   },
   "phraseGame": {
     "title": "Phrase Puzzle",
-    "subtitle": "Arrange the Chinese sentence in the correct order.",
+    "subtitle": "Use the pieces below to build a sentence!",
     "tierLabel": "Knowledge",
     "tier": {
       "hsk1": "HSK 1",
@@ -369,7 +367,7 @@
       "1": "Short phrases",
       "2": "Up to ~5 words",
       "3": "Complex sentence",
-      "4": "Longer phrases — extra hanzi on by default",
+      "4": "Longer phrases, extra hanzi on by default",
       "5": "All characters loose"
     },
     "extra": {
@@ -382,6 +380,7 @@
     "play": "Play",
     "progress": "Phrase {current} of {total}",
     "promptLabel": "Build the sentence:",
+    "extraOptions": "Extra options:",
     "bankLabel": "Pieces",
     "answerLabel": "Your sentence!",
     "answerEmpty": "Tap or drag the pieces here",
@@ -399,7 +398,8 @@
       "removeExtras": "Remove extra pieces",
       "showPinyin": "Show pinyin",
       "showTranslation": "Show translation",
-      "listen": "Listen to the sentence",
+      "viewTranslation": "View the translation",
+      "listen": "Listen in Chinese",
       "nextPiece": "Next piece"
     },
     "roundComplete": {
@@ -459,7 +459,7 @@
     "harderLabel": "Make it harder",
     "harderHint": "Makes the round harder.",
     "retry": "Try again",
-    "retryHint": "You can still fix it — worth more points than revealing the answer.",
+    "retryHint": "You can still fix it. Worth more points than revealing the answer.",
     "seeAnswer": "Show answer"
   },
   "ktv": {
@@ -482,7 +482,7 @@
     "noLines": "No lines."
   },
   "gameProgress": {
-    "guest": "You are playing as a guest — points are not saved. Sign in to keep your history.",
+    "guest": "You are playing as a guest. Points are not saved. Sign in to keep your history.",
     "firstRound": "This round will be saved to your history.",
     "lastRound": "Last round",
     "rounds": "Rounds",

@@ -28,7 +28,7 @@ const nextConfig: NextConfig = {
     : {}),
   ...(basePath ? { basePath } : {}),
   // Intentionally no `redirects()`: `scripts/start-server-stripped.mjs` strips `basePath` before
-  // Next, so internal paths are `/`, `/randomhanzi`, etc. Redirects to `${basePath}/…` would loop
+  // Next, so internal paths are `/`, `/practice`, etc. Redirects to `${basePath}/…` would loop
   // in the browser (ERR_TOO_MANY_REDIRECTS).
   /** Prefer in-browser viewing over attachment download for vocabulary PDFs. */
   async headers() {

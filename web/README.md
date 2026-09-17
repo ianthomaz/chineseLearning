@@ -12,7 +12,7 @@ This is a [Next.js](https://nextjs.org) project for **Learn Chinese** — **http
 
 ## PDFs (`pdf-content/`)
 
-`prebuild` copia para `public/downloads/`. Lista no site: **`/vocabulary/23`**.
+`prebuild` copia para `public/downloads/`. Lista no site: **`/visuals`**.
 
 ## Deploy (itcsVM3)
 

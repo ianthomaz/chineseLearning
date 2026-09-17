@@ -27,7 +27,7 @@
     "appearance": "Apariencia",
     "phraseGame": "Frases",
     "authSignIn": "Entrar",
-    "authSignInHint": "Entrar con Google — opcional, guarda tu apodo",
+    "authSignInHint": "Entrar con Google (opcional, guarda tu apodo)",
     "authSignOut": "Salir",
     "authSignedIn": "Cuenta",
     "registerClass": "Registrar clase",
@@ -79,20 +79,18 @@
     "translationDesc": "Sentido en tablas y, en la página de diálogos, bajo cada línea; en los mini-diálogos del repaso, usa el icono junto a cada línea."
   },
   "home": {
-    "kicker": "Aprende Chino",
-    "title1": "Bloques del curso y material de referencia ampliado.",
-    "title2": "Varias formas de estudiar.",
-    "blurb": "Repaso, vocabulario y gramática enlazados.",
+    "title1": "Bloques de información para repasar con facilidad",
+    "title2": "y juegos de idioma para practicar.",
     "missionTitle": "Independiente y gratuito",
     "missionBody": "Learn Chinese es un proyecto independiente y gratuito que organiza el aprendizaje de un estudiante principiante. Creado para organizar el propio estudio y compartido en la red para que otras personas puedan acompañar y aprender también.",
     "open": "Abrir →",
     "modeReviewDesc": "Frases en hanzi con icono para mostrar pinyin y traducción. Lee primero, memoriza después.",
-    "modeVocabDesc": "Tablas completas por bloque — hanzi, pinyin y traducción.",
+    "modeVocabDesc": "Tablas completas por bloque: hanzi, pinyin y traducción.",
     "modeVisualsDesc": "PDFs ilustrados del curso: elige el volumen y léelo en el sitio.",
     "modeGrammarDesc": "Estructuras, observaciones y contrastes por tema.",
     "modeDialoguesDesc": "Conversaciones completas por tema. En repaso, cada frase tiene dos mini-diálogos debajo.",
     "modeQuizDesc": "Banco de preguntas HSK 1 (opción múltiple, huecos y más). Sesiones interactivas en desarrollo.",
-    "modeTutorDesc": "Chat, hanzi al azar o en contexto — elige el entrenamiento.",
+    "modeTutorDesc": "Chat, hanzi al azar o en contexto. Elige el entrenamiento.",
     "blocksTitle": "Bloques",
     "blocksCount": "{count} bloques",
     "wordCount": "{count} palabras",
@@ -269,7 +267,7 @@
   },
   "writingGame": {
     "sectionTitle": "Escritura aleatoria",
-    "sectionDesc": "10 hanzi de 2 temas elegidos al azar — ve la animación, practica la escritura y avanza.",
+    "sectionDesc": "10 hanzi de 2 temas elegidos al azar. Ve la animación, practica la escritura y avanza.",
     "pageKicker": "Entrenamiento",
     "pageHeading": "Practicar",
     "pageDesc": "Diez caracteres de dos bloques al azar. Usa el menú superior para volver al curso.",
@@ -290,7 +288,7 @@
     "hubChat": "Chat",
     "hubChatDesc": "Habla con el tutor de IA en chino.",
     "hubAvulso": "Hanzi al azar",
-    "hubAvulsoDesc": "Caracteres al azar — animación y práctica de trazos.",
+    "hubAvulsoDesc": "Caracteres al azar: animación y práctica de trazos.",
     "hubContext": "Hanzi en contexto",
     "hubContextDesc": "Flashcards con palabra, frase y patrones de clase.",
     "contextPickHeading": "Elegir base",
@@ -351,11 +349,11 @@
   },
   "metadata": {
     "siteTitle": "Aprende Chino",
-    "siteDescription": "Aprendizaje gratuito de chino para principiantes — repaso, vocabulario, gramática, juegos y letras."
+    "siteDescription": "Aprendizaje gratuito de chino para principiantes: repaso, vocabulario, gramática, juegos y letras."
   },
   "phraseGame": {
     "title": "Rompecabezas de Frases",
-    "subtitle": "Ordena la frase en chino correctamente.",
+    "subtitle": "¡Usa las piezas de abajo para armar una frase!",
     "tierLabel": "Conocimiento",
     "tier": {
       "hsk1": "HSK 1",
@@ -369,7 +367,7 @@
       "1": "Frases cortas",
       "2": "Hasta ~5 palabras",
       "3": "Frase compleja",
-      "4": "Frases más largas — hanzi extra por defecto",
+      "4": "Frases más largas, hanzi extra por defecto",
       "5": "Todos los caracteres sueltos"
     },
     "extra": {
@@ -382,6 +380,7 @@
     "play": "Jugar",
     "progress": "Frase {current} de {total}",
     "promptLabel": "Forma la frase:",
+    "extraOptions": "Opciones extra:",
     "bankLabel": "Piezas",
     "answerLabel": "¡Tu frase!",
     "answerEmpty": "Toca o arrastra las piezas aquí",
@@ -399,7 +398,8 @@
       "removeExtras": "Quitar piezas extra",
       "showPinyin": "Mostrar pinyin",
       "showTranslation": "Mostrar traducción",
-      "listen": "Escuchar la frase",
+      "viewTranslation": "Ver la traducción",
+      "listen": "Escuchar en chino",
       "nextPiece": "Siguiente pieza"
     },
     "roundComplete": {
@@ -459,7 +459,7 @@
     "harderLabel": "Dificultar",
     "harderHint": "Hace la ronda más difícil.",
     "retry": "Intentar de nuevo",
-    "retryHint": "Todavía puedes corregirlo — vale más puntos que ver la respuesta.",
+    "retryHint": "Todavía puedes corregirlo. Vale más puntos que ver la respuesta.",
     "seeAnswer": "Ver respuesta"
   },
   "ktv": {
@@ -482,7 +482,7 @@
     "noLines": "Sin líneas."
   },
   "gameProgress": {
-    "guest": "Estás jugando como invitado — los puntos no se guardan. Entra para conservar tu historial.",
+    "guest": "Estás jugando como invitado. Los puntos no se guardan. Entra para conservar tu historial.",
     "firstRound": "Esta ronda quedará guardada en tu historial.",
     "lastRound": "Última ronda",
     "rounds": "Rondas",

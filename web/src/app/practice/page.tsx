@@ -8,9 +8,9 @@ import {
 } from "@/server/db/practice-library";
 
 export const metadata: Metadata = {
-  title: "Praticar",
+  title: "Practice",
   description:
-    "Chat, hanzi aleatório ou hanzi em contexto — escolhe o tipo de treino.",
+    "Random hanzi writing or context flashcards — pick your training mode.",
 };
 
 /** `cookies()` is not available under `output: export`, which has no auth anyway. */
@@ -29,7 +29,7 @@ const EMPTY_LIBRARY: PracticeLibrary = {
  * sign-in card. Reading the session first costs this route its static prerender,
  * which is the right trade for a page whose content depends on who is asking.
  */
-export default async function PraticarPage() {
+export default async function PracticePage() {
   const signedIn = !STATIC_EXPORT && (await getSessionUser()) !== null;
   const library = signedIn ? await loadPracticeLibrary() : EMPTY_LIBRARY;
 

@@ -1,0 +1,13 @@
+{
+  "name": "learnchinese-qa",
+  "private": true,
+  "description": "Live QA against a running learnchinese.today (or local) server.",
+  "scripts": {
+    "test:browser": "playwright test",
+    "lighthouse": "lighthouse"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "lighthouse": "^12.4.0"
+  }
+}

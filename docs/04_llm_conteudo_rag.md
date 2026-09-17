@@ -81,7 +81,7 @@ Pipeline:
 
 ```
 aula/contexto → (LLM classify se preciso) → lexico_entries
-  → build:app-library → app + /praticar avulso
+  → build:app-library → app + /practice avulso
 ```
 
 Comandos:

@@ -39,7 +39,7 @@ Código: `web/src/lib/content/`
 | `visual_pdf_entries` | PDFs em `/visuals` |
 | `books` / `book_vocab_entries` | Eixo A — léxico por livro |
 | `classes` / `lessons` / … | Eixo B — registo aulas (catálogo `classes` = privado do criador; ver [09](09_roadmap_integracoes.md)) |
-| `context_decks` / `context_deck_cards` | Flashcards `/praticar` |
+| `context_decks` / `context_deck_cards` | Flashcards `/practice` |
 | `lexico_*` | Pool partilhado site + app |
 | `progress` | Domínio por item e por jogador — ver abaixo |
 | `game_rounds` | Uma linha por rodada terminada |
@@ -93,7 +93,7 @@ Classificação LLM: [04_llm_conteudo_rag.md](04_llm_conteudo_rag.md) · Pack ap
 **Implementado:** modal de traços + jogo de escrita via **Hanzi Writer** (CDN).
 
 - Vocabulário: botão por caractere em `VocabTable` → `HanziStrokeModal`
-- Prática: `/praticar` / `/randomhanzi` → `HanziWritingGame`, flashcards contexto
+- Prática: `/practice` → `HanziWritingGame`, flashcards contexto
 
 **Fontes de dados:**
 

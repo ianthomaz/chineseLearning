@@ -345,7 +345,7 @@ model BookVocabEntry {
   @@map("book_vocab_entries")
 }
 
-// ── Context flashcard decks (/praticar) ───────────────────────
+// ── Context flashcard decks (/practice) ───────────────────────
 
 model ContextDeck {
   id          String            @id

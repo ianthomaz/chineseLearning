@@ -307,7 +307,7 @@ CREATE TABLE IF NOT EXISTS book_vocab_entries (
 CREATE INDEX IF NOT EXISTS idx_bve_book_lesson ON book_vocab_entries(book_id, lesson);
 CREATE INDEX IF NOT EXISTS idx_bve_hanzi ON book_vocab_entries(hanzi);
 
--- Context flashcard decks (/praticar). SQL is source of truth.
+-- Context flashcard decks (/practice). SQL is source of truth.
 CREATE TABLE IF NOT EXISTS context_decks (
   id          TEXT PRIMARY KEY,
   title       TEXT NOT NULL,

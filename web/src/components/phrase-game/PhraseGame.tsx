@@ -206,18 +206,19 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
         </div>
       </header>
 
-      {/* The game is the first thing on the page; signing in — which is optional —
-          sits below the setup screen. Rounds are kept for signed-in players, so
-          this says what the player actually gets rather than "nothing is saved". */}
-      <div className="mb-4">
-        <PlayerProgressCard
-          game="phrase"
-          summary={progress.data?.phrase ?? null}
-          recentRounds={progress.data?.recentRounds}
-          signedIn={progress.data !== null}
-          loaded={progress.loaded}
-        />
-      </div>
+      {/* Progress / guest note sits above setup and results. During play it
+          moves below Submit so the board stays the first thing you see. */}
+      {phase !== "playing" ? (
+        <div className="mb-4">
+          <PlayerProgressCard
+            game="phrase"
+            summary={progress.data?.phrase ?? null}
+            recentRounds={progress.data?.recentRounds}
+            signedIn={progress.data !== null}
+            loaded={progress.loaded}
+          />
+        </div>
+      ) : null}
 
       <div>
         {phase === "setup" ? (
@@ -269,21 +270,32 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
         ) : null}
 
         {phase === "playing" && round ? (
-          <GameplayScreen
-            key={index}
-            item={round.items[index]}
-            tier={tier}
-            roundId={roundIdRef.current}
-            level={level}
-            settings={settings}
-            index={index}
-            total={round.items.length}
-            results={results}
-            isLast={index === round.items.length - 1}
-            onSettingsChange={setSettings}
-            onResult={handleResult}
-            onNext={handleNext}
-          />
+          <>
+            <GameplayScreen
+              key={index}
+              item={round.items[index]}
+              tier={tier}
+              roundId={roundIdRef.current}
+              level={level}
+              settings={settings}
+              index={index}
+              total={round.items.length}
+              results={results}
+              isLast={index === round.items.length - 1}
+              onSettingsChange={setSettings}
+              onResult={handleResult}
+              onNext={handleNext}
+            />
+            <div className="mt-8">
+              <PlayerProgressCard
+                game="phrase"
+                summary={progress.data?.phrase ?? null}
+                recentRounds={progress.data?.recentRounds}
+                signedIn={progress.data !== null}
+                loaded={progress.loaded}
+              />
+            </div>
+          </>
         ) : null}
 
         {phase === "complete" && round ? (
@@ -363,7 +375,11 @@ function RoundComplete({
               <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2">
                   <span className="font-hanzi text-lg leading-snug text-ink">{p.hanzi}</span>
-                  <SpeakButton text={p.hanzi} label={t("phraseGame.speak")} />
+                  <SpeakButton
+                    text={p.hanzi}
+                    words={p.tokens.map((tok) => tok.palavra)}
+                    label={t("phraseGame.speak")}
+                  />
                 </div>
                 {p.pinyin ? (
                   <p

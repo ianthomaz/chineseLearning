@@ -5,7 +5,7 @@
  */
 
 /** Own full-viewport UI: no site footer, no floating settings drawer. */
-const IMMERSIVE_ROUTES = ["/randomhanzi", "/praticar", "/ktv"] as const;
+const IMMERSIVE_ROUTES = ["/practice", "/ktv"] as const;
 
 /**
  * Routes where the reading-settings drawer has nothing to control. The phrase

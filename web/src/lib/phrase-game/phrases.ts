@@ -3,6 +3,7 @@
  */
 import { getDb } from "@/server/db";
 import { contentSource } from "@/lib/content/content-repository";
+import { assignPhrasePool } from "./assign-pool";
 import type { Phrase } from "./types";
 
 type PhraseBank = {
@@ -12,19 +13,28 @@ type PhraseBank = {
 };
 
 /** Bumped whenever {@link toRuntimePhrase} changes shape, so clients refetch. */
-export const PHRASE_BANK_VERSION = 2;
+export const PHRASE_BANK_VERSION = 3;
+
+/** Prod SQLite rows seeded before `pool` existed — derive it at load time. */
+function normalizePhrase(p: Phrase): Phrase {
+  if (p.pool) return p;
+  return {
+    ...p,
+    pool: assignPhrasePool({ tier: p.tier, nivel: p.nivel, tokens: p.tokens }),
+  };
+}
 
 function loadFromJson(): Phrase[] {
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   const data = require("@/data/phrase-game/phrases.json") as PhraseBank;
-  return data.phrases;
+  return data.phrases.map(normalizePhrase);
 }
 
 function loadFromDb(): Phrase[] {
   const rows = getDb()
     .prepare(`SELECT payload_json FROM phrase_game_phrases ORDER BY id`)
     .all() as { payload_json: string }[];
-  return rows.map((r) => JSON.parse(String(r.payload_json)) as Phrase);
+  return rows.map((r) => normalizePhrase(JSON.parse(String(r.payload_json)) as Phrase));
 }
 
 let cache: Phrase[] | null = null;

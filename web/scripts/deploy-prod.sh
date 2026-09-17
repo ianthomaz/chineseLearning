@@ -23,6 +23,7 @@ set -euo pipefail
 #   DEPLOY_PROD_SKIP_NPM_CI=1               skip remote npm ci (rsync + server.env only) — PREFER if node_modules OK
 #   DEPLOY_PROD_RESTART=1                   pm2 reload after upload (default: off — empty/new hosts)
 #   DEPLOY_PROD_SEED_CONTENT=1              remote fill-empty seed (heavy enough — only if asked)
+#   DEPLOY_PROD_SYNC_PHRASES=1              upsert phrase bank from phrases.json (light; safe after rsync)
 #   DEPLOY_PROD_PM2_NAME                    default: chinese-learning-app
 
 REMOTE="${DEPLOY_PROD_HOST:-${DEPLOY_NODE_HOST:-itcsVM3}}"
@@ -126,6 +127,22 @@ else
   echo "  Para arrancar ou recarregar manualmente no servidor:"
   echo "    cd ${REMOTE_DIR} && pm2 delete ${PM2_NAME} 2>/dev/null; pm2 start scripts/pm2-start.sh --name ${PM2_NAME} && pm2 save"
   echo "  Ou repetir deploy com: DEPLOY_PROD_RESTART=1 ./start.sh --prod --upload --skip-build"
+fi
+
+if [[ "${DEPLOY_PROD_SYNC_PHRASES:-0}" == "1" ]]; then
+  echo ""
+  echo "→ Remoto: sync phrase bank from phrases.json (upsert by id; leve)…"
+  ssh "$REMOTE" bash -s "$REMOTE_DIR" <<'REMOTE_PHRASES'
+set -euo pipefail
+DIR="$1"
+cd "$DIR"
+set -a
+# shellcheck disable=SC1091
+[[ -f ./server.env ]] && source ./server.env
+set +a
+node scripts/sync-phrase-bank-from-json.mjs
+REMOTE_PHRASES
+  echo "  OK."
 fi
 
 if [[ "${DEPLOY_PROD_SEED_CONTENT:-0}" == "1" ]]; then

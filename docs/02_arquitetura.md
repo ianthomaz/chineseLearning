@@ -36,7 +36,7 @@ Um `route.ts` com `force-dynamic` **parte** o `build:webplace`.
 | `/review`, `/vocabulary`, `/grammar` | Blocos de estudo | — |
 | `/dialogues`, `/visuals` | Diálogos, PDFs | — |
 | `/phrase-game` | Jogo de frases | — |
-| `/praticar`, `/randomhanzi` | Escrita + flashcards | sim |
+| `/practice` | Escrita + flashcards | sim |
 | `/tutor` | Chat LLM | sim |
 | `/gamification` | Quiz HSK1 | sim |
 | `/ktv` | Letras | — |

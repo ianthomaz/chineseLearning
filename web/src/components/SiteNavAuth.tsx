@@ -5,6 +5,9 @@ import { signOut, useSession } from "next-auth/react";
 import { useLocale } from "@/context/LocaleContext";
 import { trackEvent } from "@/lib/analytics";
 
+const NAV_LINK_INACTIVE_CLASS =
+  "flex min-h-[44px] items-center rounded-full px-3 text-sm text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink";
+
 const AUTH_ENABLED = process.env.NEXT_PUBLIC_AUTH_ENABLED !== "0";
 
 export function SiteNavAuth() {
@@ -33,8 +36,8 @@ function SiteNavAuthLive() {
     return (
       <Link
         href="/phrase-game#phrase-game-auth"
-        className="flex min-h-[44px] items-center rounded-full border px-3 text-xs font-medium text-ink/65 transition-colors hover:bg-ink/5 sm:px-4"
-        style={{ borderColor: "var(--border)", fontFamily: "var(--font-sans)" }}
+        className={NAV_LINK_INACTIVE_CLASS}
+        style={{ fontFamily: "var(--font-sans)" }}
         title={t("nav.authSignInHint")}
         onClick={() =>
           trackEvent({ action: "sign_in_start", category: "auth", label: "nav" })
@@ -71,8 +74,8 @@ function SiteNavAuthLive() {
           trackEvent({ action: "sign_out", category: "auth", label: "nav" });
           void signOut();
         }}
-        className="rounded-full border px-3 py-2 text-xs font-medium text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink"
-        style={{ borderColor: "var(--border)" }}
+        className={NAV_LINK_INACTIVE_CLASS}
+        style={{ fontFamily: "var(--font-sans)" }}
       >
         {t("nav.authSignOut")}
       </button>

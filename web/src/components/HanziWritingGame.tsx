@@ -305,7 +305,7 @@ export type HanziWritingGameProps = {
   /** Lesson / study path — ContentBlocks with vocabulary. */
   blocks?: ContentBlock[];
   /**
-   * Practice library path (SQL lexico_*). Preferred for /praticar avulso —
+   * Practice library path (SQL lexico_*). Preferred for /practice avulso —
    * same source as the app pack. When set, used instead of `blocks` for sessions.
    */
   pools?: Array<{
@@ -315,7 +315,7 @@ export type HanziWritingGameProps = {
     sortOrder: number;
     vocabulary: VocabRow[];
   }>;
-  /** Tighter top margin when embedded in `/praticar` instead of a standalone shell. */
+  /** Tighter top margin when embedded in `/practice` instead of a standalone shell. */
   embeddedInPage?: boolean;
   /** When true (from `?autostart=1`), start a session once after mount on the practice page. */
   autoStartSession?: boolean;
@@ -397,7 +397,7 @@ export function HanziWritingGame({
     trackEvent({
       action: "practice_start",
       category: "writing_game",
-      label: "randomhanzi",
+      label: "practice",
     });
     return true;
   }, [sessionBlocks, useAllWords]);
@@ -411,7 +411,7 @@ export function HanziWritingGame({
       autostartConsumedRef.current = false;
       return;
     }
-    router.replace("/praticar", { scroll: false });
+    router.replace("/practice", { scroll: false });
   }, [autoStartSession, router, startSession]);
 
   const goNext = useCallback(() => {
@@ -422,7 +422,7 @@ export function HanziWritingGame({
       trackEvent({
         action: "practice_complete",
         category: "writing_game",
-        label: "randomhanzi",
+        label: "practice",
       });
     }
   }, [currentIndex, cards.length]);

@@ -27,7 +27,7 @@
     "appearance": "Aparência",
     "phraseGame": "Frases",
     "authSignIn": "Entrar",
-    "authSignInHint": "Entrar com Google — opcional, guarda o seu apelido",
+    "authSignInHint": "Entrar com Google (opcional, guarda o seu apelido)",
     "authSignOut": "Sair",
     "authSignedIn": "Conta",
     "registerClass": "Cadastrar aula",
@@ -79,19 +79,17 @@
     "translationDesc": "Sentido nas tabelas e, na página de diálogos, abaixo das falas; nas mini-diálogos da revisão, use o ícone ao lado de cada fala."
   },
   "home": {
-    "kicker": "Aprenda Chinês",
-    "title1": "Blocos do curso e materiais de referência.",
-    "title2": "Várias formas de estudar.",
-    "blurb": "Revisão, vocabulário e gramática interligados.",
+    "title1": "Blocos de conteúdo para revisar com facilidade",
+    "title2": "e jogos de língua para praticar.",
     "missionTitle": "Independente e gratuito",
     "missionBody": "Learn Chinese é um projeto independente e gratuito que organiza o aprendizado de um estudante iniciante. Criado para organizar o próprio estudo e disponibilizado na rede para que outras pessoas acompanhem e também aprendam.",
     "open": "Abrir →",
     "modeReviewDesc": "Frases em hanzi com ícone para revelar pinyin e tradução. Leia primeiro, decore depois.",
-    "modeVocabDesc": "Tabelas completas por bloco — Hanzi, pinyin e tradução lado a lado.",
+    "modeVocabDesc": "Tabelas completas por bloco: Hanzi, pinyin e tradução lado a lado.",
     "modeVisualsDesc": "PDFs ilustrados do curso: escolha o volume e leia no próprio site.",
     "modeGrammarDesc": "Estruturas, observações e contrastes organizados por tema.",
     "modeDialoguesDesc": "Conversas completas por tema. Em cada revisão há mini-diálogos ligados a cada frase.",
-    "modeTutorDesc": "Chat, hanzi aleatório ou em contexto — escolha o treino.",
+    "modeTutorDesc": "Chat, hanzi aleatório ou em contexto. Escolha o treino.",
     "modeQuizDesc": "Banco de perguntas HSK 1 (escolha múltipla, lacunas e mais). Sessões interativas em desenvolvimento.",
     "blocksTitle": "Blocos",
     "blocksCount": "{count} blocos",
@@ -172,7 +170,7 @@
     "structuresTitle": "Frases e padrões",
     "revealPhraseAria": "Alternar esta frase: só hanzi, depois hanzi com pinyin, depois com pinyin e tradução; em seguida volta ao só hanzi.",
     "standalonePhrasesTitle": "Resumo em português",
-    "standalonePhrasesHint": "Cada linha lembra um tema com exemplos — não são frases literárias nem o único modo de dizer.",
+    "standalonePhrasesHint": "Cada linha lembra um tema com exemplos. Não são frases literárias nem o único modo de dizer.",
     "standalonePhrasesTitleFinal": "Resumo final por tema",
     "standalonePhrasesHintFinal": "Síntese em português do que você praticou nos blocos 1–14: exemplos para reativar a memória. Para chinês, veja os blocos.",
     "miniDialoguesTitle": "Mini-diálogos do bloco"
@@ -269,7 +267,7 @@
   },
   "writingGame": {
     "sectionTitle": "Escrita aleatória",
-    "sectionDesc": "10 hanzi de 2 temas sorteados — vê a animação, pratica a escrita e passa ao seguinte.",
+    "sectionDesc": "10 hanzi de 2 temas sorteados. Vê a animação, pratica a escrita e passa ao seguinte.",
     "pageKicker": "Treino",
     "pageHeading": "Praticar",
     "pageDesc": "Dez caracteres de dois blocos sorteados. Usa o menu em cima para voltar ao curso.",
@@ -290,7 +288,7 @@
     "hubChat": "Chat",
     "hubChatDesc": "Conversa com o tutor de IA em chinês.",
     "hubAvulso": "Hanzi aleatório",
-    "hubAvulsoDesc": "Caracteres sorteados — animação e prática de traços.",
+    "hubAvulsoDesc": "Caracteres sorteados: animação e prática de traços.",
     "hubContext": "Hanzi em contexto",
     "hubContextDesc": "Flashcards com palavra, frase e padrões das aulas.",
     "contextPickHeading": "Escolher base",
@@ -351,11 +349,11 @@
   },
   "metadata": {
     "siteTitle": "Aprenda Chinês",
-    "siteDescription": "Aprendizado gratuito de chinês para iniciantes — revisão, vocabulário, gramática, jogos e letras."
+    "siteDescription": "Aprendizado gratuito de chinês para iniciantes: revisão, vocabulário, gramática, jogos e letras."
   },
   "phraseGame": {
     "title": "Quebra-Cabeça de Frases",
-    "subtitle": "Monte a frase em chinês na ordem correta.",
+    "subtitle": "Use as peças abaixo para montar uma frase!",
     "tierLabel": "Conhecimento",
     "tier": {
       "hsk1": "HSK 1",
@@ -369,7 +367,7 @@
       "1": "Frases curtas",
       "2": "Até ~5 palavras",
       "3": "Frase complexa",
-      "4": "Frases maiores — hanzi extras por padrão",
+      "4": "Frases maiores, hanzi extras por padrão",
       "5": "Todos os caracteres soltos"
     },
     "extra": {
@@ -382,6 +380,7 @@
     "play": "Jogar",
     "progress": "Frase {current} de {total}",
     "promptLabel": "Monte a Frase:",
+    "extraOptions": "Opções extras:",
     "bankLabel": "Peças",
     "answerLabel": "Sua frase!",
     "answerEmpty": "Toque ou arraste as peças para cá",
@@ -399,7 +398,8 @@
       "removeExtras": "Remover peças extras",
       "showPinyin": "Mostrar pinyin",
       "showTranslation": "Mostrar tradução",
-      "listen": "Ouvir a frase",
+      "viewTranslation": "Ver a tradução",
+      "listen": "Ouvir em chinês",
       "nextPiece": "Próxima peça"
     },
     "roundComplete": {
@@ -459,7 +459,7 @@
     "harderLabel": "Dificultar",
     "harderHint": "Torna a rodada mais difícil.",
     "retry": "Tentar de novo",
-    "retryHint": "Ainda dá para corrigir — vale mais pontos do que ver a resposta.",
+    "retryHint": "Ainda dá para corrigir. Vale mais pontos do que ver a resposta.",
     "seeAnswer": "Ver resposta"
   },
   "ktv": {
@@ -482,7 +482,7 @@
     "noLines": "Sem linhas."
   },
   "gameProgress": {
-    "guest": "Você está jogando como convidado — os pontos não são salvos. Entre para guardar seu histórico.",
+    "guest": "Você está jogando como convidado. Os pontos não são salvos. Entre para guardar seu histórico.",
     "firstRound": "Esta rodada já fica salva no seu histórico.",
     "lastRound": "Última rodada",
     "rounds": "Rodadas",

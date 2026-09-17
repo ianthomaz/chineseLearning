@@ -12,6 +12,14 @@ vscode:/
 # Node modules (se houver)
 node_modules/
 
+# QA suite (browser reports, local install)
+QA/node_modules/
+QA/reports/
+QA/test-results/
+QA/playwright-report/
+QA/blob-report/
+QA/playwright/.cache/
+
 # Next.js
 web/.next/
 web/out/

@@ -57,7 +57,7 @@ sério (a fila "a rever" existe, o agendamento não).
 | Rota | Gate |
 |------|------|
 | `/phrase-game`, `/ktv`, conteúdo estático | **Nenhum** |
-| `/tutor`, `/praticar`, `/gamification` | `LoginGate` |
+| `/tutor`, `/practice`, `/gamification` | `LoginGate` |
 | `/registerClass`, `/reviewClass`, `/api/lessons/**` | Curador |
 | `/backoffice` | Admin |
 | `/api/chat` | Sessão obrigatória |
