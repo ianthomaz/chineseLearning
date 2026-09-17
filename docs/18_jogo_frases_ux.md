@@ -91,7 +91,21 @@ A UI tem três línguas — **pt-BR, EN, ES** — com as mesmas chaves nas três
 Ao acrescentar uma string: as três línguas ou nenhuma — uma chave em falta
 renderiza o próprio caminho da chave (`createTranslator` devolve `path`).
 
-## 5. Por fazer
+## 5. Cor e contraste
+
+As cores de categoria (`--cat-*`) **invertem** entre temas: `--cat-violet` é
+`#7c3aed` (escuro) no claro e `#b794f6` (pálido) no escuro. Texto branco sobre
+elas só funciona no tema claro — no escuro dá 2,45:1, abaixo de qualquer mínimo.
+
+Por isso existe **`--on-category`**: branco no claro, `#16130f` no escuro.
+Qualquer texto sobre um fundo `--cat-*` usa esse token, nunca `text-white`.
+Medido: 5,70:1 no claro, 7,57:1 no escuro.
+
+O bloco `@media (prefers-color-scheme: dark)` não definia nenhum `--cat-*`, por
+isso quem tem o SO em escuro e nunca tocou no botão de tema via as cores claras
+sobre fundo escuro. Agora espelha o `:root[data-theme="dark"]`.
+
+## 6. Por fazer
 
 - **Persistir** pontos e histórico — é o que falta para o aviso de protótipo sair
   do topo do jogo ([09](09_google_auth_jogo.md) §3).

@@ -109,8 +109,8 @@ export function SetupScreen({
                 }}
               >
                 <span
-                  className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl font-hanzi text-xl font-bold text-white"
-                  style={{ backgroundColor: p.color }}
+                  className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl font-hanzi text-xl font-bold"
+                  style={{ backgroundColor: p.color, color: "var(--on-category)" }}
                   aria-hidden
                 >
                   {p.hanzi}

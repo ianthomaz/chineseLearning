@@ -225,8 +225,8 @@ function FeaturedGame({ t }: { t: (key: string) => string }) {
         }}
       >
         <span
-          className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl font-hanzi text-3xl font-bold text-white sm:h-20 sm:w-20 sm:text-4xl"
-          style={{ backgroundColor: FEATURED_COLOR }}
+          className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl font-hanzi text-3xl font-bold sm:h-20 sm:w-20 sm:text-4xl"
+          style={{ backgroundColor: FEATURED_COLOR, color: "var(--on-category)" }}
           aria-hidden
         >
           拼
@@ -257,8 +257,12 @@ function FeaturedGame({ t }: { t: (key: string) => string }) {
         </span>
 
         <span
-          className="inline-flex w-full shrink-0 items-center justify-center rounded-2xl px-6 py-3.5 text-base font-semibold text-white transition-opacity group-hover:opacity-90 sm:w-auto"
-          style={{ backgroundColor: FEATURED_COLOR, fontFamily: "var(--font-sans)" }}
+          className="inline-flex w-full shrink-0 items-center justify-center rounded-2xl px-6 py-3.5 text-base font-semibold transition-opacity group-hover:opacity-90 sm:w-auto"
+          style={{
+            backgroundColor: FEATURED_COLOR,
+            color: "var(--on-category)",
+            fontFamily: "var(--font-sans)",
+          }}
         >
           {t("home.featuredCta")}
         </span>
