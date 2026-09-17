@@ -31,8 +31,13 @@ export type Distractor = {
   pt: string;
 };
 
-/** Vocabulary tier a phrase belongs to. */
+/** Authoring tier in curated source (build input). */
 export type Tier = "hsk1" | "basico";
+
+/** Runtime pool for phrase selection (HSK knowledge bands). */
+export type PhrasePool = "hsk1" | "hsk2" | "hsk2plus" | "hsk3";
+
+export const PHRASE_POOLS: readonly PhrasePool[] = ["hsk1", "hsk2", "hsk2plus", "hsk3"];
 
 /** A canonical phrase from the validated bank. */
 export type Phrase = {
@@ -43,6 +48,8 @@ export type Phrase = {
    */
   nivel?: number;
   tier: Tier;
+  /** Assigned at build time — drives the setup-screen knowledge filter. */
+  pool: PhrasePool;
   /** Prompt shown to the user — Portuguese is required, en/es optional (fallback → pt). */
   pt: string;
   en?: string;
@@ -58,8 +65,8 @@ export type Phrase = {
   tags?: string[];
 };
 
-/** Playable language tiers on the setup screen. */
-export type GameTier = "iniciante" | "basico" | "intermediario" | "avancado";
+/** Knowledge band chosen on the setup screen (cumulative phrase pools). */
+export type GameTier = PhrasePool;
 
 /** Game difficulty level (1..5). */
 export type GameLevel = 1 | 2 | 3 | 4 | 5;

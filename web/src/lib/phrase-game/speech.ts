@@ -34,14 +34,17 @@ function pickVoice(): SpeechSynthesisVoice | null {
   );
 }
 
-/** Speak a Chinese string, slightly slowed for learners. Cancels any ongoing speech. */
+/** Default browser rate is 1.0; lower = slower (phrase-game learner pace). */
+export const PHRASE_GAME_SPEECH_RATE = 0.72;
+
+/** Speak a Chinese string, slowed for learners. Cancels any ongoing speech. */
 export function speakChinese(text: string): void {
   if (!isSpeechSupported() || !text.trim()) return;
   const synth = window.speechSynthesis;
   synth.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = "zh-CN";
-  utterance.rate = 0.85;
+  utterance.rate = PHRASE_GAME_SPEECH_RATE;
   const voice = pickVoice();
   if (voice) utterance.voice = voice;
   synth.speak(utterance);

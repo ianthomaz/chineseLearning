@@ -12,7 +12,7 @@ type PhraseBank = {
 };
 
 /** Bumped whenever {@link toRuntimePhrase} changes shape, so clients refetch. */
-export const PHRASE_BANK_VERSION = 1;
+export const PHRASE_BANK_VERSION = 2;
 
 function loadFromJson(): Phrase[] {
   // eslint-disable-next-line @typescript-eslint/no-require-imports

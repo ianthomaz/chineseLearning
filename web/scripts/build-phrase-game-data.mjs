@@ -73,6 +73,26 @@ function buildDistractor(hanzi, vocab) {
   };
 }
 
+/** Classify runtime pool (mirrors src/lib/phrase-game/assign-pool.ts). */
+function assignPhrasePool(raw, tokens) {
+  if (raw.tier === "hsk1") return "hsk1";
+  const tokenCount = tokens.length;
+  const hardCount = tokens.filter((t) => t.dificil).length;
+  const nivel = raw.nivel ?? 1;
+  if (nivel >= 3 && tokenCount >= 5) return "hsk3";
+  if (tokenCount >= 7) return "hsk3";
+  if (hardCount >= 3 && tokenCount >= 4) return "hsk3";
+  if (nivel >= 4) return "hsk3";
+  if (nivel >= 2 && tokenCount >= 4) return "hsk2plus";
+  if (hardCount >= 2) return "hsk2plus";
+  if (tokenCount >= 6) return "hsk2plus";
+  if (nivel >= 3) return "hsk2plus";
+  if (hardCount >= 1) return "hsk2";
+  if (nivel >= 2) return "hsk2";
+  if (tokenCount >= 4) return "hsk2";
+  return "hsk2";
+}
+
 function buildPhrase(raw, vocab) {
   const where = `phrase ${raw.id ?? "(no id)"}`;
   if (!raw.id) errors.push(`${where}: missing id`);
@@ -125,10 +145,13 @@ function buildPhrase(raw, vocab) {
     }
   }
 
+  const pool = assignPhrasePool(raw, tokens);
+
   return {
     id: raw.id,
     nivel: raw.nivel ?? 1,
     tier: raw.tier,
+    pool,
     pt: raw.pt,
     ...(raw.en ? { en: raw.en } : {}),
     ...(raw.es ? { es: raw.es } : {}),
@@ -161,9 +184,11 @@ function main() {
 
   const byLevel = {};
   const byTier = { hsk1: 0, basico: 0 };
+  const byPool = { hsk1: 0, hsk2: 0, hsk2plus: 0, hsk3: 0 };
   for (const p of phrases) {
     byLevel[p.nivel] = (byLevel[p.nivel] ?? 0) + 1;
     byTier[p.tier] += 1;
+    byPool[p.pool] += 1;
   }
 
   for (const w of warnings) console.warn(`[phrase-game] WARN ${w}`);
@@ -176,11 +201,11 @@ function main() {
   mkdirSync(OUT_DIR, { recursive: true });
   writeFileSync(
     OUT,
-    `${JSON.stringify({ version: 1, count: phrases.length, byTier, byLevel, phrases }, null, 2)}\n`,
+    `${JSON.stringify({ version: 1, count: phrases.length, byTier, byPool, byLevel, phrases }, null, 2)}\n`,
     "utf8",
   );
   console.log(
-    `[phrase-game] OK: ${phrases.length} phrases (hsk1=${byTier.hsk1}, basico=${byTier.basico}) → ${OUT}`,
+    `[phrase-game] OK: ${phrases.length} phrases (pool hsk1=${byPool.hsk1} hsk2=${byPool.hsk2} hsk2+=${byPool.hsk2plus} hsk3=${byPool.hsk3}) → ${OUT}`,
   );
 }
 

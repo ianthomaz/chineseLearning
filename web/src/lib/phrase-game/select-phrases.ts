@@ -9,6 +9,7 @@
 
 import { shuffle } from "./random";
 import {
+  PHRASE_POOLS,
   type DisplaySettings,
   type GameLevel,
   type GameTier,
@@ -18,10 +19,12 @@ import {
   ROUND_SIZE,
 } from "./types";
 
-/** Tier filter: Iniciante = HSK1-only; Básico = full bank (HSK1 + extended basic). */
+/** Cumulative pool filter: HSK2 includes HSK1+HSK2, etc. */
 export function tierFilter(phrases: Phrase[], tier: GameTier): Phrase[] {
-  if (tier === "iniciante") return phrases.filter((p) => p.tier === "hsk1");
-  return phrases;
+  const maxIdx = PHRASE_POOLS.indexOf(tier);
+  if (maxIdx < 0) return phrases;
+  const allowed = new Set(PHRASE_POOLS.slice(0, maxIdx + 1));
+  return phrases.filter((p) => allowed.has(p.pool));
 }
 
 type LengthBand = "short" | "medium" | "long";
@@ -143,8 +146,7 @@ export type Round = {
  * Build a full round of {@link ROUND_SIZE} phrases for the given configuration.
  */
 export function buildRound(phrases: Phrase[], config: RoundConfig): Round {
-  const level: GameLevel =
-    config.tier === "iniciante" && config.level > 2 ? 2 : config.level;
+  const level: GameLevel = config.tier === "hsk1" && config.level > 2 ? 2 : config.level;
 
   const tiered = tierFilter(phrases, config.tier);
   const { items: sampled, usedReplacement } = weightedSample(tiered, level, ROUND_SIZE);

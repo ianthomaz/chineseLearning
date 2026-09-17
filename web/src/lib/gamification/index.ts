@@ -5,6 +5,12 @@ export type {
   QuestionTypeSpec,
 } from "./types";
 export {
+  countForTier,
+  pickQuizSession,
+  tierFilterQuestions,
+  type QuizTier,
+} from "./select-questions";
+export {
   localizedExplanation,
   localizedOptions,
   localizedQuestionPrompt,

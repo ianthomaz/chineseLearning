@@ -110,14 +110,21 @@ REMOTE_NPM
 fi
 
 if [[ "${DEPLOY_PROD_RESTART:-0}" == "1" ]]; then
-  echo "→ pm2 reload ${PM2_NAME}…"
-  ssh "$REMOTE" "cd ${REMOTE_DIR} && pm2 reload ${PM2_NAME} --update-env"
+  echo "→ pm2 restart ${PM2_NAME} (delete + start — re-sources server.env)…"
+  ssh "$REMOTE" bash -s "$REMOTE_DIR" "$PM2_NAME" <<'REMOTE_PM2'
+set -euo pipefail
+DIR="$1"
+NAME="$2"
+cd "$DIR"
+pm2 delete "$NAME" 2>/dev/null || true
+pm2 start scripts/pm2-start.sh --name "$NAME"
+pm2 save
+REMOTE_PM2
   echo "  OK."
 else
-  echo "→ PM2 reload omitido (default em host novo/partilhado)."
+  echo "→ PM2 restart omitido (default em host novo/partilhado)."
   echo "  Para arrancar ou recarregar manualmente no servidor:"
-  echo "    cd ${REMOTE_DIR} && pm2 start scripts/pm2-start.sh --name ${PM2_NAME}"
-  echo "    cd ${REMOTE_DIR} && pm2 reload ${PM2_NAME} --update-env"
+  echo "    cd ${REMOTE_DIR} && pm2 delete ${PM2_NAME} 2>/dev/null; pm2 start scripts/pm2-start.sh --name ${PM2_NAME} && pm2 save"
   echo "  Ou repetir deploy com: DEPLOY_PROD_RESTART=1 ./start.sh --prod --upload --skip-build"
 fi
 

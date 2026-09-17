@@ -21,8 +21,10 @@
     "gamification": "Quiz",
     "writing": "Escritura aleatoria",
     "visuals": "Visuales",
-    "courseNav": "Áreas del curso",
+    "courseNav": "Más áreas",
+    "primaryNav": "Práctica principal",
     "language": "Idioma de la interfaz",
+    "appearance": "Apariencia",
     "phraseGame": "Frases",
     "authSignIn": "Entrar",
     "authSignInHint": "Entrar con Google — opcional, guarda tu apodo",
@@ -32,32 +34,32 @@
     "reviewClass": "Mis clases",
     "group": {
       "play": "Jugar",
-      "study": "Estudiar"
+      "study": "Estudiar",
+      "curator": "Curaduría",
+      "settings": "Ajustes"
     },
     "ktv": "Letras"
   },
   "gamification": {
     "title": "Quiz",
-    "intro": "Banco de preguntas alineado con HSK 1 y los bloques del curso. Pronto: sesiones, puntuación y progreso.",
-    "statsLabel": "Resumen del banco",
-    "statQuestions": "Preguntas en el banco",
-    "statBlocks": "Bloques cubiertos",
-    "typesHeading": "Tipos de pregunta",
-    "previewHeading": "Vista previa",
-    "previewHint": "La interfaz interactiva del cuestionario llegará en la siguiente fase.",
+    "intro": "HSK 1 y vocabulario del curso. Cada ronda elige {session} preguntas al azar de un banco de {bank}.",
     "blockLabel": "Bloque {n}",
-    "roadmap": "Siguientes pasos: corrección automática, audio (listening), ordenar arrastrando y progreso guardado en este dispositivo.",
     "progress": "Pregunta {current} de {total}",
-    "validating": "Comprobando respuesta...",
-    "correct": "✓ ¡Correcto!",
-    "incorrect": "✗ Incorrecto",
+    "validating": "Comprobando respuesta…",
+    "correct": "¡Correcto!",
+    "incorrect": "Incorrecto",
+    "correctAnswer": "Respuesta correcta: {answer}",
     "submit": "Responder",
     "next": "Siguiente pregunta",
     "finish": "Terminar quiz",
     "finished": "¡Quiz completado!",
     "finalScore": "Tu puntuación",
-    "restart": "Intentar de nuevo",
-    "explanation": "Explicación"
+    "restart": "Nueva ronda",
+    "start": "Empezar",
+    "changeTier": "Cambiar nivel",
+    "tierEmpty": "Aún no hay preguntas en este nivel.",
+    "explanation": "Explicación",
+    "emptyBank": "El banco de preguntas aún no está disponible."
   },
   "pinyin": {
     "on": "Con pinyin",
@@ -355,15 +357,15 @@
     "title": "Rompecabezas de Frases",
     "subtitle": "Ordena la frase en chino correctamente.",
     "prototypeNotice": "Versión prototipo — no guarda puntos ni historial de intentos. ¡Diviértete y aprende!",
-    "tierLabel": "Vocabulario",
+    "tierLabel": "Conocimiento",
     "tier": {
-      "iniciante": "Principiante",
-      "basico": "Básico",
-      "intermediario": "Intermedio",
-      "avancado": "Avanzado"
+      "hsk1": "HSK 1",
+      "hsk2": "HSK 2",
+      "hsk2plus": "HSK 2+",
+      "hsk3": "HSK 3"
     },
     "levelLabel": "Dificultad",
-    "inicianteCap": "En el nivel Principiante, solo están disponibles los niveles 1 y 2.",
+    "hsk1Cap": "En HSK 1, solo están disponibles los niveles 1 y 2.",
     "level": {
       "1": "Frases cortas",
       "2": "Hasta ~5 palabras",
@@ -430,7 +432,6 @@
     },
     "bankLoading": "Cargando frases…",
     "bankError": "No se pudo cargar el banco de frases. Recarga la página.",
-    "tierSoon": "{tiers} — muy pronto.",
     "presetLabel": "¿Cómo quieres jugar?",
     "presetCustom": "Configuración personalizada.",
     "customize": "Personalizar",
@@ -438,11 +439,11 @@
     "preset": {
       "comecar": {
         "name": "Empezar",
-        "desc": "Solo vocabulario HSK1, frases cortas, con pinyin y la frase a la vista."
+        "desc": "HSK 1, frases cortas, con pinyin y la frase a la vista."
       },
       "treinar": {
         "name": "Practicar",
-        "desc": "Vocabulario completo, frases de hasta ~5 palabras, traducción solo en las palabras difíciles."
+        "desc": "Hasta HSK 2+, frases de hasta ~5 palabras, traducción solo en las palabras difíciles."
       },
       "desafio": {
         "name": "Desafío",
@@ -456,8 +457,10 @@
     "hintOffByLevel": "No disponible en la dificultad {level}.",
     "alwaysOnByLevel": "Siempre activo en la dificultad {level}.",
     "tierDesc": {
-      "iniciante": "solo HSK1",
-      "basico": "HSK1 + extra"
+      "hsk1": "Solo vocabulario HSK 1",
+      "hsk2": "HSK 1 y 2",
+      "hsk2plus": "Hasta vocabulario HSK 2+",
+      "hsk3": "Banco completo, incluidas frases más complejas"
     },
     "retry": "Intentar de nuevo",
     "retryHint": "Todavía puedes corregirlo — vale más puntos que ver la respuesta.",

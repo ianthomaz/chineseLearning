@@ -271,7 +271,13 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
           <FilterSelect label="Evento" name="event" value={filters.event}
             options={[["", "Todos"], ...EVENT_NAMES.map((e) => [e, EVENT_LABEL[e]])]} />
           <FilterSelect label="Tier" name="tier" value={filters.tier}
-            options={[["", "Todos"], ["iniciante", "Iniciante"], ["basico", "Básico"]]} />
+            options={[
+              ["", "Todos"],
+              ["hsk1", "HSK 1"],
+              ["hsk2", "HSK 2"],
+              ["hsk2plus", "HSK 2+"],
+              ["hsk3", "HSK 3"],
+            ]} />
           <FilterSelect label="Quem" name="who" value={filters.who}
             options={[["", "Todos"], ["logged", "Logados"], ["guests", "Convidados"]]} />
           <FilterSelect label="Resultado" name="result" value={filters.result}
@@ -316,7 +322,15 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
 }
 
 function tierLabel(tier: string | null, level: number | null): string {
-  const t = tier === "iniciante" ? "Iniciante" : tier === "basico" ? "Básico" : tier ?? "?";
+  const labels: Record<string, string> = {
+    hsk1: "HSK 1",
+    hsk2: "HSK 2",
+    hsk2plus: "HSK 2+",
+    hsk3: "HSK 3",
+    iniciante: "Iniciante",
+    basico: "Básico",
+  };
+  const t = tier ? (labels[tier] ?? tier) : "?";
   return `${t} · nível ${level ?? "?"}`;
 }
 

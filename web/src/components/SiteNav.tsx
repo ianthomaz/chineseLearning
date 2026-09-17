@@ -22,16 +22,18 @@ type NavTab = {
 };
 
 /**
- * Two groups, in this order everywhere: interactive things first, reference
- * material second. Eight flat tabs read as one undifferentiated list on a phone,
- * and the phrase game — the thing we most want people to open — sat in the middle.
+ * Primary bar: phrase game + quiz. Everything else lives in the overflow menu
+ * so desktop stays scannable (Phrases · Quiz · Sign in · ☰).
  */
+const PRIMARY_NAV_TABS: readonly NavTab[] = [
+  { href: "/phrase-game", key: "phraseGame", featured: true },
+  { href: "/gamification", key: "gamification" },
+];
+
 const NAV_GROUPS: ReadonlyArray<{ key: "play" | "study"; tabs: readonly NavTab[] }> = [
   {
     key: "play",
     tabs: [
-      { href: "/phrase-game", key: "phraseGame", featured: true },
-      { href: "/gamification", key: "gamification" },
       { href: "/praticar", key: "tutor" },
       { href: "/ktv", key: "ktv" },
     ],
@@ -48,7 +50,7 @@ const NAV_GROUPS: ReadonlyArray<{ key: "play" | "study"; tabs: readonly NavTab[]
   },
 ];
 
-const NAV_TABS: readonly NavTab[] = NAV_GROUPS.flatMap((g) => g.tabs);
+const OVERFLOW_TABS: readonly NavTab[] = NAV_GROUPS.flatMap((g) => g.tabs);
 
 /** Paths that keep the Prática tab highlighted (hub + sub-flows). */
 function isPracticePath(pathname: string): boolean {
@@ -104,24 +106,27 @@ function NavTabLink({
   pathname,
   variant,
   t,
+  onNavigate,
 }: {
   tab: NavTab;
   pathname: string;
   variant: Variant;
   t: (key: string) => string;
+  onNavigate?: () => void;
 }) {
   const active = isTabActive(tab, pathname);
   return (
     <Link
       href={tab.href}
-      onClick={() =>
+      onClick={() => {
         trackEvent({
           action: "nav_click",
           category: "navigation",
           label: tab.key,
           path: tab.href,
-        })
-      }
+        });
+        onNavigate?.();
+      }}
       className={tabClassName(variant, active, tab.featured)}
       style={tabStyle(active, tab.featured)}
     >
@@ -131,36 +136,40 @@ function NavTabLink({
   );
 }
 
-/**
- * Curator-only nav links. Only mounted when AUTH_ENABLED (so useSession has a
- * provider) and rendered only for the curator email — invisible to everyone
- * else and to the static export.
- */
 function CuratorTabs({
   pathname,
   variant,
   t,
+  onNavigate,
 }: {
   pathname: string;
   variant: Variant;
   t: (key: string) => string;
+  onNavigate?: () => void;
 }) {
   const { data: session } = useSession();
   if (!isAdminEmail(session?.user?.email)) return null;
 
   return (
-    <div className={variant === "mobile" ? "flex flex-col gap-1" : "contents"}>
+    <div className={variant === "mobile" ? "flex flex-col gap-1" : "flex flex-col gap-1"}>
+      <p
+        className="px-4 pb-1 pt-2 text-[0.7rem] font-semibold uppercase tracking-widest text-ink/35"
+        style={{ fontFamily: "var(--font-sans)" }}
+      >
+        {t("nav.group.curator")}
+      </p>
       {CURATOR_TABS.map((tab) => {
         const active = isTabActive(tab, pathname);
         return (
           <Link
             key={tab.href}
             href={tab.href}
+            onClick={onNavigate}
             className={
               variant === "desktop"
                 ? active
-                  ? "rounded-full px-3 py-2 text-sm font-medium text-white transition-colors"
-                  : "rounded-full px-3 py-2 text-sm text-accent transition-colors hover:bg-ink/5"
+                  ? "rounded-xl px-4 py-2.5 text-sm font-medium text-white transition-colors"
+                  : "rounded-xl px-4 py-2.5 text-sm text-accent transition-colors hover:bg-ink/5"
                 : active
                   ? "rounded-xl px-4 py-3.5 text-base font-medium text-white"
                   : "rounded-xl px-4 py-3.5 text-base text-accent transition-colors hover:bg-ink/5"
@@ -179,120 +188,176 @@ function CuratorTabs({
   );
 }
 
+function NavOverflowPanel({
+  pathname,
+  locale,
+  t,
+  setLocale,
+  onClose,
+  variant,
+  panelRef,
+}: {
+  pathname: string;
+  locale: ReturnType<typeof useLocale>["locale"];
+  t: (key: string) => string;
+  setLocale: (loc: ReturnType<typeof useLocale>["locale"]) => void;
+  onClose: () => void;
+  variant: "sheet" | "dropdown";
+  panelRef?: React.RefObject<HTMLDivElement | null>;
+}) {
+  const panelClass =
+    variant === "sheet"
+      ? "max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-border md:hidden"
+      : "absolute right-0 z-50 mt-2 hidden max-h-[min(32rem,calc(100dvh-5rem))] w-[min(20rem,calc(100vw-2rem))] overflow-y-auto rounded-2xl border bg-paper py-2 shadow-lg md:block";
+
+  return (
+    <div
+      ref={panelRef}
+      id={variant === "sheet" ? "site-overflow-nav-sheet" : "site-overflow-nav-menu"}
+      className={panelClass}
+      style={{ borderColor: "var(--border)" }}
+    >
+      <nav
+        className={
+          variant === "sheet"
+            ? "mx-auto flex max-w-6xl flex-col gap-4 px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom,0px))] sm:px-6"
+            : "flex flex-col gap-3 px-2 py-1"
+        }
+        aria-label={t("nav.courseNav")}
+      >
+        {NAV_GROUPS.map((group) => (
+          <div key={group.key} className="flex flex-col gap-1">
+            <p
+              className="px-4 pb-1 text-[0.7rem] font-semibold uppercase tracking-widest text-ink/35"
+              style={{ fontFamily: "var(--font-sans)" }}
+            >
+              {t(`nav.group.${group.key}`)}
+            </p>
+            {group.tabs.map((tab) => (
+              <NavTabLink
+                key={tab.href}
+                tab={tab}
+                pathname={pathname}
+                variant="mobile"
+                t={t}
+                onNavigate={onClose}
+              />
+            ))}
+          </div>
+        ))}
+
+        {AUTH_ENABLED ? (
+          <CuratorTabs pathname={pathname} variant="mobile" t={t} onNavigate={onClose} />
+        ) : null}
+
+        <div
+          className="mx-2 mt-1 flex flex-col gap-2 border-t pt-3"
+          style={{ borderColor: "var(--border)" }}
+        >
+          <p
+            className="px-2 pb-0.5 text-[0.7rem] font-semibold uppercase tracking-widest text-ink/35"
+            style={{ fontFamily: "var(--font-sans)" }}
+          >
+            {t("nav.group.settings")}
+          </p>
+          <div className="flex items-center justify-between gap-2 px-2">
+            <span className="text-sm text-ink/65" style={{ fontFamily: "var(--font-sans)" }}>
+              {t("nav.appearance")}
+            </span>
+            <ThemeToggle />
+          </div>
+          <div className="px-2">
+            <p
+              className="mb-1.5 text-sm text-ink/65"
+              style={{ fontFamily: "var(--font-sans)" }}
+            >
+              {t("nav.language")}
+            </p>
+            <ul className="flex flex-col gap-0.5" role="listbox">
+              {locales.map((loc) => (
+                <li key={loc}>
+                  <button
+                    type="button"
+                    role="option"
+                    aria-selected={loc === locale}
+                    onClick={() => {
+                      setLocale(loc);
+                      onClose();
+                    }}
+                    className="flex min-h-[44px] w-full items-center gap-2 rounded-xl px-3 py-2 text-left text-sm transition-colors hover:bg-ink/5"
+                    style={{
+                      fontFamily: "var(--font-sans)",
+                      backgroundColor:
+                        loc === locale
+                          ? "color-mix(in srgb, var(--accent) 10%, transparent)"
+                          : undefined,
+                    }}
+                  >
+                    <span>{localeMeta(loc).flag}</span>
+                    {localeMeta(loc).langName}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  );
+}
+
 export function SiteNav() {
   const pathname = usePathname();
   const { locale, setLocale, t } = useLocale();
-  const [langOpen, setLangOpen] = useState(false);
-  const [mobileNavOpen, setMobileNavOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
-  const mobileNavRef = useRef<HTMLDivElement>(null);
-  const mobileMenuButtonRef = useRef<HTMLButtonElement>(null);
+  const [overflowOpen, setOverflowOpen] = useState(false);
+  const overflowAnchorRef = useRef<HTMLDivElement>(null);
+  const overflowSheetRef = useRef<HTMLDivElement>(null);
+  const overflowButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     function onDocClick(e: MouseEvent) {
-      const t = e.target as Node;
-      if (!menuRef.current?.contains(t)) setLangOpen(false);
-      if (
-        mobileNavRef.current &&
-        !mobileNavRef.current.contains(t) &&
-        !mobileMenuButtonRef.current?.contains(t)
-      ) {
-        setMobileNavOpen(false);
-      }
+      const target = e.target as Node;
+      const inside =
+        overflowAnchorRef.current?.contains(target) ||
+        overflowSheetRef.current?.contains(target) ||
+        overflowButtonRef.current?.contains(target);
+      if (!inside) setOverflowOpen(false);
     }
     document.addEventListener("click", onDocClick);
     return () => document.removeEventListener("click", onDocClick);
   }, []);
 
   useEffect(() => {
-    setMobileNavOpen(false);
+    setOverflowOpen(false);
   }, [pathname]);
 
-  const closeMenu = useCallback(() => setLangOpen(false), []);
+  const closeOverflow = useCallback(() => setOverflowOpen(false), []);
 
   if (hidesSiteNav(pathname)) return null;
+
+  const overflowActive = OVERFLOW_TABS.some((tab) => isTabActive(tab, pathname));
 
   return (
     <header
       className="sticky top-0 z-40 border-b bg-paper/95 backdrop-blur-sm supports-[backdrop-filter]:bg-paper/80"
       style={{ borderColor: "var(--border)", paddingTop: "env(safe-area-inset-top, 0px)" }}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-3 sm:gap-3 sm:px-6 sm:py-4">
         <Link
           href="/"
-          className="flex min-h-[44px] min-w-[5rem] shrink items-center font-display text-lg font-medium tracking-tight text-ink transition-colors hover:text-accent sm:text-xl"
+          className="flex min-h-[44px] min-w-0 shrink items-center font-display text-base font-medium tracking-tight text-ink transition-colors hover:text-accent sm:min-w-[5rem] sm:text-xl"
         >
           <span className="line-clamp-2 leading-snug">
             漢語 <span className="font-light text-ink/40">· {t("metadata.siteTitle")}</span>
           </span>
         </Link>
 
-        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
-          <SiteNavAuth />
-          <ThemeToggle />
-          <div className="relative" ref={menuRef}>
-            <button
-              type="button"
-              onClick={() => setLangOpen((o) => !o)}
-              className="flex min-h-[44px] min-w-[44px] items-center justify-center gap-2 rounded-full border px-3 text-xs font-medium transition-colors hover:bg-ink/5 sm:min-w-0 sm:py-1.5"
-              style={{
-                borderColor: "var(--border)",
-                fontFamily: "var(--font-sans)",
-                color: "color-mix(in srgb, var(--ink) 65%, transparent)",
-              }}
-              aria-expanded={langOpen}
-              aria-haspopup="listbox"
-              title={t("nav.language")}
-            >
-              <span className="text-base">{localeMeta(locale).flag}</span>
-              <span className="hidden sm:inline">{localeMeta(locale).langName}</span>
-              <Icon name="chevronDown" size="0.9em" className="text-ink/35" />
-            </button>
-            {langOpen ? (
-              <ul
-                className="absolute right-0 z-50 mt-1 min-w-[10rem] rounded-xl border bg-paper py-1 shadow-md"
-                style={{ borderColor: "var(--border)" }}
-                role="listbox"
-              >
-                {locales.map((loc) => (
-                  <li key={loc}>
-                    <button
-                      type="button"
-                      role="option"
-                      aria-selected={loc === locale}
-                      onClick={() => {
-                        setLocale(loc);
-                        closeMenu();
-                      }}
-                      className="flex min-h-[44px] w-full items-center gap-2 px-3 py-2 text-left text-sm hover:bg-ink/5"
-                      style={{ fontFamily: "var(--font-sans)" }}
-                    >
-                      <span>{localeMeta(loc).flag}</span>
-                      {localeMeta(loc).langName}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            ) : null}
-          </div>
-
-          <button
-            ref={mobileMenuButtonRef}
-            type="button"
-            className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full border border-border text-ink/70 transition-colors hover:bg-ink/5 xl:hidden"
-            aria-expanded={mobileNavOpen}
-            aria-controls="site-mobile-nav"
-            onClick={() => setMobileNavOpen((o) => !o)}
-          >
-            <span className="sr-only">{t("nav.courseNav")}</span>
-            <Icon name={mobileNavOpen ? "close" : "menu"} size="1.2em" />
-          </button>
-
+        <div className="flex shrink-0 items-center gap-1 sm:gap-2">
           <nav
-            className="hidden flex-wrap items-center justify-end gap-1 xl:flex"
-            aria-label={t("nav.courseNav")}
+            className="flex items-center gap-0.5 sm:gap-1"
+            aria-label={t("nav.primaryNav")}
           >
-            {NAV_TABS.map((tab) => (
+            {PRIMARY_NAV_TABS.map((tab) => (
               <NavTabLink
                 key={tab.href}
                 tab={tab}
@@ -301,44 +366,54 @@ export function SiteNav() {
                 t={t}
               />
             ))}
-            {AUTH_ENABLED && <CuratorTabs pathname={pathname} variant="desktop" t={t} />}
           </nav>
+
+          <SiteNavAuth />
+
+          <div className="relative" ref={overflowAnchorRef}>
+            <button
+              ref={overflowButtonRef}
+              type="button"
+              className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full border transition-colors hover:bg-ink/5"
+              style={{
+                borderColor: overflowActive ? "var(--accent)" : "var(--border)",
+                color: overflowActive ? "var(--accent)" : "color-mix(in srgb, var(--ink) 70%, transparent)",
+                backgroundColor: overflowActive
+                  ? "color-mix(in srgb, var(--accent) 8%, transparent)"
+                  : undefined,
+              }}
+              aria-expanded={overflowOpen}
+              aria-controls="site-overflow-nav-menu site-overflow-nav-sheet"
+              onClick={() => setOverflowOpen((o) => !o)}
+            >
+              <span className="sr-only">{t("nav.courseNav")}</span>
+              <Icon name={overflowOpen ? "close" : "menu"} size="1.2em" />
+            </button>
+
+            {overflowOpen ? (
+              <NavOverflowPanel
+                pathname={pathname}
+                locale={locale}
+                t={t}
+                setLocale={setLocale}
+                onClose={closeOverflow}
+                variant="dropdown"
+              />
+            ) : null}
+          </div>
         </div>
       </div>
 
-      {mobileNavOpen ? (
-        <div
-          id="site-mobile-nav"
-          ref={mobileNavRef}
-          className="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-border xl:hidden"
-          style={{ borderColor: "var(--border)" }}
-        >
-          <nav
-            className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom,0px))] sm:px-6"
-            aria-label={t("nav.courseNav")}
-          >
-            {NAV_GROUPS.map((group) => (
-              <div key={group.key} className="flex flex-col gap-1">
-                <p
-                  className="px-4 pb-1 text-[0.7rem] font-semibold uppercase tracking-widest text-ink/35"
-                  style={{ fontFamily: "var(--font-sans)" }}
-                >
-                  {t(`nav.group.${group.key}`)}
-                </p>
-                {group.tabs.map((tab) => (
-                  <NavTabLink
-                    key={tab.href}
-                    tab={tab}
-                    pathname={pathname}
-                    variant="mobile"
-                    t={t}
-                  />
-                ))}
-              </div>
-            ))}
-            {AUTH_ENABLED && <CuratorTabs pathname={pathname} variant="mobile" t={t} />}
-          </nav>
-        </div>
+      {overflowOpen ? (
+        <NavOverflowPanel
+          pathname={pathname}
+          locale={locale}
+          t={t}
+          setLocale={setLocale}
+          onClose={closeOverflow}
+          variant="sheet"
+          panelRef={overflowSheetRef}
+        />
       ) : null}
     </header>
   );

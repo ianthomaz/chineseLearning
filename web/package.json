@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "node scripts/parse-consolidado.mjs && bash scripts/sync-pdf-downloads.sh && node scripts/build-vocabulary-pdf-manifest.mjs && npm run prebuild:phrase-game && npm run seed:content",
-    "prebuild": "node scripts/parse-consolidado.mjs && bash scripts/sync-pdf-downloads.sh && node scripts/build-vocabulary-pdf-manifest.mjs && npm run prebuild:phrase-game && npm run seed:content",
+    "predev": "node scripts/parse-consolidado.mjs && bash scripts/sync-pdf-downloads.sh && node scripts/build-vocabulary-pdf-manifest.mjs && npm run prebuild:phrase-game && npm run prebuild:quiz && npm run seed:content",
+    "prebuild": "node scripts/parse-consolidado.mjs && bash scripts/sync-pdf-downloads.sh && node scripts/build-vocabulary-pdf-manifest.mjs && npm run prebuild:phrase-game && npm run prebuild:quiz && npm run seed:content",
     "prebuild:pdf": "bash scripts/sync-pdf-downloads.sh && node scripts/build-vocabulary-pdf-manifest.mjs && npm run prebuild:phrase-game",
     "prebuild:phrase-game": "node scripts/build-phrase-game-data.mjs",
+    "prebuild:quiz": "node scripts/build-quiz-bank.mjs",
     "seed:content": "prisma generate && node scripts/seed-content-db.mjs && npm run build:app-library",
     "build:app-library": "node scripts/build-app-library.mjs",
     "lexico:pending": "node scripts/classify-lexico-pending.mjs",

@@ -60,18 +60,18 @@ function preset(
 
 export const GAME_PRESETS: readonly GamePreset[] = [
   // HSK1 only, short phrases, pinyin on every piece and the prompt in view.
-  preset("comecar", "始", "var(--cat-green)", "iniciante", 1, {
+  preset("comecar", "始", "var(--cat-green)", "hsk1", 1, {
     showNativePrompt: true,
     hanziPlusPinyin: true,
   }),
-  // Full bank, up to ~5 words, prompt still shown, gloss on the hard words only.
-  preset("treinar", "练", "var(--accent)", "basico", 2, {
+  // HSK2+ pool, up to ~5 words, prompt still shown, gloss on the hard words only.
+  preset("treinar", "练", "var(--accent)", "hsk2plus", 2, {
     showNativePrompt: true,
     translationDifficult: true,
   }),
   // Full bank, long phrases, words split into characters, distractors, no prompt
   // unless asked for. Level 4 already forces the extra hanzi.
-  preset("desafio", "战", "var(--cat-violet)", "basico", 4, {}),
+  preset("desafio", "战", "var(--cat-violet)", "hsk3", 4, {}),
 ];
 
 export function findPreset(id: PresetId): GamePreset | undefined {

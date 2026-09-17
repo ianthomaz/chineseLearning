@@ -12,6 +12,7 @@ import { usePhraseBank } from "@/lib/phrase-game/use-phrase-bank";
 import { GAME_PRESETS, type GamePreset } from "@/lib/phrase-game/presets";
 import { roundScore } from "@/lib/phrase-game/scoring";
 import {
+  PHRASE_POOLS,
   type DisplaySettings,
   type GameLevel,
   type GameTier,
@@ -153,7 +154,7 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
   // Tier change resets an invalid level (Iniciante caps to 1-2).
   function handleTierChange(next: GameTier) {
     setTier(next);
-    if (next === "iniciante" && level > 2) {
+    if (next === "hsk1" && level > 2) {
       const capped: GameLevel = 2;
       setLevel(capped);
       setSettings((s) => clampDisplaySettingsForLevel(capped, s));
@@ -180,7 +181,7 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
           line, and signing in — which is optional — sits below the setup screen. */}
       <p
         role="status"
-        className="mb-6 text-xs leading-relaxed text-ink/45"
+        className="mb-4 text-xs leading-relaxed text-ink/45"
         style={{ fontFamily: "var(--font-sans)" }}
       >
         {t("phraseGame.prototypeNotice")}
@@ -192,13 +193,36 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
             {bankStatus === "error" ? (
               <p className="mb-4 text-sm text-danger">{t("phraseGame.bankError")}</p>
             ) : null}
+            <label
+              className="mb-6 block"
+              style={{ fontFamily: "var(--font-sans)" }}
+            >
+              <span className="mb-1.5 block text-sm font-semibold text-ink">
+                {t("phraseGame.tierLabel")}
+              </span>
+              <select
+                value={tier}
+                onChange={(e) => handleTierChange(e.target.value as GameTier)}
+                className="w-full rounded-xl border bg-transparent px-3 py-2.5 text-sm text-ink"
+                style={{ borderColor: "var(--border)" }}
+              >
+                {PHRASE_POOLS.map((id) => (
+                  <option key={id} value={id}>
+                    {t(`phraseGame.tier.${id}`)}
+                  </option>
+                ))}
+              </select>
+              <span className="mt-1.5 block text-xs text-ink/45">
+                {t(`phraseGame.tierDesc.${tier}`)}
+              </span>
+            </label>
             <SetupScreen
               tier={tier}
               level={level}
               settings={settings}
               bankLoading={bankStatus === "loading"}
+              hsk1Knowledge={tier === "hsk1"}
               onPresetChange={handlePresetChange}
-              onTierChange={handleTierChange}
               onLevelChange={handleLevelChange}
               onSettingsChange={setSettings}
               onPlay={startRound}

@@ -11,6 +11,7 @@ referência do **curso real**, não um HSK1 genérico.
 - `generated/livros.md` — 32 lições, 647 entradas dos PDFs 初级·上/下
 - `generated/vocabulario-curso.md` — consolidado do site (22 blocos, 435 palavras, 96 estruturas)
 - `generated/aulas-extra.md` — 3 aulas extra (cozinha, Confúcio)
+- `generated/quiz-vocab.md` — vocabulário do quiz (1052 entradas lexicon + banco)
 
 ## Pedagógico (editar à mão)
 

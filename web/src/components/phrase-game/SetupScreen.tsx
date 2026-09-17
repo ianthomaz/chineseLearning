@@ -7,11 +7,7 @@ import {
   type GamePreset,
   type PresetId,
 } from "@/lib/phrase-game/presets";
-import type {
-  DisplaySettings,
-  GameLevel,
-  GameTier,
-} from "@/lib/phrase-game/types";
+import type { DisplaySettings, GameLevel, GameTier } from "@/lib/phrase-game/types";
 import {
   nativePromptDisabled,
   pinyinHintsDisabled,
@@ -24,17 +20,12 @@ type Props = {
   settings: DisplaySettings;
   /** Bank still in flight — the round cannot be built yet. */
   bankLoading: boolean;
+  hsk1Knowledge: boolean;
   onPresetChange: (preset: GamePreset) => void;
-  onTierChange: (tier: GameTier) => void;
   onLevelChange: (level: GameLevel) => void;
   onSettingsChange: (settings: DisplaySettings) => void;
   onPlay: () => void;
 };
-
-const PLAYABLE_TIERS: GameTier[] = ["iniciante", "basico"];
-
-/** Not in the bank yet — announced as a line of text, not as disabled buttons. */
-const UPCOMING_TIERS: GameTier[] = ["intermediario", "avancado"];
 
 const LEVELS: GameLevel[] = [1, 2, 3, 4, 5];
 
@@ -43,14 +34,13 @@ export function SetupScreen({
   level,
   settings,
   bankLoading,
+  hsk1Knowledge,
   onPresetChange,
-  onTierChange,
   onLevelChange,
   onSettingsChange,
   onPlay,
 }: Props) {
   const { t } = useLocale();
-  const iniciante = tier === "iniciante";
   const activePreset: PresetId | null = matchPreset(tier, level, settings);
 
   function setDisplay(patch: Partial<DisplaySettings>) {
@@ -152,49 +142,13 @@ export function SetupScreen({
         </summary>
 
         <div className="space-y-7 pb-5 pt-2">
-          {/* Vocabulary pool — not a difficulty setting, despite the old name. */}
-          <fieldset>
-            <legend className="mb-2 text-sm font-semibold text-ink">
-              {t("phraseGame.tierLabel")}
-            </legend>
-            <div className="grid grid-cols-2 gap-2">
-              {PLAYABLE_TIERS.map((id) => {
-                const active = tier === id;
-                return (
-                  <button
-                    key={id}
-                    type="button"
-                    onClick={() => onTierChange(id)}
-                    className={`min-h-[48px] rounded-xl border px-3 py-2.5 text-sm transition-colors ${
-                      active ? "font-medium text-white" : "text-ink/70 hover:bg-ink/5"
-                    }`}
-                    style={{
-                      borderColor: active ? "var(--accent)" : "var(--border)",
-                      backgroundColor: active ? "var(--accent)" : "transparent",
-                    }}
-                  >
-                    {t(`phraseGame.tier.${id}`)}
-                    <span className="mt-0.5 block text-[0.65rem] font-normal opacity-75">
-                      {t(`phraseGame.tierDesc.${id}`)}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-            <p className="mt-2 text-xs text-ink/40" style={{ fontFamily: "var(--font-sans)" }}>
-              {t("phraseGame.tierSoon", {
-                tiers: UPCOMING_TIERS.map((id) => t(`phraseGame.tier.${id}`)).join(" · "),
-              })}
-            </p>
-          </fieldset>
-
           {/* Game level */}
           <fieldset>
             <legend className="mb-2 text-sm font-semibold text-ink">
               {t("phraseGame.levelLabel")}
             </legend>
             <div className="space-y-2">
-              {LEVELS.filter((lv) => !iniciante || lv <= 2).map((lv) => {
+              {LEVELS.filter((lv) => !hsk1Knowledge || lv <= 2).map((lv) => {
                 const active = level === lv;
                 return (
                   <button
@@ -223,9 +177,9 @@ export function SetupScreen({
                 );
               })}
             </div>
-            {iniciante ? (
+            {hsk1Knowledge ? (
               <p className="mt-2 text-xs text-ink/40" style={{ fontFamily: "var(--font-sans)" }}>
-                {t("phraseGame.inicianteCap")}
+                {t("phraseGame.hsk1Cap")}
               </p>
             ) : null}
           </fieldset>

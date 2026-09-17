@@ -21,8 +21,10 @@
     "gamification": "Quiz",
     "writing": "Random writing",
     "visuals": "Visuals",
-    "courseNav": "Course areas",
+    "courseNav": "More areas",
+    "primaryNav": "Main practice",
     "language": "Interface language",
+    "appearance": "Appearance",
     "phraseGame": "Phrases",
     "authSignIn": "Sign in",
     "authSignInHint": "Sign in with Google — optional, saves your nickname",
@@ -32,32 +34,32 @@
     "reviewClass": "My lessons",
     "group": {
       "play": "Play",
-      "study": "Study"
+      "study": "Study",
+      "curator": "Curator",
+      "settings": "Settings"
     },
     "ktv": "Lyrics"
   },
   "gamification": {
     "title": "Quiz",
-    "intro": "Question bank aligned with HSK 1 and your course blocks. Coming soon: sessions, scoring, and progress.",
-    "statsLabel": "Bank overview",
-    "statQuestions": "Questions in bank",
-    "statBlocks": "Blocks covered",
-    "typesHeading": "Question types",
-    "previewHeading": "Preview",
-    "previewHint": "Interactive quiz UI will land in the next iteration.",
+    "intro": "HSK 1 and course vocabulary. Each round draws {session} random questions from a bank of {bank}.",
     "blockLabel": "Block {n}",
-    "roadmap": "Next: automatic grading, audio (listening), drag-and-drop ordering, and device-local progress.",
     "progress": "Question {current} of {total}",
-    "validating": "Checking answer...",
-    "correct": "✓ Correct!",
-    "incorrect": "✗ Incorrect",
+    "validating": "Checking answer…",
+    "correct": "Correct!",
+    "incorrect": "Incorrect",
+    "correctAnswer": "Correct answer: {answer}",
     "submit": "Submit",
     "next": "Next question",
     "finish": "Finish quiz",
     "finished": "Quiz complete!",
     "finalScore": "Your score",
-    "restart": "Try again",
-    "explanation": "Explanation"
+    "restart": "New round",
+    "start": "Start",
+    "changeTier": "Change knowledge level",
+    "tierEmpty": "No questions at this level yet.",
+    "explanation": "Explanation",
+    "emptyBank": "The question bank is not available yet."
   },
   "pinyin": {
     "on": "With pinyin",
@@ -355,15 +357,15 @@
     "title": "Phrase Puzzle",
     "subtitle": "Arrange the Chinese sentence in the correct order.",
     "prototypeNotice": "Prototype version — scores and attempt history are not saved. Have fun and learn!",
-    "tierLabel": "Vocabulary",
+    "tierLabel": "Knowledge",
     "tier": {
-      "iniciante": "Beginner",
-      "basico": "Basic",
-      "intermediario": "Intermediate",
-      "avancado": "Advanced"
+      "hsk1": "HSK 1",
+      "hsk2": "HSK 2",
+      "hsk2plus": "HSK 2+",
+      "hsk3": "HSK 3"
     },
     "levelLabel": "Difficulty",
-    "inicianteCap": "At Beginner level, only levels 1 and 2 are available.",
+    "hsk1Cap": "At HSK 1, only levels 1 and 2 are available.",
     "level": {
       "1": "Short phrases",
       "2": "Up to ~5 words",
@@ -430,7 +432,6 @@
     },
     "bankLoading": "Loading phrases…",
     "bankError": "Could not load the phrase bank. Please reload the page.",
-    "tierSoon": "{tiers} — coming soon.",
     "presetLabel": "How do you want to play?",
     "presetCustom": "Custom configuration.",
     "customize": "Customise",
@@ -438,11 +439,11 @@
     "preset": {
       "comecar": {
         "name": "Start",
-        "desc": "HSK1 vocabulary only, short phrases, pinyin and the prompt in view."
+        "desc": "HSK 1, short phrases, pinyin and the prompt in view."
       },
       "treinar": {
         "name": "Practise",
-        "desc": "Full vocabulary, phrases up to ~5 words, gloss on the hard words only."
+        "desc": "Up to HSK 2+, phrases up to ~5 words, gloss on the hard words only."
       },
       "desafio": {
         "name": "Challenge",
@@ -456,8 +457,10 @@
     "hintOffByLevel": "Not available at difficulty {level}.",
     "alwaysOnByLevel": "Always on at difficulty {level}.",
     "tierDesc": {
-      "iniciante": "HSK1 only",
-      "basico": "HSK1 + extra"
+      "hsk1": "HSK 1 vocabulary only",
+      "hsk2": "HSK 1 and 2",
+      "hsk2plus": "Up to HSK 2+ vocabulary",
+      "hsk3": "Full bank, including more complex phrases"
     },
     "retry": "Try again",
     "retryHint": "You can still fix it — worth more points than revealing the answer.",
