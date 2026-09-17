@@ -356,7 +356,6 @@
   "phraseGame": {
     "title": "Phrase Puzzle",
     "subtitle": "Arrange the Chinese sentence in the correct order.",
-    "prototypeNotice": "Prototype version — scores and attempt history are not saved. Have fun and learn!",
     "tierLabel": "Knowledge",
     "tier": {
       "hsk1": "HSK 1",
@@ -485,5 +484,15 @@
     "catalogFailed": "Could not load the catalogue.",
     "songFailed": "Could not load: {song}",
     "noLines": "No lines."
+  },
+  "gameProgress": {
+    "guest": "You are playing as a guest — points are not saved. Sign in to keep your history.",
+    "firstRound": "This round will be saved to your history.",
+    "lastRound": "Last round",
+    "rounds": "Rounds",
+    "best": "Best",
+    "points": "({points} pts)",
+    "toReview": "{count} to review",
+    "toReviewOne": "1 to review"
   }
 }

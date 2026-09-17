@@ -1,20 +1,30 @@
 /**
  * Player progress API — SERVER MODE.
  *
- * Selected by `next.config` `pageExtensions` only when NEXT_STATIC_EXPORT is unset.
- * MVP: reads/writes only the user's nick on the SQLite `users` table. It does NOT
- * persist round scores yet — that is Phase 2 (see docs/06_jogo_frases.md).
+ * GET returns the nick plus what the player has built up: a per-game summary and
+ * the last few rounds. POST still only writes the nick; a finished round goes to
+ * `/api/game/round`, which recomputes its own score.
+ *
  * Under static export this route does not exist (`.server.ts` omitted).
  */
 import { auth } from "@/server/auth";
 import { getUser, setNick, upsertUser } from "@/server/db/users";
+import { gameSummary, recentRounds } from "@/server/db/progress";
+
+export const dynamic = "force-dynamic";
 
 export async function GET() {
   const session = await auth();
   const id = session?.user?.id;
   if (!id) return Response.json({ error: "unauthenticated" }, { status: 401 });
+
   const user = getUser(id);
-  return Response.json({ nick: user?.nick ?? null });
+  return Response.json({
+    nick: user?.nick ?? null,
+    phrase: gameSummary(id, "phrase"),
+    quiz: gameSummary(id, "quiz"),
+    recentRounds: recentRounds(id, 5),
+  });
 }
 
 export async function POST(req: Request) {

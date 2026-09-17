@@ -41,6 +41,31 @@ Código: `web/src/lib/content/`
 | `classes` / `lessons` / … | Eixo B — registo aulas (catálogo `classes` = privado do criador; ver [09](09_roadmap_integracoes.md)) |
 | `context_decks` / `context_deck_cards` | Flashcards `/praticar` |
 | `lexico_*` | Pool partilhado site + app |
+| `progress` | Domínio por item e por jogador — ver abaixo |
+| `game_rounds` | Uma linha por rodada terminada |
+
+### Progresso do jogador
+
+Só para quem tem sessão. Duas tabelas com trabalhos distintos:
+
+| Tabela | Granularidade | Responde a |
+|--------|---------------|-----------|
+| `game_rounds` | uma linha por rodada terminada | "como me saí da última vez?" |
+| `progress` | uma linha por (`user_id`, `game`, `item_id`) | "o que tenho de rever?" |
+
+`game` é `'phrase'` ou `'quiz'` — os ids de item só são únicos dentro de cada
+jogo. `progress` é um **acumulado**, não um log: `attempts`, `correct`,
+`best_score`, `last_score` e `last_correct`. O passo a passo fica em `events`.
+
+A fila de revisão é `last_correct = 0`, ordenada por `last_seen_at` ascendente —
+revê-se primeiro o que está parado há mais tempo, não o que se acabou de errar.
+
+Escrita numa transacção: uma rodada meio gravada corromperia essa fila.
+
+**Migração:** `progress` existia como stub documentado (`user_id`, `phrase_id`,
+`score`) que nunca foi escrito. `migrateProgressStub()` em `server/db/index.ts`
+substitui-o; se por acaso tiver linhas, guarda-as como `progress_legacy` em vez
+de apagar.
 
 ### Lexico (site + app iOS)
 

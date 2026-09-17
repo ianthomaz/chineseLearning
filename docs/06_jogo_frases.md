@@ -52,7 +52,12 @@ Implementada em [`scoring.ts`](../web/src/lib/phrase-game/scoring.ts) — visív
 
 **Rodada:** soma até 10 frases. Evento `round_complete` guarda `"7/10 · 6.25pts"`.
 
-**Fase 2:** persistir em `progress` (schema existe, não escrito).
+**Persistência (set 2026):** uma rodada terminada vai para `POST /api/game/round`
+e alimenta duas tabelas — `game_rounds` (histórico) e `progress` (domínio por
+item). Só para quem tem sessão; convidado continua só com o log `events`.
+O servidor **recalcula** os pontos a partir dos resultados por item: o cliente
+diz se acertou, não diz quanto vale. Ver [07_conteudo_dados.md](07_conteudo_dados.md)
+§ Progresso do jogador.
 
 ---
 
@@ -90,11 +95,12 @@ Curadoria: `FRASES_GAME/curated/pending-accepted-orders.json`
 |------|--------|
 | TTS / SpeakButton | ✅ |
 | Pontuação UI | ✅ |
-| Persistir progresso por user | ❌ Fase 2 |
-| Repetir frases erradas | ❌ |
-| Preset "continuar" | ❌ |
-| Curadoria `respostasAceitas` (557) | ❌ |
+| Persistir progresso por user | ✅ (frases **e** quiz) |
+| Histórico + "a rever" no setup | ✅ `PlayerProgressCard` |
+| Remover banner protótipo | ✅ — substituído por estado real |
+| Repetir frases erradas numa rodada | ❌ — `itemsToReview()` já devolve a fila, falta usá-la em `buildRound` |
+| Preset "continuar de onde parei" | ❌ |
+| Curadoria `respostasAceitas` | ❌ — 35 de 1067 |
 | Tom colorido no pinyin | ❌ |
-| Remover banner protótipo | ❌ (depende persistência) |
 
 *Última revisão: set 2026*

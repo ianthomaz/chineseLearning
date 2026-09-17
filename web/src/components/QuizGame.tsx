@@ -19,6 +19,8 @@ import {
 import type { QuizBank, QuizQuestion } from "@/lib/gamification";
 import { PHRASE_POOLS } from "@/lib/phrase-game/types";
 import type { AppLocale } from "@/lib/i18n-core";
+import { recordFinishedRound, usePlayerProgress } from "@/lib/game-progress";
+import { PlayerProgressCard } from "@/components/PlayerProgressCard";
 import { MultipleChoiceQuestion } from "./quiz/MultipleChoiceQuestion";
 import { FillBlankQuestion } from "./quiz/FillBlankQuestion";
 import { TranslationQuestion } from "./quiz/TranslationQuestion";
@@ -56,7 +58,10 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
   const [answerState, setAnswerState] = useState<AnswerState>("answering");
   const [userAnswer, setUserAnswer] = useState<string | number | string[] | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+  /** Per-question outcome, so a finished quiz can be persisted item by item. */
+  const results = useRef<Array<{ itemId: string; correct: boolean }>>([]);
   const quizStarted = useRef(false);
+  const progress = usePlayerProgress();
 
   const tierCount = useMemo(
     () => countForTier(bankQuestions, tier),
@@ -74,6 +79,7 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
     setSessionQuestions(nextSession);
     setCurrentIndex(0);
     setScore(0);
+    results.current = [];
     setUserAnswer(null);
     setIsCorrect(null);
     setAnswerState("answering");
@@ -124,6 +130,7 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
       value: correct ? 1 : 0,
       locale,
     });
+    results.current.push({ itemId: String(currentQuestion.id), correct });
     setAnswerState("result");
   }, [userAnswer, currentQuestion, locale]);
 
@@ -142,9 +149,18 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
         total: sessionQuestions.length,
         locale,
       });
+      // Signed-in players only; a guest gets a 401 and nothing is stored.
+      recordFinishedRound({
+        game: "quiz",
+        tier,
+        items: results.current.map((r) => ({ ...r, score: r.correct ? 1 : 0 })),
+      });
+      progress.reload();
       setPhase("finished");
     }
-  }, [currentIndex, sessionQuestions.length, score, locale]);
+    // `progress.reload` is stable for the life of the component.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentIndex, sessionQuestions.length, score, locale, tier]);
 
   const handleRestart = useCallback(() => {
     startSession();
@@ -203,6 +219,16 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
         {tierCount === 0 ? (
           <p className="mb-4 text-sm text-danger">{t("gamification.tierEmpty")}</p>
         ) : null}
+
+        <div className="mb-5">
+          <PlayerProgressCard
+            game="quiz"
+            summary={progress.data?.quiz ?? null}
+            recentRounds={progress.data?.recentRounds}
+            signedIn={progress.data !== null}
+            loaded={progress.loaded}
+          />
+        </div>
 
         <button
           type="button"

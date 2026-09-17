@@ -40,14 +40,39 @@ CREATE TABLE IF NOT EXISTS players (
   updated_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
 
--- Phase 2 (stub, not written yet): per-phrase round results.
+-- Per-item mastery, for signed-in players only. One row per (user, game, item):
+-- the running tally, not a log; the blow-by-blow lives in the events table.
+-- game is 'phrase' or 'quiz'; item_id is a phrase id or a quiz question id.
 CREATE TABLE IF NOT EXISTS progress (
+  id           INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id      TEXT NOT NULL,
+  game         TEXT NOT NULL,
+  item_id      TEXT NOT NULL,
+  attempts     INTEGER NOT NULL DEFAULT 0,
+  correct      INTEGER NOT NULL DEFAULT 0,
+  best_score   REAL NOT NULL DEFAULT 0,
+  last_score   REAL NOT NULL DEFAULT 0,
+  last_correct INTEGER NOT NULL DEFAULT 0,
+  last_seen_at TEXT NOT NULL DEFAULT (datetime('now')),
+  UNIQUE (user_id, game, item_id)
+);
+CREATE INDEX IF NOT EXISTS idx_progress_user ON progress(user_id, game);
+CREATE INDEX IF NOT EXISTS idx_progress_review ON progress(user_id, game, last_correct);
+
+-- One row per finished round or quiz. Drives "your last round" and history.
+CREATE TABLE IF NOT EXISTS game_rounds (
   id         INTEGER PRIMARY KEY AUTOINCREMENT,
   user_id    TEXT NOT NULL,
-  phrase_id  TEXT NOT NULL,
-  score      REAL,
+  game       TEXT NOT NULL,
+  round_id   TEXT,
+  tier       TEXT,
+  level      INTEGER,
+  total      INTEGER NOT NULL,
+  correct    INTEGER NOT NULL,
+  points     REAL NOT NULL DEFAULT 0,
   created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
+CREATE INDEX IF NOT EXISTS idx_rounds_user ON game_rounds(user_id, created_at);
 
 -- Game event log: entries, round starts, per-phrase results, help usage,
 -- abandons and completions. Works for logged-in (user_id) and anonymous
@@ -332,6 +357,29 @@ CREATE INDEX IF NOT EXISTS idx_lexico_hanzi ON lexico_entries(hanzi);
 CREATE INDEX IF NOT EXISTS idx_lexico_rotation ON lexico_entries(rotation_category_id);
 `;
 
+/**
+ * The `progress` table shipped as a documented stub — `(user_id, phrase_id,
+ * score)` — that nothing ever wrote to. Phase 2 needs a per-item tally keyed by
+ * game, so the stub is replaced. Guarded: if a deployment somehow did write
+ * rows, the old table is kept aside instead of dropped.
+ */
+function migrateProgressStub(database: DatabaseSync): void {
+  const columns = database
+    .prepare(`PRAGMA table_info(progress)`)
+    .all() as { name: string }[];
+  if (columns.length === 0 || columns.some((c) => c.name === "game")) return;
+
+  const { n } = database.prepare(`SELECT COUNT(*) AS n FROM progress`).get() as {
+    n: number;
+  };
+  if (n > 0) {
+    console.warn(`[db] progress stub has ${n} rows — kept as progress_legacy`);
+    database.exec(`ALTER TABLE progress RENAME TO progress_legacy`);
+  } else {
+    database.exec(`DROP TABLE progress`);
+  }
+}
+
 /** One-time: copy legacy `players` rows into `users`, then expose `players` as a view. */
 function migratePlayersToUsers(database: DatabaseSync): void {
   const playersObj = database
@@ -363,6 +411,8 @@ export function getDb(): DatabaseSync {
   const path = dbPath();
   mkdirSync(dirname(path), { recursive: true });
   db = new DatabaseSync(path);
+  // Reshape before the schema runs, so CREATE TABLE IF NOT EXISTS takes hold.
+  migrateProgressStub(db);
   db.exec(MIGRATION);
   migratePlayersToUsers(db);
   return db;

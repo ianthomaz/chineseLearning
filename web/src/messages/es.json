@@ -356,7 +356,6 @@
   "phraseGame": {
     "title": "Rompecabezas de Frases",
     "subtitle": "Ordena la frase en chino correctamente.",
-    "prototypeNotice": "Versión prototipo — no guarda puntos ni historial de intentos. ¡Diviértete y aprende!",
     "tierLabel": "Conocimiento",
     "tier": {
       "hsk1": "HSK 1",
@@ -485,5 +484,15 @@
     "catalogFailed": "No se pudo cargar el catálogo.",
     "songFailed": "No se pudo cargar: {song}",
     "noLines": "Sin líneas."
+  },
+  "gameProgress": {
+    "guest": "Estás jugando como invitado — los puntos no se guardan. Entra para conservar tu historial.",
+    "firstRound": "Esta ronda quedará guardada en tu historial.",
+    "lastRound": "Última ronda",
+    "rounds": "Rondas",
+    "best": "Mejor",
+    "points": "({points} pts)",
+    "toReview": "{count} para repasar",
+    "toReviewOne": "1 para repasar"
   }
 }

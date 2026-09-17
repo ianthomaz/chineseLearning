@@ -36,11 +36,19 @@ Leitura: `/backoffice` (admin). Detalhe: [06_jogo_frases.md](06_jogo_frases.md) 
 
 ### `users.nick`
 
-`GET`/`POST /api/game/progress` — só apelido. **Não** grava pontuação.
+`POST /api/game/progress` — só apelido. `GET` devolve apelido **+** resumo por
+jogo e últimas rodadas.
 
-### Não guardado (Fase 2)
+### Progresso (implementado set 2026)
 
-Pontuação agregada, tabela `progress`, histórico visível ao jogador, SRS.
+`POST /api/game/round` grava uma rodada terminada em `game_rounds` + `progress`,
+para os dois jogos. **Só com sessão** — convidado recebe 401 e fica apenas com o
+log `events`, que é o que o banner de cookies promete.
+
+### Não guardado
+
+Ligar o `anon_id` do convidado ao `user_id` no login, e repetição espaçada a
+sério (a fila "a rever" existe, o agendamento não).
 
 ---
 

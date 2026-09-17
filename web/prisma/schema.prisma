@@ -16,26 +16,56 @@ datasource db {
 // ── Users / game ──────────────────────────────────────────────
 
 model User {
-  id         String    @id
-  email      String?
-  name       String?
-  image      String?
-  nick       String?
-  createdAt  String    @default(dbgenerated("(datetime('now'))")) @map("created_at")
-  updatedAt  String    @default(dbgenerated("(datetime('now'))")) @map("updated_at")
-  lessons    Lesson[]
+  id        String   @id
+  email     String?
+  name      String?
+  image     String?
+  nick      String?
+  createdAt String   @default(dbgenerated("(datetime('now'))")) @map("created_at")
+  updatedAt String   @default(dbgenerated("(datetime('now'))")) @map("updated_at")
+  lessons   Lesson[]
 
   @@map("users")
 }
 
+/// Per-item mastery for a signed-in player. One row per (user, game, item) —
+/// a running tally, not a log; the blow-by-blow lives in `events`.
 model Progress {
+  id          Int    @id @default(autoincrement())
+  userId      String @map("user_id")
+  /// "phrase" or "quiz" — item ids are only unique within a game.
+  game        String
+  itemId      String @map("item_id")
+  attempts    Int    @default(0)
+  correct     Int    @default(0)
+  bestScore   Float  @default(0) @map("best_score")
+  lastScore   Float  @default(0) @map("last_score")
+  /// 1 when the most recent answer was right; 0 puts the item in the review queue.
+  lastCorrect Int    @default(0) @map("last_correct")
+  lastSeenAt  String @default(dbgenerated("(datetime('now'))")) @map("last_seen_at")
+
+  @@unique([userId, game, itemId])
+  @@index([userId, game])
+  @@index([userId, game, lastCorrect], map: "idx_progress_review")
+  @@map("progress")
+}
+
+/// One row per finished round or quiz. Drives "your last round" and history.
+model GameRound {
   id        Int     @id @default(autoincrement())
   userId    String  @map("user_id")
-  phraseId  String  @map("phrase_id")
-  score     Float?
+  game      String
+  /// Ties the round to its rows in the `events` log.
+  roundId   String? @map("round_id")
+  tier      String?
+  level     Int?
+  total     Int
+  correct   Int
+  points    Float   @default(0)
   createdAt String  @default(dbgenerated("(datetime('now'))")) @map("created_at")
 
-  @@map("progress")
+  @@index([userId, createdAt], map: "idx_rounds_user")
+  @@map("game_rounds")
 }
 
 model Event {
@@ -74,18 +104,18 @@ model Class {
 }
 
 model Lesson {
-  id             Int                 @id @default(autoincrement())
-  lessonDate     String              @map("lesson_date")
-  classId        String              @map("class_id")
-  notes          String?
-  createdBy      String              @map("created_by")
-  createdAt      String              @default(dbgenerated("(datetime('now'))")) @map("created_at")
-  updatedAt      String              @default(dbgenerated("(datetime('now'))")) @map("updated_at")
-  materialRefs   LessonMaterialRef[]
-  vocabItems     LessonVocabItem[]
-  user           User                @relation(fields: [createdBy], references: [id])
-  class          Class               @relation(fields: [classId], references: [id])
-  lexiconFirsts  LexiconGlobal[]
+  id            Int                 @id @default(autoincrement())
+  lessonDate    String              @map("lesson_date")
+  classId       String              @map("class_id")
+  notes         String?
+  createdBy     String              @map("created_by")
+  createdAt     String              @default(dbgenerated("(datetime('now'))")) @map("created_at")
+  updatedAt     String              @default(dbgenerated("(datetime('now'))")) @map("updated_at")
+  materialRefs  LessonMaterialRef[]
+  vocabItems    LessonVocabItem[]
+  user          User                @relation(fields: [createdBy], references: [id])
+  class         Class               @relation(fields: [classId], references: [id])
+  lexiconFirsts LexiconGlobal[]
 
   @@index([classId], map: "idx_lessons_class")
   @@index([lessonDate], map: "idx_lessons_date")
@@ -289,9 +319,9 @@ model VisualPdfEntry {
 // ── Book chapter vocab (eixo A) ───────────────────────────────
 
 model Book {
-  id          String            @id
-  volumeLabel String            @map("volume_label")
-  sortOrder   Int               @default(0) @map("sort_order")
+  id          String           @id
+  volumeLabel String           @map("volume_label")
+  sortOrder   Int              @default(0) @map("sort_order")
   entries     BookVocabEntry[]
 
   @@map("books")
@@ -352,26 +382,26 @@ model ContextDeckCard {
 // ── App Hanzi Memorize lexicon (shared library) ───────────────
 
 model LexicoRotationCategory {
-  id             String         @id
+  id             String        @id
   title          String
-  sourceBlockIds String         @map("source_block_ids") // JSON array of block ids
-  sortOrder      Int            @default(0) @map("sort_order")
+  sourceBlockIds String        @map("source_block_ids") // JSON array of block ids
+  sortOrder      Int           @default(0) @map("sort_order")
   entries        LexicoEntry[]
 
   @@map("lexico_rotation_categories")
 }
 
 model LexicoEntry {
-  id                    String                  @id
-  hanzi                 String
-  pinyin                String                  @default("")
-  translation           String                  @default("")
-  hanziLength           Int                     @map("hanzi_length")
-  sourceBlockId         Int                     @map("source_block_id")
-  sourceBlockTitle      String                  @default("") @map("source_block_title")
-  rotationCategoryId    String                  @map("rotation_category_id")
-  sortOrder             Int                     @default(0) @map("sort_order")
-  rotationCategory      LexicoRotationCategory  @relation(fields: [rotationCategoryId], references: [id], onDelete: Cascade)
+  id                 String                 @id
+  hanzi              String
+  pinyin             String                 @default("")
+  translation        String                 @default("")
+  hanziLength        Int                    @map("hanzi_length")
+  sourceBlockId      Int                    @map("source_block_id")
+  sourceBlockTitle   String                 @default("") @map("source_block_title")
+  rotationCategoryId String                 @map("rotation_category_id")
+  sortOrder          Int                    @default(0) @map("sort_order")
+  rotationCategory   LexicoRotationCategory @relation(fields: [rotationCategoryId], references: [id], onDelete: Cascade)
 
   @@index([hanzi], map: "idx_lexico_hanzi")
   @@index([rotationCategoryId], map: "idx_lexico_rotation")

@@ -356,7 +356,6 @@
   "phraseGame": {
     "title": "Quebra-Cabeça de Frases",
     "subtitle": "Monte a frase em chinês na ordem correta.",
-    "prototypeNotice": "Versão protótipo — não salva pontos nem histórico de tentativas. Divirta-se e aprenda!",
     "tierLabel": "Conhecimento",
     "tier": {
       "hsk1": "HSK 1",
@@ -485,5 +484,15 @@
     "catalogFailed": "Não foi possível carregar o catálogo.",
     "songFailed": "Falha ao carregar: {song}",
     "noLines": "Sem linhas."
+  },
+  "gameProgress": {
+    "guest": "Você está jogando como convidado — os pontos não são salvos. Entre para guardar seu histórico.",
+    "firstRound": "Esta rodada já fica salva no seu histórico.",
+    "lastRound": "Última rodada",
+    "rounds": "Rodadas",
+    "best": "Melhor",
+    "points": "({points} pts)",
+    "toReview": "{count} para rever",
+    "toReviewOne": "1 para rever"
   }
 }

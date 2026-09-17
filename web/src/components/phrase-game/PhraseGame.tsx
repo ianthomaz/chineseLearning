@@ -10,6 +10,7 @@ import { localizedPrompt } from "@/lib/phrase-game/display";
 import { logGameEvent, newRoundId } from "@/lib/phrase-game/game-log";
 import { usePhraseBank } from "@/lib/phrase-game/use-phrase-bank";
 import { GAME_PRESETS, type GamePreset } from "@/lib/phrase-game/presets";
+import { recordFinishedRound, usePlayerProgress } from "@/lib/game-progress";
 import { roundScore } from "@/lib/phrase-game/scoring";
 import {
   PHRASE_POOLS,
@@ -18,6 +19,7 @@ import {
   type GameTier,
   type Phrase,
 } from "@/lib/phrase-game/types";
+import { PlayerProgressCard } from "@/components/PlayerProgressCard";
 import { AuthPanel } from "./AuthPanel";
 import { GameplayScreen } from "./GameplayScreen";
 import { SetupScreen } from "./SetupScreen";
@@ -36,6 +38,7 @@ const INITIAL_PRESET = GAME_PRESETS[0];
 
 export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null }) {
   const { bank, status: bankStatus } = usePhraseBank(initialPhrases);
+  const progress = usePlayerProgress();
   const { t } = useLocale();
   const [phase, setPhase] = useState<Phase>("setup");
   // Open on the gentlest preset rather than on a bare default, so the setup
@@ -117,6 +120,26 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
       level,
       detail: `${correct}/${results.length} · ${points}pts`,
     });
+
+    // Persist for signed-in players; a guest gets a 401 and keeps only the
+    // anonId event log. `reload` refreshes the setup screen behind this one.
+    const items = round?.items ?? [];
+    if (items.length > 0) {
+      recordFinishedRound({
+        game: "phrase",
+        roundId: roundIdRef.current,
+        tier,
+        level,
+        items: items.map((it, i) => ({
+          itemId: it.phrase.id,
+          correct: results[i] === "correct",
+          score: scores[i] ?? 0,
+        })),
+      });
+      progress.reload();
+    }
+    // `round` and `progress.reload` are stable for the life of a finished round.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase, results, scores, tier, level]);
 
   // Entries: log that the game was opened, once per mount.
@@ -177,15 +200,18 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
         </div>
       </header>
 
-      {/* The game is the first thing on the page: the prototype note is one muted
-          line, and signing in — which is optional — sits below the setup screen. */}
-      <p
-        role="status"
-        className="mb-4 text-xs leading-relaxed text-ink/45"
-        style={{ fontFamily: "var(--font-sans)" }}
-      >
-        {t("phraseGame.prototypeNotice")}
-      </p>
+      {/* The game is the first thing on the page; signing in — which is optional —
+          sits below the setup screen. Rounds are kept for signed-in players, so
+          this says what the player actually gets rather than "nothing is saved". */}
+      <div className="mb-4">
+        <PlayerProgressCard
+          game="phrase"
+          summary={progress.data?.phrase ?? null}
+          recentRounds={progress.data?.recentRounds}
+          signedIn={progress.data !== null}
+          loaded={progress.loaded}
+        />
+      </div>
 
       <div>
         {phase === "setup" ? (
