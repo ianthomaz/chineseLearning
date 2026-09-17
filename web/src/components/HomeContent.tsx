@@ -17,7 +17,8 @@ type NavGridCard = {
     | "grammar"
     | "dialogues"
     | "gamification"
-    | "tutor";
+    | "tutor"
+    | "ktv";
   hanzi: string;
   color: string;
   descKey: string;
@@ -72,6 +73,13 @@ const homeGridCards: ReadonlyArray<NavGridCard> = [
     hanzi: "练",
     color: "var(--cat-orange)",
     descKey: "home.modeTutorDesc",
+  },
+  {
+    href: "/ktv",
+    modeKey: "ktv",
+    hanzi: "詞",
+    color: "var(--cat-emerald)",
+    descKey: "home.modeKtvDesc",
   },
 ];
 

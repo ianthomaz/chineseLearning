@@ -33,7 +33,8 @@
     "group": {
       "play": "Play",
       "study": "Study"
-    }
+    },
+    "ktv": "Lyrics"
   },
   "gamification": {
     "title": "Quiz",
@@ -96,7 +97,8 @@
     "modePhraseGameDesc": "Build Chinese sentences by dragging the pieces into the right order.",
     "featuredKicker": "Featured",
     "featuredCta": "Play now",
-    "featuredNote": "No account needed — play right away as a guest."
+    "featuredNote": "No account needed — play right away as a guest.",
+    "modeKtvDesc": "Song lyrics in hanzi and pinyin, line by line, with a word-by-word gloss."
   },
   "index": {
     "reviewKicker": "复习",
@@ -330,8 +332,7 @@
     "hanziWriterData": "hanzi-writer-data",
     "hanziWriterTail": "· stroke origin:",
     "hanziWriterMmh": "Make Me a Hanzi",
-    "hanziWriterEnd": "/ Arphic.",
-    "ktvLink": "詞 · Lyric Cards"
+    "hanziWriterEnd": "/ Arphic."
   },
   "metadata": {
     "siteTitle": "Basic Chinese",
@@ -417,5 +418,25 @@
     "bankError": "Could not load the phrase bank. Please reload the page.",
     "tierSoon": "{tiers} — coming soon.",
     "extrasOptional": "optional"
+  },
+  "ktv": {
+    "title": "Lyrics / KTV",
+    "brand": "Lyrics",
+    "backSite": "← Site",
+    "backHome": "← Home",
+    "chooseSong": "Choose a song",
+    "pinyinSize": "Pinyin size",
+    "pinyinSmaller": "Smaller text",
+    "pinyinBigger": "Larger text",
+    "modeCards": "Hanzi + Pinyin",
+    "modePinyin": "Pinyin only",
+    "prev": "‹ Previous",
+    "next": "Next ›",
+    "wordByWord": "Word by word",
+    "loading": "Loading…",
+    "emptyCatalog": "No songs in the catalogue.",
+    "catalogFailed": "Could not load the catalogue.",
+    "songFailed": "Could not load: {song}",
+    "noLines": "No lines."
   }
 }

@@ -8,6 +8,7 @@ import { localeMeta, locales, useLocale } from "@/context/LocaleContext";
 import { SiteNavAuth } from "@/components/SiteNavAuth";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Icon } from "@/components/ui/Icon";
+import { hidesSiteNav } from "@/lib/immersive-routes";
 import { isAdminEmail } from "@/lib/phrase-game/admin";
 
 const AUTH_ENABLED = process.env.NEXT_PUBLIC_AUTH_ENABLED !== "0";
@@ -31,6 +32,7 @@ const NAV_GROUPS: ReadonlyArray<{ key: "play" | "study"; tabs: readonly NavTab[]
       { href: "/phrase-game", key: "phraseGame", featured: true },
       { href: "/gamification", key: "gamification" },
       { href: "/praticar", key: "tutor" },
+      { href: "/ktv", key: "ktv" },
     ],
   },
   {
@@ -168,11 +170,6 @@ function CuratorTabs({
   );
 }
 
-function isKtvPath(pathname: string | null): boolean {
-  if (!pathname) return false;
-  return pathname === "/ktv" || pathname.endsWith("/ktv");
-}
-
 export function SiteNav() {
   const pathname = usePathname();
   const { locale, setLocale, t } = useLocale();
@@ -204,7 +201,7 @@ export function SiteNav() {
 
   const closeMenu = useCallback(() => setLangOpen(false), []);
 
-  if (isKtvPath(pathname)) return null;
+  if (hidesSiteNav(pathname)) return null;
 
   return (
     <header

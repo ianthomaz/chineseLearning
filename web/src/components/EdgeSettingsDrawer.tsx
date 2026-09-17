@@ -1,17 +1,23 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
 import { useLocale } from "@/context/LocaleContext";
+import { isImmersiveRoute } from "@/lib/immersive-routes";
 import { usePinyin } from "@/context/PinyinContext";
 import { useTranslationDisplay } from "@/context/TranslationContext";
 
 export function EdgeSettingsDrawer() {
+  const pathname = usePathname();
   const { t } = useLocale();
   const { showPinyin, setShowPinyin } = usePinyin();
   const { showTranslation, setShowTranslation } = useTranslationDisplay();
   const [open, setOpen] = useState(false);
   const tabId = useId();
   const panelId = `${tabId}-panel`;
+  // These toggles drive the course-content components; on the full-screen
+  // routes they control nothing and the tab overlaps the content.
+  const hidden = isImmersiveRoute(pathname);
 
   useEffect(() => {
     if (!open) return;
@@ -64,6 +70,8 @@ export function EdgeSettingsDrawer() {
       </div>
     );
   }
+
+  if (hidden) return null;
 
   return (
     <>

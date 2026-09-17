@@ -1,9 +1,36 @@
-# lyricsReviewKTV — protótipo
+# lyricsReviewKTV — arquivo histórico
 
-**Obsoleto para uso diário.** A versão viva está no site:
+O protótipo HTML autónomo (`indexKTV.html`) e a sua cópia das letras foram
+removidos: viviam duplicados byte a byte com os ficheiros que o site serve.
 
-- Rota: `/aulaChines/ktv` (só conta admin)
-- Dados: `web/public/ktv/`
-- UI: `web/src/components/lyrics-ktv/`
+A versão viva é a rota do site:
 
-Esta pasta ficou como rascunho HTML original (`indexKTV.html`). Não editar letras aqui — editar em `web/public/ktv/letras/`.
+| | |
+|---|---|
+| Rota | `/ktv` (`/aulaChines/ktv` em produção) — pública, sem login |
+| Dados | `web/public/ktv/catalog.json` + `web/public/ktv/letras/*.json` — **única fonte** |
+| UI | `web/src/components/lyrics-ktv/LyricsKtvSession.tsx` |
+| Strings | `web/src/messages/{pt,en,es}.json`, secção `ktv` |
+
+Para acrescentar uma música: criar `web/public/ktv/letras/<slug>.json` e
+registá-la em `web/public/ktv/catalog.json`.
+
+Formato de cada letra:
+
+```jsonc
+{
+  "meta": { "titleHanzi": "過火", "titlePinyin": "guò huǒ" },
+  "lines": [
+    {
+      "section": "副歌",          // opcional, agrupa linhas
+      "hanzi": "你说你想要逃",
+      "pinyin": "nǐ shuō nǐ xiǎng yào táo",
+      "words": [                  // opcional, glossário palavra por palavra
+        { "h": "你", "p": "nǐ", "g": "tu" }
+      ]
+    }
+  ]
+}
+```
+
+O histórico do protótipo continua disponível em git.

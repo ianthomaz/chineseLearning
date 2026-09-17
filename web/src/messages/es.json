@@ -33,7 +33,8 @@
     "group": {
       "play": "Jugar",
       "study": "Estudiar"
-    }
+    },
+    "ktv": "Letras"
   },
   "gamification": {
     "title": "Quiz",
@@ -96,7 +97,8 @@
     "modePhraseGameDesc": "Forma frases en chino arrastrando las piezas en el orden correcto.",
     "featuredKicker": "Destacado",
     "featuredCta": "Jugar ahora",
-    "featuredNote": "No necesitas cuenta — juega ya como invitado."
+    "featuredNote": "No necesitas cuenta — juega ya como invitado.",
+    "modeKtvDesc": "Letras de canciones en hanzi y pinyin, línea a línea, con glosario palabra por palabra."
   },
   "index": {
     "reviewKicker": "复习",
@@ -330,8 +332,7 @@
     "hanziWriterData": "hanzi-writer-data",
     "hanziWriterTail": "· origen de los trazos:",
     "hanziWriterMmh": "Make Me a Hanzi",
-    "hanziWriterEnd": "/ Arphic.",
-    "ktvLink": "詞 · Lyric Cards"
+    "hanziWriterEnd": "/ Arphic."
   },
   "metadata": {
     "siteTitle": "Chino básico",
@@ -417,5 +418,25 @@
     "bankError": "No se pudo cargar el banco de frases. Recarga la página.",
     "tierSoon": "{tiers} — muy pronto.",
     "extrasOptional": "opcional"
+  },
+  "ktv": {
+    "title": "Letras / KTV",
+    "brand": "Letras",
+    "backSite": "← Sitio",
+    "backHome": "← Inicio",
+    "chooseSong": "Elegir canción",
+    "pinyinSize": "Tamaño del pinyin",
+    "pinyinSmaller": "Reducir fuente",
+    "pinyinBigger": "Aumentar fuente",
+    "modeCards": "Hanzi + Pinyin",
+    "modePinyin": "Solo pinyin",
+    "prev": "‹ Anterior",
+    "next": "Siguiente ›",
+    "wordByWord": "Palabra por palabra",
+    "loading": "Cargando…",
+    "emptyCatalog": "No hay canciones en el catálogo.",
+    "catalogFailed": "No se pudo cargar el catálogo.",
+    "songFailed": "No se pudo cargar: {song}",
+    "noLines": "Sin líneas."
   }
 }

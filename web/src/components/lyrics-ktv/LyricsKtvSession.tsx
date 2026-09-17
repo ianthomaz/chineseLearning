@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useLocale } from "@/context/LocaleContext";
 
 const BASE_PATH = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "");
 const PINYIN_SIZE_MIN = 22;
@@ -21,14 +22,6 @@ type SongPayload = {
   lines?: LyricLine[];
 };
 type CatalogSong = { file: string; titleHanzi?: string };
-
-function escapeHtml(s: string) {
-  return String(s).replace(
-    /[&<>"']/g,
-    (c) =>
-      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!,
-  );
-}
 
 function fitHanzi(el: HTMLElement, zone: HTMLElement) {
   const max = Math.min(92, Math.max(48, Math.floor(zone.clientWidth * 0.2)));
@@ -55,6 +48,7 @@ function groupBySection(lines: LyricLine[]): SectionBlock[] {
 }
 
 export function LyricsKtvSession() {
+  const { t } = useLocale();
   const [songs, setSongs] = useState<CatalogSong[]>([]);
   const [songFile, setSongFile] = useState("");
   const [lines, setLines] = useState<LyricLine[]>([]);
@@ -124,14 +118,14 @@ export function LyricsKtvSession() {
         if (cancelled) return;
         setSongs(list);
         if (!list.length) {
-          setError("Nenhuma música no catálogo.");
+          setError(t("ktv.emptyCatalog"));
           setLoading(false);
           return;
         }
         setSongFile(list[0]!.file);
       } catch {
         if (!cancelled) {
-          setError("Não carregou o catálogo.");
+          setError(t("ktv.catalogFailed"));
           setLoading(false);
         }
       }
@@ -139,7 +133,7 @@ export function LyricsKtvSession() {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [t]);
 
   useEffect(() => {
     if (!songFile) return;
@@ -166,7 +160,7 @@ export function LyricsKtvSession() {
       } catch {
         if (!cancelled) {
           setLines([]);
-          setError(`Falha ao carregar: ${songFile}`);
+          setError(t("ktv.songFailed", { song: songFile }));
         }
       } finally {
         if (!cancelled) setLoading(false);
@@ -175,7 +169,7 @@ export function LyricsKtvSession() {
     return () => {
       cancelled = true;
     };
-  }, [songFile]);
+  }, [songFile, t]);
 
   useEffect(() => {
     if (view !== "cards") return;
@@ -320,28 +314,28 @@ export function LyricsKtvSession() {
       <div className="ktv-topbar">
         {view === "home" ? (
           <Link href="/" className="ktv-back" prefetch={false}>
-            ← Site
+            {t("ktv.backSite")}
           </Link>
         ) : (
           <button type="button" className="ktv-back" onClick={backHome}>
-            ← Início
+            {t("ktv.backHome")}
           </button>
         )}
 
         <div className="ktv-brand">
           <span className="ktv-chop">詞</span>
           <span className="ktv-brand-text">
-            {view === "home" ? "Lyric Cards" : songTitle || "Lyric Cards"}
+            {view === "home" ? t("ktv.brand") : songTitle || t("ktv.brand")}
           </span>
         </div>
 
         {view === "pinyin" ? (
-          <div className="ktv-size-controls" aria-label="Tamanho do pinyin">
+          <div className="ktv-size-controls" aria-label={t("ktv.pinyinSize")}>
             <button
               type="button"
               className="ktv-size-btn"
               onClick={() => bumpPinyinSize(-4)}
-              aria-label="Diminuir fonte"
+              aria-label={t("ktv.pinyinSmaller")}
             >
               −
             </button>
@@ -350,7 +344,7 @@ export function LyricsKtvSession() {
               type="button"
               className="ktv-size-btn"
               onClick={() => bumpPinyinSize(4)}
-              aria-label="Aumentar fonte"
+              aria-label={t("ktv.pinyinBigger")}
             >
               +
             </button>
@@ -358,7 +352,7 @@ export function LyricsKtvSession() {
         ) : view === "home" ? (
           <select
             className="ktv-select"
-            aria-label="Escolher música"
+            aria-label={t("ktv.chooseSong")}
             value={songFile}
             onChange={(e) => setSongFile(e.target.value)}
           >
@@ -369,7 +363,7 @@ export function LyricsKtvSession() {
             ))}
           </select>
         ) : (
-          <span className="ktv-mode-pill">Hanzi + Pinyin</span>
+          <span className="ktv-mode-pill">{t("ktv.modeCards")}</span>
         )}
       </div>
 
@@ -378,13 +372,13 @@ export function LyricsKtvSession() {
           {error || loading ? (
             <div className="ktv-empty">
               <div className="ktv-empty-glyph">詞</div>
-              <div>{error ?? "Carregando…"}</div>
+              <div>{error ?? t("ktv.loading")}</div>
             </div>
           ) : (
             <>
               <div className="ktv-home-hero">
                 <div className="ktv-home-chop">詞</div>
-                <h1 className="ktv-home-title">{songTitle || "—"}</h1>
+                <h1 className="ktv-home-title">{songTitle || t("ktv.brand")}</h1>
                 {songTitlePinyin ? (
                   <p className="ktv-home-pinyin">{songTitlePinyin}</p>
                 ) : null}
@@ -397,7 +391,7 @@ export function LyricsKtvSession() {
                   onClick={() => startMode("cards")}
                   disabled={!lines.length}
                 >
-                  <span className="ktv-mode-btn-title">Hanzi + Pinyin</span>
+                  <span className="ktv-mode-btn-title">{t("ktv.modeCards")}</span>
                 </button>
                 <button
                   type="button"
@@ -405,7 +399,7 @@ export function LyricsKtvSession() {
                   onClick={() => startMode("pinyin")}
                   disabled={!lines.length}
                 >
-                  <span className="ktv-mode-btn-title">Só pinyin</span>
+                  <span className="ktv-mode-btn-title">{t("ktv.modePinyin")}</span>
                 </button>
               </div>
             </>
@@ -439,7 +433,7 @@ export function LyricsKtvSession() {
             {!item ? (
               <div className="ktv-empty">
                 <div className="ktv-empty-glyph">詞</div>
-                <div>Sem linhas.</div>
+                <div>{t("ktv.noLines")}</div>
               </div>
             ) : (
               <div
@@ -473,16 +467,14 @@ export function LyricsKtvSession() {
                   <>
                     <div className="ktv-divider" />
                     <div className="ktv-gloss">
-                      <div className="ktv-gloss-label">PALAVRA POR PALAVRA</div>
+                      <div className="ktv-gloss-label">{t("ktv.wordByWord")}</div>
                       <div className="ktv-gloss-row">
                         {item.words.map((w, i) => (
-                          <div
-                            className="ktv-gloss-chip"
-                            key={`${w.h ?? ""}-${i}`}
-                            dangerouslySetInnerHTML={{
-                              __html: `<div class="h">${escapeHtml(w.h || "")}</div><div class="p">${escapeHtml(w.p || "")}</div><div class="g">${escapeHtml(w.g || "")}</div>`,
-                            }}
-                          />
+                          <div className="ktv-gloss-chip" key={`${w.h ?? ""}-${i}`}>
+                            <div className="h">{w.h || ""}</div>
+                            <div className="p">{w.p || ""}</div>
+                            <div className="g">{w.g || ""}</div>
+                          </div>
                         ))}
                       </div>
                     </div>
@@ -499,7 +491,7 @@ export function LyricsKtvSession() {
               disabled={!canPrev}
               onClick={() => go(-1)}
             >
-              ‹ Anterior
+              {t("ktv.prev")}
             </button>
             <button
               type="button"
@@ -507,7 +499,7 @@ export function LyricsKtvSession() {
               disabled={!canNext}
               onClick={() => go(1)}
             >
-              Próxima ›
+              {t("ktv.next")}
             </button>
           </div>
         </>
