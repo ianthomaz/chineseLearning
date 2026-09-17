@@ -1,6 +1,6 @@
 /**
  * Curador — histórico de aulas (SERVER MODE only). Gated to the curator email.
- * Links to per-lesson review, edit and delete. See docs/12 §8.
+ * Links to per-lesson review, edit and delete. See docs/09_roadmap_integracoes.md.
  */
 import { auth } from "@/server/auth";
 import { isAdminEmail } from "@/lib/phrase-game/admin";

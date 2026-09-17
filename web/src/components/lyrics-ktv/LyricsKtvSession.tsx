@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { SpeakButton } from "@/components/ui/SpeakButton";
 import { useLocale } from "@/context/LocaleContext";
+import { trackEvent } from "@/lib/analytics";
 
 const BASE_PATH = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "");
 const PINYIN_SIZE_MIN = 22;
@@ -89,12 +91,53 @@ export function LyricsKtvSession() {
     );
   }, []);
 
-  const startMode = useCallback((mode: Exclude<ViewMode, "home">) => {
-    setIdx(0);
-    setView(mode);
-  }, []);
+  const startMode = useCallback(
+    (mode: Exclude<ViewMode, "home">) => {
+      setIdx(0);
+      setView(mode);
+      trackEvent({
+        action: "mode_start",
+        category: "ktv",
+        label: `${songFile}:${mode}`,
+        song: songFile,
+        mode,
+        locale: document.documentElement.lang,
+      });
+      trackEvent({
+        action: "song_open",
+        category: "ktv",
+        label: songFile,
+        song: songFile,
+        locale: document.documentElement.lang,
+      });
+    },
+    [songFile],
+  );
 
   const backHome = useCallback(() => setView("home"), []);
+
+  const prevLineIdxRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    if (view !== "cards" || !lines.length) return;
+    if (prevLineIdxRef.current === null) {
+      prevLineIdxRef.current = idx;
+      return;
+    }
+    if (prevLineIdxRef.current === idx) return;
+    prevLineIdxRef.current = idx;
+    trackEvent({
+      action: "line_advance",
+      category: "ktv",
+      label: `${songFile}:${idx + 1}`,
+      value: idx + 1,
+      locale: document.documentElement.lang,
+    });
+  }, [view, idx, songFile, lines.length]);
+
+  useEffect(() => {
+    if (view === "home") prevLineIdxRef.current = null;
+  }, [view]);
 
   useEffect(() => {
     const id = "ktv-fonts";
@@ -448,8 +491,21 @@ export function LyricsKtvSession() {
                   <span className="ktv-section-chop">
                     {item.section || songTitle || ""}
                   </span>
-                  <span className="ktv-line-index">
-                    #{String(idx + 1).padStart(2, "0")}
+                  <span className="ktv-line-actions">
+                    <SpeakButton
+                      text={item.hanzi || ""}
+                      label={t("phraseGame.speak")}
+                      onPlay={() =>
+                        trackEvent({
+                          action: "audio_play",
+                          category: "ktv",
+                          label: item.hanzi,
+                        })
+                      }
+                    />
+                    <span className="ktv-line-index">
+                      #{String(idx + 1).padStart(2, "0")}
+                    </span>
                   </span>
                 </div>
 
@@ -820,6 +876,11 @@ const KTV_CSS = `
   border:1.3px solid var(--seal);
   padding:4px 9px;
   border-radius:3px;
+}
+.ktv-line-actions{
+  display:flex;
+  align-items:center;
+  gap:8px;
 }
 .ktv-line-index{
   font-family:'JetBrains Mono', ui-monospace, monospace;

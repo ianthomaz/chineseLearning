@@ -28,7 +28,7 @@ function loadEnvFile(name) {
 loadEnvFile(".env");
 loadEnvFile(".env.local");
 
-process.env.NEXT_PUBLIC_BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "/aulaChines";
+process.env.NEXT_PUBLIC_BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const hasSecret = Boolean(process.env.AUTH_SECRET || process.env.NEXTAUTH_SECRET);
 const clientId = process.env.GOOGLE_CLIENT_ID || process.env.AUTH_GOOGLE_ID || "";
@@ -44,7 +44,7 @@ if (!authReady && !authForced) {
   process.env.NEXT_PUBLIC_AUTH_ENABLED = "0";
   console.log(
     "→ Auth off (need AUTH_SECRET + GOOGLE_CLIENT_ID in web/.env.local).\n" +
-      "  Setup: docs/09_google_auth_jogo.md → node scripts/sync-env-from-credentials.mjs\n" +
+      "  Setup: docs/05_autenticacao.md → node scripts/sync-env-from-credentials.mjs\n" +
       "  Force try: NEXT_PUBLIC_AUTH_ENABLED=1 npm run dev",
   );
 }

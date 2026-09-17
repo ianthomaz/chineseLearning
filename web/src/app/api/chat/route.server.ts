@@ -115,7 +115,7 @@ function extractStructuredFromReplyText(reply: unknown): StructuredLine[] | null
 }
 
 export async function POST(request: Request) {
-  // Interactive features require a session (docs/12 §10.2); the LLM proxy is
+  // Interactive features require a session (docs/05_autenticacao.md); the LLM proxy is
   // the expensive resource, so it also gets a per-user rate limit.
   const user = await getSessionUser();
   if (!user) {

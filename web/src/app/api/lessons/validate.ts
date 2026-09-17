@@ -50,7 +50,7 @@ export function parseLessonInput(body: unknown): LessonInput | Response {
       theme: typeof w.theme === "string" ? w.theme.trim() : null,
     });
   }
-  // Product rule (docs/12 §4): a lesson without words has little value.
+  // Product rule (docs/09_roadmap_integracoes.md): a lesson without words has little value.
   if (words.length === 0) return invalid("words");
 
   return { lessonDate, classId, notes, materialRefs, words };

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Icon } from "@/components/ui/Icon";
+import { setAnalyticsUserProperties, trackEvent } from "@/lib/analytics";
 
 type Theme = "light" | "dark";
 
@@ -28,6 +29,13 @@ export function ThemeToggle() {
     } catch {
       /* ignore */
     }
+    trackEvent({
+      action: "theme_change",
+      category: "settings",
+      label: next,
+      to: next,
+    });
+    setAnalyticsUserProperties({ ui_theme: next });
   }
 
   return (

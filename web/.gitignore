@@ -54,7 +54,7 @@ yarn-error.log*
 *.sqlite-wal
 *.sqlite-shm
 
-# Large vocabulary PDFs — tracked list in src/data/vocabulary-pdf-downloads.json; files live here and sync into public/downloads on prebuild/predev (see scripts/sync-pdf-downloads.sh). deploy-node rsync sends pdf-content/; excludes redundant public/downloads/*.pdf.
+# Large vocabulary PDFs — tracked list in src/data/vocabulary-pdf-downloads.json; files live here and sync into public/downloads on prebuild/predev (see scripts/sync-pdf-downloads.sh). deploy:prod rsync sends pdf-content/; excludes redundant public/downloads/*.pdf.
 /pdf-content/*.pdf
 /public/downloads/*.pdf
 

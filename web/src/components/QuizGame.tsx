@@ -1,8 +1,10 @@
 "use client";
 
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useMemo, useEffect, useRef } from "react";
 import { ChineseWithPinyinLine } from "@/components/ChineseWithPinyinLine";
+import { SpeakButton } from "@/components/ui/SpeakButton";
 import { useLocale } from "@/context/LocaleContext";
+import { trackEvent } from "@/lib/analytics";
 import {
   localizedQuestionPrompt,
   localizedExplanation,
@@ -28,8 +30,21 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
   const [state, setState] = useState<QuizState>("answering");
   const [userAnswer, setUserAnswer] = useState<string | number | string[] | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+  const quizStarted = useRef(false);
 
   const currentQuestion = useMemo(() => questions[currentIndex], [questions, currentIndex]);
+
+  useEffect(() => {
+    if (quizStarted.current || questions.length === 0) return;
+    quizStarted.current = true;
+    trackEvent({
+      action: "quiz_start",
+      category: "quiz",
+      label: String(questions.length),
+      total: questions.length,
+      locale,
+    });
+  }, [questions.length, locale]);
 
   const handleSubmitAnswer = useCallback(async () => {
     if (userAnswer === null) return;
@@ -59,6 +74,16 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
     if (correct) {
       setScore((prev) => prev + 1);
     }
+    trackEvent({
+      action: "question_answered",
+      category: "quiz",
+      label: String(currentQuestion.id),
+      question_type: currentQuestion.type,
+      block_id: currentQuestion.block,
+      correct,
+      value: correct ? 1 : 0,
+      locale,
+    });
     setState("result");
   }, [userAnswer, currentQuestion, locale]);
 
@@ -69,10 +94,17 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
       setIsCorrect(null);
       setState("answering");
     } else {
-      // Quiz finished
+      trackEvent({
+        action: "quiz_complete",
+        category: "quiz",
+        label: `${score}/${questions.length}`,
+        score,
+        total: questions.length,
+        locale,
+      });
       setState("idle");
     }
-  }, [currentIndex, questions.length]);
+  }, [currentIndex, questions.length, score, locale]);
 
   const handleRestart = useCallback(() => {
     setCurrentIndex(0);
@@ -80,7 +112,14 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
     setUserAnswer(null);
     setIsCorrect(null);
     setState("answering");
-  }, []);
+    trackEvent({
+      action: "quiz_start",
+      category: "quiz",
+      label: "restart",
+      total: questions.length,
+      locale,
+    });
+  }, [questions.length, locale]);
 
   // Quiz finished screen
   if (state === "idle" && (currentIndex >= questions.length || isCorrect !== null)) {
@@ -158,10 +197,25 @@ export function QuizGame({ quizBank }: { quizBank: QuizBank }) {
 
         {/* Hanzi & Pinyin */}
         {currentQuestion.hanzi.trim() && (
-          <div className="mt-6">
-            <ChineseWithPinyinLine
-              hanzi={currentQuestion.hanzi}
-              pinyin={currentQuestion.pinyin}
+          <div className="mt-6 flex items-start gap-2">
+            <div className="min-w-0 flex-1">
+              <ChineseWithPinyinLine
+                hanzi={currentQuestion.hanzi}
+                pinyin={currentQuestion.pinyin}
+              />
+            </div>
+            <SpeakButton
+              text={currentQuestion.hanzi}
+              label={t("phraseGame.speak")}
+              onPlay={() =>
+                trackEvent({
+                  action: "audio_play",
+                  category: "quiz",
+                  label: currentQuestion.hanzi,
+                  hanzi: currentQuestion.hanzi,
+                  question_type: currentQuestion.type,
+                })
+              }
             />
           </div>
         )}

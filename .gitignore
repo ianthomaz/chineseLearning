@@ -1,5 +1,10 @@
 # System files
 .DS_Store
+temp/
+
+# Accidental IDE browser paths (vscode:/…, http:/…)
+http:/
+vscode:/
 *.swp
 *.swo
 *~
@@ -11,9 +16,10 @@ node_modules/
 web/.next/
 web/out/
 
-# Local credentials (Auth Google, etc.) — see docs/09_google_auth_jogo.md
+# Local credentials (Auth Google, etc.) — see docs/05_autenticacao.md
 local/credentials/credentials.json
 local/credentials/google-oauth-client.json
+local/credentials/google-oauth-client-*.json
 local/credentials/generated/
 local/credentials/*.env
 local/credentials/*.env.*

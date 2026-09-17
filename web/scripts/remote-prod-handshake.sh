@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 set -euo pipefail
-# Run LLM health + POST /edu/chat on the deploy host using the same paths as deploy:node.
+# Run LLM health + POST /edu/chat on the deploy host (same server.env as deploy:prod).
 # Copies web/deploy/server.env to a temp file on the remote, sources it, then deletes it.
 #
 #   cd web && npm run remote:handshake
 #   DEPLOY_NODE_HOST=itcsVM3 DEPLOY_NODE_DIR=/path npm run remote:handshake
 #
-# Default host: DEPLOY_NODE_HOST ou DEPLOY_PROD_HOST ou itcsVM1 (legado).
+# Default host: DEPLOY_PROD_HOST ou itcsVM3.
 #
 # Requires: ssh + scp to the host; on the remote: curl (and jq optional).
 
-REMOTE="${DEPLOY_NODE_HOST:-${DEPLOY_PROD_HOST:-${DEPLOY_WEBPLACE_HOST:-itcsVM1}}}"
+REMOTE="${DEPLOY_PROD_HOST:-${DEPLOY_NODE_HOST:-${DEPLOY_WEBPLACE_HOST:-itcsVM3}}}"
 REMOTE_DIR="${DEPLOY_NODE_DIR:-/home/opc/projetos/chineseLearning-app}"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -67,7 +67,7 @@ echo "  OK."
 if [[ -f "$APP_DIR/package.json" ]]; then
   echo "→ Remote: app tree present at $APP_DIR (Node $(command -v node >/dev/null && node -p process.version || echo '?'))."
 else
-  echo "→ Remote: $APP_DIR ainda sem package.json (normal antes do primeiro deploy:node)."
+  echo "→ Remote: $APP_DIR ainda sem package.json (normal antes do primeiro deploy:prod)."
 fi
 REMOTE_SCRIPT
 

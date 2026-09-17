@@ -1,7 +1,9 @@
 "use client";
 
 import { PhraseRevealLine } from "@/components/PhraseRevealLine";
+import { SpeakButton } from "@/components/ui/SpeakButton";
 import { useLocale } from "@/context/LocaleContext";
+import { trackEvent } from "@/lib/analytics";
 import type { StructureGlossesByLocale, StructureLine } from "@/lib/blocks-types";
 import { pickLocalized } from "@/lib/localized-line";
 
@@ -39,12 +41,30 @@ export function ReviewStructures({ blockId, lines, structureGlosses }: Props) {
               className="border-l-2 pl-5"
               style={{ borderColor: "var(--border)" }}
             >
-              <PhraseRevealLine
-                hanzi={line.hanzi}
-                pinyin={line.pinyin}
-                translation={gloss.trim()}
-                hanziClassName="font-hanzi text-2xl leading-loose text-ink md:text-[1.7rem]"
-              />
+              <div className="flex items-start gap-2">
+                <div className="min-w-0 flex-1">
+                  <PhraseRevealLine
+                    hanzi={line.hanzi}
+                    pinyin={line.pinyin}
+                    translation={gloss.trim()}
+                    hanziClassName="font-hanzi text-2xl leading-loose text-ink md:text-[1.7rem]"
+                  />
+                </div>
+                <SpeakButton
+                  text={line.hanzi}
+                  label={t("phraseGame.speak")}
+                  onPlay={() =>
+                    trackEvent({
+                      action: "audio_play",
+                      category: "study",
+                      label: line.hanzi,
+                      hanzi: line.hanzi,
+                      block_id: blockId,
+                      mode: "review",
+                    })
+                  }
+                />
+              </div>
             </li>
           );
         })}

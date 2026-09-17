@@ -8,6 +8,7 @@
  * Best-effort and non-blocking: failures are swallowed, and `keepalive` lets
  * abandon events flush during page unload / SPA navigation.
  */
+import { getConsentChoiceSync } from "@/context/ConsentContext";
 import type { GameLevel, GameTier } from "./types";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -61,7 +62,13 @@ export function newRoundId(): string {
 export function logGameEvent(event: GameEventName, data: Partial<GameEventData> = {}): void {
   if (!ENABLED || typeof window === "undefined") return;
   const locale = document.documentElement.lang || undefined;
-  const body = JSON.stringify({ event, anonId: anonId(), locale, ...data });
+  const id = getConsentChoiceSync() === "analytics" ? anonId() : undefined;
+  const body = JSON.stringify({
+    event,
+    ...(id ? { anonId: id } : {}),
+    locale,
+    ...data,
+  });
   try {
     void fetch(ENDPOINT, {
       method: "POST",

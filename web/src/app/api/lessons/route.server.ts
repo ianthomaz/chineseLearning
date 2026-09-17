@@ -1,6 +1,6 @@
 /**
  * Curator lesson API — SERVER MODE only (excluded from the static export by
- * `pageExtensions`). Every method requires the curator session (docs/12 §10.1).
+ * `pageExtensions`). Every method requires the curator session (docs/05_autenticacao.md).
  */
 import { requireCurator } from "@/server/auth/session";
 import { createLesson, listLessons } from "@/server/db/lessons";

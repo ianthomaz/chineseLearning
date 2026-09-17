@@ -146,5 +146,5 @@ echo "  Pack app: data/app-library/ sobe do Mac (build local via build:app-libra
 echo "  Seed remoto é fill-empty. Forçar reimport editorial:"
 echo "    ssh ${REMOTE} 'cd ${REMOTE_DIR} && FORCE_RESEED=1 npm run seed:content'"
 echo "  Ou: DEPLOY_PROD_SEED_CONTENT=1 ./start.sh --prod --upload"
-echo "  Editar conteúdo: npm run db:studio (local) — ver docs/11_content_db_schema.md"
-echo "  Nginx: proxy_pass /aulaChines/ → 127.0.0.1:\${PORT} (ver docs/06_deploy.md)."
+echo "  Editar conteúdo: npm run db:studio (local) — ver docs/07_conteudo_dados.md"
+echo "  Nginx: learnchinese.today → 127.0.0.1:\${PORT} (ver web/deploy/nginx-learnchinese.conf.example)."

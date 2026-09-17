@@ -8,7 +8,7 @@ WEB_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$WEB_ROOT"
 
 if [[ ! -f ./server.env ]]; then
-  echo "Missing $WEB_ROOT/server.env (copy from deploy or scp from local deploy:node)." >&2
+  echo "Missing $WEB_ROOT/server.env (copy from deploy/ or push via start.sh --prod --upload)." >&2
   exit 1
 fi
 

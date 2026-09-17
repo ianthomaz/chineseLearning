@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 /**
- * Production server for builds with `basePath`: browsers use `/aulaChines/...` but the stock
- * `next start` handler was matching only unprefixed paths (`/review`, `/_next/static/...`).
- * Strip the base path on the Node request before delegating to Next.
+ * Production server: when `basePath` is set, strip the prefix on incoming requests before
+ * delegating to Next (nginx may forward prefixed paths). Empty basePath = pass-through.
  */
 import { readFileSync } from "node:fs";
 import { createServer } from "node:http";
@@ -94,7 +93,7 @@ createServer(async (req, res) => {
       }
     }
     // Next emits trailing-slash redirects with Location relative to the host root; that drops
-    // basePath in the browser (e.g. /aulaChines/foo/ → Location: /foo). Strip a single
+    // basePath in the browser (e.g. /prefix/foo/ → Location: /foo). Strip a single
     // trailing slash before handing off when `trailingSlash: false` in next.config.
     if (u.pathname.length > 1 && u.pathname.endsWith("/")) {
       u.pathname = u.pathname.replace(/\/+$/, "") || "/";

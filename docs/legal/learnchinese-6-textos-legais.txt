@@ -1,0 +1,1618 @@
+POLÍTICA DE PRIVACIDADE — PT
+
+**Última atualização:** 17 de setembro de 2026
+
+A **ITCS Webplace Ltda.**, inscrita no CNPJ sob nº **65.998.990/0001-44** (“**Webplace**”, “**nós**” ou “**Controlador**”), é responsável pelo site **learnchinese.today** (“**Site**”), uma plataforma educacional voltada ao aprendizado de chinês.
+
+Esta Política de Privacidade explica, de forma clara, quais dados pessoais podem ser tratados no Site, para quais finalidades, com quem podem ser compartilhados, por quanto tempo podem ser mantidos e como o titular pode exercer seus direitos.
+
+## 1. Quem é o controlador dos dados
+
+**Controlador:** ITCS Webplace Ltda.  
+**CNPJ:** 65.998.990/0001-44  
+**Website:** https://learnchinese.today  
+**Contato para privacidade e exercício de direitos:** email@webplace.cc
+
+## 2. Quais dados tratamos
+
+O tratamento depende da forma como o usuário utiliza o Site.
+
+### 2.1. Uso sem login
+
+Partes do Site podem ser utilizadas sem a criação de uma conta ou login.
+
+Nesse caso, podemos tratar informações relacionadas ao uso do Site, incluindo:
+
+- idioma da interface;
+- nível ou etapa utilizada;
+- frases ou atividades apresentadas;
+- respostas, acertos e erros;
+- identificador da rodada ou sessão de jogo;
+- data e horário dos eventos;
+- informações técnicas básicas, como navegador, dispositivo, endereço IP e user-agent, quando registradas pelos sistemas de infraestrutura;
+- identificador pseudônimo ou anônimo armazenado localmente no navegador para relacionar eventos do jogo no mesmo dispositivo;
+- preferência de tema e outras preferências locais.
+
+Esses dados não são intencionalmente associados ao nome ou e-mail de um usuário não autenticado.
+
+### 2.2. Login com Google
+
+O login com Google é opcional e utilizado exclusivamente para autenticação e identificação da conta dentro do Site.
+
+Ao utilizar o login com Google, o serviço de autenticação pode fornecer ao Site, conforme o funcionamento do Google e as permissões apresentadas ao usuário:
+
+- nome;
+- endereço de e-mail;
+- imagem ou URL da foto de perfil, quando disponível;
+- identificador técnico necessário para reconhecer ou vincular a conta autenticada.
+
+O **learnchinese.today não solicita acesso ao Gmail, Google Drive, Google Calendar, Google Contacts nem ao conteúdo de outros serviços da conta Google** para fins do login descrito nesta Política.
+
+Os dados recebidos por meio do Google são utilizados somente para autenticar o usuário, manter a conta e a sessão, identificar o usuário dentro das funcionalidades do Site e, quando aplicável, associar preferências ou progresso à conta.
+
+### 2.3. Sessão de autenticação
+
+Quando o usuário realiza login, o Site utiliza mecanismo de autenticação baseado em **Auth.js** e cookie de sessão.
+
+O cookie de autenticação é configurado para manter a sessão por aproximadamente **30 dias**, podendo expirar antes, ser renovado conforme a utilização ou ser invalidado quando o usuário encerra a sessão ou quando necessário por razões de segurança.
+
+Sempre que tecnicamente aplicável, cookies de autenticação são configurados com medidas de proteção adequadas, como atributos `HttpOnly`, `Secure` e políticas apropriadas de `SameSite`.
+
+### 2.4. Apelido e progresso
+
+O Site pode permitir a criação de um apelido (“nick”) e poderá armazenar informações relacionadas ao progresso educacional, preferências ou desempenho do usuário.
+
+Quando essas informações estiverem associadas a uma conta autenticada, poderão constituir dados pessoais.
+
+### 2.5. Tutor com inteligência artificial
+
+O Site oferece ou poderá oferecer funcionalidades de tutor educacional com inteligência artificial.
+
+Quando o usuário envia uma mensagem ao tutor:
+
+- o texto necessário para produzir a resposta é enviado pelo backend do learnchinese.today à infraestrutura de IA operada pela Webplace;
+- atualmente, o processamento utiliza uma **API proprietária baseada em Ollama**, operada no ecossistema da Webplace;
+- nome, e-mail e outros dados de identificação direta do usuário não são intencionalmente incluídos no payload enviado ao modelo de linguagem;
+- o usuário não deve inserir voluntariamente dados pessoais sensíveis, informações confidenciais ou dados de terceiros nas mensagens enviadas ao tutor.
+
+As conversas podem ser processadas pelo tempo necessário à geração da resposta, segurança, diagnóstico e funcionamento da funcionalidade, conforme a arquitetura técnica do serviço.
+
+### 2.6. Google Analytics
+
+O Site utiliza **Google Analytics 4 (GA4)** para compreender, de forma estatística, como o Site é utilizado.
+
+A propriedade atualmente utilizada possui o identificador de medição:
+
+`G-2YMPSSQJND`
+
+O Google Analytics pode tratar informações como:
+
+- páginas visitadas;
+- eventos de navegação;
+- duração e características da sessão;
+- informações aproximadas de localização;
+- tipo de navegador e dispositivo;
+- identificadores armazenados em cookies ou tecnologias equivalentes.
+
+Os cookies e tecnologias analíticas do Google Analytics devem ser ativados somente após a escolha correspondente do usuário no mecanismo de consentimento de cookies, salvo se uma configuração técnica futura permitir tratamento sem armazenamento analítico sujeito a consentimento e houver base jurídica adequada.
+
+## 3. Cookies, localStorage e tecnologias semelhantes
+
+O Site utiliza cookies, `localStorage` e tecnologias equivalentes para diferentes finalidades.
+
+### 3.1. Tecnologias estritamente necessárias
+
+São utilizadas para funções essenciais ou solicitadas pelo próprio usuário, como:
+
+- autenticação;
+- segurança;
+- manutenção da sessão;
+- funcionamento técnico básico do Site.
+
+Essas tecnologias podem ser utilizadas independentemente da ativação de cookies analíticos, quando forem necessárias para a prestação do serviço solicitado pelo usuário.
+
+### 3.2. Preferências e armazenamento local
+
+O Site pode armazenar localmente no navegador:
+
+- preferência de tema;
+- idioma ou preferências de interface;
+- identificador pseudônimo ou anônimo relacionado ao jogo.
+
+O usuário pode apagar esses dados pelas configurações do navegador.
+
+### 3.3. Cookies analíticos
+
+Cookies analíticos, incluindo os relacionados ao Google Analytics, são utilizados para medir audiência, compreender padrões de uso e melhorar o Site.
+
+Quando o tratamento depender de consentimento, o usuário poderá:
+
+- aceitar os cookies analíticos;
+- recusá-los;
+- alterar posteriormente a escolha por meio do mecanismo de preferências disponibilizado no Site.
+
+A recusa de cookies analíticos não deve impedir o acesso às funcionalidades essenciais do Site.
+
+### 3.4. Cookies do Google Analytics
+
+O Google Analytics pode utilizar cookies como `_ga` e cookies relacionados à propriedade de Analytics para distinguir usuários e sessões.
+
+A duração desses cookies e a retenção dos dados tratados pelo Google podem variar conforme as configurações da propriedade, o navegador e as políticas do próprio Google.
+
+Informações adicionais sobre privacidade do Google estão disponíveis em:
+
+https://policies.google.com/privacy
+
+## 4. Para quais finalidades tratamos dados e quais bases jurídicas utilizamos
+
+Dependendo do contexto, podemos utilizar as seguintes bases previstas na Lei nº 13.709/2018 — Lei Geral de Proteção de Dados Pessoais (“LGPD”):
+
+| Finalidade | Exemplos de dados | Base jurídica principal |
+|---|---|---|
+| Fornecer as funcionalidades do Site | dados técnicos, preferências, eventos necessários | execução de contrato ou de procedimentos relacionados ao serviço solicitado pelo usuário; legítimo interesse, quando aplicável |
+| Permitir login e manter conta/sessão | nome, e-mail, identificador técnico, foto, cookie de sessão | execução de contrato ou de procedimentos a pedido do titular |
+| Segurança, prevenção de abuso e proteção da infraestrutura | logs, IP, user-agent, eventos técnicos | legítimo interesse e, quando aplicável, exercício regular de direitos |
+| Melhorar jogos e funcionalidades educacionais | eventos de uso e desempenho, preferencialmente de forma pseudonimizada ou agregada | legítimo interesse, observados os direitos e expectativas do titular |
+| Google Analytics e medição de audiência com cookies analíticos | identificadores analíticos, eventos e dados técnicos | consentimento, quando exigido e conforme a escolha realizada no banner |
+| Tutor com IA | texto enviado pelo usuário e contexto necessário | execução do serviço solicitado pelo usuário |
+| Cumprir obrigações legais ou responder a autoridades | dados necessários ao caso concreto | cumprimento de obrigação legal ou regulatória |
+
+Quando o tratamento estiver baseado em consentimento, o consentimento poderá ser revogado, sem prejuízo da licitude do tratamento realizado anteriormente à revogação.
+
+## 5. Com quem os dados podem ser compartilhados
+
+Os dados podem ser tratados ou compartilhados, na medida necessária, com:
+
+### Google
+
+Utilizado para:
+
+- autenticação com Google;
+- Google Analytics, quando autorizado.
+
+A relação do usuário com os serviços Google também é regida pelas políticas próprias do Google.
+
+### Infraestrutura e hospedagem
+
+A Webplace utiliza infraestrutura própria ou contratada para hospedagem, banco de dados, segurança, logs, entrega do Site e demais funções técnicas.
+
+Os principais dados operacionais do Site são hospedados em infraestrutura localizada no **Brasil, inclusive no Estado de São Paulo**, conforme informado na configuração atual do serviço.
+
+### Infraestrutura de inteligência artificial da Webplace
+
+Mensagens enviadas ao tutor podem ser encaminhadas a uma API proprietária baseada em Ollama, operada pela Webplace, apenas na medida necessária para produzir a resposta solicitada.
+
+Não enviamos intencionalmente nome ou e-mail no payload destinado ao modelo de linguagem.
+
+### Autoridades e obrigações legais
+
+Dados poderão ser fornecidos quando necessário ao cumprimento de obrigação legal ou regulatória, ordem judicial ou requisição válida de autoridade competente.
+
+### Não comercialização de dados
+
+**A Webplace não vende dados pessoais dos usuários do learnchinese.today.**
+
+## 6. Transferências e serviços de terceiros
+
+Embora a infraestrutura principal informada para o Site esteja localizada no Brasil, determinados fornecedores — especialmente o Google — podem realizar tratamento ou armazenamento de dados em outros países conforme sua própria infraestrutura.
+
+Quando houver transferência internacional de dados pessoais, serão observadas as disposições aplicáveis da LGPD e as medidas razoáveis de proteção correspondentes.
+
+## 7. Por quanto tempo mantemos os dados
+
+Os dados serão mantidos somente pelo período necessário às finalidades descritas nesta Política, observadas obrigações legais, segurança, prevenção a fraude, exercício de direitos e limitações técnicas razoáveis.
+
+Como regra geral:
+
+- **dados de conta:** enquanto a conta ou relação com o Site estiver ativa ou até pedido válido de eliminação, ressalvadas hipóteses legais de conservação;
+- **sessão:** durante o período de validade da sessão, normalmente em torno de 30 dias, salvo renovação, encerramento ou invalidação;
+- **eventos de jogo e métricas internas:** pelo período necessário à análise e evolução do serviço, com preferência por agregação ou anonimização quando deixarem de ser necessários em nível individual;
+- **dados do Google Analytics:** conforme a configuração da propriedade e as políticas de retenção do Google Analytics;
+- **logs técnicos e de segurança:** pelo período razoavelmente necessário à segurança, diagnóstico e prevenção de abuso;
+- **dados que devam ser preservados por lei ou para exercício de direitos:** pelo período exigido ou permitido pela legislação aplicável.
+
+## 8. Direitos do titular
+
+Nos termos da LGPD, o titular poderá, conforme aplicável:
+
+- solicitar confirmação da existência de tratamento;
+- acessar seus dados pessoais;
+- solicitar correção de dados incompletos, inexatos ou desatualizados;
+- solicitar anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a LGPD;
+- solicitar portabilidade, quando cabível e regulamentada;
+- obter informações sobre compartilhamento de dados;
+- revogar consentimento quando essa for a base jurídica utilizada;
+- solicitar eliminação de dados tratados com base em consentimento, ressalvadas as hipóteses legais de conservação;
+- opor-se a tratamento realizado em determinadas hipóteses sem consentimento, quando houver descumprimento da LGPD;
+- exercer os demais direitos previstos na legislação aplicável.
+
+## 9. Como solicitar acesso, correção ou exclusão da conta
+
+Neste momento, os pedidos relativos à conta e aos dados pessoais, inclusive **pedido de exclusão da conta**, devem ser enviados para:
+
+**email@webplace.cc**
+
+Para proteger o próprio titular, poderemos solicitar informações razoavelmente necessárias para confirmar a identidade e a legitimidade do pedido antes de excluir ou disponibilizar dados.
+
+A exclusão da conta não implica necessariamente eliminação imediata de toda e qualquer informação quando a conservação for necessária ou permitida por lei, para segurança, prevenção a fraude, cumprimento de obrigação legal ou exercício regular de direitos.
+
+## 10. Crianças e adolescentes
+
+O learnchinese.today é um projeto educacional, mas **não é direcionado especificamente a crianças e não solicita a idade do usuário como condição geral de acesso**.
+
+Não buscamos conscientemente coletar dados pessoais de crianças além do necessário ao funcionamento das funcionalidades utilizadas.
+
+Caso o tratamento envolva dados pessoais de crianças ou adolescentes, a Webplace observará o **melhor interesse da criança e do adolescente**, as disposições do art. 14 da LGPD e as demais normas aplicáveis.
+
+Pais ou responsáveis que identifiquem o uso do Site por criança sob sua responsabilidade e desejem obter informações, corrigir dados ou solicitar sua eliminação poderão entrar em contato pelo e-mail:
+
+**email@webplace.cc**
+
+## 11. Segurança
+
+Adotamos medidas técnicas e administrativas razoáveis e proporcionais ao porte e à natureza do Site, incluindo, conforme aplicável:
+
+- HTTPS;
+- controle de acesso à infraestrutura;
+- cookies de autenticação protegidos;
+- separação entre autenticação e conteúdo enviado ao tutor;
+- limitação dos dados enviados aos serviços de IA;
+- mecanismos de logs, monitoramento e segurança.
+
+Nenhum serviço conectado à internet é absolutamente imune a falhas, ataques ou incidentes. Caso ocorra incidente relevante envolvendo dados pessoais, serão adotadas as medidas aplicáveis conforme a LGPD e regulamentação da ANPD.
+
+## 12. Decisões automatizadas
+
+O tutor de IA produz respostas automatizadas para fins educacionais.
+
+O Site não utiliza, no funcionamento atualmente descrito, o tutor de IA para tomar decisões com efeitos jurídicos, financeiros, de crédito, emprego ou outras decisões de impacto semelhante sobre o usuário.
+
+## 13. Conteúdo inserido pelo usuário
+
+O usuário deve evitar inserir no tutor ou em outros campos livres:
+
+- dados pessoais sensíveis;
+- senhas;
+- documentos de identidade;
+- informações financeiras;
+- segredos comerciais;
+- conteúdo confidencial;
+- dados pessoais de terceiros sem autorização.
+
+## 14. Alterações desta Política
+
+Esta Política poderá ser atualizada para refletir alterações no Site, na legislação ou nas práticas de tratamento de dados.
+
+A data de atualização será indicada no início do documento.
+
+Quando uma alteração for relevante e exigir nova manifestação do titular, novo consentimento ou comunicação específica, adotaremos as medidas adequadas ao caso.
+
+## 15. Contato e ANPD
+
+Dúvidas e pedidos relacionados à privacidade podem ser enviados para:
+
+**ITCS Webplace Ltda.**  
+CNPJ 65.998.990/0001-44  
+https://learnchinese.today  
+**email@webplace.cc**
+
+O titular também poderá exercer os direitos de petição perante a **Autoridade Nacional de Proteção de Dados — ANPD**, nos termos da legislação aplicável.
+
+---
+
+PRIVACY POLICY — EN
+
+**Last updated:** September 17, 2026
+
+**ITCS Webplace Ltda.**, registered in Brazil under CNPJ no. **65.998.990/0001-44** (“**Webplace**”, “**we**”, “**us**”, or the “**Controller**”), operates **learnchinese.today** (the “**Site**”), an educational platform for learning Chinese.
+
+This Privacy Policy explains what personal data may be processed through the Site, why it is processed, how it may be shared, how long it may be retained, and how users may exercise their rights.
+
+## 1. Data controller
+
+**Controller:** ITCS Webplace Ltda.  
+**CNPJ:** 65.998.990/0001-44  
+**Website:** https://learnchinese.today  
+**Privacy and data rights contact:** email@webplace.cc
+
+## 2. Data we process
+
+The data processed depends on how the user interacts with the Site.
+
+### 2.1. Use without signing in
+
+Parts of the Site may be used without creating an account or signing in.
+
+In that case, we may process information related to use of the Site, including:
+
+- interface language;
+- level or learning stage;
+- phrases or activities displayed;
+- answers and correct/incorrect results;
+- game round or session identifier;
+- date and time of events;
+- basic technical information such as browser, device, IP address, and user-agent when recorded by infrastructure systems;
+- a pseudonymous or anonymous identifier stored locally in the browser to associate game events on the same device;
+- theme preference and other local preferences.
+
+We do not intentionally associate this information with the name or email address of a user who has not signed in.
+
+### 2.2. Google Sign-In
+
+Google Sign-In is optional and is used solely for authentication and account identification within the Site.
+
+When a user signs in with Google, Google's authentication service may provide the Site, according to Google's operation and the permissions presented to the user, with:
+
+- name;
+- email address;
+- profile image or profile image URL, where available;
+- a technical identifier needed to recognize or link the authenticated account.
+
+**learnchinese.today does not request access to Gmail, Google Drive, Google Calendar, Google Contacts, or the content of other Google Account services** for the sign-in described in this Policy.
+
+Data received through Google is used only to authenticate the user, maintain the account and session, identify the user within Site features, and, where applicable, associate preferences or learning progress with the account.
+
+### 2.3. Authentication session
+
+When the user signs in, the Site uses an authentication mechanism based on **Auth.js** and a session cookie.
+
+The authentication cookie is configured to keep the session active for approximately **30 days**, although it may expire earlier, be renewed depending on use, or be invalidated when the user signs out or when required for security.
+
+Where technically applicable, authentication cookies are configured with appropriate safeguards such as `HttpOnly`, `Secure`, and suitable `SameSite` attributes.
+
+### 2.4. Nickname and progress
+
+The Site may allow users to set a nickname and may store learning progress, preferences, or performance information.
+
+When linked to an authenticated account, such information may constitute personal data.
+
+### 2.5. AI tutor
+
+The Site offers or may offer educational AI tutor features.
+
+When a user sends a message to the tutor:
+
+- the text needed to generate a response is sent by the learnchinese.today backend to AI infrastructure operated by Webplace;
+- the current implementation uses a **proprietary Ollama-based API** operated within Webplace's infrastructure;
+- the user's name, email address, and other direct identifiers are not intentionally included in the payload sent to the language model;
+- users should not voluntarily submit sensitive personal data, confidential information, or third-party personal data in tutor messages.
+
+Conversations may be processed for the time required to generate responses, maintain security, diagnose technical issues, and operate the feature, according to the service architecture.
+
+### 2.6. Google Analytics
+
+The Site uses **Google Analytics 4 (GA4)** to understand statistically how the Site is used.
+
+The current measurement ID is:
+
+`G-2YMPSSQJND`
+
+Google Analytics may process information such as:
+
+- pages visited;
+- browsing events;
+- session characteristics and duration;
+- approximate location information;
+- browser and device information;
+- identifiers stored in cookies or equivalent technologies.
+
+Google Analytics cookies and analytical technologies should only be activated after the corresponding cookie choice is made by the user, unless a future technical configuration permits analytics processing without analytics storage subject to consent and there is an appropriate legal basis.
+
+## 3. Cookies, localStorage, and similar technologies
+
+The Site uses cookies, `localStorage`, and similar technologies for different purposes.
+
+### 3.1. Strictly necessary technologies
+
+These are used for functions that are essential or expressly requested by the user, such as:
+
+- authentication;
+- security;
+- maintaining a session;
+- basic technical operation of the Site.
+
+These technologies may be used independently of analytical cookie preferences when required to provide the service requested by the user.
+
+### 3.2. Preferences and local storage
+
+The Site may locally store in the browser:
+
+- theme preference;
+- language or interface preferences;
+- a pseudonymous or anonymous game identifier.
+
+Users may delete this data through their browser settings.
+
+### 3.3. Analytics cookies
+
+Analytics cookies, including those related to Google Analytics, are used to measure audience, understand usage patterns, and improve the Site.
+
+Where processing depends on consent, users may:
+
+- accept analytics cookies;
+- reject them;
+- later change their choice through the cookie preference mechanism made available on the Site.
+
+Rejecting analytics cookies should not prevent access to essential Site features.
+
+### 3.4. Google Analytics cookies
+
+Google Analytics may use cookies such as `_ga` and cookies associated with the Analytics property to distinguish users and sessions.
+
+Cookie duration and retention periods may vary according to the Analytics property settings, browser limitations, and Google's own policies.
+
+More information about Google's privacy practices is available at:
+
+https://policies.google.com/privacy
+
+## 4. Purposes and legal bases
+
+Depending on the context, we may rely on the following legal bases under Brazil's General Data Protection Law — Law No. 13,709/2018 (“LGPD”):
+
+| Purpose | Examples of data | Main legal basis |
+|---|---|---|
+| Provide Site functionality | technical data, preferences, required events | performance of a service/contract or procedures requested by the user; legitimate interest where applicable |
+| Sign-in and account/session maintenance | name, email, technical identifier, profile image, session cookie | performance of a service/contract or procedures requested by the data subject |
+| Security, abuse prevention, and infrastructure protection | logs, IP, user-agent, technical events | legitimate interest and, where applicable, establishment or exercise of legal rights |
+| Improve games and educational features | usage and performance events, preferably pseudonymized or aggregated | legitimate interest, subject to user rights and reasonable expectations |
+| Google Analytics and audience measurement using analytics cookies | analytics identifiers, events, technical data | consent where required and according to the choice made in the cookie banner |
+| AI tutor | user-submitted text and necessary context | performance of the service requested by the user |
+| Legal compliance and lawful authority requests | data necessary in each case | compliance with legal or regulatory obligations |
+
+Where processing is based on consent, consent may be withdrawn without affecting the lawfulness of processing performed before withdrawal.
+
+## 5. Data sharing
+
+Personal data may be processed by or shared, where necessary, with:
+
+### Google
+
+Used for:
+
+- Google Sign-In;
+- Google Analytics, when authorized.
+
+The user's relationship with Google services is also governed by Google's own policies.
+
+### Hosting and infrastructure
+
+Webplace uses its own or contracted infrastructure for hosting, databases, security, logs, Site delivery, and other technical purposes.
+
+The Site's main operational data is currently hosted on infrastructure located in **Brazil, including the State of São Paulo**, according to the current service configuration.
+
+### Webplace AI infrastructure
+
+Tutor messages may be sent to a proprietary Ollama-based API operated by Webplace only to the extent necessary to generate the requested response.
+
+We do not intentionally send the user's name or email address in the payload provided to the language model.
+
+### Authorities and legal obligations
+
+Data may be disclosed where necessary to comply with applicable law, court orders, or valid requests from competent authorities.
+
+### No sale of personal data
+
+**Webplace does not sell personal data of learnchinese.today users.**
+
+## 6. International processing
+
+Although the Site's primary infrastructure is reported as being located in Brazil, certain providers — particularly Google — may process or store data in other countries according to their own infrastructure.
+
+Where international transfers of personal data occur, applicable LGPD requirements and reasonable safeguards will be observed.
+
+## 7. Data retention
+
+Personal data is retained only for as long as necessary for the purposes described in this Policy, subject to legal obligations, security, fraud prevention, exercise of rights, and reasonable technical limitations.
+
+As a general rule:
+
+- **account data:** while the account or relationship with the Site remains active or until a valid deletion request, subject to lawful retention exceptions;
+- **session:** for the validity period of the session, generally around 30 days, unless renewed, ended, or invalidated;
+- **game events and internal metrics:** for as long as reasonably needed to analyze and improve the service, preferably aggregated or anonymized when individual-level data is no longer necessary;
+- **Google Analytics data:** according to the Analytics property configuration and Google's retention policies;
+- **technical and security logs:** for a period reasonably necessary for security, diagnosis, and abuse prevention;
+- **data required by law or for legal claims:** for the period required or permitted by applicable law.
+
+## 8. User rights
+
+Under the LGPD, where applicable, users may request:
+
+- confirmation that personal data is being processed;
+- access to personal data;
+- correction of incomplete, inaccurate, or outdated data;
+- anonymization, blocking, or deletion of unnecessary, excessive, or unlawfully processed data;
+- portability where applicable and regulated;
+- information regarding data sharing;
+- withdrawal of consent where consent is the applicable legal basis;
+- deletion of data processed based on consent, subject to lawful retention exceptions;
+- objection to certain processing performed without consent where LGPD requirements are not met;
+- other rights provided by applicable law.
+
+## 9. Account and data deletion requests
+
+At this time, requests related to accounts and personal data, including **account deletion requests**, must be sent to:
+
+**email@webplace.cc**
+
+To protect users, we may request information reasonably necessary to verify the identity and legitimacy of the requester before deleting or disclosing data.
+
+Deleting an account does not necessarily require immediate deletion of every record where retention is required or permitted by law, security needs, fraud prevention, legal obligations, or the establishment or exercise of legal rights.
+
+## 10. Children and teenagers
+
+learnchinese.today is an educational project, but **it is not specifically directed at children and does not generally require users to state their age before accessing the Site**.
+
+We do not knowingly seek to collect children's personal data beyond what is necessary for the functions they use.
+
+Where processing involves personal data of children or teenagers, Webplace will observe their **best interests**, Article 14 of the LGPD, and other applicable legal requirements.
+
+Parents or legal guardians who become aware that a child under their responsibility is using the Site and wish to request information, correction, or deletion may contact:
+
+**email@webplace.cc**
+
+## 11. Security
+
+We adopt reasonable technical and administrative safeguards proportionate to the size and nature of the Site, including where applicable:
+
+- HTTPS;
+- infrastructure access controls;
+- protected authentication cookies;
+- separation between account authentication data and content sent to the AI tutor;
+- data minimization in AI requests;
+- logging, monitoring, and security mechanisms.
+
+No internet-connected service can be guaranteed to be completely secure. If a relevant personal data incident occurs, we will take the measures required under the LGPD and applicable ANPD regulations.
+
+## 12. Automated outputs
+
+The AI tutor produces automated responses for educational purposes.
+
+Under the operation currently described, the Site does not use the AI tutor to make decisions that produce legal, financial, credit, employment, or similarly significant effects on users.
+
+## 13. Information submitted by users
+
+Users should avoid entering into the tutor or other free-text fields:
+
+- sensitive personal data;
+- passwords;
+- identity documents;
+- financial information;
+- trade secrets;
+- confidential information;
+- third-party personal data without authorization.
+
+## 14. Changes to this Policy
+
+We may update this Policy to reflect changes in the Site, applicable law, or our data practices.
+
+The date of the latest update will appear at the top of this document.
+
+Where a material change requires new notice, consent, or another action by the user, we will take the appropriate steps.
+
+## 15. Contact and the Brazilian DPA
+
+Privacy questions and requests may be sent to:
+
+**ITCS Webplace Ltda.**  
+CNPJ 65.998.990/0001-44  
+https://learnchinese.today  
+**email@webplace.cc**
+
+Where applicable, users may also petition Brazil's **Autoridade Nacional de Proteção de Dados — ANPD** in accordance with applicable law.
+
+---
+
+POLÍTICA DE PRIVACIDAD — ES
+
+**Última actualización:** 17 de septiembre de 2026
+
+**ITCS Webplace Ltda.**, inscrita en Brasil bajo el CNPJ nº **65.998.990/0001-44** (“**Webplace**”, “**nosotros**” o el “**Responsable**”), opera **learnchinese.today** (el “**Sitio**”), una plataforma educativa orientada al aprendizaje de chino.
+
+Esta Política de Privacidad explica qué datos personales pueden ser tratados en el Sitio, para qué finalidades, cómo pueden compartirse, durante cuánto tiempo pueden conservarse y cómo los usuarios pueden ejercer sus derechos.
+
+## 1. Responsable del tratamiento
+
+**Responsable:** ITCS Webplace Ltda.  
+**CNPJ:** 65.998.990/0001-44  
+**Sitio web:** https://learnchinese.today  
+**Contacto de privacidad y derechos:** email@webplace.cc
+
+## 2. Datos que tratamos
+
+Los datos tratados dependen de la forma en que el usuario utilice el Sitio.
+
+### 2.1. Uso sin iniciar sesión
+
+Partes del Sitio pueden utilizarse sin crear una cuenta ni iniciar sesión.
+
+En ese caso, podemos tratar información relacionada con el uso del Sitio, incluyendo:
+
+- idioma de la interfaz;
+- nivel o etapa de aprendizaje;
+- frases o actividades mostradas;
+- respuestas, aciertos y errores;
+- identificador de ronda o sesión de juego;
+- fecha y hora de los eventos;
+- información técnica básica, como navegador, dispositivo, dirección IP y user-agent, cuando sea registrada por los sistemas de infraestructura;
+- un identificador seudónimo o anónimo almacenado localmente en el navegador para relacionar eventos del juego en el mismo dispositivo;
+- preferencia de tema y otras preferencias locales.
+
+No asociamos intencionadamente esta información al nombre o correo electrónico de un usuario que no haya iniciado sesión.
+
+### 2.2. Inicio de sesión con Google
+
+El inicio de sesión con Google es opcional y se utiliza exclusivamente para autenticar e identificar la cuenta dentro del Sitio.
+
+Al iniciar sesión con Google, el servicio de autenticación de Google puede proporcionar al Sitio, de acuerdo con el funcionamiento de Google y los permisos mostrados al usuario:
+
+- nombre;
+- dirección de correo electrónico;
+- imagen o URL de la foto de perfil, cuando esté disponible;
+- un identificador técnico necesario para reconocer o vincular la cuenta autenticada.
+
+**learnchinese.today no solicita acceso a Gmail, Google Drive, Google Calendar, Google Contacts ni al contenido de otros servicios de la cuenta Google** para el inicio de sesión descrito en esta Política.
+
+Los datos recibidos a través de Google se utilizan únicamente para autenticar al usuario, mantener la cuenta y la sesión, identificar al usuario dentro de las funciones del Sitio y, cuando corresponda, asociar preferencias o progreso de aprendizaje a la cuenta.
+
+### 2.3. Sesión de autenticación
+
+Cuando el usuario inicia sesión, el Sitio utiliza un mecanismo de autenticación basado en **Auth.js** y una cookie de sesión.
+
+La cookie de autenticación está configurada para mantener la sesión durante aproximadamente **30 días**, aunque puede expirar antes, renovarse según el uso o invalidarse cuando el usuario cierre sesión o cuando sea necesario por motivos de seguridad.
+
+Cuando sea técnicamente aplicable, las cookies de autenticación se configuran con medidas de protección adecuadas, como atributos `HttpOnly`, `Secure` y políticas `SameSite` apropiadas.
+
+### 2.4. Apodo y progreso
+
+El Sitio puede permitir al usuario definir un apodo y puede almacenar información sobre progreso educativo, preferencias o desempeño.
+
+Cuando esta información esté vinculada a una cuenta autenticada, podrá constituir dato personal.
+
+### 2.5. Tutor con inteligencia artificial
+
+El Sitio ofrece o puede ofrecer funciones de tutor educativo con inteligencia artificial.
+
+Cuando el usuario envía un mensaje al tutor:
+
+- el texto necesario para generar la respuesta se envía desde el backend de learnchinese.today a infraestructura de IA operada por Webplace;
+- la implementación actual utiliza una **API propietaria basada en Ollama**, operada dentro de la infraestructura de Webplace;
+- el nombre, correo electrónico y otros identificadores directos del usuario no se incluyen intencionadamente en el payload enviado al modelo de lenguaje;
+- el usuario no debe introducir voluntariamente datos personales sensibles, información confidencial o datos personales de terceros en los mensajes del tutor.
+
+Las conversaciones pueden ser tratadas durante el tiempo necesario para generar respuestas, mantener la seguridad, diagnosticar problemas técnicos y operar la función, de acuerdo con la arquitectura del servicio.
+
+### 2.6. Google Analytics
+
+El Sitio utiliza **Google Analytics 4 (GA4)** para comprender estadísticamente cómo se utiliza el Sitio.
+
+El identificador de medición actual es:
+
+`G-2YMPSSQJND`
+
+Google Analytics puede tratar información como:
+
+- páginas visitadas;
+- eventos de navegación;
+- características y duración de la sesión;
+- información aproximada de ubicación;
+- información del navegador y dispositivo;
+- identificadores almacenados en cookies o tecnologías equivalentes.
+
+Las cookies y tecnologías analíticas de Google Analytics deben activarse únicamente después de la elección correspondiente del usuario en el mecanismo de consentimiento de cookies, salvo que una configuración técnica futura permita tratamiento analítico sin almacenamiento sujeto a consentimiento y exista una base jurídica adecuada.
+
+## 3. Cookies, localStorage y tecnologías similares
+
+El Sitio utiliza cookies, `localStorage` y tecnologías similares para diferentes finalidades.
+
+### 3.1. Tecnologías estrictamente necesarias
+
+Se utilizan para funciones esenciales o expresamente solicitadas por el usuario, como:
+
+- autenticación;
+- seguridad;
+- mantenimiento de la sesión;
+- funcionamiento técnico básico del Sitio.
+
+Estas tecnologías pueden utilizarse independientemente de las preferencias sobre cookies analíticas cuando sean necesarias para prestar el servicio solicitado por el usuario.
+
+### 3.2. Preferencias y almacenamiento local
+
+El Sitio puede almacenar localmente en el navegador:
+
+- preferencia de tema;
+- idioma o preferencias de interfaz;
+- un identificador seudónimo o anónimo del juego.
+
+El usuario puede eliminar estos datos mediante la configuración de su navegador.
+
+### 3.3. Cookies analíticas
+
+Las cookies analíticas, incluidas las relacionadas con Google Analytics, se utilizan para medir audiencia, comprender patrones de uso y mejorar el Sitio.
+
+Cuando el tratamiento dependa del consentimiento, el usuario podrá:
+
+- aceptar las cookies analíticas;
+- rechazarlas;
+- cambiar posteriormente su elección mediante el mecanismo de preferencias de cookies disponible en el Sitio.
+
+El rechazo de cookies analíticas no debe impedir el acceso a las funciones esenciales del Sitio.
+
+### 3.4. Cookies de Google Analytics
+
+Google Analytics puede utilizar cookies como `_ga` y cookies relacionadas con la propiedad de Analytics para distinguir usuarios y sesiones.
+
+La duración de las cookies y los períodos de conservación pueden variar según la configuración de la propiedad de Analytics, las limitaciones del navegador y las propias políticas de Google.
+
+Más información sobre las prácticas de privacidad de Google:
+
+https://policies.google.com/privacy
+
+## 4. Finalidades y bases jurídicas
+
+Dependiendo del contexto, podemos utilizar las siguientes bases jurídicas previstas en la Ley brasileña nº 13.709/2018 — Ley General de Protección de Datos (“LGPD”):
+
+| Finalidad | Ejemplos de datos | Base jurídica principal |
+|---|---|---|
+| Proporcionar las funciones del Sitio | datos técnicos, preferencias, eventos necesarios | ejecución de servicio/contrato o procedimientos solicitados por el usuario; interés legítimo cuando corresponda |
+| Inicio de sesión y mantenimiento de cuenta/sesión | nombre, email, identificador técnico, imagen, cookie de sesión | ejecución de servicio/contrato o procedimientos solicitados por el titular |
+| Seguridad, prevención de abuso y protección de infraestructura | logs, IP, user-agent, eventos técnicos | interés legítimo y, cuando corresponda, ejercicio regular de derechos |
+| Mejorar juegos y funciones educativas | eventos de uso y desempeño, preferentemente seudonimizados o agregados | interés legítimo, respetando los derechos y expectativas razonables del titular |
+| Google Analytics y medición de audiencia con cookies analíticas | identificadores analíticos, eventos y datos técnicos | consentimiento cuando sea exigible y de acuerdo con la elección realizada en el banner |
+| Tutor de IA | texto enviado por el usuario y contexto necesario | ejecución del servicio solicitado por el usuario |
+| Cumplimiento legal y solicitudes válidas de autoridades | datos necesarios en cada caso | cumplimiento de obligación legal o regulatoria |
+
+Cuando el tratamiento se base en el consentimiento, este podrá retirarse sin afectar a la licitud del tratamiento realizado antes de la retirada.
+
+## 5. Compartición de datos
+
+Los datos personales pueden ser tratados o compartidos, cuando sea necesario, con:
+
+### Google
+
+Utilizado para:
+
+- inicio de sesión con Google;
+- Google Analytics, cuando esté autorizado.
+
+La relación del usuario con los servicios de Google también se rige por las políticas propias de Google.
+
+### Alojamiento e infraestructura
+
+Webplace utiliza infraestructura propia o contratada para alojamiento, bases de datos, seguridad, logs, entrega del Sitio y otras funciones técnicas.
+
+Los principales datos operativos del Sitio se alojan actualmente en infraestructura situada en **Brasil, incluido el Estado de São Paulo**, de acuerdo con la configuración actual del servicio.
+
+### Infraestructura de IA de Webplace
+
+Los mensajes enviados al tutor pueden remitirse a una API propietaria basada en Ollama, operada por Webplace, únicamente en la medida necesaria para generar la respuesta solicitada.
+
+No enviamos intencionadamente el nombre o correo electrónico del usuario en el payload proporcionado al modelo de lenguaje.
+
+### Autoridades y obligaciones legales
+
+Los datos podrán facilitarse cuando sea necesario para cumplir la legislación aplicable, órdenes judiciales o solicitudes válidas de autoridades competentes.
+
+### No venta de datos personales
+
+**Webplace no vende datos personales de los usuarios de learnchinese.today.**
+
+## 6. Tratamiento internacional
+
+Aunque la infraestructura principal del Sitio se encuentra, según la configuración informada, en Brasil, determinados proveedores — especialmente Google — pueden tratar o almacenar datos en otros países según su propia infraestructura.
+
+Cuando exista transferencia internacional de datos personales, se observarán los requisitos aplicables de la LGPD y las salvaguardias razonables correspondientes.
+
+## 7. Conservación de los datos
+
+Los datos personales se conservan únicamente durante el tiempo necesario para las finalidades descritas en esta Política, observando obligaciones legales, seguridad, prevención del fraude, ejercicio de derechos y limitaciones técnicas razonables.
+
+Como regla general:
+
+- **datos de cuenta:** mientras la cuenta o relación con el Sitio permanezca activa o hasta una solicitud válida de eliminación, salvo excepciones legales de conservación;
+- **sesión:** durante el período de validez de la sesión, generalmente alrededor de 30 días, salvo renovación, cierre o invalidación;
+- **eventos de juego y métricas internas:** durante el tiempo razonablemente necesario para analizar y mejorar el servicio, preferiblemente agregados o anonimizados cuando los datos individuales dejen de ser necesarios;
+- **datos de Google Analytics:** según la configuración de la propiedad y las políticas de retención de Google;
+- **logs técnicos y de seguridad:** durante un período razonablemente necesario para seguridad, diagnóstico y prevención de abusos;
+- **datos exigidos por ley o para reclamaciones:** durante el período exigido o permitido por la legislación aplicable.
+
+## 8. Derechos del titular
+
+De acuerdo con la LGPD, cuando corresponda, el titular podrá solicitar:
+
+- confirmación de la existencia de tratamiento;
+- acceso a sus datos personales;
+- corrección de datos incompletos, inexactos o desactualizados;
+- anonimización, bloqueo o eliminación de datos innecesarios, excesivos o tratados en incumplimiento de la LGPD;
+- portabilidad cuando corresponda y esté reglamentada;
+- información sobre compartición de datos;
+- retirada del consentimiento cuando esa sea la base jurídica utilizada;
+- eliminación de datos tratados con base en consentimiento, salvo excepciones legales;
+- oposición a determinados tratamientos realizados sin consentimiento cuando no se cumplan los requisitos de la LGPD;
+- los demás derechos previstos por la legislación aplicable.
+
+## 9. Solicitudes de acceso, corrección o eliminación de cuenta
+
+Actualmente, las solicitudes relativas a cuentas y datos personales, incluidas las **solicitudes de eliminación de cuenta**, deben enviarse a:
+
+**email@webplace.cc**
+
+Para proteger al usuario, podremos solicitar información razonablemente necesaria para verificar la identidad y legitimidad del solicitante antes de eliminar o facilitar datos.
+
+La eliminación de una cuenta no implica necesariamente la eliminación inmediata de todos los registros cuando su conservación sea exigida o permitida por ley, por motivos de seguridad, prevención del fraude, cumplimiento de obligaciones legales o ejercicio regular de derechos.
+
+## 10. Niños y adolescentes
+
+learnchinese.today es un proyecto educativo, pero **no está dirigido específicamente a niños y no exige, de forma general, que los usuarios indiquen su edad antes de acceder al Sitio**.
+
+No buscamos conscientemente recopilar datos personales de niños más allá de lo necesario para las funciones que utilicen.
+
+Cuando el tratamiento implique datos personales de niños o adolescentes, Webplace observará su **interés superior**, el artículo 14 de la LGPD y las demás normas aplicables.
+
+Los padres o responsables legales que tengan conocimiento de que un niño bajo su responsabilidad utiliza el Sitio y deseen solicitar información, corrección o eliminación podrán contactar con:
+
+**email@webplace.cc**
+
+## 11. Seguridad
+
+Adoptamos medidas técnicas y administrativas razonables y proporcionales al tamaño y naturaleza del Sitio, incluyendo cuando corresponda:
+
+- HTTPS;
+- controles de acceso a la infraestructura;
+- cookies de autenticación protegidas;
+- separación entre datos de autenticación y contenido enviado al tutor de IA;
+- minimización de datos en solicitudes de IA;
+- mecanismos de registro, monitorización y seguridad.
+
+Ningún servicio conectado a internet puede garantizar una seguridad absoluta. Si se produce un incidente relevante de datos personales, adoptaremos las medidas exigidas por la LGPD y por la normativa aplicable de la ANPD.
+
+## 12. Resultados automatizados
+
+El tutor de IA genera respuestas automatizadas con fines educativos.
+
+Según el funcionamiento actualmente descrito, el Sitio no utiliza el tutor de IA para adoptar decisiones con efectos jurídicos, financieros, crediticios, laborales u otros efectos similares significativos sobre el usuario.
+
+## 13. Información introducida por el usuario
+
+El usuario debe evitar introducir en el tutor o en otros campos de texto libre:
+
+- datos personales sensibles;
+- contraseñas;
+- documentos de identidad;
+- información financiera;
+- secretos comerciales;
+- información confidencial;
+- datos personales de terceros sin autorización.
+
+## 14. Cambios en esta Política
+
+Podemos actualizar esta Política para reflejar cambios en el Sitio, la legislación aplicable o nuestras prácticas de tratamiento.
+
+La fecha de la última actualización aparecerá al principio del documento.
+
+Cuando un cambio relevante requiera nueva comunicación, consentimiento u otra acción del usuario, adoptaremos las medidas correspondientes.
+
+## 15. Contacto y ANPD
+
+Las dudas y solicitudes de privacidad pueden enviarse a:
+
+**ITCS Webplace Ltda.**  
+CNPJ 65.998.990/0001-44  
+https://learnchinese.today  
+**email@webplace.cc**
+
+Cuando corresponda, el titular también podrá presentar solicitudes ante la **Autoridade Nacional de Proteção de Dados — ANPD** de Brasil, de acuerdo con la legislación aplicable.
+
+TERMOS DE USO — PT
+
+**Última atualização:** 17 de setembro de 2026
+
+Estes Termos de Uso regulam o acesso e a utilização do **learnchinese.today** (“**Site**”), operado pela **ITCS Webplace Ltda.**, CNPJ nº **65.998.990/0001-44** (“**Webplace**”).
+
+Ao utilizar o Site, o usuário declara ter lido estes Termos e concorda em observá-los.
+
+## 1. Sobre o learnchinese.today
+
+O learnchinese.today é um projeto educacional voltado ao aprendizado e à prática da língua chinesa.
+
+O Site pode disponibilizar, entre outros recursos:
+
+- vocabulário;
+- frases;
+- conteúdos de gramática;
+- jogos e exercícios;
+- caracteres chineses;
+- letras, materiais de estudo e recursos audiovisuais;
+- histórico ou progresso de aprendizagem;
+- login opcional;
+- tutor educacional com inteligência artificial.
+
+O Site está em desenvolvimento contínuo. Funcionalidades podem ser adicionadas, alteradas, suspensas ou removidas.
+
+## 2. Natureza educacional
+
+Os materiais e ferramentas do Site têm finalidade **educacional e informativa**.
+
+Embora busquemos oferecer conteúdo útil e tecnicamente adequado, não garantimos que traduções, pronúncias, explicações gramaticais, exemplos, respostas de IA ou demais conteúdos estejam livres de erros.
+
+O Site não substitui professores, materiais oficiais, instituições de ensino, exames oficiais ou certificações.
+
+## 3. Acesso ao Site
+
+Grande parte do Site pode ser acessada sem login.
+
+Determinadas funcionalidades podem exigir autenticação, incluindo recursos relacionados à conta, personalização, progresso ou tutor.
+
+O Site poderá estabelecer limites técnicos razoáveis de uso para proteger a disponibilidade, segurança e estabilidade da plataforma.
+
+## 4. Login com Google
+
+O login com Google é opcional.
+
+Ele é utilizado para autenticar o usuário e permitir funcionalidades vinculadas à conta.
+
+O Site não solicita, para essa finalidade, acesso ao conteúdo do Gmail, Google Drive, Google Calendar, Google Contacts ou de outros serviços da conta Google.
+
+O uso do login com Google também está sujeito aos termos e políticas aplicáveis do Google.
+
+O usuário é responsável por manter a segurança da conta Google utilizada para autenticação.
+
+## 5. Conta do usuário
+
+O usuário deve fornecer e manter informações compatíveis com o uso legítimo do serviço.
+
+O usuário não deve:
+
+- utilizar conta de terceiro sem autorização;
+- tentar obter acesso à conta de outro usuário;
+- compartilhar mecanismos de autenticação de maneira que comprometa a segurança;
+- utilizar apelido ou informações que violem direitos de terceiros ou a legislação.
+
+A Webplace poderá suspender ou limitar contas quando houver indícios razoáveis de fraude, abuso, comprometimento de segurança ou violação destes Termos.
+
+## 6. Exclusão da conta
+
+Enquanto não houver ferramenta automatizada de exclusão, o usuário poderá solicitar a exclusão de sua conta pelo e-mail:
+
+**email@webplace.cc**
+
+A solicitação será processada de acordo com a Política de Privacidade e com as obrigações legais aplicáveis.
+
+## 7. Uso permitido
+
+O usuário poderá utilizar o Site para:
+
+- estudo;
+- prática;
+- pesquisa pessoal;
+- atividades educacionais;
+- utilização legítima das funcionalidades disponibilizadas.
+
+O uso deverá respeitar estes Termos, a legislação aplicável e os direitos de terceiros.
+
+## 8. Uso proibido
+
+É proibido utilizar o Site para:
+
+- praticar atos ilícitos ou fraudulentos;
+- transmitir malware ou código malicioso;
+- tentar obter acesso não autorizado a contas, servidores, bancos de dados ou áreas restritas;
+- explorar vulnerabilidades com intenção de causar dano, obter dados indevidamente ou comprometer o serviço;
+- realizar ataques de negação de serviço ou interferir deliberadamente no funcionamento do Site;
+- automatizar acessos em volume incompatível com o uso normal da plataforma;
+- realizar scraping agressivo que prejudique a infraestrutura ou viole direitos;
+- utilizar o Site para spam, assédio, fraude ou violação de direitos de terceiros;
+- contornar mecanismos de segurança ou limites técnicos;
+- reproduzir ou distribuir conteúdo em violação às licenças aplicáveis.
+
+Nada nesta cláusula impede pesquisa de segurança realizada de boa-fé e de maneira responsável, desde que não cause dano, não acesse dados de terceiros sem autorização e respeite a legislação aplicável.
+
+## 9. Conteúdo, propriedade intelectual e licenças
+
+Salvo indicação em contrário, marcas, identidade visual, código próprio, organização da plataforma, interfaces, textos autorais e demais elementos originais do Site pertencem à Webplace ou são utilizados com autorização.
+
+Alguns materiais educacionais, bibliotecas, fontes, bases de dados ou componentes de terceiros podem estar sujeitos a licenças próprias, inclusive licenças abertas como Creative Commons, MIT ou equivalentes.
+
+Quando uma licença específica for indicada junto ao conteúdo, prevalecerão as condições dessa licença para aquele material.
+
+O usuário não recebe, pelo simples uso do Site, qualquer direito de propriedade sobre marcas, software, banco de dados ou conteúdo protegido.
+
+## 10. Conteúdo de terceiros e links
+
+O Site pode conter referências, links, incorporações ou materiais provenientes de terceiros.
+
+A existência de um link ou referência não significa necessariamente endosso, garantia ou controle sobre o serviço externo.
+
+O usuário deve consultar os termos e políticas aplicáveis aos serviços de terceiros que utilizar.
+
+## 11. Tutor com inteligência artificial
+
+O Site pode disponibilizar um tutor baseado em inteligência artificial.
+
+As respostas:
+
+- são geradas automaticamente;
+- podem conter erros, omissões ou interpretações inadequadas;
+- devem ser utilizadas como apoio educacional;
+- não constituem certificação de proficiência;
+- não substituem orientação profissional ou acadêmica quando esta for necessária.
+
+O usuário é responsável por avaliar criticamente as respostas antes de utilizá-las para decisões relevantes.
+
+## 12. Conteúdo enviado pelo usuário ao tutor
+
+Ao enviar texto ao tutor, o usuário concede à Webplace autorização limitada para processar esse conteúdo exclusivamente na medida necessária para:
+
+- fornecer a funcionalidade solicitada;
+- gerar a resposta;
+- manter segurança e integridade do serviço;
+- diagnosticar falhas técnicas;
+- cumprir obrigações legais aplicáveis.
+
+O usuário declara que não enviará conteúdo que viole direitos de terceiros ou cuja utilização pelo Site seja ilícita.
+
+O usuário deve evitar inserir dados sensíveis, senhas, documentos, informações financeiras, segredos ou informações confidenciais.
+
+## 13. Privacidade e cookies
+
+O tratamento de dados pessoais é disciplinado pela **Política de Privacidade** do learnchinese.today.
+
+O Site utiliza cookies e tecnologias semelhantes, incluindo tecnologias necessárias ao funcionamento e, mediante a escolha aplicável do usuário, tecnologias analíticas.
+
+O usuário poderá gerir as preferências disponíveis por meio do mecanismo de cookies oferecido no Site.
+
+## 14. Disponibilidade
+
+O Site é fornecido conforme sua disponibilidade técnica.
+
+Não garantimos funcionamento ininterrupto, ausência de erros ou disponibilidade permanente de qualquer funcionalidade.
+
+Poderão ocorrer:
+
+- manutenção;
+- atualizações;
+- falhas de fornecedores;
+- indisponibilidade temporária;
+- alterações de infraestrutura;
+- interrupções motivadas por segurança.
+
+Sempre que razoável, buscamos restaurar o serviço e preservar sua integridade.
+
+## 15. Gratuidade e funcionalidades futuras
+
+Na versão atualmente descrita, o Site não processa pagamentos.
+
+A Webplace poderá futuramente criar planos pagos, assinaturas, recursos premium ou outras formas de monetização.
+
+Nenhuma cobrança será realizada sem informação adequada ao usuário e manifestação correspondente quando exigida.
+
+## 16. Limitação de responsabilidade
+
+Na máxima extensão permitida pela legislação aplicável, a Webplace não será responsável por:
+
+- indisponibilidades temporárias inevitáveis;
+- perda decorrente de uso contrário às instruções do Site;
+- decisões tomadas exclusivamente com base em respostas automatizadas ou conteúdo educacional sem verificação adequada;
+- atos ou falhas de serviços de terceiros fora do controle razoável da Webplace;
+- danos indiretos ou consequenciais quando sua exclusão for admitida pela legislação aplicável.
+
+Nada nestes Termos exclui ou limita responsabilidade que não possa ser legalmente afastada, inclusive direitos eventualmente assegurados pela legislação de proteção do consumidor.
+
+## 17. Segurança e uso abusivo
+
+A Webplace poderá adotar medidas razoáveis para proteger o Site, os usuários e a infraestrutura, inclusive:
+
+- limitação de requisições;
+- bloqueio de tráfego malicioso;
+- encerramento de sessões;
+- suspensão de contas;
+- preservação de logs de segurança;
+- investigação de incidentes.
+
+As medidas serão proporcionais ao risco e, sempre que aplicável, observarão a legislação pertinente.
+
+## 18. Crianças e adolescentes
+
+O Site é educacional, mas não é dirigido especificamente a crianças.
+
+Quando crianças ou adolescentes utilizarem o Site, recomenda-se acompanhamento de pais ou responsáveis, especialmente em funcionalidades que envolvam conta, envio de conteúdo ou interação com inteligência artificial.
+
+O tratamento de dados pessoais de crianças e adolescentes seguirá a Política de Privacidade e a legislação aplicável, sempre observando seu melhor interesse.
+
+## 19. Alterações do Site e destes Termos
+
+A Webplace poderá atualizar o Site e estes Termos para refletir novas funcionalidades, alterações técnicas, mudanças legais ou aperfeiçoamentos do serviço.
+
+A versão vigente será identificada pela data indicada no início.
+
+Quando uma alteração produzir impacto material sobre direitos ou obrigações do usuário, poderão ser adotadas medidas adicionais de comunicação ou obtenção de nova manifestação, conforme o caso.
+
+## 20. Lei aplicável
+
+Estes Termos são regidos pelas leis da **República Federativa do Brasil**.
+
+A aplicação desta cláusula não afasta direitos inderrogáveis eventualmente assegurados ao usuário pela legislação aplicável, inclusive normas de proteção de dados e de defesa do consumidor.
+
+## 21. Contato
+
+**ITCS Webplace Ltda.**  
+CNPJ 65.998.990/0001-44  
+https://learnchinese.today  
+**email@webplace.cc**
+
+---
+
+TERMS OF USE — EN
+
+**Last updated:** September 17, 2026
+
+These Terms of Use govern access to and use of **learnchinese.today** (the “**Site**”), operated by **ITCS Webplace Ltda.**, Brazilian CNPJ no. **65.998.990/0001-44** (“**Webplace**”).
+
+By using the Site, users acknowledge that they have read these Terms and agree to comply with them.
+
+## 1. About learnchinese.today
+
+learnchinese.today is an educational project designed for learning and practicing the Chinese language.
+
+The Site may provide, among other features:
+
+- vocabulary;
+- phrases;
+- grammar content;
+- games and exercises;
+- Chinese characters;
+- lyrics, study materials, and audiovisual resources;
+- learning history or progress;
+- optional sign-in;
+- an educational AI tutor.
+
+The Site is under continuous development. Features may be added, changed, suspended, or removed.
+
+## 2. Educational nature
+
+The Site's materials and tools are provided for **educational and informational purposes**.
+
+Although we aim to provide useful and appropriate content, we do not guarantee that translations, pronunciation guidance, grammar explanations, examples, AI-generated answers, or other content will always be free from errors.
+
+The Site does not replace teachers, official learning materials, educational institutions, official examinations, or certifications.
+
+## 3. Access to the Site
+
+Much of the Site may be accessed without signing in.
+
+Certain features may require authentication, including account-related functionality, personalization, progress, or tutor features.
+
+The Site may apply reasonable technical usage limits to protect availability, security, and platform stability.
+
+## 4. Google Sign-In
+
+Google Sign-In is optional.
+
+It is used to authenticate the user and enable account-linked functionality.
+
+For this purpose, the Site does not request access to Gmail content, Google Drive, Google Calendar, Google Contacts, or other Google Account service content.
+
+Use of Google Sign-In is also subject to Google's applicable terms and policies.
+
+Users are responsible for maintaining the security of the Google Account used for authentication.
+
+## 5. User accounts
+
+Users should provide and maintain information consistent with legitimate use of the service.
+
+Users must not:
+
+- use another person's account without authorization;
+- attempt to gain access to another user's account;
+- share authentication mechanisms in a manner that compromises security;
+- use nicknames or information that violate third-party rights or applicable law.
+
+Webplace may suspend or limit accounts where there are reasonable indications of fraud, abuse, security compromise, or violation of these Terms.
+
+## 6. Account deletion
+
+Until an automated deletion tool is available, users may request deletion of their account by emailing:
+
+**email@webplace.cc**
+
+Requests will be processed in accordance with the Privacy Policy and applicable legal obligations.
+
+## 7. Permitted use
+
+Users may use the Site for:
+
+- study;
+- practice;
+- personal research;
+- educational activities;
+- legitimate use of available features.
+
+Use must comply with these Terms, applicable law, and third-party rights.
+
+## 8. Prohibited use
+
+Users must not use the Site to:
+
+- engage in unlawful or fraudulent activity;
+- transmit malware or malicious code;
+- attempt unauthorized access to accounts, servers, databases, or restricted areas;
+- exploit vulnerabilities with the intent to cause harm, improperly obtain data, or compromise the service;
+- conduct denial-of-service attacks or deliberately interfere with Site operation;
+- automate access at a volume incompatible with normal use;
+- perform aggressive scraping that harms infrastructure or violates rights;
+- use the Site for spam, harassment, fraud, or infringement of third-party rights;
+- bypass security controls or technical limits;
+- reproduce or distribute content in violation of applicable licenses.
+
+Nothing in this clause is intended to prohibit good-faith, responsible security research that causes no harm, does not access third-party data without authorization, and complies with applicable law.
+
+## 9. Content, intellectual property, and licenses
+
+Unless otherwise indicated, trademarks, visual identity, proprietary code, platform organization, interfaces, original texts, and other original elements of the Site belong to Webplace or are used under authorization.
+
+Certain educational materials, libraries, fonts, datasets, or third-party components may be subject to their own licenses, including open licenses such as Creative Commons, MIT, or equivalents.
+
+Where a specific license is identified with a particular item of content, that license governs the relevant material.
+
+Use of the Site does not grant users ownership rights in trademarks, software, databases, or protected content.
+
+## 10. Third-party content and links
+
+The Site may contain references, links, embeds, or materials provided by third parties.
+
+A link or reference does not necessarily constitute endorsement, warranty, or control over an external service.
+
+Users should review the applicable terms and privacy policies of third-party services they use.
+
+## 11. AI tutor
+
+The Site may provide an AI-based tutor.
+
+Responses:
+
+- are generated automatically;
+- may contain errors, omissions, or inappropriate interpretations;
+- should be used as educational support;
+- do not constitute language proficiency certification;
+- do not replace professional or academic guidance where such guidance is required.
+
+Users are responsible for critically evaluating responses before relying on them for important decisions.
+
+## 12. User content submitted to the tutor
+
+By submitting text to the tutor, the user grants Webplace a limited authorization to process that content only to the extent necessary to:
+
+- provide the requested feature;
+- generate a response;
+- maintain service security and integrity;
+- diagnose technical issues;
+- comply with applicable legal obligations.
+
+Users represent that they will not submit content that infringes third-party rights or that would be unlawful for the Site to process.
+
+Users should avoid submitting sensitive data, passwords, identity documents, financial information, secrets, or confidential information.
+
+## 13. Privacy and cookies
+
+Personal data processing is governed by the learnchinese.today **Privacy Policy**.
+
+The Site uses cookies and similar technologies, including technologies required for operation and, according to the user's applicable choice, analytics technologies.
+
+Users may manage available preferences through the cookie mechanism provided on the Site.
+
+## 14. Availability
+
+The Site is provided according to technical availability.
+
+We do not guarantee uninterrupted operation, absence of errors, or permanent availability of any feature.
+
+The Site may experience:
+
+- maintenance;
+- updates;
+- supplier failures;
+- temporary downtime;
+- infrastructure changes;
+- security-related interruptions.
+
+Where reasonably possible, we aim to restore service and preserve its integrity.
+
+## 15. Free service and future features
+
+Under the version currently described, the Site does not process payments.
+
+Webplace may later offer paid plans, subscriptions, premium features, or other monetization models.
+
+No charge will be imposed without appropriate information to the user and any legally required agreement or action.
+
+## 16. Limitation of liability
+
+To the fullest extent permitted by applicable law, Webplace will not be liable for:
+
+- unavoidable temporary outages;
+- losses arising from use contrary to Site instructions;
+- decisions made exclusively based on automated responses or educational content without appropriate verification;
+- actions or failures of third-party services outside Webplace's reasonable control;
+- indirect or consequential damages where such exclusion is legally permitted.
+
+Nothing in these Terms excludes or limits liability that cannot lawfully be excluded, including rights that may be protected by consumer law.
+
+## 17. Security and abusive use
+
+Webplace may take reasonable measures to protect the Site, users, and infrastructure, including:
+
+- request rate limits;
+- blocking malicious traffic;
+- terminating sessions;
+- suspending accounts;
+- retaining security logs;
+- investigating incidents.
+
+Measures will be proportionate to the relevant risk and will comply with applicable law where required.
+
+## 18. Children and teenagers
+
+The Site is educational but is not specifically directed at children.
+
+Where children or teenagers use the Site, parental or guardian supervision is recommended, particularly for features involving accounts, content submission, or interaction with AI.
+
+Processing of children's and teenagers' personal data will follow the Privacy Policy and applicable law, with their best interests as a primary consideration.
+
+## 19. Changes to the Site and Terms
+
+Webplace may update the Site and these Terms to reflect new features, technical changes, legal developments, or service improvements.
+
+The current version will be identified by the date shown at the top.
+
+Where a change materially affects user rights or obligations, additional notice or renewed user action may be used where appropriate.
+
+## 20. Governing law
+
+These Terms are governed by the laws of the **Federative Republic of Brazil**.
+
+This provision does not exclude mandatory rights that users may have under applicable law, including data protection and consumer protection rules.
+
+## 21. Contact
+
+**ITCS Webplace Ltda.**  
+CNPJ 65.998.990/0001-44  
+https://learnchinese.today  
+**email@webplace.cc**
+
+---
+
+TÉRMINOS DE USO — ES
+
+**Última actualización:** 17 de septiembre de 2026
+
+Estos Términos de Uso regulan el acceso y uso de **learnchinese.today** (el “**Sitio**”), operado por **ITCS Webplace Ltda.**, CNPJ brasileño nº **65.998.990/0001-44** (“**Webplace**”).
+
+Al utilizar el Sitio, el usuario declara haber leído estos Términos y se compromete a respetarlos.
+
+## 1. Sobre learnchinese.today
+
+learnchinese.today es un proyecto educativo destinado al aprendizaje y práctica de la lengua china.
+
+El Sitio puede ofrecer, entre otros recursos:
+
+- vocabulario;
+- frases;
+- contenidos de gramática;
+- juegos y ejercicios;
+- caracteres chinos;
+- letras, materiales de estudio y recursos audiovisuales;
+- historial o progreso de aprendizaje;
+- inicio de sesión opcional;
+- tutor educativo con inteligencia artificial.
+
+El Sitio está en desarrollo continuo. Las funciones pueden añadirse, modificarse, suspenderse o eliminarse.
+
+## 2. Naturaleza educativa
+
+Los materiales y herramientas del Sitio tienen finalidad **educativa e informativa**.
+
+Aunque buscamos ofrecer contenido útil y adecuado, no garantizamos que traducciones, indicaciones de pronunciación, explicaciones gramaticales, ejemplos, respuestas generadas por IA u otros contenidos estén siempre libres de errores.
+
+El Sitio no sustituye profesores, materiales oficiales, instituciones educativas, exámenes oficiales ni certificaciones.
+
+## 3. Acceso al Sitio
+
+Gran parte del Sitio puede utilizarse sin iniciar sesión.
+
+Determinadas funciones pueden exigir autenticación, incluidas las relacionadas con cuenta, personalización, progreso o tutor.
+
+El Sitio puede establecer límites técnicos razonables de uso para proteger la disponibilidad, seguridad y estabilidad de la plataforma.
+
+## 4. Inicio de sesión con Google
+
+El inicio de sesión con Google es opcional.
+
+Se utiliza para autenticar al usuario y habilitar funciones vinculadas a la cuenta.
+
+Para esta finalidad, el Sitio no solicita acceso al contenido de Gmail, Google Drive, Google Calendar, Google Contacts ni de otros servicios de la cuenta Google.
+
+El uso del inicio de sesión con Google también está sujeto a los términos y políticas aplicables de Google.
+
+El usuario es responsable de mantener la seguridad de la cuenta Google utilizada para autenticarse.
+
+## 5. Cuenta del usuario
+
+El usuario debe proporcionar y mantener información compatible con un uso legítimo del servicio.
+
+El usuario no debe:
+
+- utilizar la cuenta de otra persona sin autorización;
+- intentar acceder a la cuenta de otro usuario;
+- compartir mecanismos de autenticación de forma que comprometa la seguridad;
+- utilizar apodos o información que vulneren derechos de terceros o la legislación aplicable.
+
+Webplace podrá suspender o limitar cuentas cuando existan indicios razonables de fraude, abuso, compromiso de seguridad o incumplimiento de estos Términos.
+
+## 6. Eliminación de cuenta
+
+Mientras no exista una herramienta automatizada de eliminación, el usuario podrá solicitar la eliminación de su cuenta por correo electrónico a:
+
+**email@webplace.cc**
+
+La solicitud será procesada de acuerdo con la Política de Privacidad y las obligaciones legales aplicables.
+
+## 7. Uso permitido
+
+El usuario podrá utilizar el Sitio para:
+
+- estudio;
+- práctica;
+- investigación personal;
+- actividades educativas;
+- uso legítimo de las funciones disponibles.
+
+El uso deberá respetar estos Términos, la legislación aplicable y los derechos de terceros.
+
+## 8. Uso prohibido
+
+Queda prohibido utilizar el Sitio para:
+
+- realizar actos ilícitos o fraudulentos;
+- transmitir malware o código malicioso;
+- intentar acceder sin autorización a cuentas, servidores, bases de datos o áreas restringidas;
+- explotar vulnerabilidades con intención de causar daños, obtener datos indebidamente o comprometer el servicio;
+- realizar ataques de denegación de servicio o interferir deliberadamente con el funcionamiento del Sitio;
+- automatizar accesos a un volumen incompatible con el uso normal;
+- realizar scraping agresivo que perjudique la infraestructura o vulnere derechos;
+- utilizar el Sitio para spam, acoso, fraude o vulneración de derechos de terceros;
+- eludir mecanismos de seguridad o límites técnicos;
+- reproducir o distribuir contenido en violación de las licencias aplicables.
+
+Nada de esta cláusula pretende impedir investigaciones de seguridad realizadas de buena fe y de forma responsable, siempre que no causen daños, no accedan a datos de terceros sin autorización y respeten la legislación aplicable.
+
+## 9. Contenido, propiedad intelectual y licencias
+
+Salvo indicación en contrario, las marcas, identidad visual, código propio, organización de la plataforma, interfaces, textos originales y demás elementos originales del Sitio pertenecen a Webplace o se utilizan con autorización.
+
+Determinados materiales educativos, bibliotecas, fuentes, bases de datos o componentes de terceros pueden estar sujetos a sus propias licencias, incluidas licencias abiertas como Creative Commons, MIT o equivalentes.
+
+Cuando se indique una licencia específica junto a un contenido, esa licencia regirá dicho material.
+
+El uso del Sitio no concede al usuario derechos de propiedad sobre marcas, software, bases de datos o contenido protegido.
+
+## 10. Contenido y enlaces de terceros
+
+El Sitio puede contener referencias, enlaces, contenido incorporado o materiales proporcionados por terceros.
+
+La existencia de un enlace o referencia no implica necesariamente respaldo, garantía o control sobre un servicio externo.
+
+El usuario debe consultar los términos y políticas aplicables de los servicios de terceros que utilice.
+
+## 11. Tutor con inteligencia artificial
+
+El Sitio puede proporcionar un tutor basado en inteligencia artificial.
+
+Las respuestas:
+
+- se generan automáticamente;
+- pueden contener errores, omisiones o interpretaciones inadecuadas;
+- deben utilizarse como apoyo educativo;
+- no constituyen certificación de dominio del idioma;
+- no sustituyen asesoramiento profesional o académico cuando este sea necesario.
+
+El usuario es responsable de evaluar críticamente las respuestas antes de utilizarlas para decisiones importantes.
+
+## 12. Contenido enviado por el usuario al tutor
+
+Al enviar texto al tutor, el usuario concede a Webplace una autorización limitada para tratar ese contenido únicamente en la medida necesaria para:
+
+- proporcionar la función solicitada;
+- generar una respuesta;
+- mantener la seguridad e integridad del servicio;
+- diagnosticar problemas técnicos;
+- cumplir obligaciones legales aplicables.
+
+El usuario declara que no enviará contenido que vulnere derechos de terceros o cuyo tratamiento por el Sitio sea ilícito.
+
+El usuario debe evitar introducir datos sensibles, contraseñas, documentos de identidad, información financiera, secretos o información confidencial.
+
+## 13. Privacidad y cookies
+
+El tratamiento de datos personales se rige por la **Política de Privacidad** de learnchinese.today.
+
+El Sitio utiliza cookies y tecnologías similares, incluidas tecnologías necesarias para su funcionamiento y, de acuerdo con la elección aplicable del usuario, tecnologías analíticas.
+
+El usuario podrá gestionar las preferencias disponibles mediante el mecanismo de cookies proporcionado en el Sitio.
+
+## 14. Disponibilidad
+
+El Sitio se proporciona según su disponibilidad técnica.
+
+No garantizamos funcionamiento ininterrumpido, ausencia de errores ni disponibilidad permanente de ninguna función.
+
+Pueden producirse:
+
+- mantenimiento;
+- actualizaciones;
+- fallos de proveedores;
+- interrupciones temporales;
+- cambios de infraestructura;
+- interrupciones por motivos de seguridad.
+
+Cuando sea razonablemente posible, buscamos restablecer el servicio y preservar su integridad.
+
+## 15. Servicio gratuito y funciones futuras
+
+En la versión actualmente descrita, el Sitio no procesa pagos.
+
+Webplace podrá ofrecer en el futuro planes de pago, suscripciones, funciones premium u otras formas de monetización.
+
+No se realizará ningún cobro sin proporcionar información adecuada al usuario y obtener la actuación o aceptación correspondiente cuando sea exigible.
+
+## 16. Limitación de responsabilidad
+
+En la máxima medida permitida por la legislación aplicable, Webplace no será responsable de:
+
+- interrupciones temporales inevitables;
+- pérdidas derivadas de un uso contrario a las instrucciones del Sitio;
+- decisiones adoptadas exclusivamente sobre la base de respuestas automatizadas o contenido educativo sin verificación adecuada;
+- actos o fallos de servicios de terceros fuera del control razonable de Webplace;
+- daños indirectos o consecuenciales cuando su exclusión esté permitida legalmente.
+
+Nada en estos Términos excluye o limita responsabilidades que legalmente no puedan excluirse, incluidos los derechos que puedan estar protegidos por la legislación de defensa del consumidor.
+
+## 17. Seguridad y uso abusivo
+
+Webplace podrá adoptar medidas razonables para proteger el Sitio, los usuarios y la infraestructura, incluyendo:
+
+- limitación de solicitudes;
+- bloqueo de tráfico malicioso;
+- finalización de sesiones;
+- suspensión de cuentas;
+- conservación de logs de seguridad;
+- investigación de incidentes.
+
+Las medidas serán proporcionales al riesgo correspondiente y observarán la legislación aplicable cuando sea necesario.
+
+## 18. Niños y adolescentes
+
+El Sitio es educativo, pero no está dirigido específicamente a niños.
+
+Cuando niños o adolescentes utilicen el Sitio, se recomienda supervisión de sus padres o responsables, especialmente en funciones que impliquen cuentas, envío de contenido o interacción con inteligencia artificial.
+
+El tratamiento de datos personales de niños y adolescentes seguirá la Política de Privacidad y la legislación aplicable, atendiendo siempre a su interés superior.
+
+## 19. Cambios en el Sitio y en estos Términos
+
+Webplace podrá actualizar el Sitio y estos Términos para reflejar nuevas funciones, cambios técnicos, novedades legales o mejoras del servicio.
+
+La versión vigente se identificará mediante la fecha indicada al inicio.
+
+Cuando un cambio afecte materialmente a los derechos u obligaciones del usuario, podrán adoptarse medidas adicionales de comunicación o solicitarse una nueva actuación del usuario, según corresponda.
+
+## 20. Ley aplicable
+
+Estos Términos se rigen por las leyes de la **República Federativa de Brasil**.
+
+Esta disposición no excluye los derechos imperativos que puedan corresponder al usuario conforme a la legislación aplicable, incluidas las normas de protección de datos y defensa del consumidor.
+
+## 21. Contacto
+
+**ITCS Webplace Ltda.**  
+CNPJ 65.998.990/0001-44  
+https://learnchinese.today  
+**email@webplace.cc**

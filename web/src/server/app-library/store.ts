@@ -37,12 +37,7 @@ export function readPack(cwd?: string): AppLibraryPack | null {
 }
 
 export function packUrlPath(): string {
-  // Production always mounts under /aulaChines. Default so local
-  // `build:app-library` / API without NEXT_PUBLIC_BASE_PATH still match the app.
-  const base = (process.env.NEXT_PUBLIC_BASE_PATH ?? "/aulaChines").replace(
-    /\/$/,
-    "",
-  );
+  const base = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "");
   return `${base}/api/app/content/pack/library`;
 }
 

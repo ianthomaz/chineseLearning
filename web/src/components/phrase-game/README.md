@@ -1,13 +1,11 @@
 # Quebra-Cabeça de Frases (phrase-builder game)
 
-Drag-and-drop sentence builder at route **`/phrase-game`** (served as `/aulaChines/phrase-game`).
+Drag-and-drop sentence builder at route **`/phrase-game`**.
 Players assemble a Chinese sentence from word/character pieces using
 [`@dnd-kit`](https://dndkit.com/) (pointer drag + keyboard nudge). No login required: the route has no gate in either build mode.
 Google sign-in (server mode) is optional and only stores a nick.
 
-**Docs:** [docs/08_plano_jogo_frases.md](../../../../docs/08_plano_jogo_frases.md) (estado) ·
-[docs/phrase-game-upgrades.md](../../../../docs/phrase-game-upgrades.md) (backlog) ·
-[docs/phrase-game-scoring.md](../../../../docs/phrase-game-scoring.md) (pontuação)
+**Docs:** [docs/06_jogo_frases.md](../../../../docs/06_jogo_frases.md)
 
 ## Layout
 
@@ -15,11 +13,10 @@ Google sign-in (server mode) is optional and only stores a nick.
 FRASES_GAME/
   schema.json                 canonical dataset schema (v2)
   curated/
-    phrases.json              core hand-authored phrases
-    expansion-01 … 07.json      themed batches (merged at build)
+    phrases.json              the phrase bank (edit this)
 web/
   scripts/build-phrase-game-data.mjs   validator + build (curated → runtime artifact)
-  src/data/phrase-game/phrases.json    GENERATED (616 phrases — do not hand-edit); seeds SQLite
+  src/data/phrase-game/phrases.json    GENERATED — do not hand-edit; seeds SQLite
   src/lib/phrase-game/
     types.ts              Phrase, Token, GameLevel, DisplaySettings, ROUND_SIZE
     phrases.ts            server-side bank loader (SQLite, memoised)
@@ -46,8 +43,6 @@ web/
     db/                   SQLite users + events + progress stub
 ```
 
-Legacy `FRASES_GAME/Nivel*` and `all-phrases.json` are **not** consumed by the build.
-
 ## Game rules (code)
 
 | Config | Behaviour |
@@ -61,7 +56,7 @@ Legacy `FRASES_GAME/Nivel*` and `all-phrases.json` are **not** consumed by the b
 
 ## Editing / building the bank
 
-1. Edit `FRASES_GAME/curated/phrases.json` and/or `expansion-*.json`.
+1. Edit `FRASES_GAME/curated/phrases.json`.
 2. Tags: use themes (`tema:cores`, `tema:lugares`, …), not source PDF names.
 3. Rebuild:
    ```bash
@@ -78,7 +73,7 @@ Legacy `FRASES_GAME/Nivel*` and `all-phrases.json` are **not** consumed by the b
 | Local Node | `./start.sh --local` | 34902 | yes |
 | Static | `./start.sh --webplace` | 34901 | no (guest) |
 
-OAuth setup: [docs/09_google_auth_jogo.md](../../../../docs/09_google_auth_jogo.md). Session is site-wide via `AuthSessionProvider` in root `Providers.tsx`.
+OAuth setup: [docs/05_autenticacao.md](../../../../docs/05_autenticacao.md). Session is site-wide via `AuthSessionProvider` in root `Providers.tsx`.
 
 ## Static export
 

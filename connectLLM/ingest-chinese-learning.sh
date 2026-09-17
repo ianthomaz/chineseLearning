@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
-# Queue RAG ingest for chinese_learning using markdown under rag_knowledge/.
+# Queue RAG ingest for chinese_learning using markdown under rag_knowledge/
+# (hand-written files + generated/). Rebuild local markdown first:
+#   cd web && npm run build:rag
 # Requires: LLM_API_URL, LLM_API_TOKEN (and jq). Loads web/.env.local if present.
 #
 # Usage (from repo root):

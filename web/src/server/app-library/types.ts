@@ -1,6 +1,6 @@
 /**
  * Shared types for the app library snapshot (APP_hanziMemorize contract).
- * See docs/14_app_library_contract.md
+ * See docs/09_roadmap_integracoes.md
  */
 
 export const APP_LIBRARY_SCHEMA_VERSION = 1;
@@ -73,7 +73,7 @@ export type AppLibraryMetaFile = {
   generatedAt: string;
   byteSize: number;
   sha256: string;
-  /** Public pack path including basePath (e.g. /aulaChines/api/...). */
+  /** Public pack path (e.g. /api/app/content/pack/library). */
   packUrl: string;
   /** Hash of payload sections only (no meta) — used to decide version bumps. */
   contentFingerprint: string;

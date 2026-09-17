@@ -16,7 +16,7 @@
  *
  *   npm run prebuild:phrase-game && FORCE_RESEED=1 npm run seed:content
  */
-import { readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { checkAcceptedOrder } from "./accepted-orders-lib.mjs";
@@ -30,13 +30,9 @@ const BANK = join(WEB_ROOT, "src", "data", "phrase-game", "phrases.json");
 
 const dryRun = process.argv.includes("--dry-run");
 
-/** Curated files that hold phrases, in build order. */
+/** Curated bank. */
 function curatedFiles() {
-  const names = ["phrases.json"];
-  for (const name of readdirSync(CURATED_DIR).sort()) {
-    if (name.startsWith("expansion-") && name.endsWith(".json")) names.push(name);
-  }
-  return names.map((name) => join(CURATED_DIR, name));
+  return [join(CURATED_DIR, "phrases.json")];
 }
 
 function main() {

@@ -5,6 +5,7 @@ import { DialogueConversation } from "@/components/DialogueTurnRow";
 import { useLocale } from "@/context/LocaleContext";
 import type { BlockSummary } from "@/lib/blocks-types";
 import type { GlobalDialogueSection } from "@/lib/global-dialogues";
+import { trackEvent } from "@/lib/analytics";
 
 export function DialoguesIndexContent({
   sections,
@@ -43,9 +44,17 @@ export function DialoguesIndexContent({
         <select
           id="category-select"
           value={selectedCategory ?? ""}
-          onChange={(e) =>
-            setSelectedCategory(e.target.value === "" ? null : Number(e.target.value))
-          }
+          onChange={(e) => {
+            const next =
+              e.target.value === "" ? null : Number(e.target.value);
+            setSelectedCategory(next);
+            trackEvent({
+              action: "dialogue_filter",
+              category: "study",
+              label: next === null ? "all" : String(next),
+              block_id: next ?? "all",
+            });
+          }}
           className="rounded border px-3 py-2 text-sm"
           style={{ borderColor: "var(--border)", backgroundColor: "var(--bg)" }}
         >

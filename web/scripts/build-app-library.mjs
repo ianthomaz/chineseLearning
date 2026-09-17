@@ -177,7 +177,7 @@ function main() {
   const dir = outDir();
   mkdirSync(dir, { recursive: true });
   writeFileSync(join(dir, "library.json"), bytes);
-  const basePath = (process.env.NEXT_PUBLIC_BASE_PATH ?? "/aulaChines").replace(
+  const basePath = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(
     /\/$/,
     "",
   );

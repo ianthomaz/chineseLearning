@@ -12,6 +12,7 @@ import {
   type ContextDeckMeta,
 } from "@/lib/context-decks";
 import type { PracticeLexicoCategory } from "@/lib/practice-library-types";
+import { trackEvent } from "@/lib/analytics";
 
 type Step = "hub" | "avulso" | "context-pick" | "context-deck";
 
@@ -59,8 +60,24 @@ export function RandomHanziClient({
   function openContextDeck(id: string) {
     const deck = deckById.get(id) ?? findContextDeck(contextDecks, id);
     if (!deck) return;
+    trackEvent({
+      action: "deck_open",
+      category: "practice",
+      label: id,
+      deck_id: id,
+    });
     setActiveDeck(deck);
     setStep("context-deck");
+  }
+
+  function selectPracticeMode(mode: "avulso" | "context-pick") {
+    trackEvent({
+      action: "practice_mode_select",
+      category: "practice",
+      label: mode,
+      mode,
+    });
+    setStep(mode);
   }
 
   return (
@@ -103,7 +120,7 @@ export function RandomHanziClient({
 
             <button
               type="button"
-              onClick={() => setStep("avulso")}
+              onClick={() => selectPracticeMode("avulso")}
               className="rounded-2xl border px-5 py-6 text-left transition-colors hover:bg-ink/[0.03]"
               style={{ borderColor: "var(--border)" }}
             >
@@ -121,7 +138,7 @@ export function RandomHanziClient({
 
             <button
               type="button"
-              onClick={() => setStep("context-pick")}
+              onClick={() => selectPracticeMode("context-pick")}
               className="rounded-2xl border px-5 py-6 text-left transition-colors hover:bg-ink/[0.03]"
               style={{ borderColor: "var(--border)" }}
             >

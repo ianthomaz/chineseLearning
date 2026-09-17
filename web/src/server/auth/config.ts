@@ -6,7 +6,7 @@ import { getAuthBasePath } from "./base-path";
 const THIRTY_DAYS = 30 * 24 * 60 * 60;
 
 export const authConfig = {
-  /** Must match public URL (`/aulaChines/api/auth`), not NEXTAUTH_URL pathname alone. */
+  /** Must match public URL (`/api/auth`), not NEXTAUTH_URL pathname alone. */
   basePath: getAuthBasePath(),
   providers: [
     Google({

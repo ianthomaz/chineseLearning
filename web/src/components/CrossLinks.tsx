@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useLocale } from "@/context/LocaleContext";
+import { trackEvent } from "@/lib/analytics";
 
 type Props = {
   blockId: number;
@@ -46,6 +47,17 @@ export function CrossLinks({ blockId, current, placement = "bottom" }: Props) {
         <Link
           key={key}
           href={`/${key}/${id}`}
+          onClick={() =>
+            trackEvent({
+              action: "study_mode_switch",
+              category: "study",
+              label: `${current}->${key}`,
+              block_id: blockId,
+              from: current,
+              to: key,
+              path: `/${key}/${id}`,
+            })
+          }
           className="flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs transition-colors hover:bg-ink/5"
           style={{
             borderColor: "var(--border)",

@@ -38,17 +38,13 @@ function parseEnvFile(path) {
   return out;
 }
 
-function envLines(map, keys) {
-  return keys.filter((k) => map[k] != null && map[k] !== "").map((k) => `${k}=${map[k]}`);
-}
-
 function authBlock(data, mode) {
   const na = data.oauth_uri_contract?.nextauth_url_by_mode?.[mode];
   const g = data.google_oauth ?? {};
   const s = data.nextauth ?? {};
   const clientId = g.GOOGLE_CLIENT_ID || g.AUTH_GOOGLE_ID || "";
   return [
-    "# ChineseSite — auth",
+    "# chinese-learnin — learnchinese.today",
     `AUTH_TRUST_HOST=${s.AUTH_TRUST_HOST ?? "true"}`,
     `NEXTAUTH_URL=${na}`,
     `AUTH_URL=${na}`,
@@ -59,6 +55,20 @@ function authBlock(data, mode) {
     `AUTH_GOOGLE_ID=${g.AUTH_GOOGLE_ID ?? clientId}`,
     `AUTH_GOOGLE_SECRET=${g.AUTH_GOOGLE_SECRET ?? g.GOOGLE_CLIENT_SECRET ?? ""}`,
     `NEXT_PUBLIC_GOOGLE_CLIENT_ID=${g.NEXT_PUBLIC_GOOGLE_CLIENT_ID ?? clientId}`,
+  ];
+}
+
+function siteBlock(data) {
+  const dep = data.deployment ?? {};
+  const analytics = data.analytics ?? {};
+  const basePath = dep.base_path ?? "";
+  const gaId =
+    analytics.NEXT_PUBLIC_GA_MEASUREMENT_ID ||
+    "G-2YMPSSQJND";
+  return [
+    "# --- Site (learnchinese.today)",
+    `NEXT_PUBLIC_BASE_PATH=${basePath}`,
+    `NEXT_PUBLIC_GA_MEASUREMENT_ID=${gaId}`,
   ];
 }
 
@@ -85,13 +95,12 @@ function main() {
     llm.LLM_API_URL_LOCAL || existingLocal.LLM_API_URL || "http://127.0.0.1:28471";
   const llmUrlProd =
     llm.LLM_API_URL_PRODUCTION || existingServer.LLM_API_URL || "https://llm.webplace.cc";
-  const ragPath =
+  const ragPathLocal =
     llm.RAG_SOURCES_PATH ||
     existingLocal.RAG_SOURCES_PATH ||
-    existingServer.RAG_SOURCES_PATH ||
     "";
+  const ragPathProd = llm.RAG_SOURCES_PATH_PRODUCTION ?? "";
 
-  // APP Hanzi Memorize library API — never invent a token; preserve or copy from credentials.
   const hanziApp = data.hanzi_app ?? {};
   const appLibraryToken =
     hanziApp.APP_LIBRARY_TOKEN ||
@@ -99,6 +108,7 @@ function main() {
     existingServer.APP_LIBRARY_TOKEN ||
     "";
 
+  const site = siteBlock(data);
   const devAuth = authBlock(data, "dev");
   const localNodeAuth = authBlock(data, "local_node");
   const prodAuth = authBlock(data, "production");
@@ -106,9 +116,9 @@ function main() {
   mkdirSync(OUT_DIR, { recursive: true });
   mkdirSync(join(WEB_DIR, "deploy"), { recursive: true });
 
-  writeFileSync(OUT_LOCAL, devAuth.join("\n") + "\n", "utf8");
-  writeFileSync(OUT_LOCAL_NODE, localNodeAuth.join("\n") + "\n", "utf8");
-  writeFileSync(OUT_PRODUCTION, prodAuth.join("\n") + "\n", "utf8");
+  writeFileSync(OUT_LOCAL, [...site, "", ...devAuth].join("\n") + "\n", "utf8");
+  writeFileSync(OUT_LOCAL_NODE, [...site, "", ...localNodeAuth].join("\n") + "\n", "utf8");
+  writeFileSync(OUT_PRODUCTION, [...site, "", ...prodAuth].join("\n") + "\n", "utf8");
 
   const envLocalContent = [
     "# Gerado por scripts/sync-env-from-credentials.mjs — não commitar",
@@ -116,12 +126,14 @@ function main() {
     "# --- LLM (dev Mac / Docker local)",
     `LLM_API_URL=${llmUrlLocal}`,
     ...(llmToken ? [`LLM_API_TOKEN=${llmToken}`] : ["# LLM_API_TOKEN="]),
-    ...(ragPath ? [`RAG_SOURCES_PATH=${ragPath}`] : []),
+    ...(ragPathLocal ? [`RAG_SOURCES_PATH=${ragPathLocal}`] : []),
     "",
     "# --- APP Hanzi Memorize library API",
     ...(appLibraryToken
       ? [`APP_LIBRARY_TOKEN=${appLibraryToken}`]
       : ["# APP_LIBRARY_TOKEN=  # credentials.json → hanzi_app.APP_LIBRARY_TOKEN"]),
+    "",
+    ...site,
     "",
     ...devAuth,
     "",
@@ -138,12 +150,14 @@ function main() {
     "# --- LLM (alcançável a partir do servidor)",
     `LLM_API_URL=${llmUrlProd}`,
     ...(llmToken ? [`LLM_API_TOKEN=${llmToken}`] : ["LLM_API_TOKEN="]),
-    ...(ragPath ? [`RAG_SOURCES_PATH=${ragPath}`] : []),
+    ...(ragPathProd ? [`RAG_SOURCES_PATH=${ragPathProd}`] : ["# RAG ingest is remote (llm.webplace.cc) — no local RAG_SOURCES_PATH on VM"]),
     "",
-    "# --- APP Hanzi Memorize library API (docs/14_app_library_contract.md)",
+    "# --- APP Hanzi Memorize library API (docs/09_roadmap_integracoes.md)",
     ...(appLibraryToken
       ? [`APP_LIBRARY_TOKEN=${appLibraryToken}`]
       : ["# APP_LIBRARY_TOKEN="]),
+    "",
+    ...site,
     "",
     ...prodAuth,
     "",

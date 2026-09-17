@@ -4,41 +4,63 @@
 
 | Caminho | Função |
 |---------|--------|
-| `start.sh` | Orquestra health LLM, verificação do projeto `chinese_learning`, ingest opcional e modo `--local` ou `--webplace` |
-| `web/` | Aplicação Next.js (site, tutor, API route de chat) |
-| `connectLLM/` | Documentação e scripts de integração com a API LLM (ingest, contratos) |
-| `Content/` | Fonte editorial (ex.: `consolidado_final.md`) processada em build |
-| `rag_knowledge/` | Markdown para RAG (`POST /ingest`, projeto `chinese_learning`) |
+| `start.sh` | Health LLM, ingest opcional, `--local` / `--webplace` / `--prod` |
+| `web/` | Next.js — site learnchinese.today, tutor, APIs |
+| `connectLLM/` | Docs e scripts integração LLM/RAG |
+| `Content/` | Fonte editorial → build |
+| `FRASES_GAME/curated/` | Banco curado do jogo de frases |
+| `rag_knowledge/` | Markdown para RAG (`POST /ingest`) |
+| `OrganizeVocabulary_books/` | Material de livros (eixo A) |
 
 ## Aplicação `web/`
 
-- **Framework:** Next.js com `basePath` **`/aulaChines`** em builds “servidor” e export estático (`NEXT_PUBLIC_BASE_PATH`).
-- **Produção local / servidor:** `npm run start:server` usa **`scripts/start-server-stripped.mjs`**, que remove o prefixo do pedido HTTP antes de delegar ao handler do Next — o `next start` em bruto com este `basePath` não servia `/aulaChines/...` (rotas e `/_next/static` ficavam inacessíveis com o URL público).
-- **Dois modos de build:**
-  - **`build:server`** — sem `output: export`; inclui Route Handlers (ex. proxy do chat).
-  - **`build:webplace`** — `NEXT_STATIC_EXPORT=1`; gera `out/` para nginx ou `python -m http.server` (sem API de chat no Next).
+- **URL:** `https://learnchinese.today/` — `NEXT_PUBLIC_BASE_PATH` vazio
+- **Framework:** Next.js 15 · React 19
+- **Produção:** `npm run start:server` → nginx → `127.0.0.1:34827`
 
-## Pré-build de conteúdo
+### Dois builds
 
-Os scripts `predev` e `prebuild` correm:
+| Script | Output | API / auth |
+|--------|--------|------------|
+| `build:server` | `.next/` | Sim — tutor, OAuth, SQLite |
+| `build:webplace` | `out/` estático | Não — guest only |
 
-- **`scripts/parse-consolidado.mjs`** — lê `Content/` → `consolidado.json` (revisão, vocabulário).
-- **`scripts/build-phrase-game-data.mjs`** — merge `FRASES_GAME/curated/*.json` → `src/data/phrase-game/phrases.json` (jogo de frases).
+Rotas dinâmicas: extensão **`route.server.ts`** / `page.server.tsx` (ficam fora do export).
+Um `route.ts` com `force-dynamic` **parte** o `build:webplace`.
 
-## Jogo de frases (`FRASES_GAME/`)
+## Rotas principais
 
-| Caminho | Função |
-|---------|--------|
-| `FRASES_GAME/curated/` | Fonte editável (frases + `expansion-*.json`) |
-| `FRASES_GAME/schema.json` | Schema do banco |
-| `FRASES_GAME/Nivel*`, `all-phrases.json` | Legado — **não** usados pelo build actual |
+| Rota | O quê | Login |
+|------|-------|:-----:|
+| `/` | Home | — |
+| `/review`, `/vocabulary`, `/grammar` | Blocos de estudo | — |
+| `/dialogues`, `/visuals` | Diálogos, PDFs | — |
+| `/phrase-game` | Jogo de frases | — |
+| `/praticar`, `/randomhanzi` | Escrita + flashcards | sim |
+| `/tutor` | Chat LLM | sim |
+| `/gamification` | Quiz HSK1 | sim |
+| `/ktv` | Letras | — |
+| `/registerClass`, `/reviewClass` | Curador — aulas | curador |
+| `/backoffice` | Telemetria jogo | admin |
 
-Runtime: rota Next **`/phrase-game`**, lógica em `web/src/lib/phrase-game/`. Ver [08_plano_jogo_frases.md](08_plano_jogo_frases.md).
+Gates: [05_autenticacao.md](05_autenticacao.md).
 
-## API do tutor
+## Pré-build
 
-O chat do tutor usa **`POST /aulaChines/api/chat`** (prefixo do `basePath`). O Route Handler faz proxy para a API LLM (URL e token em variáveis de ambiente). Detalhes do contrato HTTP em [03_llm.md](03_llm.md) e em `connectLLM/CONTRATO_EDU_COMPLETO.md`.
+- `parse-consolidado.mjs` — `Content/` → JSON blocos
+- `build-phrase-game-data.mjs` — `FRASES_GAME/` → SQLite + `phrases.json`
+- `seed-content-db.mjs` — bootstrap SQL
 
-## Papel de `connectLLM/`
+## Fluxos principais
 
-Não é um serviço em execução contínua no repo: é **documentação** e **scripts** (ex. `ingest-chinese-learning.sh`) invocados a partir de `web/package.json` (`npm run ingest:rag`).
+| Feature | Doc |
+|---------|-----|
+| Portas, deploy | [03_operacao_e_deploy.md](03_operacao_e_deploy.md) |
+| Tutor / LLM | [04_llm_conteudo_rag.md](04_llm_conteudo_rag.md) |
+| Auth | [05_autenticacao.md](05_autenticacao.md) |
+| Jogo frases | [06_jogo_frases.md](06_jogo_frases.md) |
+| BD conteúdo | [07_conteudo_dados.md](07_conteudo_dados.md) |
+
+## `connectLLM/`
+
+Contratos API, ingest: [`connectLLM/README.md`](../connectLLM/README.md)

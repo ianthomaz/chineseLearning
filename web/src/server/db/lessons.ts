@@ -1,5 +1,5 @@
 /**
- * Lesson registry (server-only), eixo B of docs/12_aula_registro_roadmap.md.
+ * Lesson registry (server-only), eixo B of docs/09_roadmap_integracoes.md.
  * A lesson is one real study session logged by the curator: date, class,
  * optional book/chapter refs, highlighted words and free notes.
  */
@@ -213,7 +213,7 @@ export function listLessons(limit = 200): LessonSummary[] {
   }));
 }
 
-/** Deletes the lesson (refs/words via cascade). Never touches lexicon_global (docs/12 §6). */
+/** Deletes the lesson (refs/words via cascade). Never touches lexicon_global (docs/09_roadmap_integracoes.md). */
 export function deleteLesson(id: number): boolean {
   const result = getDb().prepare(`DELETE FROM lessons WHERE id = ?`).run(id);
   return Number(result.changes) > 0;

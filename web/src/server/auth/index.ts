@@ -2,7 +2,7 @@
  * Auth.js v5 instance (server-only — imports the SQLite layer).
  *
  * On sign-in we record a minimal player row. We do NOT persist round scores yet
- * (that is Phase 2 — see docs/phrase-game-scoring.md).
+ * (that is Phase 2 — see docs/06_jogo_frases.md).
  */
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";

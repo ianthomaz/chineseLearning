@@ -1,7 +1,7 @@
 // SQL is the source of truth for editorial content.
 // Edit via: npx prisma studio  (or sqlite3 / any SQL client)
 // Bootstrap JSON/MD only fills EMPTY tables unless FORCE_RESEED=1.
-// See docs/11_content_db_schema.md
+// See docs/07_conteudo_dados.md
 
 generator client {
   provider = "prisma-client-js"

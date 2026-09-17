@@ -16,9 +16,9 @@ const outDeck = path.join(
   "web/src/data/context-decks",
   `${DECK_META.id}.json`,
 );
-const outPhraseGame = path.join(
+const curatedPhrasesPath = path.join(
   repoRoot,
-  "FRASES_GAME/curated/expansion-08-cozinha.json",
+  "FRASES_GAME/curated/phrases.json",
 );
 
 function mdField(key, val) {
@@ -232,12 +232,19 @@ fs.writeFileSync(path.join(__dirname, "Aula-cozinha.MD"), buildMd());
 fs.writeFileSync(path.join(__dirname, "Aula-cozinha.html"), buildHtml());
 fs.mkdirSync(path.dirname(outDeck), { recursive: true });
 fs.writeFileSync(outDeck, buildDeckJson());
-fs.writeFileSync(outPhraseGame, JSON.stringify(PHRASE_GAME, null, 2) + "\n");
+
+const bank = JSON.parse(fs.readFileSync(curatedPhrasesPath, "utf8"));
+for (const phrase of PHRASE_GAME.phrases ?? []) {
+  const i = bank.phrases.findIndex((row) => row.id === phrase.id);
+  if (i === -1) bank.phrases.push(phrase);
+  else bank.phrases[i] = { ...bank.phrases[i], ...phrase };
+}
+fs.writeFileSync(curatedPhrasesPath, `${JSON.stringify(bank, null, 2)}\n`);
 console.log("[build-cozinha] OK", {
   cards: CARDS.length,
   phraseGame: PHRASE_GAME.phrases.length,
   md: "Aula-cozinha.MD",
   html: "Aula-cozinha.html",
   deck: outDeck,
-  expansion: outPhraseGame,
+  bank: curatedPhrasesPath,
 });

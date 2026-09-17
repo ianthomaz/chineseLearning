@@ -77,10 +77,12 @@
     "translationDesc": "Sentido en tablas y, en la página de diálogos, bajo cada línea; en los mini-diálogos del repaso, usa el icono junto a cada línea."
   },
   "home": {
-    "kicker": "Chino básico",
+    "kicker": "Aprende Chino",
     "title1": "Bloques del curso y material de referencia ampliado.",
     "title2": "Varias formas de estudiar.",
     "blurb": "Repaso, vocabulario y gramática enlazados.",
+    "missionTitle": "Independiente y gratuito",
+    "missionBody": "Learn Chinese es un proyecto independiente y gratuito que organiza el aprendizaje de un estudiante principiante. Creado para organizar el propio estudio y compartido en la red para que otras personas puedan acompañar y aprender también.",
     "open": "Abrir →",
     "modeReviewDesc": "Frases en hanzi con icono para mostrar pinyin y traducción. Lee primero, memoriza después.",
     "modeVocabDesc": "Tablas completas por bloque — hanzi, pinyin y traducción.",
@@ -333,9 +335,22 @@
     "hanziWriterMmh": "Make Me a Hanzi",
     "hanziWriterEnd": "/ Arphic."
   },
+  "legal": {
+    "footerNavLabel": "Legal",
+    "privacyLink": "Política de Privacidad",
+    "termsLink": "Términos de Uso",
+    "cookieSettings": "Configuración de cookies",
+    "privacyTitle": "Política de Privacidad",
+    "termsTitle": "Términos de Uso",
+    "cookieBannerTitle": "Cookies y privacidad",
+    "cookieBannerBody": "Utilizamos cookies necesarias para el inicio de sesión, la seguridad y el funcionamiento básico del Sitio. Con tu autorización, también utilizamos Google Analytics para comprender cómo se utiliza learnchinese.today y mejorar la experiencia. Consulta la",
+    "cookieAcceptAnalytics": "Aceptar analíticas",
+    "cookieRejectAnalytics": "Solo esenciales",
+    "cookieDismiss": "Cerrar"
+  },
   "metadata": {
-    "siteTitle": "Chino básico",
-    "siteDescription": "Repaso, vocabulario y gramática en bloques, según el consolidado del curso."
+    "siteTitle": "Aprende Chino",
+    "siteDescription": "Aprendizaje gratuito de chino para principiantes — repaso, vocabulario, gramática, juegos y letras."
   },
   "phraseGame": {
     "title": "Rompecabezas de Frases",

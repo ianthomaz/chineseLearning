@@ -9,7 +9,7 @@ const AUTH_ENABLED = process.env.NEXT_PUBLIC_AUTH_ENABLED !== "0";
 const HAS_ONE_TAP = Boolean(process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID);
 
 /**
- * Blocking login gate for interactive features (docs/12 §10.2). Renders the
+ * Blocking login gate for interactive features (docs/05_autenticacao.md). Renders the
  * children untouched for signed-in users; guests get a Google sign-in card,
  * and the static export shows a "server version only" notice.
  */

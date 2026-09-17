@@ -6,6 +6,7 @@ import { useLocale } from "@/context/LocaleContext";
 import { isImmersiveRoute } from "@/lib/immersive-routes";
 import { usePinyin } from "@/context/PinyinContext";
 import { useTranslationDisplay } from "@/context/TranslationContext";
+import { trackEvent } from "@/lib/analytics";
 
 export function EdgeSettingsDrawer() {
   const pathname = usePathname();
@@ -33,6 +34,7 @@ export function EdgeSettingsDrawer() {
     description: string,
     on: boolean,
     setOn: (v: boolean) => void,
+    action: "pinyin_toggle" | "translation_toggle",
   ) {
     return (
       <div className="flex items-start justify-between gap-3 border-b border-ink/10 py-3 last:border-0">
@@ -54,7 +56,16 @@ export function EdgeSettingsDrawer() {
           type="button"
           role="switch"
           aria-checked={on}
-          onClick={() => setOn(!on)}
+          onClick={() => {
+            const next = !on;
+            setOn(next);
+            trackEvent({
+              action,
+              category: "settings",
+              label: next ? "on" : "off",
+              to: next ? "on" : "off",
+            });
+          }}
           className="relative h-7 w-12 shrink-0 rounded-full transition-colors"
           style={{
             backgroundColor: on ? "var(--accent)" : "color-mix(in srgb, var(--ink) 15%, transparent)",
@@ -115,12 +126,14 @@ export function EdgeSettingsDrawer() {
                   t("settings.pinyinDesc"),
                   showPinyin,
                   setShowPinyin,
+                  "pinyin_toggle",
                 )}
                 {rowSwitch(
                   t("settings.translationLabel"),
                   t("settings.translationDesc"),
                   showTranslation,
                   setShowTranslation,
+                  "translation_toggle",
                 )}
               </div>
             </div>
@@ -132,7 +145,15 @@ export function EdgeSettingsDrawer() {
           id={tabId}
           aria-expanded={open}
           aria-controls={open ? panelId : undefined}
-          onClick={() => setOpen((o) => !o)}
+          onClick={() =>
+            setOpen((o) => {
+              const next = !o;
+              if (next) {
+                trackEvent({ action: "settings_panel_open", category: "settings" });
+              }
+              return next;
+            })
+          }
           className="pointer-events-auto flex w-10 shrink-0 flex-col items-center justify-center gap-1 rounded-l-lg border border-r-0 bg-paper py-3 shadow-md transition-colors hover:bg-ink/[0.04]"
           style={{
             borderColor: "var(--border)",

@@ -1,5 +1,5 @@
 /**
- * Per-phrase scoring — documented in docs/phrase-game-scoring.md.
+ * Per-phrase scoring — documented in docs/06_jogo_frases.md.
  *
  * The rules are tuned for a learning game, not a leaderboard: getting a phrase
  * wrong still earns credit for the words placed correctly, fixing your own

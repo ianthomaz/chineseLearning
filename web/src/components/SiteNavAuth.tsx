@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
 import { useLocale } from "@/context/LocaleContext";
+import { trackEvent } from "@/lib/analytics";
 
 const AUTH_ENABLED = process.env.NEXT_PUBLIC_AUTH_ENABLED !== "0";
 
@@ -35,6 +36,9 @@ function SiteNavAuthLive() {
         className="flex min-h-[44px] items-center rounded-full border px-3 text-xs font-medium text-ink/65 transition-colors hover:bg-ink/5 sm:px-4"
         style={{ borderColor: "var(--border)", fontFamily: "var(--font-sans)" }}
         title={t("nav.authSignInHint")}
+        onClick={() =>
+          trackEvent({ action: "sign_in_start", category: "auth", label: "nav" })
+        }
       >
         {t("nav.authSignIn")}
       </Link>
@@ -63,7 +67,10 @@ function SiteNavAuthLive() {
       </span>
       <button
         type="button"
-        onClick={() => signOut()}
+        onClick={() => {
+          trackEvent({ action: "sign_out", category: "auth", label: "nav" });
+          void signOut();
+        }}
         className="rounded-full border px-3 py-2 text-xs font-medium text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink"
         style={{ borderColor: "var(--border)" }}
       >

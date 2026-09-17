@@ -4,8 +4,10 @@ import { ChineseWithPinyinLine } from "@/components/ChineseWithPinyinLine";
 import { PhraseRevealLine } from "@/components/PhraseRevealLine";
 import { useLocale } from "@/context/LocaleContext";
 import { useTranslationDisplay } from "@/context/TranslationContext";
+import { SpeakButton } from "@/components/ui/SpeakButton";
 import type { DialogueTurn } from "@/lib/blocks-types";
 import { pickLocalized } from "@/lib/localized-line";
+import { trackEvent } from "@/lib/analytics";
 
 type Props = {
   turn: DialogueTurn;
@@ -16,7 +18,7 @@ type Props = {
 
 export function DialogueTurnRow({ turn, variant, phraseReveal }: Props) {
   const { showTranslation } = useTranslationDisplay();
-  const { locale } = useLocale();
+  const { locale, t } = useLocale();
   const align =
     variant === "right"
       ? "items-end text-right"
@@ -42,11 +44,24 @@ export function DialogueTurnRow({ turn, variant, phraseReveal }: Props) {
         className={`max-w-[min(100%,28rem)] rounded-lg border py-2 ${border}`}
         style={{ borderColor: color }}
       >
-        <span
-          className="mb-1 block px-3 text-[10px] font-semibold uppercase tracking-wider text-ink/40"
-          style={{ fontFamily: "var(--font-sans)" }}
-        >
-          {turn.speaker}
+        <span className="mb-1 flex items-center justify-between gap-2 px-3">
+          <span
+            className="text-[10px] font-semibold uppercase tracking-wider text-ink/40"
+            style={{ fontFamily: "var(--font-sans)" }}
+          >
+            {turn.speaker}
+          </span>
+          <SpeakButton
+            text={turn.hanzi}
+            label={t("phraseGame.speak")}
+            onPlay={() =>
+              trackEvent({
+                action: "audio_play",
+                category: "vocab",
+                label: turn.hanzi,
+              })
+            }
+          />
         </span>
         <div className="px-3">
           {phraseReveal ? (

@@ -3,7 +3,7 @@
  *
  * Selected by `next.config` `pageExtensions` only when NEXT_STATIC_EXPORT is unset.
  * MVP: reads/writes only the user's nick on the SQLite `users` table. It does NOT
- * persist round scores yet — that is Phase 2 (see docs/phrase-game-scoring.md).
+ * persist round scores yet — that is Phase 2 (see docs/06_jogo_frases.md).
  * Under static export this route does not exist (`.server.ts` omitted).
  */
 import { auth } from "@/server/auth";

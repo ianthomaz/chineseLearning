@@ -4,7 +4,7 @@
  * Selected by `next.config` `pageExtensions` only when NEXT_STATIC_EXPORT is unset
  * (`build:server`, `dev`). Under static export (`.server.ts` dropped from
  * pageExtensions) this route simply does not exist — UI degrades to guest-only.
- * See docs/09_google_auth_jogo.md.
+ * See docs/05_autenticacao.md.
  */
 import type { NextRequest } from "next/server";
 import { handlers } from "@/server/auth";

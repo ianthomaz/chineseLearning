@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-# Estático como webplace: build out/ + http.server. Porta default 34901 (contrato: 34827 = só next dev).
+# Estático learnchinese.today: build out/ + http.server. Porta default 34901 (34827 = next dev).
 # Override: PREVIEW_WEBPLACE_PORT=xxxx npm run preview:webplace
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -24,12 +24,11 @@ ROOT="$(mktemp -d)"
 cleanup() { rm -rf "$ROOT"; }
 trap cleanup EXIT
 
-mkdir -p "$ROOT/aulaChines"
-rsync -a --delete ./out/ "$ROOT/aulaChines/"
+rsync -a --delete ./out/ "$ROOT/"
 
 echo ""
-echo "  Preview estático (prefixo /aulaChines/, porta $PORT):"
-echo "  → http://127.0.0.1:${PORT}/aulaChines/"
+echo "  Preview estático (porta $PORT):"
+echo "  → http://127.0.0.1:${PORT}/"
 echo ""
 echo "  Ctrl+C para parar. Tutor/API não existem neste modo estático."
 echo ""

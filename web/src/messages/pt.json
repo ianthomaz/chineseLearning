@@ -77,10 +77,12 @@
     "translationDesc": "Sentido nas tabelas e, na página de diálogos, abaixo das falas; nas mini-diálogos da revisão, use o ícone ao lado de cada fala."
   },
   "home": {
-    "kicker": "Chinês básico",
+    "kicker": "Aprenda Chinês",
     "title1": "Blocos do curso e materiais de referência.",
     "title2": "Várias formas de estudar.",
     "blurb": "Revisão, vocabulário e gramática interligados.",
+    "missionTitle": "Independente e gratuito",
+    "missionBody": "Learn Chinese é um projeto independente e gratuito que organiza o aprendizado de um estudante iniciante. Criado para organizar o próprio estudo e disponibilizado na rede para que outras pessoas acompanhem e também aprendam.",
     "open": "Abrir →",
     "modeReviewDesc": "Frases em hanzi com ícone para revelar pinyin e tradução. Leia primeiro, decore depois.",
     "modeVocabDesc": "Tabelas completas por bloco — Hanzi, pinyin e tradução lado a lado.",
@@ -333,9 +335,22 @@
     "hanziWriterMmh": "Make Me a Hanzi",
     "hanziWriterEnd": "/ Arphic."
   },
+  "legal": {
+    "footerNavLabel": "Legal",
+    "privacyLink": "Política de Privacidade",
+    "termsLink": "Termos de Uso",
+    "cookieSettings": "Configurações de cookies",
+    "privacyTitle": "Política de Privacidade",
+    "termsTitle": "Termos de Uso",
+    "cookieBannerTitle": "Cookies e privacidade",
+    "cookieBannerBody": "Usamos cookies necessários para login, segurança e funcionamento do site. Com a sua autorização, também usamos o Google Analytics para entender como o learnchinese.today é utilizado e melhorar a experiência. Consulte a",
+    "cookieAcceptAnalytics": "Aceitar analíticos",
+    "cookieRejectAnalytics": "Só essenciais",
+    "cookieDismiss": "Fechar"
+  },
   "metadata": {
-    "siteTitle": "Chinês básico",
-    "siteDescription": "Revisão, vocabulário e gramática em blocos, a partir do consolidado do curso."
+    "siteTitle": "Aprenda Chinês",
+    "siteDescription": "Aprendizado gratuito de chinês para iniciantes — revisão, vocabulário, gramática, jogos e letras."
   },
   "phraseGame": {
     "title": "Quebra-Cabeça de Frases",

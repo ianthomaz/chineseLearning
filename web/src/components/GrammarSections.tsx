@@ -2,7 +2,9 @@
 
 import { PhraseRevealLine } from "@/components/PhraseRevealLine";
 import { PriorityList } from "@/components/PriorityList";
+import { SpeakButton } from "@/components/ui/SpeakButton";
 import { useLocale } from "@/context/LocaleContext";
+import { trackEvent } from "@/lib/analytics";
 import type { StructureGlossesByLocale, StructureLine } from "@/lib/blocks-types";
 import { pickLocalized } from "@/lib/localized-line";
 
@@ -66,7 +68,7 @@ function StructuresSection({
   blockId: number;
   accent?: string;
 }) {
-  const { locale } = useLocale();
+  const { locale, t } = useLocale();
   if (lines.length === 0) return null;
   return (
     <section
@@ -92,12 +94,30 @@ function StructuresSection({
           const gloss = pickLocalized(L, locale);
           return (
             <li key={`${title}-struct-${blockId}-${i}`}>
-              <PhraseRevealLine
-                hanzi={line.hanzi}
-                pinyin={line.pinyin}
-                translation={gloss.trim()}
-                hanziClassName="font-hanzi text-xl leading-loose text-ink md:text-2xl"
-              />
+              <div className="flex items-start gap-2">
+                <div className="min-w-0 flex-1">
+                  <PhraseRevealLine
+                    hanzi={line.hanzi}
+                    pinyin={line.pinyin}
+                    translation={gloss.trim()}
+                    hanziClassName="font-hanzi text-xl leading-loose text-ink md:text-2xl"
+                  />
+                </div>
+                <SpeakButton
+                  text={line.hanzi}
+                  label={t("phraseGame.speak")}
+                  onPlay={() =>
+                    trackEvent({
+                      action: "audio_play",
+                      category: "study",
+                      label: line.hanzi,
+                      hanzi: line.hanzi,
+                      block_id: blockId,
+                      mode: "grammar",
+                    })
+                  }
+                />
+              </div>
             </li>
           );
         })}

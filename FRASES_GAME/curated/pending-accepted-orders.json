@@ -1,16 +1,6 @@
 {
-  "generatedAt": "2026-09-17T00:00:00.000Z",
-  "note": "Review each entry and set \"approved\": true to accept it. Then run: node scripts/apply-accepted-orders.mjs",
-  "accepted": 1,
-  "proposals": [
-    {
-      "id": "pg-559",
-      "hanzi": "太太给他一只很小的狗",
-      "pt": "A esposa deu a ele um cachorrinho.",
-      "pieces": ["太太", "给", "他", "一只", "很小的", "狗"],
-      "alternative": "他给太太一只很小的狗",
-      "reason": "Caso reportado em docs/phrase-game-upgrades.md §14: ordem alternativa gramatical com o mesmo significado, que o jogo marcava como errada.",
-      "approved": true
-    }
-  ]
+  "generatedAt": "2026-09-17T06:10:00.000Z",
+  "note": "Review each entry and set \"approved\": true to accept it. Then run: node scripts/apply-accepted-orders.mjs. pg-559 (他给太太一只很小的狗) was rejected: it swaps giver and recipient.",
+  "accepted": 0,
+  "proposals": []
 }

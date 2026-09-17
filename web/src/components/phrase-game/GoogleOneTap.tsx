@@ -4,6 +4,7 @@ import Script from "next/script";
 import { useEffect, useRef, useState } from "react";
 import { signIn } from "next-auth/react";
 import { useLocale } from "@/context/LocaleContext";
+import { trackEvent } from "@/lib/analytics";
 
 const CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ?? "";
 const GIS_SRC = "https://accounts.google.com/gsi/client";
@@ -61,6 +62,11 @@ export function GoogleOneTap({ onSignedIn, locale = "pt" }: Props) {
           if (result?.error) {
             setError("signin_failed");
           } else {
+            trackEvent({
+              action: "sign_in_success",
+              category: "auth",
+              label: "google-onetap",
+            });
             onSignedInRef.current?.();
           }
         } catch {
@@ -128,7 +134,10 @@ export function GoogleSignInRedirect({ label }: { label: string }) {
   return (
     <button
       type="button"
-      onClick={() => signIn("google")}
+      onClick={() => {
+        trackEvent({ action: "sign_in_start", category: "auth", label: "google-redirect" });
+        void signIn("google");
+      }}
       className="rounded-full border px-4 py-2 text-sm font-medium text-ink/80 hover:bg-ink/5"
       style={{ borderColor: "var(--border)" }}
     >

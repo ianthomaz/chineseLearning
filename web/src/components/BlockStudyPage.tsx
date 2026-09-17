@@ -15,6 +15,7 @@ import type { BlockSummary, ContentBlock } from "@/lib/blocks-types";
 import { blockHasGrammarContent } from "@/lib/blocks-types";
 import { localizedBlockTitle } from "@/lib/block-title";
 import { useLocale } from "@/context/LocaleContext";
+import { trackEvent } from "@/lib/analytics";
 
 type Mode = "review" | "vocabulary" | "grammar";
 
@@ -41,8 +42,19 @@ function BlockStudyDocumentTitle({
 }
 
 export function BlockStudyPage({ mode, block, blockSummaries }: Props) {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   const num = String(block.id).padStart(2, "0");
+
+  useEffect(() => {
+    trackEvent({
+      action: "block_open",
+      category: "study",
+      label: `${mode}/${block.id}`,
+      block_id: block.id,
+      mode,
+      locale,
+    });
+  }, [mode, block.id, locale]);
 
   const headerKey =
     mode === "review"

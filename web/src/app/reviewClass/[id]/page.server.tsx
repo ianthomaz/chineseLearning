@@ -1,6 +1,6 @@
 /**
  * Curador — revisão de uma aula (SERVER MODE only). Big hanzi for the notebook
- * plus digital practice filtered to the lesson's words. See docs/12 §8.
+ * plus digital practice filtered to the lesson's words. See docs/09_roadmap_integracoes.md.
  */
 import { auth } from "@/server/auth";
 import { isAdminEmail } from "@/lib/phrase-game/admin";

@@ -10,6 +10,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { Icon } from "@/components/ui/Icon";
 import { hidesSiteNav } from "@/lib/immersive-routes";
 import { isAdminEmail } from "@/lib/phrase-game/admin";
+import { trackEvent } from "@/lib/analytics";
 
 const AUTH_ENABLED = process.env.NEXT_PUBLIC_AUTH_ENABLED !== "0";
 
@@ -113,6 +114,14 @@ function NavTabLink({
   return (
     <Link
       href={tab.href}
+      onClick={() =>
+        trackEvent({
+          action: "nav_click",
+          category: "navigation",
+          label: tab.key,
+          path: tab.href,
+        })
+      }
       className={tabClassName(variant, active, tab.featured)}
       style={tabStyle(active, tab.featured)}
     >

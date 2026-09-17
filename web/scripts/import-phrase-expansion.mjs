@@ -3,7 +3,7 @@
  * Import one phrase-game expansion batch into SITE_DB.
  * Runs build-phrase-game-data.mjs first, then upserts ids from the expansion file.
  *
- * Usage (from web/): node scripts/import-phrase-expansion.mjs expansion-08-cozinha
+ * Usage (from web/): node scripts/import-phrase-expansion.mjs phrases
  */
 import { existsSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
@@ -16,7 +16,7 @@ const REPO_ROOT = resolve(WEB_ROOT, "..");
 
 const batchName = process.argv[2];
 if (!batchName) {
-  console.error("Usage: node scripts/import-phrase-expansion.mjs <expansion-name-without-json>");
+  console.error("Usage: node scripts/import-phrase-expansion.mjs phrases");
   process.exit(1);
 }
 

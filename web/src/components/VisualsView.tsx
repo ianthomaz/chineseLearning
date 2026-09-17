@@ -9,6 +9,7 @@ import {
 } from "@/lib/vocabulary-pdf-downloads";
 import { VisualPdfPager } from "@/components/VisualPdfPager";
 import { withPublicBasePath } from "@/lib/publicBasePath";
+import { trackEvent } from "@/lib/analytics";
 
 export function VisualsView({
   catalog,
@@ -23,6 +24,18 @@ export function VisualsView({
   const [orientMsg, setOrientMsg] = useState<string | null>(null);
 
   const row: VocabPdfRow | undefined = pdfs[active];
+
+  useEffect(() => {
+    if (pdfs.length === 0) return;
+    const row = pdfs[active];
+    if (!row) return;
+    trackEvent({
+      action: "pdf_view",
+      category: "study",
+      label: row.id,
+      pdf_id: row.id,
+    });
+  }, [active, pdfs]);
 
   useEffect(() => {
     const mq = window.matchMedia("(orientation: portrait) and (max-width: 767px)");

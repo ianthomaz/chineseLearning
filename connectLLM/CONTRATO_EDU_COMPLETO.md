@@ -42,7 +42,7 @@ Tutor: recebe a mensagem do aluno e devolve resposta. O modelo é instruído a r
 
 ### Cliente Next (`chineseLearning`)
 
-O proxy **`POST /aulaChines/api/chat`** monta o corpo de `/edu/chat` assim:
+O proxy **`POST /api/chat`** monta o corpo de `/edu/chat` assim:
 
 - Por defeito **não** inclui `model` (máxima rapidez alinhada com a API).
 - **`LLM_EDU_CHAT_MODEL`** (env no Node): se definido, envia-se esse valor como `model` (ex. `smart`).

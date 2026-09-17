@@ -14,9 +14,7 @@ const newsreader = Newsreader({
   variable: "--font-newsreader",
 });
 
-const GA_MEASUREMENT_ID = "G-46HMWMHG18";
-
-const APP_NAME = "Chinês básico";
+const APP_NAME = "Learn Chinese";
 
 const publicBase =
   (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "") || "";
@@ -28,10 +26,10 @@ export const metadata: Metadata = {
   manifest: asset("/manifest.webmanifest"),
   title: {
     default: APP_NAME,
-    template: "%s · Chinês básico",
+    template: `%s · ${APP_NAME}`,
   },
   description:
-    "Revisão, vocabulário e gramática em blocos, a partir do consolidado do curso.",
+    "Free beginner Chinese learning — review, vocabulary, grammar, games, and lyrics.",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -62,16 +60,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={newsreader.variable} suppressHydrationWarning>
+    <html lang="en" className={newsreader.variable} suppressHydrationWarning>
       <head>
-        {/* Set the theme before paint to avoid a flash (reads the saved choice,
-            falls back to the OS preference). */}
         <Script id="theme-init" strategy="beforeInteractive">
           {`(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();`}
         </Script>
-        {/* Noto Sans SC (CJK) is too large for next/font subsetting; load it
-            non-blocking with preconnect. Hanzi Pinyin woff2 uses a basePath-
-            relative url() so it works in static export. */}
+        <Script id="gtag-consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              analytics_storage: 'denied',
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied',
+              wait_for_update: 500
+            });
+          `}
+        </Script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
@@ -82,18 +88,6 @@ export default function RootLayout({
         <link rel="stylesheet" href={`${publicBase}/pinyin-font.css`} />
       </head>
       <body>
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}');
-          `}
-        </Script>
         <Providers>
           <div className="flex min-h-dvh flex-col">
             <SiteNav />

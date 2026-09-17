@@ -10,6 +10,7 @@ import {
 } from "react";
 import type { AppLocale, MessageDict } from "@/lib/i18n-core";
 import { createTranslator } from "@/lib/i18n-core";
+import { setAnalyticsUserProperties, trackEvent } from "@/lib/analytics";
 import en from "@/messages/en.json";
 import es from "@/messages/es.json";
 import pt from "@/messages/pt.json";
@@ -37,11 +38,11 @@ function readStoredLocale(): AppLocale {
   } catch {
     /* ignore */
   }
-  return "pt";
+  return "en";
 }
 
 export function LocaleProvider({ children }: { children: React.ReactNode }) {
-  const [locale, setLocaleState] = useState<AppLocale>("pt");
+  const [locale, setLocaleState] = useState<AppLocale>("en");
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
@@ -50,7 +51,19 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const setLocale = useCallback((next: AppLocale) => {
-    setLocaleState(next);
+    setLocaleState((prev) => {
+      if (prev !== next) {
+        trackEvent({
+          action: "locale_change",
+          category: "settings",
+          label: next,
+          from: prev,
+          to: next,
+        });
+        setAnalyticsUserProperties({ ui_locale: next });
+      }
+      return next;
+    });
     try {
       localStorage.setItem(STORAGE_KEY, next);
     } catch {
@@ -65,6 +78,7 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
     if (!ready) return;
     document.documentElement.lang =
       locale === "pt" ? "pt-BR" : locale === "es" ? "es" : "en";
+    setAnalyticsUserProperties({ ui_locale: locale });
   }, [locale, ready]);
 
   const value = useMemo(

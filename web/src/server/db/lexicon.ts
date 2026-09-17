@@ -1,7 +1,7 @@
 /**
  * Site-wide accumulated lexicon (server-only). Keyed by the EXACT hanzi
  * string. Upserted whenever a lesson is saved; entries are never deleted
- * automatically when a word leaves a lesson (docs/12 §6).
+ * automatically when a word leaves a lesson (docs/09_roadmap_integracoes.md).
  */
 import { getDb } from "./index";
 

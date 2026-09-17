@@ -4,6 +4,7 @@ import Link from "next/link";
 import { BlockTitleText } from "@/components/BlockTitleText";
 import type { BlockIndexEntry } from "@/lib/blocks-types";
 import { useLocale } from "@/context/LocaleContext";
+import { trackEvent } from "@/lib/analytics";
 
 /** The phrase game is promoted out of the grid into its own card — see FeaturedGame. */
 const FEATURED_COLOR = "var(--cat-violet)";
@@ -109,6 +110,27 @@ export function HomeContent({ blocks }: Props) {
         </p>
       </section>
 
+      <section
+        className="rounded-2xl border px-5 py-5 sm:px-6 sm:py-6"
+        style={{
+          borderColor: "var(--border)",
+          backgroundColor: "color-mix(in srgb, var(--accent) 6%, var(--surface))",
+        }}
+      >
+        <h2
+          className="text-sm font-semibold uppercase tracking-widest text-ink/55"
+          style={{ fontFamily: "var(--font-sans)" }}
+        >
+          {t("home.missionTitle")}
+        </h2>
+        <p
+          className="mt-3 max-w-2xl text-base leading-relaxed text-ink/75 sm:text-lg"
+          style={{ fontFamily: "var(--font-sans)" }}
+        >
+          {t("home.missionBody")}
+        </p>
+      </section>
+
       <FeaturedGame t={t} />
 
       <section className="mt-10 sm:mt-12">
@@ -117,6 +139,14 @@ export function HomeContent({ blocks }: Props) {
             <Link
               key={m.href}
               href={m.href}
+              onClick={() =>
+                trackEvent({
+                  action: "home_nav_click",
+                  category: "home",
+                  label: m.modeKey,
+                  path: m.href,
+                })
+              }
               className="group relative overflow-hidden rounded-2xl border border-border bg-surface p-5 transition-shadow active:bg-ink/[0.02] sm:p-6 sm:hover:shadow-md"
             >
               <div
@@ -178,6 +208,15 @@ export function HomeContent({ blocks }: Props) {
             <li key={b.id}>
               <Link
                 href={`/review/${b.id}`}
+                onClick={() =>
+                  trackEvent({
+                    action: "home_block_click",
+                    category: "home",
+                    label: String(b.id),
+                    block_id: b.id,
+                    path: `/review/${b.id}`,
+                  })
+                }
                 className="group flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors hover:bg-ink/5"
               >
                 <span
@@ -215,9 +254,17 @@ export function HomeContent({ blocks }: Props) {
  */
 function FeaturedGame({ t }: { t: (key: string) => string }) {
   return (
-    <section>
+    <section className="mt-10 sm:mt-12">
       <Link
         href="/phrase-game"
+        onClick={() =>
+          trackEvent({
+            action: "home_featured_click",
+            category: "home",
+            label: "phrase_game",
+            path: "/phrase-game",
+          })
+        }
         className="group flex flex-col gap-5 rounded-3xl border p-6 transition-shadow active:bg-ink/[0.02] sm:flex-row sm:items-center sm:gap-7 sm:p-8 sm:hover:shadow-lg"
         style={{
           borderColor: `color-mix(in srgb, ${FEATURED_COLOR} 35%, transparent)`,

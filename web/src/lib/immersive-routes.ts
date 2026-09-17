@@ -13,7 +13,7 @@ const NO_SITE_NAV_ROUTES = ["/ktv"] as const;
 function matches(pathname: string | null, routes: readonly string[]): boolean {
   if (!pathname) return false;
   // Paths are compared with and without a basePath prefix, since the production
-  // server strips `/aulaChines` before Next but static export does not.
+  // Immersive routes use absolute paths from site root.
   return routes.some((route) => pathname === route || pathname.endsWith(route));
 }
 

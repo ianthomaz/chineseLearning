@@ -77,10 +77,12 @@
     "translationDesc": "Meaning column in tables and, on the dialogues page, under each line; in review mini-dialogues, use the icon next to each line."
   },
   "home": {
-    "kicker": "Basic Chinese",
+    "kicker": "Learn Chinese",
     "title1": "Course blocks plus reference material.",
     "title2": "Several ways to study.",
     "blurb": "Review, vocabulary, and grammar are linked.",
+    "missionTitle": "Independent & free",
+    "missionBody": "Learn Chinese is an independent, free project that organizes beginner-level study. Built for one learner's path and shared online so others can follow along and learn too.",
     "open": "Open →",
     "modeReviewDesc": "Hanzi-first lines with an icon to reveal pinyin and gloss. Read first, memorize later.",
     "modeVocabDesc": "Full tables per block — Hanzi, pinyin, and gloss side by side.",
@@ -333,9 +335,22 @@
     "hanziWriterMmh": "Make Me a Hanzi",
     "hanziWriterEnd": "/ Arphic."
   },
+  "legal": {
+    "footerNavLabel": "Legal",
+    "privacyLink": "Privacy Policy",
+    "termsLink": "Terms of Use",
+    "cookieSettings": "Cookie settings",
+    "privacyTitle": "Privacy Policy",
+    "termsTitle": "Terms of Use",
+    "cookieBannerTitle": "Cookies & privacy",
+    "cookieBannerBody": "We use necessary cookies for sign-in, security, and basic Site operation. With your permission, we also use Google Analytics to understand how learnchinese.today is used and improve the experience. See our",
+    "cookieAcceptAnalytics": "Accept analytics",
+    "cookieRejectAnalytics": "Essential only",
+    "cookieDismiss": "Close"
+  },
   "metadata": {
-    "siteTitle": "Basic Chinese",
-    "siteDescription": "Review, vocabulary, and grammar in blocks, from the course outline."
+    "siteTitle": "Learn Chinese",
+    "siteDescription": "Free beginner Chinese learning — review, vocabulary, grammar, games, and lyrics."
   },
   "phraseGame": {
     "title": "Phrase Puzzle",

@@ -1,0 +1,100 @@
+# learnchinese.today — vhost partilhado (nginx no host itcsVM3, Cloudflare proxied).
+# Copiar para /etc/nginx/conf.d/learnchinese.today.conf
+# Node: 127.0.0.1:34827 (server.env HOSTNAME=127.0.0.1 PORT=34827)
+#
+# Depois: sudo nginx -t && sudo systemctl reload nginx
+# Ver web/deploy/README.md para TLS (Cloudflare origin cert ou certbot).
+
+# --- HTTP :80 — apex (redirect www handled below) ---
+server {
+    listen 80;
+    listen [::]:80;
+    server_name learnchinese.today;
+
+    location / {
+        proxy_pass http://127.0.0.1:34827;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+    }
+}
+
+# --- HTTP :80 — www → apex ---
+server {
+    listen 80;
+    listen [::]:80;
+    server_name www.learnchinese.today;
+    return 301 https://learnchinese.today$request_uri;
+}
+
+# =============================================================================
+# HTTPS :443 — escolhe UMA opção (descomenta o bloco correspondente)
+# Cloudflare dashboard: SSL/TLS → Full (strict) quando usares origin cert (Opção A)
+# =============================================================================
+
+# --- Opção A (recomendada): Cloudflare origin certificate ---
+# Gerar em Cloudflare → SSL/TLS → Origin Server → Create Certificate
+# Guardar em /etc/nginx/ssl/learnchinese.crt e learnchinese.key (chmod 600 key)
+#
+# server {
+#     listen 443 ssl http2;
+#     listen [::]:443 ssl http2;
+#     server_name learnchinese.today;
+#
+#     ssl_certificate     /etc/nginx/ssl/learnchinese.crt;
+#     ssl_certificate_key /etc/nginx/ssl/learnchinese.key;
+#
+#     location / {
+#         proxy_pass http://127.0.0.1:34827;
+#         proxy_http_version 1.1;
+#         proxy_set_header Host $host;
+#         proxy_set_header X-Real-IP $remote_addr;
+#         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#         proxy_set_header X-Forwarded-Proto $scheme;
+#         proxy_set_header Upgrade $http_upgrade;
+#         proxy_set_header Connection "upgrade";
+#     }
+# }
+#
+# server {
+#     listen 443 ssl http2;
+#     listen [::]:443 ssl http2;
+#     server_name www.learnchinese.today;
+#     return 301 https://learnchinese.today$request_uri;
+# }
+
+# --- Opção B: Let's Encrypt (certbot) ---
+# sudo certbot certonly --nginx -d learnchinese.today -d www.learnchinese.today
+#
+# server {
+#     listen 443 ssl http2;
+#     listen [::]:443 ssl http2;
+#     server_name learnchinese.today;
+#
+#     ssl_certificate     /etc/letsencrypt/live/learnchinese.today/fullchain.pem;
+#     ssl_certificate_key /etc/letsencrypt/live/learnchinese.today/privkey.pem;
+#     include /etc/letsencrypt/options-ssl-nginx.conf;
+#     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+#
+#     location / {
+#         proxy_pass http://127.0.0.1:34827;
+#         proxy_http_version 1.1;
+#         proxy_set_header Host $host;
+#         proxy_set_header X-Real-IP $remote_addr;
+#         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#         proxy_set_header X-Forwarded-Proto $scheme;
+#         proxy_set_header Upgrade $http_upgrade;
+#         proxy_set_header Connection "upgrade";
+#     }
+# }
+#
+# server {
+#     listen 443 ssl http2;
+#     listen [::]:443 ssl http2;
+#     server_name www.learnchinese.today;
+#     return 301 https://learnchinese.today$request_uri;
+# }

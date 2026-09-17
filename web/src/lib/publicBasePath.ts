@@ -1,4 +1,4 @@
-/** Base path without trailing slash (e.g. "/aulaChines"), from build-time env. */
+/** Base path without trailing slash (empty for learnchinese.today), from build-time env. */
 export function getPublicBasePath(): string {
   return (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "");
 }

@@ -1,6 +1,6 @@
 /**
  * Curator lesson API (single lesson) — SERVER MODE only. GET/PUT/DELETE by id;
- * deleting a lesson never removes words from lexicon_global (docs/12 §6).
+ * deleting a lesson never removes words from lexicon_global (docs/09_roadmap_integracoes.md).
  */
 import { requireCurator } from "@/server/auth/session";
 import { deleteLesson, getLesson, updateLesson } from "@/server/db/lessons";

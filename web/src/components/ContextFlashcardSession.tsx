@@ -1,9 +1,11 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useCallback, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { useLocale } from "@/context/LocaleContext";
+import { SpeakButton } from "@/components/ui/SpeakButton";
 import { extractHanziFromWord } from "@/lib/hanzi-chars";
+import { trackEvent } from "@/lib/analytics";
 import type { ContextDeck, ContextDeckCard } from "@/lib/context-decks";
 
 const HanziStrokeModal = dynamic(
@@ -38,8 +40,36 @@ export function ContextFlashcardSession({ deck, onBack }: Props) {
   const { t } = useLocale();
   const [index, setIndex] = useState(0);
   const [strokeOpen, setStrokeOpen] = useState(false);
+  const prevIndex = useRef<number | null>(null);
 
   const total = deck.cards.length;
+
+  useEffect(() => {
+    trackEvent({
+      action: "deck_start",
+      category: "practice",
+      label: deck.id,
+      deck_id: deck.id,
+      total,
+    });
+  }, [deck.id, total]);
+
+  useEffect(() => {
+    if (prevIndex.current === null) {
+      prevIndex.current = index;
+      return;
+    }
+    if (prevIndex.current === index) return;
+    prevIndex.current = index;
+    trackEvent({
+      action: "card_advance",
+      category: "practice",
+      label: deck.id,
+      deck_id: deck.id,
+      value: index + 1,
+      total,
+    });
+  }, [index, deck.id, total]);
 
   const goPrev = useCallback(() => {
     setIndex((i) => Math.max(0, i - 1));
@@ -106,8 +136,21 @@ export function ContextFlashcardSession({ deck, onBack }: Props) {
       </p>
 
       <div className="flex flex-col items-center gap-2 py-4">
-        <div className="font-hanzi text-5xl font-bold leading-tight tracking-wide text-ink sm:text-6xl">
-          {card.word}
+        <div className="flex items-center gap-3">
+          <div className="font-hanzi text-5xl font-bold leading-tight tracking-wide text-ink sm:text-6xl">
+            {card.word}
+          </div>
+          <SpeakButton
+            text={card.word}
+            label={t("phraseGame.speak")}
+            onPlay={() =>
+              trackEvent({
+                action: "audio_play",
+                category: "vocab",
+                label: card.word,
+              })
+            }
+          />
         </div>
         {card.pinyin ? (
           <div

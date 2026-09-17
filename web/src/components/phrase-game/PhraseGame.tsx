@@ -20,7 +20,7 @@ import {
 import { AuthPanel } from "./AuthPanel";
 import { GameplayScreen } from "./GameplayScreen";
 import { SetupScreen } from "./SetupScreen";
-import { SpeakButton } from "./SpeakButton";
+import { SpeakButton } from "@/components/ui/SpeakButton";
 
 type Phase = "setup" | "playing" | "complete";
 
@@ -257,7 +257,7 @@ function RoundComplete({
 }: {
   correct: number;
   total: number;
-  /** Weighted round total — see docs/phrase-game-scoring.md. */
+  /** Weighted round total — see docs/06_jogo_frases.md. */
   points: number;
   items: Array<{ phrase: Phrase; correct: boolean; score: number }>;
   onPlayAgain: () => void;

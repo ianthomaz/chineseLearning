@@ -16,7 +16,7 @@ import {
 import { logGameEvent } from "@/lib/phrase-game/game-log";
 import { Board, type BoardValue } from "./Board";
 import { ProgressDots } from "./ProgressDots";
-import { SpeakButton } from "./SpeakButton";
+import { SpeakButton } from "@/components/ui/SpeakButton";
 import { HelpIconButton } from "./HelpIconButton";
 
 type Props = {

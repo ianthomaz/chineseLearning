@@ -72,7 +72,7 @@ CREATE INDEX IF NOT EXISTS idx_events_created ON events(created_at);
 CREATE INDEX IF NOT EXISTS idx_events_event ON events(event);
 CREATE INDEX IF NOT EXISTS idx_events_round ON events(round_id);
 
--- Lesson registry, eixo B (docs/12_aula_registro_roadmap.md). Curator-only.
+-- Lesson registry, eixo B (docs/09_roadmap_integracoes.md). Curator-only.
 CREATE TABLE IF NOT EXISTS classes (
   id         TEXT PRIMARY KEY,
   label      TEXT NOT NULL,
@@ -137,7 +137,7 @@ CREATE TABLE IF NOT EXISTS lexicon_global (
   updated_at  TEXT NOT NULL DEFAULT (datetime('now'))
 );
 
--- Editorial content (docs/11). Runtime source when CONTENT_SOURCE=db.
+-- Editorial content (docs/07_conteudo_dados.md). Runtime source when CONTENT_SOURCE=db.
 -- payload_json holds the full ContentBlock for faithful round-trip.
 CREATE TABLE IF NOT EXISTS content_blocks (
   id         INTEGER PRIMARY KEY,

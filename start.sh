@@ -23,7 +23,7 @@ set -euo pipefail
 # =============================================================================
 #
 # Usage:
-#   Ports, URLs, local deploy: docs/04_operacao_local.md (source of truth)
+#   Ports, URLs, local deploy: docs/03_operacao_e_deploy.md (source of truth)
 #   ./start.sh                      # default: hot dev (34827)
 #   ./start.sh --dev                # same as default
 #   ./start.sh --local              # local Node deploy (34902) + LLM checks
@@ -45,7 +45,7 @@ set -euo pipefail
 # Skip slow tutor smoke (POST /edu/chat, up to ~120s):
 #   export START_SKIP_EDU_SMOKE=1
 #
-# Vars: DEPLOY_LOCAL_DIR (static export under \$DEPLOY_LOCAL_DIR/aulaChines/; see --webplace)
+# Vars: DEPLOY_LOCAL_DIR (static export root; see --webplace)
 #
 # LLM: --local (default) still calls the API (health, smoke, ingest with --ingest) via LLM_API_URL in .env/.env.local.
 # That is integration / “is it up?”, not “LLM port contract for this repo” — URL comes from your env (see connectLLM/).
@@ -70,7 +70,7 @@ usage() {
   echo ""
   echo "  Portas fixas (só este site): dev=$DEV_PORT  node-local=$LIVE_PORT  estático=$STATIC_PORT"
   echo ""
-  echo "  (default / --dev)  Hot reload: Next + Turbopack. URL: http://127.0.0.1:${DEV_PORT}/aulaChines/"
+  echo "  (default / --dev)  Hot reload: Next + Turbopack. URL: http://127.0.0.1:${DEV_PORT}/"
   echo "                     Tutor usa /tutor (precisa web/.env.local com LLM_API_TOKEN)."
   echo "  --local          Site com API como em produção + checks LLM antes. Porta $LIVE_PORT."
   echo "  --webplace       Só HTML estático (como nginx webplace). Porta $STATIC_PORT."
@@ -145,7 +145,7 @@ load_env() {
   set +a
 }
 
-# Produção: mesmo ficheiro que deploy:node envia (web/deploy/server.env). Também chamado "env.prod" no servidor.
+# Produção: web/deploy/server.env (enviado por start.sh --prod --upload / deploy:prod).
 load_prod_env() {
   set -a
   # shellcheck source=/dev/null
@@ -342,13 +342,13 @@ if [[ "$MODE" == "dev" ]]; then
   load_env
   if [[ -z "${AUTH_SECRET:-}${NEXTAUTH_SECRET:-}" && "${NEXT_PUBLIC_AUTH_ENABLED:-}" != "1" ]]; then
     export NEXT_PUBLIC_AUTH_ENABLED=0
-    echo "→ Auth off (no AUTH_SECRET) — phrase game as guest. See docs/09_google_auth_jogo.md"
+    echo "→ Auth off (no AUTH_SECRET) — phrase game as guest. See docs/05_autenticacao.md"
   fi
-  echo "→ Hot dev (Turbopack) · http://127.0.0.1:${DEV_PORT}/aulaChines/"
-  echo "  Tutor: http://127.0.0.1:${DEV_PORT}/aulaChines/tutor  (precisa web/.env.local)"
+  echo "→ Hot dev (Turbopack) · http://127.0.0.1:${DEV_PORT}/"
+  echo "  Tutor: http://127.0.0.1:${DEV_PORT}/tutor  (precisa web/.env.local)"
   echo "  Login Google: npm run dev:auth  (com credenciais em web/.env.local)"
   echo "  Igual: cd web && npm run dev"
-  echo "  Modo prod local (outra porta, sem hot): $0 --local  — ver docs/04_operacao_local.md"
+  echo "  Modo prod local (outra porta, sem hot): $0 --local  — ver docs/03_operacao_e_deploy.md"
   echo "  Ctrl+C para parar."
   echo ""
   cd "$WEB_DIR"
@@ -373,7 +373,7 @@ if [[ "$MODE" == "prepare" ]]; then
     run_ingest
   fi
 
-  echo "→ build:server (NEXT_PUBLIC_BASE_PATH=/aulaChines)…"
+  echo "→ build:server (learnchinese.today, basePath vazio)…"
   (cd "$WEB_DIR" && npm run build:server)
 
   echo "→ Testes finais (LLM)…"
@@ -382,9 +382,9 @@ if [[ "$MODE" == "prepare" ]]; then
   echo ""
   echo "  [ prepare ] Concluído. Nenhum servidor foi iniciado; nenhuma porta foi libertada."
   echo "  Ambiente:   web/deploy/server.env (template: web/deploy/server.env.example)"
-  echo "  No servidor (após rsync / deploy:node), exemplo:"
+  echo "  No servidor (após start.sh --prod --upload ou deploy:prod), exemplo:"
   echo "    cd <REMOTE_DIR> && set -a && source ./server.env && set +a && PORT=\${PORT:-34827} npm run start:server"
-  echo "  Nginx:      proxy_pass deve apontar para 127.0.0.1:\$PORT (ver docs/06_deploy.md)."
+  echo "  Nginx:      proxy_pass deve apontar para 127.0.0.1:\$PORT (ver docs/03_operacao_e_deploy.md)."
   echo ""
   exit 0
 fi
@@ -420,7 +420,7 @@ if [[ "$MODE" == "prod" ]]; then
       exit 1
     fi
   else
-    echo "→ build:server local (NEXT_PUBLIC_BASE_PATH=/aulaChines)…"
+    echo "→ build:server local (learnchinese.today, basePath vazio)…"
     (cd "$WEB_DIR" && npm run build:server)
   fi
   echo ""
@@ -441,7 +441,7 @@ if [[ "$MODE" == "prod" ]]; then
   echo "    DEPLOY_PROD_SEED_CONTENT=1 ./start.sh --prod --upload   # seed fill-empty remoto"
   echo "    cd web && npm run deploy:prod            # só upload (requer .next + server.env prontos)"
   echo ""
-  echo "  Nginx no servidor: proxy_pass /aulaChines/ → 127.0.0.1:\${PORT} (ver docs/06_deploy.md)."
+  echo "  Nginx no servidor: learnchinese.today → 127.0.0.1:\${PORT} (ver web/deploy/nginx-learnchinese.conf.example)."
   echo ""
 
   if [[ "$PROD_UPLOAD" == "1" ]]; then
@@ -474,9 +474,9 @@ if [[ "$MODE" == "webplace" ]]; then
   echo "→ Build estático (webplace)…"
   (cd "$WEB_DIR" && export DEPLOY_LOCAL_DIR && npm run deploy:local)
   echo ""
-  echo "  Estático: http://127.0.0.1:${STATIC_PORT}/aulaChines/"
-  echo "  (ficheiros em: $DEPLOY_LOCAL_DIR/aulaChines/)"
-  echo "  Tutor / Node com API: ./start.sh --local  (ou START_SKIP_LLM_CHECKS=1 para saltar cheks LLM — ver docs/04)."
+  echo "  Estático: http://127.0.0.1:${STATIC_PORT}/"
+  echo "  (ficheiros em: $DEPLOY_LOCAL_DIR/)"
+  echo "  Tutor / Node com API: ./start.sh --local  (ou START_SKIP_LLM_CHECKS=1 para saltar cheks LLM — ver docs/03_operacao_e_deploy.md)."
   echo "  Ctrl+C para parar."
   echo ""
   cd "$DEPLOY_LOCAL_DIR"

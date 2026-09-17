@@ -5,8 +5,10 @@ import { useState } from "react";
 import { useLocale } from "@/context/LocaleContext";
 import { usePinyin } from "@/context/PinyinContext";
 import { useTranslationDisplay } from "@/context/TranslationContext";
+import { SpeakButton } from "@/components/ui/SpeakButton";
 import type { VocabRow } from "@/lib/blocks-types";
 import { extractHanziFromWord } from "@/lib/hanzi-chars";
+import { trackEvent } from "@/lib/analytics";
 
 const HanziStrokeModal = dynamic(
   () =>
@@ -86,6 +88,17 @@ export function VocabTable({ rows }: Props) {
               <td className="px-4 py-3">
                 <div className="flex items-center gap-2">
                   <span className="font-hanzi text-xl font-medium text-ink">{row.hanzi}</span>
+                  <SpeakButton
+                    text={row.hanzi}
+                    label={t("phraseGame.speak")}
+                    onPlay={() =>
+                      trackEvent({
+                        action: "audio_play",
+                        category: "vocab",
+                        label: row.hanzi,
+                      })
+                    }
+                  />
                   {canStroke ? (
                     <button
                       type="button"

@@ -1,6 +1,6 @@
 /**
  * Curador — cadastrar / editar aula (SERVER MODE only). Gated to the curator
- * email like /backoffice. Edit an existing lesson via ?id=. See docs/12 §4-7.
+ * email like /backoffice. Edit an existing lesson via ?id=. See docs/09_roadmap_integracoes.md.
  */
 import { auth } from "@/server/auth";
 import { isAdminEmail } from "@/lib/phrase-game/admin";

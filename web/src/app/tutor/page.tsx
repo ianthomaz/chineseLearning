@@ -6,6 +6,7 @@ import { useLocale } from "@/context/LocaleContext";
 import { useTranslationDisplay } from "@/context/TranslationContext";
 import { ChineseWithPinyinLine } from "@/components/ChineseWithPinyinLine";
 import { withPublicBasePath } from "@/lib/publicBasePath";
+import { trackEvent } from "@/lib/analytics";
 
 type Message = {
   role: "user" | "assistant";
@@ -36,6 +37,11 @@ function TutorChat() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    trackEvent({ action: "tutor_open", category: "tutor", locale });
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- once per mount
+  }, []);
+
+  useEffect(() => {
     if (scrollRef.current) {
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
     }
@@ -45,19 +51,28 @@ function TutorChat() {
     e.preventDefault();
     if (!input.trim() || loading) return;
 
-    const userMessage: Message = { role: "user", text: input };
+    const text = input.trim();
+    const userMessage: Message = { role: "user", text };
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
     setLoading(true);
     setError(null);
     setNotice(null);
 
+    trackEvent({
+      action: "message_send",
+      category: "tutor",
+      label: String(text.length),
+      value: text.length,
+      locale,
+    });
+
     try {
       const response = await fetch(withPublicBasePath("/api/chat"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          message: input,
+          message: text,
           history: messages.map((m) => ({
             role: m.role,
             content: m.text,
@@ -77,8 +92,21 @@ function TutorChat() {
         setNotice("Resposta sem estrutura completa. Tente uma pergunta mais curta.");
       }
       setMessages((prev) => [...prev, assistantMessage]);
+      trackEvent({
+        action: "message_received",
+        category: "tutor",
+        label: data.structured ? "structured" : "plain",
+        success: 1,
+        locale,
+      });
     } catch (err) {
       console.error(err);
+      trackEvent({
+        action: "message_error",
+        category: "tutor",
+        success: 0,
+        locale,
+      });
       setError("Erro ao falar com o professor. Verifique a API.");
     } finally {
       setLoading(false);
