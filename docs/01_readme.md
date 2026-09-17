@@ -12,19 +12,24 @@
 | [06_deploy.md](06_deploy.md) | Estático (webplace) vs Node (`next start`) e nginx |
 | [07_vocabulario_hanzi_strokes.md](07_vocabulario_hanzi_strokes.md) | Vocabulário: Make Me a Hanzi, Hanzi Writer, modal, licenças |
 | [08_plano_jogo_frases.md](08_plano_jogo_frases.md) | Jogo de frases — **estado actual** (MVP implementado) |
-| [09_google_auth_jogo.md](09_google_auth_jogo.md) | Login Google site-wide (OAuth ChineseSite), JWT, SQLite `users` |
+| [09_google_auth_jogo.md](09_google_auth_jogo.md) | **Autenticação** — modelo de utilizador, convidado vs. logado, o que fica guardado, que rotas exigem login |
 | [11_content_db_schema.md](11_content_db_schema.md) | Conteúdo editorial em BD (`CONTENT_SOURCE=db`, seed, schema) |
 | [12_aula_registro_roadmap.md](12_aula_registro_roadmap.md) | **Registo de aulas** — formulário, léxico global, roadmap (planeamento) |
 | [phrase-game-scoring.md](phrase-game-scoring.md) | Regras de pontuação (implementadas, sem UI) |
 | [phrase-game-upgrades.md](phrase-game-upgrades.md) | Backlog e sugestões de melhoria do jogo de frases |
 | [14_app_library_contract.md](14_app_library_contract.md) | Pack app ↔ site (manifest, Bearer, `contentVersion`) |
 | [15_lexico_llm_classify_contract.md](15_lexico_llm_classify_contract.md) | Contrato LLM (mini62 / featureLLM) para categorizar léxico → widgets |
+| [16_auth_wechat_roadmap.md](16_auth_wechat_roadmap.md) | Login WeChat — pesquisa e checklist de bloqueios (**não implementado**) |
+| [17_performance_payloads.md](17_performance_payloads.md) | Payloads de primeira pintura — como medir, o que foi corrigido, o que falta |
+| [phrase-game-backoffice.md](phrase-game-backoffice.md) | Dashboard de telemetria do jogo (`/backoffice`, só admin) |
 
 ## Visão geral rápida
 
 O site de aprendizagem de chinês vive em **`web/`** (Next.js 15, React 19). O tutor usa **`POST /aulaChines/api/chat`**, que faz proxy para a API externa no eixo educacional **`/edu/chat`**. O export estático (`out/`) **não** expõe esse POST; para tutor com LLM é preciso **`next dev`** / **`next start`**.
 
-O **jogo de montar frases** está em **`/aulaChines/phrase-game`** (convidado ou login Google). Banco: **`FRASES_GAME/curated/`** → build → `web/src/data/phrase-game/phrases.json`.
+O **jogo de montar frases** está em **`/aulaChines/phrase-game`** e joga-se **sem conta** — o login Google é opcional e só guarda o apelido. Banco: **`FRASES_GAME/curated/`** → build → `web/src/data/phrase-game/phrases.json` → SQLite, servido ao browser por `GET /api/phrase-game/bank`.
+
+As **letras / KTV** estão em **`/aulaChines/ktv`**, também sem login. Fonte única dos dados: `web/public/ktv/`.
 
 Operação em máquina (portas, URLs, deploy local, `start.sh`): **[04_operacao_local.md](04_operacao_local.md)** — **única** fonte; não duplicar noutros ficheiros.
 

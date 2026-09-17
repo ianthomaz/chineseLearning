@@ -2,8 +2,8 @@
 
 Drag-and-drop sentence builder at route **`/phrase-game`** (served as `/aulaChines/phrase-game`).
 Players assemble a Chinese sentence from word/character pieces using
-[`@dnd-kit`](https://dndkit.com/) (pointer drag + keyboard nudge). Guest play works on static export;
-Google sign-in (server mode) + optional nick.
+[`@dnd-kit`](https://dndkit.com/) (pointer drag + keyboard nudge). No login required: the route has no gate in either build mode.
+Google sign-in (server mode) is optional and only stores a nick.
 
 **Docs:** [docs/08_plano_jogo_frases.md](../../../../docs/08_plano_jogo_frases.md) (estado) ·
 [docs/phrase-game-upgrades.md](../../../../docs/phrase-game-upgrades.md) (backlog) ·
@@ -19,10 +19,11 @@ FRASES_GAME/
     expansion-01 … 07.json      themed batches (merged at build)
 web/
   scripts/build-phrase-game-data.mjs   validator + build (curated → runtime artifact)
-  src/data/phrase-game/phrases.json    GENERATED (596 phrases — do not hand-edit)
+  src/data/phrase-game/phrases.json    GENERATED (616 phrases — do not hand-edit); seeds SQLite
   src/lib/phrase-game/
     types.ts              Phrase, Token, GameLevel, DisplaySettings, ROUND_SIZE
-    phrases.ts            loader for generated JSON
+    phrases.ts            server-side bank loader (SQLite, memoised)
+    use-phrase-bank.ts    client hook: background fetch of /api/phrase-game/bank
     select-phrases.ts     tier filter + weighted length mix + distractor budget
     settings-by-level.ts  hint toggles clamped by game level
     pieces.ts             draggable pieces (whole-word L1–3, split L4, full L5)
@@ -35,8 +36,11 @@ web/
     GameplayScreen.tsx    board + submit/next + in-phrase help
     Board.tsx             @dnd-kit (bank ↔ answer, keyboard ◀▶)
     GoogleOneTap.tsx      GIS One Tap + sign-in button
-    AuthPanel.tsx         guest / Google / nick
+    AuthPanel.tsx         optional Google sign-in / nick (below the setup screen)
     PhraseGameSession.tsx SessionProvider (route-scoped)
+  src/app/api/phrase-game/bank/route.server.ts
+                          serves the bank (gzipped + ETag) so it is not in the
+                          first paint; static export falls back to props
   src/server/             server-only (not in static export)
     auth/                 Auth.js v5 + google-onetap provider
     db/                   SQLite users + events + progress stub

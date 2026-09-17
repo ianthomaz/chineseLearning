@@ -12,13 +12,14 @@ O plano antigo (phrase-bank em `Content/`, integração no `GamificationHub`, lo
 |------|------|
 | Jogo drag-and-drop | `web/src/components/phrase-game/` |
 | Lógica pura | `web/src/lib/phrase-game/` |
-| Banco curado (596 frases) | `FRASES_GAME/curated/` → build → `web/src/data/phrase-game/phrases.json` |
+| Banco curado (616 frases) | `FRASES_GAME/curated/` → build → `web/src/data/phrase-game/phrases.json` → SQLite |
 | Validador + pinyin no build | `web/scripts/build-phrase-game-data.mjs` |
 | Tiers **Iniciante** (HSK1) e **Básico** (banco completo) | `SetupScreen.tsx`, `select-phrases.ts` |
 | Níveis 1–5 (peças, split, distratores) | `pieces.ts`, `settings-by-level.ts` |
 | Mix ponderado por tamanho (níveis 3–5 incluem frases curtas) | `select-phrases.ts` (`ROUND_MIX_WEIGHTS`) |
 | Revisão de erros no fim da rodada | `PhraseGame.tsx` (`RoundComplete`) |
-| Auth Google + One Tap + nick | `AuthPanel.tsx`, `docs/09_google_auth_jogo.md` |
+| Auth Google **opcional** (One Tap + nick) | `AuthPanel.tsx`, `docs/09_google_auth_jogo.md` |
+| Banco servido ao browser (fetch em segundo plano) | `api/phrase-game/bank/route.server.ts`, `lib/phrase-game/use-phrase-bank.ts` |
 | Pontuação ponderada (sem UI) | `scoring.ts`, `docs/phrase-game-scoring.md` |
 | Backlog de melhorias | `docs/phrase-game-upgrades.md` |
 
@@ -26,7 +27,7 @@ O plano antigo (phrase-bank em `Content/`, integração no `GamificationHub`, lo
 
 - **Fonte:** `FRASES_GAME/curated/phrases.json` + `expansion-01` … `expansion-07` (merge no build).
 - **Tags:** temas gerais (`tema:cores`, `tema:lugares`, …) — não agrupar por PDF/fonte.
-- **Tiers de vocabulário:** `hsk1` (247) | `basico` (349) — total 596.
+- **Tiers de vocabulário:** `hsk1` (249) | `basico` (367) — total 616.
 - **Rebuild:** `cd web && npm run prebuild:phrase-game` (corre também no `predev`).
 
 Ficheiros legados em `FRASES_GAME/Nivel*` e `all-phrases.json` **não alimentam o jogo**; o pipeline activo é só `curated/` + build script.
@@ -53,4 +54,4 @@ Ver [phrase-game-upgrades.md](phrase-game-upgrades.md) e [09_google_auth_jogo.md
 
 ## Auth e progresso
 
-Convidado joga sem login. Com OAuth (modo servidor): Google One Tap + redirect; nick em SQLite. Ver [09_google_auth_jogo.md](09_google_auth_jogo.md).
+A rota **não tem gate**: joga-se sem conta. O login (Google One Tap + redirect, modo servidor) é opcional e hoje só guarda o apelido. Telemetria de convidado por `anonId`. Ver [09_google_auth_jogo.md](09_google_auth_jogo.md).
