@@ -238,8 +238,16 @@ export function GameplayScreen({
               type="button"
               onClick={toggleViewTranslation}
               aria-pressed={showPrompt}
-              aria-label={t("phraseGame.help.viewTranslation")}
-              title={t("phraseGame.help.viewTranslation")}
+              aria-label={
+                showPrompt
+                  ? t("phraseGame.help.hideTranslation")
+                  : t("phraseGame.help.viewTranslation")
+              }
+              title={
+                showPrompt
+                  ? t("phraseGame.help.hideTranslation")
+                  : t("phraseGame.help.viewTranslation")
+              }
               className={PROMPT_ACTION_CLASS}
               style={{
                 ...PROMPT_ACTION_STYLE,
@@ -250,11 +258,15 @@ export function GameplayScreen({
               }}
             >
               <MaterialIcon
-                name={showPrompt ? "visibility" : "visibility_off"}
+                name={showPrompt ? "visibility_off" : "visibility"}
                 className="text-xl"
-                filled={showPrompt}
+                filled={!showPrompt}
               />
-              <span className="hidden sm:inline">{t("phraseGame.help.viewTranslation")}</span>
+              <span className="hidden sm:inline">
+                {showPrompt
+                  ? t("phraseGame.help.hideTranslation")
+                  : t("phraseGame.help.viewTranslation")}
+              </span>
             </button>
             <SpeakButton
               text={phrase.hanzi}

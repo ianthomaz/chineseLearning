@@ -353,7 +353,8 @@
   },
   "phraseGame": {
     "title": "Quebra-Cabeça de Frases",
-    "subtitle": "Use as peças abaixo para montar uma frase!",
+    "subtitle": "Escolha o vocabulário e as configurações; depois organize os hanzi dados.",
+    "subtitlePlaying": "Use as peças abaixo para montar uma frase!",
     "tierLabel": "Conhecimento",
     "tier": {
       "hsk1": "HSK 1",
@@ -399,6 +400,7 @@
       "showPinyin": "Mostrar pinyin",
       "showTranslation": "Mostrar tradução",
       "viewTranslation": "Ver a tradução",
+      "hideTranslation": "Ocultar a tradução",
       "listen": "Ouvir em chinês",
       "nextPiece": "Próxima peça"
     },

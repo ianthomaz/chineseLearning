@@ -353,7 +353,8 @@
   },
   "phraseGame": {
     "title": "Phrase Puzzle",
-    "subtitle": "Use the pieces below to build a sentence!",
+    "subtitle": "Choose the vocabulary and the settings; then organize the given hanzi.",
+    "subtitlePlaying": "Use the pieces below to build a sentence!",
     "tierLabel": "Knowledge",
     "tier": {
       "hsk1": "HSK 1",
@@ -399,6 +400,7 @@
       "showPinyin": "Show pinyin",
       "showTranslation": "Show translation",
       "viewTranslation": "View the translation",
+      "hideTranslation": "Hide the translation",
       "listen": "Listen in Chinese",
       "nextPiece": "Next piece"
     },

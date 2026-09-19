@@ -353,7 +353,8 @@
   },
   "phraseGame": {
     "title": "Rompecabezas de Frases",
-    "subtitle": "¡Usa las piezas de abajo para armar una frase!",
+    "subtitle": "Elige el vocabulario y la configuración; luego organiza los hanzi dados.",
+    "subtitlePlaying": "¡Usa las piezas de abajo para armar una frase!",
     "tierLabel": "Conocimiento",
     "tier": {
       "hsk1": "HSK 1",
@@ -399,6 +400,7 @@
       "showPinyin": "Mostrar pinyin",
       "showTranslation": "Mostrar traducción",
       "viewTranslation": "Ver la traducción",
+      "hideTranslation": "Ocultar la traducción",
       "listen": "Escuchar en chino",
       "nextPiece": "Siguiente pieza"
     },

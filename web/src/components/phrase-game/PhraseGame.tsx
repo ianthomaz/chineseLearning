@@ -202,7 +202,11 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
           <h1 className="font-display text-2xl font-medium text-ink sm:text-3xl">
             {t("phraseGame.title")}
           </h1>
-          <p className="mt-1 text-sm text-ink/55">{t("phraseGame.subtitle")}</p>
+          <p className="mt-1 text-sm text-ink/55">
+            {phase === "playing"
+              ? t("phraseGame.subtitlePlaying")
+              : t("phraseGame.subtitle")}
+          </p>
         </div>
       </header>
 
