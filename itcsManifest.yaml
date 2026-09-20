@@ -1,0 +1,41 @@
+# itcsManifest.yaml — cartão de identidade (v1)
+# Contrato: 0MM_ITCS docs/06_project_hub_contract.md
+
+apiVersion: itcs.io/v1
+kind: Project
+metadata:
+  projectDbId: chineseLearning
+  humanProjectId: chineseLearning
+  displayName: Chinese Learning
+  legacyNnn: ""
+spec:
+  managerId: webplace
+  clientId: null
+  sphere: webplace
+  status: prod
+  github:
+    repo: ianthomaz/chineseLearning
+    branch: main
+  paths:
+    local: ~/Documents/projects/chineseLearning
+    remote: /home/opc/projetos/chineseLearning-app
+  envs:
+    - env: prod
+      machineId: itcsVM3
+      pathRemote: /home/opc/projetos/chineseLearning-app
+      isPrimary: true
+  hostnames:
+    - aulachines.webplace.cc
+monitor:
+  enabled: true
+  tier: server
+  cadence: daily
+  checks:
+    - id: http-apex
+      type: http
+      url: https://aulachines.webplace.cc/
+      expectStatus: 200
+hub:
+  manifestRevision: 1
+  lastHarvestAt: null
+  contractVersion: "21"
