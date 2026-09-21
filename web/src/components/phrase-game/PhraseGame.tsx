@@ -49,6 +49,8 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
   const [settings, setSettings] = useState<DisplaySettings>(INITIAL_PRESET.settings);
   const [round, setRound] = useState<Round | null>(null);
   const [index, setIndex] = useState(0);
+  /** Furthest phrase unlocked this round — back/forward stay within 0…frontier. */
+  const [frontierIndex, setFrontierIndex] = useState(0);
   const [results, setResults] = useState<Array<"correct" | "wrong" | null>>([]);
   /** Weighted points per phrase, same indexing as `results`. */
   const [scores, setScores] = useState<number[]>([]);
@@ -87,6 +89,7 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
     abandonedRef.current = false;
     setRound(built);
     setIndex(0);
+    setFrontierIndex(0);
     setResults(new Array(built.items.length).fill(null));
     setScores(new Array(built.items.length).fill(0));
     setPhase("playing");
@@ -110,10 +113,25 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
   function handleNext() {
     if (!round) return;
     if (index < round.items.length - 1) {
-      setIndex((i) => i + 1);
+      const next = index + 1;
+      setIndex(next);
+      setFrontierIndex((f) => Math.max(f, next));
     } else {
       setPhase("complete");
     }
+  }
+
+  function handlePrevPhrase() {
+    if (index > 0) setIndex((i) => i - 1);
+  }
+
+  /** Step toward the frontier, or advance the round when the current phrase is done. */
+  function handleForwardPhrase() {
+    if (index < frontierIndex) {
+      setIndex((i) => i + 1);
+      return;
+    }
+    if (results[index] !== null) handleNext();
   }
 
   // Report the round score once results are final — reading them here (rather
@@ -285,7 +303,12 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
               index={index}
               total={round.items.length}
               results={results}
+              priorResult={results[index]}
               isLast={index === round.items.length - 1}
+              canPrev={index > 0}
+              canForward={index < frontierIndex || results[index] !== null}
+              onPrev={handlePrevPhrase}
+              onForward={handleForwardPhrase}
               onSettingsChange={setSettings}
               onResult={handleResult}
               onNext={handleNext}

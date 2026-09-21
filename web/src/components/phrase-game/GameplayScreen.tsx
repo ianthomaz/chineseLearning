@@ -39,7 +39,13 @@ type Props = {
   index: number;
   total: number;
   results: Array<"correct" | "wrong" | null>;
+  /** Already scored this slot — open in review mode so the player can study again. */
+  priorResult: "correct" | "wrong" | null;
   isLast: boolean;
+  canPrev: boolean;
+  canForward: boolean;
+  onPrev: () => void;
+  onForward: () => void;
   onSettingsChange: (settings: DisplaySettings) => void;
   onResult: (correct: boolean, score: number) => void;
   onNext: () => void;
@@ -56,13 +62,19 @@ export function GameplayScreen({
   index,
   total,
   results,
+  priorResult,
   isLast,
+  canPrev,
+  canForward,
+  onPrev,
+  onForward,
   onSettingsChange,
   onResult,
   onNext,
 }: Props) {
   const { t, locale } = useLocale();
   const phrase = item.phrase;
+  const isReview = priorResult !== null;
 
   // Derive the board exactly once per phrase (random shuffle/split must be stable).
   const derived = useMemo(
@@ -70,30 +82,39 @@ export function GameplayScreen({
     [phrase, level, item.distractorCount],
   );
 
-  const [board, setBoard] = useState<BoardValue>({ bank: derived.bank, answer: [] });
-  const [reveal, setReveal] = useState({ pinyin: false, translation: false });
+  const [board, setBoard] = useState<BoardValue>(() =>
+    isReview
+      ? { bank: [], answer: derived.correctOrder }
+      : { bank: derived.bank, answer: [] },
+  );
+  const [reveal, setReveal] = useState({
+    pinyin: isReview,
+    translation: isReview,
+  });
   const [removedExtras, setRemovedExtras] = useState(false);
-  const [submitted, setSubmitted] = useState<boolean | null>(null);
+  const [submitted, setSubmitted] = useState<boolean | null>(
+    isReview ? priorResult === "correct" : null,
+  );
   /** The phrase is settled: no more retries, the score has been reported. */
-  const [finalized, setFinalized] = useState(false);
+  const [finalized, setFinalized] = useState(isReview);
   const [wrongSubmit, setWrongSubmit] = useState(false);
   const [gaveUp, setGaveUp] = useState(false);
   const [helpUsed] = useState<Set<HelpAction>>(() => new Set());
 
   /** One retry per phrase: fixing your own mistake should beat being told. */
-  const canRetry = submitted === false && !finalized;
+  const canRetry = !isReview && submitted === false && !finalized;
 
   const hasExtras = useMemo(
     () => [...board.bank, ...board.answer].some((p) => p.isDistractor),
     [board],
   );
 
-  // Auto-advance only after a correct answer (wrong answers wait for the Next button).
+  // Auto-advance only after a fresh correct answer — never while reviewing.
   useEffect(() => {
-    if (submitted !== true || !finalized) return;
+    if (isReview || submitted !== true || !finalized) return;
     const id = window.setTimeout(onNext, AUTO_ADVANCE_MS);
     return () => window.clearTimeout(id);
-  }, [submitted, finalized, onNext]);
+  }, [isReview, submitted, finalized, onNext]);
 
   function logHelp(action: HelpAction) {
     helpUsed.add(action);
@@ -138,6 +159,7 @@ export function GameplayScreen({
 
   /** Settle the phrase: score it once, log it once, report it once. */
   function finalize(correct: boolean, attempt: string) {
+    if (isReview) return;
     const score = computeScore({
       correct,
       wrongSubmit,
@@ -192,9 +214,18 @@ export function GameplayScreen({
     logHelp("nextPiece");
   }
 
-  const disabled = submitted !== null;
-  const answerState = submitted === null ? "neutral" : submitted ? "correct" : "wrong";
-  const canSubmit = board.answer.length > 0 && submitted === null;
+  const disabled = submitted !== null || isReview;
+  // Review shows the solved board; colour it by the prior score, not as a live attempt.
+  const answerState = isReview
+    ? priorResult === "correct"
+      ? "correct"
+      : "wrong"
+    : submitted === null
+      ? "neutral"
+      : submitted
+        ? "correct"
+        : "wrong";
+  const canSubmit = !isReview && board.answer.length > 0 && submitted === null;
   const showPrompt = settings.showNativePrompt;
   const promptText = localizedPrompt(phrase, locale);
   const boardReveal =
@@ -210,9 +241,36 @@ export function GameplayScreen({
     <div className="space-y-5 sm:space-y-6">
       <div className="flex items-center justify-between gap-3">
         <ProgressDots results={results} currentIndex={index} />
-        <span className="shrink-0 text-xs text-ink/40" style={{ fontFamily: "var(--font-sans)" }}>
-          {t("phraseGame.progress", { current: index + 1, total })}
-        </span>
+        <div className="flex shrink-0 items-center gap-0.5">
+          <button
+            type="button"
+            onClick={onPrev}
+            disabled={!canPrev}
+            aria-label={t("phraseGame.prevPhrase")}
+            title={t("phraseGame.prevPhrase")}
+            className="flex h-9 w-9 items-center justify-center rounded-lg text-lg text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink disabled:pointer-events-none disabled:opacity-25"
+            style={{ fontFamily: "var(--font-sans)" }}
+          >
+            ‹
+          </button>
+          <span
+            className="min-w-[6.5rem] text-center text-xs text-ink/40"
+            style={{ fontFamily: "var(--font-sans)" }}
+          >
+            {t("phraseGame.progress", { current: index + 1, total })}
+          </span>
+          <button
+            type="button"
+            onClick={onForward}
+            disabled={!canForward}
+            aria-label={t("phraseGame.nextPhrase")}
+            title={t("phraseGame.nextPhrase")}
+            className="flex h-9 w-9 items-center justify-center rounded-lg text-lg text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink disabled:pointer-events-none disabled:opacity-25"
+            style={{ fontFamily: "var(--font-sans)" }}
+          >
+            ›
+          </button>
+        </div>
       </div>
 
       <section
@@ -411,7 +469,7 @@ export function GameplayScreen({
           ) : (
             <button
               type="button"
-              onClick={onNext}
+              onClick={isReview ? onForward : onNext}
               className="w-full rounded-xl px-6 py-3.5 text-sm font-semibold text-white sm:w-auto sm:min-w-[8rem]"
               style={{ backgroundColor: "var(--accent)" }}
             >

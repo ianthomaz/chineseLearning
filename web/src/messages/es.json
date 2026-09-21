@@ -380,6 +380,8 @@
     },
     "play": "Jugar",
     "progress": "Frase {current} de {total}",
+    "prevPhrase": "Frase anterior",
+    "nextPhrase": "Siguiente frase",
     "promptLabel": "Forma la frase:",
     "extraOptions": "Opciones extra:",
     "bankLabel": "Piezas",
