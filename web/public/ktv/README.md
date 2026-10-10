@@ -18,7 +18,7 @@ Formato de cada letra:
 
 ```jsonc
 {
-  "meta": { "titleHanzi": "過火", "titlePinyin": "guò huǒ" },
+  "meta": { "titleHanzi": "过火", "titlePinyin": "guò huǒ" },
   "lines": [
     {
       "section": "副歌",

@@ -9,7 +9,7 @@ export const EXCLUDED_SOURCE_BLOCK_IDS = new Set([16]);
 export const ROTATION_CATEGORIES = [
   {
     id: "basics",
-    title: "Básicos: números, tempo e perguntas",
+    title: "Básicos: números e perguntas",
     sourceBlockIds: [1, 2, 8],
   },
   {
@@ -42,10 +42,10 @@ export const ROTATION_CATEGORIES = [
     title: "Partículas e revisão essencial",
     sourceBlockIds: [10, 15],
   },
-  // NTCSL level-2 thematic pools (assignments only; no editorial blocks)
+  // Time / weather / calendar (assignments override block map — see seedLexico)
   {
     id: "weather",
-    title: "Tempo e estações",
+    title: "Tempo, clima e calendário",
     sourceBlockIds: [],
   },
   {

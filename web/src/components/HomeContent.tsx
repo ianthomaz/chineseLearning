@@ -78,7 +78,7 @@ const homeGridCards: ReadonlyArray<NavGridCard> = [
   {
     href: "/ktv",
     modeKey: "ktv",
-    hanzi: "詞",
+    hanzi: "词",
     color: "var(--cat-emerald)",
     descKey: "home.modeKtvDesc",
   },

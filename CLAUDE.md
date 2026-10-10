@@ -69,7 +69,9 @@ Testar a 390 px de largura.
 
 ## Não fazer
 
-- **Deploy.** Nunca correr `deploy:*` nem `start.sh` em produção.
+- **Deploy.** Nunca correr `deploy:*` nem `start.sh` em produção sem o dono pedir.
+  Upload (`--prod --upload`) é rsync + env no remoto — **sem** `npm ci` / `next build`
+  no servidor (default). Não reintroduzir install remoto como default.
 - Mudar `web/prisma/schema.prisma` sem actualizar
   [`docs/07_conteudo_dados.md`](docs/07_conteudo_dados.md).
 - Editar `web/src/data/phrase-game/phrases.json` à mão — é gerado a partir de

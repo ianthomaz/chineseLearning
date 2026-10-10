@@ -5,7 +5,7 @@ test.describe("guest chrome", () => {
   test("home shows title and primary nav", async ({ page }) => {
     await gotoReady(page, "/");
     await dismissCookieBanner(page);
-    await expect(page.getByRole("link", { name: /漢語/ })).toBeVisible();
+    await expect(page.getByRole("link", { name: /汉语/ })).toBeVisible();
     await expect(page.getByRole("navigation", { name: /main practice|prática principal/i })).toBeVisible();
     await expect(page.getByRole("link", { name: /^phrases$|^frases$/i }).first()).toBeVisible();
     await expect(page.getByRole("link", { name: /^quiz$/i }).first()).toBeVisible();

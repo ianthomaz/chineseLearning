@@ -1,12 +1,12 @@
 {
   "meta": {
-    "titleHanzi": "過火",
+    "titleHanzi": "过火",
     "titlePinyin": "guò huǒ"
   },
   "lines": [
     {
       "section": "Verso",
-      "hanzi": "是否對你承諾了太多",
+      "hanzi": "是否对你承诺了太多",
       "pinyin": "shì fǒu duì nǐ chéng nuò le tài duō",
       "words": [
         {
@@ -15,7 +15,7 @@
           "g": "se / caso"
         },
         {
-          "h": "對",
+          "h": "对",
           "p": "duì",
           "g": "a / para"
         },
@@ -25,7 +25,7 @@
           "g": "você"
         },
         {
-          "h": "承諾",
+          "h": "承诺",
           "p": "chéng nuò",
           "g": "prometer"
         },
@@ -43,11 +43,11 @@
     },
     {
       "section": "Verso",
-      "hanzi": "還是我原本給的就不夠",
+      "hanzi": "还是我原本给的就不够",
       "pinyin": "hái shì wǒ yuán běn gěi de jiù bù gòu",
       "words": [
         {
-          "h": "還是",
+          "h": "还是",
           "p": "hái shì",
           "g": "ou então"
         },
@@ -62,7 +62,7 @@
           "g": "originalmente"
         },
         {
-          "h": "給",
+          "h": "给",
           "p": "gěi",
           "g": "dar"
         },
@@ -77,7 +77,7 @@
           "g": "já / então"
         },
         {
-          "h": "不夠",
+          "h": "不够",
           "p": "bù gòu",
           "g": "não basta"
         }
@@ -85,7 +85,7 @@
     },
     {
       "section": "Verso",
-      "hanzi": "你始終有千萬種理由",
+      "hanzi": "你始终有千万种理由",
       "pinyin": "nǐ shǐ zhōng yǒu qiān wàn zhǒng lǐ yóu",
       "words": [
         {
@@ -94,7 +94,7 @@
           "g": "você"
         },
         {
-          "h": "始終",
+          "h": "始终",
           "p": "shǐ zhōng",
           "g": "sempre"
         },
@@ -104,7 +104,7 @@
           "g": "tem"
         },
         {
-          "h": "千萬種",
+          "h": "千万种",
           "p": "qiān wàn zhǒng",
           "g": "milhares de tipos"
         },
@@ -117,7 +117,7 @@
     },
     {
       "section": "Verso",
-      "hanzi": "我一直都跟隨你的感受",
+      "hanzi": "我一直都跟随你的感受",
       "pinyin": "wǒ yī zhí dōu gēn suí nǐ de gǎn shòu",
       "words": [
         {
@@ -136,7 +136,7 @@
           "g": "tudo / sempre"
         },
         {
-          "h": "跟隨",
+          "h": "跟随",
           "p": "gēn suí",
           "g": "seguir"
         },
@@ -154,11 +154,11 @@
     },
     {
       "section": "Verso",
-      "hanzi": "讓你瘋 讓你去放縱",
+      "hanzi": "让你疯 让你去放纵",
       "pinyin": "ràng nǐ fēng, ràng nǐ qù fàng zòng",
       "words": [
         {
-          "h": "讓",
+          "h": "让",
           "p": "ràng",
           "g": "deixar"
         },
@@ -168,12 +168,12 @@
           "g": "você"
         },
         {
-          "h": "瘋",
+          "h": "疯",
           "p": "fēng",
           "g": "enlouquecer"
         },
         {
-          "h": "讓",
+          "h": "让",
           "p": "ràng",
           "g": "deixar"
         },
@@ -188,7 +188,7 @@
           "g": "ir"
         },
         {
-          "h": "放縱",
+          "h": "放纵",
           "p": "fàng zòng",
           "g": "se soltar"
         }
@@ -196,11 +196,11 @@
     },
     {
       "section": "Verso",
-      "hanzi": "以為你 有天會感動",
+      "hanzi": "以为你 有天会感动",
       "pinyin": "yǐ wéi nǐ, yǒu tiān huì gǎn dòng",
       "words": [
         {
-          "h": "以為",
+          "h": "以为",
           "p": "yǐ wéi",
           "g": "achar que"
         },
@@ -215,12 +215,12 @@
           "g": "um dia"
         },
         {
-          "h": "會",
+          "h": "会",
           "p": "huì",
           "g": "vai"
         },
         {
-          "h": "感動",
+          "h": "感动",
           "p": "gǎn dòng",
           "g": "se comover"
         }
@@ -228,11 +228,11 @@
     },
     {
       "section": "Verso",
-      "hanzi": "關於流言 我裝作無動於衷",
+      "hanzi": "关于流言 我装作无动于衷",
       "pinyin": "guān yú liú yán, wǒ zhuāng zuò wú dòng yú zhōng",
       "words": [
         {
-          "h": "關於",
+          "h": "关于",
           "p": "guān yú",
           "g": "sobre"
         },
@@ -247,12 +247,12 @@
           "g": "eu"
         },
         {
-          "h": "裝作",
+          "h": "装作",
           "p": "zhuāng zuò",
           "g": "fingir"
         },
         {
-          "h": "無動於衷",
+          "h": "无动于衷",
           "p": "wú dòng yú zhōng",
           "g": "indiferente"
         }
@@ -260,7 +260,7 @@
     },
     {
       "section": "Refrão",
-      "hanzi": "直到所有的夢已破碎",
+      "hanzi": "直到所有的梦已破碎",
       "pinyin": "zhí dào suǒ yǒu de mèng yǐ pò suì",
       "words": [
         {
@@ -274,7 +274,7 @@
           "g": "todos os"
         },
         {
-          "h": "夢",
+          "h": "梦",
           "p": "mèng",
           "g": "sonhos"
         },
@@ -292,7 +292,7 @@
     },
     {
       "section": "Refrão",
-      "hanzi": "才看見你的眼淚和後悔",
+      "hanzi": "才看见你的眼泪和后悔",
       "pinyin": "cái kàn jiàn nǐ de yǎn lèi hé hòu huǐ",
       "words": [
         {
@@ -301,7 +301,7 @@
           "g": "só então"
         },
         {
-          "h": "看見",
+          "h": "看见",
           "p": "kàn jiàn",
           "g": "ver"
         },
@@ -311,7 +311,7 @@
           "g": "seu"
         },
         {
-          "h": "眼淚",
+          "h": "眼泪",
           "p": "yǎn lèi",
           "g": "lágrimas"
         },
@@ -321,7 +321,7 @@
           "g": "e"
         },
         {
-          "h": "後悔",
+          "h": "后悔",
           "p": "hòu huǐ",
           "g": "arrependimento"
         }
@@ -329,7 +329,7 @@
     },
     {
       "section": "Refrão",
-      "hanzi": "我是多想再給你機會",
+      "hanzi": "我是多想再给你机会",
       "pinyin": "wǒ shì duō xiǎng zài gěi nǐ jī huì",
       "words": [
         {
@@ -353,7 +353,7 @@
           "g": "de novo"
         },
         {
-          "h": "給",
+          "h": "给",
           "p": "gěi",
           "g": "dar"
         },
@@ -363,7 +363,7 @@
           "g": "você"
         },
         {
-          "h": "機會",
+          "h": "机会",
           "p": "jī huì",
           "g": "chance"
         }
@@ -371,7 +371,7 @@
     },
     {
       "section": "Refrão",
-      "hanzi": "多想問你究竟愛誰",
+      "hanzi": "多想问你究竟爱谁",
       "pinyin": "duō xiǎng wèn nǐ jiū jìng ài shuí",
       "words": [
         {
@@ -380,7 +380,7 @@
           "g": "quanto quero"
         },
         {
-          "h": "問",
+          "h": "问",
           "p": "wèn",
           "g": "perguntar"
         },
@@ -395,12 +395,12 @@
           "g": "afinal"
         },
         {
-          "h": "愛",
+          "h": "爱",
           "p": "ài",
           "g": "ama / amor"
         },
         {
-          "h": "誰",
+          "h": "谁",
           "p": "shuí",
           "g": "quem"
         }
@@ -408,7 +408,7 @@
     },
     {
       "section": "Refrão",
-      "hanzi": "既然愛 難分是非",
+      "hanzi": "既然爱 难分是非",
       "pinyin": "jì rán ài, nán fēn shì fēi",
       "words": [
         {
@@ -417,12 +417,12 @@
           "g": "já que"
         },
         {
-          "h": "愛",
+          "h": "爱",
           "p": "ài",
           "g": "ama / amor"
         },
         {
-          "h": "難分",
+          "h": "难分",
           "p": "nán fēn",
           "g": "difícil separar"
         },
@@ -435,7 +435,7 @@
     },
     {
       "section": "Refrão",
-      "hanzi": "就別逃避 勇敢面對",
+      "hanzi": "就别逃避 勇敢面对",
       "pinyin": "jiù bié táo bì, yǒng gǎn miàn duì",
       "words": [
         {
@@ -444,7 +444,7 @@
           "g": "já / então"
         },
         {
-          "h": "別",
+          "h": "别",
           "p": "bié",
           "g": "não"
         },
@@ -459,7 +459,7 @@
           "g": "corajoso"
         },
         {
-          "h": "面對",
+          "h": "面对",
           "p": "miàn duì",
           "g": "enfrentar"
         }
@@ -467,11 +467,11 @@
     },
     {
       "section": "Refrão",
-      "hanzi": "給了他的心 你是否能夠要得回",
+      "hanzi": "给了他的心 你是否能够要得回",
       "pinyin": "gěi le tā de xīn, nǐ shì fǒu néng gòu yào de huí",
       "words": [
         {
-          "h": "給了",
+          "h": "给了",
           "p": "gěi le",
           "g": "deu"
         },
@@ -496,7 +496,7 @@
           "g": "se / caso"
         },
         {
-          "h": "能夠",
+          "h": "能够",
           "p": "néng gòu",
           "g": "consegue"
         },
@@ -509,11 +509,11 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "怎麼忍心怪你犯了錯",
+      "hanzi": "怎么忍心怪你犯了错",
       "pinyin": "zěn me rěn xīn guài nǐ fàn le cuò",
       "words": [
         {
-          "h": "怎麼",
+          "h": "怎么",
           "p": "zěn me",
           "g": "como"
         },
@@ -543,7 +543,7 @@
           "g": "(já)"
         },
         {
-          "h": "錯",
+          "h": "错",
           "p": "cuò",
           "g": "erro"
         }
@@ -551,7 +551,7 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "是我給你自由過了火",
+      "hanzi": "是我给你自由过了火",
       "pinyin": "shì wǒ gěi nǐ zì yóu guò le huǒ",
       "words": [
         {
@@ -565,7 +565,7 @@
           "g": "eu"
         },
         {
-          "h": "給",
+          "h": "给",
           "p": "gěi",
           "g": "dar"
         },
@@ -580,7 +580,7 @@
           "g": "liberdade"
         },
         {
-          "h": "過",
+          "h": "过",
           "p": "guò",
           "g": "passar"
         },
@@ -598,11 +598,11 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "讓你更寂寞 才會陷入感情漩渦",
+      "hanzi": "让你更寂寞 才会陷入感情漩涡",
       "pinyin": "ràng nǐ gèng jì mò, cái huì xiàn rù gǎn qíng xuán wō",
       "words": [
         {
-          "h": "讓",
+          "h": "让",
           "p": "ràng",
           "g": "deixar"
         },
@@ -627,7 +627,7 @@
           "g": "só então"
         },
         {
-          "h": "會",
+          "h": "会",
           "p": "huì",
           "g": "vai"
         },
@@ -642,7 +642,7 @@
           "g": "sentimento"
         },
         {
-          "h": "漩渦",
+          "h": "漩涡",
           "p": "xuán wō",
           "g": "redemoinho"
         }
@@ -650,11 +650,11 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "怎麼忍心讓你受折磨",
+      "hanzi": "怎么忍心让你受折磨",
       "pinyin": "zěn me rěn xīn ràng nǐ shòu zhé mó",
       "words": [
         {
-          "h": "怎麼",
+          "h": "怎么",
           "p": "zěn me",
           "g": "como"
         },
@@ -664,7 +664,7 @@
           "g": "ter coragem de"
         },
         {
-          "h": "讓",
+          "h": "让",
           "p": "ràng",
           "g": "deixar"
         },
@@ -687,7 +687,7 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "是我給你自由過了火",
+      "hanzi": "是我给你自由过了火",
       "pinyin": "shì wǒ gěi nǐ zì yóu guò le huǒ",
       "words": [
         {
@@ -701,7 +701,7 @@
           "g": "eu"
         },
         {
-          "h": "給",
+          "h": "给",
           "p": "gěi",
           "g": "dar"
         },
@@ -716,7 +716,7 @@
           "g": "liberdade"
         },
         {
-          "h": "過",
+          "h": "过",
           "p": "guò",
           "g": "passar"
         },
@@ -734,7 +734,7 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "如果你想飛 傷痛我揹",
+      "hanzi": "如果你想飞 伤痛我揹",
       "pinyin": "rú guǒ nǐ xiǎng fēi, shāng tòng wǒ bēi",
       "words": [
         {
@@ -753,12 +753,12 @@
           "g": "quer"
         },
         {
-          "h": "飛",
+          "h": "飞",
           "p": "fēi",
           "g": "voar"
         },
         {
-          "h": "傷痛",
+          "h": "伤痛",
           "p": "shāng tòng",
           "g": "dor"
         },
@@ -776,7 +776,7 @@
     },
     {
       "section": "Verso",
-      "hanzi": "是否對你承諾了太多",
+      "hanzi": "是否对你承诺了太多",
       "pinyin": "shì fǒu duì nǐ chéng nuò le tài duō",
       "words": [
         {
@@ -785,7 +785,7 @@
           "g": "se / caso"
         },
         {
-          "h": "對",
+          "h": "对",
           "p": "duì",
           "g": "a / para"
         },
@@ -795,7 +795,7 @@
           "g": "você"
         },
         {
-          "h": "承諾",
+          "h": "承诺",
           "p": "chéng nuò",
           "g": "prometer"
         },
@@ -813,11 +813,11 @@
     },
     {
       "section": "Verso",
-      "hanzi": "還是我原本給的就不夠",
+      "hanzi": "还是我原本给的就不够",
       "pinyin": "hái shì wǒ yuán běn gěi de jiù bù gòu",
       "words": [
         {
-          "h": "還是",
+          "h": "还是",
           "p": "hái shì",
           "g": "ou então"
         },
@@ -832,7 +832,7 @@
           "g": "originalmente"
         },
         {
-          "h": "給",
+          "h": "给",
           "p": "gěi",
           "g": "dar"
         },
@@ -847,7 +847,7 @@
           "g": "já / então"
         },
         {
-          "h": "不夠",
+          "h": "不够",
           "p": "bù gòu",
           "g": "não basta"
         }
@@ -855,7 +855,7 @@
     },
     {
       "section": "Verso",
-      "hanzi": "你始終有千萬種理由",
+      "hanzi": "你始终有千万种理由",
       "pinyin": "nǐ shǐ zhōng yǒu qiān wàn zhǒng lǐ yóu",
       "words": [
         {
@@ -864,7 +864,7 @@
           "g": "você"
         },
         {
-          "h": "始終",
+          "h": "始终",
           "p": "shǐ zhōng",
           "g": "sempre"
         },
@@ -874,7 +874,7 @@
           "g": "tem"
         },
         {
-          "h": "千萬種",
+          "h": "千万种",
           "p": "qiān wàn zhǒng",
           "g": "milhares de tipos"
         },
@@ -887,7 +887,7 @@
     },
     {
       "section": "Verso",
-      "hanzi": "我一直都跟隨你的感受",
+      "hanzi": "我一直都跟随你的感受",
       "pinyin": "wǒ yī zhí dōu gēn suí nǐ de gǎn shòu",
       "words": [
         {
@@ -906,7 +906,7 @@
           "g": "tudo / sempre"
         },
         {
-          "h": "跟隨",
+          "h": "跟随",
           "p": "gēn suí",
           "g": "seguir"
         },
@@ -924,11 +924,11 @@
     },
     {
       "section": "Verso",
-      "hanzi": "讓你瘋 讓你去放縱",
+      "hanzi": "让你疯 让你去放纵",
       "pinyin": "ràng nǐ fēng, ràng nǐ qù fàng zòng",
       "words": [
         {
-          "h": "讓",
+          "h": "让",
           "p": "ràng",
           "g": "deixar"
         },
@@ -938,12 +938,12 @@
           "g": "você"
         },
         {
-          "h": "瘋",
+          "h": "疯",
           "p": "fēng",
           "g": "enlouquecer"
         },
         {
-          "h": "讓",
+          "h": "让",
           "p": "ràng",
           "g": "deixar"
         },
@@ -958,7 +958,7 @@
           "g": "ir"
         },
         {
-          "h": "放縱",
+          "h": "放纵",
           "p": "fàng zòng",
           "g": "se soltar"
         }
@@ -966,11 +966,11 @@
     },
     {
       "section": "Verso",
-      "hanzi": "以為你 有天會感動",
+      "hanzi": "以为你 有天会感动",
       "pinyin": "yǐ wéi nǐ, yǒu tiān huì gǎn dòng",
       "words": [
         {
-          "h": "以為",
+          "h": "以为",
           "p": "yǐ wéi",
           "g": "achar que"
         },
@@ -985,12 +985,12 @@
           "g": "um dia"
         },
         {
-          "h": "會",
+          "h": "会",
           "p": "huì",
           "g": "vai"
         },
         {
-          "h": "感動",
+          "h": "感动",
           "p": "gǎn dòng",
           "g": "se comover"
         }
@@ -998,11 +998,11 @@
     },
     {
       "section": "Verso",
-      "hanzi": "關於流言 我裝作無動於衷",
+      "hanzi": "关于流言 我装作无动于衷",
       "pinyin": "guān yú liú yán, wǒ zhuāng zuò wú dòng yú zhōng",
       "words": [
         {
-          "h": "關於",
+          "h": "关于",
           "p": "guān yú",
           "g": "sobre"
         },
@@ -1017,12 +1017,12 @@
           "g": "eu"
         },
         {
-          "h": "裝作",
+          "h": "装作",
           "p": "zhuāng zuò",
           "g": "fingir"
         },
         {
-          "h": "無動於衷",
+          "h": "无动于衷",
           "p": "wú dòng yú zhōng",
           "g": "indiferente"
         }
@@ -1030,7 +1030,7 @@
     },
     {
       "section": "Refrão",
-      "hanzi": "直到所有的夢已破碎",
+      "hanzi": "直到所有的梦已破碎",
       "pinyin": "zhí dào suǒ yǒu de mèng yǐ pò suì",
       "words": [
         {
@@ -1044,7 +1044,7 @@
           "g": "todos os"
         },
         {
-          "h": "夢",
+          "h": "梦",
           "p": "mèng",
           "g": "sonhos"
         },
@@ -1062,7 +1062,7 @@
     },
     {
       "section": "Refrão",
-      "hanzi": "才看見你的眼淚和後悔",
+      "hanzi": "才看见你的眼泪和后悔",
       "pinyin": "cái kàn jiàn nǐ de yǎn lèi hé hòu huǐ",
       "words": [
         {
@@ -1071,7 +1071,7 @@
           "g": "só então"
         },
         {
-          "h": "看見",
+          "h": "看见",
           "p": "kàn jiàn",
           "g": "ver"
         },
@@ -1081,7 +1081,7 @@
           "g": "seu"
         },
         {
-          "h": "眼淚",
+          "h": "眼泪",
           "p": "yǎn lèi",
           "g": "lágrimas"
         },
@@ -1091,7 +1091,7 @@
           "g": "e"
         },
         {
-          "h": "後悔",
+          "h": "后悔",
           "p": "hòu huǐ",
           "g": "arrependimento"
         }
@@ -1099,7 +1099,7 @@
     },
     {
       "section": "Refrão",
-      "hanzi": "我是多想再給你機會",
+      "hanzi": "我是多想再给你机会",
       "pinyin": "wǒ shì duō xiǎng zài gěi nǐ jī huì",
       "words": [
         {
@@ -1123,7 +1123,7 @@
           "g": "de novo"
         },
         {
-          "h": "給",
+          "h": "给",
           "p": "gěi",
           "g": "dar"
         },
@@ -1133,7 +1133,7 @@
           "g": "você"
         },
         {
-          "h": "機會",
+          "h": "机会",
           "p": "jī huì",
           "g": "chance"
         }
@@ -1141,7 +1141,7 @@
     },
     {
       "section": "Refrão",
-      "hanzi": "多想問你究竟愛誰",
+      "hanzi": "多想问你究竟爱谁",
       "pinyin": "duō xiǎng wèn nǐ jiū jìng ài shuí",
       "words": [
         {
@@ -1150,7 +1150,7 @@
           "g": "quanto quero"
         },
         {
-          "h": "問",
+          "h": "问",
           "p": "wèn",
           "g": "perguntar"
         },
@@ -1165,12 +1165,12 @@
           "g": "afinal"
         },
         {
-          "h": "愛",
+          "h": "爱",
           "p": "ài",
           "g": "ama / amor"
         },
         {
-          "h": "誰",
+          "h": "谁",
           "p": "shuí",
           "g": "quem"
         }
@@ -1178,7 +1178,7 @@
     },
     {
       "section": "Refrão",
-      "hanzi": "既然愛 難分是非",
+      "hanzi": "既然爱 难分是非",
       "pinyin": "jì rán ài, nán fēn shì fēi",
       "words": [
         {
@@ -1187,12 +1187,12 @@
           "g": "já que"
         },
         {
-          "h": "愛",
+          "h": "爱",
           "p": "ài",
           "g": "ama / amor"
         },
         {
-          "h": "難分",
+          "h": "难分",
           "p": "nán fēn",
           "g": "difícil separar"
         },
@@ -1205,7 +1205,7 @@
     },
     {
       "section": "Refrão",
-      "hanzi": "就別逃避 勇敢面對",
+      "hanzi": "就别逃避 勇敢面对",
       "pinyin": "jiù bié táo bì, yǒng gǎn miàn duì",
       "words": [
         {
@@ -1214,7 +1214,7 @@
           "g": "já / então"
         },
         {
-          "h": "別",
+          "h": "别",
           "p": "bié",
           "g": "não"
         },
@@ -1229,7 +1229,7 @@
           "g": "corajoso"
         },
         {
-          "h": "面對",
+          "h": "面对",
           "p": "miàn duì",
           "g": "enfrentar"
         }
@@ -1237,11 +1237,11 @@
     },
     {
       "section": "Refrão",
-      "hanzi": "給了他的心 你是否能夠要得回",
+      "hanzi": "给了他的心 你是否能够要得回",
       "pinyin": "gěi le tā de xīn, nǐ shì fǒu néng gòu yào de huí",
       "words": [
         {
-          "h": "給了",
+          "h": "给了",
           "p": "gěi le",
           "g": "deu"
         },
@@ -1266,7 +1266,7 @@
           "g": "se / caso"
         },
         {
-          "h": "能夠",
+          "h": "能够",
           "p": "néng gòu",
           "g": "consegue"
         },
@@ -1279,11 +1279,11 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "怎麼忍心怪你犯了錯",
+      "hanzi": "怎么忍心怪你犯了错",
       "pinyin": "zěn me rěn xīn guài nǐ fàn le cuò",
       "words": [
         {
-          "h": "怎麼",
+          "h": "怎么",
           "p": "zěn me",
           "g": "como"
         },
@@ -1313,7 +1313,7 @@
           "g": "(já)"
         },
         {
-          "h": "錯",
+          "h": "错",
           "p": "cuò",
           "g": "erro"
         }
@@ -1321,7 +1321,7 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "是我給你自由過了火",
+      "hanzi": "是我给你自由过了火",
       "pinyin": "shì wǒ gěi nǐ zì yóu guò le huǒ",
       "words": [
         {
@@ -1335,7 +1335,7 @@
           "g": "eu"
         },
         {
-          "h": "給",
+          "h": "给",
           "p": "gěi",
           "g": "dar"
         },
@@ -1350,7 +1350,7 @@
           "g": "liberdade"
         },
         {
-          "h": "過",
+          "h": "过",
           "p": "guò",
           "g": "passar"
         },
@@ -1368,11 +1368,11 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "讓你更寂寞 才會陷入感情漩渦",
+      "hanzi": "让你更寂寞 才会陷入感情漩涡",
       "pinyin": "ràng nǐ gèng jì mò, cái huì xiàn rù gǎn qíng xuán wō",
       "words": [
         {
-          "h": "讓",
+          "h": "让",
           "p": "ràng",
           "g": "deixar"
         },
@@ -1397,7 +1397,7 @@
           "g": "só então"
         },
         {
-          "h": "會",
+          "h": "会",
           "p": "huì",
           "g": "vai"
         },
@@ -1412,7 +1412,7 @@
           "g": "sentimento"
         },
         {
-          "h": "漩渦",
+          "h": "漩涡",
           "p": "xuán wō",
           "g": "redemoinho"
         }
@@ -1420,11 +1420,11 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "怎麼忍心讓你受折磨",
+      "hanzi": "怎么忍心让你受折磨",
       "pinyin": "zěn me rěn xīn ràng nǐ shòu zhé mó",
       "words": [
         {
-          "h": "怎麼",
+          "h": "怎么",
           "p": "zěn me",
           "g": "como"
         },
@@ -1434,7 +1434,7 @@
           "g": "ter coragem de"
         },
         {
-          "h": "讓",
+          "h": "让",
           "p": "ràng",
           "g": "deixar"
         },
@@ -1457,7 +1457,7 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "是我給你自由過了火",
+      "hanzi": "是我给你自由过了火",
       "pinyin": "shì wǒ gěi nǐ zì yóu guò le huǒ",
       "words": [
         {
@@ -1471,7 +1471,7 @@
           "g": "eu"
         },
         {
-          "h": "給",
+          "h": "给",
           "p": "gěi",
           "g": "dar"
         },
@@ -1486,7 +1486,7 @@
           "g": "liberdade"
         },
         {
-          "h": "過",
+          "h": "过",
           "p": "guò",
           "g": "passar"
         },
@@ -1504,7 +1504,7 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "如果你想飛 傷痛我揹",
+      "hanzi": "如果你想飞 伤痛我揹",
       "pinyin": "rú guǒ nǐ xiǎng fēi, shāng tòng wǒ bēi",
       "words": [
         {
@@ -1523,12 +1523,12 @@
           "g": "quer"
         },
         {
-          "h": "飛",
+          "h": "飞",
           "p": "fēi",
           "g": "voar"
         },
         {
-          "h": "傷痛",
+          "h": "伤痛",
           "p": "shāng tòng",
           "g": "dor"
         },
@@ -1546,11 +1546,11 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "怎麼忍心怪你犯了錯",
+      "hanzi": "怎么忍心怪你犯了错",
       "pinyin": "zěn me rěn xīn guài nǐ fàn le cuò",
       "words": [
         {
-          "h": "怎麼",
+          "h": "怎么",
           "p": "zěn me",
           "g": "como"
         },
@@ -1580,7 +1580,7 @@
           "g": "(já)"
         },
         {
-          "h": "錯",
+          "h": "错",
           "p": "cuò",
           "g": "erro"
         }
@@ -1588,7 +1588,7 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "是我給你自由過了火",
+      "hanzi": "是我给你自由过了火",
       "pinyin": "shì wǒ gěi nǐ zì yóu guò le huǒ",
       "words": [
         {
@@ -1602,7 +1602,7 @@
           "g": "eu"
         },
         {
-          "h": "給",
+          "h": "给",
           "p": "gěi",
           "g": "dar"
         },
@@ -1617,7 +1617,7 @@
           "g": "liberdade"
         },
         {
-          "h": "過",
+          "h": "过",
           "p": "guò",
           "g": "passar"
         },
@@ -1635,11 +1635,11 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "讓你更寂寞 才會陷入感情漩渦",
+      "hanzi": "让你更寂寞 才会陷入感情漩涡",
       "pinyin": "ràng nǐ gèng jì mò, cái huì xiàn rù gǎn qíng xuán wō",
       "words": [
         {
-          "h": "讓",
+          "h": "让",
           "p": "ràng",
           "g": "deixar"
         },
@@ -1664,7 +1664,7 @@
           "g": "só então"
         },
         {
-          "h": "會",
+          "h": "会",
           "p": "huì",
           "g": "vai"
         },
@@ -1679,7 +1679,7 @@
           "g": "sentimento"
         },
         {
-          "h": "漩渦",
+          "h": "漩涡",
           "p": "xuán wō",
           "g": "redemoinho"
         }
@@ -1687,11 +1687,11 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "怎麼忍心讓你受折磨",
+      "hanzi": "怎么忍心让你受折磨",
       "pinyin": "zěn me rěn xīn ràng nǐ shòu zhé mó",
       "words": [
         {
-          "h": "怎麼",
+          "h": "怎么",
           "p": "zěn me",
           "g": "como"
         },
@@ -1701,7 +1701,7 @@
           "g": "ter coragem de"
         },
         {
-          "h": "讓",
+          "h": "让",
           "p": "ràng",
           "g": "deixar"
         },
@@ -1724,7 +1724,7 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "是我給你自由過了火",
+      "hanzi": "是我给你自由过了火",
       "pinyin": "shì wǒ gěi nǐ zì yóu guò le huǒ",
       "words": [
         {
@@ -1738,7 +1738,7 @@
           "g": "eu"
         },
         {
-          "h": "給",
+          "h": "给",
           "p": "gěi",
           "g": "dar"
         },
@@ -1753,7 +1753,7 @@
           "g": "liberdade"
         },
         {
-          "h": "過",
+          "h": "过",
           "p": "guò",
           "g": "passar"
         },
@@ -1771,7 +1771,7 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "如果你想飛 傷痛我揹",
+      "hanzi": "如果你想飞 伤痛我揹",
       "pinyin": "rú guǒ nǐ xiǎng fēi, shāng tòng wǒ bēi",
       "words": [
         {
@@ -1790,12 +1790,12 @@
           "g": "quer"
         },
         {
-          "h": "飛",
+          "h": "飞",
           "p": "fēi",
           "g": "voar"
         },
         {
-          "h": "傷痛",
+          "h": "伤痛",
           "p": "shāng tòng",
           "g": "dor"
         },
@@ -1813,11 +1813,11 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "怎麼忍心怪你犯了錯",
+      "hanzi": "怎么忍心怪你犯了错",
       "pinyin": "zěn me rěn xīn guài nǐ fàn le cuò",
       "words": [
         {
-          "h": "怎麼",
+          "h": "怎么",
           "p": "zěn me",
           "g": "como"
         },
@@ -1847,7 +1847,7 @@
           "g": "(já)"
         },
         {
-          "h": "錯",
+          "h": "错",
           "p": "cuò",
           "g": "erro"
         }
@@ -1855,7 +1855,7 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "是我給你自由過了火",
+      "hanzi": "是我给你自由过了火",
       "pinyin": "shì wǒ gěi nǐ zì yóu guò le huǒ",
       "words": [
         {
@@ -1869,7 +1869,7 @@
           "g": "eu"
         },
         {
-          "h": "給",
+          "h": "给",
           "p": "gěi",
           "g": "dar"
         },
@@ -1884,7 +1884,7 @@
           "g": "liberdade"
         },
         {
-          "h": "過",
+          "h": "过",
           "p": "guò",
           "g": "passar"
         },
@@ -1902,11 +1902,11 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "讓你更寂寞 才會陷入感情漩渦",
+      "hanzi": "让你更寂寞 才会陷入感情漩涡",
       "pinyin": "ràng nǐ gèng jì mò, cái huì xiàn rù gǎn qíng xuán wō",
       "words": [
         {
-          "h": "讓",
+          "h": "让",
           "p": "ràng",
           "g": "deixar"
         },
@@ -1931,7 +1931,7 @@
           "g": "só então"
         },
         {
-          "h": "會",
+          "h": "会",
           "p": "huì",
           "g": "vai"
         },
@@ -1946,7 +1946,7 @@
           "g": "sentimento"
         },
         {
-          "h": "漩渦",
+          "h": "漩涡",
           "p": "xuán wō",
           "g": "redemoinho"
         }
@@ -1954,11 +1954,11 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "怎麼忍心讓你受折磨",
+      "hanzi": "怎么忍心让你受折磨",
       "pinyin": "zěn me rěn xīn ràng nǐ shòu zhé mó",
       "words": [
         {
-          "h": "怎麼",
+          "h": "怎么",
           "p": "zěn me",
           "g": "como"
         },
@@ -1968,7 +1968,7 @@
           "g": "ter coragem de"
         },
         {
-          "h": "讓",
+          "h": "让",
           "p": "ràng",
           "g": "deixar"
         },
@@ -1991,7 +1991,7 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "是我給你自由過了火",
+      "hanzi": "是我给你自由过了火",
       "pinyin": "shì wǒ gěi nǐ zì yóu guò le huǒ",
       "words": [
         {
@@ -2005,7 +2005,7 @@
           "g": "eu"
         },
         {
-          "h": "給",
+          "h": "给",
           "p": "gěi",
           "g": "dar"
         },
@@ -2020,7 +2020,7 @@
           "g": "liberdade"
         },
         {
-          "h": "過",
+          "h": "过",
           "p": "guò",
           "g": "passar"
         },
@@ -2038,7 +2038,7 @@
     },
     {
       "section": "Ponte",
-      "hanzi": "如果你想飛 傷痛我揹",
+      "hanzi": "如果你想飞 伤痛我揹",
       "pinyin": "rú guǒ nǐ xiǎng fēi, shāng tòng wǒ bēi",
       "words": [
         {
@@ -2057,12 +2057,12 @@
           "g": "quer"
         },
         {
-          "h": "飛",
+          "h": "飞",
           "p": "fēi",
           "g": "voar"
         },
         {
-          "h": "傷痛",
+          "h": "伤痛",
           "p": "shāng tòng",
           "g": "dor"
         },

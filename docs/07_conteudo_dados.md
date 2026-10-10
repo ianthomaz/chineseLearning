@@ -75,6 +75,10 @@ Fontes → `lexico_entries` (≤3 hanzi, com categoria):
 2. Context deck cards (assignments)
 3. `lexicon_global` (curador)
 
+`LEXICO_CATEGORY_ASSIGNMENTS` **sobrescreve** o mapa do bloco (uma palavra →
+uma categoria). Pool de calendário/clima/semana: categoria `weather`
+(“Tempo, clima e calendário”); frases/combinações no deck `tempo_relativo`.
+
 Sem categoria = **pending** (fora dos widgets).
 
 ```bash

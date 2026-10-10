@@ -17,6 +17,18 @@
       "title": "Cozinha e culinária · 2026-08-26",
       "description": "Aula na China — comida, temperos, métodos, louça, medidas",
       "cardCount": 76
+    },
+    {
+      "id": "hsk2_hsk3_contexts",
+      "title": "HSK 2–3 · frases e contextos",
+      "description": "Diálogos HSK标准教程 2 e 3 para praticar no site (EN quando alinhado).",
+      "cardCount": 184
+    },
+    {
+      "id": "tempo_relativo",
+      "title": "Tempo relativo · dias, meses, estações",
+      "description": "Cadeia de dias/anos, 上个/下个, partes do dia e estações — combinações para o app e /practice.",
+      "cardCount": 35
     }
   ]
 }

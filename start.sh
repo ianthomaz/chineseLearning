@@ -16,9 +16,9 @@ set -euo pipefail
 # Rules:
 #   1. Do what the user ordered — no unsolicited deploy “improvements”.
 #   2. --prod = prepare on the Mac. --upload = only when THEY ask to upload.
-#   3. Remote: NEVER next build. Prefer the MINIMAL path (rsync + server.env;
-#      DEPLOY_PROD_SKIP_NPM_CI=1 if remote node_modules is enough; seed only if
-#      they explicitly set DEPLOY_PROD_SEED_CONTENT=1).
+#   3. Remote: NEVER next build. Upload default is MINIMAL (rsync + server.env).
+#      Remote npm ci is OFF unless DEPLOY_PROD_FORCE_NPM_CI=1 (bootstrap only).
+#      Seed only if they explicitly set DEPLOY_PROD_SEED_CONTENT=1.
 #   4. If the VM is slow/unstable: STOP. Do not hammer npm ci / SSH in a loop.
 # =============================================================================
 #
@@ -446,8 +446,8 @@ if [[ "$MODE" == "prod" ]]; then
 
   if [[ "$PROD_UPLOAD" == "1" ]]; then
     echo ""
-    echo "!!! itcsVM3 is fragile — MINIMAL path only; no unsolicited npm ci/seed !!!"
-    echo "    Prefer DEPLOY_PROD_SKIP_NPM_CI=1 if remote node_modules is already OK."
+    echo "!!! itcsVM3 is fragile — upload = rsync + server.env only (no remote npm ci) !!!"
+    echo "    Remote npm ci only with DEPLOY_PROD_FORCE_NPM_CI=1 (can OOM — avoid)."
     echo ""
     if [[ "$PROD_RESTART" == "1" ]]; then
       export DEPLOY_PROD_RESTART=1

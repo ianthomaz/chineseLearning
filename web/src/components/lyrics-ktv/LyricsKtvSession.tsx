@@ -366,7 +366,7 @@ export function LyricsKtvSession() {
         )}
 
         <div className="ktv-brand">
-          <span className="ktv-chop">詞</span>
+          <span className="ktv-chop">词</span>
           <span className="ktv-brand-text">
             {view === "home" ? t("ktv.brand") : songTitle || t("ktv.brand")}
           </span>
@@ -414,13 +414,13 @@ export function LyricsKtvSession() {
         <div className="ktv-home">
           {error || loading ? (
             <div className="ktv-empty">
-              <div className="ktv-empty-glyph">詞</div>
+              <div className="ktv-empty-glyph">词</div>
               <div>{error ?? t("ktv.loading")}</div>
             </div>
           ) : (
             <>
               <div className="ktv-home-hero">
-                <div className="ktv-home-chop">詞</div>
+                <div className="ktv-home-chop">词</div>
                 <h1 className="ktv-home-title">{songTitle || t("ktv.brand")}</h1>
                 {songTitlePinyin ? (
                   <p className="ktv-home-pinyin">{songTitlePinyin}</p>
@@ -475,7 +475,7 @@ export function LyricsKtvSession() {
           >
             {!item ? (
               <div className="ktv-empty">
-                <div className="ktv-empty-glyph">詞</div>
+                <div className="ktv-empty-glyph">词</div>
                 <div>{t("ktv.noLines")}</div>
               </div>
             ) : (

@@ -339,7 +339,7 @@ export function SiteNav() {
           className="flex min-h-[44px] min-w-0 shrink items-center font-display text-base font-medium tracking-tight text-ink transition-colors hover:text-accent sm:min-w-[5rem] sm:text-xl"
         >
           <span className="line-clamp-2 leading-snug">
-            漢語 <span className="font-light text-ink/40">· {t("metadata.siteTitle")}</span>
+            汉语 <span className="font-light text-ink/40">· {t("metadata.siteTitle")}</span>
           </span>
         </Link>
 

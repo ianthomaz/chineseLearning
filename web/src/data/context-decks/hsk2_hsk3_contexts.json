@@ -1,0 +1,1847 @@
+{
+  "id": "hsk2_hsk3_contexts",
+  "title": "HSK 2–3 · frases e contextos",
+  "description": "Diálogos HSK标准教程 2 e 3 para praticar no site (EN quando alinhado).",
+  "cards": [
+    {
+      "word": "最",
+      "pinyin": "zuì",
+      "meaning": "most; -est",
+      "section": "HSK2 · L1",
+      "pattern": "hsk2",
+      "sentence": "九月去北京旅游最好。",
+      "sentencePinyin": "jiǔ yuè qù běi jīng lǚ yóu zuì hǎo 。",
+      "sentenceMeaning": "September is the best time to visit Beijing."
+    },
+    {
+      "word": "也",
+      "pinyin": "yě",
+      "meaning": "to travel, to take",
+      "section": "HSK2 · L1",
+      "pattern": "hsk2",
+      "sentence": "九月的北京天气不冷也不热。",
+      "sentencePinyin": "jiǔ yuè de běi jīng tiān qì bù lěng yě bù rè 。",
+      "sentenceMeaning": "Because it's neither cold nor hot there in September."
+    },
+    {
+      "word": "得",
+      "pinyin": "dé",
+      "meaning": "de part. used afier a verb or an",
+      "section": "HSK2 · L1",
+      "pattern": "hsk2",
+      "sentence": "我要去北京旅游，你觉得什么时候去最好？",
+      "sentencePinyin": "wǒ yào qù běi jīng lǚ yóu ， nǐ jué de shén me shí hòu qù zuì hǎo ？",
+      "sentenceMeaning": "I'm thinking of a trip to Beijing. When do you think is the best time？"
+    },
+    {
+      "word": "运动",
+      "pinyin": "yùndòng",
+      "meaning": "sport; to take physical",
+      "section": "HSK2 · L2",
+      "pattern": "hsk2",
+      "sentence": "你很少生病，是不是喜欢运动？",
+      "sentencePinyin": "nǐ hěn shǎo shēng bìng ， shì bú shì xǐ huān yùn dòng ？",
+      "sentenceMeaning": "You seldom get sick. I guess you like doing sports, don't you？"
+    },
+    {
+      "word": "起床",
+      "pinyin": "qǐchuáng",
+      "meaning": "sheng bing v. to fall ill, to be sick",
+      "section": "HSK2 · L2",
+      "pattern": "hsk2",
+      "sentence": "你每天几点起床？",
+      "sentencePinyin": "nǐ měi tiān jǐ diǎn qǐ chuáng ？",
+      "sentenceMeaning": "What time do you get up？"
+    },
+    {
+      "word": "起床",
+      "pinyin": "qǐchuáng",
+      "meaning": "sheng bing v. to fall ill, to be sick",
+      "section": "HSK2 · L2",
+      "pattern": "hsk2",
+      "sentence": "我每天六点起床。",
+      "sentencePinyin": "wǒ měi tiān liù diǎn qǐ chuáng 。",
+      "sentenceMeaning": "Iget up at six every day."
+    },
+    {
+      "word": "上",
+      "pinyin": "shàng",
+      "meaning": "apply (medicine)",
+      "section": "HSK2 · L2",
+      "pattern": "hsk2",
+      "sentence": "是啊，我每天早上都要出去跑步。",
+      "sentencePinyin": "shì a ， wǒ měi tiān zǎo shàng dōu yào chū qù pǎo bù 。",
+      "sentenceMeaning": "Yes. I go out for a jog every morning."
+    },
+    {
+      "word": "手表",
+      "pinyin": "shǒubiǎo",
+      "meaning": "shoubido n. watch",
+      "section": "HSK2 · L3",
+      "pattern": "hsk2",
+      "sentence": "这块手表是你的吗？",
+      "sentencePinyin": "zhè kuài shǒu biǎo shì nǐ de ma ？",
+      "sentenceMeaning": "Is this watch yours？"
+    },
+    {
+      "word": "对",
+      "pinyin": "duì",
+      "meaning": "versus; against",
+      "section": "HSK2 · L4",
+      "pattern": "hsk2",
+      "sentence": "对，这本书是我写的。",
+      "sentencePinyin": "duì ， zhè běn shū shì wǒ xiě de 。",
+      "sentenceMeaning": "Yes. A book written by me."
+    },
+    {
+      "word": "给",
+      "pinyin": "gěi",
+      "meaning": "shengri n. birthday",
+      "section": "HSK2 · L4",
+      "pattern": "hsk2",
+      "sentence": "生日快乐！这是送给你的！",
+      "sentencePinyin": "shēng rì kuài lè ！ zhè shì sòng gěi nǐ de ！",
+      "sentenceMeaning": "Happy birthday! This is for you."
+    },
+    {
+      "word": "吧",
+      "pinyin": "ba",
+      "meaning": "yu n. fish",
+      "section": "HSK2 · L5",
+      "pattern": "hsk2",
+      "sentence": "就做你爱吃的鱼吧。",
+      "sentencePinyin": "jiù zuò nǐ ài chī de yú ba 。",
+      "sentenceMeaning": "I'm thinking of fish, your favorite."
+    },
+    {
+      "word": "上",
+      "pinyin": "shàng",
+      "meaning": "apply (medicine)",
+      "section": "HSK2 · L5",
+      "pattern": "hsk2",
+      "sentence": "晚上我们去饭馆吃饭，怎么样？",
+      "sentencePinyin": "wǎn shàng wǒ men qù fàn guǎn chī fàn ， zěn me yàng ？",
+      "sentenceMeaning": "Let's go to a restaurant for dinner. What do you think？"
+    },
+    {
+      "word": "自行车",
+      "pinyin": "zìxíngchē",
+      "meaning": "men n. door, gate",
+      "section": "HSK2 · L6",
+      "pattern": "hsk2",
+      "sentence": "我在门外看见他的自行车了。",
+      "sentencePinyin": "wǒ zài mén wài kàn jiàn tā de zì xíng chē le 。",
+      "sentenceMeaning": "Isaw his bike outside the door."
+    },
+    {
+      "word": "上",
+      "pinyin": "shàng",
+      "meaning": "apply (medicine)",
+      "section": "HSK2 · L7",
+      "pattern": "hsk2",
+      "sentence": "在去机场的路上。你已经到了吗？",
+      "sentencePinyin": "zài qù jī chǎng de lù shàng 。 nǐ yǐ jīng dào le ma ？",
+      "sentenceMeaning": "I'm on the way to the airport. Have you arrived？"
+    },
+    {
+      "word": "还",
+      "pinyin": "hái",
+      "meaning": "hai adv. passably, fairly, rather",
+      "section": "HSK2 · L7",
+      "pattern": "hsk2",
+      "sentence": "已经9点多了，他怎么还在学习？",
+      "sentencePinyin": "yǐ jīng 9 diǎn duō le ， tā zěn me hái zài xué xí ？",
+      "sentenceMeaning": "It's after 9 o'clock. Why is he still studying？"
+    },
+    {
+      "word": "还",
+      "pinyin": "hái",
+      "meaning": "hai adv. passably, fairly, rather",
+      "section": "HSK2 · L7",
+      "pattern": "hsk2",
+      "sentence": "我下飞机了。你还有多长时间能到这儿？",
+      "sentencePinyin": "wǒ xià fēi jī le 。 nǐ hái yǒu duō zhǎng shí jiān néng dào zhè ér ？",
+      "sentenceMeaning": "I've got off the plane. How many more minutes do you need to get here？"
+    },
+    {
+      "word": "教室",
+      "pinyin": "jiàoshì",
+      "meaning": "jicoshi n. classroom",
+      "section": "HSK2 · L7",
+      "pattern": "hsk2",
+      "sentence": "没有，他还在教室学习呢。",
+      "sentencePinyin": "méi yǒu ， tā hái zài jiào shì xué xí ne 。",
+      "sentenceMeaning": "No. He is still studying in the classroom."
+    },
+    {
+      "word": "吧",
+      "pinyin": "ba",
+      "meaning": "yu n. fish",
+      "section": "HSK2 · L8",
+      "pattern": "hsk2",
+      "sentence": "今天下午我没有时间，明天下午再去吧。",
+      "sentencePinyin": "jīn tiān xià wǔ wǒ méi yǒu shí jiān ， míng tiān xià wǔ zài qù ba 。",
+      "sentenceMeaning": "I'm not free this afternoon. Let's go tomorrow afternoon."
+    },
+    {
+      "word": "告诉",
+      "pinyin": "gàosù",
+      "meaning": "again, once more",
+      "section": "HSK2 · L8",
+      "pattern": "hsk2",
+      "sentence": "让我想想再告诉你。",
+      "sentencePinyin": "ràng wǒ xiǎng xiǎng zài gào sù nǐ 。",
+      "sentenceMeaning": "Let me think about it and Pll tell you later."
+    },
+    {
+      "word": "问",
+      "pinyin": "wèn",
+      "meaning": "jie v. to receive, to take，",
+      "section": "HSK2 · L9",
+      "pattern": "hsk2",
+      "sentence": "你好！请问张欢在吗？",
+      "sentencePinyin": "nǐ hǎo ！ qǐng wèn zhāng huān zài ma ？",
+      "sentenceMeaning": "Hello! May I speak to Zhang Huan？"
+    },
+    {
+      "word": "错",
+      "pinyin": "cuò",
+      "meaning": "cuo adj. wrong,incorrect",
+      "section": "HSK2 · L9",
+      "pattern": "hsk2",
+      "sentence": "你打错了，我们这儿没有叫张欢的。",
+      "sentencePinyin": "nǐ dǎ cuò le ， wǒ men zhè ér méi yǒu jiào zhāng huān de 。",
+      "sentenceMeaning": "You've got the wrong number. There isn't a person called Zhang Huan here."
+    },
+    {
+      "word": "可以",
+      "pinyin": "kěyǐ",
+      "meaning": "keyi adj. not bad",
+      "section": "HSK2 · L9",
+      "pattern": "hsk2",
+      "sentence": "我女儿今年也七岁了。我希望她能跟您学跳舞，可以吗？",
+      "sentencePinyin": "wǒ nǚ ér jīn nián yě qī suì le 。 wǒ xī wàng tā néng gēn nín xué tiào wǔ ， kě yǐ ma ？",
+      "sentenceMeaning": "I was seven when I danced for the first time."
+    },
+    {
+      "word": "次",
+      "pinyin": "cì",
+      "meaning": "occurrence; time",
+      "section": "HSK2 · L9",
+      "pattern": "hsk2",
+      "sentence": "我第一次跳舞是在七岁的时候。",
+      "sentencePinyin": "wǒ dì yī cì tiào wǔ shì zài qī suì de shí hòu 。",
+      "sentenceMeaning": "At what age did you start to learn dancing？"
+    },
+    {
+      "word": "欢迎",
+      "pinyin": "huānyíng",
+      "meaning": "to marry, to get",
+      "section": "HSK2 · L9",
+      "pattern": "hsk2",
+      "sentence": "没问题，非常欢迎。",
+      "sentencePinyin": "méi wèn tí ， fēi cháng huān yíng 。",
+      "sentenceMeaning": "My daughter is seven now. I hope she can learn to dance from you, can she？"
+    },
+    {
+      "word": "还",
+      "pinyin": "hái",
+      "meaning": "hai adv. passably, fairly, rather",
+      "section": "HSK2 · L10",
+      "pattern": "hsk2",
+      "sentence": "不要看电视了，明天上午还有汉语课呢。",
+      "sentencePinyin": "bú yào kàn diàn shì le ， míng tiān shàng wǔ hái yǒu hàn yǔ kè ne 。",
+      "sentenceMeaning": "Stop watching TV. You'll have a Chinese class tomorrow morning."
+    },
+    {
+      "word": "报纸",
+      "pinyin": "bàozhǐ",
+      "meaning": "baozhi n. newspaper",
+      "section": "HSK2 · L10",
+      "pattern": "hsk2",
+      "sentence": "别看报纸了，医生说你要多休息。",
+      "sentencePinyin": "bié kàn bào zhǐ le ， yī shēng shuō nǐ yào duō xiū xī 。",
+      "sentenceMeaning": "The doctor said you should listen to me."
+    },
+    {
+      "word": "帮助",
+      "pinyin": "bāngzhù",
+      "meaning": "ke n. class,lesson",
+      "section": "HSK2 · L10",
+      "pattern": "hsk2",
+      "sentence": "看电视对学汉语有帮助。",
+      "sentencePinyin": "kàn diàn shì duì xué hàn yǔ yǒu bāng zhù 。",
+      "sentenceMeaning": "Watching TV is good for Chinese learning"
+    },
+    {
+      "word": "次",
+      "pinyin": "cì",
+      "meaning": "occurrence; time",
+      "section": "HSK2 · L11",
+      "pattern": "hsk2",
+      "sentence": "不是不是，我同学介绍的，昨天第一次见。",
+      "sentencePinyin": "bú shì bú shì ， wǒ tóng xué jiè shào de ， zuó tiān dì yī cì jiàn 。",
+      "sentenceMeaning": "No. My classmate set me up with him. We met only yesterday."
+    },
+    {
+      "word": "男",
+      "pinyin": "nán",
+      "meaning": "nan adj. man, male",
+      "section": "HSK2 · L11",
+      "pattern": "hsk2",
+      "sentence": "什么朋友？是不是男朋友？",
+      "sentencePinyin": "shén me péng yǒu ？ shì bú shì nán péng yǒu ？",
+      "sentenceMeaning": "What friend? Boyfriend？"
+    },
+    {
+      "word": "唱歌",
+      "pinyin": "chànggē",
+      "meaning": "chang ge v. to sing",
+      "section": "HSK2 · L11",
+      "pattern": "hsk2",
+      "sentence": "王方，昨天和你一起唱歌的人是谁？",
+      "sentencePinyin": "wáng fāng ， zuó tiān hé nǐ yì qǐ chàng gē de rén shì shuí ？",
+      "sentenceMeaning": "Wang Fang, who was the guy with you in the karaoke yesterday？"
+    },
+    {
+      "word": "得",
+      "pinyin": "dé",
+      "meaning": "de part. used afier a verb or an",
+      "section": "HSK2 · L12",
+      "pattern": "hsk2",
+      "sentence": "不少了，今天吃得很好，太谢谢你了。",
+      "sentencePinyin": "bù shǎo le ， jīn tiān chī dé hěn hǎo ， tài xiè xiè nǐ le 。",
+      "sentenceMeaning": "Not a little actually. I've enjoyed the meal a lot. Thank you so much."
+    },
+    {
+      "word": "妻子",
+      "pinyin": "qīzǐ",
+      "meaning": "qizi n. wife",
+      "section": "HSK2 · L12",
+      "pattern": "hsk2",
+      "sentence": "不怎么样，我妻子比我做得好。",
+      "sentencePinyin": "bù zěn me yàng ， wǒ qī zǐ bǐ wǒ zuò dé hǎo 。",
+      "sentenceMeaning": "Not very well. My wife is a better cook than Iam. New Word"
+    },
+    {
+      "word": "得",
+      "pinyin": "dé",
+      "meaning": "de part. used afier a verb or an",
+      "section": "HSK2 · L12",
+      "pattern": "hsk2",
+      "sentence": "你做饭做得怎么样？",
+      "sentencePinyin": "nǐ zuò fàn zuò dé zěn me yàng ？",
+      "sentenceMeaning": "How well can you cook？"
+    },
+    {
+      "word": "起床",
+      "pinyin": "qǐchuáng",
+      "meaning": "sheng bing v. to fall ill, to be sick",
+      "section": "HSK2 · L12",
+      "pattern": "hsk2",
+      "sentence": "你每天早上几点起床？",
+      "sentencePinyin": "nǐ měi tiān zǎo shàng jǐ diǎn qǐ chuáng ？",
+      "sentenceMeaning": "When do you get up every morning？"
+    },
+    {
+      "word": "比",
+      "pinyin": "bǐ",
+      "meaning": "than， （superior or inferior） to",
+      "section": "HSK2 · L12",
+      "pattern": "hsk2",
+      "sentence": "你比我早起一个小时。",
+      "sentencePinyin": "nǐ bǐ wǒ zǎo qǐ yí gè xiǎo shí 。",
+      "sentenceMeaning": "You get up one hour earlier than I do."
+    },
+    {
+      "word": "吧",
+      "pinyin": "ba",
+      "meaning": "yu n. fish",
+      "section": "HSK2 · L12",
+      "pattern": "hsk2",
+      "sentence": "再来点儿米饭吧，你吃得太少了。",
+      "sentencePinyin": "zài lái diǎn ér mǐ fàn ba ， nǐ chī dé tài shǎo le 。",
+      "sentenceMeaning": "Have more rice, please. You ate too little."
+    },
+    {
+      "word": "吧",
+      "pinyin": "ba",
+      "meaning": "yu n. fish",
+      "section": "HSK2 · L13",
+      "pattern": "hsk2",
+      "sentence": "他出去了。你下午再来吧。",
+      "sentencePinyin": "tā chū qù le 。 nǐ xià wǔ zài lái ba 。",
+      "sentenceMeaning": "He's gone out. Please come in the afternoon."
+    },
+    {
+      "word": "先",
+      "pinyin": "xiān",
+      "meaning": "first, in advance",
+      "section": "HSK2 · L13",
+      "pattern": "hsk2",
+      "sentence": "请问，张先生在吗？",
+      "sentencePinyin": "qǐng wèn ， zhāng xiān shēng zài ma ？",
+      "sentenceMeaning": "Excuse me, is Mr. Zhang in？"
+    },
+    {
+      "word": "进",
+      "pinyin": "jìn",
+      "meaning": "to enter; to score (a goal)",
+      "section": "HSK2 · L13",
+      "pattern": "hsk2",
+      "sentence": "门开着呢，请进。",
+      "sentencePinyin": "mén kāi zhe ne ， qǐng jìn 。",
+      "sentenceMeaning": "The door is open. Come on in."
+    },
+    {
+      "word": "过",
+      "pinyin": "guò",
+      "meaning": "to spend, to pass",
+      "section": "HSK2 · L14",
+      "pattern": "hsk2",
+      "sentence": "你看过那个电影没有？",
+      "sentencePinyin": "nǐ kàn guò nà ge diàn yǐng méi yǒu ？",
+      "sentenceMeaning": "Have you seen that movie？"
+    },
+    {
+      "word": "但是",
+      "pinyin": "dànshì",
+      "meaning": "you yisi interesting, fun",
+      "section": "HSK2 · L14",
+      "pattern": "hsk2",
+      "sentence": "可以，但是我女朋友也想去。",
+      "sentencePinyin": "kě yǐ ， dàn shì wǒ nǚ péng yǒu yě xiǎng qù 。",
+      "sentenceMeaning": "OK. But my girlfriend also wants to go."
+    },
+    {
+      "word": "过",
+      "pinyin": "guò",
+      "meaning": "to spend, to pass",
+      "section": "HSK2 · L14",
+      "pattern": "hsk2",
+      "sentence": "没看过，听说很有意思。",
+      "sentencePinyin": "méi kàn guò ， tīng shuō hěn yǒu yì si 。",
+      "sentenceMeaning": "No.I was told it is fantastic."
+    },
+    {
+      "word": "一起",
+      "pinyin": "yìqǐ",
+      "meaning": "yiqi adv. together",
+      "section": "HSK2 · L14",
+      "pattern": "hsk2",
+      "sentence": "那我们下个星期一起去看吧？",
+      "sentencePinyin": "nà wǒ men xià gè xīng qī yì qǐ qù kàn ba ？",
+      "sentenceMeaning": "Why don't we see it together next week？"
+    },
+    {
+      "word": "就",
+      "pinyin": "jiù",
+      "meaning": "waimian n. outside",
+      "section": "HSK2 · L15",
+      "pattern": "hsk2",
+      "sentence": "今天是12月20日，新年就要到了。",
+      "sentencePinyin": "jīn tiān shì 1 2 yuè 2 0 rì ， xīn nián jiù yào dào le 。",
+      "sentenceMeaning": "Today is December 20th. The New Year is coming."
+    },
+    {
+      "word": "不错",
+      "pinyin": "bùcuò",
+      "meaning": "bicuo adj. pretty good",
+      "section": "HSK2 · L15",
+      "pattern": "hsk2",
+      "sentence": "我想去北京旅游，北京很不错，我去过一次。",
+      "sentencePinyin": "wǒ xiǎng qù běi jīng lǚ yóu ， běi jīng hěn bú cuò ， wǒ qù guò yī cì 。",
+      "sentenceMeaning": "1 want to take a trip to Beijing. Beijing is a nice place.I've been there once."
+    },
+    {
+      "word": "火车站",
+      "pinyin": "huǒchēzhàn",
+      "meaning": "ri n. day, date",
+      "section": "HSK2 · L15",
+      "pattern": "hsk2",
+      "sentence": "还没有呢，明天就去火车站买票。",
+      "sentencePinyin": "hái méi yǒu ne ， míng tiān jiù qù huǒ chē zhàn mǎi piào 。",
+      "sentenceMeaning": "Not yet. I'll go to the railway station to buy it tomorrow."
+    },
+    {
+      "word": "一起",
+      "pinyin": "yìqǐ",
+      "meaning": "yiqi adv. together",
+      "section": "HSK2 · L1",
+      "pattern": "hsk2",
+      "sentence": "下午我们一起去踢足球吧。",
+      "sentencePinyin": "xià wǔ wǒ men yì qǐ qù tī zú qiú ba 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "运动",
+      "pinyin": "yùndòng",
+      "meaning": "sport; to take physical",
+      "section": "HSK2 · L1",
+      "pattern": "hsk2",
+      "sentence": "你喜欢什么运动？",
+      "sentencePinyin": "nǐ xǐ huān shén me yùn dòng ？",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "最",
+      "pinyin": "zuì",
+      "meaning": "most; -est",
+      "section": "HSK2 · L1",
+      "pattern": "hsk2",
+      "sentence": "我最喜欢踢足球。",
+      "sentencePinyin": "wǒ zuì xǐ huān tī zú qiú 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "出院",
+      "pinyin": "chūyuàn",
+      "meaning": "chu yuan to leave hospital, to",
+      "section": "HSK2 · L2",
+      "pattern": "hsk2",
+      "sentence": "什么时候能出院？",
+      "sentencePinyin": "shén me shí hòu néng chū yuàn ？",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "身体",
+      "pinyin": "shēntǐ",
+      "meaning": "shenti n. body",
+      "section": "HSK2 · L2",
+      "pattern": "hsk2",
+      "sentence": "吃药了吗？现在身体怎么样？",
+      "sentencePinyin": "chī yào le ma ？ xiàn zài shēn tǐ zěn me yàng ？",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "报纸",
+      "pinyin": "bàozhǐ",
+      "meaning": "baozhi n. newspaper",
+      "section": "HSK2 · L3",
+      "pattern": "hsk2",
+      "sentence": "你听，是不是送报纸的来了？",
+      "sentencePinyin": "nǐ tīng ， shì bú shì sòng bào zhǐ de lái le ？",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "牛奶",
+      "pinyin": "niúnǎi",
+      "meaning": "niunai n. milk",
+      "section": "HSK2 · L3",
+      "pattern": "hsk2",
+      "sentence": "我看一下。不是，是送牛奶的。",
+      "sentencePinyin": "wǒ kàn yī xià 。 bú shì ， shì sòng niú nǎi de 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "报纸",
+      "pinyin": "bàozhǐ",
+      "meaning": "baozhi n. newspaper",
+      "section": "HSK2 · L3",
+      "pattern": "hsk2",
+      "sentence": "这是今天早上的报纸吗？",
+      "sentencePinyin": "zhè shì jīn tiān zǎo shàng de bào zhǐ ma ？",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "上",
+      "pinyin": "shàng",
+      "meaning": "apply (medicine)",
+      "section": "HSK2 · L4",
+      "pattern": "hsk2",
+      "sentence": "好，晚上我问一下儿子。",
+      "sentencePinyin": "hǎo ， wǎn shàng wǒ wèn yī xià ér zi 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "上",
+      "pinyin": "shàng",
+      "meaning": "apply (medicine)",
+      "section": "HSK2 · L4",
+      "pattern": "hsk2",
+      "sentence": "早上有你一个电话。",
+      "sentencePinyin": "zǎo shàng yǒu nǐ yí gè diàn huà 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "件",
+      "pinyin": "jiàn",
+      "meaning": "jian m. （used for clothes",
+      "section": "HSK2 · L5",
+      "pattern": "hsk2",
+      "sentence": "帮我看一下这件衣服怎么样。",
+      "sentencePinyin": "bāng wǒ kàn yī xià zhè jiàn yī fú zěn me yàng 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "不错",
+      "pinyin": "bùcuò",
+      "meaning": "bicuo adj. pretty good",
+      "section": "HSK2 · L5",
+      "pattern": "hsk2",
+      "sentence": "这件不错，就买这件吧。",
+      "sentencePinyin": "zhè jiàn bù cuò ， jiù mǎi zhè jiàn ba 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "件",
+      "pinyin": "jiàn",
+      "meaning": "jian m. （used for clothes",
+      "section": "HSK2 · L5",
+      "pattern": "hsk2",
+      "sentence": "这件小的怎么样？",
+      "sentencePinyin": "zhè jiàn xiǎo de zěn me yàng ？",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "可以",
+      "pinyin": "kěyǐ",
+      "meaning": "keyi adj. not bad",
+      "section": "HSK2 · L5",
+      "pattern": "hsk2",
+      "sentence": "颜色还可以，就是有点儿大。",
+      "sentencePinyin": "yán sè hái kě yǐ ， jiù shì yǒu diǎn ér dà 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "好吃",
+      "pinyin": "hǎochī",
+      "meaning": "hdochi adj. delicious, yummy",
+      "section": "HSK2 · L6",
+      "pattern": "hsk2",
+      "sentence": "今天的羊肉很好吃，你怎么不吃了？",
+      "sentencePinyin": "jīn tiān de yáng ròu hěn hǎo chī ， nǐ zěn me bù chī le ？",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "吧",
+      "pinyin": "ba",
+      "meaning": "yu n. fish",
+      "section": "HSK2 · L6",
+      "pattern": "hsk2",
+      "sentence": "来一点儿面条吧。",
+      "sentencePinyin": "lái yì diǎn ér miàn tiáo ba 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "羊肉",
+      "pinyin": "yángròu",
+      "meaning": "yangrou n. mutton",
+      "section": "HSK2 · L6",
+      "pattern": "hsk2",
+      "sentence": "这个星期天天都吃羊肉，不想吃了。",
+      "sentencePinyin": "zhè ge xīng qī tiān tiān dōu chī yáng ròu ， bù xiǎng chī le 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "还",
+      "pinyin": "hái",
+      "meaning": "hai adv. passably, fairly, rather",
+      "section": "HSK2 · L6",
+      "pattern": "hsk2",
+      "sentence": "那你还想吃什么？",
+      "sentencePinyin": "nà nǐ hái xiǎng chī shén me ？",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "试",
+      "pinyin": "shì",
+      "meaning": "V.tO Ury",
+      "section": "HSK2 · L7",
+      "pattern": "hsk2",
+      "sentence": "明天有考试，他说今天要好好准备。",
+      "sentencePinyin": "míng tiān yǒu kǎo shì ， tā shuō jīn tiān yào hǎo hǎo zhǔn bèi 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "等",
+      "pinyin": "děng",
+      "meaning": "B: Please wait for me for a minute, will you? Professor",
+      "section": "HSK2 · L8",
+      "pattern": "hsk2",
+      "sentence": "你等等我，好吗？王老师让我给大卫打个电话。",
+      "sentencePinyin": "nǐ děng děng wǒ ， hǎo ma ？ wáng lǎo shī ràng wǒ gěi dà wèi dǎ gè diàn huà 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "找",
+      "pinyin": "zhǎo",
+      "meaning": "A: Call him after we come back. What's the matter？",
+      "section": "HSK2 · L8",
+      "pattern": "hsk2",
+      "sentence": "听说大卫病了，我想找时间去看看他。",
+      "sentencePinyin": "tīng shuō dà wèi bìng le ， wǒ xiǎng zhǎo shí jiān qù kàn kàn tā 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "事情",
+      "pinyin": "shìqíng",
+      "meaning": "to wait, to await",
+      "section": "HSK2 · L8",
+      "pattern": "hsk2",
+      "sentence": "回来再打吧。找大卫有什么事情吗？",
+      "sentencePinyin": "huí lái zài dǎ ba 。 zhǎo dà wèi yǒu shén me shì qíng ma ？",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "运动",
+      "pinyin": "yùndòng",
+      "meaning": "sport; to take physical",
+      "section": "HSK2 · L8",
+      "pattern": "hsk2",
+      "sentence": "外边天气很好，我们出去运动运动吧！",
+      "sentencePinyin": "wài biān tiān qì hěn hǎo ， wǒ men chū qù yùn dòng yùn dòng ba ！",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "药",
+      "pinyin": "yào",
+      "meaning": "yao n. medicine,drug",
+      "section": "HSK2 · L10",
+      "pattern": "hsk2",
+      "sentence": "医生说吃药后两个小时不要喝茶。",
+      "sentencePinyin": "yī shēng shuō chī yào hòu liǎng gè xiǎo shí bú yào hē chá 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "还",
+      "pinyin": "hái",
+      "meaning": "hai adv. passably, fairly, rather",
+      "section": "HSK2 · L10",
+      "pattern": "hsk2",
+      "sentence": "医生还说什么了？",
+      "sentencePinyin": "yī shēng huán shuō shén me le ？",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "吧",
+      "pinyin": "ba",
+      "meaning": "yu n. fish",
+      "section": "HSK2 · L10",
+      "pattern": "hsk2",
+      "sentence": "好，不看了。给我一杯茶吧。",
+      "sentencePinyin": "hǎo ， bù kàn le 。 gěi wǒ yī bēi chá ba 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "比",
+      "pinyin": "bǐ",
+      "meaning": "than， （superior or inferior） to",
+      "section": "HSK2 · L11",
+      "pattern": "hsk2",
+      "sentence": "25岁，他比我大三岁。",
+      "sentencePinyin": "2 5 suì ， tā bǐ wǒ dà sān suì 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "孩子",
+      "pinyin": "háizi",
+      "meaning": "haizi n. child, kid",
+      "section": "HSK2 · L11",
+      "pattern": "hsk2",
+      "sentence": "左边这个看报纸的女孩子是你姐姐吗？",
+      "sentencePinyin": "zuǒ biān zhè ge kàn bào zhǐ de nǚ hái zi shì nǐ jiě jiě ma ？",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "右边",
+      "pinyin": "yòubiān",
+      "meaning": "youbian n. right, right side",
+      "section": "HSK2 · L11",
+      "pattern": "hsk2",
+      "sentence": "是，右边写字的那个人是我哥哥。",
+      "sentencePinyin": "shì ， yòu biān xiě zì de nà ge rén shì wǒ gē gē 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "身体",
+      "pinyin": "shēntǐ",
+      "meaning": "shenti n. body",
+      "section": "HSK2 · L12",
+      "pattern": "hsk2",
+      "sentence": "我睡得也早，我每天晚上十点就睡觉。早睡早起身体好。",
+      "sentencePinyin": "wǒ shuì dé yě zǎo ， wǒ měi tiān wǎn shàng shí diǎn jiù shuì jiào 。 zǎo shuì zǎo qǐ shēn tǐ hǎo 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "铅笔",
+      "pinyin": "qiānbǐ",
+      "meaning": "A: What about the girl with a pencil in",
+      "section": "HSK2 · L13",
+      "pattern": "hsk2",
+      "sentence": "那个手里拿着铅笔的呢？",
+      "sentencePinyin": "nà ge shǒu lǐ ná zhe qiān bǐ de ne ？",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "女",
+      "pinyin": "nǚ",
+      "meaning": "nt adj. woman, female",
+      "section": "HSK2 · L13",
+      "pattern": "hsk2",
+      "sentence": "那个正在说话的女孩儿是谁？",
+      "sentencePinyin": "nà ge zhèng zài shuō huà de nǚ hái ér shì shuí ？",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "过",
+      "pinyin": "guò",
+      "meaning": "to spend, to pass",
+      "section": "HSK2 · L14",
+      "pattern": "hsk2",
+      "sentence": "听说你去过中国，还想去吗？",
+      "sentencePinyin": "tīng shuō nǐ qù guò zhōng guó ， hái xiǎng qù ma ？",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "给",
+      "pinyin": "gěi",
+      "meaning": "shengri n. birthday",
+      "section": "HSK2 · L14",
+      "pattern": "hsk2",
+      "sentence": "好啊，到时候我给你打电话。",
+      "sentencePinyin": "hǎo a ， dào shí hòu wǒ gěi nǐ dǎ diàn huà 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "但是",
+      "pinyin": "dànshì",
+      "meaning": "you yisi interesting, fun",
+      "section": "HSK2 · L14",
+      "pattern": "hsk2",
+      "sentence": "我虽然去过好几次，但是还想再去玩儿玩儿。",
+      "sentencePinyin": "wǒ suī rán qù guò hǎo jǐ cì ， dàn shì hái xiǎng zài qù wán ér wán ér 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "一起",
+      "pinyin": "yìqǐ",
+      "meaning": "yiqi adv. together",
+      "section": "HSK2 · L14",
+      "pattern": "hsk2",
+      "sentence": "那我们一起去吧。",
+      "sentencePinyin": "nà wǒ men yì qǐ qù ba 。",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "得",
+      "pinyin": "dé",
+      "meaning": "de part. used afier a verb or an",
+      "section": "HSK2 · L15",
+      "pattern": "hsk2",
+      "sentence": "时间过得真快，新的一年快要到了！",
+      "sentencePinyin": "shí jiān guò dé zhēn kuài ， xīn de yī nián kuài yào dào le ！",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "大家",
+      "pinyin": "dàjiā",
+      "meaning": "dajia pron. all, everybody",
+      "section": "HSK2 · L15",
+      "pattern": "hsk2",
+      "sentence": "是啊，谢谢大家这一年对我的帮助！",
+      "sentencePinyin": "shì a ， xiè xiè dà jiā zhè yī nián duì wǒ de bāng zhù ！",
+      "sentenceMeaning": "HSK2 dialogue"
+    },
+    {
+      "word": "一起",
+      "pinyin": "yìqǐ",
+      "meaning": "yiqi adv. together",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "下个月我去旅游，你能跟我一起去吗？",
+      "sentencePinyin": "xià gè yuè wǒ qù lǚ yóu ， nǐ néng gēn wǒ yì qǐ qù ma ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "一直",
+      "pinyin": "yìzhí",
+      "meaning": "straight; continuously",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "你一直玩儿电脑游戏，作业写完了吗？",
+      "sentencePinyin": "nǐ yì zhí wán ér diàn nǎo yóu xì ， zuò yè xiě wán le ma ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "吧",
+      "pinyin": "ba",
+      "meaning": "yu n. fish",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "再多带几件衣服吧。",
+      "sentencePinyin": "zài duō dài jǐ jiàn yī fú ba 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "就",
+      "pinyin": "jiù",
+      "meaning": "waimian n. outside",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "南方啊，我们去年就是这个时候去的。",
+      "sentencePinyin": "nán fāng a ， wǒ men qù nián jiù shì zhè ge shí hòu qù de 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "北方",
+      "pinyin": "běifāng",
+      "meaning": "north, northern",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "南方太热了，北方好一些，不冷也不热。",
+      "sentencePinyin": "nán fāng tài rè le ， běi fāng hǎo yī xiē ， bù lěng yě bù rè 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "打算",
+      "pinyin": "dǎsuàn",
+      "meaning": "/v. plan; to intend",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "周末你有什么打算？",
+      "sentencePinyin": "zhōu mò nǐ yǒu shén me dǎ suàn ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "吧",
+      "pinyin": "ba",
+      "meaning": "yu n. fish",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "我们是去旅游，不是搬家，还是少带一些吧。",
+      "sentencePinyin": "wǒ men shì qù lǚ yóu ， bú shì bān jiā ， hái shì shǎo dài yī xiē ba 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "就",
+      "pinyin": "jiù",
+      "meaning": "waimian n. outside",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "我早就复习好了。",
+      "sentencePinyin": "wǒ zǎo jiù fù xí hǎo le 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "就",
+      "pinyin": "jiù",
+      "meaning": "waimian n. outside",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "我早就想好了，请你吃饭、。",
+      "sentencePinyin": "wǒ zǎo jiù xiǎng hǎo le ， qǐng nǐ chī fàn 、 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "玩儿",
+      "pinyin": "wánér",
+      "meaning": "wanr v. to play, to have fun",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "我还没想好呢。你觉得哪儿最好玩儿？",
+      "sentencePinyin": "wǒ hái méi xiǎng hǎo ne 。 nǐ jué de nǎ ér zuì hǎo wán ér ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "还",
+      "pinyin": "hái",
+      "meaning": "hai adv. passably, fairly, rather",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "我还没想好要不要跟你去呢。",
+      "sentencePinyin": "wǒ hái méi xiǎng hǎo yào bù yào gēn nǐ qù ne 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "手",
+      "pinyin": "shǒu",
+      "meaning": "B: I know her name. Her name is Yang|",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "手机、电脑、地图，一个也不能少。",
+      "sentencePinyin": "shǒu jī 、 diàn nǎo 、 dì tú ， yí gè yě bù néng shǎo 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "着急",
+      "pinyin": "zháojí",
+      "meaning": "worried, anxious",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "明天不是有考试吗？你怎么一点儿也不着急？",
+      "sentencePinyin": "míng tiān bú shì yǒu kǎo shì ma ？ nǐ zěn me yì diǎn ér yě bù zháo jí ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "啊",
+      "pinyin": "a",
+      "meaning": "[used to express sudden realization] ah",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "是啊，我已经找好饭馆了，电影票也买好了。",
+      "sentencePinyin": "shì a ， wǒ yǐ jīng zhǎo hǎo fàn guǎn le ， diàn yǐng piào yě mǎi hǎo le 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "还",
+      "pinyin": "hái",
+      "meaning": "hai adv. passably, fairly, rather",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "水果、面包、茶都准备好了，我们还带什么？",
+      "sentencePinyin": "shuǐ guǒ 、 miàn bāo 、 chá dōu zhǔn bèi hǎo le ， wǒ men hái dài shén me ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "就",
+      "pinyin": "jiù",
+      "meaning": "waimian n. outside",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "这些我昨天下午就准备好了。",
+      "sentencePinyin": "zhè xiē wǒ zuó tiān xià wǔ jiù zhǔn bèi hǎo le 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "一直",
+      "pinyin": "yìzhí",
+      "meaning": "straight; continuously",
+      "section": "HSK3 · L1",
+      "pattern": "hsk3",
+      "sentence": "那也不能一直玩儿啊。",
+      "sentencePinyin": "nà yě bù néng yì zhí wán ér a 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "上",
+      "pinyin": "shàng",
+      "meaning": "apply (medicine)",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "上山容易下山难，你不知道？5.容易。",
+      "sentencePinyin": "shàng shān róng yì xià shān nán ， nǐ bù zhī dào ？ 5 . róng yì 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "得",
+      "pinyin": "dé",
+      "meaning": "de part. used afier a verb or an",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "上来的时候我怎么没觉得这么累？",
+      "sentencePinyin": "shàng lái de shí hòu wǒ zěn me méi jué de zhè me lèi ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "但是",
+      "pinyin": "dànshì",
+      "meaning": "you yisi interesting, fun",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "但是你一点儿也没瘦！你做什么运动了？",
+      "sentencePinyin": "dàn shì nǐ yì diǎn ér yě méi shòu ！ nǐ zuò shén me yùn dòng le ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "吧",
+      "pinyin": "ba",
+      "meaning": "yu n. fish",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "你在这儿等吧，我拿了伞就下来。",
+      "sentencePinyin": "nǐ zài zhè ér děng ba ， wǒ ná le sǎn jiù xià lái 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "就",
+      "pinyin": "jiù",
+      "meaning": "waimian n. outside",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "你每天晚上吃了饭就睡觉，也不出去走走，能不胖吗？",
+      "sentencePinyin": "nǐ měi tiān wǎn shàng chī le fàn jiù shuì jiào ， yě bù chū qù zǒu zǒu ， néng bù pàng ma ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "怎么办",
+      "pinyin": "zěnmebàn",
+      "meaning": "what to do, how to do",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "你看，我这么胖，怎么办呢？",
+      "sentencePinyin": "nǐ kàn ， wǒ zhè me pàng ， zěn me bàn ne ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "运动",
+      "pinyin": "yùndòng",
+      "meaning": "sport; to take physical",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "其实我每天都运动。",
+      "sentencePinyin": "qí shí wǒ měi tiān dōu yùn dòng 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "办公室",
+      "pinyin": "bàngōngshì",
+      "meaning": "Mrs.， madam",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "周经理出去了，不在办公室。",
+      "sentencePinyin": "zhōu jīng lǐ chū qù le ， bù zài bàn gōng shì 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "周明",
+      "pinyin": "zhōumíng",
+      "meaning": "Zhou Ming, name of a person",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "喂，你好，请问周明在吗？",
+      "sentencePinyin": "wèi ， nǐ hǎo ， qǐng wèn zhōu míng zài ma ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "就",
+      "pinyin": "jiù",
+      "meaning": "waimian n. outside",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "回来了就让他给我打个电话。",
+      "sentencePinyin": "huí lái le jiù ràng tā gěi wǒ dǎ gè diàn huà 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "一起",
+      "pinyin": "yìqǐ",
+      "meaning": "yiqi adv. together",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "好的。我跟你一起上去吧。",
+      "sentencePinyin": "hǎo de 。 wǒ gēn nǐ yì qǐ shàng qù ba 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "办公室",
+      "pinyin": "bàngōngshì",
+      "meaning": "Mrs.， madam",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "好的，他到了办公室我就告诉他。",
+      "sentencePinyin": "hǎo de ， tā dào le bàn gōng shì wǒ jiù gào sù tā 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "过去",
+      "pinyin": "guòqù",
+      "meaning": "to come across，",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "好，那边树多，我们过去坐一下吧。",
+      "sentencePinyin": "hǎo ， nà biān shù duō ， wǒ men guò qù zuò yī xià ba 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "也",
+      "pinyin": "yě",
+      "meaning": "to travel, to take",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "我现在腿也疼，脚也疼。",
+      "sentencePinyin": "wǒ xiàn zài tuǐ yě téng ， jiǎo yě téng 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "就",
+      "pinyin": "jiù",
+      "meaning": "waimian n. outside",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "没事，我出去叫辆出租车就行了。",
+      "sentencePinyin": "méi shì ， wǒ chū qù jiào liàng chū zū chē jiù xíng le 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "拿",
+      "pinyin": "ná",
+      "meaning": "Xiaoxiao. Yang is her family name",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "那你等等，我上楼去给你拿把伞。",
+      "sentencePinyin": "nà nǐ děng děng ， wǒ shàng lóu qù gěi nǐ ná bǎ sǎn 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "吧",
+      "pinyin": "ba",
+      "meaning": "yu n. fish",
+      "section": "HSK3 · L2",
+      "pattern": "hsk3",
+      "sentence": "雨下得真大。你怎么回去？我送你吧。",
+      "sentencePinyin": "yǔ xià dé zhēn dà 。 nǐ zěn me huí qù ？ wǒ sòng nǐ ba 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "得",
+      "pinyin": "dé",
+      "meaning": "de part. used afier a verb or an",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "你觉得这条裤子怎么样？",
+      "sentencePinyin": "nǐ jué de zhè tiáo kù zi zěn me yàng ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "上",
+      "pinyin": "shàng",
+      "meaning": "apply (medicine)",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "好啊，今天晚上只吃水果不吃饭！",
+      "sentencePinyin": "hǎo a ， jīn tiān wǎn shàng zhǐ chī shuǐ guǒ bù chī fàn ！",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "也",
+      "pinyin": "yě",
+      "meaning": "to travel, to take",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "好，你也去吗？",
+      "sentencePinyin": "hǎo ， nǐ yě qù ma ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "最",
+      "pinyin": "zuì",
+      "meaning": "most; -est",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "我喝茶，茶是我的最爱。天冷了或者工作累了的时候，喝杯热茶会很舒服。",
+      "sentencePinyin": "wǒ hē chá ， chá shì wǒ de zuì ài 。 tiān lěng le huò zhě gōng zuò lèi le de shí hòu ， hē bēi rè chá huì hěn shū fú 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "得",
+      "pinyin": "dé",
+      "meaning": "de part. used afier a verb or an",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "我记得你已经有两条这样的裤子了。",
+      "sentencePinyin": "wǒ jì de nǐ yǐ jīng yǒu liǎng tiáo zhè yàng de kù zi le 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "还",
+      "pinyin": "hái",
+      "meaning": "hai adv. passably, fairly, rather",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "明天是晴天还是阴天？",
+      "sentencePinyin": "míng tiān shì qíng tiān hái shì yīn tiān ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "上",
+      "pinyin": "shàng",
+      "meaning": "apply (medicine)",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "桌子上放着很多饮料，你喝什么？",
+      "sentencePinyin": "zhuō zi shàng fàng zhe hěn duō yǐn liào ， nǐ hē shén me ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "绿",
+      "pinyin": "lǜ",
+      "meaning": "to put, to place",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "花茶、绿茶、红茶，我都喜欢。",
+      "sentencePinyin": "huā chá 、 lǜ chá 、 hóng chá ， wǒ dōu xǐ huān 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "可以",
+      "pinyin": "kěyǐ",
+      "meaning": "keyi adj. not bad",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "茶或者咖啡都可以。你呢？你喝什么？",
+      "sentencePinyin": "chá huò zhě kā fēi dōu kě yǐ 。 nǐ ne ？ nǐ hē shén me ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "吧",
+      "pinyin": "ba",
+      "meaning": "yu n. fish",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "西瓜吧。你看，这上面写着“西瓜不甜不要钱”。",
+      "sentencePinyin": "xī guā ba 。 nǐ kàn ， zhè shàng miàn xiě zhe “ xī guā bù tián bú yào qián ” 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "不错",
+      "pinyin": "bùcuò",
+      "meaning": "bicuo adj. pretty good",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "还不错，多少钱？",
+      "sentencePinyin": "hái bú cuò ， duō shǎo qián ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "上",
+      "pinyin": "shàng",
+      "meaning": "apply (medicine)",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "这上面写着320元。",
+      "sentencePinyin": "zhè shàng miàn xiě zhe 3 2 0 yuán 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "还",
+      "pinyin": "hái",
+      "meaning": "hai adv. passably, fairly, rather",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "这些水果真新鲜，我们买西瓜还是苹果？",
+      "sentencePinyin": "zhè xiē shuǐ guǒ zhēn xīn xiān ， wǒ men mǎi xī guā hái shì píng guǒ ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "件",
+      "pinyin": "jiàn",
+      "meaning": "jian m. （used for clothes",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "这件衬衫怎么样？",
+      "sentencePinyin": "zhè jiàn chèn shān zěn me yàng ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "吧",
+      "pinyin": "ba",
+      "meaning": "yu n. fish",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "那我们买一个大点儿的吧。",
+      "sentencePinyin": "nà wǒ men mǎi yí gè dà diǎn ér de ba 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "别",
+      "pinyin": "bié",
+      "meaning": "A: Stop reading the newspaper. The doctor said you",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "那我们再看看别的。",
+      "sentencePinyin": "nà wǒ men zài kàn kàn bié de 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "上",
+      "pinyin": "shàng",
+      "meaning": "apply (medicine)",
+      "section": "HSK3 · L3",
+      "pattern": "hsk3",
+      "sentence": "阴天，电视上说多云。怎么了？有事？",
+      "sentencePinyin": "yīn tiān ， diàn shì shàng shuō duō yún 。 zěn me le ？ yǒu shì ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "年级",
+      "pinyin": "niánjí",
+      "meaning": "grade, year",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "不是。那个又高又漂亮的女孩儿是二年级的。",
+      "sentencePinyin": "bú shì 。 nà ge yòu gāo yòu piào liàng de nǚ hái ér shì èr nián jí de 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "又",
+      "pinyin": "yòu",
+      "meaning": "match, competition",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "你们这儿是不是有一个又年轻又漂亮的服务员？",
+      "sentencePinyin": "nǐ men zhè ér shì bú shì yǒu yí gè yòu nián qīng yòu piào liàng de fú wù yuán ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "啊",
+      "pinyin": "a",
+      "meaning": "[used to express sudden realization] ah",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "你是不是喜欢她啊？",
+      "sentencePinyin": "nǐ shì bú shì xǐ huān tā a ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "得",
+      "pinyin": "dé",
+      "meaning": "de part. used afier a verb or an",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "你觉得小红怎么样？",
+      "sentencePinyin": "nǐ jué de xiǎo hóng zěn me yàng ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "吧",
+      "pinyin": "ba",
+      "meaning": "yu n. fish",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "啊，我知道了，你说的是李小美吧？",
+      "sentencePinyin": "a ， wǒ zhī dào le ， nǐ shuō de shì lǐ xiǎo měi ba ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "拿",
+      "pinyin": "ná",
+      "meaning": "Xiaoxiao. Yang is her family name",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "喜欢她的人太多了，你看那些拿着鲜花站在门口的，都是等她的。",
+      "sentencePinyin": "xǐ huān tā de rén tài duō le ， nǐ kàn nà xiē ná zhe xiān huā zhàn zài mén kǒu de ， dōu shì děng tā de 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "蛋糕",
+      "pinyin": "dàngāo",
+      "meaning": "① 2.99元可以写成 “2元9角（jido）",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "喝着咖啡吃蛋糕，太好了！",
+      "sentencePinyin": "hē zhe kā fēi chī dàn gāo ， tài hǎo le ！",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "努力",
+      "pinyin": "nǔlì",
+      "meaning": "make efforts (to do sth)一起努力",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "她又聪明又热情，也很努力。",
+      "sentencePinyin": "tā yòu cōng míng yòu rè qíng ， yě hěn nǔ lì 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "对",
+      "pinyin": "duì",
+      "meaning": "versus; against",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "她对每个人都笑，也常常对我笑。",
+      "sentencePinyin": "tā duì měi gè rén dōu xiào ， yě cháng cháng duì wǒ xiào 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "又",
+      "pinyin": "yòu",
+      "meaning": "match, competition",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "她工作又认真又热情。",
+      "sentencePinyin": "tā gōng zuò yòu rèn zhēn yòu rè qíng 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "客人",
+      "pinyin": "kèrén",
+      "meaning": "serious, earnest",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "她总是笑着跟客人说话。",
+      "sentencePinyin": "tā zǒng shì xiào zhe gēn kè rén shuō huà 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "好吃",
+      "pinyin": "hǎochī",
+      "meaning": "hdochi adj. delicious, yummy",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "好啊，这家超市的蛋糕又便宜又好吃，一块只要2.99元①12.超市。",
+      "sentencePinyin": "hǎo a ， zhè jiā chāo shì de dàn gāo yòu pián yi yòu hǎo chī ， yī kuài zhǐ yào 2 . 9 9 yuán ① 1 2 . chāo shì 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "找",
+      "pinyin": "zhǎo",
+      "meaning": "A: Call him after we come back. What's the matter？",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "您好！您找谁？",
+      "sentencePinyin": "nín hǎo ！ nín zhǎo shuí ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "蛋糕",
+      "pinyin": "dàngāo",
+      "meaning": "① 2.99元可以写成 “2元9角（jido）",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "我们买两块，回家吃着蛋糕看13.蛋糕电视，怎么样？",
+      "sentencePinyin": "wǒ men mǎi liǎng kuài ， huí jiā chī zhe dàn gāo kàn 1 3 . dàn gāo diàn shì ， zěn me yàng ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "进",
+      "pinyin": "jìn",
+      "meaning": "to enter; to score (a goal)",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "我有点儿饿了，我们进超市买。",
+      "sentencePinyin": "wǒ yǒu diǎn ér è le ， wǒ men jìn chāo shì mǎi 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "问题",
+      "pinyin": "wèntí",
+      "meaning": "question; problem",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "我看她总是笑着回答老师的问题。",
+      "sentencePinyin": "wǒ kàn tā zǒng shì xiào zhe huí dá lǎo shī de wèn tí 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "拿",
+      "pinyin": "ná",
+      "meaning": "Xiaoxiao. Yang is her family name",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "旁边那个拿着书笑的人是谁？",
+      "sentencePinyin": "páng biān nà ge ná zhe shū xiào de rén shì shuí ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "比",
+      "pinyin": "bǐ",
+      "meaning": "than， （superior or inferior） to",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "是，这是我们比赛后照的。",
+      "sentencePinyin": "shì ， zhè shì wǒ men bǐ sài hòu zhào de 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "不错",
+      "pinyin": "bùcuò",
+      "meaning": "bicuo adj. pretty good",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "照得不错，你们都是一个年级的吗？",
+      "sentencePinyin": "zhào dé bù cuò ， nǐ men dōu shì yí gè nián jí de ma ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "比",
+      "pinyin": "bǐ",
+      "meaning": "than， （superior or inferior） to",
+      "section": "HSK3 · L4",
+      "pattern": "hsk3",
+      "sentence": "这是你们比赛的照片吗？",
+      "sentencePinyin": "zhè shì nǐ men bǐ sài de zhào piān ma ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "感冒",
+      "pinyin": "gǎnmào",
+      "meaning": "Zhang, a surname",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "不用去医院，昨天吃了感冒药，现在好一些了。",
+      "sentencePinyin": "bù yòng qù yī yuàn ， zuó tiān chī le gǎn mào yào ， xiàn zài hǎo yī xiē le 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "裙子",
+      "pinyin": "qúnzi",
+      "meaning": "dress, Skirt",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "不，我喜欢看你穿漂亮的裙子。",
+      "sentencePinyin": "bù ， wǒ xǐ huān kàn nǐ chuān piào liàng de qún zi 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "药",
+      "pinyin": "yào",
+      "meaning": "yao n. medicine,drug",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "他吃药了吗？要不要去医院？",
+      "sentencePinyin": "tā chī yào le ma ？ yào bù yào qù yī yuàn ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "最",
+      "pinyin": "zuì",
+      "meaning": "most; -est",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "你最喜欢哪个季节？",
+      "sentencePinyin": "nǐ zuì xǐ huān nǎ ge jì jié ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "裙子",
+      "pinyin": "qúnzi",
+      "meaning": "dress, Skirt",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "你看，这条裙子是去年买的，今年就不能穿了。",
+      "sentencePinyin": "nǐ kàn ， zhè tiáo qún zi shì qù nián mǎi de ， jīn nián jiù bù néng chuān le 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "发",
+      "pinyin": "fā",
+      "meaning": "level, standard",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "前几天有点儿发烧，现在好多了。",
+      "sentencePinyin": "qián jǐ tiān yǒu diǎn ér fā shāo ， xiàn zài hǎo duō le 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "不错",
+      "pinyin": "bùcuò",
+      "meaning": "bicuo adj. pretty good",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "喝杯茶吧，这是我为你买的绿茶，很不错。",
+      "sentencePinyin": "hē bēi chá ba ， zhè shì wǒ wèi nǐ mǎi de lǜ chá ， hěn bú cuò 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "玩儿",
+      "pinyin": "wánér",
+      "meaning": "wanr v. to play, to have fun",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "对不起，我明天不能和你们出去玩儿了。",
+      "sentencePinyin": "duì bù qǐ ， wǒ míng tiān bù néng hé nǐ men chū qù wán ér le 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "树",
+      "pinyin": "shù",
+      "meaning": "V. adj. adj. conj. n.",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "当然是春天，天气不那么冷了，草和树都绿了，花也开了。",
+      "sentencePinyin": "dāng rán shì chūn tiān ， tiān qì bù nà me lěng le ， cǎo hé shù dōu lǜ le ， huā yě kāi le 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "裙子",
+      "pinyin": "qúnzi",
+      "meaning": "dress, Skirt",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "怎么？你也有漂亮的裙子？",
+      "sentencePinyin": "zěn me ？ nǐ yě yǒu piào liàng de qún zi ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "好吃",
+      "pinyin": "hǎochī",
+      "meaning": "hdochi adj. delicious, yummy",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "我做的饭越来越好吃，我能少吃吗？",
+      "sentencePinyin": "wǒ zuò de fàn yuè lái yuè hǎo chī ， wǒ néng shǎo chī ma ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "照",
+      "pinyin": "zhào",
+      "meaning": "Mid-Autumn Festival",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "我儿子生病了，我要在家照顾他。",
+      "sentencePinyin": "wǒ ér zi shēng bìng le ， wǒ yào zài jiā zhào gù tā 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "身体",
+      "pinyin": "shēntǐ",
+      "meaning": "shenti n. body",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "我听说你身体不舒服，怎么了？",
+      "sentencePinyin": "wǒ tīng shuō nǐ shēn tǐ bù shū fú ， zěn me le ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "裙子",
+      "pinyin": "qúnzi",
+      "meaning": "dress, Skirt",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "我最喜欢夏天，因为我可以穿漂亮的裙子了。",
+      "sentencePinyin": "wǒ zuì xǐ huān xià tiān ， yīn wèi wǒ kě yǐ chuān piào liàng de qún zi le 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "最近",
+      "pinyin": "zuìjìn",
+      "meaning": "lately, recently",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "我最近越来越胖了。",
+      "sentencePinyin": "wǒ zuì jìn yuè lái yuè pàng le 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "得",
+      "pinyin": "dé",
+      "meaning": "de part. used afier a verb or an",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "谁说的？我觉得你越来越漂亮了。",
+      "sentencePinyin": "shuí shuō de ？ wǒ jué de nǐ yuè lái yuè piào liàng le 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "药",
+      "pinyin": "yào",
+      "meaning": "yao n. medicine,drug",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "谢谢，我要吃药，不喝茶了。",
+      "sentencePinyin": "xiè xiè ， wǒ yào chī yào ， bù hē chá le 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "也",
+      "pinyin": "yě",
+      "meaning": "to travel, to take",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "那我也喜欢夏天了。",
+      "sentencePinyin": "nà wǒ yě xǐ huān xià tiān le 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "玩儿",
+      "pinyin": "wánér",
+      "meaning": "wanr v. to play, to have fun",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "那我们下次再一起出去玩儿吧。在小刚家。",
+      "sentencePinyin": "nà wǒ men xià cì zài yì qǐ chū qù wán ér ba 。 zài xiǎo gāng jiā 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "吧",
+      "pinyin": "ba",
+      "meaning": "yu n. fish",
+      "section": "HSK3 · L5",
+      "pattern": "hsk3",
+      "sentence": "那是因为你吃得太多了，少吃点儿吧。",
+      "sentencePinyin": "nà shì yīn wèi nǐ chī dé tài duō le ， shǎo chī diǎn ér ba 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "完",
+      "pinyin": "wán",
+      "meaning": "to finish, to end",
+      "section": "HSK3 · L6",
+      "pattern": "hsk3",
+      "sentence": "今天的作业你做完了吗？",
+      "sentencePinyin": "jīn tiān de zuò yè nǐ zuò wán le ma ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "别",
+      "pinyin": "bié",
+      "meaning": "A: Stop reading the newspaper. The doctor said you",
+      "section": "HSK3 · L6",
+      "pattern": "hsk3",
+      "sentence": "今天这些题特别难，我看不懂，不会做，你能帮我吗？",
+      "sentencePinyin": "jīn tiān zhè xiē tí tè bié nán ， wǒ kàn bù dǒng ， bú huì zuò ， nǐ néng bāng wǒ ma ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "上",
+      "pinyin": "shàng",
+      "meaning": "apply (medicine)",
+      "section": "HSK3 · L6",
+      "pattern": "hsk3",
+      "sentence": "你不是说晚上睡不着觉吗？",
+      "sentencePinyin": "nǐ bú shì shuō wǎn shàng shuì bù zhe jué ma ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "刚才",
+      "pinyin": "gāngcái",
+      "meaning": "just now A：你刚才去哪儿了？ B：我刚才在睡觉。",
+      "section": "HSK3 · L6",
+      "pattern": "hsk3",
+      "sentence": "你去房间找找，是不是刚才放在桌子上了？",
+      "sentencePinyin": "nǐ qù fáng jiān zhǎo zhǎo ， shì bú shì gāng cái fàng zài zhuō zi shàng le ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "还",
+      "pinyin": "hái",
+      "meaning": "hai adv. passably, fairly, rather",
+      "section": "HSK3 · L6",
+      "pattern": "hsk3",
+      "sentence": "你怎么还喝咖啡？",
+      "sentencePinyin": "nǐ zěn me hái hē kā fēi ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "牛奶",
+      "pinyin": "niúnǎi",
+      "meaning": "niunai n. milk",
+      "section": "HSK3 · L6",
+      "pattern": "hsk3",
+      "sentence": "你还是喝杯牛奶吧，可以睡得更好些。",
+      "sentencePinyin": "nǐ hái shì hē bēi niú nǎi ba ， kě yǐ shuì dé gèng hǎo xiē 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "啊",
+      "pinyin": "a",
+      "meaning": "[used to express sudden realization] ah",
+      "section": "HSK3 · L6",
+      "pattern": "hsk3",
+      "sentence": "公园太大，多累啊。",
+      "sentencePinyin": "gōng yuán tài dà ， duō lèi a 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "完",
+      "pinyin": "wán",
+      "meaning": "to finish, to end",
+      "section": "HSK3 · L6",
+      "pattern": "hsk3",
+      "sentence": "刚做完，你呢？",
+      "sentencePinyin": "gāng zuò wán ， nǐ ne ？",
+      "sentenceMeaning": "HSK3 dialogue"
+    },
+    {
+      "word": "吧",
+      "pinyin": "ba",
+      "meaning": "yu n. fish",
+      "section": "HSK3 · L6",
+      "pattern": "hsk3",
+      "sentence": "好吧，我帮你去找找。",
+      "sentencePinyin": "hǎo ba ， wǒ bāng nǐ qù zhǎo zhǎo 。",
+      "sentenceMeaning": "HSK3 dialogue"
+    }
+  ]
+}

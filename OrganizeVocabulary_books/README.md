@@ -1,16 +1,28 @@
 # OrganizeVocabulary_books — léxico curado dos PDFs
 
-Seed do léxico dos livros **新时代汉语口语** (初级·上 + 初级·下) e pasta de trabalho **NTCSL L2**.
+Material de livros → **léxico unificado do projeto** (mandarim para aprender).  
+Não é o objectivo silenciar palavras “por livro”; livros são só fontes.
 
-**Uso no site:** `curated/` é input do `npm run seed:content` → tabela SQLite `book_vocab_entries` (sugestões no formulário de aulas). Não substitui o consolidado editorial.
+**Uso no site**
 
-**Pastas de trabalho (modelo NTCSL):**
+| Artefacto | Seed |
+|-----------|------|
+| `curated/` (新时代) | `book_vocab_entries` (sugestões em aulas) |
+| `level2_NTCSL/lexico-core.json` | `lexico_entries` (prática / app) |
+| `hsk-lexico-core.json` (HSK 2+3) | `lexico_entries` (prática / app) |
+| `hsk-phrases.json` + deck `hsk2_hsk3_contexts` | contextos / frases didáticas |
+
+**Pastas de trabalho:**
 
 | Livro | PDF | Pasta |
 |-------|-----|--------|
 | 新时代 初级·上 | `Level1.pdf` | `level1_primary-up/` |
 | 新时代 初级·下 | `level2.pdf` | `level2_primary-down/` |
 | 新目标口语 2 | `level2_NTCSL.pdf` | `level2_NTCSL/` |
+| HSK标准教程 2 | `HSK标准教程2.pdf` | `hsk2/` |
+| HSK标准教程 3 | `HSK标准教程3.pdf` | `hsk3/` |
+
+HSK 2/3: PDF é scan → OCR (Vision). Extração: `_extract_hsk_vocab.py` → `hsk-lexico-*.json`.
 
 Re-importar primary-up/down a partir de `curated/`: `python3 _import_curated_to_workdir.py`
 

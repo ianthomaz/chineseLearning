@@ -1,0 +1,357 @@
+{
+  "id": "tempo_relativo",
+  "title": "Tempo relativo · dias, meses, estações",
+  "description": "Cadeia de dias/anos, 上个/下个, partes do dia e estações — combinações para o app e /practice.",
+  "cards": [
+    {
+      "word": "前天",
+      "pinyin": "qiántiān",
+      "meaning": "anteontem",
+      "section": "dias",
+      "pattern": "前天 → 昨天 → 今天 → 明天 → 后天",
+      "sentence": "前天我跟朋友去书店。",
+      "sentencePinyin": "Qiántiān wǒ gēn péngyou qù shūdiàn.",
+      "sentenceMeaning": "Anteontem fui à livraria com um amigo."
+    },
+    {
+      "word": "昨天",
+      "pinyin": "zuótiān",
+      "meaning": "ontem",
+      "section": "dias",
+      "pattern": "昨天",
+      "sentence": "昨天是星期日。",
+      "sentencePinyin": "Zuótiān shì xīngqīrì.",
+      "sentenceMeaning": "Ontem foi domingo."
+    },
+    {
+      "word": "今天",
+      "pinyin": "jīntiān",
+      "meaning": "hoje",
+      "section": "dias",
+      "pattern": "今天 / 今年",
+      "sentence": "老师今天很忙。",
+      "sentencePinyin": "Lǎoshī jīntiān hěn máng.",
+      "sentenceMeaning": "O professor está muito ocupado hoje."
+    },
+    {
+      "word": "明天",
+      "pinyin": "míngtiān",
+      "meaning": "amanhã",
+      "section": "dias",
+      "pattern": "明天 / 明年",
+      "sentence": "她明天去书店。",
+      "sentencePinyin": "Tā míngtiān qù shūdiàn.",
+      "sentenceMeaning": "Ela vai à livraria amanhã."
+    },
+    {
+      "word": "后天",
+      "pinyin": "hòutiān",
+      "meaning": "depois de amanhã",
+      "section": "dias",
+      "pattern": "后天 / 后年",
+      "sentence": "后天我们去饭店。",
+      "sentencePinyin": "Hòutiān wǒmen qù fàndiàn.",
+      "sentenceMeaning": "Depois de amanhã vamos ao restaurante."
+    },
+    {
+      "word": "前年",
+      "pinyin": "qiánnián",
+      "meaning": "anteano / dois anos atrás",
+      "section": "anos",
+      "pattern": "前年 → 去年 → 今年 → 明年 → 后年",
+      "sentence": "前年我去了中国。",
+      "sentencePinyin": "Qiánnián wǒ qù le Zhōngguó.",
+      "sentenceMeaning": "Há dois anos fui à China."
+    },
+    {
+      "word": "去年",
+      "pinyin": "qùnián",
+      "meaning": "ano passado",
+      "section": "anos",
+      "pattern": "去年",
+      "sentence": "去年他在广东打工。",
+      "sentencePinyin": "Qùnián tā zài Guǎngdōng dǎgōng.",
+      "sentenceMeaning": "No ano passado ele trabalhava em Guangdong."
+    },
+    {
+      "word": "今年",
+      "pinyin": "jīnnián",
+      "meaning": "este ano",
+      "section": "anos",
+      "pattern": "今年",
+      "sentence": "今年我想学汉语。",
+      "sentencePinyin": "Jīnnián wǒ xiǎng xué Hànyǔ.",
+      "sentenceMeaning": "Este ano quero estudar chinês."
+    },
+    {
+      "word": "明年",
+      "pinyin": "míngnián",
+      "meaning": "ano que vem",
+      "section": "anos",
+      "pattern": "明年",
+      "sentence": "明年我去北京。",
+      "sentencePinyin": "Míngnián wǒ qù Běijīng.",
+      "sentenceMeaning": "No ano que vem vou a Pequim."
+    },
+    {
+      "word": "后年",
+      "pinyin": "hòunián",
+      "meaning": "daqui a dois anos",
+      "section": "anos",
+      "pattern": "后年",
+      "sentence": "后年我们结婚。",
+      "sentencePinyin": "Hòunián wǒmen jiéhūn.",
+      "sentenceMeaning": "Daqui a dois anos nos casamos."
+    },
+    {
+      "word": "上个月",
+      "pinyin": "shàng ge yuè",
+      "meaning": "mês passado",
+      "section": "meses",
+      "pattern": "上个月 / 上个星期",
+      "sentence": "上个月我很忙。",
+      "sentencePinyin": "Shàng ge yuè wǒ hěn máng.",
+      "sentenceMeaning": "No mês passado eu estava muito ocupado."
+    },
+    {
+      "word": "这个月",
+      "pinyin": "zhè ge yuè",
+      "meaning": "este mês",
+      "section": "meses",
+      "pattern": "这个月 / 这个星期",
+      "sentence": "这个月有考试。",
+      "sentencePinyin": "Zhè ge yuè yǒu kǎoshì.",
+      "sentenceMeaning": "Este mês tem prova."
+    },
+    {
+      "word": "下个月",
+      "pinyin": "xià ge yuè",
+      "meaning": "mês que vem",
+      "section": "meses",
+      "pattern": "下个月 / 下个星期 / 下下个",
+      "sentence": "下个月我去旅游。",
+      "sentencePinyin": "Xià ge yuè wǒ qù lǚyóu.",
+      "sentenceMeaning": "No mês que vem vou viajar."
+    },
+    {
+      "word": "上周",
+      "pinyin": "shàngzhōu",
+      "meaning": "semana passada",
+      "section": "semana",
+      "pattern": "上周 / 上个星期",
+      "sentence": "上周我没上课。",
+      "sentencePinyin": "Shàngzhōu wǒ méi shàngkè.",
+      "sentenceMeaning": "Na semana passada não tive aula."
+    },
+    {
+      "word": "下周",
+      "pinyin": "xiàzhōu",
+      "meaning": "semana que vem",
+      "section": "semana",
+      "pattern": "下周 / 下个星期",
+      "sentence": "下周见！",
+      "sentencePinyin": "Xiàzhōu jiàn!",
+      "sentenceMeaning": "Até a semana que vem!"
+    },
+    {
+      "word": "周末",
+      "pinyin": "zhōumò",
+      "meaning": "fim de semana",
+      "section": "semana",
+      "pattern": "这周末 / 上周末 / 下周末",
+      "sentence": "这周末我太忙了。",
+      "sentencePinyin": "Zhè zhōumò wǒ tài máng le.",
+      "sentenceMeaning": "Este fim de semana estou ocupado demais."
+    },
+    {
+      "word": "星期",
+      "pinyin": "xīngqī",
+      "meaning": "semana",
+      "section": "semana",
+      "pattern": "星期一…星期日",
+      "sentence": "星期三我要上班。",
+      "sentencePinyin": "Xīngqīsān wǒ yào shàngbān.",
+      "sentenceMeaning": "Na quarta eu trabalho."
+    },
+    {
+      "word": "早上",
+      "pinyin": "zǎoshang",
+      "meaning": "de manhã",
+      "section": "partes do dia",
+      "pattern": "早上 / 上午 / 中午 / 下午 / 晚上",
+      "sentence": "我早上七点起床。",
+      "sentencePinyin": "Wǒ zǎoshang qī diǎn qǐchuáng.",
+      "sentenceMeaning": "Acordo às sete da manhã."
+    },
+    {
+      "word": "上午",
+      "pinyin": "shàngwǔ",
+      "meaning": "manhã (período)",
+      "section": "partes do dia",
+      "pattern": "上午",
+      "sentence": "上午我有课。",
+      "sentencePinyin": "Shàngwǔ wǒ yǒu kè.",
+      "sentenceMeaning": "De manhã eu tenho aula."
+    },
+    {
+      "word": "中午",
+      "pinyin": "zhōngwǔ",
+      "meaning": "meio-dia",
+      "section": "partes do dia",
+      "pattern": "中午",
+      "sentence": "中午我们吃饭吧。",
+      "sentencePinyin": "Zhōngwǔ wǒmen chīfàn ba.",
+      "sentenceMeaning": "Ao meio-dia vamos comer."
+    },
+    {
+      "word": "下午",
+      "pinyin": "xiàwǔ",
+      "meaning": "tarde",
+      "section": "partes do dia",
+      "pattern": "下午",
+      "sentence": "下午见。",
+      "sentencePinyin": "Xiàwǔ jiàn.",
+      "sentenceMeaning": "Até à tarde."
+    },
+    {
+      "word": "晚上",
+      "pinyin": "wǎnshang",
+      "meaning": "à noite",
+      "section": "partes do dia",
+      "pattern": "晚上",
+      "sentence": "晚上我不出去。",
+      "sentencePinyin": "Wǎnshang wǒ bù chūqù.",
+      "sentenceMeaning": "À noite eu não saio."
+    },
+    {
+      "word": "白天",
+      "pinyin": "báitiān",
+      "meaning": "de dia",
+      "section": "partes do dia",
+      "pattern": "白天 / 晚上",
+      "sentence": "白天我要在公司工作。",
+      "sentencePinyin": "Báitiān wǒ yào zài gōngsī gōngzuò.",
+      "sentenceMeaning": "De dia trabalho na empresa."
+    },
+    {
+      "word": "春天",
+      "pinyin": "chūntiān",
+      "meaning": "primavera",
+      "section": "estações",
+      "pattern": "春夏秋冬",
+      "sentence": "春天天气很好。",
+      "sentencePinyin": "Chūntiān tiānqì hěn hǎo.",
+      "sentenceMeaning": "Na primavera o tempo está muito bom."
+    },
+    {
+      "word": "夏天",
+      "pinyin": "xiàtiān",
+      "meaning": "verão",
+      "section": "estações",
+      "pattern": "夏天",
+      "sentence": "夏天很热。",
+      "sentencePinyin": "Xiàtiān hěn rè.",
+      "sentenceMeaning": "No verão faz muito calor."
+    },
+    {
+      "word": "秋天",
+      "pinyin": "qiūtiān",
+      "meaning": "outono",
+      "section": "estações",
+      "pattern": "秋天",
+      "sentence": "秋天凉快。",
+      "sentencePinyin": "Qiūtiān liángkuai.",
+      "sentenceMeaning": "No outono é fresco."
+    },
+    {
+      "word": "冬天",
+      "pinyin": "dōngtiān",
+      "meaning": "inverno",
+      "section": "estações",
+      "pattern": "冬天",
+      "sentence": "冬天下雪了。",
+      "sentencePinyin": "Dōngtiān xià xuě le.",
+      "sentenceMeaning": "No inverno nevou."
+    },
+    {
+      "word": "季节",
+      "pinyin": "jìjié",
+      "meaning": "estação (do ano)",
+      "section": "estações",
+      "pattern": "季节",
+      "sentence": "你喜欢哪个季节？",
+      "sentencePinyin": "Nǐ xǐhuan nǎ ge jìjié?",
+      "sentenceMeaning": "Qual estação você gosta?"
+    },
+    {
+      "word": "现在",
+      "pinyin": "xiànzài",
+      "meaning": "agora",
+      "section": "relativo",
+      "pattern": "现在",
+      "sentence": "现在几点？",
+      "sentencePinyin": "Xiànzài jǐ diǎn?",
+      "sentenceMeaning": "Que horas são agora?"
+    },
+    {
+      "word": "刚才",
+      "pinyin": "gāngcái",
+      "meaning": "agora há pouco",
+      "section": "relativo",
+      "pattern": "刚才",
+      "sentence": "刚才下雨了。",
+      "sentencePinyin": "Gāngcái xià yǔ le.",
+      "sentenceMeaning": "Há pouco choveu."
+    },
+    {
+      "word": "以前",
+      "pinyin": "yǐqián",
+      "meaning": "antes / no passado",
+      "section": "relativo",
+      "pattern": "以前 / 以后",
+      "sentence": "以前我住在上海。",
+      "sentencePinyin": "Yǐqián wǒ zhù zài Shànghǎi.",
+      "sentenceMeaning": "Antes eu morava em Xangai."
+    },
+    {
+      "word": "以后",
+      "pinyin": "yǐhòu",
+      "meaning": "depois / no futuro",
+      "section": "relativo",
+      "pattern": "以后",
+      "sentence": "以后再说。",
+      "sentencePinyin": "Yǐhòu zài shuō.",
+      "sentenceMeaning": "Falamos depois."
+    },
+    {
+      "word": "时候",
+      "pinyin": "shíhou",
+      "meaning": "momento / quando",
+      "section": "relativo",
+      "pattern": "…的时候",
+      "sentence": "过年的时候我去拜年。",
+      "sentencePinyin": "Guònián de shíhou wǒ qù bàinián.",
+      "sentenceMeaning": "No Ano Novo vou cumprimentar a família."
+    },
+    {
+      "word": "一会儿",
+      "pinyin": "yíhuìr",
+      "meaning": "um momento",
+      "section": "relativo",
+      "pattern": "一会儿",
+      "sentence": "等一会儿。",
+      "sentencePinyin": "Děng yíhuìr.",
+      "sentenceMeaning": "Espera um momento."
+    },
+    {
+      "word": "天气",
+      "pinyin": "tiānqì",
+      "meaning": "tempo (clima)",
+      "section": "clima",
+      "pattern": "天气",
+      "sentence": "今天天气真好。",
+      "sentencePinyin": "Jīntiān tiānqì zhēn hǎo.",
+      "sentenceMeaning": "Hoje o tempo está realmente bom."
+    }
+  ]
+}

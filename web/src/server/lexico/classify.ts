@@ -17,13 +17,16 @@ const LLM_API_TOKEN = process.env.LLM_API_TOKEN;
 
 /** Keep in sync with web/scripts/lexico-rotation-config.mjs */
 const ROTATION_CATEGORIES = [
-  { id: "basics", title: "Básicos: números, tempo e perguntas" },
+  { id: "basics", title: "Básicos: números e perguntas" },
   { id: "people", title: "Pessoas, família e pronomes" },
   { id: "places_world", title: "Lugares, países e movimento" },
   { id: "food", title: "Frutas e bebidas" },
   { id: "descriptions", title: "Cores e qualidades" },
   { id: "verbs", title: "Verbos, gostos e preferências" },
   { id: "grammar_bits", title: "Partículas e revisão essencial" },
+  { id: "weather", title: "Tempo, clima e calendário" },
+  { id: "health", title: "Saúde e corpo" },
+  { id: "study", title: "Estudo e escola" },
 ] as const;
 
 export type LexicoCategoryId = (typeof ROTATION_CATEGORIES)[number]["id"];

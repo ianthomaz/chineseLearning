@@ -121,9 +121,11 @@ Instala nginx (`learnchinese.today` → `127.0.0.1:34827`), faz staging de `serv
 | 4 | `DEPLOY_PROD_RESTART=1` no upload **ou** `pm2 reload` manual |
 | 5 | `cd web && npm run remote:handshake` |
 
-Overrides: `DEPLOY_PROD_HOST`, `DEPLOY_PROD_DIR`, `DEPLOY_PROD_RESTART=1`, `DEPLOY_PROD_SKIP_NPM_CI=1`.
+Overrides: `DEPLOY_PROD_HOST`, `DEPLOY_PROD_DIR`, `DEPLOY_PROD_RESTART=1`.
 
-**Sobe:** `.next/`, `data/app-library/`, `public/ktv/`. **Não sobe:** `*.sqlite` (preservado no servidor).
+**Remoto:** upload **não** corre `npm ci` nem `next build` (default). Dependências e build são só no Mac. Só em bootstrap consciente: `DEPLOY_PROD_FORCE_NPM_CI=1` (pode OOM a itcsVM3 — evitar).
+
+**Sobe:** `.next/`, `data/app-library/`, `public/ktv/`. **Não sobe:** `*.sqlite` (preservado no servidor), `node_modules` (fica o que já está no servidor).
 
 ### Cloudflare DNS (resumo)
 

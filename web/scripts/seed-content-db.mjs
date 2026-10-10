@@ -502,9 +502,10 @@ function seedContextDecks(db) {
 
 /**
  * Unified practice/widget pool → lexico_entries.
- * Sources (no book): vocab_entries (blocks) + context_deck_cards + lexicon_global.
+ * Sources: vocab_entries (blocks) + context_deck_cards + lexicon_global
+ *   + NTCSL core + HSK 2/3 core (Mandarin pool — not siloed by textbook).
  * Only words with a rotation category enter the pool (widgets show categorized only).
- * Block map wins over assignments when both exist for the same hanzi.
+ * LEXICO_CATEGORY_ASSIGNMENTS overrides the block map (one hanzi → one category).
  */
 function seedLexico(db) {
   const rebuild =
@@ -541,10 +542,10 @@ function seedLexico(db) {
     // Prefer editorial block over context/global for the same hanzi.
     if (existing && existing.priority <= candidate.priority) return;
 
-    let rotationCategoryId = candidate.rotationCategoryId ?? null;
-    if (!rotationCategoryId) {
-      rotationCategoryId = LEXICO_CATEGORY_ASSIGNMENTS[hanzi] ?? null;
-    }
+    let rotationCategoryId =
+      LEXICO_CATEGORY_ASSIGNMENTS[hanzi] ??
+      candidate.rotationCategoryId ??
+      null;
     if (!rotationCategoryId) {
       // Already covered by a higher-priority source — not a real gap.
       if (existing) return;
@@ -665,6 +666,31 @@ function seedLexico(db) {
     }
   }
 
+  // 5) HSK Standard Course 2+3 词语总表 (unified Mandarin lexicon — not a book silo)
+  const hskCorePath = join(
+    REPO_ROOT,
+    "OrganizeVocabulary_books",
+    "hsk-lexico-core.json",
+  );
+  if (existsSync(hskCorePath)) {
+    const hsk = readJson(hskCorePath);
+    for (const row of hsk.entries ?? []) {
+      const hanzi = (row.hanzi || "").trim();
+      const assigned = LEXICO_CATEGORY_ASSIGNMENTS[hanzi] ?? row.category ?? null;
+      consider({
+        id: `hsk23-${hanzi}`,
+        hanzi,
+        pinyin: row.pinyin,
+        translation: row.translation,
+        sourceBlockId: 0,
+        sourceBlockTitle: "hsk-standard-2-3",
+        rotationCategoryId: assigned,
+        priority: 2,
+        from: "hsk-standard-2-3",
+      });
+    }
+  }
+
   const entries = [...byHanzi.values()].sort(
     (a, b) =>
       a.rotationCategoryId.localeCompare(b.rotationCategoryId) ||
@@ -716,7 +742,7 @@ function seedLexico(db) {
   }
 
   console.log(
-    `[seed] lexico materialized (${entries.length} entries; blocks+context+global+ntcsl; no book)`,
+    `[seed] lexico materialized (${entries.length} entries; blocks+context+global+ntcsl+hsk23; no book silo)`,
   );
   return {
     categories: ROTATION_CATEGORIES.length,

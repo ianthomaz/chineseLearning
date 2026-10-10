@@ -10,6 +10,11 @@ level1_primary-up/pages/
 level1_primary-up/ocr/
 level2_primary-down/pages/
 level2_primary-down/ocr/
+hsk2/pages/
+hsk2/ocr/
+hsk3/pages/
+hsk3/ocr/
+_hsk_extract_work/
 
 # Extraction / rebuild tooling (workflow local)
 scripts/

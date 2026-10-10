@@ -1,0 +1,2122 @@
+{
+  "meta": {
+    "source": "HSK标准教程 2+3",
+    "maxHanziLength": 3,
+    "count": 185,
+    "note": "Seed pool."
+  },
+  "entries": [
+    {
+      "hanzi": "一直",
+      "pinyin": "yìzhí",
+      "translation": "straight; continuously",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "不错",
+      "pinyin": "bùcuò",
+      "translation": "bicuo adj. pretty good",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "事情",
+      "pinyin": "shìqíng",
+      "translation": "to wait, to await",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "但是",
+      "pinyin": "dànshì",
+      "translation": "you yisi interesting, fun",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "出院",
+      "pinyin": "chūyuàn",
+      "translation": "chu yuan to leave hospital, to",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "别",
+      "pinyin": "bié",
+      "translation": "A: Stop reading the newspaper. The doctor said you",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "千",
+      "pinyin": "qiān",
+      "translation": "Zhe shi jintian zdoshang de baozhi ma？",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "吧",
+      "pinyin": "ba",
+      "translation": "yu n. fish",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "告诉",
+      "pinyin": "gàosù",
+      "translation": "again, once more",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "唱歌",
+      "pinyin": "chànggē",
+      "translation": "chang ge v. to sing",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "大家",
+      "pinyin": "dàjiā",
+      "translation": "dajia pron. all, everybody",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "女",
+      "pinyin": "nǚ",
+      "translation": "nt adj. woman, female",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "好吃",
+      "pinyin": "hǎochī",
+      "translation": "hdochi adj. delicious, yummy",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "妻子",
+      "pinyin": "qīzǐ",
+      "translation": "qizi n. wife",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "孩子",
+      "pinyin": "háizi",
+      "translation": "haizi n. child, kid",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "完",
+      "pinyin": "wán",
+      "translation": "to finish, to end",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "对",
+      "pinyin": "duì",
+      "translation": "versus; against",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "就",
+      "pinyin": "jiù",
+      "translation": "waimian n. outside",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "帮助",
+      "pinyin": "bāngzhù",
+      "translation": "ke n. class,lesson",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "得",
+      "pinyin": "dé",
+      "translation": "de part. used afier a verb or an",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "手",
+      "pinyin": "shǒu",
+      "translation": "B: I know her name. Her name is Yang|",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "手表",
+      "pinyin": "shǒubiǎo",
+      "translation": "shoubido n. watch",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "报纸",
+      "pinyin": "bàozhǐ",
+      "translation": "baozhi n. newspaper",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "拿",
+      "pinyin": "ná",
+      "translation": "Xiaoxiao. Yang is her family name",
+      "category": null,
+      "hskLevels": [
+        2,
+        3
+      ],
+      "sources": [
+        "hsk2",
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "更",
+      "pinyin": "gèng",
+      "translation": "more, even more",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "最",
+      "pinyin": "zuì",
+      "translation": "most; -est",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "次",
+      "pinyin": "cì",
+      "translation": "occurrence; time",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "欢迎",
+      "pinyin": "huānyíng",
+      "translation": "to marry, to get",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "比",
+      "pinyin": "bǐ",
+      "translation": "than， （superior or inferior） to",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "洗",
+      "pinyin": "xǐ",
+      "translation": "again, once more morning husband",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "火车站",
+      "pinyin": "huǒchēzhàn",
+      "translation": "ri n. day, date",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "牛奶",
+      "pinyin": "niúnǎi",
+      "translation": "niunai n. milk",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "玩儿",
+      "pinyin": "wánér",
+      "translation": "wanr v. to play, to have fun",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "男",
+      "pinyin": "nán",
+      "translation": "nan adj. man, male",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "穿",
+      "pinyin": "chuān",
+      "translation": "to wear; to put on (clothes)",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "等",
+      "pinyin": "děng",
+      "translation": "B: Please wait for me for a minute, will you? Professor",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "粉",
+      "pinyin": "fěn",
+      "translation": "3, to assist good",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "红色",
+      "pinyin": "hóngsè",
+      "translation": "re hospital, to be discharged lospital",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "经常",
+      "pinyin": "jīngcháng",
+      "translation": "拼音课文 Texts in Pimyin",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "translation": "shengri n. birthday",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "自行车",
+      "pinyin": "zìxíngchē",
+      "translation": "men n. door, gate",
+      "category": null,
+      "hskLevels": [
+        2,
+        3
+      ],
+      "sources": [
+        "hsk2",
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "虽然",
+      "pinyin": "suīrán",
+      "translation": "suiran conj. although, though",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "走",
+      "pinyin": "zǒu",
+      "translation": "to walk; to go",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "起床",
+      "pinyin": "qǐchuáng",
+      "translation": "sheng bing v. to fall ill, to be sick",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "路口",
+      "pinyin": "lùkǒu",
+      "translation": "Dg，crossroads",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "身体",
+      "pinyin": "shēntǐ",
+      "translation": "shenti n. body",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "过",
+      "pinyin": "guò",
+      "translation": "to spend, to pass",
+      "category": null,
+      "hskLevels": [
+        2,
+        3
+      ],
+      "sources": [
+        "hsk2",
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "运动",
+      "pinyin": "yùndòng",
+      "translation": "sport; to take physical",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "还",
+      "pinyin": "hái",
+      "translation": "hai adv. passably, fairly, rather",
+      "category": null,
+      "hskLevels": [
+        2,
+        3
+      ],
+      "sources": [
+        "hsk2",
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "进",
+      "pinyin": "jìn",
+      "translation": "to enter; to score (a goal)",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "远",
+      "pinyin": "yuǎn",
+      "translation": "far, distant",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "送",
+      "pinyin": "sòng",
+      "translation": "song v. to send, to deliver",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "铅笔",
+      "pinyin": "qiānbǐ",
+      "translation": "A: What about the girl with a pencil in",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "问题",
+      "pinyin": "wèntí",
+      "translation": "question; problem",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "hsk2"
+      ]
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "translation": "apply (medicine)",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "东",
+      "pinyin": "dōng",
+      "translation": "east; east side (东边)",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "中介",
+      "pinyin": "zhōngjiè",
+      "translation": "ermediary, agent",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "习惯",
+      "pinyin": "xíguàn",
+      "translation": "/n. be used to",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "元",
+      "pinyin": "yuán",
+      "translation": "store 6",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "先",
+      "pinyin": "xiān",
+      "translation": "first, in advance",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "刚才",
+      "pinyin": "gāngcái",
+      "translation": "just now A：你刚才去哪儿了？ B：我刚才在睡觉。",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "办公室",
+      "pinyin": "bàngōngshì",
+      "translation": "Mrs.， madam",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "动物",
+      "pinyin": "dòngwù",
+      "translation": "V. m. v.",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "努力",
+      "pinyin": "nǔlì",
+      "translation": "make efforts (to do sth)一起努力",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "包",
+      "pinyin": "bāo",
+      "translation": "luggage, suitcase",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "又",
+      "pinyin": "yòu",
+      "translation": "match, competition",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "句",
+      "pinyin": "jù",
+      "translation": "house, building",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "只",
+      "pinyin": "zhǐ",
+      "translation": "only, solely",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "司机",
+      "pinyin": "sījī",
+      "translation": "1. lv.",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "周",
+      "pinyin": "zhōu",
+      "translation": "Zhou, a surname",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "周明",
+      "pinyin": "zhōumíng",
+      "translation": "Zhou Ming, name of a person",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "哪里",
+      "pinyin": "nǎlǐ",
+      "translation": "（honorific term） your sing and dance",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "哭",
+      "pinyin": "kū",
+      "translation": "V.to Cry",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "啊",
+      "pinyin": "a",
+      "translation": "[used to express sudden realization] ah",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "地铁",
+      "pinyin": "dìtiě",
+      "translation": "meeting，",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "坏",
+      "pinyin": "huài",
+      "translation": "broken, ruined",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "多么",
+      "pinyin": "duōme",
+      "translation": "very, to a",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "奶奶",
+      "pinyin": "nǎinǎi",
+      "translation": "gift, present",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "子小夫",
+      "pinyin": "zixiǎofū",
+      "translation": "el, Dane or a person",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "完成",
+      "pinyin": "wánchéng",
+      "translation": "V.",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "小丽",
+      "pinyin": "xiǎolì",
+      "translation": "Xiaoli, name of a person",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "小刚",
+      "pinyin": "xiǎogāng",
+      "translation": "Xiaogang, name of a person",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "小明",
+      "pinyin": "xiǎomíng",
+      "translation": "Xiaoming, name of a person",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "层",
+      "pinyin": "céng",
+      "translation": "floor (of a building)",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "带",
+      "pinyin": "dài",
+      "translation": "to bring; to take",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "年级",
+      "pinyin": "niánjí",
+      "translation": "grade, year",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "怎么办",
+      "pinyin": "zěnmebàn",
+      "translation": "what to do, how to do",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "情况",
+      "pinyin": "qíngkuàng",
+      "translation": "cordition, situation",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "感兴趣",
+      "pinyin": "gǎnxìngqù",
+      "translation": "time, long",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "感冒",
+      "pinyin": "gǎnmào",
+      "translation": "Zhang, a surname",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "成绩",
+      "pinyin": "chéngjì",
+      "translation": "grade,performance，",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "打算",
+      "pinyin": "dǎsuàn",
+      "translation": "/v. plan; to intend",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "把",
+      "pinyin": "bǎ",
+      "translation": "to take, to fetch",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "担心",
+      "pinyin": "dānxīn",
+      "translation": "V. to worry",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "换",
+      "pinyin": "huàn",
+      "translation": "old, used，",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "搬",
+      "pinyin": "bān",
+      "translation": "to take along, to",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "放",
+      "pinyin": "fàng",
+      "translation": "set off (fireworks)",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "放心",
+      "pinyin": "fàngxīn",
+      "translation": "set one’s mind at rest",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "最近",
+      "pinyin": "zuìjìn",
+      "translation": "lately, recently",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "树",
+      "pinyin": "shù",
+      "translation": "V. adj. adj. conj. n.",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "根据",
+      "pinyin": "gēnjù",
+      "translation": "according to，",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "注意",
+      "pinyin": "zhùyì",
+      "translation": "V. to pay attention to",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "洗手间",
+      "pinyin": "xǐshǒujiān",
+      "translation": "cola, Coke",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "洗澡",
+      "pinyin": "xǐzǎo",
+      "translation": "Cp.",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "灯",
+      "pinyin": "dēng",
+      "translation": "to borrow, to lend",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "照",
+      "pinyin": "zhào",
+      "translation": "Mid-Autumn Festival",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "爱好",
+      "pinyin": "àihào",
+      "translation": "hobby, interest",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "生活",
+      "pinyin": "shēnghuó",
+      "translation": "general，",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "电梯",
+      "pinyin": "diàntī",
+      "translation": "1. adj. m. v. adv. adj.",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "画",
+      "pinyin": "huà",
+      "translation": "/n. to draw，",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "着急",
+      "pinyin": "zháojí",
+      "translation": "worried, anxious",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "矮",
+      "pinyin": "ǎi",
+      "translation": "height, stature",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "离开",
+      "pinyin": "líkāi",
+      "translation": "| kai",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "种",
+      "pinyin": "zhǒng",
+      "translation": "kind, type",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "站",
+      "pinyin": "zhàn",
+      "translation": "clever, smart",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "绿",
+      "pinyin": "lǜ",
+      "translation": "to put, to place",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "船",
+      "pinyin": "chuán",
+      "translation": "boat, ship",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "蛋糕",
+      "pinyin": "dàngāo",
+      "translation": "① 2.99元可以写成 “2元9角（jido）",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "行李箱",
+      "pinyin": "xínglǐxiāng",
+      "translation": "1. adj.",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "西",
+      "pinyin": "xī",
+      "translation": "west; west side (西边)",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "认",
+      "pinyin": "rèn",
+      "translation": "to go up, to ascend",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "试",
+      "pinyin": "shì",
+      "translation": "V.tO Ury",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "附近",
+      "pinyin": "fùjìn",
+      "translation": "intermediary, agent",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "难",
+      "pinyin": "nán",
+      "translation": "hurt, painful",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "香蕉",
+      "pinyin": "xiāngjiāo",
+      "translation": "拼音课文 Texts in Pinvin",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "骑",
+      "pinyin": "qí",
+      "translation": "n. n.",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "黄河",
+      "pinyin": "huánghé",
+      "translation": "Yellow River，",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "hsk3"
+      ]
+    },
+    {
+      "hanzi": "也",
+      "pinyin": "yě",
+      "translation": "to travel, to take",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "一起",
+      "pinyin": "yìqǐ",
+      "translation": "yiqi adv. together",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "问",
+      "pinyin": "wèn",
+      "translation": "jie v. to receive, to take，",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "件",
+      "pinyin": "jiàn",
+      "translation": "jian m. （used for clothes",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "教室",
+      "pinyin": "jiàoshì",
+      "translation": "jicoshi n. classroom",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "路",
+      "pinyin": "lù",
+      "translation": "road, path, way",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "translation": "A: Call him after we come back. What's the matter？",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "错",
+      "pinyin": "cuò",
+      "translation": "cuo adj. wrong,incorrect",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "右边",
+      "pinyin": "yòubiān",
+      "translation": "youbian n. right, right side",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "着",
+      "pinyin": "zhe",
+      "translation": "zhe part. used to indicate a",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "南",
+      "pinyin": "nán",
+      "translation": "nan （fang）",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "北方",
+      "pinyin": "běifāng",
+      "translation": "north, northern",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "条",
+      "pinyin": "tiáo",
+      "translation": "used for pants，",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "客人",
+      "pinyin": "kèrén",
+      "translation": "serious, earnest",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "春",
+      "pinyin": "chūn",
+      "translation": "chin （tian）",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "夏",
+      "pinyin": "xià",
+      "translation": "xia （tian）",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "裙子",
+      "pinyin": "qúnzi",
+      "translation": "dress, Skirt",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "越",
+      "pinyin": "yuè",
+      "translation": "more, to a",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "眼镜",
+      "pinyin": "yǎnjìng",
+      "translation": "glasses, spectacles",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "清楚",
+      "pinyin": "qīngchǔ",
+      "translation": "clear, distinct",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "聊天",
+      "pinyin": "liáotiān",
+      "translation": "liao tian （r）",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "银行",
+      "pinyin": "yínháng",
+      "translation": "before, ago",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "一样",
+      "pinyin": "yīyàng",
+      "translation": "same, as...as.•",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "一定",
+      "pinyin": "yídìng",
+      "translation": "to ease one's mind，",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "比较",
+      "pinyin": "bǐjiào",
+      "translation": "fairly, rather",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "影响",
+      "pinyin": "yǐngxiǎng",
+      "translation": "拼音课文 Texts in Pinyin",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "数学",
+      "pinyin": "shùxué",
+      "translation": "P.E.， sports",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "笔记本",
+      "pinyin": "bǐjìběn",
+      "translation": "bijiben （dianndo）",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "起飞",
+      "pinyin": "qǐfēi",
+      "translation": "（of an aircraft） to",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "黑板",
+      "pinyin": "hēibǎn",
+      "translation": "拼音课文 Texts in Pinsin",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "过去",
+      "pinyin": "guòqù",
+      "translation": "to come across，",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "冰箱",
+      "pinyin": "bīngxiāng",
+      "translation": "to clean, to sweep",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "节目",
+      "pinyin": "jiémù",
+      "translation": "xi z0o",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "发",
+      "pinyin": "fā",
+      "translation": "level, standard",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "极",
+      "pinyin": "jí",
+      "translation": "（了）j（le）",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "文化",
+      "pinyin": "wénhuà",
+      "translation": "to hold （a meeting，",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "认为",
+      "pinyin": "rènwéi",
+      "translation": "if, in case",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "头发",
+      "pinyin": "tóufà",
+      "translation": "hat, cap",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "检查",
+      "pinyin": "jiǎnchá",
+      "translation": "to check, to",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "词语",
+      "pinyin": "cíyǔ",
+      "translation": "word,expression",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "后来",
+      "pinyin": "hòulái",
+      "translation": "later, afterwards",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "决定",
+      "pinyin": "juédìng",
+      "translation": "way, approach",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "冬",
+      "pinyin": "dōng",
+      "translation": "dong （tian）",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "渴",
+      "pinyin": "kě",
+      "translation": "拼音课文 Texts in Pinyin",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "不但",
+      "pinyin": "bùdàn",
+      "translation": "bidan-••••erqie•",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "关于",
+      "pinyin": "guānyú",
+      "translation": "about，",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "国家",
+      "pinyin": "guójiā",
+      "translation": "country, nation",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "奇径",
+      "pinyin": "qíjìng",
+      "translation": "strange, odd",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "地",
+      "pinyin": "dì",
+      "translation": "拼音课文 Texts in Pinin",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "蓝",
+      "pinyin": "lán",
+      "translation": "such as paper，",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "秋",
+      "pinyin": "qiū",
+      "translation": "（天）qit （tian）",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "经过",
+      "pinyin": "jīngguò",
+      "translation": "拼音课文 Texts in Pinyin",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "关心",
+      "pinyin": "guānxīn",
+      "translation": "to care for, to",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "只有",
+      "pinyin": "zhǐyǒu",
+      "translation": "zhiyou-....cdi-",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "真正",
+      "pinyin": "zhēnzhèng",
+      "translation": "really, truly",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words-ocr"
+      ]
+    },
+    {
+      "hanzi": "药",
+      "pinyin": "yào",
+      "translation": "yao n. medicine,drug",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words"
+      ]
+    },
+    {
+      "hanzi": "可以",
+      "pinyin": "kěyǐ",
+      "translation": "keyi adj. not bad",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words"
+      ]
+    },
+    {
+      "hanzi": "羊肉",
+      "pinyin": "yángròu",
+      "translation": "yangrou n. mutton",
+      "category": null,
+      "hskLevels": [],
+      "sources": [
+        "hsk-new-words"
+      ]
+    }
+  ]
+}

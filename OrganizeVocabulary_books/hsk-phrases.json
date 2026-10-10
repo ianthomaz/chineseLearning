@@ -1,0 +1,3765 @@
+{
+  "meta": {
+    "note": "HSK2+3 didactic phrases (HSK3 uses named speakers 小丽/妈妈…).",
+    "count": 469,
+    "withTranslation": 57,
+    "byLevel": {
+      "2": 102,
+      "3": 367
+    }
+  },
+  "phrases": [
+    {
+      "hanzi": "下午我们一起去踢足球吧。",
+      "pinyin": "xià wǔ wǒ men yì qǐ qù tī zú qiú ba 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 1,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "九月去北京旅游最好。",
+      "pinyin": "jiǔ yuè qù běi jīng lǚ yóu zuì hǎo 。",
+      "translation": "September is the best time to visit Beijing.",
+      "hskLevel": 2,
+      "lesson": 1,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "九月的北京天气不冷也不热。",
+      "pinyin": "jiǔ yuè de běi jīng tiān qì bù lěng yě bù rè 。",
+      "translation": "Because it's neither cold nor hot there in September.",
+      "hskLevel": 2,
+      "lesson": 1,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "你喜欢什么运动？",
+      "pinyin": "nǐ xǐ huān shén me yùn dòng ？",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 1,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "我最喜欢踢足球。",
+      "pinyin": "wǒ zuì xǐ huān tī zú qiú 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 1,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "我要去北京旅游，你觉得什么时候去最好？",
+      "pinyin": "wǒ yào qù běi jīng lǚ yóu ， nǐ jué de shén me shí hòu qù zuì hǎo ？",
+      "translation": "I'm thinking of a trip to Beijing. When do you think is the best time？",
+      "hskLevel": 2,
+      "lesson": 1,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "什么时候能出院？",
+      "pinyin": "shén me shí hòu néng chū yuàn ？",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 2,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "你很少生病，是不是喜欢运动？",
+      "pinyin": "nǐ hěn shǎo shēng bìng ， shì bú shì xǐ huān yùn dòng ？",
+      "translation": "You seldom get sick. I guess you like doing sports, don't you？",
+      "hskLevel": 2,
+      "lesson": 2,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "你每天几点起床？",
+      "pinyin": "nǐ měi tiān jǐ diǎn qǐ chuáng ？",
+      "translation": "What time do you get up？",
+      "hskLevel": 2,
+      "lesson": 2,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "医生说下个星期。",
+      "pinyin": "yī shēng shuō xià gè xīng qī 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 2,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "吃了。现在好多了。",
+      "pinyin": "chī le 。 xiàn zài hǎo duō le 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 2,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "吃药了吗？现在身体怎么样？",
+      "pinyin": "chī yào le ma ？ xiàn zài shēn tǐ zěn me yàng ？",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 2,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "我每天六点起床。",
+      "pinyin": "wǒ měi tiān liù diǎn qǐ chuáng 。",
+      "translation": "Iget up at six every day.",
+      "hskLevel": 2,
+      "lesson": 2,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "是啊，我每天早上都要出去跑步。",
+      "pinyin": "shì a ， wǒ měi tiān zǎo shàng dōu yào chū qù pǎo bù 。",
+      "translation": "Yes. I go out for a jog every morning.",
+      "hskLevel": 2,
+      "lesson": 2,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "不是我的。是我爸爸的。",
+      "pinyin": "bú shì wǒ de 。 shì wǒ bà bà de 。",
+      "translation": "No, it isn't. It's my father's.",
+      "hskLevel": 2,
+      "lesson": 3,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "不是，是昨天的。",
+      "pinyin": "bú shì ， shì zuó tiān de 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 3,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "你听，是不是送报纸的来了？",
+      "pinyin": "nǐ tīng ， shì bú shì sòng bào zhǐ de lái le ？",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 3,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "我看一下。不是，是送牛奶的。",
+      "pinyin": "wǒ kàn yī xià 。 bú shì ， shì sòng niú nǎi de 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 3,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "这块手表是你的吗？",
+      "pinyin": "zhè kuài shǒu biǎo shì nǐ de ma ？",
+      "translation": "Is this watch yours？",
+      "hskLevel": 2,
+      "lesson": 3,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "这是今天早上的报纸吗？",
+      "pinyin": "zhè shì jīn tiān zǎo shàng de bào zhǐ ma ？",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 3,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "不知道，是儿子接的。",
+      "pinyin": "bù zhī dào ， shì ér zi jiē de 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 4,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "好，晚上我问一下儿子。",
+      "pinyin": "hǎo ， wǎn shàng wǒ wèn yī xià ér zi 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 4,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "对，这本书是我写的。",
+      "pinyin": "duì ， zhè běn shū shì wǒ xiě de 。",
+      "translation": "Yes. A book written by me.",
+      "hskLevel": 2,
+      "lesson": 4,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "早上有你一个电话。",
+      "pinyin": "zǎo shàng yǒu nǐ yí gè diàn huà 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 4,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "是什么？是一本书吗？",
+      "pinyin": "shì shén me ？ shì yī běn shū ma ？",
+      "translation": "What is it? Is it a book？",
+      "hskLevel": 2,
+      "lesson": 4,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "生日快乐！这是送给你的！",
+      "pinyin": "shēng rì kuài lè ！ zhè shì sòng gěi nǐ de ！",
+      "translation": "Happy birthday! This is for you.",
+      "hskLevel": 2,
+      "lesson": 4,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "就做你爱吃的鱼吧。",
+      "pinyin": "jiù zuò nǐ ài chī de yú ba 。",
+      "translation": "I'm thinking of fish, your favorite.",
+      "hskLevel": 2,
+      "lesson": 5,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "帮我看一下这件衣服怎么样。",
+      "pinyin": "bāng wǒ kàn yī xià zhè jiàn yī fú zěn me yàng 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 5,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "我不想去外面吃，我想在家吃。",
+      "pinyin": "wǒ bù xiǎng qù wài miàn chī ， wǒ xiǎng zài jiā chī 。",
+      "translation": "I don't want to eat out. I want to eat at home.",
+      "hskLevel": 2,
+      "lesson": 5,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "晚上我们去饭馆吃饭，怎么样？",
+      "pinyin": "wǎn shàng wǒ men qù fàn guǎn chī fàn ， zěn me yàng ？",
+      "translation": "Let's go to a restaurant for dinner. What do you think？",
+      "hskLevel": 2,
+      "lesson": 5,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "这件不错，就买这件吧。",
+      "pinyin": "zhè jiàn bù cuò ， jiù mǎi zhè jiàn ba 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 5,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "这件小的怎么样？",
+      "pinyin": "zhè jiàn xiǎo de zěn me yàng ？",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 5,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "那你准备做什么呢？",
+      "pinyin": "nà nǐ zhǔn bèi zuò shén me ne ？",
+      "translation": "What are you planning to cook？",
+      "hskLevel": 2,
+      "lesson": 5,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "颜色还可以，就是有点儿大。",
+      "pinyin": "yán sè hái kě yǐ ， jiù shì yǒu diǎn ér dà 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 5,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "今天的羊肉很好吃，你怎么不吃了？",
+      "pinyin": "jīn tiān de yáng ròu hěn hǎo chī ， nǐ zěn me bù chī le ？",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 6,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "你怎么知道他来了？",
+      "pinyin": "nǐ zěn me zhī dào tā lái le ？",
+      "translation": "How do you know？",
+      "hskLevel": 2,
+      "lesson": 6,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "你知道小王今天什么时候来学校吗？",
+      "pinyin": "nǐ zhī dào xiǎo wáng jīn tiān shén me shí hòu lái xué xiào ma ？",
+      "translation": "Do you know when Xiao Wang will come to school today？",
+      "hskLevel": 2,
+      "lesson": 6,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "我在门外看见他的自行车了。",
+      "pinyin": "wǒ zài mén wài kàn jiàn tā de zì xíng chē le 。",
+      "translation": "Isaw his bike outside the door.",
+      "hskLevel": 2,
+      "lesson": 6,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "来一点儿面条吧。",
+      "pinyin": "lái yì diǎn ér miàn tiáo ba 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 6,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "这个星期天天都吃羊肉，不想吃了。",
+      "pinyin": "zhè ge xīng qī tiān tiān dōu chī yáng ròu ， bù xiǎng chī le 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 6,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "那你还想吃什么？",
+      "pinyin": "nà nǐ hái xiǎng chī shén me ？",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 6,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "你现在在哪儿呢？",
+      "pinyin": "nǐ xiàn zài zài nǎ ér ne ？",
+      "translation": "Where are you now？",
+      "hskLevel": 2,
+      "lesson": 7,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "在去机场的路上。你已经到了吗？",
+      "pinyin": "zài qù jī chǎng de lù shàng 。 nǐ yǐ jīng dào le ma ？",
+      "translation": "I'm on the way to the airport. Have you arrived？",
+      "hskLevel": 2,
+      "lesson": 7,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "已经9点多了，他怎么还在学习？",
+      "pinyin": "yǐ jīng 9 diǎn duō le ， tā zěn me hái zài xué xí ？",
+      "translation": "It's after 9 o'clock. Why is he still studying？",
+      "hskLevel": 2,
+      "lesson": 7,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "我下飞机了。你还有多长时间能到这儿？",
+      "pinyin": "wǒ xià fēi jī le 。 nǐ hái yǒu duō zhǎng shí jiān néng dào zhè ér ？",
+      "translation": "I've got off the plane. How many more minutes do you need to get here？",
+      "hskLevel": 2,
+      "lesson": 7,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "明天有考试，他说今天要好好准备。",
+      "pinyin": "míng tiān yǒu kǎo shì ， tā shuō jīn tiān yào hǎo hǎo zhǔn bèi 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 7,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "没有，他还在教室学习呢。",
+      "pinyin": "méi yǒu ， tā hái zài jiào shì xué xí ne 。",
+      "translation": "No. He is still studying in the classroom.",
+      "hskLevel": 2,
+      "lesson": 7,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "今天下午我没有时间，明天下午再去吧。",
+      "pinyin": "jīn tiān xià wǔ wǒ méi yǒu shí jiān ， míng tiān xià wǔ zài qù ba 。",
+      "translation": "I'm not free this afternoon. Let's go tomorrow afternoon.",
+      "hskLevel": 2,
+      "lesson": 8,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "你想看什么电影？",
+      "pinyin": "nǐ xiǎng kàn shén me diàn yǐng ？",
+      "translation": "Which movie would you like to see？",
+      "hskLevel": 2,
+      "lesson": 8,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "你等等我，好吗？王老师让我给大卫打个电话。",
+      "pinyin": "nǐ děng děng wǒ ， hǎo ma ？ wáng lǎo shī ràng wǒ gěi dà wèi dǎ gè diàn huà 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 8,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "听说大卫病了，我想找时间去看看他。",
+      "pinyin": "tīng shuō dà wèi bìng le ， wǒ xiǎng zhǎo shí jiān qù kàn kàn tā 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 8,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "回来再打吧。找大卫有什么事情吗？",
+      "pinyin": "huí lái zài dǎ ba 。 zhǎo dà wèi yǒu shén me shì qíng ma ？",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 8,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "外边天气很好，我们出去运动运动吧！",
+      "pinyin": "wài biān tiān qì hěn hǎo ， wǒ men chū qù yùn dòng yùn dòng ba ！",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 8,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "我们下午去看电影，好吗？",
+      "pinyin": "wǒ men xià wǔ qù kàn diàn yǐng ， hǎo ma ？",
+      "translation": "Let's go to see a movie this afternoon， shall we？",
+      "hskLevel": 2,
+      "lesson": 8,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "让我想想再告诉你。",
+      "pinyin": "ràng wǒ xiǎng xiǎng zài gào sù nǐ 。",
+      "translation": "Let me think about it and Pll tell you later.",
+      "hskLevel": 2,
+      "lesson": 8,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "你好！请问张欢在吗？",
+      "pinyin": "nǐ hǎo ！ qǐng wèn zhāng huān zài ma ？",
+      "translation": "Hello! May I speak to Zhang Huan？",
+      "hskLevel": 2,
+      "lesson": 9,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "你打错了，我们这儿没有叫张欢的。",
+      "pinyin": "nǐ dǎ cuò le ， wǒ men zhè ér méi yǒu jiào zhāng huān de 。",
+      "translation": "You've got the wrong number. There isn't a person called Zhang Huan here.",
+      "hskLevel": 2,
+      "lesson": 9,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "您•从几岁开始学习跳舞？",
+      "pinyin": "nín • cóng jǐ suì kāi shǐ xué xí tiào wǔ ？",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 9,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "我女儿今年也七岁了。我希望她能跟您学跳舞，可以吗？",
+      "pinyin": "wǒ nǚ ér jīn nián yě qī suì le 。 wǒ xī wàng tā néng gēn nín xué tiào wǔ ， kě yǐ ma ？",
+      "translation": "I was seven when I danced for the first time.",
+      "hskLevel": 2,
+      "lesson": 9,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "我第一次跳舞是在七岁的时候。",
+      "pinyin": "wǒ dì yī cì tiào wǔ shì zài qī suì de shí hòu 。",
+      "translation": "At what age did you start to learn dancing？",
+      "hskLevel": 2,
+      "lesson": 9,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "没问题，非常欢迎。",
+      "pinyin": "méi wèn tí ， fēi cháng huān yíng 。",
+      "translation": "My daughter is seven now. I hope she can learn to dance from you, can she？",
+      "hskLevel": 2,
+      "lesson": 9,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "不要看电视了，明天上午还有汉语课呢。",
+      "pinyin": "bú yào kàn diàn shì le ， míng tiān shàng wǔ hái yǒu hàn yǔ kè ne 。",
+      "translation": "Stop watching TV. You'll have a Chinese class tomorrow morning.",
+      "hskLevel": 2,
+      "lesson": 10,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "别看报纸了，医生说你要多休息。",
+      "pinyin": "bié kàn bào zhǐ le ， yī shēng shuō nǐ yào duō xiū xī 。",
+      "translation": "The doctor said you should listen to me.",
+      "hskLevel": 2,
+      "lesson": 10,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "医生让你听我的。",
+      "pinyin": "yī shēng ràng nǐ tīng wǒ de 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 10,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "医生说吃药后两个小时不要喝茶。",
+      "pinyin": "yī shēng shuō chī yào hòu liǎng gè xiǎo shí bú yào hē chá 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 10,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "医生还说什么了？",
+      "pinyin": "yī shēng huán shuō shén me le ？",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 10,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "好，不看了。给我一杯茶吧。",
+      "pinyin": "hǎo ， bù kàn le 。 gěi wǒ yī bēi chá ba 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 10,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "明天的课你都准备好了吗？",
+      "pinyin": "míng tiān de kè nǐ dōu zhǔn bèi hǎo le ma ？",
+      "translation": "Are you well prepared for the lessons tomorrow？",
+      "hskLevel": 2,
+      "lesson": 10,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "看电视对学汉语有帮助。",
+      "pinyin": "kàn diàn shì duì xué hàn yǔ yǒu bāng zhù 。",
+      "translation": "Watching TV is good for Chinese learning",
+      "hskLevel": 2,
+      "lesson": 10,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "25岁，他比我大三岁。",
+      "pinyin": "2 5 suì ， tā bǐ wǒ dà sān suì 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 11,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "不是不是，我同学介绍的，昨天第一次见。",
+      "pinyin": "bú shì bú shì ， wǒ tóng xué jiè shào de ， zuó tiān dì yī cì jiàn 。",
+      "translation": "No. My classmate set me up with him. We met only yesterday.",
+      "hskLevel": 2,
+      "lesson": 11,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "什么朋友？是不是男朋友？",
+      "pinyin": "shén me péng yǒu ？ shì bú shì nán péng yǒu ？",
+      "translation": "What friend? Boyfriend？",
+      "hskLevel": 2,
+      "lesson": 11,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "左边这个看报纸的女孩子是你姐姐吗？",
+      "pinyin": "zuǒ biān zhè ge kàn bào zhǐ de nǚ hái zi shì nǐ jiě jiě ma ？",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 11,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "是，右边写字的那个人是我哥哥。",
+      "pinyin": "shì ， yòu biān xiě zì de nà ge rén shì wǒ gē gē 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 11,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "王方，昨天和你一起唱歌的人是谁？",
+      "pinyin": "wáng fāng ， zuó tiān hé nǐ yì qǐ chàng gē de rén shì shuí ？",
+      "translation": "Wang Fang, who was the guy with you in the karaoke yesterday？",
+      "hskLevel": 2,
+      "lesson": 11,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "不少了，今天吃得很好，太谢谢你了。",
+      "pinyin": "bù shǎo le ， jīn tiān chī dé hěn hǎo ， tài xiè xiè nǐ le 。",
+      "translation": "Not a little actually. I've enjoyed the meal a lot. Thank you so much.",
+      "hskLevel": 2,
+      "lesson": 12,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "不怎么样，我妻子比我做得好。",
+      "pinyin": "bù zěn me yàng ， wǒ qī zǐ bǐ wǒ zuò dé hǎo 。",
+      "translation": "Not very well. My wife is a better cook than Iam. New Word",
+      "hskLevel": 2,
+      "lesson": 12,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "你做饭做得怎么样？",
+      "pinyin": "nǐ zuò fàn zuò dé zěn me yàng ？",
+      "translation": "How well can you cook？",
+      "hskLevel": 2,
+      "lesson": 12,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "你每天早上几点起床？",
+      "pinyin": "nǐ měi tiān zǎo shàng jǐ diǎn qǐ chuáng ？",
+      "translation": "When do you get up every morning？",
+      "hskLevel": 2,
+      "lesson": 12,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "你比我早起一个小时。",
+      "pinyin": "nǐ bǐ wǒ zǎo qǐ yí gè xiǎo shí 。",
+      "translation": "You get up one hour earlier than I do.",
+      "hskLevel": 2,
+      "lesson": 12,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "再来点儿米饭吧，你吃得太少了。",
+      "pinyin": "zài lái diǎn ér mǐ fàn ba ， nǐ chī dé tài shǎo le 。",
+      "translation": "Have more rice, please. You ate too little.",
+      "hskLevel": 2,
+      "lesson": 12,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "我睡得也早，我每天晚上十点就睡觉。早睡早起身体好。",
+      "pinyin": "wǒ shuì dé yě zǎo ， wǒ měi tiān wǎn shàng shí diǎn jiù shuì jiào 。 zǎo shuì zǎo qǐ shēn tǐ hǎo 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 12,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "他出去了。你下午再来吧。",
+      "pinyin": "tā chū qù le 。 nǐ xià wǔ zài lái ba 。",
+      "translation": "He's gone out. Please come in the afternoon.",
+      "hskLevel": 2,
+      "lesson": 13,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "我知道她的名字，她姓杨，叫杨笑笑，她姐姐是我同学。",
+      "pinyin": "wǒ zhī dào tā de míng zì ， tā xìng yáng ， jiào yáng xiào xiào ， tā jiě jiě shì wǒ tóng xué 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 13,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "请问，张先生在吗？",
+      "pinyin": "qǐng wèn ， zhāng xiān shēng zài ma ？",
+      "translation": "Excuse me, is Mr. Zhang in？",
+      "hskLevel": 2,
+      "lesson": 13,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "那个手里拿着铅笔的呢？",
+      "pinyin": "nà ge shǒu lǐ ná zhe qiān bǐ de ne ？",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 13,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "那个正在说话的女孩儿是谁？",
+      "pinyin": "nà ge zhèng zài shuō huà de nǚ hái ér shì shuí ？",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 13,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "门开着呢，请进。",
+      "pinyin": "mén kāi zhe ne ， qǐng jìn 。",
+      "translation": "The door is open. Come on in.",
+      "hskLevel": 2,
+      "lesson": 13,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "你看过那个电影没有？",
+      "pinyin": "nǐ kàn guò nà ge diàn yǐng méi yǒu ？",
+      "translation": "Have you seen that movie？",
+      "hskLevel": 2,
+      "lesson": 14,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "可以，但是我女朋友也想去。",
+      "pinyin": "kě yǐ ， dàn shì wǒ nǚ péng yǒu yě xiǎng qù 。",
+      "translation": "OK. But my girlfriend also wants to go.",
+      "hskLevel": 2,
+      "lesson": 14,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "听说你去过中国，还想去吗？",
+      "pinyin": "tīng shuō nǐ qù guò zhōng guó ， hái xiǎng qù ma ？",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 14,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "好啊，到时候我给你打电话。",
+      "pinyin": "hǎo a ， dào shí hòu wǒ gěi nǐ dǎ diàn huà 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 14,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "我虽然去过好几次，但是还想再去玩儿玩儿。",
+      "pinyin": "wǒ suī rán qù guò hǎo jǐ cì ， dàn shì hái xiǎng zài qù wán ér wán ér 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 14,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "没看过，听说很有意思。",
+      "pinyin": "méi kàn guò ， tīng shuō hěn yǒu yì si 。",
+      "translation": "No.I was told it is fantastic.",
+      "hskLevel": 2,
+      "lesson": 14,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "那我们一起去吧。",
+      "pinyin": "nà wǒ men yì qǐ qù ba 。",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 14,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "那我们下个星期一起去看吧？",
+      "pinyin": "nà wǒ men xià gè xīng qī yì qǐ qù kàn ba ？",
+      "translation": "Why don't we see it together next week？",
+      "hskLevel": 2,
+      "lesson": 14,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "今天是12月20日，新年就要到了。",
+      "pinyin": "jīn tiān shì 1 2 yuè 2 0 rì ， xīn nián jiù yào dào le 。",
+      "translation": "Today is December 20th. The New Year is coming.",
+      "hskLevel": 2,
+      "lesson": 15,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "我想去北京旅游，北京很不错，我去过一次。",
+      "pinyin": "wǒ xiǎng qù běi jīng lǚ yóu ， běi jīng hěn bú cuò ， wǒ qù guò yī cì 。",
+      "translation": "1 want to take a trip to Beijing. Beijing is a nice place.I've been there once.",
+      "hskLevel": 2,
+      "lesson": 15,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "新年你准备做什么？",
+      "pinyin": "xīn nián nǐ zhǔn bèi zuò shén me ？",
+      "translation": "What plans do you have？",
+      "hskLevel": 2,
+      "lesson": 15,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "时间过得真快，新的一年快要到了！",
+      "pinyin": "shí jiān guò dé zhēn kuài ， xīn de yī nián kuài yào dào le ！",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 15,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "是啊，谢谢大家这一年对我的帮助！",
+      "pinyin": "shì a ， xiè xiè dà jiā zhè yī nián duì wǒ de bāng zhù ！",
+      "translation": "",
+      "hskLevel": 2,
+      "lesson": 15,
+      "source": "hsk-zh"
+    },
+    {
+      "hanzi": "还没有呢，明天就去火车站买票。",
+      "pinyin": "hái méi yǒu ne ， míng tiān jiù qù huǒ chē zhàn mǎi piào 。",
+      "translation": "Not yet. I'll go to the railway station to buy it tomorrow.",
+      "hskLevel": 2,
+      "lesson": 15,
+      "source": "hsk-ab-aligned"
+    },
+    {
+      "hanzi": "下个月我去旅游，你能跟我一起去吗？",
+      "pinyin": "xià gè yuè wǒ qù lǚ yóu ， nǐ néng gēn wǒ yì qǐ qù ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你一直玩儿电脑游戏，作业写完了吗？",
+      "pinyin": "nǐ yì zhí wán ér diàn nǎo yóu xì ， zuò yè xiě wán le ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "再多带几件衣服吧。",
+      "pinyin": "zài duō dài jǐ jiàn yī fú ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "南方啊，我们去年就是这个时候去的。",
+      "pinyin": "nán fāng a ， wǒ men qù nián jiù shì zhè ge shí hòu qù de 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "南方太热了，北方好一些，不冷也不热。",
+      "pinyin": "nán fāng tài rè le ， běi fāng hǎo yī xiē ， bù lěng yě bù rè 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "周末你有什么打算？",
+      "pinyin": "zhōu mò nǐ yǒu shén me dǎ suàn ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我们是去旅游，不是搬家，还是少带一些吧。",
+      "pinyin": "wǒ men shì qù lǚ yóu ， bú shì bān jiā ， hái shì shǎo dài yī xiē ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我早就复习好了。",
+      "pinyin": "wǒ zǎo jiù fù xí hǎo le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我早就想好了，请你吃饭、。",
+      "pinyin": "wǒ zǎo jiù xiǎng hǎo le ， qǐng nǐ chī fàn 、 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我还没想好呢。你觉得哪儿最好玩儿？",
+      "pinyin": "wǒ hái méi xiǎng hǎo ne 。 nǐ jué de nǎ ér zuì hǎo wán ér ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我还没想好要不要跟你去呢。",
+      "pinyin": "wǒ hái méi xiǎng hǎo yào bù yào gēn nǐ qù ne 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "手机、电脑、地图，一个也不能少。",
+      "pinyin": "shǒu jī 、 diàn nǎo 、 dì tú ， yí gè yě bù néng shǎo 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "明天不是有考试吗？你怎么一点儿也不着急？",
+      "pinyin": "míng tiān bú shì yǒu kǎo shì ma ？ nǐ zěn me yì diǎn ér yě bù zháo jí ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "是啊，我已经找好饭馆了，电影票也买好了。",
+      "pinyin": "shì a ， wǒ yǐ jīng zhǎo hǎo fàn guǎn le ， diàn yǐng piào yě mǎi hǎo le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "水果、面包、茶都准备好了，我们还带什么？",
+      "pinyin": "shuǐ guǒ 、 miàn bāo 、 chá dōu zhǔn bèi hǎo le ， wǒ men hái dài shén me ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "这些我昨天下午就准备好了。",
+      "pinyin": "zhè xiē wǒ zuó tiān xià wǔ jiù zhǔn bèi hǎo le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那也不能一直玩儿啊。",
+      "pinyin": "nà yě bù néng yì zhí wán ér a 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 1,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "上山容易下山难，你不知道？5.容易。",
+      "pinyin": "shàng shān róng yì xià shān nán ， nǐ bù zhī dào ？ 5 . róng yì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "上来的时候我怎么没觉得这么累？",
+      "pinyin": "shàng lái de shí hòu wǒ zěn me méi jué de zhè me lèi ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "他出去办事了，下午回来。",
+      "pinyin": "tā chū qù bàn shì le ， xià wǔ huí lái 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "他去哪儿了？什么时候回来？",
+      "pinyin": "tā qù nǎ ér le ？ shén me shí hòu huí lái ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "但是你一点儿也没瘦！你做什么运动了？",
+      "pinyin": "dàn shì nǐ yì diǎn ér yě méi shòu ！ nǐ zuò shén me yùn dòng le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你在这儿等吧，我拿了伞就下来。",
+      "pinyin": "nǐ zài zhè ér děng ba ， wǒ ná le sǎn jiù xià lái 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你每天晚上吃了饭就睡觉，也不出去走走，能不胖吗？",
+      "pinyin": "nǐ měi tiān wǎn shàng chī le fàn jiù shuì jiào ， yě bù chū qù zǒu zǒu ， néng bù pàng ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你看，我这么胖，怎么办呢？",
+      "pinyin": "nǐ kàn ， wǒ zhè me pàng ， zěn me bàn ne ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "其实我每天都运动。",
+      "pinyin": "qí shí wǒ měi tiān dōu yùn dòng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "周经理出去了，不在办公室。",
+      "pinyin": "zhōu jīng lǐ chū qù le ， bù zài bàn gōng shì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "喂，你好，请问周明在吗？",
+      "pinyin": "wèi ， nǐ hǎo ， qǐng wèn zhōu míng zài ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "回来了就让他给我打个电话。",
+      "pinyin": "huí lái le jiù ràng tā gěi wǒ dǎ gè diàn huà 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好的。我跟你一起上去吧。",
+      "pinyin": "hǎo de 。 wǒ gēn nǐ yì qǐ shàng qù ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好的，他到了办公室我就告诉他。",
+      "pinyin": "hǎo de ， tā dào le bàn gōng shì wǒ jiù gào sù tā 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好，那边树多，我们过去坐一下吧。",
+      "pinyin": "hǎo ， nà biān shù duō ， wǒ men guò qù zuò yī xià ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我现在腿也疼，脚也疼。",
+      "pinyin": "wǒ xiàn zài tuǐ yě téng ， jiǎo yě téng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "没事，我出去叫辆出租车就行了。",
+      "pinyin": "méi shì ， wǒ chū qù jiào liàng chū zū chē jiù xíng le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那你等等，我上楼去给你拿把伞。",
+      "pinyin": "nà nǐ děng děng ， wǒ shàng lóu qù gěi nǐ ná bǎ sǎn 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "雨下得真大。你怎么回去？我送你吧。",
+      "pinyin": "yǔ xià dé zhēn dà 。 nǐ zěn me huí qù ？ wǒ sòng nǐ ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 2,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你喜欢喝什么茶？",
+      "pinyin": "nǐ xǐ huān hē shén me chá ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你觉得这条裤子怎么样？",
+      "pinyin": "nǐ jué de zhè tiáo kù zi zěn me yàng ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "再买几个苹果。",
+      "pinyin": "zài mǎi jǐ gè píng guǒ 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好啊，今天晚上只吃水果不吃饭！",
+      "pinyin": "hǎo a ， jīn tiān wǎn shàng zhǐ chī shuǐ guǒ bù chī fàn ！",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好，你也去吗？",
+      "pinyin": "hǎo ， nǐ yě qù ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我不去，我有事。",
+      "pinyin": "wǒ bù qù ， wǒ yǒu shì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我喝茶，茶是我的最爱。天冷了或者工作累了的时候，喝杯热茶会很舒服。",
+      "pinyin": "wǒ hē chá ， chá shì wǒ de zuì ài 。 tiān lěng le huò zhě gōng zuò lèi le de shí hòu ， hē bēi rè chá huì hěn shū fú 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我记得你已经有两条这样的裤子了。",
+      "pinyin": "wǒ jì de nǐ yǐ jīng yǒu liǎng tiáo zhè yàng de kù zi le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "明天是晴天还是阴天？",
+      "pinyin": "míng tiān shì qíng tiān hái shì yīn tiān ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "桌子上放着很多饮料，你喝什么？",
+      "pinyin": "zhuō zi shàng fàng zhe hěn duō yǐn liào ， nǐ hē shén me ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "没事，我们明天要去爬山。",
+      "pinyin": "méi shì ， wǒ men míng tiān yào qù pá shān 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "爬山的时候要小心点儿。",
+      "pinyin": "pá shān de shí hòu yào xiǎo xīn diǎn ér 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "花茶、绿茶、红茶，我都喜欢。",
+      "pinyin": "huā chá 、 lǜ chá 、 hóng chá ， wǒ dōu xǐ huān 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "茶或者咖啡都可以。你呢？你喝什么？",
+      "pinyin": "chá huò zhě kā fēi dōu kě yǐ 。 nǐ ne ？ nǐ hē shén me ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "西瓜吧。你看，这上面写着“西瓜不甜不要钱”。",
+      "pinyin": "xī guā ba 。 nǐ kàn ， zhè shàng miàn xiě zhe “ xī guā bù tián bú yào qián ” 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "还不错，多少钱？",
+      "pinyin": "hái bú cuò ， duō shǎo qián ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "这上面写着320元。",
+      "pinyin": "zhè shàng miàn xiě zhe 3 2 0 yuán 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "这些水果真新鲜，我们买西瓜还是苹果？",
+      "pinyin": "zhè xiē shuǐ guǒ zhēn xīn xiān ， wǒ men mǎi xī guā hái shì píng guǒ ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "这件衬衫怎么样？",
+      "pinyin": "zhè jiàn chèn shān zěn me yàng ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那我们买一个大点儿的吧。",
+      "pinyin": "nà wǒ men mǎi yí gè dà diǎn ér de ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那我们再看看别的。",
+      "pinyin": "nà wǒ men zài kàn kàn bié de 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "阴天，电视上说多云。怎么了？有事？",
+      "pinyin": "yīn tiān ， diàn shì shàng shuō duō yún 。 zěn me le ？ yǒu shì ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 3,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "不是。那个又高又漂亮的女孩儿是二年级的。",
+      "pinyin": "bú shì 。 nà ge yòu gāo yòu piào liàng de nǚ hái ér shì èr nián jí de 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你们这儿是不是有一个又年轻又漂亮的服务员？",
+      "pinyin": "nǐ men zhè ér shì bú shì yǒu yí gè yòu nián qīng yòu piào liàng de fú wù yuán ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你是不是喜欢她啊？",
+      "pinyin": "nǐ shì bú shì xǐ huān tā a ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你觉得小红怎么样？",
+      "pinyin": "nǐ jué de xiǎo hóng zěn me yàng ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "啊，我知道了，你说的是李小美吧？",
+      "pinyin": "a ， wǒ zhī dào le ， nǐ shuō de shì lǐ xiǎo měi ba ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "喜欢她的人太多了，你看那些拿着鲜花站在门口的，都是等她的。",
+      "pinyin": "xǐ huān tā de rén tài duō le ， nǐ kàn nà xiē ná zhe xiān huā zhàn zài mén kǒu de ， dōu shì děng tā de 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "喝着咖啡吃蛋糕，太好了！",
+      "pinyin": "hē zhe kā fēi chī dàn gāo ， tài hǎo le ！",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "她又聪明又热情，也很努力。",
+      "pinyin": "tā yòu cōng míng yòu rè qíng ， yě hěn nǔ lì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "她对每个人都笑，也常常对我笑。",
+      "pinyin": "tā duì měi gè rén dōu xiào ， yě cháng cháng duì wǒ xiào 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "她工作又认真又热情。",
+      "pinyin": "tā gōng zuò yòu rèn zhēn yòu rè qíng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "她总是笑着跟客人说话。",
+      "pinyin": "tā zǒng shì xiào zhe gēn kè rén shuō huà 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好啊，这家超市的蛋糕又便宜又好吃，一块只要2.99元①12.超市。",
+      "pinyin": "hǎo a ， zhè jiā chāo shì de dàn gāo yòu pián yi yòu hǎo chī ， yī kuài zhǐ yào 2 . 9 9 yuán ① 1 2 . chāo shì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "您好！您找谁？",
+      "pinyin": "nín hǎo ！ nín zhǎo shuí ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "您能再说说吗？",
+      "pinyin": "nín néng zài shuō shuō ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我们买两块，回家吃着蛋糕看13.蛋糕电视，怎么样？",
+      "pinyin": "wǒ men mǎi liǎng kuài ， huí jiā chī zhe dàn gāo kàn 1 3 . dàn gāo diàn shì ， zěn me yàng ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我们这儿年轻、漂亮的服务员有很多。",
+      "pinyin": "wǒ men zhè ér nián qīng 、 piào liàng de fú wù yuán yǒu hěn duō 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我有点儿饿了，我们进超市买。",
+      "pinyin": "wǒ yǒu diǎn ér è le ， wǒ men jìn chāo shì mǎi 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我看她总是笑着回答老师的问题。",
+      "pinyin": "wǒ kàn tā zǒng shì xiào zhe huí dá lǎo shī de wèn tí 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "旁边那个拿着书笑的人是谁？",
+      "pinyin": "páng biān nà ge ná zhe shū xiào de rén shì shuí ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "是，这是我们比赛后照的。",
+      "pinyin": "shì ， zhè shì wǒ men bǐ sài hòu zhào de 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "照得不错，你们都是一个年级的吗？",
+      "pinyin": "zhào dé bù cuò ， nǐ men dōu shì yí gè nián jí de ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "这是你们比赛的照片吗？",
+      "pinyin": "zhè shì nǐ men bǐ sài de zhào piān ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 4,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "不用去医院，昨天吃了感冒药，现在好一些了。",
+      "pinyin": "bù yòng qù yī yuàn ， zuó tiān chī le gǎn mào yào ， xiàn zài hǎo yī xiē le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "不，我喜欢看你穿漂亮的裙子。",
+      "pinyin": "bù ， wǒ xǐ huān kàn nǐ chuān piào liàng de qún zi 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "为什么？怎么了？",
+      "pinyin": "wèi shén me ？ zěn me le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "他吃药了吗？要不要去医院？",
+      "pinyin": "tā chī yào le ma ？ yào bù yào qù yī yuàn ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你最喜欢哪个季节？",
+      "pinyin": "nǐ zuì xǐ huān nǎ ge jì jié ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你看，这条裙子是去年买的，今年就不能穿了。",
+      "pinyin": "nǐ kàn ， zhè tiáo qún zi shì qù nián mǎi de ， jīn nián jiù bù néng chuān le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "前几天有点儿发烧，现在好多了。",
+      "pinyin": "qián jǐ tiān yǒu diǎn ér fā shāo ， xiàn zài hǎo duō le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "喝杯茶吧，这是我为你买的绿茶，很不错。",
+      "pinyin": "hē bēi chá ba ， zhè shì wǒ wèi nǐ mǎi de lǜ chá ， hěn bú cuò 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好的。在打电话。",
+      "pinyin": "hǎo de 。 zài dǎ diàn huà 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "对不起，我明天不能和你们出去玩儿了。",
+      "pinyin": "duì bù qǐ ， wǒ míng tiān bù néng hé nǐ men chū qù wán ér le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "当然是春天，天气不那么冷了，草和树都绿了，花也开了。",
+      "pinyin": "dāng rán shì chūn tiān ， tiān qì bù nà me lěng le ， cǎo hé shù dōu lǜ le ， huā yě kāi le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "怎么？你也有漂亮的裙子？",
+      "pinyin": "zěn me ？ nǐ yě yǒu piào liàng de qún zi ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我做的饭越来越好吃，我能少吃吗？",
+      "pinyin": "wǒ zuò de fàn yuè lái yuè hǎo chī ， wǒ néng shǎo chī ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我儿子生病了，我要在家照顾他。",
+      "pinyin": "wǒ ér zi shēng bìng le ， wǒ yào zài jiā zhào gù tā 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我听说你身体不舒服，怎么了？",
+      "pinyin": "wǒ tīng shuō nǐ shēn tǐ bù shū fú ， zěn me le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我最喜欢夏天，因为我可以穿漂亮的裙子了。",
+      "pinyin": "wǒ zuì xǐ huān xià tiān ， yīn wèi wǒ kě yǐ chuān piào liàng de qún zi le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我最近越来越胖了。",
+      "pinyin": "wǒ zuì jìn yuè lái yuè pàng le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "谁说的？我觉得你越来越漂亮了。",
+      "pinyin": "shuí shuō de ？ wǒ jué de nǐ yuè lái yuè piào liàng le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "谢谢，我要吃药，不喝茶了。",
+      "pinyin": "xiè xiè ， wǒ yào chī yào ， bù hē chá le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那我也喜欢夏天了。",
+      "pinyin": "nà wǒ yě xǐ huān xià tiān le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那我们下次再一起出去玩儿吧。在小刚家。",
+      "pinyin": "nà wǒ men xià cì zài yì qǐ chū qù wán ér ba 。 zài xiǎo gāng jiā 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那是因为你吃得太多了，少吃点儿吧。",
+      "pinyin": "nà shì yīn wèi nǐ chī dé tài duō le ， shǎo chī diǎn ér ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 5,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "今天的作业你做完了吗？",
+      "pinyin": "jīn tiān de zuò yè nǐ zuò wán le ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "今天这些题特别难，我看不懂，不会做，你能帮我吗？",
+      "pinyin": "jīn tiān zhè xiē tí tè bié nán ， wǒ kàn bù dǒng ， bú huì zuò ， nǐ néng bāng wǒ ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你不是说晚上睡不着觉吗？",
+      "pinyin": "nǐ bú shì shuō wǎn shàng shuì bù zhe jué ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你去房间找找，是不是刚才放在桌子上了？",
+      "pinyin": "nǐ qù fáng jiān zhǎo zhǎo ， shì bú shì gāng cái fàng zài zhuō zi shàng le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你怎么有点儿不高兴？",
+      "pinyin": "nǐ zěn me yǒu diǎn ér bù gāo xìng ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你怎么还喝咖啡？",
+      "pinyin": "nǐ zěn me hái hē kā fēi ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你还是喝杯牛奶吧，可以睡得更好些。",
+      "pinyin": "nǐ hái shì hē bēi niú nǎi ba ， kě yǐ shuì dé gèng hǎo xiē 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "公园太大，多累啊。",
+      "pinyin": "gōng yuán tài dà ， duō lèi a 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "刚做完，你呢？",
+      "pinyin": "gāng zuò wán ， nǐ ne ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好吧，我帮你去找找。",
+      "pinyin": "hǎo ba ， wǒ bāng nǐ qù zhǎo zhǎo 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好吧，牛奶呢？",
+      "pinyin": "hǎo ba ， niú nǎi ne ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好啊，我锻炼完了就过去。3在休息室。",
+      "pinyin": "hǎo a ， wǒ duàn liàn wán le jiù guò qù 。 3 zài xiū xī shì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我怎么看得到啊？你快过来帮忙啊。",
+      "pinyin": "wǒ zěn me kàn dé dào a ？ nǐ kuài guò lái bāng máng a 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我想请小丽吃饭，但是找不到好饭馆。",
+      "pinyin": "wǒ xiǎng qǐng xiǎo lì chī fàn ， dàn shì zhǎo bú dào hǎo fàn guǎn 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我的眼镜呢？怎么突然找不到了？你看见了吗？",
+      "pinyin": "wǒ de yǎn jìng ne ？ zěn me tū rán zhǎo bú dào le ？ nǐ kàn jiàn le ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我离不开眼镜，没有眼镜，我一个字也看不清楚。",
+      "pinyin": "wǒ lí bù kāi yǎn jìng ， méi yǒu yǎn jìng ， wǒ yí gè zì yě kàn bù qīng chǔ 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "没事，我只喝一杯。",
+      "pinyin": "méi shì ， wǒ zhǐ hē yī bēi 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "电话里讲不明白，你来我家吧，我给你讲讲。",
+      "pinyin": "diàn huà lǐ jiǎng bù míng bái ， nǐ lái wǒ jiā ba ， wǒ gěi nǐ jiǎng jiǎng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那你请她听音乐会吧，她喜欢听音乐。",
+      "pinyin": "nà nǐ qǐng tā tīng yīn yuè huì ba ， tā xǐ huān tīng yīn yuè 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那去公园走走，聊聊天儿吧。",
+      "pinyin": "nà qù gōng yuán zǒu zǒu ， liáo liáo tiān ér ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "音乐会人太多，买不到票。",
+      "pinyin": "yīn yuè huì rén tài duō ， mǎi bú dào piào 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 6,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "不是我迟到了，是你的表快了一刻钟。",
+      "pinyin": "bú shì wǒ chí dào le ， shì nǐ de biǎo kuài le yī kè zhōng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "不，她在北京工作三年了。",
+      "pinyin": "bù ， tā zài běi jīng gōng zuò sān nián le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "以前她在哪儿工作？",
+      "pinyin": "yǐ qián tā zài nǎ ér gōng zuò ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你不是说七点半来接我吗？你迟到了一刻钟。",
+      "pinyin": "nǐ bú shì shuō qī diǎn bàn lái jiē wǒ ma ？ nǐ chí dào le yī kè zhōng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你们不是刚认识吗？",
+      "pinyin": "nǐ men bú shì gāng rèn shí ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你们唱了多久？",
+      "pinyin": "nǐ men chàng le duō jiǔ ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你们都对音乐感兴趣吗？",
+      "pinyin": "nǐ men dōu duì yīn yuè gǎn xìng qù ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你看看手表，怎么迟到了？",
+      "pinyin": "nǐ kàn kàn shǒu biǎo ， zěn me chí dào le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你跟她结婚，那我怎么办啊？",
+      "pinyin": "nǐ gēn tā jié hūn ， nà wǒ zěn me bàn a ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "周末你跟小丽去哪儿玩儿了？",
+      "pinyin": "zhōu mò nǐ gēn xiǎo lì qù nǎ ér wán ér le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "她刚来北京吗？",
+      "pinyin": "tā gāng lái běi jīng ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "她在银行工作了两年以后来的我们公司。",
+      "pinyin": "tā zài yín háng gōng zuò le liǎng nián yǐ hòu lái de wǒ men gōng sī 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "她对音乐感兴趣，我对她更感兴趣。在休息室。",
+      "pinyin": "tā duì yīn yuè gǎn xìng qù ， wǒ duì tā gèng gǎn xìng qù 。 zài xiū xī shì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "对啊，突然吗？",
+      "pinyin": "duì a ， tū rán ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "已经差一刻八点了！我都在这儿坐了半个小时了。",
+      "pinyin": "yǐ jīng chà yī kè bā diǎn le ！ wǒ dōu zài zhè ér zuò le bàn gè xiǎo shí le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我们去唱歌了。",
+      "pinyin": "wǒ men qù chàng gē le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我们唱了两个小时歌，晚上还去听音乐会了。",
+      "pinyin": "wǒ men chàng le liǎng gè xiǎo shí gē ， wǎn shàng hái qù tīng yīn yuè huì le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我跟她都认识五年了。",
+      "pinyin": "wǒ gēn tā dōu rèn shí wǔ nián le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我跟小丽下个月结婚，到时候欢迎你来。",
+      "pinyin": "wǒ gēn xiǎo lì xià gè yuè jié hūn ， dào shí hòu huān yíng nǐ lái 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "现在不是七点半吗？",
+      "pinyin": "xiàn zài bú shì qī diǎn bàn ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那个漂亮的新同事是谁？",
+      "pinyin": "nà ge piào liàng de xīn tóng shì shì shuí ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 7,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "一个没有电梯，不方便。一个有电梯，但是在二十层。",
+      "pinyin": "yí gè méi yǒu diàn tī ， bù fāng biàn 。 yí gè yǒu diàn tī ， dàn shì zài èr shí céng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "二十层怎么了？",
+      "pinyin": "èr shí céng zěn me le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你做饭还是周明做饭？",
+      "pinyin": "nǐ zuò fàn hái shì zhōu míng zuò fàn ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你喝什么我就喝什么。",
+      "pinyin": "nǐ hē shén me wǒ jiù hē shén me 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你坐哪儿我就坐哪儿。",
+      "pinyin": "nǐ zuò nǎ ér wǒ jiù zuò nǎ ér 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "健康最重要，胖瘦没关系。",
+      "pinyin": "jiàn kāng zuì zhòng yào ， pàng shòu méi guān xì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "听说你下个星期就要回国了？",
+      "pinyin": "tīng shuō nǐ xià gè xīng qī jiù yào huí guó le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "听说你最近打算买房子？",
+      "pinyin": "tīng shuō nǐ zuì jìn dǎ suàn mǎi fáng zi ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "喝可乐吧。你等我一会儿，我马上回来。",
+      "pinyin": "hē kě lè ba 。 nǐ děng wǒ yī huì er ， wǒ mǎ shàng huí lái 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "坐这儿吧，这儿安静。你想喝什么饮料？",
+      "pinyin": "zuò zhè ér ba ， zhè ér ān jìng 。 nǐ xiǎng hē shén me yǐn liào ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "太高了，往下看多害怕啊！在学校。",
+      "pinyin": "tài gāo le ， wǎng xià kàn duō hài pà a ！ zài xué xiào 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "小丽，你去哪儿？你去哪儿我就去哪儿。",
+      "pinyin": "xiǎo lì ， nǐ qù nǎ ér ？ nǐ qù nǎ ér wǒ jiù qù nǎ ér 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "小刚，我们坐哪儿？",
+      "pinyin": "xiǎo gāng ， wǒ men zuò nǎ ér ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "快五年了，你几乎没变化。",
+      "pinyin": "kuài wǔ nián le ， nǐ jī hū méi biàn huà 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我下星期不在北京，不能去机场送你了。",
+      "pinyin": "wǒ xià xīng qī bù zài běi jīng ， bù néng qù jī chǎng sòng nǐ le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我做，我想吃什么就做什么，想吃多少就做多少。",
+      "pinyin": "wǒ zuò ， wǒ xiǎng chī shén me jiù zuò shén me ， xiǎng chī duō shǎo jiù zuò duō shǎo 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "是呀，想吃什么就吃什么。",
+      "pinyin": "shì ya ， xiǎng chī shén me jiù chī shén me 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "是啊，真不想离开北京。",
+      "pinyin": "shì a ， zhēn bù xiǎng lí kāi běi jīng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "是，昨天去看了看，今天又去看了看，明天还要再去看看。",
+      "pinyin": "shì ， zuó tiān qù kàn le kàn ， jīn tiān yòu qù kàn le kàn ， míng tiān hái yào zài qù kàn kàn 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "没关系，你忙吧。",
+      "pinyin": "méi guān xì ， nǐ máng ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "谁说的？我胖了，以前的衣服都不能穿了。",
+      "pinyin": "shuí shuō de ？ wǒ pàng le ， yǐ qián de yī fú dōu bù néng chuān le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "谢谢。希望以后能再见面。在咖啡厅。",
+      "pinyin": "xiè xiè 。 xī wàng yǐ hòu néng zài jiàn miàn 。 zài kā fēi tīng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "这个小熊猫送给你，欢迎你以后再到中国来。",
+      "pinyin": "zhè ge xiǎo xióng māo sòng gěi nǐ ， huān yíng nǐ yǐ hòu zài dào zhōng guó lái 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 8,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "一定能参加，一点儿影响也没有。",
+      "pinyin": "yí dìng néng cān jiā ， yì diǎn ér yǐng xiǎng yě méi yǒu 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "下个月的篮球比赛，你能参加吗？",
+      "pinyin": "xià gè yuè de lán qiú bǐ sài ， nǐ néng cān jiā ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "不用担心，有我呢，我对这儿比较了解。",
+      "pinyin": "bù yòng dān xīn ， yǒu wǒ ne ， wǒ duì zhè ér bǐ jiào liǎo jiě 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "他让我多休息。休息得越多，好得越快。",
+      "pinyin": "tā ràng wǒ duō xiū xī 。 xiū xī dé yuè duō ， hǎo dé yuè kuài 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你总是吃甜的东西，会越吃越胖。",
+      "pinyin": "nǐ zǒng shì chī tián de dōng xī ， huì yuè chī yuè pàng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你放心，我一定不会变胖。",
+      "pinyin": "nǐ fàng xīn ， wǒ yí dìng bú huì biàn pàng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "别吃了，你已经吃了三块蛋糕了。",
+      "pinyin": "bié chī le ， nǐ yǐ jīng chī le sān kuài dàn gāo le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "去医院了吗？医生说什么？",
+      "pinyin": "qù yī yuàn le ma ？ yī shēng shuō shén me ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "哪里哪里，我们班王静说得更好。",
+      "pinyin": "nǎ lǐ nǎ lǐ ， wǒ men bān wáng jìng shuō dé gèng hǎo 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "她是我们的汉语老师。在蛋糕店。",
+      "pinyin": "tā shì wǒ men de hàn yǔ lǎo shī 。 zài dàn gāo diàn 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "她的汉语说得跟中国人一样。",
+      "pinyin": "tā de hàn yǔ shuō dé gēn zhōng guó rén yī yàng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好，一会儿我们可以从中间这条路上去。",
+      "pinyin": "hǎo ， yī huì er wǒ men kě yǐ cóng zhōng jiān zhè tiáo lù shàng qù 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "小明，你的眼睛怎么跟大熊猫一样了？",
+      "pinyin": "xiǎo míng ， nǐ de yǎn jīng zěn me gēn dà xióng māo yī yàng le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "山越高，路越难走。我也越爬越冷。",
+      "pinyin": "shān yuè gāo ， lù yuè nán zǒu 。 wǒ yě yuè pá yuè lěng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我们家的人都很瘦，吃不胖。",
+      "pinyin": "wǒ men jiā de rén dōu hěn shòu ， chī bù pàng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我有点儿害怕。",
+      "pinyin": "wǒ yǒu diǎn ér hài pà 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我这几天脚疼，没休息好。",
+      "pinyin": "wǒ zhè jǐ tiān jiǎo téng ， méi xiū xī hǎo 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "王静？我怎么没听说过这个名字？",
+      "pinyin": "wáng jìng ？ wǒ zěn me méi tīng shuō guò zhè ge míng zì ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "这是最后一块。'。",
+      "pinyin": "zhè shì zuì hòu yī kuài 。 ' 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那我们先休息一下，一会儿再爬。",
+      "pinyin": "nà wǒ men xiān xiū xī yī xià ， yī huì er zài pá 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "马可，你的中文越说越好了！",
+      "pinyin": "mǎ kě ， nǐ de zhōng wén yuè shuō yuè hǎo le ！",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 9,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "一两个小时吧。3在休息室。",
+      "pinyin": "yī liǎng gè xiǎo shí ba 。 3 zài xiū xī shì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "不一样。您看，学校外边的房子比学校里边的大一些。",
+      "pinyin": "bù yí yàng 。 nín kàn ， xué xiào wài biān de fáng zi bǐ xué xiào lǐ biān de dà yī xiē 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "为什么？数学也很有意思啊。",
+      "pinyin": "wèi shén me ？ shù xué yě hěn yǒu yì si a 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你不是有一辆吗？",
+      "pinyin": "nǐ bú shì yǒu yī liàng ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你们谁的汉语说得更好？",
+      "pinyin": "nǐ men shéi de hàn yǔ shuō dé gèng hǎo ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你最近比以前来得早多了，搬家了？",
+      "pinyin": "nǐ zuì jìn bǐ yǐ qián lái de zǎo duō le ， bān jiā le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "别担心，我可以帮你。",
+      "pinyin": "bié dān xīn ， wǒ kě yǐ bāng nǐ 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "哪个方便一些呢？",
+      "pinyin": "nǎ ge fāng biàn yī xiē ne ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "大—小新一远一高一贵一难一。",
+      "pinyin": "dà — xiǎo xīn yī yuǎn yī gāo yī guì yī nán yī 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "大小没关系，主要是环境，哪个更安静？",
+      "pinyin": "dà xiǎo méi guān xì ， zhǔ yào shì huán jìng ， nǎ ge gèng ān jìng ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "大山，你和马可谁个子高？",
+      "pinyin": "dà shān ， nǐ hé mǎ kě shuí gè zi gāo ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好啊，我们每天学多长时间？",
+      "pinyin": "hǎo a ， wǒ men měi tiān xué duō zhǎng shí jiān ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "学校里边比学校外边方便，附近有三四个车站。",
+      "pinyin": "xué xiào lǐ biān bǐ xué xiào wài biān fāng biàn ， fù jìn yǒu sān sì gè chē zhàn 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "学校里边的没有学校外边的那么安静。",
+      "pinyin": "xué xiào lǐ biān de méi yǒu xué xiào wài biān de nà me ān jìng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我喜欢历史课、体育课，不喜欢数学课。",
+      "pinyin": "wǒ xǐ huān lì shǐ kè 、 tǐ yù kè ， bù xǐ huān shù xué kè 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我比马可大两岁。",
+      "pinyin": "wǒ bǐ mǎ kě dà liǎng suì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我觉得数学比历史难多了，我听不懂。",
+      "pinyin": "wǒ jué de shù xué bǐ lì shǐ nán duō le ， wǒ tīng bù dǒng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我还打算买辆自行车，骑车七八分钟就能到。",
+      "pinyin": "wǒ hái dǎ suàn mǎi liàng zì xíng chē ， qí chē qī bā fēn zhōng jiù néng dào 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "是啊，你不知道？我上个月就搬家了，走路二十分钟就到。",
+      "pinyin": "shì a ， nǐ bù zhī dào ？ wǒ shàng gè yuè jiù bān jiā le ， zǒu lù èr shí fēn zhōng jiù dào 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "这两个地方的房子一样吗？",
+      "pinyin": "zhè liǎng gè dì fāng de fáng zi yī yàng ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那辆太旧了，要换一辆，很便宜，两三百块钱。",
+      "pinyin": "nà liàng tài jiù le ， yào huàn yī liàng ， hěn pián yi ， liǎng sān bǎi kuài qián 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "马可比我说得好一些，我的汉语没有他好。在教室。",
+      "pinyin": "mǎ kě bǐ wǒ shuō dé hǎo yī xiē ， wǒ de hàn yǔ méi yǒu tā hǎo 。 zài jiào shì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "马可比我高，我比马可矮一点儿。",
+      "pinyin": "mǎ kě bǐ wǒ gāo ， wǒ bǐ mǎ kě ǎi yì diǎn ér 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 10,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "今天怎么做了这么多菜？",
+      "pinyin": "jīn tiān zěn me zuò le zhè me duō cài ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 11,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "今天是你爸爸的生日。",
+      "pinyin": "jīn tiān shì nǐ bà bà de shēng rì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 11,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "他已经到北京了？",
+      "pinyin": "tā yǐ jīng dào běi jīng le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 11,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "会议结束后，别忘记把空调关了。",
+      "pinyin": "huì yì jié shù hòu ， bié wàng jì bǎ kōng tiáo guān le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 11,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "医生说你爸爸一口酒都不能喝，别让他看见酒瓶子。",
+      "pinyin": "yī shēng shuō nǐ bà bà yī kǒu jiǔ dōu bù néng hē ， bié ràng tā kàn jiàn jiǔ píng zi 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 11,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好的。王经理两点左右来了个电话。",
+      "pinyin": "hǎo de 。 wáng jīng lǐ liǎng diǎn zuǒ yòu lái le gè diàn huà 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 11,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好的，放心吧。",
+      "pinyin": "hǎo de ， fàng xīn ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 11,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好，等一会儿你离开教室的时候，记得把灯关了。",
+      "pinyin": "hǎo ， děng yī huì er nǐ lí kāi jiào shì de shí hòu ， jì de bǎ dēng guān le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 11,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "帮我把这本词典还了吧。",
+      "pinyin": "bāng wǒ bǎ zhè běn cí diǎn hái le ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 11,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我去图书馆借本书。",
+      "pinyin": "wǒ qù tú shū guǎn jiè běn shū 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 11,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "是的，他正坐地铁来我们公司呢。",
+      "pinyin": "shì de ， tā zhèng zuò dì tiě lái wǒ men gōng sī ne 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 11,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "真的啊？我把爸爸的生日忘了。那我们今天喝点儿啤酒吧。",
+      "pinyin": "zhēn de a ？ wǒ bǎ bà bà de shēng rì wàng le 。 nà wǒ men jīn tiān hē diǎn ér pí jiǔ bā 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 11,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "等他到了就告诉我。在客厅。",
+      "pinyin": "děng tā dào le jiù gào sù wǒ 。 zài kè tīng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 11,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "还差一双筷子，你去拿一下。",
+      "pinyin": "hái chà yī shuāng kuài zi ， nǐ qù ná yī xià 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 11,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "一个星期就回来。",
+      "pinyin": "yí gè xīng qī jiù huí lái 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 12,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "今天太阳从西边出来了吗？",
+      "pinyin": "jīn tiān tài yáng cóng xī biān chū lái le ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 12,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你怎么这么早就要睡觉了？以前都要12点以后才睡觉。",
+      "pinyin": "nǐ zěn me zhè me zǎo jiù yào shuì jiào le ？ yǐ qián dōu yào 1 2 diǎn yǐ hòu cái shuì jiào 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 12,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你要自己照顾好自己，我已经给你准备好吃的和喝的了。",
+      "pinyin": "nǐ yào zì jǐ zhào gù hǎo zì jǐ ， wǒ yǐ jīng gěi nǐ zhǔn bèi hǎo chī de hé hē de le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 12,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "啊？一个星期以后才回来？",
+      "pinyin": "a ？ yí gè xīng qī yǐ hòu cái huí lái ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 12,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好吧。我已经把我的照片放在你的包里了。在机场。",
+      "pinyin": "hǎo ba 。 wǒ yǐ jīng bǎ wǒ de zhào piān fàng zài nǐ de bāo lǐ le 。 zài jī chǎng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 12,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "对不起，周经理，来机场的路上我才发现忘带护照了。",
+      "pinyin": "duì bù qǐ ， zhōu jīng lǐ ， lái jī chǎng de lù shàng wǒ cái fā xiàn wàng dài hù zhào le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 12,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "快点吧，飞机就要起飞了。",
+      "pinyin": "kuài diǎn ba ， fēi jī jiù yào qǐ fēi le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 12,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "您有钱吗？司机把我送到机场的时候，我才发现忘记带钱包了。",
+      "pinyin": "nín yǒu qián ma ？ sī jī bǎ wǒ sòng dào jī chǎng de shí hòu ， wǒ cái fā xiàn wàng jì dài qián bāo le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 12,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我明天8点就要到公司。",
+      "pinyin": "wǒ míng tiān 8 diǎn jiù yào dào gōng sī 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 12,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我看你还是把重要的东西放在我这儿吧。",
+      "pinyin": "wǒ kàn nǐ hái shì bǎ zhòng yào de dōng xī fàng zài wǒ zhè ér ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 12,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我要跟周经理去外地办事，明天的飞机。",
+      "pinyin": "wǒ yào gēn zhōu jīng lǐ qù wài dì bàn shì ， míng tiān de fēi jī 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 12,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "经理生气了，他告诉我，明天8点不到，以后就别来了。2在家。",
+      "pinyin": "jīng lǐ shēng qì le ， tā gào sù wǒ ， míng tiān 8 diǎn bú dào ， yǐ hòu jiù bié lái le 。 2 zài jiā 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 12,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那我帮你把衣服放到行李箱里吧。什么时候回来？",
+      "pinyin": "nà wǒ bāng nǐ bǎ yī fú fàng dào xíng lǐ xiāng lǐ ba 。 shén me shí hòu huí lái ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 12,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "不是。没有公共汽车了，我是走回来的。",
+      "pinyin": "bú shì 。 méi yǒu gōng gòng qì chē le ， wǒ shì zǒu huí lái de 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你们就一起去喝咖啡了？",
+      "pinyin": "nǐ men jiù yì qǐ qù hē kā fēi le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你回来得这么晚，是说了很多过去的事吗？",
+      "pinyin": "nǐ huí lái de zhè me wǎn ， shì shuō le hěn duō guò qù de shì ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你应该多出去走走，这样你们的生活会更有意思。",
+      "pinyin": "nǐ yīng gāi duō chū qù zǒu zǒu ， zhè yàng nǐ men de shēng huó huì gèng yǒu yì si 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你终于回来了！从哪儿买回来这么多东西啊？",
+      "pinyin": "nǐ zhōng yú huí lái le ！ cóng nǎ ér mǎi huí lái zhè me duō dōng xī a ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "可以一边吃一边看，坐久了还可以站起来休息一会儿。",
+      "pinyin": "kě yǐ yī biān chī yī biān kàn ， zuò jiǔ le hái kě yǐ zhàn qǐ lái xiū xī yī huì er 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "她是我今天在路上遇到的一个老同学。",
+      "pinyin": "tā shì wǒ jīn tiān zài lù shàng yù dào de yí gè lǎo tóng xué 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "小丽，周末你一般跟小刚出去看电影吗？",
+      "pinyin": "xiǎo lì ， zhōu mò nǐ yì bān gēn xiǎo gāng chū qù kàn diàn yǐng ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "怎么还买红酒回来了？谁喝啊？",
+      "pinyin": "zěn me hái mǎi hóng jiǔ huí lái le ？ shuí hē a ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我不是已经回来了吗？",
+      "pinyin": "wǒ bú shì yǐ jīng huí lái le ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我今天看见你和一个女的进了咖啡店，她是谁啊？",
+      "pinyin": "wǒ jīn tiān kàn jiàn nǐ hé yí gè nǚ de jìn le kā fēi diàn ， tā shì shuí a ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我很少去电影院看电影，我更愿意在家看电视。",
+      "pinyin": "wǒ hěn shǎo qù diàn yǐng yuàn kàn diàn yǐng ， wǒ gèng yuàn yì zài jiā kàn diàn shì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "是啊，一边喝咖啡一边说了些过去的事。",
+      "pinyin": "shì a ， yī biān hē kā fēi yī biān shuō le xiē guò qù de shì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "有他在，我的生活已经很有意思了。",
+      "pinyin": "yǒu tā zài ， wǒ de shēng huó yǐ jīng hěn yǒu yì si le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "看电视有什么意思啊？",
+      "pinyin": "kàn diàn shì yǒu shén me yì si a ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "这是给爷爷的礼物，明天我们一起送过去，看看爷爷奶奶。",
+      "pinyin": "zhè shì gěi yé yé de lǐ wù ， míng tiān wǒ men yì qǐ sòng guò qù ， kàn kàn yé yé nǎi nǎi 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那我的礼物呢？快拿出来让我看看。",
+      "pinyin": "nà wǒ de lǐ wù ne ？ kuài ná chū lái ràng wǒ kàn kàn 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "都是从那边的商店买回来的。",
+      "pinyin": "dōu shì cóng nà biān de shāng diàn mǎi huí lái de 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 13,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "不用打了，你听外边的声音，一定是大山。",
+      "pinyin": "bù yòng dǎ le ， nǐ tīng wài biān de shēng yīn ， yí dìng shì dà shān 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 14,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "今晚的月亮真漂亮，像白色的盘子一样。",
+      "pinyin": "jīn wǎn de yuè liàng zhēn piào liàng ， xiàng bái sè de pán zi yī yàng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 14,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你先等一下，我去把电视关了。",
+      "pinyin": "nǐ xiān děng yí xià ， wǒ qù bǎ diàn shì guān le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 14,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你在忙什么呢？刚才打你的手机你也不接。",
+      "pinyin": "nǐ zài máng shén me ne ？ gāng cái dǎ nǐ de shǒu jī nǐ yě bù jiē 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 14,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你让我做什么？",
+      "pinyin": "nǐ ràng wǒ zuò shén me ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 14,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "先把茶和杯子放好，然后把冰箱里的西瓜拿出来。",
+      "pinyin": "xiān bǎ chá hé bēi zi fàng hǎo ， rán hòu bǎ bīng xiāng lǐ de xī guā ná chū lái 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 14,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "别着急，我让孩子们打扫呢，客人来的时候，他们会把房间打扫干净。",
+      "pinyin": "bié zháo jí ， wǒ ràng hái zi men dǎ sǎo ne ， kè rén lái de shí hòu ， tā men huì bǎ fáng jiān dǎ sǎo gān jìng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 14,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "太好了！记得给大山打个电话，让他马上过来。",
+      "pinyin": "tài hǎo le ！ jì de gěi dà shān dǎ gè diàn huà ， ràng tā mǎ shàng guò lái 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 14,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "太热了，我还是先把空调打开吧。在打电话。",
+      "pinyin": "tài rè le ， wǒ hái shì xiān bǎ kōng tiáo dǎ kāi ba 。 zài dǎ diàn huà 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 14,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "客人就要来了，你怎么还不打扫房间啊？",
+      "pinyin": "kè rén jiù yào lái le ， nǐ zěn me hái bù dǎ sǎo fáng jiān a ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 14,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "对不起，我刚洗了个澡，没听见。有什么事吗？",
+      "pinyin": "duì bù qǐ ， wǒ gāng xǐ le gè zǎo ， méi tīng jiàn 。 yǒu shén me shì ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 14,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我想问问你公司里的一些事情。",
+      "pinyin": "wǒ xiǎng wèn wèn nǐ gōng sī lǐ de yī xiē shì qíng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 14,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "是啊，外边也不刮风，我们坐在外边一边看月亮一边吃东西，怎么样？",
+      "pinyin": "shì a ， wài biān yě bù guā fēng ， wǒ men zuò zài wài biān yī biān kàn yuè liàng yī biān chī dōng xī ， zěn me yàng ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 14,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "没关系，你先把电视节目看完吧，然后再给我回电话。在小明家。",
+      "pinyin": "méi guān xì ， nǐ xiān bǎ diàn shì jié mù kàn wán ba ， rán hòu zài gěi wǒ huí diàn huà 。 zài xiǎo míng jiā 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 14,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那你也不能看电视啊。",
+      "pinyin": "nà nǐ yě bù néng kàn diàn shì a 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 14,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "不用花钱，还有新衣服穿，他满意极了。",
+      "pinyin": "bù yòng huā qián ， hái yǒu xīn yī fú chuān ， tā mǎn yì jí le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 15,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "不等她了，我先给大家讲讲这次比赛的要求和一些需要注意的地方。",
+      "pinyin": "bù děng tā le ， wǒ xiān gěi dà jiā jiǎng jiǎng zhè cì bǐ sài de yāo qiú hé yī xiē xū yào zhù yì de dì fāng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 15,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "以后有什么不明白的地方，可以给我打电话或者发电子邮件。在教室。",
+      "pinyin": "yǐ hòu yǒu shén me bù míng bái de dì fāng ， kě yǐ gěi wǒ dǎ diàn huà huò zhě fā diàn zi yóu jiàn 。 zài jiào shì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 15,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "写得不错，除了这个句子意思有些不清楚外，其他都没什么问题。",
+      "pinyin": "xiě dé bù cuò ， chú le zhè ge jù zi yì si yǒu xiē bù qīng chǔ wài ， qí tā dōu méi shén me wèn tí 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 15,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "刚才给她打电话了，她在路上呢。",
+      "pinyin": "gāng cái gěi tā dǎ diàn huà le ， tā zài lù shàng ne 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 15,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "对了，你从网上买的那件衣服呢？怎么没见你穿？",
+      "pinyin": "duì le ， nǐ cóng wǎng shàng mǎi de nà jiàn yī fú ne ？ zěn me méi jiàn nǐ chuān ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 15,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "是啊，除了看新闻，人们还可以在网上听歌、看电影、买东西。",
+      "pinyin": "shì a ， chú le kàn xīn wén ， rén men hái kě yǐ zài wǎng shàng tīng gē 、 kàn diàn yǐng 、 mǎi dōng xī 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 15,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "比赛马上就要开始了，小云怎么还没来？",
+      "pinyin": "bǐ sài mǎ shàng jiù yào kāi shǐ le ， xiǎo yún zěn me hái méi lái ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 15,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "现在用电脑上网真方便啊！",
+      "pinyin": "xiàn zài yòng diàn nǎo shàng wǎng zhēn fāng biàn a ！",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 15,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "老师，您放心，今天的比赛我们一定能拿第一。【在休息室。",
+      "pinyin": "lǎo shī ， nín fàng xīn ， jīn tiān de bǐ sài wǒ men yí dìng néng ná dì yī 。 【 zài xiū xī shì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 15,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "老师，我来中国留学两年了，但是我的汉语水平提高得一点儿也不快啊。",
+      "pinyin": "lǎo shī ， wǒ lái zhōng guó liú xué liǎng nián le ， dàn shì wǒ de hàn yǔ shuǐ píng tí gāo dé yì diǎn ér yě bù kuài a 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 15,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "老师，除了小云，其他人都来了。",
+      "pinyin": "lǎo shī ， chú le xiǎo yún ， qí tā rén dōu lái le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 15,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "这是我昨天的作业，您帮我看看对不对。",
+      "pinyin": "zhè shì wǒ zuó tiān de zuò yè ， nín bāng wǒ kàn kàn duì bú duì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 15,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那件衣服我穿着有点儿小，给我弟弟了。",
+      "pinyin": "nà jiàn yī fú wǒ chuān zhe yǒu diǎn ér xiǎo ， gěi wǒ dì di le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 15,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你看她鼻子小小的，头发黑黑的；长得像谁？",
+      "pinyin": "nǐ kàn tā bí zi xiǎo xiǎo de ， tóu fà hēi hēi de ； zhǎng dé xiàng shuí ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 16,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你说得对，我现在累得下了班就想睡觉。",
+      "pinyin": "nǐ shuō dé duì ， wǒ xiàn zài lèi dé xià le bān jiù xiǎng shuì jiào 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 16,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "像她爸爸，刚出生时她爸爸高兴得一个晚上都没睡着。在公司。",
+      "pinyin": "xiàng tā bà bà ， gāng chū shēng shí tā bà bà gāo xìng dé yí gè wǎn shàng dōu méi shuì zháo 。 zài gōng sī 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 16,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "别客气，你女儿长得白白的、胖胖的，真可爱！现在多高了？",
+      "pinyin": "bié kè qì ， nǐ nǚ ér zhǎng dé bái bái de 、 pàng pàng de ， zhēn kě ài ！ xiàn zài duō gāo le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 16,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "大夫怎么说的？",
+      "pinyin": "dà fū zěn me shuō de ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 16,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "如果不舒服，就去医院检查一下吧。",
+      "pinyin": "rú guǒ bù shū fú ， jiù qù yī yuàn jiǎn chá yī xià ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 16,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我不喜欢一直住在同一个城市，想去其他城市看一看。",
+      "pinyin": "wǒ bù xǐ huān yì zhí zhù zài tóng yī gè chéng shì ， xiǎng qù qí tā chéng shì kàn yī kàn 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 16,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我年轻的时候也这么想，但是那时候没有钱，如果有钱，就去了。",
+      "pinyin": "wǒ nián qīng de shí hòu yě zhè me xiǎng ， dàn shì nà shí hòu méi yǒu qián ， rú guǒ yǒu qián ， jiù qù le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 16,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我的牙还是很疼。",
+      "pinyin": "wǒ de yá hái shì hěn téng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 16,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我认为现在您有时间也不会出去玩儿。",
+      "pinyin": "wǒ rèn wéi xiàn zài nín yǒu shí jiān yě bú huì chū qù wán ér 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 16,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "检查好几次了，但是没什么用。",
+      "pinyin": "jiǎn chá hǎo jǐ cì le ， dàn shì méi shén me yòng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 16,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "每次医生都告诉我，回家好好儿刷牙。",
+      "pinyin": "měi cì yī shēng dōu gào sù wǒ ， huí jiā hǎo hǎo ér shuā yá 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 16,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "现在钱不是问题了，主要是没有时间。",
+      "pinyin": "xiàn zài qián bú shì wèn tí le ， zhǔ yào shì méi yǒu shí jiān 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 16,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "谢谢你们来看我女儿。你送的小皮鞋和小帽子真漂亮！",
+      "pinyin": "xiè xiè nǐ men lái kàn wǒ nǚ ér 。 nǐ sòng de xiǎo pí xié hé xiǎo mào zi zhēn piào liàng ！",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 16,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那您现在为什么不去？",
+      "pinyin": "nà nín xiàn zài wèi shén me bù qù ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 16,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "三天。2在公司。",
+      "pinyin": "sān tiān 。 2 zài gōng sī 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "不用去医院，谁都有办法看好你的“病”。我问你，你多久没运动了？",
+      "pinyin": "bù yòng qù yī yuàn ， shéi dōu yǒu bàn fǎ kàn hǎo nǐ de “ bìng ” 。 wǒ wèn nǐ ， nǐ duō jiǔ méi yùn dòng le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "不行，现在他是我丈夫。在家。",
+      "pinyin": "bù xíng ， xiàn zài tā shì wǒ zhàng fū 。 zài jiā 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "为了健康，我真应该多锻炼锻炼了。从明天起，我决定每天去长跑。",
+      "pinyin": "wèi le jiàn kāng ， wǒ zhēn yīng gāi duō duàn liàn duàn liàn le 。 cóng míng tiān qǐ ， wǒ jué dìng měi tiān qù cháng pǎo 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "他一般喜欢做什么？",
+      "pinyin": "tā yì bān xǐ huān zuò shén me ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "他有很多爱好，唱歌、画画儿、踢足球，什么都会。",
+      "pinyin": "tā yǒu hěn duō ài hào ， chàng gē 、 huà huà ér 、 tī zú qiú ， shén me dū huì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你一共想请几天假？",
+      "pinyin": "nǐ yī gòng xiǎng qǐng jǐ tiān jiǎ ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "周经理，下个星期我可以请几天假吗？",
+      "pinyin": "zhōu jīng lǐ ， xià gè xīng qī wǒ kě yǐ qǐng jǐ tiān jiǎ ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "学习汉语介绍打扫锻炼帮助检查复习。",
+      "pinyin": "xué xí hàn yǔ jiè shào dǎ sǎo duàn liàn bāng zhù jiǎn chá fù xí 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "小丽，那个高高的男人是你们公司的吗？你对他了解吗？",
+      "pinyin": "xiǎo lì ， nà ge gāo gāo de nán rén shì nǐ men gōng sī de ma ？ nǐ duì tā liǎo jiě ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我三年没运动了。",
+      "pinyin": "wǒ sān nián méi yùn dòng le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我们过去是邻居，后来是大学同学，关系一直很不错。",
+      "pinyin": "wǒ men guò qù shì lín jū ， hòu lái shì dà xué tóng xué ， guān xì yì zhí hěn bú cuò 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我的一个老朋友结婚，我跟他两年没见了。",
+      "pinyin": "wǒ de yí gè lǎo péng yǒu jié hūn ， wǒ gēn tā liǎng nián méi jiàn le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "最近我觉得哪儿都不舒服，你带我去医院检查检查吧。",
+      "pinyin": "zuì jìn wǒ jué de nǎ ér dōu bù shū fú ， nǐ dài wǒ qù yī yuàn jiǎn chá jiǎn chá ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "真的？那你介绍我们认识认识吧。",
+      "pinyin": "zhēn de ？ nà nǐ jiè shào wǒ men rèn shí rèn shí ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "谁都知道运动对身体好。但是你吃饱了就睡。",
+      "pinyin": "shéi dōu zhī dào yùn dòng duì shēn tǐ hǎo 。 dàn shì nǐ chī bǎo le jiù shuì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 17,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "做这个工作有点儿累，需要经常去外地。你家人同意吗？",
+      "pinyin": "zuò zhè ge gōng zuò yǒu diǎn ér lèi ， xū yào jīng cháng qù wài dì 。 nǐ jiā rén tóng yì ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "动物和小孩儿一样，都需要人照顾。买回家去，谁照顾它啊？",
+      "pinyin": "dòng wù hé xiǎo hái ér yī yàng ， dōu xū yào rén zhào gù 。 mǎi huí jiā qù ， shuí zhào gù tā a ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "只要你给我买，我就能照顾好它。在公司。",
+      "pinyin": "zhǐ yào nǐ gěi wǒ mǎi ， wǒ jiù néng zhào gù hǎo tā 。 zài gōng sī 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "只要我愿意，我相信他们就会同意的。",
+      "pinyin": "zhǐ yào wǒ yuàn yì ， wǒ xiāng xìn tā men jiù huì tóng yì de 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好，那你明天来上班吧。关于这个工作，还有什么问题吗？",
+      "pinyin": "hǎo ， nà nǐ míng tiān lái shàng bān ba 。 guān yú zhè ge gōng zuò ， hái yǒu shén me wèn tí ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "好，钱下午打给你。你打算在哪儿买房？",
+      "pinyin": "hǎo ， qián xià wǔ dǎ gěi nǐ 。 nǐ dǎ suàn zài nǎ ér mǎi fáng ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "妈妈，你看那只狗多可爱，眼睛大大的，嘴小小的，我们买回去吧。",
+      "pinyin": "mā mā ， nǐ kàn nà zhǐ gǒu duō kě ài ， yǎn jīng dà dà de ， zuǐ xiǎo xiǎo de ， wǒ men mǎi huí qù ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "就在我们医院前面。",
+      "pinyin": "jiù zài wǒ men yī yuàn qián miàn 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "把原因和结果连起来。",
+      "pinyin": "bǎ yuán yīn hé jié guǒ lián qǐ lái 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "没有了，谢谢您给我这个机会，我会努力的。",
+      "pinyin": "méi yǒu le ， xiè xiè nín gěi wǒ zhè ge jī huì ， wǒ huì nǔ lì de 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "没问题，只要我有，就一定会借给你的。还差多少？",
+      "pinyin": "méi wèn tí ， zhǐ yào wǒ yǒu ， jiù yí dìng huì jiè gěi nǐ de 。 hái chà duō shǎo ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "老周，我打算买房子了，想向你借点儿钱。",
+      "pinyin": "lǎo zhōu ， wǒ dǎ suàn mǎi fáng zi le ， xiǎng xiàng nǐ jiè diǎn ér qián 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "贵公司不但很有名，而且工作环境好。",
+      "pinyin": "guì gōng sī bù dàn hěn yǒu míng ， ér qiě gōng zuò huán jìng hǎo 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "还差5万块钱。",
+      "pinyin": "hái chà 5 wàn kuài qián 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "这段时间你自己的衣服都没洗，你能照顾好它吗？",
+      "pinyin": "zhè duàn shí jiān nǐ zì jǐ de yī fú dōu méi xǐ ， nǐ néng zhào gù hǎo tā ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那你以后去医院就方便了。",
+      "pinyin": "nà nǐ yǐ hòu qù yī yuàn jiù fāng biàn le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 18,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "上次我们参加骑马比赛的照片，我选了几张洗出来了。",
+      "pinyin": "shàng cì wǒ men cān jiā qí mǎ bǐ sài de zhào piān ， wǒ xuǎn le jǐ zhāng xǐ chū lái le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "他上班穿西服、衬衫，比赛的时候穿的是运动服。",
+      "pinyin": "tā shàng bān chuān xī fú 、 chèn shān ， bǐ sài de shí hòu chuān de shì yùn dòng fú 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "他今天穿蓝西服，看上去像40多岁，还是穿运动服让他更年轻。圖在小丽家。",
+      "pinyin": "tā jīn tiān chuān lán xī fú ， kàn shàng qù xiàng 4 0 duō suì ， hái shì chuān yùn dòng fú ràng tā gèng nián qīng 。 tú zài xiǎo lì jiā 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你没看出来吗？他是小刚啊。",
+      "pinyin": "nǐ méi kàn chū lái ma ？ tā shì xiǎo gāng a 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "听说你都有女儿了？她多大了？",
+      "pinyin": "tīng shuō nǐ dōu yǒu nǚ ér le ？ tā duō dà le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "啊？这个礼物我没办法送。",
+      "pinyin": "a ？ zhè ge lǐ wù wǒ méi bàn fǎ sòng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "女儿变化不小，她小时候喜欢短头发，像男孩子一样。",
+      "pinyin": "nǚ ér biàn huà bù xiǎo ， tā xiǎo shí hòu xǐ huān duǎn tóu fà ， xiàng nán hái zi yī yàng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "女儿最近喜欢把头发放在耳朵后面，你知道为什么吗？",
+      "pinyin": "nǚ ér zuì jìn xǐ huān bǎ tóu fā fàng zài ěr duǒ hòu miàn ， nǐ zhī dào wèi shén me ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "她去年秋天出生的，刚过完一岁生日。",
+      "pinyin": "tā qù nián qiū tiān chū shēng de ， gāng guò wán yī suì shēng rì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "她喜欢什么？我送给她。",
+      "pinyin": "tā xǐ huān shén me ？ wǒ sòng gěi tā 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "快给我看看。骑得最快的这位是谁？",
+      "pinyin": "kuài gěi wǒ kàn kàn 。 qí dé zuì kuài de zhè wèi shì shuí ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "怎么看上去跟现在不太一样？",
+      "pinyin": "zěn me kàn shàng qù gēn xiàn zài bù tài yī yàng ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我也想起来了。她现在慢慢地开始像个女孩子了。",
+      "pinyin": "wǒ yě xiǎng qǐ lái le 。 tā xiàn zài màn màn dì kāi shǐ xiàng gè nǚ hái zi le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我们一年没见面了吧？",
+      "pinyin": "wǒ men yī nián méi jiàn miàn le ba ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我最近觉得她和以前不太一样了。",
+      "pinyin": "wǒ zuì jìn jué de tā hé yǐ qián bù tài yī yàng le 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "这样可以使她的脸看上去漂亮一些。",
+      "pinyin": "zhè yàng kě yǐ shǐ tā de liǎn kàn shàng qù piào liàng yī xiē 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 19,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "但是我这个月信用卡里的钱已经花得差不多了。在教室。",
+      "pinyin": "dàn shì wǒ zhè ge yuè xìn yòng kǎ lǐ de qián yǐ jīng huā dé chà bu duō le 。 zài jiào shì 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你们两个除了长得像，还有什么相同的地方？",
+      "pinyin": "nǐ men liǎng gè chú le zhǎng dé xiàng ， hái yǒu shén me xiāng tóng de dì fāng ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你再找找。是不是没带来？",
+      "pinyin": "nǐ zài zhǎo zhǎo 。 shì bú shì méi dài lái ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "你怎么突然关心起体育来了？",
+      "pinyin": "nǐ zěn me tū rán guān xīn qǐ tǐ yù lái le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "别难过，再买一个吧，公司东门外不就有一个大商场吗？",
+      "pinyin": "bié nán guò ， zài mǎi yí gè ba ， gōng sī dōng mén wài bù jiù yǒu yí gè dà shāng chǎng ma ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "只有你们的爸爸妈妈才能分出来哪个是哥哥，哪个是弟弟吧。",
+      "pinyin": "zhǐ yǒu nǐ men de bà bà mā mā cái néng fēn chū lái nǎ ge shì gē gē ， nǎ ge shì dì di ba 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我们住在同一个楼、同一个房。",
+      "pinyin": "wǒ men zhù zài tóng yī gè lóu 、 tóng yī gè fáng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我们经常被别人认错。",
+      "pinyin": "wǒ men jīng cháng bèi bié rén rèn cuò 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我找了，没找到啊。",
+      "pinyin": "wǒ zhǎo le ， méi zhǎo dào a 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我最近天天上网玩儿游戏，我的成绩差极了。在饭馆。",
+      "pinyin": "wǒ zuì jìn tiān tiān shàng wǎng wán ér yóu xì ， wǒ de chéng jì chà jí le 。 zài fàn guǎn 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我的照相机被谁拿走了？怎么找不到了？",
+      "pinyin": "wǒ de zhào xiàng jī bèi shuí ná zǒu le ？ zěn me zhǎo bú dào le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "我的男朋友喜欢看足球比赛，我被他影响的。",
+      "pinyin": "wǒ de nán péng yǒu xǐ huān kàn zú qiú bǐ sài ， wǒ bèi tā yǐng xiǎng de 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "把动词和宾语连起来。",
+      "pinyin": "bǎ dòng cí hé bīn yǔ lián qǐ lái 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "是啊，为了和他的爱好一样，我天天看球赛。",
+      "pinyin": "shì a ， wèi le hé tā de ài hào yī yàng ， wǒ tiān tiān kàn qiú sài 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "看来只有爱，才能让人有变化。",
+      "pinyin": "kàn lái zhǐ yǒu ài ， cái néng ràng rén yǒu biàn huà 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "那个拿着碗吃饭的人是你哥哥吗？他和你长得真像。",
+      "pinyin": "nà ge ná zhe wǎn chī fàn de rén shì nǐ gē gē ma ？ tā hé nǐ zhǎng dé zhēn xiàng 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "除了父母以外，还有我们自己也能啊。",
+      "pinyin": "chú le fù mǔ yǐ wài ， hái yǒu wǒ men zì jǐ yě néng a 。",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    },
+    {
+      "hanzi": "除了足球，他还影响你什么了？",
+      "pinyin": "chú le zú qiú ， tā hái yǐng xiǎng nǐ shén me le ？",
+      "translation": "",
+      "hskLevel": 3,
+      "lesson": 20,
+      "source": "hsk3-zh"
+    }
+  ]
+}
