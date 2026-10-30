@@ -9,6 +9,7 @@ import {
   isPinyinShowing,
   isTranslationShowing,
   localizedPrompt,
+  type RevealState,
 } from "@/lib/phrase-game/display";
 import type { DisplaySettings, GameLevel, GameTier, Piece, RoundItem } from "@/lib/phrase-game/types";
 import {
@@ -91,7 +92,7 @@ export function GameplayScreen({
       ? { bank: [], answer: derived.correctOrder }
       : { bank: derived.bank, answer: [] },
   );
-  const [reveal, setReveal] = useState({
+  const [reveal, setReveal] = useState<RevealState>({
     pinyin: isReview,
     translation: isReview,
   });
