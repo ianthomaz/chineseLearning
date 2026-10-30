@@ -274,7 +274,11 @@ check_chinese_learning_project() {
   if curl -sf -m 20 -H "Authorization: Bearer $LLM_API_TOKEN" "$url/projects" | jq -e '.projects[] | select(.project_id=="chinese_learning")' >/dev/null 2>&1; then
     echo "  OK — registado na API."
   else
-    echo "  Aviso: não encontrado. Corre ./start.sh --ingest (com outro modo) ou npm run ingest:rag em web/." >&2
+    echo "  Aviso: não encontrado no registry da API." >&2
+    echo "  Gap LLM (llm_api): não há seed_chinese_learning.py; wipe do Postgres some o projeto" >&2
+    echo "  mesmo com Chroma em disco. Remédio neste repo: ./start.sh --ingest ou npm run ingest:rag" >&2
+    echo "  (POST /ingest com sources). Path do sources tem de ser visível ao container da API." >&2
+    echo "  Detalhe: connectLLM/RAG_PROJETOS_INGEST_ASK.md § gap." >&2
   fi
   echo ""
 }

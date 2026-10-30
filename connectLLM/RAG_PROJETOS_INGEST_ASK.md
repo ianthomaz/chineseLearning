@@ -211,3 +211,24 @@ Estados finais incluem: `done`, `no_answer`, `need_more_info`, `failed`, `cancel
 Se a equipa da API partilhar um manual externo (PDF, wiki), usa-o para campos avançados de `user_context`, políticas por projeto em `config_json`, e troubleshooting. **Este ficheiro** cobre o mínimo para chineseLearning avançar sem clones.
 
 Próximo passo após RAG: alinhar com operação **caminhos montados no Docker** e um `project_id` único (ex.: `chinese_learning`).
+
+---
+
+## 8. Gap conhecido na API LLM (`chinese_learning`)
+
+Estado observado (out/2026) após limpeza do Postgres no host da API:
+
+| Peça | Estado |
+|------|--------|
+| `rag_knowledge/` neste repo | OK — fonte canónica local |
+| Chroma em disco no host da API (`data/chinese_learning/`) | Pode sobreviver a wipe de volumes Docker |
+| Linha em `GET /projects` (`project_id=chinese_learning`) | Some com o wipe — **registry Postgres** |
+| `scripts/seed_chinese_learning.py` no **llm_api** | **Não existe** (há seed para bikeanjo, webplacecc, etc.) |
+
+Consequência: o `start.sh` e o health local avisam “projeto não encontrado” mesmo com markdown e (às vezes) índice vetorial intactos. Isto é falha de **registo na API**, não de conteúdo neste repo.
+
+Remédio imediato (este repo): `npm run ingest:rag` / `./connectLLM/ingest-chinese-learning.sh` — o `POST /ingest` com `sources` recria o projeto.
+
+Remédio certo (repo **llm_api**, fora daqui): acrescentar `seed_chinese_learning.py` (ou equivalente) e incluí-lo no bootstrap pós-migrate, como os outros projetos.
+
+**Path:** neste laptop o clone vive em `~/Projects/chineseLearning`. No mini62 o Docker da API costuma montar `~/Documents/projects`. `RAG_SOURCES_PATH` / `CHINESE_LEARNING_SOURCES` têm de ser um caminho que o **processo da API** (container) consiga ler — não o path do teu Mac de viagem se a API não o monta.

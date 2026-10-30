@@ -20,3 +20,5 @@ Esta pasta contém **toda a documentação** para integrar o projeto **chineseLe
 **Arranque local:** na raiz do repo, **`./start.sh --local`** ou **`--webplace`** faz health + verificação do projeto `chinese_learning` e pode incluir **`--ingest`** (ver `web/README.md`).
 
 **Deploy vs RAG:** `deploy:webplace`, `deploy:local` e `deploy:prod` **não** fazem `POST /ingest`. O projeto (`chinese_learning`) regista-se na API na **primeira** ingest bem-sucedida (ou já existe na BD). Depois de alterares `rag_knowledge/*.md`, corre **`npm run ingest:rag`** (na pasta `web/`, com `.env.local` e API a correr). No servidor `featureLLM`, `CHINESE_LEARNING_SOURCES` no `.env` deve apontar para a pasta que o **container** vê.
+
+**Gap LLM:** não há seed `chinese_learning` no llm_api — wipe do Postgres some o projeto do registry. Ver [RAG_PROJETOS_INGEST_ASK.md](RAG_PROJETOS_INGEST_ASK.md) § 8. Remédio local: `ingest:rag` (não mexer no mini62 a partir deste laptop sem path montado certo).

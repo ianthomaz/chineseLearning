@@ -44,6 +44,8 @@ Em [`connectLLM/`](../connectLLM/README.md):
 1. **Site (páginas)** — `Content/` → `parse-consolidado.mjs` → blocos de estudo. Ver [07_conteudo_dados.md](07_conteudo_dados.md).
 2. **RAG na API** — `rag_knowledge/` → `POST /ingest`, projeto **`chinese_learning`**.
 
+**Gap LLM (anotado out/2026):** o **llm_api** não tem `seed_chinese_learning.py`. Depois de wipe do Postgres na API, `GET /projects` deixa de listar `chinese_learning` mesmo com `rag_knowledge/` (e por vezes Chroma) intactos. Remédio neste repo: `npm run ingest:rag`. Detalhe: [connectLLM/RAG_PROJETOS_INGEST_ASK.md](../connectLLM/RAG_PROJETOS_INGEST_ASK.md) § 8.
+
 O tutor usa **`/edu/chat`** hoje; ingest alimenta RAG para `/ask` ou políticas futuras.
 
 ### O que vai no RAG
