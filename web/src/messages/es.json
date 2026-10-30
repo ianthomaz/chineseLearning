@@ -400,6 +400,7 @@
       "showFullPrompt": "Mostrar frase traducida",
       "removeExtras": "Quitar piezas extra",
       "showPinyin": "Mostrar pinyin",
+      "hidePinyin": "Ocultar pinyin",
       "showTranslation": "Mostrar traducción",
       "viewTranslation": "Ver la traducción",
       "hideTranslation": "Ocultar la traducción",

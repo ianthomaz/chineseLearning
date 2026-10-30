@@ -5,7 +5,11 @@ import { useLocale } from "@/context/LocaleContext";
 import { trackEvent } from "@/lib/analytics";
 import { deriveBoard } from "@/lib/phrase-game/pieces";
 import { attemptString, validateAttempt } from "@/lib/phrase-game/validate";
-import { localizedPrompt } from "@/lib/phrase-game/display";
+import {
+  isPinyinShowing,
+  isTranslationShowing,
+  localizedPrompt,
+} from "@/lib/phrase-game/display";
 import type { DisplaySettings, GameLevel, GameTier, Piece, RoundItem } from "@/lib/phrase-game/types";
 import {
   computeScore,
@@ -131,7 +135,9 @@ export function GameplayScreen({
     setReveal((r) => ({
       ...r,
       pinyin: true,
+      suppressPinyin: false,
       translation: result.correct ? true : r.translation,
+      suppressTranslation: result.correct ? false : r.suppressTranslation,
     }));
 
     trackEvent({ action: "phrase_submit", category: "phrase_game", label: phrase.id });
@@ -230,11 +236,40 @@ export function GameplayScreen({
   const promptText = localizedPrompt(phrase, locale);
   const boardReveal =
     submitted !== null
-      ? { pinyin: true, translation: submitted === true ? true : reveal.translation }
-      : { pinyin: reveal.pinyin, translation: reveal.translation };
+      ? {
+          pinyin: true,
+          translation: submitted === true ? true : reveal.translation,
+          suppressPinyin: false,
+          suppressTranslation:
+            submitted === true ? false : reveal.suppressTranslation,
+        }
+      : reveal;
+
+  const pinyinShowing = isPinyinShowing(settings, boardReveal);
+  const glossShowing = isTranslationShowing(settings, boardReveal);
 
   function toggleViewTranslation() {
     onSettingsChange({ ...settings, showNativePrompt: !settings.showNativePrompt });
+  }
+
+  /** Piece-level pinyin help: show ↔ hide (also overrides setup settings). */
+  function togglePinyinHelp() {
+    if (pinyinShowing) {
+      setReveal((r) => ({ ...r, pinyin: false, suppressPinyin: true }));
+      return;
+    }
+    setReveal((r) => ({ ...r, pinyin: true, suppressPinyin: false }));
+    logHelp("showPinyin");
+  }
+
+  /** Piece-level gloss help: show ↔ hide. */
+  function toggleTranslationHelp() {
+    if (glossShowing) {
+      setReveal((r) => ({ ...r, translation: false, suppressTranslation: true }));
+      return;
+    }
+    setReveal((r) => ({ ...r, translation: true, suppressTranslation: false }));
+    logHelp("showTranslation");
   }
 
   return (
@@ -384,20 +419,24 @@ export function GameplayScreen({
               />
             ) : null}
             <HelpIconButton
-              icon="abc"
-              label={t("phraseGame.help.showPinyin")}
-              onClick={() => {
-                setReveal((r) => ({ ...r, pinyin: true }));
-                logHelp("showPinyin");
-              }}
+              icon={pinyinShowing ? "visibility_off" : "abc"}
+              label={
+                pinyinShowing
+                  ? t("phraseGame.help.hidePinyin")
+                  : t("phraseGame.help.showPinyin")
+              }
+              pressed={pinyinShowing}
+              onClick={togglePinyinHelp}
             />
             <HelpIconButton
-              icon="translate"
-              label={t("phraseGame.help.showTranslation")}
-              onClick={() => {
-                setReveal((r) => ({ ...r, translation: true }));
-                logHelp("showTranslation");
-              }}
+              icon={glossShowing ? "visibility_off" : "translate"}
+              label={
+                glossShowing
+                  ? t("phraseGame.help.hideTranslation")
+                  : t("phraseGame.help.showTranslation")
+              }
+              pressed={glossShowing}
+              onClick={toggleTranslationHelp}
             />
             <HelpIconButton
               icon="extension"
