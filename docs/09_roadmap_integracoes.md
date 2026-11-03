@@ -62,6 +62,34 @@ Espelho app: `appApple/docs/03_contratoAtualizacaoAPP.md`
 
 ---
 
+## Site + app como um produto só (nov 2026)
+
+App iOS **LearnChinese Today** (`appApple/`, bundle `today.learnchinese.app`):
+Hanzi Memorize + **Jogo de Frases offline** com as mesmas regras e pontuação do
+site (portado de `web/src/lib/phrase-game/`). Estado, instalação em dev e
+pendências do app: `appApple/docs/06_instalar_e_estado.md`.
+
+Para partilhar pontuação: identidade e token do app em
+[05](05_autenticacao.md) § Roadmap; dados em [07](07_conteudo_dados.md) §
+Pendências.
+
+### App Store na China (anotado, não prioritário)
+
+- A App Store da China continental exige **número de 备案 ICP**; em geral pede
+  entidade chinesa. Caminho prático: publicar em todos os países menos China
+  continental. Quem está na China com Apple ID de outro país baixa normalmente;
+  TestFlight funciona na China.
+- Manter categoria **Educação**: app na categoria Jogos exige licença (版号).
+
+### Site na China
+
+`app/layout.tsx` carrega a fonte de `fonts.googleapis.com` como CSS bloqueante
+no `<head>`. Na China sem VPN o domínio é bloqueado e pode segurar a primeira
+pintura até timeout. **Medir** de dentro da China sem VPN antes de mexer
+(alternativa: auto-hospedar um subset ou usar a fonte CJK do sistema).
+
+---
+
 ## WeChat login
 
 Ver [05_autenticacao.md](05_autenticacao.md) § WeChat — bloqueio administrativo Tencent, não técnico.

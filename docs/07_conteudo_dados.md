@@ -67,6 +67,24 @@ Escrita numa transacção: uma rodada meio gravada corromperia essa fila.
 substitui-o; se por acaso tiver linhas, guarda-as como `progress_legacy` em vez
 de apagar.
 
+### Pendências para pontuação partilhada site + app (nov 2026)
+
+- **Ids do quiz não são estáveis.** O quiz grava `progress.item_id` com o `id`
+  posicional da pergunta (`QuizGame.tsx`). Rebuild do `hsk1-quiz-bank.json` em
+  2026-11-03 (fontes actuais, após a reestruturação) manteve o mesmo id em só
+  **32 de 630** perguntas — o banco commitado está defasado das fontes. Publicar
+  esse rebuild faz o progresso de quiz já gravado apontar para perguntas
+  erradas. Antes: id estável (ex. hash de tipo + hanzi) e migrar `progress`.
+- **`game_rounds.round_id` não é único.** O app vai reenviar rodadas jogadas
+  offline → `UNIQUE(user_id, round_id)` e o servidor ignora repetidas.
+- **Backup do SQLite de produção** não está documentado. Com progresso de
+  usuários entre aparelhos, passa a ser obrigatório. (O deploy já preserva o
+  SQLite remoto — o rsync exclui `*.sqlite`.)
+- **Frases no pack do app.** O app embute `phrases.json` (cópia de
+  `src/data/phrase-game/phrases.json`, `Scripts/sync-phrases-seed.mjs`); só o
+  léxico tem manifest/actualização. Pôr as frases no mesmo pack.
+- Identidade multi-provedor (`accounts`): [05](05_autenticacao.md) § Roadmap.
+
 ### Lexico (site + app iOS)
 
 Fontes → `lexico_entries` (≤3 hanzi, com categoria):

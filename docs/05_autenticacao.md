@@ -104,6 +104,92 @@ Auth.js tem provider WeChat, mas o bloqueio é **administrativo**:
 
 ---
 
+## Roadmap de login — site + app (anotado nov 2026, não implementado)
+
+Objetivo: o mesmo usuário no site e no app iOS, com a mesma pontuação.
+Hoje só existe **Google no site**; o app não tem login.
+
+### 1. Base: `accounts` antes de qualquer provedor novo
+
+`users.id` = `sub` do Google não aguenta Apple, Facebook nem e-mail.
+
+- `users.id` passa a ser id interno. Usuários atuais **mantêm** o id que têm (o
+  `sub` do Google vira só um id) → `progress`, `game_rounds`, `events`, `lessons`
+  não mudam.
+- Tabela nova `accounts(provider, provider_account_id, user_id, email,
+  email_verified, created_at)`, `UNIQUE(provider, provider_account_id)`.
+  Backfill: uma linha `('google', id, id)` por usuário existente.
+- `signIn`/`jwt` em `server/auth/index.ts` resolvem provedor+sub → `users.id`.
+- Alterar também `schema.prisma` + [07](07_conteudo_dados.md).
+
+### 2. App: token próprio
+
+Cookie do Auth.js não serve para o app.
+
+- App faz login nativo (Sign in with Apple / Google Sign-In) → `POST
+  /api/app/auth/{apple,google}` com o ID token.
+- Servidor valida (JWKS do provedor; `aud` = bundle `today.learnchinese.app` ou o
+  client id iOS do Google), resolve via `accounts`, devolve token de sessão do app
+  (opaco, guardado com hash numa tabela `app_sessions` → dá para revogar).
+- `/api/game/round` e `/api/game/progress` aceitam cookie **ou** Bearer
+  (helper único `getRequestUser(req)`).
+- App guarda rodadas offline com `roundId` próprio e envia depois (exige
+  `UNIQUE(user_id, round_id)` — ver [07](07_conteudo_dados.md)).
+
+### 3. Apple
+
+- Site: Auth.js `providers/apple` (já vem no `next-auth` instalado). Precisa de
+  Services ID, chave `.p8`, domínio verificado, retorno
+  `https://learnchinese.today/api/auth/callback/apple`. O client secret é um JWT
+  que expira (máx. 6 meses) → gerar em runtime a partir da `.p8`.
+- **O `sub` só é igual no site e no app se o Services ID estiver agrupado com o
+  App ID principal** (`today.learnchinese.app`) no mesmo Team.
+- E-mail pode vir como "Hide My Email" (`privaterelay.appleid.com`): não bate com
+  nada; para enviar e-mail para esses endereços, registrar o domínio remetente no
+  serviço de relay da Apple.
+- Regras da loja: excluir conta **dentro do app** (5.1.1(v)) e, com Apple,
+  revogar o token na Apple ao excluir. Se o app tiver Google, tem de ter Apple (4.8).
+
+### 4. E-mail: código de 6 dígitos, não senha
+
+Recomendação para o "e-mail e senha":
+
+- Login por **código enviado por e-mail** (passwordless). Não guarda senha, não
+  tem "esqueci a senha", e o próprio login confirma o e-mail — some a maior parte
+  do desdobramento (confirmação, reset).
+- Encaixa no padrão existente: um Credentials provider `email-otp`, igual ao
+  `google-onetap`. Endpoint `POST /api/auth/email/start` envia o código; tabela
+  `email_codes(email, code_hash, expires_at, attempts)`; limite de tentativas e
+  rate limit por IP/e-mail.
+- Funciona igual no app (o iOS 17 preenche código vindo do Mail).
+- Precisa de provedor de e-mail transacional. Entrega para QQ Mail / 163 a testar.
+- "OpenID" não é uma opção a mais para o usuário: é o protocolo por baixo de
+  Google e Apple. Passkeys: boa camada futura por cima do e-mail.
+
+### 5. Facebook
+
+- Só no site (Auth.js `providers/facebook`). No app não: o SDK do Facebook traz
+  rastreamento e ATT.
+- A Meta exige URL de política de privacidade e **callback de exclusão de dados**
+  (`signed_request` → `{ url, confirmation_code }`). Montar junto com o provedor.
+- E-mail do Facebook não é garantidamente verificado → **não** juntar contas
+  automaticamente por e-mail; só ligar com o usuário já logado.
+
+### 6. Juntar contas
+
+Automático só com e-mail verificado (Google `email_verified`, Apple, código por
+e-mail). Restante: "conectar outra conta" com sessão ativa.
+
+### 7. China
+
+Google e Facebook não funcionam na China continental sem VPN; Apple funciona.
+Quem está na China sem iPhone fica sem opção até existir o e-mail com código.
+WeChat: ver abaixo (bloqueio administrativo).
+
+Ordem sugerida: 1 → 2 → Apple (site + app) → Google no app → e-mail → Facebook.
+
+---
+
 ## Smoke test
 
 ```bash

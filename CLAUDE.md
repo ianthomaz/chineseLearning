@@ -25,6 +25,11 @@ Documentação: [`docs/01_readme.md`](docs/01_readme.md). Contratos LLM: [`docs/
 [`docs/08_produto_observabilidade.md`](docs/08_produto_observabilidade.md):
 GA, cookies, áudio — feitos; opcional: custom dimensions no GA4 Admin.
 
+Site + app (nov 2026): login multi-provedor e token do app —
+[`docs/05_autenticacao.md`](docs/05_autenticacao.md) § Roadmap; ids estáveis do
+quiz, `round_id` único e backup — [`docs/07_conteudo_dados.md`](docs/07_conteudo_dados.md)
+§ Pendências. App: `appApple/docs/06_instalar_e_estado.md`.
+
 Curadoria por fazer: ordens alternativas aceites no jogo, 557 frases —
 [`docs/06_jogo_frases.md`](docs/06_jogo_frases.md) § Ordens alternativas.
 
