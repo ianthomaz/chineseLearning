@@ -8,7 +8,7 @@
  *
  * Bootstrap inputs (archive — do not edit for site content):
  *   consolidado.json, phrase-game, quiz, dialogues, visuals, book curated,
- *   context-decks/*.json, APP_hanziMemorize/lexico.json
+ *   context-decks/*.json, appApple/lexico.json
  *
  * Edit live content: npm run db:studio
  *
@@ -366,7 +366,7 @@ function seedBooks(db) {
     console.log(`[seed] book_vocab_entries already has ${tableCount(db, "book_vocab_entries")} rows — skip`);
     return tableCount(db, "book_vocab_entries");
   }
-  const curatedRoot = join(REPO_ROOT, "OrganizeVocabulary_books/curated");
+  const curatedRoot = join(REPO_ROOT, "vocabulario/OrganizeVocabulary_books/curated");
   let lessonFiles = 0;
   for (const bookId of ["primary-up", "primary-down"]) {
     const dir = join(curatedRoot, bookId);
@@ -643,6 +643,7 @@ function seedLexico(db) {
   // 4) NTCSL level-2 core (≤3) — assignments only; not book_vocab_*
   const ntcslCorePath = join(
     REPO_ROOT,
+    "vocabulario",
     "OrganizeVocabulary_books",
     "level2_NTCSL",
     "lexico-core.json",
@@ -669,6 +670,7 @@ function seedLexico(db) {
   // 5) HSK Standard Course 2+3 词语总表 (unified Mandarin lexicon — not a book silo)
   const hskCorePath = join(
     REPO_ROOT,
+    "vocabulario",
     "OrganizeVocabulary_books",
     "hsk-lexico-core.json",
   );

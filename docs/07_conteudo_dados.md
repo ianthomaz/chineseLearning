@@ -112,10 +112,10 @@ Melhoria futura: mirror local dos JSON (hoje CDN).
 
 | Pasta | Papel |
 |-------|-------|
-| `Content/` | `consolidado_final.md` → parse → blocos |
-| `FRASES_GAME/curated/` | Frases do jogo |
-| `OrganizeVocabulary_books/` | Material de livros (eixo A, separado de aulas) |
-| `rag_knowledge/` | Ingest RAG; `generated/` vem de `npm run build:rag` — [04_llm_conteudo_rag.md](04_llm_conteudo_rag.md) |
+| `vocabulario/Content/` | `consolidado_final.md` → parse → blocos |
+| `vocabulario/FRASES_GAME/curated/` | Frases do jogo |
+| `vocabulario/OrganizeVocabulary_books/` | Material de livros (eixo A, separado de aulas) |
+| `vocabulario/rag_knowledge/` | Ingest RAG; `generated/` vem de `npm run build:rag` — [04_llm_conteudo_rag.md](04_llm_conteudo_rag.md) |
 
 `predev` / `prebuild` correm seed fill-empty — **não** sobrescrevem edições SQL.
 
@@ -123,6 +123,6 @@ Melhoria futura: mirror local dos JSON (hoje CDN).
 
 ## Regras de ouro
 
-- **Não editar** `web/src/data/phrase-game/phrases.json` — gerado por `FRASES_GAME/curated/`
+- **Não editar** `web/src/data/phrase-game/phrases.json` — gerado por `vocabulario/FRASES_GAME/curated/`
 - **Sem busca global** no site — decisão de produto fixa
 - Alterar `schema.prisma` ⇒ actualizar **este doc**

@@ -334,7 +334,7 @@ CREATE TABLE IF NOT EXISTS context_deck_cards (
 );
 CREATE INDEX IF NOT EXISTS idx_cdc_deck ON context_deck_cards(deck_id);
 
--- Shared lexicon for APP_hanziMemorize (and future API).
+-- Shared lexicon for appApple (and future API).
 CREATE TABLE IF NOT EXISTS lexico_rotation_categories (
   id               TEXT PRIMARY KEY,
   title            TEXT NOT NULL,

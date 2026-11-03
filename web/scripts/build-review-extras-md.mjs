@@ -9,7 +9,7 @@ import { blocks as localeBlocks } from "./review-extras-locale-data.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..", "..");
-const mdPath = path.join(root, "Content", "review_extras.md");
+const mdPath = path.join(root, "vocabulario", "Content", "review_extras.md");
 
 function parseListLines(text) {
   const items = [];

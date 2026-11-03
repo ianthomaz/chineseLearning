@@ -12,7 +12,7 @@ Estado: **MVP implementado** — `/registerClass`, `/reviewClass` (curador only)
 
 | Eixo | O quê | Onde |
 |------|-------|------|
-| **A** | Vocabulário canónico por capítulo de livro | `OrganizeVocabulary_books/` → `book_vocab_entries` |
+| **A** | Vocabulário canónico por capítulo de livro | `vocabulario/OrganizeVocabulary_books/` → `book_vocab_entries` |
 | **B** | Aula real que registas (data, classe, palavras) | Formulário curador |
 
 Capítulo ≠ aula. Material ref (livro+cap) é opcional.
@@ -56,7 +56,7 @@ cd web && npm run build:app-library   # → data/app-library/
 
 Lexico partilhado: [07_conteudo_dados.md](07_conteudo_dados.md) · Classificação LLM: [04_llm_conteudo_rag.md](04_llm_conteudo_rag.md)
 
-Espelho app: `APP_hanziMemorize/docs/03_contratoAtualizacaoAPP.md`
+Espelho app: `appApple/docs/03_contratoAtualizacaoAPP.md`
 
 **Fora do pack:** KTV (`/ktv`) — dados em `web/public/ktv/`.
 

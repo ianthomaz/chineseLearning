@@ -1,7 +1,7 @@
 /**
  * Core types for the "Quebra-Cabeça de Frases" phrase-builder game.
  *
- * These mirror the canonical dataset schema in `FRASES_GAME/schema.json` and the
+ * These mirror the canonical dataset schema in `vocabulario/FRASES_GAME/schema.json` and the
  * validated artifact emitted to `web/src/data/phrase-game/phrases.json`.
  * Keep this file free of `any` — it is the typed contract for the whole game.
  */

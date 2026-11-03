@@ -9,8 +9,8 @@ import { pinyin as toPinyin } from "pinyin-pro";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..", "..");
-const mdPath = path.join(root, "Content", "consolidado_final.md");
-const extrasPath = path.join(root, "Content", "review_extras.md");
+const mdPath = path.join(root, "vocabulario", "Content", "consolidado_final.md");
+const extrasPath = path.join(root, "vocabulario", "Content", "review_extras.md");
 const outPath = path.join(__dirname, "..", "src", "data", "consolidado.json");
 
 /** @typedef {{ speaker: string; hanzi: string; pinyin: string; translation: string }} DialogueTurn */

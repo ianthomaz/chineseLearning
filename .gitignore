@@ -1,6 +1,7 @@
 # System files
 .DS_Store
 temp/
+ianthomaz/temp/
 
 # Accidental IDE browser paths (vscode:/…, http:/…)
 http:/

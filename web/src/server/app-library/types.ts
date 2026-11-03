@@ -1,5 +1,5 @@
 /**
- * Shared types for the app library snapshot (APP_hanziMemorize contract).
+ * Shared types for the app library snapshot (appApple contract).
  * See docs/09_roadmap_integracoes.md
  */
 

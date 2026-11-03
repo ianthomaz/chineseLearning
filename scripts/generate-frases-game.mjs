@@ -16,7 +16,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
-const FRASES = path.join(ROOT, "FRASES_GAME");
+const FRASES = path.join(ROOT, "vocabulario", "FRASES_GAME");
 const HANZI_RE = /[\u4e00-\u9fff\u3400-\u4dbf]/;
 const DIALOGUE_RE = /[：:]|(?:^|\s)[A-Za-z\u4e00-\u9fff]{1,4}\s*[：:]/;
 

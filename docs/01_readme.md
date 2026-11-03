@@ -23,7 +23,7 @@ Site Next.js em **`web/`** · produção **`https://learnchinese.today/`**
 |--------------|-----|
 | Correr o site local / fazer deploy | [03_operacao_e_deploy.md](03_operacao_e_deploy.md) |
 | Entender pastas e builds | [02_arquitetura.md](02_arquitetura.md) |
-| Tutor, API LLM ou ingest RAG | [04_llm_conteudo_rag.md](04_llm_conteudo_rag.md) + [`connectLLM/`](../connectLLM/README.md) |
+| Tutor, API LLM ou ingest RAG | [04_llm_conteudo_rag.md](04_llm_conteudo_rag.md) + [`docs/llm/`](llm/) |
 | Login Google, quem vê o quê | [05_autenticacao.md](05_autenticacao.md) |
 | Jogo de frases, pontuação, curadoria | [06_jogo_frases.md](06_jogo_frases.md) |
 | Editar blocos, SQLite, Prisma, hanzi | [07_conteudo_dados.md](07_conteudo_dados.md) |
@@ -36,8 +36,8 @@ Site Next.js em **`web/`** · produção **`https://learnchinese.today/`**
 - **Estudo:** `/review`, `/vocabulary`, `/grammar`, `/dialogues`, `/visuals`
 - **Prática:** `/phrase-game` (sem login), `/practice` + `/tutor` (login), `/gamification` (login), `/ktv`
 - **Tutor:** `POST /api/chat` → `/edu/chat` — só com `next start` (não no export estático)
-- **Conteúdo jogo:** `FRASES_GAME/curated/` → build → SQLite
-- **Contratos LLM completos:** [`connectLLM/`](../connectLLM/README.md)
+- **Conteúdo jogo:** `vocabulario/FRASES_GAME/curated/` → build → SQLite
+- **Contratos LLM completos:** [`docs/llm/`](llm/)
 
 ## Docs noutras pastas (não contam nos 10)
 

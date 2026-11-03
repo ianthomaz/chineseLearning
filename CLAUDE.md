@@ -1,6 +1,15 @@
 # chineseLearning — notas para quem trabalha neste repo
 
-Site Next.js em `web/`. Documentação completa em [`docs/01_readme.md`](docs/01_readme.md).
+Módulos na raiz:
+
+| Pasta | Papel |
+|-------|--------|
+| `vocabulario/` | Léxico, frases, bootstrap editorial, RAG sources |
+| `web/` | Site Next.js — learnchinese.today |
+| `appApple/` | App iOS (submodule `APP_learnChineseToday`) — feature Hanzi Memorize |
+| `ianthomaz/` | Avulsas pessoais — fora do produto |
+
+Documentação: [`docs/01_readme.md`](docs/01_readme.md). Contratos LLM: [`docs/llm/`](docs/llm/). Contrato pack app: [`appApple/docs/03_contratoAtualizacaoAPP.md`](appApple/docs/03_contratoAtualizacaoAPP.md).
 
 ## Decisões de produto (não voltar a propor)
 
@@ -75,4 +84,4 @@ Testar a 390 px de largura.
 - Mudar `web/prisma/schema.prisma` sem actualizar
   [`docs/07_conteudo_dados.md`](docs/07_conteudo_dados.md).
 - Editar `web/src/data/phrase-game/phrases.json` à mão — é gerado a partir de
-  `FRASES_GAME/curated/` por `npm run prebuild:phrase-game`.
+  `vocabulario/FRASES_GAME/curated/` por `npm run prebuild:phrase-game`.

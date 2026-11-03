@@ -20,7 +20,7 @@ if (!batchName) {
   process.exit(1);
 }
 
-const expansionPath = join(REPO_ROOT, "FRASES_GAME/curated", `${batchName}.json`);
+const expansionPath = join(REPO_ROOT, "vocabulario", "FRASES_GAME", "curated", `${batchName}.json`);
 if (!existsSync(expansionPath)) {
   console.error(`Missing ${expansionPath}`);
   process.exit(1);

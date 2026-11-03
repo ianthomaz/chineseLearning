@@ -26,7 +26,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const WEB_ROOT = join(__dirname, "..");
 const REPO_ROOT = join(WEB_ROOT, "..");
 const BANK = join(WEB_ROOT, "src", "data", "phrase-game", "phrases.json");
-const OUT = join(REPO_ROOT, "FRASES_GAME", "curated", "pending-accepted-orders.json");
+const OUT = join(REPO_ROOT, "vocabulario", "FRASES_GAME", "curated", "pending-accepted-orders.json");
 
 const argv = process.argv.slice(2);
 const wantLlm = argv.includes("--llm");

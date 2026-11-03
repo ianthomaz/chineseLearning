@@ -18,7 +18,7 @@ const BANK_PATH = join(WEB_ROOT, "src/data/gamification/hsk1-quiz-bank.json");
 const CONSOLIDADO = join(WEB_ROOT, "src/data/consolidado.json");
 const VOCAB_BASICO = join(REPO_ROOT, "vocabulario/vocab-basico.json");
 const PHRASES = join(WEB_ROOT, "src/data/phrase-game/phrases.json");
-const BOOKS_CURATED = join(REPO_ROOT, "OrganizeVocabulary_books/curated");
+const BOOKS_CURATED = join(REPO_ROOT, "vocabulario/OrganizeVocabulary_books/curated");
 const CONTEXT_DECKS = join(WEB_ROOT, "src/data/context-decks");
 
 const TARGET_GENERATED = 600;

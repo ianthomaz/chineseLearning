@@ -1,6 +1,6 @@
 /**
  * GET /api/app/content/pack/library — full library snapshot JSON (Bearer).
- * Contract: APP_hanziMemorize/docs/03_contratoAtualizacaoAPP.md
+ * Contract: appApple/docs/03_contratoAtualizacaoAPP.md
  */
 import { NextResponse } from "next/server";
 import { requireAppLibraryAccess } from "@/server/app-library/auth";

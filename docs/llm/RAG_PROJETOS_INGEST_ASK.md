@@ -220,14 +220,14 @@ Estado observado (out/2026) após limpeza do Postgres no host da API:
 
 | Peça | Estado |
 |------|--------|
-| `rag_knowledge/` neste repo | OK — fonte canónica local |
+| `vocabulario/rag_knowledge/` neste repo | OK — fonte canónica local |
 | Chroma em disco no host da API (`data/chinese_learning/`) | Pode sobreviver a wipe de volumes Docker |
 | Linha em `GET /projects` (`project_id=chinese_learning`) | Some com o wipe — **registry Postgres** |
 | `scripts/seed_chinese_learning.py` no **llm_api** | **Não existe** (há seed para bikeanjo, webplacecc, etc.) |
 
 Consequência: o `start.sh` e o health local avisam “projeto não encontrado” mesmo com markdown e (às vezes) índice vetorial intactos. Isto é falha de **registo na API**, não de conteúdo neste repo.
 
-Remédio imediato (este repo): `npm run ingest:rag` / `./connectLLM/ingest-chinese-learning.sh` — o `POST /ingest` com `sources` recria o projeto.
+Remédio imediato (este repo): `npm run ingest:rag` / `./scripts/ingest-chinese-learning.sh` — o `POST /ingest` com `sources` recria o projeto.
 
 Remédio certo (repo **llm_api**, fora daqui): acrescentar `seed_chinese_learning.py` (ou equivalente) e incluí-lo no bootstrap pós-migrate, como os outros projetos.
 

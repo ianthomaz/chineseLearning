@@ -2,7 +2,7 @@
 
 Léxico dos PDFs **新时代汉语口语** 初级·上 / 初级·下 — revisão supervisionada lição a lição.
 
-Esta pasta é a **única parte** de `OrganizeVocabulary_books/` versionada no git.
+Esta pasta é a **única parte** de `vocabulario/OrganizeVocabulary_books/` versionada no git.
 
 ## Estrutura de cada lição
 

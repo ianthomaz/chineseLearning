@@ -48,7 +48,7 @@ set -euo pipefail
 # Vars: DEPLOY_LOCAL_DIR (static export root; see --webplace)
 #
 # LLM: --local (default) still calls the API (health, smoke, ingest with --ingest) via LLM_API_URL in .env/.env.local.
-# That is integration / “is it up?”, not “LLM port contract for this repo” — URL comes from your env (see connectLLM/).
+# That is integration / “is it up?”, not “LLM port contract for this repo” — URL comes from your env (see docs/llm/).
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WEB_DIR="$REPO_ROOT/web"
@@ -278,7 +278,7 @@ check_chinese_learning_project() {
     echo "  Gap LLM (llm_api): não há seed_chinese_learning.py; wipe do Postgres some o projeto" >&2
     echo "  mesmo com Chroma em disco. Remédio neste repo: ./start.sh --ingest ou npm run ingest:rag" >&2
     echo "  (POST /ingest com sources). Path do sources tem de ser visível ao container da API." >&2
-    echo "  Detalhe: connectLLM/RAG_PROJETOS_INGEST_ASK.md § gap." >&2
+    echo "  Detalhe: docs/llm/RAG_PROJETOS_INGEST_ASK.md § gap." >&2
   fi
   echo ""
 }

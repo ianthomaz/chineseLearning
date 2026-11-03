@@ -30,7 +30,7 @@ Verificação: `cd web && npm run check:llm` · `./start.sh --local` faz health 
 
 ## Contratos detalhados
 
-Em [`connectLLM/`](../connectLLM/README.md):
+Em [`docs/llm/`](llm/):
 
 - `ACESSO_E_VERIFICACAO.md` — token, health, erros
 - `CONTRATO_EDU_COMPLETO.md` — `/edu/chat`, JSON estruturado
@@ -41,10 +41,10 @@ Em [`connectLLM/`](../connectLLM/README.md):
 
 ## Duas camadas de conteúdo
 
-1. **Site (páginas)** — `Content/` → `parse-consolidado.mjs` → blocos de estudo. Ver [07_conteudo_dados.md](07_conteudo_dados.md).
-2. **RAG na API** — `rag_knowledge/` → `POST /ingest`, projeto **`chinese_learning`**.
+1. **Site (páginas)** — `vocabulario/Content/` → `parse-consolidado.mjs` → blocos de estudo. Ver [07_conteudo_dados.md](07_conteudo_dados.md).
+2. **RAG na API** — `vocabulario/rag_knowledge/` → `POST /ingest`, projeto **`chinese_learning`**.
 
-**Gap LLM (anotado out/2026):** o **llm_api** não tem `seed_chinese_learning.py`. Depois de wipe do Postgres na API, `GET /projects` deixa de listar `chinese_learning` mesmo com `rag_knowledge/` (e por vezes Chroma) intactos. Remédio neste repo: `npm run ingest:rag`. Detalhe: [connectLLM/RAG_PROJETOS_INGEST_ASK.md](../connectLLM/RAG_PROJETOS_INGEST_ASK.md) § 8.
+**Gap LLM (anotado out/2026):** o **llm_api** não tem `seed_chinese_learning.py`. Depois de wipe do Postgres na API, `GET /projects` deixa de listar `chinese_learning` mesmo com `vocabulario/rag_knowledge/` (e por vezes Chroma) intactos. Remédio neste repo: `npm run ingest:rag`. Detalhe: [docs/llm/RAG_PROJETOS_INGEST_ASK.md](llm/RAG_PROJETOS_INGEST_ASK.md) § 8.
 
 O tutor usa **`/edu/chat`** hoje; ingest alimenta RAG para `/ask` ou políticas futuras.
 
@@ -52,7 +52,7 @@ O tutor usa **`/edu/chat`** hoje; ingest alimenta RAG para `/ask` ou políticas 
 
 | Ficheiro | Origem |
 |----------|--------|
-| `generated/jogo-frases.md` | Banco do jogo (`FRASES_GAME/curated/` + pinyin do build) |
+| `generated/jogo-frases.md` | Banco do jogo (`vocabulario/FRASES_GAME/curated/` + pinyin do build) |
 | `generated/livros.md` | Léxico curado 初级·上/下 |
 | `generated/vocabulario-curso.md` | Consolidado do site |
 | `generated/aulas-extra.md` | Cozinha + aulas Confúcio |
@@ -60,18 +60,18 @@ O tutor usa **`/edu/chat`** hoje; ingest alimenta RAG para `/ask` ou políticas 
 | `ordem-alternativas.md` | Quando uma ordem de frase é alternativa válida |
 | `vocabulario_estruturas.md`, `extraContent.md`, `dialogos_pratica.md`, `hsk1_interrogatives_pt.md` | Pedagógico HSK1 (à mão) |
 
-Qualquer `.md` extra na raiz de `rag_knowledge/` entra no ingest. Corpora grandes: acrescentar fonte em `scripts/build-rag-knowledge.mjs`.
+Qualquer `.md` extra na raiz de `vocabulario/rag_knowledge/` entra no ingest. Corpora grandes: acrescentar fonte em `scripts/build-rag-knowledge.mjs`.
 
 ```bash
 cd web && npm run build:rag     # regenera generated/*.md (local, sem API)
 cd web && npm run ingest:rag    # POST /ingest — só quando a API local deve reindexar
 ```
 
-Requisitos Docker/paths: `connectLLM/RAG_PROJETOS_INGEST_ASK.md`.
+Requisitos Docker/paths: `docs/llm/RAG_PROJETOS_INGEST_ASK.md`.
 
 `./start.sh --local --ingest` ou `--prepare --ingest` — mesmo script após checks.
 
-Deploy **não** faz ingest — correr manualmente quando `rag_knowledge/` mudar.
+Deploy **não** faz ingest — correr manualmente quando `vocabulario/rag_knowledge/` mudar.
 
 ---
 
@@ -104,4 +104,4 @@ Código: `web/src/server/lexico/`, `web/scripts/classify-lexico-pending.mjs`.
 
 Pack app: [09_roadmap_integracoes.md](09_roadmap_integracoes.md) § App library.
 
-Espelho app: `APP_hanziMemorize/docs/03_contratoAtualizacaoAPP.md`.
+Espelho app: `appApple/docs/03_contratoAtualizacaoAPP.md`.

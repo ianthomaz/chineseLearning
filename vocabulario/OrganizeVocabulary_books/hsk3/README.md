@@ -14,4 +14,4 @@
 
 ## Status
 
-Shared outputs with HSK2 under `OrganizeVocabulary_books/hsk-*.json`.
+Shared outputs with HSK2 under `vocabulario/OrganizeVocabulary_books/hsk-*.json`.

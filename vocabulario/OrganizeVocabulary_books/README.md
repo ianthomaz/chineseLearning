@@ -78,9 +78,9 @@ Ver `curated/progress.json` — **32/32 lições** revisadas (`primary-up` 1–1
 Requer PDFs e `scripts/` na máquina (não estão no git):
 
 ```bash
-python3 OrganizeVocabulary_books/scripts/build_curated.py
-python3 OrganizeVocabulary_books/scripts/review_and_fix_curated.py
-python3 OrganizeVocabulary_books/scripts/build_lexicon_from_curated.py
+python3 vocabulario/OrganizeVocabulary_books/scripts/build_curated.py
+python3 vocabulario/OrganizeVocabulary_books/scripts/review_and_fix_curated.py
+python3 vocabulario/OrganizeVocabulary_books/scripts/build_lexicon_from_curated.py
 ```
 
 Depois de rever, commitar só as alterações em `curated/`.

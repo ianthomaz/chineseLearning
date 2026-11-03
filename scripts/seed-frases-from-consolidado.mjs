@@ -8,7 +8,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
-const FRASES = path.join(ROOT, "FRASES_GAME");
+const FRASES = path.join(ROOT, "vocabulario", "FRASES_GAME");
 const DIALOGUE_RE = /[：:]|^[AB]\s*[：:]/;
 const PUNCT = /[，。！？、；：""''\s]/g;
 

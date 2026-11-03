@@ -8,7 +8,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
-const FRASES = path.join(ROOT, "FRASES_GAME");
+const FRASES = path.join(ROOT, "vocabulario", "FRASES_GAME");
 const TARGETS = { 1: 150, 2: 200, 3: 200, 4: 250 };
 
 const PRONOUNS = ["我", "你", "他", "她", "我们"];

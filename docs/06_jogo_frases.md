@@ -8,7 +8,7 @@ Código: `web/src/components/phrase-game/` · `web/src/lib/phrase-game/` · READ
 
 ## Banco e build
 
-- **Fonte:** `FRASES_GAME/curated/` (não editar `phrases.json` à mão)
+- **Fonte:** `vocabulario/FRASES_GAME/curated/` (não editar `phrases.json` à mão)
 - **Build:** `cd web && npm run prebuild:phrase-game`
 - **Servir:** `GET /api/phrase-game/bank` (fetch em background no cliente)
 - **Tiers:** Iniciante (HSK1) · Básico (completo)
@@ -61,7 +61,7 @@ acrescenta linha de ajuda a repetir o que o controlo já diz. Ver
 Níveis 1–3 mantêm as palavras inteiras, por isso 跑步 chega como uma peça só nos
 presets fáceis. A partir do nível 4 `pieces.ts` parte palavras de vários
 caracteres sem saber quais formam uma unidade indivisível. Marcar essas palavras
-no banco (`FRASES_GAME/curated/`) e respeitá-las em `pickPartialSplitTargets()`
+no banco (`vocabulario/FRASES_GAME/curated/`) e respeitá-las em `pickPartialSplitTargets()`
 é curadoria de dados, ainda por fazer.
 
 ### Língua e cores
@@ -109,7 +109,7 @@ node scripts/apply-accepted-orders.mjs      # aplica revisadas
 
 Validação: `web/scripts/accepted-orders-lib.mjs` (build falha se inválido).
 
-Curadoria: `FRASES_GAME/curated/pending-accepted-orders.json`
+Curadoria: `vocabulario/FRASES_GAME/curated/pending-accepted-orders.json`
 
 ---
 

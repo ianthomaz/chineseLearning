@@ -4,13 +4,18 @@
 
 | Caminho | Função |
 |---------|--------|
-| `start.sh` | Health LLM, ingest opcional, `--local` / `--webplace` / `--prod` |
-| `web/` | Next.js — site learnchinese.today, tutor, APIs |
-| `connectLLM/` | Docs e scripts integração LLM/RAG |
-| `Content/` | Fonte editorial → build |
-| `FRASES_GAME/curated/` | Banco curado do jogo de frases |
-| `rag_knowledge/` | Markdown para RAG (`POST /ingest`) |
-| `OrganizeVocabulary_books/` | Material de livros (eixo A) |
+| `web/` | Site Next.js — learnchinese.today |
+| `appApple/` | App iOS (submodule APP_learnChineseToday) |
+| `vocabulario/` | Léxico / frases / bootstrap editorial / RAG sources |
+| `docs/` | Documentação (`docs/llm/` = contratos API LLM) |
+| `scripts/` | Scripts de build/ingest na raiz |
+| `QA/` | Smoke / Playwright / Lighthouse |
+| `local/` | Credenciais (gitignored) |
+| `ianthomaz/` | Avulsas pessoais — fora do produto |
+| `start.sh` | Dev / local / prod |
+| `itcsManifest.yaml` | Cartão ITCS |
+
+Dentro de `vocabulario/`: `Content/`, `FRASES_GAME/`, `OrganizeVocabulary_books/`, `rag_knowledge/`, JSONs de léxico.
 
 ## Aplicação `web/`
 
@@ -47,8 +52,8 @@ Gates: [05_autenticacao.md](05_autenticacao.md).
 
 ## Pré-build
 
-- `parse-consolidado.mjs` — `Content/` → JSON blocos
-- `build-phrase-game-data.mjs` — `FRASES_GAME/` → SQLite + `phrases.json`
+- `parse-consolidado.mjs` — `vocabulario/Content/` → JSON blocos
+- `build-phrase-game-data.mjs` — `vocabulario/FRASES_GAME/` → SQLite + `phrases.json`
 - `seed-content-db.mjs` — bootstrap SQL
 
 ## Fluxos principais
@@ -61,6 +66,6 @@ Gates: [05_autenticacao.md](05_autenticacao.md).
 | Jogo frases | [06_jogo_frases.md](06_jogo_frases.md) |
 | BD conteúdo | [07_conteudo_dados.md](07_conteudo_dados.md) |
 
-## `connectLLM/`
+## `docs/llm/`
 
-Contratos API, ingest: [`connectLLM/README.md`](../connectLLM/README.md)
+Contratos API LLM. Ingest: `scripts/ingest-chinese-learning.sh` (`npm run ingest:rag`).

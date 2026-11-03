@@ -10,7 +10,7 @@ Google sign-in (server mode) is optional and only stores a nick.
 ## Layout
 
 ```
-FRASES_GAME/
+vocabulario/FRASES_GAME/
   schema.json                 canonical dataset schema (v2)
   curated/
     phrases.json              the phrase bank (edit this)
@@ -56,7 +56,7 @@ web/
 
 ## Editing / building the bank
 
-1. Edit `FRASES_GAME/curated/phrases.json`.
+1. Edit `vocabulario/FRASES_GAME/curated/phrases.json`.
 2. Tags: use themes (`tema:cores`, `tema:lugares`, …), not source PDF names.
 3. Rebuild:
    ```bash

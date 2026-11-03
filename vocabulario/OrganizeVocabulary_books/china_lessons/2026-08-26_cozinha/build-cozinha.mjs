@@ -18,7 +18,7 @@ const outDeck = path.join(
 );
 const curatedPhrasesPath = path.join(
   repoRoot,
-  "FRASES_GAME/curated/phrases.json",
+  "vocabulario/FRASES_GAME/curated/phrases.json",
 );
 
 function mdField(key, val) {

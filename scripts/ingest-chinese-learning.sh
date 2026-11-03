@@ -6,7 +6,7 @@ set -euo pipefail
 # Requires: LLM_API_URL, LLM_API_TOKEN (and jq). Loads web/.env.local if present.
 #
 # Usage (from repo root):
-#   ./connectLLM/ingest-chinese-learning.sh
+#   ./scripts/ingest-chinese-learning.sh
 #
 # The path in "sources" must be readable by the API process (host or container).
 #
@@ -43,7 +43,7 @@ LLM_API_URL="${LLM_API_URL%/}"
 if [[ -n "${RAG_SOURCES_PATH:-}" ]]; then
   RAG_SOURCES="$RAG_SOURCES_PATH"
 else
-  RAG_SOURCES="$ROOT/rag_knowledge"
+  RAG_SOURCES="$ROOT/vocabulario/rag_knowledge"
 fi
 
 if [[ ! -d "$RAG_SOURCES" ]]; then
@@ -100,4 +100,4 @@ curl -sS -X POST \
   "$LLM_API_URL/ingest" | jq .
 
 echo ""
-echo "Done. Indexing runs in the background on the API server. See connectLLM/RAG_PROJETOS_INGEST_ASK.md"
+echo "Done. Indexing runs in the background on the API server. See docs/llm/RAG_PROJETOS_INGEST_ASK.md"

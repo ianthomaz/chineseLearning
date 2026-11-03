@@ -2,7 +2,7 @@
   "$schema": "phrase-game-dataset-v2",
   "description": "Static phrase bank for the drag-and-drop sentence game 'Quebra-Cabeça de Frases'. No dialogues, no LLM at runtime.",
   "pipeline": {
-    "authoringSource": "FRASES_GAME/curated/phrases.json",
+    "authoringSource": "vocabulario/FRASES_GAME/curated/phrases.json",
     "authoringFormat": "Lean: each phrase has { id, nivel, tier, pt, en?, es?, words:[{palavra, pt, dificil?}], distratores:[hanzi string, max 2] }. Per-character pinyin is filled by the build script.",
     "builder": "web/scripts/build-phrase-game-data.mjs (uses pinyin-pro; cross-checks tier vs vocabulario/vocab-basico.json hsk1 flag)",
     "runtimeArtifact": "web/src/data/phrase-game/phrases.json (validated; consumed by web/src/lib/phrase-game/phrases.ts)"

@@ -2,7 +2,7 @@
 /**
  * Build + validate the phrase-game data.
  *
- * Reads FRASES_GAME/curated/phrases.json, fills per-character pinyin via
+ * Reads vocabulario/FRASES_GAME/curated/phrases.json, fills per-character pinyin via
  * pinyin-pro, validates the schema (max 2 distractors, accepted orders are
  * reorderings of the phrase's pieces), and emits
  * web/src/data/phrase-game/phrases.json.
@@ -19,7 +19,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const WEB_ROOT = join(__dirname, "..");
 const REPO_ROOT = join(WEB_ROOT, "..");
 
-const CURATED_DIR = join(REPO_ROOT, "FRASES_GAME", "curated");
+const CURATED_DIR = join(REPO_ROOT, "vocabulario", "FRASES_GAME", "curated");
 const SRC = join(CURATED_DIR, "phrases.json");
 const VOCAB = join(REPO_ROOT, "vocabulario", "vocab-basico.json");
 const OUT_DIR = join(WEB_ROOT, "src", "data", "phrase-game");
