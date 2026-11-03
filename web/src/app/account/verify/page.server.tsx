@@ -1,6 +1,6 @@
 /**
  * Email confirmation link (`/account/verify?token=…`) — SERVER MODE only.
- * Opening it releases the account (NOIA clearance N3 → O4). Idempotent until
+ * Opening it releases the account (NOIA clearance O1 → O4). Idempotent until
  * the link expires: mail scanners open links too.
  */
 import { confirmEmailToken } from "@/server/account/service";

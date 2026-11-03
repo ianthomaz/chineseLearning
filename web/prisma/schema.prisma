@@ -21,8 +21,8 @@ model User {
   name            String?
   image           String?
   nick            String?
-  /// NOIA clearance (server/auth/noia.ts): N3 pending email account, O4 released.
-  clearance       String   @default("N3")
+  /// NOIA clearance (server/auth/noia.ts): N0 no account, O1 unconfirmed email account, O4 confirmed.
+  clearance       String   @default("O1")
   /// scrypt hash — email + password accounts only.
   passwordHash    String?  @map("password_hash")
   emailVerifiedAt String?  @map("email_verified_at")

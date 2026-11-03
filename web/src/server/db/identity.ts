@@ -3,7 +3,7 @@
  *
  * - `accounts` maps (provider, provider_account_id) → `users.id`.
  *   Providers: 'google', 'apple', 'email' (id = normalised email).
- * - `users.clearance` is a NOIA UC (`server/auth/noia.ts`): N3 while an email
+ * - `users.clearance` is a NOIA UC (`server/auth/noia.ts`): O1 while an email
  *   account waits for its confirmation link, O4 once released. Every change is
  *   audited in `clearance_changes`.
  * - Accounts join by **verified** email only: a Google user who later registers
@@ -180,7 +180,7 @@ export type RegisterOutcome =
   | { status: "taken" };
 
 /**
- * New email account (pending, N3). Registering again before confirming just
+ * New email account (pending, O1). Registering again before confirming just
  * replaces the password and sends a new link — people forget what they typed.
  * An address that already has a confirmed password is taken.
  */

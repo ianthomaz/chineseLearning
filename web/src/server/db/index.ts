@@ -448,7 +448,7 @@ function migrateIdentity(database: DatabaseSync): void {
   }
   if (columns.has("clearance")) return;
 
-  database.exec(`ALTER TABLE users ADD COLUMN clearance TEXT NOT NULL DEFAULT 'N3'`);
+  database.exec(`ALTER TABLE users ADD COLUMN clearance TEXT NOT NULL DEFAULT 'O1'`);
   database.exec("BEGIN");
   try {
     database.exec(
@@ -457,7 +457,7 @@ function migrateIdentity(database: DatabaseSync): void {
     );
     database.exec(
       `INSERT INTO clearance_changes (user_id, from_cl, to_cl, source)
-       SELECT id, 'N3', 'O4', 'migration' FROM users`,
+       SELECT id, 'O1', 'O4', 'migration' FROM users`,
     );
     database.exec(`UPDATE users SET clearance = 'O4', email_verified_at = COALESCE(email_verified_at, created_at)`);
     database.exec("COMMIT");

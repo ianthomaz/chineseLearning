@@ -121,7 +121,7 @@ N (visitante) < O (outsider) < I (insider) < A (admin), deny-by-default.
 | Situação | UC | Origem (`clearance_changes.source`) |
 |---|---|---|
 | Sem sessão | N0 | — |
-| Cadastro por e-mail, link ainda não aberto | **N3** | `signup` |
+| Cadastro por e-mail, link ainda não aberto | **O1** | `signup` |
 | Conta liberada: link aberto, ou login Google/Apple | **O4** | `email_verified` · `oauth_signup` · `password_reset` |
 | Usuários Google anteriores a nov 2026 | O4 | `migration` |
 
@@ -147,11 +147,11 @@ endereço = mesmo usuário (o link de confirmação prova o endereço). E-mail
 - **Cadastro** (`POST /api/account/register`): e-mail duas vezes, sugestão de
   domínio no formulário (`web/src/lib/email-check.ts` — hotmal→hotmail,
   gmail.com.br→gmail.com, google.com.br→gmail.com), DNS do domínio (MX/A) no
-  servidor, senha com 8+ caracteres (scrypt). Conta nasce N3 e recebe o link.
+  servidor, senha com 8+ caracteres (scrypt). Conta nasce O1 e recebe o link.
 - **Link** (`/account/verify?token=`): libera (O4). Abrir de novo não quebra
   (scanners de e-mail abrem links).
 - **Entrar**: site = Auth.js Credentials `password`; app = `POST /api/app/auth/password`.
-  Conta N3 recebe `email_not_verified` (+ botão "enviar o link de novo").
+  Conta O1 recebe `email_not_verified` (+ botão "enviar o link de novo").
 - **Esqueci a senha** (`/api/account/password/forgot` → `/account/reset-password`):
   serve também para usuário Google/Apple criar uma senha. Reset derruba as
   sessões do app.
@@ -178,8 +178,8 @@ idempotentes por `roundId`. Lado do app: `appApple/docs/08_login.md`.
 
 Implementado com a opção marcada; responder só se for "não".
 
-1. **Conta liberada = O4** (não O5)? — usei O4.
-2. **Cadastro sem confirmar = N3** (padrão de linha nova do NOIA)? — usei N3.
+1. ~~Conta liberada~~ — decidido: **O4**.
+2. ~~Cadastro sem confirmar~~ — decidido pelo dono: **O1**. Níveis NOIA deste projeto: N0 sem conta · O1 e-mail+senha sem confirmar · O4 conta confirmada.
 3. **Juntar automaticamente** Google + e-mail/senha quando o e-mail verificado é o mesmo? — sim.
 4. Cadastro com e-mail que já tem conta responde **"já tem conta"** (revela que o e-mail existe; mais claro para o usuário)? — sim.
 5. Admin continua sendo **por e-mail** (`NEXT_PUBLIC_ADMIN_EMAIL`), sem virar A7 no NOIA por enquanto? — sim.

@@ -1,6 +1,6 @@
 /**
  * Email + password sign-up — site and iOS app. SERVER MODE only.
- * Body: { email, emailConfirm, password, locale }. Creates a pending (N3)
+ * Body: { email, emailConfirm, password, locale }. Creates a pending (O1)
  * account and emails a confirmation link; the account is released (O4) when
  * the link is opened (`/account/verify`).
  */
