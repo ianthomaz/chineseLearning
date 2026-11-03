@@ -7,15 +7,14 @@
  *
  * Under static export this route does not exist (`.server.ts` omitted).
  */
-import { auth } from "@/server/auth";
+import { getRequestUser } from "@/server/auth/request-user";
 import { getUser, setNick, upsertUser } from "@/server/db/users";
 import { gameSummary, recentRounds } from "@/server/db/progress";
 
 export const dynamic = "force-dynamic";
 
-export async function GET() {
-  const session = await auth();
-  const id = session?.user?.id;
+export async function GET(req: Request) {
+  const id = (await getRequestUser(req))?.id;
   if (!id) return Response.json({ error: "unauthenticated" }, { status: 401 });
 
   const user = getUser(id);
@@ -28,17 +27,12 @@ export async function GET() {
 }
 
 export async function POST(req: Request) {
-  const session = await auth();
-  const id = session?.user?.id;
-  if (!id) return Response.json({ error: "unauthenticated" }, { status: 401 });
+  const user = await getRequestUser(req);
+  const id = user?.id;
+  if (!user || !id) return Response.json({ error: "unauthenticated" }, { status: 401 });
 
   const body = (await req.json().catch(() => ({}))) as { nick?: unknown };
-  upsertUser({
-    id,
-    email: session.user?.email,
-    name: session.user?.name,
-    image: session.user?.image,
-  });
+  upsertUser({ id, email: user.email, name: user.name, image: user.image });
   if (typeof body.nick === "string") {
     setNick(id, body.nick.trim().slice(0, 24));
   }

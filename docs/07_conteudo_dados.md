@@ -42,6 +42,7 @@ Código: `web/src/lib/content/`
 | `context_decks` / `context_deck_cards` | Flashcards `/practice` |
 | `lexico_*` | Pool partilhado site + app |
 | `progress` | Domínio por item e por jogador — ver abaixo |
+| `accounts`, `app_sessions`, `email_tokens`, `clearance_changes` | Contas, sessões do app, links por e-mail, auditoria NOIA — [05](05_autenticacao.md) § Contas |
 | `game_rounds` | Uma linha por rodada terminada |
 
 ### Progresso do jogador
@@ -75,8 +76,8 @@ de apagar.
   **32 de 630** perguntas — o banco commitado está defasado das fontes. Publicar
   esse rebuild faz o progresso de quiz já gravado apontar para perguntas
   erradas. Antes: id estável (ex. hash de tipo + hanzi) e migrar `progress`.
-- **`game_rounds.round_id` não é único.** O app vai reenviar rodadas jogadas
-  offline → `UNIQUE(user_id, round_id)` e o servidor ignora repetidas.
+- ~~`game_rounds.round_id` não é único~~ — resolvido em código: `recordRound()`
+  ignora um `round_id` que o usuário já tem (índice `idx_rounds_user_round`).
 - **Backup do SQLite de produção** não está documentado. Com progresso de
   usuários entre aparelhos, passa a ser obrigatório. (O deploy já preserva o
   SQLite remoto — o rsync exclui `*.sqlite`.)

@@ -72,6 +72,29 @@ function siteBlock(data) {
   ];
 }
 
+/** Accounts: Resend email, Apple, Google iOS client (docs/05_autenticacao.md § Contas). */
+function accountBlock(data, existing) {
+  const email = data.email ?? {};
+  const apple = data.apple ?? {};
+  const g = data.google_oauth ?? {};
+  const pick = (value, key) => value || existing[key] || "";
+  const resendKey = pick(email.RESEND_API_KEY, "RESEND_API_KEY");
+  const appleId = pick(apple.AUTH_APPLE_ID, "AUTH_APPLE_ID");
+  const appleSecret = pick(apple.AUTH_APPLE_SECRET, "AUTH_APPLE_SECRET");
+  return [
+    "# --- Accounts (email + password, Apple, Google iOS)",
+    resendKey ? `RESEND_API_KEY=${resendKey}` : "# RESEND_API_KEY=  # without it, emails are printed to the server log",
+    `RESEND_FROM=${pick(email.RESEND_FROM, "RESEND_FROM") || "LearnChinese Today <no-reply@learnchinese.today>"}`,
+    `APPLE_APP_BUNDLE_ID=${pick(apple.APPLE_APP_BUNDLE_ID, "APPLE_APP_BUNDLE_ID") || "today.learnchinese.app"}`,
+    ...(appleId && appleSecret
+      ? [`AUTH_APPLE_ID=${appleId}`, `AUTH_APPLE_SECRET=${appleSecret}`, "NEXT_PUBLIC_AUTH_APPLE=1"]
+      : ["# AUTH_APPLE_ID= / AUTH_APPLE_SECRET=  # Sign in with Apple on the site (optional)"]),
+    ...(pick(g.GOOGLE_IOS_CLIENT_ID, "GOOGLE_IOS_CLIENT_ID")
+      ? [`GOOGLE_IOS_CLIENT_ID=${pick(g.GOOGLE_IOS_CLIENT_ID, "GOOGLE_IOS_CLIENT_ID")}`]
+      : ["# GOOGLE_IOS_CLIENT_ID=  # Google Sign-In in the iOS app"]),
+  ];
+}
+
 function main() {
   let data;
   try {
@@ -137,6 +160,8 @@ function main() {
     "",
     ...devAuth,
     "",
+    ...accountBlock(data, existingLocal),
+    "",
   ].join("\n");
 
   const serverEnvContent = [
@@ -160,6 +185,8 @@ function main() {
     ...site,
     "",
     ...prodAuth,
+    "",
+    ...accountBlock(data, existingServer),
     "",
   ].join("\n");
 

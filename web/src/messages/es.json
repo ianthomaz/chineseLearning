@@ -6,7 +6,7 @@
   },
   "authGate": {
     "title": "Inicia sesión para continuar",
-    "hint": "Esta área es interactiva y requiere inicio de sesión con Google.",
+    "hint": "Esta área es interactiva y requiere iniciar sesión.",
     "signIn": "Entrar con Google",
     "signInAlt": "Otra cuenta",
     "disabledTitle": "Funcionalidad desactivada",
@@ -420,7 +420,7 @@
     },
     "auth": {
       "guest": "Jugando como invitado",
-      "guestHint": "Puedes jugar sin entrar. Entra con Google si quieres guardar tu apodo en este dispositivo.",
+      "guestHint": "Puedes jugar sin entrar. Entra para guardar tu progreso.",
       "serverOnly": "El inicio de sesión requiere modo servidor.",
       "signIn": "Entrar con Google",
       "signInAlt": "Otra cuenta",
@@ -495,5 +495,48 @@
     "points": "({points} pts)",
     "toReview": "{count} para repasar",
     "toReviewOne": "1 para repasar"
+  },
+  "account": {
+    "or": "o",
+    "appleSignIn": "Iniciar sesión con Apple",
+    "tabs": {
+      "signIn": "Entrar",
+      "register": "Crear cuenta"
+    },
+    "email": "Correo",
+    "emailConfirm": "Confirma el correo",
+    "password": "Contraseña",
+    "passwordNew": "Nueva contraseña",
+    "passwordHint": "Al menos 8 caracteres",
+    "didYouMean": "¿Quisiste decir {email}?",
+    "submitSignIn": "Entrar",
+    "submitRegister": "Crear cuenta",
+    "submitForgot": "Enviar enlace",
+    "submitReset": "Guardar contraseña",
+    "forgot": "¿Olvidaste la contraseña?",
+    "back": "Volver",
+    "working": "Un momento…",
+    "sentTitle": "Revisa tu correo",
+    "sentBody": "Enviamos un enlace a {email}. Ábrelo para activar tu cuenta.",
+    "resend": "Enviar el enlace de nuevo",
+    "resent": "Enlace enviado de nuevo.",
+    "forgotSent": "Si {email} tiene una cuenta, va en camino un enlace para elegir una nueva contraseña.",
+    "verifyOk": "Correo confirmado. Tu cuenta está activa — ya puedes entrar.",
+    "resetOk": "Contraseña guardada. Ya puedes entrar.",
+    "goSignIn": "Ir a iniciar sesión",
+    "error": {
+      "invalid_email": "Este correo no parece correcto.",
+      "email_mismatch": "Los dos correos son distintos.",
+      "email_domain": "Este dominio no recibe correos. Revisa la parte después de la @.",
+      "weak_password": "Usa al menos 8 caracteres.",
+      "email_taken": "Este correo ya tiene cuenta. Entra o restablece la contraseña.",
+      "invalid_credentials": "Correo o contraseña incorrectos.",
+      "email_not_verified": "Confirma tu correo primero — abre el enlace que te enviamos.",
+      "invalid_token": "Este enlace no es válido.",
+      "expired_token": "Este enlace caducó. Pide uno nuevo.",
+      "email_failed": "No pudimos enviar el correo. Inténtalo en unos minutos.",
+      "rate_limited": "Demasiados intentos. Espera unos minutos.",
+      "generic": "Algo salió mal. Inténtalo de nuevo."
+    }
   }
 }

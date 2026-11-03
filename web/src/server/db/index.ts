@@ -74,6 +74,56 @@ CREATE TABLE IF NOT EXISTS game_rounds (
 );
 CREATE INDEX IF NOT EXISTS idx_rounds_user ON game_rounds(user_id, created_at);
 
+-- Identity (docs/05_autenticacao.md § Contas). A user can sign in through
+-- several providers; each (provider, provider_account_id) points at one user.
+-- provider: 'google' | 'apple' | 'email' (provider_account_id = normalised email).
+CREATE TABLE IF NOT EXISTS accounts (
+  provider            TEXT NOT NULL,
+  provider_account_id TEXT NOT NULL,
+  user_id             TEXT NOT NULL,
+  email               TEXT,
+  created_at          TEXT NOT NULL DEFAULT (datetime('now')),
+  PRIMARY KEY (provider, provider_account_id)
+);
+CREATE INDEX IF NOT EXISTS idx_accounts_user ON accounts(user_id);
+
+-- iOS app sessions: opaque bearer token, only its SHA-256 is stored.
+CREATE TABLE IF NOT EXISTS app_sessions (
+  token_hash   TEXT PRIMARY KEY,
+  user_id      TEXT NOT NULL,
+  client       TEXT,
+  created_at   TEXT NOT NULL DEFAULT (datetime('now')),
+  last_used_at TEXT NOT NULL DEFAULT (datetime('now')),
+  expires_at   TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_app_sessions_user ON app_sessions(user_id);
+
+-- One-time links sent by email. purpose: 'verify' | 'reset'. Only the hash is stored.
+CREATE TABLE IF NOT EXISTS email_tokens (
+  token_hash TEXT PRIMARY KEY,
+  user_id    TEXT NOT NULL,
+  email      TEXT NOT NULL,
+  purpose    TEXT NOT NULL,
+  expires_at TEXT NOT NULL,
+  used_at    TEXT,
+  created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_email_tokens_user ON email_tokens(user_id);
+
+-- NOIA audit, append-only (same shape as noia.dev): every change of users.clearance.
+-- source: 'migration' | 'signup' | 'email_verified' | 'oauth_signup' | 'password_reset' | 'admin'.
+CREATE TABLE IF NOT EXISTS clearance_changes (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id    TEXT NOT NULL,
+  from_cl    TEXT,
+  to_cl      TEXT NOT NULL,
+  source     TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_clearance_changes_user ON clearance_changes(user_id);
+
+CREATE INDEX IF NOT EXISTS idx_rounds_user_round ON game_rounds(user_id, round_id);
+
 -- Game event log: entries, round starts, per-phrase results, help usage,
 -- abandons and completions. Works for logged-in (user_id) and anonymous
 -- (anon_id) players. Read by the owner backoffice.
@@ -381,6 +431,42 @@ function migrateProgressStub(database: DatabaseSync): void {
 }
 
 /** One-time: copy legacy `players` rows into `users`, then expose `players` as a view. */
+/**
+ * Identity columns on `users` (clearance, password, verified email). Users that
+ * predate this all came from Google OAuth (id = Google `sub`): they get an
+ * `accounts` row and the released clearance, audited as 'migration'.
+ */
+function migrateIdentity(database: DatabaseSync): void {
+  const columns = new Set(
+    (database.prepare(`PRAGMA table_info(users)`).all() as { name: string }[]).map((c) => c.name),
+  );
+  if (!columns.has("password_hash")) {
+    database.exec(`ALTER TABLE users ADD COLUMN password_hash TEXT`);
+  }
+  if (!columns.has("email_verified_at")) {
+    database.exec(`ALTER TABLE users ADD COLUMN email_verified_at TEXT`);
+  }
+  if (columns.has("clearance")) return;
+
+  database.exec(`ALTER TABLE users ADD COLUMN clearance TEXT NOT NULL DEFAULT 'N3'`);
+  database.exec("BEGIN");
+  try {
+    database.exec(
+      `INSERT OR IGNORE INTO accounts (provider, provider_account_id, user_id, email)
+       SELECT 'google', id, id, email FROM users`,
+    );
+    database.exec(
+      `INSERT INTO clearance_changes (user_id, from_cl, to_cl, source)
+       SELECT id, 'N3', 'O4', 'migration' FROM users`,
+    );
+    database.exec(`UPDATE users SET clearance = 'O4', email_verified_at = COALESCE(email_verified_at, created_at)`);
+    database.exec("COMMIT");
+  } catch (err) {
+    database.exec("ROLLBACK");
+    throw err;
+  }
+}
+
 function migratePlayersToUsers(database: DatabaseSync): void {
   const playersObj = database
     .prepare(`SELECT type FROM sqlite_master WHERE name = 'players'`)
@@ -415,5 +501,6 @@ export function getDb(): DatabaseSync {
   migrateProgressStub(db);
   db.exec(MIGRATION);
   migratePlayersToUsers(db);
+  migrateIdentity(db);
   return db;
 }

@@ -1,4 +1,4 @@
-/** Site user records (server-only). Google `sub` is the primary key. */
+/** Site user records (server-only). Ids are internal — see `identity.ts` for how sign-ins map to them. */
 import { getDb } from "./index";
 
 export type User = {
@@ -23,9 +23,9 @@ export function upsertUser(input: UserInput): void {
       `INSERT INTO users (id, email, name, image)
        VALUES (?, ?, ?, ?)
        ON CONFLICT(id) DO UPDATE SET
-         email = excluded.email,
-         name = excluded.name,
-         image = excluded.image,
+         email = COALESCE(excluded.email, users.email),
+         name = COALESCE(excluded.name, users.name),
+         image = COALESCE(excluded.image, users.image),
          updated_at = datetime('now')`,
     )
     .run(input.id, input.email ?? null, input.name ?? null, input.image ?? null);

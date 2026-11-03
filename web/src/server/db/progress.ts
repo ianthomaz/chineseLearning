@@ -55,8 +55,15 @@ const round2 = (n: number) => Math.round(n * 100) / 100;
  * Written in a transaction — a half-recorded round would corrupt the review
  * queue, which is the whole point of the table.
  */
-export function recordRound(input: RoundInput): void {
+export function recordRound(input: RoundInput): boolean {
   const db = getDb();
+  // Idempotent per (user, roundId): the iOS app re-sends rounds played offline.
+  if (input.roundId) {
+    const seen = db
+      .prepare(`SELECT 1 FROM game_rounds WHERE user_id = ? AND round_id = ? LIMIT 1`)
+      .get(input.userId, input.roundId);
+    if (seen) return false;
+  }
   const items = input.items.filter((i) => typeof i.itemId === "string" && i.itemId.length > 0);
   const correct = items.filter((i) => i.correct).length;
   const points = round2(items.reduce((sum, i) => sum + (Number.isFinite(i.score) ? i.score : 0), 0));
@@ -107,6 +114,7 @@ export function recordRound(input: RoundInput): void {
     db.exec("ROLLBACK");
     throw err;
   }
+  return true;
 }
 
 export function recentRounds(userId: string, limit = 5): RoundRow[] {

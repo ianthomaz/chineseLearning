@@ -16,16 +16,75 @@ datasource db {
 // ── Users / game ──────────────────────────────────────────────
 
 model User {
-  id        String   @id
-  email     String?
-  name      String?
-  image     String?
-  nick      String?
-  createdAt String   @default(dbgenerated("(datetime('now'))")) @map("created_at")
-  updatedAt String   @default(dbgenerated("(datetime('now'))")) @map("updated_at")
-  lessons   Lesson[]
+  id              String   @id
+  email           String?
+  name            String?
+  image           String?
+  nick            String?
+  /// NOIA clearance (server/auth/noia.ts): N3 pending email account, O4 released.
+  clearance       String   @default("N3")
+  /// scrypt hash — email + password accounts only.
+  passwordHash    String?  @map("password_hash")
+  emailVerifiedAt String?  @map("email_verified_at")
+  createdAt       String   @default(dbgenerated("(datetime('now'))")) @map("created_at")
+  updatedAt       String   @default(dbgenerated("(datetime('now'))")) @map("updated_at")
+  lessons         Lesson[]
 
   @@map("users")
+}
+
+/// One row per way in: (provider, provider_account_id) → user.
+/// provider: "google" | "apple" | "email" (id = normalised email).
+model Account {
+  provider          String
+  providerAccountId String  @map("provider_account_id")
+  userId            String  @map("user_id")
+  email             String?
+  createdAt         String  @default(dbgenerated("(datetime('now'))")) @map("created_at")
+
+  @@id([provider, providerAccountId])
+  @@index([userId], map: "idx_accounts_user")
+  @@map("accounts")
+}
+
+/// iOS app bearer sessions — only the SHA-256 of the token is stored.
+model AppSession {
+  tokenHash  String  @id @map("token_hash")
+  userId     String  @map("user_id")
+  client     String?
+  createdAt  String  @default(dbgenerated("(datetime('now'))")) @map("created_at")
+  lastUsedAt String  @default(dbgenerated("(datetime('now'))")) @map("last_used_at")
+  expiresAt  String  @map("expires_at")
+
+  @@index([userId], map: "idx_app_sessions_user")
+  @@map("app_sessions")
+}
+
+/// Email links: purpose "verify" (72 h, reusable) | "reset" (2 h, single use).
+model EmailToken {
+  tokenHash String  @id @map("token_hash")
+  userId    String  @map("user_id")
+  email     String
+  purpose   String
+  expiresAt String  @map("expires_at")
+  usedAt    String? @map("used_at")
+  createdAt String  @default(dbgenerated("(datetime('now'))")) @map("created_at")
+
+  @@index([userId], map: "idx_email_tokens_user")
+  @@map("email_tokens")
+}
+
+/// NOIA audit, append-only: every change of users.clearance.
+model ClearanceChange {
+  id        Int     @id @default(autoincrement())
+  userId    String  @map("user_id")
+  fromCl    String? @map("from_cl")
+  toCl      String  @map("to_cl")
+  source    String
+  createdAt String  @default(dbgenerated("(datetime('now'))")) @map("created_at")
+
+  @@index([userId], map: "idx_clearance_changes_user")
+  @@map("clearance_changes")
 }
 
 /// Per-item mastery for a signed-in player. One row per (user, game, item) —

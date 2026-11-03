@@ -1,26 +1,32 @@
 /**
  * Auth.js v5 instance (server-only — imports the SQLite layer).
  *
- * On sign-in we record a minimal player row. We do NOT persist round scores yet
- * (that is Phase 2 — see docs/06_jogo_frases.md).
+ * Every way in resolves to one internal `users.id` through the `accounts`
+ * table (`server/db/identity.ts`): Google (redirect + One Tap), Apple (when
+ * configured), and email + password. `token.sub` is that internal id.
  */
-import NextAuth from "next-auth";
+import NextAuth, { CredentialsSignin } from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import { authConfig } from "./config";
-import { upsertUser } from "@/server/db/users";
 import { verifyGoogleIdToken } from "./verify-google-id-token";
+import { passwordSignIn } from "@/server/account/service";
+import { getIdentityUser, resolveOAuthUser } from "@/server/db/identity";
 
-/** Google's stable user id is the OIDC `sub` claim. */
-function profileSub(profile: unknown): string | undefined {
-  if (profile && typeof profile === "object" && "sub" in profile) {
-    const sub = (profile as { sub?: unknown }).sub;
-    if (typeof sub === "string") return sub;
-  }
-  return undefined;
+/** Surfaced to the client as `signIn(...).code`. */
+class EmailNotVerified extends CredentialsSignin {
+  code = "email_not_verified";
 }
 
-function userId(user: { id?: string } | undefined, profile: unknown): string | undefined {
-  return user?.id ?? profileSub(profile);
+type OAuthProfile = {
+  sub?: unknown;
+  email?: unknown;
+  email_verified?: unknown;
+  name?: unknown;
+  picture?: unknown;
+};
+
+function str(v: unknown): string | null {
+  return typeof v === "string" && v.length > 0 ? v : null;
 }
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
@@ -35,35 +41,69 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         if (typeof raw !== "string") return null;
         const payload = await verifyGoogleIdToken(raw);
         if (!payload) return null;
-        return {
-          id: payload.sub,
+        const id = resolveOAuthUser({
+          provider: "google",
+          providerAccountId: payload.sub,
           email: payload.email ?? null,
+          emailVerified: payload.emailVerified ?? false,
           name: payload.name ?? null,
           image: payload.picture ?? null,
+        });
+        const user = getIdentityUser(id);
+        return { id, email: user?.email ?? null, name: user?.name ?? null, image: user?.image ?? null };
+      },
+    }),
+    Credentials({
+      id: "password",
+      credentials: {
+        email: { label: "Email", type: "email" },
+        password: { label: "Password", type: "password" },
+      },
+      async authorize(credentials) {
+        const result = await passwordSignIn(credentials?.email, credentials?.password);
+        if (!result.ok) {
+          if (result.error === "email_not_verified") throw new EmailNotVerified();
+          return null;
+        }
+        const user = getIdentityUser(result.userId);
+        return {
+          id: result.userId,
+          email: user?.email ?? null,
+          name: user?.name ?? user?.nick ?? null,
+          image: user?.image ?? null,
         };
       },
     }),
   ],
   callbacks: {
-    jwt({ token, user, profile }) {
-      const id = userId(user, profile);
-      if (id) token.sub = id;
+    jwt({ token, user, account, profile }) {
+      // OAuth redirect sign-in (google, apple): map the provider identity.
+      if (account && (account.provider === "google" || account.provider === "apple")) {
+        const p = (profile ?? {}) as OAuthProfile;
+        const providerAccountId = account.providerAccountId || str(p.sub);
+        if (providerAccountId) {
+          try {
+            token.sub = resolveOAuthUser({
+              provider: account.provider,
+              providerAccountId,
+              email: str(p.email) ?? user?.email ?? null,
+              emailVerified: p.email_verified === true || p.email_verified === "true",
+              name: str(p.name) ?? user?.name ?? null,
+              image: str(p.picture) ?? user?.image ?? null,
+            });
+          } catch (err) {
+            console.warn("[auth] could not resolve OAuth user", err);
+          }
+          return token;
+        }
+      }
+      // Credentials providers already return the internal id.
+      if (user?.id) token.sub = user.id;
       return token;
     },
     session({ session, token }) {
       if (token.sub && session.user) session.user.id = token.sub;
       return session;
-    },
-    signIn({ user, profile }) {
-      try {
-        const id = userId(user, profile);
-        if (id) {
-          upsertUser({ id, email: user?.email, name: user?.name, image: user?.image });
-        }
-      } catch {
-        /* best-effort — auth must not fail if the DB write does */
-      }
-      return true;
     },
   },
 });

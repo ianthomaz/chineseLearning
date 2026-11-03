@@ -1,6 +1,7 @@
 # Autenticação e utilizadores
 
-Estado: **Google OAuth activo** (set 2026). Jogo de frases **não exige login**.
+Estado: **Google (site) + e-mail e senha (site e app) + Apple (app)** — nov 2026.
+Jogo de frases **não exige login**. Desenho das contas: § Contas, logo abaixo.
 
 Pontuação persistente: [06_jogo_frases.md](06_jogo_frases.md) § Pontuação.
 
@@ -8,7 +9,10 @@ Pontuação persistente: [06_jogo_frases.md](06_jogo_frases.md) § Pontuação.
 
 ## Modelo de utilizador
 
-Tabela `users` — PK = Google OIDC `sub`. Colunas: `email`, `name`, `image`, `nick` (único editável), timestamps.
+Tabela `users` — PK = id interno (`u_…`; usuários anteriores a nov 2026 mantêm o
+`sub` do Google como id). Colunas: `email`, `name`, `image`, `nick`, `clearance`
+(NOIA), `password_hash`, `email_verified_at`, timestamps. Como cada login chega
+ao id: § Contas.
 
 **Admin** (`/backoffice`): `NEXT_PUBLIC_ADMIN_EMAIL` — `isAdminEmail` no servidor.
 
@@ -104,7 +108,93 @@ Auth.js tem provider WeChat, mas o bloqueio é **administrativo**:
 
 ---
 
-## Roadmap de login — site + app (anotado nov 2026, não implementado)
+## Contas — um usuário, várias entradas (implementado nov 2026)
+
+Código: `web/src/server/db/identity.ts` (dados), `server/account/service.ts`
+(fluxos), `server/auth/noia.ts` (clearance), `server/auth/index.ts` (Auth.js).
+
+### Clearance NOIA
+
+Porte fiel de `ianthomaz/025_noiaShell` `server/noia.js`: UC = letra + dígito,
+N (visitante) < O (outsider) < I (insider) < A (admin), deny-by-default.
+
+| Situação | UC | Origem (`clearance_changes.source`) |
+|---|---|---|
+| Sem sessão | N0 | — |
+| Cadastro por e-mail, link ainda não aberto | **N3** | `signup` |
+| Conta liberada: link aberto, ou login Google/Apple | **O4** | `email_verified` · `oauth_signup` · `password_reset` |
+| Usuários Google anteriores a nov 2026 | O4 | `migration` |
+
+"Tem conta" = `can(uc, "O4|I0|A0")` (`isReleased`). Mudar o nível é só em
+`CLEARANCE` (`noia.ts`). Toda mudança fica em `clearance_changes` (append-only,
+mesmo formato do noia.dev).
+
+### Tabelas
+
+| Tabela | Papel |
+|---|---|
+| `accounts` | (provider, provider_account_id) → user_id. Providers: `google`, `apple`, `email` (id = e-mail normalizado) |
+| `app_sessions` | Token Bearer do app iOS — só o SHA-256; 180 dias, renova com o uso |
+| `email_tokens` | Links por e-mail: `verify` (72 h, pode reabrir) · `reset` (2 h, uso único) |
+| `clearance_changes` | Auditoria NOIA |
+
+Juntar contas: **só por e-mail verificado**. Google + e-mail/senha com o mesmo
+endereço = mesmo usuário (o link de confirmação prova o endereço). E-mail
+"Hide My Email" da Apple nunca casa — fica conta separada.
+
+### E-mail e senha
+
+- **Cadastro** (`POST /api/account/register`): e-mail duas vezes, sugestão de
+  domínio no formulário (`web/src/lib/email-check.ts` — hotmal→hotmail,
+  gmail.com.br→gmail.com, google.com.br→gmail.com), DNS do domínio (MX/A) no
+  servidor, senha com 8+ caracteres (scrypt). Conta nasce N3 e recebe o link.
+- **Link** (`/account/verify?token=`): libera (O4). Abrir de novo não quebra
+  (scanners de e-mail abrem links).
+- **Entrar**: site = Auth.js Credentials `password`; app = `POST /api/app/auth/password`.
+  Conta N3 recebe `email_not_verified` (+ botão "enviar o link de novo").
+- **Esqueci a senha** (`/api/account/password/forgot` → `/account/reset-password`):
+  serve também para usuário Google/Apple criar uma senha. Reset derruba as
+  sessões do app.
+- E-mail transacional: **Resend** (`server/email/resend.ts`, REST, sem SDK).
+  Sem `RESEND_API_KEY` o link sai no log do servidor (dev).
+
+### App iOS
+
+`POST /api/app/auth/{password|apple|google}` → `{ token, account }`. O token vai
+em `Authorization: Bearer` para `/api/account` (GET/DELETE), `/api/game/round`,
+`/api/game/progress`. Sair: `DELETE /api/app/session`. Rodadas do app são
+idempotentes por `roundId`. Lado do app: `appApple/docs/08_login.md`.
+
+### Variáveis (credentials.json → `scripts/sync-env-from-credentials.mjs`)
+
+| Variável | Para quê |
+|---|---|
+| `RESEND_API_KEY`, `RESEND_FROM` | Links por e-mail (domínio verificado no Resend) |
+| `APPLE_APP_BUNDLE_ID` | `aud` do token Apple do app (default `today.learnchinese.app`) |
+| `GOOGLE_IOS_CLIENT_ID` | Aceitar o ID token do Google Sign-In do app |
+| `AUTH_APPLE_ID`, `AUTH_APPLE_SECRET`, `NEXT_PUBLIC_AUTH_APPLE=1` | Apple **no site** (opcional). Secret: `node scripts/apple-client-secret.mjs`, renovar a cada 6 meses |
+
+### Perguntas para o dono (sim/não)
+
+Implementado com a opção marcada; responder só se for "não".
+
+1. **Conta liberada = O4** (não O5)? — usei O4.
+2. **Cadastro sem confirmar = N3** (padrão de linha nova do NOIA)? — usei N3.
+3. **Juntar automaticamente** Google + e-mail/senha quando o e-mail verificado é o mesmo? — sim.
+4. Cadastro com e-mail que já tem conta responde **"já tem conta"** (revela que o e-mail existe; mais claro para o usuário)? — sim.
+5. Admin continua sendo **por e-mail** (`NEXT_PUBLIC_ADMIN_EMAIL`), sem virar A7 no NOIA por enquanto? — sim.
+6. Apple **no site** fica para depois (só app agora)? — sim; estrutura pronta.
+
+### O que falta de você (não é pergunta — é credencial/ação)
+
+- **Resend**: `RESEND_API_KEY` e o domínio `learnchinese.today` verificado (remetente `no-reply@learnchinese.today`).
+- **Google iOS**: client ID iOS no GCP `chinese-learnin` (bundle `today.learnchinese.app`) — passo a passo em `appApple/docs/08_login.md`.
+- **Deploy** do branch `claude/accounts-email-apple` — o app só loga com o servidor novo no ar.
+- Apple no site (opcional): Services ID + chave `.p8`.
+
+---
+
+## Roadmap de login — site + app (anotado nov 2026 — base do que foi implementado acima)
 
 Objetivo: o mesmo usuário no site e no app iOS, com a mesma pontuação.
 Hoje só existe **Google no site**; o app não tem login.

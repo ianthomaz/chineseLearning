@@ -6,7 +6,7 @@
   },
   "authGate": {
     "title": "Sign in to continue",
-    "hint": "This area is interactive and requires Google sign-in.",
+    "hint": "This area is interactive and requires signing in.",
     "signIn": "Sign in with Google",
     "signInAlt": "Another account",
     "disabledTitle": "Feature disabled",
@@ -420,7 +420,7 @@
     },
     "auth": {
       "guest": "Playing as guest",
-      "guestHint": "You can play without signing in. Use Google if you want to save a nickname on this device.",
+      "guestHint": "You can play without signing in. Sign in to save your progress.",
       "serverOnly": "Login requires server mode.",
       "signIn": "Sign in with Google",
       "signInAlt": "Use another account",
@@ -495,5 +495,48 @@
     "points": "({points} pts)",
     "toReview": "{count} to review",
     "toReviewOne": "1 to review"
+  },
+  "account": {
+    "or": "or",
+    "appleSignIn": "Sign in with Apple",
+    "tabs": {
+      "signIn": "Sign in",
+      "register": "Create account"
+    },
+    "email": "Email",
+    "emailConfirm": "Confirm email",
+    "password": "Password",
+    "passwordNew": "New password",
+    "passwordHint": "At least 8 characters",
+    "didYouMean": "Did you mean {email}?",
+    "submitSignIn": "Sign in",
+    "submitRegister": "Create account",
+    "submitForgot": "Send link",
+    "submitReset": "Save password",
+    "forgot": "Forgot password?",
+    "back": "Back",
+    "working": "One moment…",
+    "sentTitle": "Check your inbox",
+    "sentBody": "We sent a link to {email}. Open it to activate your account.",
+    "resend": "Send the link again",
+    "resent": "Link sent again.",
+    "forgotSent": "If {email} has an account, a link to set a new password is on its way.",
+    "verifyOk": "Email confirmed. Your account is active — you can sign in now.",
+    "resetOk": "Password saved. You can sign in now.",
+    "goSignIn": "Go to sign in",
+    "error": {
+      "invalid_email": "This email does not look right.",
+      "email_mismatch": "The two emails are different.",
+      "email_domain": "This email domain does not receive mail. Check the part after the @.",
+      "weak_password": "Use at least 8 characters.",
+      "email_taken": "This email already has an account. Sign in or reset the password.",
+      "invalid_credentials": "Wrong email or password.",
+      "email_not_verified": "Confirm your email first — open the link we sent you.",
+      "invalid_token": "This link is not valid.",
+      "expired_token": "This link has expired. Ask for a new one.",
+      "email_failed": "We could not send the email. Try again in a few minutes.",
+      "rate_limited": "Too many attempts. Wait a few minutes.",
+      "generic": "Something went wrong. Try again."
+    }
   }
 }

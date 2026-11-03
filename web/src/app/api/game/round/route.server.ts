@@ -8,7 +8,7 @@
  * The score is recomputed here from the per-item results: the client decides
  * whether an item was right, but it does not get to state its own total.
  */
-import { auth } from "@/server/auth";
+import { getRequestUser } from "@/server/auth/request-user";
 import { rateLimit } from "@/server/rate-limit";
 import { recordRound, type GameKind, type ItemResult } from "@/server/db/progress";
 import { upsertUser } from "@/server/db/users";
@@ -50,9 +50,10 @@ function parseItems(raw: unknown): ItemResult[] {
 }
 
 export async function POST(req: Request) {
-  const session = await auth();
-  const userId = session?.user?.id;
-  if (!userId) return Response.json({ error: "unauthenticated" }, { status: 401 });
+  // Site cookie or iOS app Bearer token — same player, same tables.
+  const user = await getRequestUser(req);
+  const userId = user?.id;
+  if (!user || !userId) return Response.json({ error: "unauthenticated" }, { status: 401 });
 
   // A round takes minutes to play; this only sheds scripted floods.
   if (!rateLimit(`round:${userId}`, 60, 60_000)) {
@@ -72,15 +73,11 @@ export async function POST(req: Request) {
 
   // The row is only written on a finished round, so this is also the first
   // moment we are sure the player exists — sign-in may predate the users table.
-  upsertUser({
-    id: userId,
-    email: session.user?.email,
-    name: session.user?.name,
-    image: session.user?.image,
-  });
+  upsertUser({ id: userId, email: user.email, name: user.name, image: user.image });
 
+  let recorded: boolean;
   try {
-    recordRound({
+    recorded = recordRound({
       userId,
       game: game as GameKind,
       roundId: typeof body?.roundId === "string" ? body.roundId.slice(0, 64) : null,
@@ -93,5 +90,6 @@ export async function POST(req: Request) {
     return Response.json({ ok: false }, { status: 500 });
   }
 
-  return Response.json({ ok: true, recorded: items.length });
+  // `duplicate`: the app retried a round the server already has (same roundId).
+  return Response.json({ ok: true, recorded: recorded ? items.length : 0, duplicate: !recorded });
 }

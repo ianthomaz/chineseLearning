@@ -6,7 +6,7 @@
   },
   "authGate": {
     "title": "Entre para continuar",
-    "hint": "Esta área é interativa e requer login com Google.",
+    "hint": "Esta área é interativa e requer login.",
     "signIn": "Entrar com Google",
     "signInAlt": "Outra conta",
     "disabledTitle": "Funcionalidade desativada",
@@ -420,7 +420,7 @@
     },
     "auth": {
       "guest": "Jogando como convidado",
-      "guestHint": "Você pode jogar sem entrar. Entre com o Google se quiser salvar seu apelido neste dispositivo.",
+      "guestHint": "Você pode jogar sem entrar. Entre para salvar seu progresso.",
       "serverOnly": "O login requer o modo servidor.",
       "signIn": "Entrar com Google",
       "signInAlt": "Outra conta",
@@ -495,5 +495,48 @@
     "points": "({points} pts)",
     "toReview": "{count} para rever",
     "toReviewOne": "1 para rever"
+  },
+  "account": {
+    "or": "ou",
+    "appleSignIn": "Entrar com a Apple",
+    "tabs": {
+      "signIn": "Entrar",
+      "register": "Criar conta"
+    },
+    "email": "E-mail",
+    "emailConfirm": "Confirme o e-mail",
+    "password": "Senha",
+    "passwordNew": "Nova senha",
+    "passwordHint": "Pelo menos 8 caracteres",
+    "didYouMean": "Você quis dizer {email}?",
+    "submitSignIn": "Entrar",
+    "submitRegister": "Criar conta",
+    "submitForgot": "Enviar link",
+    "submitReset": "Salvar senha",
+    "forgot": "Esqueceu a senha?",
+    "back": "Voltar",
+    "working": "Um momento…",
+    "sentTitle": "Confira seu e-mail",
+    "sentBody": "Enviamos um link para {email}. Abra-o para ativar sua conta.",
+    "resend": "Enviar o link de novo",
+    "resent": "Link enviado de novo.",
+    "forgotSent": "Se {email} tiver uma conta, um link para definir uma nova senha está a caminho.",
+    "verifyOk": "E-mail confirmado. Sua conta está ativa — você já pode entrar.",
+    "resetOk": "Senha salva. Você já pode entrar.",
+    "goSignIn": "Ir para o login",
+    "error": {
+      "invalid_email": "Este e-mail não parece certo.",
+      "email_mismatch": "Os dois e-mails estão diferentes.",
+      "email_domain": "Este domínio não recebe e-mails. Confira a parte depois do @.",
+      "weak_password": "Use pelo menos 8 caracteres.",
+      "email_taken": "Este e-mail já tem conta. Entre ou redefina a senha.",
+      "invalid_credentials": "E-mail ou senha errados.",
+      "email_not_verified": "Confirme seu e-mail primeiro — abra o link que enviamos.",
+      "invalid_token": "Este link não é válido.",
+      "expired_token": "Este link expirou. Peça um novo.",
+      "email_failed": "Não conseguimos enviar o e-mail. Tente de novo em alguns minutos.",
+      "rate_limited": "Muitas tentativas. Espere alguns minutos.",
+      "generic": "Algo deu errado. Tente de novo."
+    }
   }
 }

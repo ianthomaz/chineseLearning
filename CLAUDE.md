@@ -25,8 +25,9 @@ Documentação: [`docs/01_readme.md`](docs/01_readme.md). Contratos LLM: [`docs/
 [`docs/08_produto_observabilidade.md`](docs/08_produto_observabilidade.md):
 GA, cookies, áudio — feitos; opcional: custom dimensions no GA4 Admin.
 
-Site + app (nov 2026): login multi-provedor e token do app —
-[`docs/05_autenticacao.md`](docs/05_autenticacao.md) § Roadmap; ids estáveis do
+Site + app (nov 2026): contas (Google, Apple, e-mail+senha, clearance NOIA) e
+token do app — [`docs/05_autenticacao.md`](docs/05_autenticacao.md) § Contas, com
+as perguntas sim/não para o dono; ids estáveis do
 quiz, `round_id` único e backup — [`docs/07_conteudo_dados.md`](docs/07_conteudo_dados.md)
 § Pendências. App: `appApple/docs/06_instalar_e_estado.md`.
 

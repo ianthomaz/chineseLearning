@@ -5,6 +5,7 @@ import { signOut, useSession } from "next-auth/react";
 import { useLocale } from "@/context/LocaleContext";
 import { GoogleOneTap, GoogleSignInRedirect } from "./GoogleOneTap";
 import { isAdminEmail } from "@/lib/phrase-game/admin";
+import { AppleSignInRedirect, EmailAuthForm, HAS_APPLE_WEB, OrDivider } from "@/components/auth/EmailAuthForm";
 
 /** Disabled in static-export builds (no server route handlers). */
 const AUTH_ENABLED = process.env.NEXT_PUBLIC_AUTH_ENABLED !== "0";
@@ -76,6 +77,11 @@ function AuthPanelLive({
           {HAS_ONE_TAP ? (
             <GoogleSignInRedirect label={t("phraseGame.auth.signInAlt")} />
           ) : null}
+          {HAS_APPLE_WEB ? <AppleSignInRedirect /> : null}
+        </div>
+        <div className="mt-4 space-y-4 sm:max-w-sm">
+          <OrDivider />
+          <EmailAuthForm onSignedIn={() => void update()} />
         </div>
       </div>
     );
