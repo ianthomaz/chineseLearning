@@ -180,7 +180,7 @@ Apple nunca casa — fica conta separada. Testes: `cd web && npm run test:identi
 - **Cadastro** (`POST /api/account/register`): e-mail duas vezes, sugestão de
   domínio no formulário (`web/src/lib/email-check.ts` — hotmal→hotmail,
   gmail.com.br→gmail.com, google.com.br→gmail.com), DNS do domínio (MX/A) no
-  servidor, senha com 8+ caracteres (scrypt). Conta nasce O1 e recebe o link.
+  servidor, senha com 8+ caracteres (scrypt). Conta nasce O1 e recebe o link; **a senha vai dentro do link** e só entra no usuário quando ele é aberto (também quando o endereço já é de um usuário Google/Apple/Alipay).
 - **Link** (`/account/verify?token=`): libera (O4). Abrir de novo não quebra
   (scanners de e-mail abrem links).
 - **Entrar**: site = Auth.js Credentials `password`; app = `POST /api/app/auth/password`.
@@ -219,6 +219,14 @@ Implementado com a opção marcada; responder só se for "não".
 5. Admin continua sendo **por e-mail** (`NEXT_PUBLIC_ADMIN_EMAIL`), sem virar A7 no NOIA por enquanto? — sim.
 6. Apple **no site** fica para depois (só app agora)? — sim; estrutura pronta.
 
+7. **Alipay: juntar por e-mail?** Hoje, se a Alipay devolve um e-mail, ele é
+   tratado como **verificado** e junta com o usuário Google/e-mail do mesmo
+   endereço. A Alipay não documenta que esse e-mail é confirmado; se não for, dá
+   para alguém pôr o e-mail de outra pessoa na Alipay e entrar na conta dela.
+   Recomendo **não** juntar por e-mail da Alipay (conta separada; juntar depois
+   com "conectar outra conta"). Mantive como você fez até responder — é uma linha
+   em `api/auth/alipay/callback` (`emailVerified`).
+
 ### O que falta de você (não é pergunta — é credencial/ação)
 
 - **Resend**: domínio `learnchinese.today` verificado (remetente `no-reply@learnchinese.today`) — feito na conta e404.
@@ -229,89 +237,35 @@ Implementado com a opção marcada; responder só se for "não".
 
 ---
 
-## Roadmap de login — site + app (anotado nov 2026 — base do que foi implementado acima)
+## Pendências de login (revisão nov 2026)
 
-Objetivo: o mesmo usuário no site e no app iOS, com a mesma pontuação.
-Hoje só existe **Google no site**; o app não tem login.
+O desenho original (anotado antes da implementação) foi substituído por § Contas.
+O que ainda falta, por ordem — a sequência geral está em
+[09_roadmap_integracoes.md](09_roadmap_integracoes.md):
 
-### 1. Base: `accounts` antes de qualquer provedor novo
+| Item | Onde | Bloqueio |
+|---|---|---|
+| Deploy das contas (e-mail, Apple app, Alipay) | servidor | ação do dono |
+| Google Sign-In no app | app | client ID iOS (credencial) |
+| Alipay no app iOS | app | SDK Alipay ou login via site em `ASWebAuthenticationSession` |
+| Excluir conta **no site** | site | só UI — API `DELETE /api/account` já existe |
+| "Conectar outra conta" com sessão ativa (ex.: Alipay sem e-mail + Google) | site + app | desenho de UI |
+| Revogar token Apple ao excluir conta | servidor | chave `.p8` |
+| Apple no site | site | Services ID + chave `.p8` |
+| WeChat | — | conta Tencent (§ WeChat) |
+| Passkeys | site + app | depois do resto |
 
-`users.id` = `sub` do Google não aguenta Apple, Facebook nem e-mail.
+### Revisão de segurança (nov 2026) — corrigido
 
-- `users.id` passa a ser id interno. Usuários atuais **mantêm** o id que têm (o
-  `sub` do Google vira só um id) → `progress`, `game_rounds`, `events`, `lessons`
-  não mudam.
-- Tabela nova `accounts(provider, provider_account_id, user_id, email,
-  email_verified, created_at)`, `UNIQUE(provider, provider_account_id)`.
-  Backfill: uma linha `('google', id, id)` por usuário existente.
-- `signIn`/`jwt` em `server/auth/index.ts` resolvem provedor+sub → `users.id`.
-- Alterar também `schema.prisma` + [07](07_conteudo_dados.md).
-
-### 2. App: token próprio
-
-Cookie do Auth.js não serve para o app.
-
-- App faz login nativo (Sign in with Apple / Google Sign-In) → `POST
-  /api/app/auth/{apple,google}` com o ID token.
-- Servidor valida (JWKS do provedor; `aud` = bundle `today.learnchinese.app` ou o
-  client id iOS do Google), resolve via `accounts`, devolve token de sessão do app
-  (opaco, guardado com hash numa tabela `app_sessions` → dá para revogar).
-- `/api/game/round` e `/api/game/progress` aceitam cookie **ou** Bearer
-  (helper único `getRequestUser(req)`).
-- App guarda rodadas offline com `roundId` próprio e envia depois (exige
-  `UNIQUE(user_id, round_id)` — ver [07](07_conteudo_dados.md)).
-
-### 3. Apple
-
-- Site: Auth.js `providers/apple` (já vem no `next-auth` instalado). Precisa de
-  Services ID, chave `.p8`, domínio verificado, retorno
-  `https://learnchinese.today/api/auth/callback/apple`. O client secret é um JWT
-  que expira (máx. 6 meses) → gerar em runtime a partir da `.p8`.
-- **O `sub` só é igual no site e no app se o Services ID estiver agrupado com o
-  App ID principal** (`today.learnchinese.app`) no mesmo Team.
-- E-mail pode vir como "Hide My Email" (`privaterelay.appleid.com`): não bate com
-  nada; para enviar e-mail para esses endereços, registrar o domínio remetente no
-  serviço de relay da Apple.
-- Regras da loja: excluir conta **dentro do app** (5.1.1(v)) e, com Apple,
-  revogar o token na Apple ao excluir. Se o app tiver Google, tem de ter Apple (4.8).
-
-### 4. E-mail: código de 6 dígitos, não senha
-
-Recomendação para o "e-mail e senha":
-
-- Login por **código enviado por e-mail** (passwordless). Não guarda senha, não
-  tem "esqueci a senha", e o próprio login confirma o e-mail — some a maior parte
-  do desdobramento (confirmação, reset).
-- Encaixa no padrão existente: um Credentials provider `email-otp`, igual ao
-  `google-onetap`. Endpoint `POST /api/auth/email/start` envia o código; tabela
-  `email_codes(email, code_hash, expires_at, attempts)`; limite de tentativas e
-  rate limit por IP/e-mail.
-- Funciona igual no app (o iOS 17 preenche código vindo do Mail).
-- Precisa de provedor de e-mail transacional. Entrega para QQ Mail / 163 a testar.
-- "OpenID" não é uma opção a mais para o usuário: é o protocolo por baixo de
-  Google e Apple. Passkeys: boa camada futura por cima do e-mail.
-
-### 5. Facebook
-
-- Só no site (Auth.js `providers/facebook`). No app não: o SDK do Facebook traz
-  rastreamento e ATT.
-- A Meta exige URL de política de privacidade e **callback de exclusão de dados**
-  (`signed_request` → `{ url, confirmation_code }`). Montar junto com o provedor.
-- E-mail do Facebook não é garantidamente verificado → **não** juntar contas
-  automaticamente por e-mail; só ligar com o usuário já logado.
-
-### 6. Juntar contas
-
-Automático só com e-mail verificado (Google `email_verified`, Apple, código por
-e-mail). Restante: "conectar outra conta" com sessão ativa.
-
-### 7. China
-
-Google e Facebook não funcionam na China continental sem VPN; Apple funciona.
-Alipay no site cobre quem está na China sem iPhone (ver § Alipay). E-mail e senha também.
-WeChat: ver abaixo (bloqueio administrativo).
-
-Ordem sugerida: 1 → 2 → Apple (site + app) → Google no app → e-mail → Facebook.
+- **Cadastro com e-mail de outra pessoa.** Registrar um endereço que já era de
+  um usuário Google/Apple/Alipay gravava a senha nesse usuário na hora — qualquer
+  um tomava a conta. Agora o cadastro **não escreve nada** num usuário existente:
+  o hash da senha vai dentro do link enviado (`email_tokens.password_hash`) e só
+  entra no usuário quando o link é aberto. Mesmo para cadastro pendente (O1):
+  sem senha até o link. Teste: `npm run test:identity`.
+- **Conta excluída "voltava".** Cookie do site (JWT, 30 dias) de conta excluída
+  recriava o usuário ao gravar rodada. Agora sessão de usuário inexistente = deslogado.
+- Hash fictício literal no código (alerta "Generic Password") removido.
 
 ---
 

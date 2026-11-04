@@ -86,6 +86,55 @@ de apagar.
   léxico tem manifest/actualização. Pôr as frases no mesmo pack.
 - Identidade multi-provedor (`accounts`): [05](05_autenticacao.md) § Roadmap.
 
+### Usuários — revisão do banco (nov 2026)
+
+Um usuário (`users`, id interno `u_…`; ids antigos = `sub` do Google) e várias
+entradas (`accounts`: google, apple, alipay, email). Tudo que é dele aponta
+para `users.id`.
+
+| Tabela | Dono | Apagada com a conta? |
+|---|---|---|
+| `users` | — | sim |
+| `accounts` | user_id | sim |
+| `app_sessions` | user_id | sim |
+| `email_tokens` | user_id | sim |
+| `progress`, `game_rounds` | user_id | sim |
+| `events` | user_id (ou anon_id) | **não** — anonimizado (`user_id = NULL`) |
+| `clearance_changes` | user_id | **não** — auditoria append-only (NOIA) |
+| `lessons` | created_by | **não** — só curador; não excluir conta de curador |
+
+Regras que o código garante:
+
+- Mesma pessoa = mesmo `users.id` só por **e-mail verificado** (Google,
+  Apple sem "Hide My Email", link de confirmação; Alipay quando devolve e-mail —
+  ver pergunta 7 em [05](05_autenticacao.md)).
+- Senha só entra num usuário quando o link do e-mail é aberto.
+- Sessão do site de conta excluída = deslogado; rotas não recriam usuário.
+- Rodadas são idempotentes por (`user_id`, `round_id`).
+
+Conhecido, ainda aberto (ordem em [09](09_roadmap_integracoes.md) § Sequência):
+
+| # | Problema | Efeito | Caminho |
+|---|---|---|---|
+| 1 | **Sem backup** do SQLite de produção | perder o arquivo = perder todas as contas | cópia diária (`sqlite3 .backup`) para fora da VM, guardar 30 dias |
+| 2 | Ids do quiz posicionais | progresso de quiz aponta para a pergunta errada após rebuild | id estável (tipo + hanzi) + migrar `progress` |
+| 3 | `users.email` sem índice por `lower(email)` | buscas de junção leem a tabela toda | índice quando passar de alguns milhares |
+| 4 | `anon_id` do convidado não liga ao usuário no login | histórico de convidado fica órfão | ligar no primeiro login (só `events`) |
+| 5 | Sem "conectar outra conta" | Alipay sem e-mail + Google = 2 usuários | UI com sessão ativa |
+| 6 | Excluir conta só pela API/app | site não tem botão | UI |
+| 7 | Tabelas legadas `players_legacy`, `progress_legacy` (se existirem) | nenhum | apagar depois do backup |
+| 8 | Admin por e-mail (`NEXT_PUBLIC_ADMIN_EMAIL`), fora do NOIA | dois sistemas de permissão | admin = A7 em `users.clearance` |
+
+Consultas úteis (produção, só leitura):
+
+```sql
+SELECT clearance, COUNT(*) FROM users GROUP BY clearance;
+SELECT provider, COUNT(*) FROM accounts GROUP BY provider;
+SELECT source, COUNT(*) FROM clearance_changes GROUP BY source;
+-- mesmo e-mail em mais de um usuário (candidatos a "conectar conta")
+SELECT lower(email), COUNT(*) FROM users WHERE email IS NOT NULL GROUP BY 1 HAVING COUNT(*) > 1;
+```
+
 ### Lexico (site + app iOS)
 
 Fontes → `lexico_entries` (≤3 hanzi, com categoria):

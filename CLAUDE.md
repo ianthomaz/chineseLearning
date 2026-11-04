@@ -22,6 +22,9 @@ Documentação: [`docs/01_readme.md`](docs/01_readme.md). Contratos LLM: [`docs/
 
 ## Em aberto
 
+**Ordem de trabalho:** [`docs/09_roadmap_integracoes.md`](docs/09_roadmap_integracoes.md) § Sequência
+(inclui o futuro catálogo de 老师).
+
 [`docs/08_produto_observabilidade.md`](docs/08_produto_observabilidade.md):
 GA, cookies, áudio — feitos; opcional: custom dimensions no GA4 Admin.
 
