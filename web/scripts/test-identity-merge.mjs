@@ -173,6 +173,32 @@ async function run() {
       assert.equal(countUsers(getDb), 2);
     }),
 
+    test("Alipay open_id is its own user and does not merge with Google", async () => {
+      clear(getDb);
+      const googleId = resolveOAuthUser({
+        provider: "google",
+        providerAccountId: "g-sub-ali",
+        email: "ali@example.com",
+        emailVerified: true,
+      });
+      const alipayId = resolveOAuthUser({
+        provider: "alipay",
+        providerAccountId: "open-id-1",
+      });
+      assert.notEqual(alipayId, googleId);
+      assert.equal(countUsers(getDb), 2);
+      const again = resolveOAuthUser({
+        provider: "alipay",
+        providerAccountId: "open-id-1",
+      });
+      assert.equal(again, alipayId);
+      assert.equal(countUsers(getDb), 2);
+      const user = getIdentityUser(alipayId);
+      assert.equal(user?.clearance, "O4");
+      assert.equal(user?.email, null);
+      assert.deepEqual(providersOf(alipayId), ["alipay"]);
+    }),
+
     test("OAuth absorbs pending email signup for same verified address", async () => {
       clear(getDb);
       const hash = await hashPassword("password1");

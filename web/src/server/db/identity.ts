@@ -2,7 +2,8 @@
  * Identity (server-only): one user, many ways in. See docs/05_autenticacao.md § Contas.
  *
  * - `accounts` maps (provider, provider_account_id) → `users.id`.
- *   Providers: 'google', 'apple', 'email' (id = normalised email).
+ *   Providers: 'google', 'apple', 'alipay' (id = open_id), 'email'
+ *   (id = normalised email). Alipay has no email, so it never joins another account.
  * - `users.clearance` is a NOIA UC (`server/auth/noia.ts`): O1 while an email
  *   account waits for its confirmation link, O4 once released. Every change is
  *   audited in `clearance_changes`.
@@ -15,7 +16,7 @@ import { getDb } from "./index";
 import { CLEARANCE, isReleased } from "@/server/auth/noia";
 import { normalizeEmail } from "@/lib/email-check";
 
-export type Provider = "google" | "apple" | "email";
+export type Provider = "google" | "apple" | "alipay" | "email";
 
 export type IdentityUser = {
   id: string;
@@ -116,7 +117,7 @@ function release(userId: string, source: string): void {
 // ── Google / Apple ──────────────────────────────────────────────────────────
 
 export type OAuthIdentity = {
-  provider: "google" | "apple";
+  provider: "google" | "apple" | "alipay";
   providerAccountId: string;
   email?: string | null;
   emailVerified?: boolean;
@@ -125,8 +126,9 @@ export type OAuthIdentity = {
 };
 
 /**
- * The user behind a Google/Apple sign-in, created or joined as needed.
+ * The user behind a Google, Apple, or Alipay sign-in, created or joined as needed.
  * A provider sign-in releases the account at once (clearance O4).
+ * Alipay is joined only by open_id — the token response has no verified email.
  */
 export function resolveOAuthUser(identity: OAuthIdentity): string {
   const db = getDb();

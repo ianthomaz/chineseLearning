@@ -3,7 +3,9 @@
  *
  * Every way in resolves to one internal `users.id` through the `accounts`
  * table (`server/db/identity.ts`): Google (redirect + One Tap), Apple (when
- * configured), and email + password. `token.sub` is that internal id.
+ * configured), email + password, and Alipay. Alipay is not an Auth.js provider:
+ * its callback (`/api/auth/alipay/callback`) writes this same JWT after the
+ * RSA2 token exchange. `token.sub` is that internal id.
  */
 import NextAuth, { CredentialsSignin } from "next-auth";
 import Credentials from "next-auth/providers/credentials";

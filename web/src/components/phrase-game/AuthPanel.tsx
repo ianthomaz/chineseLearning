@@ -5,7 +5,15 @@ import { signOut, useSession } from "next-auth/react";
 import { useLocale } from "@/context/LocaleContext";
 import { GoogleOneTap, GoogleSignInRedirect } from "./GoogleOneTap";
 import { isAdminEmail } from "@/lib/phrase-game/admin";
-import { AppleSignInRedirect, EmailAuthForm, HAS_APPLE_WEB, OrDivider } from "@/components/auth/EmailAuthForm";
+import {
+  AlipayErrorNote,
+  AlipaySignInRedirect,
+  AppleSignInRedirect,
+  EmailAuthForm,
+  HAS_ALIPAY_WEB,
+  HAS_APPLE_WEB,
+  OrDivider,
+} from "@/components/auth/EmailAuthForm";
 
 /** Disabled in static-export builds (no server route handlers). */
 const AUTH_ENABLED = process.env.NEXT_PUBLIC_AUTH_ENABLED !== "0";
@@ -68,6 +76,7 @@ function AuthPanelLive({
         style={{ borderColor: "var(--border)" }}
       >
         <p className="text-sm text-ink/65">{t("phraseGame.auth.guestHint")}</p>
+        <AlipayErrorNote />
         <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           {HAS_ONE_TAP ? (
             <GoogleOneTap locale={locale} onSignedIn={() => void update()} />
@@ -78,6 +87,7 @@ function AuthPanelLive({
             <GoogleSignInRedirect label={t("phraseGame.auth.signInAlt")} />
           ) : null}
           {HAS_APPLE_WEB ? <AppleSignInRedirect /> : null}
+          {HAS_ALIPAY_WEB ? <AlipaySignInRedirect /> : null}
         </div>
         <div className="mt-4 space-y-4 sm:max-w-sm">
           <OrDivider />

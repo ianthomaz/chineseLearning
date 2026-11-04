@@ -9,7 +9,10 @@ declare global {
     cancel_on_tap_outside?: boolean;
     context?: "signin" | "signup" | "use";
     itp_support?: boolean;
+    /** Ignored by current GIS. Kept so older copies of the script still honor it. */
     use_fedcm_for_prompt?: boolean;
+    /** Button stays on the non-FedCM flow. Defaults to false at Google. */
+    use_fedcm_for_button?: boolean;
   }
 
   interface GooglePromptMomentNotification {

@@ -38,6 +38,7 @@
     "start:server": "node scripts/start-server-stripped.mjs",
     "lint": "next lint",
     "test:identity": "npx --yes tsx scripts/test-identity-merge.mjs",
+    "test:alipay": "npx --yes tsx scripts/test-alipay.mjs",
     "pwa:icons": "node scripts/generate-pwa-icons.mjs"
   },
   "dependencies": {

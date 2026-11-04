@@ -499,6 +499,8 @@
   "account": {
     "or": "or",
     "appleSignIn": "Sign in with Apple",
+    "alipaySignIn": "Sign in with Alipay",
+    "alipayFailed": "Could not sign in with Alipay. Try again.",
     "tabs": {
       "signIn": "Sign in",
       "register": "Create account"

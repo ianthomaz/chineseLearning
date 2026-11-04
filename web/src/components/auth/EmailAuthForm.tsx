@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { signIn } from "next-auth/react";
 import { useLocale } from "@/context/LocaleContext";
 import { trackEvent } from "@/lib/analytics";
@@ -267,6 +267,34 @@ export function EmailAuthForm({ onSignedIn }: { onSignedIn?: () => void }) {
 
 /** "Sign in with Apple" on the site — shown only when the server has Apple configured. */
 export const HAS_APPLE_WEB = process.env.NEXT_PUBLIC_AUTH_APPLE === "1";
+
+export const HAS_ALIPAY_WEB = process.env.NEXT_PUBLIC_AUTH_ALIPAY === "1";
+
+/** Shown after `/api/auth/alipay/callback` sends the person back with `authError=alipay`. */
+export function AlipayErrorNote() {
+  const { t } = useLocale();
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setShow(params.get("authError") === "alipay");
+  }, []);
+  if (!show) return null;
+  return <p className="text-center text-xs text-red-700">{t("account.alipayFailed")}</p>;
+}
+
+export function AlipaySignInRedirect() {
+  const { t } = useLocale();
+  return (
+    <a
+      href={`${BASE_PATH}/api/auth/alipay/start`}
+      onClick={() => trackEvent({ action: "sign_in_start", category: "auth", label: "alipay" })}
+      className="inline-flex min-h-[44px] items-center justify-center rounded-full px-4 text-sm font-medium text-white"
+      style={{ backgroundColor: "#1677ff" }}
+    >
+      {t("account.alipaySignIn")}
+    </a>
+  );
+}
 
 export function AppleSignInRedirect() {
   const { t } = useLocale();

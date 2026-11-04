@@ -10,6 +10,7 @@
  * Uso (na raiz): node scripts/sync-env-from-credentials.mjs
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { homedir } from "node:os";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -77,6 +78,87 @@ function envAssign(key, value) {
   const v = String(value ?? "");
   if (/^[A-Za-z0-9_./:@+-]+$/.test(v)) return `${key}=${v}`;
   return `${key}=${JSON.stringify(v)}`;
+}
+
+/**
+ * Website Alipay app only. File lives outside this repo
+ * (`_credentials/alipay/learnchinese.json`, map `alipay.learnchinese`).
+ * Shape (nov 2026): root = web app LearnChineseToday; `mobile_app` is the iOS
+ * app and is ignored here. Older files used a nested `launched_app` block.
+ */
+function alipayCredentialsFile(data) {
+  const fromEnv = process.env.ALIPAY_CREDENTIALS_FILE;
+  if (fromEnv && existsSync(fromEnv)) return fromEnv;
+  const fromJson = data.alipay?.file;
+  if (typeof fromJson === "string" && fromJson.trim()) {
+    const abs = fromJson.startsWith("/") ? fromJson : join(REPO_ROOT, fromJson);
+    if (existsSync(abs)) return abs;
+  }
+  const hub = join(homedir(), "Documents/Projects/blackair/_credentials/alipay/learnchinese.json");
+  if (existsSync(hub)) return hub;
+  return null;
+}
+
+let websiteAlipayCache;
+function loadWebsiteAlipay(data) {
+  if (websiteAlipayCache !== undefined) return websiteAlipayCache;
+  const file = alipayCredentialsFile(data);
+  if (!file) {
+    websiteAlipayCache = null;
+    return null;
+  }
+  let json;
+  try {
+    json = JSON.parse(readFileSync(file, "utf8"));
+  } catch {
+    console.warn("[sync-env] WARN: could not read Alipay credentials file");
+    websiteAlipayCache = null;
+    return null;
+  }
+  // Prefer root (current). Fall back to nested launched_app from older copies.
+  const app =
+    json.app_id && json.application_private_key && json.alipay_public_key
+      ? json
+      : json.launched_app;
+  if (!app?.app_id || !app.application_private_key || !app.alipay_public_key) {
+    console.warn("[sync-env] WARN: Alipay file has no website app keys");
+    websiteAlipayCache = null;
+    return null;
+  }
+  if (json.app_type && String(json.app_type) !== "webpage" && app === json) {
+    console.warn("[sync-env] WARN: Alipay root app_type is not webpage — env not written");
+    websiteAlipayCache = null;
+    return null;
+  }
+  websiteAlipayCache = {
+    appId: String(app.app_id).trim(),
+    privateKey: String(app.application_private_key).replace(/\s+/g, ""),
+    publicKey: String(app.alipay_public_key).replace(/\s+/g, ""),
+    gateway: String(json.gateway || app.gateway || "https://openapi.alipay.com/gateway.do").trim(),
+  };
+  console.log(`[sync-env] alipay website app ${websiteAlipayCache.appId}`);
+  return websiteAlipayCache;
+}
+
+function alipayBlock(data) {
+  const app = loadWebsiteAlipay(data);
+  if (!app) {
+    return [
+      "# --- Alipay (site). root of _credentials/alipay/learnchinese.json",
+      "# ALIPAY_APP_ID=",
+      "# ALIPAY_APPLICATION_PRIVATE_KEY=",
+      "# ALIPAY_PUBLIC_KEY=",
+      "# NEXT_PUBLIC_AUTH_ALIPAY=1",
+    ];
+  }
+  return [
+    "# --- Alipay (site). website app only — docs/05_autenticacao.md § Alipay",
+    envAssign("ALIPAY_APP_ID", app.appId),
+    envAssign("ALIPAY_APPLICATION_PRIVATE_KEY", app.privateKey),
+    envAssign("ALIPAY_PUBLIC_KEY", app.publicKey),
+    envAssign("ALIPAY_GATEWAY", app.gateway),
+    "NEXT_PUBLIC_AUTH_ALIPAY=1",
+  ];
 }
 
 /** Accounts: Resend email, Apple, Google iOS client (docs/05_autenticacao.md § Contas). */
@@ -158,9 +240,10 @@ function main() {
   mkdirSync(OUT_DIR, { recursive: true });
   mkdirSync(join(WEB_DIR, "deploy"), { recursive: true });
 
-  writeFileSync(OUT_LOCAL, [...site, "", ...devAuth].join("\n") + "\n", "utf8");
-  writeFileSync(OUT_LOCAL_NODE, [...site, "", ...localNodeAuth].join("\n") + "\n", "utf8");
-  writeFileSync(OUT_PRODUCTION, [...site, "", ...prodAuth].join("\n") + "\n", "utf8");
+  const alipay = alipayBlock(data);
+  writeFileSync(OUT_LOCAL, [...site, "", ...devAuth, "", ...alipay].join("\n") + "\n", "utf8");
+  writeFileSync(OUT_LOCAL_NODE, [...site, "", ...localNodeAuth, "", ...alipay].join("\n") + "\n", "utf8");
+  writeFileSync(OUT_PRODUCTION, [...site, "", ...prodAuth, "", ...alipay].join("\n") + "\n", "utf8");
 
   const hasGoogle =
     Boolean(data.google_oauth?.GOOGLE_CLIENT_ID || data.google_oauth?.AUTH_GOOGLE_ID) &&
@@ -188,6 +271,8 @@ function main() {
     ...devAuth,
     "",
     ...accountBlock(data, existingLocal),
+    "",
+    ...alipayBlock(data),
     "",
   ].join("\n");
 
@@ -217,6 +302,8 @@ function main() {
     ...prodAuth,
     "",
     ...accountBlock(data, existingServer),
+    "",
+    ...alipayBlock(data),
     "",
   ].join("\n");
 

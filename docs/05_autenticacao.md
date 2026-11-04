@@ -1,6 +1,6 @@
 # Autenticação e utilizadores
 
-Estado: **Google (site) + e-mail e senha (site e app) + Apple (app)** — nov 2026.
+Estado: **Google (site) + Alipay (site) + e-mail e senha (site e app) + Apple (app)** — nov 2026.
 Jogo de frases **não exige login**. Desenho das contas: § Contas, logo abaixo.
 
 Pontuação persistente: [06_jogo_frases.md](06_jogo_frases.md) § Pontuação.
@@ -72,7 +72,7 @@ Export estático (`NEXT_PUBLIC_AUTH_ENABLED=0`): sem auth routes.
 
 ## Stack
 
-- Auth.js v5 — Google OAuth + One Tap (`google-onetap`)
+- Auth.js v5 — Google OAuth + One Tap (`google-onetap`) + Alipay (callback próprio, RSA2)
 - JWT 30 dias · SQLite `web/data/phrase-game.sqlite`
 - `basePath` vazio → `/api/auth/*`
 
@@ -108,6 +108,37 @@ Auth.js tem provider WeChat, mas o bloqueio é **administrativo**:
 
 ---
 
+## Alipay (site)
+
+Aplicação em uso: **LearnChineseToday**, APPID `2021007115619132`, já launched.
+
+Chaves, fora do git: `_credentials/alipay/learnchinese.json` — **raiz** = app web
+(LearnChineseToday). O bloco `mobile_app` é o iOS e não entra no site.
+Índice: `_credentials/credentialsMap.json` → `alipay.learnchinese`.
+`node scripts/sync-env-from-credentials.mjs` lê a raiz (ou `launched_app` em
+cópias antigas) e escreve o env (gitignored). A chave privada assina o pedido;
+`alipay_public_key` confere a resposta.
+
+| Variável | Para quê |
+|---|---|
+| `ALIPAY_APP_ID` | APPID da aplicação launched |
+| `ALIPAY_APPLICATION_PRIVATE_KEY` | Assina `alipay.system.oauth.token` |
+| `ALIPAY_PUBLIC_KEY` | Confere a resposta da Alipay |
+| `ALIPAY_GATEWAY` | `https://openapi.alipay.com/gateway.do` |
+| `NEXT_PUBLIC_AUTH_ALIPAY=1` | Mostra o botão |
+
+O botão abre `https://openauth.alipay.com/oauth2/publicAppAuthorize.htm` com `scope=auth_user`. A pessoa volta para `/api/auth/alipay/callback` com um `auth_code` (vale uma vez). O servidor troca o código, lê o `open_id` e grava a sessão Auth.js. O access token não fica guardado.
+
+Conta: `accounts.provider = alipay`, id = `open_id`. Sem e-mail, então não junta com Google, Apple nem senha. Nasce O4 (`oauth_signup`). Não está no app iOS.
+
+No console da Alipay a URL de retorno tem de ser exactamente:
+
+`https://learnchinese.today/api/auth/alipay/callback`
+
+Código: `web/src/server/auth/alipay.ts`, rotas `web/src/app/api/auth/alipay/{start,callback}/route.server.ts`. Teste: `cd web && npm run test:alipay`.
+
+---
+
 ## Contas — um usuário, várias entradas (implementado nov 2026)
 
 Código: `web/src/server/db/identity.ts` (dados), `server/account/service.ts`
@@ -122,7 +153,7 @@ N (visitante) < O (outsider) < I (insider) < A (admin), deny-by-default.
 |---|---|---|
 | Sem sessão | N0 | — |
 | Cadastro por e-mail, link ainda não aberto | **O1** | `signup` |
-| Conta liberada: link aberto, ou login Google/Apple | **O4** | `email_verified` · `oauth_signup` · `password_reset` |
+| Conta liberada: link aberto, ou login Google/Apple/Alipay | **O4** | `email_verified` · `oauth_signup` · `password_reset` |
 | Usuários Google anteriores a nov 2026 | O4 | `migration` |
 
 "Tem conta" = `can(uc, "O4|I0|A0")` (`isReleased`). Mudar o nível é só em
@@ -133,7 +164,7 @@ mesmo formato do noia.dev).
 
 | Tabela | Papel |
 |---|---|
-| `accounts` | (provider, provider_account_id) → user_id. Providers: `google`, `apple`, `email` (id = e-mail normalizado) |
+| `accounts` | (provider, provider_account_id) → user_id. Providers: `google`, `apple`, `alipay` (id = `open_id`), `email` (id = e-mail normalizado) |
 | `app_sessions` | Token Bearer do app iOS — só o SHA-256; 180 dias, renova com o uso |
 | `email_tokens` | Links por e-mail: `verify` (72 h, pode reabrir) · `reset` (2 h, uso único) |
 | `clearance_changes` | Auditoria NOIA |
@@ -174,6 +205,7 @@ idempotentes por `roundId`. Lado do app: `appApple/docs/08_login.md`.
 | `APPLE_APP_BUNDLE_ID` | `aud` do token Apple do app (default `today.learnchinese.app`) |
 | `GOOGLE_IOS_CLIENT_ID` | Aceitar o ID token do Google Sign-In do app |
 | `AUTH_APPLE_ID`, `AUTH_APPLE_SECRET`, `NEXT_PUBLIC_AUTH_APPLE=1` | Apple **no site** (opcional). Secret: `node scripts/apple-client-secret.mjs`, renovar a cada 6 meses |
+| `ALIPAY_APP_ID`, `ALIPAY_APPLICATION_PRIVATE_KEY`, `ALIPAY_PUBLIC_KEY`, `NEXT_PUBLIC_AUTH_ALIPAY` | Alipay no site. Ver § Alipay. Fonte: raiz do JSON web; não `mobile_app` |
 
 ### Perguntas para o dono (sim/não)
 
@@ -275,7 +307,7 @@ e-mail). Restante: "conectar outra conta" com sessão ativa.
 ### 7. China
 
 Google e Facebook não funcionam na China continental sem VPN; Apple funciona.
-Quem está na China sem iPhone fica sem opção até existir o e-mail com código.
+Alipay no site cobre quem está na China sem iPhone (ver § Alipay). E-mail e senha também.
 WeChat: ver abaixo (bloqueio administrativo).
 
 Ordem sugerida: 1 → 2 → Apple (site + app) → Google no app → e-mail → Facebook.

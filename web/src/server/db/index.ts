@@ -76,7 +76,7 @@ CREATE INDEX IF NOT EXISTS idx_rounds_user ON game_rounds(user_id, created_at);
 
 -- Identity (docs/05_autenticacao.md § Contas). A user can sign in through
 -- several providers; each (provider, provider_account_id) points at one user.
--- provider: 'google' | 'apple' | 'email' (provider_account_id = normalised email).
+-- provider: 'google' | 'apple' | 'alipay' (open_id) | 'email' (normalised email).
 CREATE TABLE IF NOT EXISTS accounts (
   provider            TEXT NOT NULL,
   provider_account_id TEXT NOT NULL,

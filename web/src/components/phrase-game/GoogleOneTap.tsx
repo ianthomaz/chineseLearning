@@ -15,8 +15,13 @@ function isLocalDevHost(): boolean {
   return h === "localhost" || h === "127.0.0.1" || h === "[::1]";
 }
 
-/** FedCM is flaky on localhost / hot reload; prefer classic prompt in dev unless forced. */
-function fedcmForPrompt(): boolean {
+/**
+ * Automatic One Tap only. Current GIS ignores `use_fedcm_for_prompt` and always
+ * calls FedCM, which on 127.0.0.1 logs "Error retrieving a token" and Next's
+ * dev overlay treats that console.error as an app failure. The button does not
+ * use FedCM. Force with NEXT_PUBLIC_GSI_USE_FEDCM=1, or off with =0.
+ */
+function automaticOneTap(): boolean {
   if (process.env.NEXT_PUBLIC_GSI_USE_FEDCM === "0") return false;
   if (process.env.NEXT_PUBLIC_GSI_USE_FEDCM === "1") return true;
   return !isLocalDevHost();
@@ -48,6 +53,7 @@ export function GoogleOneTap({ onSignedIn, locale = "pt" }: Props) {
     if (!g) return;
 
     let cancelled = false;
+    const oneTap = automaticOneTap();
 
     g.initialize({
       client_id: CLIENT_ID,
@@ -79,7 +85,8 @@ export function GoogleOneTap({ onSignedIn, locale = "pt" }: Props) {
       cancel_on_tap_outside: true,
       context: "signin",
       itp_support: true,
-      use_fedcm_for_prompt: fedcmForPrompt(),
+      use_fedcm_for_prompt: oneTap,
+      use_fedcm_for_button: false,
     });
 
     if (buttonRef.current) {
@@ -94,11 +101,14 @@ export function GoogleOneTap({ onSignedIn, locale = "pt" }: Props) {
       });
     }
 
-    // Defer prompt so GIS script + button render settle (avoids abort on hot reload).
-    const promptTimer = window.setTimeout(() => {
-      if (cancelled) return;
-      g.prompt();
-    }, 100);
+    // One Tap on the public https origin. Locally it only produces the FedCM
+    // console error; the button above is the sign-in.
+    const promptTimer = oneTap
+      ? window.setTimeout(() => {
+          if (cancelled) return;
+          g.prompt();
+        }, 100)
+      : 0;
 
     return () => {
       cancelled = true;
@@ -129,14 +139,17 @@ export function GoogleOneTap({ onSignedIn, locale = "pt" }: Props) {
   );
 }
 
-/** Redirect-based Google OAuth (popup-free fallback). */
+/**
+ * Redirect Google OAuth. Always asks which account — the GIS button often
+ * sticks to the last one; this is the "another account" path.
+ */
 export function GoogleSignInRedirect({ label }: { label: string }) {
   return (
     <button
       type="button"
       onClick={() => {
         trackEvent({ action: "sign_in_start", category: "auth", label: "google-redirect" });
-        void signIn("google");
+        void signIn("google", undefined, { prompt: "select_account" });
       }}
       className="inline-flex min-h-[44px] items-center rounded-full border px-4 text-sm font-medium text-ink/80 hover:bg-ink/5"
       style={{ borderColor: "var(--border)" }}

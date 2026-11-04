@@ -3,7 +3,15 @@
 import { useSession } from "next-auth/react";
 import { useLocale } from "@/context/LocaleContext";
 import { GoogleOneTap, GoogleSignInRedirect } from "./phrase-game/GoogleOneTap";
-import { AppleSignInRedirect, EmailAuthForm, HAS_APPLE_WEB, OrDivider } from "./auth/EmailAuthForm";
+import {
+  AlipayErrorNote,
+  AlipaySignInRedirect,
+  AppleSignInRedirect,
+  EmailAuthForm,
+  HAS_ALIPAY_WEB,
+  HAS_APPLE_WEB,
+  OrDivider,
+} from "./auth/EmailAuthForm";
 
 /** Disabled in static-export builds (no server route handlers / OAuth). */
 const AUTH_ENABLED = process.env.NEXT_PUBLIC_AUTH_ENABLED !== "0";
@@ -65,6 +73,7 @@ function LoginGateLive({ children }: { children: React.ReactNode }) {
             {t("authGate.hint")}
           </p>
           <div className="mt-6 flex flex-col items-center gap-3">
+            <AlipayErrorNote />
             {HAS_ONE_TAP ? (
               <>
                 <GoogleOneTap locale={locale} onSignedIn={() => void update()} />
@@ -74,6 +83,7 @@ function LoginGateLive({ children }: { children: React.ReactNode }) {
               <GoogleSignInRedirect label={t("authGate.signIn")} />
             )}
             {HAS_APPLE_WEB ? <AppleSignInRedirect /> : null}
+            {HAS_ALIPAY_WEB ? <AlipaySignInRedirect /> : null}
           </div>
           <div className="mt-6 space-y-4">
             <OrDivider />

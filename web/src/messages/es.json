@@ -499,6 +499,8 @@
   "account": {
     "or": "o",
     "appleSignIn": "Iniciar sesión con Apple",
+    "alipaySignIn": "Iniciar sesión con Alipay",
+    "alipayFailed": "No se pudo iniciar sesión con Alipay. Inténtalo de nuevo.",
     "tabs": {
       "signIn": "Entrar",
       "register": "Crear cuenta"

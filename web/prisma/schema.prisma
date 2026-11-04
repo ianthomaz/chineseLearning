@@ -34,7 +34,7 @@ model User {
 }
 
 /// One row per way in: (provider, provider_account_id) → user.
-/// provider: "google" | "apple" | "email" (id = normalised email).
+/// provider: "google" | "apple" | "alipay" (open_id) | "email" (id = normalised email).
 model Account {
   provider          String
   providerAccountId String  @map("provider_account_id")

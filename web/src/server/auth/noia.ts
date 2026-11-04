@@ -15,14 +15,14 @@ const UC_RE = /^([NOIA])([0-9])$/;
 /**
  * Clearances this site assigns (levels are per project in NOIA). Change here,
  * nowhere else: N0 no account · O1 email+password, unconfirmed · O4 confirmed
- * (Google/Apple sign-in or opened confirmation link).
+ * (Google/Apple/Alipay sign-in or opened confirmation link).
  */
 export const CLEARANCE = {
   /** No session. */
   visitor: "N0",
   /** Email + password given, email not confirmed yet. */
   pending: "O1",
-  /** Account released: confirmed email, or Google / Apple sign-in. */
+  /** Account released: confirmed email, or Google / Apple / Alipay sign-in. */
   released: "O4",
 } as const;
 

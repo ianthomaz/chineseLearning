@@ -42,7 +42,7 @@ Código: `web/src/lib/content/`
 | `context_decks` / `context_deck_cards` | Flashcards `/practice` |
 | `lexico_*` | Pool partilhado site + app |
 | `progress` | Domínio por item e por jogador — ver abaixo |
-| `accounts`, `app_sessions`, `email_tokens`, `clearance_changes` | Contas, sessões do app, links por e-mail, auditoria NOIA — [05](05_autenticacao.md) § Contas |
+| `accounts`, `app_sessions`, `email_tokens`, `clearance_changes` | Contas (`google`, `apple`, `alipay`, `email`), sessões do app, links por e-mail, auditoria NOIA — [05](05_autenticacao.md) § Contas |
 | `game_rounds` | Uma linha por rodada terminada |
 
 ### Progresso do jogador
