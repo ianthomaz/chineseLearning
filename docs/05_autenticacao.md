@@ -280,12 +280,13 @@ O que ainda falta, por ordem — a sequência geral está em
 | Item | Onde | Bloqueio |
 |---|---|---|
 | Deploy das contas (e-mail, Apple app, Alipay) | servidor | ação do dono |
-| Google Sign-In no app | app | client ID iOS (credencial) |
+| Google Sign-In no app | app | client ID iOS já no Secrets — falta teste no iPhone |
 | Alipay no app iOS | app | SDK Alipay ou login via site em `ASWebAuthenticationSession` |
 | Excluir conta **no site** | site | só UI — API `DELETE /api/account` já existe |
 | "Conectar outra conta" com sessão ativa (ex.: Alipay sem e-mail + Google) | site + app | desenho de UI |
 | Revogar token Apple ao excluir conta | servidor | chave `.p8` |
-| Apple no site | site | Services ID + chave `.p8` — código pronto, § Apple no site |
+| Apple no site | site | Services ID + `.p8` no credentials — falta deploy + teste |
+| [ ] Ícones das redes (Google, Apple, Alipay) nos botões de login | site + app | site tem SVG básico em `EmailAuthForm`; app ainda sem marcas oficiais |
 | WeChat | — | conta Tencent (§ WeChat) |
 | Passkeys | site + app | depois do resto |
 

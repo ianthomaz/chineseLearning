@@ -299,7 +299,7 @@ export function AlipaySignInRedirect() {
     <a
       href={`${BASE_PATH}/api/auth/alipay/start`}
       onClick={() => trackEvent({ action: "sign_in_start", category: "auth", label: "alipay" })}
-      className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-4 text-sm font-medium text-white"
+      className="inline-flex w-full min-h-[44px] items-center justify-center gap-2 rounded-full px-4 text-sm font-medium text-white whitespace-nowrap"
       style={{ backgroundColor: "#1677ff" }}
     >
       <AlipayMark />
@@ -328,7 +328,7 @@ export function AppleSignInRedirect() {
         trackEvent({ action: "sign_in_start", category: "auth", label: "apple" });
         void signIn("apple");
       }}
-      className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full bg-black px-4 text-sm font-medium text-white"
+      className="inline-flex w-full min-h-[44px] items-center justify-center gap-2 rounded-full bg-black px-4 text-sm font-medium text-white whitespace-nowrap"
     >
       <AppleMark />
       {t("account.appleSignIn")}

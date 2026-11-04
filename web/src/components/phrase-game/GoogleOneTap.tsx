@@ -126,13 +126,13 @@ export function GoogleOneTap({ onSignedIn, locale = "pt" }: Props) {
   return (
     <>
       <Script src={GIS_SRC} strategy="afterInteractive" onReady={() => setScriptReady(true)} />
-      <div className="flex flex-col items-stretch gap-2 sm:items-end">
-        <div ref={buttonRef} className="min-h-[44px]" aria-busy={signingIn} />
+      <div className="flex w-full flex-col items-stretch gap-2">
+        <div ref={buttonRef} className="min-h-[44px] w-full [&_>div]:w-full" aria-busy={signingIn} />
         {signingIn ? (
-          <p className="text-center text-xs text-ink/45 sm:text-right">{t("phraseGame.auth.signingIn")}</p>
+          <p className="text-center text-xs text-ink/45">{t("phraseGame.auth.signingIn")}</p>
         ) : null}
         {error ? (
-          <p className="text-center text-xs text-red-700 sm:text-right">{t("phraseGame.auth.signInFailed")}</p>
+          <p className="text-center text-xs text-red-700">{t("phraseGame.auth.signInFailed")}</p>
         ) : null}
       </div>
     </>
@@ -163,7 +163,7 @@ export function GoogleSignInRedirect({ label }: { label: string }) {
         trackEvent({ action: "sign_in_start", category: "auth", label: "google-redirect" });
         void signIn("google", undefined, { prompt: "select_account" });
       }}
-      className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full border px-4 text-sm font-medium text-ink/80 hover:bg-ink/5"
+      className="inline-flex w-full min-h-[44px] items-center justify-center gap-2 rounded-full border px-4 text-sm font-medium text-ink/80 whitespace-nowrap hover:bg-ink/5"
       style={{ borderColor: "var(--border)" }}
     >
       <GoogleMark />

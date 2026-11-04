@@ -77,7 +77,7 @@ function AuthPanelLive({
       >
         <p className="text-sm text-ink/65">{t("phraseGame.auth.guestHint")}</p>
         <AlipayErrorNote />
-        <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-3 flex w-full flex-col gap-2 sm:max-w-sm">
           {HAS_ONE_TAP ? (
             <GoogleOneTap locale={locale} onSignedIn={() => void update()} />
           ) : (

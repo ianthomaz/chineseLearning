@@ -72,7 +72,7 @@ function LoginGateLive({ children }: { children: React.ReactNode }) {
           >
             {t("authGate.hint")}
           </p>
-          <div className="mt-6 flex flex-col items-center gap-3">
+          <div className="mt-6 flex w-full flex-col gap-2">
             <AlipayErrorNote />
             {HAS_ONE_TAP ? (
               <>
