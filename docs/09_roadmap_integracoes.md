@@ -40,7 +40,7 @@ Cada fase depende da anterior. Dentro da fase, a ordem é a da tabela.
 | 2.2 | Histórico de rodadas no app + "rever erradas" | idem § 2 |
 | 2.3 | Frases no pack da biblioteca (atualizar sem nova versão do app) | idem § 2.6 |
 | 2.4 | Escrita offline (dados de traço embutidos) + escrever com o dedo | idem § 3 |
-| 2.5 | Alipay no app (teste no iPhone) | [05](05_autenticacao.md) — SDK nativo ligado; falta validar no aparelho com app Alipay |
+| 2.5 | Alipay no app — **ainda não funciona** | [05](05_autenticacao.md) — SDK no repo; falta fechar e validar no iPhone |
 
 ### Fase 3 — loja
 
