@@ -9,13 +9,19 @@
  */
 import { NextResponse, type NextRequest } from "next/server";
 import {
+  ALIPAY_IOS_CALLBACK_SCHEME,
+  ALIPAY_IOS_RETURN_PATH,
   ALIPAY_STATE_COOKIE,
   alipayConfig,
   completeAlipayLogin,
   unpackStateCookie,
   withAuthError,
 } from "@/server/auth/alipay";
-import { getIdentityUser, resolveOAuthUser } from "@/server/db/identity";
+import {
+  createAppAuthExchange,
+  getIdentityUser,
+  resolveOAuthUser,
+} from "@/server/db/identity";
 import {
   AUTH_SESSION_MAX_AGE,
   authSessionCookieName,
@@ -46,9 +52,15 @@ export async function GET(req: NextRequest) {
   const origin = new URL(config.redirectUri).origin;
   const stored = unpackStateCookie(req.cookies.get(ALIPAY_STATE_COOKIE)?.value ?? "");
   const returnPath = stored?.returnPath ?? "/";
+  const forIos = returnPath === ALIPAY_IOS_RETURN_PATH;
 
   const fail = (reason: string) => {
     console.warn("[alipay] callback rejected", reason);
+    if (forIos) {
+      const failUrl = new URL(`${ALIPAY_IOS_CALLBACK_SCHEME}://alipay`);
+      failUrl.searchParams.set("error", "alipay");
+      return clearState(NextResponse.redirect(failUrl), secure);
+    }
     return clearState(NextResponse.redirect(new URL(withAuthError(returnPath), origin)), secure);
   };
 
@@ -77,6 +89,19 @@ export async function GET(req: NextRequest) {
   } catch (err) {
     console.warn("[alipay] could not resolve user", err instanceof Error ? err.name : "error");
     return fail("identity");
+  }
+
+  // iOS app: hand a one-time exchange code back to ASWebAuthenticationSession.
+  if (forIos) {
+    try {
+      const exchange = createAppAuthExchange(userId);
+      const appUrl = new URL(`${ALIPAY_IOS_CALLBACK_SCHEME}://alipay`);
+      appUrl.searchParams.set("exchange", exchange);
+      return clearState(NextResponse.redirect(appUrl), secure);
+    } catch (err) {
+      console.warn("[alipay] could not mint app exchange", err instanceof Error ? err.name : "error");
+      return fail("exchange");
+    }
   }
 
   let token: string;

@@ -6,6 +6,7 @@
  */
 import { NextResponse, type NextRequest } from "next/server";
 import {
+  ALIPAY_IOS_RETURN_PATH,
   ALIPAY_STATE_COOKIE,
   ALIPAY_STATE_MAX_AGE,
   alipayAuthorizeUrl,
@@ -20,6 +21,7 @@ import { limited } from "@/server/http";
 export const dynamic = "force-dynamic";
 
 function returnPathFrom(req: NextRequest, origin: string): string {
+  if (req.nextUrl.searchParams.get("client") === "ios") return ALIPAY_IOS_RETURN_PATH;
   const referer = req.headers.get("referer");
   if (!referer) return "/";
   try {

@@ -140,25 +140,78 @@ function loadWebsiteAlipay(data) {
   return websiteAlipayCache;
 }
 
+let mobileAlipayCache;
+function loadMobileAlipay(data) {
+  if (mobileAlipayCache !== undefined) return mobileAlipayCache;
+  const file = alipayCredentialsFile(data);
+  if (!file) {
+    mobileAlipayCache = null;
+    return null;
+  }
+  let json;
+  try {
+    json = JSON.parse(readFileSync(file, "utf8"));
+  } catch {
+    mobileAlipayCache = null;
+    return null;
+  }
+  const app = json.mobile_app;
+  if (!app?.app_id || !app.application_private_key || !app.alipay_public_key) {
+    mobileAlipayCache = null;
+    return null;
+  }
+  const pid = String(app.pid || "").trim();
+  if (!pid) {
+    console.warn("[sync-env] WARN: alipay mobile_app.pid empty (2088…) — iOS SDK auth disabled until set");
+  }
+  mobileAlipayCache = {
+    appId: String(app.app_id).trim(),
+    pid,
+    privateKey: String(app.application_private_key).replace(/\s+/g, ""),
+    publicKey: String(app.alipay_public_key).replace(/\s+/g, ""),
+  };
+  console.log(`[sync-env] alipay mobile app ${mobileAlipayCache.appId}${pid ? "" : " (no pid)"}`);
+  return mobileAlipayCache;
+}
+
 function alipayBlock(data) {
   const app = loadWebsiteAlipay(data);
+  const mobile = loadMobileAlipay(data);
+  const lines = [];
   if (!app) {
-    return [
+    lines.push(
       "# --- Alipay (site). root of _credentials/alipay/learnchinese.json",
       "# ALIPAY_APP_ID=",
       "# ALIPAY_APPLICATION_PRIVATE_KEY=",
       "# ALIPAY_PUBLIC_KEY=",
       "# NEXT_PUBLIC_AUTH_ALIPAY=1",
-    ];
+    );
+  } else {
+    lines.push(
+      "# --- Alipay (site). website app — docs/05_autenticacao.md § Alipay",
+      envAssign("ALIPAY_APP_ID", app.appId),
+      envAssign("ALIPAY_APPLICATION_PRIVATE_KEY", app.privateKey),
+      envAssign("ALIPAY_PUBLIC_KEY", app.publicKey),
+      envAssign("ALIPAY_GATEWAY", app.gateway),
+      "NEXT_PUBLIC_AUTH_ALIPAY=1",
+    );
   }
-  return [
-    "# --- Alipay (site). website app only — docs/05_autenticacao.md § Alipay",
-    envAssign("ALIPAY_APP_ID", app.appId),
-    envAssign("ALIPAY_APPLICATION_PRIVATE_KEY", app.privateKey),
-    envAssign("ALIPAY_PUBLIC_KEY", app.publicKey),
-    envAssign("ALIPAY_GATEWAY", app.gateway),
-    "NEXT_PUBLIC_AUTH_ALIPAY=1",
-  ];
+  if (mobile?.pid) {
+    lines.push(
+      "# --- Alipay (iOS SDK). mobile_app block — APPID + pid + keys",
+      envAssign("ALIPAY_MOBILE_APP_ID", mobile.appId),
+      envAssign("ALIPAY_MOBILE_PID", mobile.pid),
+      envAssign("ALIPAY_MOBILE_APPLICATION_PRIVATE_KEY", mobile.privateKey),
+      envAssign("ALIPAY_MOBILE_PUBLIC_KEY", mobile.publicKey),
+    );
+  } else {
+    lines.push(
+      "# --- Alipay (iOS SDK). set mobile_app.pid (2088…) in learnchinese.json then re-sync",
+      "# ALIPAY_MOBILE_APP_ID=",
+      "# ALIPAY_MOBILE_PID=",
+    );
+  }
+  return lines;
 }
 
 /** Accounts: Resend email, Apple, Google iOS client (docs/05_autenticacao.md § Contas). */

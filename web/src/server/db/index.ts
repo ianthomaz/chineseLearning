@@ -98,6 +98,17 @@ CREATE TABLE IF NOT EXISTS app_sessions (
 );
 CREATE INDEX IF NOT EXISTS idx_app_sessions_user ON app_sessions(user_id);
 
+-- One-time codes after Alipay (or similar) ASWebAuthenticationSession on iOS.
+-- App opens /api/auth/alipay/start?client=ios → callback redirects to the app
+-- scheme with ?exchange=… → POST /api/app/auth/alipay consumes it for a Bearer.
+CREATE TABLE IF NOT EXISTS app_auth_exchanges (
+  code_hash  TEXT PRIMARY KEY,
+  user_id    TEXT NOT NULL,
+  expires_at TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_app_auth_exchanges_user ON app_auth_exchanges(user_id);
+
 -- One-time links sent by email. purpose: 'verify' | 'reset'. Only the hash is stored.
 CREATE TABLE IF NOT EXISTS email_tokens (
   token_hash TEXT PRIMARY KEY,

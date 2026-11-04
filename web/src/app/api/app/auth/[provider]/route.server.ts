@@ -4,14 +4,21 @@
  *   POST /api/app/auth/password  { email, password }
  *   POST /api/app/auth/apple     { identityToken, nonce?, givenName?, familyName? }
  *   POST /api/app/auth/google    { idToken }
+ *   POST /api/app/auth/alipay    { authCode }   // from AlipaySDK auth_V2 (mobile APPID)
+ *                         or    { exchange }  // legacy one-time from ASWeb (website APPID)
  *
  * Response: { ok, token, account }. The token goes in `Authorization: Bearer …`
  * for `/api/account`, `/api/game/round` and `/api/game/progress`.
  */
 import { accountPayload, passwordSignIn } from "@/server/account/service";
+import { alipayMobileConfig, completeMobileAlipayLogin } from "@/server/auth/alipay";
 import { verifyAppleIdToken } from "@/server/auth/verify-apple-id-token";
 import { verifyGoogleIdToken } from "@/server/auth/verify-google-id-token";
-import { createAppSession, resolveOAuthUser } from "@/server/db/identity";
+import {
+  consumeAppAuthExchange,
+  createAppSession,
+  resolveOAuthUser,
+} from "@/server/db/identity";
 import { fail, limited, readJson } from "@/server/http";
 
 export const dynamic = "force-dynamic";
@@ -54,6 +61,31 @@ async function signIn(provider: string, body: Record<string, unknown>): Promise<
         name: payload.name ?? null,
         image: payload.picture ?? null,
       });
+    }
+    case "alipay": {
+      // Preferred: auth_code from AlipaySDK on iOS (mobile APPID keys).
+      const authCode = text(body.authCode, 200) ?? text(body.auth_code, 200);
+      if (authCode) {
+        const mobile = alipayMobileConfig();
+        if (!mobile) return fail("alipay_mobile_unconfigured", 503);
+        const completed = await completeMobileAlipayLogin(authCode, mobile);
+        if (!completed.ok) return fail("invalid_token", 401);
+        const { profile } = completed;
+        return resolveOAuthUser({
+          provider: "alipay",
+          providerAccountId: profile.openId,
+          email: profile.email,
+          emailVerified: Boolean(profile.email),
+          name: profile.name,
+          image: profile.image,
+        });
+      }
+      // Legacy: one-time exchange from ASWeb website OAuth (?client=ios).
+      const exchange = text(body.exchange, 200);
+      if (!exchange) return fail("invalid_token");
+      const userId = consumeAppAuthExchange(exchange);
+      if (!userId) return fail("invalid_token", 401);
+      return userId;
     }
     default:
       return fail("unknown_provider", 404);

@@ -111,7 +111,7 @@ Auth.js tem provider WeChat, mas o bloqueio é **administrativo**:
 ## Alipay (site)
 
 Aplicação web: **LearnChineseToday**, APPID `2021007115619132`, já launched.
-Aplicação móvel (iOS, bundle `today.learnchinese.app`): APPID `2021007115685095`, também launched (nov 2026). O login Alipay no app iOS ainda não está feito.
+Aplicação móvel (iOS, bundle `today.learnchinese.app`): APPID `2021007115685095`, também launched (nov 2026). Login no app: AlipaySDK nativo (`auth_V2`) — o servidor assina o `infoStr` (`GET /api/app/alipay/auth-info`, precisa do PID `2088…` em `mobile_app.pid`) e o app envia o `auth_code` em `POST /api/app/auth/alipay` com as chaves do APPID móvel.
 
 Chaves, fora do git: `_credentials/alipay/learnchinese.json` — **raiz** = app web
 (LearnChineseToday). O bloco `mobile_app` é o iOS e não entra no site.
@@ -281,7 +281,7 @@ O que ainda falta, por ordem — a sequência geral está em
 |---|---|---|
 | Deploy das contas (e-mail, Apple app, Alipay) | servidor | ação do dono |
 | Google Sign-In no app | app | client ID iOS já no Secrets — falta teste no iPhone |
-| Alipay no app iOS | app | SDK Alipay ou login via site em `ASWebAuthenticationSession` |
+| Alipay no app iOS | app | [ x ] AlipaySDK `auth_V2` + `POST /api/app/auth/alipay` (`authCode`) — falta teste no iPhone com app Alipay |
 | Excluir conta **no site** | site | só UI — API `DELETE /api/account` já existe |
 | "Conectar outra conta" com sessão ativa (ex.: Alipay sem e-mail + Google) | site + app | desenho de UI |
 | Revogar token Apple ao excluir conta | servidor | chave `.p8` |

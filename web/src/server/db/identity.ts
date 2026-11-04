@@ -436,6 +436,32 @@ export function revokeAppSession(raw: string): void {
   getDb().prepare(`DELETE FROM app_sessions WHERE token_hash = ?`).run(sha256(raw));
 }
 
+/** One-time code after iOS Alipay ASWebAuthenticationSession (5 minutes). */
+const APP_AUTH_EXCHANGE_MS = 5 * 60_000;
+
+export function createAppAuthExchange(userId: string): string {
+  const raw = newSecret();
+  const expires = new Date(Date.now() + APP_AUTH_EXCHANGE_MS).toISOString();
+  getDb()
+    .prepare(`INSERT INTO app_auth_exchanges (code_hash, user_id, expires_at) VALUES (?, ?, ?)`)
+    .run(sha256(raw), userId, expires);
+  return raw;
+}
+
+/** Consumes the code (single use). Returns userId or null. */
+export function consumeAppAuthExchange(raw: string): string | null {
+  if (!raw || raw.length > 200) return null;
+  const db = getDb();
+  const hash = sha256(raw);
+  const row = db
+    .prepare(`SELECT user_id AS userId, expires_at AS expiresAt FROM app_auth_exchanges WHERE code_hash = ?`)
+    .get(hash) as { userId: string; expiresAt: string } | undefined;
+  if (!row) return null;
+  db.prepare(`DELETE FROM app_auth_exchanges WHERE code_hash = ?`).run(hash);
+  if (Date.parse(row.expiresAt) < Date.now()) return null;
+  return row.userId;
+}
+
 // ── Deletion ────────────────────────────────────────────────────────────────
 
 /** Rows owned by a user. Telemetry in `events` is kept but anonymised. */
@@ -445,6 +471,7 @@ function deleteUserRows(userId: string): void {
   db.prepare(`DELETE FROM game_rounds WHERE user_id = ?`).run(userId);
   db.prepare(`DELETE FROM accounts WHERE user_id = ?`).run(userId);
   db.prepare(`DELETE FROM app_sessions WHERE user_id = ?`).run(userId);
+  db.prepare(`DELETE FROM app_auth_exchanges WHERE user_id = ?`).run(userId);
   db.prepare(`DELETE FROM email_tokens WHERE user_id = ?`).run(userId);
   db.prepare(`UPDATE events SET user_id = NULL WHERE user_id = ?`).run(userId);
   db.prepare(`DELETE FROM users WHERE id = ?`).run(userId);

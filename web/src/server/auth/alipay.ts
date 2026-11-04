@@ -24,6 +24,16 @@ const DEFAULT_GATEWAY = "https://openapi.alipay.com/gateway.do";
 export const ALIPAY_STATE_COOKIE = "alipay_oauth_state";
 export const ALIPAY_STATE_MAX_AGE = 10 * 60;
 
+/**
+ * Magic return path packed into the state cookie when the iOS app starts Alipay
+ * via ASWebAuthenticationSession (`?client=ios`). The web callback then redirects
+ * to the app URL scheme instead of a site page.
+ */
+export const ALIPAY_IOS_RETURN_PATH = "/__ios_alipay__";
+
+/** Custom URL scheme registered on the iOS app (`Info.plist`). */
+export const ALIPAY_IOS_CALLBACK_SCHEME = "today.learnchinese.app";
+
 export type AlipayConfig = {
   appId: string;
   privateKey: KeyObject;
@@ -249,6 +259,78 @@ export function alipayConfig(): AlipayConfig | null {
     console.warn("[alipay] keys could not be read", err instanceof Error ? err.name : "error");
     return null;
   }
+}
+
+/**
+ * iOS mobile app (bundle today.learnchinese.app). Same shape as website config
+ * but no redirect URI — auth_code comes from AlipaySDK auth_V2.
+ * Env: ALIPAY_MOBILE_APP_ID, ALIPAY_MOBILE_*_KEY, ALIPAY_MOBILE_PID (2088…).
+ */
+export type AlipayMobileConfig = {
+  appId: string;
+  pid: string;
+  privateKey: KeyObject;
+  alipayPublicKey: KeyObject;
+  gateway: string;
+};
+
+export function alipayMobileConfig(): AlipayMobileConfig | null {
+  const appId = process.env.ALIPAY_MOBILE_APP_ID?.trim() ?? "";
+  const pid = process.env.ALIPAY_MOBILE_PID?.trim() ?? "";
+  const privateMaterial = process.env.ALIPAY_MOBILE_APPLICATION_PRIVATE_KEY ?? "";
+  const publicMaterial = process.env.ALIPAY_MOBILE_PUBLIC_KEY ?? "";
+  if (!appId || !pid || !/^2088\d{12}$/.test(pid) || !privateMaterial || !publicMaterial) {
+    return null;
+  }
+  try {
+    return {
+      appId,
+      pid,
+      privateKey: keyFromMaterial("private", privateMaterial),
+      alipayPublicKey: keyFromMaterial("public", publicMaterial),
+      gateway: (process.env.ALIPAY_GATEWAY?.trim() || DEFAULT_GATEWAY).replace(/\/$/, ""),
+    };
+  } catch (err) {
+    console.warn("[alipay] mobile keys could not be read", err instanceof Error ? err.name : "error");
+    return null;
+  }
+}
+
+/**
+ * Signed `infoStr` for AlipaySDK `auth_V2WithInfo:fromScheme:callback:`.
+ * Private key never leaves the server. `target_id` is a one-time nonce from the app.
+ */
+export function buildMobileAuthInfoStr(config: AlipayMobileConfig, targetId: string): string {
+  const params: Record<string, string> = {
+    apiname: "com.alipay.account.auth",
+    method: "alipay.open.auth.sdk.code.get",
+    app_id: config.appId,
+    app_name: "mc",
+    biz_type: "openservice",
+    pid: config.pid,
+    product_id: "APP_FAST_LOGIN",
+    scope: "kuaijie",
+    target_id: targetId.slice(0, 32),
+    auth_type: "AUTHACCOUNT",
+    sign_type: "RSA2",
+  };
+  const sign = signAlipay(params, config.privateKey);
+  return `${canonicalSignString(params)}&sign=${encodeURIComponent(sign)}`;
+}
+
+/** Exchange + profile using the **mobile** APPID keys (iOS SDK auth_code). */
+export async function completeMobileAlipayLogin(
+  authCode: string,
+  config: AlipayMobileConfig,
+): Promise<AlipayLoginResult> {
+  const asWebsite: AlipayConfig = {
+    appId: config.appId,
+    privateKey: config.privateKey,
+    alipayPublicKey: config.alipayPublicKey,
+    gateway: config.gateway,
+    redirectUri: "https://unused.invalid/",
+  };
+  return completeAlipayLogin(authCode, asWebsite);
 }
 
 export function alipayAuthorizeUrl(config: AlipayConfig, state: string): string {
