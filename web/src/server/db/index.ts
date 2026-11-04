@@ -437,6 +437,11 @@ function migrateProgressStub(database: DatabaseSync): void {
  * `accounts` row and the released clearance, audited as 'migration'.
  */
 function migrateIdentity(database: DatabaseSync): void {
+  // Sign-up links carry the password until opened (identity.ts registerEmailAccount).
+  const tokenColumns = (database.prepare(`PRAGMA table_info(email_tokens)`).all() as { name: string }[]).map((c) => c.name);
+  if (!tokenColumns.includes("password_hash")) {
+    database.exec(`ALTER TABLE email_tokens ADD COLUMN password_hash TEXT`);
+  }
   const columns = new Set(
     (database.prepare(`PRAGMA table_info(users)`).all() as { name: string }[]).map((c) => c.name),
   );

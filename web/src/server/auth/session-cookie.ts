@@ -15,11 +15,21 @@ export function authSessionCookieName(secure: boolean): string {
   return `${secure ? "__Secure-" : ""}authjs.session-token`;
 }
 
-export async function authSessionToken(userId: string, secure: boolean): Promise<string> {
+/** `profile` fills the session's name / email / picture, like an Auth.js provider would. */
+export async function authSessionToken(
+  userId: string,
+  secure: boolean,
+  profile: { name?: string | null; email?: string | null; image?: string | null } = {},
+): Promise<string> {
   const secret = process.env.AUTH_SECRET ?? process.env.NEXTAUTH_SECRET;
   if (!secret) throw new Error("AUTH_SECRET missing");
   return encode({
-    token: { sub: userId },
+    token: {
+      sub: userId,
+      name: profile.name ?? null,
+      email: profile.email ?? null,
+      picture: profile.image ?? null,
+    },
     secret,
     salt: authSessionCookieName(secure),
     maxAge: THIRTY_DAYS,

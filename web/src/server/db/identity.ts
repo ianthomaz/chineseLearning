@@ -191,20 +191,23 @@ export function resolveOAuthUser(identity: OAuthIdentity): string {
 // ── Email + password ────────────────────────────────────────────────────────
 
 export type RegisterOutcome =
-  | { status: "created"; userId: string }
-  | { status: "pending_updated"; userId: string }
-  /** Password linked onto an already-released OAuth user — sign-in works now. */
-  | { status: "linked_ready"; userId: string }
+  /** The confirmation link goes to this user; the password waits in the link. */
+  | { status: "verify"; userId: string }
   | { status: "taken" };
 
 /**
- * New email account (pending, O1). Registering again before confirming just
- * replaces the password and sends a new link — people forget what they typed.
- * An address that already has a confirmed password is taken.
- * A released Google/Apple user with the same verified email gets the password
- * on that user (no second account).
+ * Who an email sign-up's confirmation link is for. Nothing is written to an
+ * existing user here: the password travels inside the emailed link and is set
+ * only when that link is opened — otherwise anyone could put a password on
+ * someone else's Google/Apple account by "registering" its address.
+ *
+ * - address already has a confirmed password → taken;
+ * - address belongs to a released user (Google/Apple/Alipay, or an email
+ *   account without password) → link goes to that user;
+ * - pending sign-up for the address (O1) → link goes to it again;
+ * - otherwise a new pending user (O1, no password yet).
  */
-export function registerEmailAccount(emailRaw: string, passwordHash: string): RegisterOutcome {
+export function registerEmailAccount(emailRaw: string): RegisterOutcome {
   const db = getDb();
   const email = normalizeEmail(emailRaw);
   const existingId = userIdForAccount("email", email);
@@ -214,39 +217,19 @@ export function registerEmailAccount(emailRaw: string, passwordHash: string): Re
     if (existing && isReleased(existing.clearance) && existing.passwordHash) {
       return { status: "taken" };
     }
-    db.prepare(`UPDATE users SET password_hash = ?, updated_at = datetime('now') WHERE id = ?`).run(
-      passwordHash,
-      existingId,
-    );
-    if (existing && isReleased(existing.clearance)) {
-      return { status: "linked_ready", userId: existingId };
-    }
-    return { status: "pending_updated", userId: existingId };
+    if (existing) return { status: "verify", userId: existingId };
   }
 
   const owner = releasedUserByEmail(email);
   if (owner) {
-    db.exec("BEGIN");
-    try {
-      db.prepare(`UPDATE users SET password_hash = ?, updated_at = datetime('now') WHERE id = ?`).run(
-        passwordHash,
-        owner.id,
-      );
-      linkAccount("email", email, owner.id, email);
-      db.exec("COMMIT");
-    } catch (err) {
-      db.exec("ROLLBACK");
-      throw err;
-    }
-    return { status: "linked_ready", userId: owner.id };
+    if (owner.passwordHash) return { status: "taken" };
+    return { status: "verify", userId: owner.id };
   }
 
   const userId = newUserId();
   db.exec("BEGIN");
   try {
-    db.prepare(
-      `INSERT INTO users (id, email, clearance, password_hash) VALUES (?, ?, ?, ?)`,
-    ).run(userId, email, CLEARANCE.pending, passwordHash);
+    db.prepare(`INSERT INTO users (id, email, clearance) VALUES (?, ?, ?)`).run(userId, email, CLEARANCE.pending);
     db.prepare(
       `INSERT INTO clearance_changes (user_id, from_cl, to_cl, source) VALUES (?, NULL, ?, 'signup')`,
     ).run(userId, CLEARANCE.pending);
@@ -256,7 +239,7 @@ export function registerEmailAccount(emailRaw: string, passwordHash: string): Re
     db.exec("ROLLBACK");
     throw err;
   }
-  return { status: "created", userId };
+  return { status: "verify", userId };
 }
 
 /** The user an email+password sign-in refers to, if any. */
@@ -271,7 +254,7 @@ export function userForEmailLogin(emailRaw: string): IdentityUser | null {
  * password moves onto that user and the pending one is dropped — one person,
  * one progress history. Returns the surviving user id.
  */
-export function confirmEmail(userId: string, emailRaw: string): string {
+export function confirmEmail(userId: string, emailRaw: string, passwordHash: string | null = null): string {
   const db = getDb();
   const email = normalizeEmail(emailRaw);
   const pending = getIdentityUser(userId);
@@ -283,15 +266,17 @@ export function confirmEmail(userId: string, emailRaw: string): string {
     if (owner && owner.id !== userId) {
       db.prepare(
         `UPDATE users SET password_hash = COALESCE(?, password_hash), updated_at = datetime('now') WHERE id = ?`,
-      ).run(pending.passwordHash, owner.id);
+      ).run(passwordHash ?? pending.passwordHash, owner.id);
       linkAccount("email", email, owner.id, email);
       deleteUserRows(pending.id);
       db.exec("COMMIT");
       return owner.id;
     }
     db.prepare(
-      `UPDATE users SET email_verified_at = COALESCE(email_verified_at, datetime('now')), updated_at = datetime('now') WHERE id = ?`,
-    ).run(userId);
+      `UPDATE users SET password_hash = COALESCE(?, password_hash),
+         email_verified_at = COALESCE(email_verified_at, datetime('now')), updated_at = datetime('now') WHERE id = ?`,
+    ).run(passwordHash, userId);
+    linkAccount("email", email, userId, email);
     release(userId, "email_verified");
     db.exec("COMMIT");
     return userId;
@@ -355,18 +340,34 @@ export type EmailTokenPurpose = "verify" | "reset";
 
 const TOKEN_TTL_HOURS: Record<EmailTokenPurpose, number> = { verify: 72, reset: 2 };
 
-export function createEmailToken(userId: string, emailRaw: string, purpose: EmailTokenPurpose): string {
+/**
+ * `passwordHash` rides with a sign-up link and is set on the user only when
+ * the link is opened (see `registerEmailAccount`).
+ */
+export function createEmailToken(
+  userId: string,
+  emailRaw: string,
+  purpose: EmailTokenPurpose,
+  passwordHash: string | null = null,
+): string {
   const raw = newSecret();
   const expires = new Date(Date.now() + TOKEN_TTL_HOURS[purpose] * 3600_000).toISOString();
   getDb()
     .prepare(
-      `INSERT INTO email_tokens (token_hash, user_id, email, purpose, expires_at) VALUES (?, ?, ?, ?, ?)`,
+      `INSERT INTO email_tokens (token_hash, user_id, email, purpose, expires_at, password_hash)
+       VALUES (?, ?, ?, ?, ?, ?)`,
     )
-    .run(sha256(raw), userId, normalizeEmail(emailRaw), purpose, expires);
+    .run(sha256(raw), userId, normalizeEmail(emailRaw), purpose, expires, passwordHash);
   return raw;
 }
 
-export type EmailTokenRow = { userId: string; email: string; expiresAt: string; usedAt: string | null };
+export type EmailTokenRow = {
+  userId: string;
+  email: string;
+  expiresAt: string;
+  usedAt: string | null;
+  passwordHash: string | null;
+};
 
 /**
  * Looks a link up. Verify links stay valid until they expire (mail scanners
@@ -379,7 +380,8 @@ export function readEmailToken(
   if (typeof raw !== "string" || raw.length < 20 || raw.length > 200) return { ok: false, reason: "invalid" };
   const row = getDb()
     .prepare(
-      `SELECT user_id AS userId, email, expires_at AS expiresAt, used_at AS usedAt
+      `SELECT user_id AS userId, email, expires_at AS expiresAt, used_at AS usedAt,
+              password_hash AS passwordHash
          FROM email_tokens WHERE token_hash = ? AND purpose = ?`,
     )
     .get(sha256(raw), purpose) as EmailTokenRow | undefined;

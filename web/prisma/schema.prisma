@@ -62,13 +62,15 @@ model AppSession {
 
 /// Email links: purpose "verify" (72 h, reusable) | "reset" (2 h, single use).
 model EmailToken {
-  tokenHash String  @id @map("token_hash")
-  userId    String  @map("user_id")
-  email     String
-  purpose   String
-  expiresAt String  @map("expires_at")
-  usedAt    String? @map("used_at")
-  createdAt String  @default(dbgenerated("(datetime('now'))")) @map("created_at")
+  tokenHash    String  @id @map("token_hash")
+  /// Sign-up links only: the password is set on the user when the link is opened.
+  passwordHash String? @map("password_hash")
+  userId       String  @map("user_id")
+  email        String
+  purpose      String
+  expiresAt    String  @map("expires_at")
+  usedAt       String? @map("used_at")
+  createdAt    String  @default(dbgenerated("(datetime('now'))")) @map("created_at")
 
   @@index([userId], map: "idx_email_tokens_user")
   @@map("email_tokens")

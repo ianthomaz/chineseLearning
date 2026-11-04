@@ -15,7 +15,7 @@ import {
   unpackStateCookie,
   withAuthError,
 } from "@/server/auth/alipay";
-import { resolveOAuthUser } from "@/server/db/identity";
+import { getIdentityUser, resolveOAuthUser } from "@/server/db/identity";
 import {
   AUTH_SESSION_MAX_AGE,
   authSessionCookieName,
@@ -81,7 +81,12 @@ export async function GET(req: NextRequest) {
 
   let token: string;
   try {
-    token = await authSessionToken(userId, secure);
+    const user = getIdentityUser(userId);
+    token = await authSessionToken(userId, secure, {
+      name: user?.nick ?? user?.name ?? null,
+      email: user?.email ?? null,
+      image: user?.image ?? null,
+    });
   } catch (err) {
     console.warn("[alipay] could not write session", err instanceof Error ? err.name : "error");
     return fail("session");

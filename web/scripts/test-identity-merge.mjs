@@ -92,10 +92,13 @@ async function run() {
         name: "G",
       });
       const hash = await hashPassword("password1");
-      const reg = registerEmailAccount("merge@example.com", hash);
-      assert.equal(reg.status, "linked_ready");
+      const reg = registerEmailAccount("merge@example.com");
+      assert.equal(reg.status, "verify");
       assert.equal(reg.userId, googleId);
       assert.equal(countUsers(getDb), 1);
+      // Nothing on the Google user until the emailed link is opened.
+      assert.equal(getIdentityUser(googleId)?.passwordHash ?? null, null);
+      confirmEmail(reg.userId, "merge@example.com", hash);
       const user = userForEmailLogin("merge@example.com");
       assert.ok(user);
       assert.equal(user.id, googleId);
@@ -106,9 +109,9 @@ async function run() {
     test("Register → verify → Google same email → one user, two providers", async () => {
       clear(getDb);
       const hash = await hashPassword("password1");
-      const reg = registerEmailAccount("only@example.com", hash);
-      assert.equal(reg.status, "created");
-      const surviving = confirmEmail(reg.userId, "only@example.com");
+      const reg = registerEmailAccount("only@example.com");
+      assert.equal(reg.status, "verify");
+      const surviving = confirmEmail(reg.userId, "only@example.com", hash);
       const googleId = resolveOAuthUser({
         provider: "google",
         providerAccountId: "g-sub-2",
@@ -224,8 +227,8 @@ async function run() {
     test("OAuth absorbs pending email signup for same verified address", async () => {
       clear(getDb);
       const hash = await hashPassword("password1");
-      const reg = registerEmailAccount("absorb@example.com", hash);
-      assert.equal(reg.status, "created");
+      const reg = registerEmailAccount("absorb@example.com");
+      assert.equal(reg.status, "verify");
       const oauthId = resolveOAuthUser({
         provider: "google",
         providerAccountId: "g-sub-5",
@@ -234,9 +237,34 @@ async function run() {
       });
       assert.equal(oauthId, reg.userId);
       assert.equal(countUsers(getDb), 1);
+      // The pending sign-up had no password yet; opening its link sets it.
+      assert.equal(getIdentityUser(oauthId)?.passwordHash ?? null, null);
+      confirmEmail(reg.userId, "absorb@example.com", hash);
       const user = getIdentityUser(oauthId);
       assert.ok(user?.emailVerifiedAt);
       assert.ok(await verifyPassword("password1", user.passwordHash));
+    }),
+
+    test("Registering someone else's Google address never sets a password without the link", async () => {
+      clear(getDb);
+      const victim = resolveOAuthUser({
+        provider: "google",
+        providerAccountId: "g-sub-victim",
+        email: "victim@example.com",
+        emailVerified: true,
+      });
+      const reg = registerEmailAccount("victim@example.com");
+      assert.equal(reg.status, "verify");
+      assert.equal(getIdentityUser(victim)?.passwordHash ?? null, null);
+      assert.equal(userForEmailLogin("victim@example.com"), null, "no email login before the link");
+      assert.deepEqual(providersOf(victim), ["google"]);
+    }),
+
+    test("Address with a confirmed password is taken", async () => {
+      clear(getDb);
+      const reg = registerEmailAccount("taken@example.com");
+      confirmEmail(reg.userId, "taken@example.com", await hashPassword("password1"));
+      assert.equal(registerEmailAccount("taken@example.com").status, "taken");
     }),
   ];
 

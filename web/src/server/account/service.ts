@@ -107,8 +107,9 @@ async function sendLink(
   email: string,
   locale: string,
   origin: string,
+  passwordHash: string | null = null,
 ): Promise<boolean> {
-  const token = createEmailToken(user.id, email, kind);
+  const token = createEmailToken(user.id, email, kind, passwordHash);
   const path = kind === "verify" ? "/account/verify" : "/account/reset-password";
   const link = `${origin}${path}?token=${encodeURIComponent(token)}`;
   const sent = await sendTransactionalEmail({ to: email, kind, locale: emailLocale(locale), link });
@@ -131,18 +132,23 @@ export async function registerAccount(
     return { ok: false, error: "email_domain" };
   }
 
-  const outcome = registerEmailAccount(email, await hashPassword(input.password));
+  const outcome = registerEmailAccount(email);
   if (outcome.status === "taken") return { ok: false, error: "email_taken" };
 
   const user = getIdentityUser(outcome.userId);
   if (!user) return { ok: false, error: "email_failed" };
-  // Password linked onto an already-verified Google/Apple account — no second link.
-  if (outcome.status === "linked_ready") return { ok: true, needsVerification: false };
-  const sent = await sendLink("verify", user, email, String(input.locale ?? "en"), origin);
+  // Always through the inbox: the password is set when the link is opened,
+  // also when the address already belongs to a Google/Apple/Alipay user.
+  const passwordHash = await hashPassword(input.password);
+  const sent = await sendLink("verify", user, email, String(input.locale ?? "en"), origin, passwordHash);
   return sent ? { ok: true, needsVerification: true } : { ok: false, error: "email_failed" };
 }
 
-/** Sends a fresh confirmation link to a pending account. Silent otherwise. */
+/**
+ * Sends a fresh confirmation link to a pending account. Silent otherwise.
+ * A resent link carries no password: the person types it again or uses
+ * "forgot password" after confirming.
+ */
 export async function resendVerification(emailRaw: unknown, locale: unknown, origin: string): Promise<void> {
   if (typeof emailRaw !== "string" || !isPlausibleEmail(emailRaw)) return;
   const email = normalizeEmail(emailRaw);
@@ -171,8 +177,9 @@ export async function passwordSignIn(
   const user = userForEmailLogin(emailRaw);
   // Same work whether or not the user exists, so timing does not tell.
   const valid = await verifyPassword(password, user?.passwordHash ?? (await timingDummyHash()));
+  // A pending sign-up has no password until its link is opened — say so.
+  if (user && !isReleased(user.clearance)) return { ok: false, error: "email_not_verified" };
   if (!user || !valid) return { ok: false, error: "invalid_credentials" };
-  if (!isReleased(user.clearance)) return { ok: false, error: "email_not_verified" };
   return { ok: true, userId: user.id };
 }
 
@@ -181,7 +188,7 @@ export function confirmEmailToken(
 ): { ok: true; userId: string } | { ok: false; error: AccountError } {
   const read = readEmailToken(String(token ?? ""), "verify");
   if (!read.ok) return { ok: false, error: read.reason === "expired" ? "expired_token" : "invalid_token" };
-  const userId = confirmEmail(read.row.userId, read.row.email);
+  const userId = confirmEmail(read.row.userId, read.row.email, read.row.passwordHash);
   markEmailTokenUsed(String(token));
   return { ok: true, userId };
 }
