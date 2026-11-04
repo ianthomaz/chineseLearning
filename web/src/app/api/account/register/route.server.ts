@@ -17,5 +17,9 @@ export async function POST(req: Request) {
   const body = await readJson(req);
   const result = await registerAccount(body, publicOrigin(req));
   if (!result.ok) return fail(result.error, result.error === "email_taken" ? 409 : result.error === "email_failed" ? 502 : 400);
-  return Response.json({ ok: true, status: "verification_sent" });
+  return Response.json({
+    ok: true,
+    needsVerification: result.needsVerification,
+    status: result.needsVerification ? "verification_sent" : "linked_ready",
+  });
 }

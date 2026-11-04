@@ -1,7 +1,8 @@
 # Compliance — textos legais e privacidade
 
 Site: **https://learnchinese.today/**  
-Contacto operador: **email@webplace.cc** (empresa — não é URL do site)
+Contacto operador / privacidade / App Store: **email@learnchinese.today**  
+(Inbox Resend na conta e404; apex MX continua Google — encaminhar no Workspace se quiseres cair no Resend.)
 
 ---
 

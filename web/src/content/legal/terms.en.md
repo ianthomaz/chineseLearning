@@ -67,7 +67,7 @@ Webplace may suspend or limit accounts where there are reasonable indications of
 
 Until an automated deletion tool is available, users may request deletion of their account by emailing:
 
-**email@webplace.cc**
+**email@learnchinese.today**
 
 Requests will be processed in accordance with the Privacy Policy and applicable legal obligations.
 
@@ -231,4 +231,4 @@ This provision does not exclude mandatory rights that users may have under appli
 **ITCS Webplace Ltda.**  
 CNPJ 65.998.990/0001-44  
 https://learnchinese.today  
-**email@webplace.cc**
+**email@learnchinese.today**

@@ -16,7 +16,10 @@ const PRIMARY_CLASS =
   "w-full rounded-xl px-4 py-2.5 text-sm font-semibold text-white transition-opacity disabled:opacity-40";
 const LINK_CLASS = "text-xs text-ink/55 underline-offset-2 hover:underline";
 
-async function postJson(path: string, body: unknown): Promise<{ ok: boolean; error?: string }> {
+async function postJson(
+  path: string,
+  body: unknown,
+): Promise<{ ok: boolean; error?: string; needsVerification?: boolean }> {
   try {
     const res = await fetch(`${BASE_PATH}${path}`, {
       method: "POST",
@@ -24,8 +27,16 @@ async function postJson(path: string, body: unknown): Promise<{ ok: boolean; err
       credentials: "same-origin",
       body: JSON.stringify(body),
     });
-    const data = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string };
-    return { ok: res.ok && data.ok !== false, error: data.error };
+    const data = (await res.json().catch(() => ({}))) as {
+      ok?: boolean;
+      error?: string;
+      needsVerification?: boolean;
+    };
+    return {
+      ok: res.ok && data.ok !== false,
+      error: data.error,
+      needsVerification: data.needsVerification,
+    };
   } catch {
     return { ok: false, error: "generic" };
   }
@@ -92,7 +103,12 @@ export function EmailAuthForm({ onSignedIn }: { onSignedIn?: () => void }) {
         });
         if (result.ok) {
           setPassword("");
-          switchMode("sent");
+          if (result.needsVerification === false) {
+            setNotice(t("account.linkedReady"));
+            switchMode("signIn");
+          } else {
+            switchMode("sent");
+          }
         } else {
           setError(result.error ?? "generic");
         }

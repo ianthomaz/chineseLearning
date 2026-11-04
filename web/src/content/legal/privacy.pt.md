@@ -9,7 +9,7 @@ Esta Política de Privacidade explica, de forma clara, quais dados pessoais pode
 **Controlador:** ITCS Webplace Ltda.  
 **CNPJ:** 65.998.990/0001-44  
 **Website:** https://learnchinese.today  
-**Contato para privacidade e exercício de direitos:** email@webplace.cc
+**Contato para privacidade e exercício de direitos:** email@learnchinese.today
 
 ## 2. Quais dados tratamos
 
@@ -228,7 +228,7 @@ Nos termos da LGPD, o titular poderá, conforme aplicável:
 
 Neste momento, os pedidos relativos à conta e aos dados pessoais, inclusive **pedido de exclusão da conta**, devem ser enviados para:
 
-**email@webplace.cc**
+**email@learnchinese.today**
 
 Para proteger o próprio titular, poderemos solicitar informações razoavelmente necessárias para confirmar a identidade e a legitimidade do pedido antes de excluir ou disponibilizar dados.
 
@@ -244,7 +244,7 @@ Caso o tratamento envolva dados pessoais de crianças ou adolescentes, a Webplac
 
 Pais ou responsáveis que identifiquem o uso do Site por criança sob sua responsabilidade e desejem obter informações, corrigir dados ou solicitar sua eliminação poderão entrar em contato pelo e-mail:
 
-**email@webplace.cc**
+**email@learnchinese.today**
 
 ## 11. Segurança
 
@@ -292,6 +292,6 @@ Dúvidas e pedidos relacionados à privacidade podem ser enviados para:
 **ITCS Webplace Ltda.**  
 CNPJ 65.998.990/0001-44  
 https://learnchinese.today  
-**email@webplace.cc**
+**email@learnchinese.today**
 
 O titular também poderá exercer os direitos de petição perante a **Autoridade Nacional de Proteção de Dados — ANPD**, nos termos da legislação aplicável.

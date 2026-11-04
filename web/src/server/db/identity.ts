@@ -76,6 +76,15 @@ function releasedUserByEmail(email: string): IdentityUser | null {
   return rows.find((u) => isReleased(u.clearance)) ?? null;
 }
 
+/** Pending email+password signup for this address (O1, not yet confirmed). */
+function pendingEmailUserByEmail(email: string): IdentityUser | null {
+  const userId = userIdForAccount("email", email);
+  if (!userId) return null;
+  const user = getIdentityUser(userId);
+  if (!user || isReleased(user.clearance)) return null;
+  return user;
+}
+
 function linkAccount(provider: Provider, providerAccountId: string, userId: string, email: string | null) {
   getDb()
     .prepare(
@@ -135,6 +144,10 @@ export function resolveOAuthUser(identity: OAuthIdentity): string {
   if (!userId && email && identity.emailVerified) {
     userId = releasedUserByEmail(email)?.id ?? null;
   }
+  // Same address waiting on email+password confirm — absorb, do not fork a second user.
+  if (!userId && email && identity.emailVerified) {
+    userId = pendingEmailUserByEmail(email)?.id ?? null;
+  }
 
   db.exec("BEGIN");
   try {
@@ -177,12 +190,16 @@ export function resolveOAuthUser(identity: OAuthIdentity): string {
 export type RegisterOutcome =
   | { status: "created"; userId: string }
   | { status: "pending_updated"; userId: string }
+  /** Password linked onto an already-released OAuth user — sign-in works now. */
+  | { status: "linked_ready"; userId: string }
   | { status: "taken" };
 
 /**
  * New email account (pending, O1). Registering again before confirming just
  * replaces the password and sends a new link — people forget what they typed.
  * An address that already has a confirmed password is taken.
+ * A released Google/Apple user with the same verified email gets the password
+ * on that user (no second account).
  */
 export function registerEmailAccount(emailRaw: string, passwordHash: string): RegisterOutcome {
   const db = getDb();
@@ -198,7 +215,27 @@ export function registerEmailAccount(emailRaw: string, passwordHash: string): Re
       passwordHash,
       existingId,
     );
+    if (existing && isReleased(existing.clearance)) {
+      return { status: "linked_ready", userId: existingId };
+    }
     return { status: "pending_updated", userId: existingId };
+  }
+
+  const owner = releasedUserByEmail(email);
+  if (owner) {
+    db.exec("BEGIN");
+    try {
+      db.prepare(`UPDATE users SET password_hash = ?, updated_at = datetime('now') WHERE id = ?`).run(
+        passwordHash,
+        owner.id,
+      );
+      linkAccount("email", email, owner.id, email);
+      db.exec("COMMIT");
+    } catch (err) {
+      db.exec("ROLLBACK");
+      throw err;
+    }
+    return { status: "linked_ready", userId: owner.id };
   }
 
   const userId = newUserId();
@@ -262,12 +299,16 @@ export function confirmEmail(userId: string, emailRaw: string): string {
 }
 
 /**
- * Who a "forgot password" request is for: the email account, or a released
- * Google/Apple user with that verified address (who can then add a password).
+ * Who a "forgot password" request is for. Prefer a released (verified) user so
+ * a pending email clone never steals the reset from Google/Apple.
  */
 export function userForPasswordReset(emailRaw: string): IdentityUser | null {
   const email = normalizeEmail(emailRaw);
-  return userForEmailLogin(email) ?? releasedUserByEmail(email);
+  const released = releasedUserByEmail(email);
+  if (released) return released;
+  const emailUser = userForEmailLogin(email);
+  if (emailUser && isReleased(emailUser.clearance)) return emailUser;
+  return emailUser;
 }
 
 /** Reset link used: new password, ensure the email account row, release. */
@@ -282,12 +323,26 @@ export function applyPasswordReset(userId: string, emailRaw: string, passwordHas
     ).run(passwordHash, userId);
     linkAccount("email", email, userId, email);
     release(userId, "password_reset");
+    // Drop leftover O1 clones for the same address (pre-merge race / old bugs).
+    dropPendingEmailClones(email, userId);
     // A reset means the old password may be known to someone else.
     db.prepare(`DELETE FROM app_sessions WHERE user_id = ?`).run(userId);
     db.exec("COMMIT");
   } catch (err) {
     db.exec("ROLLBACK");
     throw err;
+  }
+}
+
+/** Remove unreleased users that share this email but are not `keepUserId`. */
+function dropPendingEmailClones(email: string, keepUserId: string): void {
+  const rows = getDb()
+    .prepare(
+      `SELECT id, clearance FROM users WHERE lower(email) = ? AND id != ?`,
+    )
+    .all(email, keepUserId) as { id: string; clearance: string }[];
+  for (const row of rows) {
+    if (!isReleased(row.clearance)) deleteUserRows(row.id);
   }
 }
 

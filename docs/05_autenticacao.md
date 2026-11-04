@@ -139,8 +139,9 @@ mesmo formato do noia.dev).
 | `clearance_changes` | Auditoria NOIA |
 
 Juntar contas: **só por e-mail verificado**. Google + e-mail/senha com o mesmo
-endereço = mesmo usuário (o link de confirmação prova o endereço). E-mail
-"Hide My Email" da Apple nunca casa — fica conta separada.
+endereço = mesmo usuário (OAuth já verificado pode receber senha sem segundo
+link; confirm e forgot preferem o user liberado). E-mail "Hide My Email" da
+Apple nunca casa — fica conta separada. Testes: `cd web && npm run test:identity`.
 
 ### E-mail e senha
 
@@ -187,10 +188,11 @@ Implementado com a opção marcada; responder só se for "não".
 
 ### O que falta de você (não é pergunta — é credencial/ação)
 
-- **Resend**: `RESEND_API_KEY` e o domínio `learnchinese.today` verificado (remetente `no-reply@learnchinese.today`).
-- **Google iOS**: client ID iOS no GCP `chinese-learnin` (bundle `today.learnchinese.app`) — passo a passo em `appApple/docs/08_login.md`.
-- **Deploy** do branch `claude/accounts-email-apple` — o app só loga com o servidor novo no ar.
+- **Resend**: domínio `learnchinese.today` verificado (remetente `no-reply@learnchinese.today`) — feito na conta e404.
+- **Google iOS**: client ID no `credentials.json` + Secrets — ver `appApple/docs/08_login.md`.
+- **Deploy** quando fores pôr `/api/app/auth/*` em produção (código local já tem).
 - Apple no site (opcional): Services ID + chave `.p8`.
+- Merge identity: `cd web && npm run test:identity`.
 
 ---
 

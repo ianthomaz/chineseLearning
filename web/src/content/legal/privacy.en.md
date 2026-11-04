@@ -9,7 +9,7 @@ This Privacy Policy explains what personal data may be processed through the Sit
 **Controller:** ITCS Webplace Ltda.  
 **CNPJ:** 65.998.990/0001-44  
 **Website:** https://learnchinese.today  
-**Privacy and data rights contact:** email@webplace.cc
+**Privacy and data rights contact:** email@learnchinese.today
 
 ## 2. Data we process
 
@@ -228,7 +228,7 @@ Under the LGPD, where applicable, users may request:
 
 At this time, requests related to accounts and personal data, including **account deletion requests**, must be sent to:
 
-**email@webplace.cc**
+**email@learnchinese.today**
 
 To protect users, we may request information reasonably necessary to verify the identity and legitimacy of the requester before deleting or disclosing data.
 
@@ -244,7 +244,7 @@ Where processing involves personal data of children or teenagers, Webplace will 
 
 Parents or legal guardians who become aware that a child under their responsibility is using the Site and wish to request information, correction, or deletion may contact:
 
-**email@webplace.cc**
+**email@learnchinese.today**
 
 ## 11. Security
 
@@ -292,6 +292,6 @@ Privacy questions and requests may be sent to:
 **ITCS Webplace Ltda.**  
 CNPJ 65.998.990/0001-44  
 https://learnchinese.today  
-**email@webplace.cc**
+**email@learnchinese.today**
 
 Where applicable, users may also petition Brazil's **Autoridade Nacional de Proteção de Dados — ANPD** in accordance with applicable law.

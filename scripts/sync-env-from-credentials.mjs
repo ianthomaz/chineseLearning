@@ -72,6 +72,13 @@ function siteBlock(data) {
   ];
 }
 
+/** Quote for bash `source` (spaces / <> in RESEND_FROM, etc.). */
+function envAssign(key, value) {
+  const v = String(value ?? "");
+  if (/^[A-Za-z0-9_./:@+-]+$/.test(v)) return `${key}=${v}`;
+  return `${key}=${JSON.stringify(v)}`;
+}
+
 /** Accounts: Resend email, Apple, Google iOS client (docs/05_autenticacao.md § Contas). */
 function accountBlock(data, existing) {
   const email = data.email ?? {};
@@ -81,16 +88,28 @@ function accountBlock(data, existing) {
   const resendKey = pick(email.RESEND_API_KEY, "RESEND_API_KEY");
   const appleId = pick(apple.AUTH_APPLE_ID, "AUTH_APPLE_ID");
   const appleSecret = pick(apple.AUTH_APPLE_SECRET, "AUTH_APPLE_SECRET");
+  const from =
+    pick(email.RESEND_FROM, "RESEND_FROM") ||
+    "LearnChinese Today <no-reply@learnchinese.today>";
   return [
     "# --- Accounts (email + password, Apple, Google iOS)",
-    resendKey ? `RESEND_API_KEY=${resendKey}` : "# RESEND_API_KEY=  # without it, emails are printed to the server log",
-    `RESEND_FROM=${pick(email.RESEND_FROM, "RESEND_FROM") || "LearnChinese Today <no-reply@learnchinese.today>"}`,
-    `APPLE_APP_BUNDLE_ID=${pick(apple.APPLE_APP_BUNDLE_ID, "APPLE_APP_BUNDLE_ID") || "today.learnchinese.app"}`,
+    resendKey
+      ? envAssign("RESEND_API_KEY", resendKey)
+      : "# RESEND_API_KEY=  # without it, emails are printed to the server log",
+    envAssign("RESEND_FROM", from),
+    envAssign(
+      "APPLE_APP_BUNDLE_ID",
+      pick(apple.APPLE_APP_BUNDLE_ID, "APPLE_APP_BUNDLE_ID") || "today.learnchinese.app",
+    ),
     ...(appleId && appleSecret
-      ? [`AUTH_APPLE_ID=${appleId}`, `AUTH_APPLE_SECRET=${appleSecret}`, "NEXT_PUBLIC_AUTH_APPLE=1"]
+      ? [
+          envAssign("AUTH_APPLE_ID", appleId),
+          envAssign("AUTH_APPLE_SECRET", appleSecret),
+          "NEXT_PUBLIC_AUTH_APPLE=1",
+        ]
       : ["# AUTH_APPLE_ID= / AUTH_APPLE_SECRET=  # Sign in with Apple on the site (optional)"]),
     ...(pick(g.GOOGLE_IOS_CLIENT_ID, "GOOGLE_IOS_CLIENT_ID")
-      ? [`GOOGLE_IOS_CLIENT_ID=${pick(g.GOOGLE_IOS_CLIENT_ID, "GOOGLE_IOS_CLIENT_ID")}`]
+      ? [envAssign("GOOGLE_IOS_CLIENT_ID", pick(g.GOOGLE_IOS_CLIENT_ID, "GOOGLE_IOS_CLIENT_ID"))]
       : ["# GOOGLE_IOS_CLIENT_ID=  # Google Sign-In in the iOS app"]),
   ];
 }
@@ -143,6 +162,11 @@ function main() {
   writeFileSync(OUT_LOCAL_NODE, [...site, "", ...localNodeAuth].join("\n") + "\n", "utf8");
   writeFileSync(OUT_PRODUCTION, [...site, "", ...prodAuth].join("\n") + "\n", "utf8");
 
+  const hasGoogle =
+    Boolean(data.google_oauth?.GOOGLE_CLIENT_ID || data.google_oauth?.AUTH_GOOGLE_ID) &&
+    Boolean(data.google_oauth?.GOOGLE_CLIENT_SECRET || data.google_oauth?.AUTH_GOOGLE_SECRET);
+  const hasAuthSecret = Boolean(data.nextauth?.AUTH_SECRET || data.nextauth?.NEXTAUTH_SECRET);
+
   const envLocalContent = [
     "# Gerado por scripts/sync-env-from-credentials.mjs — não commitar",
     "",
@@ -157,6 +181,9 @@ function main() {
       : ["# APP_LIBRARY_TOKEN=  # credentials.json → hanzi_app.APP_LIBRARY_TOKEN"]),
     "",
     ...site,
+    "",
+    // Keep email/password + Google UI on for local Next when credentials exist.
+    ...(hasGoogle && hasAuthSecret ? ["NEXT_PUBLIC_AUTH_ENABLED=1"] : ["# NEXT_PUBLIC_AUTH_ENABLED=1  # set when Google + AUTH_SECRET are present"]),
     "",
     ...devAuth,
     "",
@@ -183,6 +210,9 @@ function main() {
       : ["# APP_LIBRARY_TOKEN="]),
     "",
     ...site,
+    "",
+    // App + site accounts (email/Google/Apple APIs). Undefined also means on; set explicitly.
+    "NEXT_PUBLIC_AUTH_ENABLED=1",
     "",
     ...prodAuth,
     "",

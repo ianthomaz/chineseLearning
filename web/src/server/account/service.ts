@@ -117,7 +117,10 @@ async function sendLink(
 export async function registerAccount(
   input: { email?: unknown; emailConfirm?: unknown; password?: unknown; locale?: unknown },
   origin: string,
-): Promise<{ ok: true } | { ok: false; error: AccountError }> {
+): Promise<
+  | { ok: true; needsVerification: boolean }
+  | { ok: false; error: AccountError }
+> {
   const email = typeof input.email === "string" ? normalizeEmail(input.email) : "";
   const confirm = typeof input.emailConfirm === "string" ? normalizeEmail(input.emailConfirm) : "";
   if (!isPlausibleEmail(email)) return { ok: false, error: "invalid_email" };
@@ -132,8 +135,10 @@ export async function registerAccount(
 
   const user = getIdentityUser(outcome.userId);
   if (!user) return { ok: false, error: "email_failed" };
+  // Password linked onto an already-verified Google/Apple account — no second link.
+  if (outcome.status === "linked_ready") return { ok: true, needsVerification: false };
   const sent = await sendLink("verify", user, email, String(input.locale ?? "en"), origin);
-  return sent ? { ok: true } : { ok: false, error: "email_failed" };
+  return sent ? { ok: true, needsVerification: true } : { ok: false, error: "email_failed" };
 }
 
 /** Sends a fresh confirmation link to a pending account. Silent otherwise. */

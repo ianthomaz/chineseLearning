@@ -37,6 +37,7 @@
     "start": "PORT=34902 node scripts/start-server-stripped.mjs",
     "start:server": "node scripts/start-server-stripped.mjs",
     "lint": "next lint",
+    "test:identity": "npx --yes tsx scripts/test-identity-merge.mjs",
     "pwa:icons": "node scripts/generate-pwa-icons.mjs"
   },
   "dependencies": {

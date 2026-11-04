@@ -523,6 +523,7 @@
     "forgotSent": "If {email} has an account, a link to set a new password is on its way.",
     "verifyOk": "Email confirmed. Your account is active — you can sign in now.",
     "resetOk": "Password saved. You can sign in now.",
+    "linkedReady": "Password saved on your existing account. You can sign in with email now.",
     "goSignIn": "Go to sign in",
     "error": {
       "invalid_email": "This email does not look right.",

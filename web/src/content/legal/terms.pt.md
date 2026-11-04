@@ -67,7 +67,7 @@ A Webplace poderá suspender ou limitar contas quando houver indícios razoávei
 
 Enquanto não houver ferramenta automatizada de exclusão, o usuário poderá solicitar a exclusão de sua conta pelo e-mail:
 
-**email@webplace.cc**
+**email@learnchinese.today**
 
 A solicitação será processada de acordo com a Política de Privacidade e com as obrigações legais aplicáveis.
 
@@ -231,4 +231,4 @@ A aplicação desta cláusula não afasta direitos inderrogáveis eventualmente 
 **ITCS Webplace Ltda.**  
 CNPJ 65.998.990/0001-44  
 https://learnchinese.today  
-**email@webplace.cc**
+**email@learnchinese.today**

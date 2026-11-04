@@ -67,7 +67,7 @@ Webplace podrá suspender o limitar cuentas cuando existan indicios razonables d
 
 Mientras no exista una herramienta automatizada de eliminación, el usuario podrá solicitar la eliminación de su cuenta por correo electrónico a:
 
-**email@webplace.cc**
+**email@learnchinese.today**
 
 La solicitud será procesada de acuerdo con la Política de Privacidad y las obligaciones legales aplicables.
 
@@ -231,4 +231,4 @@ Esta disposición no excluye los derechos imperativos que puedan corresponder al
 **ITCS Webplace Ltda.**  
 CNPJ 65.998.990/0001-44  
 https://learnchinese.today  
-**email@webplace.cc**
+**email@learnchinese.today**
