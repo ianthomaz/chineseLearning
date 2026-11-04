@@ -8,7 +8,7 @@
  * Under static export this route does not exist (`.server.ts` omitted).
  */
 import { getRequestUser } from "@/server/auth/request-user";
-import { getUser, setNick, upsertUser } from "@/server/db/users";
+import { getUser, setNick } from "@/server/db/users";
 import { gameSummary, recentRounds } from "@/server/db/progress";
 
 export const dynamic = "force-dynamic";
@@ -32,7 +32,6 @@ export async function POST(req: Request) {
   if (!user || !id) return Response.json({ error: "unauthenticated" }, { status: 401 });
 
   const body = (await req.json().catch(() => ({}))) as { nick?: unknown };
-  upsertUser({ id, email: user.email, name: user.name, image: user.image });
   if (typeof body.nick === "string") {
     setNick(id, body.nick.trim().slice(0, 24));
   }

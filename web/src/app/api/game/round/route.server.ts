@@ -11,7 +11,6 @@
 import { getRequestUser } from "@/server/auth/request-user";
 import { rateLimit } from "@/server/rate-limit";
 import { recordRound, type GameKind, type ItemResult } from "@/server/db/progress";
-import { upsertUser } from "@/server/db/users";
 
 export const dynamic = "force-dynamic";
 
@@ -70,10 +69,6 @@ export async function POST(req: Request) {
   if (items.length === 0) {
     return Response.json({ error: "no_items" }, { status: 400 });
   }
-
-  // The row is only written on a finished round, so this is also the first
-  // moment we are sure the player exists — sign-in may predate the users table.
-  upsertUser({ id: userId, email: user.email, name: user.name, image: user.image });
 
   let recorded: boolean;
   try {

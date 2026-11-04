@@ -33,6 +33,9 @@ export async function getRequestUser(req: Request): Promise<RequestUser | null> 
   const session = await auth();
   const id = session?.user?.id;
   if (!id) return null;
+  // A web session is a JWT that lives 30 days; after "delete my account" the
+  // cookie may still be valid, but the person no longer exists here.
+  if (!getIdentityUser(id)) return null;
   return {
     id,
     email: session.user?.email ?? null,
