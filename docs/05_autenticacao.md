@@ -114,19 +114,22 @@ Aplicação web: **LearnChineseToday**, APPID `2021007115619132`, já launched.
 Aplicação móvel (iOS, bundle `today.learnchinese.app`): APPID `2021007115685095`, também launched (nov 2026). Código do login no app: AlipaySDK nativo (`auth_V2`) — o servidor assina o `infoStr` (`GET /api/app/alipay/auth-info`, PID `2088…` em `mobile_app.pid`) e o app envia o `auth_code` em `POST /api/app/auth/alipay` com as chaves do APPID móvel. **Ainda não funciona no aparelho** (nov 2026) — código ligado, falta fechar e validar no iPhone com o app Alipay.
 
 Chaves, fora do git: `_credentials/alipay/learnchinese.json` — **raiz** = app web
-(LearnChineseToday). O bloco `mobile_app` é o iOS e não entra no site.
+(LearnChineseToday); bloco `mobile_app` = iOS (APPID móvel + PID + chaves).
 Índice: `_credentials/credentialsMap.json` → `alipay.learnchinese`.
-`node scripts/sync-env-from-credentials.mjs` lê a raiz (ou `launched_app` em
-cópias antigas) e escreve o env (gitignored). A chave privada assina o pedido;
-`alipay_public_key` confere a resposta.
+`node scripts/sync-env-from-credentials.mjs` lê a raiz e, se `mobile_app.pid`
+estiver preenchido (`2088…`), também o bloco móvel — escreve o env (gitignored).
 
 | Variável | Para quê |
 |---|---|
-| `ALIPAY_APP_ID` | APPID da aplicação launched |
-| `ALIPAY_APPLICATION_PRIVATE_KEY` | Assina `alipay.system.oauth.token` |
-| `ALIPAY_PUBLIC_KEY` | Confere a resposta da Alipay |
+| `ALIPAY_APP_ID` | APPID da aplicação web launched |
+| `ALIPAY_APPLICATION_PRIVATE_KEY` | Assina `alipay.system.oauth.token` (site) |
+| `ALIPAY_PUBLIC_KEY` | Confere a resposta da Alipay (site) |
 | `ALIPAY_GATEWAY` | `https://openapi.alipay.com/gateway.do` |
-| `NEXT_PUBLIC_AUTH_ALIPAY=1` | Mostra o botão |
+| `NEXT_PUBLIC_AUTH_ALIPAY=1` | Mostra o botão no site |
+| `ALIPAY_MOBILE_APP_ID` | APPID iOS (`mobile_app.app_id`) |
+| `ALIPAY_MOBILE_PID` | Conta comerciante `2088…` (`mobile_app.pid`) |
+| `ALIPAY_MOBILE_APPLICATION_PRIVATE_KEY` | Assina `infoStr` / troca do `auth_code` no app |
+| `ALIPAY_MOBILE_PUBLIC_KEY` | Confere a resposta (APPID móvel) |
 
 O botão abre `https://openauth.alipay.com/oauth2/publicAppAuthorize.htm` com `scope=auth_user`. A pessoa volta para `/api/auth/alipay/callback` com um `auth_code` (vale uma vez). O servidor troca o código (`open_id`), chama `alipay.user.info.share` (nick/avatar; e-mail se a Alipay enviar) e grava a sessão Auth.js. O access token não fica guardado.
 
@@ -240,7 +243,8 @@ idempotentes por `roundId`. Lado do app: `appApple/docs/08_login.md`.
 | `APPLE_APP_BUNDLE_ID` | `aud` do token Apple do app (default `today.learnchinese.app`) |
 | `GOOGLE_IOS_CLIENT_ID` | Aceitar o ID token do Google Sign-In do app |
 | `AUTH_APPLE_ID`, `AUTH_APPLE_SECRET`, `NEXT_PUBLIC_AUTH_APPLE=1` | Apple **no site** (opcional). Secret: `node scripts/apple-client-secret.mjs`, renovar a cada 6 meses |
-| `ALIPAY_APP_ID`, `ALIPAY_APPLICATION_PRIVATE_KEY`, `ALIPAY_PUBLIC_KEY`, `NEXT_PUBLIC_AUTH_ALIPAY` | Alipay no site. Ver § Alipay. Fonte: raiz do JSON web; não `mobile_app` |
+| `ALIPAY_APP_ID`, `ALIPAY_APPLICATION_PRIVATE_KEY`, `ALIPAY_PUBLIC_KEY`, `NEXT_PUBLIC_AUTH_ALIPAY` | Alipay no site. Fonte: raiz do JSON |
+| `ALIPAY_MOBILE_APP_ID`, `ALIPAY_MOBILE_PID`, `ALIPAY_MOBILE_*_KEY` | Alipay no app iOS. Fonte: `mobile_app` (precisa de `pid`) |
 
 ### Perguntas para o dono (sim/não)
 

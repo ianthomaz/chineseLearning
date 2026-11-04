@@ -13,4 +13,4 @@ node scripts/sync-env-from-credentials.mjs
 
 GCP Console: origins `http://127.0.0.1:34827`, `:34902` + redirects `/api/auth/callback/google` — ver [docs/03_operacao_e_deploy.md](../../docs/03_operacao_e_deploy.md).
 
-Alipay: o sync lê a **raiz** de `_credentials/alipay/learnchinese.json` (app web; fora deste repo) e escreve o env. `mobile_app` fica de fora. Ver [docs/05_autenticacao.md](../../docs/05_autenticacao.md) § Alipay.
+Alipay: o sync lê a **raiz** de `_credentials/alipay/learnchinese.json` (app web; fora deste repo) → `ALIPAY_*` do site. Se `mobile_app.pid` (`2088…`) estiver set, também escreve `ALIPAY_MOBILE_*` para o login iOS. Ver [docs/05_autenticacao.md](../../docs/05_autenticacao.md) § Alipay.
