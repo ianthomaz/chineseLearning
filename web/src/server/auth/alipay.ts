@@ -1,14 +1,12 @@
 /**
- * Alipay website login (LearnChineseToday, launched app only).
+ * Alipay website login (LearnChineseToday).
  *
- * The button sends the browser to openauth. Alipay returns once, with
- * `auth_code`, to `/api/auth/alipay/callback`. This module signs
- * `alipay.system.oauth.token` (RSA2) and checks the reply with Alipay's
- * public key. The account id is `open_id`. The access token is not stored.
+ * openauth → `auth_code` → `/api/auth/alipay/callback` → RSA2
+ * `alipay.system.oauth.token` (open_id) → optional `alipay.user.info.share`
+ * (nick / avatar / email when Alipay returns one). Account id is always
+ * `open_id`. Access token is used once for share, never stored.
  *
- * Keys come from env, written by `scripts/sync-env-from-credentials.mjs`
- * from `_credentials/alipay/learnchinese.json` → `launched_app`. The older
- * app in that file is never read.
+ * Keys: `_credentials/alipay/learnchinese.json` website root via sync-env.
  */
 import {
   createPrivateKey,
@@ -35,8 +33,16 @@ export type AlipayConfig = {
 };
 
 export type AlipayTokenResult =
-  | { ok: true; openId: string }
+  | { ok: true; openId: string; accessToken: string }
   | { ok: false; reason: "bad_body" | "bad_sign" | "alipay_error" | "missing_open_id" | "http"; detail?: string };
+
+/** Profile fields we keep from `alipay.user.info.share` (website docs omit email; accept it if present). */
+export type AlipayProfile = {
+  openId: string;
+  email: string | null;
+  name: string | null;
+  image: string | null;
+};
 
 /** Beijing time, `yyyy-MM-dd HH:mm:ss`, which is what the gateway checks. */
 export function alipayTimestamp(now = new Date()): string {
@@ -127,6 +133,13 @@ function subCodeOf(node: string): string | undefined {
   return undefined;
 }
 
+function pickStr(...values: unknown[]): string | null {
+  for (const value of values) {
+    if (typeof value === "string" && value.trim()) return value.trim();
+  }
+  return null;
+}
+
 /** Read a gateway body. `open_id` is accepted only after the signature matches. */
 export function readTokenResponse(raw: string, publicKey: KeyObject): AlipayTokenResult {
   const signature = responseSign(raw);
@@ -143,10 +156,16 @@ export function readTokenResponse(raw: string, publicKey: KeyObject): AlipayToke
   if (!verifyAlipay(tokenNode, signature, publicKey)) return { ok: false, reason: "bad_sign" };
 
   let openId = "";
+  let accessToken = "";
   let code = "";
   try {
-    const parsed = JSON.parse(tokenNode) as { open_id?: unknown; code?: unknown };
-    if (typeof parsed.open_id === "string") openId = parsed.open_id;
+    const parsed = JSON.parse(tokenNode) as {
+      open_id?: unknown;
+      access_token?: unknown;
+      code?: unknown;
+    };
+    openId = pickStr(parsed.open_id) ?? "";
+    accessToken = pickStr(parsed.access_token) ?? "";
     if (typeof parsed.code === "string") code = parsed.code;
   } catch {
     return { ok: false, reason: "bad_body" };
@@ -154,7 +173,43 @@ export function readTokenResponse(raw: string, publicKey: KeyObject): AlipayToke
   if (!openId) {
     return { ok: false, reason: "missing_open_id", detail: code && code !== "10000" ? code : undefined };
   }
-  return { ok: true, openId };
+  return { ok: true, openId, accessToken };
+}
+
+/**
+ * Parse `alipay.user.info.share`. Email is not in the public website field list,
+ * but if Alipay sends `email` / `email_address` we keep it for account merge.
+ */
+export function readUserShareResponse(
+  raw: string,
+  publicKey: KeyObject,
+  openId: string,
+): AlipayProfile | null {
+  const signature = responseSign(raw);
+  if (!signature) return null;
+
+  const errorNode = extractJsonNode(raw, "error_response");
+  if (errorNode) {
+    if (!verifyAlipay(errorNode, signature, publicKey)) return null;
+    return null;
+  }
+
+  const shareNode = extractJsonNode(raw, "alipay_user_info_share_response");
+  if (!shareNode) return null;
+  if (!verifyAlipay(shareNode, signature, publicKey)) return null;
+
+  try {
+    const parsed = JSON.parse(shareNode) as Record<string, unknown>;
+    if (typeof parsed.code === "string" && parsed.code && parsed.code !== "10000") return null;
+    return {
+      openId,
+      email: pickStr(parsed.email, parsed.email_address),
+      name: pickStr(parsed.nick_name, parsed.user_name),
+      image: pickStr(parsed.avatar),
+    };
+  } catch {
+    return null;
+  }
 }
 
 export function alipayRedirectUri(): string | null {
@@ -205,18 +260,10 @@ export function alipayAuthorizeUrl(config: AlipayConfig, state: string): string 
   return url.toString();
 }
 
-export async function exchangeAuthCode(authCode: string, config: AlipayConfig): Promise<AlipayTokenResult> {
-  const params: Record<string, string> = {
-    app_id: config.appId,
-    method: "alipay.system.oauth.token",
-    format: "JSON",
-    charset: "utf-8",
-    sign_type: "RSA2",
-    timestamp: alipayTimestamp(),
-    version: "1.0",
-    grant_type: "authorization_code",
-    code: authCode,
-  };
+async function postGateway(
+  config: AlipayConfig,
+  params: Record<string, string>,
+): Promise<{ ok: true; raw: string } | { ok: false; reason: "http"; detail?: string }> {
   const sign = signAlipay(params, config.privateKey);
   const gateway = new URL(config.gateway);
   gateway.searchParams.set("charset", "utf-8");
@@ -233,7 +280,72 @@ export async function exchangeAuthCode(authCode: string, config: AlipayConfig): 
   }
   const raw = await response.text();
   if (!response.ok) return { ok: false, reason: "http", detail: String(response.status) };
-  return readTokenResponse(raw, config.alipayPublicKey);
+  return { ok: true, raw };
+}
+
+export async function exchangeAuthCode(authCode: string, config: AlipayConfig): Promise<AlipayTokenResult> {
+  const posted = await postGateway(config, {
+    app_id: config.appId,
+    method: "alipay.system.oauth.token",
+    format: "JSON",
+    charset: "utf-8",
+    sign_type: "RSA2",
+    timestamp: alipayTimestamp(),
+    version: "1.0",
+    grant_type: "authorization_code",
+    code: authCode,
+  });
+  if (!posted.ok) return posted;
+  return readTokenResponse(posted.raw, config.alipayPublicKey);
+}
+
+/** Best-effort profile. Failure leaves open_id-only login intact. */
+export async function fetchUserShare(
+  accessToken: string,
+  openId: string,
+  config: AlipayConfig,
+): Promise<AlipayProfile | null> {
+  if (!accessToken) return { openId, email: null, name: null, image: null };
+  const posted = await postGateway(config, {
+    app_id: config.appId,
+    method: "alipay.user.info.share",
+    format: "JSON",
+    charset: "utf-8",
+    sign_type: "RSA2",
+    timestamp: alipayTimestamp(),
+    version: "1.0",
+    auth_token: accessToken,
+  });
+  if (!posted.ok) return { openId, email: null, name: null, image: null };
+  return (
+    readUserShareResponse(posted.raw, config.alipayPublicKey, openId) ?? {
+      openId,
+      email: null,
+      name: null,
+      image: null,
+    }
+  );
+}
+
+export type AlipayLoginResult =
+  | { ok: true; profile: AlipayProfile }
+  | Extract<AlipayTokenResult, { ok: false }>;
+
+/** Token exchange + optional share profile (email merges when Alipay returns one). */
+export async function completeAlipayLogin(
+  authCode: string,
+  config: AlipayConfig,
+): Promise<AlipayLoginResult> {
+  const exchanged = await exchangeAuthCode(authCode, config);
+  if (!exchanged.ok) return exchanged;
+  const profile =
+    (await fetchUserShare(exchanged.accessToken, exchanged.openId, config)) ?? {
+      openId: exchanged.openId,
+      email: null,
+      name: null,
+      image: null,
+    };
+  return { ok: true, profile };
 }
 
 export function newOAuthState(): string {

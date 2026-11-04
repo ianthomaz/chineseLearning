@@ -1,15 +1,17 @@
 /**
  * Alipay return — SERVER MODE (`route.server.ts`; absent under static export).
  *
- * Checks the state cookie, exchanges the one-time `auth_code`, and writes
- * the same Auth.js session cookie as Google. Failure goes back to the page
- * that started login, with `authError=alipay` and no Alipay detail in the URL.
+ * Checks the state cookie, exchanges the one-time `auth_code`, optionally
+ * reads `alipay.user.info.share`, and writes the Auth.js session cookie.
+ * When Alipay returns an email, `resolveOAuthUser` merges with the same
+ * verified address (Google / released email account). Failure goes back with
+ * `authError=alipay` and no Alipay detail in the URL.
  */
 import { NextResponse, type NextRequest } from "next/server";
 import {
   ALIPAY_STATE_COOKIE,
   alipayConfig,
-  exchangeAuthCode,
+  completeAlipayLogin,
   unpackStateCookie,
   withAuthError,
 } from "@/server/auth/alipay";
@@ -25,10 +27,7 @@ import { rateLimit } from "@/server/rate-limit";
 
 export const dynamic = "force-dynamic";
 
-function clearState(
-  res: NextResponse,
-  secure: boolean,
-): NextResponse {
+function clearState(res: NextResponse, secure: boolean): NextResponse {
   res.cookies.set(ALIPAY_STATE_COOKIE, "", {
     httpOnly: true,
     sameSite: "lax",
@@ -59,14 +58,21 @@ export async function GET(req: NextRequest) {
   if (!authCode) return fail("missing_code");
   if (!rateLimit(`alipay-callback:${clientIp(req)}`, 30, 60_000)) return fail("rate");
 
-  const exchanged = await exchangeAuthCode(authCode, config);
-  if (!exchanged.ok) return fail(`${exchanged.reason}${exchanged.detail ? ` ${exchanged.detail}` : ""}`);
+  const completed = await completeAlipayLogin(authCode, config);
+  if (!completed.ok) {
+    return fail(`${completed.reason}${"detail" in completed && completed.detail ? ` ${completed.detail}` : ""}`);
+  }
 
   let userId: string;
   try {
+    const { profile } = completed;
     userId = resolveOAuthUser({
       provider: "alipay",
-      providerAccountId: exchanged.openId,
+      providerAccountId: profile.openId,
+      email: profile.email,
+      emailVerified: Boolean(profile.email),
+      name: profile.name,
+      image: profile.image,
     });
   } catch (err) {
     console.warn("[alipay] could not resolve user", err instanceof Error ? err.name : "error");

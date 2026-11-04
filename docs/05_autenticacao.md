@@ -110,7 +110,8 @@ Auth.js tem provider WeChat, mas o bloqueio é **administrativo**:
 
 ## Alipay (site)
 
-Aplicação em uso: **LearnChineseToday**, APPID `2021007115619132`, já launched.
+Aplicação web: **LearnChineseToday**, APPID `2021007115619132`, já launched.
+Aplicação móvel (iOS, bundle `today.learnchinese.app`): APPID `2021007115685095`, também launched (nov 2026). O login Alipay no app iOS ainda não está feito.
 
 Chaves, fora do git: `_credentials/alipay/learnchinese.json` — **raiz** = app web
 (LearnChineseToday). O bloco `mobile_app` é o iOS e não entra no site.
@@ -127,9 +128,9 @@ cópias antigas) e escreve o env (gitignored). A chave privada assina o pedido;
 | `ALIPAY_GATEWAY` | `https://openapi.alipay.com/gateway.do` |
 | `NEXT_PUBLIC_AUTH_ALIPAY=1` | Mostra o botão |
 
-O botão abre `https://openauth.alipay.com/oauth2/publicAppAuthorize.htm` com `scope=auth_user`. A pessoa volta para `/api/auth/alipay/callback` com um `auth_code` (vale uma vez). O servidor troca o código, lê o `open_id` e grava a sessão Auth.js. O access token não fica guardado.
+O botão abre `https://openauth.alipay.com/oauth2/publicAppAuthorize.htm` com `scope=auth_user`. A pessoa volta para `/api/auth/alipay/callback` com um `auth_code` (vale uma vez). O servidor troca o código (`open_id`), chama `alipay.user.info.share` (nick/avatar; e-mail se a Alipay enviar) e grava a sessão Auth.js. O access token não fica guardado.
 
-Conta: `accounts.provider = alipay`, id = `open_id`. Sem e-mail, então não junta com Google, Apple nem senha. Nasce O4 (`oauth_signup`). Não está no app iOS.
+Conta: `accounts.provider = alipay`, id = `open_id`. Se vier e-mail no share, o mesmo merge por e-mail verificado do Google aplica-se. Sem e-mail, conta só pelo `open_id`. Nasce O4 (`oauth_signup`). Isto é só no site.
 
 No console da Alipay a URL de retorno tem de ser exactamente:
 

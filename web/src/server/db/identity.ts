@@ -3,7 +3,8 @@
  *
  * - `accounts` maps (provider, provider_account_id) → `users.id`.
  *   Providers: 'google', 'apple', 'alipay' (id = open_id), 'email'
- *   (id = normalised email). Alipay has no email, so it never joins another account.
+ *   (id = normalised email). Alipay joins by open_id; if Alipay also returns an
+ *   email, the same verified-email merge as Google applies.
  * - `users.clearance` is a NOIA UC (`server/auth/noia.ts`): O1 while an email
  *   account waits for its confirmation link, O4 once released. Every change is
  *   audited in `clearance_changes`.
@@ -128,7 +129,7 @@ export type OAuthIdentity = {
 /**
  * The user behind a Google, Apple, or Alipay sign-in, created or joined as needed.
  * A provider sign-in releases the account at once (clearance O4).
- * Alipay is joined only by open_id — the token response has no verified email.
+ * Same verified email → same user (Alipay only when the share response has email).
  */
 export function resolveOAuthUser(identity: OAuthIdentity): string {
   const db = getDb();

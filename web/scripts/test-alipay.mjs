@@ -56,15 +56,37 @@ await test("RSA2 sign verifies and rejects a changed byte", () => {
   assert.equal(alipay.verifyAlipay(`${content}x`, signature, publicKey), false);
 });
 
-await test("token body yields open_id only when the signature matches", () => {
-  const node = JSON.stringify({ open_id: "open-id-1", access_token: "do-not-keep" });
+await test("token body yields open_id and access_token only when the signature matches", () => {
+  const node = JSON.stringify({ open_id: "open-id-1", access_token: "tok-once" });
   const raw = `{"alipay_system_oauth_token_response":${node},"sign":"${signNode(node)}"}`;
   const ok = alipay.readTokenResponse(raw, publicKey);
   assert.equal(ok.ok, true);
   assert.equal(ok.openId, "open-id-1");
+  assert.equal(ok.accessToken, "tok-once");
 
   const tampered = raw.replace("open-id-1", "open-id-2");
   assert.equal(alipay.readTokenResponse(tampered, publicKey).reason, "bad_sign");
+});
+
+await test("user share keeps email when Alipay sends one", () => {
+  const node = JSON.stringify({
+    code: "10000",
+    nick_name: "小明",
+    avatar: "https://example.com/a.png",
+    email: "same@example.com",
+  });
+  const raw = `{"alipay_user_info_share_response":${node},"sign":"${signNode(node)}"}`;
+  const profile = alipay.readUserShareResponse(raw, publicKey, "open-id-1");
+  assert.equal(profile?.openId, "open-id-1");
+  assert.equal(profile?.email, "same@example.com");
+  assert.equal(profile?.name, "小明");
+  assert.equal(profile?.image, "https://example.com/a.png");
+
+  const noMail = JSON.stringify({ code: "10000", nick_name: "小明" });
+  const noMailRaw = `{"alipay_user_info_share_response":${noMail},"sign":"${signNode(noMail)}"}`;
+  const bare = alipay.readUserShareResponse(noMailRaw, publicKey, "open-id-1");
+  assert.equal(bare?.email, null);
+  assert.equal(bare?.name, "小明");
 });
 
 await test("missing open_id and error_response do not count as a login", () => {
@@ -129,4 +151,4 @@ if (failed) {
   console.error(`\n${failed} failed`);
   process.exit(1);
 }
-console.log("\n8 passed");
+console.log("\n9 passed");
