@@ -4,6 +4,7 @@
  * Route handlers stay thin; everything here returns codes, never throws for
  * user mistakes. Error codes are the i18n keys `account.error.<code>`.
  */
+import { randomBytes } from "node:crypto";
 import { resolveMx, resolve4, resolve6 } from "node:dns/promises";
 import { isPlausibleEmail, normalizeEmail } from "@/lib/email-check";
 import { isReleased } from "@/server/auth/noia";
@@ -150,6 +151,16 @@ export async function resendVerification(emailRaw: unknown, locale: unknown, ori
   await sendLink("verify", user, email, String(locale ?? "en"), origin);
 }
 
+/**
+ * A real hash of a random value, made once per process: unknown emails still
+ * pay for a full scrypt check. Never a literal in the source.
+ */
+let dummyHash: Promise<string> | null = null;
+function timingDummyHash(): Promise<string> {
+  dummyHash ??= hashPassword(randomBytes(16).toString("hex"));
+  return dummyHash;
+}
+
 export async function passwordSignIn(
   emailRaw: unknown,
   password: unknown,
@@ -159,7 +170,7 @@ export async function passwordSignIn(
   }
   const user = userForEmailLogin(emailRaw);
   // Same work whether or not the user exists, so timing does not tell.
-  const valid = await verifyPassword(password, user?.passwordHash ?? "scrypt$16384$8$1$AAAA$AAAA");
+  const valid = await verifyPassword(password, user?.passwordHash ?? (await timingDummyHash()));
   if (!user || !valid) return { ok: false, error: "invalid_credentials" };
   if (!isReleased(user.clearance)) return { ok: false, error: "email_not_verified" };
   return { ok: true, userId: user.id };
