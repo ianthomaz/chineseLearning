@@ -282,17 +282,40 @@ export function AlipayErrorNote() {
   return <p className="text-center text-xs text-red-700">{t("account.alipayFailed")}</p>;
 }
 
+function AlipayMark() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5 shrink-0" aria-hidden>
+      <path
+        fill="currentColor"
+        d="M19.695 15.07c3.426 1.158 4.203 1.22 4.203 1.22V3.846c0-2.124-1.705-3.845-3.81-3.845H3.914C1.808.001.102 1.722.102 3.846v16.31c0 2.123 1.706 3.845 3.813 3.845h16.173c2.105 0 3.81-1.722 3.81-3.845v-.157s-6.19-2.602-9.315-4.119c-2.096 2.602-4.8 4.181-7.607 4.181-4.75 0-6.361-4.19-4.112-6.949.49-.602 1.324-1.175 2.617-1.497 2.025-.502 5.247.313 8.266 1.317a16.796 16.796 0 0 0 1.341-3.302H5.781v-.952h4.799V6.975H4.77v-.953h5.81V3.591s0-.409.411-.409h2.347v2.84h5.744v.951h-5.744v1.704h4.69a19.453 19.453 0 0 1-1.986 5.06c1.424.52 2.702 1.011 3.654 1.333m-13.81-2.032c-.596.06-1.71.325-2.321.869-1.83 1.608-.735 4.55 2.968 4.55 2.151 0 4.301-1.388 5.99-3.61-2.403-1.182-4.438-2.028-6.637-1.809"
+      />
+    </svg>
+  );
+}
+
 export function AlipaySignInRedirect() {
   const { t } = useLocale();
   return (
     <a
       href={`${BASE_PATH}/api/auth/alipay/start`}
       onClick={() => trackEvent({ action: "sign_in_start", category: "auth", label: "alipay" })}
-      className="inline-flex min-h-[44px] items-center justify-center rounded-full px-4 text-sm font-medium text-white"
+      className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-4 text-sm font-medium text-white"
       style={{ backgroundColor: "#1677ff" }}
     >
+      <AlipayMark />
       {t("account.alipaySignIn")}
     </a>
+  );
+}
+
+function AppleMark() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5 shrink-0" aria-hidden>
+      <path
+        fill="currentColor"
+        d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"
+      />
+    </svg>
   );
 }
 
@@ -305,8 +328,9 @@ export function AppleSignInRedirect() {
         trackEvent({ action: "sign_in_start", category: "auth", label: "apple" });
         void signIn("apple");
       }}
-      className="inline-flex min-h-[44px] items-center justify-center rounded-full bg-black px-4 text-sm font-medium text-white"
+      className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full bg-black px-4 text-sm font-medium text-white"
     >
+      <AppleMark />
       {t("account.appleSignIn")}
     </button>
   );
