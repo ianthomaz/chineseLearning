@@ -170,6 +170,16 @@ function accountBlock(data, existing) {
   const resendKey = pick(email.RESEND_API_KEY, "RESEND_API_KEY");
   const appleId = pick(apple.AUTH_APPLE_ID, "AUTH_APPLE_ID");
   const appleSecret = pick(apple.AUTH_APPLE_SECRET, "AUTH_APPLE_SECRET");
+  // The server signs its own client secret from the .p8 key (web/src/server/auth/apple-secret.ts).
+  let appleKey = existing.AUTH_APPLE_PRIVATE_KEY || "";
+  if (apple.private_key_file && !apple.private_key_file.includes("XXXXXXXXXX")) {
+    const keyPath = join(REPO_ROOT, apple.private_key_file);
+    if (existsSync(keyPath)) appleKey = readFileSync(keyPath, "utf8").trim().replace(/\n/g, "\\n");
+    else console.warn(`[sync-env] WARN: apple.private_key_file not found: ${apple.private_key_file}`);
+  }
+  const appleTeam = pick(apple.team_id, "AUTH_APPLE_TEAM_ID");
+  const appleKeyId = pick(apple.key_id, "AUTH_APPLE_KEY_ID");
+  const appleReady = Boolean(appleId && (appleSecret || (appleKey && appleTeam && appleKeyId)));
   const from =
     pick(email.RESEND_FROM, "RESEND_FROM") ||
     "LearnChinese Today <no-reply@learnchinese.today>";
@@ -183,13 +193,20 @@ function accountBlock(data, existing) {
       "APPLE_APP_BUNDLE_ID",
       pick(apple.APPLE_APP_BUNDLE_ID, "APPLE_APP_BUNDLE_ID") || "today.learnchinese.app",
     ),
-    ...(appleId && appleSecret
+    ...(appleReady
       ? [
           envAssign("AUTH_APPLE_ID", appleId),
-          envAssign("AUTH_APPLE_SECRET", appleSecret),
+          ...(appleSecret ? [envAssign("AUTH_APPLE_SECRET", appleSecret)] : []),
+          ...(appleKey
+            ? [
+                envAssign("AUTH_APPLE_TEAM_ID", appleTeam),
+                envAssign("AUTH_APPLE_KEY_ID", appleKeyId),
+                envAssign("AUTH_APPLE_PRIVATE_KEY", appleKey),
+              ]
+            : []),
           "NEXT_PUBLIC_AUTH_APPLE=1",
         ]
-      : ["# AUTH_APPLE_ID= / AUTH_APPLE_SECRET=  # Sign in with Apple on the site (optional)"]),
+      : ["# AUTH_APPLE_ID= + apple.key_id + apple.private_key_file  # Sign in with Apple on the site"]),
     ...(pick(g.GOOGLE_IOS_CLIENT_ID, "GOOGLE_IOS_CLIENT_ID")
       ? [envAssign("GOOGLE_IOS_CLIENT_ID", pick(g.GOOGLE_IOS_CLIENT_ID, "GOOGLE_IOS_CLIENT_ID"))]
       : ["# GOOGLE_IOS_CLIENT_ID=  # Google Sign-In in the iOS app"]),

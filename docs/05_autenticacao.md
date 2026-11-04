@@ -140,6 +140,40 @@ Código: `web/src/server/auth/alipay.ts`, rotas `web/src/app/api/auth/alipay/{st
 
 ---
 
+## Apple no site — passo a passo (para o dono, no computador)
+
+Por que não aparece hoje: o botão só aparece quando o servidor tem o
+**Services ID** e a **chave .p8**. O app já usa Apple (só precisa do bundle).
+
+No [developer.apple.com](https://developer.apple.com/account/resources/identifiers/list) (Team `7Z7GR6UFNZ`):
+
+1. **Identifiers → + → Services IDs** → identificador `today.learnchinese.web`
+   (nome "LearnChinese Today Web"). Marcar **Sign in with Apple → Configure**:
+   - Primary App ID: `today.learnchinese.app` (assim o mesmo usuário tem o
+     mesmo `sub` no site e no app);
+   - Domains: `learnchinese.today`;
+   - Return URLs: `https://learnchinese.today/api/auth/callback/apple`.
+2. **Keys → +** → nome "LearnChinese Sign in with Apple", marcar **Sign in with
+   Apple** (Configure → Primary App ID `today.learnchinese.app`). Baixar o
+   `AuthKey_XXXXXXXXXX.p8` (só baixa uma vez) e anotar o **Key ID**.
+3. Colocar o `.p8` em `local/credentials/` e preencher `credentials.json → apple`:
+   `AUTH_APPLE_ID = today.learnchinese.web`, `key_id`, `private_key_file`
+   (`team_id` já é `7Z7GR6UFNZ`).
+4. `node scripts/sync-env-from-credentials.mjs` → deploy.
+
+O servidor assina o próprio client secret a partir da chave
+(`web/src/server/auth/apple-secret.ts`) — **não** expira a cada 6 meses (renova
+a cada deploy/restart). Os cookies de checagem do Auth.js vão como
+`SameSite=None` porque a Apple devolve o login num POST de outro site; sem isso
+o login falhava. Só funciona em HTTPS (produção).
+
+## Google no app — passo a passo
+
+Ver `appApple/docs/08_login.md` § Google (client ID iOS no GCP `chinese-learnin`
+→ `credentials.json → google_oauth.GOOGLE_IOS_CLIENT_ID` + reversed →
+`sync-env` (servidor aceita o token) e `appApple/Scripts/sync-secrets-xcconfig.mjs`
+→ `xcodegen generate`).
+
 ## Contas — um usuário, várias entradas (implementado nov 2026)
 
 Código: `web/src/server/db/identity.ts` (dados), `server/account/service.ts`
@@ -251,7 +285,7 @@ O que ainda falta, por ordem — a sequência geral está em
 | Excluir conta **no site** | site | só UI — API `DELETE /api/account` já existe |
 | "Conectar outra conta" com sessão ativa (ex.: Alipay sem e-mail + Google) | site + app | desenho de UI |
 | Revogar token Apple ao excluir conta | servidor | chave `.p8` |
-| Apple no site | site | Services ID + chave `.p8` |
+| Apple no site | site | Services ID + chave `.p8` — código pronto, § Apple no site |
 | WeChat | — | conta Tencent (§ WeChat) |
 | Passkeys | site + app | depois do resto |
 
