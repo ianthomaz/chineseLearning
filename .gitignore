@@ -38,3 +38,6 @@ local/credentials/*.p8
 
 # Google iOS OAuth client plist
 local/credentials/google-ios-client*.plist
+
+# Alipay gateway / SDK diagnostic dumps (full token JSON — never commit)
+local/alipay-captures/

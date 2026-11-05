@@ -13,6 +13,11 @@ Documentação: [`docs/01_readme.md`](docs/01_readme.md). Contratos LLM: [`docs/
 
 ## Decisões de produto (não voltar a propor)
 
+- **Clearance é informação interna.** Níveis NOIA nunca aparecem em telas,
+  perfis públicos, sessões ou respostas de conta para clientes (site, iOS e
+  Android). A autorização e a auditoria ficam no servidor; clientes recebem
+  apenas o estado funcional necessário, como `released`.
+
 - **Busca / pesquisa no site: NUNCA.** Não é uma funcionalidade que este site vá
   ter, em nenhuma forma — nem campo de busca, nem índice pesquisável, nem
   filtro global. Não sugerir. Decisão do dono do projeto, set 2026.

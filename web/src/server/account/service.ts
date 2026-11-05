@@ -44,8 +44,6 @@ export type AccountPayload = {
   name: string | null;
   image: string | null;
   nick: string | null;
-  /** NOIA UC, e.g. "O4". */
-  clearance: string;
   released: boolean;
   providers: string[];
   hasPassword: boolean;
@@ -60,7 +58,6 @@ export function accountPayload(userId: string): AccountPayload | null {
     name: user.name,
     image: user.image,
     nick: user.nick,
-    clearance: user.clearance,
     released: isReleased(user.clearance),
     providers: providersOf(user.id),
     hasPassword: Boolean(user.passwordHash),

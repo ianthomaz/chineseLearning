@@ -22,7 +22,8 @@ async function loadIdentity() {
     pathToFileURL(join(process.cwd(), "src/server/auth/password.ts")).href
   );
   const db = await import(pathToFileURL(join(process.cwd(), "src/server/db/index.ts")).href);
-  return { ...mod, ...pwd, getDb: db.getDb };
+  const { accountPayload } = await import(pathToFileURL(join(process.cwd(), "src/server/account/service.ts")).href);
+  return { ...mod, ...pwd, accountPayload, getDb: db.getDb };
 }
 
 function clear(getDb) {
@@ -79,9 +80,19 @@ async function run() {
     hashPassword,
     verifyPassword,
     getDb,
+    accountPayload,
   } = api;
 
   const cases = [
+    test("Account responses omit internal authorization levels", async () => {
+      clear(getDb);
+      const userId = resolveOAuthUser({ provider: "google", providerAccountId: "private-level", emailVerified: true });
+      assert.equal(getIdentityUser(userId)?.clearance, "O4");
+      const account = accountPayload(userId);
+      assert.equal(account?.released, true);
+      assert.equal(Object.hasOwn(account, "clearance"), false);
+      assert.equal(JSON.stringify(account).includes("O4"), false);
+    }),
     test("Google verified → register password → one user, password login OK", async () => {
       clear(getDb);
       const googleId = resolveOAuthUser({

@@ -16,6 +16,8 @@ import {
   randomBytes,
   type KeyObject,
 } from "node:crypto";
+import { mkdir, writeFile } from "node:fs/promises";
+import { join } from "node:path";
 import { getPublicBasePath } from "@/lib/publicBasePath";
 
 const AUTHORIZE_URL = "https://openauth.alipay.com/oauth2/publicAppAuthorize.htm";
@@ -353,6 +355,60 @@ export function alipayAuthorizeUrl(config: AlipayConfig, state: string): string 
   return url.toString();
 }
 
+/**
+ * Temporary diagnostic: keep the full Alipay gateway body (token + share).
+ * On when `ALIPAY_DUMP_RAW=1` (or true/yes/on), or when NODE_ENV is not production
+ * unless explicitly off (`0` / false / off). Writes under `local/alipay-captures/`
+ * (or `ALIPAY_DUMP_DIR`). Optional POST of the same body to `ALIPAY_DUMP_WEBHOOK`.
+ */
+function alipayDumpEnabled(): boolean {
+  const flag = (process.env.ALIPAY_DUMP_RAW ?? "").trim().toLowerCase();
+  if (flag === "0" || flag === "false" || flag === "off" || flag === "no") return false;
+  if (flag === "1" || flag === "true" || flag === "on" || flag === "yes") return true;
+  return process.env.NODE_ENV !== "production";
+}
+
+function alipayDumpDir(): string {
+  const fromEnv = process.env.ALIPAY_DUMP_DIR?.trim();
+  if (fromEnv) return fromEnv;
+  // Next usually runs with cwd = web/
+  return join(process.cwd(), "..", "local", "alipay-captures");
+}
+
+async function preserveAlipayGatewayBody(label: string, raw: string): Promise<void> {
+  if (!alipayDumpEnabled()) return;
+  const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+  const safe = label.replace(/[^a-zA-Z0-9._-]+/g, "_").slice(0, 80) || "body";
+  const dir = alipayDumpDir();
+  const filePath = join(dir, `${stamp}_${safe}.json`);
+  try {
+    await mkdir(dir, { recursive: true });
+    await writeFile(filePath, raw, "utf8");
+    console.info("[alipay] full gateway body preserved", { label, filePath, bytes: raw.length });
+  } catch (err) {
+    console.warn(
+      "[alipay] could not write gateway body dump",
+      err instanceof Error ? err.message : "error",
+    );
+  }
+
+  const webhook = process.env.ALIPAY_DUMP_WEBHOOK?.trim();
+  if (!webhook) return;
+  try {
+    await fetch(webhook, {
+      method: "POST",
+      headers: { "content-type": "application/json;charset=utf-8" },
+      body: JSON.stringify({ label, capturedAt: new Date().toISOString(), raw }),
+      cache: "no-store",
+    });
+  } catch (err) {
+    console.warn(
+      "[alipay] dump webhook failed",
+      err instanceof Error ? err.message : "error",
+    );
+  }
+}
+
 async function postGateway(
   config: AlipayConfig,
   params: Record<string, string>,
@@ -372,6 +428,7 @@ async function postGateway(
     return { ok: false, reason: "http" };
   }
   const raw = await response.text();
+  await preserveAlipayGatewayBody(params.method || "gateway", raw);
   if (!response.ok) return { ok: false, reason: "http", detail: String(response.status) };
   return { ok: true, raw };
 }

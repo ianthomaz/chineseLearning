@@ -228,6 +228,11 @@ Código: `web/src/server/db/identity.ts` (dados), `server/account/service.ts`
 
 ### Clearance NOIA
 
+**Informação interna, nunca pública** (decisão do dono, 5 nov 2026). Site,
+iOS e Android não exibem nem recebem o nível nos payloads de conta.
+`accountPayload` expõe apenas `released` para o estado funcional da conta.
+O nível completo e seu histórico permanecem no servidor para autorização e auditoria.
+
 Porte fiel de `ianthomaz/025_noiaShell` `server/noia.js`: UC = letra + dígito,
 N (visitante) < O (outsider) < I (insider) < A (admin), deny-by-default.
 

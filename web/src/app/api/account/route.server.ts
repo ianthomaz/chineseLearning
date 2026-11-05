@@ -1,6 +1,7 @@
 /**
  * The signed-in account — site (cookie) or app (Bearer).
- * GET: profile + NOIA clearance + linked providers. DELETE: delete the account
+ * GET: profile + linked providers. Internal authorization levels stay server-side.
+ * DELETE: delete the account
  * and its progress (App Store guideline 5.1.1(v)).
  */
 import { accountPayload } from "@/server/account/service";
