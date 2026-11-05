@@ -21,9 +21,14 @@ import {
 } from "@/lib/phrase-game/types";
 import { PlayerProgressCard } from "@/components/PlayerProgressCard";
 import { AuthPanel } from "./AuthPanel";
-import { GameplayScreen } from "./GameplayScreen";
+import { GameplayScreen, type HelpPrefs } from "./GameplayScreen";
 import { SetupScreen } from "./SetupScreen";
 import { SpeakButton } from "@/components/ui/SpeakButton";
+
+const EMPTY_HELP_PREFS: HelpPrefs = {
+  suppressPinyin: false,
+  suppressTranslation: false,
+};
 
 type Phase = "setup" | "playing" | "complete";
 
@@ -57,6 +62,8 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
   // A round that builds to nothing used to leave Play doing nothing at all,
   // which is indistinguishable from a broken button. Surface it instead.
   const [noRound, setNoRound] = useState(false);
+  /** Hide-hints choices carry across phrases until the round is rebuilt. */
+  const [helpPrefs, setHelpPrefs] = useState<HelpPrefs>(EMPTY_HELP_PREFS);
 
   const roundIdRef = useRef("");
   const abandonedRef = useRef(false);
@@ -92,6 +99,7 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
     setFrontierIndex(0);
     setResults(new Array(built.items.length).fill(null));
     setScores(new Array(built.items.length).fill(0));
+    setHelpPrefs(EMPTY_HELP_PREFS);
     setPhase("playing");
     trackEvent({ action: "round_start", category: "phrase_game", label: `${tier}/L${level}` });
     logGameEvent("round_start", { roundId, tier, level });
@@ -300,6 +308,7 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
               roundId={roundIdRef.current}
               level={level}
               settings={settings}
+              helpPrefs={helpPrefs}
               index={index}
               total={round.items.length}
               results={results}
@@ -310,6 +319,7 @@ export function PhraseGame({ initialPhrases }: { initialPhrases: Phrase[] | null
               onPrev={handlePrevPhrase}
               onForward={handleForwardPhrase}
               onSettingsChange={setSettings}
+              onHelpPrefsChange={setHelpPrefs}
               onResult={handleResult}
               onNext={handleNext}
             />

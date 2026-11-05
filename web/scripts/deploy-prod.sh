@@ -86,6 +86,8 @@ rsync -avz --delete -e ssh \
   --exclude .env.local \
   --exclude 'data/*.sqlite' \
   --exclude 'data/*.sqlite-*' \
+  --exclude 'data/*.sqlite.bak*' \
+  --exclude 'data/*.bak*' \
   --exclude 'data/*.sqlite-journal' \
   --exclude 'data/*.sqlite-wal' \
   --exclude 'data/*.sqlite-shm' \

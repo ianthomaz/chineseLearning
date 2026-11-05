@@ -248,7 +248,7 @@ export function EmailAuthForm({ onSignedIn }: { onSignedIn?: () => void }) {
             )}
       </button>
 
-      <div className="flex justify-between">
+      <div className="flex justify-center">
         {mode === "signIn" ? (
           <button type="button" className={LINK_CLASS} onClick={() => switchMode("forgot")}>
             {t("account.forgot")}
@@ -257,9 +257,7 @@ export function EmailAuthForm({ onSignedIn }: { onSignedIn?: () => void }) {
           <button type="button" className={LINK_CLASS} onClick={() => switchMode("signIn")}>
             {t("account.back")}
           </button>
-        ) : (
-          <span />
-        )}
+        ) : null}
       </div>
     </form>
   );

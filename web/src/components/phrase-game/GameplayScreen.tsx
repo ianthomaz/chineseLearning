@@ -35,12 +35,20 @@ const PROMPT_ACTION_STYLE = {
   fontFamily: "var(--font-sans)",
 } as const;
 
+/** Mid-round help choices that survive when the next phrase mounts. */
+export type HelpPrefs = {
+  suppressPinyin: boolean;
+  suppressTranslation: boolean;
+};
+
 type Props = {
   item: RoundItem;
   tier: GameTier;
   roundId: string;
   level: GameLevel;
   settings: DisplaySettings;
+  /** Carried from the previous phrase so hidden hints stay hidden. */
+  helpPrefs: HelpPrefs;
   index: number;
   total: number;
   results: Array<"correct" | "wrong" | null>;
@@ -52,6 +60,7 @@ type Props = {
   onPrev: () => void;
   onForward: () => void;
   onSettingsChange: (settings: DisplaySettings) => void;
+  onHelpPrefsChange: (prefs: HelpPrefs) => void;
   onResult: (correct: boolean, score: number) => void;
   onNext: () => void;
 };
@@ -64,6 +73,7 @@ export function GameplayScreen({
   roundId,
   level,
   settings,
+  helpPrefs,
   index,
   total,
   results,
@@ -74,6 +84,7 @@ export function GameplayScreen({
   onPrev,
   onForward,
   onSettingsChange,
+  onHelpPrefsChange,
   onResult,
   onNext,
 }: Props) {
@@ -92,10 +103,16 @@ export function GameplayScreen({
       ? { bank: [], answer: derived.correctOrder }
       : { bank: derived.bank, answer: [] },
   );
-  const [reveal, setReveal] = useState<RevealState>({
-    pinyin: isReview,
-    translation: isReview,
-  });
+  const [reveal, setReveal] = useState<RevealState>(() =>
+    isReview
+      ? { pinyin: true, translation: true }
+      : {
+          pinyin: false,
+          translation: false,
+          suppressPinyin: helpPrefs.suppressPinyin,
+          suppressTranslation: helpPrefs.suppressTranslation,
+        },
+  );
   const [removedExtras, setRemovedExtras] = useState(false);
   const [submitted, setSubmitted] = useState<boolean | null>(
     isReview ? priorResult === "correct" : null,
@@ -257,9 +274,11 @@ export function GameplayScreen({
   function togglePinyinHelp() {
     if (pinyinShowing) {
       setReveal((r) => ({ ...r, pinyin: false, suppressPinyin: true }));
+      onHelpPrefsChange({ ...helpPrefs, suppressPinyin: true });
       return;
     }
     setReveal((r) => ({ ...r, pinyin: true, suppressPinyin: false }));
+    onHelpPrefsChange({ ...helpPrefs, suppressPinyin: false });
     logHelp("showPinyin");
   }
 
@@ -267,9 +286,11 @@ export function GameplayScreen({
   function toggleTranslationHelp() {
     if (glossShowing) {
       setReveal((r) => ({ ...r, translation: false, suppressTranslation: true }));
+      onHelpPrefsChange({ ...helpPrefs, suppressTranslation: true });
       return;
     }
     setReveal((r) => ({ ...r, translation: true, suppressTranslation: false }));
+    onHelpPrefsChange({ ...helpPrefs, suppressTranslation: false });
     logHelp("showTranslation");
   }
 
@@ -384,8 +405,6 @@ export function GameplayScreen({
           bank: t("phraseGame.bankLabel"),
           answer: t("phraseGame.answerLabel"),
           answerEmpty: t("phraseGame.answerEmpty"),
-          moveLeft: t("phraseGame.moveLeft"),
-          moveRight: t("phraseGame.moveRight"),
         }}
       />
 

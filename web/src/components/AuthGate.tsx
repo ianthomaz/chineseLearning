@@ -72,7 +72,7 @@ function LoginGateLive({ children }: { children: React.ReactNode }) {
           >
             {t("authGate.hint")}
           </p>
-          <div className="mt-6 flex w-full flex-col gap-2">
+          <div className="mx-auto mt-6 flex w-full max-w-sm flex-col gap-2">
             <AlipayErrorNote />
             {HAS_ONE_TAP ? (
               <>
@@ -85,7 +85,7 @@ function LoginGateLive({ children }: { children: React.ReactNode }) {
             {HAS_APPLE_WEB ? <AppleSignInRedirect /> : null}
             {HAS_ALIPAY_WEB ? <AlipaySignInRedirect /> : null}
           </div>
-          <div className="mt-6 space-y-4">
+          <div className="mx-auto mt-6 w-full max-w-sm space-y-4">
             <OrDivider />
             <EmailAuthForm onSignedIn={() => void update()} />
           </div>

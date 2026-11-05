@@ -72,26 +72,28 @@ function AuthPanelLive({
   if (status !== "authenticated" || !session?.user) {
     return (
       <div
-        className="rounded-2xl border px-4 py-4"
+        className="rounded-2xl border px-4 py-5 sm:px-6"
         style={{ borderColor: "var(--border)" }}
       >
-        <p className="text-sm text-ink/65">{t("phraseGame.auth.guestHint")}</p>
-        <AlipayErrorNote />
-        <div className="mt-3 flex w-full flex-col gap-2 sm:max-w-sm">
-          {HAS_ONE_TAP ? (
-            <GoogleOneTap locale={locale} onSignedIn={() => void update()} />
-          ) : (
-            <GoogleSignInRedirect label={t("phraseGame.auth.signIn")} />
-          )}
-          {HAS_ONE_TAP ? (
-            <GoogleSignInRedirect label={t("phraseGame.auth.signInAlt")} />
-          ) : null}
-          {HAS_APPLE_WEB ? <AppleSignInRedirect /> : null}
-          {HAS_ALIPAY_WEB ? <AlipaySignInRedirect /> : null}
-        </div>
-        <div className="mt-4 space-y-4 sm:max-w-sm">
-          <OrDivider />
-          <EmailAuthForm onSignedIn={() => void update()} />
+        <div className="mx-auto flex w-full max-w-sm flex-col items-stretch">
+          <p className="text-center text-sm text-ink/65">{t("phraseGame.auth.guestHint")}</p>
+          <AlipayErrorNote />
+          <div className="mt-3 flex w-full flex-col gap-2">
+            {HAS_ONE_TAP ? (
+              <GoogleOneTap locale={locale} onSignedIn={() => void update()} />
+            ) : (
+              <GoogleSignInRedirect label={t("phraseGame.auth.signIn")} />
+            )}
+            {HAS_ONE_TAP ? (
+              <GoogleSignInRedirect label={t("phraseGame.auth.signInAlt")} />
+            ) : null}
+            {HAS_APPLE_WEB ? <AppleSignInRedirect /> : null}
+            {HAS_ALIPAY_WEB ? <AlipaySignInRedirect /> : null}
+          </div>
+          <div className="mt-4 space-y-4">
+            <OrDivider />
+            <EmailAuthForm onSignedIn={() => void update()} />
+          </div>
         </div>
       </div>
     );

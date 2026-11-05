@@ -34,11 +34,7 @@ export function PieceContent({ piece, settings, reveal, inAnswer, state = "neutr
 
   return (
     <span
-      className={`inline-flex flex-col items-center justify-center rounded-xl border px-3 pt-2 text-center leading-tight ${
-        // Answer pieces carry the reorder pill over their bottom edge; reserve
-        // room for it so it never lands on the gloss.
-        inAnswer ? "pb-6" : "pb-2"
-      }`}
+      className="inline-flex flex-col items-center justify-center rounded-xl border px-3 py-2 text-center leading-tight"
       style={{ borderColor: border, backgroundColor: bg, minWidth: "2.75rem" }}
     >
       {showPinyin && piece.pinyin ? (

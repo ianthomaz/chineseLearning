@@ -4,8 +4,9 @@ import { useState, type ReactNode } from "react";
 import {
   DndContext,
   DragOverlay,
-  PointerSensor,
-  closestCenter,
+  MouseSensor,
+  TouchSensor,
+  closestCorners,
   useSensor,
   useSensors,
   type DragEndEvent,
@@ -36,7 +37,7 @@ type Props = {
   disabled?: boolean;
   /** Per-piece state for answer pieces after a submit. */
   answerState?: "neutral" | "correct" | "wrong";
-  labels: { bank: string; answer: string; answerEmpty: string; moveLeft: string; moveRight: string };
+  labels: { bank: string; answer: string; answerEmpty: string };
   /** Optional control in the bank zone header (e.g. listen). */
   bankAction?: ReactNode;
 };
@@ -49,8 +50,6 @@ function SortablePiece({
   disabled,
   state,
   onActivate,
-  onNudge,
-  nudgeLabels,
 }: {
   piece: Piece;
   zone: ZoneId;
@@ -59,56 +58,36 @@ function SortablePiece({
   disabled?: boolean;
   state: "neutral" | "correct" | "wrong";
   onActivate: () => void;
-  onNudge?: (dir: -1 | 1) => void;
-  nudgeLabels: { left: string; right: string };
 }) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } =
     useSortable({ id: piece.id, disabled });
 
   return (
-    <span className="relative inline-flex items-center">
-      <button
-        type="button"
-        ref={setNodeRef}
-        style={{
-          transform: CSS.Transform.toString(transform),
-          transition,
-          opacity: isDragging ? 0.4 : 1,
-          touchAction: "none",
-        }}
-        {...attributes}
-        {...listeners}
-        onClick={() => !disabled && onActivate()}
-        disabled={disabled}
-        className="cursor-grab rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-accent active:cursor-grabbing"
-        aria-label={`${piece.hanzi}${piece.pinyin ? ` (${piece.pinyin})` : ""}`}
-      >
-        <PieceContent piece={piece} settings={settings} reveal={reveal} inAnswer={zone === "answer"} state={state} />
-      </button>
-      {zone === "answer" && !disabled && onNudge ? (
-        <span
-          className="absolute -bottom-3.5 left-1/2 flex -translate-x-1/2 overflow-hidden rounded-full border bg-paper"
-          style={{ borderColor: "var(--border)" }}
-        >
-          <button
-            type="button"
-            onClick={() => onNudge(-1)}
-            className="flex h-7 w-7 items-center justify-center text-xs text-ink/60 hover:bg-ink/5"
-            aria-label={nudgeLabels.left}
-          >
-            ◀
-          </button>
-          <button
-            type="button"
-            onClick={() => onNudge(1)}
-            className="flex h-7 w-7 items-center justify-center text-xs text-ink/60 hover:bg-ink/5"
-            aria-label={nudgeLabels.right}
-          >
-            ▶
-          </button>
-        </span>
-      ) : null}
-    </span>
+    <button
+      type="button"
+      ref={setNodeRef}
+      style={{
+        transform: CSS.Transform.toString(transform),
+        transition,
+        opacity: isDragging ? 0.35 : 1,
+        touchAction: "none",
+      }}
+      {...attributes}
+      {...listeners}
+      onClick={() => !disabled && onActivate()}
+      disabled={disabled}
+      className="cursor-grab rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-accent active:cursor-grabbing"
+      aria-label={`${piece.hanzi}${piece.pinyin ? ` (${piece.pinyin})` : ""}`}
+      data-zone={zone}
+    >
+      <PieceContent
+        piece={piece}
+        settings={settings}
+        reveal={reveal}
+        inAnswer={zone === "answer"}
+        state={state}
+      />
+    </button>
   );
 }
 
@@ -139,7 +118,7 @@ function Zone({
       </div>
       <div
         ref={setNodeRef}
-        className="flex min-h-[4.5rem] flex-wrap items-center gap-x-4 gap-y-6 rounded-2xl border border-dashed p-3 transition-colors"
+        className="flex min-h-[4.5rem] flex-wrap items-center gap-x-3 gap-y-3 rounded-2xl border border-dashed p-3 transition-colors"
         style={{
           borderColor: isOver ? "var(--accent)" : "var(--border)",
           backgroundColor: isOver ? "rgba(45,90,140,0.04)" : "transparent",
@@ -163,8 +142,11 @@ export function Board({
   bankAction,
 }: Props) {
   const [activeId, setActiveId] = useState<string | null>(null);
+  // Mouse: small move starts a drag (click still toggles zones).
+  // Touch: short delay so a tap still clicks, a hold-and-move rearranges.
   const sensors = useSensors(
-    useSensor(PointerSensor, { activationConstraint: { distance: 8 } }),
+    useSensor(MouseSensor, { activationConstraint: { distance: 6 } }),
+    useSensor(TouchSensor, { activationConstraint: { delay: 160, tolerance: 8 } }),
   );
 
   const findZone = (id: string): ZoneId | null => {
@@ -200,26 +182,18 @@ export function Board({
     }
   }
 
-  function nudge(pieceId: string, dir: -1 | 1) {
-    const idx = value.answer.findIndex((p) => p.id === pieceId);
-    const next = idx + dir;
-    if (idx < 0 || next < 0 || next >= value.answer.length) return;
-    onChange({ ...value, answer: arrayMove(value.answer, idx, next) });
-  }
-
   function handleDragStart(e: DragStartEvent) {
     setActiveId(String(e.active.id));
   }
 
   function handleDragOver(e: DragOverEvent) {
     const { active, over } = e;
-    if (!over) return;
+    if (!over || disabled) return;
     const from = findZone(String(active.id));
     const to = findZone(String(over.id));
     if (!from || !to || from === to) return;
 
-    const piece =
-      value[from].find((p) => p.id === active.id) ?? null;
+    const piece = value[from].find((p) => p.id === active.id) ?? null;
     if (!piece) return;
 
     const fromList = value[from].filter((p) => p.id !== active.id);
@@ -237,10 +211,29 @@ export function Board({
   function handleDragEnd(e: DragEndEvent) {
     const { active, over } = e;
     setActiveId(null);
-    if (!over) return;
+    if (!over || disabled) return;
     const from = findZone(String(active.id));
     const to = findZone(String(over.id));
-    if (!from || !to || from !== to || active.id === over.id) return;
+    if (!from || !to) return;
+
+    // Dropped on empty zone (or the zone itself) after dragOver already moved it.
+    if (from !== to) {
+      const piece = value[from].find((p) => p.id === active.id);
+      if (!piece) return;
+      onChange({
+        bank:
+          from === "bank"
+            ? value.bank.filter((p) => p.id !== active.id)
+            : [...value.bank, piece],
+        answer:
+          from === "answer"
+            ? value.answer.filter((p) => p.id !== active.id)
+            : [...value.answer, piece],
+      });
+      return;
+    }
+
+    if (active.id === over.id) return;
     const list = value[from];
     const oldIdx = list.findIndex((p) => p.id === active.id);
     const newIdx = list.findIndex((p) => p.id === over.id);
@@ -251,7 +244,7 @@ export function Board({
   return (
     <DndContext
       sensors={sensors}
-      collisionDetection={closestCenter}
+      collisionDetection={closestCorners}
       onDragStart={handleDragStart}
       onDragOver={handleDragOver}
       onDragEnd={handleDragEnd}
@@ -270,13 +263,16 @@ export function Board({
                 disabled={disabled}
                 state="neutral"
                 onActivate={() => activate(piece.id)}
-                nudgeLabels={{ left: labels.moveLeft, right: labels.moveRight }}
               />
             ))}
           </SortableContext>
         </Zone>
 
-        <Zone id="answer" title={labels.answer} emptyHint={value.answer.length === 0 ? labels.answerEmpty : undefined}>
+        <Zone
+          id="answer"
+          title={labels.answer}
+          emptyHint={value.answer.length === 0 ? labels.answerEmpty : undefined}
+        >
           <SortableContext items={value.answer.map((p) => p.id)} strategy={rectSortingStrategy}>
             {value.answer.map((piece) => (
               <SortablePiece
@@ -288,17 +284,17 @@ export function Board({
                 disabled={disabled}
                 state={answerState}
                 onActivate={() => activate(piece.id)}
-                onNudge={(dir) => nudge(piece.id, dir)}
-                nudgeLabels={{ left: labels.moveLeft, right: labels.moveRight }}
               />
             ))}
           </SortableContext>
         </Zone>
       </div>
 
-      <DragOverlay>
+      <DragOverlay dropAnimation={null}>
         {activePiece ? (
-          <PieceContent piece={activePiece} settings={settings} reveal={reveal} />
+          <div className="cursor-grabbing">
+            <PieceContent piece={activePiece} settings={settings} reveal={reveal} />
+          </div>
         ) : null}
       </DragOverlay>
     </DndContext>

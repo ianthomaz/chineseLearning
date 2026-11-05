@@ -56,6 +56,17 @@ produzir. Esse limite vive num só sítio, `maxLevelForPool()`.
 acrescenta linha de ajuda a repetir o que o controlo já diz. Ver
 [`CLAUDE.md`](../CLAUDE.md) § Copy.
 
+### Tabuleiro e dicas (nov 2026)
+
+- **Arrastar:** no site, peças movem entre banco e resposta (e reordenam) por
+  drag; toque/clique ainda troca de zona. Sensores mouse + touch.
+- **Dicas entre frases:** se o jogador esconde pinyin/tradução no meio da
+  rodada, a frase seguinte mantém essa escolha (não volta ao padrão do preset).
+  Nova rodada no setup reinicia.
+- **App:** mesma regra de dicas; barra de ajuda com os mesmos SF Symbols da
+  home (`textformat.abc`, `translate`, `speaker.wave.2.fill`); setas para
+  voltar/avançar frase (o auto-avanço de ~6s continua após acerto).
+
 ### Por fazer — palavras que nunca se partem
 
 Níveis 1–3 mantêm as palavras inteiras, por isso 跑步 chega como uma peça só nos

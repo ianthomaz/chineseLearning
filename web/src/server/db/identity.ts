@@ -573,6 +573,7 @@ function deleteUserRows(userId: string): void {
   db.prepare(`DELETE FROM progress WHERE user_id = ?`).run(userId);
   db.prepare(`DELETE FROM game_rounds WHERE user_id = ?`).run(userId);
   db.prepare(`DELETE FROM accounts WHERE user_id = ?`).run(userId);
+  db.prepare(`DELETE FROM alipay_open_ids WHERE user_id = ?`).run(userId);
   db.prepare(`DELETE FROM app_sessions WHERE user_id = ?`).run(userId);
   db.prepare(`DELETE FROM app_auth_exchanges WHERE user_id = ?`).run(userId);
   db.prepare(`DELETE FROM email_tokens WHERE user_id = ?`).run(userId);

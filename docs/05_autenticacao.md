@@ -111,7 +111,15 @@ Auth.js tem provider WeChat, mas o bloqueio é **administrativo**:
 ## Alipay (site)
 
 Aplicação web: **LearnChineseToday**, APPID `2021007115619132`, já launched.
-Aplicação móvel (iOS, bundle `today.learnchinese.app`): APPID `2021007115685095`, também launched (nov 2026). Código do login no app: AlipaySDK nativo (`auth_V2`) — o servidor assina o `infoStr` (`GET /api/app/alipay/auth-info`, PID `2088…` em `mobile_app.pid`) e o app envia o `auth_code` em `POST /api/app/auth/alipay` com as chaves do APPID móvel. **Ainda não funciona no aparelho** (nov 2026) — código ligado, falta fechar e validar no iPhone com o app Alipay.
+Aplicação móvel (iOS + Android, bundle/package `today.learnchinese.app`):
+APPID `2021007115685095`, launched; produto **APP支付宝登录** / app_API online
+(nov 2026). Login nativo: AlipaySDK `auth_V2` — o servidor assina o `infoStr`
+(`GET /api/app/alipay/auth-info`, PID `2088…` em `mobile_app.pid`) e o app envia
+o `auth_code` em `POST /api/app/auth/alipay` com as chaves do APPID móvel.
+Em **5 nov 2026** a rota em `https://learnchinese.today` passou a responder
+**200 JSON** (antes 404). Round-trip no aparelho: iOS SDK `auth_V2` devolveu
+`resultStatus=9000` / `result_code=200` (capture no Documents); login no app
+confirmado pelo dono no iPhone e no Android no mesmo dia.
 
 Chaves, fora do git: `_credentials/alipay/learnchinese.json` — **raiz** = app web
 (LearnChineseToday); bloco `mobile_app` = iOS (APPID móvel + PID + chaves).
@@ -138,24 +146,19 @@ perfil **não verificado** (`emailVerified=false`), sem merge automático e sem
 entrar no e-mail da sessão usado pelos gates admin/curador. Nasce O4
 (`oauth_signup`) tanto no site quanto no app.
 
-### Diagnóstico confirmado em 5 nov 2026
+### Diagnóstico — 5 nov 2026
 
-- O app local aponta para `https://learnchinese.today`; nesse servidor,
-  `GET /api/app/alipay/auth-info?targetId=diagnostic20261105` respondeu **404,
-  corpo não JSON**. Isso bloqueia o fluxo antes do SDK. `POST /api/app/auth/alipay`
-  com `{}` respondeu **400**, `{"ok":false,"error":"invalid_token"}`; isso só
-  confirma que essa segunda rota existe, não que as credenciais remotas funcionam.
-- Após `node scripts/sync-env-from-credentials.mjs`, as quatro variáveis móveis
-  estão presentes em `web/.env.local` e `web/deploy/server.env`. APPID móvel
-  correto, PID no formato de 16 dígitos `2088…`; chaves RSA de 2048 bits legíveis.
-  O sync não estava pulando o bloco móvel. Isso não comprova o env remoto nem
-  a correspondência das chaves com o console Alipay.
-- Scheme, `LSApplicationQueriesSchemes`, callback SwiftUI e SDK estão ligados;
-  build iOS sem assinatura passou. Nenhum login real no iPhone foi executado.
-- No Next local, a mesma rota respondeu **200 JSON**, com APPID móvel correto
-  e assinatura RSA2 verificada. HTML/RSC do build servidor: **1.515.568 bytes**
-  antes e depois do patch.
-- Falhas na troca móvel agora registram motivo/subcódigo em `[alipay]` e devolvem
+- **Desbloqueio:** `GET https://learnchinese.today/api/app/alipay/auth-info?targetId=…`
+  responde **200** com `infoStr` + `scheme=today.learnchinese.app` (APPID móvel
+  + PID). O 404 anterior era o bloqueio antes do SDK; com app_API liberada no
+  console Alipay, o servidor publicado assina o login.
+- `POST /api/app/auth/alipay` com `{}` continua **400** `invalid_token` (esperado
+  sem `authCode`). Troca real do `auth_code` ainda precisa do aparelho + app Alipay.
+- Variáveis móveis: sync local OK (`ALIPAY_MOBILE_*` em `.env.local` /
+  `deploy/server.env`). Produto APP login online no console.
+- iOS: scheme, queries, SDK `auth_V2` ligados. Android: `AuthTask.authV2` + aba
+  Conta no APK debug (`LIBRARY_BASE_URL` → prod). Round-trip físico pendente.
+- Falhas na troca móvel registram motivo/subcódigo em `[alipay]` e devolvem
   `alipay_failed` (502 para transporte, 401 para resposta recusada). Logs não
   incluem código de autorização, tokens, chaves ou identificadores pessoais.
 
@@ -172,6 +175,12 @@ resposta (console Alipay / grupo de apps), cai no `open_id` e os dois APPIDs
 continuam contas separadas. Conflito union vs open já ligados a *users*
 diferentes: mantém o user do `union_id` e **não** mescla automaticamente.
 Ainda depende de a Alipay devolver `union_id` nos dois APPIDs (mesmo 主体).
+
+**Prod 5 nov 2026:** wipe de todos os `users` / `accounts` / sessões app
+(backup `phrase-game.sqlite.bak-wipe-*` no servidor); tabela `alipay_open_ids`
+criada; código `resolveAlipayUser` deployado com restart. Reteste limpo: web +
+iOS + Android com a mesma carteira → um `users.id` se a gateway mandar
+`union_id`.
 
 No console da Alipay a URL de retorno tem de ser exactamente:
 
