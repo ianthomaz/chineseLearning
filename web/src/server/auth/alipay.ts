@@ -1,12 +1,12 @@
 /**
- * Alipay website login (LearnChineseToday).
+ * Alipay login (website APPID + mobile APPID).
  *
- * openauth → `auth_code` → `/api/auth/alipay/callback` → RSA2
- * `alipay.system.oauth.token` (open_id) → optional `alipay.user.info.share`
- * (nick / avatar / email when Alipay returns one). Account id is always
- * `open_id`. Access token is used once for share, never stored.
+ * openauth / SDK → `auth_code` → RSA2 `alipay.system.oauth.token` →
+ * optional `alipay.user.info.share` (nick/avatar only). Identity anchor is
+ * `union_id` when Alipay returns it; `open_id` is secondary (per APPID) and
+ * stored in `alipay_open_ids`. Access token is used once for share, never stored.
  *
- * Keys: `_credentials/alipay/learnchinese.json` website root via sync-env.
+ * Keys: `_credentials/alipay/learnchinese.json` via sync-env.
  */
 import {
   createPrivateKey,
@@ -45,12 +45,19 @@ export type AlipayConfig = {
 };
 
 export type AlipayTokenResult =
-  | { ok: true; openId: string; accessToken: string }
-  | { ok: false; reason: "bad_body" | "bad_sign" | "alipay_error" | "missing_open_id" | "http"; detail?: string };
+  | { ok: true; openId: string; unionId: string | null; accessToken: string }
+  | {
+      ok: false;
+      reason: "bad_body" | "bad_sign" | "alipay_error" | "missing_open_id" | "http";
+      detail?: string;
+    };
 
-/** Profile fields we keep from `alipay.user.info.share` (website docs omit email; accept it if present). */
+/** Profile after token (+ optional share). `unionId` is the cross-APPID account key. */
 export type AlipayProfile = {
+  appId: string;
   openId: string;
+  /** Same person across website + mobile APPIDs when Alipay returns it. */
+  unionId: string | null;
   email: string | null;
   name: string | null;
   image: string | null;
@@ -168,6 +175,7 @@ export function readTokenResponse(raw: string, publicKey: KeyObject): AlipayToke
   if (!verifyAlipay(tokenNode, signature, publicKey)) return { ok: false, reason: "bad_sign" };
 
   let openId = "";
+  let unionId: string | null = null;
   let accessToken = "";
   let code = "";
   try {
@@ -179,13 +187,14 @@ export function readTokenResponse(raw: string, publicKey: KeyObject): AlipayToke
       union_id?: unknown;
     };
     openId = pickStr(parsed.open_id) ?? "";
+    unionId = pickStr(parsed.union_id);
     accessToken = pickStr(parsed.access_token) ?? "";
     if (typeof parsed.code === "string") code = parsed.code;
     // Record availability only; never log identifiers, auth codes or tokens.
     console.info("[alipay] token identity fields", {
-      open_id: Boolean(pickStr(parsed.open_id)),
+      open_id: Boolean(openId),
       user_id: Boolean(pickStr(parsed.user_id)),
-      union_id: Boolean(pickStr(parsed.union_id)),
+      union_id: Boolean(unionId),
     });
   } catch {
     return { ok: false, reason: "bad_body" };
@@ -196,18 +205,26 @@ export function readTokenResponse(raw: string, publicKey: KeyObject): AlipayToke
   if (!openId) {
     return { ok: false, reason: "missing_open_id", detail: code && code !== "10000" ? code : undefined };
   }
-  return { ok: true, openId, accessToken };
+  return { ok: true, openId, unionId, accessToken };
 }
+
+export type AlipayShareFields = {
+  openId: string;
+  email: string | null;
+  name: string | null;
+  image: string | null;
+};
 
 /**
  * Parse `alipay.user.info.share`. Email is not in the public website field list,
  * but if Alipay sends `email` / `email_address` we keep it as unverified profile data.
+ * Does not include union_id — that comes only from oauth.token.
  */
 export function readUserShareResponse(
   raw: string,
   publicKey: KeyObject,
   openId: string,
-): AlipayProfile | null {
+): AlipayShareFields | null {
   const signature = responseSign(raw);
   if (!signature) return null;
 
@@ -449,12 +466,12 @@ export async function exchangeAuthCode(authCode: string, config: AlipayConfig): 
   return readTokenResponse(posted.raw, config.alipayPublicKey);
 }
 
-/** Best-effort profile. Failure leaves open_id-only login intact. */
+/** Best-effort nick/avatar. Does not carry union_id (token response does). */
 export async function fetchUserShare(
   accessToken: string,
   openId: string,
   config: AlipayConfig,
-): Promise<AlipayProfile | null> {
+): Promise<AlipayShareFields | null> {
   if (!accessToken) return { openId, email: null, name: null, image: null };
   const posted = await postGateway(config, {
     app_id: config.appId,
@@ -488,14 +505,27 @@ export async function completeAlipayLogin(
 ): Promise<AlipayLoginResult> {
   const exchanged = await exchangeAuthCode(authCode, config);
   if (!exchanged.ok) return exchanged;
-  const profile =
+  if (!exchanged.unionId) {
+    console.warn("[alipay] token has no union_id — falling back to open_id for this APPID only");
+  }
+  const share =
     (await fetchUserShare(exchanged.accessToken, exchanged.openId, config)) ?? {
       openId: exchanged.openId,
       email: null,
       name: null,
       image: null,
     };
-  return { ok: true, profile };
+  return {
+    ok: true,
+    profile: {
+      appId: config.appId,
+      openId: exchanged.openId,
+      unionId: exchanged.unionId,
+      email: share.email,
+      name: share.name,
+      image: share.image,
+    },
+  };
 }
 
 export function newOAuthState(): string {

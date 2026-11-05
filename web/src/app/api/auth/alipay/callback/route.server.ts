@@ -19,7 +19,7 @@ import {
 import {
   createAppAuthExchange,
   getIdentityUser,
-  resolveOAuthUser,
+  resolveAlipayUser,
 } from "@/server/db/identity";
 import {
   AUTH_SESSION_MAX_AGE,
@@ -77,11 +77,11 @@ export async function GET(req: NextRequest) {
   let userId: string;
   try {
     const { profile } = completed;
-    userId = resolveOAuthUser({
-      provider: "alipay",
-      providerAccountId: profile.openId,
+    userId = resolveAlipayUser({
+      appId: profile.appId,
+      openId: profile.openId,
+      unionId: profile.unionId,
       email: profile.email,
-      emailVerified: false,
       name: profile.name,
       image: profile.image,
     });

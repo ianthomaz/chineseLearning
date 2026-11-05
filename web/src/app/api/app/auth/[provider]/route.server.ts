@@ -17,6 +17,7 @@ import { verifyGoogleIdToken } from "@/server/auth/verify-google-id-token";
 import {
   consumeAppAuthExchange,
   createAppSession,
+  resolveAlipayUser,
   resolveOAuthUser,
 } from "@/server/db/identity";
 import { fail, limited, readJson } from "@/server/http";
@@ -74,11 +75,11 @@ async function signIn(provider: string, body: Record<string, unknown>): Promise<
           return fail("alipay_failed", completed.reason === "http" ? 502 : 401);
         }
         const { profile } = completed;
-        return resolveOAuthUser({
-          provider: "alipay",
-          providerAccountId: profile.openId,
+        return resolveAlipayUser({
+          appId: profile.appId,
+          openId: profile.openId,
+          unionId: profile.unionId,
           email: profile.email,
-          emailVerified: false,
           name: profile.name,
           image: profile.image,
         });

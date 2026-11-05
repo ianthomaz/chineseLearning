@@ -76,7 +76,7 @@ CREATE INDEX IF NOT EXISTS idx_rounds_user ON game_rounds(user_id, created_at);
 
 -- Identity (docs/05_autenticacao.md § Contas). A user can sign in through
 -- several providers; each (provider, provider_account_id) points at one user.
--- provider: 'google' | 'apple' | 'alipay' (open_id) | 'email' (normalised email).
+-- provider: 'google' | 'apple' | 'alipay' (union_id, or legacy open_id) | 'email'.
 CREATE TABLE IF NOT EXISTS accounts (
   provider            TEXT NOT NULL,
   provider_account_id TEXT NOT NULL,
@@ -86,6 +86,20 @@ CREATE TABLE IF NOT EXISTS accounts (
   PRIMARY KEY (provider, provider_account_id)
 );
 CREATE INDEX IF NOT EXISTS idx_accounts_user ON accounts(user_id);
+
+-- Alipay: open_id is per APPID; union_id is the shared person key.
+-- accounts.provider_account_id for alipay is the union_id when known.
+CREATE TABLE IF NOT EXISTS alipay_open_ids (
+  app_id     TEXT NOT NULL,
+  open_id    TEXT NOT NULL,
+  union_id   TEXT,
+  user_id    TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT (datetime('now')),
+  updated_at TEXT NOT NULL DEFAULT (datetime('now')),
+  PRIMARY KEY (app_id, open_id)
+);
+CREATE INDEX IF NOT EXISTS idx_alipay_open_ids_union ON alipay_open_ids(union_id);
+CREATE INDEX IF NOT EXISTS idx_alipay_open_ids_user ON alipay_open_ids(user_id);
 
 -- iOS app sessions: opaque bearer token, only its SHA-256 is stored.
 CREATE TABLE IF NOT EXISTS app_sessions (

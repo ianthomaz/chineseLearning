@@ -31,6 +31,7 @@ function clear(getDb) {
   db.exec(`
     DELETE FROM app_sessions;
     DELETE FROM email_tokens;
+    DELETE FROM alipay_open_ids;
     DELETE FROM accounts;
     DELETE FROM clearance_changes;
     DELETE FROM progress;
@@ -70,6 +71,7 @@ async function run() {
 
   const {
     resolveOAuthUser,
+    resolveAlipayUser,
     registerEmailAccount,
     confirmEmail,
     userForPasswordReset,
@@ -195,15 +197,17 @@ async function run() {
         email: "ali@example.com",
         emailVerified: true,
       });
-      const alipayId = resolveOAuthUser({
-        provider: "alipay",
-        providerAccountId: "open-id-1",
+      const alipayId = resolveAlipayUser({
+        appId: "2021007115619132",
+        openId: "open-id-1",
+        unionId: null,
       });
       assert.notEqual(alipayId, googleId);
       assert.equal(countUsers(getDb), 2);
-      const again = resolveOAuthUser({
-        provider: "alipay",
-        providerAccountId: "open-id-1",
+      const again = resolveAlipayUser({
+        appId: "2021007115619132",
+        openId: "open-id-1",
+        unionId: null,
       });
       assert.equal(again, alipayId);
       assert.equal(countUsers(getDb), 2);
@@ -211,6 +215,30 @@ async function run() {
       assert.equal(user?.clearance, "O4");
       assert.equal(user?.email, null);
       assert.deepEqual(providersOf(alipayId), ["alipay"]);
+    }),
+
+    test("Alipay web + mobile open_ids share one user via union_id", async () => {
+      clear(getDb);
+      const webId = resolveAlipayUser({
+        appId: "2021007115619132",
+        openId: "open-web",
+        unionId: "union-shared",
+        name: "Web",
+      });
+      const mobileId = resolveAlipayUser({
+        appId: "2021007115685095",
+        openId: "open-mobile",
+        unionId: "union-shared",
+        name: "Mobile",
+      });
+      assert.equal(mobileId, webId);
+      assert.equal(countUsers(getDb), 1);
+      const maps = getDb()
+        .prepare(`SELECT app_id AS appId, open_id AS openId FROM alipay_open_ids WHERE user_id = ? ORDER BY app_id`)
+        .all(webId);
+      assert.equal(maps.length, 2);
+      assert.equal(maps[0].openId, "open-web");
+      assert.equal(maps[1].openId, "open-mobile");
     }),
 
     test("Alipay email stays unverified and cannot merge onto a Google user", async () => {
@@ -222,11 +250,11 @@ async function run() {
         emailVerified: true,
         name: "G",
       });
-      const alipayId = resolveOAuthUser({
-        provider: "alipay",
-        providerAccountId: "open-id-mail",
+      const alipayId = resolveAlipayUser({
+        appId: "2021007115619132",
+        openId: "open-id-mail",
+        unionId: "union-mail",
         email: "same@example.com",
-        emailVerified: false,
         name: "Ali Nick",
       });
       assert.notEqual(alipayId, googleId);

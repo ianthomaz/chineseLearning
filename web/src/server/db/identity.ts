@@ -2,9 +2,9 @@
  * Identity (server-only): one user, many ways in. See docs/05_autenticacao.md § Contas.
  *
  * - `accounts` maps (provider, provider_account_id) → `users.id`.
- *   Providers: 'google', 'apple', 'alipay' (id = open_id), 'email'
- *   (id = normalised email). Alipay joins by open_id; its email is unverified
- *   profile data and must not authorize a merge.
+ *   Providers: 'google', 'apple', 'alipay' (id = union_id when known, else
+ *   legacy open_id), 'email' (normalised email). Alipay email is unverified
+ *   and must not authorize a merge. Per-APPID open_ids live in `alipay_open_ids`.
  * - `users.clearance` is a NOIA UC (`server/auth/noia.ts`): O1 while an email
  *   account waits for its confirmation link, O4 once released. Every change is
  *   audited in `clearance_changes`.
@@ -54,7 +54,9 @@ export function getIdentityUser(userId: string): IdentityUser | null {
 
 export function providersOf(userId: string): Provider[] {
   const rows = getDb()
-    .prepare(`SELECT provider FROM accounts WHERE user_id = ? ORDER BY created_at`)
+    .prepare(
+      `SELECT DISTINCT provider FROM accounts WHERE user_id = ? ORDER BY provider`,
+    )
     .all(userId) as { provider: Provider }[];
   return rows.map((r) => r.provider);
 }
@@ -179,6 +181,107 @@ export function resolveOAuthUser(identity: OAuthIdentity): string {
       ).run(email, identity.name ?? null, identity.image ?? null, identity.emailVerified ? 1 : 0, userId);
     }
     linkAccount(identity.provider, identity.providerAccountId, userId, email);
+    release(userId, "oauth_signup");
+    db.exec("COMMIT");
+  } catch (err) {
+    db.exec("ROLLBACK");
+    throw err;
+  }
+  return userId;
+}
+
+export type AlipayIdentity = {
+  appId: string;
+  openId: string;
+  /** Cross-APPID key from `alipay.system.oauth.token`. Prefer this over open_id. */
+  unionId: string | null;
+  email?: string | null;
+  name?: string | null;
+  image?: string | null;
+};
+
+function upsertAlipayOpenId(appId: string, openId: string, unionId: string | null, userId: string): void {
+  getDb()
+    .prepare(
+      `INSERT INTO alipay_open_ids (app_id, open_id, union_id, user_id)
+       VALUES (?, ?, ?, ?)
+       ON CONFLICT(app_id, open_id) DO UPDATE SET
+         union_id = COALESCE(excluded.union_id, alipay_open_ids.union_id),
+         user_id = excluded.user_id,
+         updated_at = datetime('now')`,
+    )
+    .run(appId, openId, unionId, userId);
+}
+
+function userIdForAlipayOpenId(appId: string, openId: string): string | null {
+  const row = getDb()
+    .prepare(`SELECT user_id AS userId FROM alipay_open_ids WHERE app_id = ? AND open_id = ?`)
+    .get(appId, openId) as { userId: string } | undefined;
+  return row?.userId ?? null;
+}
+
+/**
+ * Alipay login: account key is `union_id` when present; `open_id` is mapped per APPID
+ * in `alipay_open_ids`. Legacy rows that used open_id as `accounts.provider_account_id`
+ * are absorbed when that open_id signs in again with a union_id.
+ * Never merges two different existing users automatically.
+ */
+export function resolveAlipayUser(identity: AlipayIdentity): string {
+  const db = getDb();
+  const email = identity.email ? normalizeEmail(identity.email) : null;
+  const openId = identity.openId.trim();
+  const unionId = identity.unionId?.trim() || null;
+  const appId = identity.appId.trim();
+  if (!openId || !appId) throw new Error("alipay_identity_incomplete");
+
+  // Anchor for accounts.provider_account_id: union_id, else legacy open_id.
+  const accountKey = unionId ?? openId;
+
+  let userId =
+    (unionId ? userIdForAccount("alipay", unionId) : null) ??
+    userIdForAlipayOpenId(appId, openId) ??
+    userIdForAccount("alipay", openId);
+
+  // Do not auto-merge: if union_id and legacy open_id point at different users, keep union.
+  if (unionId) {
+    const byUnion = userIdForAccount("alipay", unionId);
+    const byOpen = userIdForAccount("alipay", openId) ?? userIdForAlipayOpenId(appId, openId);
+    if (byUnion && byOpen && byUnion !== byOpen) {
+      console.warn("[alipay] union_id and open_id map to different users — keeping union_id user");
+      userId = byUnion;
+    } else {
+      userId = byUnion ?? byOpen ?? userId;
+    }
+  }
+
+  db.exec("BEGIN");
+  try {
+    if (!userId) {
+      userId = newUserId();
+      db.prepare(
+        `INSERT INTO users (id, email, name, image, clearance, email_verified_at)
+         VALUES (?, ?, ?, ?, ?, NULL)`,
+      ).run(userId, email, identity.name ?? null, identity.image ?? null, CLEARANCE.pending);
+    } else {
+      db.prepare(
+        `UPDATE users SET
+           email = COALESCE(email, ?),
+           name = COALESCE(?, name),
+           image = COALESCE(?, image),
+           updated_at = datetime('now')
+         WHERE id = ?`,
+      ).run(email, identity.name ?? null, identity.image ?? null, userId);
+    }
+
+    linkAccount("alipay", accountKey, userId, email);
+    // Keep legacy open_id row pointing at the same user when we graduate to union_id.
+    if (unionId && openId !== unionId) {
+      const legacyOwner = userIdForAccount("alipay", openId);
+      if (!legacyOwner || legacyOwner === userId) {
+        linkAccount("alipay", openId, userId, email);
+      }
+    }
+    upsertAlipayOpenId(appId, openId, unionId, userId);
     release(userId, "oauth_signup");
     db.exec("COMMIT");
   } catch (err) {

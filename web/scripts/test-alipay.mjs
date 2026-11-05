@@ -61,16 +61,30 @@ await test("RSA2 sign verifies and rejects a changed byte", () => {
   assert.equal(alipay.verifyAlipay(`${content}x`, signature, publicKey), false);
 });
 
-await test("token body yields open_id and access_token only when the signature matches", () => {
-  const node = JSON.stringify({ open_id: "open-id-1", access_token: "tok-once" });
+await test("token body yields open_id, union_id and access_token only when the signature matches", () => {
+  const node = JSON.stringify({
+    open_id: "open-id-1",
+    union_id: "union-1",
+    access_token: "tok-once",
+  });
   const raw = `{"alipay_system_oauth_token_response":${node},"sign":"${signNode(node)}"}`;
   const ok = alipay.readTokenResponse(raw, publicKey);
   assert.equal(ok.ok, true);
   assert.equal(ok.openId, "open-id-1");
+  assert.equal(ok.unionId, "union-1");
   assert.equal(ok.accessToken, "tok-once");
 
   const tampered = raw.replace("open-id-1", "open-id-2");
   assert.equal(alipay.readTokenResponse(tampered, publicKey).reason, "bad_sign");
+});
+
+await test("token body without union_id still logs in via open_id", () => {
+  const node = JSON.stringify({ open_id: "open-only", access_token: "tok" });
+  const raw = `{"alipay_system_oauth_token_response":${node},"sign":"${signNode(node)}"}`;
+  const ok = alipay.readTokenResponse(raw, publicKey);
+  assert.equal(ok.ok, true);
+  assert.equal(ok.openId, "open-only");
+  assert.equal(ok.unionId, null);
 });
 
 await test("user share keeps email when Alipay sends one", () => {

@@ -131,9 +131,9 @@ estiver preenchido (`2088…`), também o bloco móvel — escreve o env (gitign
 | `ALIPAY_MOBILE_APPLICATION_PRIVATE_KEY` | Assina `infoStr` / troca do `auth_code` no app |
 | `ALIPAY_MOBILE_PUBLIC_KEY` | Confere a resposta (APPID móvel) |
 
-O botão abre `https://openauth.alipay.com/oauth2/publicAppAuthorize.htm` com `scope=auth_user`. A pessoa volta para `/api/auth/alipay/callback` com um `auth_code` (vale uma vez). O servidor troca o código (`open_id`), chama `alipay.user.info.share` (nick/avatar; e-mail se a Alipay enviar) e grava a sessão Auth.js. O access token não fica guardado.
+O botão abre `https://openauth.alipay.com/oauth2/publicAppAuthorize.htm` com `scope=auth_user`. A pessoa volta para `/api/auth/alipay/callback` com um `auth_code` (vale uma vez). O servidor chama **`alipay.system.oauth.token`** (não `user.info.share` para identidade), lê `union_id` + `open_id`, e opcionalmente `alipay.user.info.share` só para nick/avatar. O access token não fica guardado.
 
-Conta: `accounts.provider = alipay`, id = `open_id`. E-mail do share é dado de
+Conta: `accounts.provider = alipay`, id = **`union_id`** quando a Alipay devolve; senão fallback legado ao `open_id`. Mapeamento por APPID em `alipay_open_ids` (`app_id`, `open_id`, `union_id`, `user_id`). E-mail do share é dado de
 perfil **não verificado** (`emailVerified=false`), sem merge automático e sem
 entrar no e-mail da sessão usado pelos gates admin/curador. Nasce O4
 (`oauth_signup`) tanto no site quanto no app.
@@ -163,21 +163,15 @@ O próximo passo depende do dono: disponibilizar a rota de servidor ou testar
 contra o Next local acessível pelo iPhone. **Nenhum deploy foi realizado.**
 Checklist do aparelho: `appMobile/docs/08_login.md` § Validação física.
 
-### Identidade entre os dois APPIDs — proposta, sem migração aplicada
+### Identidade entre os dois APPIDs — `union_id` (nov 2026)
 
-O `open_id` é por APPID; hoje site e app podem criar usuários separados. A
-troca validada registra apenas a presença de `open_id`, `user_id` e `union_id`.
-Ainda falta observar respostas reais dos dois apps e comprovar a abrangência
-do identificador comum; não confiar em `user_id` enviado pelo cliente/SDK.
-
-Se um identificador comum for comprovado nas respostas assinadas, preservar os
-`open_id` existentes como aliases em `accounts` e associar o identificador comum
-ao mesmo `users.id`, em transação. Não basta trocar a PK pelo primeiro campo
-disponível: contas já separadas precisam de revisão de conflitos e migração de
-progresso/sessões, com backup. Não mesclar automaticamente dois usuários existentes.
-Sem identificador comum comprovado, implementar "Conectar outra conta" com
-sessão ativa e nova autorização, recusando identidades já ligadas a outro usuário.
-Esse fluxo ainda não está implementado.
+Protocolo: âncora = `union_id` de `alipay.system.oauth.token`; `open_id` é
+secundário por APPID (`alipay_open_ids`). Site e app com o mesmo `union_id`
+resolvem para o mesmo `users.id` (`resolveAlipayUser`). Sem `union_id` na
+resposta (console Alipay / grupo de apps), cai no `open_id` e os dois APPIDs
+continuam contas separadas. Conflito union vs open já ligados a *users*
+diferentes: mantém o user do `union_id` e **não** mescla automaticamente.
+Ainda depende de a Alipay devolver `union_id` nos dois APPIDs (mesmo 主体).
 
 No console da Alipay a URL de retorno tem de ser exactamente:
 
@@ -251,7 +245,8 @@ mesmo formato do noia.dev).
 
 | Tabela | Papel |
 |---|---|
-| `accounts` | (provider, provider_account_id) → user_id. Providers: `google`, `apple`, `alipay` (id = `open_id`), `email` (id = e-mail normalizado) |
+| `accounts` | (provider, provider_account_id) → user_id. Providers: `google`, `apple`, `alipay` (id = `union_id` ou legado `open_id`), `email` |
+| `alipay_open_ids` | (app_id, open_id) → user_id + union_id opcional — mapeamento por APPID |
 | `app_sessions` | Token Bearer do app iOS — só o SHA-256; 180 dias, renova com o uso |
 | `email_tokens` | Links por e-mail: `verify` (72 h, pode reabrir) · `reset` (2 h, uso único) |
 | `clearance_changes` | Auditoria NOIA |
