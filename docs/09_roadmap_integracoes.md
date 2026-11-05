@@ -36,7 +36,7 @@ Cada fase depende da anterior. Dentro da fase, a ordem é a da tabela.
 
 | # | Trabalho | Doc |
 |---|---|---|
-| 2.1 | Guardar Errei/Acertei dos hanzi e priorizar a rotação | `appApple/docs/07_plano_melhorias.md` § 3 |
+| 2.1 | Guardar Errei/Acertei dos hanzi e priorizar a rotação | `appMobile/docs/07_plano_melhorias.md` § 3 |
 | 2.2 | Histórico de rodadas no app + "rever erradas" | idem § 2 |
 | 2.3 | Frases no pack da biblioteca (atualizar sem nova versão do app) | idem § 2.6 |
 | 2.4 | Escrita offline (dados de traço embutidos) + escrever com o dedo | idem § 3 |
@@ -46,7 +46,7 @@ Cada fase depende da anterior. Dentro da fase, a ordem é a da tabela.
 
 TestFlight externo → App Store (fora da China continental no início):
 rótulos de privacidade, capturas em en/pt/es, exclusão de conta já pronta.
-Passo a passo: `appApple/docs/09_app_store_testflight.md`.
+Passo a passo: `appMobile/docs/09_app_store_testflight.md`.
 
 ### Fase 4 — catálogo de 老师 (aulas particulares online)
 
@@ -143,7 +143,7 @@ cd web && npm run build:app-library   # → data/app-library/
 
 Lexico partilhado: [07_conteudo_dados.md](07_conteudo_dados.md) · Classificação LLM: [04_llm_conteudo_rag.md](04_llm_conteudo_rag.md)
 
-Espelho app: `appApple/docs/03_contratoAtualizacaoAPP.md`
+Espelho app: `appMobile/docs/03_contratoAtualizacaoAPP.md`
 
 **Fora do pack:** KTV (`/ktv`) — dados em `web/public/ktv/`.
 
@@ -151,10 +151,10 @@ Espelho app: `appApple/docs/03_contratoAtualizacaoAPP.md`
 
 ## Site + app como um produto só (nov 2026)
 
-App iOS **LearnChinese Today** (`appApple/`, bundle `today.learnchinese.app`):
+App iOS **LearnChinese Today** (`appMobile/`, bundle `today.learnchinese.app`):
 Hanzi Memorize + **Jogo de Frases offline** com as mesmas regras e pontuação do
 site (portado de `web/src/lib/phrase-game/`). Estado, instalação em dev e
-pendências do app: `appApple/docs/06_instalar_e_estado.md`.
+pendências do app: `appMobile/docs/06_instalar_e_estado.md`.
 
 Para partilhar pontuação: identidade e token do app em
 [05](05_autenticacao.md) § Roadmap; dados em [07](07_conteudo_dados.md) §

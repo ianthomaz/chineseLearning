@@ -6,10 +6,10 @@ Módulos na raiz:
 |-------|--------|
 | `vocabulario/` | Léxico, frases, bootstrap editorial, RAG sources |
 | `web/` | Site Next.js — learnchinese.today |
-| `appApple/` | App iOS (submodule `APP_learnChineseToday`) — feature Hanzi Memorize |
+| `appMobile/` | Apps iOS + Android (submodule `APP_learnChineseToday`) |
 | `ianthomaz/` | Avulsas pessoais — fora do produto |
 
-Documentação: [`docs/01_readme.md`](docs/01_readme.md). Contratos LLM: [`docs/llm/`](docs/llm/). Contrato pack app: [`appApple/docs/03_contratoAtualizacaoAPP.md`](appApple/docs/03_contratoAtualizacaoAPP.md).
+Documentação: [`docs/01_readme.md`](docs/01_readme.md). Contratos LLM: [`docs/llm/`](docs/llm/). Contrato pack app: [`appMobile/docs/03_contratoAtualizacaoAPP.md`](appMobile/docs/03_contratoAtualizacaoAPP.md).
 
 ## Decisões de produto (não voltar a propor)
 
@@ -32,7 +32,7 @@ Site + app (nov 2026): contas (Google, Apple, e-mail+senha, clearance NOIA) e
 token do app — [`docs/05_autenticacao.md`](docs/05_autenticacao.md) § Contas, com
 as perguntas sim/não para o dono; ids estáveis do
 quiz, `round_id` único e backup — [`docs/07_conteudo_dados.md`](docs/07_conteudo_dados.md)
-§ Pendências. App: `appApple/docs/06_instalar_e_estado.md`.
+§ Pendências. App: `appMobile/docs/06_instalar_e_estado.md`.
 
 Curadoria por fazer: ordens alternativas aceites no jogo, 557 frases —
 [`docs/06_jogo_frases.md`](docs/06_jogo_frases.md) § Ordens alternativas.

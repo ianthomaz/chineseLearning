@@ -3,8 +3,7 @@
  *
  * Checks the state cookie, exchanges the one-time `auth_code`, optionally
  * reads `alipay.user.info.share`, and writes the Auth.js session cookie.
- * When Alipay returns an email, `resolveOAuthUser` merges with the same
- * verified address (Google / released email account). Failure goes back with
+ * Alipay email is unverified and never authorizes an account merge. Failure goes back with
  * `authError=alipay` and no Alipay detail in the URL.
  */
 import { NextResponse, type NextRequest } from "next/server";
@@ -82,7 +81,7 @@ export async function GET(req: NextRequest) {
       provider: "alipay",
       providerAccountId: profile.openId,
       email: profile.email,
-      emailVerified: Boolean(profile.email),
+      emailVerified: false,
       name: profile.name,
       image: profile.image,
     });
@@ -109,7 +108,8 @@ export async function GET(req: NextRequest) {
     const user = getIdentityUser(userId);
     token = await authSessionToken(userId, secure, {
       name: user?.nick ?? user?.name ?? null,
-      email: user?.email ?? null,
+      // Site admin/curator gates use session email; never grant them from an unverified claim.
+      email: user?.emailVerifiedAt ? user.email : null,
       image: user?.image ?? null,
     });
   } catch (err) {

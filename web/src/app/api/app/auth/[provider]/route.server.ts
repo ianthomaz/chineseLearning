@@ -69,13 +69,16 @@ async function signIn(provider: string, body: Record<string, unknown>): Promise<
         const mobile = alipayMobileConfig();
         if (!mobile) return fail("alipay_mobile_unconfigured", 503);
         const completed = await completeMobileAlipayLogin(authCode, mobile);
-        if (!completed.ok) return fail("invalid_token", 401);
+        if (!completed.ok) {
+          console.warn("[alipay] mobile token exchange rejected", completed.reason, completed.detail ?? "");
+          return fail("alipay_failed", completed.reason === "http" ? 502 : 401);
+        }
         const { profile } = completed;
         return resolveOAuthUser({
           provider: "alipay",
           providerAccountId: profile.openId,
           email: profile.email,
-          emailVerified: Boolean(profile.email),
+          emailVerified: false,
           name: profile.name,
           image: profile.image,
         });

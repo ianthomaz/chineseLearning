@@ -104,4 +104,4 @@ Código: `web/src/server/lexico/`, `web/scripts/classify-lexico-pending.mjs`.
 
 Pack app: [09_roadmap_integracoes.md](09_roadmap_integracoes.md) § App library.
 
-Espelho app: `appApple/docs/03_contratoAtualizacaoAPP.md`.
+Espelho app: `appMobile/docs/03_contratoAtualizacaoAPP.md`.

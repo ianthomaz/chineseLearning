@@ -133,7 +133,51 @@ estiver preenchido (`2088…`), também o bloco móvel — escreve o env (gitign
 
 O botão abre `https://openauth.alipay.com/oauth2/publicAppAuthorize.htm` com `scope=auth_user`. A pessoa volta para `/api/auth/alipay/callback` com um `auth_code` (vale uma vez). O servidor troca o código (`open_id`), chama `alipay.user.info.share` (nick/avatar; e-mail se a Alipay enviar) e grava a sessão Auth.js. O access token não fica guardado.
 
-Conta: `accounts.provider = alipay`, id = `open_id`. Se vier e-mail no share, o mesmo merge por e-mail verificado do Google aplica-se. Sem e-mail, conta só pelo `open_id`. Nasce O4 (`oauth_signup`). Isto é só no site.
+Conta: `accounts.provider = alipay`, id = `open_id`. E-mail do share é dado de
+perfil **não verificado** (`emailVerified=false`), sem merge automático e sem
+entrar no e-mail da sessão usado pelos gates admin/curador. Nasce O4
+(`oauth_signup`) tanto no site quanto no app.
+
+### Diagnóstico confirmado em 5 nov 2026
+
+- O app local aponta para `https://learnchinese.today`; nesse servidor,
+  `GET /api/app/alipay/auth-info?targetId=diagnostic20261105` respondeu **404,
+  corpo não JSON**. Isso bloqueia o fluxo antes do SDK. `POST /api/app/auth/alipay`
+  com `{}` respondeu **400**, `{"ok":false,"error":"invalid_token"}`; isso só
+  confirma que essa segunda rota existe, não que as credenciais remotas funcionam.
+- Após `node scripts/sync-env-from-credentials.mjs`, as quatro variáveis móveis
+  estão presentes em `web/.env.local` e `web/deploy/server.env`. APPID móvel
+  correto, PID no formato de 16 dígitos `2088…`; chaves RSA de 2048 bits legíveis.
+  O sync não estava pulando o bloco móvel. Isso não comprova o env remoto nem
+  a correspondência das chaves com o console Alipay.
+- Scheme, `LSApplicationQueriesSchemes`, callback SwiftUI e SDK estão ligados;
+  build iOS sem assinatura passou. Nenhum login real no iPhone foi executado.
+- No Next local, a mesma rota respondeu **200 JSON**, com APPID móvel correto
+  e assinatura RSA2 verificada. HTML/RSC do build servidor: **1.515.568 bytes**
+  antes e depois do patch.
+- Falhas na troca móvel agora registram motivo/subcódigo em `[alipay]` e devolvem
+  `alipay_failed` (502 para transporte, 401 para resposta recusada). Logs não
+  incluem código de autorização, tokens, chaves ou identificadores pessoais.
+
+O próximo passo depende do dono: disponibilizar a rota de servidor ou testar
+contra o Next local acessível pelo iPhone. **Nenhum deploy foi realizado.**
+Checklist do aparelho: `appMobile/docs/08_login.md` § Validação física.
+
+### Identidade entre os dois APPIDs — proposta, sem migração aplicada
+
+O `open_id` é por APPID; hoje site e app podem criar usuários separados. A
+troca validada registra apenas a presença de `open_id`, `user_id` e `union_id`.
+Ainda falta observar respostas reais dos dois apps e comprovar a abrangência
+do identificador comum; não confiar em `user_id` enviado pelo cliente/SDK.
+
+Se um identificador comum for comprovado nas respostas assinadas, preservar os
+`open_id` existentes como aliases em `accounts` e associar o identificador comum
+ao mesmo `users.id`, em transação. Não basta trocar a PK pelo primeiro campo
+disponível: contas já separadas precisam de revisão de conflitos e migração de
+progresso/sessões, com backup. Não mesclar automaticamente dois usuários existentes.
+Sem identificador comum comprovado, implementar "Conectar outra conta" com
+sessão ativa e nova autorização, recusando identidades já ligadas a outro usuário.
+Esse fluxo ainda não está implementado.
 
 No console da Alipay a URL de retorno tem de ser exactamente:
 
@@ -172,9 +216,9 @@ o login falhava. Só funciona em HTTPS (produção).
 
 ## Google no app — passo a passo
 
-Ver `appApple/docs/08_login.md` § Google (client ID iOS no GCP `chinese-learnin`
+Ver `appMobile/docs/08_login.md` § Google (client ID iOS no GCP `chinese-learnin`
 → `credentials.json → google_oauth.GOOGLE_IOS_CLIENT_ID` + reversed →
-`sync-env` (servidor aceita o token) e `appApple/Scripts/sync-secrets-xcconfig.mjs`
+`sync-env` (servidor aceita o token) e `appMobile/ios/Scripts/sync-secrets-xcconfig.mjs`
 → `xcodegen generate`).
 
 ## Contas — um usuário, várias entradas (implementado nov 2026)
@@ -230,10 +274,10 @@ Apple nunca casa — fica conta separada. Testes: `cd web && npm run test:identi
 
 ### App iOS
 
-`POST /api/app/auth/{password|apple|google}` → `{ token, account }`. O token vai
+`POST /api/app/auth/{password|apple|google|alipay}` → `{ token, account }`. O token vai
 em `Authorization: Bearer` para `/api/account` (GET/DELETE), `/api/game/round`,
 `/api/game/progress`. Sair: `DELETE /api/app/session`. Rodadas do app são
-idempotentes por `roundId`. Lado do app: `appApple/docs/08_login.md`.
+idempotentes por `roundId`. Lado do app: `appMobile/docs/08_login.md`.
 
 ### Variáveis (credentials.json → `scripts/sync-env-from-credentials.mjs`)
 
@@ -257,18 +301,16 @@ Implementado com a opção marcada; responder só se for "não".
 5. Admin continua sendo **por e-mail** (`NEXT_PUBLIC_ADMIN_EMAIL`), sem virar A7 no NOIA por enquanto? — sim.
 6. Apple **no site** fica para depois (só app agora)? — sim; estrutura pronta.
 
-7. **Alipay: juntar por e-mail?** Hoje, se a Alipay devolve um e-mail, ele é
-   tratado como **verificado** e junta com o usuário Google/e-mail do mesmo
-   endereço. A Alipay não documenta que esse e-mail é confirmado; se não for, dá
-   para alguém pôr o e-mail de outra pessoa na Alipay e entrar na conta dela.
-   Recomendo **não** juntar por e-mail da Alipay (conta separada; juntar depois
-   com "conectar outra conta"). Mantive como você fez até responder — é uma linha
-   em `api/auth/alipay/callback` (`emailVerified`).
+7. **Alipay: juntar por e-mail?** **Não**, conforme instrução do dono de 5 nov
+   2026: `emailVerified=false` no site e no app. O share não comprova verificação
+   do endereço. A mudança impede novos merges por esse dado; não desfaz merges
+   históricos nem revoga cookies antigos. Contas já associadas exigem auditoria
+   antes de qualquer separação. Conexão explícita de identidades continua pendente.
 
 ### O que falta de você (não é pergunta — é credencial/ação)
 
 - **Resend**: domínio `learnchinese.today` verificado (remetente `no-reply@learnchinese.today`) — feito na conta e404.
-- **Google iOS**: client ID no `credentials.json` + Secrets — ver `appApple/docs/08_login.md`.
+- **Google iOS**: client ID no `credentials.json` + Secrets — ver `appMobile/docs/08_login.md`.
 - **Deploy** quando fores pôr `/api/app/auth/*` em produção (código local já tem).
 - Apple no site (opcional): Services ID + chave `.p8`.
 - Merge identity: `cd web && npm run test:identity`.

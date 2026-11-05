@@ -202,7 +202,7 @@ async function run() {
       assert.deepEqual(providersOf(alipayId), ["alipay"]);
     }),
 
-    test("Alipay with same verified email merges onto Google user", async () => {
+    test("Alipay email stays unverified and cannot merge onto a Google user", async () => {
       clear(getDb);
       const googleId = resolveOAuthUser({
         provider: "google",
@@ -215,12 +215,15 @@ async function run() {
         provider: "alipay",
         providerAccountId: "open-id-mail",
         email: "same@example.com",
-        emailVerified: true,
+        emailVerified: false,
         name: "Ali Nick",
       });
-      assert.equal(alipayId, googleId);
-      assert.equal(countUsers(getDb), 1);
-      assert.deepEqual(providersOf(googleId).sort(), ["alipay", "google"]);
+      assert.notEqual(alipayId, googleId);
+      assert.equal(countUsers(getDb), 2);
+      assert.deepEqual(providersOf(googleId), ["google"]);
+      assert.deepEqual(providersOf(alipayId), ["alipay"]);
+      assert.equal(getIdentityUser(alipayId)?.emailVerifiedAt, null);
+      assert.equal(getIdentityUser(alipayId)?.clearance, "O4");
       assert.equal(getIdentityUser(googleId)?.email, "same@example.com");
     }),
 

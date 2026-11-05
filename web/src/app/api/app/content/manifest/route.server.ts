@@ -1,6 +1,6 @@
 /**
  * GET /api/app/content/manifest — app library version check (Bearer).
- * Contract: appApple/docs/03_contratoAtualizacaoAPP.md
+ * Contract: appMobile/docs/03_contratoAtualizacaoAPP.md
  */
 import { NextResponse } from "next/server";
 import { requireAppLibraryAccess } from "@/server/app-library/auth";

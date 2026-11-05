@@ -1,3 +1,3 @@
-[submodule "appApple"]
-	path = appApple
+[submodule "appMobile"]
+	path = appMobile
 	url = git@github.com:ianthomaz/APP_learnChineseToday.git

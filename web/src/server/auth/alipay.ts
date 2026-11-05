@@ -173,12 +173,23 @@ export function readTokenResponse(raw: string, publicKey: KeyObject): AlipayToke
       open_id?: unknown;
       access_token?: unknown;
       code?: unknown;
+      user_id?: unknown;
+      union_id?: unknown;
     };
     openId = pickStr(parsed.open_id) ?? "";
     accessToken = pickStr(parsed.access_token) ?? "";
     if (typeof parsed.code === "string") code = parsed.code;
+    // Record availability only; never log identifiers, auth codes or tokens.
+    console.info("[alipay] token identity fields", {
+      open_id: Boolean(pickStr(parsed.open_id)),
+      user_id: Boolean(pickStr(parsed.user_id)),
+      union_id: Boolean(pickStr(parsed.union_id)),
+    });
   } catch {
     return { ok: false, reason: "bad_body" };
+  }
+  if (code && code !== "10000") {
+    return { ok: false, reason: "alipay_error", detail: subCodeOf(tokenNode) };
   }
   if (!openId) {
     return { ok: false, reason: "missing_open_id", detail: code && code !== "10000" ? code : undefined };
@@ -188,7 +199,7 @@ export function readTokenResponse(raw: string, publicKey: KeyObject): AlipayToke
 
 /**
  * Parse `alipay.user.info.share`. Email is not in the public website field list,
- * but if Alipay sends `email` / `email_address` we keep it for account merge.
+ * but if Alipay sends `email` / `email_address` we keep it as unverified profile data.
  */
 export function readUserShareResponse(
   raw: string,
@@ -413,7 +424,7 @@ export type AlipayLoginResult =
   | { ok: true; profile: AlipayProfile }
   | Extract<AlipayTokenResult, { ok: false }>;
 
-/** Token exchange + optional share profile (email merges when Alipay returns one). */
+/** Token exchange + optional share profile (Alipay email remains unverified). */
 export async function completeAlipayLogin(
   authCode: string,
   config: AlipayConfig,

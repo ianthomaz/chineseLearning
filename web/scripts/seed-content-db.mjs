@@ -8,7 +8,7 @@
  *
  * Bootstrap inputs (archive — do not edit for site content):
  *   consolidado.json, phrase-game, quiz, dialogues, visuals, book curated,
- *   context-decks/*.json, appApple/lexico.json
+ *   context-decks/*.json, appMobile/ios/lexico.json
  *
  * Edit live content: npm run db:studio
  *

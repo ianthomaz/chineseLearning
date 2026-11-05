@@ -1,5 +1,5 @@
 /**
- * Shared types for the app library snapshot (appApple contract).
+ * Shared types for the app library snapshot (appMobile contract).
  * See docs/09_roadmap_integracoes.md
  */
 

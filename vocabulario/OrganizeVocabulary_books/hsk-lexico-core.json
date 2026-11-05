@@ -2,8 +2,8 @@
   "meta": {
     "source": "HSK标准教程 2+3",
     "maxHanziLength": 3,
-    "count": 185,
-    "note": "Seed pool."
+    "count": 419,
+    "note": "Seed pool. Entries with sources ping are HSK 3.0 items from the teacher site; hskLevels there is that site's level. category stays empty until classified, so they do not enter the widget pool yet."
   },
   "entries": [
     {
@@ -2116,6 +2116,2816 @@
       "hskLevels": [],
       "sources": [
         "hsk-new-words"
+      ]
+    },
+    {
+      "hanzi": "爱情片",
+      "pinyin": "àiqíngpiàn",
+      "translation": "romantic movie",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "奥运会",
+      "pinyin": "Àoyùnhuì",
+      "translation": "Olympic Games",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "班级",
+      "pinyin": "bānjí",
+      "translation": "classes and grades (in school)",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "办",
+      "pinyin": "bàn",
+      "translation": "do; handle",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "本子",
+      "pinyin": "běnzi",
+      "translation": "notebook",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "笔记",
+      "pinyin": "bǐjì",
+      "translation": "notes",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "变成",
+      "pinyin": "biànchéng",
+      "translation": "become",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "别的",
+      "pinyin": "biéde",
+      "translation": "other",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "别人",
+      "pinyin": "biérén",
+      "translation": "someone else; other people",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "病人",
+      "pinyin": "bìngrén",
+      "translation": "patient",
+      "category": null,
+      "hskLevels": [
+        1,
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "不久",
+      "pinyin": "bùjiǔ",
+      "translation": "soon",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "不同",
+      "pinyin": "bù tóng",
+      "translation": "different",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "草地",
+      "pinyin": "cǎodì",
+      "translation": "meadow",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "常见",
+      "pinyin": "cháng jiàn",
+      "translation": "common",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "常用",
+      "pinyin": "cháng yòng",
+      "translation": "commonly used",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "充电宝",
+      "pinyin": "chōngdiànbǎo",
+      "translation": "power bank",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "出国",
+      "pinyin": "chūguó",
+      "translation": "go abroad",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "出生",
+      "pinyin": "chūshēng",
+      "translation": "be born",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "初中",
+      "pinyin": "chūzhōng",
+      "translation": "middle school",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "从小",
+      "pinyin": "cóngxiǎo",
+      "translation": "since childhood",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "打车",
+      "pinyin": "dǎchē",
+      "translation": "take/hail a taxi",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "打开",
+      "pinyin": "dǎkāi",
+      "translation": "open",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "大概",
+      "pinyin": "dàgài",
+      "translation": "probably; rough",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "大人",
+      "pinyin": "dàrén",
+      "translation": "adult",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "大小",
+      "pinyin": "dàxiǎo",
+      "translation": "size",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "大熊猫",
+      "pinyin": "dàxióngmāo",
+      "translation": "giant panda",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "大学",
+      "pinyin": "dàxué",
+      "translation": "university; college",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "大学生",
+      "pinyin": "dàxuéshēng",
+      "translation": "college/university student",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "大衣",
+      "pinyin": "dàyī",
+      "translation": "overcoat",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "但",
+      "pinyin": "dàn",
+      "translation": "but; yet",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "得到",
+      "pinyin": "dédào",
+      "translation": "get",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "得分",
+      "pinyin": "défēn",
+      "translation": "score (points)",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "地点",
+      "pinyin": "dìdiǎn",
+      "translation": "place",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "的话",
+      "pinyin": "dehuà",
+      "translation": "used at the end of a conditional clause",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "低",
+      "pinyin": "dī",
+      "translation": "low",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "电子书",
+      "pinyin": "diànzǐshū",
+      "translation": "e-book",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "东方",
+      "pinyin": "dōngfāng",
+      "translation": "East",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "懂得",
+      "pinyin": "dǒngde",
+      "translation": "understand; know",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "动物园",
+      "pinyin": "dòngwùyuán",
+      "translation": "zoo",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "读书",
+      "pinyin": "dúshū",
+      "translation": "read a book",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "短裤",
+      "pinyin": "duǎnkù",
+      "translation": "shorts",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "对话",
+      "pinyin": "duìhuà",
+      "translation": "converse",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "耳机",
+      "pinyin": "ěrjī",
+      "translation": "earphone; headphone",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "发生",
+      "pinyin": "fāshēng",
+      "translation": "happen",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "发展",
+      "pinyin": "fāzhǎn",
+      "translation": "develop",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "方便面",
+      "pinyin": "fāngbiànmiàn",
+      "translation": "instant noodles",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "方向",
+      "pinyin": "fāngxiàng",
+      "translation": "direction",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "放学",
+      "pinyin": "fàngxué",
+      "translation": "(of school) let out",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "飞",
+      "pinyin": "fēi",
+      "translation": "fly",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "分开",
+      "pinyin": "fēnkāi",
+      "translation": "separate",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "分钟",
+      "pinyin": "fēnzhōng",
+      "translation": "minute",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "封",
+      "pinyin": "fēng",
+      "translation": "for letters or mail",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "夫妻",
+      "pinyin": "fūqī",
+      "translation": "husband and wife",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "服务台",
+      "pinyin": "fúwùtái",
+      "translation": "service desk",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "该",
+      "pinyin": "gāi",
+      "translation": "should",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "感到",
+      "pinyin": "gǎndào",
+      "translation": "feel",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "刚刚",
+      "pinyin": "gānggāng",
+      "translation": "just now",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "高中",
+      "pinyin": "gāozhōng",
+      "translation": "high school",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "工作日",
+      "pinyin": "gōngzuòrì",
+      "translation": "weekday",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "故事",
+      "pinyin": "gùshi",
+      "translation": "story",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "关机",
+      "pinyin": "guānjī",
+      "translation": "turn off a mobile phone",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "关注",
+      "pinyin": "guānzhù",
+      "translation": "pay close attention",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "国",
+      "pinyin": "guó",
+      "translation": "country",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "国宝",
+      "pinyin": "guóbǎo",
+      "translation": "national treasure",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "过节",
+      "pinyin": "guòjié",
+      "translation": "celebrate a festival",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "过年",
+      "pinyin": "guònián",
+      "translation": "celebrate the Spring Festival",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "哈哈",
+      "pinyin": "hāhā",
+      "translation": "(indicating laughter) haha",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "好多",
+      "pinyin": "hǎoduō",
+      "translation": "a lot of",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "号码",
+      "pinyin": "hàomǎ",
+      "translation": "number",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "胡医生",
+      "pinyin": "Hú yīshēng",
+      "translation": "Dr. Hu",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "花园",
+      "pinyin": "huāyuán",
+      "translation": "garden",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "画笔",
+      "pinyin": "huàbǐ",
+      "translation": "color pen; paintbrush",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "画家",
+      "pinyin": "huàjiā",
+      "translation": "painter",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "回答",
+      "pinyin": "huídá",
+      "translation": "answer",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "会议",
+      "pinyin": "huìyì",
+      "translation": "meeting; conference",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "或",
+      "pinyin": "huò",
+      "translation": "or",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "机票",
+      "pinyin": "jīpiào",
+      "translation": "air ticket",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "急",
+      "pinyin": "jí",
+      "translation": "urgent; be anxious",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "家人",
+      "pinyin": "jiārén",
+      "translation": "family (member)",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "假期",
+      "pinyin": "jiàqī",
+      "translation": "vacation; holiday",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "间",
+      "pinyin": "jiān",
+      "translation": "used of smallest unit of housing",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "检票",
+      "pinyin": "jiǎnpiào",
+      "translation": "check/inspect tickets",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "节日",
+      "pinyin": "jiérì",
+      "translation": "festival",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "借",
+      "pinyin": "jiè",
+      "translation": "lend",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "酒店",
+      "pinyin": "jiǔdiàn",
+      "translation": "hotel",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "旧",
+      "pinyin": "jiù",
+      "translation": "old",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "卡",
+      "pinyin": "kǎ",
+      "translation": "card",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "开花",
+      "pinyin": "kāihuā",
+      "translation": "bloom",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "开机",
+      "pinyin": "kāijī",
+      "translation": "start; be power-on",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "开学",
+      "pinyin": "kāixué",
+      "translation": "(of a school) begin",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "考",
+      "pinyin": "kǎo",
+      "translation": "take an examination",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "可",
+      "pinyin": "kě",
+      "translation": "but",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "可能",
+      "pinyin": "kěnéng",
+      "translation": "probably can",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "刻",
+      "pinyin": "kè",
+      "translation": "quarter (of an hour)",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "快乐",
+      "pinyin": "kuàilè",
+      "translation": "happy",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "快要",
+      "pinyin": "kuàiyào",
+      "translation": "on the verge of; about to",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "矿泉水",
+      "pinyin": "kuàngquánshuǐ",
+      "translation": "mineral water",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "老人",
+      "pinyin": "lǎorén",
+      "translation": "elderly people",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "老张",
+      "pinyin": "Lǎo Zhāng",
+      "translation": "Lao Zhang",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "联欢",
+      "pinyin": "liánhuān",
+      "translation": "have a get-together",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "练",
+      "pinyin": "liàn",
+      "translation": "practice",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "刘长春",
+      "pinyin": "Liú Chángchūn",
+      "translation": "Liu Changchun",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "路上",
+      "pinyin": "lùshang",
+      "translation": "road; trip",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "没事",
+      "pinyin": "méishì",
+      "translation": "it doesn't matter",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "没意思",
+      "pinyin": "méi yìsi",
+      "translation": "boring",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "每",
+      "pinyin": "měi",
+      "translation": "each; every",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "门票",
+      "pinyin": "ménpiào",
+      "translation": "entrance ticket",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "们",
+      "pinyin": "men",
+      "translation": "used after a personal pronoun or a noun to show plural number",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "面包",
+      "pinyin": "miànbāo",
+      "translation": "bread",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "面前",
+      "pinyin": "miànqián",
+      "translation": "presence",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "面条儿",
+      "pinyin": "miàntiáor",
+      "translation": "noodles",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "名人",
+      "pinyin": "míngrén",
+      "translation": "celebrity",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "哪些",
+      "pinyin": "nǎxiē",
+      "translation": "which",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "那边",
+      "pinyin": "nàbiān",
+      "translation": "there",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "那些",
+      "pinyin": "nàxiē",
+      "translation": "those",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "那样",
+      "pinyin": "nàyàng",
+      "translation": "so that",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "男孩儿",
+      "pinyin": "nánháir",
+      "translation": "boy",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "男朋友",
+      "pinyin": "nánpéngyou",
+      "translation": "boyfriend",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "男生",
+      "pinyin": "nánshēng",
+      "translation": "boy student",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "南方",
+      "pinyin": "nánfāng",
+      "translation": "south",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "南京",
+      "pinyin": "Nánjīng",
+      "translation": "Nanjing",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "难看",
+      "pinyin": "nánkàn",
+      "translation": "bad-looking; ugly",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "难题",
+      "pinyin": "nántí",
+      "translation": "difficult problem",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "女朋友",
+      "pinyin": "nǚpéngyou",
+      "translation": "girlfriend",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "女生",
+      "pinyin": "nǚshēng",
+      "translation": "girl student",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "女士",
+      "pinyin": "nǚshì",
+      "translation": "lady; madam",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "爬",
+      "pinyin": "pá",
+      "translation": "climb",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "平时",
+      "pinyin": "píngshí",
+      "translation": "usually; normal times",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "其他",
+      "pinyin": "qítā",
+      "translation": "other",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "奇怪",
+      "pinyin": "qíguài",
+      "translation": "strange",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "前边",
+      "pinyin": "qiánbian",
+      "translation": "front",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "球场",
+      "pinyin": "qiúchǎng",
+      "translation": "court",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "全",
+      "pinyin": "quán",
+      "translation": "whole; entire",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "认得",
+      "pinyin": "rènde",
+      "translation": "know; recognize",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "认真",
+      "pinyin": "rènzhēn",
+      "translation": "conscientious",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "上面",
+      "pinyin": "shàngmiàn",
+      "translation": "surface of an object",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "上学",
+      "pinyin": "shàngxué",
+      "translation": "start school; go to school",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "身边",
+      "pinyin": "shēnbiān",
+      "translation": "one's side",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "身高",
+      "pinyin": "shēngāo",
+      "translation": "height",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "声",
+      "pinyin": "shēng",
+      "translation": "used for sounds; sound",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "时",
+      "pinyin": "shí",
+      "translation": "a period of time",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "世界",
+      "pinyin": "shìjiè",
+      "translation": "world",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "视频",
+      "pinyin": "shìpín",
+      "translation": "video",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "室",
+      "pinyin": "shì",
+      "translation": "room",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "收到",
+      "pinyin": "shōudào",
+      "translation": "receive",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "受到",
+      "pinyin": "shòudào",
+      "translation": "be subjected to",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "叔叔",
+      "pinyin": "shūshu",
+      "translation": "uncle",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "四季",
+      "pinyin": "sìjì",
+      "translation": "four seasons",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "它们",
+      "pinyin": "tāmen",
+      "translation": "(plural of 它) they; them",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "她们",
+      "pinyin": "tāmen",
+      "translation": "(referring to female people) they; them",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "泰国",
+      "pinyin": "Tàiguó",
+      "translation": "Thailand",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "体育",
+      "pinyin": "tǐyù",
+      "translation": "sports",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "跳",
+      "pinyin": "tiào",
+      "translation": "jump",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "听见",
+      "pinyin": "tīngjiàn",
+      "translation": "hear",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "挺",
+      "pinyin": "tǐng",
+      "translation": "quite; very",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "同事",
+      "pinyin": "tóngshì",
+      "translation": "colleague",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "外边",
+      "pinyin": "wàibian",
+      "translation": "outside",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "外国",
+      "pinyin": "wàiguó",
+      "translation": "foreign country",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "外卖",
+      "pinyin": "wàimài",
+      "translation": "takeout; offer a takeout service",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "外语",
+      "pinyin": "wàiyǔ",
+      "translation": "foreign language",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "晚点",
+      "pinyin": "wǎndiǎn",
+      "translation": "(of a train, ship, etc.) be late",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "晚饭",
+      "pinyin": "wǎnfàn",
+      "translation": "dinner; supper",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "晚会",
+      "pinyin": "wǎnhuì",
+      "translation": "(evening) party",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "王老师",
+      "pinyin": "Wáng lǎoshī",
+      "translation": "Ms. Wang",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "网上",
+      "pinyin": "wǎngshang",
+      "translation": "online",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "网站",
+      "pinyin": "wǎngzhàn",
+      "translation": "website",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "忘记",
+      "pinyin": "wàngjì",
+      "translation": "forget",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "位",
+      "pinyin": "wèi",
+      "translation": "used in deferential reference to people",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "喂",
+      "pinyin": "wèi",
+      "translation": "hello; hey",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "屋子",
+      "pinyin": "wūzi",
+      "translation": "room",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "午饭",
+      "pinyin": "wǔfàn",
+      "translation": "lunch",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "西北",
+      "pinyin": "xīběi",
+      "translation": "northwest",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "喜爱",
+      "pinyin": "xǐ'ài",
+      "translation": "love; be fond of",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "下班",
+      "pinyin": "xiàbān",
+      "translation": "get off work",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "下课",
+      "pinyin": "xiàkè",
+      "translation": "dismiss a class",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "下面",
+      "pinyin": "xiàmiàn",
+      "translation": "downstairs",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "相机",
+      "pinyin": "xiàngjī",
+      "translation": "camera",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "箱子",
+      "pinyin": "xiāngzi",
+      "translation": "case; trunk",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "向",
+      "pinyin": "xiàng",
+      "translation": "to; towards",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "小孩儿",
+      "pinyin": "xiǎoháir",
+      "translation": "child; kid",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "小朋友",
+      "pinyin": "xiǎopéngyǒu",
+      "translation": "child; kid",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "小区",
+      "pinyin": "xiǎoqū",
+      "translation": "residential complex",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "小时候",
+      "pinyin": "xiǎoshíhou",
+      "translation": "childhood",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "小学",
+      "pinyin": "xiǎoxué",
+      "translation": "primary school",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "小学生",
+      "pinyin": "xiǎoxuéshēng",
+      "translation": "primary school student",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "校园",
+      "pinyin": "xiàoyuán",
+      "translation": "campus",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "些",
+      "pinyin": "xiē",
+      "translation": "some; a few",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "星期日",
+      "pinyin": "Xīngqīrì",
+      "translation": "Sunday",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "星期天",
+      "pinyin": "Xīngqītiān",
+      "translation": "Sunday",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "行李",
+      "pinyin": "xíngli",
+      "translation": "luggage",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "兴趣",
+      "pinyin": "xìngqù",
+      "translation": "interest",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "姓名",
+      "pinyin": "xìngmíng",
+      "translation": "name",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "休假",
+      "pinyin": "xiūjià",
+      "translation": "take a vacation",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "药店",
+      "pinyin": "yàodiàn",
+      "translation": "pharmacy",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "野生",
+      "pinyin": "yěshēng",
+      "translation": "wild",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "叶子",
+      "pinyin": "yèzi",
+      "translation": "leaf",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "一般",
+      "pinyin": "yībān",
+      "translation": "general",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "一半",
+      "pinyin": "yíbàn",
+      "translation": "one half; half",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "一块儿",
+      "pinyin": "yíkuàir",
+      "translation": "together; the same place",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "一些",
+      "pinyin": "yìxiē",
+      "translation": "some",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "医",
+      "pinyin": "yī",
+      "translation": "medicine",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "颐和园",
+      "pinyin": "Yíhé Yuán",
+      "translation": "Summer Palace (in Beijing)",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "以上",
+      "pinyin": "yǐshàng",
+      "translation": "more than; over",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "以外",
+      "pinyin": "yǐwài",
+      "translation": "other than; except",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "邮箱",
+      "pinyin": "yóuxiāng",
+      "translation": "email address; mailbox",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "游",
+      "pinyin": "yóu",
+      "translation": "swim",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "游客",
+      "pinyin": "yóukè",
+      "translation": "tourist",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "有的",
+      "pinyin": "yǒude",
+      "translation": "some",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "有时",
+      "pinyin": "yǒushí",
+      "translation": "sometimes",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "有些",
+      "pinyin": "yǒuxiē",
+      "translation": "(indicating a part) some",
+      "category": null,
+      "hskLevels": [
+        1,
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "羽毛球",
+      "pinyin": "yǔmáoqiú",
+      "translation": "badminton",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "雨衣",
+      "pinyin": "yǔyī",
+      "translation": "raincoat",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "遇见",
+      "pinyin": "yùjiàn",
+      "translation": "meet",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "员",
+      "pinyin": "yuán",
+      "translation": "added after a noun or verb to indicate a person",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "愿意",
+      "pinyin": "yuànyì",
+      "translation": "be willing",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "月亮",
+      "pinyin": "yuèliang",
+      "translation": "moon",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "运动会",
+      "pinyin": "yùndònghuì",
+      "translation": "sports meet",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "运动员",
+      "pinyin": "yùndòngyuán",
+      "translation": "athlete",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "早饭",
+      "pinyin": "zǎofàn",
+      "translation": "breakfast",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "怎样",
+      "pinyin": "zěnyàng",
+      "translation": "(used to inquire about the nature, condition, manner, etc. of sth) how",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "这边",
+      "pinyin": "zhèbiān",
+      "translation": "here; this side",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "这么",
+      "pinyin": "zhème",
+      "translation": "so",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "这些",
+      "pinyin": "zhèxiē",
+      "translation": "these",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "正",
+      "pinyin": "zhèng",
+      "translation": "indicating an action just happening or a state just continuing",
+      "category": null,
+      "hskLevels": [
+        2
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "直到",
+      "pinyin": "zhídào",
+      "translation": "until",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "只能",
+      "pinyin": "zhǐ néng",
+      "translation": "can only",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "只是",
+      "pinyin": "zhǐshì",
+      "translation": "just; only",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "只要",
+      "pinyin": "zhǐyào",
+      "translation": "as long as",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "中学",
+      "pinyin": "zhōngxué",
+      "translation": "middle school",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "中学生",
+      "pinyin": "zhōngxuéshēng",
+      "translation": "middle school student",
+      "category": null,
+      "hskLevels": [
+        1
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "竹子",
+      "pinyin": "zhúzi",
+      "translation": "bamboo",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "住院",
+      "pinyin": "zhùyuàn",
+      "translation": "be in hospital",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "总",
+      "pinyin": "zǒng",
+      "translation": "always",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
+      ]
+    },
+    {
+      "hanzi": "做客",
+      "pinyin": "zuòkè",
+      "translation": "be a guest",
+      "category": null,
+      "hskLevels": [
+        3
+      ],
+      "sources": [
+        "ping"
       ]
     }
   ]

@@ -81,10 +81,10 @@ function envAssign(key, value) {
 }
 
 /**
- * Website Alipay app only. File lives outside this repo
+ * Website and mobile Alipay apps. File lives outside this repo
  * (`_credentials/alipay/learnchinese.json`, map `alipay.learnchinese`).
  * Shape (nov 2026): root = web app LearnChineseToday; `mobile_app` is the iOS
- * app and is ignored here. Older files used a nested `launched_app` block.
+ * app loaded separately below. Older files used a nested `launched_app` block.
  */
 function alipayCredentialsFile(data) {
   const fromEnv = process.env.ALIPAY_CREDENTIALS_FILE;

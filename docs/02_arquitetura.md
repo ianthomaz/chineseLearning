@@ -5,7 +5,7 @@
 | Caminho | Função |
 |---------|--------|
 | `web/` | Site Next.js — learnchinese.today |
-| `appApple/` | App iOS (submodule APP_learnChineseToday) |
+| `appMobile/` | Apps iOS + Android (submodule APP_learnChineseToday) — `ios/`, `android/` |
 | `vocabulario/` | Léxico / frases / bootstrap editorial / RAG sources |
 | `docs/` | Documentação (`docs/llm/` = contratos API LLM) |
 | `scripts/` | Scripts de build/ingest na raiz |
