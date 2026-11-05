@@ -326,6 +326,7 @@
     "phraseFontLink": "Hanzi Pinyin Font (parlr)",
     "rest": "Hanzi: Noto Sans SC. Table pinyin column: from the course outline.",
     "license": "(CC-BY-SA-4.0).",
+    "thanksOss": "Thanks to the open-source projects that make learnchinese.today possible.",
     "hanziWriterIntro": "Vocabulary strokes:",
     "hanziWriterLib": "Hanzi Writer",
     "hanziWriterMid": "(MIT) · data",

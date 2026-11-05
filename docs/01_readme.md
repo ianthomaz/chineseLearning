@@ -33,11 +33,15 @@ Site Next.js em **`web/`** · produção **`https://learnchinese.today/`**
 
 ## Visão rápida
 
+Produto **público** de aprendizado de chinês (site + app). O widget **Hanzi
+Memorize** (Lock/Home) faz parte do app LearnChinese Today.
+
 - **Estudo:** `/review`, `/vocabulary`, `/grammar`, `/dialogues`, `/visuals`
 - **Prática:** `/phrase-game` (sem login), `/practice` + `/tutor` (login), `/gamification` (login), `/ktv`
 - **Tutor:** `POST /api/chat` → `/edu/chat` — só com `next start` (não no export estático)
 - **Conteúdo jogo:** `vocabulario/FRASES_GAME/curated/` → build → SQLite
 - **Contratos LLM completos:** [`docs/llm/`](llm/)
+- **Créditos open source:** rodapé do site (`SiteAttributionCredits`) + Sobre no app
 
 ## Docs noutras pastas (não contam nos 10)
 

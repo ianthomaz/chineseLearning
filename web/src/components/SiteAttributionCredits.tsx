@@ -22,6 +22,9 @@ export function SiteAttributionCredits({ className }: { className?: string }) {
         . {t("footer.rest")} {t("footer.license")}
       </p>
       <p className="mt-3">
+        {t("footer.thanksOss")}
+      </p>
+      <p className="mt-3">
         {t("footer.hanziWriterIntro")}{" "}
         <a
           href="https://github.com/chanind/hanzi-writer"

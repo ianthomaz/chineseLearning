@@ -19,25 +19,23 @@ function dbPath(): string {
   );
 }
 
+/**
+ * Squashed canonical schema (nov 2026). New DBs get the final shape in one
+ * CREATE. Existing DBs keep upgrading via the migrate* helpers below — those
+ * stay idempotent so we never need a growing folder of numbered migrations.
+ */
 const MIGRATION = `
 CREATE TABLE IF NOT EXISTS users (
-  id         TEXT PRIMARY KEY,
-  email      TEXT,
-  name       TEXT,
-  image      TEXT,
-  nick       TEXT,
-  created_at TEXT NOT NULL DEFAULT (datetime('now')),
-  updated_at TEXT NOT NULL DEFAULT (datetime('now'))
-);
-
-CREATE TABLE IF NOT EXISTS players (
-  id         TEXT PRIMARY KEY,
-  email      TEXT,
-  name       TEXT,
-  image      TEXT,
-  nick       TEXT,
-  created_at TEXT NOT NULL DEFAULT (datetime('now')),
-  updated_at TEXT NOT NULL DEFAULT (datetime('now'))
+  id                 TEXT PRIMARY KEY,
+  email              TEXT,
+  name               TEXT,
+  image              TEXT,
+  nick               TEXT,
+  password_hash      TEXT,
+  email_verified_at  TEXT,
+  clearance          TEXT NOT NULL DEFAULT 'O1',
+  created_at         TEXT NOT NULL DEFAULT (datetime('now')),
+  updated_at         TEXT NOT NULL DEFAULT (datetime('now'))
 );
 
 -- Per-item mastery, for signed-in players only. One row per (user, game, item):
@@ -124,14 +122,16 @@ CREATE TABLE IF NOT EXISTS app_auth_exchanges (
 CREATE INDEX IF NOT EXISTS idx_app_auth_exchanges_user ON app_auth_exchanges(user_id);
 
 -- One-time links sent by email. purpose: 'verify' | 'reset'. Only the hash is stored.
+-- password_hash: present on signup verify links until the email is opened.
 CREATE TABLE IF NOT EXISTS email_tokens (
-  token_hash TEXT PRIMARY KEY,
-  user_id    TEXT NOT NULL,
-  email      TEXT NOT NULL,
-  purpose    TEXT NOT NULL,
-  expires_at TEXT NOT NULL,
-  used_at    TEXT,
-  created_at TEXT NOT NULL DEFAULT (datetime('now'))
+  token_hash     TEXT PRIMARY KEY,
+  user_id        TEXT NOT NULL,
+  email          TEXT NOT NULL,
+  purpose        TEXT NOT NULL,
+  expires_at     TEXT NOT NULL,
+  used_at        TEXT,
+  password_hash  TEXT,
+  created_at     TEXT NOT NULL DEFAULT (datetime('now'))
 );
 CREATE INDEX IF NOT EXISTS idx_email_tokens_user ON email_tokens(user_id);
 
@@ -433,10 +433,9 @@ CREATE INDEX IF NOT EXISTS idx_lexico_rotation ON lexico_entries(rotation_catego
 `;
 
 /**
- * The `progress` table shipped as a documented stub — `(user_id, phrase_id,
- * score)` — that nothing ever wrote to. Phase 2 needs a per-item tally keyed by
- * game, so the stub is replaced. Guarded: if a deployment somehow did write
- * rows, the old table is kept aside instead of dropped.
+ * Old DBs may still have the pre-game stub `(user_id, phrase_id, score)`.
+ * Replace it so CREATE TABLE IF NOT EXISTS can install the canonical shape.
+ * Non-empty stubs are renamed once; empty leftovers are dropped below.
  */
 function migrateProgressStub(database: DatabaseSync): void {
   const columns = database
@@ -455,20 +454,22 @@ function migrateProgressStub(database: DatabaseSync): void {
   }
 }
 
-/** One-time: copy legacy `players` rows into `users`, then expose `players` as a view. */
 /**
- * Identity columns on `users` (clearance, password, verified email). Users that
- * predate this all came from Google OAuth (id = Google `sub`): they get an
- * `accounts` row and the released clearance, audited as 'migration'.
+ * Identity columns on `users` / `email_tokens` for DBs created before the
+ * squash. Predating Google-only users get an `accounts` row and released
+ * clearance, audited as 'migration'.
  */
 function migrateIdentity(database: DatabaseSync): void {
-  // Sign-up links carry the password until opened (identity.ts registerEmailAccount).
-  const tokenColumns = (database.prepare(`PRAGMA table_info(email_tokens)`).all() as { name: string }[]).map((c) => c.name);
-  if (!tokenColumns.includes("password_hash")) {
+  const tokenColumns = (
+    database.prepare(`PRAGMA table_info(email_tokens)`).all() as { name: string }[]
+  ).map((c) => c.name);
+  if (tokenColumns.length > 0 && !tokenColumns.includes("password_hash")) {
     database.exec(`ALTER TABLE email_tokens ADD COLUMN password_hash TEXT`);
   }
   const columns = new Set(
-    (database.prepare(`PRAGMA table_info(users)`).all() as { name: string }[]).map((c) => c.name),
+    (database.prepare(`PRAGMA table_info(users)`).all() as { name: string }[]).map(
+      (c) => c.name,
+    ),
   );
   if (!columns.has("password_hash")) {
     database.exec(`ALTER TABLE users ADD COLUMN password_hash TEXT`);
@@ -489,7 +490,9 @@ function migrateIdentity(database: DatabaseSync): void {
       `INSERT INTO clearance_changes (user_id, from_cl, to_cl, source)
        SELECT id, 'O1', 'O4', 'migration' FROM users`,
     );
-    database.exec(`UPDATE users SET clearance = 'O4', email_verified_at = COALESCE(email_verified_at, created_at)`);
+    database.exec(
+      `UPDATE users SET clearance = 'O4', email_verified_at = COALESCE(email_verified_at, created_at)`,
+    );
     database.exec("COMMIT");
   } catch (err) {
     database.exec("ROLLBACK");
@@ -497,6 +500,10 @@ function migrateIdentity(database: DatabaseSync): void {
   }
 }
 
+/**
+ * Fold legacy `players` into `users`, keep a compatibility VIEW named
+ * `players`, then drop `players_legacy` / empty `progress_legacy`.
+ */
 function migratePlayersToUsers(database: DatabaseSync): void {
   const playersObj = database
     .prepare(`SELECT type FROM sqlite_master WHERE name = 'players'`)
@@ -510,6 +517,17 @@ function migratePlayersToUsers(database: DatabaseSync): void {
     database.exec(`ALTER TABLE players RENAME TO players_legacy`);
   }
 
+  const legacy = database
+    .prepare(`SELECT type FROM sqlite_master WHERE name = 'players_legacy'`)
+    .get() as { type: string } | undefined;
+  if (legacy?.type === "table") {
+    database.exec(
+      `INSERT OR IGNORE INTO users (id, email, name, image, nick, created_at, updated_at)
+       SELECT id, email, name, image, nick, created_at, updated_at FROM players_legacy`,
+    );
+    database.exec(`DROP TABLE players_legacy`);
+  }
+
   const playersAfter = database
     .prepare(`SELECT type FROM sqlite_master WHERE name = 'players'`)
     .get() as { type: string } | undefined;
@@ -519,6 +537,18 @@ function migratePlayersToUsers(database: DatabaseSync): void {
       `CREATE VIEW players AS
        SELECT id, email, name, image, nick, created_at, updated_at FROM users`,
     );
+  }
+
+  const progressLegacy = database
+    .prepare(`SELECT type FROM sqlite_master WHERE name = 'progress_legacy'`)
+    .get() as { type: string } | undefined;
+  if (progressLegacy?.type === "table") {
+    const { n } = database
+      .prepare(`SELECT COUNT(*) AS n FROM progress_legacy`)
+      .get() as { n: number };
+    if (n === 0) {
+      database.exec(`DROP TABLE progress_legacy`);
+    }
   }
 }
 

@@ -15,13 +15,9 @@ Cada fase depende da anterior. Dentro da fase, a ordem é a da tabela.
 
 ### Fase 0 — pôr no ar o que já existe
 
-| # | Trabalho | Onde | Quem |
-|---|---|---|---|
-| 0.1 | ~~**Backup diário** do SQLite de produção~~ | pcVelho cron 02:50 BRT | feito nov 2026 |
-| 0.2 | Deploy do site com contas (e-mail+senha, Alipay, `/api/app/*`) | VM | dono |
-| 0.3 | Credenciais: Google iOS client ID | `credentials.json` | dono |
-| 0.4 | Teste no iPhone: login Apple/e-mail, rodadas indo para o site | app | dono |
-| 0.5 | Resposta à pergunta 7 (Alipay junta por e-mail?) | [05](05_autenticacao.md) | dono |
+[ x ] Fase 0 resolvida (nov 2026): backup SQLite diário no pcVelho (02:50 BRT);
+contas + `/api/app/*` em prod; Google iOS no Secrets; Alipay iOS/Android +
+`union_id` web↔app; e-mail Alipay = não verificado (sem auto-merge).
 
 ### Fase 1 — dados confiáveis
 
@@ -39,8 +35,7 @@ Cada fase depende da anterior. Dentro da fase, a ordem é a da tabela.
 | 2.1 | Guardar Errei/Acertei dos hanzi e priorizar a rotação | Contrato em [07](07_conteudo_dados.md) (`game=hanzi`); UI em `appMobile/docs/07_plano_melhorias.md` § 3 |
 | 2.2 | Histórico de rodadas no app + "rever erradas" | Contrato phrase em [07](07_conteudo_dados.md); UI idem § 2 |
 | 2.3 | Frases no pack da biblioteca (atualizar sem nova versão do app) | `appMobile/docs/07_plano_melhorias.md` § 2.6 |
-| 2.4 | Escrita offline (dados de traço embutidos) + escrever com o dedo | idem § 3 — strokes offline já no app; quiz de escrita pendente |
-| 2.5 | ~~Alipay no app~~ — login iOS + Android OK (5 nov 2026) | [05](05_autenticacao.md); reteste opcional union_id web↔app |
+| 2.4 | Escrita com o dedo (quiz) | strokes offline já no app; falta quiz de escrita |
 
 ### Fase 3 — loja
 
@@ -128,7 +123,7 @@ Auth: [05_autenticacao.md](05_autenticacao.md)
 
 Estado: **API implementada** · deploy prod = ops quando autorizares.
 
-Site = **soberano** (SQL). App Hanzi Memorize = consumidor.
+Site = **soberano** (SQL). App LearnChinese Today = consumidor; **Hanzi Memorize** = widget.
 
 | Endpoint | Auth |
 |----------|------|
@@ -152,7 +147,7 @@ Espelho app: `appMobile/docs/03_contratoAtualizacaoAPP.md`
 ## Site + app como um produto só (nov 2026)
 
 App iOS **LearnChinese Today** (`appMobile/`, bundle `today.learnchinese.app`):
-Hanzi Memorize + **Jogo de Frases offline** com as mesmas regras e pontuação do
+Widget Hanzi Memorize + **Jogo de Frases offline** com as mesmas regras e pontuação do
 site (portado de `web/src/lib/phrase-game/`). Estado, instalação em dev e
 pendências do app: `appMobile/docs/06_instalar_e_estado.md`.
 

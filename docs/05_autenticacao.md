@@ -116,10 +116,8 @@ APPID `2021007115685095`, launched; produto **APP支付宝登录** / app_API onl
 (nov 2026). Login nativo: AlipaySDK `auth_V2` — o servidor assina o `infoStr`
 (`GET /api/app/alipay/auth-info`, PID `2088…` em `mobile_app.pid`) e o app envia
 o `auth_code` em `POST /api/app/auth/alipay` com as chaves do APPID móvel.
-Em **5 nov 2026** a rota em `https://learnchinese.today` passou a responder
-**200 JSON** (antes 404). Round-trip no aparelho: iOS SDK `auth_V2` devolveu
-`resultStatus=9000` / `result_code=200` (capture no Documents); login no app
-confirmado pelo dono no iPhone e no Android no mesmo dia.
+Prod: `auth-info` **200**; login nativo iOS + Android OK; **union_id** web↔app
+confirmado (6 nov 2026). Checklist aparelho: `appMobile/docs/08_login.md`.
 
 Chaves, fora do git: `_credentials/alipay/learnchinese.json` — **raiz** = app web
 (LearnChineseToday); bloco `mobile_app` = iOS (APPID móvel + PID + chaves).
@@ -146,48 +144,16 @@ perfil **não verificado** (`emailVerified=false`), sem merge automático e sem
 entrar no e-mail da sessão usado pelos gates admin/curador. Nasce O4
 (`oauth_signup`) tanto no site quanto no app.
 
-### Diagnóstico — 5 nov 2026
+### Identidade entre os dois APPIDs — `union_id`
 
-- **Desbloqueio:** `GET https://learnchinese.today/api/app/alipay/auth-info?targetId=…`
-  responde **200** com `infoStr` + `scheme=today.learnchinese.app` (APPID móvel
-  + PID). O 404 anterior era o bloqueio antes do SDK; com app_API liberada no
-  console Alipay, o servidor publicado assina o login.
-- `POST /api/app/auth/alipay` com `{}` continua **400** `invalid_token` (esperado
-  sem `authCode`). Troca real do `auth_code` ainda precisa do aparelho + app Alipay.
-- Variáveis móveis: sync local OK (`ALIPAY_MOBILE_*` em `.env.local` /
-  `deploy/server.env`). Produto APP login online no console.
-- iOS: scheme, queries, SDK `auth_V2` ligados. Android: `AuthTask.authV2` + aba
-  Conta no APK debug (`LIBRARY_BASE_URL` → prod). Round-trip físico pendente.
-- Falhas na troca móvel registram motivo/subcódigo em `[alipay]` e devolvem
-  `alipay_failed` (502 para transporte, 401 para resposta recusada). Logs não
-  incluem código de autorização, tokens, chaves ou identificadores pessoais.
+Âncora = `union_id` de `alipay.system.oauth.token`; `open_id` por APPID em
+`alipay_open_ids`. Mesmo `union_id` → mesmo `users.id` (`resolveAlipayUser`).
+Sem `union_id`, cada APPID fica conta separada. Conflito union vs open em
+*users* diferentes: mantém o do `union_id`, sem merge automático.
 
-O próximo passo depende do dono: disponibilizar a rota de servidor ou testar
-contra o Next local acessível pelo iPhone. **Nenhum deploy foi realizado.**
-Checklist do aparelho: `appMobile/docs/08_login.md` § Validação física.
-
-### Identidade entre os dois APPIDs — `union_id` (nov 2026)
-
-Protocolo: âncora = `union_id` de `alipay.system.oauth.token`; `open_id` é
-secundário por APPID (`alipay_open_ids`). Site e app com o mesmo `union_id`
-resolvem para o mesmo `users.id` (`resolveAlipayUser`). Sem `union_id` na
-resposta (console Alipay / grupo de apps), cai no `open_id` e os dois APPIDs
-continuam contas separadas. Conflito union vs open já ligados a *users*
-diferentes: mantém o user do `union_id` e **não** mescla automaticamente.
-Ainda depende de a Alipay devolver `union_id` nos dois APPIDs (mesmo 主体).
-
-**Prod 5 nov 2026:** wipe de todos os `users` / `accounts` / sessões app
-(backup `phrase-game.sqlite.bak-wipe-*` no servidor); tabela `alipay_open_ids`
-criada; código `resolveAlipayUser` deployado com restart.
-
-**Confirmado 6 nov 2026:** mesma carteira Alipay no site (APPID web) + app
-(APPID móvel) → **um** `users.id` (`u_fdd83b…`); `union_id` igual nos dois
-`alipay_open_ids`. Site↔app Alipay OK.
-
-**Depois (UI):** se a pessoa quiser **vincular outro provedor** à mesma conta
-(ex. Google/Apple/e-mail com sessão Alipay já ativa) — falta interface
-"conectar outra conta" (ver § Pendências). Não é automático sem e-mail
-verificado partilhado.
+[ x ] Site↔app Alipay unificado por `union_id` (nov 2026).  
+[ ] Vincular **outro** provedor (Google/Apple/e-mail) com sessão ativa — UI
+(ver § Pendências).
 
 No console da Alipay a URL de retorno tem de ser exactamente:
 
@@ -323,46 +289,31 @@ Implementado com a opção marcada; responder só se for "não".
    históricos nem revoga cookies antigos. Contas já associadas exigem auditoria
    antes de qualquer separação. Conexão explícita de identidades continua pendente.
 
-### O que falta de você (não é pergunta — é credencial/ação)
+### Credenciais / acções do dono
 
-- **Resend**: domínio `learnchinese.today` verificado (remetente `no-reply@learnchinese.today`) — feito na conta e404.
-- **Google iOS**: client ID no `credentials.json` + Secrets — ver `appMobile/docs/08_login.md`.
-- **Deploy** quando fores pôr `/api/app/auth/*` em produção (código local já tem).
-- Apple no site (opcional): Services ID + chave `.p8`.
-- Merge identity: `cd web && npm run test:identity`.
+[ x ] Resend `no-reply@learnchinese.today`; Google iOS no Secrets; `/api/app/*` em prod.  
+[ ] Apple no site (Services ID + `.p8`) se fores ativar.  
+Teste: `cd web && npm run test:identity`.
 
 ---
 
-## Pendências de login (revisão nov 2026)
+## Pendências de login
 
-O desenho original (anotado antes da implementação) foi substituído por § Contas.
-O que ainda falta, por ordem — a sequência geral está em
-[09_roadmap_integracoes.md](09_roadmap_integracoes.md):
+Ordem geral: [09_roadmap_integracoes.md](09_roadmap_integracoes.md).
 
-| Item | Onde | Bloqueio |
+| Item | Onde | Nota |
 |---|---|---|
-| Deploy das contas (e-mail, Apple app, Alipay) | servidor | ação do dono |
-| Google Sign-In no app | app | client ID iOS já no Secrets — falta teste no iPhone |
-| ~~Alipay no app iOS~~ | app | login OK (5–6 nov 2026); union_id web↔app confirmado |
-| Excluir conta **no site** | site | só UI — API `DELETE /api/account` já existe |
-| **Vincular outra conta pela UI** (sessão ativa: ex. Alipay → Google/Apple/e-mail) | site + app | desenho + fluxo com confirmação; Alipay↔Alipay já resolve por `union_id` |
-| Revogar token Apple ao excluir conta | servidor | chave `.p8` |
-| Apple no site | site | Services ID + `.p8` no credentials — falta deploy + teste |
-| [ ] Ícones das redes (Google, Apple, Alipay) nos botões de login | site + app | site tem SVG básico em `EmailAuthForm`; app ainda sem marcas oficiais |
-| WeChat | — | conta Tencent (§ WeChat) |
-| Passkeys | site + app | depois do resto |
+| Excluir conta **no site** | site | API `DELETE /api/account` pronta — falta UI |
+| Vincular outra conta (sessão ativa) | site + app | Alipay↔Alipay já por `union_id` |
+| Revogar token Apple ao excluir | servidor | chave `.p8` |
+| Apple no site | site | Services ID + `.p8` |
+| Ícones oficiais das redes nos botões | site + app | SVG básico no site |
+| WeChat / Passkeys | — | depois |
 
-### Revisão de segurança (nov 2026) — corrigido
+### Segurança (já corrigido)
 
-- **Cadastro com e-mail de outra pessoa.** Registrar um endereço que já era de
-  um usuário Google/Apple/Alipay gravava a senha nesse usuário na hora — qualquer
-  um tomava a conta. Agora o cadastro **não escreve nada** num usuário existente:
-  o hash da senha vai dentro do link enviado (`email_tokens.password_hash`) e só
-  entra no usuário quando o link é aberto. Mesmo para cadastro pendente (O1):
-  sem senha até o link. Teste: `npm run test:identity`.
-- **Conta excluída "voltava".** Cookie do site (JWT, 30 dias) de conta excluída
-  recriava o usuário ao gravar rodada. Agora sessão de usuário inexistente = deslogado.
-- Hash fictício literal no código (alerta "Generic Password") removido.
+[ x ] Cadastro não escreve senha em user existente até o link; sessão de conta
+excluída não recria user; hash fictício removido. `npm run test:identity`.
 
 ---
 

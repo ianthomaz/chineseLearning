@@ -64,9 +64,8 @@ jogo:
 | `hanzi` | id estável do léxico (ex. `1-一`) | Sei / Ainda não no app |
 
 `progress` é um **acumulado**, não um log: `attempts`, `correct`,
-`best_score`, `last_score` e `last_correct`. O passo a passo fica em `events`.
-Campos no Prisma/SQLite: **`correct`** (contador) e **`last_seen_at`** — não
-existem `correct_count` / `last_attempt_at` (nomes errados em drafts antigos).
+`best_score`, `last_score`, `last_correct`, `last_seen_at`. O passo a passo
+fica em `events`.
 
 A fila de revisão é `last_correct = 0`, ordenada por `last_seen_at` ascendente —
 revê-se primeiro o que está parado há mais tempo, não o que se acabou de errar.
@@ -131,10 +130,15 @@ Depois do primeiro payload, `progress` para (`user`, `phrase`, `pg-001`) tem
 `last_correct = 0`; para `pg-002`, `last_correct = 1`. Um segundo round que
 mande `pg-001` com `correct: true` tira-o da fila.
 
-**Migração:** `progress` existia como stub documentado (`user_id`, `phrase_id`,
-`score`) que nunca foi escrito. `migrateProgressStub()` em `server/db/index.ts`
-substitui-o; se por acaso tiver linhas, guarda-as como `progress_legacy` em vez
-de apagar.
+**Schema SQLite (runtime):** uma string `MIGRATION` squashed em
+`web/src/server/db/index.ts` — shape canónico de `users` (incl. `password_hash`,
+`email_verified_at`, `clearance`), `progress` (com `game`), `email_tokens`
+(com `password_hash`), etc. Não há pasta `prisma/migrations` para isto.
+Helpers idempotentes (`migrateProgressStub`, `migratePlayersToUsers`,
+`migrateIdentity`) só actualizam DBs antigos: dobram `players` → `users`,
+criam a VIEW `players`, apagam `players_legacy`, e removem `progress_legacy`
+vazio. Stub antigo de `progress` com linhas fica como `progress_legacy` até
+revisão manual.
 
 ### Pendências para pontuação partilhada site + app (nov 2026)
 
@@ -144,17 +148,13 @@ de apagar.
   **32 de 630** perguntas — o banco commitado está defasado das fontes. Publicar
   esse rebuild faz o progresso de quiz já gravado apontar para perguntas
   erradas. Antes: id estável (ex. hash de tipo + hanzi) e migrar `progress`.
-- ~~`game_rounds.round_id` não é único~~ — resolvido em código: `recordRound()`
-  ignora um `round_id` que o usuário já tem (índice `idx_rounds_user_round`).
-- ~~**Backup do SQLite de produção**~~ — feito (nov 2026): cron pcVelho
-  `50 2 * * *` BRT → `/backups/chineseLearning/sqlite_daily/` (30 dias);
-  deploy exclui `data/*.sqlite*` e `data/*.bak*`.
-- **Frases no pack do app.** O app embute `phrases.json` (cópia de
-  `src/data/phrase-game/phrases.json`, `Scripts/sync-phrases-seed.mjs`); só o
-  léxico tem manifest/actualização. Pôr as frases no mesmo pack.
-- Identidade multi-provedor (`accounts`): [05](05_autenticacao.md) § Roadmap.
+- **Frases no pack do app.** O app embute `phrases.json`; só o léxico tem
+  manifest/actualização. Pôr as frases no mesmo pack.
+- Backup prod: cron pcVelho `50 2 * * *` BRT → `/backups/chineseLearning/sqlite_daily/`
+  (30 dias); deploy exclui `data/*.sqlite*` e `data/*.bak*`.
+- Identidade: [05](05_autenticacao.md).
 
-### Usuários — revisão do banco (nov 2026)
+### Usuários
 
 Um usuário (`users`, id interno `u_…`; ids antigos = `sub` do Google) e várias
 entradas (`accounts`: google, apple, alipay, email). Tudo que é dele aponta
@@ -174,8 +174,8 @@ para `users.id`.
 Regras que o código garante:
 
 - Mesma pessoa = mesmo `users.id` só por **e-mail verificado** (Google,
-  Apple sem "Hide My Email", link de confirmação; Alipay quando devolve e-mail —
-  ver pergunta 7 em [05](05_autenticacao.md)).
+  Apple sem "Hide My Email", link de confirmação). Alipay: e-mail do share
+  **não** verifica nem faz merge — união site↔app é por `union_id` ([05](05_autenticacao.md)).
 - Senha só entra num usuário quando o link do e-mail é aberto.
 - Sessão do site de conta excluída = deslogado; rotas não recriam usuário.
 - Rodadas são idempotentes por (`user_id`, `round_id`).
@@ -184,14 +184,11 @@ Conhecido, ainda aberto (ordem em [09](09_roadmap_integracoes.md) § Sequência)
 
 | # | Problema | Efeito | Caminho |
 |---|---|---|---|
-| 1 | ~~Sem backup do SQLite de produção~~ | — | cron diário no pcVelho (ver pendências acima) |
-| 2 | Ids do quiz posicionais | progresso de quiz aponta para a pergunta errada após rebuild | id estável (tipo + hanzi) + migrar `progress` |
-| 3 | `users.email` sem índice por `lower(email)` | buscas de junção leem a tabela toda | índice quando passar de alguns milhares |
-| 4 | `anon_id` do convidado não liga ao usuário no login | histórico de convidado fica órfão | ligar no primeiro login (só `events`) |
-| 5 | Sem "vincular outra conta" na UI | Alipay (sem e-mail) + Google = 2 users até a pessoa ligar | UI com sessão ativa — [05](05_autenticacao.md) § Pendências; Alipay web↔app já OK via `union_id` |
-| 6 | Excluir conta só pela API/app | site não tem botão | UI |
-| 7 | Tabelas legadas `players_legacy`, `progress_legacy` (se existirem) | nenhum | apagar depois do backup |
-| 8 | Admin por e-mail (`NEXT_PUBLIC_ADMIN_EMAIL`), fora do NOIA | dois sistemas de permissão | admin = A7 em `users.clearance` |
+| 1 | Ids do quiz posicionais | progress aponta mal após rebuild | id estável + migrar `progress` |
+| 2 | `anon_id` não liga ao user no login | histórico guest órfão | ligar no 1.º login (`events`) |
+| 3 | Sem UI "vincular outra conta" / excluir no site | Alipay+Google = 2 users; API delete só | [05](05_autenticacao.md) |
+| 4 | Admin por e-mail no env, fora do NOIA | dois sistemas | admin = A7 |
+| 5 | `progress_legacy` com linhas (raro) | ruído | inspecionar e dropar |
 
 Consultas úteis (produção, só leitura):
 

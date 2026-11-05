@@ -68,16 +68,13 @@ Measure performance when you change load paths; do not estimate
 
 ## Current focus (update when WIP lands)
 
-WIP largely done locally (not necessarily committed):
+Done (nov 2026): Alipay iOS+Android + **union_id** web↔app; SQLite backup cron
+on pcVelho; `progress` contract for `phrase`/`hanzi` (`docs/07`); Tasks board
+(`tasks/README.md`).
 
-1. **Done in tree:** offline stroke order (665 chars + integrity-checked sync),
-   `AppPreferences`, clearance stripped from client payloads, Config/UI/About,
-   safer SwiftData without wiping App Group, UITests + 87 unit tests green.
-2. **Owner next:** commit when ready (submodule then monorepo pointer); decide
-   Alipay device plan (prod still lacked `/api/app/alipay/auth-info` last check —
-   no deploy unless asked).
-3. **Out of scope unless asked:** Android polish, SRS, WeChat, account-linking
-   migration across Alipay APPID `open_id`s.
+Next (board + roadmap): UI “rever erradas”; persist Sei/Ainda não; phrases in
+app pack; account-link UI for Google/Apple/email with active session; quiz
+stable ids. Out of scope unless asked: WeChat, Leitner/SRS, 老师 catalog.
 
 When blocked on console credentials, physical device, or deploy: stop and leave a
 short owner checklist. Do not invent credentials or merge accounts.

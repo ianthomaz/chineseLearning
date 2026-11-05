@@ -326,6 +326,7 @@
     "phraseFontLink": "Hanzi Pinyin Font (parlr)",
     "rest": "Hanzi: Noto Sans SC. Columna de pinyin en tablas: texto del consolidado.",
     "license": "(CC-BY-SA-4.0).",
+    "thanksOss": "Gracias a los proyectos de código abierto que hacen posible learnchinese.today.",
     "hanziWriterIntro": "Trazos en vocabulario:",
     "hanziWriterLib": "Hanzi Writer",
     "hanziWriterMid": "(MIT) · datos",
