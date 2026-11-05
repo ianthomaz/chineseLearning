@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS players (
 
 -- Per-item mastery, for signed-in players only. One row per (user, game, item):
 -- the running tally, not a log; the blow-by-blow lives in the events table.
--- game is 'phrase' or 'quiz'; item_id is a phrase id or a quiz question id.
+-- game is 'phrase' | 'quiz' | 'hanzi'; item_id unique within that game.
 CREATE TABLE IF NOT EXISTS progress (
   id           INTEGER PRIMARY KEY AUTOINCREMENT,
   user_id      TEXT NOT NULL,

@@ -94,7 +94,7 @@ model ClearanceChange {
 model Progress {
   id          Int    @id @default(autoincrement())
   userId      String @map("user_id")
-  /// "phrase" or "quiz" — item ids are only unique within a game.
+  /// "phrase" | "quiz" | "hanzi" — item ids are only unique within a game.
   game        String
   itemId      String @map("item_id")
   attempts    Int    @default(0)

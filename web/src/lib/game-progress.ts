@@ -55,6 +55,8 @@ export type ProgressResponse = {
   nick: string | null;
   phrase: GameSummary;
   quiz: GameSummary;
+  /** Present once the server ships hanzi progress (game = "hanzi"). */
+  hanzi?: GameSummary;
   recentRounds: RoundRow[];
 };
 

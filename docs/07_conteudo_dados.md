@@ -54,14 +54,82 @@ Só para quem tem sessão. Duas tabelas com trabalhos distintos:
 | `game_rounds` | uma linha por rodada terminada | "como me saí da última vez?" |
 | `progress` | uma linha por (`user_id`, `game`, `item_id`) | "o que tenho de rever?" |
 
-`game` é `'phrase'` ou `'quiz'` — os ids de item só são únicos dentro de cada
-jogo. `progress` é um **acumulado**, não um log: `attempts`, `correct`,
+`game` discrimina o domínio — os ids de item só são únicos **dentro** de cada
+jogo:
+
+| `game` | `item_id` | Origem |
+|--------|-----------|--------|
+| `phrase` | id da frase (ex. `pg-001`) | jogo de frases |
+| `quiz` | id da pergunta do quiz | gamification |
+| `hanzi` | id estável do léxico (ex. `1-一`) | Sei / Ainda não no app |
+
+`progress` é um **acumulado**, não um log: `attempts`, `correct`,
 `best_score`, `last_score` e `last_correct`. O passo a passo fica em `events`.
+Campos no Prisma/SQLite: **`correct`** (contador) e **`last_seen_at`** — não
+existem `correct_count` / `last_attempt_at` (nomes errados em drafts antigos).
 
 A fila de revisão é `last_correct = 0`, ordenada por `last_seen_at` ascendente —
 revê-se primeiro o que está parado há mais tempo, não o que se acabou de errar.
 
 Escrita numa transacção: uma rodada meio gravada corromperia essa fila.
+
+### Contrato — revisão de frases e hanzi (nov 2026)
+
+**Fonte de verdade:** servidor (`progress` + `game_rounds`). Cliente (SwiftData /
+fila Android) espelha para offline e sobe quando há sessão.
+
+**Escrita:** `POST /api/game/round` (site cookie ou Bearer do app). Idempotente
+por (`user_id`, `round_id`). Mesmo pipeline `RoundSync` do app.
+
+**Ciclo (binário, sem Leitner/SRS nesta fase):**
+
+1. Errar frase / tocar **Ainda não** no hanzi → `last_correct = 0` (entra na fila).
+2. Acertar na revisão / tocar **Sei** depois → `last_correct = 1` (sai da fila ativa).
+3. `attempts` e `correct` sobem a cada envio; o passo a passo continua em `events`.
+
+**Frases — sync da fila quando logado:** o app pode manter `phraseIdsToReview`
+local; após sync, a lista canónica é `itemsToReview(userId, "phrase")` no
+servidor (mesmo critério: `last_correct = 0`). Alinhar UI “Rever erradas” a
+essa regra — contrato pronto; botão/tela ainda por fazer.
+
+**Hanzi:** hoje Sei/Ainda não no app ainda é memória de sessão / preferência
+local. Contrato: passar a gravar via round com `game: "hanzi"`. UI persistida =
+próxima rodada.
+
+**Encaixe futuro (só nota):** anotações de estrutura gramatical nas frases
+poderão classificar se o erro parece gramática e agrupar pelo mesmo conceito —
+sem schema novo nesta fase; quando existir, liga-se ao `item_id` da frase e/ou
+a tags de conteúdo, não a uma segunda tabela de “mastery”.
+
+**Exemplos** (fictícios, sem PII):
+
+```json
+{
+  "game": "phrase",
+  "roundId": "r_phrase_20261105_a1",
+  "tier": "hsk1",
+  "level": 2,
+  "items": [
+    { "itemId": "pg-001", "correct": false, "score": 0 },
+    { "itemId": "pg-002", "correct": true, "score": 1 }
+  ]
+}
+```
+
+```json
+{
+  "game": "hanzi",
+  "roundId": "r_hanzi_20261105_b2",
+  "items": [
+    { "itemId": "1-一", "correct": false, "score": 0 },
+    { "itemId": "1-七", "correct": true, "score": 1 }
+  ]
+}
+```
+
+Depois do primeiro payload, `progress` para (`user`, `phrase`, `pg-001`) tem
+`last_correct = 0`; para `pg-002`, `last_correct = 1`. Um segundo round que
+mande `pg-001` com `correct: true` tira-o da fila.
 
 **Migração:** `progress` existia como stub documentado (`user_id`, `phrase_id`,
 `score`) que nunca foi escrito. `migrateProgressStub()` em `server/db/index.ts`
@@ -78,9 +146,9 @@ de apagar.
   erradas. Antes: id estável (ex. hash de tipo + hanzi) e migrar `progress`.
 - ~~`game_rounds.round_id` não é único~~ — resolvido em código: `recordRound()`
   ignora um `round_id` que o usuário já tem (índice `idx_rounds_user_round`).
-- **Backup do SQLite de produção** não está documentado. Com progresso de
-  usuários entre aparelhos, passa a ser obrigatório. (O deploy já preserva o
-  SQLite remoto — o rsync exclui `*.sqlite`.)
+- ~~**Backup do SQLite de produção**~~ — feito (nov 2026): cron pcVelho
+  `50 2 * * *` BRT → `/backups/chineseLearning/sqlite_daily/` (30 dias);
+  deploy exclui `data/*.sqlite*` e `data/*.bak*`.
 - **Frases no pack do app.** O app embute `phrases.json` (cópia de
   `src/data/phrase-game/phrases.json`, `Scripts/sync-phrases-seed.mjs`); só o
   léxico tem manifest/actualização. Pôr as frases no mesmo pack.
@@ -116,11 +184,11 @@ Conhecido, ainda aberto (ordem em [09](09_roadmap_integracoes.md) § Sequência)
 
 | # | Problema | Efeito | Caminho |
 |---|---|---|---|
-| 1 | **Sem backup** do SQLite de produção | perder o arquivo = perder todas as contas | cópia diária (`sqlite3 .backup`) para fora da VM, guardar 30 dias |
+| 1 | ~~Sem backup do SQLite de produção~~ | — | cron diário no pcVelho (ver pendências acima) |
 | 2 | Ids do quiz posicionais | progresso de quiz aponta para a pergunta errada após rebuild | id estável (tipo + hanzi) + migrar `progress` |
 | 3 | `users.email` sem índice por `lower(email)` | buscas de junção leem a tabela toda | índice quando passar de alguns milhares |
 | 4 | `anon_id` do convidado não liga ao usuário no login | histórico de convidado fica órfão | ligar no primeiro login (só `events`) |
-| 5 | Sem "conectar outra conta" | Alipay sem e-mail + Google = 2 usuários | UI com sessão ativa |
+| 5 | Sem "vincular outra conta" na UI | Alipay (sem e-mail) + Google = 2 users até a pessoa ligar | UI com sessão ativa — [05](05_autenticacao.md) § Pendências; Alipay web↔app já OK via `union_id` |
 | 6 | Excluir conta só pela API/app | site não tem botão | UI |
 | 7 | Tabelas legadas `players_legacy`, `progress_legacy` (se existirem) | nenhum | apagar depois do backup |
 | 8 | Admin por e-mail (`NEXT_PUBLIC_ADMIN_EMAIL`), fora do NOIA | dois sistemas de permissão | admin = A7 em `users.clearance` |

@@ -11,7 +11,7 @@
 import { getDb } from "./index";
 
 /** Which game an item belongs to. Item ids are only unique within a game. */
-export type GameKind = "phrase" | "quiz";
+export type GameKind = "phrase" | "quiz" | "hanzi";
 
 export type ItemResult = {
   itemId: string;

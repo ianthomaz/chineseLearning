@@ -22,6 +22,7 @@ export async function GET(req: Request) {
     nick: user?.nick ?? null,
     phrase: gameSummary(id, "phrase"),
     quiz: gameSummary(id, "quiz"),
+    hanzi: gameSummary(id, "hanzi"),
     recentRounds: recentRounds(id, 5),
   });
 }

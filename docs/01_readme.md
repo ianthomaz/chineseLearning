@@ -47,6 +47,7 @@ Site Next.js em **`web/`** · produção **`https://learnchinese.today/`**
 | [`web/deploy/README.md`](../web/deploy/README.md) | Runbook nginx |
 | [`web/src/components/phrase-game/README.md`](../web/src/components/phrase-game/README.md) | Módulo React do jogo |
 | [`local/credentials/README.md`](../local/credentials/README.md) | Credenciais OAuth/ENV |
+| [`tasks/README.md`](../tasks/README.md) | Quadro Tasks (`project_db_id=chineseLearning`) |
 
 ## Decisões de produto (fixas)
 

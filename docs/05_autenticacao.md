@@ -178,9 +178,16 @@ Ainda depende de a Alipay devolver `union_id` nos dois APPIDs (mesmo 主体).
 
 **Prod 5 nov 2026:** wipe de todos os `users` / `accounts` / sessões app
 (backup `phrase-game.sqlite.bak-wipe-*` no servidor); tabela `alipay_open_ids`
-criada; código `resolveAlipayUser` deployado com restart. Reteste limpo: web +
-iOS + Android com a mesma carteira → um `users.id` se a gateway mandar
-`union_id`.
+criada; código `resolveAlipayUser` deployado com restart.
+
+**Confirmado 6 nov 2026:** mesma carteira Alipay no site (APPID web) + app
+(APPID móvel) → **um** `users.id` (`u_fdd83b…`); `union_id` igual nos dois
+`alipay_open_ids`. Site↔app Alipay OK.
+
+**Depois (UI):** se a pessoa quiser **vincular outro provedor** à mesma conta
+(ex. Google/Apple/e-mail com sessão Alipay já ativa) — falta interface
+"conectar outra conta" (ver § Pendências). Não é automático sem e-mail
+verificado partilhado.
 
 No console da Alipay a URL de retorno tem de ser exactamente:
 
@@ -336,9 +343,9 @@ O que ainda falta, por ordem — a sequência geral está em
 |---|---|---|
 | Deploy das contas (e-mail, Apple app, Alipay) | servidor | ação do dono |
 | Google Sign-In no app | app | client ID iOS já no Secrets — falta teste no iPhone |
-| Alipay no app iOS | app | [ ] **não funciona ainda** — SDK + rotas no repo; falta fechar no iPhone (app Alipay instalado) |
+| ~~Alipay no app iOS~~ | app | login OK (5–6 nov 2026); union_id web↔app confirmado |
 | Excluir conta **no site** | site | só UI — API `DELETE /api/account` já existe |
-| "Conectar outra conta" com sessão ativa (ex.: Alipay sem e-mail + Google) | site + app | desenho de UI |
+| **Vincular outra conta pela UI** (sessão ativa: ex. Alipay → Google/Apple/e-mail) | site + app | desenho + fluxo com confirmação; Alipay↔Alipay já resolve por `union_id` |
 | Revogar token Apple ao excluir conta | servidor | chave `.p8` |
 | Apple no site | site | Services ID + `.p8` no credentials — falta deploy + teste |
 | [ ] Ícones das redes (Google, Apple, Alipay) nos botões de login | site + app | site tem SVG básico em `EmailAuthForm`; app ainda sem marcas oficiais |

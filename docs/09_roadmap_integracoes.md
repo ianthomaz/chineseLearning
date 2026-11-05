@@ -17,7 +17,7 @@ Cada fase depende da anterior. Dentro da fase, a ordem é a da tabela.
 
 | # | Trabalho | Onde | Quem |
 |---|---|---|---|
-| 0.1 | **Backup diário** do SQLite de produção (antes de qualquer usuário real) | VM | dono (ops) |
+| 0.1 | ~~**Backup diário** do SQLite de produção~~ | pcVelho cron 02:50 BRT | feito nov 2026 |
 | 0.2 | Deploy do site com contas (e-mail+senha, Alipay, `/api/app/*`) | VM | dono |
 | 0.3 | Credenciais: Google iOS client ID | `credentials.json` | dono |
 | 0.4 | Teste no iPhone: login Apple/e-mail, rodadas indo para o site | app | dono |
@@ -28,7 +28,7 @@ Cada fase depende da anterior. Dentro da fase, a ordem é a da tabela.
 | # | Trabalho | Doc |
 |---|---|---|
 | 1.1 | Ids estáveis no quiz + migração do `progress` | [07](07_conteudo_dados.md) § Pendências |
-| 1.2 | Excluir conta e "conectar outra conta" no site | [05](05_autenticacao.md) § Pendências |
+| 1.2 | Excluir conta e **vincular outra conta pela UI** (ex. Alipay → Google) | [05](05_autenticacao.md) § Pendências — Alipay site↔app já unido por `union_id` |
 | 1.3 | Ligar `anon_id` do convidado ao usuário no primeiro login | [07](07_conteudo_dados.md) § Usuários |
 | 1.4 | Admin pelo NOIA (A7) em vez de e-mail no env | [05](05_autenticacao.md) |
 
@@ -36,11 +36,11 @@ Cada fase depende da anterior. Dentro da fase, a ordem é a da tabela.
 
 | # | Trabalho | Doc |
 |---|---|---|
-| 2.1 | Guardar Errei/Acertei dos hanzi e priorizar a rotação | `appMobile/docs/07_plano_melhorias.md` § 3 |
-| 2.2 | Histórico de rodadas no app + "rever erradas" | idem § 2 |
-| 2.3 | Frases no pack da biblioteca (atualizar sem nova versão do app) | idem § 2.6 |
-| 2.4 | Escrita offline (dados de traço embutidos) + escrever com o dedo | idem § 3 |
-| 2.5 | Alipay no app — **ainda não funciona** | [05](05_autenticacao.md) — SDK no repo; falta fechar e validar no iPhone |
+| 2.1 | Guardar Errei/Acertei dos hanzi e priorizar a rotação | Contrato em [07](07_conteudo_dados.md) (`game=hanzi`); UI em `appMobile/docs/07_plano_melhorias.md` § 3 |
+| 2.2 | Histórico de rodadas no app + "rever erradas" | Contrato phrase em [07](07_conteudo_dados.md); UI idem § 2 |
+| 2.3 | Frases no pack da biblioteca (atualizar sem nova versão do app) | `appMobile/docs/07_plano_melhorias.md` § 2.6 |
+| 2.4 | Escrita offline (dados de traço embutidos) + escrever com o dedo | idem § 3 — strokes offline já no app; quiz de escrita pendente |
+| 2.5 | ~~Alipay no app~~ — login iOS + Android OK (5 nov 2026) | [05](05_autenticacao.md); reteste opcional union_id web↔app |
 
 ### Fase 3 — loja
 

@@ -14,7 +14,7 @@ import { recordRound, type GameKind, type ItemResult } from "@/server/db/progres
 
 export const dynamic = "force-dynamic";
 
-const GAMES = new Set<GameKind>(["phrase", "quiz"]);
+const GAMES = new Set<GameKind>(["phrase", "quiz", "hanzi"]);
 
 /** A round is 10 phrases; the quiz is longer. Enough headroom, no abuse. */
 const MAX_ITEMS = 100;

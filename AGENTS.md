@@ -37,6 +37,7 @@ Do **not** revive `appApple/` paths. iOS work happens under `appMobile/ios/`.
 
 | Topic | Doc / code |
 |-------|------------|
+| Tasks board (`chineseLearning`) | `tasks/README.md` · https://tasks.daempresa.com.br/ |
 | Auth (Google, Apple, Alipay, email, app token) | `docs/05_autenticacao.md` |
 | App login / device checklist | `appMobile/docs/08_login.md` |
 | Work order | `docs/09_roadmap_integracoes.md` |

@@ -32,6 +32,7 @@ local/credentials/google-oauth-client-*.json
 local/credentials/generated/
 local/credentials/*.env
 local/credentials/*.env.*
+!local/credentials/*.env.example
 
 # Apple Sign In private keys
 local/credentials/*.p8
