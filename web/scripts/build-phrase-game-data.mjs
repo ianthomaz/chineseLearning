@@ -199,14 +199,20 @@ function main() {
   }
 
   mkdirSync(OUT_DIR, { recursive: true });
-  writeFileSync(
-    OUT,
-    `${JSON.stringify({ version: 1, count: phrases.length, byTier, byPool, byLevel, phrases }, null, 2)}\n`,
-    "utf8",
-  );
+  const payload = { version: 1, count: phrases.length, byTier, byPool, byLevel, phrases };
+  writeFileSync(OUT, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+
+  // Public static fallback for guests when `/api/phrase-game/bank` is unreachable
+  // (CDN blip, static export without props). Same JSON the API serves.
+  const publicDir = join(WEB_ROOT, "public", "data");
+  mkdirSync(publicDir, { recursive: true });
+  const publicOut = join(publicDir, "phrase-game-bank.json");
+  writeFileSync(publicOut, `${JSON.stringify(payload)}\n`, "utf8");
+
   console.log(
     `[phrase-game] OK: ${phrases.length} phrases (pool hsk1=${byPool.hsk1} hsk2=${byPool.hsk2} hsk2+=${byPool.hsk2plus} hsk3=${byPool.hsk3}) → ${OUT}`,
   );
+  console.log(`[phrase-game] public fallback → ${publicOut}`);
 }
 
 main();
