@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "count": 1067,
+  "count": 1092,
   "byTier": {
-    "hsk1": 253,
-    "basico": 814
+    "hsk1": 275,
+    "basico": 817
   },
   "byPool": {
-    "hsk1": 253,
-    "hsk2": 278,
-    "hsk2plus": 425,
+    "hsk1": 275,
+    "hsk2": 279,
+    "hsk2plus": 427,
     "hsk3": 111
   },
   "byLevel": {
-    "1": 442,
-    "2": 538,
+    "1": 461,
+    "2": 544,
     "3": 79,
     "4": 8
   },
@@ -83949,6 +83949,1745 @@
       ],
       "tags": [
         "tema:saude"
+      ]
+    },
+    {
+      "id": "pg-1572",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Três dias bastam.",
+      "en": "Three days are enough.",
+      "es": "Tres días bastan.",
+      "hanzi": "三天够了",
+      "pinyin": "sān tiān gòu liǎo",
+      "tokens": [
+        {
+          "palavra": "三",
+          "caracteres": [
+            {
+              "hanzi": "三",
+              "pinyin": "sān"
+            }
+          ],
+          "pinyin": "sān",
+          "pt": "três",
+          "dificil": false
+        },
+        {
+          "palavra": "天",
+          "caracteres": [
+            {
+              "hanzi": "天",
+              "pinyin": "tiān"
+            }
+          ],
+          "pinyin": "tiān",
+          "pt": "dia",
+          "dificil": false
+        },
+        {
+          "palavra": "够",
+          "caracteres": [
+            {
+              "hanzi": "够",
+              "pinyin": "gòu"
+            }
+          ],
+          "pinyin": "gòu",
+          "pt": "bastar",
+          "dificil": true
+        },
+        {
+          "palavra": "了",
+          "caracteres": [
+            {
+              "hanzi": "了",
+              "pinyin": "liǎo"
+            }
+          ],
+          "pinyin": "liǎo",
+          "pt": "(aspecto)",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:gramatica",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1573",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Eu descanso um dia.",
+      "en": "I take a day off.",
+      "es": "Descanso un día.",
+      "hanzi": "我休息一天",
+      "pinyin": "wǒ xiū xi yī tiān",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "休息",
+          "caracteres": [
+            {
+              "hanzi": "休",
+              "pinyin": "xiū"
+            },
+            {
+              "hanzi": "息",
+              "pinyin": "xi"
+            }
+          ],
+          "pinyin": "xiū xi",
+          "pt": "descansar",
+          "dificil": true
+        },
+        {
+          "palavra": "一",
+          "caracteres": [
+            {
+              "hanzi": "一",
+              "pinyin": "yī"
+            }
+          ],
+          "pinyin": "yī",
+          "pt": "um",
+          "dificil": false
+        },
+        {
+          "palavra": "天",
+          "caracteres": [
+            {
+              "hanzi": "天",
+              "pinyin": "tiān"
+            }
+          ],
+          "pinyin": "tiān",
+          "pt": "dia",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1574",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Quando você volta?",
+      "en": "When are you coming back?",
+      "es": "¿Cuándo vuelves?",
+      "hanzi": "你什么时候回来",
+      "pinyin": "nǐ shén me shí hòu huí lái",
+      "tokens": [
+        {
+          "palavra": "你",
+          "caracteres": [
+            {
+              "hanzi": "你",
+              "pinyin": "nǐ"
+            }
+          ],
+          "pinyin": "nǐ",
+          "pt": "você",
+          "dificil": false
+        },
+        {
+          "palavra": "什么时候",
+          "caracteres": [
+            {
+              "hanzi": "什",
+              "pinyin": "shén"
+            },
+            {
+              "hanzi": "么",
+              "pinyin": "me"
+            },
+            {
+              "hanzi": "时",
+              "pinyin": "shí"
+            },
+            {
+              "hanzi": "候",
+              "pinyin": "hòu"
+            }
+          ],
+          "pinyin": "shén me shí hòu",
+          "pt": "quando",
+          "dificil": false
+        },
+        {
+          "palavra": "回来",
+          "caracteres": [
+            {
+              "hanzi": "回",
+              "pinyin": "huí"
+            },
+            {
+              "hanzi": "来",
+              "pinyin": "lái"
+            }
+          ],
+          "pinyin": "huí lái",
+          "pt": "voltar",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:transporte-direcoes",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1575",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Eu quero voltar.",
+      "en": "I want to go back.",
+      "es": "Quiero volver.",
+      "hanzi": "我想回去",
+      "pinyin": "wǒ xiǎng huí qù",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "想",
+          "caracteres": [
+            {
+              "hanzi": "想",
+              "pinyin": "xiǎng"
+            }
+          ],
+          "pinyin": "xiǎng",
+          "pt": "querer",
+          "dificil": false
+        },
+        {
+          "palavra": "回去",
+          "caracteres": [
+            {
+              "hanzi": "回",
+              "pinyin": "huí"
+            },
+            {
+              "hanzi": "去",
+              "pinyin": "qù"
+            }
+          ],
+          "pinyin": "huí qù",
+          "pt": "voltar",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:transporte-direcoes",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1576",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Volta a Pequim.",
+      "en": "Go back to Beijing.",
+      "es": "Vuelve a Pekín.",
+      "hanzi": "回北京吧",
+      "pinyin": "huí běi jīng ba",
+      "tokens": [
+        {
+          "palavra": "回",
+          "caracteres": [
+            {
+              "hanzi": "回",
+              "pinyin": "huí"
+            }
+          ],
+          "pinyin": "huí",
+          "pt": "voltar",
+          "dificil": false
+        },
+        {
+          "palavra": "北京",
+          "caracteres": [
+            {
+              "hanzi": "北",
+              "pinyin": "běi"
+            },
+            {
+              "hanzi": "京",
+              "pinyin": "jīng"
+            }
+          ],
+          "pinyin": "běi jīng",
+          "pt": "Pequim",
+          "dificil": false
+        },
+        {
+          "palavra": "吧",
+          "caracteres": [
+            {
+              "hanzi": "吧",
+              "pinyin": "ba"
+            }
+          ],
+          "pinyin": "ba",
+          "pt": "(sugestão)",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1577",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Por favor, sobe.",
+      "en": "Please come up.",
+      "es": "Por favor, sube.",
+      "hanzi": "请上来",
+      "pinyin": "qǐng shàng lái",
+      "tokens": [
+        {
+          "palavra": "请",
+          "caracteres": [
+            {
+              "hanzi": "请",
+              "pinyin": "qǐng"
+            }
+          ],
+          "pinyin": "qǐng",
+          "pt": "por favor",
+          "dificil": false
+        },
+        {
+          "palavra": "上来",
+          "caracteres": [
+            {
+              "hanzi": "上",
+              "pinyin": "shàng"
+            },
+            {
+              "hanzi": "来",
+              "pinyin": "lái"
+            }
+          ],
+          "pinyin": "shàng lái",
+          "pt": "subir",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:transporte-direcoes",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1578",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Eu subo as escadas.",
+      "en": "I go upstairs.",
+      "es": "Subo las escaleras.",
+      "hanzi": "我上楼",
+      "pinyin": "wǒ shàng lóu",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "上",
+          "caracteres": [
+            {
+              "hanzi": "上",
+              "pinyin": "shàng"
+            }
+          ],
+          "pinyin": "shàng",
+          "pt": "subir / em cima",
+          "dificil": false
+        },
+        {
+          "palavra": "楼",
+          "caracteres": [
+            {
+              "hanzi": "楼",
+              "pinyin": "lóu"
+            }
+          ],
+          "pinyin": "lóu",
+          "pt": "prédio / andar",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:transporte-direcoes",
+        "tema:lugares",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1579",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Por favor, desce.",
+      "en": "Please come down.",
+      "es": "Por favor, baja.",
+      "hanzi": "请下来",
+      "pinyin": "qǐng xià lái",
+      "tokens": [
+        {
+          "palavra": "请",
+          "caracteres": [
+            {
+              "hanzi": "请",
+              "pinyin": "qǐng"
+            }
+          ],
+          "pinyin": "qǐng",
+          "pt": "por favor",
+          "dificil": false
+        },
+        {
+          "palavra": "下来",
+          "caracteres": [
+            {
+              "hanzi": "下",
+              "pinyin": "xià"
+            },
+            {
+              "hanzi": "来",
+              "pinyin": "lái"
+            }
+          ],
+          "pinyin": "xià lái",
+          "pt": "descer",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:transporte-direcoes",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1580",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "A gente se vê embaixo.",
+      "en": "See you downstairs.",
+      "es": "Nos vemos abajo.",
+      "hanzi": "楼下见",
+      "pinyin": "lóu xià jiàn",
+      "tokens": [
+        {
+          "palavra": "楼下",
+          "caracteres": [
+            {
+              "hanzi": "楼",
+              "pinyin": "lóu"
+            },
+            {
+              "hanzi": "下",
+              "pinyin": "xià"
+            }
+          ],
+          "pinyin": "lóu xià",
+          "pt": "andar de baixo",
+          "dificil": true
+        },
+        {
+          "palavra": "见",
+          "caracteres": [
+            {
+              "hanzi": "见",
+              "pinyin": "jiàn"
+            }
+          ],
+          "pinyin": "jiàn",
+          "pt": "ver / encontrar",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1581",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Desce do carro.",
+      "en": "Get out of the car.",
+      "es": "Baja del coche.",
+      "hanzi": "下车吧",
+      "pinyin": "xià chē ba",
+      "tokens": [
+        {
+          "palavra": "下",
+          "caracteres": [
+            {
+              "hanzi": "下",
+              "pinyin": "xià"
+            }
+          ],
+          "pinyin": "xià",
+          "pt": "descer / embaixo",
+          "dificil": false
+        },
+        {
+          "palavra": "车",
+          "caracteres": [
+            {
+              "hanzi": "车",
+              "pinyin": "chē"
+            }
+          ],
+          "pinyin": "chē",
+          "pt": "carro",
+          "dificil": false
+        },
+        {
+          "palavra": "吧",
+          "caracteres": [
+            {
+              "hanzi": "吧",
+              "pinyin": "ba"
+            }
+          ],
+          "pinyin": "ba",
+          "pt": "(sugestão)",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:transporte-direcoes",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1582",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Por favor, sente-se no meio.",
+      "en": "Please sit in the middle.",
+      "es": "Por favor, siéntate en el medio.",
+      "hanzi": "请坐在中间",
+      "pinyin": "qǐng zuò zài zhōng jiān",
+      "tokens": [
+        {
+          "palavra": "请",
+          "caracteres": [
+            {
+              "hanzi": "请",
+              "pinyin": "qǐng"
+            }
+          ],
+          "pinyin": "qǐng",
+          "pt": "por favor",
+          "dificil": false
+        },
+        {
+          "palavra": "坐",
+          "caracteres": [
+            {
+              "hanzi": "坐",
+              "pinyin": "zuò"
+            }
+          ],
+          "pinyin": "zuò",
+          "pt": "sentar",
+          "dificil": false
+        },
+        {
+          "palavra": "在",
+          "caracteres": [
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            }
+          ],
+          "pinyin": "zài",
+          "pt": "em",
+          "dificil": false
+        },
+        {
+          "palavra": "中间",
+          "caracteres": [
+            {
+              "hanzi": "中",
+              "pinyin": "zhōng"
+            },
+            {
+              "hanzi": "间",
+              "pinyin": "jiān"
+            }
+          ],
+          "pinyin": "zhōng jiān",
+          "pt": "no meio",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:lugares",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1583",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "A gente se vê ao meio-dia.",
+      "en": "See you at noon.",
+      "es": "Nos vemos al mediodía.",
+      "hanzi": "中午见",
+      "pinyin": "zhōng wǔ jiàn",
+      "tokens": [
+        {
+          "palavra": "中午",
+          "caracteres": [
+            {
+              "hanzi": "中",
+              "pinyin": "zhōng"
+            },
+            {
+              "hanzi": "午",
+              "pinyin": "wǔ"
+            }
+          ],
+          "pinyin": "zhōng wǔ",
+          "pt": "meio-dia",
+          "dificil": false
+        },
+        {
+          "palavra": "见",
+          "caracteres": [
+            {
+              "hanzi": "见",
+              "pinyin": "jiàn"
+            }
+          ],
+          "pinyin": "jiàn",
+          "pt": "ver / encontrar",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1584",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Chinês é difícil?",
+      "en": "Is Chinese hard?",
+      "es": "¿El chino es difícil?",
+      "hanzi": "中文很难吗",
+      "pinyin": "zhōng wén hěn nán ma",
+      "tokens": [
+        {
+          "palavra": "中文",
+          "caracteres": [
+            {
+              "hanzi": "中",
+              "pinyin": "zhōng"
+            },
+            {
+              "hanzi": "文",
+              "pinyin": "wén"
+            }
+          ],
+          "pinyin": "zhōng wén",
+          "pt": "chinês",
+          "dificil": false
+        },
+        {
+          "palavra": "很",
+          "caracteres": [
+            {
+              "hanzi": "很",
+              "pinyin": "hěn"
+            }
+          ],
+          "pinyin": "hěn",
+          "pt": "muito",
+          "dificil": false
+        },
+        {
+          "palavra": "难",
+          "caracteres": [
+            {
+              "hanzi": "难",
+              "pinyin": "nán"
+            }
+          ],
+          "pinyin": "nán",
+          "pt": "difícil",
+          "dificil": false
+        },
+        {
+          "palavra": "吗",
+          "caracteres": [
+            {
+              "hanzi": "吗",
+              "pinyin": "ma"
+            }
+          ],
+          "pinyin": "ma",
+          "pt": "(interrogativa)",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:trabalho-estudo",
+        "tema:adj-qualidade",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1585",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Já estudo chinês há um ano.",
+      "en": "I have studied Chinese for a year.",
+      "es": "Llevo un año estudiando chino.",
+      "hanzi": "我学汉语一年了",
+      "pinyin": "wǒ xué hàn yǔ yī nián liǎo",
+      "tokens": [
+        {
+          "palavra": "我",
+          "caracteres": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ],
+          "pinyin": "wǒ",
+          "pt": "eu",
+          "dificil": false
+        },
+        {
+          "palavra": "学",
+          "caracteres": [
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            }
+          ],
+          "pinyin": "xué",
+          "pt": "estudar",
+          "dificil": false
+        },
+        {
+          "palavra": "汉语",
+          "caracteres": [
+            {
+              "hanzi": "汉",
+              "pinyin": "hàn"
+            },
+            {
+              "hanzi": "语",
+              "pinyin": "yǔ"
+            }
+          ],
+          "pinyin": "hàn yǔ",
+          "pt": "chinês",
+          "dificil": false
+        },
+        {
+          "palavra": "一",
+          "caracteres": [
+            {
+              "hanzi": "一",
+              "pinyin": "yī"
+            }
+          ],
+          "pinyin": "yī",
+          "pt": "um",
+          "dificil": false
+        },
+        {
+          "palavra": "年",
+          "caracteres": [
+            {
+              "hanzi": "年",
+              "pinyin": "nián"
+            }
+          ],
+          "pinyin": "nián",
+          "pt": "ano",
+          "dificil": false
+        },
+        {
+          "palavra": "了",
+          "caracteres": [
+            {
+              "hanzi": "了",
+              "pinyin": "liǎo"
+            }
+          ],
+          "pinyin": "liǎo",
+          "pt": "(aspecto)",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:trabalho-estudo",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1586",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Até o ano que vem.",
+      "en": "See you next year.",
+      "es": "Hasta el año que viene.",
+      "hanzi": "明年见",
+      "pinyin": "míng nián jiàn",
+      "tokens": [
+        {
+          "palavra": "明年",
+          "caracteres": [
+            {
+              "hanzi": "明",
+              "pinyin": "míng"
+            },
+            {
+              "hanzi": "年",
+              "pinyin": "nián"
+            }
+          ],
+          "pinyin": "míng nián",
+          "pt": "ano que vem",
+          "dificil": false
+        },
+        {
+          "palavra": "见",
+          "caracteres": [
+            {
+              "hanzi": "见",
+              "pinyin": "jiàn"
+            }
+          ],
+          "pinyin": "jiàn",
+          "pt": "ver / encontrar",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1587",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Este ano está muito bom.",
+      "en": "This year is very good.",
+      "es": "Este año está muy bien.",
+      "hanzi": "今年很好",
+      "pinyin": "jīn nián hěn hǎo",
+      "tokens": [
+        {
+          "palavra": "今年",
+          "caracteres": [
+            {
+              "hanzi": "今",
+              "pinyin": "jīn"
+            },
+            {
+              "hanzi": "年",
+              "pinyin": "nián"
+            }
+          ],
+          "pinyin": "jīn nián",
+          "pt": "este ano",
+          "dificil": false
+        },
+        {
+          "palavra": "很",
+          "caracteres": [
+            {
+              "hanzi": "很",
+              "pinyin": "hěn"
+            }
+          ],
+          "pinyin": "hěn",
+          "pt": "muito",
+          "dificil": false
+        },
+        {
+          "palavra": "好",
+          "caracteres": [
+            {
+              "hanzi": "好",
+              "pinyin": "hǎo"
+            }
+          ],
+          "pinyin": "hǎo",
+          "pt": "bom",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:adj-qualidade",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1588",
+      "nivel": 1,
+      "tier": "basico",
+      "pool": "hsk2plus",
+      "pt": "Cuidado com o fogo!",
+      "en": "Watch out for the fire!",
+      "es": "¡Cuidado con el fuego!",
+      "hanzi": "小心火",
+      "pinyin": "xiǎo xīn huǒ",
+      "tokens": [
+        {
+          "palavra": "小心",
+          "caracteres": [
+            {
+              "hanzi": "小",
+              "pinyin": "xiǎo"
+            },
+            {
+              "hanzi": "心",
+              "pinyin": "xīn"
+            }
+          ],
+          "pinyin": "xiǎo xīn",
+          "pt": "cuidado",
+          "dificil": true
+        },
+        {
+          "palavra": "火",
+          "caracteres": [
+            {
+              "hanzi": "火",
+              "pinyin": "huǒ"
+            }
+          ],
+          "pinyin": "huǒ",
+          "pt": "fogo",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:gramatica",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1589",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "O fogo está forte.",
+      "en": "The fire is strong.",
+      "es": "El fuego es fuerte.",
+      "hanzi": "火很大",
+      "pinyin": "huǒ hěn dà",
+      "tokens": [
+        {
+          "palavra": "火",
+          "caracteres": [
+            {
+              "hanzi": "火",
+              "pinyin": "huǒ"
+            }
+          ],
+          "pinyin": "huǒ",
+          "pt": "fogo",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "caracteres": [
+            {
+              "hanzi": "很",
+              "pinyin": "hěn"
+            }
+          ],
+          "pinyin": "hěn",
+          "pt": "muito",
+          "dificil": false
+        },
+        {
+          "palavra": "大",
+          "caracteres": [
+            {
+              "hanzi": "大",
+              "pinyin": "dà"
+            }
+          ],
+          "pinyin": "dà",
+          "pt": "grande",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1590",
+      "nivel": 1,
+      "tier": "basico",
+      "pool": "hsk2plus",
+      "pt": "Não brinque com fogo.",
+      "en": "Do not play with fire.",
+      "es": "No juegues con fuego.",
+      "hanzi": "别玩火",
+      "pinyin": "bié wán huǒ",
+      "tokens": [
+        {
+          "palavra": "别",
+          "caracteres": [
+            {
+              "hanzi": "别",
+              "pinyin": "bié"
+            }
+          ],
+          "pinyin": "bié",
+          "pt": "não (imperativo)",
+          "dificil": true
+        },
+        {
+          "palavra": "玩",
+          "caracteres": [
+            {
+              "hanzi": "玩",
+              "pinyin": "wán"
+            }
+          ],
+          "pinyin": "wán",
+          "pt": "brincar",
+          "dificil": false
+        },
+        {
+          "palavra": "火",
+          "caracteres": [
+            {
+              "hanzi": "火",
+              "pinyin": "huǒ"
+            }
+          ],
+          "pinyin": "huǒ",
+          "pt": "fogo",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:gramatica",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1591",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Acabou a luz / a bateria.",
+      "en": "There is no power left.",
+      "es": "Se fue la luz / se acabó la batería.",
+      "hanzi": "没电了",
+      "pinyin": "méi diàn liǎo",
+      "tokens": [
+        {
+          "palavra": "没",
+          "caracteres": [
+            {
+              "hanzi": "没",
+              "pinyin": "méi"
+            }
+          ],
+          "pinyin": "méi",
+          "pt": "não ter",
+          "dificil": false
+        },
+        {
+          "palavra": "电",
+          "caracteres": [
+            {
+              "hanzi": "电",
+              "pinyin": "diàn"
+            }
+          ],
+          "pinyin": "diàn",
+          "pt": "eletricidade / luz",
+          "dificil": false
+        },
+        {
+          "palavra": "了",
+          "caracteres": [
+            {
+              "hanzi": "了",
+              "pinyin": "liǎo"
+            }
+          ],
+          "pinyin": "liǎo",
+          "pt": "(aspecto)",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:casa-rotina",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1592",
+      "nivel": 1,
+      "tier": "basico",
+      "pool": "hsk2",
+      "pt": "Caiu a luz.",
+      "en": "There is a power outage.",
+      "es": "Hubo un corte de luz.",
+      "hanzi": "停电了",
+      "pinyin": "tíng diàn liǎo",
+      "tokens": [
+        {
+          "palavra": "停",
+          "caracteres": [
+            {
+              "hanzi": "停",
+              "pinyin": "tíng"
+            }
+          ],
+          "pinyin": "tíng",
+          "pt": "parar",
+          "dificil": true
+        },
+        {
+          "palavra": "电",
+          "caracteres": [
+            {
+              "hanzi": "电",
+              "pinyin": "diàn"
+            }
+          ],
+          "pinyin": "diàn",
+          "pt": "eletricidade / luz",
+          "dificil": false
+        },
+        {
+          "palavra": "了",
+          "caracteres": [
+            {
+              "hanzi": "了",
+              "pinyin": "liǎo"
+            }
+          ],
+          "pinyin": "liǎo",
+          "pt": "(aspecto)",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:casa-rotina",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1593",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Isso precisa de eletricidade.",
+      "en": "This needs electricity.",
+      "es": "Esto necesita electricidad.",
+      "hanzi": "这个要用电",
+      "pinyin": "zhè ge yào yòng diàn",
+      "tokens": [
+        {
+          "palavra": "这个",
+          "caracteres": [
+            {
+              "hanzi": "这",
+              "pinyin": "zhè"
+            },
+            {
+              "hanzi": "个",
+              "pinyin": "ge"
+            }
+          ],
+          "pinyin": "zhè ge",
+          "pt": "este",
+          "dificil": false
+        },
+        {
+          "palavra": "要",
+          "caracteres": [
+            {
+              "hanzi": "要",
+              "pinyin": "yào"
+            }
+          ],
+          "pinyin": "yào",
+          "pt": "precisar / querer",
+          "dificil": false
+        },
+        {
+          "palavra": "用",
+          "caracteres": [
+            {
+              "hanzi": "用",
+              "pinyin": "yòng"
+            }
+          ],
+          "pinyin": "yòng",
+          "pt": "usar",
+          "dificil": false
+        },
+        {
+          "palavra": "电",
+          "caracteres": [
+            {
+              "hanzi": "电",
+              "pinyin": "diàn"
+            }
+          ],
+          "pinyin": "diàn",
+          "pt": "eletricidade / luz",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:casa-rotina",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1594",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Hoje à tarde tem reunião.",
+      "en": "There is a meeting this afternoon.",
+      "es": "Esta tarde hay reunión.",
+      "hanzi": "今天下午有会",
+      "pinyin": "jīn tiān xià wǔ yǒu huì",
+      "tokens": [
+        {
+          "palavra": "今天",
+          "caracteres": [
+            {
+              "hanzi": "今",
+              "pinyin": "jīn"
+            },
+            {
+              "hanzi": "天",
+              "pinyin": "tiān"
+            }
+          ],
+          "pinyin": "jīn tiān",
+          "pt": "hoje",
+          "dificil": false
+        },
+        {
+          "palavra": "下午",
+          "caracteres": [
+            {
+              "hanzi": "下",
+              "pinyin": "xià"
+            },
+            {
+              "hanzi": "午",
+              "pinyin": "wǔ"
+            }
+          ],
+          "pinyin": "xià wǔ",
+          "pt": "tarde",
+          "dificil": false
+        },
+        {
+          "palavra": "有",
+          "caracteres": [
+            {
+              "hanzi": "有",
+              "pinyin": "yǒu"
+            }
+          ],
+          "pinyin": "yǒu",
+          "pt": "haver / ter",
+          "dificil": false
+        },
+        {
+          "palavra": "会",
+          "caracteres": [
+            {
+              "hanzi": "会",
+              "pinyin": "huì"
+            }
+          ],
+          "pinyin": "huì",
+          "pt": "reunião",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:trabalho-estudo",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1595",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "Vamos começar a reunião.",
+      "en": "Let’s start the meeting.",
+      "es": "Empecemos la reunión.",
+      "hanzi": "开会吧",
+      "pinyin": "kāi huì ba",
+      "tokens": [
+        {
+          "palavra": "开会",
+          "caracteres": [
+            {
+              "hanzi": "开",
+              "pinyin": "kāi"
+            },
+            {
+              "hanzi": "会",
+              "pinyin": "huì"
+            }
+          ],
+          "pinyin": "kāi huì",
+          "pt": "ter reunião",
+          "dificil": false
+        },
+        {
+          "palavra": "吧",
+          "caracteres": [
+            {
+              "hanzi": "吧",
+              "pinyin": "ba"
+            }
+          ],
+          "pinyin": "ba",
+          "pt": "(sugestão)",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:trabalho-estudo",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1596",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pool": "hsk1",
+      "pt": "O papel é branco.",
+      "en": "The paper is white.",
+      "es": "El papel es blanco.",
+      "hanzi": "纸很白",
+      "pinyin": "zhǐ hěn bái",
+      "tokens": [
+        {
+          "palavra": "纸",
+          "caracteres": [
+            {
+              "hanzi": "纸",
+              "pinyin": "zhǐ"
+            }
+          ],
+          "pinyin": "zhǐ",
+          "pt": "papel",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "caracteres": [
+            {
+              "hanzi": "很",
+              "pinyin": "hěn"
+            }
+          ],
+          "pinyin": "hěn",
+          "pt": "muito",
+          "dificil": false
+        },
+        {
+          "palavra": "白",
+          "caracteres": [
+            {
+              "hanzi": "白",
+              "pinyin": "bái"
+            }
+          ],
+          "pinyin": "bái",
+          "pt": "branco",
+          "dificil": false
+        }
+      ],
+      "distratores": [
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "pt": "chá"
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "pt": "livro — 看书"
+        }
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:cores",
+        "ancora-hanzi"
       ]
     }
   ]

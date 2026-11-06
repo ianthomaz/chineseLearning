@@ -35463,6 +35463,781 @@
       "tags": [
         "tema:saude"
       ]
+    },
+    {
+      "id": "pg-1572",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Três dias bastam.",
+      "en": "Three days are enough.",
+      "es": "Tres días bastan.",
+      "words": [
+        {
+          "palavra": "三",
+          "pt": "três"
+        },
+        {
+          "palavra": "天",
+          "pt": "dia"
+        },
+        {
+          "palavra": "够",
+          "pt": "bastar",
+          "dificil": true
+        },
+        {
+          "palavra": "了",
+          "pt": "(aspecto)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:gramatica",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1573",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Eu descanso um dia.",
+      "en": "I take a day off.",
+      "es": "Descanso un día.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "休息",
+          "pt": "descansar",
+          "dificil": true
+        },
+        {
+          "palavra": "一",
+          "pt": "um"
+        },
+        {
+          "palavra": "天",
+          "pt": "dia"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1574",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Quando você volta?",
+      "en": "When are you coming back?",
+      "es": "¿Cuándo vuelves?",
+      "words": [
+        {
+          "palavra": "你",
+          "pt": "você"
+        },
+        {
+          "palavra": "什么时候",
+          "pt": "quando"
+        },
+        {
+          "palavra": "回来",
+          "pt": "voltar"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:transporte-direcoes",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1575",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu quero voltar.",
+      "en": "I want to go back.",
+      "es": "Quiero volver.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "想",
+          "pt": "querer"
+        },
+        {
+          "palavra": "回去",
+          "pt": "voltar"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:transporte-direcoes",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1576",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Volta a Pequim.",
+      "en": "Go back to Beijing.",
+      "es": "Vuelve a Pekín.",
+      "words": [
+        {
+          "palavra": "回",
+          "pt": "voltar"
+        },
+        {
+          "palavra": "北京",
+          "pt": "Pequim"
+        },
+        {
+          "palavra": "吧",
+          "pt": "(sugestão)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:lugares",
+        "tema:transporte-direcoes",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1577",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Por favor, sobe.",
+      "en": "Please come up.",
+      "es": "Por favor, sube.",
+      "words": [
+        {
+          "palavra": "请",
+          "pt": "por favor"
+        },
+        {
+          "palavra": "上来",
+          "pt": "subir"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:transporte-direcoes",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1578",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Eu subo as escadas.",
+      "en": "I go upstairs.",
+      "es": "Subo las escaleras.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "上",
+          "pt": "subir / em cima"
+        },
+        {
+          "palavra": "楼",
+          "pt": "prédio / andar",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:transporte-direcoes",
+        "tema:lugares",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1579",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Por favor, desce.",
+      "en": "Please come down.",
+      "es": "Por favor, baja.",
+      "words": [
+        {
+          "palavra": "请",
+          "pt": "por favor"
+        },
+        {
+          "palavra": "下来",
+          "pt": "descer"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:transporte-direcoes",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1580",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "A gente se vê embaixo.",
+      "en": "See you downstairs.",
+      "es": "Nos vemos abajo.",
+      "words": [
+        {
+          "palavra": "楼下",
+          "pt": "andar de baixo",
+          "dificil": true
+        },
+        {
+          "palavra": "见",
+          "pt": "ver / encontrar"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:lugares",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1581",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Desce do carro.",
+      "en": "Get out of the car.",
+      "es": "Baja del coche.",
+      "words": [
+        {
+          "palavra": "下",
+          "pt": "descer / embaixo"
+        },
+        {
+          "palavra": "车",
+          "pt": "carro"
+        },
+        {
+          "palavra": "吧",
+          "pt": "(sugestão)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:transporte-direcoes",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1582",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Por favor, sente-se no meio.",
+      "en": "Please sit in the middle.",
+      "es": "Por favor, siéntate en el medio.",
+      "words": [
+        {
+          "palavra": "请",
+          "pt": "por favor"
+        },
+        {
+          "palavra": "坐",
+          "pt": "sentar"
+        },
+        {
+          "palavra": "在",
+          "pt": "em"
+        },
+        {
+          "palavra": "中间",
+          "pt": "no meio"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:lugares",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1583",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "A gente se vê ao meio-dia.",
+      "en": "See you at noon.",
+      "es": "Nos vemos al mediodía.",
+      "words": [
+        {
+          "palavra": "中午",
+          "pt": "meio-dia"
+        },
+        {
+          "palavra": "见",
+          "pt": "ver / encontrar"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1584",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Chinês é difícil?",
+      "en": "Is Chinese hard?",
+      "es": "¿El chino es difícil?",
+      "words": [
+        {
+          "palavra": "中文",
+          "pt": "chinês"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "难",
+          "pt": "difícil"
+        },
+        {
+          "palavra": "吗",
+          "pt": "(interrogativa)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:trabalho-estudo",
+        "tema:adj-qualidade",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1585",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Já estudo chinês há um ano.",
+      "en": "I have studied Chinese for a year.",
+      "es": "Llevo un año estudiando chino.",
+      "words": [
+        {
+          "palavra": "我",
+          "pt": "eu"
+        },
+        {
+          "palavra": "学",
+          "pt": "estudar"
+        },
+        {
+          "palavra": "汉语",
+          "pt": "chinês"
+        },
+        {
+          "palavra": "一",
+          "pt": "um"
+        },
+        {
+          "palavra": "年",
+          "pt": "ano"
+        },
+        {
+          "palavra": "了",
+          "pt": "(aspecto)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:trabalho-estudo",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1586",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Até o ano que vem.",
+      "en": "See you next year.",
+      "es": "Hasta el año que viene.",
+      "words": [
+        {
+          "palavra": "明年",
+          "pt": "ano que vem"
+        },
+        {
+          "palavra": "见",
+          "pt": "ver / encontrar"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1587",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Este ano está muito bom.",
+      "en": "This year is very good.",
+      "es": "Este año está muy bien.",
+      "words": [
+        {
+          "palavra": "今年",
+          "pt": "este ano"
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "好",
+          "pt": "bom"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:clima-tempo",
+        "tema:adj-qualidade",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1588",
+      "nivel": 1,
+      "tier": "basico",
+      "pt": "Cuidado com o fogo!",
+      "en": "Watch out for the fire!",
+      "es": "¡Cuidado con el fuego!",
+      "words": [
+        {
+          "palavra": "小心",
+          "pt": "cuidado",
+          "dificil": true
+        },
+        {
+          "palavra": "火",
+          "pt": "fogo",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:gramatica",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1589",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "O fogo está forte.",
+      "en": "The fire is strong.",
+      "es": "El fuego es fuerte.",
+      "words": [
+        {
+          "palavra": "火",
+          "pt": "fogo",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "大",
+          "pt": "grande"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1590",
+      "nivel": 1,
+      "tier": "basico",
+      "pt": "Não brinque com fogo.",
+      "en": "Do not play with fire.",
+      "es": "No juegues con fuego.",
+      "words": [
+        {
+          "palavra": "别",
+          "pt": "não (imperativo)",
+          "dificil": true
+        },
+        {
+          "palavra": "玩",
+          "pt": "brincar"
+        },
+        {
+          "palavra": "火",
+          "pt": "fogo",
+          "dificil": true
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:gramatica",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1591",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Acabou a luz / a bateria.",
+      "en": "There is no power left.",
+      "es": "Se fue la luz / se acabó la batería.",
+      "words": [
+        {
+          "palavra": "没",
+          "pt": "não ter"
+        },
+        {
+          "palavra": "电",
+          "pt": "eletricidade / luz"
+        },
+        {
+          "palavra": "了",
+          "pt": "(aspecto)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:casa-rotina",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1592",
+      "nivel": 1,
+      "tier": "basico",
+      "pt": "Caiu a luz.",
+      "en": "There is a power outage.",
+      "es": "Hubo un corte de luz.",
+      "words": [
+        {
+          "palavra": "停",
+          "pt": "parar",
+          "dificil": true
+        },
+        {
+          "palavra": "电",
+          "pt": "eletricidade / luz"
+        },
+        {
+          "palavra": "了",
+          "pt": "(aspecto)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:casa-rotina",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1593",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Isso precisa de eletricidade.",
+      "en": "This needs electricity.",
+      "es": "Esto necesita electricidad.",
+      "words": [
+        {
+          "palavra": "这个",
+          "pt": "este"
+        },
+        {
+          "palavra": "要",
+          "pt": "precisar / querer"
+        },
+        {
+          "palavra": "用",
+          "pt": "usar"
+        },
+        {
+          "palavra": "电",
+          "pt": "eletricidade / luz"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:casa-rotina",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1594",
+      "nivel": 2,
+      "tier": "hsk1",
+      "pt": "Hoje à tarde tem reunião.",
+      "en": "There is a meeting this afternoon.",
+      "es": "Esta tarde hay reunión.",
+      "words": [
+        {
+          "palavra": "今天",
+          "pt": "hoje"
+        },
+        {
+          "palavra": "下午",
+          "pt": "tarde"
+        },
+        {
+          "palavra": "有",
+          "pt": "haver / ter"
+        },
+        {
+          "palavra": "会",
+          "pt": "reunião"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:trabalho-estudo",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1595",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "Vamos começar a reunião.",
+      "en": "Let’s start the meeting.",
+      "es": "Empecemos la reunión.",
+      "words": [
+        {
+          "palavra": "开会",
+          "pt": "ter reunião"
+        },
+        {
+          "palavra": "吧",
+          "pt": "(sugestão)"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:trabalho-estudo",
+        "ancora-hanzi"
+      ]
+    },
+    {
+      "id": "pg-1596",
+      "nivel": 1,
+      "tier": "hsk1",
+      "pt": "O papel é branco.",
+      "en": "The paper is white.",
+      "es": "El papel es blanco.",
+      "words": [
+        {
+          "palavra": "纸",
+          "pt": "papel",
+          "dificil": true
+        },
+        {
+          "palavra": "很",
+          "pt": "muito"
+        },
+        {
+          "palavra": "白",
+          "pt": "branco"
+        }
+      ],
+      "distratores": [
+        "茶",
+        "书"
+      ],
+      "tags": [
+        "tema:adj-qualidade",
+        "tema:cores",
+        "ancora-hanzi"
+      ]
     }
   ],
   "source": "curated phrase bank"
