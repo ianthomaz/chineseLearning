@@ -107,6 +107,10 @@
     "vocabKicker": "词汇",
     "vocabTitle": "Vocabulary",
     "vocabIntro": "Hanzi · pinyin · English gloss tables by block. See Grammar for structures and usage.",
+    "vocabPracticeHanziTitle": "Practice Hanzi & Writing",
+    "vocabPracticeHanziDesc": "Train stroke order, handwriting and memorization of individual characters from vocabulary.",
+    "vocabContextTitle": "Vocabulary in Context",
+    "vocabContextDesc": "Thematic decks with integrated words and real-life supporting sentences.",
     "grammarKicker": "语法",
     "grammarTitle": "Grammar",
     "grammarIntro": "Structures, notes, and contrasts by block. Isolated words are in Vocabulary."

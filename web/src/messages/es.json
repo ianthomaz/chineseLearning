@@ -107,6 +107,10 @@
     "vocabKicker": "词汇",
     "vocabTitle": "Vocabulario",
     "vocabIntro": "Tablas hanzi · pinyin · español por bloque. Consulta Gramática para estructuras y uso.",
+    "vocabPracticeHanziTitle": "Practicar Hanzi y Escritura",
+    "vocabPracticeHanziDesc": "Entrena el orden de trazos, la escritura y la memorización de caracteres individuales del vocabulario.",
+    "vocabContextTitle": "Vocabulario en Contexto",
+    "vocabContextDesc": "Barajas temáticas con palabras integradas y frases de apoyo de la vida real.",
     "grammarKicker": "语法",
     "grammarTitle": "Gramática",
     "grammarIntro": "Estructuras, observaciones y contrastes por bloque. El vocabulario aislado está en Vocabulario."
