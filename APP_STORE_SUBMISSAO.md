@@ -13,13 +13,14 @@ Espelho: `appMobile/docs/09_app_store_testflight.md` · copy: `appMobile/store/l
 | 2 | Servidor auth + progresso | Live |
 | 3 | Privacy / Terms + contacto | Feito |
 | 4 | Créditos OSS / Arphic | Feito |
-| 5 | Login obrigatório + widget sem sessão + léxico EN/ES (UI) | **Código local** — falta **commit/push** (submodule + monorepo) |
-| 6 | Léxico pack v14 (`translationEn`/`Es`) + merge scripts | Feito (local; vai no mesmo commit) |
-| 7 | Prints 6.7" EN 1320×2868 (`01`…`06`) | **Feito** (8 nov, gloss EN) |
-| 8 | **New App** no App Store Connect | **Feito** — Apple ID `6832237621` |
-| 9 | Archive build > 1 + upload TestFlight | **Falta** (depois do commit) |
-| 10 | Nutrition · idade 16+ · Notes · prints no ASC | **Falta** (textos abaixo) |
-| 11 | TestFlight smoke → Submit | Depois 9–10 |
+| 5 | Login obrigatório + widget sem sessão + léxico EN/ES (UI) | **Feito** — commit/push `1b85d5e` / monorepo `b85f7c0` |
+| 6 | Léxico pack v14 (`translationEn`/`Es`) + merge scripts | Feito |
+| 7 | Prints 6.7" EN 1320×2868 (`01`…`06`) | Feito + **upload ASC** |
+| 8 | **New App** no App Store Connect | Feito — Apple ID `6832237621` |
+| 9 | Archive build **2** + upload TestFlight | **Falta** (signing / archive neste Mac) |
+| 10 | Ficha ASC: textos · Notes · category · idade 16+ · prints · copyright | **Feito via API** (sem Submit) |
+| 11 | App Privacy nutrition labels no ASC | **Provável falta** (UI ASC / API separada) |
+| 12 | TestFlight smoke → Submit | **Não** — só quando pedires |
 
 ASC: https://appstoreconnect.apple.com/apps/6832237621/distribution
 
@@ -27,9 +28,9 @@ ASC: https://appstoreconnect.apple.com/apps/6832237621/distribution
 
 ### Próximos passos
 
-1. **Commit/push** do gate + i18n léxico + prints (quando pedires).  
-2. Archive → Upload → TestFlight.  
-3. Colar ficha + Notes + nutrition + idade + prints no ASC → Submit.
+1. **Archive build 2** + upload → ligar build à versão 1.0.  
+2. Confirmar **App Privacy** (nutrition) no ASC se ainda vazio.  
+3. TestFlight smoke → **Submit** (só quando pedires).
 
 ---
 
