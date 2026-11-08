@@ -84,6 +84,7 @@ cd web
 npx next build                                    # modo servidor
 npm run build:webplace                            # export estático — testar SEMPRE os dois
 npx eslint src && npx tsc --noEmit
+npm run check:messages                            # paridade en/pt/es + pt-PT (também corre no lint)
 ```
 
 Medir performance antes e depois, nunca estimar

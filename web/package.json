@@ -36,7 +36,8 @@
     "ingest:rag": "bash ../scripts/ingest-chinese-learning.sh",
     "start": "PORT=34902 node scripts/start-server-stripped.mjs",
     "start:server": "node scripts/start-server-stripped.mjs",
-    "lint": "next lint",
+    "check:messages": "node scripts/check-messages.mjs",
+    "lint": "node scripts/check-messages.mjs && next lint",
     "test:identity": "npx --yes tsx scripts/test-identity-merge.mjs",
     "test:alipay": "npx --yes tsx scripts/test-alipay.mjs",
     "pwa:icons": "node scripts/generate-pwa-icons.mjs"
