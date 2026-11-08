@@ -17,9 +17,9 @@ Espelho: `appMobile/docs/09_app_store_testflight.md` · copy: `appMobile/store/l
 | 6 | Léxico pack v14 (`translationEn`/`Es`) + merge scripts | Feito |
 | 7 | Prints 6.7" EN 1320×2868 (`01`…`06`) | Feito + **upload ASC** |
 | 8 | **New App** no App Store Connect | Feito — Apple ID `6832237621` |
-| 9 | Archive build **2** + upload TestFlight | **Falta** (signing / archive neste Mac) |
-| 10 | Ficha ASC: textos · Notes · category · idade 16+ · prints · copyright | **Feito via API** (sem Submit) |
-| 11 | App Privacy nutrition labels no ASC | **Provável falta** (UI ASC / API separada) |
+| 9 | Archive + upload + build ligada à 1.0 | **Feito** — build **3** VALID, attached |
+| 10 | Ficha ASC: textos · Notes · Education · idade 16+ · prints · copyright | **Feito via API** (sem Submit) |
+| 11 | App Privacy nutrition labels no ASC | **Confirmar na UI** (Email / User ID / Product Interaction) |
 | 12 | TestFlight smoke → Submit | **Não** — só quando pedires |
 
 ASC: https://appstoreconnect.apple.com/apps/6832237621/distribution
@@ -28,9 +28,9 @@ ASC: https://appstoreconnect.apple.com/apps/6832237621/distribution
 
 ### Próximos passos
 
-1. **Archive build 2** + upload → ligar build à versão 1.0.  
-2. Confirmar **App Privacy** (nutrition) no ASC se ainda vazio.  
-3. TestFlight smoke → **Submit** (só quando pedires).
+1. Confirmar **App Privacy** (nutrition) na UI do ASC.  
+2. TestFlight smoke no iPhone.  
+3. **Submit** — só quando pedires.
 
 ---
 
