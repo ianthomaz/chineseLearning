@@ -69,14 +69,14 @@
     ],
     "unique_vocab": 627,
     "pool_exclusive": {
-      "hsk1": 206,
-      "hsk2": 106,
-      "hsk2plus": 189,
+      "hsk1": 216,
+      "hsk2": 105,
+      "hsk2plus": 180,
       "hsk3": 129
     },
     "pool_cumulative": {
-      "hsk1": 206,
-      "hsk2": 312,
+      "hsk1": 216,
+      "hsk2": 321,
       "hsk2plus": 501,
       "hsk3": 630
     }
@@ -1746,6 +1746,72 @@
       "id": 50,
       "type": "multiple_choice",
       "difficulty": 1,
+      "block": 90,
+      "topic": "vocab",
+      "hanzi": "楼下",
+      "pinyin": "lóu xià",
+      "question_pt": "Qual é o significado de 楼下?",
+      "question_en": "What is the meaning of 楼下?",
+      "question_es": "¿Cuál es el significado de 楼下?",
+      "options_pt": [
+        "gatinho",
+        "andar de baixo",
+        "curry"
+      ],
+      "options_en": [
+        "gatinho",
+        "andar de baixo",
+        "curry"
+      ],
+      "options_es": [
+        "gatinho",
+        "andar de baixo",
+        "curry"
+      ],
+      "correct": 1,
+      "explanation_pt": "楼下 significa \"andar de baixo\".",
+      "explanation_en": "楼下 means \"andar de baixo\".",
+      "explanation_es": "楼下 significa \"andar de baixo\".",
+      "generated": true,
+      "pool": "hsk1"
+    },
+    {
+      "id": 51,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 90,
+      "topic": "vocab",
+      "hanzi": "够",
+      "pinyin": "gòu",
+      "question_pt": "Qual é o significado de 够?",
+      "question_en": "What is the meaning of 够?",
+      "question_es": "¿Cuál es el significado de 够?",
+      "options_pt": [
+        "bastar",
+        "curry",
+        "gatinho"
+      ],
+      "options_en": [
+        "bastar",
+        "curry",
+        "gatinho"
+      ],
+      "options_es": [
+        "bastar",
+        "curry",
+        "gatinho"
+      ],
+      "correct": 0,
+      "explanation_pt": "够 significa \"bastar\".",
+      "explanation_en": "够 means \"bastar\".",
+      "explanation_es": "够 significa \"bastar\".",
+      "generated": true,
+      "pool": "hsk1"
+    },
+    {
+      "id": 52,
+      "type": "multiple_choice",
+      "difficulty": 1,
       "block": 16,
       "topic": "vocab",
       "hanzi": "错",
@@ -1776,7 +1842,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 51,
+      "id": 53,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 2,
@@ -1809,7 +1875,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 52,
+      "id": 54,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -1842,7 +1908,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 53,
+      "id": 55,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -1875,7 +1941,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 54,
+      "id": 56,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -1908,7 +1974,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 55,
+      "id": 57,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -1941,7 +2007,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 56,
+      "id": 58,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 55,
@@ -1974,7 +2040,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 57,
+      "id": 59,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 1,
@@ -2007,7 +2073,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 58,
+      "id": 60,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 9,
@@ -2040,7 +2106,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 59,
+      "id": 61,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -2073,7 +2139,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 60,
+      "id": 62,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -2106,7 +2172,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 61,
+      "id": 63,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -2139,7 +2205,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 62,
+      "id": 64,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -2172,7 +2238,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 63,
+      "id": 65,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 3,
@@ -2205,7 +2271,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 64,
+      "id": 66,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -2238,7 +2304,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 65,
+      "id": 67,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 3,
@@ -2271,7 +2337,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 66,
+      "id": 68,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -2304,7 +2370,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 67,
+      "id": 69,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -2337,7 +2403,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 68,
+      "id": 70,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -2370,7 +2436,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 69,
+      "id": 71,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 15,
@@ -2403,7 +2469,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 70,
+      "id": 72,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 2,
@@ -2436,7 +2502,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 71,
+      "id": 73,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -2469,7 +2535,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 72,
+      "id": 74,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -2502,7 +2568,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 73,
+      "id": 75,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -2535,7 +2601,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 74,
+      "id": 76,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 5,
@@ -2568,7 +2634,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 75,
+      "id": 77,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -2601,7 +2667,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 76,
+      "id": 78,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -2634,7 +2700,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 77,
+      "id": 79,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -2667,7 +2733,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 78,
+      "id": 80,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -2700,7 +2766,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 79,
+      "id": 81,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -2733,7 +2799,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 80,
+      "id": 82,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -2766,7 +2832,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 81,
+      "id": 83,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -2799,7 +2865,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 82,
+      "id": 84,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 12,
@@ -2832,7 +2898,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 83,
+      "id": 85,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -2865,7 +2931,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 84,
+      "id": 86,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -2898,7 +2964,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 85,
+      "id": 87,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -2931,7 +2997,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 86,
+      "id": 88,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -2964,7 +3030,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 87,
+      "id": 89,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -2997,7 +3063,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 88,
+      "id": 90,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 11,
@@ -3030,7 +3096,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 89,
+      "id": 91,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -3063,7 +3129,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 90,
+      "id": 92,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -3096,7 +3162,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 91,
+      "id": 93,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -3129,7 +3195,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 92,
+      "id": 94,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -3162,7 +3228,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 93,
+      "id": 95,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 14,
@@ -3195,7 +3261,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 94,
+      "id": 96,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -3228,7 +3294,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 95,
+      "id": 97,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 4,
@@ -3261,7 +3327,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 96,
+      "id": 98,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -3294,7 +3360,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 97,
+      "id": 99,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 1,
@@ -3327,7 +3393,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 98,
+      "id": 100,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 4,
@@ -3360,7 +3426,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 99,
+      "id": 101,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 3,
@@ -3393,7 +3459,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 100,
+      "id": 102,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -3426,7 +3492,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 101,
+      "id": 103,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 4,
@@ -3459,7 +3525,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 102,
+      "id": 104,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -3492,7 +3558,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 103,
+      "id": 105,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -3525,7 +3591,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 104,
+      "id": 106,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 12,
@@ -3558,7 +3624,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 105,
+      "id": 107,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 11,
@@ -3591,7 +3657,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 106,
+      "id": 108,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 9,
@@ -3624,7 +3690,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 107,
+      "id": 109,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -3657,7 +3723,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 108,
+      "id": 110,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 1,
@@ -3690,7 +3756,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 109,
+      "id": 111,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 11,
@@ -3723,7 +3789,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 110,
+      "id": 112,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 5,
@@ -3756,7 +3822,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 111,
+      "id": 113,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 4,
@@ -3789,7 +3855,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 112,
+      "id": 114,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -3822,7 +3888,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 113,
+      "id": 115,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -3855,7 +3921,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 114,
+      "id": 116,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -3888,7 +3954,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 115,
+      "id": 117,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -3921,7 +3987,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 116,
+      "id": 118,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 1,
@@ -3954,7 +4020,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 117,
+      "id": 119,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 5,
@@ -3987,7 +4053,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 118,
+      "id": 120,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -4020,7 +4086,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 119,
+      "id": 121,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 10,
@@ -4053,7 +4119,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 120,
+      "id": 122,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 8,
@@ -4086,7 +4152,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 121,
+      "id": 123,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -4119,7 +4185,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 122,
+      "id": 124,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -4152,7 +4218,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 123,
+      "id": 125,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -4185,7 +4251,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 124,
+      "id": 126,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -4218,7 +4284,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 125,
+      "id": 127,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 5,
@@ -4251,7 +4317,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 126,
+      "id": 128,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -4284,7 +4350,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 127,
+      "id": 129,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -4317,7 +4383,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 128,
+      "id": 130,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 11,
@@ -4350,7 +4416,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 129,
+      "id": 131,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -4383,7 +4449,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 130,
+      "id": 132,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 1,
@@ -4416,7 +4482,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 131,
+      "id": 133,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 1,
@@ -4449,7 +4515,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 132,
+      "id": 134,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -4482,7 +4548,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 133,
+      "id": 135,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 4,
@@ -4515,7 +4581,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 134,
+      "id": 136,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -4548,7 +4614,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 135,
+      "id": 137,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -4581,7 +4647,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 136,
+      "id": 138,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -4614,7 +4680,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 137,
+      "id": 139,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -4647,7 +4713,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 138,
+      "id": 140,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -4680,7 +4746,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 139,
+      "id": 141,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 1,
@@ -4713,7 +4779,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 140,
+      "id": 142,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -4746,7 +4812,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 141,
+      "id": 143,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -4779,7 +4845,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 142,
+      "id": 144,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -4812,7 +4878,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 143,
+      "id": 145,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 5,
@@ -4845,7 +4911,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 144,
+      "id": 146,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -4878,7 +4944,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 145,
+      "id": 147,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -4911,7 +4977,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 146,
+      "id": 148,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -4944,7 +5010,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 147,
+      "id": 149,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 5,
@@ -4977,7 +5043,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 148,
+      "id": 150,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -5010,7 +5076,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 149,
+      "id": 151,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -5043,7 +5109,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 150,
+      "id": 152,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -5076,7 +5142,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 151,
+      "id": 153,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -5109,7 +5175,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 152,
+      "id": 154,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -5142,7 +5208,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 153,
+      "id": 155,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -5175,7 +5241,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 154,
+      "id": 156,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -5208,7 +5274,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 155,
+      "id": 157,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -5241,7 +5307,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 156,
+      "id": 158,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 6,
@@ -5274,7 +5340,40 @@
       "pool": "hsk1"
     },
     {
-      "id": 157,
+      "id": 159,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 90,
+      "topic": "vocab",
+      "hanzi": "回来",
+      "pinyin": "huí lái",
+      "question_pt": "Qual é o significado de 回来?",
+      "question_en": "What is the meaning of 回来?",
+      "question_es": "¿Cuál es el significado de 回来?",
+      "options_pt": [
+        "gatinho",
+        "voltar",
+        "curry"
+      ],
+      "options_en": [
+        "gatinho",
+        "voltar",
+        "curry"
+      ],
+      "options_es": [
+        "gatinho",
+        "voltar",
+        "curry"
+      ],
+      "correct": 1,
+      "explanation_pt": "回来 significa \"voltar\".",
+      "explanation_en": "回来 means \"voltar\".",
+      "explanation_es": "回来 significa \"voltar\".",
+      "generated": true,
+      "pool": "hsk1"
+    },
+    {
+      "id": 160,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -5307,7 +5406,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 158,
+      "id": 161,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -5340,7 +5439,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 159,
+      "id": 162,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -5373,7 +5472,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 160,
+      "id": 163,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -5406,7 +5505,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 161,
+      "id": 164,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 5,
@@ -5439,7 +5538,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 162,
+      "id": 165,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -5472,7 +5571,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 163,
+      "id": 166,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -5505,7 +5604,40 @@
       "pool": "hsk1"
     },
     {
-      "id": 164,
+      "id": 167,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 98,
+      "topic": "vocab",
+      "hanzi": "什么时候",
+      "pinyin": "shén me shí hòu",
+      "question_pt": "Qual é o significado de 什么时候?",
+      "question_en": "What is the meaning of 什么时候?",
+      "question_es": "¿Cuál es el significado de 什么时候?",
+      "options_pt": [
+        "gatinho",
+        "quando",
+        "curry"
+      ],
+      "options_en": [
+        "gatinho",
+        "quando",
+        "curry"
+      ],
+      "options_es": [
+        "gatinho",
+        "quando",
+        "curry"
+      ],
+      "correct": 1,
+      "explanation_pt": "什么时候 significa \"quando\".",
+      "explanation_en": "什么时候 means \"quando\".",
+      "explanation_es": "什么时候 significa \"quando\".",
+      "generated": true,
+      "pool": "hsk1"
+    },
+    {
+      "id": 168,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -5538,7 +5670,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 165,
+      "id": 169,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 3,
@@ -5571,7 +5703,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 166,
+      "id": 170,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -5604,7 +5736,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 167,
+      "id": 171,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -5637,7 +5769,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 168,
+      "id": 172,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -5670,7 +5802,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 169,
+      "id": 173,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -5703,7 +5835,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 170,
+      "id": 174,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -5736,7 +5868,40 @@
       "pool": "hsk1"
     },
     {
-      "id": 171,
+      "id": 175,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 98,
+      "topic": "vocab",
+      "hanzi": "纸",
+      "pinyin": "zhǐ",
+      "question_pt": "Qual é o significado de 纸?",
+      "question_en": "What is the meaning of 纸?",
+      "question_es": "¿Cuál es el significado de 纸?",
+      "options_pt": [
+        "gatinho",
+        "curry",
+        "张"
+      ],
+      "options_en": [
+        "gatinho",
+        "curry",
+        "张"
+      ],
+      "options_es": [
+        "gatinho",
+        "curry",
+        "张"
+      ],
+      "correct": 2,
+      "explanation_pt": "纸 significa \"张\".",
+      "explanation_en": "纸 means \"张\".",
+      "explanation_es": "纸 significa \"张\".",
+      "generated": true,
+      "pool": "hsk1"
+    },
+    {
+      "id": 176,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -5769,7 +5934,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 172,
+      "id": 177,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -5802,7 +5967,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 173,
+      "id": 178,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -5835,7 +6000,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 174,
+      "id": 179,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 13,
@@ -5868,7 +6033,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 175,
+      "id": 180,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 1,
@@ -5901,7 +6066,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 176,
+      "id": 181,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -5934,7 +6099,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 177,
+      "id": 182,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 11,
@@ -5967,7 +6132,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 178,
+      "id": 183,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 3,
@@ -6000,7 +6165,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 179,
+      "id": 184,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -6033,7 +6198,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 180,
+      "id": 185,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -6066,7 +6231,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 181,
+      "id": 186,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -6099,7 +6264,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 182,
+      "id": 187,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -6132,7 +6297,40 @@
       "pool": "hsk1"
     },
     {
-      "id": 183,
+      "id": 188,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 90,
+      "topic": "vocab",
+      "hanzi": "下来",
+      "pinyin": "xià lái",
+      "question_pt": "Qual é o significado de 下来?",
+      "question_en": "What is the meaning of 下来?",
+      "question_es": "¿Cuál es el significado de 下来?",
+      "options_pt": [
+        "curry",
+        "descer",
+        "gatinho"
+      ],
+      "options_en": [
+        "curry",
+        "descer",
+        "gatinho"
+      ],
+      "options_es": [
+        "curry",
+        "descer",
+        "gatinho"
+      ],
+      "correct": 1,
+      "explanation_pt": "下来 significa \"descer\".",
+      "explanation_en": "下来 means \"descer\".",
+      "explanation_es": "下来 significa \"descer\".",
+      "generated": true,
+      "pool": "hsk1"
+    },
+    {
+      "id": 189,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -6165,7 +6363,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 184,
+      "id": 190,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -6198,7 +6396,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 185,
+      "id": 191,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -6231,7 +6429,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 186,
+      "id": 192,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -6264,7 +6462,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 187,
+      "id": 193,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 1,
@@ -6297,7 +6495,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 188,
+      "id": 194,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -6330,7 +6528,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 189,
+      "id": 195,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 15,
@@ -6363,7 +6561,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 190,
+      "id": 196,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 3,
@@ -6396,7 +6594,40 @@
       "pool": "hsk1"
     },
     {
-      "id": 191,
+      "id": 197,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 91,
+      "topic": "deck",
+      "hanzi": "今年",
+      "pinyin": "jīnnián",
+      "question_pt": "Qual é o significado de 今年?",
+      "question_en": "What is the meaning of 今年?",
+      "question_es": "¿Cuál es el significado de 今年?",
+      "options_pt": [
+        "gatinho",
+        "curry",
+        "este ano"
+      ],
+      "options_en": [
+        "gatinho",
+        "curry",
+        "este ano"
+      ],
+      "options_es": [
+        "gatinho",
+        "curry",
+        "este ano"
+      ],
+      "correct": 2,
+      "explanation_pt": "今年 significa \"este ano\".",
+      "explanation_en": "今年 means \"este ano\".",
+      "explanation_es": "今年 significa \"este ano\".",
+      "generated": true,
+      "pool": "hsk1"
+    },
+    {
+      "id": 198,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 4,
@@ -6429,7 +6660,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 192,
+      "id": 199,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -6462,7 +6693,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 193,
+      "id": 200,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -6495,7 +6726,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 194,
+      "id": 201,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -6528,7 +6759,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 195,
+      "id": 202,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 3,
@@ -6561,7 +6792,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 196,
+      "id": 203,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 3,
@@ -6594,7 +6825,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 197,
+      "id": 204,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 11,
@@ -6627,7 +6858,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 198,
+      "id": 205,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -6660,7 +6891,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 199,
+      "id": 206,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -6693,7 +6924,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 200,
+      "id": 207,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -6726,7 +6957,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 201,
+      "id": 208,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -6759,7 +6990,40 @@
       "pool": "hsk1"
     },
     {
-      "id": 202,
+      "id": 209,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 90,
+      "topic": "vocab",
+      "hanzi": "上来",
+      "pinyin": "shàng lái",
+      "question_pt": "Qual é o significado de 上来?",
+      "question_en": "What is the meaning of 上来?",
+      "question_es": "¿Cuál es el significado de 上来?",
+      "options_pt": [
+        "gatinho",
+        "subir",
+        "curry"
+      ],
+      "options_en": [
+        "gatinho",
+        "subir",
+        "curry"
+      ],
+      "options_es": [
+        "gatinho",
+        "subir",
+        "curry"
+      ],
+      "correct": 1,
+      "explanation_pt": "上来 significa \"subir\".",
+      "explanation_en": "上来 means \"subir\".",
+      "explanation_es": "上来 significa \"subir\".",
+      "generated": true,
+      "pool": "hsk1"
+    },
+    {
+      "id": 210,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 1,
@@ -6792,7 +7056,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 203,
+      "id": 211,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -6825,7 +7089,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 204,
+      "id": 212,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -6858,7 +7122,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 205,
+      "id": 213,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -6891,7 +7155,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 206,
+      "id": 214,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 3,
@@ -6924,7 +7188,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 207,
+      "id": 215,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -6957,7 +7221,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 208,
+      "id": 216,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -6990,7 +7254,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 209,
+      "id": 217,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -7023,7 +7287,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 210,
+      "id": 218,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -7056,7 +7320,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 211,
+      "id": 219,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -7089,7 +7353,40 @@
       "pool": "hsk1"
     },
     {
-      "id": 212,
+      "id": 220,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 90,
+      "topic": "vocab",
+      "hanzi": "楼",
+      "pinyin": "lóu",
+      "question_pt": "Qual é o significado de 楼?",
+      "question_en": "What is the meaning of 楼?",
+      "question_es": "¿Cuál es el significado de 楼?",
+      "options_pt": [
+        "gatinho",
+        "curry",
+        "prédio / andar"
+      ],
+      "options_en": [
+        "gatinho",
+        "curry",
+        "prédio / andar"
+      ],
+      "options_es": [
+        "gatinho",
+        "curry",
+        "prédio / andar"
+      ],
+      "correct": 2,
+      "explanation_pt": "楼 significa \"prédio / andar\".",
+      "explanation_en": "楼 means \"prédio / andar\".",
+      "explanation_es": "楼 significa \"prédio / andar\".",
+      "generated": true,
+      "pool": "hsk1"
+    },
+    {
+      "id": 221,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 15,
@@ -7122,7 +7419,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 213,
+      "id": 222,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -7155,7 +7452,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 214,
+      "id": 223,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 1,
@@ -7188,7 +7485,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 215,
+      "id": 224,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -7221,7 +7518,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 216,
+      "id": 225,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -7254,7 +7551,40 @@
       "pool": "hsk1"
     },
     {
-      "id": 217,
+      "id": 226,
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "block": 90,
+      "topic": "vocab",
+      "hanzi": "回去",
+      "pinyin": "huí qù",
+      "question_pt": "Qual é o significado de 回去?",
+      "question_en": "What is the meaning of 回去?",
+      "question_es": "¿Cuál es el significado de 回去?",
+      "options_pt": [
+        "voltar",
+        "curry",
+        "gatinho"
+      ],
+      "options_en": [
+        "voltar",
+        "curry",
+        "gatinho"
+      ],
+      "options_es": [
+        "voltar",
+        "curry",
+        "gatinho"
+      ],
+      "correct": 0,
+      "explanation_pt": "回去 significa \"voltar\".",
+      "explanation_en": "回去 means \"voltar\".",
+      "explanation_es": "回去 significa \"voltar\".",
+      "generated": true,
+      "pool": "hsk1"
+    },
+    {
+      "id": 227,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 1,
@@ -7287,7 +7617,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 218,
+      "id": 228,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -7320,7 +7650,7 @@
       "pool": "hsk1"
     },
     {
-      "id": 219,
+      "id": 229,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -7353,7 +7683,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 220,
+      "id": 230,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 59,
@@ -7386,7 +7716,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 221,
+      "id": 231,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 41,
@@ -7419,7 +7749,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 222,
+      "id": 232,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -7452,7 +7782,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 223,
+      "id": 233,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 61,
@@ -7485,7 +7815,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 224,
+      "id": 234,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -7518,7 +7848,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 225,
+      "id": 235,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -7551,7 +7881,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 226,
+      "id": 236,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 53,
@@ -7584,7 +7914,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 227,
+      "id": 237,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -7617,7 +7947,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 228,
+      "id": 238,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -7650,7 +7980,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 229,
+      "id": 239,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 39,
@@ -7683,7 +8013,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 230,
+      "id": 240,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -7716,7 +8046,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 231,
+      "id": 241,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -7749,7 +8079,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 232,
+      "id": 242,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -7782,7 +8112,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 233,
+      "id": 243,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -7815,7 +8145,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 234,
+      "id": 244,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 65,
@@ -7848,7 +8178,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 235,
+      "id": 245,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -7881,7 +8211,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 236,
+      "id": 246,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -7914,7 +8244,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 237,
+      "id": 247,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -7947,7 +8277,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 238,
+      "id": 248,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -7980,7 +8310,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 239,
+      "id": 249,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -8013,7 +8343,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 240,
+      "id": 250,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 52,
@@ -8046,7 +8376,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 241,
+      "id": 251,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -8079,7 +8409,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 242,
+      "id": 252,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -8112,7 +8442,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 243,
+      "id": 253,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -8145,7 +8475,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 244,
+      "id": 254,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 52,
@@ -8178,7 +8508,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 245,
+      "id": 255,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 59,
@@ -8211,7 +8541,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 246,
+      "id": 256,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 31,
@@ -8244,7 +8574,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 247,
+      "id": 257,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -8277,7 +8607,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 248,
+      "id": 258,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 52,
@@ -8310,7 +8640,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 249,
+      "id": 259,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 58,
@@ -8343,7 +8673,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 250,
+      "id": 260,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -8376,7 +8706,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 251,
+      "id": 261,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 37,
@@ -8409,7 +8739,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 252,
+      "id": 262,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 42,
@@ -8442,7 +8772,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 253,
+      "id": 263,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 46,
@@ -8475,7 +8805,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 254,
+      "id": 264,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -8508,7 +8838,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 255,
+      "id": 265,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -8541,7 +8871,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 256,
+      "id": 266,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -8574,7 +8904,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 257,
+      "id": 267,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 45,
@@ -8607,7 +8937,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 258,
+      "id": 268,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 54,
@@ -8640,7 +8970,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 259,
+      "id": 269,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -8673,7 +9003,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 260,
+      "id": 270,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 57,
@@ -8706,7 +9036,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 261,
+      "id": 271,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -8739,7 +9069,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 262,
+      "id": 272,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 54,
@@ -8772,7 +9102,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 263,
+      "id": 273,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 64,
@@ -8805,7 +9135,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 264,
+      "id": 274,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 39,
@@ -8838,7 +9168,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 265,
+      "id": 275,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 33,
@@ -8871,7 +9201,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 266,
+      "id": 276,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 43,
@@ -8904,7 +9234,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 267,
+      "id": 277,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -8937,7 +9267,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 268,
+      "id": 278,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 39,
@@ -8970,7 +9300,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 269,
+      "id": 279,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 44,
@@ -9003,7 +9333,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 270,
+      "id": 280,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -9036,7 +9366,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 271,
+      "id": 281,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 64,
@@ -9069,7 +9399,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 272,
+      "id": 282,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -9102,7 +9432,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 273,
+      "id": 283,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -9135,7 +9465,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 274,
+      "id": 284,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -9168,7 +9498,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 275,
+      "id": 285,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 11,
@@ -9201,7 +9531,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 276,
+      "id": 286,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -9234,7 +9564,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 277,
+      "id": 287,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -9267,7 +9597,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 278,
+      "id": 288,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -9300,7 +9630,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 279,
+      "id": 289,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 58,
@@ -9333,7 +9663,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 280,
+      "id": 290,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -9366,7 +9696,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 281,
+      "id": 291,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -9399,7 +9729,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 282,
+      "id": 292,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 52,
@@ -9432,7 +9762,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 283,
+      "id": 293,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 56,
@@ -9465,7 +9795,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 284,
+      "id": 294,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -9498,7 +9828,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 285,
+      "id": 295,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 54,
@@ -9531,7 +9861,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 286,
+      "id": 296,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -9564,7 +9894,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 287,
+      "id": 297,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 37,
@@ -9597,7 +9927,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 288,
+      "id": 298,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 44,
@@ -9630,7 +9960,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 289,
+      "id": 299,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -9663,7 +9993,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 290,
+      "id": 300,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 42,
@@ -9696,7 +10026,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 291,
+      "id": 301,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 35,
@@ -9729,7 +10059,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 292,
+      "id": 302,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 65,
@@ -9762,7 +10092,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 293,
+      "id": 303,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 64,
@@ -9795,7 +10125,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 294,
+      "id": 304,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 52,
@@ -9828,7 +10158,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 295,
+      "id": 305,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 36,
@@ -9861,7 +10191,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 296,
+      "id": 306,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -9894,7 +10224,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 297,
+      "id": 307,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 42,
@@ -9927,7 +10257,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 298,
+      "id": 308,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 59,
@@ -9960,7 +10290,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 299,
+      "id": 309,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 45,
@@ -9993,7 +10323,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 300,
+      "id": 310,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -10026,7 +10356,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 301,
+      "id": 311,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -10059,7 +10389,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 302,
+      "id": 312,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -10092,7 +10422,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 303,
+      "id": 313,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 51,
@@ -10125,7 +10455,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 304,
+      "id": 314,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 60,
@@ -10158,7 +10488,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 305,
+      "id": 315,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 34,
@@ -10191,7 +10521,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 306,
+      "id": 316,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 54,
@@ -10224,7 +10554,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 307,
+      "id": 317,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -10257,7 +10587,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 308,
+      "id": 318,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 33,
@@ -10290,7 +10620,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 309,
+      "id": 319,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -10323,7 +10653,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 310,
+      "id": 320,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 60,
@@ -10356,7 +10686,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 311,
+      "id": 321,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 42,
@@ -10389,7 +10719,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 312,
+      "id": 322,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 65,
@@ -10422,7 +10752,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 313,
+      "id": 323,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -10455,7 +10785,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 314,
+      "id": 324,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 8,
@@ -10488,7 +10818,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 315,
+      "id": 325,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 58,
@@ -10521,7 +10851,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 316,
+      "id": 326,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 61,
@@ -10554,7 +10884,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 317,
+      "id": 327,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 62,
@@ -10587,7 +10917,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 318,
+      "id": 328,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 57,
@@ -10620,7 +10950,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 319,
+      "id": 329,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -10653,7 +10983,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 320,
+      "id": 330,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -10686,7 +11016,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 321,
+      "id": 331,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -10719,7 +11049,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 322,
+      "id": 332,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 56,
@@ -10752,7 +11082,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 323,
+      "id": 333,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 43,
@@ -10785,7 +11115,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 324,
+      "id": 334,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 54,
@@ -10818,7 +11148,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 325,
+      "id": 335,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 34,
@@ -10851,7 +11181,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 326,
+      "id": 336,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -10884,7 +11214,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 327,
+      "id": 337,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -10917,7 +11247,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 328,
+      "id": 338,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -10950,7 +11280,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 329,
+      "id": 339,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 33,
@@ -10983,7 +11313,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 330,
+      "id": 340,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -11016,7 +11346,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 331,
+      "id": 341,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 31,
@@ -11049,7 +11379,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 332,
+      "id": 342,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 2,
@@ -11082,7 +11412,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 333,
+      "id": 343,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -11115,7 +11445,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 334,
+      "id": 344,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 53,
@@ -11148,7 +11478,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 335,
+      "id": 345,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -11181,7 +11511,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 336,
+      "id": 346,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -11214,7 +11544,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 337,
+      "id": 347,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -11247,7 +11577,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 338,
+      "id": 348,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 46,
@@ -11280,7 +11610,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 339,
+      "id": 349,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 6,
@@ -11313,7 +11643,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 340,
+      "id": 350,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 65,
@@ -11346,7 +11676,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 341,
+      "id": 351,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -11379,7 +11709,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 342,
+      "id": 352,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 59,
@@ -11412,7 +11742,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 343,
+      "id": 353,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -11445,7 +11775,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 344,
+      "id": 354,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 14,
@@ -11478,7 +11808,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 345,
+      "id": 355,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -11511,7 +11841,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 346,
+      "id": 356,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 62,
@@ -11544,7 +11874,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 347,
+      "id": 357,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 40,
@@ -11577,7 +11907,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 348,
+      "id": 358,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -11610,7 +11940,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 349,
+      "id": 359,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 31,
@@ -11643,7 +11973,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 350,
+      "id": 360,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 66,
@@ -11676,7 +12006,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 351,
+      "id": 361,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -11709,7 +12039,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 352,
+      "id": 362,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 54,
@@ -11742,7 +12072,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 353,
+      "id": 363,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -11775,7 +12105,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 354,
+      "id": 364,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -11808,7 +12138,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 355,
+      "id": 365,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -11841,7 +12171,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 356,
+      "id": 366,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 64,
@@ -11874,7 +12204,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 357,
+      "id": 367,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 58,
@@ -11907,7 +12237,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 358,
+      "id": 368,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 40,
@@ -11940,7 +12270,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 359,
+      "id": 369,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -11973,7 +12303,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 360,
+      "id": 370,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -12006,7 +12336,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 361,
+      "id": 371,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -12039,7 +12369,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 362,
+      "id": 372,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 57,
@@ -12072,7 +12402,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 363,
+      "id": 373,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 54,
@@ -12105,7 +12435,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 364,
+      "id": 374,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -12138,7 +12468,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 365,
+      "id": 375,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -12171,7 +12501,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 366,
+      "id": 376,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 46,
@@ -12204,7 +12534,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 367,
+      "id": 377,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -12237,7 +12567,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 368,
+      "id": 378,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 6,
@@ -12270,7 +12600,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 369,
+      "id": 379,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -12303,7 +12633,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 370,
+      "id": 380,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -12336,7 +12666,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 371,
+      "id": 381,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -12369,7 +12699,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 372,
+      "id": 382,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 45,
@@ -12402,7 +12732,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 373,
+      "id": 383,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 58,
@@ -12435,7 +12765,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 374,
+      "id": 384,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 60,
@@ -12468,7 +12798,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 375,
+      "id": 385,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 64,
@@ -12501,7 +12831,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 376,
+      "id": 386,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -12534,7 +12864,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 377,
+      "id": 387,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -12567,7 +12897,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 378,
+      "id": 388,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -12600,7 +12930,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 379,
+      "id": 389,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -12633,7 +12963,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 380,
+      "id": 390,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 38,
@@ -12666,7 +12996,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 381,
+      "id": 391,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -12699,7 +13029,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 382,
+      "id": 392,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 6,
@@ -12732,7 +13062,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 383,
+      "id": 393,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 34,
@@ -12765,7 +13095,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 384,
+      "id": 394,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 61,
@@ -12798,7 +13128,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 385,
+      "id": 395,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 2,
@@ -12831,7 +13161,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 386,
+      "id": 396,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -12864,7 +13194,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 387,
+      "id": 397,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 58,
@@ -12897,7 +13227,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 388,
+      "id": 398,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 43,
@@ -12930,7 +13260,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 389,
+      "id": 399,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -12963,7 +13293,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 390,
+      "id": 400,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -12996,7 +13326,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 391,
+      "id": 401,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 66,
@@ -13029,7 +13359,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 392,
+      "id": 402,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 55,
@@ -13062,7 +13392,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 393,
+      "id": 403,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -13095,7 +13425,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 394,
+      "id": 404,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 62,
@@ -13128,7 +13458,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 395,
+      "id": 405,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 63,
@@ -13161,7 +13491,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 396,
+      "id": 406,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -13194,7 +13524,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 397,
+      "id": 407,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 62,
@@ -13227,7 +13557,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 398,
+      "id": 408,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -13260,7 +13590,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 399,
+      "id": 409,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -13293,7 +13623,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 400,
+      "id": 410,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -13326,7 +13656,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 401,
+      "id": 411,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 40,
@@ -13359,7 +13689,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 402,
+      "id": 412,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 6,
@@ -13392,7 +13722,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 403,
+      "id": 413,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -13425,7 +13755,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 404,
+      "id": 414,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -13458,7 +13788,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 405,
+      "id": 415,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -13491,7 +13821,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 406,
+      "id": 416,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 37,
@@ -13524,7 +13854,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 407,
+      "id": 417,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 55,
@@ -13557,7 +13887,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 408,
+      "id": 418,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 64,
@@ -13590,7 +13920,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 409,
+      "id": 419,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -13623,7 +13953,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 410,
+      "id": 420,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 65,
@@ -13656,7 +13986,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 411,
+      "id": 421,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -13689,7 +14019,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 412,
+      "id": 422,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 39,
@@ -13722,7 +14052,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 413,
+      "id": 423,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -13755,7 +14085,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 414,
+      "id": 424,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 44,
@@ -13788,7 +14118,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 415,
+      "id": 425,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 36,
@@ -13821,7 +14151,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 416,
+      "id": 426,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 8,
@@ -13854,7 +14184,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 417,
+      "id": 427,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 37,
@@ -13887,7 +14217,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 418,
+      "id": 428,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -13920,7 +14250,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 419,
+      "id": 429,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -13953,7 +14283,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 420,
+      "id": 430,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -13986,7 +14316,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 421,
+      "id": 431,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -14019,7 +14349,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 422,
+      "id": 432,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -14052,7 +14382,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 423,
+      "id": 433,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -14085,7 +14415,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 424,
+      "id": 434,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 44,
@@ -14118,7 +14448,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 425,
+      "id": 435,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 43,
@@ -14151,7 +14481,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 426,
+      "id": 436,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 56,
@@ -14184,7 +14514,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 427,
+      "id": 437,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 45,
@@ -14217,7 +14547,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 428,
+      "id": 438,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 40,
@@ -14250,7 +14580,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 429,
+      "id": 439,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -14283,7 +14613,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 430,
+      "id": 440,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -14316,7 +14646,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 431,
+      "id": 441,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 33,
@@ -14349,7 +14679,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 432,
+      "id": 442,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 58,
@@ -14382,7 +14712,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 433,
+      "id": 443,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 39,
@@ -14415,7 +14745,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 434,
+      "id": 444,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -14448,7 +14778,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 435,
+      "id": 445,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 4,
@@ -14481,7 +14811,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 436,
+      "id": 446,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 37,
@@ -14514,7 +14844,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 437,
+      "id": 447,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -14547,7 +14877,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 438,
+      "id": 448,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 62,
@@ -14580,7 +14910,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 439,
+      "id": 449,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 51,
@@ -14613,7 +14943,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 440,
+      "id": 450,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -14646,7 +14976,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 441,
+      "id": 451,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 33,
@@ -14679,7 +15009,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 442,
+      "id": 452,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -14712,7 +15042,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 443,
+      "id": 453,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 61,
@@ -14745,7 +15075,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 444,
+      "id": 454,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 63,
@@ -14778,7 +15108,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 445,
+      "id": 455,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -14811,7 +15141,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 446,
+      "id": 456,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 32,
@@ -14844,7 +15174,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 447,
+      "id": 457,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 63,
@@ -14877,7 +15207,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 448,
+      "id": 458,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 42,
@@ -14910,7 +15240,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 449,
+      "id": 459,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 64,
@@ -14943,7 +15273,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 450,
+      "id": 460,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 45,
@@ -14976,7 +15306,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 451,
+      "id": 461,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -15009,7 +15339,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 452,
+      "id": 462,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 65,
@@ -15042,7 +15372,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 453,
+      "id": 463,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 36,
@@ -15075,7 +15405,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 454,
+      "id": 464,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -15108,7 +15438,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 455,
+      "id": 465,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 13,
@@ -15141,7 +15471,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 456,
+      "id": 466,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 45,
@@ -15174,7 +15504,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 457,
+      "id": 467,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 56,
@@ -15207,7 +15537,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 458,
+      "id": 468,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -15240,7 +15570,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 459,
+      "id": 469,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 40,
@@ -15273,7 +15603,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 460,
+      "id": 470,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 52,
@@ -15306,7 +15636,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 461,
+      "id": 471,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 55,
@@ -15339,7 +15669,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 462,
+      "id": 472,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -15372,7 +15702,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 463,
+      "id": 473,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -15405,7 +15735,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 464,
+      "id": 474,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 66,
@@ -15438,7 +15768,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 465,
+      "id": 475,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -15471,7 +15801,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 466,
+      "id": 476,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -15504,7 +15834,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 467,
+      "id": 477,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 43,
@@ -15537,7 +15867,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 468,
+      "id": 478,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 38,
@@ -15570,7 +15900,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 469,
+      "id": 479,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 45,
@@ -15603,7 +15933,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 470,
+      "id": 480,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -15636,7 +15966,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 471,
+      "id": 481,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -15669,7 +15999,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 472,
+      "id": 482,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 55,
@@ -15702,7 +16032,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 473,
+      "id": 483,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -15735,7 +16065,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 474,
+      "id": 484,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 64,
@@ -15768,7 +16098,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 475,
+      "id": 485,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -15801,7 +16131,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 476,
+      "id": 486,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 44,
@@ -15834,7 +16164,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 477,
+      "id": 487,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 9,
@@ -15867,7 +16197,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 478,
+      "id": 488,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -15900,7 +16230,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 479,
+      "id": 489,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 13,
@@ -15933,7 +16263,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 480,
+      "id": 490,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -15966,7 +16296,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 481,
+      "id": 491,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 52,
@@ -15999,7 +16329,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 482,
+      "id": 492,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 35,
@@ -16032,7 +16362,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 483,
+      "id": 493,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 38,
@@ -16065,7 +16395,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 484,
+      "id": 494,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -16098,7 +16428,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 485,
+      "id": 495,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 33,
@@ -16131,7 +16461,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 486,
+      "id": 496,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 52,
@@ -16164,7 +16494,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 487,
+      "id": 497,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 58,
@@ -16197,7 +16527,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 488,
+      "id": 498,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -16230,7 +16560,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 489,
+      "id": 499,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -16263,7 +16593,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 490,
+      "id": 500,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -16296,7 +16626,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 491,
+      "id": 501,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -16329,7 +16659,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 492,
+      "id": 502,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -16362,7 +16692,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 493,
+      "id": 503,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -16395,7 +16725,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 494,
+      "id": 504,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -16428,7 +16758,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 495,
+      "id": 505,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -16461,7 +16791,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 496,
+      "id": 506,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -16494,7 +16824,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 497,
+      "id": 507,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -16527,7 +16857,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 498,
+      "id": 508,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 42,
@@ -16560,7 +16890,7 @@
       "pool": "hsk2plus"
     },
     {
-      "id": 499,
+      "id": 509,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -16593,7 +16923,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 500,
+      "id": 510,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -16626,7 +16956,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 501,
+      "id": 511,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 58,
@@ -16659,7 +16989,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 502,
+      "id": 512,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 60,
@@ -16692,7 +17022,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 503,
+      "id": 513,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -16725,7 +17055,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 504,
+      "id": 514,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 8,
@@ -16758,7 +17088,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 505,
+      "id": 515,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -16791,7 +17121,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 506,
+      "id": 516,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 10,
@@ -16824,7 +17154,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 507,
+      "id": 517,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 3,
@@ -16857,7 +17187,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 508,
+      "id": 518,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 3,
@@ -16890,7 +17220,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 509,
+      "id": 519,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 34,
@@ -16923,7 +17253,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 510,
+      "id": 520,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 35,
@@ -16956,7 +17286,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 511,
+      "id": 521,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 10,
@@ -16989,7 +17319,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 512,
+      "id": 522,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 6,
@@ -17022,7 +17352,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 513,
+      "id": 523,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 36,
@@ -17055,7 +17385,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 514,
+      "id": 524,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 11,
@@ -17088,7 +17418,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 515,
+      "id": 525,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -17121,7 +17451,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 516,
+      "id": 526,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -17154,7 +17484,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 517,
+      "id": 527,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 8,
@@ -17187,7 +17517,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 518,
+      "id": 528,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -17220,7 +17550,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 519,
+      "id": 529,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 6,
@@ -17253,7 +17583,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 520,
+      "id": 530,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 1,
@@ -17286,7 +17616,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 521,
+      "id": 531,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 14,
@@ -17319,7 +17649,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 522,
+      "id": 532,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -17352,7 +17682,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 523,
+      "id": 533,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 2,
@@ -17385,7 +17715,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 524,
+      "id": 534,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -17418,7 +17748,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 525,
+      "id": 535,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 11,
@@ -17451,7 +17781,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 526,
+      "id": 536,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -17484,7 +17814,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 527,
+      "id": 537,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 56,
@@ -17517,7 +17847,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 528,
+      "id": 538,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 14,
@@ -17550,7 +17880,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 529,
+      "id": 539,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 45,
@@ -17583,7 +17913,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 530,
+      "id": 540,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -17616,7 +17946,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 531,
+      "id": 541,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -17649,7 +17979,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 532,
+      "id": 542,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -17682,7 +18012,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 533,
+      "id": 543,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -17715,7 +18045,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 534,
+      "id": 544,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 9,
@@ -17748,7 +18078,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 535,
+      "id": 545,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -17781,7 +18111,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 536,
+      "id": 546,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 37,
@@ -17814,7 +18144,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 537,
+      "id": 547,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -17847,7 +18177,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 538,
+      "id": 548,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 9,
@@ -17880,7 +18210,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 539,
+      "id": 549,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 34,
@@ -17913,7 +18243,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 540,
+      "id": 550,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -17946,7 +18276,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 541,
+      "id": 551,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 35,
@@ -17979,7 +18309,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 542,
+      "id": 552,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -18012,7 +18342,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 543,
+      "id": 553,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 40,
@@ -18045,7 +18375,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 544,
+      "id": 554,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -18078,7 +18408,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 545,
+      "id": 555,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 32,
@@ -18111,7 +18441,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 546,
+      "id": 556,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 4,
@@ -18144,7 +18474,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 547,
+      "id": 557,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 46,
@@ -18177,7 +18507,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 548,
+      "id": 558,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 38,
@@ -18210,7 +18540,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 549,
+      "id": 559,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -18243,7 +18573,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 550,
+      "id": 560,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 41,
@@ -18276,7 +18606,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 551,
+      "id": 561,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 34,
@@ -18309,7 +18639,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 552,
+      "id": 562,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -18342,7 +18672,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 553,
+      "id": 563,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -18375,7 +18705,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 554,
+      "id": 564,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -18408,7 +18738,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 555,
+      "id": 565,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -18441,7 +18771,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 556,
+      "id": 566,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -18474,7 +18804,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 557,
+      "id": 567,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 4,
@@ -18507,7 +18837,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 558,
+      "id": 568,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 38,
@@ -18540,7 +18870,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 559,
+      "id": 569,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -18573,7 +18903,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 560,
+      "id": 570,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -18606,7 +18936,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 561,
+      "id": 571,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 35,
@@ -18639,7 +18969,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 562,
+      "id": 572,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -18672,7 +19002,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 563,
+      "id": 573,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -18705,7 +19035,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 564,
+      "id": 574,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -18738,7 +19068,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 565,
+      "id": 575,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 9,
@@ -18771,7 +19101,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 566,
+      "id": 576,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -18804,7 +19134,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 567,
+      "id": 577,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -18837,7 +19167,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 568,
+      "id": 578,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -18870,7 +19200,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 569,
+      "id": 579,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 32,
@@ -18903,7 +19233,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 570,
+      "id": 580,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -18936,7 +19266,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 571,
+      "id": 581,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 14,
@@ -18969,7 +19299,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 572,
+      "id": 582,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -19002,7 +19332,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 573,
+      "id": 583,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -19035,7 +19365,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 574,
+      "id": 584,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -19068,7 +19398,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 575,
+      "id": 585,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -19101,7 +19431,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 576,
+      "id": 586,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 31,
@@ -19134,7 +19464,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 577,
+      "id": 587,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 52,
@@ -19167,7 +19497,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 578,
+      "id": 588,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -19179,28 +19509,28 @@
       "question_es": "¿Cuál es el significado de 电?",
       "options_pt": [
         "gatinho",
-        "luz",
+        "eletricidade / luz",
         "curry"
       ],
       "options_en": [
         "gatinho",
-        "luz",
+        "eletricidade / luz",
         "curry"
       ],
       "options_es": [
         "gatinho",
-        "luz",
+        "eletricidade / luz",
         "curry"
       ],
       "correct": 1,
-      "explanation_pt": "电 significa \"luz\".",
-      "explanation_en": "电 means \"luz\".",
-      "explanation_es": "电 significa \"luz\".",
+      "explanation_pt": "电 significa \"eletricidade / luz\".",
+      "explanation_en": "电 means \"eletricidade / luz\".",
+      "explanation_es": "电 significa \"eletricidade / luz\".",
       "generated": true,
       "pool": "hsk3"
     },
     {
-      "id": 579,
+      "id": 589,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 41,
@@ -19233,7 +19563,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 580,
+      "id": 590,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 3,
@@ -19266,7 +19596,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 581,
+      "id": 591,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 3,
@@ -19299,7 +19629,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 582,
+      "id": 592,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -19332,7 +19662,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 583,
+      "id": 593,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -19365,7 +19695,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 584,
+      "id": 594,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 46,
@@ -19398,7 +19728,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 585,
+      "id": 595,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 7,
@@ -19431,7 +19761,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 586,
+      "id": 596,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -19464,7 +19794,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 587,
+      "id": 597,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -19497,7 +19827,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 588,
+      "id": 598,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 4,
@@ -19530,7 +19860,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 589,
+      "id": 599,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -19563,7 +19893,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 590,
+      "id": 600,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -19596,7 +19926,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 591,
+      "id": 601,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -19629,7 +19959,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 592,
+      "id": 602,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -19662,7 +19992,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 593,
+      "id": 603,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 36,
@@ -19695,7 +20025,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 594,
+      "id": 604,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 45,
@@ -19728,7 +20058,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 595,
+      "id": 605,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 59,
@@ -19761,7 +20091,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 596,
+      "id": 606,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 45,
@@ -19794,7 +20124,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 597,
+      "id": 607,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -19827,7 +20157,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 598,
+      "id": 608,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -19860,7 +20190,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 599,
+      "id": 609,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -19893,7 +20223,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 600,
+      "id": 610,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 41,
@@ -19926,7 +20256,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 601,
+      "id": 611,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 36,
@@ -19959,7 +20289,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 602,
+      "id": 612,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 98,
@@ -19992,7 +20322,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 603,
+      "id": 613,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -20025,7 +20355,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 604,
+      "id": 614,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -20058,7 +20388,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 605,
+      "id": 615,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 16,
@@ -20091,7 +20421,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 606,
+      "id": 616,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -20124,7 +20454,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 607,
+      "id": 617,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 91,
@@ -20157,7 +20487,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 608,
+      "id": 618,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 14,
@@ -20190,7 +20520,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 609,
+      "id": 619,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 32,
@@ -20223,7 +20553,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 610,
+      "id": 620,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 33,
@@ -20256,7 +20586,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 611,
+      "id": 621,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -20289,7 +20619,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 612,
+      "id": 622,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 23,
@@ -20322,7 +20652,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 613,
+      "id": 623,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 31,
@@ -20355,7 +20685,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 614,
+      "id": 624,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 51,
@@ -20388,7 +20718,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 615,
+      "id": 625,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 44,
@@ -20421,7 +20751,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 616,
+      "id": 626,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 34,
@@ -20454,7 +20784,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 617,
+      "id": 627,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 5,
@@ -20487,7 +20817,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 618,
+      "id": 628,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 90,
@@ -20520,7 +20850,7 @@
       "pool": "hsk3"
     },
     {
-      "id": 619,
+      "id": 629,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 35,
@@ -20553,7 +20883,7 @@
       "pool": "hsk2"
     },
     {
-      "id": 620,
+      "id": 630,
       "type": "multiple_choice",
       "difficulty": 1,
       "block": 60,
@@ -20584,336 +20914,6 @@
       "explanation_es": "理由 significa \"reason\".",
       "generated": true,
       "pool": "hsk2"
-    },
-    {
-      "id": 621,
-      "type": "multiple_choice",
-      "difficulty": 1,
-      "block": 37,
-      "topic": "book",
-      "hanzi": "来不及",
-      "pinyin": "láibují",
-      "question_pt": "Qual é o significado de 来不及?",
-      "question_en": "What is the meaning of 来不及?",
-      "question_es": "¿Cuál es el significado de 来不及?",
-      "options_pt": [
-        "gatinho",
-        "curry",
-        "não dá tempo"
-      ],
-      "options_en": [
-        "gatinho",
-        "curry",
-        "find no time to do sth"
-      ],
-      "options_es": [
-        "gatinho",
-        "curry",
-        "find no time to do sth"
-      ],
-      "correct": 2,
-      "explanation_pt": "来不及 significa \"não dá tempo\".",
-      "explanation_en": "来不及 means \"find no time to do sth\".",
-      "explanation_es": "来不及 significa \"find no time to do sth\".",
-      "generated": true,
-      "pool": "hsk2"
-    },
-    {
-      "id": 622,
-      "type": "multiple_choice",
-      "difficulty": 1,
-      "block": 91,
-      "topic": "deck",
-      "hanzi": "比",
-      "pinyin": "bǐ",
-      "question_pt": "Qual é o significado de 比?",
-      "question_en": "What is the meaning of 比?",
-      "question_es": "¿Cuál es el significado de 比?",
-      "options_pt": [
-        "gatinho",
-        "curry",
-        "than， （superior or inferior） to"
-      ],
-      "options_en": [
-        "gatinho",
-        "curry",
-        "than， （superior or inferior） to"
-      ],
-      "options_es": [
-        "gatinho",
-        "curry",
-        "than， （superior or inferior） to"
-      ],
-      "correct": 2,
-      "explanation_pt": "比 significa \"than， （superior or inferior） to\".",
-      "explanation_en": "比 means \"than， （superior or inferior） to\".",
-      "explanation_es": "比 significa \"than， （superior or inferior） to\".",
-      "generated": true,
-      "pool": "hsk2plus"
-    },
-    {
-      "id": 623,
-      "type": "multiple_choice",
-      "difficulty": 1,
-      "block": 51,
-      "topic": "book",
-      "hanzi": "流利",
-      "pinyin": "liúlì",
-      "question_pt": "Qual é o significado de 流利?",
-      "question_en": "What is the meaning of 流利?",
-      "question_es": "¿Cuál es el significado de 流利?",
-      "options_pt": [
-        "gatinho",
-        "curry",
-        "fluent"
-      ],
-      "options_en": [
-        "gatinho",
-        "curry",
-        "fluent"
-      ],
-      "options_es": [
-        "gatinho",
-        "curry",
-        "fluent"
-      ],
-      "correct": 2,
-      "explanation_pt": "流利 significa \"fluent\".",
-      "explanation_en": "流利 means \"fluent\".",
-      "explanation_es": "流利 significa \"fluent\".",
-      "generated": true,
-      "pool": "hsk2plus"
-    },
-    {
-      "id": 624,
-      "type": "multiple_choice",
-      "difficulty": 1,
-      "block": 90,
-      "topic": "vocab",
-      "hanzi": "两件",
-      "pinyin": "liǎng jiàn",
-      "question_pt": "Qual é o significado de 两件?",
-      "question_en": "What is the meaning of 两件?",
-      "question_es": "¿Cuál es el significado de 两件?",
-      "options_pt": [
-        "gatinho",
-        "curry",
-        "duas"
-      ],
-      "options_en": [
-        "gatinho",
-        "curry",
-        "duas"
-      ],
-      "options_es": [
-        "gatinho",
-        "curry",
-        "duas"
-      ],
-      "correct": 2,
-      "explanation_pt": "两件 significa \"duas\".",
-      "explanation_en": "两件 means \"duas\".",
-      "explanation_es": "两件 significa \"duas\".",
-      "generated": true,
-      "pool": "hsk2plus"
-    },
-    {
-      "id": 625,
-      "type": "multiple_choice",
-      "difficulty": 1,
-      "block": 90,
-      "topic": "vocab",
-      "hanzi": "不对",
-      "pinyin": "bú duì",
-      "question_pt": "Qual é o significado de 不对?",
-      "question_en": "What is the meaning of 不对?",
-      "question_es": "¿Cuál es el significado de 不对?",
-      "options_pt": [
-        "gatinho",
-        "curry",
-        "errada"
-      ],
-      "options_en": [
-        "gatinho",
-        "curry",
-        "errada"
-      ],
-      "options_es": [
-        "gatinho",
-        "curry",
-        "errada"
-      ],
-      "correct": 2,
-      "explanation_pt": "不对 significa \"errada\".",
-      "explanation_en": "不对 means \"errada\".",
-      "explanation_es": "不对 significa \"errada\".",
-      "generated": true,
-      "pool": "hsk2plus"
-    },
-    {
-      "id": 626,
-      "type": "multiple_choice",
-      "difficulty": 1,
-      "block": 33,
-      "topic": "book",
-      "hanzi": "胖",
-      "pinyin": "pàng",
-      "question_pt": "Qual é o significado de 胖?",
-      "question_en": "What is the meaning of 胖?",
-      "question_es": "¿Cuál es el significado de 胖?",
-      "options_pt": [
-        "curry",
-        "gordo",
-        "gatinho"
-      ],
-      "options_en": [
-        "curry",
-        "plump",
-        "gatinho"
-      ],
-      "options_es": [
-        "curry",
-        "plump",
-        "gatinho"
-      ],
-      "correct": 1,
-      "explanation_pt": "胖 significa \"gordo\".",
-      "explanation_en": "胖 means \"plump\".",
-      "explanation_es": "胖 significa \"plump\".",
-      "generated": true,
-      "pool": "hsk2plus"
-    },
-    {
-      "id": 627,
-      "type": "multiple_choice",
-      "difficulty": 1,
-      "block": 23,
-      "topic": "vocab",
-      "hanzi": "老抽",
-      "pinyin": "lǎochōu",
-      "question_pt": "Qual é o significado de 老抽?",
-      "question_en": "What is the meaning of 老抽?",
-      "question_es": "¿Cuál es el significado de 老抽?",
-      "options_pt": [
-        "gatinho",
-        "curry",
-        "molho de soja escuro"
-      ],
-      "options_en": [
-        "gatinho",
-        "curry",
-        "molho de soja escuro"
-      ],
-      "options_es": [
-        "gatinho",
-        "curry",
-        "molho de soja escuro"
-      ],
-      "correct": 2,
-      "explanation_pt": "老抽 significa \"molho de soja escuro\".",
-      "explanation_en": "老抽 means \"molho de soja escuro\".",
-      "explanation_es": "老抽 significa \"molho de soja escuro\".",
-      "generated": true,
-      "pool": "hsk2plus"
-    },
-    {
-      "id": 628,
-      "type": "multiple_choice",
-      "difficulty": 1,
-      "block": 45,
-      "topic": "book",
-      "hanzi": "好运",
-      "pinyin": "hǎoyùn",
-      "question_pt": "Qual é o significado de 好运?",
-      "question_en": "What is the meaning of 好运?",
-      "question_es": "¿Cuál es el significado de 好运?",
-      "options_pt": [
-        "gatinho",
-        "boa sorte",
-        "curry"
-      ],
-      "options_en": [
-        "gatinho",
-        "good luck",
-        "curry"
-      ],
-      "options_es": [
-        "gatinho",
-        "good luck",
-        "curry"
-      ],
-      "correct": 1,
-      "explanation_pt": "好运 significa \"boa sorte\".",
-      "explanation_en": "好运 means \"good luck\".",
-      "explanation_es": "好运 significa \"good luck\".",
-      "generated": true,
-      "pool": "hsk2plus"
-    },
-    {
-      "id": 629,
-      "type": "multiple_choice",
-      "difficulty": 1,
-      "block": 11,
-      "topic": "vocab",
-      "hanzi": "跑",
-      "pinyin": "pǎo",
-      "question_pt": "Qual é o significado de 跑?",
-      "question_en": "What is the meaning of 跑?",
-      "question_es": "¿Cuál es el significado de 跑?",
-      "options_pt": [
-        "gatinho",
-        "correr",
-        "curry"
-      ],
-      "options_en": [
-        "gatinho",
-        "correr",
-        "curry"
-      ],
-      "options_es": [
-        "gatinho",
-        "correr",
-        "curry"
-      ],
-      "correct": 1,
-      "explanation_pt": "跑 significa \"correr\".",
-      "explanation_en": "跑 means \"correr\".",
-      "explanation_es": "跑 significa \"correr\".",
-      "generated": true,
-      "pool": "hsk2plus"
-    },
-    {
-      "id": 630,
-      "type": "multiple_choice",
-      "difficulty": 1,
-      "block": 90,
-      "topic": "vocab",
-      "hanzi": "近",
-      "pinyin": "jìn",
-      "question_pt": "Qual é o significado de 近?",
-      "question_en": "What is the meaning of 近?",
-      "question_es": "¿Cuál es el significado de 近?",
-      "options_pt": [
-        "gatinho",
-        "perto",
-        "curry"
-      ],
-      "options_en": [
-        "gatinho",
-        "perto",
-        "curry"
-      ],
-      "options_es": [
-        "gatinho",
-        "perto",
-        "curry"
-      ],
-      "correct": 1,
-      "explanation_pt": "近 significa \"perto\".",
-      "explanation_en": "近 means \"perto\".",
-      "explanation_es": "近 significa \"perto\".",
-      "generated": true,
-      "pool": "hsk2plus"
     }
   ]
 }
