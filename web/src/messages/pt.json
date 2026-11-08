@@ -492,7 +492,7 @@
     "noLines": "Sem linhas."
   },
   "gameProgress": {
-    "guest": "Você está jogando como convidado. Os pontos não são salvos. Entre para guardar seu histórico.",
+    "guest": "Você está jogando como convidado. Os pontos não são salvos. Entre para salvar seu histórico.",
     "firstRound": "Esta rodada já fica salva no seu histórico.",
     "lastRound": "Última rodada",
     "rounds": "Rodadas",
