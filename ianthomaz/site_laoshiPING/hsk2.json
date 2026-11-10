@@ -1,0 +1,5861 @@
+{
+  "source": "https://2982910684.github.io/preply_PING_HSK/",
+  "level": 2,
+  "lessonCount": 15,
+  "wordCount": 214,
+  "lessons": [
+    {
+      "lesson": 1,
+      "words": [
+        {
+          "word": "就",
+          "pinyin": "jiù",
+          "pos": "adv.",
+          "define": "exactly; precisely",
+          "examples": [
+            {
+              "zh": "这就是我介绍的那家餐厅。",
+              "en": "This is exactly the restaurant I introduced."
+            },
+            {
+              "zh": "他就喜欢吃北京烤鸭。",
+              "en": "He particularly likes Peking Duck."
+            },
+            {
+              "zh": "我就要这个。",
+              "en": "I want exactly this one."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "就是",
+              "pinyin": "jiù shì",
+              "en": "is exactly"
+            }
+          ]
+        },
+        {
+          "word": "给",
+          "pinyin": "gěi",
+          "pos": "prep.",
+          "define": "(used to introduce the recipient of an action) to; for",
+          "examples": [
+            {
+              "zh": "他给我介绍了北京烤鸭。",
+              "en": "He introduced Peking Duck to me."
+            },
+            {
+              "zh": "老师给我们介绍了那个地方。",
+              "en": "The teacher introduced that place to us."
+            },
+            {
+              "zh": "他给我发了一封邮件。",
+              "en": "He sent me an email."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "给我",
+              "pinyin": "gěi wǒ",
+              "en": "to me"
+            }
+          ]
+        },
+        {
+          "word": "让",
+          "pinyin": "ràng",
+          "pos": "v.",
+          "define": "let; allow",
+          "examples": [
+            {
+              "zh": "让我给你介绍一下。",
+              "en": "Let me introduce it to you."
+            },
+            {
+              "zh": "老师让我们自己去问。",
+              "en": "The teacher let us go and ask ourselves."
+            },
+            {
+              "zh": "妈妈不让我一个人去旅游。",
+              "en": "Mom does not allow me to travel alone."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "让人",
+              "pinyin": "ràng rén",
+              "en": "let someone"
+            }
+          ]
+        },
+        {
+          "word": "接",
+          "pinyin": "jiē",
+          "pos": "v.",
+          "define": "meet; welcome; receive",
+          "examples": [
+            {
+              "zh": "我去机场接朋友。",
+              "en": "I go to the airport to meet a friend."
+            },
+            {
+              "zh": "谢谢你来接我。",
+              "en": "Thank you for coming to meet me."
+            },
+            {
+              "zh": "这次他去接一位客人。",
+              "en": "This time he went to receive a guest."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "接人",
+              "pinyin": "jiē rén",
+              "en": "meet someone"
+            }
+          ]
+        },
+        {
+          "word": "次",
+          "pinyin": "cì",
+          "pos": "m.",
+          "define": "(indicating how many times or which time something happens) time; occasion",
+          "examples": [
+            {
+              "zh": "这是我第一次来北京。",
+              "en": "This is my first time in Beijing."
+            },
+            {
+              "zh": "我已经去过两次了。",
+              "en": "I have already been there twice."
+            },
+            {
+              "zh": "这次旅游很有意思。",
+              "en": "This trip is very interesting."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一次",
+              "pinyin": "yí cì",
+              "en": "one time"
+            }
+          ]
+        },
+        {
+          "word": "旅游",
+          "pinyin": "lǚyóu",
+          "pos": "v.",
+          "define": "travel; make a tour",
+          "examples": [
+            {
+              "zh": "我想去北京旅游。",
+              "en": "I want to travel to Beijing."
+            },
+            {
+              "zh": "放假的时候，我们常常去旅游。",
+              "en": "During holidays, we often travel."
+            },
+            {
+              "zh": "这次旅游很开心。",
+              "en": "This trip was very enjoyable."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "去旅游",
+              "pinyin": "qù lǚyóu",
+              "en": "go travelling"
+            }
+          ]
+        },
+        {
+          "word": "帮忙",
+          "pinyin": "bāngmáng",
+          "pos": "v.",
+          "define": "help",
+          "examples": [
+            {
+              "zh": "你能帮我一个忙吗？",
+              "en": "Can you do me a favor?"
+            },
+            {
+              "zh": "谢谢你的帮忙。",
+              "en": "Thank you for your help."
+            },
+            {
+              "zh": "大家互相帮忙。",
+              "en": "Everyone helps each other."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "帮个忙",
+              "pinyin": "bāng gè máng",
+              "en": "do a favor"
+            }
+          ]
+        },
+        {
+          "word": "不好意思",
+          "pinyin": "bù hǎoyìsi",
+          "pos": "phr.",
+          "define": "find it embarrassing (to do sth)",
+          "examples": [
+            {
+              "zh": "不好意思，我来晚了。",
+              "en": "Sorry, I am late."
+            },
+            {
+              "zh": "他不好意思问别人。",
+              "en": "He is embarrassed to ask others."
+            },
+            {
+              "zh": "不好意思，请问这个字是什么意思？",
+              "en": "Excuse me, what does this character mean?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "不好意思",
+              "pinyin": "bù hǎoyìsi",
+              "en": "sorry; embarrassed"
+            }
+          ]
+        },
+        {
+          "word": "已经",
+          "pinyin": "yǐjīng",
+          "pos": "adv.",
+          "define": "already",
+          "examples": [
+            {
+              "zh": "我已经懂了。",
+              "en": "I already understand."
+            },
+            {
+              "zh": "他们已经出发了。",
+              "en": "They have already set off."
+            },
+            {
+              "zh": "我已经去过两次北京了。",
+              "en": "I have already been to Beijing twice."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "已经",
+              "pinyin": "yǐjīng",
+              "en": "already"
+            }
+          ]
+        },
+        {
+          "word": "那",
+          "pinyin": "nà",
+          "pos": "conj.",
+          "define": "then",
+          "examples": [
+            {
+              "zh": "那我给你介绍一下吧。",
+              "en": "Then let me introduce it to you."
+            },
+            {
+              "zh": "你不懂，那我们就再讲一次。",
+              "en": "If you do not understand, then let us explain once more."
+            },
+            {
+              "zh": "那好吧，我们一起去。",
+              "en": "Then fine, let us go together."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "那…",
+              "pinyin": "nà…",
+              "en": "then…"
+            }
+          ]
+        },
+        {
+          "word": "介绍",
+          "pinyin": "jièshào",
+          "pos": "v.",
+          "define": "introduce",
+          "examples": [
+            {
+              "zh": "他介绍了一家很好吃的餐厅。",
+              "en": "He introduced a very tasty restaurant."
+            },
+            {
+              "zh": "请你介绍一下自己。",
+              "en": "Please introduce yourself."
+            },
+            {
+              "zh": "朋友介绍我来这家店。",
+              "en": "A friend introduced me to this shop."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "介绍",
+              "pinyin": "jièshào",
+              "en": "introduce"
+            }
+          ]
+        },
+        {
+          "word": "有时",
+          "pinyin": "yǒushí",
+          "pos": "adv.",
+          "define": "sometimes",
+          "examples": [
+            {
+              "zh": "有时我们一起去旅游。",
+              "en": "Sometimes we travel together."
+            },
+            {
+              "zh": "他有时听不懂别人的意思。",
+              "en": "Sometimes he does not understand what others mean."
+            },
+            {
+              "zh": "有时我也会不好意思。",
+              "en": "Sometimes I feel embarrassed too."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "有时",
+              "pinyin": "yǒushí",
+              "en": "sometimes"
+            }
+          ]
+        },
+        {
+          "word": "懂",
+          "pinyin": "dǒng",
+          "pos": "v.",
+          "define": "understand; know",
+          "examples": [
+            {
+              "zh": "我懂了，谢谢。",
+              "en": "I understand, thank you."
+            },
+            {
+              "zh": "你懂我的意思吗？",
+              "en": "Do you understand what I mean?"
+            },
+            {
+              "zh": "我不太懂这个词的意思。",
+              "en": "I do not quite understand the meaning of this word."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "懂了",
+              "pinyin": "dǒng le",
+              "en": "understood"
+            }
+          ]
+        },
+        {
+          "word": "意思",
+          "pinyin": "yìsi",
+          "pos": "n.",
+          "define": "meaning; idea",
+          "examples": [
+            {
+              "zh": "这个词是什么意思？",
+              "en": "What does this word mean?"
+            },
+            {
+              "zh": "我明白你的意思了。",
+              "en": "I understand what you mean."
+            },
+            {
+              "zh": "这个词有两个意思。",
+              "en": "This word has two meanings."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "意思",
+              "pinyin": "yìsi",
+              "en": "meaning"
+            }
+          ]
+        },
+        {
+          "word": "北京烤鸭",
+          "pinyin": "Běijīng Kǎoyā",
+          "pos": "proper n.",
+          "define": "Peking Duck",
+          "examples": [
+            {
+              "zh": "北京烤鸭很好吃。",
+              "en": "Peking Duck is very tasty."
+            },
+            {
+              "zh": "我想吃一次北京烤鸭。",
+              "en": "I want to eat Peking Duck once."
+            },
+            {
+              "zh": "他给我介绍了北京烤鸭。",
+              "en": "He introduced Peking Duck to me."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一份北京烤鸭",
+              "pinyin": "yí fèn Běijīng Kǎoyā",
+              "en": "a portion of Peking Duck"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 2,
+      "words": [
+        {
+          "word": "公交车",
+          "pinyin": "gōngjiāochē",
+          "pos": "n.",
+          "define": "bus",
+          "examples": [
+            {
+              "zh": "坐公交车去北京大学很方便。",
+              "en": "It is convenient to take the bus to Peking University."
+            },
+            {
+              "zh": "这辆公交车人很多。",
+              "en": "This bus is very crowded."
+            },
+            {
+              "zh": "我们坐公交车去吧。",
+              "en": "Let's take the bus."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "坐公交车",
+              "pinyin": "zuò gōngjiāochē",
+              "en": "take the bus"
+            }
+          ]
+        },
+        {
+          "word": "但",
+          "pinyin": "dàn",
+          "pos": "conj.",
+          "define": "but; yet",
+          "examples": [
+            {
+              "zh": "我想坐公交车，但车站太远。",
+              "en": "I want to take the bus, but the stop is too far."
+            },
+            {
+              "zh": "北京大学很有名，但离我家很远。",
+              "en": "Peking University is famous, but it is far from my home."
+            },
+            {
+              "zh": "打车快，但贵。",
+              "en": "Taking a taxi is fast, but expensive."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "但",
+              "pinyin": "dàn",
+              "en": "but"
+            }
+          ]
+        },
+        {
+          "word": "车站",
+          "pinyin": "chēzhàn",
+          "pos": "n.",
+          "define": "stop; station",
+          "examples": [
+            {
+              "zh": "公交车站就在前面。",
+              "en": "The bus stop is right ahead."
+            },
+            {
+              "zh": "这个车站人很多。",
+              "en": "This station is very crowded."
+            },
+            {
+              "zh": "我从车站坐车去北京大学。",
+              "en": "I take a bus from the station to Peking University."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "公交车站",
+              "pinyin": "gōngjiāo chēzhàn",
+              "en": "bus stop"
+            }
+          ]
+        },
+        {
+          "word": "远",
+          "pinyin": "yuǎn",
+          "pos": "adj.",
+          "define": "far away",
+          "examples": [
+            {
+              "zh": "车站离这儿远不远？",
+              "en": "Is the stop far from here?"
+            },
+            {
+              "zh": "北京大学离我家很远。",
+              "en": "Peking University is far from my home."
+            },
+            {
+              "zh": "打车吧，走路太远了。",
+              "en": "Let's take a taxi; walking is too far."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "很远",
+              "pinyin": "hěn yuǎn",
+              "en": "very far"
+            }
+          ]
+        },
+        {
+          "word": "打车",
+          "pinyin": "dǎchē",
+          "pos": "v.",
+          "define": "take/hail a taxi",
+          "examples": [
+            {
+              "zh": "我们打车去车站吧。",
+              "en": "Let's take a taxi to the station."
+            },
+            {
+              "zh": "时间来不及了，打车吧。",
+              "en": "There is not enough time, let's take a taxi."
+            },
+            {
+              "zh": "他每次去机场都打车。",
+              "en": "He takes a taxi every time he goes to the airport."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "打车",
+              "pinyin": "dǎchē",
+              "en": "take a taxi"
+            }
+          ]
+        },
+        {
+          "word": "还是",
+          "pinyin": "háishì",
+          "pos": "adv.",
+          "define": "had better",
+          "examples": [
+            {
+              "zh": "车站太远，你还是坐公交车吧。",
+              "en": "The stop is far; you had better take the bus."
+            },
+            {
+              "zh": "外面很冷，你还是别去了。",
+              "en": "It is cold outside; you had better not go."
+            },
+            {
+              "zh": "你还是问问老师吧。",
+              "en": "You had better ask the teacher."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "还是",
+              "pinyin": "háishì",
+              "en": "had better"
+            }
+          ]
+        },
+        {
+          "word": "北京大学",
+          "pinyin": "Běijīng Dàxué",
+          "pos": "proper n.",
+          "define": "Peking University",
+          "examples": [
+            {
+              "zh": "北京大学很有名。",
+              "en": "Peking University is very famous."
+            },
+            {
+              "zh": "我坐公交车去北京大学。",
+              "en": "I take the bus to Peking University."
+            },
+            {
+              "zh": "北京大学的外国留学生很多。",
+              "en": "There are many foreign students at Peking University."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "去北京大学",
+              "pinyin": "qù Běijīng Dàxué",
+              "en": "go to Peking University"
+            }
+          ]
+        },
+        {
+          "word": "啊",
+          "pinyin": "a",
+          "pos": "part.",
+          "define": "used at the end of a sentence to express appreciation, agreement, etc.",
+          "examples": [
+            {
+              "zh": "北京大学啊，真大！",
+              "en": "Peking University — it is really big!"
+            },
+            {
+              "zh": "好啊，我们一起打车去。",
+              "en": "Great, let's take a taxi together."
+            },
+            {
+              "zh": "你说得对啊。",
+              "en": "You are right."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "好啊",
+              "pinyin": "hǎo a",
+              "en": "great"
+            }
+          ]
+        },
+        {
+          "word": "万",
+          "pinyin": "wàn",
+          "pos": "num.",
+          "define": "ten thousand",
+          "examples": [
+            {
+              "zh": "网上说，北京大学有两万多名学生。",
+              "en": "It says online that Peking University has more than twenty thousand students."
+            },
+            {
+              "zh": "买这辆车要十几万。",
+              "en": "This car costs over a hundred thousand."
+            },
+            {
+              "zh": "这次旅游他花了一万块。",
+              "en": "He spent ten thousand yuan on this trip."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一万",
+              "pinyin": "yí wàn",
+              "en": "ten thousand"
+            }
+          ]
+        },
+        {
+          "word": "名",
+          "pinyin": "míng",
+          "pos": "m./n.",
+          "define": "used for people; place in a competition; name",
+          "examples": [
+            {
+              "zh": "我们班有二十名学生。",
+              "en": "There are twenty students in our class."
+            },
+            {
+              "zh": "这位同学是第一名。",
+              "en": "This student is in first place."
+            },
+            {
+              "zh": "教室里有三十名学生。",
+              "en": "There are thirty students in the classroom."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一名",
+              "pinyin": "yì míng",
+              "en": "one (person)"
+            }
+          ]
+        },
+        {
+          "word": "网上",
+          "pinyin": "wǎngshang",
+          "pos": "n.",
+          "define": "online",
+          "examples": [
+            {
+              "zh": "我在网上买了票。",
+              "en": "I bought a ticket online."
+            },
+            {
+              "zh": "网上有很多关于北京大学的信息。",
+              "en": "There is a lot of information about Peking University online."
+            },
+            {
+              "zh": "网上买票很方便。",
+              "en": "Buying tickets online is very convenient."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "在网上",
+              "pinyin": "zài wǎngshang",
+              "en": "online"
+            }
+          ]
+        },
+        {
+          "word": "外国",
+          "pinyin": "wàiguó",
+          "pos": "n.",
+          "define": "foreign country",
+          "examples": [
+            {
+              "zh": "北京大学有很多外国留学生。",
+              "en": "Peking University has many foreign students."
+            },
+            {
+              "zh": "很多外国学生来这里学习。",
+              "en": "Many foreign students come here to study."
+            },
+            {
+              "zh": "外国朋友问我去北京大学怎么走。",
+              "en": "A foreign friend asked me how to get to Peking University."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "外国留学生",
+              "pinyin": "wàiguó liúxuéshēng",
+              "en": "foreign student"
+            }
+          ]
+        },
+        {
+          "word": "间",
+          "pinyin": "jiān",
+          "pos": "m.",
+          "define": "used of smallest unit of housing",
+          "examples": [
+            {
+              "zh": "这间教室很大。",
+              "en": "This classroom is very big."
+            },
+            {
+              "zh": "学校一共有多少间教室？",
+              "en": "How many classrooms does the school have in total?"
+            },
+            {
+              "zh": "这间教室能坐五十名学生。",
+              "en": "This classroom can seat fifty students."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一间教室",
+              "pinyin": "yì jiān jiàoshì",
+              "en": "one classroom"
+            }
+          ]
+        },
+        {
+          "word": "教室",
+          "pinyin": "jiàoshì",
+          "pos": "n.",
+          "define": "classroom",
+          "examples": [
+            {
+              "zh": "这间教室很干净。",
+              "en": "This classroom is very clean."
+            },
+            {
+              "zh": "教室里有很多学生。",
+              "en": "There are many students in the classroom."
+            },
+            {
+              "zh": "北京大学有多少间教室？",
+              "en": "How many classrooms does Peking University have?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一间教室",
+              "pinyin": "yì jiān jiàoshì",
+              "en": "a classroom"
+            }
+          ]
+        },
+        {
+          "word": "票",
+          "pinyin": "piào",
+          "pos": "n.",
+          "define": "ticket",
+          "examples": [
+            {
+              "zh": "我在网上买了票。",
+              "en": "I bought a ticket online."
+            },
+            {
+              "zh": "这张票多少钱？",
+              "en": "How much is this ticket?"
+            },
+            {
+              "zh": "票已经买好了。",
+              "en": "The ticket has already been bought."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一张票",
+              "pinyin": "yì zhāng piào",
+              "en": "a ticket"
+            }
+          ]
+        },
+        {
+          "word": "别",
+          "pinyin": "bié",
+          "pos": "adv.",
+          "define": "don't; had better not",
+          "examples": [
+            {
+              "zh": "别打车了，坐公交车吧。",
+              "en": "Don't take a taxi; take the bus."
+            },
+            {
+              "zh": "别着急，还有时间。",
+              "en": "Don't worry, there is still time."
+            },
+            {
+              "zh": "别忘记带票。",
+              "en": "Don't forget to bring your ticket."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "别…",
+              "pinyin": "bié…",
+              "en": "don't…"
+            }
+          ]
+        },
+        {
+          "word": "过来",
+          "pinyin": "guòlái",
+          "pos": "v.",
+          "define": "come here",
+          "examples": [
+            {
+              "zh": "你过来一下。",
+              "en": "Come here a moment."
+            },
+            {
+              "zh": "车过来了。",
+              "en": "The bus is coming."
+            },
+            {
+              "zh": "同学们都过来了。",
+              "en": "The students all came over."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "过来",
+              "pinyin": "guòlái",
+              "en": "come over"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 3,
+      "words": [
+        {
+          "word": "回来",
+          "pinyin": "huílái",
+          "pos": "v.",
+          "define": "come back",
+          "examples": [
+            {
+              "zh": "他洗完了手就回来了。",
+              "en": "He came back after washing his hands."
+            },
+            {
+              "zh": "你什么时候回来？",
+              "en": "When will you come back?"
+            },
+            {
+              "zh": "我出去一下，马上回来。",
+              "en": "I am going out for a moment, I will be right back."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "回来",
+              "pinyin": "huílái",
+              "en": "come back"
+            }
+          ]
+        },
+        {
+          "word": "这么",
+          "pinyin": "zhème",
+          "pos": "pron.",
+          "define": "so",
+          "examples": [
+            {
+              "zh": "今天这么累，早点回去吧。",
+              "en": "I am so tired today; let's go back early."
+            },
+            {
+              "zh": "你为什么这么着急？",
+              "en": "Why are you in such a hurry?"
+            },
+            {
+              "zh": "这件衣服这么好看，不错。",
+              "en": "This piece of clothing is so nice, not bad."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "这么",
+              "pinyin": "zhème",
+              "en": "so"
+            }
+          ]
+        },
+        {
+          "word": "完",
+          "pinyin": "wán",
+          "pos": "v.",
+          "define": "end; complete",
+          "examples": [
+            {
+              "zh": "我洗完了。",
+              "en": "I have finished washing."
+            },
+            {
+              "zh": "作业做完了吗？",
+              "en": "Have you finished your homework?"
+            },
+            {
+              "zh": "吃完晚饭我们一起出去。",
+              "en": "After finishing dinner we go out together."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "完了",
+              "pinyin": "wán le",
+              "en": "finished"
+            }
+          ]
+        },
+        {
+          "word": "一起",
+          "pinyin": "yìqǐ",
+          "pos": "adv.",
+          "define": "together",
+          "examples": [
+            {
+              "zh": "我们一起回去吧。",
+              "en": "Let's go back together."
+            },
+            {
+              "zh": "周末我们一起去逛街。",
+              "en": "We go shopping together on the weekend."
+            },
+            {
+              "zh": "大家一起洗，快一点。",
+              "en": "Everyone wash together, it will be faster."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一起",
+              "pinyin": "yìqǐ",
+              "en": "together"
+            }
+          ]
+        },
+        {
+          "word": "出去",
+          "pinyin": "chūqù",
+          "pos": "v.",
+          "define": "go/get out",
+          "examples": [
+            {
+              "zh": "他刚出去。",
+              "en": "He just went out."
+            },
+            {
+              "zh": "这么晚了，别出去了。",
+              "en": "It is so late, don't go out."
+            },
+            {
+              "zh": "我们一起出去吃饭吧。",
+              "en": "Let's go out to eat together."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "出去",
+              "pinyin": "chūqù",
+              "en": "go out"
+            }
+          ]
+        },
+        {
+          "word": "洗",
+          "pinyin": "xǐ",
+          "pos": "v.",
+          "define": "wash",
+          "examples": [
+            {
+              "zh": "我去洗手。",
+              "en": "I am going to wash my hands."
+            },
+            {
+              "zh": "衣服已经洗完了。",
+              "en": "The clothes have been washed."
+            },
+            {
+              "zh": "你自己洗吧，我等你。",
+              "en": "You wash it yourself, I will wait for you."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "洗手",
+              "pinyin": "xǐ shǒu",
+              "en": "wash one's hands"
+            }
+          ]
+        },
+        {
+          "word": "自己",
+          "pinyin": "zìjǐ",
+          "pos": "pron.",
+          "define": "oneself",
+          "examples": [
+            {
+              "zh": "我自己拿吧。",
+              "en": "I will take it myself."
+            },
+            {
+              "zh": "你自己洗一下手。",
+              "en": "Wash your hands yourself."
+            },
+            {
+              "zh": "这件事我自己来。",
+              "en": "I will do this myself."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "自己",
+              "pinyin": "zìjǐ",
+              "en": "oneself"
+            }
+          ]
+        },
+        {
+          "word": "拿",
+          "pinyin": "ná",
+          "pos": "v.",
+          "define": "take; hold",
+          "examples": [
+            {
+              "zh": "你拿一下这个。",
+              "en": "Take this for a moment."
+            },
+            {
+              "zh": "他手里拿着一本书。",
+              "en": "He is holding a book in his hand."
+            },
+            {
+              "zh": "我自己拿，不用你送。",
+              "en": "I will take it myself, no need for you to bring it."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "拿一下",
+              "pinyin": "ná yíxià",
+              "en": "hold for a moment"
+            }
+          ]
+        },
+        {
+          "word": "手",
+          "pinyin": "shǒu",
+          "pos": "n.",
+          "define": "hand",
+          "examples": [
+            {
+              "zh": "他的手很干净。",
+              "en": "His hands are very clean."
+            },
+            {
+              "zh": "吃饭前要洗手。",
+              "en": "Wash your hands before eating."
+            },
+            {
+              "zh": "他手里拿着票。",
+              "en": "He is holding a ticket in his hand."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "洗手",
+              "pinyin": "xǐ shǒu",
+              "en": "wash one's hands"
+            }
+          ]
+        },
+        {
+          "word": "为什么",
+          "pinyin": "wèi shénme",
+          "pos": "phr.",
+          "define": "why",
+          "examples": [
+            {
+              "zh": "你为什么这么累？",
+              "en": "Why are you so tired?"
+            },
+            {
+              "zh": "为什么你不自己拿？",
+              "en": "Why don't you take it yourself?"
+            },
+            {
+              "zh": "不知道为什么，他还没回来。",
+              "en": "I don't know why, but he has not come back yet."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "为什么",
+              "pinyin": "wèi shénme",
+              "en": "why"
+            }
+          ]
+        },
+        {
+          "word": "不错",
+          "pinyin": "búcuò",
+          "pos": "adj.",
+          "define": "not bad; pretty good",
+          "examples": [
+            {
+              "zh": "这家店不错，我们进去吧。",
+              "en": "This shop is not bad, let's go in."
+            },
+            {
+              "zh": "你写得不错。",
+              "en": "You write pretty well."
+            },
+            {
+              "zh": "今天天气不错，一起出去吧。",
+              "en": "The weather is nice today, let's go out together."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "不错",
+              "pinyin": "búcuò",
+              "en": "not bad"
+            }
+          ]
+        },
+        {
+          "word": "送",
+          "pinyin": "sòng",
+          "pos": "v.",
+          "define": "accompany sb to his destination; give (as a gift)",
+          "examples": [
+            {
+              "zh": "我送你回去。",
+              "en": "Let me walk you back."
+            },
+            {
+              "zh": "他送了我一本书。",
+              "en": "He gave me a book."
+            },
+            {
+              "zh": "不用送了，我自己回去。",
+              "en": "No need to see me off, I will go back myself."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "送你回去",
+              "pinyin": "sòng nǐ huíqù",
+              "en": "walk you back"
+            }
+          ]
+        },
+        {
+          "word": "回去",
+          "pinyin": "huíqù",
+          "pos": "v.",
+          "define": "return; go back",
+          "examples": [
+            {
+              "zh": "我累了，想回去。",
+              "en": "I am tired, I want to go back."
+            },
+            {
+              "zh": "下课以后我就回去了。",
+              "en": "I went back right after class."
+            },
+            {
+              "zh": "你早点回去吧。",
+              "en": "Go back early."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "回去",
+              "pinyin": "huíqù",
+              "en": "go back"
+            }
+          ]
+        },
+        {
+          "word": "每",
+          "pinyin": "měi",
+          "pos": "pron.",
+          "define": "each; every",
+          "examples": [
+            {
+              "zh": "我每天都洗手。",
+              "en": "I wash my hands every day."
+            },
+            {
+              "zh": "每间教室都有黑板。",
+              "en": "Every classroom has a blackboard."
+            },
+            {
+              "zh": "他每年都出去旅游。",
+              "en": "He goes travelling every year."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "每天",
+              "pinyin": "měi tiān",
+              "en": "every day"
+            }
+          ]
+        },
+        {
+          "word": "累",
+          "pinyin": "lèi",
+          "pos": "adj.",
+          "define": "tired; weary",
+          "examples": [
+            {
+              "zh": "今天很累。",
+              "en": "I am very tired today."
+            },
+            {
+              "zh": "走了这么久，你累不累？",
+              "en": "We have walked so long, are you tired?"
+            },
+            {
+              "zh": "累了就回去休息吧。",
+              "en": "If you are tired, go back and rest."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "很累",
+              "pinyin": "hěn lèi",
+              "en": "very tired"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 4,
+      "words": [
+        {
+          "word": "过",
+          "pinyin": "guo",
+          "pos": "part.",
+          "define": "used after a verb to indicate a past action or state",
+          "examples": [
+            {
+              "zh": "我去过那家商场。",
+              "en": "I have been to that department store."
+            },
+            {
+              "zh": "你试过这条裤子吗？",
+              "en": "Have you tried these trousers?"
+            },
+            {
+              "zh": "他去过很多国家。",
+              "en": "He has been to many countries."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "去过",
+              "pinyin": "qù guo",
+              "en": "have been to"
+            }
+          ]
+        },
+        {
+          "word": "商场",
+          "pinyin": "shāngchǎng",
+          "pos": "n.",
+          "define": "department store",
+          "examples": [
+            {
+              "zh": "这家商场很大。",
+              "en": "This department store is very big."
+            },
+            {
+              "zh": "我们进去看看那家商场吧。",
+              "en": "Let's go into that department store and have a look."
+            },
+            {
+              "zh": "商场里有各种颜色的衣服。",
+              "en": "The department store has clothes of all colors."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一家商场",
+              "pinyin": "yì jiā shāngchǎng",
+              "en": "a department store"
+            }
+          ]
+        },
+        {
+          "word": "进去",
+          "pinyin": "jìnqù",
+          "pos": "v.",
+          "define": "go/get in",
+          "examples": [
+            {
+              "zh": "我们进去看看吧。",
+              "en": "Let's go in and have a look."
+            },
+            {
+              "zh": "他进去试裤子了。",
+              "en": "He went in to try on trousers."
+            },
+            {
+              "zh": "别进去，里面人太多了。",
+              "en": "Don't go in; it is too crowded inside."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "进去",
+              "pinyin": "jìnqù",
+              "en": "go in"
+            }
+          ]
+        },
+        {
+          "word": "条",
+          "pinyin": "tiáo",
+          "pos": "m.",
+          "define": "measure word for long, narrow, or thin things",
+          "examples": [
+            {
+              "zh": "这条裤子很合适。",
+              "en": "These trousers fit well."
+            },
+            {
+              "zh": "我买了一条白色的裤子。",
+              "en": "I bought a pair of white trousers."
+            },
+            {
+              "zh": "路上有一条很长的河。",
+              "en": "There is a long river on the road."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一条",
+              "pinyin": "yì tiáo",
+              "en": "one (long thin thing)"
+            }
+          ]
+        },
+        {
+          "word": "裤子",
+          "pinyin": "kùzi",
+          "pos": "n.",
+          "define": "trousers; pants",
+          "examples": [
+            {
+              "zh": "这条裤子多少钱？",
+              "en": "How much are these trousers?"
+            },
+            {
+              "zh": "他试了一条黑色的裤子。",
+              "en": "He tried on a pair of black trousers."
+            },
+            {
+              "zh": "这条裤子太长了。",
+              "en": "These trousers are too long."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一条裤子",
+              "pinyin": "yì tiáo kùzi",
+              "en": "a pair of trousers"
+            }
+          ]
+        },
+        {
+          "word": "白色",
+          "pinyin": "báisè",
+          "pos": "n.",
+          "define": "white",
+          "examples": [
+            {
+              "zh": "我喜欢白色的衣服。",
+              "en": "I like white clothes."
+            },
+            {
+              "zh": "他买了一条白色的裤子。",
+              "en": "He bought a pair of white trousers."
+            },
+            {
+              "zh": "这个书包是白色的。",
+              "en": "This schoolbag is white."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "白色",
+              "pinyin": "báisè",
+              "en": "white"
+            }
+          ]
+        },
+        {
+          "word": "因为",
+          "pinyin": "yīnwèi",
+          "pos": "conj.",
+          "define": "because",
+          "examples": [
+            {
+              "zh": "因为颜色不好看，所以我没买。",
+              "en": "Because the color was not nice, I did not buy it."
+            },
+            {
+              "zh": "因为下雨，我们没进去。",
+              "en": "Because it was raining, we did not go in."
+            },
+            {
+              "zh": "因为喜欢白色，他买了这条裤子。",
+              "en": "Because he likes white, he bought these trousers."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "因为…所以…",
+              "pinyin": "yīnwèi…suǒyǐ…",
+              "en": "because…so…"
+            }
+          ]
+        },
+        {
+          "word": "试",
+          "pinyin": "shì",
+          "pos": "v.",
+          "define": "try",
+          "examples": [
+            {
+              "zh": "你可以试一下这条裤子。",
+              "en": "You can try these trousers."
+            },
+            {
+              "zh": "我试了，很合适。",
+              "en": "I tried it; it fits well."
+            },
+            {
+              "zh": "他试了很多条裤子。",
+              "en": "He tried many pairs of trousers."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "试一试",
+              "pinyin": "shì yí shì",
+              "en": "try it"
+            }
+          ]
+        },
+        {
+          "word": "红色",
+          "pinyin": "hóngsè",
+          "pos": "n.",
+          "define": "red",
+          "examples": [
+            {
+              "zh": "我喜欢红色的书包。",
+              "en": "I like red schoolbags."
+            },
+            {
+              "zh": "这条红色的裤子很好看。",
+              "en": "These red trousers look nice."
+            },
+            {
+              "zh": "他买了一件红色的衣服。",
+              "en": "He bought a red piece of clothing."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "红色",
+              "pinyin": "hóngsè",
+              "en": "red"
+            }
+          ]
+        },
+        {
+          "word": "所以",
+          "pinyin": "suǒyǐ",
+          "pos": "conj.",
+          "define": "so; therefore",
+          "examples": [
+            {
+              "zh": "这条裤子太贵，所以我没买。",
+              "en": "These trousers are too expensive, so I did not buy them."
+            },
+            {
+              "zh": "颜色很漂亮，所以我试一试。",
+              "en": "The color is pretty, so I will try it on."
+            },
+            {
+              "zh": "因为下雨，所以我们没出去。",
+              "en": "Because it was raining, we did not go out."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "所以",
+              "pinyin": "suǒyǐ",
+              "en": "so"
+            }
+          ]
+        },
+        {
+          "word": "书包",
+          "pinyin": "shūbāo",
+          "pos": "n.",
+          "define": "schoolbag",
+          "examples": [
+            {
+              "zh": "我的书包是绿色的。",
+              "en": "My schoolbag is green."
+            },
+            {
+              "zh": "他把书放进书包里。",
+              "en": "He put the book into the schoolbag."
+            },
+            {
+              "zh": "这个书包颜色不错。",
+              "en": "This schoolbag's color is nice."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一个书包",
+              "pinyin": "yí gè shūbāo",
+              "en": "a schoolbag"
+            }
+          ]
+        },
+        {
+          "word": "过去",
+          "pinyin": "guòqù",
+          "pos": "v.",
+          "define": "pass(by); go over",
+          "examples": [
+            {
+              "zh": "一辆公交车从车站过去了。",
+              "en": "A bus passed by the station."
+            },
+            {
+              "zh": "请过去看看那家商场。",
+              "en": "Please go over and look at that department store."
+            },
+            {
+              "zh": "过去以后，你就能看到商场。",
+              "en": "After you go over, you can see the department store."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "走过去",
+              "pinyin": "zǒu guòqù",
+              "en": "walk over"
+            }
+          ]
+        },
+        {
+          "word": "绿色",
+          "pinyin": "lǜsè",
+          "pos": "n.",
+          "define": "green",
+          "examples": [
+            {
+              "zh": "我买了一个绿色的书包。",
+              "en": "I bought a green schoolbag."
+            },
+            {
+              "zh": "他喜欢绿色。",
+              "en": "He likes green."
+            },
+            {
+              "zh": "商场里有很多绿色的衣服。",
+              "en": "There are many green clothes in the department store."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "绿色",
+              "pinyin": "lǜsè",
+              "en": "green"
+            }
+          ]
+        },
+        {
+          "word": "黑色",
+          "pinyin": "hēisè",
+          "pos": "n.",
+          "define": "black",
+          "examples": [
+            {
+              "zh": "他试了一条黑色的裤子。",
+              "en": "He tried on a pair of black trousers."
+            },
+            {
+              "zh": "我的书包是黑色的。",
+              "en": "My schoolbag is black."
+            },
+            {
+              "zh": "黑色和白色都好看。",
+              "en": "Black and white both look nice."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "黑色",
+              "pinyin": "hēisè",
+              "en": "black"
+            }
+          ]
+        },
+        {
+          "word": "更",
+          "pinyin": "gèng",
+          "pos": "adv.",
+          "define": "more; still/even more",
+          "examples": [
+            {
+              "zh": "这件比那条更好看。",
+              "en": "This one looks even nicer than that one."
+            },
+            {
+              "zh": "这条裤子更合适。",
+              "en": "These trousers fit even better."
+            },
+            {
+              "zh": "这家商场的颜色更多。",
+              "en": "This department store has more colors."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "更",
+              "pinyin": "gèng",
+              "en": "even more"
+            }
+          ]
+        },
+        {
+          "word": "颜色",
+          "pinyin": "yánsè",
+          "pos": "n.",
+          "define": "color",
+          "examples": [
+            {
+              "zh": "你喜欢什么颜色？",
+              "en": "What color do you like?"
+            },
+            {
+              "zh": "这条裤子的颜色不错。",
+              "en": "The color of these trousers is nice."
+            },
+            {
+              "zh": "商场里有各种颜色的书包。",
+              "en": "The department store has schoolbags of all colors."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "什么颜色",
+              "pinyin": "shénme yánsè",
+              "en": "what color"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 5,
+      "words": [
+        {
+          "word": "快",
+          "pinyin": "kuài",
+          "pos": "adv./adj.",
+          "define": "hurry up; fast",
+          "examples": [
+            {
+              "zh": "快下来，爷爷在等你。",
+              "en": "Come down quickly, grandpa is waiting for you."
+            },
+            {
+              "zh": "你快上来吧。",
+              "en": "Come up quickly."
+            },
+            {
+              "zh": "快点儿，车要走了。",
+              "en": "Hurry up, the bus is leaving."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "快点儿",
+              "pinyin": "kuài diǎnr",
+              "en": "hurry up"
+            }
+          ]
+        },
+        {
+          "word": "下来",
+          "pinyin": "xiàlái",
+          "pos": "v.",
+          "define": "come down",
+          "examples": [
+            {
+              "zh": "你快下来吧，我们在下面等你。",
+              "en": "Come down quickly, we are waiting below."
+            },
+            {
+              "zh": "他从楼上下来了。",
+              "en": "He came down from upstairs."
+            },
+            {
+              "zh": "奶奶下来了。",
+              "en": "Grandma came down."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "下来",
+              "pinyin": "xiàlái",
+              "en": "come down"
+            }
+          ]
+        },
+        {
+          "word": "上来",
+          "pinyin": "shànglái",
+          "pos": "v.",
+          "define": "come up",
+          "examples": [
+            {
+              "zh": "你快上来，奶奶在楼上等你。",
+              "en": "Come up quickly, grandma is waiting upstairs for you."
+            },
+            {
+              "zh": "爷爷上来了。",
+              "en": "Grandpa came up."
+            },
+            {
+              "zh": "他从楼下上来了。",
+              "en": "He came up from downstairs."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "上来",
+              "pinyin": "shànglái",
+              "en": "come up"
+            }
+          ]
+        },
+        {
+          "word": "上去",
+          "pinyin": "shàngqù",
+          "pos": "v.",
+          "define": "go up",
+          "examples": [
+            {
+              "zh": "你上去看看爷爷在不在。",
+              "en": "Go up and see if grandpa is there."
+            },
+            {
+              "zh": "他拿着礼物上去了。",
+              "en": "He went up with the gift."
+            },
+            {
+              "zh": "我先上去，你等一会儿。",
+              "en": "I will go up first, wait a moment."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "上去",
+              "pinyin": "shàngqù",
+              "en": "go up"
+            }
+          ]
+        },
+        {
+          "word": "下面",
+          "pinyin": "xiàmiàn",
+          "pos": "n.",
+          "define": "downstairs",
+          "examples": [
+            {
+              "zh": "爷爷在下面等你。",
+              "en": "Grandpa is waiting for you downstairs."
+            },
+            {
+              "zh": "下面有一家酒店。",
+              "en": "There is a hotel below."
+            },
+            {
+              "zh": "书包在桌子下面。",
+              "en": "The schoolbag is under the table."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "在下面",
+              "pinyin": "zài xiàmiàn",
+              "en": "downstairs"
+            }
+          ]
+        },
+        {
+          "word": "面",
+          "pinyin": "miàn",
+          "pos": "suf.",
+          "define": "used to form a noun of locality",
+          "examples": [
+            {
+              "zh": "桌子上面有一杯奶茶。",
+              "en": "There is a cup of milk tea on the table."
+            },
+            {
+              "zh": "下面就是酒店。",
+              "en": "Below is the hotel."
+            },
+            {
+              "zh": "外面在下雨。",
+              "en": "It is raining outside."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "上面",
+              "pinyin": "shàngmiàn",
+              "en": "above"
+            }
+          ]
+        },
+        {
+          "word": "等",
+          "pinyin": "děng",
+          "pos": "v.",
+          "define": "wait for",
+          "examples": [
+            {
+              "zh": "我等一会儿。",
+              "en": "I will wait a moment."
+            },
+            {
+              "zh": "你等一下，我马上下来。",
+              "en": "Wait a moment, I will come down right away."
+            },
+            {
+              "zh": "爷爷在下面等你。",
+              "en": "Grandpa is waiting for you downstairs."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "等一下",
+              "pinyin": "děng yíxià",
+              "en": "wait a moment"
+            }
+          ]
+        },
+        {
+          "word": "一会儿",
+          "pinyin": "yīhuìr",
+          "pos": "num.-m.",
+          "define": "soon",
+          "examples": [
+            {
+              "zh": "我一会儿下来。",
+              "en": "I will come down soon."
+            },
+            {
+              "zh": "请等一会儿。",
+              "en": "Please wait a moment."
+            },
+            {
+              "zh": "他一会儿就来。",
+              "en": "He will come soon."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一会儿",
+              "pinyin": "yīhuìr",
+              "en": "in a moment"
+            }
+          ]
+        },
+        {
+          "word": "下去",
+          "pinyin": "xiàqù",
+          "pos": "v.",
+          "define": "go down",
+          "examples": [
+            {
+              "zh": "你下去看看奶奶。",
+              "en": "Go down and see grandma."
+            },
+            {
+              "zh": "他拿着奶茶下去了。",
+              "en": "He went down with the milk tea."
+            },
+            {
+              "zh": "我先下去，你等一会儿。",
+              "en": "I will go down first, wait a moment."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "下去",
+              "pinyin": "xiàqù",
+              "en": "go down"
+            }
+          ]
+        },
+        {
+          "word": "进来",
+          "pinyin": "jìnlái",
+          "pos": "v.",
+          "define": "come/get in",
+          "examples": [
+            {
+              "zh": "快进来吧，外面很冷。",
+              "en": "Come in quickly, it is cold outside."
+            },
+            {
+              "zh": "爷爷进来了。",
+              "en": "Grandpa came in."
+            },
+            {
+              "zh": "请进来坐。",
+              "en": "Please come in and sit."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "进来",
+              "pinyin": "jìnlái",
+              "en": "come in"
+            }
+          ]
+        },
+        {
+          "word": "爷爷",
+          "pinyin": "yéye",
+          "pos": "n.",
+          "define": "grandfather",
+          "examples": [
+            {
+              "zh": "爷爷在酒店等我们。",
+              "en": "Grandpa is waiting for us at the hotel."
+            },
+            {
+              "zh": "我爷爷喜欢喝奶茶。",
+              "en": "My grandpa likes drinking milk tea."
+            },
+            {
+              "zh": "爷爷一会儿下来。",
+              "en": "Grandpa will come down soon."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "爷爷",
+              "pinyin": "yéye",
+              "en": "grandfather"
+            }
+          ]
+        },
+        {
+          "word": "奶奶",
+          "pinyin": "nǎinai",
+          "pos": "n.",
+          "define": "grandmother",
+          "examples": [
+            {
+              "zh": "奶奶准备了很多礼物。",
+              "en": "Grandma prepared many gifts."
+            },
+            {
+              "zh": "我跟奶奶一起去酒店。",
+              "en": "I go to the hotel with grandma."
+            },
+            {
+              "zh": "奶奶一会儿就上来。",
+              "en": "Grandma will come up soon."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "奶奶",
+              "pinyin": "nǎinai",
+              "en": "grandmother"
+            }
+          ]
+        },
+        {
+          "word": "礼物",
+          "pinyin": "lǐwù",
+          "pos": "n.",
+          "define": "gift; present",
+          "examples": [
+            {
+              "zh": "这是给奶奶的礼物。",
+              "en": "This is a gift for grandma."
+            },
+            {
+              "zh": "他准备了一份礼物。",
+              "en": "He prepared a gift."
+            },
+            {
+              "zh": "爷爷送了我一份礼物。",
+              "en": "Grandpa gave me a gift."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一份礼物",
+              "pinyin": "yí fèn lǐwù",
+              "en": "a gift"
+            }
+          ]
+        },
+        {
+          "word": "准备",
+          "pinyin": "zhǔnbèi",
+          "pos": "v.",
+          "define": "prepare",
+          "examples": [
+            {
+              "zh": "我准备了奶茶。",
+              "en": "I prepared milk tea."
+            },
+            {
+              "zh": "你准备什么时候走？",
+              "en": "When do you plan to go?"
+            },
+            {
+              "zh": "奶奶准备了礼物。",
+              "en": "Grandma prepared gifts."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "准备",
+              "pinyin": "zhǔnbèi",
+              "en": "prepare"
+            }
+          ]
+        },
+        {
+          "word": "奶茶",
+          "pinyin": "nǎichá",
+          "pos": "n.",
+          "define": "milk tea",
+          "examples": [
+            {
+              "zh": "我想喝一杯奶茶。",
+              "en": "I want to drink a cup of milk tea."
+            },
+            {
+              "zh": "这家酒店的奶茶很好喝。",
+              "en": "The milk tea at this hotel is very tasty."
+            },
+            {
+              "zh": "爷爷在下面买奶茶。",
+              "en": "Grandpa is buying milk tea downstairs."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一杯奶茶",
+              "pinyin": "yì bēi nǎichá",
+              "en": "a cup of milk tea"
+            }
+          ]
+        },
+        {
+          "word": "跟",
+          "pinyin": "gēn",
+          "pos": "prep./conj.",
+          "define": "with; and",
+          "examples": [
+            {
+              "zh": "我跟爷爷一起去酒店。",
+              "en": "I go to the hotel with grandpa."
+            },
+            {
+              "zh": "你跟他一起走吧。",
+              "en": "Walk together with him."
+            },
+            {
+              "zh": "我跟奶奶说了一会儿话。",
+              "en": "I chatted with grandma for a while."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "跟…一起",
+              "pinyin": "gēn…yìqǐ",
+              "en": "together with…"
+            }
+          ]
+        },
+        {
+          "word": "走",
+          "pinyin": "zǒu",
+          "pos": "v.",
+          "define": "walk; go",
+          "examples": [
+            {
+              "zh": "我们走吧。",
+              "en": "Let's go."
+            },
+            {
+              "zh": "从这儿走到酒店不远。",
+              "en": "It is not far to walk from here to the hotel."
+            },
+            {
+              "zh": "你先走，我一会儿下来。",
+              "en": "You go first, I will come down soon."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "走吧",
+              "pinyin": "zǒu ba",
+              "en": "let's go"
+            }
+          ]
+        },
+        {
+          "word": "酒店",
+          "pinyin": "jiǔdiàn",
+          "pos": "n.",
+          "define": "hotel",
+          "examples": [
+            {
+              "zh": "我们住在这家酒店。",
+              "en": "We stay at this hotel."
+            },
+            {
+              "zh": "这家酒店很干净。",
+              "en": "This hotel is very clean."
+            },
+            {
+              "zh": "爷爷在酒店等我们。",
+              "en": "Grandpa is waiting at the hotel."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一家酒店",
+              "pinyin": "yì jiā jiǔdiàn",
+              "en": "a hotel"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 6,
+      "words": [
+        {
+          "word": "生日",
+          "pinyin": "shēngrì",
+          "pos": "n.",
+          "define": "birthday",
+          "examples": [
+            {
+              "zh": "今天是我的生日。",
+              "en": "Today is my birthday."
+            },
+            {
+              "zh": "生日的时候，我们一起吃蛋糕。",
+              "en": "On my birthday, we eat cake together."
+            },
+            {
+              "zh": "你的生日是哪一天？",
+              "en": "Which day is your birthday?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "过生日",
+              "pinyin": "guò shēngrì",
+              "en": "celebrate a birthday"
+            }
+          ]
+        },
+        {
+          "word": "忘",
+          "pinyin": "wàng",
+          "pos": "v.",
+          "define": "forget",
+          "examples": [
+            {
+              "zh": "我忘了他的生日。",
+              "en": "I forgot his birthday."
+            },
+            {
+              "zh": "别忘了带画笔。",
+              "en": "Don't forget to bring the paintbrush."
+            },
+            {
+              "zh": "我忘了买蛋糕。",
+              "en": "I forgot to buy the cake."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "忘了",
+              "pinyin": "wàng le",
+              "en": "forgot"
+            }
+          ]
+        },
+        {
+          "word": "画",
+          "pinyin": "huà",
+          "pos": "v./n.",
+          "define": "draw; painting",
+          "examples": [
+            {
+              "zh": "墙上有一张画。",
+              "en": "There is a painting on the wall."
+            },
+            {
+              "zh": "我用画笔画了一幅画。",
+              "en": "I drew a picture with a paintbrush."
+            },
+            {
+              "zh": "他画得很好。",
+              "en": "He draws very well."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一张画",
+              "pinyin": "yì zhāng huà",
+              "en": "a painting"
+            }
+          ]
+        },
+        {
+          "word": "画笔",
+          "pinyin": "huàbǐ",
+          "pos": "n.",
+          "define": "color pen; paintbrush",
+          "examples": [
+            {
+              "zh": "我忘了带画笔。",
+              "en": "I forgot to bring my paintbrush."
+            },
+            {
+              "zh": "这支画笔是他送我的生日礼物。",
+              "en": "This paintbrush is a birthday gift from him."
+            },
+            {
+              "zh": "画笔放在桌子上。",
+              "en": "The paintbrush is on the table."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一支画笔",
+              "pinyin": "yì zhī huàbǐ",
+              "en": "a paintbrush"
+            }
+          ]
+        },
+        {
+          "word": "蛋糕",
+          "pinyin": "dàngāo",
+          "pos": "n.",
+          "define": "cake",
+          "examples": [
+            {
+              "zh": "生日那天我们吃蛋糕。",
+              "en": "On my birthday we eat cake."
+            },
+            {
+              "zh": "桌子上有一个大蛋糕。",
+              "en": "There is a big cake on the table."
+            },
+            {
+              "zh": "这个蛋糕很好吃。",
+              "en": "This cake is very tasty."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一个蛋糕",
+              "pinyin": "yí gè dàngāo",
+              "en": "a cake"
+            }
+          ]
+        },
+        {
+          "word": "快乐",
+          "pinyin": "kuàilè",
+          "pos": "adj.",
+          "define": "happy",
+          "examples": [
+            {
+              "zh": "祝你生日快乐！",
+              "en": "Happy birthday to you!"
+            },
+            {
+              "zh": "孩子们很快乐。",
+              "en": "The children are very happy."
+            },
+            {
+              "zh": "生日那天他很快乐。",
+              "en": "He was very happy on his birthday."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "生日快乐",
+              "pinyin": "shēngrì kuàilè",
+              "en": "happy birthday"
+            }
+          ]
+        },
+        {
+          "word": "打开",
+          "pinyin": "dǎkāi",
+          "pos": "v.",
+          "define": "open",
+          "examples": [
+            {
+              "zh": "请打开门。",
+              "en": "Please open the door."
+            },
+            {
+              "zh": "打开电脑，就可以看照片。",
+              "en": "Open the computer and you can see the photos."
+            },
+            {
+              "zh": "打开包装，里面是一支画笔。",
+              "en": "Open the package and inside is a paintbrush."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "打开",
+              "pinyin": "dǎkāi",
+              "en": "open"
+            }
+          ]
+        },
+        {
+          "word": "长",
+          "pinyin": "cháng",
+          "pos": "adj.",
+          "define": "long",
+          "examples": [
+            {
+              "zh": "这条鱼很长。",
+              "en": "This fish is long."
+            },
+            {
+              "zh": "这条路很长。",
+              "en": "This road is long."
+            },
+            {
+              "zh": "她的头发很长。",
+              "en": "Her hair is long."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "很长",
+              "pinyin": "hěn cháng",
+              "en": "very long"
+            }
+          ]
+        },
+        {
+          "word": "鱼",
+          "pinyin": "yú",
+          "pos": "n.",
+          "define": "fish",
+          "examples": [
+            {
+              "zh": "我喜欢吃鱼。",
+              "en": "I like eating fish."
+            },
+            {
+              "zh": "这条鱼很大。",
+              "en": "This fish is very big."
+            },
+            {
+              "zh": "妈妈今天做了鱼和肉。",
+              "en": "Mom made fish and meat today."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一条鱼",
+              "pinyin": "yì tiáo yú",
+              "en": "a fish"
+            }
+          ]
+        },
+        {
+          "word": "肉",
+          "pinyin": "ròu",
+          "pos": "n.",
+          "define": "meat",
+          "examples": [
+            {
+              "zh": "他喜欢吃肉。",
+              "en": "He likes eating meat."
+            },
+            {
+              "zh": "这个菜里的肉很好吃。",
+              "en": "The meat in this dish is delicious."
+            },
+            {
+              "zh": "我不吃肉。",
+              "en": "I don't eat meat."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "肉",
+              "pinyin": "ròu",
+              "en": "meat"
+            }
+          ]
+        },
+        {
+          "word": "过",
+          "pinyin": "guò",
+          "pos": "v.",
+          "define": "spend time",
+          "examples": [
+            {
+              "zh": "你生日怎么过？",
+              "en": "How do you spend your birthday?"
+            },
+            {
+              "zh": "我们在家过生日。",
+              "en": "We spend the birthday at home."
+            },
+            {
+              "zh": "这个周末你想怎么过？",
+              "en": "How do you want to spend this weekend?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "过生日",
+              "pinyin": "guò shēngrì",
+              "en": "celebrate a birthday"
+            }
+          ]
+        },
+        {
+          "word": "地",
+          "pinyin": "de",
+          "pos": "part.",
+          "define": "used with an adverb or adverbial phrase",
+          "examples": [
+            {
+              "zh": "他快乐地笑了。",
+              "en": "He smiled happily."
+            },
+            {
+              "zh": "她慢慢地打开了门。",
+              "en": "She slowly opened the door."
+            },
+            {
+              "zh": "他认真地画。",
+              "en": "He draws carefully."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "慢慢地",
+              "pinyin": "mànman de",
+              "en": "slowly"
+            }
+          ]
+        },
+        {
+          "word": "床",
+          "pinyin": "chuáng",
+          "pos": "n.",
+          "define": "bed",
+          "examples": [
+            {
+              "zh": "他舒服地躺在床上。",
+              "en": "He lies comfortably on the bed."
+            },
+            {
+              "zh": "我的房间里有一张床。",
+              "en": "There is a bed in my room."
+            },
+            {
+              "zh": "小猫在床上睡觉。",
+              "en": "The kitten is sleeping on the bed."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一张床",
+              "pinyin": "yì zhāng chuáng",
+              "en": "a bed"
+            }
+          ]
+        },
+        {
+          "word": "舒服",
+          "pinyin": "shūfu",
+          "pos": "adj.",
+          "define": "comfortable",
+          "examples": [
+            {
+              "zh": "躺在床上很舒服。",
+              "en": "Lying on the bed is very comfortable."
+            },
+            {
+              "zh": "这张床又大又舒服。",
+              "en": "This bed is big and comfortable."
+            },
+            {
+              "zh": "我觉得很舒服。",
+              "en": "I feel very comfortable."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "很舒服",
+              "pinyin": "hěn shūfu",
+              "en": "very comfortable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 7,
+      "words": [
+        {
+          "word": "从",
+          "pinyin": "cóng",
+          "pos": "prep.",
+          "define": "from",
+          "examples": [
+            {
+              "zh": "从我家到学校很近。",
+              "en": "It is close from my home to school."
+            },
+            {
+              "zh": "他从车站跑过来。",
+              "en": "He ran over from the station."
+            },
+            {
+              "zh": "我从八点开始运动。",
+              "en": "I start exercising at eight."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "从…到…",
+              "pinyin": "cóng…dào…",
+              "en": "from…to…"
+            }
+          ]
+        },
+        {
+          "word": "往",
+          "pinyin": "wǎng",
+          "pos": "prep./v.",
+          "define": "towards; go",
+          "examples": [
+            {
+              "zh": "他往学校跑。",
+              "en": "He ran toward the school."
+            },
+            {
+              "zh": "请往这边走。",
+              "en": "Please walk this way."
+            },
+            {
+              "zh": "往右边看，那是篮球场。",
+              "en": "Look to the right, that is the basketball court."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "往前走",
+              "pinyin": "wǎng qián zǒu",
+              "en": "walk forward"
+            }
+          ]
+        },
+        {
+          "word": "跑",
+          "pinyin": "pǎo",
+          "pos": "v.",
+          "define": "run; go to",
+          "examples": [
+            {
+              "zh": "他跑得很快。",
+              "en": "He runs very fast."
+            },
+            {
+              "zh": "他从家跑到学校。",
+              "en": "He ran from home to school."
+            },
+            {
+              "zh": "别跑，等一下我。",
+              "en": "Don't run, wait for me."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "跑得快",
+              "pinyin": "pǎo de kuài",
+              "en": "run fast"
+            }
+          ]
+        },
+        {
+          "word": "打",
+          "pinyin": "dǎ",
+          "pos": "v.",
+          "define": "play(games); hit",
+          "examples": [
+            {
+              "zh": "我们去打篮球吧。",
+              "en": "Let's go play basketball."
+            },
+            {
+              "zh": "他篮球打得很好。",
+              "en": "He plays basketball very well."
+            },
+            {
+              "zh": "他们每天下午打球。",
+              "en": "They play ball every afternoon."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "打篮球",
+              "pinyin": "dǎ lánqiú",
+              "en": "play basketball"
+            }
+          ]
+        },
+        {
+          "word": "篮球",
+          "pinyin": "lánqiú",
+          "pos": "n.",
+          "define": "basketball",
+          "examples": [
+            {
+              "zh": "我喜欢打篮球。",
+              "en": "I like playing basketball."
+            },
+            {
+              "zh": "这个篮球是新的。",
+              "en": "This basketball is new."
+            },
+            {
+              "zh": "学校有一个篮球场。",
+              "en": "The school has a basketball court."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "打篮球",
+              "pinyin": "dǎ lánqiú",
+              "en": "play basketball"
+            }
+          ]
+        },
+        {
+          "word": "运动",
+          "pinyin": "yùndòng",
+          "pos": "n./v.",
+          "define": "sports; exercise",
+          "examples": [
+            {
+              "zh": "我喜欢运动。",
+              "en": "I like sports."
+            },
+            {
+              "zh": "他最喜欢的运动是游泳。",
+              "en": "His favorite sport is swimming."
+            },
+            {
+              "zh": "我们一起运动吧。",
+              "en": "Let's exercise together."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "运动",
+              "pinyin": "yùndòng",
+              "en": "exercise"
+            }
+          ]
+        },
+        {
+          "word": "踢",
+          "pinyin": "tī",
+          "pos": "v.",
+          "define": "kick",
+          "examples": [
+            {
+              "zh": "他足球踢得很好。",
+              "en": "He plays football very well."
+            },
+            {
+              "zh": "他踢了一下球。",
+              "en": "He kicked the ball once."
+            },
+            {
+              "zh": "孩子们在草地上踢球。",
+              "en": "The children are kicking a ball on the grass."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "踢足球",
+              "pinyin": "tī zúqiú",
+              "en": "play football"
+            }
+          ]
+        },
+        {
+          "word": "足球",
+          "pinyin": "zúqiú",
+          "pos": "n.",
+          "define": "soccer; football",
+          "examples": [
+            {
+              "zh": "他喜欢踢足球。",
+              "en": "He likes playing football."
+            },
+            {
+              "zh": "这个足球是我的。",
+              "en": "This football is mine."
+            },
+            {
+              "zh": "我们下午踢足球吧。",
+              "en": "Let's play football this afternoon."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "踢足球",
+              "pinyin": "tī zúqiú",
+              "en": "play football"
+            }
+          ]
+        },
+        {
+          "word": "球",
+          "pinyin": "qiú",
+          "pos": "n.",
+          "define": "ball",
+          "examples": [
+            {
+              "zh": "这个球很新。",
+              "en": "This ball is new."
+            },
+            {
+              "zh": "他去打球了。",
+              "en": "He went to play ball."
+            },
+            {
+              "zh": "球在桌子下面。",
+              "en": "The ball is under the table."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "打球",
+              "pinyin": "dǎ qiú",
+              "en": "play ball"
+            }
+          ]
+        },
+        {
+          "word": "得",
+          "pinyin": "de",
+          "pos": "part.",
+          "define": "used between a verb or an adjective and its complement to indicate the result or degree",
+          "examples": [
+            {
+              "zh": "他跑得很快。",
+              "en": "He runs very fast."
+            },
+            {
+              "zh": "他游泳游得不错。",
+              "en": "He swims pretty well."
+            },
+            {
+              "zh": "他足球踢得真好。",
+              "en": "He plays football really well."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "跑得快",
+              "pinyin": "pǎo de kuài",
+              "en": "run fast"
+            }
+          ]
+        },
+        {
+          "word": "跑步",
+          "pinyin": "pǎobù",
+          "pos": "v.",
+          "define": "run",
+          "examples": [
+            {
+              "zh": "我每天早上跑步。",
+              "en": "I run every morning."
+            },
+            {
+              "zh": "跑步以后，我很舒服。",
+              "en": "After running, I feel good."
+            },
+            {
+              "zh": "他喜欢跑步。",
+              "en": "He likes running."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "跑步",
+              "pinyin": "pǎobù",
+              "en": "jog"
+            }
+          ]
+        },
+        {
+          "word": "游泳",
+          "pinyin": "yóuyǒng",
+          "pos": "v.",
+          "define": "swim",
+          "examples": [
+            {
+              "zh": "夏天我喜欢游泳。",
+              "en": "In summer I like swimming."
+            },
+            {
+              "zh": "他游泳游得很好。",
+              "en": "He swims very well."
+            },
+            {
+              "zh": "我们去游泳吧。",
+              "en": "Let's go swimming."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "游泳",
+              "pinyin": "yóuyǒng",
+              "en": "go swimming"
+            }
+          ]
+        },
+        {
+          "word": "游",
+          "pinyin": "yóu",
+          "pos": "v.",
+          "define": "swim",
+          "examples": [
+            {
+              "zh": "他游得很快。",
+              "en": "He swims very fast."
+            },
+            {
+              "zh": "我们一起游吧。",
+              "en": "Let's swim together."
+            },
+            {
+              "zh": "他游了半个小时。",
+              "en": "He swam for half an hour."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "游得快",
+              "pinyin": "yóu de kuài",
+              "en": "swim fast"
+            }
+          ]
+        },
+        {
+          "word": "爱好",
+          "pinyin": "àihào",
+          "pos": "n./v.",
+          "define": "hobby; be fond of",
+          "examples": [
+            {
+              "zh": "他的爱好是踢足球。",
+              "en": "His hobby is playing football."
+            },
+            {
+              "zh": "你有什么爱好？",
+              "en": "What hobbies do you have?"
+            },
+            {
+              "zh": "我的爱好是游泳和跑步。",
+              "en": "My hobbies are swimming and running."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一个爱好",
+              "pinyin": "yí gè àihào",
+              "en": "a hobby"
+            }
+          ]
+        },
+        {
+          "word": "开始",
+          "pinyin": "kāishǐ",
+          "pos": "v./n.",
+          "define": "start; beginning",
+          "examples": [
+            {
+              "zh": "我们开始吧。",
+              "en": "Let's start."
+            },
+            {
+              "zh": "他八点开始跑步。",
+              "en": "He starts running at eight."
+            },
+            {
+              "zh": "我刚开始学游泳。",
+              "en": "I just started learning to swim."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "开始",
+              "pinyin": "kāishǐ",
+              "en": "start"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 8,
+      "words": [
+        {
+          "word": "手表",
+          "pinyin": "shǒubiǎo",
+          "pos": "n.",
+          "define": "(wrist)watch",
+          "examples": [
+            {
+              "zh": "我的手表放在左边。",
+              "en": "My watch is on the left."
+            },
+            {
+              "zh": "这块手表多少钱？",
+              "en": "How much is this watch?"
+            },
+            {
+              "zh": "他忘带手表了。",
+              "en": "He forgot to bring his watch."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一块手表",
+              "pinyin": "yí kuài shǒubiǎo",
+              "en": "a watch"
+            }
+          ]
+        },
+        {
+          "word": "左边",
+          "pinyin": "zuǒbiān",
+          "pos": "n.",
+          "define": "left; left side",
+          "examples": [
+            {
+              "zh": "左边那家饭馆不错。",
+              "en": "The restaurant on the left is nice."
+            },
+            {
+              "zh": "手表在桌子的左边。",
+              "en": "The watch is on the left side of the table."
+            },
+            {
+              "zh": "请往左边走。",
+              "en": "Please walk to the left."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "左边",
+              "pinyin": "zuǒbiān",
+              "en": "the left side"
+            }
+          ]
+        },
+        {
+          "word": "左",
+          "pinyin": "zuǒ",
+          "pos": "n.",
+          "define": "left",
+          "examples": [
+            {
+              "zh": "左转，就是饭馆。",
+              "en": "Turn left and there is the restaurant."
+            },
+            {
+              "zh": "请往左走。",
+              "en": "Please walk to the left."
+            },
+            {
+              "zh": "他往左走了。",
+              "en": "He walked to the left."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "往左",
+              "pinyin": "wǎng zuǒ",
+              "en": "to the left"
+            }
+          ]
+        },
+        {
+          "word": "比",
+          "pinyin": "bǐ",
+          "pos": "prep./v.",
+          "define": "than; compare",
+          "examples": [
+            {
+              "zh": "这个饭馆比那家大。",
+              "en": "This restaurant is bigger than that one."
+            },
+            {
+              "zh": "他跑得比我快。",
+              "en": "He runs faster than me."
+            },
+            {
+              "zh": "他比我小一岁。",
+              "en": "He is one year younger than me."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "比",
+              "pinyin": "bǐ",
+              "en": "than"
+            }
+          ]
+        },
+        {
+          "word": "右边",
+          "pinyin": "yòubiān",
+          "pos": "n.",
+          "define": "right; right side",
+          "examples": [
+            {
+              "zh": "右边有一家电影院。",
+              "en": "There is a cinema on the right."
+            },
+            {
+              "zh": "请往右边走。",
+              "en": "Please walk to the right."
+            },
+            {
+              "zh": "妻子坐在他的右边。",
+              "en": "His wife sits on his right."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "右边",
+              "pinyin": "yòubiān",
+              "en": "the right side"
+            }
+          ]
+        },
+        {
+          "word": "右",
+          "pinyin": "yòu",
+          "pos": "n.",
+          "define": "right",
+          "examples": [
+            {
+              "zh": "往右走，就是饭馆。",
+              "en": "Walk right and there is the restaurant."
+            },
+            {
+              "zh": "他往右走了。",
+              "en": "He walked to the right."
+            },
+            {
+              "zh": "请你往右转。",
+              "en": "Please turn right."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "往右",
+              "pinyin": "wǎng yòu",
+              "en": "to the right"
+            }
+          ]
+        },
+        {
+          "word": "记得",
+          "pinyin": "jìde",
+          "pos": "v.",
+          "define": "remember",
+          "examples": [
+            {
+              "zh": "我记得那块手表放在左边。",
+              "en": "I remember the watch is on the left."
+            },
+            {
+              "zh": "你还记得我吗？",
+              "en": "Do you still remember me?"
+            },
+            {
+              "zh": "记得带手表。",
+              "en": "Remember to bring your watch."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "记得",
+              "pinyin": "jìde",
+              "en": "remember"
+            }
+          ]
+        },
+        {
+          "word": "爱情片",
+          "pinyin": "àiqíngpiàn",
+          "pos": "n.",
+          "define": "romantic movie",
+          "examples": [
+            {
+              "zh": "妻子喜欢看爱情片。",
+              "en": "My wife likes watching romantic movies."
+            },
+            {
+              "zh": "昨晚我们看了一个爱情片。",
+              "en": "Last night we watched a romantic movie."
+            },
+            {
+              "zh": "这个爱情片很有意思。",
+              "en": "This romantic movie is very interesting."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "看爱情片",
+              "pinyin": "kàn àiqíngpiàn",
+              "en": "watch a romantic movie"
+            }
+          ]
+        },
+        {
+          "word": "有意思",
+          "pinyin": "yǒu yìsi",
+          "pos": "phr.",
+          "define": "interesting",
+          "examples": [
+            {
+              "zh": "这个电影很有意思。",
+              "en": "This movie is very interesting."
+            },
+            {
+              "zh": "他讲的爱情片故事很有意思。",
+              "en": "The romantic movie story he told is very interesting."
+            },
+            {
+              "zh": "你觉得有意思吗？",
+              "en": "Do you think it is interesting?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "很有意思",
+              "pinyin": "hěn yǒu yìsi",
+              "en": "very interesting"
+            }
+          ]
+        },
+        {
+          "word": "点",
+          "pinyin": "diǎn",
+          "pos": "v.",
+          "define": "select",
+          "examples": [
+            {
+              "zh": "你想点什么？",
+              "en": "What would you like to order?"
+            },
+            {
+              "zh": "我们点一个蛋糕吧。",
+              "en": "Let's order a cake."
+            },
+            {
+              "zh": "妻子点了鱼，丈夫点了肉。",
+              "en": "The wife ordered fish, the husband ordered meat."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "点菜",
+              "pinyin": "diǎn cài",
+              "en": "order dishes"
+            }
+          ]
+        },
+        {
+          "word": "虽然",
+          "pinyin": "suīrán",
+          "pos": "conj.",
+          "define": "though; although",
+          "examples": [
+            {
+              "zh": "虽然电影很长，但是很有意思。",
+              "en": "Although the movie is long, it is very interesting."
+            },
+            {
+              "zh": "虽然下雨，但是很多人去了。",
+              "en": "Although it was raining, many people went."
+            },
+            {
+              "zh": "虽然他很累，但是还在跑步。",
+              "en": "Although he is tired, he is still running."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "虽然…但是…",
+              "pinyin": "suīrán…dànshì…",
+              "en": "although…but…"
+            }
+          ]
+        },
+        {
+          "word": "但是",
+          "pinyin": "dànshì",
+          "pos": "conj.",
+          "define": "but; yet",
+          "examples": [
+            {
+              "zh": "电影虽然长，但是很有意思。",
+              "en": "Although the movie is long, it is very interesting."
+            },
+            {
+              "zh": "我想去，但是没有时间。",
+              "en": "I want to go, but I have no time."
+            },
+            {
+              "zh": "饭馆不大，但是菜很好吃。",
+              "en": "The restaurant is not big, but the dishes are delicious."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "但是",
+              "pinyin": "dànshì",
+              "en": "but"
+            }
+          ]
+        },
+        {
+          "word": "花",
+          "pinyin": "huā",
+          "pos": "v.",
+          "define": "spend",
+          "examples": [
+            {
+              "zh": "我花了一个小时看这个电影。",
+              "en": "I spent an hour watching this movie."
+            },
+            {
+              "zh": "他花了不少钱买这块手表。",
+              "en": "He spent quite a bit of money on this watch."
+            },
+            {
+              "zh": "我们花了一天时间去旅游。",
+              "en": "We spent a day travelling."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "花钱",
+              "pinyin": "huā qián",
+              "en": "spend money"
+            }
+          ]
+        },
+        {
+          "word": "妻子",
+          "pinyin": "qīzi",
+          "pos": "n.",
+          "define": "wife",
+          "examples": [
+            {
+              "zh": "我的妻子喜欢看爱情片。",
+              "en": "My wife likes watching romantic movies."
+            },
+            {
+              "zh": "他和妻子去看电影了。",
+              "en": "He went to see a movie with his wife."
+            },
+            {
+              "zh": "妻子记得丈夫的生日。",
+              "en": "The wife remembers her husband's birthday."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "妻子",
+              "pinyin": "qīzi",
+              "en": "wife"
+            }
+          ]
+        },
+        {
+          "word": "丈夫",
+          "pinyin": "zhàngfu",
+          "pos": "n.",
+          "define": "husband",
+          "examples": [
+            {
+              "zh": "丈夫给妻子买了一块手表。",
+              "en": "The husband bought his wife a watch."
+            },
+            {
+              "zh": "她丈夫在一家饭馆工作。",
+              "en": "Her husband works at a restaurant."
+            },
+            {
+              "zh": "丈夫记得妻子的生日。",
+              "en": "The husband remembers his wife's birthday."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "丈夫",
+              "pinyin": "zhàngfu",
+              "en": "husband"
+            }
+          ]
+        },
+        {
+          "word": "饭馆",
+          "pinyin": "fànguǎn",
+          "pos": "n.",
+          "define": "restaurant",
+          "examples": [
+            {
+              "zh": "这家饭馆的菜很好吃。",
+              "en": "The dishes at this restaurant are delicious."
+            },
+            {
+              "zh": "我们去饭馆吃饭吧。",
+              "en": "Let's go to the restaurant to eat."
+            },
+            {
+              "zh": "饭馆就在车站右边。",
+              "en": "The restaurant is right of the station."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一家饭馆",
+              "pinyin": "yì jiā fànguǎn",
+              "en": "a restaurant"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 9,
+      "words": [
+        {
+          "word": "坏",
+          "pinyin": "huài",
+          "pos": "adj.",
+          "define": "bad; ruined",
+          "examples": [
+            {
+              "zh": "我的手机坏了。",
+              "en": "My phone is broken."
+            },
+            {
+              "zh": "这块手表坏了。",
+              "en": "This watch is broken."
+            },
+            {
+              "zh": "这台电脑坏了。",
+              "en": "This computer is broken."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "坏了",
+              "pinyin": "huài le",
+              "en": "broken"
+            }
+          ]
+        },
+        {
+          "word": "旁边",
+          "pinyin": "pángbiān",
+          "pos": "n.",
+          "define": "side; adjacent place",
+          "examples": [
+            {
+              "zh": "他坐在我旁边。",
+              "en": "He sits beside me."
+            },
+            {
+              "zh": "门口旁边有一家咖啡店。",
+              "en": "Beside the doorway there is a coffee shop."
+            },
+            {
+              "zh": "饭馆在学校旁边。",
+              "en": "The restaurant is beside the school."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "旁边",
+              "pinyin": "pángbiān",
+              "en": "beside"
+            }
+          ]
+        },
+        {
+          "word": "男孩儿",
+          "pinyin": "nánháir",
+          "pos": "n.",
+          "define": "boy",
+          "examples": [
+            {
+              "zh": "那个男孩儿个子很高。",
+              "en": "That boy is very tall."
+            },
+            {
+              "zh": "男孩儿从这儿走过去了。",
+              "en": "The boy walked past here."
+            },
+            {
+              "zh": "这个男孩儿是我的学生。",
+              "en": "This boy is my student."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一个男孩儿",
+              "pinyin": "yí gè nánháir",
+              "en": "a boy"
+            }
+          ]
+        },
+        {
+          "word": "这样",
+          "pinyin": "zhèyàng",
+          "pos": "pron.",
+          "define": "such; like this; so",
+          "examples": [
+            {
+              "zh": "这个男孩儿就这样站着。",
+              "en": "The boy just stood like this."
+            },
+            {
+              "zh": "这样走路太慢了。",
+              "en": "Walking like this is too slow."
+            },
+            {
+              "zh": "你为什么这样做？",
+              "en": "Why do you do it like this?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "这样",
+              "pinyin": "zhèyàng",
+              "en": "like this"
+            }
+          ]
+        },
+        {
+          "word": "个子",
+          "pinyin": "gèzi",
+          "pos": "n.",
+          "define": "height",
+          "examples": [
+            {
+              "zh": "他的个子很高。",
+              "en": "He is very tall."
+            },
+            {
+              "zh": "这个男孩儿个子很高。",
+              "en": "This boy is very tall."
+            },
+            {
+              "zh": "你个子多高？",
+              "en": "How tall are you?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "个子高",
+              "pinyin": "gèzi gāo",
+              "en": "tall"
+            }
+          ]
+        },
+        {
+          "word": "那么",
+          "pinyin": "nàme",
+          "pos": "pron.",
+          "define": "like that",
+          "examples": [
+            {
+              "zh": "他个子那么高。",
+              "en": "He is so tall."
+            },
+            {
+              "zh": "门口怎么那么多人？",
+              "en": "Why are there so many people at the entrance?"
+            },
+            {
+              "zh": "我没想到他个子那么高。",
+              "en": "I did not expect him to be so tall."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "那么",
+              "pinyin": "nàme",
+              "en": "so"
+            }
+          ]
+        },
+        {
+          "word": "高",
+          "pinyin": "gāo",
+          "pos": "adj.",
+          "define": "tall; high",
+          "examples": [
+            {
+              "zh": "他个子很高。",
+              "en": "He is very tall."
+            },
+            {
+              "zh": "这个男孩儿比我高。",
+              "en": "This boy is taller than me."
+            },
+            {
+              "zh": "弟弟个子不高。",
+              "en": "My younger brother is not tall."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "很高",
+              "pinyin": "hěn gāo",
+              "en": "very tall"
+            }
+          ]
+        },
+        {
+          "word": "门口",
+          "pinyin": "ménkǒu",
+          "pos": "n.",
+          "define": "doorway; entrance",
+          "examples": [
+            {
+              "zh": "门口有一家咖啡店。",
+              "en": "There is a coffee shop at the entrance."
+            },
+            {
+              "zh": "我在门口等你。",
+              "en": "I will wait for you at the entrance."
+            },
+            {
+              "zh": "门口站着一个人。",
+              "en": "A person is standing at the entrance."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "在门口",
+              "pinyin": "zài ménkǒu",
+              "en": "at the entrance"
+            }
+          ]
+        },
+        {
+          "word": "咖啡",
+          "pinyin": "kāfēi",
+          "pos": "n.",
+          "define": "coffee",
+          "examples": [
+            {
+              "zh": "我想喝一杯咖啡。",
+              "en": "I want a cup of coffee."
+            },
+            {
+              "zh": "这家咖啡店的咖啡很好喝。",
+              "en": "The coffee at this coffee shop is very tasty."
+            },
+            {
+              "zh": "他每天早上喝咖啡。",
+              "en": "He drinks coffee every morning."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一杯咖啡",
+              "pinyin": "yì bēi kāfēi",
+              "en": "a cup of coffee"
+            }
+          ]
+        },
+        {
+          "word": "离",
+          "pinyin": "lí",
+          "pos": "v.",
+          "define": "be apart/away from",
+          "examples": [
+            {
+              "zh": "学校离这儿很近。",
+              "en": "The school is close to here."
+            },
+            {
+              "zh": "饭馆离学校很近。",
+              "en": "The restaurant is close to the school."
+            },
+            {
+              "zh": "车站离他家很远。",
+              "en": "The station is far from his home."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "离…很近",
+              "pinyin": "lí…hěn jìn",
+              "en": "close to…"
+            }
+          ]
+        },
+        {
+          "word": "近",
+          "pinyin": "jìn",
+          "pos": "adj.",
+          "define": "close; nearby",
+          "examples": [
+            {
+              "zh": "学校离这儿很近。",
+              "en": "The school is close to here."
+            },
+            {
+              "zh": "我家离车站很近。",
+              "en": "My home is close to the station."
+            },
+            {
+              "zh": "走路五分钟就到，很近。",
+              "en": "It takes five minutes on foot; it is very close."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "很近",
+              "pinyin": "hěn jìn",
+              "en": "very close"
+            }
+          ]
+        },
+        {
+          "word": "走路",
+          "pinyin": "zǒulù",
+          "pos": "v.",
+          "define": "walk",
+          "examples": [
+            {
+              "zh": "走路十分钟就到。",
+              "en": "It takes ten minutes on foot."
+            },
+            {
+              "zh": "他走路很快。",
+              "en": "He walks fast."
+            },
+            {
+              "zh": "从这里到咖啡店，走路要多久？",
+              "en": "How long does it take to walk from here to the coffee shop?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "走路",
+              "pinyin": "zǒulù",
+              "en": "walk"
+            }
+          ]
+        },
+        {
+          "word": "周",
+          "pinyin": "zhōu",
+          "pos": "n.",
+          "define": "week",
+          "examples": [
+            {
+              "zh": "这周我很忙。",
+              "en": "I am very busy this week."
+            },
+            {
+              "zh": "下周我们一起去喝咖啡吧。",
+              "en": "Let's go drink coffee together next week."
+            },
+            {
+              "zh": "这周的天气很好。",
+              "en": "The weather this week is nice."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "这周",
+              "pinyin": "zhè zhōu",
+              "en": "this week"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 10,
+      "words": [
+        {
+          "word": "开学",
+          "pinyin": "kāixué",
+          "pos": "v.",
+          "define": "(of a school) begin",
+          "examples": [
+            {
+              "zh": "学校快要开学了。",
+              "en": "School is about to start."
+            },
+            {
+              "zh": "开学那天，门口人很多。",
+              "en": "On the first day of school, there are many people at the entrance."
+            },
+            {
+              "zh": "开学前我准备好了本子和笔。",
+              "en": "Before school started, I prepared notebooks and pens."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "快要开学",
+              "pinyin": "kuàiyào kāixué",
+              "en": "school is about to start"
+            }
+          ]
+        },
+        {
+          "word": "门",
+          "pinyin": "mén",
+          "pos": "n.",
+          "define": "door",
+          "examples": [
+            {
+              "zh": "请打开门。",
+              "en": "Please open the door."
+            },
+            {
+              "zh": "他的本子在门后面。",
+              "en": "His notebook is behind the door."
+            },
+            {
+              "zh": "门坏了。",
+              "en": "The door is broken."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "门口",
+              "pinyin": "ménkǒu",
+              "en": "doorway"
+            }
+          ]
+        },
+        {
+          "word": "后面",
+          "pinyin": "hòumiàn",
+          "pos": "n.",
+          "define": "back",
+          "examples": [
+            {
+              "zh": "他的座位在后面。",
+              "en": "His seat is at the back."
+            },
+            {
+              "zh": "书在门后面。",
+              "en": "The book is behind the door."
+            },
+            {
+              "zh": "后面的词我还没学。",
+              "en": "I have not learned the words at the back yet."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "后面",
+              "pinyin": "hòumiàn",
+              "en": "behind; at the back"
+            }
+          ]
+        },
+        {
+          "word": "笔",
+          "pinyin": "bǐ",
+          "pos": "n.",
+          "define": "pen; pencil",
+          "examples": [
+            {
+              "zh": "我忘带笔了。",
+              "en": "I forgot to bring a pen."
+            },
+            {
+              "zh": "你有笔吗？",
+              "en": "Do you have a pen?"
+            },
+            {
+              "zh": "这支笔是新的。",
+              "en": "This pen is new."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一支笔",
+              "pinyin": "yì zhī bǐ",
+              "en": "a pen"
+            }
+          ]
+        },
+        {
+          "word": "帮",
+          "pinyin": "bāng",
+          "pos": "v.",
+          "define": "help",
+          "examples": [
+            {
+              "zh": "你能帮我一下吗？",
+              "en": "Can you help me a bit?"
+            },
+            {
+              "zh": "他帮我准备了本子。",
+              "en": "He helped me prepare notebooks."
+            },
+            {
+              "zh": "我帮你讲这道题。",
+              "en": "I will help you explain this question."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "帮我",
+              "pinyin": "bāng wǒ",
+              "en": "help me"
+            }
+          ]
+        },
+        {
+          "word": "考试",
+          "pinyin": "kǎoshì",
+          "pos": "v./n.",
+          "define": "take an examination; examination",
+          "examples": [
+            {
+              "zh": "明天有考试。",
+              "en": "There is an exam tomorrow."
+            },
+            {
+              "zh": "考试的时候，我有点紧张。",
+              "en": "During the exam, I was a bit nervous."
+            },
+            {
+              "zh": "他考试考得很好。",
+              "en": "He did very well in the exam."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一次考试",
+              "pinyin": "yí cì kǎoshì",
+              "en": "an examination"
+            }
+          ]
+        },
+        {
+          "word": "词",
+          "pinyin": "cí",
+          "pos": "n.",
+          "define": "word",
+          "examples": [
+            {
+              "zh": "这个词是什么意思？",
+              "en": "What does this word mean?"
+            },
+            {
+              "zh": "我这本本子上记了很多词。",
+              "en": "I wrote many words in this notebook."
+            },
+            {
+              "zh": "考试要考这些词。",
+              "en": "The exam will test these words."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一个词",
+              "pinyin": "yí gè cí",
+              "en": "a word"
+            }
+          ]
+        },
+        {
+          "word": "本子",
+          "pinyin": "běnzi",
+          "pos": "n.",
+          "define": "notebook",
+          "examples": [
+            {
+              "zh": "我的本子上写满了词。",
+              "en": "My notebook is full of words."
+            },
+            {
+              "zh": "请打开本子。",
+              "en": "Please open the notebook."
+            },
+            {
+              "zh": "他借了我的本子。",
+              "en": "He borrowed my notebook."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一个本子",
+              "pinyin": "yí gè běnzi",
+              "en": "a notebook"
+            }
+          ]
+        },
+        {
+          "word": "错",
+          "pinyin": "cuò",
+          "pos": "adj.",
+          "define": "wrong; mistaken",
+          "examples": [
+            {
+              "zh": "这道题错了。",
+              "en": "This question is wrong."
+            },
+            {
+              "zh": "这个词我写错了。",
+              "en": "I wrote this word wrong."
+            },
+            {
+              "zh": "你错了。",
+              "en": "You are wrong."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "写错了",
+              "pinyin": "xiě cuò le",
+              "en": "wrote it wrong"
+            }
+          ]
+        },
+        {
+          "word": "题",
+          "pinyin": "tí",
+          "pos": "n.",
+          "define": "question; problem",
+          "examples": [
+            {
+              "zh": "这道题很难。",
+              "en": "This question is hard."
+            },
+            {
+              "zh": "我做了三道题。",
+              "en": "I did three questions."
+            },
+            {
+              "zh": "这道题的答案是什么？",
+              "en": "What is the answer to this question?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一道题",
+              "pinyin": "yí dào tí",
+              "en": "a question"
+            }
+          ]
+        },
+        {
+          "word": "还是",
+          "pinyin": "háishi",
+          "pos": "conj.",
+          "define": "or",
+          "examples": [
+            {
+              "zh": "你喝茶还是咖啡？",
+              "en": "Do you drink tea or coffee?"
+            },
+            {
+              "zh": "今天还是明天？",
+              "en": "Today or tomorrow?"
+            },
+            {
+              "zh": "你学英语还是中文？",
+              "en": "Do you study English or Chinese?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "…还是…",
+              "pinyin": "…háishi…",
+              "en": "…or…"
+            }
+          ]
+        },
+        {
+          "word": "考",
+          "pinyin": "kǎo",
+          "pos": "v.",
+          "define": "take an examination",
+          "examples": [
+            {
+              "zh": "这次考试考什么？",
+              "en": "What does this exam test?"
+            },
+            {
+              "zh": "我考得不错。",
+              "en": "I did pretty well in the exam."
+            },
+            {
+              "zh": "我们明天考数学。",
+              "en": "We have a math exam tomorrow."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "考得好",
+              "pinyin": "kǎo de hǎo",
+              "en": "do well in an exam"
+            }
+          ]
+        },
+        {
+          "word": "快要",
+          "pinyin": "kuàiyào",
+          "pos": "adv.",
+          "define": "on the verge of; about to",
+          "examples": [
+            {
+              "zh": "学校快要开学了。",
+              "en": "School is about to start."
+            },
+            {
+              "zh": "快要考试了，你准备好了吗？",
+              "en": "The exam is coming soon, are you ready?"
+            },
+            {
+              "zh": "车快要走了。",
+              "en": "The bus is about to leave."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "快要…了",
+              "pinyin": "kuàiyào…le",
+              "en": "about to…"
+            }
+          ]
+        },
+        {
+          "word": "笑",
+          "pinyin": "xiào",
+          "pos": "v.",
+          "define": "smile; laugh",
+          "examples": [
+            {
+              "zh": "他笑了。",
+              "en": "He smiled."
+            },
+            {
+              "zh": "大家听了都笑了。",
+              "en": "Everyone laughed after hearing it."
+            },
+            {
+              "zh": "你为什么笑？",
+              "en": "Why are you laughing?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "笑了",
+              "pinyin": "xiào le",
+              "en": "smiled; laughed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 11,
+      "words": [
+        {
+          "word": "头",
+          "pinyin": "tóu",
+          "pos": "n.",
+          "define": "head",
+          "examples": [
+            {
+              "zh": "我的头疼。",
+              "en": "I have a headache."
+            },
+            {
+              "zh": "头很疼，我要休息。",
+              "en": "My head hurts a lot, I need to rest."
+            },
+            {
+              "zh": "他点了点头。",
+              "en": "He nodded."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "头疼",
+              "pinyin": "tóu téng",
+              "en": "headache"
+            }
+          ]
+        },
+        {
+          "word": "疼",
+          "pinyin": "téng",
+          "pos": "adj.",
+          "define": "hurt",
+          "examples": [
+            {
+              "zh": "我的头很疼。",
+              "en": "My head hurts a lot."
+            },
+            {
+              "zh": "吃了药就不疼了。",
+              "en": "After taking medicine it does not hurt."
+            },
+            {
+              "zh": "你哪儿疼？",
+              "en": "Where does it hurt?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "头疼",
+              "pinyin": "tóu téng",
+              "en": "headache"
+            }
+          ]
+        },
+        {
+          "word": "经常",
+          "pinyin": "jīngcháng",
+          "pos": "adv.",
+          "define": "frequently; often",
+          "examples": [
+            {
+              "zh": "他经常头疼。",
+              "en": "He often has headaches."
+            },
+            {
+              "zh": "我经常去药店买药。",
+              "en": "I often go to the pharmacy to buy medicine."
+            },
+            {
+              "zh": "她经常走着去药店。",
+              "en": "She often walks to the pharmacy."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "经常",
+              "pinyin": "jīngcháng",
+              "en": "often"
+            }
+          ]
+        },
+        {
+          "word": "动",
+          "pinyin": "dòng",
+          "pos": "v.",
+          "define": "move",
+          "examples": [
+            {
+              "zh": "他动了动头。",
+              "en": "He moved his head."
+            },
+            {
+              "zh": "你要多动一动。",
+              "en": "You should move around more."
+            },
+            {
+              "zh": "车动了。",
+              "en": "The car moved."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "动一下",
+              "pinyin": "dòng yíxià",
+              "en": "move a bit"
+            }
+          ]
+        },
+        {
+          "word": "着",
+          "pinyin": "zhe",
+          "pos": "part.",
+          "define": "used after a verb or an adjective to indicate the continuation of an action or a state",
+          "examples": [
+            {
+              "zh": "他走着去药店。",
+              "en": "He is walking to the pharmacy."
+            },
+            {
+              "zh": "门开着。",
+              "en": "The door is open."
+            },
+            {
+              "zh": "他躺着休息。",
+              "en": "He is lying down resting."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "走着",
+              "pinyin": "zǒu zhe",
+              "en": "walking"
+            }
+          ]
+        },
+        {
+          "word": "路上",
+          "pinyin": "lùshang",
+          "pos": "n.",
+          "define": "road; trip",
+          "examples": [
+            {
+              "zh": "路上要小心。",
+              "en": "Be careful on the road."
+            },
+            {
+              "zh": "路上人多，走慢点儿。",
+              "en": "There are many people on the road, walk slowly."
+            },
+            {
+              "zh": "路上花了一个小时。",
+              "en": "It took an hour on the way."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "路上小心",
+              "pinyin": "lùshang xiǎoxīn",
+              "en": "be careful on the road"
+            }
+          ]
+        },
+        {
+          "word": "慢",
+          "pinyin": "màn",
+          "pos": "adj.",
+          "define": "slow",
+          "examples": [
+            {
+              "zh": "请慢点儿走。",
+              "en": "Please walk slowly."
+            },
+            {
+              "zh": "你说得慢一点。",
+              "en": "Speak a little slower."
+            },
+            {
+              "zh": "车开得很慢。",
+              "en": "The car is driving very slowly."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "慢点儿",
+              "pinyin": "màn diǎnr",
+              "en": "slowly"
+            }
+          ]
+        },
+        {
+          "word": "进",
+          "pinyin": "jìn",
+          "pos": "v.",
+          "define": "come into",
+          "examples": [
+            {
+              "zh": "请进。",
+              "en": "Please come in."
+            },
+            {
+              "zh": "他进了药店。",
+              "en": "He went into the pharmacy."
+            },
+            {
+              "zh": "他慢慢走进药店。",
+              "en": "He slowly walked into the pharmacy."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "请进",
+              "pinyin": "qǐng jìn",
+              "en": "please come in"
+            }
+          ]
+        },
+        {
+          "word": "药",
+          "pinyin": "yào",
+          "pos": "n.",
+          "define": "medicine",
+          "examples": [
+            {
+              "zh": "我去药店买药。",
+              "en": "I go to the pharmacy to buy medicine."
+            },
+            {
+              "zh": "吃了药，头就不疼了。",
+              "en": "After taking the medicine, my head does not hurt."
+            },
+            {
+              "zh": "这个药很贵。",
+              "en": "This medicine is expensive."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "吃药",
+              "pinyin": "chī yào",
+              "en": "take medicine"
+            }
+          ]
+        },
+        {
+          "word": "身体",
+          "pinyin": "shēntǐ",
+          "pos": "n.",
+          "define": "body; health",
+          "examples": [
+            {
+              "zh": "他的身体很好。",
+              "en": "His health is good."
+            },
+            {
+              "zh": "身体不舒服就要吃药。",
+              "en": "If you feel unwell, you should take medicine."
+            },
+            {
+              "zh": "你要注意身体。",
+              "en": "You should take care of your health."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "身体健康",
+              "pinyin": "shēntǐ jiànkāng",
+              "en": "healthy"
+            }
+          ]
+        },
+        {
+          "word": "时",
+          "pinyin": "shí",
+          "pos": "n.",
+          "define": "a period of time",
+          "examples": [
+            {
+              "zh": "有时我头会疼。",
+              "en": "Sometimes my head hurts."
+            },
+            {
+              "zh": "他小时候身体不好。",
+              "en": "When he was little, his health was poor."
+            },
+            {
+              "zh": "有时他也会头疼。",
+              "en": "Sometimes he also has headaches."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "有时",
+              "pinyin": "yǒushí",
+              "en": "sometimes"
+            }
+          ]
+        },
+        {
+          "word": "最",
+          "pinyin": "zuì",
+          "pos": "adv.",
+          "define": "most",
+          "examples": [
+            {
+              "zh": "这是最方便的药店。",
+              "en": "This is the most convenient pharmacy."
+            },
+            {
+              "zh": "我最喜欢吃鱼。",
+              "en": "I like eating fish the most."
+            },
+            {
+              "zh": "他跑得最快。",
+              "en": "He runs the fastest."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "最喜欢",
+              "pinyin": "zuì xǐhuan",
+              "en": "like the most"
+            }
+          ]
+        },
+        {
+          "word": "药店",
+          "pinyin": "yàodiàn",
+          "pos": "n.",
+          "define": "pharmacy",
+          "examples": [
+            {
+              "zh": "药店就在车站旁边。",
+              "en": "The pharmacy is right beside the station."
+            },
+            {
+              "zh": "我去药店买药。",
+              "en": "I go to the pharmacy to buy medicine."
+            },
+            {
+              "zh": "这家药店人很多。",
+              "en": "This pharmacy is crowded."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一家药店",
+              "pinyin": "yì jiā yàodiàn",
+              "en": "a pharmacy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 12,
+      "words": [
+        {
+          "word": "事情",
+          "pinyin": "shìqing",
+          "pos": "n.",
+          "define": "affair; matter",
+          "examples": [
+            {
+              "zh": "我今天有很多事情要做。",
+              "en": "I have many things to do today."
+            },
+            {
+              "zh": "他在忙什么事情？",
+              "en": "What is he busy with?"
+            },
+            {
+              "zh": "这件小事不用着急。",
+              "en": "Don't worry about this small matter."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一件事情",
+              "pinyin": "yí jiàn shìqing",
+              "en": "a matter"
+            }
+          ]
+        },
+        {
+          "word": "晴",
+          "pinyin": "qíng",
+          "pos": "adj.",
+          "define": "sunny",
+          "examples": [
+            {
+              "zh": "今天是晴天。",
+              "en": "Today is a sunny day."
+            },
+            {
+              "zh": "天晴了，我们出去吧。",
+              "en": "It has cleared up, let's go out."
+            },
+            {
+              "zh": "明天是晴天还是阴天？",
+              "en": "Will tomorrow be sunny or cloudy?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "晴天",
+              "pinyin": "qíngtiān",
+              "en": "sunny day"
+            }
+          ]
+        },
+        {
+          "word": "正",
+          "pinyin": "zhèng",
+          "pos": "adv.",
+          "define": "indicating an action just happening or a state just continuing",
+          "examples": [
+            {
+              "zh": "我正要去坐地铁。",
+              "en": "I am just about to take the subway."
+            },
+            {
+              "zh": "他正在看书。",
+              "en": "He is reading."
+            },
+            {
+              "zh": "外面正下着雨。",
+              "en": "It is raining outside right now."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "正在",
+              "pinyin": "zhèngzài",
+              "en": "in the middle of doing"
+            }
+          ]
+        },
+        {
+          "word": "外面",
+          "pinyin": "wàimiàn",
+          "pos": "n.",
+          "define": "outside",
+          "examples": [
+            {
+              "zh": "外面天阴了。",
+              "en": "It is cloudy outside."
+            },
+            {
+              "zh": "外面在下雨，带伞吧。",
+              "en": "It is raining outside, take an umbrella."
+            },
+            {
+              "zh": "外面很冷。",
+              "en": "It is very cold outside."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "在外面",
+              "pinyin": "zài wàimiàn",
+              "en": "outside"
+            }
+          ]
+        },
+        {
+          "word": "阴",
+          "pinyin": "yīn",
+          "pos": "adj.",
+          "define": "cloudy",
+          "examples": [
+            {
+              "zh": "今天是阴天。",
+              "en": "Today is a cloudy day."
+            },
+            {
+              "zh": "天阴了，可能要下雨。",
+              "en": "It has turned cloudy; it may rain."
+            },
+            {
+              "zh": "阴天的时候，我不出去。",
+              "en": "On cloudy days, I don't go out."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "阴天",
+              "pinyin": "yīntiān",
+              "en": "cloudy day"
+            }
+          ]
+        },
+        {
+          "word": "从小",
+          "pinyin": "cóngxiǎo",
+          "pos": "adv.",
+          "define": "since childhood",
+          "examples": [
+            {
+              "zh": "他从小住在这座楼里。",
+              "en": "He has lived in this building since childhood."
+            },
+            {
+              "zh": "他从小身体就很好。",
+              "en": "He has been healthy since childhood."
+            },
+            {
+              "zh": "我从小就常常坐地铁去学校。",
+              "en": "Since childhood I often took the subway to school."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "从小",
+              "pinyin": "cóngxiǎo",
+              "en": "since childhood"
+            }
+          ]
+        },
+        {
+          "word": "地铁",
+          "pinyin": "dìtiě",
+          "pos": "n.",
+          "define": "subway",
+          "examples": [
+            {
+              "zh": "我每天坐地铁上班。",
+              "en": "I take the subway to work every day."
+            },
+            {
+              "zh": "地铁站离这儿很近。",
+              "en": "The subway station is close to here."
+            },
+            {
+              "zh": "坐地铁去学校很快。",
+              "en": "Taking the subway to school is fast."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "坐地铁",
+              "pinyin": "zuò dìtiě",
+              "en": "take the subway"
+            }
+          ]
+        },
+        {
+          "word": "楼",
+          "pinyin": "lóu",
+          "pos": "n.",
+          "define": "building",
+          "examples": [
+            {
+              "zh": "他家住在那座楼。",
+              "en": "He lives in that building."
+            },
+            {
+              "zh": "这楼很高。",
+              "en": "This building is very tall."
+            },
+            {
+              "zh": "楼外面有一棵树。",
+              "en": "There is a tree outside the building."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一座楼",
+              "pinyin": "yí zuò lóu",
+              "en": "a building"
+            }
+          ]
+        },
+        {
+          "word": "站",
+          "pinyin": "zhàn",
+          "pos": "n.",
+          "define": "stop; station",
+          "examples": [
+            {
+              "zh": "地铁站在楼的旁边。",
+              "en": "The subway station is beside the building."
+            },
+            {
+              "zh": "下一站是哪儿？",
+              "en": "Where is the next stop?"
+            },
+            {
+              "zh": "我在站门口等你。",
+              "en": "I will wait for you at the station entrance."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "地铁站",
+              "pinyin": "dìtiězhàn",
+              "en": "subway station"
+            }
+          ]
+        },
+        {
+          "word": "小时候",
+          "pinyin": "xiǎoshíhou",
+          "pos": "n.",
+          "define": "childhood",
+          "examples": [
+            {
+              "zh": "我小时候住在这座楼里。",
+              "en": "When I was little, I lived in this building."
+            },
+            {
+              "zh": "小时候我喜欢晴天。",
+              "en": "When I was little, I liked sunny days."
+            },
+            {
+              "zh": "他小时候身体不好。",
+              "en": "When he was little, his health was poor."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "小时候",
+              "pinyin": "xiǎoshíhou",
+              "en": "when I was little"
+            }
+          ]
+        },
+        {
+          "word": "好",
+          "pinyin": "hǎo",
+          "pos": "adv.",
+          "define": "very; quite",
+          "examples": [
+            {
+              "zh": "这件衣服好贵。",
+              "en": "This piece of clothing is very expensive."
+            },
+            {
+              "zh": "这里离地铁站好近。",
+              "en": "This place is very close to the subway station."
+            },
+            {
+              "zh": "这个地方好安静。",
+              "en": "This place is very quiet."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "好多",
+              "pinyin": "hǎoduō",
+              "en": "a lot of"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 13,
+      "words": [
+        {
+          "word": "新年",
+          "pinyin": "xīnnián",
+          "pos": "n.",
+          "define": "New Year",
+          "examples": [
+            {
+              "zh": "新年快乐！",
+              "en": "Happy New Year!"
+            },
+            {
+              "zh": "新年我们一起去吃饭吧。",
+              "en": "Let's go eat together for the New Year."
+            },
+            {
+              "zh": "新年快到了。",
+              "en": "New Year is coming soon."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "新年快乐",
+              "pinyin": "xīnnián kuàilè",
+              "en": "Happy New Year"
+            }
+          ]
+        },
+        {
+          "word": "教",
+          "pinyin": "jiāo",
+          "pos": "v.",
+          "define": "teach",
+          "examples": [
+            {
+              "zh": "王老师教我们数学。",
+              "en": "Teacher Wang teaches us math."
+            },
+            {
+              "zh": "你能教我上网吗？",
+              "en": "Can you teach me to go online?"
+            },
+            {
+              "zh": "他教得很好。",
+              "en": "He teaches very well."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "教我",
+              "pinyin": "jiāo wǒ",
+              "en": "teach me"
+            }
+          ]
+        },
+        {
+          "word": "花",
+          "pinyin": "huā",
+          "pos": "n.",
+          "define": "flower",
+          "examples": [
+            {
+              "zh": "桌子上有一朵花。",
+              "en": "There is a flower on the table."
+            },
+            {
+              "zh": "他给妻子买了一些花。",
+              "en": "He bought some flowers for his wife."
+            },
+            {
+              "zh": "我喜欢这朵红色的花。",
+              "en": "I like this red flower."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一朵花",
+              "pinyin": "yì duǒ huā",
+              "en": "a flower"
+            }
+          ]
+        },
+        {
+          "word": "希望",
+          "pinyin": "xīwàng",
+          "pos": "v.",
+          "define": "hope; wish",
+          "examples": [
+            {
+              "zh": "我希望新年能去旅游。",
+              "en": "I hope I can travel for the New Year."
+            },
+            {
+              "zh": "希望你考试考得好。",
+              "en": "I hope you do well in the exam."
+            },
+            {
+              "zh": "他希望自己的班考得最好。",
+              "en": "He hopes his class does best in the exam."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "希望",
+              "pinyin": "xīwàng",
+              "en": "hope"
+            }
+          ]
+        },
+        {
+          "word": "上面",
+          "pinyin": "shàngmiàn",
+          "pos": "n.",
+          "define": "surface of an object",
+          "examples": [
+            {
+              "zh": "书在桌子上面。",
+              "en": "The book is on the table."
+            },
+            {
+              "zh": "上面写着他的名字。",
+              "en": "His name is written on it."
+            },
+            {
+              "zh": "手机在椅子上面。",
+              "en": "The phone is on the chair."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "在…上面",
+              "pinyin": "zài…shàngmiàn",
+              "en": "on top of…"
+            }
+          ]
+        },
+        {
+          "word": "洗手间",
+          "pinyin": "xǐshǒujiān",
+          "pos": "n.",
+          "define": "washroom; restroom",
+          "examples": [
+            {
+              "zh": "洗手间在哪儿？",
+              "en": "Where is the restroom?"
+            },
+            {
+              "zh": "我去洗手间一下。",
+              "en": "I am going to the restroom for a moment."
+            },
+            {
+              "zh": "洗手间在教室外面。",
+              "en": "The restroom is outside the classroom."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "去洗手间",
+              "pinyin": "qù xǐshǒujiān",
+              "en": "go to the restroom"
+            }
+          ]
+        },
+        {
+          "word": "里面",
+          "pinyin": "lǐmiàn",
+          "pos": "n.",
+          "define": "inside",
+          "examples": [
+            {
+              "zh": "包里面有一本书。",
+              "en": "There is a book inside the bag."
+            },
+            {
+              "zh": "洗手间在里面。",
+              "en": "The restroom is inside."
+            },
+            {
+              "zh": "教室里面很安静。",
+              "en": "It is very quiet inside the classroom."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "在里面",
+              "pinyin": "zài lǐmiàn",
+              "en": "inside"
+            }
+          ]
+        },
+        {
+          "word": "笔",
+          "pinyin": "bǐ",
+          "pos": "m.",
+          "define": "stroke",
+          "examples": [
+            {
+              "zh": "这个字有几笔？",
+              "en": "How many strokes does this character have?"
+            },
+            {
+              "zh": "这个字一共五笔。",
+              "en": "This character has five strokes in total."
+            },
+            {
+              "zh": "这一笔写错了。",
+              "en": "This stroke is wrong."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一笔",
+              "pinyin": "yì bǐ",
+              "en": "one stroke"
+            }
+          ]
+        },
+        {
+          "word": "可能",
+          "pinyin": "kěnéng",
+          "pos": "v.",
+          "define": "probably can",
+          "examples": [
+            {
+              "zh": "明天可能会下雨。",
+              "en": "It may rain tomorrow."
+            },
+            {
+              "zh": "他可能在家。",
+              "en": "He is probably at home."
+            },
+            {
+              "zh": "你可能要多练一下这一笔。",
+              "en": "You may need to practice this stroke more."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "可能",
+              "pinyin": "kěnéng",
+              "en": "maybe"
+            }
+          ]
+        },
+        {
+          "word": "上网",
+          "pinyin": "shàngwǎng",
+          "pos": "v.",
+          "define": "go online",
+          "examples": [
+            {
+              "zh": "我每天上网看新闻。",
+              "en": "I go online to read news every day."
+            },
+            {
+              "zh": "他上网给朋友发邮件。",
+              "en": "He goes online to email his friend."
+            },
+            {
+              "zh": "你可以教我上网吗？",
+              "en": "Can you teach me to go online?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "上网",
+              "pinyin": "shàngwǎng",
+              "en": "go online"
+            }
+          ]
+        },
+        {
+          "word": "那样",
+          "pinyin": "nàyàng",
+          "pos": "pron.",
+          "define": "so that",
+          "examples": [
+            {
+              "zh": "他那样做不对。",
+              "en": "It is not right for him to do like that."
+            },
+            {
+              "zh": "像他那样努力。",
+              "en": "Work hard like him."
+            },
+            {
+              "zh": "我希望你不要那样想。",
+              "en": "I hope you don't think that way."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "那样",
+              "pinyin": "nàyàng",
+              "en": "like that"
+            }
+          ]
+        },
+        {
+          "word": "告诉",
+          "pinyin": "gàosu",
+          "pos": "v.",
+          "define": "tell",
+          "examples": [
+            {
+              "zh": "请告诉我你的名字。",
+              "en": "Please tell me your name."
+            },
+            {
+              "zh": "老师告诉我们明天有考试。",
+              "en": "The teacher told us there is an exam tomorrow."
+            },
+            {
+              "zh": "你告诉他这件事了吗？",
+              "en": "Have you told him about this?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "告诉我",
+              "pinyin": "gàosu wǒ",
+              "en": "tell me"
+            }
+          ]
+        },
+        {
+          "word": "班",
+          "pinyin": "bān",
+          "pos": "n.",
+          "define": "class",
+          "examples": [
+            {
+              "zh": "我们班有二十个学生。",
+              "en": "There are twenty students in our class."
+            },
+            {
+              "zh": "这个班的老师很好。",
+              "en": "The teacher of this class is very good."
+            },
+            {
+              "zh": "我们班明天考试。",
+              "en": "Our class has an exam tomorrow."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一个班",
+              "pinyin": "yí gè bān",
+              "en": "a class"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 14,
+      "words": [
+        {
+          "word": "站",
+          "pinyin": "zhàn",
+          "pos": "v.",
+          "define": "stand",
+          "examples": [
+            {
+              "zh": "他站在门口。",
+              "en": "He is standing at the entrance."
+            },
+            {
+              "zh": "请先站在前面。",
+              "en": "Please stand in front."
+            },
+            {
+              "zh": "他站在教室前面。",
+              "en": "He stands at the front of the classroom."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "站着",
+              "pinyin": "zhàn zhe",
+              "en": "standing"
+            }
+          ]
+        },
+        {
+          "word": "包",
+          "pinyin": "bāo",
+          "pos": "n./v./m.",
+          "define": "bag; wrap; bundle",
+          "examples": [
+            {
+              "zh": "这个包很贵。",
+              "en": "This bag is expensive."
+            },
+            {
+              "zh": "包里面有一本书。",
+              "en": "There is a book in the bag."
+            },
+            {
+              "zh": "这是我新买的包。",
+              "en": "This is the bag I just bought."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一个包",
+              "pinyin": "yí gè bāo",
+              "en": "a bag"
+            }
+          ]
+        },
+        {
+          "word": "过年",
+          "pinyin": "guònián",
+          "pos": "v.",
+          "define": "celebrate the Spring Festival",
+          "examples": [
+            {
+              "zh": "过年的时候，我们都回家。",
+              "en": "During the Spring Festival, we all go home."
+            },
+            {
+              "zh": "过年小孩儿最开心。",
+              "en": "Children are happiest during the Spring Festival."
+            },
+            {
+              "zh": "你喜欢过年吗？",
+              "en": "Do you like celebrating the Spring Festival?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "回家过年",
+              "pinyin": "huí jiā guònián",
+              "en": "go home for the Spring Festival"
+            }
+          ]
+        },
+        {
+          "word": "没意思",
+          "pinyin": "méi yìsi",
+          "pos": "phr.",
+          "define": "boring",
+          "examples": [
+            {
+              "zh": "这个电影没意思。",
+              "en": "This movie is boring."
+            },
+            {
+              "zh": "一个人跳舞没意思。",
+              "en": "Dancing alone is boring."
+            },
+            {
+              "zh": "我觉得这本书没意思。",
+              "en": "I think this book is boring."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "没意思",
+              "pinyin": "méi yìsi",
+              "en": "boring"
+            }
+          ]
+        },
+        {
+          "word": "位",
+          "pinyin": "wèi",
+          "pos": "m.",
+          "define": "used in deferential reference to people",
+          "examples": [
+            {
+              "zh": "这位老师姓王。",
+              "en": "This teacher's surname is Wang."
+            },
+            {
+              "zh": "前面那位是我的朋友。",
+              "en": "That person in front is my friend."
+            },
+            {
+              "zh": "这位小孩儿很可爱。",
+              "en": "This child is cute."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一位",
+              "pinyin": "yí wèi",
+              "en": "a (person)"
+            }
+          ]
+        },
+        {
+          "word": "前面",
+          "pinyin": "qiánmiàn",
+          "pos": "n.",
+          "define": "front",
+          "examples": [
+            {
+              "zh": "前面的房子是我家。",
+              "en": "The house in front is my home."
+            },
+            {
+              "zh": "他站在前面。",
+              "en": "He stands in front."
+            },
+            {
+              "zh": "前面那个女孩儿是我的同学。",
+              "en": "The girl in front is my classmate."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "在前面",
+              "pinyin": "zài qiánmiàn",
+              "en": "in front"
+            }
+          ]
+        },
+        {
+          "word": "房子",
+          "pinyin": "fángzi",
+          "pos": "n.",
+          "define": "house",
+          "examples": [
+            {
+              "zh": "他们的房子不大。",
+              "en": "Their house is not big."
+            },
+            {
+              "zh": "这是我们的新房子。",
+              "en": "This is our new house."
+            },
+            {
+              "zh": "房子很新。",
+              "en": "The house is new."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一座房子",
+              "pinyin": "yí zuò fángzi",
+              "en": "a house"
+            }
+          ]
+        },
+        {
+          "word": "小孩儿",
+          "pinyin": "xiǎoháir",
+          "pos": "n.",
+          "define": "child; kid",
+          "examples": [
+            {
+              "zh": "那个小孩儿在跳舞。",
+              "en": "That child is dancing."
+            },
+            {
+              "zh": "小孩儿喜欢过年。",
+              "en": "Children like the Spring Festival."
+            },
+            {
+              "zh": "小孩儿的眼睛很大。",
+              "en": "The child's eyes are big."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一个小孩儿",
+              "pinyin": "yí gè xiǎoháir",
+              "en": "a child"
+            }
+          ]
+        },
+        {
+          "word": "女孩儿",
+          "pinyin": "nǚháir",
+          "pos": "n.",
+          "define": "girl",
+          "examples": [
+            {
+              "zh": "前面那个女孩儿姓王。",
+              "en": "The girl in front is surnamed Wang."
+            },
+            {
+              "zh": "女孩儿在跳舞。",
+              "en": "The girl is dancing."
+            },
+            {
+              "zh": "这个女孩儿是我的学生。",
+              "en": "This girl is my student."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一个女孩儿",
+              "pinyin": "yí gè nǚháir",
+              "en": "a girl"
+            }
+          ]
+        },
+        {
+          "word": "姓",
+          "pinyin": "xìng",
+          "pos": "v.",
+          "define": "be surnamed",
+          "examples": [
+            {
+              "zh": "我姓张。",
+              "en": "My surname is Zhang."
+            },
+            {
+              "zh": "前面那位老师姓什么？",
+              "en": "What is the surname of that teacher in front?"
+            },
+            {
+              "zh": "这个小孩儿姓张。",
+              "en": "This child is surnamed Zhang."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "姓张",
+              "pinyin": "xìng Zhāng",
+              "en": "surnamed Zhang"
+            }
+          ]
+        },
+        {
+          "word": "眼睛",
+          "pinyin": "yǎnjing",
+          "pos": "n.",
+          "define": "eye",
+          "examples": [
+            {
+              "zh": "她的眼睛很好看。",
+              "en": "Her eyes are beautiful."
+            },
+            {
+              "zh": "小孩儿的眼睛很大。",
+              "en": "The child's eyes are big."
+            },
+            {
+              "zh": "他的眼睛不大。",
+              "en": "His eyes are not big."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一双眼睛",
+              "pinyin": "yì shuāng yǎnjing",
+              "en": "a pair of eyes"
+            }
+          ]
+        },
+        {
+          "word": "跳舞",
+          "pinyin": "tiàowǔ",
+          "pos": "v.",
+          "define": "dance",
+          "examples": [
+            {
+              "zh": "女孩儿喜欢跳舞。",
+              "en": "The girl likes dancing."
+            },
+            {
+              "zh": "过年的时候，我们一起跳舞。",
+              "en": "During the Spring Festival, we dance together."
+            },
+            {
+              "zh": "小孩儿也会跳舞。",
+              "en": "The child can also dance."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "喜欢跳舞",
+              "pinyin": "xǐhuan tiàowǔ",
+              "en": "like dancing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 15,
+      "words": [
+        {
+          "word": "姓名",
+          "pinyin": "xìngmíng",
+          "pos": "n.",
+          "define": "name",
+          "examples": [
+            {
+              "zh": "请写一下你的姓名。",
+              "en": "Please write down your name."
+            },
+            {
+              "zh": "机票上面有你的姓名。",
+              "en": "Your name is on the air ticket."
+            },
+            {
+              "zh": "你的姓名是什么？",
+              "en": "What is your name?"
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "姓名",
+              "pinyin": "xìngmíng",
+              "en": "name"
+            }
+          ]
+        },
+        {
+          "word": "出国",
+          "pinyin": "chūguó",
+          "pos": "v.",
+          "define": "go abroad",
+          "examples": [
+            {
+              "zh": "他明天要出国。",
+              "en": "He is going abroad tomorrow."
+            },
+            {
+              "zh": "他出国了，很久才回来。",
+              "en": "He went abroad and will be back after a long time."
+            },
+            {
+              "zh": "她出国去旅游了。",
+              "en": "She went abroad to travel."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "出国",
+              "pinyin": "chūguó",
+              "en": "go abroad"
+            }
+          ]
+        },
+        {
+          "word": "门票",
+          "pinyin": "ménpiào",
+          "pos": "n.",
+          "define": "entrance ticket",
+          "examples": [
+            {
+              "zh": "这张门票多少钱？",
+              "en": "How much is this ticket?"
+            },
+            {
+              "zh": "我买了两张颐和园的门票。",
+              "en": "I bought two tickets for the Summer Palace."
+            },
+            {
+              "zh": "门票不见了。",
+              "en": "The ticket is missing."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一张门票",
+              "pinyin": "yì zhāng ménpiào",
+              "en": "an entrance ticket"
+            }
+          ]
+        },
+        {
+          "word": "高中",
+          "pinyin": "gāozhōng",
+          "pos": "n.",
+          "define": "high school",
+          "examples": [
+            {
+              "zh": "他高中毕业了。",
+              "en": "He graduated from high school."
+            },
+            {
+              "zh": "他们是高中同学。",
+              "en": "They are high school classmates."
+            },
+            {
+              "zh": "我高中的时候去过颐和园。",
+              "en": "I went to the Summer Palace when I was in high school."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "高中毕业",
+              "pinyin": "gāozhōng bìyè",
+              "en": "graduate from high school"
+            }
+          ]
+        },
+        {
+          "word": "出门",
+          "pinyin": "chūmén",
+          "pos": "v.",
+          "define": "leave home",
+          "examples": [
+            {
+              "zh": "他早上七点出门。",
+              "en": "He leaves home at seven in the morning."
+            },
+            {
+              "zh": "出门要带门票。",
+              "en": "Take the ticket with you when you go out."
+            },
+            {
+              "zh": "他出门去机场了。",
+              "en": "He left home for the airport."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "出门",
+              "pinyin": "chūmén",
+              "en": "leave home"
+            }
+          ]
+        },
+        {
+          "word": "路",
+          "pinyin": "lù",
+          "pos": "n.",
+          "define": "road; way",
+          "examples": [
+            {
+              "zh": "去机场的路很远。",
+              "en": "The way to the airport is long."
+            },
+            {
+              "zh": "我认识去机场的路。",
+              "en": "I know the way to the airport."
+            },
+            {
+              "zh": "路很远，坐车去吧。",
+              "en": "The way is long, take a car."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一条路",
+              "pinyin": "yì tiáo lù",
+              "en": "a road"
+            }
+          ]
+        },
+        {
+          "word": "颐和园",
+          "pinyin": "Yíhé Yuán",
+          "pos": "proper n.",
+          "define": "Summer Palace (in Beijing)",
+          "examples": [
+            {
+              "zh": "颐和园在北京。",
+              "en": "The Summer Palace is in Beijing."
+            },
+            {
+              "zh": "颐和园的门票多少钱？",
+              "en": "How much is the ticket for the Summer Palace?"
+            },
+            {
+              "zh": "我想去颐和园玩。",
+              "en": "I want to go to the Summer Palace."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "去颐和园",
+              "pinyin": "qù Yíhé Yuán",
+              "en": "go to the Summer Palace"
+            }
+          ]
+        },
+        {
+          "word": "机场",
+          "pinyin": "jīchǎng",
+          "pos": "n.",
+          "define": "airport",
+          "examples": [
+            {
+              "zh": "机场离这儿很远。",
+              "en": "The airport is far from here."
+            },
+            {
+              "zh": "他在机场等我们。",
+              "en": "He is waiting for us at the airport."
+            },
+            {
+              "zh": "我坐地铁去机场。",
+              "en": "I take the subway to the airport."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "去机场",
+              "pinyin": "qù jīchǎng",
+              "en": "go to the airport"
+            }
+          ]
+        },
+        {
+          "word": "机票",
+          "pinyin": "jīpiào",
+          "pos": "n.",
+          "define": "air ticket",
+          "examples": [
+            {
+              "zh": "我买了两张机票。",
+              "en": "I bought two air tickets."
+            },
+            {
+              "zh": "机票上的姓名写错了。",
+              "en": "The name on the air ticket is wrong."
+            },
+            {
+              "zh": "机票很贵。",
+              "en": "Air tickets are expensive."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一张机票",
+              "pinyin": "yì zhāng jīpiào",
+              "en": "an air ticket"
+            }
+          ]
+        },
+        {
+          "word": "飞",
+          "pinyin": "fēi",
+          "pos": "v.",
+          "define": "fly",
+          "examples": [
+            {
+              "zh": "飞机已经飞走了。",
+              "en": "The plane has already flown away."
+            },
+            {
+              "zh": "鸟在飞。",
+              "en": "A bird is flying."
+            },
+            {
+              "zh": "飞机飞得很高。",
+              "en": "The plane flies very high."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "飞走",
+              "pinyin": "fēi zǒu",
+              "en": "fly away"
+            }
+          ]
+        },
+        {
+          "word": "好像",
+          "pinyin": "hǎoxiàng",
+          "pos": "v.",
+          "define": "be like",
+          "examples": [
+            {
+              "zh": "他好像已经出国了。",
+              "en": "He seems to have gone abroad already."
+            },
+            {
+              "zh": "他好像在等我们。",
+              "en": "He seems to be waiting for us."
+            },
+            {
+              "zh": "鸟好像飞走了。",
+              "en": "The bird seems to have flown away."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "好像是",
+              "pinyin": "hǎoxiàng shì",
+              "en": "seems to be"
+            }
+          ]
+        },
+        {
+          "word": "鸟",
+          "pinyin": "niǎo",
+          "pos": "n.",
+          "define": "bird",
+          "examples": [
+            {
+              "zh": "树上有两只鸟。",
+              "en": "There are two birds in the tree."
+            },
+            {
+              "zh": "鸟飞走了。",
+              "en": "The bird flew away."
+            },
+            {
+              "zh": "他好像在看鸟。",
+              "en": "He seems to be watching birds."
+            }
+          ],
+          "phrases": [
+            {
+              "zh": "一只鸟",
+              "pinyin": "yì zhī niǎo",
+              "en": "a bird"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
