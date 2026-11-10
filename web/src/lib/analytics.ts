@@ -1,4 +1,5 @@
 import { getConsentChoiceSync } from "@/context/ConsentContext";
+import { getStoredAttribution } from "@/lib/attribution";
 
 export type AnalyticsCategory =
   | "navigation"
@@ -29,6 +30,17 @@ export type AnalyticsParams = {
   score?: number;
   total?: number;
   path?: string;
+  page_path?: string;
+  page_title?: string;
+  page_location?: string;
+  previous_path?: string;
+  page_referrer?: string;
+  utm_source?: string;
+  utm_medium?: string;
+  utm_campaign?: string;
+  utm_term?: string;
+  utm_content?: string;
+  landing_page?: string;
   mode?: string;
   provider?: string;
   from?: string;
@@ -39,6 +51,7 @@ export type AnalyticsParams = {
   pdf_id?: string;
   /** 0 | 1 for GA4 compatibility when needed */
   success?: 0 | 1;
+  [key: string]: unknown;
 };
 
 export type AnalyticsEvent = AnalyticsParams;
@@ -53,11 +66,16 @@ export function trackEvent(event: AnalyticsParams): void {
   if (typeof window === "undefined" || !window.gtag) return;
 
   const { action, category, label, value, locale, ...rest } = event;
+  const attr = getStoredAttribution();
+
   window.gtag("event", action, {
     event_category: category,
     event_label: label,
     value,
     locale,
+    ...(attr.utm_source && !rest.utm_source ? { utm_source: attr.utm_source } : {}),
+    ...(attr.utm_medium && !rest.utm_medium ? { utm_medium: attr.utm_medium } : {}),
+    ...(attr.utm_campaign && !rest.utm_campaign ? { utm_campaign: attr.utm_campaign } : {}),
     ...rest,
   });
 }

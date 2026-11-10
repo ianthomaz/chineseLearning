@@ -44,16 +44,18 @@ PRIVACY = "https://learnchinese.today/privacy"
 COPYRIGHT = "2026 webplace.cc (ITCS webplace LTDA - Brazil)"
 REVIEW_NOTES = """LearnChinese Today requires sign-in (same account as learnchinese.today).
 
-Sign-in: Sign in with Apple, Google, email/password, and Alipay.
-Apple / Google / Alipay create the account immediately (no extra verification
-step for those providers). The account exists so the learner can keep progress
-and preferences in sync across the website and the phone. The app is free —
-no in-app purchases, no subscription.
+There is no username/password demo account for App Review.
+Sign-in is via third-party providers only on the review path we recommend:
+use Sign in with Apple with your own Apple ID (free; account is created immediately).
+Google and Alipay also work; Alipay needs the Alipay app on the device.
+
+The account exists so progress and preferences sync across the website and the phone.
+The app is free — no in-app purchases, no subscription.
 
 After sign-in: phrase practice, vocabulary / hanzi study, progress sync, and an
 optional Home / Lock Screen widget (study content only while signed in).
 
-No Game Center. Reviewer can use Apple or email."""
+No Game Center."""
 
 CONTACT_EMAIL = "email@learnchinese.today"
 CONTACT_PHONE = "+5511991051388"

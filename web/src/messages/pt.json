@@ -343,13 +343,15 @@
     "footerNavLabel": "Legal",
     "privacyLink": "Política de Privacidade",
     "termsLink": "Termos de Uso",
+    "creditsLink": "Créditos e Licenças",
     "cookieSettings": "Configurações de cookies",
     "privacyTitle": "Política de Privacidade",
     "termsTitle": "Termos de Uso",
+    "creditsTitle": "Créditos e Licenças de Código Aberto",
     "cookieBannerTitle": "Cookies e privacidade",
     "cookieBannerBody": "Usamos cookies necessários para login, segurança e funcionamento do site. Com a sua autorização, também usamos o Google Analytics para entender como o learnchinese.today é utilizado e melhorar a experiência. Consulte a",
-    "cookieAcceptAnalytics": "Aceitar analíticos",
-    "cookieRejectAnalytics": "Só essenciais",
+    "cookieAcceptAnalytics": "Aceitar análise",
+    "cookieRejectAnalytics": "Apenas essenciais",
     "cookieDismiss": "Fechar"
   },
   "metadata": {

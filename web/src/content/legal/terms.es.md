@@ -1,234 +1,79 @@
-**Última actualización:** 17 de septiembre de 2026
+# Términos de Uso — LearnChinese Today
 
-Estos Términos de Uso regulan el acceso y uso de **learnchinese.today** (el “**Sitio**”), operado por **ITCS Webplace Ltda.**, CNPJ brasileño nº **65.998.990/0001-44** (“**Webplace**”).
+**Versión 1.0 — Borrador para revisión**  
+**Fecha: 10 de noviembre de 2026**
 
-Al utilizar el Sitio, el usuario declara haber leído estos Términos y se compromete a respetarlos.
+## 1. Presentación
+Bienvenido a **LearnChinese Today**, plataforma educativa para aprender chino mandarín, desarrollada y ofrecida por **ITCS WEBPLACE LTDA**, CNPJ brasileño **65.998.990/0001-44**, con sede en São Paulo, Brasil («Webplace»).
 
-## 1. Sobre learnchinese.today
+Estos Términos regulan **https://learnchinese.today**, la aplicación iOS LearnChinese Today, el widget Hanzi Memorize y los servicios digitales relacionados (en conjunto, la «Plataforma»). Al utilizarla, el usuario reconoce estas condiciones, sin perjuicio de las normas imperativas aplicables. Contacto: **email@learnchinese.today**.
 
-learnchinese.today es un proyecto educativo destinado al aprendizaje y práctica de la lengua china.
+## 2. Edad mínima
+La Plataforma está destinada a personas de **16 años cumplidos o más**. Los menores de 16 años no pueden crear cuentas ni usar funciones que requieran registro. Este límite es una condición del servicio y no modifica las reglas legales sobre capacidad civil, representación o asistencia. Webplace podrá restringir o cerrar proporcionalmente cuentas que no cumplan el requisito.
 
-El Sitio puede ofrecer, entre otros recursos:
+## 3. Finalidad educativa y funciones
+Según su disponibilidad, la Plataforma ofrece caracteres Hanzi, Pinyin y traducciones; vocabulario y gramática; ejercicios de ordenación de frases; animaciones de trazos; pronunciación; seguimiento de resultados y progreso; widget de memorización; y tutor educativo con inteligencia artificial.
 
-- vocabulario;
-- frases;
-- contenidos de gramática;
-- juegos y ejercicios;
-- caracteres chinos;
-- letras, materiales de estudio y recursos audiovisuales;
-- historial o progreso de aprendizaje;
-- inicio de sesión opcional;
-- tutor educativo con inteligencia artificial.
+Las funciones pueden variar entre web y aplicación. Algunas funciones web no requieren iniciar sesión; el historial, la sincronización y el tutor pueden requerir cuenta. Actualmente, la aplicación iOS exige autenticación.
 
-El Sitio está en desarrollo continuo. Las funciones pueden añadirse, modificarse, suspenderse o eliminarse.
+## 4. Gratuidad
+**LearnChinese Today es actualmente gratuito**, sin suscripciones, compras dentro de la aplicación, funciones de pago ni exigencia de tarjeta de crédito. Webplace podrá crear servicios futuros, con información clara y contratación específica cuando corresponda. El uso gratuito actual no obliga a contratar servicios futuros.
 
-## 2. Naturaleza educativa
+## 5. Cuentas y autenticación
+Algunas funciones requieren cuenta mediante los métodos disponibles, como correo electrónico, Apple, Google o Alipay, según el entorno. El usuario debe proteger sus credenciales. Vincular métodos de acceso puede requerir verificar la titularidad. Webplace podrá restringir sesiones proporcionalmente por riesgos de seguridad o infracciones de estos Términos.
 
-Los materiales y herramientas del Sitio tienen finalidad **educativa e informativa**.
+## 6. Progreso educativo
+La Plataforma podrá registrar ejercicios, respuestas, puntuaciones, niveles y evolución para seguimiento y sincronización. Estos datos se tratan conforme a la **Política de Privacidad**: **https://learnchinese.today/privacy**. La disponibilidad del historial depende de la cuenta y de las funciones ofrecidas.
 
-Aunque buscamos ofrecer contenido útil y adecuado, no garantizamos que traducciones, indicaciones de pronunciación, explicaciones gramaticales, ejemplos, respuestas generadas por IA u otros contenidos estén siempre libres de errores.
+## 7. Tutor con inteligencia artificial
+El tutor es una herramienta complementaria para aprender vocabulario y gramática. **Sus respuestas pueden contener errores o imprecisiones** y no sustituyen a profesores ni fuentes oficiales.
 
-El Sitio no sustituye profesores, materiales oficiales, instituciones educativas, exámenes oficiales ni certificaciones.
+**No introduzca contraseñas, datos personales sensibles ni información confidencial propia o ajena en las preguntas.** Según la arquitectura actual, las consultas se procesan en infraestructura administrada por Webplace, sin enviarse a servicios públicos comerciales de IA. Pueden existir límites de uso e interrupciones técnicas.
 
-## 3. Acceso al Sitio
+## 8. HSK e independencia institucional
+Las referencias a niveles **HSK (Hanyu Shuiping Kaoshi)** sirven para organizar contenidos pedagógicos. **LearnChinese Today es independiente** de las entidades responsables de los exámenes oficiales HSK; no las representa, no emite certificados oficiales ni afirma contar con patrocinio o respaldo. Su uso no garantiza aprobar exámenes, obtener certificados ni alcanzar resultados específicos.
 
-Gran parte del Sitio puede utilizarse sin iniciar sesión.
+## 9. Propiedad intelectual
+Las marcas, interfaces, programas, textos y demás elementos pertenecen a Webplace o a sus titulares. El usuario puede utilizar los recursos con fines educativos conforme a estos Términos.
 
-Determinadas funciones pueden exigir autenticación, incluidas las relacionadas con cuenta, personalización, progreso o tutor.
+Los materiales pedagógicos originales **expresamente identificados** podrán ofrecerse bajo **Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)**. Cuando se indique, dicha licencia regulará su reutilización, adaptación y distribución. **No se extiende** al código, la marca, las interfaces ni a materiales de terceros, sujetos a sus propias licencias.
 
-El Sitio puede establecer límites técnicos razonables de uso para proteger la disponibilidad, seguridad y estabilidad de la plataforma.
+## 10. Reconocimientos y agradecimientos
+Webplace agradece a los **investigadores, educadores, desarrolladores, autores, mantenedores y comunidades de software libre y educación abierta** que amplían el acceso al aprendizaje del chino. La Plataforma se beneficia de iniciativas de escritura de caracteres, investigación lingüística, tipografía, interfaces y tecnologías abiertas.
 
-## 4. Inicio de sesión con Google
+Respetamos los derechos de los titulares y conservamos los avisos y condiciones de licencia aplicables. Los créditos y licencias están disponibles en **https://learnchinese.today/credits** y, cuando corresponda, en la aplicación en **Configuración → Acerca de → Licencias incluidas**. El agradecimiento no sustituye el cumplimiento de cada licencia.
 
-El inicio de sesión con Google es opcional.
+## 11. Uso adecuado
+Está prohibido perjudicar la seguridad o disponibilidad de la Plataforma, intentar accesos no autorizados, abusar de sus recursos o distribuir código malicioso. Estas reglas no restringen derechos legítimamente concedidos por licencias abiertas de componentes específicos.
 
-Se utiliza para autenticar al usuario y habilitar funciones vinculadas a la cuenta.
+## 12. Servicios de terceros
+La Plataforma puede utilizar proveedores de autenticación, distribución, alojamiento, comunicaciones, análisis y diagnóstico. Su disponibilidad y condiciones pueden afectar al servicio. El tratamiento correspondiente de datos personales se describe en la Política de Privacidad.
 
-Para esta finalidad, el Sitio no solicita acceso al contenido de Gmail, Google Drive, Google Calendar, Google Contacts ni de otros servicios de la cuenta Google.
+## 13. Disponibilidad y evolución
+Webplace procura mantener el servicio operativo, pero no garantiza ausencia de interrupciones o errores. Podrá realizar mantenimiento, correcciones, actualizaciones, cambios o descontinuar funciones, respetando la buena fe, la transparencia y los derechos aplicables. Los cambios relevantes se comunicarán adecuadamente.
 
-El uso del inicio de sesión con Google también está sujeto a los términos y políticas aplicables de Google.
+## 14. Responsabilidades
+El aprendizaje también depende del esfuerzo y las circunstancias individuales. No garantizamos resultados académicos ni aprobación de exámenes. En la medida permitida por la ley, Webplace no responde por usos indebidos, hechos exclusivamente imputables a terceros o circunstancias fuera de su control razonable. Nada excluye responsabilidades legales irrenunciables, incluidos los derechos de consumidores.
 
-El usuario es responsable de mantener la seguridad de la cuenta Google utilizada para autenticarse.
+## 15. Privacidad
+El tratamiento de datos personales se explica en la **Política de Privacidad**: **https://learnchinese.today/privacy**.
 
-## 5. Cuenta del usuario
+## 16. Eliminación de cuenta
+El usuario puede solicitar la eliminación mediante las funciones disponibles o escribiendo a **email@learnchinese.today**. Los datos asociados se tratarán conforme a la Política de Privacidad y la ley. Algunos registros podrán conservarse cuando sea necesario por obligaciones legales o seguridad. Las estadísticas **efectivamente anonimizadas** podrán mantenerse cuando no permitan identificar al titular.
 
-El usuario debe proporcionar y mantener información compatible con un uso legítimo del servicio.
+## 17. Modificaciones
+La versión vigente estará disponible en **https://learnchinese.today/terms**. Los cambios relevantes se comunicarán de manera adecuada cuando corresponda.
 
-El usuario no debe:
+## 18. Ley aplicable y controversias
+Se aplica la legislación brasileña, sin perjuicio de las normas obligatorias de protección al consumidor y de datos de otras jurisdicciones. El usuario puede contactar a Webplace para buscar una solución amistosa. Estos Términos no limitan el acceso a la justicia ni las competencias legales obligatorias.
 
-- utilizar la cuenta de otra persona sin autorización;
-- intentar acceder a la cuenta de otro usuario;
-- compartir mecanismos de autenticación de forma que comprometa la seguridad;
-- utilizar apodos o información que vulneren derechos de terceros o la legislación aplicable.
-
-Webplace podrá suspender o limitar cuentas cuando existan indicios razonables de fraude, abuso, compromiso de seguridad o incumplimiento de estos Términos.
-
-## 6. Eliminación de cuenta
-
-Mientras no exista una herramienta automatizada de eliminación, el usuario podrá solicitar la eliminación de su cuenta por correo electrónico a:
-
+## 19. Contacto
+**ITCS WEBPLACE LTDA** — **CNPJ 65.998.990/0001-44**  
+São Paulo, Brasil  
+**https://learnchinese.today**  
 **email@learnchinese.today**
 
-La solicitud será procesada de acuerdo con la Política de Privacidad y las obligaciones legales aplicables.
 
-## 7. Uso permitido
+---
 
-El usuario podrá utilizar el Sitio para:
-
-- estudio;
-- práctica;
-- investigación personal;
-- actividades educativas;
-- uso legítimo de las funciones disponibles.
-
-El uso deberá respetar estos Términos, la legislación aplicable y los derechos de terceros.
-
-## 8. Uso prohibido
-
-Queda prohibido utilizar el Sitio para:
-
-- realizar actos ilícitos o fraudulentos;
-- transmitir malware o código malicioso;
-- intentar acceder sin autorización a cuentas, servidores, bases de datos o áreas restringidas;
-- explotar vulnerabilidades con intención de causar daños, obtener datos indebidamente o comprometer el servicio;
-- realizar ataques de denegación de servicio o interferir deliberadamente con el funcionamiento del Sitio;
-- automatizar accesos a un volumen incompatible con el uso normal;
-- realizar scraping agresivo que perjudique la infraestructura o vulnere derechos;
-- utilizar el Sitio para spam, acoso, fraude o vulneración de derechos de terceros;
-- eludir mecanismos de seguridad o límites técnicos;
-- reproducir o distribuir contenido en violación de las licencias aplicables.
-
-Nada de esta cláusula pretende impedir investigaciones de seguridad realizadas de buena fe y de forma responsable, siempre que no causen daños, no accedan a datos de terceros sin autorización y respeten la legislación aplicable.
-
-## 9. Contenido, propiedad intelectual y licencias
-
-Salvo indicación en contrario, las marcas, identidad visual, código propio, organización de la plataforma, interfaces, textos originales y demás elementos originales del Sitio pertenecen a Webplace o se utilizan con autorización.
-
-Determinados materiales educativos, bibliotecas, fuentes, bases de datos o componentes de terceros pueden estar sujetos a sus propias licencias, incluidas licencias abiertas como Creative Commons, MIT o equivalentes.
-
-Cuando se indique una licencia específica junto a un contenido, esa licencia regirá dicho material.
-
-El uso del Sitio no concede al usuario derechos de propiedad sobre marcas, software, bases de datos o contenido protegido.
-
-## 10. Contenido y enlaces de terceros
-
-El Sitio puede contener referencias, enlaces, contenido incorporado o materiales proporcionados por terceros.
-
-La existencia de un enlace o referencia no implica necesariamente respaldo, garantía o control sobre un servicio externo.
-
-El usuario debe consultar los términos y políticas aplicables de los servicios de terceros que utilice.
-
-## 11. Tutor con inteligencia artificial
-
-El Sitio puede proporcionar un tutor basado en inteligencia artificial.
-
-Las respuestas:
-
-- se generan automáticamente;
-- pueden contener errores, omisiones o interpretaciones inadecuadas;
-- deben utilizarse como apoyo educativo;
-- no constituyen certificación de dominio del idioma;
-- no sustituyen asesoramiento profesional o académico cuando este sea necesario.
-
-El usuario es responsable de evaluar críticamente las respuestas antes de utilizarlas para decisiones importantes.
-
-## 12. Contenido enviado por el usuario al tutor
-
-Al enviar texto al tutor, el usuario concede a Webplace una autorización limitada para tratar ese contenido únicamente en la medida necesaria para:
-
-- proporcionar la función solicitada;
-- generar una respuesta;
-- mantener la seguridad e integridad del servicio;
-- diagnosticar problemas técnicos;
-- cumplir obligaciones legales aplicables.
-
-El usuario declara que no enviará contenido que vulnere derechos de terceros o cuyo tratamiento por el Sitio sea ilícito.
-
-El usuario debe evitar introducir datos sensibles, contraseñas, documentos de identidad, información financiera, secretos o información confidencial.
-
-## 13. Privacidad y cookies
-
-El tratamiento de datos personales se rige por la **Política de Privacidad** de learnchinese.today.
-
-El Sitio utiliza cookies y tecnologías similares, incluidas tecnologías necesarias para su funcionamiento y, de acuerdo con la elección aplicable del usuario, tecnologías analíticas.
-
-El usuario podrá gestionar las preferencias disponibles mediante el mecanismo de cookies proporcionado en el Sitio.
-
-## 14. Disponibilidad
-
-El Sitio se proporciona según su disponibilidad técnica.
-
-No garantizamos funcionamiento ininterrumpido, ausencia de errores ni disponibilidad permanente de ninguna función.
-
-Pueden producirse:
-
-- mantenimiento;
-- actualizaciones;
-- fallos de proveedores;
-- interrupciones temporales;
-- cambios de infraestructura;
-- interrupciones por motivos de seguridad.
-
-Cuando sea razonablemente posible, buscamos restablecer el servicio y preservar su integridad.
-
-## 15. Servicio gratuito y funciones futuras
-
-En la versión actualmente descrita, el Sitio no procesa pagos.
-
-Webplace podrá ofrecer en el futuro planes de pago, suscripciones, funciones premium u otras formas de monetización.
-
-No se realizará ningún cobro sin proporcionar información adecuada al usuario y obtener la actuación o aceptación correspondiente cuando sea exigible.
-
-## 16. Limitación de responsabilidad
-
-En la máxima medida permitida por la legislación aplicable, Webplace no será responsable de:
-
-- interrupciones temporales inevitables;
-- pérdidas derivadas de un uso contrario a las instrucciones del Sitio;
-- decisiones adoptadas exclusivamente sobre la base de respuestas automatizadas o contenido educativo sin verificación adecuada;
-- actos o fallos de servicios de terceros fuera del control razonable de Webplace;
-- daños indirectos o consecuenciales cuando su exclusión esté permitida legalmente.
-
-Nada en estos Términos excluye o limita responsabilidades que legalmente no puedan excluirse, incluidos los derechos que puedan estar protegidos por la legislación de defensa del consumidor.
-
-## 17. Seguridad y uso abusivo
-
-Webplace podrá adoptar medidas razonables para proteger el Sitio, los usuarios y la infraestructura, incluyendo:
-
-- limitación de solicitudes;
-- bloqueo de tráfico malicioso;
-- finalización de sesiones;
-- suspensión de cuentas;
-- conservación de logs de seguridad;
-- investigación de incidentes.
-
-Las medidas serán proporcionales al riesgo correspondiente y observarán la legislación aplicable cuando sea necesario.
-
-## 18. Niños y adolescentes
-
-El Sitio es educativo, pero no está dirigido específicamente a niños.
-
-Cuando niños o adolescentes utilicen el Sitio, se recomienda supervisión de sus padres o responsables, especialmente en funciones que impliquen cuentas, envío de contenido o interacción con inteligencia artificial.
-
-El tratamiento de datos personales de niños y adolescentes seguirá la Política de Privacidad y la legislación aplicable, atendiendo siempre a su interés superior.
-
-## 19. Cambios en el Sitio y en estos Términos
-
-Webplace podrá actualizar el Sitio y estos Términos para reflejar nuevas funciones, cambios técnicos, novedades legales o mejoras del servicio.
-
-La versión vigente se identificará mediante la fecha indicada al inicio.
-
-Cuando un cambio afecte materialmente a los derechos u obligaciones del usuario, podrán adoptarse medidas adicionales de comunicación o solicitarse una nueva actuación del usuario, según corresponda.
-
-## 20. Ley aplicable
-
-Estos Términos se rigen por las leyes de la **República Federativa de Brasil**.
-
-Esta disposición no excluye los derechos imperativos que puedan corresponder al usuario conforme a la legislación aplicable, incluidas las normas de protección de datos y defensa del consumidor.
-
-## 21. Contacto
-
-**ITCS Webplace Ltda.**  
-CNPJ 65.998.990/0001-44  
-https://learnchinese.today  
-**email@learnchinese.today**
+<a id="简体中文"></a>

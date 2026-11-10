@@ -129,31 +129,43 @@ Overrides: `DEPLOY_PROD_HOST`, `DEPLOY_PROD_DIR`, `DEPLOY_PROD_RESTART=1`.
 
 ### Pré-deploy (nov 2026) — ainda não é deploy
 
-Este bloco descreve o que está no `main` local **antes** de `./start.sh --prod --upload`. Não dispara produção.
+Este bloco descreve o WIP local **antes** de `./start.sh --prod --upload`. Não dispara produção.
 
-**Entra neste lote (site):**
+**Lote site (ainda por commitir / deployar):**
 
-- Vínculo de conta com sessão activa: `POST /api/account/link` e confirmação por token. Se o e-mail já pertence a outro utilizador libertado, o progresso, contas, sessões e eventos do iniciador passam para esse dono e o utilizador iniciador é apagado. A UI de Conta (site e app) ainda não chama isto.
-- Índices novos (`users` por e-mail, `progress`, `game_rounds`, `events`) e `PRAGMA journal_mode=WAL` na abertura da base. `CREATE INDEX IF NOT EXISTS` corre no arranque; o ficheiro `*.sqlite` de produção **não** vai no upload.
-- API só de leitura `GET /api/observer`. Fica **desligada** enquanto `OBSERVER_API_KEY` (ou `OBSERVER_TOKEN`) não existir no `server.env`. Não definir essa chave neste deploy.
-- Sem dependências npm novas: o remoto continua sem `npm ci`.
+- Termos e Privacidade novos (pt/en/es/zh), originais em `docs/legal/`. As páginas `/privacy` e `/terms` leem esses textos. Cabeçalho ainda diz **minuta**. Produção ainda serve a versão antiga até ao upload.
+- Página `/credits` (créditos e licenças OSS) + link no rodapé. Listagens ASC já apontam para `/credits` — precisa estar live antes do Submit.
+- Attribution/UTM no analytics do site (`web/src/lib/attribution.ts`).
+- Já no `main` (commit anterior): vínculo de conta (`POST /api/account/link`), índices SQLite + WAL, `GET /api/observer` (off sem `OBSERVER_API_KEY`).
 
-**Fora deste lote:**
+**Lote app (submodule WIP, por commitir):**
 
-- `appMobile` tem alterações iOS por commitar no submodule (conta, sync, banco de frases). O ponteiro do submodule no repo pai não muda até esse commit.
-- `ianthomaz/site_laoshiPING/` é rascunho pessoal — não vai no commit de produto.
-- `web/scripts/.cache/` é cache local.
+- Firebase Analytics/Crashlytics + `GoogleService-Info.plist`.
+- Textos legais embutidos em `Resources/Legal/` + aviso 16+ na conta.
+- Pedido de avaliação (StoreKit) após rondas; `PrivacyInfo.xcprivacy` actualizado.
+- Artes ASC novas: header/search PNG+MP4, elementos watercolor, 6 reels, áudio, `listing-pt/es.txt`.
+- Pipeline Remotion/`scripts/*watercolor*` no monorepo (fonte das artes).
 
-**Ordem segura, quando o dono pedir o deploy:**
+**App Store Connect (API, sem Submit) — estado 10 nov 2026:**
 
-1. `cd web && npx next build && npm run build:webplace && npx eslint src && npx tsc --noEmit`
-2. `npm run test:identity && npm run test:account-link && npm run test:alipay`
-3. Confirmar que `web/deploy/server.env` de produção **não** traz `OBSERVER_API_KEY`.
-4. Backup do SQLite no servidor (o upload preserva o ficheiro, mas o primeiro `getDb()` passa a WAL e cria índices).
-5. `./start.sh --prod` no Mac (build local).
-6. `DEPLOY_PROD_RESTART=1 ./start.sh --prod --upload`
+- App `6832237621` · versão **1.0** · build **3** · `PREPARE_FOR_SUBMISSION`.
+- Locales: en-GB, en-US, pt-BR, es-MX, es-ES — subtítulos, descrições, promo, keywords, privacy URL, screenshots iPhone 6.7" + iPad 13" (6 cada).
+- Review notes SIWA · preço grátis · idade 16+ · sem IAP.
+- `whatsNew` **não editável** na 1.0 (STATE_ERROR da Apple) — normal no primeiro release.
+- Cabeçalho/busca 3840 (PNG novo no disco): media de featuring / marketing **não** está na API de versão; repor na UI ASC se a Apple mostrar os antigos.
+- Reels MP4: fora da ficha da versão (úteis para redes / marketing, não substituem App Preview obrigatório).
+
+**Ordem segura, quando o dono pedir o deploy do site:**
+
+1. Commit site + submodule (se ainda WIP).
+2. `cd web && npx next build && npm run build:webplace && npx eslint src && npx tsc --noEmit`
+3. `npm run test:identity && npm run test:account-link && npm run test:alipay`
+4. Confirmar que `web/deploy/server.env` de produção **não** traz `OBSERVER_API_KEY`.
+5. Backup do SQLite no servidor.
+6. `./start.sh --prod` no Mac → `DEPLOY_PROD_RESTART=1 ./start.sh --prod --upload`
 7. `cd web && npm run remote:handshake`
-8. Smoke: login Google/Apple/e-mail, uma ronda de jogo com sessão, pack da app. Não exercitar merge de contas em utilizadores reais neste primeiro reload.
+8. Smoke: `/privacy` `/terms` `/credits` (textos novos), login, uma ronda. Não exercitar merge de contas reais neste reload.
+9. Só depois: Submit App Review (quando o dono pedir).
 
 ### Cloudflare DNS (resumo)
 

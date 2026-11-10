@@ -1,297 +1,87 @@
-**Última actualización:** 17 de septiembre de 2026
+# POLÍTICA DE PRIVACIDAD — Español
 
-**ITCS Webplace Ltda.**, inscrita en Brasil bajo el CNPJ nº **65.998.990/0001-44** (“**Webplace**”, “**nosotros**” o el “**Responsable**”), opera **learnchinese.today** (el “**Sitio**”), una plataforma educativa orientada al aprendizaje de chino.
+**Versión 1.0 — Borrador**
 
-Esta Política de Privacidad explica qué datos personales pueden ser tratados en el Sitio, para qué finalidades, cómo pueden compartirse, durante cuánto tiempo pueden conservarse y cómo los usuarios pueden ejercer sus derechos.
+## 1. Presentación
 
-## 1. Responsable del tratamiento
+**LearnChinese Today** es una plataforma educativa para aprender mandarín operada por **ITCS WEBPLACE LTDA**, CNPJ brasileño **65.998.990/0001-44**, con sede en São Paulo, Brasil («Webplace»). Esta Política comprende **https://learnchinese.today**, la aplicación iOS **LearnChinese Today** y sus funciones integradas, incluidas **Hanzi Memorize** (memorización y widget de la propia aplicación) y **Phrase Games**. **Hanzi Memorize no es una aplicación ni un servicio independiente.** Webplace es responsable del tratamiento de los datos personales bajo su responsabilidad. Contacto: **email@learnchinese.today**.
 
-**Responsable:** ITCS Webplace Ltda.  
-**CNPJ:** 65.998.990/0001-44  
-**Sitio web:** https://learnchinese.today  
-**Contacto de privacidad y derechos:** email@learnchinese.today
+## 2. Principios y características del servicio
 
-## 2. Datos que tratamos
+Buscamos tratar únicamente los datos adecuados para fines educativos, de seguridad y mejora del servicio. Actualmente, la plataforma es gratuita, no muestra anuncios, no vende datos personales, no solicita IDFA ni acceso a GPS preciso, cámara, micrófono, contactos o fotos para sus funciones educativas. Las herramientas de análisis y diagnóstico se explican más adelante; la ausencia de publicidad no implica ausencia de tratamiento de datos técnicos.
 
-Los datos tratados dependen de la forma en que el usuario utilice el Sitio.
+## 3. Categorías de datos
 
-### 2.1. Uso sin iniciar sesión
+Según el uso, tratamos: **(a)** correo electrónico, nombre o apodo, identificador interno e identificadores de proveedores de acceso; **(b)** credenciales protegidas, tokens y registros de sesión; **(c)** ejercicios, rondas, aciertos, puntuaciones, niveles HSK, historial y preferencias de estudio; **(d)** páginas visitadas, eventos de uso, origen de campañas, idioma, navegador, sistema operativo, identificadores técnicos o seudónimos y datos de fallos; **(e)** direcciones IP y registros de conexión cuando sean necesarios para la operación y seguridad. Actualmente, el registro no solicita fecha de nacimiento. El usuario puede utilizar el correo privado de retransmisión de Apple.
 
-Partes del Sitio pueden utilizarse sin crear una cuenta ni iniciar sesión.
+## 4. Finalidades del tratamiento
 
-En ese caso, podemos tratar información relacionada con el uso del Sitio, incluyendo:
+Utilizamos los datos para ofrecer el sitio y la aplicación, autenticar cuentas, sincronizar el progreso, proporcionar ejercicios y funciones de memorización, atender solicitudes, proteger la infraestructura, investigar fallos, comprender el uso y mejorar el aprendizaje, así como cumplir obligaciones legales. No vendemos información personal a intermediarios de datos.
 
-- idioma de la interfaz;
-- nivel o etapa de aprendizaje;
-- frases o actividades mostradas;
-- respuestas, aciertos y errores;
-- identificador de ronda o sesión de juego;
-- fecha y hora de los eventos;
-- información técnica básica, como navegador, dispositivo, dirección IP y user-agent, cuando sea registrada por los sistemas de infraestructura;
-- un identificador seudónimo o anónimo almacenado localmente en el navegador para relacionar eventos del juego en el mismo dispositivo;
-- preferencia de tema y otras preferencias locales.
+## 5. Bases jurídicas
 
-No asociamos intencionadamente esta información al nombre o correo electrónico de un usuario que no haya iniciado sesión.
+Según la finalidad y la legislación aplicable, el tratamiento podrá basarse en la **ejecución de un contrato** (cuenta, autenticación y progreso), el **interés legítimo** debidamente evaluado (seguridad, diagnóstico y mejoras proporcionadas), el **cumplimiento de obligaciones legales** o el **consentimiento** cuando sea exigible, especialmente para tecnologías analíticas no esenciales. También se aplican las bases y requisitos correspondientes del RGPD cuando proceda. Aceptar los Términos no sustituye el consentimiento específico exigido por ley.
 
-### 2.2. Inicio de sesión con Google
+## 6. Inicio de sesión con terceros
 
-El inicio de sesión con Google es opcional y se utiliza exclusivamente para autenticar e identificar la cuenta dentro del Sitio.
+Podemos ofrecer acceso mediante **Apple, Google, Alipay** o correo electrónico, según disponibilidad. Recibimos los datos necesarios para vincular y autenticar la cuenta según el método elegido. Estos proveedores también pueden tratar datos de manera independiente conforme a sus políticas. Vincular cuentas puede requerir confirmación por correo u otra verificación de seguridad.
 
-Al iniciar sesión con Google, el servicio de autenticación de Google puede proporcionar al Sitio, de acuerdo con el funcionamiento de Google y los permisos mostrados al usuario:
+## 7. Tutor de inteligencia artificial
 
-- nombre;
-- dirección de correo electrónico;
-- imagen o URL de la foto de perfil, cuando esté disponible;
-- un identificador técnico necesario para reconocer o vincular la cuenta autenticada.
+El tutor del portal procesa preguntas en infraestructura gestionada por Webplace mediante un modelo local, **sin enviarlas a servicios públicos comerciales de IA**. La aplicación no conserva un historial permanente de conversaciones en su base de datos; los mensajes permanecen temporalmente en la memoria del navegador durante la sesión. No añadimos automáticamente nombre, correo ni ID de cuenta al texto enviado al modelo. Sin embargo, la pregunta puede contener información personal escrita voluntariamente. **No introduzca contraseñas, datos sensibles ni información confidencial.** Pueden conservarse registros técnicos de conexión para seguridad y operación, no para archivar conversaciones.
 
-**learnchinese.today no solicita acceso a Gmail, Google Drive, Google Calendar, Google Contacts ni al contenido de otros servicios de la cuenta Google** para el inicio de sesión descrito en esta Política.
+## 8. Google Analytics en el sitio web
 
-Los datos recibidos a través de Google se utilizan únicamente para autenticar al usuario, mantener la cuenta y la sesión, identificar al usuario dentro de las funciones del Sitio y, cuando corresponda, asociar preferencias o progreso de aprendizaje a la cuenta.
+El sitio utiliza **Google Analytics 4 (GA4)** para evaluar visitas, navegación e interacciones educativas, como rondas completadas, consultas de vocabulario y apertura del tutor, además de datos de campañas. Puede tratar cookies, identificadores seudónimos y datos técnicos; **seudonimizar no equivale a anonimizar**. Según la implementación comunicada, el script analítico no se carga antes de la aceptación en el aviso. Rechazar o no responder no impide utilizar las funciones básicas del sitio. No usamos esta integración para mostrar anuncios.
 
-### 2.3. Sesión de autenticación
+## 9. Firebase en la aplicación
 
-Cuando el usuario inicia sesión, el Sitio utiliza un mecanismo de autenticación basado en **Auth.js** y una cookie de sesión.
+Las versiones de la aplicación iOS podrán utilizar **Firebase Analytics** para eventos de uso y **Firebase Crashlytics** para diagnosticar fallos. Según la configuración publicada, estas herramientas podrán tratar identificadores técnicos, ID seudónimo de cuenta, eventos de ejercicios, características del dispositivo e informes de errores. Esos datos pueden ser personales. La integración se informó como implementada pero todavía no publicada en la versión examinada; las declaraciones de privacidad de App Store deben coincidir con la versión distribuida. Según la configuración comunicada, la aplicación no solicita IDFA ni realiza seguimiento publicitario entre servicios de otras empresas.
 
-La cookie de autenticación está configurada para mantener la sesión durante aproximadamente **30 días**, aunque puede expirar antes, renovarse según el uso o invalidarse cuando el usuario cierre sesión o cuando sea necesario por motivos de seguridad.
+## 10. Hanzi Memorize y el widget integrado
 
-Cuando sea técnicamente aplicable, las cookies de autenticación se configuran con medidas de protección adecuadas, como atributos `HttpOnly`, `Secure` y políticas `SameSite` apropiadas.
+**Hanzi Memorize es una función de la aplicación LearnChinese Today**, al igual que **Phrase Games**; no es una aplicación separada. El widget incluido en la propia aplicación puede mostrar caracteres en la pantalla de inicio o de bloqueo del iPhone. Utiliza almacenamiento local compartido entre la aplicación y su extensión para el estado de sesión y las preferencias de intervalo, traducción y Pinyin. Según la documentación técnica, el widget no guarda correos electrónicos ni historial individual de telemetría en ese espacio compartido.
 
-### 2.4. Apodo y progreso
+## 11. Proveedores y cesión de datos
 
-El Sitio puede permitir al usuario definir un apodo y puede almacenar información sobre progreso educativo, preferencias o desempeño.
+Podemos compartir los datos necesarios para prestar el servicio con **Hetzner** (alojamiento), **Apple** (acceso y App Store), **Google** (acceso, GA4 y herramientas Firebase), **Alipay/Ant Group** (acceso, cuando esté disponible) y **Resend** (correos transaccionales). Los proveedores pueden actuar como encargados o responsables independientes según la actividad. El intercambio se limita a las finalidades descritas y no constituye venta de datos personales.
 
-Cuando esta información esté vinculada a una cuenta autenticada, podrá constituir dato personal.
+## 12. Transferencias internacionales
 
-### 2.5. Tutor con inteligencia artificial
+La infraestructura principal y la base de datos están alojadas, según lo informado, en **Alemania**, con copias de contingencia en **Brasil**. Los servicios de autenticación, análisis, diagnóstico y correo pueden implicar otros países, incluidos Estados Unidos y otros lugares según el proveedor. Webplace observará los mecanismos y garantías legalmente exigibles para transferencias internacionales conforme a la LGPD y, cuando proceda, al RGPD. La ubicación de un servidor no sustituye la evaluación jurídica de la transferencia.
 
-El Sitio ofrece o puede ofrecer funciones de tutor educativo con inteligencia artificial.
+## 13. Conservación y copias de seguridad
 
-Cuando el usuario envía un mensaje al tutor:
+Los datos de cuenta y progreso se conservan mientras sean necesarios para ofrecer las funciones, salvo retenciones legales. Según la configuración comunicada, los registros técnicos de acceso pueden conservarse hasta **14 días**, y las copias físicas de la base de datos rotan en un máximo de **30 días**. Los proveedores pueden aplicar plazos propios. La eliminación de la cuenta no borra inmediatamente las copias existentes en respaldos; si se restaura una copia, deben respetarse las eliminaciones anteriores.
 
-- el texto necesario para generar la respuesta se envía desde el backend de learnchinese.today a infraestructura de IA operada por Webplace;
-- la implementación actual utiliza una **API propietaria basada en Ollama**, operada dentro de la infraestructura de Webplace;
-- el nombre, correo electrónico y otros identificadores directos del usuario no se incluyen intencionadamente en el payload enviado al modelo de lenguaje;
-- el usuario no debe introducir voluntariamente datos personales sensibles, información confidencial o datos personales de terceros en los mensajes del tutor.
+## 14. Eliminación de cuenta y estadísticas
 
-Las conversaciones pueden ser tratadas durante el tiempo necesario para generar respuestas, mantener la seguridad, diagnosticar problemas técnicos y operar la función, de acuerdo con la arquitectura del servicio.
+El usuario puede eliminar su cuenta mediante los controles de la aplicación o escribir a **email@learnchinese.today**. El procedimiento informado elimina del banco operativo los datos de registro, accesos vinculados, sesiones, progreso y rondas asociados a la cuenta. Los eventos históricos podrán conservarse para fines estadísticos u operativos cuando la ley lo permita. **Eliminar únicamente `user_id` no garantiza anonimización:** los registros con `anon_id`, `round_id`, fechas, agente de usuario u otros atributos pueden seguir siendo datos personales si resulta razonablemente posible identificar a alguien. Solo las estadísticas efectivamente anonimizadas quedan fuera del régimen de datos personales en los términos legales. Las retenciones obligatorias y respaldos se rigen por esta Política.
 
-### 2.6. Google Analytics
+## 15. Derechos de los titulares
 
-El Sitio utiliza **Google Analytics 4 (GA4)** para comprender estadísticamente cómo se utiliza el Sitio.
+Conforme a la legislación aplicable, los titulares podrán solicitar confirmación del tratamiento, acceso, rectificación, eliminación o bloqueo en los casos legales, portabilidad cuando proceda, información sobre cesiones, oposición, retirada del consentimiento y revisión de decisiones automatizadas cuando corresponda. Las solicitudes pueden enviarse a **email@learnchinese.today**. Podremos exigir verificación proporcional de identidad. Actualmente no hay botón automático de exportación; las solicitudes de copia o portabilidad se tramitan mediante soporte.
 
-El identificador de medición actual es:
+## 16. Cookies y controles
 
-`G-2YMPSSQJND`
+El portal puede utilizar tecnologías necesarias para sesiones, autenticación, preferencias y seguridad. Las cookies analíticas no esenciales, incluidas las de GA4, requieren autorización previa cuando la ley lo exija. Rechazarlas no impide el uso básico. La aplicación iOS puede usar identificadores de SDK distintos de las cookies del navegador; sus finalidades y controles pertinentes se describen en las secciones anteriores.
 
-Google Analytics puede tratar información como:
+## 17. Seguridad
 
-- páginas visitadas;
-- eventos de navegación;
-- características y duración de la sesión;
-- información aproximada de ubicación;
-- información del navegador y dispositivo;
-- identificadores almacenados en cookies o tecnologías equivalentes.
+Aplicamos medidas técnicas y organizativas proporcionadas para proteger cuentas, credenciales, sesiones e infraestructura frente a accesos no autorizados, pérdidas o usos indebidos. Ningún servicio conectado a internet está totalmente libre de incidentes. Notificaremos a las autoridades y titulares cuando la ley lo exija.
 
-Las cookies y tecnologías analíticas de Google Analytics deben activarse únicamente después de la elección correspondiente del usuario en el mecanismo de consentimiento de cookies, salvo que una configuración técnica futura permita tratamiento analítico sin almacenamiento sujeto a consentimiento y exista una base jurídica adecuada.
+## 18. Edad mínima y adolescentes
 
-## 3. Cookies, localStorage y tecnologías similares
+El servicio está dirigido a personas de **16 años cumplidos o más**. Actualmente, el registro no recoge la fecha de nacimiento. Si sabemos que una cuenta incumple la edad mínima, podremos restringirla o eliminarla conforme a la ley. El límite de edad no elimina las protecciones legales aplicables a adolescentes.
 
-El Sitio utiliza cookies, `localStorage` y tecnologías similares para diferentes finalidades.
+## 19. Usuarios internacionales y actualizaciones
 
-### 3.1. Tecnologías estrictamente necesarias
+El servicio puede utilizarse internacionalmente. Respetamos las normas obligatorias de protección de datos aplicables a los usuarios según corresponda. Esta Política puede modificarse por cambios técnicos, operativos o legales. La versión vigente se publicará en **https://learnchinese.today/privacy**, con avisos adicionales cuando sean exigibles. Las traducciones facilitan la comprensión y no limitan los derechos legales imperativos.
 
-Se utilizan para funciones esenciales o expresamente solicitadas por el usuario, como:
+## 20. Contacto
 
-- autenticación;
-- seguridad;
-- mantenimiento de la sesión;
-- funcionamiento técnico básico del Sitio.
+**ITCS WEBPLACE LTDA** — CNPJ **65.998.990/0001-44** — São Paulo, Brasil. **Sitio web:** https://learnchinese.today · **Correo:** email@learnchinese.today.
 
-Estas tecnologías pueden utilizarse independientemente de las preferencias sobre cookies analíticas cuando sean necesarias para prestar el servicio solicitado por el usuario.
+---
 
-### 3.2. Preferencias y almacenamiento local
-
-El Sitio puede almacenar localmente en el navegador:
-
-- preferencia de tema;
-- idioma o preferencias de interfaz;
-- un identificador seudónimo o anónimo del juego.
-
-El usuario puede eliminar estos datos mediante la configuración de su navegador.
-
-### 3.3. Cookies analíticas
-
-Las cookies analíticas, incluidas las relacionadas con Google Analytics, se utilizan para medir audiencia, comprender patrones de uso y mejorar el Sitio.
-
-Cuando el tratamiento dependa del consentimiento, el usuario podrá:
-
-- aceptar las cookies analíticas;
-- rechazarlas;
-- cambiar posteriormente su elección mediante el mecanismo de preferencias de cookies disponible en el Sitio.
-
-El rechazo de cookies analíticas no debe impedir el acceso a las funciones esenciales del Sitio.
-
-### 3.4. Cookies de Google Analytics
-
-Google Analytics puede utilizar cookies como `_ga` y cookies relacionadas con la propiedad de Analytics para distinguir usuarios y sesiones.
-
-La duración de las cookies y los períodos de conservación pueden variar según la configuración de la propiedad de Analytics, las limitaciones del navegador y las propias políticas de Google.
-
-Más información sobre las prácticas de privacidad de Google:
-
-https://policies.google.com/privacy
-
-## 4. Finalidades y bases jurídicas
-
-Dependiendo del contexto, podemos utilizar las siguientes bases jurídicas previstas en la Ley brasileña nº 13.709/2018 — Ley General de Protección de Datos (“LGPD”):
-
-| Finalidad | Ejemplos de datos | Base jurídica principal |
-|---|---|---|
-| Proporcionar las funciones del Sitio | datos técnicos, preferencias, eventos necesarios | ejecución de servicio/contrato o procedimientos solicitados por el usuario; interés legítimo cuando corresponda |
-| Inicio de sesión y mantenimiento de cuenta/sesión | nombre, email, identificador técnico, imagen, cookie de sesión | ejecución de servicio/contrato o procedimientos solicitados por el titular |
-| Seguridad, prevención de abuso y protección de infraestructura | logs, IP, user-agent, eventos técnicos | interés legítimo y, cuando corresponda, ejercicio regular de derechos |
-| Mejorar juegos y funciones educativas | eventos de uso y desempeño, preferentemente seudonimizados o agregados | interés legítimo, respetando los derechos y expectativas razonables del titular |
-| Google Analytics y medición de audiencia con cookies analíticas | identificadores analíticos, eventos y datos técnicos | consentimiento cuando sea exigible y de acuerdo con la elección realizada en el banner |
-| Tutor de IA | texto enviado por el usuario y contexto necesario | ejecución del servicio solicitado por el usuario |
-| Cumplimiento legal y solicitudes válidas de autoridades | datos necesarios en cada caso | cumplimiento de obligación legal o regulatoria |
-
-Cuando el tratamiento se base en el consentimiento, este podrá retirarse sin afectar a la licitud del tratamiento realizado antes de la retirada.
-
-## 5. Compartición de datos
-
-Los datos personales pueden ser tratados o compartidos, cuando sea necesario, con:
-
-### Google
-
-Utilizado para:
-
-- inicio de sesión con Google;
-- Google Analytics, cuando esté autorizado.
-
-La relación del usuario con los servicios de Google también se rige por las políticas propias de Google.
-
-### Alojamiento e infraestructura
-
-Webplace utiliza infraestructura propia o contratada para alojamiento, bases de datos, seguridad, logs, entrega del Sitio y otras funciones técnicas.
-
-Los principales datos operativos del Sitio se alojan actualmente en infraestructura situada en **Brasil, incluido el Estado de São Paulo**, de acuerdo con la configuración actual del servicio.
-
-### Infraestructura de IA de Webplace
-
-Los mensajes enviados al tutor pueden remitirse a una API propietaria basada en Ollama, operada por Webplace, únicamente en la medida necesaria para generar la respuesta solicitada.
-
-No enviamos intencionadamente el nombre o correo electrónico del usuario en el payload proporcionado al modelo de lenguaje.
-
-### Autoridades y obligaciones legales
-
-Los datos podrán facilitarse cuando sea necesario para cumplir la legislación aplicable, órdenes judiciales o solicitudes válidas de autoridades competentes.
-
-### No venta de datos personales
-
-**Webplace no vende datos personales de los usuarios de learnchinese.today.**
-
-## 6. Tratamiento internacional
-
-Aunque la infraestructura principal del Sitio se encuentra, según la configuración informada, en Brasil, determinados proveedores — especialmente Google — pueden tratar o almacenar datos en otros países según su propia infraestructura.
-
-Cuando exista transferencia internacional de datos personales, se observarán los requisitos aplicables de la LGPD y las salvaguardias razonables correspondientes.
-
-## 7. Conservación de los datos
-
-Los datos personales se conservan únicamente durante el tiempo necesario para las finalidades descritas en esta Política, observando obligaciones legales, seguridad, prevención del fraude, ejercicio de derechos y limitaciones técnicas razonables.
-
-Como regla general:
-
-- **datos de cuenta:** mientras la cuenta o relación con el Sitio permanezca activa o hasta una solicitud válida de eliminación, salvo excepciones legales de conservación;
-- **sesión:** durante el período de validez de la sesión, generalmente alrededor de 30 días, salvo renovación, cierre o invalidación;
-- **eventos de juego y métricas internas:** durante el tiempo razonablemente necesario para analizar y mejorar el servicio, preferiblemente agregados o anonimizados cuando los datos individuales dejen de ser necesarios;
-- **datos de Google Analytics:** según la configuración de la propiedad y las políticas de retención de Google;
-- **logs técnicos y de seguridad:** durante un período razonablemente necesario para seguridad, diagnóstico y prevención de abusos;
-- **datos exigidos por ley o para reclamaciones:** durante el período exigido o permitido por la legislación aplicable.
-
-## 8. Derechos del titular
-
-De acuerdo con la LGPD, cuando corresponda, el titular podrá solicitar:
-
-- confirmación de la existencia de tratamiento;
-- acceso a sus datos personales;
-- corrección de datos incompletos, inexactos o desactualizados;
-- anonimización, bloqueo o eliminación de datos innecesarios, excesivos o tratados en incumplimiento de la LGPD;
-- portabilidad cuando corresponda y esté reglamentada;
-- información sobre compartición de datos;
-- retirada del consentimiento cuando esa sea la base jurídica utilizada;
-- eliminación de datos tratados con base en consentimiento, salvo excepciones legales;
-- oposición a determinados tratamientos realizados sin consentimiento cuando no se cumplan los requisitos de la LGPD;
-- los demás derechos previstos por la legislación aplicable.
-
-## 9. Solicitudes de acceso, corrección o eliminación de cuenta
-
-Actualmente, las solicitudes relativas a cuentas y datos personales, incluidas las **solicitudes de eliminación de cuenta**, deben enviarse a:
-
-**email@learnchinese.today**
-
-Para proteger al usuario, podremos solicitar información razonablemente necesaria para verificar la identidad y legitimidad del solicitante antes de eliminar o facilitar datos.
-
-La eliminación de una cuenta no implica necesariamente la eliminación inmediata de todos los registros cuando su conservación sea exigida o permitida por ley, por motivos de seguridad, prevención del fraude, cumplimiento de obligaciones legales o ejercicio regular de derechos.
-
-## 10. Niños y adolescentes
-
-learnchinese.today es un proyecto educativo, pero **no está dirigido específicamente a niños y no exige, de forma general, que los usuarios indiquen su edad antes de acceder al Sitio**.
-
-No buscamos conscientemente recopilar datos personales de niños más allá de lo necesario para las funciones que utilicen.
-
-Cuando el tratamiento implique datos personales de niños o adolescentes, Webplace observará su **interés superior**, el artículo 14 de la LGPD y las demás normas aplicables.
-
-Los padres o responsables legales que tengan conocimiento de que un niño bajo su responsabilidad utiliza el Sitio y deseen solicitar información, corrección o eliminación podrán contactar con:
-
-**email@learnchinese.today**
-
-## 11. Seguridad
-
-Adoptamos medidas técnicas y administrativas razonables y proporcionales al tamaño y naturaleza del Sitio, incluyendo cuando corresponda:
-
-- HTTPS;
-- controles de acceso a la infraestructura;
-- cookies de autenticación protegidas;
-- separación entre datos de autenticación y contenido enviado al tutor de IA;
-- minimización de datos en solicitudes de IA;
-- mecanismos de registro, monitorización y seguridad.
-
-Ningún servicio conectado a internet puede garantizar una seguridad absoluta. Si se produce un incidente relevante de datos personales, adoptaremos las medidas exigidas por la LGPD y por la normativa aplicable de la ANPD.
-
-## 12. Resultados automatizados
-
-El tutor de IA genera respuestas automatizadas con fines educativos.
-
-Según el funcionamiento actualmente descrito, el Sitio no utiliza el tutor de IA para adoptar decisiones con efectos jurídicos, financieros, crediticios, laborales u otros efectos similares significativos sobre el usuario.
-
-## 13. Información introducida por el usuario
-
-El usuario debe evitar introducir en el tutor o en otros campos de texto libre:
-
-- datos personales sensibles;
-- contraseñas;
-- documentos de identidad;
-- información financiera;
-- secretos comerciales;
-- información confidencial;
-- datos personales de terceros sin autorización.
-
-## 14. Cambios en esta Política
-
-Podemos actualizar esta Política para reflejar cambios en el Sitio, la legislación aplicable o nuestras prácticas de tratamiento.
-
-La fecha de la última actualización aparecerá al principio del documento.
-
-Cuando un cambio relevante requiera nueva comunicación, consentimiento u otra acción del usuario, adoptaremos las medidas correspondientes.
-
-## 15. Contacto y ANPD
-
-Las dudas y solicitudes de privacidad pueden enviarse a:
-
-**ITCS Webplace Ltda.**  
-CNPJ 65.998.990/0001-44  
-https://learnchinese.today  
-**email@learnchinese.today**
-
-Cuando corresponda, el titular también podrá presentar solicitudes ante la **Autoridade Nacional de Proteção de Dados — ANPD** de Brasil, de acuerdo con la legislación aplicable.
+<a id="zh-hans"></a>

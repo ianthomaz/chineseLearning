@@ -39,6 +39,7 @@ export function CookieBanner() {
             <Link href="/privacy" className="text-accent underline underline-offset-2">
               {t("legal.privacyLink")}
             </Link>
+            .
           </p>
         </div>
         <div className="flex shrink-0 flex-wrap gap-2">

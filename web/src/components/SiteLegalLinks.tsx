@@ -31,6 +31,15 @@ export function SiteLegalLinks() {
       <span className="text-ink/25" aria-hidden>
         ·
       </span>
+      <Link
+        href="/credits"
+        className="inline-flex min-h-[44px] items-center font-medium underline decoration-ink/20 underline-offset-2 transition-colors hover:text-accent hover:decoration-accent/40"
+      >
+        {t("legal.creditsLink")}
+      </Link>
+      <span className="text-ink/25" aria-hidden>
+        ·
+      </span>
       <button
         type="button"
         onClick={requestCookieBanner}

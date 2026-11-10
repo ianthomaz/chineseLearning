@@ -3,6 +3,7 @@
 import Script from "next/script";
 import { useEffect } from "react";
 import { useConsent } from "@/context/ConsentContext";
+import { applyAttributionToGtag, captureAttribution } from "@/lib/attribution";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() ?? "";
 
@@ -22,6 +23,8 @@ export function GoogleAnalytics() {
   useEffect(() => {
     if (!GA_ID || !analyticsAllowed) return;
     grantAnalyticsConsent();
+    const attr = captureAttribution();
+    applyAttributionToGtag(attr);
     window.gtag?.("config", GA_ID, { send_page_view: false });
   }, [analyticsAllowed]);
 

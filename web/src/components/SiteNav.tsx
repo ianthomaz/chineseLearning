@@ -115,6 +115,8 @@ function NavTabLink({
           action: "nav_click",
           category: "navigation",
           label: tab.key,
+          from: pathname ?? undefined,
+          to: tab.href,
           path: tab.href,
         });
         onNavigate?.();

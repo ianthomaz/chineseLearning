@@ -18,7 +18,7 @@ Espelho: `appMobile/docs/09_app_store_testflight.md` · copy: `appMobile/store/l
 | 7 | Prints iPhone 6.7" + iPad 13" (todos os locales) | Feito + ASC |
 | 8 | App ASC `6832237621` | Feito |
 | 9 | Build **3** VALID ligada à 1.0 | Feito |
-| 10 | Ficha: textos · Notes SIWA · Education+Reference · copyright · a11y draft · cabeçalho/busca | Feito |
+| 10 | Ficha: textos EN/PT/ES · Notes SIWA · Education+Reference · copyright · a11y draft · cabeçalho/busca | Feito (textos listing-* reenviados 10 nov; whatsNew N/A na 1.0) |
 | 11 | Preço **grátis** (faixa 0) | Feito |
 | 12 | App Privacy nutrition (UI) | Feito pelo dono |
 | 13 | TestFlight | **Passou** (10 nov 2026) |
