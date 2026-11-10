@@ -24,11 +24,14 @@ export type PracticeLibrary = {
   contextDeckMeta: ContextDeckMeta[];
 };
 
-/** Load the practice library from SQL (same tables as app snapshot). */
+let cache: PracticeLibrary | null = null;
+
+/** Load the practice library from SQL (same tables as app snapshot). Memoised per process. */
 export async function loadPracticeLibrary(): Promise<PracticeLibrary> {
   if (contentSource() === "json") {
     return { categories: [], contextDecks: [], contextDeckMeta: [] };
   }
+  if (cache) return cache;
 
   const [cats, entries, contextDecks, contextDeckMeta] = await Promise.all([
     prisma.lexicoRotationCategory.findMany({ orderBy: { sortOrder: "asc" } }),
@@ -63,5 +66,9 @@ export async function loadPracticeLibrary(): Promise<PracticeLibrary> {
     entries: byCat.get(c.id) ?? [],
   }));
 
-  return { categories, contextDecks, contextDeckMeta };
+  const result = { categories, contextDecks, contextDeckMeta };
+  if (categories.length > 0) {
+    cache = result;
+  }
+  return result;
 }

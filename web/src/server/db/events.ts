@@ -113,15 +113,26 @@ export function eventStats(): EventStats {
   const byEvent = db
     .prepare(`SELECT event, COUNT(*) AS n FROM events GROUP BY event ORDER BY n DESC`)
     .all() as Array<{ event: string; n: number }>;
+  const countByEvent = new Map(byEvent.map((r) => [r.event, r.n]));
+  const total = byEvent.reduce((sum, r) => sum + r.n, 0);
+  const results = db
+    .prepare(
+      `SELECT COALESCE(SUM(CASE WHEN correct = 1 THEN 1 ELSE 0 END), 0) AS correct,
+              COALESCE(SUM(CASE WHEN correct = 0 THEN 1 ELSE 0 END), 0) AS wrong
+         FROM events
+        WHERE event = 'phrase_result'`,
+    )
+    .get() as { correct: number; wrong: number };
+
   return {
-    total: count(`SELECT COUNT(*) AS n FROM events`),
+    total,
     last24h: count(`SELECT COUNT(*) AS n FROM events WHERE created_at >= datetime('now','-1 day')`),
     byEvent,
-    rounds: count(`SELECT COUNT(*) AS n FROM events WHERE event='round_start'`),
-    completes: count(`SELECT COUNT(*) AS n FROM events WHERE event='round_complete'`),
-    abandons: count(`SELECT COUNT(*) AS n FROM events WHERE event='round_abandon'`),
-    correct: count(`SELECT COUNT(*) AS n FROM events WHERE event='phrase_result' AND correct=1`),
-    wrong: count(`SELECT COUNT(*) AS n FROM events WHERE event='phrase_result' AND correct=0`),
+    rounds: countByEvent.get("round_start") ?? 0,
+    completes: countByEvent.get("round_complete") ?? 0,
+    abandons: countByEvent.get("round_abandon") ?? 0,
+    correct: results.correct,
+    wrong: results.wrong,
     players: count(`SELECT COUNT(DISTINCT user_id) AS n FROM events WHERE user_id IS NOT NULL`),
     guests: count(`SELECT COUNT(DISTINCT anon_id) AS n FROM events WHERE anon_id IS NOT NULL`),
   };

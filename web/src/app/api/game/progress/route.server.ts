@@ -9,21 +9,23 @@
  */
 import { getRequestUser } from "@/server/auth/request-user";
 import { getUser, setNick } from "@/server/db/users";
-import { gameSummary, recentRounds } from "@/server/db/progress";
+import { allGameSummaries, itemsToReview, recentRounds } from "@/server/db/progress";
 
 export const dynamic = "force-dynamic";
 
 export async function GET(req: Request) {
-  const id = (await getRequestUser(req))?.id;
-  if (!id) return Response.json({ error: "unauthenticated" }, { status: 401 });
+  const user = await getRequestUser(req);
+  const id = user?.id;
+  if (!user || !id) return Response.json({ error: "unauthenticated" }, { status: 401 });
 
-  const user = getUser(id);
+  const summaries = allGameSummaries(id);
   return Response.json({
-    nick: user?.nick ?? null,
-    phrase: gameSummary(id, "phrase"),
-    quiz: gameSummary(id, "quiz"),
-    hanzi: gameSummary(id, "hanzi"),
+    nick: user.nick ?? null,
+    phrase: summaries.phrase,
+    quiz: summaries.quiz,
+    hanzi: summaries.hanzi,
     recentRounds: recentRounds(id, 5),
+    reviewPhraseIds: summaries.phrase.itemsToReview > 0 ? itemsToReview(id, "phrase") : [],
   });
 }
 

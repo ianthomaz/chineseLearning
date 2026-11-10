@@ -530,6 +530,7 @@
     "forgotSent": "Se {email} tiver uma conta, um link para definir uma nova senha está a caminho.",
     "verifyOk": "E-mail confirmado. Sua conta está ativa — você já pode entrar.",
     "resetOk": "Senha salva. Você já pode entrar.",
+    "linkOk": "Contas vinculadas. Seu progresso foi unificado — você já pode entrar.",
     "linkedReady": "Senha salva na conta que você já tinha. Já pode entrar com e-mail.",
     "goSignIn": "Ir para o login",
     "error": {

@@ -1,6 +1,6 @@
 /** Transactional email copy — English base, pt-BR and es translations. */
 
-export type EmailKind = "verify" | "reset";
+export type EmailKind = "verify" | "reset" | "link";
 export type EmailLocale = "en" | "pt" | "es";
 
 type Copy = { subject: string; heading: string; body: string; button: string; footer: string };
@@ -50,6 +50,29 @@ const COPY: Record<EmailKind, Record<EmailLocale, Copy>> = {
       body: "Abre el enlace de abajo para elegir una nueva contraseña.",
       button: "Elegir contraseña",
       footer: "Si no lo pediste, ignora este correo. El enlace vale 2 horas.",
+    },
+  },
+  link: {
+    en: {
+      subject: "Link your account — LearnChinese Today",
+      heading: "Link your account",
+      body: "A request was made to link your login with your LearnChinese Today account. Open the link below to confirm and unify your progress.",
+      button: "Link account",
+      footer: "If you did not request this, you can safely ignore this email. Your account remains unchanged. The link expires in 2 hours.",
+    },
+    pt: {
+      subject: "Vincule sua conta — LearnChinese Today",
+      heading: "Vincule sua conta",
+      body: "Uma solicitação foi feita para vincular seu login à sua conta no LearnChinese Today. Abra o link abaixo para confirmar e unificar seu progresso.",
+      button: "Vincular conta",
+      footer: "Se você não pediu essa vinculação, pode ignorar este e-mail. Sua conta permanecerá inalterada. O link vale por 2 horas.",
+    },
+    es: {
+      subject: "Vincula tu cuenta — LearnChinese Today",
+      heading: "Vincula tu cuenta",
+      body: "Se solicitó vincular tu inicio de sesión con tu cuenta de LearnChinese Today. Abre el enlace de abajo para confirmar y unificar tu progreso.",
+      button: "Vincular cuenta",
+      footer: "Si no solicitaste esta vinculación, puedes ignorar este correo. Tu cuenta permanecerá sin cambios. El enlace vale 2 horas.",
     },
   },
 };

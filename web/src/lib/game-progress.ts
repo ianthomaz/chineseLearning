@@ -58,6 +58,8 @@ export type ProgressResponse = {
   /** Present once the server ships hanzi progress (game = "hanzi"). */
   hanzi?: GameSummary;
   recentRounds: RoundRow[];
+  /** Canonical server review queue (`last_correct = 0`, oldest first). */
+  reviewPhraseIds?: string[];
 };
 
 /**

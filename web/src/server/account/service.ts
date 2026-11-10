@@ -11,6 +11,7 @@ import { isReleased } from "@/server/auth/noia";
 import { hashPassword, isAcceptablePassword, verifyPassword } from "@/server/auth/password";
 import {
   applyPasswordReset,
+  confirmAccountLink,
   confirmEmail,
   createEmailToken,
   getIdentityUser,
@@ -210,4 +211,40 @@ export async function resetPassword(
   applyPasswordReset(read.row.userId, read.row.email, await hashPassword(password));
   markEmailTokenUsed(raw);
   return { ok: true };
+}
+
+export async function requestAccountLink(
+  userId: string,
+  emailRaw: unknown,
+  locale: unknown,
+  origin: string,
+): Promise<{ ok: true; needsVerification: boolean } | { ok: false; error: AccountError }> {
+  const user = getIdentityUser(userId);
+  if (!user) return { ok: false, error: "invalid_credentials" };
+  const email = typeof emailRaw === "string" ? normalizeEmail(emailRaw) : "";
+  if (!isPlausibleEmail(email)) return { ok: false, error: "invalid_email" };
+  if (!(await domainReceivesMail(email.slice(email.lastIndexOf("@") + 1)))) {
+    return { ok: false, error: "email_domain" };
+  }
+
+  const token = createEmailToken(user.id, email, "link");
+  const link = `${origin}/account/link?token=${encodeURIComponent(token)}`;
+  const sent = await sendTransactionalEmail({
+    to: email,
+    kind: "link",
+    locale: emailLocale(locale),
+    link,
+  });
+
+  return sent.ok ? { ok: true, needsVerification: true } : { ok: false, error: "email_failed" };
+}
+
+export function confirmLinkEmailToken(
+  token: unknown,
+): { ok: true; userId: string; mergedWithExisting: boolean } | { ok: false; error: AccountError } {
+  const result = confirmAccountLink(String(token ?? ""));
+  if (!result.ok) {
+    return { ok: false, error: result.reason === "expired" ? "expired_token" : "invalid_token" };
+  }
+  return { ok: true, userId: result.userId, mergedWithExisting: result.mergedWithExisting };
 }

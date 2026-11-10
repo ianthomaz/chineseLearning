@@ -27,11 +27,18 @@ function loadFromDb(): VocabPdfRow[] {
   return rows.map((r) => JSON.parse(String(r.payload_json)) as VocabPdfRow);
 }
 
-/** Site Visuais catalog: DB when CONTENT_SOURCE=db (after seed:content). */
+let cache: { pdfs: VocabPdfRow[] } | null = null;
+
+/** Site Visuais catalog: DB when CONTENT_SOURCE=db (after seed:content). Memoised per process. */
 export function getVisualPdfCatalog(): { pdfs: VocabPdfRow[] } {
-  if (contentSource() === "json") return { pdfs: loadFromJson() };
+  if (cache) return cache;
+  if (contentSource() === "json") {
+    cache = { pdfs: loadFromJson() };
+    return cache;
+  }
   try {
-    return { pdfs: loadFromDb() };
+    cache = { pdfs: loadFromDb() };
+    return cache;
   } catch {
     return { pdfs: [] };
   }

@@ -10,6 +10,7 @@ export type RequestUser = {
   email: string | null;
   name: string | null;
   image: string | null;
+  nick: string | null;
   via: "app" | "web";
 };
 
@@ -27,7 +28,14 @@ export async function getRequestUser(req: Request): Promise<RequestUser | null> 
     const userId = userIdForAppToken(token);
     const user = userId ? getIdentityUser(userId) : null;
     return user
-      ? { id: user.id, email: user.email, name: user.name, image: user.image, via: "app" }
+      ? {
+          id: user.id,
+          email: user.email,
+          name: user.name,
+          image: user.image,
+          nick: user.nick,
+          via: "app",
+        }
       : null;
   }
   const session = await auth();
@@ -35,12 +43,14 @@ export async function getRequestUser(req: Request): Promise<RequestUser | null> 
   if (!id) return null;
   // A web session is a JWT that lives 30 days; after "delete my account" the
   // cookie may still be valid, but the person no longer exists here.
-  if (!getIdentityUser(id)) return null;
+  const user = getIdentityUser(id);
+  if (!user) return null;
   return {
     id,
-    email: session.user?.email ?? null,
-    name: session.user?.name ?? null,
-    image: session.user?.image ?? null,
+    email: session.user?.email ?? user.email,
+    name: session.user?.name ?? user.name,
+    image: session.user?.image ?? user.image,
+    nick: user.nick,
     via: "web",
   };
 }

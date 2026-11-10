@@ -32,11 +32,18 @@ const EMPTY_BANK: QuizBank = {
   questions: [],
 };
 
-/** Quiz bank: SQLite when CONTENT_SOURCE=db (no JSON fallback). */
+let cache: QuizBank | null = null;
+
+/** Quiz bank: SQLite when CONTENT_SOURCE=db (no JSON fallback). Memoised per process. */
 export function getQuizBank(): QuizBank {
-  if (contentSource() === "json") return loadFromJson();
+  if (cache) return cache;
+  if (contentSource() === "json") {
+    cache = loadFromJson();
+    return cache;
+  }
   try {
-    return loadFromDb();
+    cache = loadFromDb();
+    return cache;
   } catch (err) {
     console.warn("[quiz] DB read failed — run npm run seed:content", err);
     return EMPTY_BANK;

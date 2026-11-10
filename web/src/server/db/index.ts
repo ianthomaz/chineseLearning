@@ -37,6 +37,7 @@ CREATE TABLE IF NOT EXISTS users (
   created_at         TEXT NOT NULL DEFAULT (datetime('now')),
   updated_at         TEXT NOT NULL DEFAULT (datetime('now'))
 );
+CREATE INDEX IF NOT EXISTS idx_users_email_lower ON users(lower(email));
 
 -- Per-item mastery, for signed-in players only. One row per (user, game, item):
 -- the running tally, not a log; the blow-by-blow lives in the events table.
@@ -56,6 +57,7 @@ CREATE TABLE IF NOT EXISTS progress (
 );
 CREATE INDEX IF NOT EXISTS idx_progress_user ON progress(user_id, game);
 CREATE INDEX IF NOT EXISTS idx_progress_review ON progress(user_id, game, last_correct);
+CREATE INDEX IF NOT EXISTS idx_progress_review_order ON progress(user_id, game, last_correct, last_seen_at);
 
 -- One row per finished round or quiz. Drives "your last round" and history.
 CREATE TABLE IF NOT EXISTS game_rounds (
@@ -71,6 +73,7 @@ CREATE TABLE IF NOT EXISTS game_rounds (
   created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
 CREATE INDEX IF NOT EXISTS idx_rounds_user ON game_rounds(user_id, created_at);
+CREATE INDEX IF NOT EXISTS idx_rounds_user_game ON game_rounds(user_id, game);
 
 -- Identity (docs/05_autenticacao.md § Contas). A user can sign in through
 -- several providers; each (provider, provider_account_id) points at one user.
@@ -171,6 +174,7 @@ CREATE TABLE IF NOT EXISTS events (
 CREATE INDEX IF NOT EXISTS idx_events_created ON events(created_at);
 CREATE INDEX IF NOT EXISTS idx_events_event ON events(event);
 CREATE INDEX IF NOT EXISTS idx_events_round ON events(round_id);
+CREATE INDEX IF NOT EXISTS idx_events_user ON events(user_id);
 
 -- Lesson registry, eixo B (docs/09_roadmap_integracoes.md). Curator-only.
 CREATE TABLE IF NOT EXISTS classes (
@@ -555,8 +559,13 @@ function migratePlayersToUsers(database: DatabaseSync): void {
 export function getDb(): DatabaseSync {
   if (db) return db;
   const path = dbPath();
-  mkdirSync(dirname(path), { recursive: true });
+  if (path !== ":memory:") {
+    mkdirSync(dirname(path), { recursive: true });
+  }
   db = new DatabaseSync(path);
+  db.exec(
+    "PRAGMA journal_mode = WAL; PRAGMA synchronous = NORMAL; PRAGMA busy_timeout = 5000; PRAGMA foreign_keys = ON;",
+  );
   // Reshape before the schema runs, so CREATE TABLE IF NOT EXISTS takes hold.
   migrateProgressStub(db);
   db.exec(MIGRATION);

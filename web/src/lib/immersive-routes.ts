@@ -8,11 +8,24 @@
 const IMMERSIVE_ROUTES = ["/practice", "/ktv"] as const;
 
 /**
- * Routes where the reading-settings drawer has nothing to control. The phrase
- * game reads none of the pinyin/translation contexts — it has its own hint
- * settings — so the tab was a dead control sitting on top of the board.
+ * Routes where the reading-settings drawer has nothing to control. These pages
+ * read none of the pinyin/translation contexts — or have their own hint
+ * controls — so the floating tab would be a dead control.
  */
-const NO_READING_DRAWER_ROUTES = ["/phrase-game"] as const;
+const NO_READING_DRAWER_ROUTES = [
+  "/phrase-game",
+  "/gamification",
+  "/visuals",
+  "/privacy",
+  "/terms",
+  "/backoffice",
+  "/registerClass",
+  "/reviewClass",
+  "/account",
+  "/account/verify",
+  "/account/reset-password",
+  "/account/link",
+] as const;
 
 /** Also replaces the site header (dark, edge-to-edge). */
 const NO_SITE_NAV_ROUTES = ["/ktv"] as const;

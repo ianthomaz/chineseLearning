@@ -152,8 +152,8 @@ Sem `union_id`, cada APPID fica conta separada. Conflito union vs open em
 *users* diferentes: mantém o do `union_id`, sem merge automático.
 
 [ x ] Site↔app Alipay unificado por `union_id` (nov 2026).  
-[ ] Vincular **outro** provedor (Google/Apple/e-mail) com sessão ativa — UI
-(ver § Pendências).
+[ x ] Backend de vincular **outro** provedor / e-mail com sessão ativa (`POST /api/account/link` + confirmação com merge seguro de progresso e contas). Teste: `npm run test:account-link`.  
+[ ] UI para acionar o vínculo na tela de Conta (site e app).
 
 No console da Alipay a URL de retorno tem de ser exactamente:
 

@@ -30,12 +30,13 @@ function SignInLink() {
 }
 
 /** Outcome of an email link the server already handled. */
-export function AccountLinkResult({ kind, error }: { kind: "verify" | "reset"; error: string | null }) {
+export function AccountLinkResult({ kind, error }: { kind: "verify" | "reset" | "link"; error: string | null }) {
   const { t } = useLocale();
+  const okKey = kind === "verify" ? "account.verifyOk" : kind === "link" ? "account.linkOk" : "account.resetOk";
   return (
     <Card>
       <p className={error ? "text-sm text-red-700" : "text-sm text-ink"}>
-        {error ? t(`account.error.${error}`) : t(kind === "verify" ? "account.verifyOk" : "account.resetOk")}
+        {error ? t(`account.error.${error}`) : t(okKey)}
       </p>
       <SignInLink />
     </Card>

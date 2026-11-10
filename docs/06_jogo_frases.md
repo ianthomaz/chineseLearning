@@ -124,6 +124,13 @@ Curadoria: `vocabulario/FRASES_GAME/curated/pending-accepted-orders.json`
 
 ---
 
+## Evolução futura (planeado)
+
+- **Expansão HSK 3 + HSK 4:** Aumento do pool de vocabulário no jogo. Na UI móvel (`PhraseGameSetupView`), o seletor segmentado de vocabulário (que hoje tem HSK 1, HSK 2, HSK 2+, HSK 3) passa para **duas linhas de seleção** (ou grade de chips) para acomodar os novos níveis sem truncar ou apertar em telas de 390 pt.
+- **Treino por Estrutura Gramatical (Pattern Drills / Repetição Sintática):** Evoluir além do agrupamento estrito por nível HSK, organizando conjuntos de frases por padrões gramaticais similares (mesma estrutura sintática variando apenas verbos/substantivos/adjetivos). Permite o treino focado por repetição de padrões de frase, internalizando a gramática estruturalmente.
+
+---
+
 ## Backoffice
 
 `/backoffice` — admin only, server mode.

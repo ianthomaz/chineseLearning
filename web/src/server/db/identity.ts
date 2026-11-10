@@ -439,9 +439,9 @@ function dropPendingEmailClones(email: string, keepUserId: string): void {
 
 // ── One-time email links ────────────────────────────────────────────────────
 
-export type EmailTokenPurpose = "verify" | "reset";
+export type EmailTokenPurpose = "verify" | "reset" | "link";
 
-const TOKEN_TTL_HOURS: Record<EmailTokenPurpose, number> = { verify: 72, reset: 2 };
+const TOKEN_TTL_HOURS: Record<EmailTokenPurpose, number> = { verify: 72, reset: 2, link: 2 };
 
 /**
  * `passwordHash` rides with a sign-up link and is set on the user only when
@@ -453,14 +453,15 @@ export function createEmailToken(
   purpose: EmailTokenPurpose,
   passwordHash: string | null = null,
 ): string {
+  const db = getDb();
   const raw = newSecret();
+  const nowIso = new Date().toISOString();
   const expires = new Date(Date.now() + TOKEN_TTL_HOURS[purpose] * 3600_000).toISOString();
-  getDb()
-    .prepare(
-      `INSERT INTO email_tokens (token_hash, user_id, email, purpose, expires_at, password_hash)
-       VALUES (?, ?, ?, ?, ?, ?)`,
-    )
-    .run(sha256(raw), userId, normalizeEmail(emailRaw), purpose, expires, passwordHash);
+  db.prepare(`DELETE FROM email_tokens WHERE expires_at < ?`).run(nowIso);
+  db.prepare(
+    `INSERT INTO email_tokens (token_hash, user_id, email, purpose, expires_at, password_hash)
+     VALUES (?, ?, ?, ?, ?, ?)`,
+  ).run(sha256(raw), userId, normalizeEmail(emailRaw), purpose, expires, passwordHash);
   return raw;
 }
 
@@ -490,7 +491,7 @@ export function readEmailToken(
     .get(sha256(raw), purpose) as EmailTokenRow | undefined;
   if (!row) return { ok: false, reason: "invalid" };
   if (Date.parse(row.expiresAt) < Date.now()) return { ok: false, reason: "expired" };
-  if (purpose === "reset" && row.usedAt) return { ok: false, reason: "used" };
+  if ((purpose === "reset" || purpose === "link") && row.usedAt) return { ok: false, reason: "used" };
   return { ok: true, row };
 }
 
@@ -500,11 +501,153 @@ export function markEmailTokenUsed(raw: string): void {
     .run(sha256(raw));
 }
 
+export type AccountLinkOutcome =
+  | { ok: true; userId: string; mergedWithExisting: boolean }
+  | { ok: false; reason: "invalid" | "expired" | "used" };
+
+/**
+ * Confirms an account link token (e.g. linking an Alipay user to an email).
+ * - If target email already belongs to a released user: merges the initiator's
+ *   accounts, open_ids, sessions, game_rounds, progress and events onto that owner,
+ *   then deletes the initiator user. Returns the surviving owner user id.
+ * - If target email is new or already belongs to initiator: verifies the email
+ *   directly on the initiator account and creates the email provider entry.
+ */
+export function confirmAccountLink(tokenRaw: string): AccountLinkOutcome {
+  const read = readEmailToken(tokenRaw, "link");
+  if (!read.ok) return { ok: false, reason: read.reason };
+
+  const db = getDb();
+  const initiatorUserId = read.row.userId;
+  const targetEmail = normalizeEmail(read.row.email);
+  const initiator = getIdentityUser(initiatorUserId);
+  if (!initiator) return { ok: false, reason: "invalid" };
+
+  const owner = releasedUserByEmail(targetEmail);
+
+  db.exec("BEGIN");
+  try {
+    if (owner && owner.id !== initiatorUserId) {
+      // 1. Move accounts
+      const initiatorAccounts = db
+        .prepare(`SELECT provider, provider_account_id, email FROM accounts WHERE user_id = ?`)
+        .all(initiatorUserId) as { provider: string; provider_account_id: string; email: string | null }[];
+
+      for (const acc of initiatorAccounts) {
+        db.prepare(
+          `INSERT INTO accounts (provider, provider_account_id, user_id, email)
+           VALUES (?, ?, ?, ?)
+           ON CONFLICT(provider, provider_account_id) DO UPDATE SET user_id = excluded.user_id`,
+        ).run(acc.provider, acc.provider_account_id, owner.id, acc.email);
+      }
+      db.prepare(`DELETE FROM accounts WHERE user_id = ?`).run(initiatorUserId);
+
+      // 2. Move alipay_open_ids
+      db.prepare(`UPDATE alipay_open_ids SET user_id = ?, updated_at = datetime('now') WHERE user_id = ?`).run(
+        owner.id,
+        initiatorUserId,
+      );
+
+      // 3. Move app_sessions
+      db.prepare(`UPDATE app_sessions SET user_id = ? WHERE user_id = ?`).run(owner.id, initiatorUserId);
+
+      // 4. Move game_rounds
+      db.prepare(`UPDATE game_rounds SET user_id = ? WHERE user_id = ?`).run(owner.id, initiatorUserId);
+
+      // 5. Merge progress rows
+      const initiatorProgress = db
+        .prepare(
+          `SELECT id, game, item_id, attempts, correct, best_score, last_score, last_correct, last_seen_at
+             FROM progress WHERE user_id = ?`,
+        )
+        .all(initiatorUserId) as Array<{
+          id: number;
+          game: string;
+          item_id: string;
+          attempts: number;
+          correct: number;
+          best_score: number;
+          last_score: number;
+          last_correct: number;
+          last_seen_at: string;
+        }>;
+
+      for (const p of initiatorProgress) {
+        db.prepare(
+          `INSERT INTO progress (user_id, game, item_id, attempts, correct, best_score, last_score, last_correct, last_seen_at)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+           ON CONFLICT(user_id, game, item_id) DO UPDATE SET
+             attempts = progress.attempts + excluded.attempts,
+             correct = progress.correct + excluded.correct,
+             best_score = MAX(progress.best_score, excluded.best_score),
+             last_score = excluded.last_score,
+             last_correct = excluded.last_correct,
+             last_seen_at = MAX(progress.last_seen_at, excluded.last_seen_at)`,
+        ).run(
+          owner.id,
+          p.game,
+          p.item_id,
+          p.attempts,
+          p.correct,
+          p.best_score,
+          p.last_score,
+          p.last_correct,
+          p.last_seen_at,
+        );
+      }
+      db.prepare(`DELETE FROM progress WHERE user_id = ?`).run(initiatorUserId);
+
+      // 6. Move events
+      db.prepare(`UPDATE events SET user_id = ? WHERE user_id = ?`).run(owner.id, initiatorUserId);
+
+      // 7. Clean up initiator rows
+      db.prepare(`DELETE FROM app_auth_exchanges WHERE user_id = ?`).run(initiatorUserId);
+      db.prepare(`DELETE FROM email_tokens WHERE user_id = ?`).run(initiatorUserId);
+      db.prepare(`DELETE FROM clearance_changes WHERE user_id = ?`).run(initiatorUserId);
+      db.prepare(`DELETE FROM users WHERE id = ?`).run(initiatorUserId);
+
+      // 8. Ensure owner is marked verified
+      db.prepare(
+        `UPDATE users SET email_verified_at = COALESCE(email_verified_at, datetime('now')), updated_at = datetime('now') WHERE id = ?`,
+      ).run(owner.id);
+
+      markEmailTokenUsed(tokenRaw);
+      db.exec("COMMIT");
+      return { ok: true, userId: owner.id, mergedWithExisting: true };
+    } else {
+      dropPendingEmailClones(targetEmail, initiatorUserId);
+      db.prepare(
+        `UPDATE users SET
+           email = ?,
+           email_verified_at = COALESCE(email_verified_at, datetime('now')),
+           updated_at = datetime('now')
+         WHERE id = ?`,
+      ).run(targetEmail, initiatorUserId);
+      linkAccount("email", targetEmail, initiatorUserId, targetEmail);
+      release(initiatorUserId, "email_verified");
+
+      markEmailTokenUsed(tokenRaw);
+      db.exec("COMMIT");
+      return { ok: true, userId: initiatorUserId, mergedWithExisting: false };
+    }
+  } catch (err) {
+    db.exec("ROLLBACK");
+    throw err;
+  }
+}
+
 // ── App sessions (iOS bearer tokens) ────────────────────────────────────────
 
 const APP_SESSION_DAYS = 180;
 /** Sessions used within this window of expiry are extended. */
 const APP_SESSION_RENEW_DAYS = 30;
+/** Throttle `last_used_at` writes so back-to-back read requests stay read-only. */
+const APP_SESSION_TOUCH_MS = 5 * 60_000;
+
+function parseSqliteDate(raw: string | null | undefined): number {
+  if (!raw) return 0;
+  return Date.parse(raw.includes("T") ? raw : `${raw.replace(" ", "T")}Z`);
+}
 
 export function createAppSession(userId: string, client: string | null): string {
   const raw = newSecret();
@@ -520,18 +663,25 @@ export function userIdForAppToken(raw: string): string | null {
   const db = getDb();
   const hash = sha256(raw);
   const row = db
-    .prepare(`SELECT user_id AS userId, expires_at AS expiresAt FROM app_sessions WHERE token_hash = ?`)
-    .get(hash) as { userId: string; expiresAt: string } | undefined;
+    .prepare(
+      `SELECT user_id AS userId, expires_at AS expiresAt, last_used_at AS lastUsedAt
+         FROM app_sessions WHERE token_hash = ?`,
+    )
+    .get(hash) as { userId: string; expiresAt: string; lastUsedAt: string } | undefined;
   if (!row) return null;
+  const now = Date.now();
   const expiresAt = Date.parse(row.expiresAt);
-  if (expiresAt < Date.now()) {
+  if (expiresAt < now) {
     db.prepare(`DELETE FROM app_sessions WHERE token_hash = ?`).run(hash);
     return null;
   }
-  const renew = expiresAt - Date.now() < APP_SESSION_RENEW_DAYS * 86400_000;
-  db.prepare(
-    `UPDATE app_sessions SET last_used_at = datetime('now')${renew ? ", expires_at = ?" : ""} WHERE token_hash = ?`,
-  ).run(...(renew ? [new Date(Date.now() + APP_SESSION_DAYS * 86400_000).toISOString(), hash] : [hash]));
+  const renew = expiresAt - now < APP_SESSION_RENEW_DAYS * 86400_000;
+  const shouldTouch = renew || now - parseSqliteDate(row.lastUsedAt) >= APP_SESSION_TOUCH_MS;
+  if (shouldTouch) {
+    db.prepare(
+      `UPDATE app_sessions SET last_used_at = datetime('now')${renew ? ", expires_at = ?" : ""} WHERE token_hash = ?`,
+    ).run(...(renew ? [new Date(now + APP_SESSION_DAYS * 86400_000).toISOString(), hash] : [hash]));
+  }
   return row.userId;
 }
 
@@ -543,11 +693,16 @@ export function revokeAppSession(raw: string): void {
 const APP_AUTH_EXCHANGE_MS = 5 * 60_000;
 
 export function createAppAuthExchange(userId: string): string {
+  const db = getDb();
   const raw = newSecret();
+  const nowIso = new Date().toISOString();
   const expires = new Date(Date.now() + APP_AUTH_EXCHANGE_MS).toISOString();
-  getDb()
-    .prepare(`INSERT INTO app_auth_exchanges (code_hash, user_id, expires_at) VALUES (?, ?, ?)`)
-    .run(sha256(raw), userId, expires);
+  db.prepare(`DELETE FROM app_auth_exchanges WHERE expires_at < ?`).run(nowIso);
+  db.prepare(`INSERT INTO app_auth_exchanges (code_hash, user_id, expires_at) VALUES (?, ?, ?)`).run(
+    sha256(raw),
+    userId,
+    expires,
+  );
   return raw;
 }
 

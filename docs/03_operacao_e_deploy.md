@@ -127,6 +127,34 @@ Overrides: `DEPLOY_PROD_HOST`, `DEPLOY_PROD_DIR`, `DEPLOY_PROD_RESTART=1`.
 
 **Sobe:** `.next/`, `data/app-library/`, `public/ktv/`. **Não sobe:** `*.sqlite` (preservado no servidor), `node_modules` (fica o que já está no servidor).
 
+### Pré-deploy (nov 2026) — ainda não é deploy
+
+Este bloco descreve o que está no `main` local **antes** de `./start.sh --prod --upload`. Não dispara produção.
+
+**Entra neste lote (site):**
+
+- Vínculo de conta com sessão activa: `POST /api/account/link` e confirmação por token. Se o e-mail já pertence a outro utilizador libertado, o progresso, contas, sessões e eventos do iniciador passam para esse dono e o utilizador iniciador é apagado. A UI de Conta (site e app) ainda não chama isto.
+- Índices novos (`users` por e-mail, `progress`, `game_rounds`, `events`) e `PRAGMA journal_mode=WAL` na abertura da base. `CREATE INDEX IF NOT EXISTS` corre no arranque; o ficheiro `*.sqlite` de produção **não** vai no upload.
+- API só de leitura `GET /api/observer`. Fica **desligada** enquanto `OBSERVER_API_KEY` (ou `OBSERVER_TOKEN`) não existir no `server.env`. Não definir essa chave neste deploy.
+- Sem dependências npm novas: o remoto continua sem `npm ci`.
+
+**Fora deste lote:**
+
+- `appMobile` tem alterações iOS por commitar no submodule (conta, sync, banco de frases). O ponteiro do submodule no repo pai não muda até esse commit.
+- `ianthomaz/site_laoshiPING/` é rascunho pessoal — não vai no commit de produto.
+- `web/scripts/.cache/` é cache local.
+
+**Ordem segura, quando o dono pedir o deploy:**
+
+1. `cd web && npx next build && npm run build:webplace && npx eslint src && npx tsc --noEmit`
+2. `npm run test:identity && npm run test:account-link && npm run test:alipay`
+3. Confirmar que `web/deploy/server.env` de produção **não** traz `OBSERVER_API_KEY`.
+4. Backup do SQLite no servidor (o upload preserva o ficheiro, mas o primeiro `getDb()` passa a WAL e cria índices).
+5. `./start.sh --prod` no Mac (build local).
+6. `DEPLOY_PROD_RESTART=1 ./start.sh --prod --upload`
+7. `cd web && npm run remote:handshake`
+8. Smoke: login Google/Apple/e-mail, uma ronda de jogo com sessão, pack da app. Não exercitar merge de contas em utilizadores reais neste primeiro reload.
+
 ### Cloudflare DNS (resumo)
 
 | Type | Name | Notas |

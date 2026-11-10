@@ -150,6 +150,57 @@ export function gameSummary(userId: string, game: GameKind): GameSummary {
 }
 
 /**
+ * Summaries for all three game domains in two grouped queries rather than six.
+ */
+export function allGameSummaries(userId: string): Record<GameKind, GameSummary> {
+  const db = getDb();
+  const empty = (): GameSummary => ({
+    rounds: 0,
+    itemsSeen: 0,
+    itemsToReview: 0,
+    bestPoints: 0,
+  });
+  const out: Record<GameKind, GameSummary> = {
+    phrase: empty(),
+    quiz: empty(),
+    hanzi: empty(),
+  };
+
+  const roundRows = db
+    .prepare(
+      `SELECT game, COUNT(*) AS n, COALESCE(MAX(points), 0) AS best
+         FROM game_rounds
+        WHERE user_id = ?
+        GROUP BY game`,
+    )
+    .all(userId) as Array<{ game: string; n: number; best: number }>;
+  for (const r of roundRows) {
+    if (r.game in out) {
+      out[r.game as GameKind].rounds = r.n;
+      out[r.game as GameKind].bestPoints = round2(r.best);
+    }
+  }
+
+  const itemRows = db
+    .prepare(
+      `SELECT game, COUNT(*) AS seen,
+              COALESCE(SUM(CASE WHEN last_correct = 0 THEN 1 ELSE 0 END), 0) AS review
+         FROM progress
+        WHERE user_id = ?
+        GROUP BY game`,
+    )
+    .all(userId) as Array<{ game: string; seen: number; review: number }>;
+  for (const r of itemRows) {
+    if (r.game in out) {
+      out[r.game as GameKind].itemsSeen = r.seen;
+      out[r.game as GameKind].itemsToReview = r.review;
+    }
+  }
+
+  return out;
+}
+
+/**
  * Item ids the player last got wrong, oldest first — so a review round revisits
  * what has been left alone longest rather than what was just missed.
  */

@@ -530,6 +530,7 @@
     "forgotSent": "Si {email} tiene una cuenta, va en camino un enlace para elegir una nueva contraseña.",
     "verifyOk": "Correo confirmado. Tu cuenta está activa — ya puedes entrar.",
     "resetOk": "Contraseña guardada. Ya puedes entrar.",
+    "linkOk": "Cuentas vinculadas. Tu progreso fue unificado — ya puedes entrar.",
     "linkedReady": "Contraseña guardada en tu cuenta existente. Ya puedes entrar con el correo.",
     "goSignIn": "Ir a iniciar sesión",
     "error": {

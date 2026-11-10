@@ -40,6 +40,8 @@
     "lint": "node scripts/check-messages.mjs && next lint",
     "test:identity": "npx --yes tsx scripts/test-identity-merge.mjs",
     "test:alipay": "npx --yes tsx scripts/test-alipay.mjs",
+    "test:observer": "npx --yes tsx scripts/test-observer.mjs",
+    "test:account-link": "npx --yes tsx scripts/test-account-link.mjs",
     "pwa:icons": "node scripts/generate-pwa-icons.mjs"
   },
   "dependencies": {
